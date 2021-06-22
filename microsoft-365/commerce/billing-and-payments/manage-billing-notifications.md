@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie verwalten, wer Rechnungsbenachrichtigungs-E-Mails und Rechnungsanlagen empfängt.
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998764"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054583"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Verwalten von Benachrichtigungen zur Abrechnung und Rechnungsanlagen
 
@@ -37,9 +37,6 @@ Auf der Seite **"Abrechnungsbenachrichtigungen"** können Sie verwalten, wer Abr
 Sie müssen ein globaler Administrator sein, um die in diesem Artikel beschriebenen Schritte ausführen zu können. Abrechnungsadministratoren können einige dieser Änderungen vornehmen, wie in den folgenden Abschnitten angegeben. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Ändern der Sprache, in der Sie eine E-Mail erhalten
-
-> [!NOTE]
-> Abrechnungsadministratoren können auch die Schritte in diesem Abschnitt ausführen.
 
 Rechnungsbenachrichtigungs-E-Mails werden in der bevorzugten Sprache Ihrer Organisation gesendet. Führen Sie die folgenden Schritte aus, um die bevorzugte Sprache zu ändern.
 
@@ -58,7 +55,7 @@ Die Abrechnungsbenachrichtigungen Ihrer Organisation werden an die primäre und 
 3. Wählen Sie im rechten Bereich auf der Registerkarte **"Zugewiesene Administratoren"** die Option **"Hinzufügen"** aus.
 4. Geben Sie im Bereich **"Administratoren hinzufügen"** den Anzeigenamen oder Benutzernamen des Benutzers ein, und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
 5. Fügen Sie mehrere Benutzer hinzu, bis Sie fertig sind.
-6. Klicken Sie auf **Speichern**. Der Benutzer wird der Liste der zugewiesenen Administratoren hinzugefügt.
+6. Wählen Sie **Speichern**. Der Benutzer wird der Liste der zugewiesenen Administratoren hinzugefügt.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Entfernen von Administratorrollen über die Seite "Abrechnungsbenachrichtigungen"
 
@@ -87,6 +84,9 @@ Zusätzlich zu Ihren globalen Administratoren und Abrechnungsadministratoren sen
 3. Geben Sie im rechten Bereich die E-Mail-Adresse ein, die Sie verwenden möchten, und wählen Sie dann **Speichern** aus.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Empfangen der Rechnungen Ihrer Organisation als E-Mail-Anlagen
+
+> [!NOTE]
+> Abrechnungsadministratoren können auch die Schritte in diesem Abschnitt ausführen.
 
 Sie können eine Kopie der Rechnung Ihrer Organisation als PDF-Datei an E-Mails mit Rechnungsbenachrichtigungen anhängen lassen, wenn eine neue Rechnung fertig ist. Gehen Sie folgendermaßen vor, um Rechnungen als Anlagen zu erhalten.
 

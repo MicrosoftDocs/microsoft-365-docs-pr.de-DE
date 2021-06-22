@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 2: Verwenden von Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals'
+title: 'Schritt 2: Verwenden Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals'
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,16 +12,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Erfahren Sie, wie Sie Microsoft Teams verwenden, um Ihren Vertragsverwaltungskanal mithilfe einer Microsoft 365-Lösung zu erstellen.
-ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841174"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054753"
 ---
-# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Schritt 2. Verwenden von Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals
+# <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Schritt 2. Verwenden Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals
 
-Wenn Ihre Organisation eine Lösung für die Vertragsverwaltung einrichtet, benötigen Sie einen zentralen Ort, an dem Projektbeteiligten Verträge überprüfen und verwalten können. Zu diesem Zweck können Sie [Microsoft Teams](/microsoftteams/) verwenden, um einen Teams Kanal einzurichten, und die Features in Teams für Folgendes verwenden:
+Wenn Ihre Organisation eine Lösung für die Vertragsverwaltung einrichtet, benötigen Sie einen zentralen Ort, an dem Projektbeteiligten Verträge überprüfen und verwalten können. Zu diesem Zweck können Sie [Microsoft Teams](/microsoftteams/) verwenden, um einen Teams Kanal einzurichten und die Features in Teams für Folgendes zu verwenden:
 
 - **Erstellen Sie einen Ort für Projektbeteiligten, um alle Verträge anzuzeigen, die Maßnahmen erfordern.** In Teams können Sie beispielsweise eine Registerkarte **"Verträge"** im Kanal "Vertragsverwaltung" erstellen, in der Mitglieder eine nützliche Kachelansicht aller Verträge sehen können, die genehmigt werden müssen. Sie können die Ansicht auch so konfigurieren, dass jede "Karte" die wichtigen Daten auflistet, die Ihnen wichtig sind (z. B. *Client,* *Auftragnehmer* und *Gebührenbetrag).*
 
@@ -31,30 +31,31 @@ Wenn Ihre Organisation eine Lösung für die Vertragsverwaltung einrichtet, ben�
 
      ![Registerkarte "Beiträge".](../media/content-understanding/posts.png)
 
-- **Haben Sie einen Ort, an dem Mitglieder genehmigte Verträge sehen können, um zu wissen, wann sie zur Zahlung eingereicht werden können.** In Teams können Sie einen For **Payment-Kanal** erstellen, der alle Verträge auflistet, die an die Zahlung übermittelt werden müssen. Sie können diese Lösung einfach erweitern, um diese Informationen stattdessen direkt in eine Finanzanwendung eines Drittanbieters (z. B. Dynamics CRM) zu schreiben.
+- **Haben Sie einen Ort, an dem Mitglieder genehmigte Verträge sehen können, um zu wissen, wann sie zur Zahlung eingereicht werden können.** In SharePoint müssen Sie eine **"For Payout"-Liste** erstellen und Spalten für **den Betrag "Client",** **"Auszahlung"** und **"Gebühr"** einschließen, wobei **"Einzelne Textzeile"** als Spaltentyp ausgewählt wird. Sie müssen die For **Payout-Liste** als Teams Registerkarte im Vertragsverwaltungskanal hinzufügen, ähnlich wie [bei der Registerkarte **"Verträge".**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) Auf der Registerkarte **"Für Auszahlung"** werden alle Verträge aufgeführt, die zur Zahlung übermittelt werden müssen. Sie können diese Lösung einfach erweitern, um diese Informationen stattdessen direkt in eine Finanzanwendung eines Drittanbieters (z. B. Dynamics CRM) zu schreiben. 
+
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Fügen Sie Ihre SharePoint Dokumentbibliothek an die Registerkarte "Verträge" an.
 
-Nachdem Sie in Ihrem Vertragsverwaltungskanal eine Registerkarte **"Verträge"** erstellt haben, müssen Sie [Ihre SharePoint Dokumentbibliothek an diese anfügen.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) Die SharePoint Dokumentbibliothek, die Sie anfügen möchten, ist diejenige, in der Sie ihr SharePoint Syntex-Dokumentverständnismodell im vorherigen Abschnitt angewendet haben.
+Nachdem Sie im Kanal "Vertragsverwaltung" eine Registerkarte **"Verträge"** erstellt haben, müssen Sie [ihre SharePoint Dokumentbibliothek an diese anfügen.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) Die SharePoint Dokumentbibliothek, die Sie anfügen möchten, ist diejenige, in der Sie ihr SharePoint Syntex Dokumentverständnismodell im vorherigen Abschnitt angewendet haben.
 
 Nachdem Sie die SharePoint Dokumentbibliothek angefügt haben, können Sie alle klassifizierten Verträge über eine Standardlistenansicht anzeigen.
 
-   ![Listenansicht.](../media/content-understanding/list-view.png)
+   ![Listenansicht SharePoint Bibliothek.](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassen der Kachelansicht der Registerkarte "Verträge"
 
 > [!NOTE]
-> In diesem Abschnitt wird auf Codebeispiele verwiesen, die in der [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) für die Datei enthalten sind, die im [Repository "Contracts Management Solution Assets"](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)enthalten ist.
+> In diesem Abschnitt wird auf [ Codebeispiele](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) verwiesen, die in derContractTileFormatting.js-Datei enthalten sind, die im [Repository "Contracts Management Solution Assets"](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)enthalten ist.
 
-Während Sie mit Teams Ihre Verträge in einer Kachelansicht anzeigen können, können Sie sie anpassen, um die Vertragsdaten anzuzeigen, die Sie auf der Vertragskarte sichtbar machen möchten. Für die Registerkarte **"Verträge"** ist es beispielsweise wichtig, dass Mitglieder den Client, den Vertragsnehmer und den Gebührenbetrag auf der Vertragskarte sehen. Alle diese Felder wurden aus jedem Vertrag über Ihr SharePoint Syntex-Modell extrahiert, das auf Ihre Dokumentbibliothek angewendet wurde. Sie möchten auch in der Lage sein, die Kachelkopfleiste für jeden Status in unterschiedliche Farben zu ändern, damit mitglieder leicht sehen können, wo sich der Vertrag im Genehmigungsprozess befindet. Beispielsweise verfügen alle genehmigten Verträge über eine blaue Kopfzeile.
+Während Sie mit Teams Ihre Verträge in einer Kachelansicht anzeigen können, können Sie sie anpassen, um die Vertragsdaten anzuzeigen, die Sie auf der Vertragskarte sichtbar machen möchten. Für die Registerkarte **"Verträge"** ist es beispielsweise wichtig, dass Mitglieder den Client, den Vertragsnehmer und den Gebührenbetrag auf der Vertragskarte sehen. Alle diese Felder wurden aus jedem Vertrag über Ihr SharePoint Syntex Modell extrahiert, das auf Ihre Dokumentbibliothek angewendet wurde. Sie möchten auch in der Lage sein, die Kachelkopfleiste für jeden Status in unterschiedliche Farben zu ändern, damit mitglieder leicht sehen können, wo sich der Vertrag im Genehmigungsprozess befindet. Beispielsweise verfügen alle genehmigten Verträge über eine blaue Kopfzeile.
 
-   ![Listenansicht.](../media/content-understanding/tile.png)
+   ![Kachelansicht SharePoint Bibliothek.](../media/content-understanding/tile.png)
 
 Für die von Ihnen verwendete benutzerdefinierte Kachelansicht müssen Sie Änderungen an der JSON-Datei vornehmen, die zum Formatieren der aktuellen Kachelansicht verwendet wird. Sie können auf die JSON-Datei verweisen, die zum Erstellen der Kartenansicht verwendet wird, indem Sie sich die [ContractTileFormatting.json-Datei](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) ansehen. In den folgenden Abschnitten sehen Sie bestimmte Abschnitte des Codes für Features, die in den Vertragskarten enthalten sind.
 
 Wenn Sie den JSON-Code für Ihre Ansicht in Ihrem Teams Kanal anzeigen oder ändern möchten, wählen Sie im Teams Kanal das Dropdownmenü "Ansicht" und dann **"Aktuelle Ansicht formatieren"** aus.
 
-   ![JSON-Format.](../media/content-understanding/jason-format.png)
+   ![Screenshot des JSON-Formats in Teams Kanal.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Kartengröße und -form
 
@@ -105,7 +106,7 @@ Mit dem folgenden Code können Sie den Status jeder Titelkarte definieren. Beach
 
 ## <a name="extracted-fields"></a>Extrahierte Felder
 
-Jede Vertragskarte zeigt drei Felder an, die für jeden Vertrag extrahiert wurden (*Client,* *Auftragnehmer* und *Gebührenbetrag).* Darüber hinaus möchten Sie auch die Uhrzeit/das Datum anzeigen, zu dem die Datei vom SharePoint Syntex-Modell klassifiziert wurde, mit dem sie identifiziert wurde.
+Jede Vertragskarte zeigt drei Felder an, die für jeden Vertrag extrahiert wurden (*Client,* *Auftragnehmer* und *Gebührenbetrag).* Darüber hinaus möchten Sie die Uhrzeit/das Datum anzeigen, zu dem die Datei vom SharePoint Syntex Modell klassifiziert wurde, mit dem sie identifiziert wurde.
 
 In der [ContractTileFormatting.json-Datei](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) definieren die folgenden Abschnitte diese.
 
@@ -207,4 +208,4 @@ In diesem Abschnitt wird definiert, wie "Klassifizierung" auf der Karte angezeig
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Schritt 3. Verwenden sie Power Automate, um Ihren Flow zur Verarbeitung Ihrer Verträge zu erstellen.](solution-manage-contracts-step3.md)
+[Schritt 3. Verwenden sie Power Automate, um Ihren Flow zur Verarbeitung Ihrer Verträge zu erstellen](solution-manage-contracts-step3.md)

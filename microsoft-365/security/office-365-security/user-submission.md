@@ -1,5 +1,5 @@
 ---
-title: Richtlinie für Benutzerübermittlungen
+title: Vom Benutzer gemeldete Nachrichteneinstellungen
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie ein Postfach konfigurieren, um Spam- und Phishing-E-Mails zu sammeln, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052987"
+ms.locfileid: "53055121"
 ---
-# <a name="user-submissions-policy"></a>Richtlinie für Benutzerübermittlungen
+# <a name="user-reported-message-settings"></a>Vom Benutzer gemeldete Nachrichteneinstellungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052987"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Exchange Online Postfächern können Sie ein Postfach angeben, um Nachrichten zu empfangen, die Benutzer als bösartig oder nicht bösartig melden. Wenn Benutzer Nachrichten mit den verschiedenen Berichtsoptionen übermitteln, können Sie dieses Postfach verwenden, um Nachrichten abzufangen (nur an das benutzerdefinierte Postfach senden) oder Kopien von Nachrichten zu empfangen (an das benutzerdefinierte Postfach und Microsoft senden). Dieses Feature funktioniert mit den folgenden Optionen für die Meldungsberichterstellung:
+In Microsoft 365 Organisationen mit Exchange Online Postfächern können Sie ein Postfach angeben, um Nachrichten zu empfangen, die Benutzer als bösartig oder nicht bösartig melden. Wenn Benutzer Nachrichten mit den verschiedenen Berichtsoptionen melden, können Sie dieses Postfach verwenden, um Nachrichten abzufangen (nur an das benutzerdefinierte Postfach senden) oder Kopien von Nachrichten zu empfangen (an das benutzerdefinierte Postfach und Microsoft senden). Dieses Feature funktioniert mit den folgenden Optionen für die Meldungsberichterstellung:
 
 - [Das Add-In "Nachricht melden"](enable-the-report-message-add-in.md)
 - [Das Add-In "Phishing melden"](enable-the-report-phish-add-in.md)
 - [Berichterstellungstools von Drittanbietern](#third-party-reporting-tools)
 
-Wenn Benutzer gemeldete Nachrichten an ein benutzerdefiniertes Postfach statt direkt an Microsoft übermitteln, können Ihre Administratoren Nachrichten mithilfe der Administratorübermittlung selektiv und manuell an Microsoft [melden.](admin-submission.md)
+Wenn Benutzer gemeldete Nachrichten an ein benutzerdefiniertes Postfach statt direkt an Microsoft übermitteln, können Ihre Administratoren Nachrichten mithilfe der Administratorübermittlung selektiv und manuell an Microsoft [melden.](admin-submission.md) Diese Einstellungen wurden früher als Benutzerübermittlungsrichtlinie bezeichnet.
 
   > [!NOTE]
-  > Wenn die Berichterstellung [in Outlook im Web deaktiviert](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)wurde, setzt das Aktivieren von Benutzerübermittlungen hier diese Einstellung außer Kraft und ermöglicht Es Benutzern, Nachrichten in Outlook im Web erneut zu melden.
+  > Wenn die Berichterstellung [in Outlook im Web deaktiviert](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)wurde, überschreibt das Aktivieren von von Benutzern gemeldeten Nachrichten diese Einstellung und ermöglicht Es Benutzern, Nachrichten in Outlook im Web erneut zu melden.
 
 ## <a name="custom-mailbox-prerequisites"></a>Voraussetzungen für benutzerdefinierte Postfächer
 
@@ -82,19 +82,19 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Verwenden des Microsoft 365 Defender-Portals zum Konfigurieren des Postfachs für Benutzerübermittlungen
 
-1. Wechseln Sie im portal Microsoft 365 Defender zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Andere** Abschnitt \> **Benutzer gemeldete Nachrichteneinstellungen** \> **Benutzerübermittlungen**.
+1. Wechseln Sie im Microsoft 365 Defender Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Andere** Abschnitt Benutzer gemeldet \> **Nachrichteneinstellungen** \> **Benutzerübermittlungen**.
 
-2. Auf der Seite **"Benutzerübermittlungen"** wird die Anzeige davon bestimmt, ob die **Schaltfläche "Nachricht melden"** von Microsoft Outlook **deaktiviert** oder **aktiviert** ist:
+2. Auf der Seite **"Benutzerübermittlungen"** wird die Anzeige davon bestimmt, ob die **Schaltfläche "Nachricht melden"** von Microsoft Outlook deaktiviert **oder** **eingeschaltet** ist:
 
-   - Schaltfläche "Nachricht **melden" in Microsoft Outlook** \> **Einschalten** ![ Umschaltfläche: ](../../media/scc-toggle-on.png) Wählen Sie diese Option aus, wenn Sie das Add-In "Nachricht melden", das Add-In "Phishing melden" oder die integrierte Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+   - **Schaltfläche "Nachricht** \> melden" in Microsoft Outlook **Einschalten** ![ Umschaltfläche: ](../../media/scc-toggle-on.png) Wählen Sie diese Option aus, wenn Sie das Add-In "Nachricht melden", das Add-In "Phishing melden" oder die integrierte Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
      - **Senden Sie die gemeldeten Nachrichten an:** Wählen Sie eine der folgenden Optionen aus:
        - **Microsoft:** Das Postfach für Benutzerübermittlungen wird nicht verwendet (alle gemeldeten Nachrichten gehen an Microsoft).
-       - **Microsoft und das Postfach meiner Organisation:** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfach ein. Verteilergruppen sind nicht zulässig. Benutzerübermittlungen werden sowohl an Microsoft zur Analyse als auch an das benutzerdefinierte Postfach gesendet, das Ihr Administrator- oder Sicherheitsteam analysieren kann.
+       - **Microsoft und das Postfach meiner Organisation:** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Benutzerübermittlungen werden sowohl an Microsoft zur Analyse als auch an das benutzerdefinierte Postfach gesendet, das Ihr Administrator- oder Sicherheitsteam analysieren kann.
        - **Postfach meiner Organisation:** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Verwenden Sie diese Option, wenn die Nachricht nur zur Analyse an einen Administrator oder das Sicherheitsteam gesendet werden soll. Nachrichten werden nicht an Microsoft weitergeleitet, es sei denn, der Administrator leitet sie selbst weiter.
 
           > [!IMPORTANT]
           >
-          > U.S. Government-Organisationen (GCC, GCC High und DoD) können nur **das Postfach meiner Organisation** konfigurieren. Die beiden anderen Optionen sind deaktiviert.
+          > U.S. Government-Organisationen (GCC, GCC High und DoD) können nur das **Postfach meiner Organisation** konfigurieren. Die beiden anderen Optionen sind deaktiviert.
           >
           > Wenn Organisationen so konfiguriert sind, dass sie nur an ein benutzerdefiniertes Postfach senden, werden gemeldete Nachrichten nicht zur erneuten Überprüfung gesendet, und die Ergebnisse im Portal für vom Benutzer gemeldete Nachrichten sind immer leer.
 
@@ -117,7 +117,7 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
           > Ihre E-Mail wird zur Analyse wie besehen an Microsoft übermittelt. Einige E-Mails können persönliche oder vertrauliche Informationen enthalten.
 
-   - Schaltfläche "Nachricht **melden" in Microsoft Outlook** \> **Aus** ![ Umschalten: ](../../media/scc-toggle-off.png) Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Berichtsnachrichten-Add-Ins, des Berichtsphishing-Add-Ins oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+   - **Schaltfläche "Nachricht** \> melden" in Microsoft Outlook **Aus** ![ Umschalten: ](../../media/scc-toggle-off.png) Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Add-Ins "Nachricht melden", des Add-Ins "Phishing melden" oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
      - Wählen Sie **dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein, das E-Mails empfangen kann.
 
    Wenn Sie fertig sind, klicken Sie auf **Bestätigen.** Klicken Sie zum Löschen dieser Werte auf **"Wiederherstellen".**

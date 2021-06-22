@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 499ac9a6ee81bacb79cd83993d510f87e11c62c6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceccd9e3c8a8137f672e7be519675034a84c7881
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844718"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055112"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender für Endpunkt unter Android
 
@@ -34,7 +34,7 @@ ms.locfileid: "52844718"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 In diesem Thema wird beschrieben, wie Sie Defender für Endpunkt unter Android installieren, konfigurieren, aktualisieren und verwenden.
 
@@ -52,7 +52,7 @@ In diesem Thema wird beschrieben, wie Sie Defender für Endpunkt unter Android i
 
     -   Intune-Unternehmensportal App kann von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) heruntergeladen werden und ist auf dem Android-Gerät verfügbar.
 
-        -   Darüber hinaus können Geräte über die Intune-Unternehmensportal-App [registriert](/mem/intune/user-help/enroll-device-android-company-portal) werden, um Intune-Gerätecompliancerichtlinien zu erzwingen. Dies erfordert, dass dem Endbenutzer eine Microsoft Intune Lizenz zugewiesen wird.
+        -   Darüber hinaus können Geräte über die Intune-Unternehmensportal-App [registriert](/mem/intune/user-help/enroll-device-android-company-portal) werden, um Intune-Gerätekompatibilitätsrichtlinien zu erzwingen. Dies erfordert, dass dem Endbenutzer eine Microsoft Intune Lizenz zugewiesen wird.
 
     -   Weitere Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
         
@@ -72,13 +72,14 @@ In diesem Thema wird beschrieben, wie Sie Defender für Endpunkt unter Android i
 
 ### <a name="system-requirements"></a>Systemanforderungen
 
--   Android-Geräte mit Android 6.0 und höher.
+-   Mobiltelefone mit Android 6.0 und höher. **Tablets und andere mobile Geräte unter Android werden derzeit nicht unterstützt.** 
+
 -   Intune-Unternehmensportal App wird von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) heruntergeladen und installiert. Die Geräteregistrierung ist erforderlich, damit Intune-Gerätekompatibilitätsrichtlinien erzwungen werden.
 
 ### <a name="installation-instructions"></a>Installationsanweisungen
 
 Microsoft Defender für Endpunkt unter Android unterstützt die Installation auf beiden Modi registrierter Geräte – dem Legacy-Geräteadministrator und android-Enterprise Modi.
-**Derzeit werden persönliche Geräte mit Arbeitsprofil und vollständig verwalteten Benutzergeräteregistrierungen im Besitz des Unternehmens in Android Enterprise unterstützt. Unterstützung für andere Android-Enterprise modi wird angekündigt, wenn sie bereit sind.**
+**Derzeit werden persönliche Geräte mit Arbeitsprofil und vollständig verwalteten Benutzergeräteregistrierungen im Besitz des Unternehmens in Android Enterprise unterstützt. Unterstützung für andere Android Enterprise Modi wird angekündigt, wenn sie bereit sind.**
 
 Die Bereitstellung von Microsoft Defender für Endpunkt unter Android erfolgt über Microsoft Intune (MDM).
 Weitere Informationen finden Sie unter [Bereitstellen von Microsoft Defender für Endpunkt unter Android mit Microsoft Intune.](android-intune.md)
@@ -93,7 +94,7 @@ Anleitungen zum Konfigurieren von Microsoft Defender für Endpunkt unter Android
 
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Ähnliche Themen
 - [Bereitstellen von Microsoft Defender für Endpunkt unter Android mit Microsoft Intune](android-intune.md)
 - [Konfigurieren von Funktionen von Microsoft Defender für Endpunkt unter Android](android-configure.md)
 

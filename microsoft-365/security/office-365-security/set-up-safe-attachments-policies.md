@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
+title: Einrichten Tresor Anlagenrichtlinien in Microsoft Defender für Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie Richtlinien für sichere Anlagen definieren, um Ihre Organisation vor schädlichen Dateien in E-Mails zu schützen.
+description: Erfahren Sie, wie Sie Tresor Anlagenrichtlinien definieren, um Ihre Organisation vor schädlichen Dateien in E-Mails zu schützen.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e96babff19ea981b953d35929813b1e08c000e32
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206504"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054334"
 ---
-# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
+# <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten Tresor Anlagenrichtlinien in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,221 +34,217 @@ ms.locfileid: "51206504"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](whats-new-in-defender-for-office-365.md) verfügen. Wenn Sie ein Heimbenutzer sind, der Informationen zum Anlagenscannen in Outlook, finden Sie weitere Informationen unter [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](whats-new-in-defender-for-office-365.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zum Scannen von Anlagen in Outlook sucht, finden Sie weitere Informationen unter [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sichere Anlagen ist ein Feature in [Microsoft Defender für Office 365,](whats-new-in-defender-for-office-365.md) das eine virtuelle Umgebung verwendet, um Anlagen in eingehenden [E-Mail-Nachrichten](anti-malware-protection.md)zu überprüfen, nachdem sie vom Schutz vor Schadsoftware in Exchange Online Protection (EOP) überprüft wurden, jedoch vor der Zustellung an Empfänger. Weitere Informationen finden Sie unter [Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md).
+Tresor Anlagen ist ein Feature in [Microsoft Defender für Office 365,](whats-new-in-defender-for-office-365.md) das eine virtuelle Umgebung verwendet, um Anlagen in eingehenden E-Mail-Nachrichten zu überprüfen, nachdem sie vom [Antischadsoftwareschutz in Exchange Online Protection (EOP)](anti-malware-protection.md)gescannt wurden, jedoch vor der Übermittlung an Empfänger. Weitere Informationen finden Sie unter [Tresor Anlagen in Microsoft Defender für Office 365](safe-attachments.md).
 
-Es gibt keine integrierte oder standardmäßige Richtlinie für sichere Anlagen. Um die Überprüfung sicherer Anlagen von E-Mail-Nachrichtenanlagen zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Anlagen erstellen, wie in diesem Artikel beschrieben.
+Es gibt keine integrierte oder standardmäßige richtlinie für Tresor Anlagen. Um Tresor Attachments-Überprüfung von E-Mail-Nachrichtenanlagen zu erhalten, müssen Sie eine oder mehrere Tresor Anlagenrichtlinien erstellen, wie in diesem Artikel beschrieben.
 
-Sie können Richtlinien für sichere Anlagen im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer, aber mit Defender für Office 365-Add-On-Abonnements).
+Sie können Tresor Anlagenrichtlinien im Microsoft 365 Defender Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige eOP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Defender für Office 365-Add-On-Abonnements).
 
-Die grundlegenden Elemente einer Richtlinie für sichere Anlagen sind:
+Die grundlegenden Elemente einer Tresor Attachments-Richtlinie sind:
 
-- **Die Richtlinie** für sichere Anlagen: Gibt die Aktionen für unbekannte Schadsoftwareerkennungen an, ob Nachrichten mit Schadsoftwareanlagen an eine angegebene E-Mail-Adresse gesendet werden sollen und ob Nachrichten zu senden sind, wenn die Überprüfung sicherer Anlagen nicht abgeschlossen werden kann.
-- **Die Regel für sichere Anlagen:** Gibt die Prioritäts- und Empfängerfilter an (auf wen die Richtlinie angewendet wird).
+- Die Richtlinie für **sichere Anlagen:** Gibt die Aktionen für unbekannte Schadsoftwareerkennungen an, gibt an, ob Nachrichten mit Schadsoftwareanlagen an eine angegebene E-Mail-Adresse gesendet werden sollen und ob Nachrichten übermittelt werden sollen, wenn Tresor Attachments-Überprüfung nicht abgeschlossen werden kann.
+- **Die Regel für sichere Anlagen:** Gibt die Prioritäts- und Empfängerfilter an (für wen die Richtlinie gilt).
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Richtlinien für sichere Anlagen im Security & Compliance Center verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Tresor Anlagenrichtlinien im Microsoft 365 Defender-Portal verwalten:
 
-- Wenn Sie eine Richtlinie für sichere Anlagen erstellen, erstellen Sie tatsächlich eine sichere Anlagenregel und die zugeordnete richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide.
-- Wenn Sie eine Richtlinie für sichere Anlagen ändern, ändern Einstellungen im Zusammenhang mit dem Namen, der Priorität, aktiviert oder deaktiviert sowie Empfängerfilter die Regel für sichere Anlagen. Alle anderen Einstellungen ändern die zugeordnete Richtlinie für sichere Anlagen.
-- Wenn Sie eine Richtlinie für sichere Anlagen entfernen, werden die Regel für sichere Anlagen und die zugehörige Richtlinie für sichere Anlagen entfernt.
+- Wenn Sie eine Tresor Anlagenrichtlinie erstellen, erstellen Sie tatsächlich eine Regel für sichere Anlagen und die zugeordnete Richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide.
+- Wenn Sie eine Tresor Anlagenrichtlinie ändern, ändern Einstellungen im Zusammenhang mit dem Namen, der Priorität, aktiviert oder deaktiviert und Empfängerfiltern die Regel für sichere Anlagen. Alle anderen Einstellungen ändern die zugeordnete Richtlinie für sichere Anlagen.
+- Wenn Sie eine Tresor Attachments-Richtlinie entfernen, werden die Regel für sichere Anlagen und die zugehörige Richtlinie für sichere Anlagen entfernt.
 
-In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt Use [Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) weiter unten in diesem Artikel.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt ["Use Exchange Online PowerShell or standalone EOP PowerShell to configure Tresor Attachments policies"](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) weiter unten in diesem Artikel.
 
 > [!NOTE]
-> Im Bereich "Globale Einstellungen" der Einstellungen für sichere Anlagen konfigurieren Sie Features, die nicht von Richtlinien für sichere Anlagen abhängig sind. Anweisungen finden Sie unter Aktivieren sicherer Anlagen für [SharePoint, OneDrive](turn-on-mdo-for-spo-odb-and-teams.md) und Microsoft Teams und sichere [Dokumente in Microsoft 365 E5](safe-docs.md).
+> Im globalen Einstellungsbereich von Tresor Anlageneinstellungen konfigurieren Sie Features, die nicht von Tresor Anlagenrichtlinien abhängig sind. Anweisungen finden Sie unter [Aktivieren Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) und [Tresor Dokumente in Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite Sichere **Anlagen zu** wechseln, verwenden Sie <https://protection.office.com/safeattachmentv2> .
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com>. To go directly to the **Tresor Attachments** page, use <https://security.microsoft.com/safeattachmentv2> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden:
-  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Anlagen müssen  Sie Mitglied der Rollengruppen Organisationsverwaltung oder Sicherheitsadministrator  im Security & Compliance **Center** und Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online.
-  - Für den schreibgeschützten Zugriff auf Richtlinien für sichere Anlagen müssen  Sie Mitglied der Rollengruppen **"Globaler** Leser" oder "Sicherheitsleser" im Security & Compliance Center sein.
+- Sie benötigen Berechtigungen, bevor Sie die Verfahren in diesem Artikel ausführen können:
+  - Um Tresor Anlagenrichtlinien zu erstellen, zu ändern und zu löschen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** im Microsoft 365 Defender-Portal **und** Mitglied der Rollengruppe **"Organisationsverwaltung"** in Exchange Online sein.
+  - Für den schreibgeschützten Zugriff auf Tresor Anlagenrichtlinien müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** im Microsoft 365 Defender Portal sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und Berechtigungen in [Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md) und [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Hinweise**:
 
-  - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  - Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-- Unsere empfohlenen Einstellungen für Richtlinien für sichere Anlagen finden Sie unter [Einstellungen für sichere Anlagen](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+- Unsere empfohlenen Einstellungen für Tresor Anlagenrichtlinien finden Sie unter [Tresor Anlageneinstellungen.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
-- Es ist bis zu 30 Minuten zulässig, bis eine neue oder aktualisierte Richtlinie angewendet wird.
+- Es kann bis zu 30 Minuten dauern, bis eine neue oder aktualisierte Richtlinie angewendet wird.
 
-## <a name="use-the-security--compliance-center-to-create-safe-attachments-policies"></a>Erstellen von Richtlinien für & Anlagen mithilfe des Security & Compliance Centers
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Erstellen Tresor Anlagenrichtlinien
 
-Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im Security & Compliance Center werden die Regel für sichere Anlagen und die zugeordnete richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide erstellt.
+Beim Erstellen einer benutzerdefinierten Tresor Anlagenrichtlinie im Microsoft 365 Defender Portal werden die Regel für sichere Anlagen und die zugeordnete Richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
 
-2. Klicken Sie **auf der** Seite Sichere Anlagen auf **Erstellen**.
+2. Klicken Sie auf der Seite **Tresor Anlagen** auf das ![ Symbol ](../../media/m365-cc-sc-create-icon.png) **"Erstellen".**
 
-3. Der **Richtlinien-Assistent für neue sichere** Anlagen wird geöffnet. Konfigurieren Sie **auf der Seite** Ihre Richtlinie benennen die folgenden Einstellungen:
-
+3. Der Richtlinienassistent wird geöffnet. Konfigurieren Sie auf der Seite **"Richtlinie benennen"** die folgenden Einstellungen:
    - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
-
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-4. Konfigurieren Sie **auf Einstellungen** angezeigten Seite die folgenden Einstellungen:
+4. Identifizieren Sie auf der angezeigten Seite **"Benutzer und Domänen"** die internen Empfänger, für die die Richtlinie gilt (Empfängerbedingungen):
+   - **Benutzer**: Die angegebenen Postfächer, E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation.
+   - **Gruppen**: Die angegebenen Verteilergruppen, E-Mail-aktivierten Sicherheitsgruppen oder Microsoft 365-Gruppen in Ihrer Organisation.
+   - **Domänen**: Alle Empfänger in der angegebenen [akzeptierten Domäne](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Ihrer Organisation.
 
-   - **Sichere Anlagen unbekannte Schadsoftwareantwort:** Wählen Sie einen der folgenden Werte aus:
+   Klicken Sie auf das entsprechende Feld, beginnen Sie mit der Eingabe eines Wertes, und wählen Sie den gewünschten Wert aus den Ergebnissen aus. Wiederholen Sie diesen Vorgang so oft wie nötig. Um einen vorhandenen Wert zu entfernen, klicken Sie auf das ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Wert.
 
-     - **Off**: In der Regel wird dieser Wert nicht empfohlen.
+   Für Benutzer oder Gruppen können Sie die meisten Bezeichner verwenden (Name, Anzeigename, Alias, E-Mail-Adresse, Kontoname usw.), aber in den Ergebnissen wird der entsprechende Anzeigename angezeigt. Geben Sie für Benutzer einen einzelnen Stern (\*) ein, um alle verfügbaren Werte anzuzeigen.
+
+   Mehreren Werten in der gleichen Bedingung verwenden die „ODER“-Logik (z. B. _\<recipient1\>_ ODER _\<recipient2\>_). Unterschiedlichen Bedingungen verwenden die „UND“-Logik (z. B. _\<recipient1\>_ UND _\<member of group 1\>_).
+
+   - **Ausschließen dieser Benutzer, Gruppen und Domänen**: Um Ausnahmen für die internen Empfänger hinzuzufügen, für welche die Richtlinie gilt (Empfängerausnahmen), wählen Sie diese Option und konfigurieren Sie die Ausnahmen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
+
+5. Konfigurieren Sie auf der **Einstellungen** Seite die folgenden Einstellungen:
+
+   - **Tresor Attachments unknown malware response:** Select one of the following values:
+     - **Aus:** In der Regel wird dieser Wert nicht empfohlen.
      - **Überwachen**
-     - **Block**: Dies ist der Standardwert und der empfohlene Wert in standard und Strict [voreingestellte Sicherheitsrichtlinien](preset-security-policies.md).
+     - **Block**: Dies ist der Standardwert und der empfohlene Wert in den [voreingestellten Standard- und Strict-Sicherheitsrichtlinien.](preset-security-policies.md)
      - **Replace**
-     - **Dynamische Übermittlung (Vorschaufeature)**
+     - **Dynamische Zustellung (Vorschaufeature)**
 
-     Diese Werte werden unter Richtlinieneinstellungen für sichere [Anlagen erläutert.](safe-attachments.md#safe-attachments-policy-settings)
+     Diese Werte werden in [den Richtlinieneinstellungen für Tresor Anlagen](safe-attachments.md#safe-attachments-policy-settings)erläutert.
 
-   - Senden Sie die Anlage an die folgende E-Mail-Adresse: Für  die Aktionswerte **Block,** **Monitor** oder **Replace** können Sie Umleitung aktivieren auswählen, um Nachrichten mit Schadsoftwareanlagen zur Analyse und Untersuchung an die angegebene interne oder externe E-Mail-Adresse zu senden. 
+   - **Umleiten von Nachrichten mit erkannten Anlagen:** Wenn Sie **"Umleitung aktivieren"** auswählen, können Sie eine E-Mail-Adresse in den **Nachrichten senden angeben, die blockierte, überwachte oder ersetzte Anlagen an das angegebene E-Mail-Adressfeld enthalten,** um Nachrichten zu senden, die Schadsoftwareanlagen zur Analyse und Untersuchung enthalten.
 
-     Die Empfehlung für Standard- und Strict-Richtlinieneinstellungen besteht in der Aktivierung der Umleitung. Weitere Informationen finden Sie unter [Einstellungen für sichere Anlagen](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
+     Die Empfehlung für Standard- und Strict-Richtlinieneinstellungen besteht darin, die Umleitung zu aktivieren. Weitere Informationen finden Sie unter [Tresor Anlageneinstellungen.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
-   - **Wenden Sie die oben** aufgeführte Auswahl an, wenn die  Schadsoftwareprüfung auf Anlagen ein Zeit- oder Fehlerfehler auftritt: Die durch die unbekannte Schadsoftwareantwort für sichere Anlagen angegebene Aktion wird für Nachrichten ausgeführt, auch wenn die Überprüfung sicherer Anlagen nicht abgeschlossen werden kann. Wenn Sie diese Option ausgewählt haben, wählen Sie immer **Umleitung aktiviert aus.** Andernfalls gehen Nachrichten möglicherweise verloren.
+   - **Wenden Sie die erkennungsantwort Tresor Anlagen an, wenn die Überprüfung nicht abgeschlossen werden kann (Timeout oder Fehler):** Die durch Tresor Anlagen angegebene **Antwort auf unbekannte Schadsoftware** wird auf Nachrichten ausgeführt, auch wenn Tresor Attachments-Überprüfung nicht abgeschlossen werden kann. Wenn Sie diese Option ausgewählt haben, wählen Sie immer **Umleitung aktivieren** aus, und geben Sie eine E-Mail-Adresse an, um Nachrichten zu senden, die Schadsoftwareanlagen enthalten. Andernfalls können Nachrichten verloren gegangen sein.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-5. Identifizieren Sie **auf der angezeigten** Seite Angewendet auf die internen Empfänger, auf die die Richtlinie angewendet wird.
+6. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
-   Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
+   Wenn Sie fertig sind, klicken Sie auf **"Absenden".**
 
-   Klicken **Sie auf Bedingung hinzufügen**. Wählen Sie in der angezeigten Dropdownliste unter Angewendet eine **Bedingung aus, wenn**:
+7. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
-   - **Der Empfänger ist**: Gibt ein oder mehrere Postfächer, E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation an.
-   - **Der Empfänger ist Mitglied von**: Gibt eine oder mehrere Gruppen in Ihrer Organisation an.
-   - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Ihrer Organisation an.
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Anzeigen Tresor Anlagenrichtlinien
 
-   Nachdem Sie die Bedingung ausgewählt haben, wird ein entsprechendes Dropdownfeld mit einem **Beliebigen dieser Kontrollkästchen** angezeigt.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
 
-   - Klicken Sie in das Feld, und scrollen Sie durch die Liste der auszuwählende Werte.
-   - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Wert auszuwählen.
-   - Klicken Sie auf einen leeren Bereich im Feld, um weitere Werte hinzuzufügen.
-   - Klicken Sie zum Entfernen einzelner Einträge **auf Entfernen** ![ ](../../media/scc-remove-icon.png) (Symbol) für den Wert.
-   - Klicken Sie zum Entfernen der gesamten Bedingung auf **Entfernen** ![ ](../../media/scc-remove-icon.png) (Symbol) für die Bedingung.
+2. Auf der Seite **Tresor Anlagen** werden die folgenden Eigenschaften in der Liste der Richtlinien angezeigt:
+   - **Name**
+   - **Status**
+   - **Priorität**
 
-   Klicken Sie zum Hinzufügen einer zusätzlichen Bedingung auf **Bedingung hinzufügen,** und wählen Sie einen verbleibenden Wert unter **Angewendet wenn aus.**
+3. Wenn Sie eine Richtlinie auswählen, indem Sie auf den Namen klicken, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-   Klicken Sie zum Hinzufügen von Ausnahmen auf **Bedingung hinzufügen,** und wählen Sie unter **Except if eine Ausnahme aus.** Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern Tresor Anlagenrichtlinien
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
 
-6. Überprüfen Sie **auf der angezeigten** Seite Einstellungen überprüfen Ihre Einstellungen. Sie können **für** jede Einstellung auf Bearbeiten klicken, um sie zu ändern.
+2. Wählen Sie auf der Seite **Tresor Anlagen** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Fertig stellen**.
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im Abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen Tresor Anlagenrichtlinien"](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) weiter oben in diesem Artikel.  
 
-## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>Verwenden des Security & Compliance Center zum Anzeigen von Richtlinien für sichere Anlagen
+Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festlegen der Reihenfolge der Richtlinienpriorität finden Sie in den folgenden Abschnitten.
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**.
+### <a name="enable-or-disable-safe-attachments-policies"></a>Aktivieren oder Deaktivieren Tresor Anlagenrichtlinien
 
-2. Wählen Sie **auf** der Seite Sichere Anlagen eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
 
-   Die Richtliniendetails werden in einem Fly-Out angezeigt.
+2. Wählen Sie auf der Seite **Tresor Anlagen** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>Verwenden des Security & Compliance Center zum Ändern von Richtlinien für sichere Anlagen
+3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie einen der folgenden Werte sehen:
+   - **Richtlinie deaktiviert**: Um die Richtlinie zu aktivieren, klicken Sie auf ![Symbol „Aktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Aktivieren**.
+   - **Richtlinie aktiviert**: Um die Richtlinie zu deaktivieren, klicken Sie auf ![Symbol „Deaktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Deaktivieren**.
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**.
+4. Klicken Sie im angezeigten Bestätigungsdialog auf **Aktivieren** oder **Deaktivieren**.
 
-2. Wählen Sie **auf** der Seite Sichere Anlagen eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+5. Klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
 
-3. Klicken Sie in den angezeigten Richtliniendetails auf **Richtlinie bearbeiten.**
+Zurück auf der Richtlinien-Hauptseite wird der Wert **Status** der Richtlinie **Aktiviert** oder **Deaktiviert** sein.
 
-Die verfügbaren Einstellungen im fly-out, die angezeigt werden, sind mit denen identisch, die im Abschnitt Verwenden des Security [& Compliance Center](#use-the-security--compliance-center-to-create-safe-attachments-policies) zum Erstellen von Richtlinien für sichere Anlagen beschrieben werden.
+### <a name="set-the-priority-of-safe-attachments-policies"></a>Festlegen der Priorität von Tresor Anlagenrichtlinien
 
-Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festlegen der Richtlinienprioritätsreihenfolge finden Sie in den folgenden Abschnitten.
-
-### <a name="enable-or-disable-safe-attachments-policies"></a>Aktivieren oder Deaktivieren von Richtlinien für sichere Anlagen
-
-1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**.
-
-2. Beachten Sie den Wert in der **Spalte Status:**
-
-   - Verschieben des Umschalters nach links ![Deaktivieren der Richtlinie](../../media/scc-toggle-off.png) , um die Richtlinie zu deaktivieren.
-
-   - Verschieben des Umschalters nach rechts ![Aktivieren der Richtlinie](../../media/scc-toggle-on.png) , um die Richtlinie zu aktivieren.
-
-### <a name="set-the-priority-of-safe-attachments-policies"></a>Festlegen der Priorität von Richtlinien für sichere Anlagen
-
-Standardmäßig erhalten Richtlinien für sichere Anlagen eine Priorität, die auf der Reihenfolge basiert, in der sie erstellt wurden (neuere Richtlinien haben niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
+Standardmäßig erhalten Tresor Anlagenrichtlinien eine Priorität, die auf der Reihenfolge basiert, in der sie erstellt wurden (neuere Richtlinien haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
 Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
 
-Richtlinien für sichere Anlagen werden in der Reihenfolge angezeigt, in der sie verarbeitet werden (die erste Richtlinie hat den **Prioritätswert** 0).
+Tresor Anlagenrichtlinien werden in der Reihenfolge angezeigt, in der sie verarbeitet werden (die erste Richtlinie hat den **Prioritätswert** 0).
 
-**Hinweis:** Im Security & Compliance Center können Sie die Priorität der Richtlinie für sichere Anlagen nur ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Anlagen erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
+**Hinweis:** Im Microsoft 365 Defender Portal können Sie die Priorität der Richtlinie Tresor Anlagen erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Anlagen erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
 
-Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität**-Wert im Security & Compliance Center nicht direkt ändern).
+Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Microsoft 365 Defender-Portal nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
 
-2. Wählen Sie **auf** der Seite Sichere Anlagen eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie auf der Seite **Tresor Anlagen** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-3. Klicken Sie in den angezeigten Richtliniendetails auf die Schaltfläche verfügbare Priorität.
+3. Oben im angezeigten Flyout für Richtliniendetails wird  die **Priorität** erhöhen oder verringern angezeigt, basierend auf dem aktuellen Prioritätswert und der Anzahl der Richtlinien:
+   - Für die Richtlinie mit dem **Prioritätswert** **0** ist nur die Option **"Priorität verringern"** verfügbar.
+   - Für die Richtlinie mit dem niedrigsten **Prioritätswert** (z. B. **3)** ist nur die Option **"Priorität erhöhen"** verfügbar.
+   - Wenn Sie über drei oder mehr Richtlinien verfügen, stehen für die Richtlinien zwischen den Werten mit der höchsten und der niedrigsten Priorität die Optionen **"Priorität erhöhen"** und **"Verringern"** zur Verfügung.
 
-   - Die Richtlinie Für sichere Anlagen mit dem **Prioritätswert** **0** ist nur die Schaltfläche Priorität **verringern** verfügbar.
+   Klicken Sie auf ![Symbol „Priorität erhöhen“](../../media/m365-cc-sc-increase-icon.png) **Priorität erhöhen** oder ![Symbol „Priorität verringern“](../../media/m365-cc-sc-decrease-icon.png) **Priorität verringern**, um den **Prioritätswert** zu ändern.
 
-   - Die Richtlinie für sichere Anlagen mit dem niedrigsten **Prioritätswert** (z. B. **3**) verfügt nur über die **Schaltfläche Priorität erhöhen.**
+4. Wenn Sie den Vorgang abgeschlossen haben, klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
 
-   - Wenn Sie über drei oder mehr Richtlinien für sichere Anlagen verfügen, stehen Richtlinien zwischen den höchsten und niedrigsten Prioritätswerten sowohl die Schaltflächen **Priorität** erhöhen als auch **Priorität verringern** zur Verfügung.
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Entfernen Tresor Anlagenrichtlinien
 
-4. Klicken **Sie auf Priorität erhöhen** oder Priorität **verringern,** um den **Prioritätswert zu** ändern.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
 
-5. Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
+2. Wählen Sie auf der Seite **Tresor Anlagen** eine benutzerdefinierte Richtlinie aus der Liste aus, indem Sie auf den Namen der Richtlinie klicken.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>Verwenden des Security & Compliance Center zum Entfernen von Richtlinien für sichere Anlagen
+3. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**.
+4. Klicken Sie im angezeigten Bestätigungsdialog auf **Ja**.
 
-2. Wählen Sie **auf** der Seite Sichere Anlagen eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies&quot;></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren Tresor Anlagenrichtlinien
 
-3. Klicken Sie in den angezeigten Richtliniendetails auf Richtlinie **löschen,** und klicken Sie **dann** im angezeigten Warndialogfeld auf Ja.
+Wie zuvor beschrieben besteht eine Tresor Attachments-Richtlinie aus einer Richtlinie für sichere Anlagen und einer Regel für sichere Anlagen.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren von Richtlinien für sichere Anlagen
+In PowerShell ist der Unterschied zwischen Richtlinien für sichere Anlagen und Regeln für sichere Anlagen offensichtlich. Sie verwalten Richtlinien für sichere Anlagen mithilfe der Cmdlets **\* &quot;-SafeAttachmentPolicy&quot;,** und Sie verwalten Regeln für sichere Anlagen mithilfe der Cmdlets **\* &quot;-SafeAttachmentRule&quot;.**
 
-Wie bereits beschrieben, besteht eine Richtlinie für sichere Anlagen aus einer sicheren Anlagenrichtlinie und einer sicheren Anlagenregel.
-
-In PowerShell ist der Unterschied zwischen sicheren Anlagenrichtlinien und regeln für sichere Anlagen offensichtlich. Sie verwalten sichere Anlagenrichtlinien mithilfe der **\* -SafeAttachmentPolicy-Cmdlets,** und Sie verwalten sichere Anlagenregeln mithilfe der **\* -SafeAttachmentRule-Cmdlets.**
-
-- In PowerShell erstellen Sie zuerst die Richtlinie für sichere Anlagen und dann die Regel für sichere Anlagen, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
+- In PowerShell erstellen Sie zuerst die Richtlinie für sichere Anlagen und dann die Regel für sichere Anlagen, die die Richtlinie identifiziert, für die die Regel gilt.
 - In PowerShell ändern Sie die Einstellungen in der Richtlinie für sichere Anlagen und die Regel für sichere Anlagen separat.
-- Wenn Sie eine richtlinie für sichere Anlagen aus PowerShell entfernen, wird die entsprechende Regel für sichere Anlagen nicht automatisch entfernt und umgekehrt.
+- Wenn Sie eine Richtlinie für sichere Anlagen aus PowerShell entfernen, wird die entsprechende Regel für sichere Anlagen nicht automatisch entfernt und umgekehrt.
 
-### <a name="use-powershell-to-create-safe-attachments-policies"></a>Erstellen von Richtlinien für sichere Anlagen mithilfe von PowerShell
+### <a name=&quot;use-powershell-to-create-safe-attachments-policies&quot;></a>Verwenden von PowerShell zum Erstellen Tresor Anlagenrichtlinien
 
-Das Erstellen einer Richtlinie für sichere Anlagen in PowerShell besteht aus zwei Stufen:
+Das Erstellen einer Tresor Anlagenrichtlinie in PowerShell besteht aus zwei Schritten:
 
 1. Erstellen Sie die Richtlinie für sichere Anlagen.
-2. Erstellen Sie die Regel für sichere Anlagen, die die richtlinie für sichere Anlagen angibt, auf die die Regel angewendet wird.
+2. Erstellen Sie die Regel für sichere Anlagen, die die Richtlinie für sichere Anlagen angibt, auf die die Regel angewendet wird.
 
  **Hinweise**:
 
-- Sie können eine neue Regel für sichere Anlagen erstellen und ihr eine vorhandene, nicht zugeordnete richtlinie für sichere Anlagen zuweisen. Eine sichere Anlagenregel kann nicht mehr als einer sicheren Anlagenrichtlinie zugeordnet werden.
+- Sie können eine neue Regel für sichere Anlagen erstellen und ihr eine vorhandene, nicht zugeordnete Richtlinie für sichere Anlagen zuweisen. Eine Regel für sichere Anlagen kann nicht mehr als einer Richtlinie für sichere Anlagen zugeordnet werden.
 
-- Sie können die folgenden Einstellungen für neue Richtlinien für sichere Anlagen in PowerShell konfigurieren, die im Security & Compliance Center erst nach dem Erstellen der Richtlinie verfügbar sind:
-  - Erstellen Sie die neue Richtlinie als deaktiviert (_Aktiviert_ `$false` im Cmdlet **New-SafeAttachmentRule).**
-  - Legen Sie die Priorität der Richtlinie während der Erstellung (_Priorität_ _\<Number\>_ ) im Cmdlet **New-SafeAttachmentRule.**
+- Sie können die folgenden Einstellungen für neue Richtlinien für sichere Anlagen in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Microsoft 365 Defender Portal verfügbar sind:
+  - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` im Cmdlet **&quot;New-SafeAttachmentRule").**
+  - Legen Sie die Priorität der Richtlinie während der Erstellung _(Priorität)_ _\<Number\>_ im Cmdlet **"New-SafeAttachmentRule"** fest.
 
-- Eine neue richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, wenn Sie die Richtlinie einer Regel für sichere Anlagen zuweisen.
+- Eine neue Richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, ist erst im Microsoft 365 Defender Portal sichtbar, wenn Sie die Richtlinie einer Regel für sichere Anlagen zuweisen.
 
-#### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Schritt 1: Erstellen einer sicheren Anlagenrichtlinie mithilfe von PowerShell
+#### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für sichere Anlagen
 
-Verwenden Sie die folgende Syntax, um eine sichere Anlagenrichtlinie zu erstellen:
+Verwenden Sie die folgende Syntax, um eine Richtlinie für sichere Anlagen zu erstellen:
 
 ```PowerShell
 New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
-In diesem Beispiel wird eine sichere Anlagenrichtlinie namens Contoso All mit den folgenden Werten erstellt:
+In diesem Beispiel wird eine Richtlinie für sichere Anlagen mit dem Namen "Contoso All" mit den folgenden Werten erstellt:
 
-- Blockieren von Nachrichten, die bei der Überprüfung sicherer Dokumente Schadsoftware enthalten (wir verwenden den _Action-Parameter_ nicht, und der Standardwert ist `Block` ).
-- Die Umleitung ist aktiviert, und Nachrichten, die Schadsoftware enthalten, werden an sec-ops@contoso.com Analyse und Untersuchung gesendet.
-- Wenn die Überprüfung sicherer Anlagen nicht verfügbar ist oder Fehler auftreten, senden Sie die Nachricht nicht (wir verwenden den _ActionOnError-Parameter_ nicht, und der Standardwert ist `$true` ).
+- Blockieren Sie Nachrichten, die gefunden werden, dass sie Schadsoftware enthalten, indem sie Tresor Dokumente scannen (wir verwenden nicht den _Parameter "Action",_ und der Standardwert lautet `Block` ).
+- Die Umleitung ist aktiviert, und Nachrichten, die Schadsoftware enthalten, werden zur Analyse und Untersuchung an sec-ops@contoso.com gesendet.
+- Wenn Tresor Attachments-Überprüfung nicht verfügbar ist oder Fehler auftreten, übermitteln Sie die Nachricht nicht (wir verwenden den _Parameter ActionOnError_ nicht und der Standardwert lautet `$true` ).
 
 ```PowerShell
 New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
@@ -256,20 +252,20 @@ New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress se
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
 
-#### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>Schritt 2: Erstellen einer sicheren Anlagenregel mithilfe von PowerShell
+#### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>Schritt 2: Verwenden von PowerShell zum Erstellen einer Regel für sichere Anlagen
 
-Verwenden Sie die folgende Syntax, um eine sichere Anlagenregel zu erstellen:
+Verwenden Sie die folgende Syntax, um eine Regel für sichere Anlagen zu erstellen:
 
 ```PowerShell
 New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
 ```
 
-In diesem Beispiel wird eine sichere Anlagenregel namens Contoso All mit den folgenden Bedingungen erstellt:
+In diesem Beispiel wird eine Regel für sichere Anlagen mit dem Namen "Contoso All" mit den folgenden Bedingungen erstellt:
 
-- Die Regel ist der Richtlinie für sichere Anlagen namens Contoso All zugeordnet.
+- Die Regel ist der Richtlinie für sichere Anlagen mit dem Namen "Contoso All" zugeordnet.
 - Die Regel gilt für alle Empfänger in der contoso.com Domäne.
-- Da wir den Parameter _Priority_ nicht verwenden, wird die Standardpriorität verwendet.
-- Die Regel ist aktiviert (der Parameter _Enabled_ wird nicht verwendet, und der Standardwert ist `$true` ).
+- Da der Parameter _"Priority"_ nicht verwendet wird, wird die Standardpriorität verwendet.
+- Die Regel ist aktiviert (wir verwenden nicht den Parameter _Enabled,_ und der Standardwert lautet `$true` ).
 
 ```powershell
 New-SafeAttachmentRule -Name "Contoso All" -SafeAttachmentPolicy "Contoso All" -RecipientDomainIs contoso.com
@@ -277,9 +273,9 @@ New-SafeAttachmentRule -Name "Contoso All" -SafeAttachmentPolicy "Contoso All" -
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-SafeAttachmentRule](/powershell/module/exchange/new-safeattachmentrule).
 
-### <a name="use-powershell-to-view-safe-attachment-policies"></a>Anzeigen sicherer Anlagenrichtlinien mithilfe von PowerShell
+### <a name="use-powershell-to-view-safe-attachment-policies"></a>Verwenden von PowerShell zum Anzeigen von Richtlinien für sichere Anlagen
 
-Verwenden Sie die folgende Syntax, um vorhandene Richtlinien für sichere Anlagen anzeigen zu können:
+Verwenden Sie die folgende Syntax, um vorhandene Richtlinien für sichere Anlagen anzuzeigen:
 
 ```PowerShell
 Get-SafeAttachmentPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
@@ -297,17 +293,17 @@ In diesem Beispiel werden detaillierte Informationen für die Richtlinie für si
 Get-SafeAttachmentPolicy -Identity "Contoso Executives" | Format-List
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-SafeAttachmentPolicy](/powershell/module/exchange/get-safeattachmentpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-SafeAttachmentPolicy".](/powershell/module/exchange/get-safeattachmentpolicy)
 
-### <a name="use-powershell-to-view-safe-attachment-rules"></a>Anzeigen sicherer Anlagenregeln mithilfe von PowerShell
+### <a name="use-powershell-to-view-safe-attachment-rules"></a>Verwenden von PowerShell zum Anzeigen von Regeln für sichere Anlagen
 
-Verwenden Sie die folgende Syntax, um vorhandene regeln für sichere Anlagen anzeigen zu können:
+Verwenden Sie die folgende Syntax, um vorhandene Regeln für sichere Anlagen anzuzeigen:
 
 ```PowerShell
 Get-SafeAttachmentRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-In diesem Beispiel wird eine Zusammenfassungsliste aller regeln für sichere Anlagen zurückgegeben.
+In diesem Beispiel wird eine Zusammenfassungsliste aller Regeln für sichere Anlagen zurückgegeben.
 
 ```PowerShell
 Get-SafeAttachmentRule
@@ -323,7 +319,7 @@ Get-SafeAttachmentRule -State Disabled
 Get-SafeAttachmentRule -State Enabled
 ```
 
-In diesem Beispiel werden detaillierte Informationen für die Regel für sichere Anlagen namens Contoso Executives zurückgegeben.
+In diesem Beispiel werden detaillierte Informationen für die Regel für sichere Anlagen mit dem Namen "Contoso Executives" zurückgegeben.
 
 ```PowerShell
 Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
@@ -331,45 +327,45 @@ Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-SafeAttachmentRule](/powershell/module/exchange/get-safeattachmentrule).
 
-### <a name="use-powershell-to-modify-safe-attachment-policies"></a>Verwenden von PowerShell zum Ändern sicherer Anlagenrichtlinien
+### <a name="use-powershell-to-modify-safe-attachment-policies"></a>Verwenden von PowerShell zum Ändern von Richtlinien für sichere Anlagen
 
-Sie können eine sichere Anlagenrichtlinie in PowerShell nicht umbenennen (das **Cmdlet Set-SafeAttachmentPolicy** hat keinen _Name-Parameter)._ Wenn Sie eine Richtlinie für sichere Anlagen im Security & Compliance Center umbenennen, benennen Sie nur die Regel für sichere Anlagen _um._
+Sie können eine Richtlinie für sichere Anlagen in PowerShell nicht umbenennen (das Cmdlet **"Set-SafeAttachmentPolicy"** hat keinen _Name-Parameter)._ Wenn Sie eine Tresor Anlagenrichtlinie im Microsoft 365 Defender-Portal umbenennen, werden Sie nur die _Regel für_ sichere Anlagen umbenennen.
 
-Andernfalls sind dieselben Einstellungen verfügbar, wenn Sie eine sichere Anlagenrichtlinie erstellen, wie im Abschnitt [Schritt 1:](#step-1-use-powershell-to-create-a-safe-attachment-policy) Verwenden von PowerShell beschrieben, um eine sichere Anlagenrichtlinie weiter oben in diesem Artikel zu erstellen.
+Andernfalls sind die gleichen Einstellungen verfügbar, wenn Sie eine Richtlinie für sichere Anlagen erstellen, wie im [Abschnitt "Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für sichere Anlagen"](#step-1-use-powershell-to-create-a-safe-attachment-policy) weiter oben in diesem Artikel beschrieben.
 
-Verwenden Sie die folgende Syntax, um eine richtlinie für sichere Anlagen zu ändern:
+Verwenden Sie die folgende Syntax, um eine Richtlinie für sichere Anlagen zu ändern:
 
 ```PowerShell
 Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safeattachmentpolicy).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-SafeAttachmentPolicy".](/powershell/module/exchange/set-safeattachmentpolicy)
 
-### <a name="use-powershell-to-modify-safe-attachment-rules"></a>Verwenden von PowerShell zum Ändern sicherer Anlagenregeln
+### <a name="use-powershell-to-modify-safe-attachment-rules"></a>Verwenden von PowerShell zum Ändern von Regeln für sichere Anlagen
 
-Die einzige Einstellung, die nicht verfügbar ist, wenn Sie eine sichere Anlagenregel in PowerShell ändern, ist der _Parameter Enabled,_ mit dem Sie eine deaktivierte Regel erstellen können. Informationen zum Aktivieren oder Deaktivieren vorhandener Regeln für sichere Anlagen finden Sie im nächsten Abschnitt.
+Die einzige Einstellung, die beim Ändern einer Regel für sichere Anlagen in PowerShell nicht verfügbar ist, ist der _Parameter "Enabled",_ mit dem Sie eine deaktivierte Regel erstellen können. Informationen zum Aktivieren oder Deaktivieren vorhandener Regeln für sichere Anlagen finden Sie im nächsten Abschnitt.
 
-Andernfalls sind dieselben Einstellungen verfügbar, wenn Sie eine Regel wie im Abschnitt [Schritt 2:](#step-2-use-powershell-to-create-a-safe-attachment-rule) Verwenden von PowerShell beschrieben erstellen, um eine sichere Anlagenregel weiter oben in diesem Artikel zu erstellen.
+Andernfalls sind die gleichen Einstellungen verfügbar, wenn Sie eine Regel wie im [Abschnitt "Schritt 2: Verwenden von PowerShell zum Erstellen einer Regel](#step-2-use-powershell-to-create-a-safe-attachment-rule) für sichere Anlagen" weiter oben in diesem Artikel beschrieben erstellen.
 
-Verwenden Sie die folgende Syntax, um eine sichere Anlagenregel zu ändern:
+Verwenden Sie die folgende Syntax, um eine Regel für sichere Anlagen zu ändern:
 
 ```PowerShell
 Set-SafeAttachmentRule -Identity "<RuleName>" <Settings>
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-SafeAttachmentRule](/powershell/module/exchange/set-safeattachmentrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-SafeAttachmentRule".](/powershell/module/exchange/set-safeattachmentrule)
 
-### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a>Aktivieren oder Deaktivieren sicherer Anlagenregeln mithilfe von PowerShell
+### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a>Verwenden von PowerShell zum Aktivieren oder Deaktivieren von Regeln für sichere Anlagen
 
-Durch Aktivieren oder Deaktivieren einer Regel für sichere Anlagen in PowerShell wird die gesamte Richtlinie für sichere Anlagen (die Regel für sichere Anlagen und die zugewiesene Richtlinie für sichere Anlagen) aktiviert oder deaktiviert.
+Das Aktivieren oder Deaktivieren einer Regel für sichere Anlagen in PowerShell aktiviert oder deaktiviert die gesamte Tresor Anlagenrichtlinie (die Regel für sichere Anlagen und die Richtlinie für zugewiesene sichere Anlagen).
 
-Verwenden Sie die folgende Syntax, um eine sichere Anlagenregel in PowerShell zu aktivieren oder zu deaktivieren:
+Verwenden Sie die folgende Syntax, um eine Regel für sichere Anlagen in PowerShell zu aktivieren oder zu deaktivieren:
 
 ```PowerShell
 <Enable-SafeAttachmentRule | Disable-SafeAttachmentRule> -Identity "<RuleName>"
 ```
 
-In diesem Beispiel wird die Regel für sichere Anlagen mit dem Namen Marketing Department deaktiviert.
+In diesem Beispiel wird die Regel für sichere Anlagen mit dem Namen "Marketing Department" deaktiviert.
 
 ```PowerShell
 Disable-SafeAttachmentRule -Identity "Marketing Department"
@@ -383,11 +379,11 @@ Enable-SafeAttachmentRule -Identity "Marketing Department"
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Enable-SafeAttachmentRule](/powershell/module/exchange/enable-safeattachmentrule) und [Disable-SafeAttachmentRule](/powershell/module/exchange/disable-safeattachmentrule).
 
-### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a>Festlegen der Priorität sicherer Anlagenregeln mithilfe von PowerShell
+### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a>Verwenden von PowerShell zum Festlegen der Priorität von Regeln für sichere Anlagen
 
-Der höchste Prioritätswert, den Sie für eine Regel festlegen können, ist 0. Der niedrigste Wert, den Sie festlegen können, hängt von der Anzahl von Regeln ab. Wenn Sie z. B. fünf Regeln haben, können Sie die Prioritätswerte 0 bis 4 verwenden. Das Ändern der Priorität einer vorhandenen Regel kann sich entsprechend auf andere Regeln auswirken. Wenn Sie z. B. fünf benutzerdefinierte Regeln haben (Priorität 0 bis 4) und die Priorität einer Regel in 2 ändern, erhält die vorhandene Regel mit Priorität 2 die Priorität 3, und die Regel mit Priorität 3 erhält Priorität 4.
+Der höchste Prioritätswert, den Sie für eine Regel festlegen können, ist 0. Der niedrigste Wert, den Sie festlegen können, hängt von der Anzahl von Regeln ab. Wenn Sie z. B. fünf Regeln haben, können Sie die Prioritätswerte 0 bis 4 verwenden. Das Ändern der Priorität einer vorhandenen Regel kann sich entsprechend auf andere Regeln auswirken. Wenn Sie z. B. fünf benutzerdefinierte Regeln haben (Priorität 0 bis 4) und die Priorität einer Regel in 2 ändern, erhält die vorhandene Regel mit Priorität 2 die Priorität 3, und die Regel mit Priorität 3 erhält Priorität 4.
 
-Verwenden Sie die folgende Syntax, um die Priorität einer sicheren Anlagenregel in PowerShell zu setzen:
+Verwenden Sie die folgende Syntax, um die Priorität einer Regel für sichere Anlagen in PowerShell festzulegen:
 
 ```PowerShell
 Set-SafeAttachmentRule -Identity "<RuleName>" -Priority <Number>
@@ -399,21 +395,21 @@ In diesem Beispiel wird die Priorität der Regel namens „Marketing Department�
 Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Hinweis**: Verwenden Sie zum Festlegen der Priorität einer neuen Regel beim Erstellen stattdessen den _Parameter Priority_ im Cmdlet **New-SafeAttachmentRule.**
+**Hinweis:** Um die Priorität einer neuen Regel beim Erstellen festzulegen, verwenden Sie stattdessen den Parameter _"Priority"_ im Cmdlet **"New-SafeAttachmentRule".**
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-SafeAttachmentRule](/powershell/module/exchange/set-safeattachmentrule).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-SafeAttachmentRule".](/powershell/module/exchange/set-safeattachmentrule)
 
 ### <a name="use-powershell-to-remove-safe-attachment-policies"></a>Verwenden von PowerShell zum Entfernen sicherer Anlagenrichtlinien
 
-Wenn Sie PowerShell verwenden, um eine sichere Anlagenrichtlinie zu entfernen, wird die entsprechende Regel für sichere Anlagen nicht entfernt.
+Wenn Sie PowerShell zum Entfernen einer Richtlinie für sichere Anlagen verwenden, wird die entsprechende Regel für sichere Anlagen nicht entfernt.
 
-Verwenden Sie die folgende Syntax, um eine sichere Anlagenrichtlinie in PowerShell zu entfernen:
+Verwenden Sie die folgende Syntax, um eine Richtlinie für sichere Anlagen in PowerShell zu entfernen:
 
 ```PowerShell
 Remove-SafeAttachmentPolicy -Identity "<PolicyName>"
 ```
 
-In diesem Beispiel wird die Richtlinie für sichere Anlagen mit dem Namen Marketing Department entfernt.
+In diesem Beispiel wird die Richtlinie für sichere Anlagen mit dem Namen "Marketing Department" entfernt.
 
 ```PowerShell
 Remove-SafeAttachmentPolicy -Identity "Marketing Department"
@@ -421,17 +417,17 @@ Remove-SafeAttachmentPolicy -Identity "Marketing Department"
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-SafeAttachmentPolicy](/powershell/module/exchange/remove-safeattachmentpolicy).
 
-### <a name="use-powershell-to-remove-safe-attachment-rules"></a>Verwenden von PowerShell zum Entfernen sicherer Anlagenregeln
+### <a name="use-powershell-to-remove-safe-attachment-rules"></a>Verwenden von PowerShell zum Entfernen von Regeln für sichere Anlagen
 
-Wenn Sie PowerShell verwenden, um eine sichere Anlagenregel zu entfernen, wird die entsprechende Richtlinie für sichere Anlagen nicht entfernt.
+Wenn Sie PowerShell zum Entfernen einer Regel für sichere Anlagen verwenden, wird die entsprechende Richtlinie für sichere Anlagen nicht entfernt.
 
-Verwenden Sie die folgende Syntax, um eine sichere Anlagenregel in PowerShell zu entfernen:
+Verwenden Sie die folgende Syntax, um eine Regel für sichere Anlagen in PowerShell zu entfernen:
 
 ```PowerShell
 Remove-SafeAttachmentRule -Identity "<PolicyName>"
 ```
 
-In diesem Beispiel wird die Regel für sichere Anlagen mit dem Namen Marketing Department entfernt.
+In diesem Beispiel wird die Regel für sichere Anlagen mit dem Namen "Marketing Department" entfernt.
 
 ```PowerShell
 Remove-SafeAttachmentRule -Identity "Marketing Department"
@@ -441,11 +437,11 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Sa
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
-Gehen Sie wie folgt vor, um zu überprüfen, ob Richtlinien für sichere Anlagen erfolgreich erstellt, geändert oder entfernt wurden:
+Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Tresor Anlagenrichtlinien erfolgreich erstellt, geändert oder entfernt haben:
 
-- Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**. Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Priority-Werte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Fly-Out an.
+- Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, indem Sie auf den Namen klicken, und zeigen Sie die Details im Flyout an.
 
-- Ersetzen Exchange Online PowerShell oder Exchange Online Protection PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
+- Ersetzen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell \<Name\> durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
   ```PowerShell
   Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
@@ -455,4 +451,4 @@ Gehen Sie wie folgt vor, um zu überprüfen, ob Richtlinien für sichere Anlagen
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-Wenn Sie überprüfen möchten, ob Nachrichten von sicheren Anlagen überprüft werden, überprüfen Sie den verfügbaren Defender für Office 365 Berichte. Weitere Informationen finden Sie unter Anzeigen von [Berichten für Defender for Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Security & Compliance [Center](threat-explorer.md).
+Um zu überprüfen, ob Tresor Anlagen Nachrichten überprüft, überprüfen Sie den verfügbaren Defender auf Office 365 Berichte. Weitere Informationen finden Sie unter [Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Microsoft 365 Defender [Portal.](threat-explorer.md)

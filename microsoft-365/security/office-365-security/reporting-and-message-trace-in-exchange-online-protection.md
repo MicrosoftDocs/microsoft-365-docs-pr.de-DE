@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie mehr über Berichte und Problembehandlungstools, die administratoren Microsoft Exchange Online Schutzes (EOP) zur Verfügung stehen.
+description: In diesem Artikel erfahren Sie mehr über Berichte und Problembehandlungstools, die administratoren Microsoft Exchange Online Protection (EOP) zur Verfügung stehen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841438"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054380"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Berichterstellung und Nachrichtenablaufverfolgung in EOP
 
@@ -31,34 +31,21 @@ ms.locfileid: "52841438"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer bietet EOP viele verschiedene Berichte, mit denen Sie den Gesamtstatus und den Status Ihrer Organisation bestimmen können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer bietet EOP viele verschiedene Berichte, die Ihnen helfen können, den Gesamtstatus und den Status Ihrer Organisation zu bestimmen. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften.
 
 ## <a name="usage-reports"></a>Verwendungsberichte
 
-**Microsoft 365 Gruppenaktivität:** Zeigen Sie Informationen zur Anzahl der Microsoft 365 Gruppen an, die erstellt und verwendet werden.
+- **Microsoft 365 Gruppenaktivität:** Zeigen Sie Informationen zur Anzahl der Microsoft 365 Gruppen an, die erstellt und verwendet werden. Weitere Informationen finden Sie unter [Microsoft 365 Berichte im Admin Center – Microsoft 365 Gruppen.](../../admin/activity-reports/office-365-groups.md)
+- **E-Mail-Aktivität:** Anzeigen von Informationen über die Anzahl der gesendeten, empfangenen und gelesenen Nachrichten in Ihrer gesamten Organisation und von bestimmten Benutzern. Weitere Informationen finden Sie unter [Microsoft 365 Berichte im Admin Center – E-Mail-Aktivität.](../../admin/activity-reports/email-activity.md)
+- **Nutzung von E-Mail-Apps:** Zeigen Sie Informationen zu den verwendeten E-Mail-Apps an. Dies umfasst die Gesamtzahl der Verbindungen für jede App sowie die Versionen von Outlook, die eine Verbindung herstellen. Weitere Informationen finden Sie unter [Microsoft 365 Berichte im Admin Center – Nutzung von E-Mail-Apps.](../../admin/activity-reports/email-apps-usage.md)
+- **Postfachnutzung:** Anzeigen von Informationen zum verwendeten Speicher, zum Kontingentverbrauch, zur Elementanzahl und zur letzten Aktivität (Sende- oder Leseaktivität) für Postfächer. Weitere Informationen finden Sie unter [Microsoft 365 Berichte im Admin Center – Postfachnutzung.](../../admin/activity-reports/mailbox-usage.md)
 
-**E-Mail-Aktivität:** Zeigen Sie Informationen über die Anzahl der Nachrichten an, die in Ihrer gesamten Organisation und von bestimmten Benutzern gesendet, empfangen und gelesen wurden.
-
-**Nutzung von E-Mail-Apps:** Zeigen Sie Informationen zu den verwendeten E-Mail-Apps an. Diese umfassen die Gesamtzahl der Verbindungen für die einzelnen Apps und die Versionen von Outlook, die eine Verbindung herstellen.
-
-**Postfachnutzung:** Anzeigen von Informationen zum verwendeten Speicher, zum Kontingentverbrauch, zur Elementanzahl und zur letzten Aktivität (Sende- oder Leseaktivität) für Postfächer.
-
-Weitere Informationen finden Sie in den folgenden Ressourcen:
-
-- [Microsoft 365 Berichte im Admin Center – Microsoft 365-Gruppen](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365 Berichte im Admin Center – E-Mail-Aktivität](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365 Berichte im Admin Center – Nutzung von E-Mail-Apps](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365 Berichte im Admin Center – Postfachnutzung](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Sicherheits- & Complianceberichte im Microsoft 365 Admin Center
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Sicherheitsberichte im Microsoft 365 Defender-Portal
 
 Diese erweiterten Berichte bieten eine interaktive Berichterstellung für EOP-Administratoren, die Zusammenfassungsinformationen und das Anzeigen von Detailinformationen umfasst.
 
-**Defender für Office 365:** Zeigen Sie Informationen zu sicheren Links und sicheren Anlagen an, die Teil von Microsoft Defender für Office 365 sind.
-
-**EOP:** Anzeigen von Informationen zu Schadsoftwareerkennungen, gefälschten E-Mails, Spamerkennungen und Nachrichtenfluss zu und von Ihrer Organisation.
-
-[Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md)
+- **Defender für Office 365:** Zeigen Sie Informationen zu Tresor Links und Tresor Anlagen an, die Teil von Microsoft Defender für Office 365 sind. Weitere Informationen finden Sie unter [Anzeigen von Defender für Office 365 Berichte im Microsoft 365 Defender Portal.](view-reports-for-mdo.md)
+- **EOP:** Anzeigen von Informationen zu Schadsoftwareerkennungen, gefälschten E-Mails, Spamerkennungen und Nachrichtenfluss zu und von Ihrer Organisation. Weitere Informationen finden Sie unter [Anzeigen von E-Mail-Sicherheitsberichten im Microsoft 365 Defender Portal.](view-email-security-reports.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Benutzerdefinierte Berichte mit Microsoft Graph
 
@@ -70,7 +57,7 @@ Ermöglicht das Nachverfolgen von E-Mails auf dem Weg durch EOP. Sie können erm
 
 Mit diesen Informationen können Sie in effizienter Weise Fragen der Benutzer beantworten, Probleme mit dem Nachrichtenfluss behandeln und Richtlinienänderungen überprüfen und müssen seltener den technischen Support um Unterstützung bitten.
 
-Siehe [Nachrichtenablaufverfolgung im Security & Compliance Center.](message-trace-scc.md)
+Siehe [Nachrichtenablaufverfolgung im Microsoft 365 Defender Portal.](message-trace-scc.md)
 
 ## <a name="audit-logging"></a>Überwachungsprotokollierung
 
@@ -80,9 +67,11 @@ Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese B
 
 In der folgenden Tabelle wird beschrieben, wann und für wie lange EOP-Berichte und Nachrichtenverfolgungsdaten verfügbar sind.
 
+<br>
+
 ****
 
-|Berichttyp|Daten verfügbar für (Rückwirkungsfrist)|Latency|
+|Berichttyp|Daten verfügbar für (Rückwirkungsfrist)|Wartezeit|
 |---|---|---|
 |Zusammenfassungsberichte zum E-Mail-Schutz|90 Tage|Die Aggregation von Nachrichtendaten ist meistens innerhalb von 24 bis 48 Stunden abgeschlossen. Kleinere inkrementelle, aggregierte Änderungen können bis zu 5 Tage lang auftreten.|
 |Detailberichte zum E-Mail-Schutz|90 Tage|Bei Detaildaten, die weniger als 7 Tage alt sind, sollten Daten innerhalb von 24 Stunden erscheinen, sind aber möglicherweise erst 48 Stunden später abgeschlossen. Einige kleinere schrittweise Änderungen können bis zu 5 Tagen dauern. <p> Zum Anzeigen von Detailberichten für Nachrichten, die älter als 7 Tage sind, kann es einige Stunden dauern, bis die Ergebnisse der Nachrichtenablaufverfolgung ausgegeben werden.|

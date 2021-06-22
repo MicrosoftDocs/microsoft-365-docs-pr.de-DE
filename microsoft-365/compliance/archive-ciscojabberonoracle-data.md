@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Erfahren Sie, wie Sie einen Connector im Microsoft 365 Compliance Center einrichten und verwenden, um Daten von Cisco Jabber auf Oracle zu importieren und zu archivieren, um Microsoft 365.
-ms.openlocfilehash: d8e1ba27c4277916614deaa042214ae592bceff2
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Erfahren Sie, wie Sie einen Connector in der Microsoft 365 Compliance Center einrichten und verwenden, um Daten von Cisco Jabber auf Oracle zu importieren und zu archivieren, um Microsoft 365.
+ms.openlocfilehash: 8c8e95a9a96767aa227c463c96b04a30d8aac7dc
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842758"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054636"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data-preview"></a>Einrichten eines Connectors zum Archivieren von Cisco Jabber auf Oracle-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>Einrichten eines Connectors zum Archivieren von Cisco Jabber auf Oracle-Daten
 
-Verwenden Sie einen Connectors im Microsoft 365 Compliance Center, um Daten aus dem Cisco Jabber auf der Oracle-Plattform zu Benutzerpostfächern in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Stellt einen [Cisco Jabber on Oracle-Connector](https://www.veritas.com/insights/merge1/jabber) bereit, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters (in regelmäßigen Abständen) erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert die Inhalte wie Dateien und Dateivorgänge, Kommentare und freigegebene Inhalte von Cisco Jabber auf Oracle in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
+Verwenden Sie einen Connectors in der Microsoft 365 Compliance Center, um Daten aus Cisco Jabber auf der Oracle-Plattform in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Stellt einen [Cisco Jabber on Oracle-Connector](https://www.veritas.com/insights/merge1/jabber) bereit, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters erfasst werden (in regelmäßigen Abständen) und diese Elemente in Microsoft 365 importiert werden. Der Connector konvertiert die Inhalte wie Dateien und Dateivorgänge, Kommentare und freigegebene Inhalte von Cisco Jabber auf Oracle in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in das Postfach des Benutzers in Microsoft 365.
 
-Nachdem Cisco Jabber auf Oracle-Daten in Benutzerpostfächern gespeichert wurde, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines Cisco Jabber auf Oracle Connector zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
+Nachdem Cisco Jabber auf Oracle-Daten in Benutzerpostfächern gespeichert wurde, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines Cisco Jabber auf Oracle-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
 
 ## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Übersicht über die Archivierung von Cisco Jabber auf Oracle-Daten
 
@@ -43,11 +43,11 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 - Erstellen Sie ein Merge1-Konto für Microsoft-Connectors. Wenden Sie sich hierzu an [den Kundensupport.](https://www.veritas.com/content/support/en_US) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
-- Der Benutzer, der in Schritt 1 den Cisco Jabber on Oracle-Connector erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den Cisco Jabber on Oracle Connector in Schritt 1 erstellt (und in Schritt 3 abschließt), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-oracle-connector"></a>Schritt 1: Einrichten des Cisco Jabber auf Oracle Connector
 
-Der erste Schritt besteht darin, auf die **Seite "Datenconnectors"** im Microsoft 365 Compliance Center zuzugreifen und einen Connector für Jabber-Daten zu erstellen.
+Der erste Schritt besteht darin, auf die **Seite "Datenkonnektoren"** im Microsoft 365 Compliance Center zuzugreifen und einen Connector für Jabber-Daten zu erstellen.
 
 1. Wechseln Sie zu <https://compliance.microsoft.com> "Data Connectors Cisco Jabber" auf Oracle, und klicken Sie dann auf **"Datenconnectors".**  >  
 
@@ -75,7 +75,7 @@ Führen Sie die folgenden Schritte aus, um Benutzer zuzuordnen und die Connector
 
 ## <a name="step-4-monitor-the-cisco-jabber-on-oracle-connector"></a>Schritt 4: Überwachen des Cisco Jabber auf Oracle Connector
 
-Nachdem Sie den Cisco Jabber auf Oracle Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
+Nachdem Sie den Cisco Jabber für Oracle Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
 1. Navigieren Sie im linken Navigationsbereich zu <https://compliance.microsoft.com/> "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
 
@@ -85,4 +85,4 @@ Nachdem Sie den Cisco Jabber auf Oracle Connector erstellt haben, können Sie de
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- Zu diesem Zeitpunkt wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt, aber die Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt verfügbar sein.
+- Derzeit wird das Importieren von Anlagen oder Elementen, die größer als 10 MB sind, nicht unterstützt. Unterstützung für größere Elemente wird zu einem späteren Zeitpunkt verfügbar sein.

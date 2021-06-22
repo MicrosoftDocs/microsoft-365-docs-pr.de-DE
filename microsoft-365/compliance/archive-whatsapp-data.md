@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen TeleMessage-Connector einrichten, um WhatsApp-Daten in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, sodass Sie Compliance-Features wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Daten von Drittanbietern Ihrer Organisation zu verwalten.
-ms.openlocfilehash: a8f588e6bbe5180865a2053b055230e4f35ed96a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0f4759eeb26190d7fdfc92cbf986efecd017eda5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822165"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054791"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Einrichten eines Connectors zum Archivieren von WhatsApp-Daten
 
 Verwenden Sie den TeleMessage-Connector im Microsoft 365 Compliance Center, um WhatsApp-Anrufe, Chats, Anlagen, Dateien und gelöschte Nachrichten zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er einmal täglich eine Verbindung mit dem TeleMessage-Konto Ihrer Organisation her und importiert die mobile Kommunikation von Mitarbeitern mithilfe der TeleMessage WhatsApp Telefon Archiver oder TeleMessage WhatsApp Cloud Archiver in Postfächer in Microsoft 365.
 
-Nachdem WhatsApp-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherungsverfahren, Inhaltssuche und Microsoft 365 Aufbewahrungsrichtlinien auf WhatsApp-Daten anwenden. Beispielsweise können Sie WhatsApp-Nachrichten mithilfe der Inhaltssuche durchsuchen oder das Postfach, das WhatsApp-Nachrichten enthält, einem Verwahrer in einem Advanced eDiscovery Fall zuordnen. Die Verwendung eines WhatsApp-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
+Nachdem WhatsApp-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherungsverfahren, Inhaltssuche und Microsoft 365 Aufbewahrungsrichtlinien auf WhatsApp-Daten anwenden. Sie können beispielsweise WhatsApp-Nachrichten mithilfe der Inhaltssuche durchsuchen oder das Postfach, das WhatsApp-Nachrichten enthält, einem Verwahrer in einem Advanced eDiscovery Fall zuordnen. Die Verwendung eines WhatsApp-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Regierungsrichtlinien und behördlichen Richtlinien zu halten.
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>Übersicht über die Archivierung von WhatsApp-Daten
 
@@ -51,9 +51,9 @@ Einige der Implementierungsschritte, die zum Archivieren von WhatsApp-Kommunikat
 
 - Installieren Sie die TeleMessage [WhatsApp Telefon Archiver-App](https://www.telemessage.com/mobile-archiver/whatsapp-phone-archiver-2/) auf den Mobiltelefonen Ihrer Mitarbeiter, und aktivieren Sie sie. Alternativ können Sie die regulären WhatsApp- oder WhatsApp Business-Apps auf den Mobiltelefonen Ihrer Mitarbeiter installieren und den WhatsApp Cloud Archiver-Dienst aktivieren, indem Sie einen QR-Code auf der TeleMessage-Website scannen. Weitere Informationen finden Sie unter [WhatsApp Cloud Archiver.](https://www.telemessage.com/mobile-archiver/whatsapp-archiver/whatsapp-cloud-archiver/)
 
-- Dem Benutzer, der einen Verizon-Netzwerkconnector erstellt, muss die Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Dies ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Dem Benutzer, der einen Verizon-Netzwerkconnector erstellt, muss die Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Dies ist erforderlich, um Connectors auf der **Seite "Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
-- Dieser Datenkonnektor ist in GCC Umgebungen in der cloud Microsoft 365 US Government verfügbar. Drittanbieteranwendungen und -dienste umfassen möglicherweise das Speichern, Übertragen und Verarbeiten der Kundendaten Ihrer Organisation auf Drittanbietersystemen, die sich außerhalb der Microsoft 365-Infrastruktur befinden und daher nicht unter die Verpflichtungen zur Einhaltung der Microsoft 365 und zum Datenschutz fallen. Microsoft macht keine Darstellung, dass die Verwendung dieses Produkts zum Herstellen einer Verbindung mit Drittanbieteranwendungen impliziert, dass diese Drittanbieteranwendungen FEDRAMP-konform sind.
+- Dieser Datenkonnektor ist in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Drittanbieteranwendungen und -dienste umfassen möglicherweise das Speichern, Übertragen und Verarbeiten der Kundendaten Ihrer Organisation auf Drittanbietersystemen, die sich außerhalb der Microsoft 365-Infrastruktur befinden und daher nicht unter die Verpflichtungen zur Einhaltung der Microsoft 365 und zum Datenschutz fallen. Microsoft macht keine Darstellung, dass die Verwendung dieses Produkts zum Herstellen einer Verbindung mit Drittanbieteranwendungen impliziert, dass diese Drittanbieteranwendungen FEDRAMP-konform sind.
 
 ## <a name="create-a-whatsapp-archiver-connector"></a>Erstellen eines WhatsApp Archiver-Connectors
 

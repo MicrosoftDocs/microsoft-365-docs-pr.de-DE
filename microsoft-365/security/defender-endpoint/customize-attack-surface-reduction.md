@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985420"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055243"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Anpassen der Regeln zur Verringerung der Angriffsfläche
 
@@ -33,7 +33,7 @@ ms.locfileid: "52985420"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-[Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) helfen, Softwareverhalten zu verhindern, die häufig missbraucht werden, um Ihr Gerät oder Netzwerk zu kompromittieren. Beispielsweise kann ein Angreifer versuchen, ein nicht signiertes Skript von einem USB-Laufwerk aus auszuführen, oder ein Makro in einem Office Dokument aufruft direkt an die Win32-API. Regeln zur Verringerung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die verteidigungsbereitschaft Ihrer Organisation verbessern.
+[Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) helfen, Softwareverhalten zu verhindern, die häufig missbraucht werden, um Ihr Gerät oder Netzwerk zu kompromittieren. Ein Angreifer kann beispielsweise versuchen, ein nicht signiertes Skript von einem USB-Laufwerk aus auszuführen, oder ein Makro in einem Office Dokument aufruft direkt an die Win32-API. Regeln zur Verringerung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die verteidigungsbereitschaft Ihrer Organisation verbessern.
 
 Erfahren Sie, wie Sie Regeln zur Verringerung der Angriffsfläche anpassen, indem [Sie Dateien und Ordner ausschließen](#exclude-files-and-folders) oder der [Benachrichtigungswarnung, die](#customize-the-notification) auf dem Computer eines Benutzers angezeigt wird, benutzerdefinierten Text hinzufügen.
 
@@ -90,7 +90,7 @@ Weitere Informationen zu den einzelnen Regeln finden Sie im Thema zur Verringeru
 
 2. Wechseln Sie im **Gruppenrichtlinienverwaltungs-Editor** zur **Computerkonfiguration,** und klicken Sie auf **"Administrative Vorlagen".**
 
-3. Erweitern Sie die Struktur bis Windows **Komponenten**  >  **Microsoft Defender Antivirus**  >  **Windows Defender Exploit Guard** Attack Surface  >  **Reduction.**
+3. Erweitern Sie die Struktur bis Windows **Komponenten**  >  **Microsoft Defender Antivirus**  >  **Microsoft Defender Exploit Guard**  >  **Attack Surface Reduction.**
 
 4. Doppelklicken Sie auf die Einstellung **"Dateien und Pfade von Attack Surface Reduction Rules ausschließen",** und legen Sie die Option auf **"Aktiviert"** fest. Wählen Sie **"Anzeigen"** aus, und geben Sie jede Datei oder jeden Ordner in der Spalte **"Wertname"** ein. Geben Sie 0 in die **Spalte Wert** für jedes Element ein. 
 
@@ -99,7 +99,7 @@ Weitere Informationen zu den einzelnen Regeln finden Sie im Thema zur Verringeru
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>Verwenden von PowerShell zum Ausschließen von Dateien und Ordnern
 
-1. Geben Sie **powershell** in die Menü "Start" ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
+1. Geben Sie **PowerShell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
 2. Geben Sie das folgende Cmdlet ein:
 
     ```PowerShell
@@ -119,7 +119,7 @@ Verwenden Sie [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyEx
 
 Sie können die Benachrichtigung anpassen, wenn eine Regel ausgelöst wird und eine App oder Datei blockiert wird. Weitere Informationen finden Sie im [Artikel Windows-Sicherheit.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Ähnliche Themen
 
 - [Reduzieren von Angriffsflächen mit Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 - [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
