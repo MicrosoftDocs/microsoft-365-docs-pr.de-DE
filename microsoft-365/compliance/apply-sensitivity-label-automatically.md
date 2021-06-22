@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029003"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061890"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -74,7 +74,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     - Wenn Sie über Exchange-Mailflussregeln oder DLP-Richtlinien (Verhinderung von Datenverlust) verfügen, welche die IRM-Verschlüsselung anwenden: Wenn Inhalte durch diese Regeln oder Richtlinien und eine Richtlinie zum automatischen Bezeichnen identifiziert werden, wird die Bezeichnung angewendet. Wenn diese Bezeichnung Verschlüsselung anwendet, werden die IRM-Einstellungen aus den Exchange-E-Mail-Flussregeln oder DLP-Richtlinien ignoriert. Wenn diese Bezeichnung jedoch keine Verschlüsselung anwendet, werden die IRM-Einstellungen aus den E-Mail-Flussregeln oder DLP-Richtlinien zusätzlich zu der Bezeichnung angewendet.
     - E-Mails, die eine IRM-Verschlüsselung ohne Bezeichnung haben, werden durch eine Bezeichnung mit beliebigen Verschlüsselungseinstellungen ersetzt, wenn eine Übereinstimmung durch die Verwendung automatischer Bezeichnung vorliegt.
     - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für automatische Bezeichnungen vorliegt:
-        - Rollout: Wenn die Bezeichnung für die [Verschlüsselung](encryption-sensitivity-labels.md)konfiguriert ist, wird diese Verschlüsselung nicht angewendet.
+        - Wenn die Bezeichnung jedoch für die [Verschlüsselung](encryption-sensitivity-labels.md) konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
         - Wenn die Bezeichnung so konfiguriert ist, dass sie [dynamische Markierungen](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)anwendet, beachten Sie, dass sich dadurch Namen von Personen außerhalb Ihrer Organisation ergeben können.
     - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet. Derzeit gibt es keine Möglichkeit, einen Besitzer der Rechteverwaltung für alle eingehenden E-Mail-Nachrichten, die automatisch verschlüsselt werden, festzulegen.
     
@@ -190,7 +190,7 @@ Spezifisch für integrierte Bezeichnungen:
 
 - Bei empfohlenen Bezeichnungen in den Desktopversionen von Word wird der sensible Inhalt, der die Empfehlung ausgelöst hat, markiert, sodass Benutzer den sensiblen Inhalt überprüfen und entfernen können, anstatt die empfohlene Vertraulichkeitsbezeichnung anzuwenden.
 
-- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/de-DE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnungen:
 

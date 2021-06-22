@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: e39f4e65d5c4bdf4235e7ae2d8aa207c986c76c8
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007501"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055045"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -224,17 +224,12 @@ Wenn Aufbewahrungsbezeichnungen die Elemente als Eintrag oder als behördlichen 
 
 #### <a name="monitoring-retention-labels"></a>Überwachen von Aufbewahrungsbezeichnungen
 
-Verwenden Sie im Microsoft 365 Compliance Center **Datenklassifizierung** > **Übersicht**, um zu überwachen, wie Ihre Aufbewahrungsbezeichnungen in Ihrem Mandanten verwendet werden und um festzustellen, wo sich Ihre bezeichneten Elemente befinden. Weitere Informationen, einschließlich wichtiger Voraussetzungen, finden Sie unter [Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung](data-classification-overview.md).
+Wählen Sie im Microsoft 365 Compliance Center **Datenklassifizierung** und die Seite **Übersicht** aus, um zu überwachen, wie Ihre Aufbewahrungsbezeichnungen in Ihrem Mandanten verwendet werden, und festzustellen, wo sich Ihre bezeichneten Elemente befinden. Weitere Informationen, einschließlich wichtiger Voraussetzungen, finden Sie unter [Informationen zur Datenklassifizierung](data-classification-overview.md).
 
 Sie können dann mit dem [Inhalts-Explorer](data-classification-content-explorer.md) und dem [Aktivitäten-Explorer](data-classification-activity-explorer.md) in die Details gehen.
 
 > [!TIP]
 >Erwägen Sie die Verwendung einiger anderer Einblicke in die Datenklassifizierung, wie trainierbare Klassifikatoren und sensible Informationstypen, um Inhalte zu identifizieren, die Sie möglicherweise beibehalten oder löschen oder als Datensätze verwalten müssen.
-
-Das Office 365 Security & Compliance Center verfügt über die entsprechenden Übersichtsinformationen für Aufbewahrungsbezeichnungen aus dem **Informationsgovernance** > **Dashboard** sowie ausführlichere Informationen aus dem **Informationsgovernance** > **Bezeichnungsaktivitäten-Explorer**. Weitere Informationen zum Überwachen von Aufbewahrungsbezeichnungen von diesem älteren Admin Center finden Sie in der folgenden Dokumentation:
-- [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-- [Erste Schritte mit Datenklassifizierung](data-classification-overview.md).
-- [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
 
 #### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>Verwenden der Inhaltssuche zum Suchen des gesamten Inhalts mit einer bestimmten Aufbewahrungsbezeichnung
 

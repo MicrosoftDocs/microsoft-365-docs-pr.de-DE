@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932818"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062200"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuigkeiten in Microsoft Defender für Office 365
 
@@ -42,18 +42,27 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 > [!TIP]
 > Sie verfügen noch nicht über Microsoft Defender für Office 365? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="june-2021"></a>Juni 2021
+
+- Der neue erste Kontakt Sicherheitstipp Einstellung innerhalb von Antiphishingrichtlinien. Diese Sicherheitstipp wird angezeigt, wenn Empfänger zum ersten Mal eine E-Mail von einem Absender erhalten oder nicht oft E-Mails von einem Absender erhalten. Weitere Informationen zu dieser Einstellung und deren Konfiguration finden Sie in den folgenden Artikeln:
+
+- [First Contact Sicherheitstipp](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Konfigurieren von Anti-Phishing-Richtlinien in EOP](configure-anti-phishing-policies-eop.md)
+- [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>April/Mai 2021
 
 - [Seite "E-Mail-Entität":](mdo-email-entity-page.md)Eine einheitliche 360-Grad-Ansicht einer E-Mail mit erweiterten Informationen zu Bedrohungen, Authentifizierung und Erkennungen, Detonationsdetails und einer völlig neuen E-Mail-Vorschau.
-- [Office 365-Verwaltungs-API:](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)Updates für EmailEvents (RecordType 28) zum Hinzufügen von Übermittlungsaktionen, ursprünglichen und neuesten Übermittlungsspeicherorten und aktualisierten Erkennungsdetails.
+- [Office 365-Verwaltungs-API:](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)Updates für EmailEvents (RecordType 28) zum Hinzufügen von Übermittlungsaktionen, ursprünglichen und neuesten Zustellungsspeicherorten und aktualisierten Erkennungsdetails.
 - [Bedrohungsanalyse für Defender für Office 365:](/microsoft-365/security/defender/threat-analytics)Sehen Sie sich aktive Bedrohungsteilnehmer, beliebte Techniken und Angriffsflächen sowie umfassende Berichte von Microsoft-Experten zu laufenden Kampagnen an.
 
 ## <a name="februarymarch-2021"></a>Februar/März 2021
 
-- Warnungs-ID-Integration (Suche mithilfe der Warnungs-ID und Alert-Explorer Navigation) in [suchumgebungen](threat-explorer.md)
+- Warnungs-ID-Integration (Suche mithilfe von Warnungs-ID und Alert-Explorer Navigation) in [suchumgebungen](threat-explorer.md)
 - Erhöhen der Grenzwerte für den Export von Datensätzen von 9990 auf 200.000 bei [der Suche](threat-explorer.md)
 - Erweitern des Explorer-Datenaufbewahrungs- und Suchlimits für Testmandanten von 7 (vorheriges Limit) auf 30 Tage bei der [Suche](threat-explorer.md)
 - Neue Pivots für die Suche, die als **"Imitierte Domäne"** und **"Imitierter Benutzer"** innerhalb des Explorers (und Echtzeiterkennungen) bezeichnet werden, um nach Identitätswechselangriffen gegen geschützte Benutzer oder Domänen zu suchen. Weitere Informationen finden Sie unter [Details.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender für Office 365 Plan 1 oder Plan 2)
+- Der neue erste Kontakt Sicherheitstipp, wann Empfänger zum ersten Mal eine E-Mail von einem Absender erhalten oder nicht oft E-Mails von einem Absender erhalten. Weitere Informationen zu dieser Einstellung und zum Konfigurieren mithilfe Exchange Nachrichtenflussregeln (auch als Transportregeln bezeichnet) finden Sie unter ["Erster Kontakt Sicherheitstipp."](set-up-anti-phishing-policies.md#first-contact-safety-tip)
 
 ## <a name="december-2020"></a>Dezember 2020
 
@@ -62,14 +71,14 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 
 ## <a name="november-2020"></a>November 2020
 
-- Exportbeschränkungen in "Überprüfen > Info-Center > Korrektur aus E-Mail-Übermittlung und Aktionsprotokoll" aktualisiert (Defender für Office 365 Plan 2)
+- Exportbeschränkungen in Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2) aktualisiert
 
 ## <a name="septemberoctober-2020"></a>September/Oktober 2020
 
 - [Überprüfen Ihrer Richtlinien mit configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - [Erweiterte Funktionen im Bedrohungs-Explorer, einschließlich der wichtigsten Benutzer, Transportregeln und Connectors](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Defender für Office 365 Informationen im [Bedrohungs-Explorer](threat-explorer.md) (E-Mails wurden von Mandanten-/Benutzerrichtlinien zugelassen/blockiert) (Defender für Office 365 Plan 2)
 - Anzeigen von URL-Bedrohungen im [Bedrohungs-Explorer](threat-explorer.md#threats-in-urls) (Schadsoftware, Phishing, Spam oder keine) (Defender für Office 365 Plan 2)
-- [Verbesserungen am Bedrohungs-Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) für die Suche mit Updates rund um Bedrohungen, zusätzliche Aktionen, Übermittlungsspeicherorte und aktualisierte Zeitachsenansicht (Defender für Office 365 Plan 2)
+- [Verbesserungen am Bedrohungs-Explorer für die Bedrohungssuche](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) mit Updates rund um Bedrohungen, zusätzliche Aktionen, Übermittlungsspeicherorte und aktualisierter Zeitachsenansicht (Defender für Office 365 Plan 2)
 
 ## <a name="julyaugust-2020"></a>Juli/August 2020
 
@@ -83,7 +92,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 ## <a name="januaryfebruary-2020"></a>Januar/Februar 2020
 
 - [Allgemeine Verfügbarkeit von Kampagnenansichten in Microsoft Defender für Office 365](campaigns.md) (Microsoft Defender für Office 365 Plan 2)
-- Verbesserungen am [Bedrohungs-Explorer,](threat-explorer.md) damit Sicherheitsteams bei der Untersuchung von [E-Mails](investigate-malicious-email-that-was-delivered.md)nach mehreren Feldern suchen und filtern können: (Microsoft Defender für Office 365 Plan 2)
+- Verbesserungen am [Bedrohungs-Explorer,](threat-explorer.md) damit Sicherheitsteams beim Untersuchen von [E-Mails](investigate-malicious-email-that-was-delivered.md)nach mehreren Feldern suchen und filtern können: (Microsoft Defender für Office 365 Plan 2)
   - Übermittlungsort und spezielle Aktionen
   - Richtungsabhängigkeit (eingehend, ausgehend oder organisationsintern)
   - Erweiterte NICHT-Filter (hierbei handelt es sich um erweiterte Filteroptionen, die nicht enthalten, nicht enthalten usw.)
@@ -91,7 +100,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 
 - Das **Vorfall-Widget** ist jetzt das **Info-Center-Widget.** (Um Ihre Sicherheits-Widgets im Security & Compliance Center anzuzeigen, wechseln Sie zur **Bedrohungsverwaltung.** \> **Überprüfen** Sie .) (Microsoft Defender für Office 365 Plan 2)
 
-- [Sichere Dokumente in Microsoft 365](safe-docs.md) **(Vorschau)**
+- [Tresor Dokumente in Microsoft 365](safe-docs.md) **(Vorschau)**
 
 ## <a name="december-2019"></a>Dezember 2019
 
@@ -101,7 +110,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 
 ## <a name="november-2019"></a>November 2019
 
-- Sehen Sie sich die neuen funktionen für die Erkennung und Reaktion von [kompromittierten Benutzern](address-compromised-users-quickly.md) an **(Vorschau)**(Microsoft Defender für Office 365 Plan 2)
+- Sehen Sie sich die neuen Funktionen für die Erkennung und Reaktion von [kompromittierten Benutzern](address-compromised-users-quickly.md) an **(Vorschau)**(Microsoft Defender für Office 365 Plan 2)
 
 ## <a name="september-2019"></a>September 2019
 

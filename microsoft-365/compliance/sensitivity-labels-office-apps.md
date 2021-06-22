@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e22ca460acf96151ff54e3b2bbbe03ad1a97a27
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2510e840cfdd23969549cb3dbb83ec0c649741f5
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888397"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062182"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -67,7 +67,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rollout: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
 |[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rollout: 16.44+ | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Unterstützung von gemeinsame Erstellung und AutoSpeichern](sensitivity-labels-coauthoring.md) für beschriftete und verschlüsselte Dokumente | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Unterstützung von gemeinsame Erstellung und AutoSpeichern](sensitivity-labels-coauthoring.md) für beschriftete und verschlüsselte Dokumente | 2105: 18. Juni und höher |  16.50+ | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Fußnote:**

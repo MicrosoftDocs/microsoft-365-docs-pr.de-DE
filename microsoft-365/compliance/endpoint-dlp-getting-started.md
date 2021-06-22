@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: bf607890fcae34e95da15954349e7190bdbb19ac
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878100"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061673"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -77,9 +77,6 @@ Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activi
 - Compliance-Administrator
 - Sicherheitsadministrator
 - Compliancedaten-Administrator
-- Globale Leseberechtigung
-- Benutzer mit Leseberechtigung für Sicherheitsfunktionen
-- Berichtleseberechtigter
 
 ### <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 

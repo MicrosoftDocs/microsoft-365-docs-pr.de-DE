@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769431"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053071"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -116,7 +116,7 @@ Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Grup
 ### <a name="retention-policy-for-yammer-locations"></a>Aufbewahrungsrichtlinie für Yammer-Speicherorte
 
 > [!NOTE]
-> Die Aufbewahrungsrichtlinien für Yammer werden in Kürze eingeführt. Wenn Sie die neuen Speicherorte für Yammer noch nicht sehen, versuchen Sie es in ein paar Wochen noch einmal.
+> Die Aufbewahrungsrichtlinien für Yammer werden in Kürze eingeführt.
 >
 > Um diese Funktion nutzen zu können, muss Ihr Yammer-Netzwerk im [nativen Modus](/yammer/configure-your-yammer-network/overview-native-mode) und nicht im Hybridmodus arbeiten.
 
@@ -127,8 +127,6 @@ Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Grup
 3. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an. 
     
     Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
-    
-    Wählen Sie nicht **Erweiterte Aufbewahrungseinstellungen verwenden**, da diese Option für Yammer-Speicherorte nicht unterstützt wird. 
 
 4. Wählen Sie auf der Seite **Speicherorte auswählen** die Option **Bestimmte Standorte auswählen**. Aktivieren Sie dann einen oder beide Speicherorte für Yammer: **Yammer-Communitynachricht** und **Benutzernachrichten in Yammer**.
     

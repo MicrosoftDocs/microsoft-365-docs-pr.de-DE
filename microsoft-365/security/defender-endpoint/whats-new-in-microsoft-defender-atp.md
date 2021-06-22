@@ -1,6 +1,6 @@
 ---
 title: Neuigkeiten in Microsoft Defender für Endpunkt
-description: Erfahren Sie, welche Features in der neuesten Version von Microsoft Defender für Endpunkt allgemein verfügbar sind und welche Sicherheitsfeatures in Windows 10 und Windows Server verfügbar sind.
+description: Erfahren Sie, welche Features in der neuesten Version von Microsoft Defender für Endpunkt allgemein verfügbar sind sowie welche Sicherheitsfeatures in Windows 10 und Windows Server verfügbar sind.
 keywords: Neuigkeiten in Microsoft Defender für Endpunkt, ga, allgemein verfügbar, Funktionen, verfügbar, neu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866667"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062251"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Neuigkeiten in Microsoft Defender für Endpunkt
 
@@ -32,7 +32,7 @@ ms.locfileid: "52866667"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft Defender für Endpunkt sowie Sicherheitsfeatures in Windows 10 und Windows Server.
 
@@ -47,10 +47,17 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 > ```
 
 ## <a name="june-2021"></a>Juni 2021
+
+- [Geräteermittlung](device-discovery.md) <br> Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder umständliche Prozessänderungen erforderlich sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Sie können dann ermittelte Geräte integrieren, um risiken im Zusammenhang mit nicht verwalteten Endpunkten in Ihrem Netzwerk zu verringern.
+
+   > [!IMPORTANT]
+   > Die Standardermittlung ist ab dem 19. Juli 2021 der Standardmodus für alle Kunden. Sie können den Basismodus über die Einstellungsseite beibehalten. 
+
+
 - [Gerätegruppendefinitionen](/microsoft-365/security/defender-endpoint/machine-groups) können jetzt mehrere Werte für jede Bedingung enthalten. Sie können mehrere Tags, Gerätenamen und Domänen auf die Definition einer einzelnen Gerätegruppe festlegen.
 
 ## <a name="march-2021"></a>März 2021
-- [Verwalten des Manipulationsschutzes mithilfe der Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Sie können Manipulationsschutzeinstellungen auf Windows 10, Windows Server 2016 und Windows Server 2019 mithilfe einer Methode namens *Tenant Attach* verwalten. 
+- [Verwalten des Manipulationsschutzes mithilfe der Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Sie können Manipulationsschutzeinstellungen für Windows 10, Windows Server 2016 und Windows Server 2019 mithilfe einer Methode namens *Tenant Attach* verwalten. 
 
 ## <a name="january-2021"></a>Januar 2021
 
@@ -77,9 +84,9 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 - [Angriffssimulatoren im Evaluierungslabor](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender für Endpunkt hat sich mit verschiedenen Bedrohungssimulationsplattformen zusammen entwickelt, um Ihnen bequemen Zugriff zu bieten, um die Funktionen der Plattform direkt im Portal zu testen.
 
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
-- [Api-Unterstützung für die Bedrohungs- &-Sicherheitsrisikoverwaltung](exposed-apis-list.md) <BR>Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungsverwaltung & aus, z. B. abrufen der Bewertung der Bedrohungsrisiken Oder der Sicherheitsbewertung ihres Geräts, des Inventars von Software- und Gerätesicherheitsrisiken, der Softwareversionsverteilung, Informationen zu Sicherheitsrisiken des Geräts, Informationen zu Sicherheitsempfehlungen. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+- [Api-Unterstützung für die Bedrohungs- &-Sicherheitsrisikoverwaltung](exposed-apis-list.md) <BR>Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungsverwaltung & aus, z. B. abrufen der Bewertung der Bedrohungsbedrohung oder der Gerätesicherheitsbewertung, des Inventars von Software- und Gerätesicherheitsrisiken, der Softwareversionsverteilung, Informationen zu Sicherheitsrisiken des Geräts, Informationen zu Sicherheitsempfehlungen. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
 ## <a name="november-december-2019"></a>November-December 2019
 
@@ -87,9 +94,9 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
  
 - [Informationen zur Bedrohungs- & Sicherheitsrisikoverwaltungsanwendung und Anwendungsversion – Informationen zum Lebenszyklusende](tvm-security-recommendation.md) <BR>Anwendungen und Anwendungsversionen, die das Ende ihrer Lebensdauer erreicht haben, werden als solche gekennzeichnet oder gekennzeichnet, sodass Sie wissen, dass sie nicht mehr unterstützt werden und maßnahmen ergreifen können, um sie zu deinstallieren oder zu ersetzen. Dadurch werden die Risiken im Zusammenhang mit verschiedenen Sicherheitsrisiken aufgrund nicht gepatchter Anwendungen verringert.
 
-- [Schemas für die erweiterte Bedrohungs- &-Sicherheitsrisikoverwaltung](advanced-hunting-schema-reference.md) <BR>Verwenden Sie die Tabellen "Bedrohungs- & Sicherheitsrisikoverwaltung" im Schema "Erweiterte Suche", um Fragen zu Softwarebestand, Sicherheitsrisiko-Wissensbasis, Sicherheitskonfigurationsbewertung und Sicherheitskonfigurations-Wissensdatenbank zu erstellen. 
+- [Schemas für die erweiterte Bedrohungssuche & Sicherheitsrisikoverwaltung](advanced-hunting-schema-reference.md) <BR>Verwenden Sie die Tabellen "Bedrohungs- & Sicherheitsrisikoverwaltung" im Schema "Erweiterte Suche", um Fragen zu Softwarebestand, Sicherheitsrisiko-Wissensdatenbank, Sicherheitskonfigurationsbewertung und Sicherheitskonfigurations-Wissensdatenbank zu erstellen. 
  
- - [Rollenbasierte Zugriffssteuerungen für die Bedrohungs- & Sicherheitsrisikoverwaltung](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Verwenden Sie die neuen Berechtigungen, um maximale Flexibilität beim Erstellen von SecOps-orientierten Rollen, Threat & Vulnerability Management-orientierten Rollen oder Hybridrollen zu ermöglichen, sodass nur autorisierte Benutzer auf bestimmte Daten zugreifen, um ihre Aufgabe auszuführen. Sie können auch noch mehr Granularität erreichen, indem Sie angeben, ob eine Rolle "Bedrohungs- & Sicherheitsrisikoverwaltung" nur Sicherheitsrisiko-bezogene Daten anzeigen oder Wiederherstellungs- und Ausnahmen erstellen und verwalten kann.
+ - [Rollenbasierte Zugriffssteuerungen für die Bedrohungs- &-Sicherheitsrisikoverwaltung](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Verwenden Sie die neuen Berechtigungen, um maximale Flexibilität beim Erstellen von SecOps-orientierten Rollen, Threat & Vulnerability Management-orientierten Rollen oder Hybridrollen zu ermöglichen, sodass nur autorisierte Benutzer auf bestimmte Daten zugreifen, um ihre Aufgabe auszuführen. Sie können auch noch mehr Granularität erreichen, indem Sie angeben, ob eine Rolle "Bedrohungs- & Sicherheitsrisikoverwaltung" nur Sicherheitsrisiko-bezogene Daten anzeigen oder Wiederherstellungs- und Ausnahmen erstellen und verwalten kann.
 
 - [Bericht über Geräteintegrität und -compliance](machine-reports.md) <br/> Der Bericht über Geräteintegrität und -compliance enthält allgemeine Informationen zu den Geräten in Ihrer Organisation.
 
@@ -118,7 +125,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 ## <a name="june-2019"></a>Juni 2019
 
-- [Bedrohungs- &-Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md) <BR> Eine neue integrierte Funktion, die einen risikobasierten Ansatz für die Ermittlung, Priorisierung und Behebung von Endpunkt-Sicherheitsrisiken und Fehlkonfigurationen verwendet.
+- [Bedrohungs- & Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md) <BR> Eine neue integrierte Funktion, die einen risikobasierten Ansatz für die Ermittlung, Priorisierung und Behebung von Endpunkt-Sicherheitsrisiken und Fehlkonfigurationen verwendet.
   
 - [Bericht über Geräteintegrität und -compliance](machine-reports.md)  Der Bericht über Geräteintegrität und -compliance enthält allgemeine Informationen zu den Geräten in Ihrer Organisation.
 
@@ -127,7 +134,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 - [Berichte zum Bedrohungsschutz](threat-protection-reports.md)<BR>Der Bedrohungsschutzbericht enthält allgemeine Informationen zu Warnungen, die in Ihrer Organisation generiert werden. 
 
 
-- [Microsoft-Bedrohungsexperten](microsoft-threat-experts.md)<BR> Microsoft-Bedrohungsexperten ist der neue Dienst für die verwaltete Bedrohungssuche in Microsoft Defender für Endpunkt, der proaktive Suche, Priorisierung sowie zusätzlichen Kontext und Einblicke bietet, die Sicherheits-Operations Center (SOCs) weiter unterstützen, Bedrohungen schnell und präzise zu identifizieren und darauf zu reagieren. Es bietet zusätzliche Expertise und Optik, die Microsoft-Kunden nutzen können, um die Sicherheitsfunktionen im Rahmen Microsoft 365 zu erweitern.  
+- [Microsoft-Bedrohungsexperten](microsoft-threat-experts.md)<BR> Microsoft-Bedrohungsexperten ist der neue Dienst für die verwaltete Bedrohungssuche in Microsoft Defender für Endpunkt, der proaktive Suche, Priorisierung sowie zusätzlichen Kontext und Einblicke bietet, die Sicherheits-Operations Center (SOCs) weiter unterstützen, Bedrohungen schnell und präzise zu erkennen und darauf zu reagieren. Es bietet zusätzliche Expertise und Optik, die Microsoft-Kunden nutzen können, um die Sicherheitsfunktionen im Rahmen Microsoft 365 zu erweitern.  
 
 - [Indikatoren](ti-indicator.md) <BR> APIs für Indikatoren sind jetzt allgemein verfügbar. 
 
@@ -136,7 +143,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 
 ## <a name="april-2019"></a>April 2019
-- [Microsoft-Bedrohungsexperten Benachrichtigungsfunktion für gezielte Angriffe](microsoft-threat-experts.md) <BR> Die Benachrichtigungen über gezielte Angriffsbenachrichtigungen von Microsoft-Bedrohungsexperten sind auf Organisationen zugeschnitten, um so viele Informationen bereitzustellen, wie sie schnell bereitgestellt werden können, um die Aufmerksamkeit auf kritische Bedrohungen in ihrem Netzwerk zu lenken, einschließlich der Zeitachse, des Umfangs von Sicherheitsverletzungen und der Angriffsmethoden.
+- [Microsoft-Bedrohungsexperten Benachrichtigungsfunktion für gezielte Angriffe](microsoft-threat-experts.md) <BR> Die Benachrichtigungen über gezielte Angriffsbenachrichtigungen Microsoft-Bedrohungsexperten sind auf Organisationen zugeschnitten, um so viele Informationen bereitzustellen, wie schnell bereitgestellt werden können, um die Aufmerksamkeit auf kritische Bedrohungen in ihrem Netzwerk zu lenken, einschließlich der Zeitachse, des Umfangs der Verletzung und der Angriffsmethoden.
 
 - [Microsoft Defender für Endpunkt API](apis-intro.md) <BR> Microsoft Defender für Endpunkt macht einen Großteil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Workflows automatisieren und Innovationen basierend auf den Microsoft Defender für Endpunkt-Funktionen durchführen. 
 
@@ -145,7 +152,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 ## <a name="february-2019"></a>Februar 2019
 - [Vorfälle](view-incidents-queue.md) <BR> Incident ist eine neue Entität in Microsoft Defender für Endpunkt, die alle relevanten Warnungen und zugehörigen Entitäten zusammenführt, um die umfassendere Angriffsstory zu erzählen und Analysten eine bessere Perspektive auf die Bereinigung komplexer Bedrohungen zu geben. 
 
-- [Onboarding von früheren Windows-Versionen](onboard-downlevel.md)<BR> Integrieren Sie unterstützte Versionen von Windows Geräten, damit sie Sensordaten an den Microsoft Defender für Endpunkt-Sensor senden können.
+- [Onboarding von früheren Windows-Versionen](onboard-downlevel.md)<BR> Integrieren Sie unterstützte Versionen von Windows-Geräten, damit sie Sensordaten an den Microsoft Defender für Endpunkt-Sensor senden können.
 
 
 ## <a name="october-2018"></a>Oktober 2018

@@ -1,7 +1,7 @@
 ---
-title: Netzwerkgeräteerkennung und -Sicherheitsrisikomanagement
-description: Sicherheitsempfehlungen und Die Erkennung von Sicherheitsrisiken sind jetzt für Betriebssysteme von Switches, Routern, WLAN-Controllern und Firewalls verfügbar.
-keywords: Netzwerkgeräte, Erkennung von Sicherheitslücken bei Netzwerkgeräten, Betriebssysteme von Switches, Routern, WLAN-Controllern und Firewalls
+title: Netzwerkgeräteermittlung und Sicherheitsrisikomanagement
+description: Sicherheitsempfehlungen und die Erkennung von Sicherheitsrisiken sind jetzt für Betriebssysteme von Switches, Routern, WLAN-Controllern und Firewalls verfügbar.
+keywords: Netzwerkgeräte, Sicherheitsrisikoerkennung für Netzwerkgeräte, Betriebssysteme von Switches, Routern, WLAN-Controllern und Firewalls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862067"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062139"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Netzwerkgeräteerkennung und -Sicherheitsrisikomanagement
+# <a name="network-device-discovery-and-vulnerability-management"></a>Netzwerkgeräteermittlung und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,34 +35,29 @@ ms.locfileid: "51862067"
 - [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> [!IMPORTANT]
-> **Das Scannen und Verwalten von Netzwerkgeräten befindet sich derzeit in der öffentlichen Vorschau.**<br>
-> Diese Vorschauversion wird ohne Vereinbarung zum Servicelevel bereitgestellt und wird für Produktionsworkloads nicht empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
-> Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint Preview Features](preview.md).
-
->Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]  
-> Der [Blog zur](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) Ermittlung und Bewertung von Sicherheitslücken für Netzwerkgeräte in \( 04-13-2021 bietet Einblicke in die neuen Netzwerkgeräteerkennungsfunktionen \) in Defender for Endpoint.  Dieser Artikel enthält eine Übersicht  über die Herausforderung, die die Netzwerkgeräteermittlung bewältigen soll, sowie ausführliche Informationen über die ersten Schritte mit diesen neuen Funktionen.
+> Der Am 13.04.2021 veröffentlichte Blog ["Ermittlung von Netzwerkgeräten und Sicherheitsrisikobewertungen"](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) bietet Einblicke in die neuen Funktionen zur \( Ermittlung von \) **Netzwerkgeräten** in Defender für Endpunkt. Dieser Artikel enthält eine Übersicht über die Herausforderung, die die Ermittlung von **Netzwerkgeräten** zu bewältigen hat, sowie detaillierte Informationen zu den ersten Schritten mit diesen neuen Funktionen.
 
-Netzwerkerkennungsfunktionen sind im  Abschnitt Geräteinventar des Microsoft 365 security center und Microsoft Defender Security Center verfügbar.  
+Netzwerkermittlungsfunktionen sind im Abschnitt **"Geräteinventur"** des Microsoft 365 Security Centers und Microsoft Defender Security Center Konsolen verfügbar.  
 
-Für jedes Netzwerksegment wird ein bestimmtes Microsoft Defender for Endpoint-Gerät verwendet, um regelmäßig authentifizierte Scans vorkonfigurierter Netzwerkgeräte durchzuführen. Nach dem Entdecken bieten die Funktionen von Defender for Endpoint Bedrohungs- und Sicherheitsrisikomanagement Integrierte Workflows zum Sichern von ermittelten Switches, Routern, WLAN-Controllern, Firewalls und VPN-Gateways.  
+Ein bestimmtes Microsoft Defender für Endpunkt-Gerät wird in jedem Netzwerksegment verwendet, um regelmäßige authentifizierte Scans von vorkonfigurierten Netzwerkgeräten durchzuführen. Nach der Erkennung bieten die Bedrohungs- und Sicherheitsrisikomanagement-Funktionen von Defender für Endpunkt integrierte Workflows, um ermittelte Switches, Router, WLAN-Controller, Firewalls und VPN-Gateways zu sichern.  
 
-Sobald die Netzwerkgeräte erkannt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und kürzlich festgestellte Sicherheitsrisiken auf Netzwerkgeräten überprüfen, die in ihren Organisationen bereitgestellt wurden.
+Sobald die Netzwerkgeräte ermittelt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und kürzlich erkannte Sicherheitsrisiken auf Netzwerkgeräten überprüfen, die in ihrer Organisation bereitgestellt wurden.
 
 ## <a name="approach"></a>Ansatz
 
-Netzwerkgeräte werden nicht als Standardendpunkte verwaltet, da Defender for Endpoint keinen Sensor in die Netzwerkgeräte selbst integrierte. Diese Gerätetypen erfordern einen agentlosen Ansatz, bei dem eine Remotescan die erforderlichen Informationen von den Geräten erhält. Je nach Netzwerktopologie und -merkmalen führt ein einzelnes Gerät oder einige wenige In Microsoft Defender for Endpoint integrierte Geräte authentifizierte Scans von Netzwerkgeräten mithilfe von SNMP durch (schreibgeschützt).
+Netzwerkgeräte werden nicht als Standardendpunkte verwaltet, da Defender für Endpunkt keinen sensor in die Netzwerkgeräte selbst integriert hat. Diese Gerätetypen erfordern einen agentlosen Ansatz, bei dem ein Remotescan die erforderlichen Informationen von den Geräten abruft. Je nach Netzwerktopologie und -merkmalen führt ein einzelnes Gerät oder einige geräte, die in Microsoft Defender für Endpunkt integriert sind, authentifizierte Scans von Netzwerkgeräten mithilfe von SNMP durch (schreibgeschützt).
 
-Es gibt zwei Arten von Geräten, die Sie beachten sollten:
+Es gibt zwei Arten von Geräten, die Sie berücksichtigen sollten:
 
-- **Bewertungsgerät:** Ein Gerät, das bereits onboarded ist, mit dem Sie die Netzwerkgeräte überprüfen.
-- **Netzwerkgeräte:** Die Netzwerkgeräte, die Sie überprüfen und onboarden möchten.
+- **Bewertungsgerät:** Ein bereits integriertes Gerät, das Sie zum Scannen der Netzwerkgeräte verwenden.
+- **Netzwerkgeräte:** Die Netzwerkgeräte, die Sie scannen und integrieren möchten.
 
 ### <a name="vulnerability-management-for-network-devices"></a>Sicherheitsrisikoverwaltung für Netzwerkgeräte 
 
-Sobald die Netzwerkgeräte erkannt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und kürzlich festgestellte Sicherheitsrisiken auf Netzwerkgeräten überprüfen, die in ihren Organisationen bereitgestellt wurden.  
+Sobald die Netzwerkgeräte ermittelt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und kürzlich erkannte Sicherheitsrisiken auf Netzwerkgeräten überprüfen, die in ihrer Organisation bereitgestellt wurden.  
 
 ## <a name="operating-systems-that-are-supported"></a>Unterstützte Betriebssysteme
 
@@ -70,28 +65,28 @@ Die folgenden Betriebssysteme werden derzeit unterstützt:
 
 - Cisco IOS, IOS-XE, NX-OS
 - Juniper JUNOS
-- HPE ArubaOS, Procurve Switch Software
+- HPE IntuneOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
 
-Weitere Netzwerkanbieter und Betriebssysteme werden im Laufe der Zeit hinzugefügt, basierend auf daten, die aus der Kundennutzung gesammelt werden. Daher wird empfohlen, alle Netzwerkgeräte zu konfigurieren, auch wenn sie nicht in dieser Liste angegeben sind.
+Im Laufe der Zeit werden weitere Netzwerkanbieter und Das Betriebssystem hinzugefügt, basierend auf den von der Kundennutzung gesammelten Daten. Daher wird empfohlen, alle Ihre Netzwerkgeräte zu konfigurieren, auch wenn sie in dieser Liste nicht angegeben sind.
 
 ## <a name="how-to-get-started"></a>Erste Schritte
 
-Im ersten Schritt wählen Sie ein Gerät aus, auf dem die authentifizierten Netzwerkscans ausgeführt werden.
+Der erste Schritt besteht darin, ein Gerät auszuwählen, das die authentifizierten Netzwerküberprüfungen durchführt.
 
-1. Entscheiden Sie sich für ein integriertes Defender for Endpoint-Gerät (Client oder Server), das über eine Netzwerkverbindung zum Verwaltungsport für die Netzwerkgeräte verfügt, die Sie scannen möchten. 
+1. Entscheiden Sie sich für ein integriertes Defender für Endpunkt-Gerät (Client oder Server), das über eine Netzwerkverbindung mit dem Verwaltungsport für die Netzwerkgeräte verfügt, die Sie überprüfen möchten. 
 
-2. Der SNMP-Datenverkehr zwischen dem Defender for Endpoint-Bewertungsgerät und den zielgerichteten Netzwerkgeräten muss zulässig sein (z. B. durch die Firewall).
+2. SNMP-Datenverkehr zwischen dem Defender für Endpunkt-Bewertungsgerät und den Zielnetzwerkgeräten muss zulässig sein (z. B. durch die Firewall).
 
-3. Entscheiden Sie, welche Netzwerkgeräte auf Sicherheitsrisiken geprüft werden (z. B. ein Cisco Switch oder eine Palo Alto Networks-Firewall).  
+3. Entscheiden Sie, welche Netzwerkgeräte auf Sicherheitsrisiken überprüft werden (z. B. ein Cisco-Switch oder eine Firewall von Palo Alto Networks).  
 
-4. Stellen Sie sicher, dass SNMP schreibgeschützt auf allen konfigurierten Netzwerkgeräten aktiviert ist, damit das Defender for Endpoint-Bewertungsgerät die konfigurierten Netzwerkgeräte abfragen kann. "SNMP write" ist für die ordnungsgemäße Funktionalität dieses Features nicht erforderlich.
+4. Stellen Sie sicher, dass SNMP schreibgeschützt auf allen konfigurierten Netzwerkgeräten aktiviert ist, damit das Defender für Endpunkt-Bewertungsgerät die konfigurierten Netzwerkgeräte abfragen kann. "SNMP-Schreibvorgang" ist für die ordnungsgemäße Funktionalität dieses Features nicht erforderlich.
 
 5. Rufen Sie die IP-Adressen der zu scannenden Netzwerkgeräte ab (oder die Subnetze, in denen diese Geräte bereitgestellt werden).
 
-6. Rufen Sie die SNMP-Anmeldeinformationen der Netzwerkgeräte ab (z. B. Community String, noAuthNoPriv, authNoPriv, authPriv). Sie müssen die Anmeldeinformationen beim Konfigurieren eines neuen Bewertungsauftrags angeben.  
+6. Rufen Sie die SNMP-Anmeldeinformationen der Netzwerkgeräte ab (z. B.: Community String, noAuthNoPriv, authNoPriv, authPriv). Sie müssen die Anmeldeinformationen angeben, wenn Sie einen neuen Bewertungsauftrag konfigurieren.  
 
-7. Proxyclientkonfiguration: Außer den Anforderungen des Defender for Endpoint-Geräteproxys ist keine zusätzliche Konfiguration erforderlich.
+7. Proxyclientkonfiguration: Außer den Proxyanforderungen des Defender für Endpunkt-Geräts ist keine zusätzliche Konfiguration erforderlich.
 
 8. Damit der Netzwerkscanner authentifiziert werden kann und ordnungsgemäß funktioniert, müssen Sie unbedingt die folgenden Domänen/URLs hinzufügen:
 
@@ -101,115 +96,115 @@ Im ersten Schritt wählen Sie ein Gerät aus, auf dem die authentifizierten Netz
     - *.blob.core.windows.net/networkscannerstable/ *
 
     > [!NOTE]
-    > Nicht alle URLs sind in der dokumentierten Liste der zulässigen Datensammlungen von Defender for Endpoint angegeben.
+    > Nicht alle URLs werden in der dokumentierten Liste der zulässigen Datensammlungen von Defender für Endpunkt angegeben.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Konfigurieren von Bewertungsaufträgen ist die folgende Benutzerberechtigungsoption erforderlich: **Verwalten von Sicherheitseinstellungen in Security Center**. Sie können die Berechtigung finden, indem Sie **zu Einstellungen**  >  **Rollen .** Weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung](user-roles.md).
+Zum Konfigurieren von Bewertungsaufträgen ist die folgende Benutzerberechtigungsoption erforderlich: **Verwalten von Sicherheitseinstellungen im Security Center.** Sie finden die Berechtigung unter **Einstellungen**  >  **Rollen.** Weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installieren des Netzwerkscanners
 
-1. Wechseln Sie **zu Microsoft 365 security**  >  **Einstellungen**  >  **Endpoints** Assessment  >  **jobs** (under **Network assessments**).
-    1. Wechseln Sie Microsoft Defender Security Center seite Einstellungen > Bewertungsaufträge.
+1. Wechseln Sie zu **Microsoft 365**  >  **Sicherheits-Einstellungen**  >  **Endpunktbewertungsaufträgen**  >   (unter **Netzwerkbewertungen).**
+    1. Wechseln Sie im Microsoft Defender Security Center zur Seite Einstellungen > Bewertungsaufträge.
 
-2. Laden Sie den Netzwerkscanner herunter, und installieren Sie ihn auf dem dafür vorgesehenen Defender for Endpoint-Bewertungsgerät.
+2. Laden Sie den Netzwerkscanner herunter, und installieren Sie ihn auf dem angegebenen Defender für Endpunkt-Bewertungsgerät.
 
     > [!div class="mx-imgBorder"]
     > ![Schaltfläche "Scanner herunterladen"](images/assessment-jobs-download-scanner.png)
 
-## <a name="network-scanner-installation--registration"></a>Netzwerkscannerinstallation & Registrierung
+## <a name="network-scanner-installation--registration"></a>Netzwerkscanner-Installation & Registrierung
 
-Der Anmeldungsprozess kann auf dem festgelegten Bewertungsgerät selbst oder auf einem anderen Gerät (z. B. Ihrem persönlichen Clientgerät) abgeschlossen werden.
+Der Anmeldevorgang kann auf dem angegebenen Bewertungsgerät selbst oder auf einem anderen Gerät (z. B. Ihrem persönlichen Clientgerät) abgeschlossen werden.
 
-So führen Sie den Registrierungsprozess für Netzwerkscanner aus:
+So schließen Sie den Registrierungsvorgang für den Netzwerkscanner ab:
 
 1. Kopieren Und folgen Sie der URL, die in der Befehlszeile angezeigt wird, und verwenden Sie den bereitgestellten Installationscode, um den Registrierungsprozess abzuschließen.
 
     > [!NOTE]
     > Möglicherweise müssen Sie die Eingabeaufforderungseinstellungen ändern, um die URL kopieren zu können.
 
-2. Geben Sie den Code ein, und melden Sie sich mit einem Microsoft-Konto an, das die Defender for Endpoint-Berechtigung "Sicherheitseinstellungen in Security Center verwalten" besitzt.
+2. Geben Sie den Code ein, und melden Sie sich mit einem Microsoft-Konto an, das über die Defender für Endpunkt-Berechtigung "Verwalten von Sicherheitseinstellungen im Security Center" verfügt.
 
-3. Wenn Sie fertig sind, sollte eine Meldung angezeigt werden, in der Sie bestätigen, dass Sie sich angemeldet haben.
+3. Wenn Sie fertig sind, sollte eine Meldung angezeigt werden, die bestätigt, dass Sie sich angemeldet haben.
 
 ## <a name="configure-a-new-assessment-job"></a>Konfigurieren eines neuen Bewertungsauftrags  
 
-Wählen Sie auf der Seite Bewertungsaufträge in **Einstellungen** die Option **Netzwerkbewertungsauftrag hinzufügen aus.** Führen Sie den Einrichtungsvorgang aus, um Netzwerkgeräte zu wählen, die regelmäßig überprüft und dem Gerätebestand hinzugefügt werden sollen.
+Wählen Sie auf der Seite "Bewertungsaufträge" in **Einstellungen** die Option **"Netzwerkbewertungsauftrag hinzufügen"** aus. Folgen Sie dem Einrichtungsprozess, um Netzwerkgeräte auszuwählen, die regelmäßig überprüft und dem Gerätebestand hinzugefügt werden sollen.
 
-Stellen Sie sicher, dass jede IP-Adresse nur einmal auf mehreren Bewertungsgeräten konfiguriert ist, um eine Geräteduplizierung im Netzwerkgerätebestand zu verhindern.
+Um eine Geräteduplizierung im Netzwerkgerätebestand zu verhindern, stellen Sie sicher, dass jede IP-Adresse auf mehreren Bewertungsgeräten nur einmal konfiguriert ist.
 
 > [!div class="mx-imgBorder"]
-> ![Hinzufügen einer Netzwerkbewertungsauftragsschaltfläche](images/assessment-jobs-add.png)
+> ![Schaltfläche "Netzwerkbewertungsauftrag hinzufügen"](images/assessment-jobs-add.png)
 
-Hinzufügen eines Auftrags zur Netzwerkbewertung:
+Hinzufügen von Netzwerkbewertungsauftragsschritten:
 
-1. Wählen Sie den Namen "Bewertungsauftrag" und das "Bewertungsgerät", auf dem der Netzwerkscanner installiert wurde. Dieses Gerät führt die regelmäßig authentifizierten Scans aus.
+1. Wählen Sie den Namen "Bewertungsauftrag" und das "Bewertungsgerät" aus, auf dem der Netzwerkscanner installiert wurde. Dieses Gerät führt die regelmäßigen authentifizierten Scans durch.
 
-2. Fügen Sie IP-Adressen der zu scannenden Zielnetzwerkgeräte (oder der Subnetze, in denen diese Geräte bereitgestellt werden) hinzu. 
+2. Fügen Sie IP-Adressen von Zielnetzwerkgeräten hinzu, die gescannt werden sollen (oder die Subnetze, in denen diese Geräte bereitgestellt werden). 
 
-3. Fügen Sie erforderliche SNMP-Anmeldeinformationen der Zielnetzwerkgeräte hinzu. 
+3. Fügen Sie die erforderlichen SNMP-Anmeldeinformationen der Zielnetzwerkgeräte hinzu. 
 
-4. Speichern Sie den neu konfigurierten Netzwerkbewertungsauftrag, um die regelmäßige Netzwerkprüfung zu starten. 
+4. Speichern Sie den neu konfigurierten Netzwerkbewertungsauftrag, um die regelmäßige Netzwerküberprüfung zu starten. 
 
-### <a name="scan-and-add-network-devices"></a>Überprüfen und Hinzufügen von Netzwerkgeräten
+### <a name="scan-and-add-network-devices"></a>Scannen und Hinzufügen von Netzwerkgeräten
 
-Während des Einrichtungsprozesses können Sie eine einmal durchgeführte Testprüfung durchführen, um zu überprüfen, dass:
+Während des Einrichtungsprozesses können Sie einen einmaligen Testscan durchführen, um Folgendes zu überprüfen:
 
-- Es besteht eine Verbindung zwischen dem Defender for Endpoint-Bewertungsgerät und den konfigurierten Zielnetzwerkgeräten.
-- Die konfigurierten SNMP-Anmeldeinformationen sind richtig.
+- Es besteht eine Verbindung zwischen dem Defender für Endpunkt-Bewertungsgerät und den konfigurierten Zielnetzwerkgeräten.
+- Die konfigurierten SNMP-Anmeldeinformationen sind korrekt.
 
-Jedes Bewertungsgerät kann bis zu 1.500 erfolgreiche ÜBERPRÜFUNGen von IP-Adressen unterstützen. Wenn Sie beispielsweise 10 verschiedene Subnetze überprüfen, in denen nur 100 IP-Adressen erfolgreiche Ergebnisse zurückgeben, können Sie 1.400 ZUSÄTZLICHE IP-Adressen aus anderen Subnetzen auf demselben Bewertungsgerät überprüfen.  
+Jedes Bewertungsgerät kann bis zu 1.500 erfolgreiche IP-Adressenüberprüfungen unterstützen. Wenn Sie beispielsweise 10 verschiedene Subnetze scannen, in denen nur 100 IP-Adressen erfolgreiche Ergebnisse zurückgeben, können Sie 1.400 zusätzliche IP-Adressen aus anderen Subnetzen auf demselben Bewertungsgerät überprüfen.  
 
-Wenn mehrere IP-Adressbereiche/Subnetze zu überprüfen sind, dauert es einige Minuten, bis die Testscanergebnisse angezeigt werden. Ein Testscan ist für bis zu 1.024 Adressen verfügbar.
+Wenn mehrere IP-Adressbereiche/Subnetze überprüft werden müssen, dauert es mehrere Minuten, bis die Testscanergebnisse angezeigt werden. Ein Testscan wird für bis zu 1.024 Adressen verfügbar sein.
 
-Sobald die Ergebnisse angezeigt werden, können Sie auswählen, welche Geräte in die regelmäßige Überprüfung einbezogen werden sollen. Wenn Sie die Anzeige der Scanergebnisse überspringen, werden alle konfigurierten IP-Adressen dem Netzwerkbewertungsauftrag hinzugefügt (unabhängig von der Antwort des Geräts). Die Scanergebnisse können auch exportiert werden.
+Sobald die Ergebnisse angezeigt werden, können Sie auswählen, welche Geräte in den regelmäßigen Scan einbezogen werden. Wenn Sie die Anzeige der Scanergebnisse überspringen, werden alle konfigurierten IP-Adressen dem Netzwerkbewertungsauftrag hinzugefügt (unabhängig von der Antwort des Geräts). Die Scanergebnisse können auch exportiert werden.
 
 ## <a name="device-inventory"></a>Geräteübersicht
 
-Neu ermittelte Geräte werden  auf der Seite Geräteinventar unter der Registerkarte Neue **Netzwerkgeräte** angezeigt. Es kann bis zu zwei Stunden nach dem Hinzufügen eines Bewertungsauftrags dauern, bis die Geräte aktualisiert wurden.
+Neu ermittelte Geräte werden auf der Seite **"Gerätebestand"** auf der Registerkarte "Neue **Netzwerkgeräte"** angezeigt. Es kann bis zu zwei Stunden nach dem Hinzufügen eines Bewertungsauftrags dauern, bis die Geräte aktualisiert wurden.
 
 > [!div class="mx-imgBorder"]
-> ![Abschnitt "Netzwerkgeräte" im Geräteinventar](images/assessment-jobs-device-inventory.png)
+> ![Abschnitt "Netzwerkgeräte" im Gerätebestand](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-### <a name="network-scanner-installation-has-failed"></a>Fehler bei der Installation von Netzwerkscannern
+### <a name="network-scanner-installation-has-failed"></a>Installation des Netzwerkscanners fehlgeschlagen
 
-Stellen Sie sicher, dass die erforderlichen URLs den zulässigen Domänen in den Firewalleinstellungen hinzugefügt werden. Stellen Sie außerdem sicher, dass Proxyeinstellungen wie unter Konfigurieren von Geräteproxy- und [Internetkonnektivitätseinstellungen beschrieben konfiguriert sind.](configure-proxy-internet.md)
+Stellen Sie sicher, dass die erforderlichen URLs den zulässigen Domänen in den Firewalleinstellungen hinzugefügt werden. Stellen Sie außerdem sicher, dass Proxyeinstellungen wie unter [Konfigurieren von Geräteproxy- und Internetkonnektivitätseinstellungen](configure-proxy-internet.md)beschrieben konfiguriert sind.
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Die Microsoft.com/devicelogin webseite wurde nicht angezeigt
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Die Microsoft.com/devicelogin Webseite wurde nicht angezeigt
 
-Stellen Sie sicher, dass die erforderlichen URLs den zulässigen Domänen in Ihrer Firewall hinzugefügt werden. Stellen Sie außerdem sicher, dass Proxyeinstellungen wie unter Konfigurieren von Geräteproxy- und [Internetkonnektivitätseinstellungen beschrieben konfiguriert sind.](configure-proxy-internet.md)
+Stellen Sie sicher, dass die erforderlichen URLs den zulässigen Domänen in Ihrer Firewall hinzugefügt werden. Stellen Sie außerdem sicher, dass Proxyeinstellungen wie unter [Konfigurieren von Geräteproxy- und Internetkonnektivitätseinstellungen](configure-proxy-internet.md)beschrieben konfiguriert sind.
 
 ### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>Netzwerkgeräte werden nach mehreren Stunden nicht im Gerätebestand angezeigt
 
-Die Scanergebnisse sollten einige Stunden nach der ersten Überprüfung aktualisiert werden, die nach Abschluss der Konfiguration des Bewertungsauftrags stattgefunden hat.
+Die Scanergebnisse sollten einige Stunden nach der ersten Überprüfung aktualisiert werden, die nach Abschluss der Konfiguration des Bewertungsauftrags durchgeführt wurde.
 
-Wenn geräte weiterhin nicht angezeigt werden, überprüfen Sie, ob der Dienst "MdatpNetworkScanService" auf Ihren Bewertungsgeräten ausgeführt wird, auf denen Sie den Netzwerkscanner installiert haben, und führen Sie in der entsprechenden Bewertungsauftragskonfiguration einen "Scan ausführen" aus.  
+Wenn Geräte weiterhin nicht angezeigt werden, überprüfen Sie, ob der Dienst "MdatpNetworkScanService" auf Ihren Bewertungsgeräten ausgeführt wird, auf denen Sie den Netzwerkscanner installiert haben, und führen Sie in der entsprechenden Konfiguration des Bewertungsauftrags eine "Überprüfung ausführen" aus.  
 
 Wenn Sie nach 5 Minuten immer noch keine Ergebnisse erhalten, starten Sie den Dienst neu.  
 
-### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>Geräte, die zuletzt gesehen wurden, sind länger als 24 Stunden
+### <a name="devices-last-seen-time-is-longer-than-24-hours"></a>Geräte, die zuletzt gesehen wurden, sind länger als 24 Stunden.
 
-Überprüfen Sie, ob der Scanner ordnungsgemäß ausgeführt wird. Wechseln Sie dann zur Scandefinition, und wählen Sie "Test ausführen" aus. Überprüfen Sie, welche Fehlermeldungen von den relevanten IP-Adressen zurückgegeben werden.
+Überprüfen Sie, ob der Scanner ordnungsgemäß ausgeführt wird. Wechseln Sie dann zur Scandefinition, und wählen Sie "Test ausführen" aus. Überprüfen Sie, welche Fehlermeldungen von den entsprechenden IP-Adressen zurückgegeben werden.
 
 ### <a name="required-threat-and-vulnerability-management-user-permission"></a>Erforderliche Bedrohungs- und Sicherheitsrisikomanagement Benutzerberechtigung
 
-Die Registrierung wurde mit einem Fehler abgeschlossen: "Es sieht so aus, als ob Sie nicht über ausreichende Berechtigungen zum Hinzufügen eines neuen Agents verfügen. Die erforderliche Berechtigung ist 'Sicherheitseinstellungen in Security Center verwalten'."
+Die Registrierung wurde mit einem Fehler abgeschlossen: "Es sieht so aus, als ob Sie nicht über ausreichende Berechtigungen zum Hinzufügen eines neuen Agents verfügen. Die erforderliche Berechtigung lautet "Sicherheitseinstellungen im Security Center verwalten"."
 
 Drücken Sie eine beliebige Taste, um zu beenden.
 
-Bitten Sie Ihren Systemadministrator, Ihnen die erforderlichen Berechtigungen zu erteilen. Bitten Sie ein anderes relevantes Mitglied, Ihnen beim Anmeldevorgang zu helfen, indem Sie ihnen den Anmeldecode und den Link bereitstellen.
+Bitten Sie Ihren Systemadministrator, Ihnen die erforderlichen Berechtigungen zuzuweisen. Bitten Sie alternativ ein anderes relevantes Mitglied, Ihnen beim Anmeldevorgang zu helfen, indem Sie ihnen den Anmeldecode und den Link zur Verfügung stellen.
 
-### <a name="registration-process-fails-using-provided-link-in-the-command-line-in-registration-process"></a>Registrierungsprozess schlägt fehl, wenn der bereitgestellte Link in der Befehlszeile beim Registrierungsprozess verwendet wird
+### <a name="registration-process-fails-using-provided-link-in-the-command-line-in-registration-process"></a>Registrierungsvorgang schlägt bei Verwendung des bereitgestellten Links in der Befehlszeile im Registrierungsprozess fehl
 
 Probieren Sie einen anderen Browser aus, oder kopieren Sie den Anmeldelink und den Code auf ein anderes Gerät.
 
-### <a name="text-too-small-or-cant-copy-text-from-command-line"></a>Text zu klein oder kann keinen Text aus der Befehlszeile kopieren
+### <a name="text-too-small-or-cant-copy-text-from-command-line"></a>Text zu klein oder Text kann nicht aus der Befehlszeile kopiert werden
 
-Ändern Sie die Befehlszeileneinstellungen auf Ihrem Gerät, um das Kopieren und Ändern der Textgröße zu ermöglichen.
+Ändern Sie die Befehlszeileneinstellungen auf Ihrem Gerät, um das Kopieren und Ändern der Textgröße zuzulassen.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Geräteinventar](machines-view-overview.md)
+- [Gerätebestand](machines-view-overview.md)
 - [Konfigurieren erweiterter Funktionen](advanced-features.md)

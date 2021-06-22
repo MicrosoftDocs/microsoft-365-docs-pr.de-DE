@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Referenzmaterial zur Verhinderung von Datenverlust
-ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5c01b6419a9af100cfaedccbd5a9c4923ca3e42f
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878160"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061790"
 ---
 # <a name="data-loss-prevention-reference"></a>Referenz zur Verhinderung von Datenverlust
  
@@ -110,9 +110,6 @@ Wenn Sie sich dazu entscheiden, bestimmte Verteilergruppen in Exchange einzubezi
 Wenn Sie festlegen, dass bestimmte SharePoint-Websites berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 solcher Ein- und Ausschlüsse enthalten kann. Diese Grenzwerte bestehen zwar, sie können jedoch durch das Anwenden einer organisationsweiten oder einer für ganze Speicherorte geltenden Richtlinie übergangen werden.
 
 Wenn Sie festlegen, dass bestimmte OneDrive-Konten oder -Gruppen berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 Benutzerkonten bzw. 50 Gruppen als Ein- oder Ausschlüsse enthalten kann.
-
-> [!NOTE]
-> OneDrive für Geschäftsrichtlinien- Bereichsdefinitionen mit Benutzerkonten oder Gruppen befindet sich in der öffentlichen Vorschau. 
   
 ### <a name="rules"></a>Regeln
 

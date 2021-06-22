@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Microsoft 365 Defender-Portal verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und E-Mail-Anlagen zur erneuten Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964801"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062035"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -91,7 +91,8 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 5. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Absenden".**
 
-   ![Beispiel für neue URL-Übermittlung](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![Beispiel für neue URL-Übermittlung](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
@@ -105,7 +106,8 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Absenden".**
 
-   ![Beispiel für neue E-Mail-Übermittlung](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Beispiel für neue E-Mail-Übermittlung](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Übermitteln einer verdächtigen E-Mail-Anlage an Microsoft
 
@@ -119,7 +121,8 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 4. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche **"Absenden".**
 
-   ![Beispiel für die Übermittlung neuer Anlagen](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![Beispiel für die Übermittlung neuer Anlagen](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Anzeigen von Administratorübermittlungen an Microsoft
 
@@ -157,7 +160,8 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
      Wenn Sie fertig sind, klicken Sie auf **"Übernehmen".**
 
-     ![Neue Filteroptionen für Administratorübermittlungen](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Neue Filteroptionen für Administratorübermittlungen](../../media/admin-submission-filters.png)
 
    - Klicken Sie zum Gruppieren der Einträge auf **"Gruppieren",** und wählen Sie einen der folgenden Werte aus der Dropdownliste aus:
      - **Keine**
@@ -170,7 +174,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 ### <a name="admin-submission-rescan-details"></a>Details zur erneuten Überprüfung der Administratorübermittlung
 
-Nachrichten, die in Administratorübermittlungen übermittelt werden, werden erneut überprüft, und die Ergebnisse werden im Flyout "Übermittlungsdetails" angezeigt:
+Nachrichten, die in Administratorübermittlungen übermittelt werden, werden überprüft, und die Ergebnisse werden im Flyout "Übermittlungsdetails" angezeigt:
 
 - Mögliche Fehler in der E-Mail-Authentifizierung des Absenders zum Zeitpunkt der Auslieferung.
 - Informationen zu Richtlinientreffern, welche die Bewertung über einer Nachricht beeinflusst oder überschrieben haben könnten.
@@ -214,7 +218,8 @@ Wenn Sie das [Add-In "Nachricht melden",](enable-the-report-message-add-in.md)da
 
      Wenn Sie fertig sind, klicken Sie auf **"Übernehmen".**
 
-    ![Neue Filteroptionen für Benutzerübermittlungen](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Neue Filteroptionen für Benutzerübermittlungen](../../media/admin-submission-reported-messages.png)
 
    - Klicken Sie zum Gruppieren der Einträge auf **"Gruppieren",** und wählen Sie einen der folgenden Werte aus der Dropdownliste aus:
      - **Keine**
@@ -245,4 +250,5 @@ Wählen Sie auf der Registerkarte **"Vom Benutzer gemeldete Nachrichten"** eine 
 - **Melden von Spam**
 - **Untersuchung auslösen**
 
-![Neue Optionen auf der Schaltfläche "Aktion"](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![Neue Optionen auf der Schaltfläche "Aktion"](../../media/admin-submission-main-action-button.png)

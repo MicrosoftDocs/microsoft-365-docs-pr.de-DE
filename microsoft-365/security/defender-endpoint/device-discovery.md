@@ -1,7 +1,7 @@
 ---
 title: Übersicht über die Geräteermittlung
-description: Erfahren Sie, wie Sie die Endpunkterkennung in Microsoft 365 Defender nutzen, um nicht verwaltete Geräte in Ihrem Netzwerk zu finden.
-keywords: Geräteerkennung, Ermittlung, passiv, proaktiv, Netzwerk, Sichtbarkeit, Server, Arbeitsstation, onboard, nicht verwaltete Geräte
+description: Erfahren Sie, wie Sie die Endpunktermittlung in Microsoft 365 Defender nutzen, um nicht verwaltete Geräte in Ihrem Netzwerk zu finden.
+keywords: Geräteermittlung, entdecken, passiv, proaktiv, Netzwerk, Sichtbarkeit, Server, Arbeitsstation, onboard, nicht verwaltete Geräte
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636242"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062214"
 ---
 # <a name="device-discovery-overview"></a>Übersicht über die Geräteermittlung
 
@@ -35,22 +35,21 @@ ms.locfileid: "52636242"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
-Zum Schutz Ihrer Umgebung müssen Sie eine Bestandsaufnahme der Geräte in Ihrem Netzwerk verwenden. Die Zuordnung von Geräten in einem Netzwerk kann jedoch häufig kostspielig, schwierig und zeitaufwändig sein. 
+Der Schutz Ihrer Umgebung erfordert eine Bestandsaufnahme der Geräte, die sich in Ihrem Netzwerk befinden. Die Zuordnung von Geräten in einem Netzwerk kann jedoch häufig teuer, schwierig und zeitaufwändig sein. 
 
-Microsoft Defender for Endpoint bietet eine Geräteerkennungsfunktion, mit der Sie nicht verwaltete Geräte finden können, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind.
+Microsoft Defender für Endpunkt bietet eine Geräteermittlungsfunktion, mit der Sie nicht verwaltete Geräte finden können, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder umständliche Prozessänderungen erforderlich sind.
 
 
-Mit der Geräteerkennungsfunktion können Sie:
+Die Geräteermittlungsfunktion ermöglicht Folgendes:
 
 - **Ermitteln von Unternehmensendpunkten, die mit Ihrem Unternehmensnetzwerk verbunden sind** <br>
-Mithilfe von einfachen oder standardmäßigen Ermittlungsoptionen können Sie Arbeitsstationen, Server und mobile Endpunkte ermitteln, die noch nicht in Microsoft Defender for Endpoint integrierte sind.  
+Mit einfachen oder standardmäßigen Ermittlungsoptionen können Sie Arbeitsstationen, Server und mobile Endpunkte ermitteln, die noch nicht in Microsoft Defender für Endpunkt integriert sind.  
 
 - **Onboarding von ermittelten Endpunkten**<br>
-Nicht verwaltete Endpunkte in Ihrem Netzwerk führen zu Sicherheitsrisiken und Risiken für Ihr Netzwerk. Das Onboarding in den Dienst kann die Sichtbarkeit der Dienste erhöhen. 
+Nicht verwaltete Endpunkte in Ihrem Netzwerk führen zu Sicherheitsrisiken und Risiken für Ihr Netzwerk. Durch das Onboarding in den Dienst kann die Sichtbarkeit der Sicherheit für sie erhöht werden. 
 
-In Verbindung mit dieser Funktion wird eine neue Sicherheitsempfehlung zum Onboarding von Geräten in Microsoft Defender for Endpoint im Rahmen der vorhandenen Bedrohungs- und Sicherheitsrisikoverwaltung verfügbar sein.
+In Verbindung mit dieser Funktion wird eine neue Sicherheitsempfehlung zum Onboarding von Geräten in Microsoft Defender für Endpunkt als Teil der vorhandenen Bedrohungs- und Sicherheitsrisikoverwaltung verfügbar sein.
 
 
 
@@ -62,23 +61,23 @@ Es gibt zwei Erkennungsmodi:
 
 
 > [!IMPORTANT]
-> Die Ermittlung ist auf den Basismodus festgelegt. Sie können diese Konfiguration über die Einstellungsseite beibehalten. Die Standardermittlung ist der Standardmodus für alle Kunden ab dem 19. Juli 2021 – sofern sie nicht vor diesem Datum über die Einstellungsseite geändert wird.
+> Die Ermittlung ist auf den Basismodus festgelegt. Sie können diese Konfiguration über die Einstellungsseite beibehalten. Die Standardermittlung ist der Standardmodus für alle Kunden ab dem 19. Juli 2021 , es sei denn, sie wird über die Einstellungsseite vor diesem Datum geändert.
 
 ### <a name="basic-discovery"></a>Grundlegende Ermittlung 
 
-In diesem Modus erfassen Endpunkte passiv Ereignisse in Ihrem Netzwerk und extrahieren Geräteinformationen aus ihnen. Die grundlegende Ermittlung verwendet die SenseNDR.exe für die passive Netzwerkdatenerfassung, und es wird kein Netzwerkdatenverkehr initiiert. Endpunkte extrahieren einfach Daten aus jedem Netzwerkdatenverkehr, der von einem integrierten Gerät angezeigt wird. 
+In diesem Modus erfassen Endpunkte passiv Ereignisse in Ihrem Netzwerk und extrahieren Geräteinformationen daraus. Die grundlegende Ermittlung verwendet die SenseNDR.exe Binärdatei für die passive Netzwerkdatensammlung, und es wird kein Netzwerkdatenverkehr initiiert. Endpunkte extrahieren einfach Daten aus jedem Netzwerkdatenverkehr, der von einem integrierten Gerät erkannt wird. 
 
 ### <a name="standard-discovery"></a>Standardermittlung 
 
-Mit diesem Modus können Endpunkte beobachtete Geräte im Netzwerk aktiv austesten, um die gesammelten Daten zu bereichern und so eine zuverlässige und zusammenhängende Geräteinventarisierung zu erstellen. Der Standardmodus verwendet intelligentes, aktives Sondieren, um noch mehr Informationen zu beobachteten Geräten zu ermitteln, um vorhandene Geräteinformationen zu bereichern.  
+Dieser Modus ermöglicht Es Endpunkten, beobachtete Geräte im Netzwerk aktiv zu untersuchen, um gesammelte Daten zu erweitern, sodass Sie einen zuverlässigen und konsistenten Gerätebestand erstellen können. Der Standardmodus verwendet intelligente, aktive Untersuchung, um noch mehr Informationen zu beobachteten Geräten zu ermitteln, um vorhandene Geräteinformationen zu erweitern.  
 
-Wenn der Standardmodus aktiviert ist, werden minimale und vernachlässigbare Netzwerkaktivitäten, die vom Ermittlungssensor generiert werden, möglicherweise von Den Netzwerküberwachungstools in Ihrer Organisation beobachtet.  
+Wenn der Standardmodus aktiviert ist, werden minimale und geringfügige Netzwerkaktivitäten, die vom Ermittlungssensor generiert werden, möglicherweise von Netzwerküberwachungstools in Ihrer Organisation beobachtet.  
 
- Wenn Sie diesen Modus nicht aktivieren möchten, erhalten Sie nur eingeschränkte Sichtbarkeit nicht verwalteter Endpunkte in Ihrem Netzwerk.
+ Wenn Sie diesen Modus nicht aktivieren, erhalten Sie nur eingeschränkte Sichtbarkeit von nicht verwalteten Endpunkten in Ihrem Netzwerk.
 
-Die Standardermittlung verwendet verschiedene PowerShell-Skripts, um Geräte im Netzwerk aktiv zu testen. Diese PowerShell-Skripts sind von Microsoft signiert und werden an folgendem Speicherort ausgeführt: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` . Beispiel: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+Standard Discovery verwendet verschiedene PowerShell-Skripts, um Geräte im Netzwerk aktiv zu untersuchen. Diese PowerShell-Skripts sind von Microsoft signiert und werden an folgendem Speicherort ausgeführt: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` . Beispiel: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
-Sie können Ihre Discoveryeinstellungen ändern und anpassen, weitere Informationen finden Sie unter [Configure device discovery](configure-device-discovery.md).
+Sie können Ihre Ermittlungseinstellungen ändern und anpassen. Weitere Informationen finden Sie unter [Konfigurieren der Geräteermittlung.](configure-device-discovery.md)
 
 > [!NOTE]
 > Das Ermittlungsmodul unterscheidet zwischen Netzwerkereignissen, die im Unternehmensnetzwerk empfangen werden, und außerhalb des Unternehmensnetzwerks. Geräte, die nicht mit Unternehmensnetzwerken verbunden sind, werden nicht ermittelt oder im Gerätebestand aufgeführt. 
@@ -86,44 +85,44 @@ Sie können Ihre Discoveryeinstellungen ändern und anpassen, weitere Informatio
 
 
 ## <a name="device-inventory"></a>Gerätebestand 
-Geräte, die entdeckt wurden, aber noch nicht von Microsoft Defender for Endpoint onboarded und gesichert wurden, werden auf der Registerkarte Endpunkte unter Geräteinventar aufgeführt. Sie können jetzt einen neuen Filter in der Geräteinventarliste namens Onboarding-Status verwenden, der einen der folgenden Werte haben kann:
+Geräte, die ermittelt wurden, aber noch nicht integriert und von Microsoft Defender für Endpunkt gesichert wurden, werden im Geräteinventar auf der Registerkarte "Endpunkte" aufgeführt. Sie können nun einen neuen Filter in der Gerätebestandsliste namens Onboardingstatus verwenden, der einen der folgenden Werte aufweisen kann:
 
-- Onboarded – Der Endpunkt wird in Microsoft Defender for Endpoint onboarded.
-- Kann onboarded werden– Der Endpunkt wurde im Netzwerk erkannt, und das Betriebssystem wurde als ein Endpunkt identifiziert, der von Microsoft Defender for Endpoint unterstützt wird, aber derzeit nicht onboarded ist. Es wird dringend empfohlen, diese Geräte zu integrieren.
-- Nicht unterstützt – Der Endpunkt wurde im Netzwerk ermittelt, wird jedoch nicht von Microsoft Defender for Endpoint unterstützt.
-- Unzureichende Informationen – Das System konnte die Unterstützungsfähigkeit des Geräts nicht ermitteln. Das Aktivieren der Standarderkennung auf mehr Geräten im Netzwerk kann die ermittelten Attribute bereichern. 
+- Onboarded – Der Endpunkt ist in Microsoft Defender für Endpunkt integriert.
+- Kann integriert werden – Der Endpunkt wurde im Netzwerk ermittelt, und das Betriebssystem wurde als ein Endpunkt identifiziert, der von Microsoft Defender für Endpunkt unterstützt wird, aber derzeit nicht integriert ist. Es wird dringend empfohlen, diese Geräte zu integrieren.
+- Nicht unterstützt – Der Endpunkt wurde im Netzwerk ermittelt, wird jedoch von Microsoft Defender für Endpunkt nicht unterstützt.
+- Unzureichende Informationen – Das System konnte die Unterstützung des Geräts nicht ermitteln. Das Aktivieren der Standardermittlung auf mehr Geräten im Netzwerk kann die ermittelten Attribute erweitern. 
  
 
-![Abbildung des Geräteinventardashboards](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![Abbildung des Geräteinventar-Dashboards](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
-> Sie können filter immer anwenden, um nicht verwaltete Geräte aus der Gerätebestandsliste auszuschließen. Sie können auch die Spalte Onboardingstatus in API-Abfragen verwenden, um nicht verwaltete Geräte herausfiltern. 
+> Sie können immer Filter anwenden, um nicht verwaltete Geräte aus der Gerätebestandsliste auszuschließen. Sie können auch die Spalte "Onboardingstatus" in API-Abfragen verwenden, um nicht verwaltete Geräte herauszufiltern. 
 
-## <a name="vulnerability-assessment-on-discovered-devices"></a>Sicherheitsrisikobewertung auf erkannten Geräten
-Sicherheitsrisiken und Risiken auf Ihren Geräten sowie andere ermittelte nicht verwaltete Geräte im Netzwerk sind Teil der aktuellen TVM-Flüsse unter "Security Empfehlungen" und werden auf Entitätsseiten im gesamten Portal dargestellt. Suchen Sie nach "SSH"-bezogenen Sicherheitsempfehlungen, um SSH-Sicherheitsrisiken zu finden, die für nicht verwaltete und verwaltete Geräte im Zusammenhang stehen. 
+## <a name="vulnerability-assessment-on-discovered-devices"></a>Bewertung von Sicherheitsrisiken auf ermittelten Geräten
+Sicherheitsrisiken und Risiken auf Ihren Geräten sowie andere ermittelte nicht verwaltete Geräte im Netzwerk sind Teil des aktuellen TVM-Flusses unter "Sicherheit Empfehlungen" und werden auf Entitätsseiten im portalweiten Bereich dargestellt. Suchen Sie nach "SSH"-Sicherheitsempfehlungen, um SSH-Sicherheitsrisiken zu finden, die mit nicht verwalteten und verwalteten Geräten zusammenhängen. 
 
 ![Abbildung des Dashboards für Sicherheitsempfehlungen](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
-## <a name="use-advanced-hunting-on-discovered-devices"></a>Verwenden der erweiterten Suche auf erkannten Geräten
-Sie können erweiterte Suchabfragen verwenden, um die Sichtbarkeit auf ermittelten Geräten zu verbessern.
-In der Tabelle DeviceInfo finden Sie Details zu ermittelten Endpunkten oder netzwerkbezogene Informationen zu diesen Geräten in der DeviceNetworkInfo-Tabelle.
+## <a name="use-advanced-hunting-on-discovered-devices"></a>Verwenden der erweiterten Suche auf ermittelten Geräten
+Sie können Abfragen der erweiterten Suche verwenden, um Aufschlüsse auf ermittelten Geräten zu erhalten.
+Hier finden Sie Details zu ermittelten Endpunkten in der DeviceInfo-Tabelle oder netzwerkbezogene Informationen zu diesen Geräten in der DeviceNetworkInfo-Tabelle.
   
 
-![Abbildung der erweiterten Verwendung der Suche](images/f48ba1779eddee9872f167453c24e5c9.png)
+![Abbildung der verwendung der erweiterten Suche](images/f48ba1779eddee9872f167453c24e5c9.png)
 
 
-Die Geräteerkennung nutzt integrierte Microsoft Defender for Endpoint-Geräte als Netzwerkdatenquelle, um Aktivitäten nicht integrierten Geräten zu entsprechen. Dies bedeutet, dass aktivitäten auf dem nicht integrierten Gerät auf der Zeitachse und in der Tabelle Advanced hunting DeviceNetworkEvents angezeigt werden, wenn ein integriertes Microsoft Defender for Endpoint-Gerät mit einem nicht integrierten Gerät kommuniziert. 
+Die Gerätesuche nutzt integrierte Geräte von Microsoft Defender für Endpunkt als Netzwerkdatenquelle, um Aktivitäten nicht integrierten Geräten zuzuordnen. Dies bedeutet, dass, wenn ein integriertes Microsoft Defender für Endpunkt-Gerät mit einem nicht integrierten Gerät kommuniziert, Aktivitäten auf dem nicht integrierten Gerät auf der Zeitachse und über die DeviceNetworkEvents-Tabelle für die erweiterte Suche angezeigt werden können. 
 
 
 
-Neue Ereignisse sind TCP(Transmission Control Protocol)-Verbindungen und passen zum aktuellen DeviceNetworkEvents-Schema. TCP-Ingress auf das Microsoft Defender for Endpoint-fähige Gerät von einem nicht von Microsoft Defender für Endpoint aktivierten Gerät.  
+Neue Ereignisse sind TCP-Verbindungen (Transmission Control Protocol) und passen in das aktuelle DeviceNetworkEvents-Schema. TCP-Ausgang an das Microsoft Defender für Endpunkt-aktivierte Gerät von einem nicht von Microsoft Defender für Endpunkt aktivierten Gerät.  
 
-Außerdem wurden die folgenden Aktionstypen hinzugefügt:  
+Die folgenden Aktionstypen wurden ebenfalls hinzugefügt:  
 
-- ConnectionAttempt – Versuch, eine TCP-Verbindung herzustellen (syn)  
+- ConnectionAttempt – Ein Versuch, eine TCP-Verbindung herzustellen (syn)  
 - ConnectionAcknowledged – Eine Bestätigung, dass eine TCP-Verbindung akzeptiert wurde (syn\ack)  
 
-Sie können diese Beispielabfrage ausprobieren:  
+Sie können diese Beispielabfrage testen:  
 
 ```
 DeviceNetworkEvents  
@@ -133,18 +132,18 @@ DeviceNetworkEvents
 
 
 ## <a name="changed-behavior"></a>Geändertes Verhalten
-Im folgenden Abschnitt werden die Änderungen aufgeführt, die Sie in Microsoft Defender for Endpoint und/oder Microsoft 365 Security Center beobachten, wenn diese Funktion aktiviert ist. 
+Im folgenden Abschnitt sind die Änderungen aufgeführt, die Sie in Microsoft Defender für Endpunkt und/oder Microsoft 365 Security Center beobachten werden, wenn diese Funktion aktiviert ist. 
  
-1.  Geräte, die nicht in Microsoft Defender to Endpoint onboarded sind, werden voraussichtlich im Geräteinventar, in der erweiterten Suche und in API-Abfragen angezeigt. Dadurch kann die Größe der Abfrageergebnisse erheblich erhöht werden. 
-    1. Die Tabellen "DeviceInfo" und "DeviceNetworkInfo" in Advanced Hunting enthalten nun ermitteltes Gerät. Sie können diese Geräte mithilfe des Attributs "OnboardingStatus" herausfiltern.
+1.  Geräte, die nicht in Microsoft Defender zu Endpunkt integriert sind, werden voraussichtlich im Gerätebestand, in der erweiterten Suche und in API-Abfragen angezeigt. Dies kann die Größe der Abfrageergebnisse erheblich erhöhen. 
+    1. Die Tabellen "DeviceInfo" und "DeviceNetworkInfo" in der erweiterten Suche enthalten nun das ermittelte Gerät. Sie können diese Geräte mithilfe des "OnboardingStatus"-Attributs herausfiltern.
 
-    2. Ermittelte Geräte werden voraussichtlich in den Ergebnissen der Streaming-API-Abfrage angezeigt. Sie können diese Geräte mithilfe des Filters `OnboardingStatus` in Ihrer Abfrage herausfiltern. 
+    2. Es wird erwartet, dass ermittelte Geräte in den Abfrageergebnissen der Streaming-API angezeigt werden. Sie können diese Geräte herausfiltern, indem Sie den `OnboardingStatus` Filter in Ihrer Abfrage verwenden. 
 
 2.  Nicht verwaltete Geräte werden vorhandenen Gerätegruppen basierend auf den definierten Kriterien zugewiesen. 
-3.  In seltenen Fällen kann die Standarderkennung Warnungen auf Netzwerkmonitoren oder Sicherheitstools auslösen. Bitte geben Sie Feedback, wenn solche Ereignisse auftreten, um zu verhindern, dass sich diese Probleme wiederholen. Sie können explizit ausschließen, dass bestimmte Ziele oder ganze Subnetze von der Standardermittlung aktiv untersucht werden. 
+3.  In seltenen Fällen kann die Standardermittlung Warnungen auf Netzwerkmonitoren oder Sicherheitstools auslösen. Bitte geben Sie Feedback, wenn Sie solche Ereignisse erleben, um zu verhindern, dass sich diese Probleme wiederholen. Sie können explizit ausschließen, dass bestimmte Ziele oder ganze Subnetze von der Standardermittlung aktiv untersucht werden. 
 
 
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Konfigurieren der Geräteermittlung](configure-device-discovery.md)
-- [Häufig gestellte Fragen zur Geräteerkennung](device-discovery-faq.md)
+- [Häufig gestellte Fragen zur Geräteermittlung](device-discovery-faq.md)

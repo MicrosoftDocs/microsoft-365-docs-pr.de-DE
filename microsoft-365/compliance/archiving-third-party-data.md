@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit bei Dokumenten in Microsoft 365 Postfächer importieren.
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054768"
+ms.locfileid: "53061728"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
@@ -143,12 +143,11 @@ Wie bereits erwähnt, sind datenkonnektoren, die von TeleMessage bereitgestellt 
 |O2-SMS und VoIP-Netzwerkarchivierer | Ja         | Nein | Nein |
 |TELUS SMS Network Archiver | Ja | Nein | Nein |
 |Verizon SMS/MMS Network Archiver | Ja | Nein | Nein |
-|WeChat-Archivierer | Ja | Nein | Nein |
 |WhatsApp-Archivierer | Ja | Nein | Nein |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Zusammenarbeit mit einem Microsoft-Partner zum Archivieren von Drittanbieterdaten
 
-Eine weitere Möglichkeit zum Importieren und Archivieren von Drittanbieterdaten besteht darin, dass Ihre Organisation mit einem Microsoft-Partner zusammenarbeiten kann. Wenn ein Datentyp eines Drittanbieters von den im Microsoft Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert wird, dass Elemente regelmäßig aus der Datenquelle des Drittanbieters extrahiert werden, und dann eine Verbindung mit der Microsoft-Cloud über eine DRITTANBIETER-API herstellen und diese Elemente in Microsoft 365 importieren. Der Partnerconnector konvertiert außerdem den Inhalt eines Elements aus der Datenquelle eines Drittanbieters in eine E-Mail-Nachricht und importiert ihn dann in ein Postfach in Microsoft 365.
+Eine weitere Möglichkeit zum Importieren und Archivieren von Drittanbieterdaten besteht darin, dass Ihre Organisation mit einem Microsoft-Partner zusammenarbeiten kann. Wenn ein Datentyp eines Drittanbieters von den im Microsoft Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert wird, dass Elemente regelmäßig aus der Datenquelle des Drittanbieters extrahiert werden, und dann eine Verbindung mit der Microsoft-Cloud über eine DRITTANBIETER-API herstellen und diese Elemente in Microsoft 365 importieren. Der Partnerconnector konvertiert außerdem den Inhalt eines Elements aus der Datenquelle des Drittanbieters in eine E-Mail-Nachricht und importiert ihn dann in ein Postfach in Microsoft 365.
 
 Eine Liste der Partner, mit denen Sie arbeiten können, und der schrittweise Prozess für diese Methode finden Sie unter Zusammenarbeit mit einem Partner zum Archivieren von [Drittanbieterdaten in Microsoft 365.](work-with-partner-to-archive-third-party-data.md)

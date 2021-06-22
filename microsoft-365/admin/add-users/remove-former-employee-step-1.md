@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Blockieren der Anmeldung eines ehemaligen Mitarbeiters und Blockieren des Zugriffs auf Microsoft 365 Dienste.
-ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840850"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061824"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Schritt 1: Verhindern, dass sich ein ehemaliger Mitarbeiter anmeldet und den Zugriff auf Microsoft 365 Dienste blockiert
 
@@ -41,7 +41,7 @@ Wenn Sie den Anmeldezugriff eines Benutzers sofort verhindern müssen, sollten S
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 2. Wählen Sie das Kontrollkästchen neben dem Benutzernamen aus, und wählen Sie dann **Kennwort zurücksetzen** aus.
 3. Geben Sie ein neues Kennwort ein, und wählen Sie dann **Zurücksetzen** aus. (Senden Sie es nicht an sie.)
-4. Wählen Sie den Namen des Benutzers aus, um zum Eigenschaftenbereich zu wechseln, und wählen Sie auf der Registerkarte **"Konto"** die Option **"Abmelden initiieren" aus.**
+4. Wählen Sie den Namen des Benutzers aus, um zum Eigenschaftenbereich zu wechseln, und wählen Sie auf der Registerkarte **"Konto"** die Option **"Aus allen Sitzungen abmelden" aus.**
 
 Innerhalb einer Stunde – oder nachdem sie die aktuelle Microsoft 365 Seite verlassen haben, auf der sie sich befinden – werden sie aufgefordert, sich erneut anzumelden. Ein Zugriffstoken ist eine Stunde lang gut, daher hängt die Zeitachse davon ab, wie viel Zeit für dieses Token verbleibt und ob er aus seiner aktuellen Webseite navigiert.
   
