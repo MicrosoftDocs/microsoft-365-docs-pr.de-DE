@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie ein Postfach konfigurieren, um Spam- und Phishing-E-Mails zu sammeln, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083536"
+ms.locfileid: "53096156"
 ---
 # <a name="user-reported-message-settings"></a>Vom Benutzer gemeldete Nachrichteneinstellungen
 
@@ -134,24 +134,19 @@ Die Anforderungen an die Nachrichtenformatierung werden im nächsten Abschnitt b
 
 Um die ursprünglichen angefügten Nachrichten korrekt zu identifizieren, erfordern Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, eine bestimmte Formatierung. Wenn die Nachrichten dieses Format nicht verwenden, werden die ursprünglichen angefügten Nachrichten immer als Phishing-Übermittlungen identifiziert.
 
-Um die ursprünglichen angefügten Nachrichten richtig identifizieren zu können, müssen Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, die folgende Syntax für den Betreff (Briefumschlagtitel) verwenden:
+Wenn Sie den gemeldeten Grund für die ursprünglichen angefügten Nachrichten angeben möchten, müssen Nachrichten, die an das benutzerdefinierte Postfach gesendet werden (die Anlage nicht ändern), mit einem der folgenden Präfixe im Betreff (Briefumschlagtitel) beginnen:
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| oder Junk:
+- 2| oder nicht Junk
+- 3| oder Phishing
 
-dabei ist SafetyAPIAction einer der folgenden ganzzahligen Werte:
+Beispiel:
 
-- 1: Junk
-- 2: Kein Junk
-- 3: Phishing
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-In diesem Beispiel werden die folgenden Werte verwendet:
+- Beide Nachrichten werden basierend auf dem Betreff als "Keine Junk-Nachricht" gemeldet.
+- Der Rest wird ignoriert.
 
-- Die Nachricht wird als Phishing gemeldet.
-- Die Netzwerknachrichten-ID lautet 49871234-6dc6-43e8-abcd-08d797f20abe.
-- Die Absender-IP lautet 167.220.232.101.
-- Die Absenderadresse ist test@contoso.com.
-- Die Betreffzeile der Nachricht lautet "Phishing-Testübermittlung".
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Nachrichten, die diesem Format nicht folgen, werden im Übermittlungsportal nicht ordnungsgemäß angezeigt.

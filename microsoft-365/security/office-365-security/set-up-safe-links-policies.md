@@ -18,12 +18,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie Tresor Links-Richtlinien und globale Einstellungen für Tresor Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082756"
+ms.locfileid: "53096768"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten Tresor Links-Richtlinien in Microsoft Defender für Office 365
 
@@ -53,7 +53,7 @@ Die grundlegenden Elemente einer Tresor Links-Richtlinie sind:
 - Die Richtlinie für **sichere Links:** Aktivieren Sie Tresor Linksschutz, aktivieren Sie die URL-Überprüfung in Echtzeit, geben Sie an, ob auf den Abschluss der Echtzeitüberprüfung gewartet werden soll, bevor die Nachricht zuzustellen ist, aktivieren Sie die Überprüfung auf interne Nachrichten, geben Sie an, ob Benutzerklicks auf URLs nachverfolgen sollen, und geben Sie an, ob Benutzer auf die ursprüngliche URL klicken dürfen.
 - **Die Regel für sichere Verknüpfungen:** Gibt die Prioritäts- und Empfängerfilter an (für wen die Richtlinie gilt).
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Tresor Links-Richtlinien im Microsoft 365 Defender-Portal verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Tresor Verknüpfungsrichtlinien im Microsoft 365 Defender Portal verwalten:
 
 - Wenn Sie eine Tresor Verknüpfungsrichtlinie erstellen, erstellen Sie tatsächlich eine Regel für sichere Links und die zugehörige Richtlinie für sichere Links gleichzeitig mit demselben Namen für beide.
 - Wenn Sie eine Tresor Verknüpfungsrichtlinie ändern, ändern Einstellungen im Zusammenhang mit Dem Namen, Priorität, aktiviert oder deaktiviert und Empfängerfilter die Regel für sichere Verknüpfungen. Alle anderen Einstellungen ändern die zugehörige Richtlinie für sichere Links.
@@ -110,7 +110,7 @@ Beim Erstellen einer benutzerdefinierten richtlinie für Tresor Links im Microso
 
    Mehreren Werten in der gleichen Bedingung verwenden die „ODER“-Logik (z. B. _\<recipient1\>_ ODER _\<recipient2\>_). Unterschiedlichen Bedingungen verwenden die „UND“-Logik (z. B. _\<recipient1\>_ UND _\<member of group 1\>_).
 
-   - **Ausschließen dieser Benutzer, Gruppen und Domänen**: Um Ausnahmen für die internen Empfänger hinzuzufügen, für welche die Richtlinie gilt (Empfängerausnahmen), wählen Sie diese Option und konfigurieren Sie die Ausnahmen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+   - **Ausschließen dieser Benutzer, Gruppen und Domänen:** Um Ausnahmen für die internen Empfänger hinzuzufügen, für die die Richtlinie gilt (Empfängerausnahmen), wählen Sie diese Option aus, und konfigurieren Sie die Ausnahmen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
@@ -138,7 +138,7 @@ Beim Erstellen einer benutzerdefinierten richtlinie für Tresor Links im Microso
 
 6. Wählen Sie auf der **angezeigten Benachrichtigungsseite** einen der folgenden Werte **aus: Wie möchten Sie Ihre Benutzer benachrichtigen?**
    - **Verwenden des Standardmäßigen Benachrichtigungstexts**
-   - **Verwenden Sie benutzerdefinierten Benachrichtigungstext:** Wenn Sie diesen Wert auswählen, werden die folgenden Einstellungen angezeigt:
+   - **Verwenden Sie benutzerdefinierten Benachrichtigungstext:** Wenn Sie diesen Wert auswählen (die Länge darf 200 Zeichen nicht überschreiten), werden die folgenden Einstellungen angezeigt:
      - **Verwenden von Microsoft Translator für die automatische Lokalisierung**
      - **Benutzerdefinierter Benachrichtigungstext:** Geben Sie den benutzerdefinierten Benachrichtigungstext in dieses Feld ein.
 
@@ -146,7 +146,7 @@ Beim Erstellen einer benutzerdefinierten richtlinie für Tresor Links im Microso
 
 7. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
-   Wenn Sie fertig sind, klicken Sie auf **"Absenden".**
+   Klicken Sie nach Abschluss des Vorgangs auf **Senden**.
 
 8. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 

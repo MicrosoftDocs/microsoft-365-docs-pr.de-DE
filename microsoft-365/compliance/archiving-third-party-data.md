@@ -21,78 +21,142 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Sie Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit bei Dokumenten in Microsoft 365 Postfächer importieren.
-ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+description: Erfahren Sie, wie Sie Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit von Dokumenten in Microsoft 365 Postfächer importieren.
+ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061728"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096168"
 ---
-# <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
+# <a name="archive-third-party-data-in-microsoft-365"></a>Archivieren von Drittanbieterdaten in Microsoft 365
 
-mit Microsoft 365 können Administratoren Datenkonnektoren verwenden, um Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit an Dokumenten in Postfächern in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Ein Hauptvorteil der Verwendung von Datenconnectors zum Importieren und Archivieren von Drittanbieterdaten in Microsoft 365 besteht darin, dass Sie nach dem Import verschiedene Microsoft 365 Compliancelösungen darauf anwenden können. Auf diese Weise können Sie sicherstellen, dass die Nicht-Microsoft-Daten Ihrer Organisation den Vorschriften und Standards entsprechen, die sich auf Ihre Organisation auswirken.
+mit Microsoft 365 können Administratoren Datenconnectors verwenden, um Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit an Dokumenten in Postfächern in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Ein Hauptvorteil der Verwendung von Datenconnectors zum Importieren und Archivieren von Drittanbieterdaten in Microsoft 365 besteht darin, dass Sie nach dem Import verschiedene Microsoft 365 Compliancelösungen anwenden können. Auf diese Weise können Sie sicherstellen, dass die Nicht-Microsoft-Daten Ihrer Organisation den Vorschriften und Standards entsprechen, die sich auf Ihre Organisation auswirken.
 
 ## <a name="third-party-data-connectors"></a>Daten-Connectoren von Drittanbietern
 
-In der folgenden Tabelle sind die datenkonnektoren von Drittanbietern aufgeführt, die im Microsoft 365 Compliance Center verfügbar sind. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Daten von Drittanbietern anwenden können. Im [nächsten Abschnitt](#overview-of-compliance-solutions-that-support-third-party-data) finden Sie eine detailliertere Beschreibung der einzelnen Compliance-Lösungen und wie sie von Drittanbieterdaten profitieren kann.
+Das Microsoft 365 Compliance Center stellt systemeigene Drittanbieter-Datenkonnektoren von Microsoft zum Importieren von Daten aus verschiedenen Datenquellen bereit, z. B. LinkedIn, Instant Bloomberg und Twitter sowie Datenconnectors, die die Insider-Risikomanagementlösung unterstützen. Zusätzlich zu diesen Datenconnectors arbeitet Microsoft mit den folgenden Partnern zusammen, um viele weitere Datenconnectors des dritten Teils im Microsoft 365 Compliance Center bereitzustellen. Ihre Organisation arbeitet mit diesen Partnern zusammen, um ihren Archivierungsdienst einzurichten, bevor ein entsprechender Datenkonnektor im Microsoft 365 Compliance Center erstellt wird.
 
-> [!TIP]
-> Klicken Sie auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
+- [Veritas](#veritas-data-connectors)
+
+- [TeleMessage](#telemessage-data-connectors)
+
+- [17a-4 LLC](#17a-4-data-connectors)
+
+- [CellTrust](#celltrust-data-connectors)
+
+Die in den nächsten Abschnitten aufgeführten Drittanbieterdaten (mit Ausnahme von PERSONAL-Daten und physischen Daten, die für die Microsoft 365 Insider-Risikomanagementlösung verwendet werden) werden in Benutzerpostfächer importiert. Die Microsoft 365 Compliancelösungen, die Drittanbieterdaten unterstützen, werden auf das Benutzerpostfach angewendet, in dem die Daten gespeichert sind.
+
+### <a name="microsoft-data-connectors"></a>Microsoft-Datenkonnektoren
+
+In der folgenden Tabelle sind die systemeigenen Datenkonnektoren von Drittanbietern aufgeführt, die im Microsoft 365 Compliance Center verfügbar sind. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie anwenden können, nachdem Sie Daten von Drittanbietern in Microsoft 365 importiert und archiviert haben. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+
+Klicken Sie auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
 
 |Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[AT&T Network <sup>1</sup>](archive-att-network-archiver-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Cisco Jabber auf MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Cisco Jabber auf Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Cisco Jabber auf PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[EML <sup>2</sup>](archive-eml-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[Enterprise Zahl <sup>1</sup>](archive-enterprise-number-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[FX Verbinden <sup>2</sup>](archive-fxconnect-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Personalwesen (HR)](import-hr-data.md) ||||||![Häkchen](../media/checkmark.png)
 |[ICE Chat](archive-icechat-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Jive <sup>2</sup>](archive-jive-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[MS SQL-Datenbank <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[O2 Network <sup>1</sup>](archive-o2-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Physisches Ausweichen](import-physical-badging-data.md) ||||||![Häkchen](../media/checkmark.png)|
-|[Pivot <sup>2</sup>](archive-pivot-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Reuters E cod <sup>2</sup>](archive-reuterseikon-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[Signal <sup>1</sup>](archive-signal-archiver-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Skype for Business <sup>2</sup>](archive-skypeforbusiness-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Orchestra <sup>2</sup>](archive-symphony-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Kanal <sup>1</sup>](archive-telegram-archiver-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[TELUS Network <sup>1</sup>](archive-telus-network-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Text getrennt <sup>2</sup>](archive-text-delimited-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Webseiten <sup>2</sup>](archive-webpagecapture-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Workplace von Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[XIP <sup>2</sup>](archive-xip-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Zoomen von Besprechungen <sup>2</sup>](archive-zoommeetings-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 ||||||||
 
-> [!NOTE]
-> <sup>1</sup> Von TeleMessage bereitgestellter Datenkonnektor. Bevor Sie Daten in Microsoft 365 archivieren können, müssen Sie mit TeleMessage zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Weitere Informationen finden Sie im Abschnitt "Voraussetzungen" in den schrittweisen Anweisungen für diesen Datentyp. TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Weitere Informationen finden Sie im Abschnitt ["Datenkonnektoren" im Abschnitt "US Government Cloud"](#data-connectors-in-the-us-government-cloud) in diesem Artikel. <br/><br/><sup>2</sup> Datenkonnektor, der von Dere bereitgestellt wird. Bevor Sie Daten in Microsoft 365 archivieren können, müssen Sie mit Csv zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Weitere Informationen finden Sie im Abschnitt "Voraussetzungen" in den schrittweisen Anweisungen für diesen Datentyp.
+### <a name="veritas-data-connectors"></a>Veritas-Datenkonnektoren
 
-Die in der vorherigen Tabelle aufgeführten Drittanbieterdaten (mit Ausnahme von PERSONAL-Daten und physischen Daten für Fehlerhafte) werden in Benutzerpostfächer importiert. Die entsprechenden Compliancelösungen, die Drittanbieterdaten unterstützen, werden auf das Benutzerpostfach angewendet, in dem die Daten gespeichert sind.
+In der Tabelle in diesem Abschnitt sind die Datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit Csv verfügbar sind. Die Tabelle enthält außerdem eine Zusammenfassung der Compliancelösungen, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Drittanbieterdaten anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+
+Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen Sie mit Deren Archivierungsdienst *(merge1* genannt) für Ihre Organisation zusammenarbeiten. Klicken Sie für weitere Informationen auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
+
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust](archive-celltrust-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco-Jabber auf MS SQL](archive-ciscojabberonmssql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco-Jabber auf Oracle](archive-ciscojabberonoracle-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco-Jabber auf PostgreSQL](archive-ciscojabberonpostgresql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[EML](archive-eml-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[FX Connect](archive-fxconnect-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[MS SQL-Datenbank](archive-mssqldatabaseimporter-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[Pivot](archive-pivot-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Reuters Dealing](archive-reutersdealing-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Salesforce Chatter](archive-salesforcechatter-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[ServiceNow](archive-servicenow-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[Slack eDiscovery](archive-slack-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Symphony](archive-symphony-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Texttrennzeichen](archive-text-delimited-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[Webex Teams](archive-webexteams-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Webseiten](archive-webpagecapture-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[Workplace von Facebook](archive-workplacefromfacebook-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[XIP](archive-xip-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[XSLT/XML](archive-xslt-xml-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[Yieldbroker](archive-yieldbroker-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Zoom Besprechungen](archive-zoommeetings-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+||||||||
+
+### <a name="telemessage-data-connectors"></a>TeleMessage Datenconnectors
+
+In der Tabelle in diesem Abschnitt sind die datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit TeleMessage verfügbar sind. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Drittanbieterdaten anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+
+Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen Sie mit TeleMessage zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Klicken Sie für weitere Informationen auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
+
+TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Weitere Informationen finden Sie im Abschnitt "Datenkonnektoren" im Abschnitt "US Government Cloud" in diesem Artikel.
+
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android ](archive-android-archiver-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[AT&T Network ](archive-att-network-archiver-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Bell Network ](archive-bell-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Enterprise Anzahl](archive-enterprise-number-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[O2-Netzwerk ](archive-o2-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[TELUS-Netzwerk ](archive-telus-network-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Verizon Network ](archive-verizon-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[WeChat ](archive-wechat-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Whatsapp ](archive-whatsapp-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+||||||||
+
+### <a name="17a-4-data-connectors"></a>17a-4-Datenconnectors
+
+In der Tabelle in diesem Abschnitt sind die Datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit 17a-4 LLC verfügbar sind. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Drittanbieterdaten anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+
+Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen Sie mit Deren Archivierungsdienst *(dataparser* genannt) für Ihre Organisation zusammenarbeiten. Klicken Sie für weitere Informationen auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
+
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Bloomberg ](archive-17a-4-bloomberg-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco Jabber ](archive-17a-4-cisco-jabber-data.md)   |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco Webex ](archive-17a-4-webex-teams-data.md)   |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[FactSet ](archive-17a-4-factset-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Fuze ](archive-17a-4-fuze-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[FX Verbinden](archive-17a-4-fxconnect-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[ICE Chat](archive-17a-4-ice-im-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[InvestEdge ](archive-17a-4-investedge-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[LivePerson Conversational Cloud ](archive-17a-4-liveperson-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Quip ](archive-17a-4-quip-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Refinitiv Ediscovery Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Servicenow ](archive-17a-4-servicenow-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Slack ](archive-17a-4-slack-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Symphonie ](archive-17a-4-symphony-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Zoom ](archive-17a-4-zoom-data.md)    |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+||||||||
+
+### <a name="celltrust-data-connectors"></a>CellTrust-Datenkonnektoren
+
+In der Tabelle in diesem Abschnitt ist der Datenkonnektor eines Drittanbieters aufgeführt, der in Zusammenarbeit mit CellTrust verfügbar ist. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Drittanbieterdaten anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+
+Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen Sie mit CellTrust zusammenarbeiten, um deren Archivierungsdienst *(celltrust SL2)* für Ihre Organisation einzurichten. Klicken Sie für weitere Informationen auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines CellTrust SL2-Connectors zu erhalten.
+
+|Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+||||||||
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Übersicht über Compliancelösungen, die Drittanbieterdaten unterstützen
 
@@ -148,6 +212,6 @@ Wie bereits erwähnt, sind datenkonnektoren, die von TeleMessage bereitgestellt 
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Zusammenarbeit mit einem Microsoft-Partner zum Archivieren von Drittanbieterdaten
 
-Eine weitere Möglichkeit zum Importieren und Archivieren von Drittanbieterdaten besteht darin, dass Ihre Organisation mit einem Microsoft-Partner zusammenarbeiten kann. Wenn ein Datentyp eines Drittanbieters von den im Microsoft Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert wird, dass Elemente regelmäßig aus der Datenquelle des Drittanbieters extrahiert werden, und dann eine Verbindung mit der Microsoft-Cloud über eine DRITTANBIETER-API herstellen und diese Elemente in Microsoft 365 importieren. Der Partnerconnector konvertiert außerdem den Inhalt eines Elements aus der Datenquelle des Drittanbieters in eine E-Mail-Nachricht und importiert ihn dann in ein Postfach in Microsoft 365.
+Eine weitere Möglichkeit zum Importieren und Archivieren von Drittanbieterdaten besteht darin, dass Ihre Organisation mit einem Microsoft-Partner zusammenarbeiten kann. Wenn ein Datentyp eines Drittanbieters von den im Microsoft Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert wird, dass Elemente regelmäßig aus der Datenquelle des Drittanbieters extrahiert werden, und dann eine Verbindung mit der Microsoft-Cloud über eine DRITTANBIETER-API herstellen und diese Elemente in Microsoft 365 importieren. Der Partnerconnector konvertiert außerdem den Inhalt eines Elements aus der Datenquelle des Drittanbieters in eine E-Mail-Nachricht und importiert es dann in ein Postfach in Microsoft 365.
 
-Eine Liste der Partner, mit denen Sie arbeiten können, und der schrittweise Prozess für diese Methode finden Sie unter Zusammenarbeit mit einem Partner zum Archivieren von [Drittanbieterdaten in Microsoft 365.](work-with-partner-to-archive-third-party-data.md)
+Eine Liste der Partner, mit denen Sie zusammenarbeiten können, und der schrittweise Prozess für diese Methode finden Sie unter Zusammenarbeit mit einem Partner zum Archivieren von [Drittanbieterdaten in Microsoft 365.](work-with-partner-to-archive-third-party-data.md)

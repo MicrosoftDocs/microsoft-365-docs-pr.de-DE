@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
-description: Regeln zur Verringerung der Angriffsfläche können verhindern, dass Exploits Apps und Skripts verwenden, um Geräte mit Schadsoftware zu infizieren.
+description: Regeln zur Verringerung der Angriffsfläche können dazu beitragen, zu verhindern, dass Exploits Apps und Skripts verwenden, um Geräte mit Schadsoftware zu infizieren.
 keywords: Attack Surface Reduction-Regeln, Asr, Hips, Host Intrusion Prevention System, Schutzregeln, Anti-Exploit, Antiexploit, Exploit, Infektionsverhinderung, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028787"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096732"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
 
@@ -32,7 +32,7 @@ ms.locfileid: "53028787"
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Warum Regeln zur Verringerung der Angriffsfläche wichtig sind
 
-Die Angriffsfläche Ihrer Organisation umfasst alle Orte, an denen ein Angreifer die Geräte oder Netzwerke Ihrer Organisation kompromittieren könnte. Die Reduzierung der Angriffsfläche bedeutet, die Geräte und das Netzwerk Ihrer Organisation zu schützen, sodass Angreifer weniger Möglichkeiten haben, Angriffe auszuführen. Das Konfigurieren von Regeln zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt kann hilfreich sein!
+Die Angriffsfläche Ihrer Organisation umfasst alle Stellen, an denen ein Angreifer die Geräte oder Netzwerke Ihrer Organisation kompromittieren könnte. Die Reduzierung der Angriffsfläche bedeutet, die Geräte und das Netzwerk Ihrer Organisation zu schützen, sodass Angreifer weniger Möglichkeiten haben, Angriffe auszuführen. Das Konfigurieren von Regeln zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt kann hilfreich sein!
 
 Regeln zur Verringerung der Angriffsfläche zielen auf bestimmte Softwareverhalten ab, z. B.:
 
@@ -40,7 +40,7 @@ Regeln zur Verringerung der Angriffsfläche zielen auf bestimmte Softwareverhalt
 - Ausführen verborgener oder anderweitig verdächtiger Skripts
 - Ausführen von Verhaltensweisen, die Apps in der Regel während der normalen täglichen Arbeit nicht initiieren
 
-Solche Softwareverhaltensweisen werden manchmal in legitimen Anwendungen angezeigt. Diese Verhaltensweisen werden jedoch häufig als riskant betrachtet, da sie häufig von Angreifern durch Schadsoftware missbraucht werden. Regeln zur Verringerung der Angriffsfläche können softwarebasierte riskante Verhaltensweisen einschränken und dazu beitragen, ihre Organisation zu schützen.
+Solche Softwareverhaltensweisen werden manchmal in legitimen Anwendungen angezeigt. Diese Verhaltensweisen werden jedoch häufig als riskant betrachtet, da sie häufig von Angreifern durch Schadsoftware missbraucht werden. Regeln zur Verringerung der Angriffsfläche können softwarebasiertes riskantes Verhalten einschränken und dazu beitragen, ihre Organisation zu schützen.
 
 Weitere Informationen zum Konfigurieren von Regeln zur Verringerung der Angriffsfläche finden Sie unter Aktivieren von [Regeln zur Verringerung der Angriffsfläche.](enable-attack-surface-reduction.md)
 
@@ -54,7 +54,7 @@ Sie können bewerten, wie sich eine Regel zur Verringerung der Angriffsfläche a
 
 ## <a name="audit-mode-for-evaluation"></a>Überwachungsmodus für die Auswertung
 
-Verwenden Sie [den Überwachungsmodus,](audit-windows-defender.md) um zu bewerten, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Organisation auswirken, wenn sie aktiviert sind. Führen Sie zunächst alle Regeln im Überwachungsmodus aus, damit Sie verstehen können, wie sich diese auf Ihre Branchenanwendungen auswirken. Viele Branchenanwendungen sind mit eingeschränkten Sicherheitsbedenken geschrieben und führen möglicherweise Aufgaben auf ähnliche Weise wie Schadsoftware aus. Durch die Überwachung von Überwachungsdaten und [das Hinzufügen von Ausschlüssen](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) für erforderliche Anwendungen können Sie Regeln zur Verringerung der Angriffsfläche bereitstellen, ohne die Produktivität zu verringern.
+Verwenden Sie [den Überwachungsmodus,](audit-windows-defender.md) um zu bewerten, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Organisation auswirken, wenn sie aktiviert sind. Führen Sie zuerst alle Regeln im Überwachungsmodus aus, damit Sie verstehen können, wie sich diese auf Ihre Branchenanwendungen auswirken. Viele Branchenanwendungen sind mit eingeschränkten Sicherheitsbedenken geschrieben und führen möglicherweise Aufgaben auf ähnliche Weise wie Schadsoftware aus. Durch die Überwachung von Überwachungsdaten und [das Hinzufügen von Ausschlüssen](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) für erforderliche Anwendungen können Sie Regeln zur Verringerung der Angriffsfläche bereitstellen, ohne die Produktivität zu verringern.
 
 ## <a name="warn-mode-for-users"></a>Warnmodus für Benutzer
 
@@ -139,7 +139,7 @@ Sie können das Windows Ereignisprotokoll überprüfen, um Ereignisse anzuzeigen
 
 1. Laden Sie das [Evaluierungspaket herunter,](https://aka.ms/mp7z2w) und extrahieren Sie die Datei *cfa-events.xml* an einen leicht zugänglichen Speicherort auf dem Gerät.
 
-2. Geben Sie die Wörter *Ereignisanzeige* in die Menü "Start" ein, um die Windows Ereignisanzeige zu öffnen.
+2. Geben Sie die Wörter *Ereignisanzeige* in die Startmenü ein, um die Windows Ereignisanzeige zu öffnen.
 
 3. Wählen Sie unter **"Aktionen"** die Option **"Benutzerdefinierte Ansicht importieren" aus...**.
 
@@ -245,7 +245,7 @@ Configuration Manager-Name: `Block Office application from creating child proces
 
 GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Blockieren des Diebstahls von Anmeldeinformationen aus dem subsystem der Windows lokalen Sicherheitsautorität
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Blockieren des Diebstahls von Anmeldeinformationen aus dem Windows Subsystem der lokalen Sicherheitsautorität
 
 Diese Regel trägt dazu bei, das Stehlen von Anmeldeinformationen zu verhindern, indem der Subsystemdienst der lokalen Sicherheitsautorität (Local Security Authority Subsystem Service, LSASS) gesperrt wird.
 
@@ -269,7 +269,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
 
-Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet werden:
+Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet wurden:
 
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
 - Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic-VBS- oder JavaScript-.js datei)
@@ -296,9 +296,11 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Ausführbare Dateien an der Ausführung hindern, außer sie erfüllen ein Verbreitungs-, Alters- oder vertrauenswürdige Listen-Kriterium
 
-Diese Regel verhindert, dass die folgenden Dateitypen gestartet werden, es sei denn, sie erfüllen die Verbreitungs- oder Alterskriterien oder befinden sich in einer vertrauenswürdigen Liste oder ausschlussliste:
+Mit dieser Regel wird verhindert, dass ausführbare Dateien wie .exe, .dll oder SCR gestartet werden, es sei denn, eine der folgenden Bedingungen ist erfüllt:
 
-- Ausführbare Dateien (z. B. .exe, .dll oder SCR)
+- Verbreitung: Die ausführbaren Dateien werden auf mehr als 1.000 Endpunkten gefunden.
+- Alter: Die ausführbaren Dateien wurden vor mehr als 24 Stunden veröffentlicht.
+- Speicherort: Die ausführbaren Dateien sind in einer vertrauenswürdigen Liste oder einer Ausschlussliste enthalten.
 
 Das Starten nicht vertrauenswürdiger oder unbekannter ausführbarer Dateien kann riskant sein, da möglicherweise zunächst nicht klar ist, ob die Dateien bösartig sind.
 
@@ -381,9 +383,9 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
 
-Diese Regel blockiert Codeeinfügungsversuche von Office Apps in andere Prozesse.
+Diese Regel blockiert Codeinjektionsversuche von Office Apps in andere Prozesse.
 
-Angreifer versuchen möglicherweise, Office-Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
+Angreifer versuchen möglicherweise, Office Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
 
 Es gibt keine bekannten legitimen Geschäftszwecke für die Verwendung von Codeeinfügung.
 
@@ -404,9 +406,9 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Office-Kommunikationsanwendung am Erstellen von untergeordneten Prozessen hindern
 
-Diese Regel verhindert, dass Outlook untergeordnete Prozesse erstellt und gleichzeitig legitime Outlook-Funktionen zulässt.
+Diese Regel verhindert, dass Outlook untergeordnete Prozesse erstellen und gleichzeitig legitime Outlook Funktionen zulassen.
 
-Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code Sicherheitslücken in Outlook missbraucht. Es schützt auch vor [Outlook-Regeln und Formular-Exploits,](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) die Angreifer verwenden können, wenn die Anmeldeinformationen eines Benutzers kompromittiert werden.
+Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code Sicherheitslücken in Outlook missbraucht. Es schützt auch vor [Outlook Regeln und Formularen,](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) die Angreifer verwenden können, wenn die Anmeldeinformationen eines Benutzers kompromittiert werden.
 
 > [!NOTE]
 > Diese Regel blockiert DLP-Richtlinientipps und QuickInfos in Outlook. Diese Regel gilt nur für Outlook und Outlook.com.
@@ -500,7 +502,7 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Erweiterten Schutz vor Ransomware verwenden
 
-Diese Regel bietet eine zusätzliche Schutzebene vor Ransomware. Es verwendet Client- und Cloud-Heuristiken, um festzustellen, ob eine Datei Ransomware ähnelt. Diese Regel blockiert keine Dateien mit einem oder mehreren der folgenden Merkmale:
+Diese Regel bietet eine zusätzliche Schutzebene vor Ransomware. Es verwendet sowohl Client- als auch Cloud-Heuristiken, um zu bestimmen, ob eine Datei Ransomware ähnelt. Diese Regel blockiert keine Dateien mit einem oder mehreren der folgenden Merkmale:
 
 - Die Datei wurde bereits in der Microsoft-Cloud als nicht vertrauenswürdig eingestuft.
 - Die Datei ist eine gültige signierte Datei.
