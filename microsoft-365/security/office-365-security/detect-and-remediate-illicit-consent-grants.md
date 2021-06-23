@@ -18,12 +18,12 @@ description: Erfahren Sie, wie Sie den Angriff auf unrechtmäßige Zustimmungser
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029861"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083008"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Korrigieren unrechtmäßiger Zustimmungserwilligung
 
@@ -50,9 +50,9 @@ Sie müssen das **Überwachungsprotokoll** durchsuchen, um Nachschlagezeichen zu
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Schritte zum Auffinden von Anzeichen für diesen Angriff
 
-1. Öffnen **Sie** das Microsoft 365 Defender-Portal <https://security.microsoft.com> unter, und wählen Sie dann **"Überwachen"** aus.
+1. Öffnen Sie das **Microsoft 365 Defender Portal** <https://security.microsoft.com> unter, und wählen Sie dann **"Überwachen"** aus. Oder verwenden Sie , um direkt zur **Seite "Überwachung"** zu <https://security.microsoft.com/auditlogsearch> wechseln.
 
-2. Überprüfen Sie auf der daraufhin geöffneten Seite **"Überwachung",** ob die Registerkarte **"Suchen"** ausgewählt ist, und konfigurieren Sie dann die folgenden Einstellungen:
+2. Überprüfen Sie auf der Seite **"Überwachung",** ob die Registerkarte **"Suchen"** ausgewählt ist, und konfigurieren Sie dann die folgenden Einstellungen:
    - **Datums- und Uhrzeitbereich**
    - **Aktivitäten:** Überprüfen Sie, ob **die Ergebnisse für alle Aktivitäten** angezeigt werden.
 
@@ -137,7 +137,7 @@ Das Skript erzeugt eine Datei mit dem Namen Permissions.csv. Führen Sie die fol
 
 ## <a name="determine-the-scope-of-the-attack"></a>Bestimmen des Umfangs des Angriffs
 
-Nachdem Sie die Bestandsaufnahme des Anwendungszugriffs abgeschlossen haben, überprüfen Sie das **Überwachungsprotokoll,** um den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, auf die die unzulässige Anwendung Zugriff auf Ihre Organisation hatte, und den Berechtigungen, die die App hatte. Sie können das **Überwachungsprotokoll** im [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md)durchsuchen.
+Nachdem Sie die Bestandsaufnahme des Anwendungszugriffs abgeschlossen haben, überprüfen Sie das **Überwachungsprotokoll,** um den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, auf die die unzulässige Anwendung Zugriff auf Ihre Organisation hatte, und den Berechtigungen, die die App hatte. Sie können das **Überwachungsprotokoll** im [Microsoft 365 Defender Portal](../../compliance/search-the-audit-log-in-security-and-compliance.md)durchsuchen.
 
 > [!IMPORTANT]
 > [Die Postfachüberwachung](../../compliance/enable-mailbox-auditing.md) und [Aktivitätsüberwachung für Administratoren und Benutzer](../../compliance/turn-audit-log-search-on-or-off.md) muss vor dem Angriff aktiviert worden sein, damit Sie diese Informationen erhalten können.
@@ -166,7 +166,7 @@ Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen 
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten. Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 - Aufgaben, die innerhalb von 90 Tagen ausgeführt werden sollten. Diese erfordern etwas mehr Zeit für Planung und Implementierung, stärken die Sicherheit Ihres Unternehmens jedoch erheblich.
-- Über 90 Tage hinaus. Diese Verbesserungen werden in den ersten 90 Tagen Ihrer Arbeit umgesetzt.
+- Nach 90 Tagen. Diese Verbesserungen werden in den ersten 90 Tagen Ihrer Arbeit umgesetzt.
 
 ## <a name="see-also"></a>Siehe auch
 

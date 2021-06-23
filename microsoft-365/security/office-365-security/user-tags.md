@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist für Warnungen, Berichte und Untersuchungen in Microsoft Defender verfügbar, damit Office 365 die markierten Benutzer schnell identifizieren können.
+description: Administratoren können erfahren, wie sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Tagfilterung ist für Warnungen, Berichte und Untersuchungen in Microsoft Defender verfügbar, damit Office 365 die markierten Benutzer schnell identifizieren können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3ac53891e0eb106ab3681251cc4cb8c969b51f8a
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904104"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083116"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
@@ -46,36 +46,36 @@ Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet habe
 - [Die Seite "E-Mail-Entität"](mdo-email-entity-page.md#other-innovations)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Kampagnenansichten](campaigns.md)
-- Für Prioritätskonten können Sie den [Bericht "E-Mail-Probleme bei Prioritätskonten"](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
+- Für Prioritätskonten können Sie den [Bericht "E-Mail-Probleme für Prioritätskonten"](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
 
-In diesem Artikel wird erläutert, wie Sie Benutzertags im Microsoft 365 Defender-Portal konfigurieren. Es gibt keine Cmdlets in Microsoft 365 Defender-Portal zum Verwalten von Benutzertags.
+In diesem Artikel wird erläutert, wie Sie Benutzertags im Microsoft 365 Defender-Portal konfigurieren. Es gibt keine Cmdlets in Microsoft 365 Defender Portal zum Verwalten von Benutzertags.
 
 Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerkonten mit hoher Auswirkung sind, finden Sie in den [Sicherheitsempfehlungen für Prioritätskonten in Microsoft 365.](security-recommendations-for-priority-accounts.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Wissenswertes, bevor Sie anfangen
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com/> . Um direkt zur Seite **"Benutzertags"** zu wechseln, öffnen Sie <https://security.microsoft.com/securitysettings/userTags> .
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com/>. Um direkt zur Seite **"Benutzertags"** zu wechseln, öffnen Sie <https://security.microsoft.com/securitysettings/userTags> .
 
-- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Microsoft 365 Defender-Portal Berechtigungen zugewiesen werden:
+- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Microsoft 365 Defender Portal Berechtigungen zugewiesen werden:
   - Um Benutzertags zu erstellen, zu ändern und zu löschen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
   - Um Mitglieder zu vorhandenen Benutzertags hinzuzufügen und daraus zu entfernen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung",** **"Sicherheitsadministrator"** oder **"Sicherheitsoperator"** sein.
   - Für den schreibgeschützten Zugriff auf Benutzertags müssen Sie Mitglied der Rollengruppe **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal.](permissions-in-the-security-and-compliance-center.md)
+  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >
-  > - Durch hinzufügen von Benutzern zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  > - Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   >
   > - Die Verwaltung von Benutzertags wird durch die Rollen **"Tag-Reader"** und **"Tag-Manager"** gesteuert.
 
-- Sie können Prioritätskonten auch im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten.](../../admin/setup/priority-accounts.md)
+- Sie können auch Prioritätskonten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten.](../../admin/setup/priority-accounts.md)
 
 - Informationen zum Schützen _privilegierter Konten_ (Administratorkonten) finden Sie in [diesem Thema.](/azure/architecture/framework/security/critical-impact-accounts)
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Benutzertags
+## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Verwenden des Microsoft 365 Defender Portals zum Erstellen von Benutzertags
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
+1. Wechseln Sie im Microsoft 365 Defender Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
 
 2. Klicken Sie auf der Seite **"Benutzertags"** auf das ![ Symbol "Tag ](../../media/m365-cc-sc-create-icon.png) **erstellen"**.
 
@@ -105,9 +105,9 @@ Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerk
 
    Wenn Sie fertig sind, klicken Sie auf **"Absenden"** und dann auf **"Fertig".**
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen von Benutzertags
+## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Verwenden des Microsoft 365 Defender Portals zum Anzeigen von Benutzertags
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
+1. Wechseln Sie im Microsoft 365 Defender Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
 
 2. Auf der Seite **"Benutzertags"** werden die folgenden Eigenschaften in der Liste der Benutzertags angezeigt:
 
@@ -118,25 +118,25 @@ Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerk
 
 3. Wenn Sie ein Benutzertag auswählen, indem Sie auf den Namen klicken, werden die Details in einem Flyout angezeigt.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern von Benutzertags
+## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Verwenden des Microsoft 365 Defender Portals zum Ändern von Benutzertags
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
+1. Wechseln Sie im Microsoft 365 Defender Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
 
 2. Wählen Sie auf der Seite **"Benutzertags"** das Benutzertag aus der Liste aus, und klicken Sie dann auf ![ "Tag bearbeiten" auf ](../../media/m365-cc-sc-edit-icon.png) **"Tag bearbeiten".**
 
-3. Im angezeigten Detail-Flyout sind derselbe Assistent und dieselben Einstellungen verfügbar, wie im Abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Benutzertags"](#use-the-microsoft-365-defender-portal-to-create-user-tags) weiter oben in diesem Artikel beschrieben.
+3. Im angezeigten Flyout "Details" sind derselbe Assistent und dieselben Einstellungen verfügbar, wie im Abschnitt ["Verwenden des Microsoft 365 Defender Portals zum Erstellen von Benutzertags"](#use-the-microsoft-365-defender-portal-to-create-user-tags) weiter oben in diesem Artikel beschrieben.
 
    **Hinweise**:
 
    - Die Seite **"Tag definieren"** ist für das integrierte Systemtag des **Prioritätskontos** nicht verfügbar, daher können Sie dieses Tag nicht umbenennen oder die Beschreibung nicht ändern.
    - Sie können ein benutzerdefiniertes Tag nicht umbenennen, aber Sie können die Beschreibung ändern.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>Verwenden des Microsoft 365 Defender-Portals zum Entfernen von Benutzertags
+## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>Verwenden des Microsoft 365 Defender Portals zum Entfernen von Benutzertags
 
 > [!NOTE]
 > Sie können das integrierte **Prioritätskonto-Systemtag** nicht entfernen.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
+1. Wechseln Sie im Microsoft 365 Defender Portal zu **Einstellungen** \> **E-Mail-&** \> **Benutzertags** für die Zusammenarbeit.
 
 2. Wählen Sie auf der Seite **"Benutzertags"** das Benutzertag aus der Liste aus, und klicken Sie dann auf ![ "Tag löschen" auf ](../../media/m365-cc-sc-delete-icon.png) **"Tag löschen".**
 

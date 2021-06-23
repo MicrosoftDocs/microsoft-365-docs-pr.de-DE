@@ -20,12 +20,12 @@ description: Administratoren können erfahren, wie Sie defender für Office 365 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022841"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083512"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Anzeigen von Defender für Office 365 Berichte im Microsoft 365 Defender Portal
 
@@ -45,15 +45,15 @@ Microsoft Defender für Office 365 Organisationen (z. B. Microsoft 365 E5-Abonne
 >
 > Berichte, die sich auf den Nachrichtenfluss beziehen, befinden sich jetzt im Exchange Admin Center (EAC). Weitere Informationen zu diesen Berichten finden Sie unter [Nachrichtenflussberichte im neuen Exchange Admin Center.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
-## <a name="safe-attachments-file-types-report"></a>Safe Anlagendateitypenbericht
+## <a name="safe-attachments-file-types-report"></a>Tresor Anlagendateitypenbericht
 
 > [!NOTE]
-> Der **Bericht Safe Dateitypen "Anlagen"** wird schließlich entfernt. Die gleichen Informationen sind im [Bedrohungsschutzstatusbericht](#threat-protection-status-report)verfügbar.
+> Der **Bericht Tresor Dateitypen "Anlagen"** wird schließlich entfernt. Die gleichen Informationen sind im [Bedrohungsschutzstatusbericht](#threat-protection-status-report)verfügbar.
 
-## <a name="safe-attachments-message-disposition-report"></a>Safe Dispositionsbericht über Anlagennachrichten
+## <a name="safe-attachments-message-disposition-report"></a>Tresor Dispositionsbericht über Anlagennachrichten
 
 > [!NOTE]
-> Der **Dispositionsbericht Safe Attachments-Nachricht** wird schließlich entfernt. Die gleichen Informationen sind im [Bedrohungsschutzstatusbericht](#threat-protection-status-report)verfügbar.
+> Der **Bericht Tresor Anlagen zur Nachrichtendisposition** wird schließlich entfernt. Die gleichen Informationen sind im [Bedrohungsschutzstatusbericht](#threat-protection-status-report)verfügbar.
 
 ## <a name="mail-latency-report"></a>E-Mail-Latenzbericht
 
@@ -99,20 +99,20 @@ In der Detailtabelle unterhalb des Diagramms sind die folgenden Informationen ve
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Bedrohungsschutz-Statusbericht** ist eine einzelne Ansicht, die Informationen zu schädlichen Inhalten und schädlichen E-Mails zusammenführt, die von [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) und Microsoft Defender für Office 365 erkannt und blockiert wurden. Weitere Informationen finden Sie unter [Bedrohungsschutzstatusbericht.](view-email-security-reports.md#threat-protection-status-report)
+Der **Statusbericht zum Bedrohungsschutz** ist eine einzelne Ansicht, die Informationen zu schädlichen Inhalten und schädlichen E-Mails zusammenführt, die von [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) und Microsoft Defender für Office 365 erkannt und blockiert wurden. Weitere Informationen finden Sie unter [Bedrohungsschutzstatusbericht.](view-email-security-reports.md#threat-protection-status-report)
 
 ## <a name="url-threat-protection-report"></a>URL-Bedrohungsschutzbericht
 
-Der **Bericht zum URL-Bedrohungsschutz** enthält Zusammenfassungen und Trendansichten für erkannte Bedrohungen und Aktionen, die bei URL-Klicks im Rahmen [Safe Links](safe-links.md)ausgeführt werden. In diesem Bericht werden keine Klickdaten von Benutzern angezeigt, bei denen für die angewendete richtlinie für Safe Verknüpfungen die Option **"Benutzerklicks nicht nachverfolgen"** ausgewählt ist.
+Der **Bericht zum URL-Bedrohungsschutz** enthält Zusammenfassungen und Trendansichten für erkannte Bedrohungen und Aktionen, die bei URL-Klicks im Rahmen [Tresor Links](safe-links.md)ausgeführt werden. In diesem Bericht werden keine Klickdaten von Benutzern angezeigt, bei denen für die angewendete richtlinie Tresor Links die Option **"Benutzerklicks nicht nachverfolgen"** ausgewählt ist.
 
-Um den Bericht anzuzeigen, öffnen Sie das [portal Microsoft 365 Defender](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **E-Mail & Zusammenarbeit** \> **E-Mail & Zusammenarbeitsberichte.** Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** die **Url-Schutzseite,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/URLProtectionActionReport> .
+Um den Bericht anzuzeigen, öffnen Sie das [portal Microsoft 365 Defender](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **E-Mail & Zusammenarbeit** \> **E-Mail & Zusammenarbeitsberichte.** Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** nach der **URL-Schutzseite,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/URLProtectionActionReport> .
 
 ![URL-Schutzberichts-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/url-protection-report-widget.png)
 
 Die verfügbaren Ansichten auf der Berichtsseite zum **URL-Bedrohungsschutz** werden in den folgenden Abschnitten beschrieben.
 
 > [!NOTE]
-> Dies ist ein *Schutztrendbericht,* d. h. Daten stellen Trends in einem größeren Dataset dar. Daher sind die Daten in den Diagrammen hier nicht in Echtzeit verfügbar, aber die Daten in der Detailtabelle sind vorhanden, sodass möglicherweise eine geringfügige Abweichung zwischen den beiden angezeigt wird. Die Diagramme werden alle vier Stunden aktualisiert und enthalten Daten für die letzten 90 Tage.
+> Dies ist ein *Schutztrendbericht,* d. h. Daten stellen Trends in einem größeren Dataset dar. Daher sind die Daten in den Diagrammen hier nicht in Echtzeit verfügbar, die Daten in der Detailtabelle sind jedoch so, dass eine geringfügige Abweichung zwischen den beiden angezeigt wird. Die Diagramme werden alle vier Stunden aktualisiert und enthalten Daten für die letzten 90 Tage.
 
 ### <a name="view-data-by-url-click-protection-action"></a>Anzeigen von Daten nach URL-Klickschutzaktion
 
@@ -125,7 +125,7 @@ Die Aktionsansicht **"Daten nach URL anzeigen" zeigt** die Anzahl der URL-Klicks
 - **Blockiert und durchgeklickt:** Der Benutzer hat sich entschieden, weiter zur URL zu navigieren.
 - **Während des Scans durchgeklickt:** Der Benutzer hat auf den Link geklickt, bevor die Überprüfung abgeschlossen war.
 
-Ein Klick gibt an, dass der Benutzer durch die Blockierungsseite zur schädlichen Website geklickt hat (Administratoren können click through in Safe Links policies deaktivieren).
+Ein Klick gibt an, dass der Benutzer durch die Blockierungsseite zur schädlichen Website geklickt hat (Administratoren können click through in Tresor Links policies deaktivieren).
 
 Wenn Sie auf **Filter** klicken, können Sie den Bericht und die Detailtabelle ändern, indem Sie einen oder mehrere der folgenden Werte im angezeigten Flyout auswählen:
 
@@ -152,7 +152,7 @@ Die Detailtabelle unterhalb des Diagramms bietet die folgende Nahezu-Echtzeit-An
 
 ![URL-Klick nach Anwendungsansicht im URL-Bedrohungsschutzbericht](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
-Die **Ansichtsdaten nach URL klicken nach Anwendungsansicht** zeigt die Anzahl der URL-Klicks von Apps an, die Safe Links unterstützen:
+Die **Ansichtsdaten nach URL klicken nach Anwendungsansicht** zeigt die Anzahl der URL-Klicks von Apps an, die Tresor Links unterstützen:
 
 - **E-Mail-Client**
 - **PowerPoint**
@@ -193,7 +193,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen Berichten stehen weitere Beri
 |**Explorer** (Microsoft Defender für Office 365 Plan 2) oder **Echtzeiterkennungen** (Microsoft Defender für Office 365 Plan 1)|[Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)|
 |**E-Mail-Sicherheitsberichte,** z. B. der Bericht "Häufigste Absender und Empfänger", der Spoof-E-Mail-Bericht und der Spamerkennungsbericht.|[Anzeigen von E-Mail-Sicherheitsberichten im Microsoft 365 Defender Portal](view-email-security-reports.md)|
 |**Nachrichtenflussberichte,** z. B. der Weiterleitungsbericht, der E-Mailflow-Statusbericht und der Bericht "Häufigste Absender und Empfänger".|[Nachrichtenflussberichte im neuen Exchange Admin Center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**URL-Ablaufverfolgung für Safe Links** (nur PowerShell). Die Ausgabe dieses Cmdlets zeigt die Ergebnisse der aktionen Safe Links in den letzten sieben Tagen an.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**URL-Ablaufverfolgung für Tresor Links** (nur PowerShell). Die Ausgabe dieses Cmdlets zeigt ihnen die Ergebnisse der aktionen Tresor Links in den letzten sieben Tagen.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**E-Mail-Datenverkehrsergebnisse für EOP und Microsoft Defender für Office 365** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Informationen zu Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
 |**E-Mail-Detailberichte für EOP und Defender für Office 365 Erkennungen** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Details zu schädlichen Dateien oder URLs, Phishingversuchen, Identitätswechsel und anderen potenziellen Bedrohungen in E-Mails oder Dateien.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -207,15 +207,15 @@ Um die in diesem Artikel beschriebenen Berichte anzuzeigen und zu verwenden, mü
 - **Sicherheitsleseberechtigter**
 - **Globaler Leser**
 
-Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender Portal.](permissions-in-the-security-and-compliance-center.md)
+Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md).
 
 **Hinweis:** Das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was geschieht, wenn in den Berichten keine Daten angezeigt werden?
 
-Wenn in Ihrem Defender keine Daten für Office 365-Berichte angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. In Ihrer Organisation müssen [Safe Verknüpfungsrichtlinien](set-up-safe-links-policies.md) und [Safe Anlagenrichtlinien](set-up-safe-attachments-policies.md) definiert sein, damit Defender für Office 365 Schutz vorhanden ist. Siehe auch [Antispam- und Antischadsoftwareschutz.](anti-spam-and-anti-malware-protection.md)
+Wenn in Ihrem Defender keine Daten für Office 365-Berichte angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. In Ihrer Organisation müssen [Tresor Verknüpfungsrichtlinien](set-up-safe-links-policies.md) und [Tresor Anlagenrichtlinien](set-up-safe-attachments-policies.md) definiert sein, damit Defender für Office 365 Schutz vorhanden ist. Siehe auch [Antispam- und Antischadsoftwareschutz.](anti-spam-and-anti-malware-protection.md)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Ähnliche Themen
 
 [Intelligente Berichte und Einblicke im Microsoft 365 Defender-Portal](reports-and-insights-in-security-and-compliance.md)
 

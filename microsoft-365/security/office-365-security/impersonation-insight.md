@@ -19,12 +19,12 @@ description: Administratoren können erfahren, wie der Identitätswechsel-Einbli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029669"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083404"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Identitätswechsel-Einblick in Defender für Office 365
 
@@ -58,7 +58,7 @@ Sie können den Identitätswechsel-Einblick im Microsoft 365 Defender Portal ver
   - **Sicherheitsleseberechtigter**
   - **Globaler Leser**
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal.](permissions-in-the-security-and-compliance-center.md)
+  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md).
 
   **Hinweis:** Das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 

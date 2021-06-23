@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: d3acf24d12b72a92af4246afdf11f67e01c45b2c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4275339e048a4197590c91c5904733ce99b22f9f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022500"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083440"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurieren automatisierter Untersuchungs- und Reaktionsfunktionen in Microsoft 365 Defender
 
@@ -46,11 +46,11 @@ Nachdem Sie dann alle eingerichtet sind, können Sie [Korrekturaktionen im Info-
 
 |Anforderung|Details|
 |---|---|
-|Abonnementanforderungen|Eines dieser Abonnements: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 mit dem Microsoft 365 E5 Security-Add-On</li><li>Microsoft 365 A3 mit dem Microsoft 365 A5-Sicherheits-Add-On</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Siehe [Microsoft 365 Defender Lizenzierungsanforderungen.](./prerequisites.md#licensing-requirements)|
+|Abonnementanforderungen|Eines dieser Abonnements: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 mit dem Microsoft 365 E5 Security-Add-On</li><li>Microsoft 365 A3 mit dem Microsoft 365 A5 Security-Add-On</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> Siehe [Microsoft 365 Defender Lizenzierungsanforderungen.](./prerequisites.md#licensing-requirements)|
 |Netzwerkanforderungen|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) aktiviert</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) konfiguriert</li><li>[Microsoft Defender for Identity-Integration](/cloud-app-security/mdi-integration)</li></ul>|
-|Windows-Computeranforderungen|<ul><li>Windows 10, Version 1709 oder höher, installiert (Siehe [Windows 10 Versionsinformationen)](/windows/release-information/)</li><li>Die folgenden Bedrohungsschutzdienste konfiguriert:<ul><li>[Microsoft Defender für Endpunkt](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|Windows-Computeranforderungen|<ul><li>Windows 10, Version 1709 oder höher installiert (siehe [Windows 10 Versionsinformationen)](/windows/release-information/)</li><li>Die folgenden Bedrohungsschutzdienste konfiguriert:<ul><li>[Microsoft Defender für Endpunkt](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Schutz für E-Mail-Inhalte und Office-Dateien|[Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) konfiguriert|
-|Berechtigungen|Um automatisierte Untersuchungs- und Reaktionsfunktionen zu konfigurieren, müssen Sie die Rolle "Globaler Administrator" oder "Sicherheitsadministrator" entweder in Azure Active Directory ( ) oder im Microsoft 365 Admin Center ( ) zugewiesen <https://portal.azure.com> <https://admin.microsoft.com> haben. <p> Informationen zum Abrufen der erforderlichen Berechtigungen zum Arbeiten mit automatisierten Untersuchungs- und Reaktionsfunktionen, z. B. Überprüfen, Genehmigen oder Ablehnen ausstehender Aktionen, finden Sie unter ["Erforderliche Berechtigungen für Info-Center-Aufgaben".](m365d-action-center.md#required-permissions-for-action-center-tasks)|
+|Berechtigungen|Um automatisierte Untersuchungs- und Reaktionsfunktionen zu konfigurieren, muss ihnen die Rolle "Globaler Administrator" oder "Sicherheitsadministrator" entweder in Azure Active Directory ( ) oder im Microsoft 365 Admin Center ( ) zugewiesen <https://portal.azure.com> <https://admin.microsoft.com> sein. <p> Informationen zum Abrufen der erforderlichen Berechtigungen zum Arbeiten mit automatisierten Untersuchungs- und Reaktionsfunktionen, z. B. Überprüfen, Genehmigen oder Ablehnen ausstehender Aktionen, finden Sie unter ["Erforderliche Berechtigungen für Info-Center-Aufgaben".](m365d-action-center.md#required-permissions-for-action-center-tasks)|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>Überprüfen oder Ändern der Automatisierungsstufe für Gerätegruppen
@@ -67,13 +67,13 @@ Ob automatisierte Untersuchungen ausgeführt werden und ob Korrekturmaßnahmen a
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Überprüfen Sie Ihre Sicherheits- und Warnungsrichtlinien in Office 365
 
-Microsoft bietet integrierte [Warnungsrichtlinien,](../../compliance/alert-policies.md) mit denen bestimmte Risiken erkannt werden können. Zu diesen Risiken gehören Exchange Missbrauch von Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen sowie Informationsgovernance-Risiken. Einige Warnungen können [eine automatisierte Untersuchung und Reaktion in Office 365](../office-365-security/office-365-air.md)auslösen. Stellen Sie sicher, dass [Ihre Defender for Office 365-Features](../office-365-security/defender-for-office-365.md) ordnungsgemäß konfiguriert sind.
+Microsoft bietet integrierte [Warnungsrichtlinien,](../../compliance/alert-policies.md) mit denen bestimmte Risiken erkannt werden können. Zu diesen Risiken gehören Exchange Missbrauch von Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen sowie Informationsgovernance-Risiken. Einige Warnungen können [eine automatisierte Untersuchung und Reaktion in Office 365](../office-365-security/office-365-air.md)auslösen. Stellen Sie sicher, dass Ihre [Defender for Office 365-Features](../office-365-security/defender-for-office-365.md) ordnungsgemäß konfiguriert sind.
 
 Obwohl bestimmte Warnungen und Sicherheitsrichtlinien automatisierte Untersuchungen auslösen können, *werden für E-Mails und Inhalte keine automatischen Abhilfemaßnahmen ausgeführt.* Stattdessen warten alle Korrekturaktionen für E-Mail- und E-Mail-Inhalte auf die Genehmigung durch Ihr Sicherheitsteam im [Info-Center.](m365d-action-center.md)
 
 Sicherheitseinstellungen in Office 365 zum Schutz von E-Mails und Inhalten beitragen. Um diese Einstellungen anzuzeigen oder zu ändern, befolgen Sie die Anweisungen unter ["Schutz vor Bedrohungen".](../office-365-security/protect-against-threats.md)
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) ) zu Richtlinien &  \> **Bedrohungsrichtlinien für** Regeln.
+1. Wechseln Sie im Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) zu Richtlinien &  \> **Regel-Bedrohungsrichtlinien.**
 
 2. Stellen Sie sicher, dass alle folgenden Richtlinien konfiguriert sind. Hilfe und Empfehlungen finden Sie unter ["Schutz vor Bedrohungen".](/microsoft-365/security/office-365-security/protect-against-threats)
    - [Antischadsoftware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -82,9 +82,9 @@ Sicherheitseinstellungen in Office 365 zum Schutz von E-Mails und Inhalten beitr
    - [Sichere Links](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Antispam](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. Stellen Sie sicher, dass [Microsoft Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) aktiviert ist.
+3. Stellen Sie sicher, dass [Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md) aktiviert ist.
 
-4. Stellen Sie sicher, dass die [automatische Bereinigung von null Stunden für den E-Mail-Schutz](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) wirksam ist.
+4. Stellen Sie sicher, dass die [automatische Bereinigung (ZERO-Hour Auto Purge, ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md) wirksam ist.
 
 5. (Dieser Schritt ist optional.) Überprüfen Sie Ihre [Office 365 Warnungsrichtlinien](../../compliance/alert-policies.md) im Microsoft 365 Compliance Center ( [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) ). Mehrere Standardwarnungsrichtlinien sind in der Kategorie "Bedrohungsverwaltung" enthalten. Einige dieser Warnungen können eine automatisierte Untersuchung und Reaktion auslösen. Weitere Informationen finden Sie unter [Standardwarnungsrichtlinien.](../../compliance/alert-policies.md#default-alert-policies)
 

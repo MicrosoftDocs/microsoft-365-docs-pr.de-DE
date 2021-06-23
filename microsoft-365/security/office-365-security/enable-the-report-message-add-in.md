@@ -17,12 +17,12 @@ ms.collection:
 description: Erfahren Sie, wie Sie die Add-Ins "Nachricht melden" oder "Phishing melden" für Outlook und Outlook im Web, für einzelne Benutzer oder für Ihre gesamte Organisation aktivieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: d5e336dcab9e3787d8c5245cdbe32855c59021f7
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029909"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082768"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Aktivieren der Add-Ins "Berichtnachricht" oder "Phishing melden"
 
@@ -34,9 +34,9 @@ ms.locfileid: "53029909"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Microsoft 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungsportal im Microsoft 365 Defender-Portal zu verwenden. Weitere Informationen finden Sie unter ["Verwenden der Administratorübermittlung" zum Übermitteln von verdächtigem Spam, Phishing, URLs und Dateien an Microsoft.](admin-submission.md)
+> Wenn Sie ein Administrator in einer Microsoft 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, die Seite **"Übermittlungen"** im Microsoft 365 Defender-Portal zu verwenden. Weitere Informationen finden Sie unter ["Verwenden der Administratorübermittlung" zum Übermitteln von verdächtigem Spam, Phishing, URLs und Dateien an Microsoft.](admin-submission.md)
 
-Mit den Add-Ins "Nachricht melden" und "Phishing melden" für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) können Benutzer einfach falsch positive Ergebnisse (als falsch markierte gute E-Mails) oder falsch negative (ungültige E-Mails sind zulässig) an Microsoft und seine Partner zur Analyse melden.
+Mithilfe der Add-Ins "Nachricht melden" und "Phishing melden" für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) können Benutzer einfach falsch positive Ergebnisse (gute E-Mails als falsch markiert) oder falsch negative (ungültige E-Mails sind zulässig) an Microsoft und seine Partner zur Analyse melden.
 
 Microsoft verwendet diese Übermittlungen, um die Effektivität von E-Mail-Schutztechnologien zu verbessern. Nehmen wir beispielsweise an, dass Viele Nachrichten mithilfe des Add-Ins "Phishing melden" gemeldet werden. Diese Informationen werden im Sicherheitsdashboard und anderen Berichten angezeigt. Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Hinweis darauf verwenden, dass Antiphishingrichtlinien möglicherweise aktualisiert werden müssen.
 
@@ -53,10 +53,10 @@ Wenn Sie ein globaler Administrator oder ein Exchange Online-Administrator sind 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
 - Sowohl das Add-In "Nachricht melden" als auch das Add-In "Phishing melden" funktionieren mit den meisten Microsoft 365 Abonnements und den folgenden Produkten:
-  - Outlook im Web 
+  - Outlook im Web
   - Outlook 2013 SP1 oder höher
   - Outlook 2016 für Mac
-  - Outlook in Microsoft 365 Apps für Enterprise enthalten
+  - Outlook in Microsoft 365-Apps für Enterprise enthalten
   - Outlook-App für iOS und Android
 
 - Beide Add-Ins sind nicht für freigegebene Postfächer oder Postfächer in lokalen Exchange Organisationen verfügbar.
@@ -65,12 +65,12 @@ Wenn Sie ein globaler Administrator oder ein Exchange Online-Administrator sind 
 
 - Für Organisationsinstallationen muss die Organisation für die Verwendung der OAuth-Authentifizierung konfiguriert werden. Weitere Informationen finden Sie unter [Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-- Administratoren müssen Mitglied der Rollengruppe "Globale Administratoren" sein. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
+- Administratoren müssen Mitglied der Rollengruppe "Globale Administratoren" sein. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md).
 
 - Weitere Informationen zum Melden einer Nachricht mithilfe des Berichtsnachrichtenfeatures finden Sie unter [Bericht falsch positive und falsch negative Ergebnisse in Outlook](report-false-positives-and-false-negatives.md).
 
 > [!IMPORTANT]
-> Es wird nicht empfohlen, die integrierte Berichterstellung in Outlook zu verwenden, da die [Benutzerübermittlungsrichtlinie](./user-submission.md)nicht verwendet werden kann. Es wird empfohlen, stattdessen das Add-In "Nachricht melden" oder das Add-In "Phishing melden" zu verwenden.
+> Es wird nicht empfohlen, die integrierte Berichterstellungsoberfläche in Outlook zu verwenden, da die [Benutzerübermittlungsrichtlinie](./user-submission.md)nicht verwendet werden kann. Es wird empfohlen, stattdessen das Add-In "Nachricht melden" oder das Add-In "Phishing melden" zu verwenden.
 
 ## <a name="get-the-report-message-add-in"></a>Abrufen des Add-Ins "Berichtnachricht"
 

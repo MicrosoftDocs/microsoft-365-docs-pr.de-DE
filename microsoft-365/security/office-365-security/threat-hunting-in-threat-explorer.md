@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Verwenden Sie den Bedrohungs-Explorer oder Echtzeiterkennungen im Microsoft 365 Defender-Portal, um Bedrohungen effizient zu untersuchen und darauf zu reagieren.
+description: Verwenden Sie den Bedrohungs-Explorer oder Echtzeiterkennungen im Microsoft 365 Defender Portal, um Bedrohungen effizient zu untersuchen und darauf zu reagieren.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930112"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083560"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Bedrohungssuche im Bedrohungs-Explorer für Microsoft Defender für Office 365
 
@@ -42,7 +42,7 @@ Inhalt dieses Artikels:
 
 Wenn Ihre Organisation [über Microsoft Defender für Office 365](defender-for-office-365.md)verfügt und Sie über die [Berechtigungen](#required-licenses-and-permissions)verfügen, können Sie **Explorer-** oder **Echtzeiterkennungen** verwenden, um Bedrohungen zu erkennen und zu beheben. 
 
-Wechseln Sie im **Microsoft 365 Defender-Portal** zu **E-Mail & Zusammenarbeit,** und wählen Sie dann **Explorer** aus.
+Wechseln **Sie** im Microsoft 365 Defender Portal zu **E-Mail & Zusammenarbeit,** und wählen Sie dann **Explorer** aus.
 
 <br>
 
@@ -68,7 +68,7 @@ In Microsoft Defender für Office 365 gibt es zwei Abonnementpläne: Plan 1 und 
 
 Defender für Office 365 Plan 1 verwendet *Echtzeiterkennungen,* bei denen es sich um eine Teilmenge des *Bedrohungs-Explorer-Suchtools* (auch *Explorer* genannt) in Plan 2 handelt. In dieser Artikelreihe wurden die meisten Beispiele mithilfe des vollständigen Bedrohungs-Explorers erstellt. Administratoren sollten alle Schritte in Echtzeiterkennungen testen, um zu sehen, wo sie sich befinden.
 
-Um das Explorer-Tool zu öffnen, wechseln Sie zu **Microsoft 365 Defender-Portal**  >  **E-Mail & Zusammenarbeits-Explorer.**  >   Standardmäßig gelangen Sie auf der Seite **"Schadsoftware",** verwenden aber die Dropdownliste **"Ansicht",** um sich mit Ihren Optionen vertraut zu machen. Wenn Sie Phishing suchen oder sich mit einer Bedrohungskampagne befassen, wählen Sie diese Ansichten aus.
+Um das Explorer-Tool zu öffnen, wechseln Sie zu **Microsoft 365 Defender Portal**  >  **E-Mail & Zusammenarbeits-Explorer.**  >   Standardmäßig gelangen Sie auf der Seite **"Schadsoftware",** verwenden aber die Dropdownliste **"Ansicht",** um sich mit Ihren Optionen vertraut zu machen. Wenn Sie Phishing suchen oder sich mit einer Bedrohungskampagne befassen, wählen Sie diese Ansichten aus.
 
 > [!div class="mx-imgBorder"]
 > ![Ansichts-Dropdownliste im Bedrohungs-Explorer](../../media/view-drop-down.png)
@@ -83,12 +83,12 @@ Die Verfeinerung des Fokus im Explorer oder der Echtzeiterkennung kann in Ebenen
 > [!TIP]
 > Wenn Sec Ops **Tags** verwendet, um Konten zu markieren, die sie als hochwertige Ziele betrachten, können sie Auswahlen wie *die Phishingansicht mit einem Tags-Filterfokus treffen (bei Verwendung einen Datumsbereich einschließen).* Dadurch werden alle Phishing-Versuche angezeigt, die während eines Bestimmten Zeitraums an ihre hochwertigen Benutzerziele gerichtet sind (z. B. Datumsangaben, an denen bestimmte Phishingangriffe für ihre Branche häufig ausgeführt werden). 
 
-Mithilfe der Datumsbereichssteuerelemente können Einschränkungen für Datumsbereiche vorgenommen werden. Hier sehen Sie den Explorer in der **Schadsoftwareansicht** mit einem Filterfokus **der Erkennungstechnologie.** Aber es ist die **Erweiterte Filterschaltfläche,** mit der Sec Ops-Teams tief greifen können. 
+Mithilfe der Datumsbereichssteuerelemente können Einschränkungen für Datumsbereiche vorgenommen werden. Hier sehen Sie den Explorer in der **Schadsoftwareansicht** mit einem Filterfokus **der Erkennungstechnologie.** Aber es ist die **Erweiterte Filterschaltfläche,** mit der Sec Ops-Teams tief graben können. 
 
 > [!div class="mx-imgBorder"]
 > ![Erweiterter Filter im Bedrohungs-Explorer](../../media/advanced-filter.png)
 
-Durch Klicken auf den **Erweiterten Filter** wird ein Bereich angezeigt, in dem Sec Ops-Schützer Selbstabfragen erstellen können, sodass sie die benötigten Informationen einschließen oder ausschließen können. Sowohl das Diagramm als auch die Tabelle auf der Explorer-Seite spiegeln ihre Ergebnisse wider. 
+Durch Klicken auf den **Erweiterten Filter** wird ein Bereich angezeigt, in dem Sec Ops-Schützer selbst Abfragen erstellen können, sodass sie die benötigten Informationen einschließen oder ausschließen können. Sowohl das Diagramm als auch die Tabelle auf der Explorer-Seite spiegeln ihre Ergebnisse wider. 
 
 > [!div class="mx-imgBorder"]
 > ![Ergebnisse einer Abfrage](../../media/threat-explorer-chart-table.png)
@@ -113,7 +113,7 @@ Stellen Sie sicher, dass Sie ihre Anzeigeoptionen in derselben Miene testen. Unt
 
 Wenn eine verdächtige E-Mail angezeigt wird, klicken Sie auf den Namen, um das Flyout auf der rechten Seite zu erweitern. Hier ist das Banner verfügbar, mit dem Sec Ops die [E-Mail-Entitätsseite](mdo-email-entity-page.md) anzeigen kann.
 
-Die Seite "E-Mail-Entität" zieht Inhalte zusammen, die unter **Details,** **Anlagen,** **Geräte,** aber besser organisierten Daten zu finden sind. Dazu gehören Dinge wie DMARC-Ergebnisse, nur-Text-Anzeige des E-Mail-Headers mit kopieroption, Bewertungsinformationen zu Anlagen, die sicher detoniert wurden, und Dateien, die verworfen wurden (kann IP-Adressen enthalten, die kontaktiert wurden, und Screenshots von Seiten oder Dateien). URLs und ihre Bewertungen werden ebenfalls mit ähnlichen Details aufgeführt. 
+Die Seite "E-Mail-Entität" zieht Inhalte zusammen, die unter **Details,** **Anlagen,** **Geräte,** aber besser organisierten Daten zu finden sind. Dazu gehören Dinge wie DMARC-Ergebnisse, nur-Text-Anzeige des E-Mail-Headers mit einer Kopieroption, Bewertungsinformationen zu Anlagen, die sicher detoniert wurden, und Dateien, die verworfen wurden (einschließlich IP-Adressen, die kontaktiert wurden, und Screenshots von Seiten oder Dateien). URLs und ihre Bewertungen werden ebenfalls mit ähnlichen Details aufgeführt. 
 
 Wenn Sie diese Phase erreichen, ist die Seite "E-Mail-Entität" für den letzten Schritt wichtig:*Die Behebung.* 
 
@@ -128,12 +128,12 @@ Wenn Sie diese Phase erreichen, ist die Seite "E-Mail-Entität" für den letzten
 
 ### <a name="email-remediation"></a>E-Mail-Korrektur
 
-Sobald eine Sec Ops-Person feststellt, dass eine E-Mail eine Bedrohung ist, befasst sich der nächste Explorer- oder Echtzeiterkennungsschritt mit der Bedrohung und deren Behebung. Dazu können Sie zum Bedrohungs-Explorer zurückkehren, das Kontrollkästchen für die problematische E-Mail aktivieren und die Schaltfläche **"Aktionen"** verwenden.
+Sobald eine Sec Ops-Person feststellt, dass eine E-Mail eine Bedrohung ist, befasst sich der nächste Explorer- oder Echtzeiterkennungsschritt mit der Bedrohung und deren Behebung. Dies kann erfolgen, indem Sie zum Bedrohungs-Explorer zurückkehren, das Kontrollkästchen für die problematische E-Mail aktivieren und die Schaltfläche **"Aktionen"** verwenden.
 
 > [!div class="mx-imgBorder"]
 > ![Schaltfläche "Aktionen" im Bedrohungs-Explorer](../../media/threat-explorer-email-actions-button.png)
 
-Hier kann der Analyst Aktionen wie das Melden der E-Mails als Spam, Phishing oder Schadsoftware, das Kontaktieren von Empfängern oder weitere Untersuchungen ausführen, die das Auslösen von Playbooks für automatische Untersuchung und Reaktion (Automated Investigation and Response, AIR) umfassen können (wenn Sie über Plan 2 verfügen). Oder die E-Mail kann auch als sauber gemeldet werden.
+Hier kann der Analyst Aktionen wie das Melden der E-Mail als Spam, Phishing oder Schadsoftware, das Kontaktieren von Empfängern oder weitere Untersuchungen ausführen, die das Auslösen von Playbooks für automatische Untersuchung und Reaktion (Automated Investigation and Response, AIR) umfassen können (wenn Sie über Plan 2 verfügen). Oder die E-Mail kann auch als sauber gemeldet werden.
 
 > [!div class="mx-imgBorder"]
 > ![Die Dropdownliste "Aktionen"](../../media/threat-explorer-email-actions-drop-down.png)
@@ -142,7 +142,7 @@ Hier kann der Analyst Aktionen wie das Melden der E-Mails als Spam, Phishing ode
 
 ### <a name="alert-id"></a>Warnungs-ID
 
-Wenn Sie von einer Warnung in den Bedrohungs-Explorer navigieren, wird die **Ansicht** nach **Warnungs-ID** gefiltert. Dies gilt auch für die Echtzeiterkennung. Nachrichten, die für die jeweilige Warnung relevant sind, und eine E-Mail-Gesamtsumme (eine Anzahl) werden angezeigt. Sie können sehen, ob eine Nachricht Teil einer Warnung war, und von dieser Nachricht zu der zugehörigen Warnung navigieren.
+Wenn Sie von einer Warnung zum Bedrohungs-Explorer navigieren, wird die **Ansicht** nach **Warnungs-ID** gefiltert. Dies gilt auch für die Echtzeiterkennung. Nachrichten, die für die jeweilige Warnung relevant sind, und eine E-Mail-Gesamtsumme (eine Anzahl) werden angezeigt. Sie können sehen, ob eine Nachricht Teil einer Warnung war, und von dieser Nachricht zu der zugehörigen Warnung navigieren.
 
 Schließlich ist die Warnungs-ID in der URL enthalten, z. B.: `https://https://security.microsoft.com/viewalerts`
 
@@ -214,12 +214,12 @@ Personen mit Sicherheitsvorgängen können die Liste der Zielbenutzer bis zu ein
 
 ### <a name="exchange-transport-rules"></a>Exchange-Transportregeln
 
-Das Sicherheitsteam kann alle auf eine Nachricht angewendeten Exchange Transportregeln (oder Nachrichtenflussregeln) in der E-Mail-Rasteransicht anzeigen. Wählen Sie **Spaltenoptionen** im Raster aus, und fügen Sie dann **Exchange Transportregel** aus den Spaltenoptionen hinzu. Die Option Exchange Transportregeln ist auch im **Flyout "Details"** in der E-Mail sichtbar. 
+Das Sicherheitsteam kann alle auf eine Nachricht angewendeten Exchange Transportregeln (oder Nachrichtenflussregeln) in der E-Mail-Rasteransicht anzeigen. Wählen Sie im Raster **Spaltenoptionen** aus, und fügen Sie dann in den Spaltenoptionen **Exchange Transportregel** hinzu. Die Option Exchange Transportregeln ist auch im **Flyout "Details"** in der E-Mail sichtbar. 
 
 Namen und GUIDs der Transportregeln, die auf die Nachricht angewendet wurden, werden angezeigt. Analysten können mithilfe des Namens der Transportregel nach Nachrichten suchen. Hierbei handelt es sich um eine CONTAINS-Suche, was bedeutet, dass Sie auch teilsuchen können. 
 
 > [!IMPORTANT]
-> Exchange Transportregelsuch- und Namensverfügbarkeit hängt von der ihnen zugewiesenen Rolle ab. Sie benötigen eine der folgenden Rollen oder Berechtigungen, um die Transportregelnamen und die Suche anzuzeigen. Auch ohne die unten aufgeführten Rollen oder Berechtigungen werden einem Analysten möglicherweise die Transportregelbezeichnung und guid-Informationen in den E-Mail-Details angezeigt. Andere Datensatzanzeigen in E-Mail-Rastern, E-Mail-Flyouts, Filtern und Export sind nicht betroffen.
+> Exchange Verfügbarkeit von Transportregelsuch- und -namen hängt von der ihnen zugewiesenen Rolle ab. Sie benötigen eine der folgenden Rollen oder Berechtigungen, um die Transportregelnamen und die Suche anzuzeigen. Auch ohne die unten aufgeführten Rollen oder Berechtigungen werden einem Analysten möglicherweise die Transportregelbezeichnung und guid-Informationen in den E-Mail-Details angezeigt. Andere Funktionen zum Anzeigen von Datensätzen in E-Mail-Rastern, E-Mail-Flyouts, Filtern und Exporten sind nicht betroffen.
 >
 > - Exchange Online Nur – Verhinderung von Datenverlust: Alle
 > - Exchange Online Nur – O365SupportViewConfig: Alle
@@ -267,7 +267,7 @@ Um Explorer- oder Echtzeiterkennungen anzuzeigen und zu verwenden, benötigen Si
 
 Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden Ressourcen:
 
-- [Berechtigungen im Microsoft 365 Defender-Portal](permissions-in-the-security-and-compliance-center.md)
+- [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md)
 - [Featureberechtigungen in Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

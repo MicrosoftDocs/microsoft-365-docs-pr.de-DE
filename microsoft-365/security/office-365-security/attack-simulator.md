@@ -1,5 +1,5 @@
 ---
-title: Angriffssimulator in Microsoft Defender für Office 365
+title: Angriffssimulator im Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können erfahren, wie Sie den Angriffssimulator verwenden, um simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen auszuführen.
+description: Administratoren können erfahren, wie Sie den Angriffssimulator im Security & Complance Center verwenden, um simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen auszuführen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: aa10c30644562a156964ebaa1d63145047ca9264
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878676"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082864"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffssimulator in Microsoft Defender für Office 365
+# <a name="attack-simulator-in-the-security--compliance-center"></a>Angriffssimulator im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 > [!NOTE]
 >
-> Der Angriffssimulator, wie in diesem Artikel beschrieben, ist jetzt schreibgeschützt und wurde im Knoten **"E-Mail & Zusammenarbeit"** im Microsoft 365 Defender-Portal unter **"Angriffssimulationsschulung"** <https://security.microsoft.com> ersetzt. Weitere Informationen finden Sie unter ["Erste Schritte mit der Angriffssimulationsschulung".](attack-simulation-training-get-started.md)
+> Der Angriffssimulator, wie in diesem Artikel beschrieben, ist jetzt schreibgeschützt und wurde im Knoten **"E-Mail & Zusammenarbeit"** im Portal Microsoft 365 Defender unter **"Angriffssimulation"** <https://security.microsoft.com> ersetzt. Weitere Informationen finden Sie unter ["Erste Schritte mit der Angriffssimulationsschulung".](attack-simulation-training-get-started.md)
 >
 > Die Möglichkeit, neue Simulationen aus dieser Version des Angriffssimulators zu starten, wurde deaktiviert. Sie können jedoch noch bis zum 24. April 2021 auf Berichte zugreifen.
 
@@ -61,7 +61,7 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 ## <a name="spear-phishing-campaigns"></a>Spear-Phishingkampagnen
 
-*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die scheinbar von legitimen oder vertrauenswürdigen Absendern stammen. *Spear-Phishing* ist ein gezielter Phishing-Angriff, der fokussierte und angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
+*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die scheinbar von legitimen oder vertrauenswürdigen Absendern stammen. *Spear-Phishing* ist ein gezielter Phishingangriff, der fokussierte und angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
 
 Im Angriffssimulator stehen zwei verschiedene Arten von Phishingkampagnen zur Verfügung:
 
@@ -153,11 +153,11 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
 2. Treffen Sie auf der Seite **"Angriffe simulieren"** eine der folgenden Auswahlen basierend auf dem Typ der Kampagne, die Sie erstellen möchten:
 
-   - Klicken Sie im Abschnitt **"Spear Phishing (Credentials Harvest)"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
+   - Klicken Sie im Abschnitt **"Spear Phishing (Credentials Harvest)"** auf **"Startangriff",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
    - Klicken Sie im Abschnitt **"Spear Phishing (Attachment)"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
-3. Der Assistent **zum Konfigurieren von Phishingangriffen** wird in einem neuen Flyout gestartet. Führen Sie im **Startschritt** einen der folgenden Schritte aus:
+3. Der Assistent **zum Konfigurieren von Phishingangriffen** startet in einem neuen Flyout. Führen Sie im **Startschritt** einen der folgenden Schritte aus:
 
    - Geben Sie im **Feld "Name"** einen eindeutigen Anzeigenamen für die Kampagne ein. Klicken Sie nicht auf **Vorlage verwenden,** da Sie die E-Mail-Nachricht später im Assistenten erstellen.
 
@@ -209,7 +209,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
    - **Anlagentyp:** Diese Einstellung ist nur in **Spear-Phishing-Kampagnen (Attachment)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie **.DOCX** oder **.PDF** aus der Liste aus.
 
-   - **Anlagenname:** Diese Einstellung ist nur in **Spear-Phishing-Kampagnen (Attachment)** verfügbar. Geben Sie einen Dateinamen für die .docx- oder .pdf-Anlage ein.
+   - **Anlagenname:** Diese Einstellung ist nur in **Spear-Phishingkampagnen (Attachment)** verfügbar. Geben Sie einen Dateinamen für die .docx- oder .pdf-Anlage ein.
 
    - URL der **benutzerdefinierten Zielseite:** Geben Sie eine optionale Zielseite ein, auf die Benutzer weitergeleitet werden, wenn sie auf den Phishing-Link klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardzielseite. Wenn Sie beispielsweise über eine interne Sensibilisierungsschulung verfügen, können Sie diese URL hier angeben.
 
@@ -244,7 +244,7 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
   Für den Wörterbuchangriff können Sie ein oder mehrere Kennwörter angeben, die Sie ausprobieren möchten (manuell eingegeben oder in einer hochgeladenen Datei), und Sie können einen oder mehrere Benutzer angeben.
 
-- **Kennwort-Spray-Angriff:** Ein *Kennwort-Spray-Angriff* verwendet das gleiche sorgfältig durchdachte Kennwort für eine Liste von Benutzerkonten (ein Kennwort für viele Konten). Kennwort-Spray-Angriffe sind schwieriger zu erkennen als Brute-Force-Kennwortangriffe (die Wahrscheinlichkeit eines Erfolgs erhöht sich, wenn ein Angreifer ein Kennwort über Dutzende oder Hunderte von Konten hinweg versucht, ohne dass das Risiko besteht, dass er die falsche Kennwortsperrung des Benutzers durchläuft).
+- **Kennwort-Spray-Angriff:** Ein *Kennwort-Spray-Angriff* verwendet das gleiche sorgfältig durchdachte Kennwort für eine Liste von Benutzerkonten (ein Kennwort für viele Konten). Kennwort-Spray-Angriffe sind schwieriger zu erkennen als Brute-Force-Kennwortangriffe (die Wahrscheinlichkeit eines Erfolgs erhöht sich, wenn ein Angreifer ein Kennwort über Dutzende oder Hunderte von Konten hinweg versucht, ohne dass das Risiko besteht, dass die falsche Kennwortsperre des Benutzers durchläuft).
 
   Für den Kennwort-Spray-Angriff können Sie nur ein Kennwort angeben, das Sie ausprobieren möchten, und Sie können einen oder mehrere Benutzer angeben.
 
@@ -257,7 +257,7 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
 2. Treffen Sie auf der Seite **"Angriffe simulieren"** eine der folgenden Auswahlen basierend auf dem Typ der Kampagne, die Sie erstellen möchten:
 
-   - Klicken Sie im Abschnitt **"Brute Force Password (Dictionary Attack)"** auf **"Angriff starten"** oder **"Angriffsdetails** \> **starten".**
+   - Klicken Sie im Abschnitt **"Brute Force Password (Dictionary Attack)"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
    - Klicken Sie im Abschnitt **"Kennwort-Sprayangriff"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
@@ -271,7 +271,7 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-5. Wählen Sie im Schritt **"Angriffseinstellungen auswählen"** basierend auf dem Kampagnentyp die gewünschten Aktionen aus:
+5. Wählen Sie im Schritt **"Angriffseinstellungen auswählen"** basierend auf dem Kampagnentyp aus, was zu tun ist:
 
    - **Brute Force Password (Dictionary Attack):** Führen Sie einen der folgenden Schritte aus:
 
@@ -295,7 +295,7 @@ Wenn die Kampagne abgeschlossen ist, ändert sich der Status in **Angriff abgesc
 
 - Klicken Sie auf der Hauptseite **"Angriffe simulieren"** unter dem Namen der Kampagne auf **"Bericht anzeigen".**
 
-- Klicken Sie auf der Hauptseite **"Angriffe simulieren"** im Abschnitt auf **"Angriffsdetails"** für die Art des Angriffs. Wählen Sie auf der daraufhin geöffneten **Seite "Angriffsdetails"** die Kampagne im Abschnitt **"Angriffsverlauf"** aus.
+- Klicken Sie auf der Hauptseite **"Angriffe simulieren"** im Abschnitt auf **"Angriffsdetails"** für die Art des Angriffs. Wählen Sie auf der seite **"Angriffsdetails",** die geöffnet wird, die Kampagne im Abschnitt **"Angriffsverlauf"** aus.
 
 Eine der vorherigen Aktionen führt Sie zu einer Seite mit dem Namen **"Angriffsdetails".** Die Informationen, die auf dieser Seite für jeden Kampagnentyp verfügbar sind, werden in den folgenden Abschnitten beschrieben.
 
@@ -379,6 +379,6 @@ Die folgenden Informationen sind auf der **Seite "Angriffsdetails"** für jede K
 
 - **Gesamtzahl der Benutzer, die als Ziel verwendet werden**
 
-- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die das angegebene Kennwort verwendet haben.
+- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, für die festgestellt wurde, dass sie das angegebene Kennwort verwenden.
 
 - **Gesamterfolgsrate:** Ein Prozentsatz, der von **der** Gesamtzahl der  /  **benutzerzielen** erfolgreichen Versuche berechnet wird.

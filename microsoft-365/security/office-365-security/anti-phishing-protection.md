@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: Administratoren können sich über die Antiphishingschutzfeatures in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 informieren.
+description: Administratoren können sich über die Antiphishingschutzfunktionen in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029237"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083104"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Antiphishingschutz in Microsoft 365
 
@@ -41,7 +41,7 @@ Bei *Phishing* handelt es sich um E-Mail-Angriffe, bei denen versucht wird, vert
 
 - **Spear-Phishing** verwendet fokussierte, angepasste Inhalte, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
 
-- **Der Walfang** richtet sich an Führungskräfte oder andere ziele mit hohem Wert innerhalb einer Organisation, um eine maximale Wirkung zu erzielen.
+- **Das Einatmen** richtet sich an Führungskräfte oder andere ziele mit hohem Wert innerhalb einer Organisation, um eine maximale Wirkung zu erzielen.
 
 - **Business Email Compromise (BEC)** verwendet gefälschte vertrauenswürdige Absender (Finanzbeauftragte, Kunden, vertrauenswürdige Partner usw.), um Empfänger dazu zu bringen, Zahlungen zu genehmigen, Guthaben zu übertragen oder Kundendaten offenzulegen. Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2) ansehen.
 
@@ -65,14 +65,12 @@ EOP (d. h. Microsoft 365 Organisationen ohne Microsoft Defender für Office 365)
 
 Microsoft Defender für Office 365 enthält weitere und noch fortgeschrittenere Antiphishingfeatures:
 
-- **Antiphishingrichtlinien in Microsoft Defender für Office 365:** Konfigurieren von Identitätswechselschutzeinstellungen für bestimmte Nachrichten- und Absenderdomänen, Postfachintelligenzeinstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-mdo-anti-phishing-policies.md) Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in EOP und Antiphishingrichtlinien in Defender für Office 365 finden Sie [unter Antiphishingrichtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
-
+- **Antiphishingrichtlinien in Microsoft Defender für Office 365:** Konfigurieren von Identitätswechselschutzeinstellungen für bestimmte Nachrichten- und Absenderdomänen, Postfachintelligenzeinstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in EOP und Antiphishingrichtlinien in Defender für Office 365 finden Sie unter [Antiphishingrichtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
 - **Kampagnenansichten:** Machine Learning und andere Heuristiken identifizieren und analysieren Nachrichten, die an koordinierten Phishingangriffen auf den gesamten Dienst und Ihre Organisation beteiligt sind. Weitere Informationen finden Sie unter [Kampagnenansichten in Microsoft Defender für Office 365](campaigns.md).
-
-- **Angriffssimulator:** Administratoren können gefälschte Phishingnachrichten erstellen und sie als Bildungstool an interne Benutzer senden. Weitere Informationen finden Sie unter [Angriffssimulator in Microsoft Defender für Office 365](attack-simulator.md).
+- **Angriffssimulationsschulung:** Administratoren können gefälschte Phishingnachrichten erstellen und sie als Bildungstool an interne Benutzer senden. Weitere Informationen finden Sie unter [Simulieren eines Phishingangriffs.](attack-simulation-training.md)
 
 ## <a name="other-anti-phishing-resources"></a>Andere Antiphishingressourcen
 
 - Für Endbenutzer: [Schützen Sie sich vor Phishing-Schemas und anderen Formen von Online-Betrug.](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)
 
-- [So überprüft Microsoft 365 die Absenderadresse, um Phishing zu verhindern.](how-office-365-validates-the-from-address.md)
+- [Wie Microsoft 365 die Absenderadresse überprüft, um Phishing zu verhindern.](how-office-365-validates-the-from-address.md)

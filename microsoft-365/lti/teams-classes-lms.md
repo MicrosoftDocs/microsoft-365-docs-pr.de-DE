@@ -13,25 +13,25 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrieren Microsoft Teams Klassen in Ihr Learning-Verwaltungssystem
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053251"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083243"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>Verwenden Microsoft Teams Klassen mit Blackboard
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-Microsoft Teams Klassen ist eine Learning Tools Interoperability (LTI)-App, die Lehrkräften und Schülern hilft, problemlos zwischen ihrem Learning Management System (LMS) und Teams zu navigieren. Benutzer können direkt in ihrem LMS auf ihre Kursteams zugreifen, die ihrem Kurs zugeordnet sind.
+Microsoft Teams Klassen ist eine Learning Tools Interoperability (LTI)-App, mit der Lehrkräfte und Schüler problemlos zwischen ihrem Learning Management System (LMS) und Teams navigieren können. Benutzer können direkt in ihrem LMS auf ihre Kursteams zugreifen, die ihrem Kurs zugeordnet sind.
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Genehmigen der App im Microsoft Azure Mandanten
 
 Die folgenden Aufgaben werden vom Microsoft Office 365-Administrator und dem Blackboard Learn Ultra-Administrator abgeschlossen.
 
-Vor der Verwaltung der Integration in Blackboard Learn Ultra muss der Microsoft Office 365-Administrator die **Blackboard-MSFT-Teams für die Learn Ultra Azure-App** für den Microsoft Azure Mandanten der Bildungseinrichtung genehmigen.
+Vor der Verwaltung der Integration in Blackboard Learn Ultra muss der Microsoft Office 365-Administrator die Blackboard **MSFT-Teams für die Learn Ultra Azure-App** für den Microsoft Azure Mandanten der Bildungseinrichtung genehmigen.
 
 1. Suchen Sie Ihre Microsoft-Mandanten-ID. Erfahren [Sie, wie Sie den Mandanten finden.](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
@@ -48,7 +48,7 @@ Als Blackboard Learn Ultra-Administrator müssen Sie 2 LTI 1.3-Integrations-Apps
 
 - Die Blackboard Learn Class Teams Integration zur Unterstützung der Listensynchronisierung
 
-- Die LTI-App für Microsoft Teams Klassenteam
+- Die LTI-App des Microsoft Teams Klassenteams
 
 1. Notieren Sie sich die folgenden LTI-Client-IDs für beide Apps:
 
@@ -63,8 +63,6 @@ Als Blackboard Learn Ultra-Administrator müssen Sie 2 LTI 1.3-Integrations-Apps
 3. Wählen Sie **"LTI1.3/Advantage-Tool registrieren" aus.**
 
 4. Geben Sie die erste der bereitgestellten Client-IDs ein (Blackboard oder Microsoft), und wählen Sie **"Übermitteln"** aus.
-
-   ![das LTI-Registertool mit einem Feld zum Eingeben der Client-ID](../media/lti-media/register-tool.png)
 
 5. Überprüfen Sie die vordefinierten Einstellungen, und stellen Sie sicher, dass der Toolstatus als genehmigt gekennzeichnet ist.
 
@@ -82,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um die REST-Anwendung einzurichten.
 
 2. Wählen Sie **Integrationen erstellen** aus, und geben Sie die gleiche Anwendungs-/Client-ID ein, die Sie für das Tool "Blackboard Learn Class Teams Integration LTI" eingegeben haben.
 
-3. Geben Sie den Benutzer "Lernen" ein (dies könnte Ihr eigener Administratorbenutzernamen "Lernen" sein), oder wählen Sie **"Durchsuchen"** aus, um zu suchen.
+3. Geben Sie den Benutzer "Lernen" ein (dies könnte Ihr eigener Administratorbenutzernamen "Lernen" sein), oder wählen Sie **"Durchsuchen"** aus, um sie zu finden.
 
 4. Wählen Sie **"Ja"** für **den Endbenutzerzugriff aus.**
 
@@ -106,7 +104,7 @@ Führen Sie die folgenden Schritte aus, um die REST-Anwendung einzurichten.
 
 ## <a name="enable-class-teams-in-blackboard-learn"></a>Aktivieren von Klassen-Teams in Blackboard Learn
 
-Nachdem Sie die LTI-Tools aktiviert haben, müssen Sie im nächsten Schritt die Microsoft-Klasse Teams Integration von Ihrem eigenen Microsoft Office 365 Mandanten einrichten. Sie können dies tun, indem Sie diese Schritte als Blackboard Learn Ultra-Administrator ausführen.
+Nachdem Sie die LTI-Tools aktiviert haben, richten Sie im nächsten Schritt die Microsoft-Klasse Teams Integration aus Ihrem eigenen Microsoft Office 365 Mandanten ein. Sie können dies tun, indem Sie diese Schritte als Blackboard Learn Ultra-Administrator ausführen.
 
 1. Wählen Sie unter **"Administratortools**  >  **und Hilfsprogramme** lernen" **Microsoft Teams Integrationsadministrator** aus.
 

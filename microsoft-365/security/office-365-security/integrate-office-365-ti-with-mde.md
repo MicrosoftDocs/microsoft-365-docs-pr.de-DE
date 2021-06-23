@@ -19,12 +19,12 @@ description: Verwenden Sie Microsoft Defender für Office 365 zusammen mit Micro
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d54e4ec40c636b8b3ea319e79cbad5005850952
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: fed3a04a7a699b4689cd9d6d9d335a8ba51d2fd8
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029263"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083380"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpunkt
 
@@ -39,7 +39,7 @@ Die folgende Abbildung zeigt, wie die Registerkarte **"Geräte"** aussieht, wenn
 
 ![Wenn Microsoft Defender für Endpunkt aktiviert ist, sehen Sie eine Liste der Geräte mit Warnungen.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-Nachricht über vier Geräte verfügen und eines über eine Warnung verfügt. Durch Klicken auf den Link für ein Gerät wird die Seite in [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (früher Microsoft Defender Security Center) geöffnet.
+In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-Nachricht über vier Geräte verfügen und eines über eine Warnung verfügt. Durch Klicken auf den Link für ein Gerät wird die Seite [im Microsoft 365 Defender-Portal](../defender-endpoint/microsoft-defender-security-center.md) (früher Microsoft Defender Security Center) geöffnet.
 
 > [!TIP]
 > Das Microsoft 365 Defender-Portal ersetzt die Microsoft Defender Security Center. Siehe [Microsoft Defender für Endpunkt in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -48,7 +48,7 @@ In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-N
 
 - Ihre Organisation benötigt Microsoft Defender für Office 365 (oder Office 365 E5) und Microsoft Defender für Endpunkt.
 
-- Sie müssen ein globaler Administrator sein oder eine Sicherheitsadministratorrolle (z. B. Sicherheitsadministrator) in Microsoft 365 zugewiesen haben. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
+- Sie müssen ein globaler Administrator sein oder eine Sicherheitsadministratorrolle (z. B. Sicherheitsadministrator) in Microsoft 365 zugewiesen haben. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md).
 
 - Sie müssen Zugriff auf [Explorer (oder Echtzeiterkennungen)](threat-explorer.md)haben.
 
@@ -56,21 +56,19 @@ In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-N
 
 Die Integration von Microsoft Defender für Office 365 in Microsoft Defender für Endpunkt ist sowohl in Defender für Endpunkt als auch in Defender für Office 365 eingerichtet.
 
-1. Als globaler Administrator oder <https://security.microsoft.com/threatexplorer> Sicherheitsadministrator.
+1. Öffnen Sie als globaler Administrator oder Sicherheitsadministrator das Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ), und wechseln Sie zu **E-Mail & Zusammenarbeits-Explorer.** \>  Um direkt zur **Explorer-Seite** zu wechseln, verwenden Sie <https://security.microsoft.com/threatexplorer> .
 
-2. Wählen Sie im Navigationsbereich **E-Mail &** Zusammenarbeits-Explorer \> aus.
+2. Klicken Sie auf der **Explorer-Seite** in der oberen rechten Ecke des Bildschirms auf **MDE Einstellungen**.
 
-3. Klicken Sie auf der **Explorer-Seite** in der oberen rechten Ecke des Bildschirms auf **MDE Einstellungen**.
-
-4. Aktivieren Sie im angezeigten **Microsoft Defender für Endpunkt-Verbindungs-Flyout** **Verbinden zu Microsoft Defender für Endpunkt** ( ![ Einschalten ](../../media/scc-toggle-on.png) ) und klicken Sie dann auf schließen ![ ](../../media/m365-cc-sc-close-icon.png) .
+3. Aktivieren Sie im angezeigten **Microsoft Defender für Endpunkt-Verbindungs-Flyout** **Verbinden zu Microsoft Defender für Endpunkt** ( ![ Umschalten ](../../media/scc-toggle-on.png) ) und klicken Sie dann auf schließen ![ ](../../media/m365-cc-sc-close-icon.png) .
 
     :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE-Verbindung":::
 
-5. Wählen Sie im Navigationsbereich **Einstellungen** aus. Wählen Sie auf der **Seite Einstellungen** **Endpunkte aus.**
+4. Wählen Sie im Navigationsbereich **Einstellungen** aus. Wählen Sie auf der **Seite Einstellungen** **Endpunkte aus.**
 
-6. Wählen Sie auf der seite **"Endpunkte",** die geöffnet wird, die Option **"Erweiterte Features" aus.**
+5. Wählen Sie auf der seite **"Endpunkte",** die geöffnet wird, die Option **"Erweiterte Features" aus.**
 
-7. Scrollen Sie nach unten zu **Office 365 Threat Intelligence-Verbindung,** und aktivieren Sie sie ( ![ Umschalten ](../../media/scc-toggle-on.png) ).
+6. Scrollen Sie nach unten zu **Office 365 Threat Intelligence-Verbindung,** und aktivieren Sie sie ( ![ Umschalten ](../../media/scc-toggle-on.png) ).
 
    Wenn Sie fertig sind, klicken Sie auf **"Einstellungen speichern".**
 

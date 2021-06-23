@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365
+title: Einrichten Tresor Links-Richtlinien in Microsoft Defender für Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie Richtlinien für sichere Links und globale Einstellungen für sichere Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
+description: Administratoren können erfahren, wie Sie Tresor Links-Richtlinien und globale Einstellungen für Tresor Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933119"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082756"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten Tresor Links-Richtlinien in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,63 +36,63 @@ ms.locfileid: "52933119"
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](defender-for-office-365.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu Safelinks in Outlook sucht, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sichere Links in [Microsoft Defender für Office 365](defender-for-office-365.md) bieten URL-Überprüfung eingehender E-Mail-Nachrichten im E-Mail-Fluss und Zeitpunkt der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten. Weitere Informationen finden Sie unter ["Sichere Links" in Microsoft Defender für Office 365.](safe-links.md)
+Tresor Links in [Microsoft Defender für Office 365](defender-for-office-365.md) bieten URL-Überprüfung eingehender E-Mail-Nachrichten im E-Mail-Fluss und Zeitpunkt der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten. Weitere Informationen finden Sie unter [Tresor Links in Microsoft Defender für Office 365](safe-links.md).
 
-Es gibt keine integrierte oder standardmäßige Richtlinie für sichere Links. Um das Scannen sicherer Links von URLs zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Links erstellen, wie in diesem Artikel beschrieben.
+Es gibt keine integrierte oder standardmäßige Richtlinie für Tresor Links. Um Tresor Links-Überprüfung von URLs zu erhalten, müssen Sie eine oder mehrere Tresor Linkrichtlinien erstellen, wie in diesem Artikel beschrieben.
 
 > [!NOTE]
 >
-> Sie konfigurieren die globalen Einstellungen für den Schutz sicherer Links **außerhalb** von Richtlinien für sichere Links. Anweisungen finden Sie unter [Konfigurieren globaler Einstellungen für sichere Links in Microsoft Defender für Office 365.](configure-global-settings-for-safe-links.md)
+> Sie konfigurieren die globalen Einstellungen für Tresor Links-Schutz **außerhalb** Tresor Links-Richtlinien. Anweisungen finden Sie unter [Konfigurieren globaler Einstellungen für Tresor Links in Microsoft Defender für Office 365.](configure-global-settings-for-safe-links.md)
 >
-> Administratoren sollten die unterschiedlichen Konfigurationseinstellungen für sichere Links berücksichtigen. Eine der verfügbaren Optionen besteht darin, Benutzerdaten in sichere Links einzuschließen. Dieses Feature ermöglicht *es Sicherheitsteams,* potenzielle Benutzerkompromittierungen zu untersuchen, Korrekturmaßnahmen zu ergreifen und kostspielige Verstöße zu begrenzen.
+> Administratoren sollten die unterschiedlichen Konfigurationseinstellungen für Tresor Links berücksichtigen. Eine der verfügbaren Optionen besteht darin, Benutzerinformationen in Tresor Links einzuschließen. Dieses Feature ermöglicht *es Sicherheitsteams,* potenzielle Benutzerkompromittierungen zu untersuchen, Korrekturmaßnahmen zu ergreifen und kostspielige Verstöße zu begrenzen.
 
-Sie können Richtlinien für sichere Links im Microsoft 365 Defender-Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Microsoft Defender für Office 365-Add-On-Abonnements).
+Sie können Tresor Verknüpfungsrichtlinien im Microsoft 365 Defender-Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Microsoft Defender für Office 365 Add-On-Abonnements).
 
-Die grundlegenden Elemente einer Richtlinie für sichere Links sind:
+Die grundlegenden Elemente einer Tresor Links-Richtlinie sind:
 
-- Die Richtlinie für **sichere Links:** Aktivieren Sie den Schutz für sichere Links, aktivieren Sie die Echtzeit-URL-Überprüfung, geben Sie an, ob auf den Abschluss der Echtzeitüberprüfung gewartet werden soll, bevor die Nachricht zuzustellen ist, aktivieren Sie die Überprüfung auf interne Nachrichten, geben Sie an, ob Benutzerklicks auf URLs nachverfolgen sollen, und geben Sie an, ob Benutzer auf die ursprüngliche URL klicken dürfen.
+- Die Richtlinie für **sichere Links:** Aktivieren Sie Tresor Linksschutz, aktivieren Sie die URL-Überprüfung in Echtzeit, geben Sie an, ob auf den Abschluss der Echtzeitüberprüfung gewartet werden soll, bevor die Nachricht zuzustellen ist, aktivieren Sie die Überprüfung auf interne Nachrichten, geben Sie an, ob Benutzerklicks auf URLs nachverfolgen sollen, und geben Sie an, ob Benutzer auf die ursprüngliche URL klicken dürfen.
 - **Die Regel für sichere Verknüpfungen:** Gibt die Prioritäts- und Empfängerfilter an (für wen die Richtlinie gilt).
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Richtlinien für sichere Links im Microsoft 365 Defender-Portal verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Tresor Links-Richtlinien im Microsoft 365 Defender-Portal verwalten:
 
-- Wenn Sie eine Richtlinie für sichere Links erstellen, erstellen Sie tatsächlich eine Regel für sichere Links und die zugehörige Richtlinie für sichere Links gleichzeitig mit demselben Namen für beide.
-- Wenn Sie eine Richtlinie für sichere Links ändern, ändern Einstellungen, die sich auf den Namen, die Priorität, aktiviert oder deaktiviert beziehen, und Empfängerfilter die Regel für sichere Links. Alle anderen Einstellungen ändern die zugehörige Richtlinie für sichere Links.
-- Wenn Sie eine Richtlinie für sichere Links entfernen, werden die Regel für sichere Links und die zugehörige Richtlinie für sichere Links entfernt.
+- Wenn Sie eine Tresor Verknüpfungsrichtlinie erstellen, erstellen Sie tatsächlich eine Regel für sichere Links und die zugehörige Richtlinie für sichere Links gleichzeitig mit demselben Namen für beide.
+- Wenn Sie eine Tresor Verknüpfungsrichtlinie ändern, ändern Einstellungen im Zusammenhang mit Dem Namen, Priorität, aktiviert oder deaktiviert und Empfängerfilter die Regel für sichere Verknüpfungen. Alle anderen Einstellungen ändern die zugehörige Richtlinie für sichere Links.
+- Wenn Sie eine Tresor Verknüpfungsrichtlinie entfernen, werden die Regel für sichere Links und die zugehörige Richtlinie für sichere Links entfernt.
 
-In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt ["Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies"](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) weiter unten in diesem Artikel.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt ["Verwenden von Exchange Online PowerShell oder eigenständiger EOP PowerShell" zum Konfigurieren Tresor Richtlinien für Links](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) weiter unten in diesem Artikel.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com/>. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2> .
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com/>. To go directly to the **Tresor Links** page, use <https://security.microsoft.com/safelinksv2> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
-  - Um Richtlinien für sichere Links zu erstellen, zu ändern und zu löschen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** im Microsoft 365 Defender-Portal **und** Mitglied der **Rollengruppe "Organisationsverwaltung"** in Exchange Online sein.
-  - Für den schreibgeschützten Zugriff auf Richtlinien für sichere Links müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** sein.
+  - Um Tresor Verknüpfungsrichtlinien zu erstellen, zu ändern und zu löschen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** im Microsoft 365 Defender Portal **und** Mitglied der Rollengruppe **"Organisationsverwaltung"** in Exchange Online sein.
+  - Für den schreibgeschützten Zugriff auf Tresor Links-Richtlinien müssen Sie Mitglied der Rollengruppe **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-in-the-security-and-compliance-center.md) und [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter ["Berechtigungen" im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md) und ["Berechtigungen" in Exchange Online.](/exchange/permissions-exo/permissions-exo)
 
   > [!NOTE]
   >
   > - Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   . – Die Rollengruppe **"Organisationsverwaltung nur anzeigen"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) bietet auch schreibgeschützten Zugriff auf das Feature.
 
-- Unsere empfohlenen Einstellungen für Richtlinien für sichere Links finden Sie unter ["Richtlinieneinstellungen für sichere Links".](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+- Unsere empfohlenen Einstellungen für Tresor Links-Richtlinien finden Sie unter [Tresor Links Policy Settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - Es kann bis zu 30 Minuten dauern, bis eine neue oder aktualisierte Richtlinie angewendet wird.
 
-- [Microsoft Defender werden kontinuierlich neue Features für Office 365 hinzugefügt.](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365) Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren vorhandenen Richtlinien für sichere Links vornehmen.
+- [Microsoft Defender werden kontinuierlich neue Features für Office 365 hinzugefügt.](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365) Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren vorhandenen Richtlinien für Tresor Links vornehmen.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Richtlinien für sichere Links
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Erstellen Tresor Verknüpfungsrichtlinien
 
-Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Microsoft 365 Defender-Portal werden die Regel für sichere Links und die zugehörige Richtlinie für sichere Links gleichzeitig mit demselben Namen für beide erstellt.
+Beim Erstellen einer benutzerdefinierten richtlinie für Tresor Links im Microsoft 365 Defender Portal werden die Regel für sichere Links und die zugehörige Richtlinie für sichere Links gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Links".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** \> **Tresor Links.**
 
-2. Klicken Sie auf der Seite **"Sichere Links"** auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Erstellen".**
+2. Klicken Sie auf der Seite **Tresor Links** auf das ![ Symbol ](../../media/m365-cc-sc-create-icon.png) **"Erstellen".**
 
-3. Der Assistent **für neue Richtlinien für sichere Links** wird geöffnet. Konfigurieren Sie auf der Seite **"Richtlinie benennen"** die folgenden Einstellungen:
+3. Der Assistent **für neue Tresor Verknüpfungsrichtlinien** wird geöffnet. Konfigurieren Sie auf der Seite **"Richtlinie benennen"** die folgenden Einstellungen:
 
    - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
@@ -115,14 +115,14 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Micros
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
 5. Konfigurieren Sie auf der angezeigten Seite **"Schutzeinstellungen"** die folgenden Einstellungen:
-   - **Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichten** aus: Aktivieren Sie **"Ein",** um den Schutz sicherer Links für Links in E-Mail-Nachrichten zu aktivieren. Wenn Sie diese Einstellung aktivieren, sind die folgenden Einstellungen verfügbar:
+   - **Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichten** aus: Aktivieren Sie **"Ein",** um Tresor Linksschutz für Links in E-Mail-Nachrichten zu aktivieren. Wenn Sie diese Einstellung aktivieren, sind die folgenden Einstellungen verfügbar:
      - **Anwenden der Echtzeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen:** Wählen Sie diese Option aus, um die Echtzeitüberprüfung von Links in E-Mail-Nachrichten zu aktivieren. Wenn Sie diese Einstellung aktivieren, ist folgende Einstellung verfügbar:
        - **Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht übermitteln:** Wählen Sie diese Option aus, um auf den Abschluss der URL-Überprüfung in Echtzeit zu warten, bevor Sie die Nachricht übermitteln.
-     - **Anwenden von sicheren Links auf E-Mail-Nachrichten, die innerhalb der Organisation gesendet werden:** Wählen Sie diese Option aus, um die Richtlinie für sichere Links auf Nachrichten zwischen internen Absendern und internen Empfängern anzuwenden.
-   - **Wählen Sie die Aktion für unbekannte oder potenziell schädliche URLs in Microsoft Teams** aus: **Aktivieren** Sie "Ein", um den Schutz sicherer Links für Links in Teams zu aktivieren.
+     - **Anwenden Tresor Links auf E-Mail-Nachrichten, die innerhalb der Organisation gesendet werden:** Wählen Sie diese Option aus, um die Richtlinie Tresor Links auf Nachrichten zwischen internen Absendern und internen Empfängern anzuwenden.
+   - **Wählen Sie die Aktion für unbekannte oder potenziell schädliche URLs in Microsoft Teams** aus: Aktivieren Sie **"Ein",** um Tresor Linksschutz für Links in Teams zu aktivieren.
    - **Benutzerklicks nicht nachverfolgen:** Lassen Sie diese Einstellung deaktiviert, um das Nachverfolgen von Benutzerklicks auf URLs in E-Mail-Nachrichten zu aktivieren.
    - **Benutzer dürfen nicht zur ursprünglichen URL klicken:** Wählen Sie diese Option aus, um zu verhindern, dass Benutzer auf [Warnseiten](safe-links.md#warning-pages-from-safe-links)zur ursprünglichen URL klicken.
-   - **Schreiben Sie die folgenden URLs nicht neu:** Ermöglicht den Zugriff auf die angegebenen URLs, die andernfalls durch sichere Links blockiert würden.
+   - **Schreiben Sie die folgenden URLs nicht neu:** Ermöglicht den Zugriff auf die angegebenen URLs, die andernfalls durch Tresor Links blockiert würden.
 
      Geben Sie in das Feld die gewünschte URL oder den gewünschten Wert ein, und klicken Sie dann auf **"Hinzufügen".** Wiederholen Sie diesen Schritt so oft wie nötig.
 
@@ -130,9 +130,9 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Micros
 
      Informationen zur Eintragssyntax finden Sie unter [Eintragssyntax für die Liste "Die folgenden URLs nicht neu schreiben".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
-   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen für sichere Links für E-Mail-Nachrichten](safe-links.md#safe-links-settings-for-email-messages) und Einstellungen für sichere Links für [Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Tresor Links-Einstellungen für E-Mail-Nachrichten](safe-links.md#safe-links-settings-for-email-messages) und [Tresor Links-Einstellungen für Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
 
-   Weitere empfohlene Werte für Standard- und Strict-Richtlinieneinstellungen finden Sie unter ["Richtlinieneinstellungen für sichere Links".](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+   Weitere informationen zu den empfohlenen Werten für Standard- und Strict-Richtlinieneinstellungen finden Sie unter [Tresor Links Policy Settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
@@ -150,32 +150,32 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Micros
 
 8. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen von Richtlinien für sichere Links
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Anzeigen Tresor Verknüpfungsrichtlinien
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Links".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** \> **Tresor Links.**
 
-2. Auf der Seite **"Sichere Links"** werden die folgenden Eigenschaften in der Liste der Richtlinien für sichere Links angezeigt:
+2. Auf der Seite **Tresor Links** werden die folgenden Eigenschaften in der Liste Tresor Verknüpfungsrichtlinien angezeigt:
    - **Name**
    - **Status**
    - **Priorität**
 
 3. Wenn Sie eine Richtlinie auswählen, indem Sie auf den Namen klicken, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern von Richtlinien für sichere Links
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Ändern Tresor Verknüpfungsrichtlinien
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Links".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** \> **Tresor Links.**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
+2. Wählen Sie auf der Seite **Tresor Links** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) von Richtlinien für sichere Links" in diesem Artikel.  
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im vorherigen Abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen Tresor Verknüpfungsrichtlinien"](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) in diesem Artikel.  
 
 Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festlegen der Reihenfolge der Richtlinienpriorität finden Sie in den folgenden Abschnitten.
 
-### <a name="enable-or-disable-safe-links-policies"></a>Aktivieren oder Deaktivieren von Richtlinien für sichere Links
+### <a name="enable-or-disable-safe-links-policies"></a>Aktivieren oder Deaktivieren Tresor Verknüpfungsrichtlinien
 
-1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelgefährdungsrichtlinien** \>  im Abschnitt \> **"Sichere Links".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Tresor Links.**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
+2. Wählen Sie auf der Seite **Tresor Links** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
 3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie einen der folgenden Werte sehen:
    - **Richtlinie deaktiviert**: Um die Richtlinie zu aktivieren, klicken Sie auf ![Symbol „Aktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Aktivieren**.
@@ -187,20 +187,20 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festleg
 
 Zurück auf der Richtlinien-Hauptseite wird der Wert **Status** der Richtlinie **Aktiviert** oder **Deaktiviert** sein.
 
-### <a name="set-the-priority-of-safe-links-policies"></a>Festlegen der Priorität von Richtlinien für sichere Links
+### <a name="set-the-priority-of-safe-links-policies"></a>Festlegen der Priorität von Richtlinien für Tresor Links
 
-Standardmäßig erhalten sichere Links eine Priorität, die auf der Reihenfolge basiert, in der sie erstellt wurden (neuere Richtlinien haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
+Standardmäßig erhalten Tresor Links eine Priorität, die auf der Reihenfolge basiert, in der sie erstellt wurden (neuere Richtlinien haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
 Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Microsoft 365 Defender-Portal nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
 
 **Hinweis**:
 
-- Im Microsoft 365 Defender-Portal können Sie die Priorität der Richtlinie für sichere Links erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Verknüpfungen erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
-- Richtlinien für sichere Links werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
+- Im Microsoft 365 Defender Portal können Sie die Priorität der Richtlinie Tresor Links erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Verknüpfungen erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Tresor Verknüpfungsrichtlinien werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
 
-1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelgefährdungsrichtlinien** \>  im Abschnitt \> **"Sichere Links".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Tresor Links.**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
+2. Wählen Sie auf der Seite **Tresor Links** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
 3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie **Priorität erhöhen** oder **Priorität verringern** sehen, abhängig vom aktuellen Prioritätswert und der Anzahl der benutzerdefinierten Richtlinien:
    - Für die Richtlinie mit dem **Prioritätswert** **0** ist nur die Option **"Priorität verringern"** verfügbar.
@@ -211,17 +211,17 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 4. Wenn Sie den Vorgang abgeschlossen haben, klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Entfernen von Richtlinien für sichere Links
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Verwenden sie das Microsoft 365 Defender-Portal, um Tresor Verknüpfungsrichtlinien zu entfernen.
 
-1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelgefährdungsrichtlinien** \>  im Abschnitt \> **"Sichere Links".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Tresor Links.**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
+2. Wählen Sie auf der Seite **Tresor Links** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
 3. Klicken Sie im angezeigten Bestätigungsdialog auf **Ja**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies&quot;></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren von Richtlinien für sichere Links
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies&quot;></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren Tresor Verknüpfungsrichtlinien
 
-Wie zuvor beschrieben besteht eine Richtlinie für sichere Links aus einer Richtlinie für sichere Links und einer Regel für sichere Links.
+Wie zuvor beschrieben besteht eine richtlinie für Tresor Links aus einer Richtlinie für sichere Links und einer Regel für sichere Links.
 
 In PowerShell ist der Unterschied zwischen Richtlinien für sichere Links und Regeln für sichere Links offensichtlich. Sie verwalten Richtlinien für sichere Links mithilfe der Cmdlets **\* &quot;-SafeLinksPolicy&quot;,** und Sie verwalten Regeln für sichere Links mithilfe der Cmdlets **\* &quot;-SafeLinksRule&quot;.**
 
@@ -229,9 +229,9 @@ In PowerShell ist der Unterschied zwischen Richtlinien für sichere Links und Re
 - In PowerShell ändern Sie die Einstellungen in der Richtlinie für sichere Links und die Regel für sichere Links separat.
 - Wenn Sie eine Richtlinie für sichere Links aus PowerShell entfernen, wird die entsprechende Regel für sichere Links nicht automatisch entfernt und umgekehrt.
 
-### <a name=&quot;use-powershell-to-create-safe-links-policies&quot;></a>Verwenden von PowerShell zum Erstellen von Richtlinien für sichere Links
+### <a name=&quot;use-powershell-to-create-safe-links-policies&quot;></a>Verwenden von PowerShell zum Erstellen Tresor Verknüpfungsrichtlinien
 
-Das Erstellen einer Richtlinie für sichere Links in PowerShell besteht aus zwei Schritten:
+Das Erstellen einer richtlinie für Tresor Links in PowerShell besteht aus zwei Schritten:
 
 1. Erstellen Sie die Richtlinie für sichere Links.
 2. Erstellen Sie die Regel für sichere Links, die die Richtlinie für sichere Links angibt, auf die die Regel angewendet wird.
@@ -240,7 +240,7 @@ Das Erstellen einer Richtlinie für sichere Links in PowerShell besteht aus zwei
 >
 > - Sie können eine neue Regel für sichere Links erstellen und ihr eine vorhandene Richtlinie für nicht zugeordnete sichere Links zuweisen. Eine Regel für sichere Links kann nicht mehr als einer Richtlinie für sichere Links zugeordnet werden.
 >
-> - Sie können die folgenden Einstellungen für neue Richtlinien für sichere Links in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Microsoft 365 Defender-Portal verfügbar sind:
+> - Sie können die folgenden Einstellungen für neue Richtlinien für sichere Links in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Microsoft 365 Defender Portal verfügbar sind:
 >   - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` für das Cmdlet **&quot;New-SafeLinksRule").**
 >   - Legen Sie die Priorität der Richtlinie während der Erstellung _(Priorität)_ _\<Number\>_ im Cmdlet **"New-SafeLinksRule"** fest.
 >
@@ -267,7 +267,7 @@ In diesem Beispiel wird eine Richtlinie für sichere Verknüpfungen namens "Cont
 - Aktivieren Sie die Echtzeitüberprüfung von angeklickten URLs, einschließlich angeklickter Links, die auf Dateien verweisen.
 - Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht übermitteln.
 - Aktivieren Sie die URL-Überprüfung und das Umschreiben für interne Nachrichten.
-- Nachverfolgen von Benutzerklicks im Zusammenhang mit dem Schutz sicherer Links (wir verwenden nicht den _DoNotTrackUserClicks-Parameter,_ und der Standardwert ist $false, was bedeutet, dass Benutzerklicks nachverfolgt werden).
+- Nachverfolgen von Benutzerklicks im Zusammenhang mit Tresor Links-Schutz (wir verwenden nicht den _DoNotTrackUserClicks-Parameter,_ und der Standardwert ist $false, was bedeutet, dass Benutzerklicks nachverfolgt werden).
 - Benutzer dürfen nicht auf die ursprüngliche URL klicken.
 
 ```PowerShell
@@ -353,7 +353,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-Safe
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Verwenden von PowerShell zum Ändern von Richtlinien für sichere Links
 
-Sie können eine Richtlinie für sichere Links in PowerShell nicht umbenennen (das Cmdlet **"Set-SafeLinksPolicy"** hat keinen _Name-Parameter)._ Wenn Sie eine Richtlinie für sichere Links im Microsoft 365 Defender-Portal umbenennen, benennen Sie nur die _Regel für_ sichere Links um.
+Sie können eine Richtlinie für sichere Links in PowerShell nicht umbenennen (das Cmdlet **"Set-SafeLinksPolicy"** hat keinen _Name-Parameter)._ Wenn Sie eine Tresor Verknüpfungsrichtlinie im Microsoft 365 Defender-Portal umbenennen, benennen Sie nur die _Regel für_ sichere Links um.
 
 Die einzige zusätzliche Überlegung zum Ändern von Richtlinien für sichere Links in PowerShell ist die verfügbare Syntax für den _Parameter "DoNotRewriteUrls"_ (die [Liste "Die folgenden URLs nicht umschreiben"):](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
@@ -376,7 +376,7 @@ Die einzige Einstellung, die beim Ändern einer Regel für sichere Verknüpfunge
 
 Andernfalls sind die gleichen Einstellungen verfügbar, wenn Sie eine Regel erstellen, wie im [Abschnitt "Schritt 2: Verwenden von PowerShell zum Erstellen einer Regel](#step-2-use-powershell-to-create-a-safe-links-rule) für sichere Links" weiter oben in diesem Artikel beschrieben.
 
-Verwenden Sie die folgende Syntax, um eine Regel für sichere Links zu ändern:
+Verwenden Sie diese Syntax, um eine Regel für sichere Links zu ändern:
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
@@ -386,7 +386,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-Safe
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>Verwenden von PowerShell zum Aktivieren oder Deaktivieren von Regeln für sichere Links
 
-Durch Aktivieren oder Deaktivieren einer Regel für sichere Links in PowerShell wird die gesamte Richtlinie für sichere Links (die Regel für sichere Links und die Richtlinie für zugewiesene sichere Links) aktiviert oder deaktiviert.
+Das Aktivieren oder Deaktivieren einer Regel für sichere Links in PowerShell aktiviert oder deaktiviert die gesamte Richtlinie für Tresor Links (die Regel für sichere Links und die Richtlinie für zugewiesene sichere Links).
 
 Verwenden Sie die folgende Syntax, um eine Regel für sichere Links in PowerShell zu aktivieren oder zu deaktivieren:
 
@@ -449,7 +449,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Sa
 
 ### <a name="use-powershell-to-remove-safe-links-rules"></a>Verwenden von PowerShell zum Entfernen von Regeln für sichere Links
 
-Wenn Sie PowerShell zum Entfernen einer Regel für sichere Links verwenden, wird die entsprechende Richtlinie für sichere Links nicht entfernt.
+Wenn Sie PowerShell verwenden, um eine Regel für sichere Links zu entfernen, wird die entsprechende Richtlinie für sichere Links nicht entfernt.
 
 Verwenden Sie die folgende Syntax, um eine Regel für sichere Links in PowerShell zu entfernen:
 
@@ -465,13 +465,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Um zu überprüfen, ob sichere Links Nachrichten überprüfen, überprüfen Sie den verfügbaren Microsoft Defender auf Office 365 Berichte. Weitere Informationen finden Sie unter [Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Microsoft 365 [Defender-Portal.](threat-explorer.md)
+Um zu überprüfen, ob Tresor Links Nachrichten überprüft, überprüfen Sie den verfügbaren Microsoft Defender auf Office 365 Berichte. Weitere Informationen finden Sie unter [Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Microsoft 365 Defender [Portal.](threat-explorer.md)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
-Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Richtlinien für sichere Links erfolgreich erstellt, geändert oder entfernt haben:
+Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Tresor Verknüpfungsrichtlinien erfolgreich erstellt, geändert oder entfernt haben:
 
-- Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Für \> **Bedrohungsrichtlinien** sichere \> **Links.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
+- Wechseln Sie im portal Microsoft 365 Defender zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** Tresor \> **Links**. Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
 
 - Ersetzen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell \<Name\> durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 

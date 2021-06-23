@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Häufig gestellte Fragen zu isolierten Nachrichten
+  title: Häufig gestellte Fragen zu in Quarantäne befindlichen Nachrichten
   f1.keywords:
   - NOCSH
   ms.author: chrisda
@@ -20,13 +20,13 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625413"
-title: Häufig gestellte Fragen zu isolierten Nachrichten
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083644"
+title: Häufig gestellte Fragen zu in Quarantäne befindlichen Nachrichten
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -40,62 +40,62 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Dieses Thema enthält häufig gestellte Fragen und Antworten zu isolierten E-Mail-Nachrichten für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer.
+  Dieses Thema enthält häufig gestellte Fragen und Antworten zu isolierten E-Mail-Nachrichten für Microsoft 365 Organisationen mit Postfächern in Exchange Online oder EOP-Organisationen (Standalone Exchange Online Protection) ohne Exchange Online Postfächer.
 
 
-  Fragen und Antworten zum Antispamschutz finden Sie unter Häufig gestellte Fragen zu [Antispamschutz](anti-spam-protection-faq.yml).
+  Fragen und Antworten zum Antispamschutz finden Sie unter Häufig gestellte Fragen zum [Antispamschutz.](anti-spam-protection-faq.yml)
 
 
-  Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter Häufig gestellte Fragen zum Schutz [vor Schadsoftware.](anti-malware-protection-faq-eop.yml)
+  Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter ["Häufig gestellte Fragen zum Schutz vor Schadsoftware".](anti-malware-protection-faq-eop.yml)
 
 
-  Fragen und Antworten zum Schutz vor Spoofing finden Sie unter Häufig gestellte Fragen zum Schutz [vor Spoofing.](anti-spoofing-protection-faq.yml)
+  Fragen und Antworten zum Antispoofingschutz finden Sie unter ["Antispoofingschutz" ( FAQ).](anti-spoofing-protection-faq.yml)
 sections:
 - name: Ignoriert
   questions:
   - question: >
-      Wie verwalte ich Nachrichten, die für Schadsoftware isoliert wurden?
+      Wie verwalte ich Nachrichten, die für Schadsoftware unter Quarantäne gestellt wurden?
     answer: >
-      Nur Administratoren können Nachrichten verwalten, die für Schadsoftware isoliert wurden. Weitere Informationen finden Sie unter [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+      Nur Administratoren können Nachrichten verwalten, die für Schadsoftware unter Quarantäne gestellt wurden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator.](manage-quarantined-messages-and-files.md)
   - question: >
-      Wie isoliere ich Spam?
+      Wie unter quarantänee ich Spam?
     answer: >
-      Standardmäßig werden Nachrichten, die per Spamfilterung als Spam oder Massen-E-Mail klassifiziert werden, an das Postfach des Benutzers zugestellt und in den Junk-E-Mail-Ordner verschoben. Sie können jedoch Antispamrichtlinien erstellen und konfigurieren, um Spam- oder Massen-E-Mail-Nachrichten zu isolieren. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+      Standardmäßig werden Nachrichten, die von der Spamfilterung als Spam oder Massen-E-Mails klassifiziert werden, an das Postfach des Benutzers übermittelt und in den Junk-E-Mail-Ordner verschoben. Sie können jedoch Stattdessen Antispamrichtlinien erstellen und konfigurieren, um Spam- oder Massen-E-Mail-Nachrichten unter Quarantäne zu stellen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
   - question: >
-      Wie kann ich Benutzern Zugriff auf die Quarantäne ermöglichen?
+      Wie kann ich Benutzern Zugriff auf die Quarantäne gewähren?
     answer: >
-      Ein Benutzer muss über ein gültiges Konto verfügen, um in Quarantäne auf eigene Nachrichten zugreifen zu können. Eigenständiges EOP erfordert, dass Benutzer in EOP als E-Mail-Benutzer dargestellt werden (manuell erstellt oder über die Verzeichnissynchronisierung erstellt). Weitere Informationen zum Verwalten von Benutzern in eigenständigen EOP-Umgebungen finden Sie unter Verwalten von [E-Mail-Benutzern in eigenständigem EOP](/exchange/standalone-eop/manage-mail-users-in-eop).
+      Ein Benutzer muss über ein gültiges Konto verfügen, um auf seine eigenen Nachrichten in Quarantäne zuzugreifen. Eigenständige EOP erfordert, dass Benutzer in EOP als E-Mail-Benutzer dargestellt werden (manuell erstellt oder über die Verzeichnissynchronisierung erstellt). Weitere Informationen zum Verwalten von Benutzern in eigenständigen EOP-Umgebungen finden Sie unter [Verwalten von E-Mail-Benutzern in eigenständigem EOP.](/exchange/standalone-eop/manage-mail-users-in-eop)
   - question: >
       Auf welche Nachrichten können Endbenutzer in Quarantäne zugreifen?
     answer: >
-      Benutzer können auf Spam-, Massen-E-Mails und (ab April 2020) Phishingnachrichten zugreifen, wenn sie Empfänger sind. Endbenutzer können nicht auf isolierte Schadsoftware, Phishing mit hoher  Vertrauenssicherheit oder Nachrichten zugreifen, die aufgrund der Nachricht an die gehostete Quarantäneaktion in Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Weitere Informationen zu Benutzern, die auf isolierte Nachrichten zugreifen, finden Sie unter Suchen und Veröffentlichen isolierter Nachrichten [als Benutzer.](find-and-release-quarantined-messages-as-a-user.md)
+      Benutzer können auf Spam-, Massen-E-Mails und (ab April 2020) Phishingnachrichten zugreifen, bei denen sie ein Empfänger sind. Endbenutzer können nicht auf isolierte Schadsoftware, Phishing mit hoher Zuverlässigkeit oder Nachrichten zugreifen, die aufgrund der Übermittlung **der Nachricht an die gehostete Quarantäneaktion** in Nachrichtenflussregeln (auch als Transportregeln bezeichnet) isoliert wurden. Weitere Informationen zu Benutzern, die auf isolierte Nachrichten zugreifen, finden Sie unter [Suchen und Freigeben von isolierten Nachrichten als Benutzer.](find-and-release-quarantined-messages-as-a-user.md)
   - question: >
-      Wie lange werden Nachrichten in der Quarantäne aufbewahrt?
+      Wie lange werden Nachrichten in quarantäne gehalten?
     answer: >
-      Sie konfigurieren, wie lange Spam-, Phishing- und Massen-E-Mail-Nachrichten mithilfe von Antispamrichtlinien in der Quarantäne aufbewahrt werden. Der Standardwert ist 30 Tage, was auch das Maximum ist. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)
+      Sie konfigurieren mithilfe von Antispamrichtlinien, wie lange Spam-, Phishing- und Massen-E-Mail-Nachrichten in Quarantäne bleiben. Der Standardwert ist 30 Tage, was auch das Maximum ist. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)
 
 
-      Für Nachrichten, die von der Nachrichtenflussregelaktion isoliert wurden **Die** Nachricht in die gehostete Quarantäne senden, werden die Nachrichten 30 Tage lang in Quarantäne gehalten. Sie können diese Dauer nicht konfigurieren.
+      Für Nachrichten, die durch die Nachrichtenflussregelaktion in Quarantäne gestellt wurden, um **die Nachricht an die gehostete Quarantäne zu übermitteln,** werden die Nachrichten 30 Tage lang in Quarantäne gehalten. Sie können diese Dauer nicht konfigurieren.
 
 
-      Nach Ablauf des Zeitraums werden die Nachrichten gelöscht und können nicht mehr wiederhergestellt werden.
+      Nach Ablauf des Zeitraums werden die Nachrichten gelöscht und können nicht wiederhergestellt werden.
   - question: >
       Kann ich mehr als eine Quarantänenachricht gleichzeitig freigeben oder melden?
     answer: >
-      Im Security & Compliance Center können Sie bis zu 100 Nachrichten gleichzeitig auswählen und veröffentlichen.
+      Im Microsoft 365 Defender Portal können Sie bis zu 100 Nachrichten gleichzeitig auswählen und freigeben.
 
 
-      Administratoren können die [Cmdlets Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) und [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) in Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwenden, um isolierte Nachrichten in Massen zu finden und frei zu geben und falsch positive Ergebnisse in Massen zu melden.
+      Administratoren können die Cmdlets ["Get-QuarantineMessage"](/powershell/module/exchange/get-quarantinemessage) und ["Release-QuarantineMessage"](/powershell/module/exchange/release-quarantinemessage) in Exchange Online PowerShell oder der eigenständigen EOP-PowerShell verwenden, um isolierte Nachrichten massenweise zu suchen und freizugeben und falsch positive Ergebnisse in massenweise zu melden.
   - question: >
       Werden bei der Suche nach in der Quarantäne isolierte Nachrichten Platzhalterzeichen unterstützt? Kann ich für eine bestimmte Domäne nach Nachricht in Quarantäne suchen?
     answer: >-
-      Platzhalter werden im Security & Compliance Center nicht unterstützt. Wenn Sie beispielsweise nach einem Absender suchen, müssen Sie die vollständige E-Mail-Adresse angeben. Sie können jedoch Platzhalter in powerShell oder Exchange Online eigenständigen EOP PowerShell verwenden.
+      Platzhalter werden im Microsoft 365 Defender-Portal nicht unterstützt. Wenn Sie beispielsweise nach einem Absender suchen, müssen Sie die vollständige E-Mail-Adresse angeben. Sie können Platzhalter jedoch in Exchange Online PowerShell oder in eigenständiger EOP-PowerShell verwenden.
 
 
-      Kopieren Sie beispielsweise den folgenden PowerShell-Code in NotePad, und speichern Sie die Datei unter .ps1 an einem Speicherort, den Sie leicht finden können (z. B. C:\Data\QuarantineRelease.ps1).
+      Kopieren Sie z. B. den folgenden PowerShell-Code in Editor, und speichern Sie die Datei als .ps1 an einem Ort, der leicht zu finden ist (z. B. C:\Data\QuarantineRelease.ps1).
 
 
-      Führen Sie dann, nachdem Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) oder [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)hergestellt haben, den folgenden Befehl aus, um das Skript auszuführen:
+      Führen Sie dann nach dem Herstellen einer Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) oder [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)den folgenden Befehl aus, um das Skript auszuführen:
 
 
       ```powershell
@@ -108,11 +108,11 @@ sections:
       Das Skript führt die folgenden Aktionen aus:
 
 
-      - Suchen Sie unveröffentlichte Nachrichten, die von allen Absendern in der fabrikam-Domäne als Spam isoliert wurden. Die maximale Anzahl der Ergebnisse beträgt 50.000 (50 Seiten mit 1.000 Ergebnissen).
+      - Suchen Sie nicht freigegebene Nachrichten, die als Spam von allen Absendern in der Fabrikam-Domäne isoliert wurden. Die maximale Anzahl von Ergebnissen beträgt 50.000 (50 Seiten mit 1.000 Ergebnissen).
 
       - Speichern Sie die Ergebnisse in einer CSV-Datei.
 
-      - Geben Sie die übereinstimmenden isolierten Nachrichten für alle ursprünglichen Empfänger frei.
+      - Geben Sie die übereinstimmenden isolierten Nachrichten an alle ursprünglichen Empfänger frei.
 
 
       ```powershell
@@ -151,4 +151,4 @@ sections:
       ```
 
 
-      Nachdem Sie eine Nachricht veröffentlicht haben, können Sie sie nicht mehr veröffentlichen.
+      Nachdem Sie eine Nachricht freigegeben haben, können Sie sie nicht mehr freigeben.

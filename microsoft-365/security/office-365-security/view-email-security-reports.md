@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie die E-Mail-Sicherheitsberichte finden und verwenden, die im Microsoft 365 Defender-Portal verfügbar sind.
+description: Administratoren können erfahren, wie sie die E-Mail-Sicherheitsberichte finden und verwenden, die im Microsoft 365 Defender-Portal verfügbar sind.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029577"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083524"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Anzeigen von E-Mail-Sicherheitsberichten im Microsoft 365 Defender-Portal
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Anzeigen von E-Mail-Sicherheitsberichten im Microsoft 365 Defender Portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029577"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Im Microsoft 365 Defender-Portal finden Sie eine Vielzahl von Berichten, <https://security.microsoft.com> mit denen Sie sehen können, wie E-Mail-Sicherheitsfeatures wie Antispam, Antischadsoftware und Verschlüsselungsfunktionen in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Microsoft 365 Defender-Portal anzeigen, indem Sie zu  \> **E-Mail-Berichte &** \> **ZusammenarbeitS-E-Mail & Zusammenarbeitsberichte wechseln.** To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport> .
+Eine Vielzahl von Berichten finden Sie im Microsoft 365 Defender Portal <https://security.microsoft.com> unter, um zu sehen, wie E-Mail-Sicherheitsfeatures wie Antispam, Antischadsoftware und Verschlüsselungsfunktionen in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte im Microsoft 365 Defender Portal anzeigen, indem Sie zu  \> **E-Mail-Berichte &** \> **Zusammenarbeit E-Mail & Zusammenarbeitsberichte wechseln.** To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport> .
 
-![Seite "E-Mail & Berichte zur Zusammenarbeit" im Microsoft 365 Defender-Portal](../../media/email-collaboration-reports.png)
+![Seite "E-Mail & Zusammenarbeitsberichte" im Microsoft 365 Defender Portal](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
-> Einige der Berichte auf der Seite **"E-Mail & Zusammenarbeitsberichte"** erfordern Microsoft Defender für Office 365. Informationen zu diesen Berichten finden Sie unter Anzeigen von [Defender für Office 365-Berichten im Microsoft 365 Defender-Portal.](view-reports-for-mdo.md)
+> Einige der Berichte auf der Seite **"E-Mail & Zusammenarbeitsberichte"** erfordern Microsoft Defender für Office 365. Informationen zu diesen Berichten finden Sie unter Anzeigen von [Defender für Office 365 Berichte im Microsoft 365 Defender Portal.](view-reports-for-mdo.md)
 >
 > Berichte, die sich auf den Nachrichtenfluss beziehen, befinden sich jetzt im Exchange Admin Center (EAC). Weitere Informationen zu diesen Berichten finden Sie unter [Nachrichtenflussberichte im neuen Exchange Admin Center.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Bericht "Kompromittierte Benutzer"
 
 > [!NOTE]
-> Dieser Bericht ist in Microsoft 365-Organisationen mit Exchange Online-Postfächern verfügbar. Es ist nicht in eigenständigen Exchange Online Protection (EOP)-Organisationen verfügbar.
+> Dieser Bericht ist in Microsoft 365 Organisationen mit Exchange Online Postfächern verfügbar. Es ist in eigenständigen Exchange Online Protection (EOP)-Organisationen nicht verfügbar.
 
 Der Bericht **"Kompromittierte Benutzer"** zeigt die Anzahl der Benutzerkonten an, die innerhalb der letzten 7 Tage als **verdächtig** oder **eingeschränkt** markiert wurden. Konten in einem dieser Zustände sind problematisch oder sogar kompromittiert. Bei häufiger Verwendung können Sie den Bericht verwenden, um Spitzen und sogar Trends in verdächtigen oder eingeschränkten Konten zu erkennen. Weitere Informationen zu kompromittierten Benutzern finden Sie unter [Antworten auf ein kompromittiertes E-Mail-Konto.](responding-to-a-compromised-email-account.md)
 
@@ -56,7 +56,7 @@ Der Bericht **"Kompromittierte Benutzer"** zeigt die Anzahl der Benutzerkonten a
 
 In der Aggregatansicht werden Daten für die letzten 90 Tage und in der Detailansicht Daten für die letzten 30 Tage angezeigt.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports.** Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** **kompromittierte Benutzer,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/CompromisedUsers> .
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** **kompromittierte Benutzer,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/CompromisedUsers> .
 
 Auf der Seite **"Kompromittierte Benutzer"** können Sie sowohl das Diagramm als auch die Detailtabelle filtern, indem Sie auf **"Filtern"** klicken und einen oder mehrere der folgenden Werte im angezeigten Flyout auswählen:
 
@@ -77,27 +77,27 @@ In der Detailtabelle unterhalb des Diagramms sehen Sie die folgenden Details:
 
 ## <a name="exchange-transport-rule-report"></a>Exchange-Transportregelbericht
 
-Der **Exchange-Transportregelbericht** zeigt die Auswirkungen von Nachrichtenflussregeln (auch als Transportregeln bezeichnet) auf ein- und ausgehende Nachrichten in Ihrer Organisation.
+Der **Bericht Exchange Transportregel** zeigt die Auswirkungen von Nachrichtenflussregeln (auch als Transportregeln bezeichnet) auf ein- und ausgehende Nachrichten in Ihrer Organisation an.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports.** Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** die **Exchange-Transportregel,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/ETRRuleReport> .
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** **nach Exchange Transportregel,** und klicken Sie dann auf **Details anzeigen.** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/ETRRuleReport> .
 
-![Exchange-Transportregel-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/transport-rule-report-widget.png)
+![Exchange Transportregel-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/transport-rule-report-widget.png)
 
-Auf der Seite **"Exchange-Transportregelbericht"** werden die verfügbaren Diagramme und Daten in den folgenden Abschnitten beschrieben.
+Auf der Seite **Exchange Transportregelbericht** werden die verfügbaren Diagramme und Daten in den folgenden Abschnitten beschrieben.
 
 ### <a name="chart-breakdown-by-direction"></a>Diagrammstrukturplan nach Richtung
 
-![Richtungsansicht für Exchange-Transportregeln im Exchange-Transportregelbericht](../../media/transport-rule-report-etr-direction-view.png)
+![Richtungsansicht für Exchange Transportregeln im Exchange-Transportregelbericht](../../media/transport-rule-report-etr-direction-view.png)
 
 Wenn Sie **die Diagrammstrukturstruktur nach Richtung** auswählen, sind die folgenden Diagramme verfügbar:
 
-- **Anzeigen von Daten nach Exchange-Transportregeln:** Die Anzahl der **eingehenden** und **ausgehenden** Nachrichten, die von Nachrichtenflussregeln betroffen waren.
-- **Anzeigen von Daten nach DLP Exchange-Transportregeln:** Die Anzahl der **eingehenden** und **ausgehenden** Nachrichten, die von DLP-Nachrichtenflussregeln (Data Loss Prevention, Verhinderung von Datenverlust) betroffen waren.
+- **Anzeigen von Daten nach Exchange Transportregeln:** Die Anzahl der **eingehenden** und **ausgehenden** Nachrichten, die von Nachrichtenflussregeln betroffen waren.
+- **Anzeigen von Daten nach DLP Exchange Transportregeln:** Die Anzahl der **eingehenden** und **ausgehenden** Nachrichten, die von DLP-Nachrichtenflussregeln (Data Loss Prevention, Verhinderung von Datenverlust) betroffen waren.
 
 Die folgenden Informationen werden in der Detailtabelle unterhalb des Diagramms angezeigt:
 
 - **Date**
-- **DLP-Richtlinie** (**Nur Daten nach DLP-Exchange-Transportregeln anzeigen)**
+- **DLP-Richtlinie** (**Daten nur von DLP Exchange Transportregeln anzeigen)**
 - **Transportregel**
 - **Betreff**
 - **Absenderadresse**
@@ -115,18 +115,18 @@ Wenn Sie die Konfiguration der Filter abgeschlossen haben, klicken Sie auf **"An
 
 ### <a name="chart-breakdown-by-severity"></a>Diagrammstrukturplan nach Schweregrad
 
-![Schweregradansicht für Exchange-Transportregeln im Exchange-Transportregelbericht](../../media/transport-rule-report-etr-severity-view.png)
+![Schweregradansicht für Exchange Transportregeln im Exchange-Transportregelbericht](../../media/transport-rule-report-etr-severity-view.png)
 
 Wenn Sie **die Diagrammstrukturstruktur nach Schweregrad** auswählen, sind die folgenden Diagramme verfügbar:
 
-- **Anzeigen von Daten nach Exchange-Transportregeln:** Die Anzahl der Nachrichten mit **hohem,** **mittlerem und** **mittlerem Schweregrad.** Sie legen den Schweregrad als Aktion in der Regel fest (**Überwachen Sie diese Regel mit Schweregrad** oder _SetAuditSeverity_). Weitere Informationen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **Anzeigen von Daten nach Exchange Transportregeln:** Die Anzahl der Nachrichten mit **hohem,** **mittlerem und** **mittlerem Schweregrad.** Sie legen den Schweregrad als Aktion in der Regel fest (**Überwachen Sie diese Regel mit Schweregrad** oder _SetAuditSeverity_). Weitere Informationen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Anzeigen von Daten nach DLP Exchange-Transportregeln:** Die Anzahl der Nachrichten mit **hohem Schweregrad,** **mittlerem Schweregrad** und **niedrigem Schweregrad,** die von DLP-Nachrichtenflussregeln betroffen waren.
+- **Anzeigen von Daten nach DLP Exchange Transportregeln:** Die Anzahl der Nachrichten mit **hohem,** **mittlerem und** **mittlerem** Schweregrad, die von DLP-Nachrichtenflussregeln betroffen waren.
 
 Die folgenden Informationen werden in der Detailtabelle unterhalb des Diagramms angezeigt:
 
 - **Date**
-- **DLP-Richtlinie** (**Nur Daten nach DLP-Exchange-Transportregeln anzeigen)**
+- **DLP-Richtlinie** (**Daten nur von DLP Exchange Transportregeln anzeigen)**
 - **Transportregel**
 - **Betreff**
 - **Absenderadresse**
@@ -149,9 +149,9 @@ Wenn Sie die Konfiguration der Filter abgeschlossen haben, klicken Sie auf **"An
 
 ## <a name="mailflow-status-report"></a>E-Mailflow-Statusbericht
 
-Der **E-Mailflow-Statusbericht** ist ein intelligenter Bericht, der Informationen zu eingehenden und ausgehenden E-Mails, Spamerkennungen, Schadsoftware, als "gut" identifizierten E-Mails und Informationen zu E-Mails anzeigt, die am Edge zugelassen oder blockiert werden. Dies ist der einzige Bericht, der Edgeschutzinformationen enthält, und zeigt an, wie viele E-Mails blockiert werden, bevor sie zur Auswertung durch Exchange Online Protection (EOP) in den Dienst zugelassen werden. Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
+Der **E-Mailflow-Statusbericht** ist ein intelligenter Bericht, der Informationen zu eingehenden und ausgehenden E-Mails, Spamerkennungen, Schadsoftware, als "gut" identifizierten E-Mails und Informationen zu E-Mails anzeigt, die am Edge zugelassen oder blockiert werden. Dies ist der einzige Bericht, der Edge-Schutzinformationen enthält, und zeigt an, wie viele E-Mails blockiert werden, bevor sie zur Auswertung durch Exchange Online Protection (EOP) in den Dienst zugelassen werden. Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports.** Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** die Zusammenfassung des **E-Mail-Flussstatus,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/mailflowStatusReport> .
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** die Zusammenfassung des **E-Mail-Flussstatus,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Nachrichtenflussstatus-Zusammenfassungs-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/mail-flow-status-report-widget.png)
 
@@ -164,7 +164,7 @@ Auf der Seite **E-Mailflow-Statusbericht** ist die Registerkarte Typ standardmä
 - **Datum (UTC)** Die letzten 7 Tage.
 - **E-Mail-Richtung:**
   - **Eingehende**
-  - **Ausgehende**
+  - **Ausgehend**
   - **Organisationsinternes:** Diese Anzahl gilt für Nachrichten innerhalb eines Mandanten, d. h. absender abc@domain.com sendet an empfänger xyz@domain.com (getrennt von **ein-** und **ausgehend** gezählt)
 - **Typ:**
   - **Gute E-Mails**
@@ -234,7 +234,7 @@ Wenn Sie auf die Registerkarte **"Trichter"** klicken, enthält diese Ansicht st
 
 - **Richtung:**
   - **Eingehende**
-  - **Ausgehende**
+  - **Ausgehend**
   - **Organisationsintern:** Diese Anzahl gilt für Nachrichten, die innerhalb eines Mandanten gesendet werden; d. h. Absender abc@domain.com sendet an Empfänger xyz@domain.com (separat von Ein- und Ausgehend gezählt).
 
 Die Aggregatansicht und die Detailtabellenansicht ermöglichen eine Filterung von 90 Tagen.
@@ -275,8 +275,8 @@ Die Detailtabelle enthält die folgenden Informationen, die in absteigender Datu
   - **Benutzeridentitätswechsel:** Nachrichten, die aufgrund eines Versuchs gefiltert wurden, einen Benutzer (Nachrichtensender) zu imitieren, der in den Identitätswechselschutzeinstellungen einer Antiphishingrichtlinie definiert ist.
   - **Domänenidentitätswechsel:** Nachrichten, die aufgrund eines Versuchs gefiltert wurden, eine Domäne zu imitieren, die in den Identitätswechselschutzeinstellungen einer Antiphishingrichtlinie definiert ist.
 - **Datei- und URL-Detonation (Defender für Office 365):**
-  - **Dateidetonation:** Nachrichten, die nach einer Safe Anlagenrichtlinie gefiltert sind.
-  - **URL-Detonation:** Nachricht, gefiltert nach einer Safe-Verknüpfungsrichtlinie.
+  - **Dateidetonation:** Nachrichten, die nach einer Tresor Anlagenrichtlinie gefiltert sind.
+  - **URL-Detonation:** Nachricht, gefiltert nach einer Tresor-Verknüpfungsrichtlinie.
 - **Schutz nach der Zustellung und ZAP (ATP) oder ZAP (EOP):** Automatische Nullstunde-Bereinigung (ZAP) für Schadsoftware, Spam und Phishing.
 
 Wenn Sie eine Zeile in der Detailtabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der E-Mail-Anzahl angezeigt.
@@ -302,7 +302,7 @@ Wenn Sie standardmäßig auf die Registerkarte **"Tech-Ansicht"** klicken, enth�
 
 - **Richtung:**
   - **Eingehende**
-  - **Ausgehende**
+  - **Ausgehend**
   - **Organisationsinternes:** Diese Anzahl gilt für Nachrichten innerhalb eines Mandanten, d. h. absender abc@domain.com sendet an empfänger xyz@domain.com (getrennt von eingehenden und ausgehenden Zählungen)
 
 Die Aggregatansicht und die Detailtabellenansicht ermöglichen eine Filterung von 90 Tagen.
@@ -314,11 +314,11 @@ Dieses Diagramm zeigt Nachrichten, die in die folgenden Kategorien unterteilt si
 - **E-Mail-Gesamtanzahl**
 - **Edge zulassen** und **Edge gefiltert**
 - **Transportregel zulassen** und **Transportregel gefiltert** (Nachrichtenflussregeln)
-- **Keine Schadsoftware,** **Safe Erkennung von Anlagen** und Erkennung von <sup>\*</sup> **Antischadsoftwaremodulen**
+- **Keine Schadsoftware,** **Tresor Erkennung von Anlagen** und Erkennung von <sup>\*</sup> **Antischadsoftwaremodulen**
 - **Keine Phishing-,** **DMARC-Fehler,** **Identitätswechselerkennung,** <sup>\*</sup> **Spooferkennung** und **Phishing-Erkennung**
 - **Keine Erkennung mit URL-Detonation** und **URL-Detonationserkennung**<sup>\*</sup>
 - **Keine Spam-** und  **Spamnachrichten**
-- **Nicht böswillige E-Mails,** **Safe-Links-Erkennung** <sup>\*</sup> und **ZAP**
+- **Nicht böswillige E-Mails,** **Tresor-Links-Erkennung** <sup>\*</sup> und **ZAP**
 
 <sup>\*</sup>Defender für Office 365
 
@@ -330,13 +330,13 @@ Die Detailtabelle enthält die folgenden Informationen, die in absteigender Datu
 - **E-Mail-Gesamtanzahl**
 - **Edge gefiltert**
 - **Regelnachrichten:** Nachrichten, die aufgrund von Nachrichtenflussregeln gefiltert wurden (auch als Transportregeln bezeichnet).
-- **Antischadsoftwaremodul**, **Safe** <sup>\*</sup> Anlagen:
+- **Antischadsoftwaremodul**, **Tresor** <sup>\*</sup> Anlagen:
 - **DMARC, Identitätswechsel,** <sup>\*</sup> **Spoofing**, **Phishing gefiltert:**
   - **DMARC:** Nachrichten, die aufgrund eines Fehlers bei der DMARC-Authentifizierungsprüfung gefiltert wurden.
 - **ERKENNUNG DER URL-Detonation**<sup>\*</sup>
 - **Antispam gefiltert**
 - **ZAP entfernt**
-- **Erkennung durch Safe Links**<sup>\*</sup>
+- **Erkennung durch Tresor Links**<sup>\*</sup>
 
 <sup>\*</sup>Defender für Office 365
 
@@ -478,15 +478,15 @@ Auf der Seite **"Übermittlungen"** können Sie sowohl das Diagramm als auch die
   - **Ausstehend**
   - **Abgeschlossen**
 
-Die Detailtabelle unterhalb des Diagramms zeigt die gleichen Informationen und verfügt über die gleichen **Gruppen-** oder **Anpassungsspaltenoptionen** wie auf der Registerkarte **"Für Analyse übermittelt"** unter **"E-Mail &** \> **Übermittlungen zur** Zusammenarbeit". Weitere Informationen finden Sie unter [Anzeigen von Administratorübermittlungen an Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
+Die Detailtabelle unterhalb des Diagramms zeigt die gleichen Informationen und verfügt über die gleichen **Gruppen-** oder **Anpassungsspaltenoptionen** wie auf der Registerkarte **"Für Analyse übermittelt"** unter **"E-Mail &** \> **Übermittlungen für die** Zusammenarbeit". Weitere Informationen finden Sie unter [Anzeigen von Administratorübermittlungen an Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
 
 ![Übermittlungsberichtsseite im Microsoft 365 Defender Portal](../../media/submissions-report-page.png)
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Statusbericht zum Bedrohungsschutz** ist sowohl in EOP als auch in Defender für Office 365 verfügbar. Die Berichte enthalten jedoch unterschiedliche Daten. EOP-Kunden können z. B. Informationen zu schadsoftware anzeigen, die in E-Mails erkannt wurde, aber keine Informationen zu schädlichen Dateien, die von [Safe Anlagen für SharePoint, OneDrive und Microsoft Teams](mdo-for-spo-odb-and-teams.md)erkannt wurden.
+Der **Bedrohungsschutzstatusbericht** ist sowohl in EOP als auch in Defender für Office 365 verfügbar. Die Berichte enthalten jedoch unterschiedliche Daten. Beispielsweise können EOP-Kunden Informationen zu Schadsoftware anzeigen, die in E-Mails erkannt wurde, aber keine Informationen zu schädlichen Dateien, die von [Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams](mdo-for-spo-odb-and-teams.md)erkannt wurden.
 
-Der Bericht enthält die Anzahl der E-Mail-Nachrichten mit schädlichen Inhalten, z. B. Dateien oder Websiteadressen (URLs), die vom Antischadsoftwaremodul blockiert wurden, Zap [(Zero-Hour Auto Purge)](zero-hour-auto-purge.md)und Defender für Office 365 Features wie [Safe Links,](safe-links.md)Safe Anlagen und [Identitätswechselschutzfeatures in Antiphishingrichtlinien.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) [](safe-attachments.md) Anhand dieser Informationen können Sie Trends erkennen oder ermitteln, ob Die Unternehmensrichtlinien angepasst werden müssen.
+Der Bericht enthält die Anzahl der E-Mail-Nachrichten mit schädlichen Inhalten, z. B. Dateien oder Websiteadressen (URLs), die vom Antischadsoftwaremodul blockiert wurden, ZAP [(Zero-Hour Auto Purge)](zero-hour-auto-purge.md)und Defender für Office 365 Features wie [Tresor Links,](safe-links.md)Tresor Anlagen und [Identitätswechselschutzfeatures in Antiphishingrichtlinien.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) [](safe-attachments.md) Anhand dieser Informationen können Sie Trends erkennen oder ermitteln, ob Die Unternehmensrichtlinien angepasst werden müssen.
 
 **Hinweis:** Es ist wichtig zu wissen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
 
@@ -495,9 +495,9 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 - Defender für Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - Eop: <https://security.microsoft.com/reports/TPSAggregateReport>
 
-![Bedrohungsschutzstatus-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/threat-protection-status-report-widget.png)
+![Bedrohungsschutz-Status-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/threat-protection-status-report-widget.png)
 
-Standardmäßig werden im Diagramm Daten für die letzten 7 Tage angezeigt. Wenn Sie auf der Seite **"Statusbericht zum Bedrohungsschutz"** auf **"Filtern"** klicken, können Sie einen Zeitraum von 90 Tagen auswählen (Testabonnements sind möglicherweise auf 30 Tage begrenzt). Die Detailtabelle ermöglicht das Filtern für 30 Tage.
+Standardmäßig werden im Diagramm Daten für die letzten 7 Tage angezeigt. Wenn Sie auf der Seite **"Bedrohungsschutzstatusbericht"** auf **"Filtern"** klicken, können Sie einen Zeitraum von 90 Tagen auswählen (Testabonnements sind möglicherweise auf 30 Tage begrenzt). Die Detailtabelle ermöglicht das Filtern für 30 Tage.
 
 Die verfügbaren Ansichten werden in den folgenden Abschnitten beschrieben.
 
@@ -531,7 +531,7 @@ Wenn Sie die Konfiguration der Filter abgeschlossen haben, klicken Sie auf **"An
 
 In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
-- **URL malicious reputation:** <sup>\*</sup> Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.
+- **URL-Böswillige Reputation:** <sup>\*</sup> Bösartige URL-Reputation, die von Defender für Office 365 Detonationen in anderen Microsoft 365 Kunden generiert wurde.
 - **Erweiterter Filter:** Phishingsignale basierend auf maschinellem Lernen.
 - **Allgemeiner Filter:** Phishingsignale basierend auf Analystenregeln.
 - **Organisationsinternes Spoofing:** Der Absender versucht, die Empfängerdomäne zu spoofen.
@@ -580,7 +580,7 @@ Wenn Sie die Konfiguration der Filter abgeschlossen haben, klicken Sie auf **"An
 
 In der **Ansicht Ansichtsdaten nach E-Mail-Schadsoftware \>** und **Diagrammstrukturplan nach Erkennungstechnologie** werden die folgenden Informationen im Diagramm angezeigt:
 
-- **Dateidetonation:** <sup>\*</sup> Erkennung durch Safe Anlagen.
+- **Dateidetonation:** <sup>\*</sup> Erkennung durch Tresor Anlagen.
 - **Zuverlässigkeit der Dateidetonation:** <sup>\*</sup> Alle bösartigen Dateireputationen, die von Defender für Office 365 Detonationen generiert wurden.
 - **Datei-Reputation**
 - **Antischadsoftwaremodul:** <sup>\*</sup> Erkennung von Antischadsoftwaremodulen.
@@ -622,7 +622,7 @@ Wenn Sie die Konfiguration der Filter abgeschlossen haben, klicken Sie auf **"An
 In der **Diagrammaufschlüsselung nach Richtlinientyp** und **Anzeigen von Daten nach E-Mail-Phishing \>** oder **Anzeigen von Daten nach E-Mail-Schadsoftwareansichten \>** werden die folgenden Informationen in den Diagrammen angezeigt:
 
 - **Antischadsoftware**
-- **Safe Anlagen**<sup>\*</sup>
+- **Tresor Anlagen**<sup>\*</sup>
 - **Antiphishing**
 - **Antispam**
 - **Nachrichtenflussregel** (auch als Transportregel bezeichnet)
@@ -701,7 +701,7 @@ Wenn Sie die Konfiguration der Filter abgeschlossen haben, klicken Sie auf **"An
 In der Ansicht **"Daten nach \> Inhalts-Schadsoftware** anzeigen" werden die folgenden Informationen im Diagramm für Microsoft Defender für Office 365 Organisationen angezeigt:
 
 - **Antischadsoftwaremodul:** Schädliche Dateien, die in SharePoint, OneDrive und Microsoft Teams von der [integrierten Virenerkennung in Microsoft 365](virus-detection-in-spo.md)erkannt werden.
-- **Dateidetonation:** Schädliche Dateien, die von [Safe Anlagen für SharePoint, OneDrive und Microsoft Teams](mdo-for-spo-odb-and-teams.md)erkannt werden.
+- **Dateidetonation:** Schädliche Dateien, die von [Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams](mdo-for-spo-odb-and-teams.md)erkannt werden.
 
 In der Detailtabelle unterhalb des Diagramms sind die folgenden Informationen verfügbar:
 
@@ -730,8 +730,8 @@ In der Ansicht **"Ansichtsdaten nach Systemüberschreibung"** werden die folgend
 - **Zulässige Domänen der Organisation**
 - **ZAP nicht aktiviert**
 - **Junk-E-Mail-Ordner nicht aktiviert**
-- **Benutzer Safe Absender**
-- **Safe Domäne des Benutzers**
+- **Benutzer Tresor Absender**
+- **Domäne des Benutzers Tresor**
 
 In der Detailtabelle unterhalb des Diagramms sind die folgenden Informationen verfügbar:
 
@@ -790,7 +790,7 @@ Der **URL-Bedrohungsschutzbericht** ist nur in Microsoft Defender für Office 36
 
 Der Bericht **"Vom Benutzer gemeldete Nachrichten"** enthält Informationen zu E-Mail-Nachrichten, die Benutzer mithilfe des [Add-Ins "Nachricht melden"](enable-the-report-message-add-in.md) oder des [Add-Ins "Phishing melden"](enable-the-report-phish-add-in.md)als Junk, Phishingversuche oder gute E-Mails gemeldet haben.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Berichte zur Zusammenarbeit"** **nach den vom Benutzer gemeldeten Nachrichten,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/userSubmissionReport> . Wenn Sie im Microsoft 365 Defender Portal zu [Administratorübermittlungen](admin-submission.md)wechseln möchten, klicken Sie auf **"Zu Übermittlungen wechseln".**
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** **nach von Benutzern gemeldeten Nachrichten,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/userSubmissionReport> . Wenn Sie im Microsoft 365 Defender Portal zu [Administratorübermittlungen](admin-submission.md)wechseln möchten, klicken Sie auf **"Zu Übermittlungen wechseln".**
 
 ![Vom Benutzer gemeldete Nachrichten-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/user-reported-messages-widget.png)
 
@@ -848,7 +848,7 @@ Um die in diesem Artikel beschriebenen Berichte anzuzeigen und zu verwenden, mü
 - **Sicherheitsleseberechtigter**
 - **Globaler Leser**
 
-Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal.](permissions-in-the-security-and-compliance-center.md)
+Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md).
 
 **Hinweis:** Das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
@@ -856,7 +856,7 @@ Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender
 
 Wenn in Ihren Berichten keine Daten angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. Weitere Informationen finden Sie unter ["Schutz vor Bedrohungen".](protect-against-threats.md)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Ähnliche Themen
 
 [Antispam- und Antischadsoftwareschutz in EOP](anti-spam-and-anti-malware-protection.md)
 

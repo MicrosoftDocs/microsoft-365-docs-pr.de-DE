@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccff6abcfcd1a2da32a8e1614a2de45afed69aef
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 52fa73774933ba90e8ca92dd1b337f983f5446c5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842998"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082912"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Mindestanforderungen für Microsoft Defender für Endpunkt
 
@@ -32,14 +32,14 @@ ms.locfileid: "52842998"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 Es gibt einige Mindestanforderungen für das Onboarding von Geräten in den Dienst. Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen und andere Konfigurationseinstellungen zum Onboarding von Geräten in den Dienst.
 
 > [!TIP]
-> - Erfahren Sie mehr über die neuesten Verbesserungen in Defender für Endpunkt: [Defender für Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
-> - Defender für Endpunkt hat in der letzten MITRE-Evaluierung branchenführende Optik- und Erkennungsfunktionen demonstriert. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Erfahren Sie mehr über die neuesten Verbesserungen in Defender für Endpunkt: [Defender für Endpunkt Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - Defender für Endpunkt hat in der letzten MITRE-Evaluierung branchenführende Optik- und Erkennungsfunktionen demonstriert. Lesen Sie: [Insights aus der MITRE ATT&CK-basierten Auswertung.](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
@@ -47,7 +47,7 @@ Microsoft Defender für Endpunkt erfordert eines der folgenden Microsoft-Volumen
 
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
-- Microsoft 365 E5 (M365 E5), das Windows 10 Enterprise E5 enthält
+- Microsoft 365 E5 (M365 E5), der Windows 10 Enterprise E5 enthält
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
@@ -69,13 +69,13 @@ Microsoft Defender für Endpunkt für Server erfordert eine der folgenden Lizenz
 > * Microsoft Defender für Endpunkt
 > * Windows E5/A5
 > * Microsoft 365 E5/A5
-> * Microsoft 365 E5/A5 Security
+> * Microsoft 365 E5/A5-Sicherheit
 
 Ausführliche Informationen zur Lizenzierung finden Sie auf der [Website der Produktbedingungen](https://www.microsoft.com/licensing/terms/) und in Zusammenarbeit mit Ihrem Kontoteam, um mehr über die Geschäftsbedingungen zu erfahren.
 
 Weitere Informationen zum Array von Features in Windows 10 Editionen finden Sie unter [Vergleichen Windows 10 Editionen.](https://www.microsoft.com/windowsforbusiness/compare)
 
-Eine detaillierte Vergleichstabelle Windows 10 Vergleichs der kommerziellen Edition finden Sie in der [PDF-Vergleichstabelle.](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf)
+Eine detaillierte Vergleichstabelle Windows 10 Vergleichs der kommerziellen Edition finden Sie in der [Vergleichs-PDF.](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf)
 
 ## <a name="browser-requirements"></a>Browseranforderungen
 
@@ -90,10 +90,10 @@ Der Zugriff auf Defender für Endpunkt erfolgt über einen Browser, der die folg
 
 ## <a name="hardware-and-software-requirements"></a>Hardware- und Softwareanforderungen
 
-### <a name="supported-windows-versions"></a>Unterstützte Windows Versionen
+### <a name="supported-windows-versions"></a>Unterstützte versionen Windows
 
 - Windows 7 SP1-Enterprise ([Erfordert ESU für Support.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
-- Windows 7 SP1-Pro ([Erfordert ESU für Support.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
+- Windows 7 SP1-Pro ([Erfordert ESU zur Unterstützung.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 10 Enterprise
@@ -101,7 +101,7 @@ Der Zugriff auf Defender für Endpunkt erfolgt über einen Browser, der die folg
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
-- Windows-Server
+- Windows Server
   - Windows Server 2008 R2 SP1
   - Windows Server 2012 R2
   - Windows Server 2016
@@ -148,7 +148,7 @@ Wenn Sie den Onboarding-Assistenten zum ersten Mal ausführen, müssen Sie ausw�
 > Microsoft Defender für Endpunkt erfordert keine bestimmte Diagnosestufe, solange es aktiviert ist.
 
 Stellen Sie sicher, dass der Diagnosedatendienst auf allen Geräten in Ihrer Organisation aktiviert ist.
-Standardmäßig ist dieser Dienst aktiviert. Es empfiehlt sich, zu überprüfen, ob Sie Sensordaten von diesen abrufen.
+Standardmäßig ist dieser Dienst aktiviert. Es empfiehlt sich, sicherzustellen, dass Sie Sensordaten von diesen abrufen.
 
 **Verwenden Sie die Befehlszeile, um den Starttyp Windows 10 Diagnosedatendiensts zu überprüfen:**
 
@@ -169,7 +169,7 @@ Standardmäßig ist dieser Dienst aktiviert. Es empfiehlt sich, zu überprüfen,
    ![Ergebnis des Sc-Abfragebefehls für diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-Sie müssen festlegen, dass der Dienst automatisch gestartet wird, wenn der **START_TYPE** nicht auf **AUTO_START** festgelegt ist.
+Sie müssen festlegen, dass der Dienst automatisch gestartet wird, wenn die **START_TYPE** nicht auf **AUTO_START** festgelegt ist.
 
 
 **Verwenden Sie die Befehlszeile, um den Windows 10 Diagnosedatendienst so festzulegen, dass er automatisch gestartet wird:**
@@ -206,15 +206,15 @@ Bevor Sie Geräte integrieren, muss der Diagnosedatendienst aktiviert sein. Der 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender Antivirus Konfigurationsanforderung
 
-Der Defender für Endpunkt-Agent hängt von der Fähigkeit von Microsoft Defender Antivirus ab, Dateien zu scannen und Informationen darüber bereitzustellen.
+Der Defender für Endpunkt-Agent hängt davon ab, ob Microsoft Defender Antivirus Dateien überprüfen und Informationen darüber bereitstellen können.
 
-Konfigurieren Von Security Intelligence-Updates auf den Defender für Endpunkt-Geräten, unabhängig davon, ob Microsoft Defender Antivirus die aktive Antischadsoftware ist oder nicht. Weitere Informationen finden Sie unter [Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen.](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
+Konfigurieren Von Security Intelligence-Updates auf Den Defender für Endpunkt-Geräten, unabhängig davon, ob Microsoft Defender Antivirus die aktive Antischadsoftware ist oder nicht. Weitere Informationen finden Sie unter [Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen.](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
 
 Wenn Microsoft Defender Antivirus nicht die aktive Antischadsoftware in Ihrer Organisation ist und Sie den Defender für Endpunkt-Dienst verwenden, wechselt Microsoft Defender Antivirus in den passiven Modus.
 
 Wenn Ihre Organisation Microsoft Defender Antivirus über Gruppenrichtlinien oder andere Methoden deaktiviert hat, müssen die integrierten Geräte von dieser Gruppenrichtlinie ausgeschlossen werden.
 
-Wenn Sie Server integrieren und Microsoft Defender Antivirus nicht die aktive Antischadsoftware auf Ihren Servern ist, müssen Microsoft Defender Antivirus entweder für den passiven Modus konfiguriert oder deinstalliert werden. Die Konfiguration hängt von der Serverversion ab. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus Kompatibilität.](/security/defender-endpoint/microsoft-defender-antivirus-compatibility)
+Wenn Sie Server integrieren und Microsoft Defender Antivirus nicht die aktive Antischadsoftware auf Ihren Servern ist, müssen Microsoft Defender Antivirus entweder für den passiven Modus konfiguriert oder deinstalliert werden. Die Konfiguration hängt von der Serverversion ab. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus Kompatibilität.](microsoft-defender-antivirus-compatibility.md)
 
 > [!NOTE]
 > Ihre reguläre Gruppenrichtlinie gilt nicht für Manipulationsschutz, und Änderungen an Microsoft Defender Antivirus Einstellungen werden ignoriert, wenn der Manipulationsschutz aktiviert ist.
@@ -227,7 +227,7 @@ Wenn Sie Microsoft Defender Antivirus als primäres Antischadsoftwareprodukt auf
 Wenn Sie einen Antischadsoftwareclient eines Drittanbieters ausführen und Lösungen für die mobile Geräteverwaltung oder Microsoft Endpoint Manager (current branch) verwenden, müssen Sie sicherstellen, dass der Microsoft Defender Antivirus ELAM-Treiber aktiviert ist. Weitere Informationen finden Sie unter [Sicherstellen, dass Microsoft Defender Antivirus nicht durch eine Richtlinie deaktiviert ist.](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Ähnliche Themen
 
 - [Einrichten der Bereitstellung von Microsoft Defender für Endpunkt](production-deployment.md)
 - [Onboarding von Geräten](onboard-configure.md)

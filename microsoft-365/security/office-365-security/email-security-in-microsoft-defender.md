@@ -16,12 +16,12 @@ description: Anzeigen und Untersuchen von Phishingversuchen durch Schadsoftware.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebe76536c5ed309ca16777e85c5cdf919d0fb5c
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029885"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082996"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>E-Mail-Sicherheit mit dem Sicherheitsrisiken-Explorer in Microsoft Defender für Office 365
 
@@ -43,7 +43,7 @@ In diesem Artikel wird erläutert, wie Sie Schadsoftware- und Phishingversuche a
 
 ## <a name="view-malware-detected-in-email"></a>Anzeigen von schadsoftware, die in E-Mails erkannt wurde
 
-Um Schadsoftware in E-Mails zu sehen, die nach Microsoft 365 Technologie sortiert sind, verwenden Sie die [E-Mail-> Schadsoftwareansicht](threat-explorer-views.md#email--malware) des Explorers (oder Echtzeiterkennungen). Schadsoftware ist die Standardansicht, sodass sie möglicherweise ausgewählt wird, sobald Sie Den Explorer öffnen.
+Um Schadsoftware in E-Mails nach Microsoft 365 Technologie sortiert anzuzeigen, verwenden Sie die [**E-Mail-Schadsoftwareansicht \>**](threat-explorer-views.md#email--malware) von Explorer (oder Echtzeiterkennungen). Schadsoftware ist die Standardansicht, sodass sie möglicherweise ausgewählt wird, sobald Sie Den Explorer öffnen.
 
 1. Wählen Sie im Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) **E-Mail-&** \> **Zusammenarbeits-Explorer (oder Echtzeiterkennungen) aus.**  In diesem Beispiel wird Explorer verwendet.
 
@@ -65,7 +65,7 @@ Um Schadsoftware in E-Mails zu sehen, die nach Microsoft 365 Technologie sortier
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Phishing-URL anzeigen und auf Bewertungsdaten klicken
 
-Sie können Phishingversuche über URLs in E-Mails anzeigen, einschließlich einer Liste der URLs, die zugelassen, blockiert und überschrieben wurden. Um URLs zu identifizieren, auf die geklickt wurde, müssen [Safe Links](safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Safe Verknüpfungsrichtlinien](set-up-safe-links-policies.md) für Denkzeitschutz und Protokollierung von Klickbewertungen durch Safe Links einrichten.
+Sie können Phishingversuche über URLs in E-Mails anzeigen, einschließlich einer Liste der URLs, die zugelassen, blockiert und überschrieben wurden. Um URLs zu identifizieren, auf die geklickt wurde, müssen [Tresor Links](safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Tresor Links-Richtlinien](set-up-safe-links-policies.md) für Denkzeitschutz und Protokollierung von Klickbewertungen durch Tresor Links einrichten.
 
 1. Wählen Sie im Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) **E-Mail-&** \> **Zusammenarbeits-Explorer (oder Echtzeiterkennungen) aus.**  In diesem Beispiel wird Explorer verwendet.
 
@@ -84,7 +84,7 @@ Sie können Phishingversuche über URLs in E-Mails anzeigen, einschließlich ein
 
    - **Die häufigsten URLs** sind die URLs in den Nachrichten, nach denen Sie gefiltert haben, und die Anzahl der E-Mail-Zustellungsaktionen für jede URL. In der Phishing-E-Mail-Ansicht enthält diese Liste in der Regel legitime URLs. Angreifer enthalten eine Mischung aus guten und schlechten URLs in ihren Nachrichten, um zu versuchen, sie zuzustellen, aber sie machen die bösartigen Links interessanter. Die Tabelle der URLs wird nach der Gesamtzahl der E-Mails sortiert, aber diese Spalte ist ausgeblendet, um die Ansicht zu vereinfachen.
 
-   - **Die häufigsten Klicks** sind die Safe mit Links umschlossenen URLs, auf die geklickt wurde, sortiert nach der Gesamtzahl der Klicks. Diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen. Die Gesamtanzahl nach Spalte gibt die Anzahl der Safe links click-Bewertung für jede angeklickte URL an. In der Phishing-E-Mail-Ansicht handelt es sich dabei in der Regel um verdächtige oder bösartige URLs. Die Ansicht kann jedoch URLs enthalten, die keine Bedrohungen sind, sondern sich in Phishing-Nachrichten befinden. URL-Klicks auf nicht gepackte Links werden hier nicht angezeigt.
+   - **Die häufigsten Klicks** sind die Tresor mit Links umschlossenen URLs, auf die geklickt wurde, sortiert nach der Gesamtzahl der Klicks. Diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen. Die Gesamtanzahl nach Spalte gibt die Anzahl der Tresor links click-Bewertung für jede angeklickte URL an. In der Phishing-E-Mail-Ansicht handelt es sich dabei in der Regel um verdächtige oder bösartige URLs. Die Ansicht kann jedoch URLs enthalten, die keine Bedrohungen sind, sondern sich in Phishing-Nachrichten befinden. URL-Klicks auf nicht gepackte Links werden hier nicht angezeigt.
 
    In den beiden URL-Tabellen werden die wichtigsten URLs in Phishing-E-Mail-Nachrichten nach Zustellungsaktion und Speicherort angezeigt. In den Tabellen werden URL-Klicks angezeigt, die trotz einer Warnung blockiert oder besucht wurden, sodass Sie sehen können, welche potenziellen fehlerhaften Links benutzern angezeigt wurden und auf die die Benutzer geklickt haben. Von hier aus können Sie weitere Analysen durchführen. Unterhalb des Diagramms können Sie beispielsweise die wichtigsten URLs in E-Mail-Nachrichten anzeigen, die in der Umgebung Ihrer Organisation blockiert wurden.
 

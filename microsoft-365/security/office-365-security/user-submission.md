@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie ein Postfach konfigurieren, um Spam- und Phishing-E-Mails zu sammeln, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055121"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083536"
 ---
 # <a name="user-reported-message-settings"></a>Vom Benutzer gemeldete Nachrichteneinstellungen
 
@@ -68,7 +68,7 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
 - Um die Konfiguration für Benutzerübermittlungen zu ändern, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-  - **Organisationsverwaltung** oder **Sicherheitsadministrator** im [Microsoft 365 Defender Portal.](permissions-in-the-security-and-compliance-center.md)
+  - **Organisationsverwaltung** oder **Sicherheitsadministrator** in den [Berechtigungen im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
   - **Organisationsverwaltung** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Sie benötigen Zugriff auf Exchange Online PowerShell. Wenn das Konto, das Sie verwenden möchten, keinen Zugriff auf Exchange Online PowerShell hat, erhalten Sie einen Fehler, der beim Angeben des Übermittlungspostfachs wie folgt aussieht:
@@ -118,13 +118,13 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
           > Ihre E-Mail wird zur Analyse wie besehen an Microsoft übermittelt. Einige E-Mails können persönliche oder vertrauliche Informationen enthalten.
 
    - **Schaltfläche "Nachricht** \> melden" in Microsoft Outlook **Aus** ![ Umschalten: ](../../media/scc-toggle-off.png) Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Add-Ins "Nachricht melden", des Add-Ins "Phishing melden" oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
-     - Wählen Sie **dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein, das E-Mails empfangen kann.
+     - Wählen Sie **dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfach ein, das E-Mails empfangen kann.
 
    Wenn Sie fertig sind, klicken Sie auf **Bestätigen.** Klicken Sie zum Löschen dieser Werte auf **"Wiederherstellen".**
 
 ## <a name="third-party-reporting-tools"></a>Berichterstellungstools von Drittanbietern
 
-Sie können Tools für die Berichterstellung von Drittanbietern konfigurieren, um gemeldete Nachrichten an das benutzerdefinierte Postfach zu senden. Dazu legen Sie die **Schaltfläche "Nachricht melden"** von Microsoft Outlook auf **"Aus"** fest und legen das **Postfach meiner Organisation** auf ein Office 365 Postfach Ihrer Wahl fest.
+Sie können Tools für die Berichterstellung von Drittanbietern konfigurieren, um gemeldete Nachrichten an das benutzerdefinierte Postfach zu senden. Dazu legen Sie die **Schaltfläche "Nachricht** melden" von Microsoft Outlook auf **"Aus"** fest und legen das **Postfach der Organisation** auf ein Office 365 Postfach Ihrer Wahl fest.
 
 Die einzige Anforderung besteht darin, dass die ursprüngliche Nachricht als . EML oder . MSG-Anlage (nicht komprimiert) in der Nachricht, die an das benutzerdefinierte Postfach gesendet wird (leiten Sie nicht nur die ursprüngliche Nachricht an das benutzerdefinierte Postfach weiter).
 
@@ -134,7 +134,7 @@ Die Anforderungen an die Nachrichtenformatierung werden im nächsten Abschnitt b
 
 Um die ursprünglichen angefügten Nachrichten korrekt zu identifizieren, erfordern Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, eine bestimmte Formatierung. Wenn die Nachrichten dieses Format nicht verwenden, werden die ursprünglichen angefügten Nachrichten immer als Phishing-Übermittlungen identifiziert.
 
-Zur korrekten Identifizierung der ursprünglichen angefügten Nachrichten müssen Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, die folgende Syntax für den Betreff (Briefumschlagtitel) verwenden:
+Um die ursprünglichen angefügten Nachrichten richtig identifizieren zu können, müssen Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, die folgende Syntax für den Betreff (Briefumschlagtitel) verwenden:
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
