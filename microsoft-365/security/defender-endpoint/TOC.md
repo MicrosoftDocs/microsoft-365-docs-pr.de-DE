@@ -241,7 +241,7 @@
 #### [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
 #### [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
 #### [Anpassen der Regeln zur Verringerung der Angriffsfläche](customize-attack-surface-reduction.md)
-#### [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
+#### [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction-faq.yml)
 #### [Anzeigen der Ereignisse zur Verringerung der Angriffsfläche](event-views.md)
 #### [Verwenden des Überwachungsmodus zur Verringerung der Angriffsfläche](audit-windows-defender.md)
 
