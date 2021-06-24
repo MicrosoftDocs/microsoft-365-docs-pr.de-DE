@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren erfahren, wie Standard- und Strict-Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083488"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108295"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365
 
@@ -66,7 +66,7 @@ Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können 
 
 Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfunktionen in EOP und Microsoft Defender für Office 365. Diese Richtlinien werden erstellt, _nachdem_ Sie den Benutzern die voreingestellten Sicherheitsrichtlinien **"Standardschutz"** oder **"Strenger Schutz"** zugewiesen haben. Sie können diese Richtlinien nicht ändern.
 
-- **Exchange Online Protection (EOP)-Richtlinien:** Dazu gehören Microsoft 365 Organisationen mit Exchange Online Postfächern und eigenständige EOP-Organisationen ohne Exchange Online Postfächer:
+- **Exchange Online Protection (EOP)-Richtlinien:** Dies umfasst Microsoft 365 Organisationen mit Exchange Online Postfächern und eigenständige EOP-Organisationen ohne Exchange Online Postfächer:
 
   - [Antispamrichtlinien](configure-your-spam-filter-policies.md) mit dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy.**
   - [Antischadsoftwarerichtlinien](configure-anti-malware-policies.md) mit dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy.**
@@ -80,7 +80,7 @@ Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien 
     - [Identitätswechseleinstellungen](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Erweiterte Phishing-Schwellenwerte](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Tresor links policies](set-up-safe-links-policies.md) named **Standard Preset Security Policy** and Strict Preset Security **Policy**.
+  - [Tresor Links-Richtlinien](set-up-safe-links-policies.md) mit dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy.**
 
   - [Tresor Anlagenrichtlinien](set-up-safe-attachments-policies.md) mit dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy**.
 
@@ -117,14 +117,14 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
   **Hinweis:** Das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Verwenden des Microsoft 365 Defender Portals, um Benutzern voreingestellte Sicherheitsrichtlinien zuzuweisen
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Verwenden des Microsoft 365 Defender-Portals, um Benutzern voreingestellte Sicherheitsrichtlinien zuzuweisen
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für Bedrohungsrichtlinien mit Vorlagen für \> **Regeln** im Abschnitt \>  \>  \> **"Voreingestellte Sicherheitsrichtlinien".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit \> & Seite "Richtlinien für **Bedrohungsregeln"** im Abschnitt \>  \>  \> **"Vorlagenrichtlinien voreingestellte Sicherheitsrichtlinien".**
 
 2. Klicken Sie unter **"Standardschutz"** oder **"Strenger Schutz"** auf **"Bearbeiten".**
 
 3. Der Assistent **"Standardschutz anwenden"** oder **"Strengen Schutz anwenden"** wird gestartet. Identifizieren Sie auf der Seite für den **EOP-Schutz** die internen Empfänger, für die der [EOP-Schutz](#policies-in-preset-security-policies) gilt (Empfängerbedingungen):
-   - **Users**
+   - **Benutzer**
    - **Gruppen**
    - **Domänen**
 
@@ -136,7 +136,7 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-4. In Microsoft Defender für Office 365 Organisationen werden Sie zum **Defender für Office 365 Schutzmaßnahmen gelten für** die Seite, um die internen Empfänger zu identifizieren, für die Microsoft Defender für Office 365 [Schutz](#policies-in-preset-security-policies) gilt (Empfängerbedingungen).
+4. In Microsoft Defender für Office 365 Organisationen werden Sie zum Defender weitergeleitet, damit Office 365 Schutz auf die Seite **angewendet wird,** um die internen Empfänger zu identifizieren, für die [der Microsoft Defender für Office 365 Schutz](#policies-in-preset-security-policies) gilt (Empfängerbedingungen).
 
    Die Einstellungen und das Verhalten entsprechen genau den **EOP-Schutzmaßnahmen,** die auf die Seite angewendet werden.
 

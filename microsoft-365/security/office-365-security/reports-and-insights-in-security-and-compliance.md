@@ -19,12 +19,12 @@ description: Erfahren Sie mehr über die intelligenten Berichte und Einblicke, d
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4af84c058eb3d9d7112f6102d39b209c34148d0e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054511"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108619"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
 
@@ -47,7 +47,7 @@ Neben der Hervorhebung von Problembereichen umfassen intelligente Berichte und E
 
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>Typen von Berichten im Security & Compliance Center
 
-Im Security & Compliance Center stehen eine Vielzahl von Berichten zur Verfügung. (Wechseln Sie zu **"Berichte".**  >  **Sicherheitsbericht,** um eine Gesamtansicht zu erhalten.) In der folgenden Tabelle sind die verfügbaren Berichte mit Links aufgeführt, um mehr zu erfahren:
+Im Security & Compliance Center stehen eine Vielzahl von Berichten zur Verfügung. (Wechseln sie zu **"Berichte".**  >  **Sicherheitsbericht,** um eine Gesamtansicht zu erhalten.) In der folgenden Tabelle sind die verfügbaren Berichte mit Links aufgeführt, um mehr zu erfahren:
 
 <br>
 
@@ -55,12 +55,12 @@ Im Security & Compliance Center stehen eine Vielzahl von Berichten zur Verfügun
 
 |Art der Information|Navigation|Weitere Informationen|
 |---|---|---|
-|**Microsoft 365 Defender Berichte** (alle oben) <p> Die wichtigsten Erkenntnisse und Empfehlungen sowie Links zu Microsoft 365 Defender Berichten, einschließlich Berichten zur Verhinderung von Datenverlust, Bezeichnungen, E-Mail-Sicherheitsberichten, Defender für Office 365 und mehr|Wechseln Sie im Security & Compliance Center zu   >  **E-Mail-Berichte &** Zusammenarbeit  >  **[E-Mail & Zusammenarbeitsberichte](https://security.microsoft.com/emailandcollabreport)**|[Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center](../defender/overview-security-center.md)|
+|**Security & Compliance Center-Berichte** (alle verfügbar) <p> Die wichtigsten Erkenntnisse und Empfehlungen sowie Links zu Sicherheits- & Complianceberichten, einschließlich Berichten zur Verhinderung von Datenverlust, Bezeichnungen, E-Mail-Sicherheitsberichten, Defender für Office 365 und mehr|Wechseln Sie im Security & Compliance Center zum  \> **Berichtsdashboard**|[Berichte im Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md)|
 |**Verhinderung von Datenverlust** <p> Übereinstimmungen der DLP-Richtlinie, falsch positive Ergebnisse und Überschreibungen sowie Links zum Erstellen oder Bearbeiten von Richtlinien|Wechseln Sie im Security & Compliance Center zur Richtlinie **zur Verhinderung von Datenverlust.** \> |[Anzeigen der Berichte zur Verhinderung von Datenverlust](../../compliance/view-the-dlp-reports.md)|
-|**Datengovernance** <p> Informationen dazu, wie Bezeichnungen angewendet und als Datensätze klassifiziert werden, zu Bezeichnungstrends und vieles mehr|Wechseln Sie im Security & Compliance Center zum Dashboard für **die Informationsgovernance.** \> |[Anzeigen der Datengovernanceberichte](../../compliance/view-the-data-governance-reports.md)|
+|**Datengovernance** <p> Informationen dazu, wie Bezeichnungen angewendet und als Datensätze klassifiziert werden, zu Bezeichnungstrends und vieles mehr|Wechseln Sie im Security & Compliance Center zum Dashboard für **informationsgovernance.** \> |[Anzeigen der Datengovernanceberichte](../../compliance/view-the-data-governance-reports.md)|
 |Dashboard für die **Bedrohungsverwaltung** (wird auch als Sicherheitsdashboard bezeichnet) <p> Bedrohungserkennungen, Schadsoftwaretrends, benutzerorientierte Top-Benutzer, Details zu gesendeten und empfangenen E-Mail-Nachrichten und vieles mehr|Wechseln Sie im Security & Compliance Center zum Dashboard für **die Sicherheitsrisikoverwaltung.** \> |[Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md)|
 |**Explorer** (auch als Bedrohungs-Explorer bezeichnet) oder **Echtzeiterkennungen** <p> Verdächtige Schadsoftware in E-Mails und Dateien in Microsoft 365|Wechseln Sie im Security & Compliance Center zum **Sicherheitsrisikoverwaltungs-Explorer** oder zu \>  **Echtzeiterkennungen.**<br> |[Sicherheitsrisiken-Explorer (oder Echtzeit-Erkennung)](threat-explorer.md)|
-|**Sicherheitsberichte für Defender für Office 365 und E-Mails** <p> E-Mail-Sicherheits- und Bedrohungsschutzberichte (einschließlich Schadsoftware, Spam-, Phishing- und Spoofingberichten)|Wechseln Sie im Security & Compliance Center zu   >  **E-Mail-Berichte &** Zusammenarbeit  >  **[E-Mail & Zusammenarbeitsberichte](https://security.microsoft.com/emailandcollabreport)**|[Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md) <p> [Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)|
+|**Sicherheitsberichte für Defender für Office 365 und E-Mails** <p> E-Mail-Sicherheits- und Bedrohungsschutzberichte (einschließlich Schadsoftware, Spam-, Phishing- und Spoofingberichten)|Wechseln Sie im Security & Compliance Center zu **Berichte**  >  **E-Mail & Zusammenarbeit E-Mail**& Berichte zur  >  **[Zusammenarbeit](https://security.microsoft.com/emailandcollabreport)**|[Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md) <p> [Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)|
 |**Nachrichtenfluss** <p> Informationen zu gesendeten und empfangenen E-Mail-Nachrichten, neuesten Warnungen, häufigsten Absendern und Empfängern, E-Mail-Weiterleitungsberichten und vieles mehr.|Wechseln Sie im Security & Compliance Center zum Dashboard für den **Nachrichtenfluss** \>  und **zum Berichtsdashboard.** \> |[Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights-v2.md) <p> [Anzeigen von Nachrichtenflussberichten im Security & Compliance Center](view-mail-flow-reports.md)|
 |**Einhaltung der DSGVO** <p> Informationen zur DSGVO-Compliance, einschließlich Links zu betroffenen Personen, Bezeichnungstrends und aktiven & geschlossenen Fällen|Wechseln Sie im Security & Compliance  Center zum \> **Datenschutz-DSGVO-Dashboard**|[Zusammenfassung Datenschutz-Grundverordnung](/compliance/regulatory/gdpr)|
 |**Überwachungsprotokoll** <p> Informationen über Microsoft 365-Aktivitäten, Benutzer, Dateien oder Ordner und mehr|Wechseln Sie im Security & Compliance Center zur **Suche &** \> **Überwachungsprotokollsuche**|[Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md)|

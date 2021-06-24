@@ -19,12 +19,12 @@ description: Administratoren können erfahren, wie der Identitätswechsel-Einbli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7254dce40f72ecc01dc532f1b6c51f252a2b3ac
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083404"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108631"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Identitätswechsel-Einblick in Defender für Office 365
 
@@ -66,7 +66,7 @@ Sie können den Identitätswechsel-Einblick im Microsoft 365 Defender Portal ver
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Öffnen Sie den Identitätswechsel-Einblick im Microsoft 365 Defender Portal
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelbedrohungsrichtlinien** \>  im Abschnitt \> **"Antiphishing".**
+1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite "Richtlinien für **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \> **Bedrohungsregeln"** \>  im Abschnitt \> **"Antiphishing".**
 
 2. Auf der **Antiphishingseite** sieht der Identitätswechsel-Einblick wie folgt aus:
 

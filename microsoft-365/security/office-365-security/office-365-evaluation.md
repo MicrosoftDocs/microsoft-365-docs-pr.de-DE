@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083668"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108331"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Auswerten von Microsoft Defender für Office 365
 
@@ -35,12 +35,12 @@ ms.locfileid: "53083668"
 
 Die Durchführung einer sorgfältigen Sicherheitsproduktbewertung kann Ihnen helfen, fundierte Entscheidungen in Bezug auf Upgrades und Einkäufe zu treffen. Es hilft, die Funktionen des Sicherheitsprodukts auszuprobieren, um zu bewerten, wie es Ihrem Sicherheitsteam bei ihren täglichen Aufgaben helfen kann.
 
-Die Evaluierungsumgebung von [Microsoft Defender für Office 365](defender-for-office-365.md) wurde entwickelt, um die Komplexität der Geräte- und Umgebungskonfiguration zu vermeiden, sodass Sie sich auf die Bewertung der Funktionen von Microsoft Defender für Office 365 konzentrieren können. Im Evaluierungsmodus können alle Nachrichten, die an Exchange Online Postfächer gesendet werden, ausgewertet werden, ohne MX-Einträge auf Microsoft zu verweisen. Das Feature gilt nur für den E-Mail-Schutz und nicht für Office Clients wie Word, SharePoint oder Teams.
+Die Evaluierungsumgebung von [Microsoft Defender für Office 365](defender-for-office-365.md) wurde entwickelt, um die Komplexität der Geräte- und Umgebungskonfiguration zu vermeiden, sodass Sie sich auf die Bewertung der Funktionen von Microsoft Defender für Office 365 konzentrieren können. Im Evaluierungsmodus können alle Nachrichten, die an Exchange Online Postfächer gesendet werden, ausgewertet werden, ohne mx-Einträge auf Microsoft zu verweisen. Das Feature gilt nur für den E-Mail-Schutz und nicht für Office Clients wie Word, SharePoint oder Teams.
 
 Wenn Sie noch nicht über eine Lizenz verfügen, die Microsoft Defender für Office 365 unterstützt, können Sie eine [kostenlose 30-Tage-Evaluierung](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) starten und die Funktionen im Microsoft 365 Defender-Portal unter <https://security.microsoft.com> testen. Sie werden die schnelle Einrichtung genießen und sie bei Bedarf ganz einfach deaktivieren.
 
 > [!NOTE]
-> Wenn Sie sich im Microsoft 365 Defender-Portal ( ) befinden, <https://security.microsoft.com> können Sie hier einen Defender für Office 365 Evaluierung starten: **E-Mail-& Richtlinien** für die Zusammenarbeit & \>  \> **Regelbedrohungsrichtlinien** \> **andere** Abschnitt \> **Evaluierungsmodus**.
+> Wenn Sie sich im Microsoft 365 Defender-Portal ( ) befinden, <https://security.microsoft.com> können Sie hier einen Defender für Office 365 Evaluierung starten: **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \> **"Regelbedrohungsrichtlinien"** im Abschnitt \>  \> "Evaluierungsmodus".  \> 
 
 ## <a name="how-the-evaluation-works"></a>Funktionsweise der Auswertung
 
@@ -102,7 +102,7 @@ Die folgenden Rollen sind erforderlich:
 
 ### <a name="enhanced-filtering"></a>Erweiterte Filterung
 
-Ihre Exchange Online Protection-Richtlinien, z. B. Massen- und Spamschutz, bleiben unverändert. Bei der Auswertung wird jedoch die erweiterte Filterung für Connectors aktiviert, was sich möglicherweise auf den Nachrichtenfluss und Exchange Online Protection Richtlinien auswirken kann, sofern sie nicht umgangen wird.
+Ihre Exchange Online Protection-Richtlinien, z. B. Massen- und Spamschutz, bleiben unverändert. Bei der Auswertung wird jedoch die erweiterte Filterung für Connectors aktiviert, was sich möglicherweise auf den Nachrichtenfluss und Exchange Online Protection Richtlinien auswirkt, sofern sie nicht umgangen wird.
 
 Die erweiterte Filterung für Connectors ermöglicht Mandanten die Verwendung von Antispoofingschutz. Antispoofing wird nicht unterstützt, wenn Sie ein E-Mail-Sicherheitsgateway (ESG) verwenden, ohne die erweiterte Filterung für Connectors aktiviert zu haben.
 

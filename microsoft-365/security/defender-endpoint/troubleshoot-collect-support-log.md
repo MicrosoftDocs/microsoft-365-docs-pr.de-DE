@@ -1,6 +1,6 @@
 ---
-title: Sammeln von Supportprotokollen in Microsoft Defender for Endpoints mithilfe von Liveantworten
-description: Informationen zum Sammeln von Protokollen mithilfe von Liveantworten zur Problembehandlung von Microsoft Defender for Endpoints-Problemen
+title: Sammeln von Supportprotokollen in Microsoft Defender für Endpunkte mithilfe der Liveantwort
+description: Erfahren Sie, wie Sie Protokolle mithilfe von Liveantworten sammeln, um Probleme mit Microsoft Defender für Endpunkte zu beheben.
 keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,70 +16,70 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 07593fac6ed9a3fbc00d904718380b386f31dba3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 0e7634177e58b558381fdc230533b55cade9dc13
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893413"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108511"
 ---
-# <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Sammeln von Supportprotokollen in Microsoft Defender for Endpoint mithilfe von Liveantworten 
+# <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Sammeln von Supportprotokollen in Microsoft Defender für Endpunkt mithilfe der Liveantwort 
 
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
-Wenn Sie sich an den Support wenden, werden Sie möglicherweise aufgefordert, das Ausgabepaket des Microsoft Defender for Endpoint Client Analyzer-Tools zur Verfügung zu stellen.
+Wenn Sie sich an den Support wenden, werden Sie möglicherweise aufgefordert, das Ausgabepaket des Microsoft Defender für Endpoint Client Analyzer-Tools bereitzustellen.
 
 Dieses Thema enthält Anweisungen zum Ausführen des Tools über Live Response.
 
-1. Laden Sie das entsprechende Skript herunter
-    * Microsoft Defender for Endpoint-Clientsensorprotokolle: [LiveAnalyzer.ps1 Skript .](https://aka.ms/MDELiveAnalyzer)
-      - Ungefähre Größe des Ergebnispakets: ~100Kb 
-    *  Microsoft Defender for Endpoint-Clientsensor- und Antivirusprotokolle: [LiveAnalyzer+MDAV.ps1 Skript.](https://aka.ms/MDELiveAnalyzerAV)
+1. Herunterladen des entsprechenden Skripts
+    * Microsoft Defender für Endpunkt-Clientsensor protokolliert nur: [LiveAnalyzer.ps1 Skript.](https://aka.ms/MDELiveAnalyzer)
+      - Ungefähre Größe des Ergebnispakets: ca. 100 KB 
+    *  Microsoft Defender für Endpunkt-Clientsensor und Antivirusprotokolle: [LiveAnalyzer+MDAV.ps1 Skript.](https://aka.ms/MDELiveAnalyzerAV)
        - Ungefähre Größe des Ergebnispakets: ~10 Mb 
  
-2.  Initiieren Sie [eine Live-Reaktionssitzung](live-response.md#initiate-a-live-response-session-on-a-device) auf dem Computer, den Sie untersuchen müssen.
+2.  Initiieren Sie eine [Live-Antwortsitzung](live-response.md#initiate-a-live-response-session-on-a-device) auf dem Computer, den Sie untersuchen müssen.
 
-3.  Wählen **Hochladen datei in die Bibliothek aus.**
+3.  Wählen Sie **Hochladen Datei aus, die in der Bibliothek angezeigt werden soll.**
 
-    ![Bild der Uploaddatei](images/upload-file.png)
+    ![Abbildung der Uploaddatei](images/upload-file.png)
 
-4. Wählen **Sie Datei auswählen aus.**
+4. Wählen Sie **"Datei auswählen"** aus.
 
-    ![Abbildung der Auswahldateischaltfläche1](images/choose-file.png)
+    ![Abbildung der Schaltfläche "Datei auswählen1"](images/choose-file.png)
 
-5. Wählen Sie die heruntergeladene Datei namens MDELiveAnalyzer.ps1 aus, und klicken Sie dann auf **Bestätigen.**
-
-
-   ![Abbildung der Auswahldateischaltfläche2](images/analyzer-file.png)
+5. Wählen Sie die heruntergeladene Datei mit dem Namen MDELiveAnalyzer.ps1 aus, und klicken Sie dann auf **"Bestätigen".**
 
 
-6. Verwenden Sie während der LiveResponse-Sitzung die folgenden Befehle, um die Analyse auszuführen und die Ergebnisdatei zu erfassen:
+   ![Abbildung der Schaltfläche "Datei auswählen"2](images/analyzer-file.png)
+
+
+6. Verwenden Sie während der LiveResponse-Sitzung die folgenden Befehle, um den Analyzer auszuführen und die Ergebnisdatei zu erfassen:
 
     ```console
     Run MDELiveAnalyzer.ps1
-    GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
+    GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
     [![Abbildung von Befehlen ](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 
 >[!NOTE]
-> - Die neueste Vorschauversion von MDEClientAnalyzer finden Sie hier: [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer) .
+> - Die neueste Vorschauversion von MDEClientAnalyzer kann hier heruntergeladen werden: [https://aka.ms/Betamdeanalyzer](https://aka.ms/Betamdeanalyzer) .
 > 
-> - Das LiveAnalyzer-Skript lädt das Problembehandlungspaket auf dem Zielcomputer von: https://mdatpclientanalyzer.blob.core.windows.net herunter.
+> - Das LiveAnalyzer-Skript lädt das Problembehandlungspaket auf den Zielcomputer von: https://mdatpclientanalyzer.blob.core.windows.net .
 > 
->   Wenn Sie dem Computer nicht erlauben können, die oben aufgeführte URL zu erreichen, laden MDEClientAnalyzerPreview.zip in die Bibliothek hoch, bevor Sie das LiveAnalyzer-Skript ausführen:
+>   Wenn Sie nicht zulassen können, dass der Computer die oben genannte URL erreicht, laden Sie MDEClientAnalyzerPreview.zip Datei in die Bibliothek hoch, bevor Sie das LiveAnalyzer-Skript ausführen:
 >
 >   ```console
 >   PutFile MDEClientAnalyzerPreview.zip -overwrite
 >   Run MDELiveAnalyzer.ps1
->   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
+>   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" 
 >   ```
 > 
-> - Weitere Informationen zum lokalen Sammeln von Daten auf einem Computer, falls der Computer nicht mit Microsoft Defender for Endpoint-Clouddiensten kommuniziert oder nicht wie erwartet im Microsoft Defender for Endpoint-Portal angezeigt wird, finden Sie unter [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
+> - Weitere Informationen zum lokalen Sammeln von Daten auf einem Computer für den Fall, dass der Computer nicht mit Microsoft Defender für Endpunkt-Clouddiensten kommuniziert oder nicht wie erwartet im Microsoft Defender für Endpunkt-Portal angezeigt wird, finden Sie unter Überprüfen der [Clientkonnektivität mit Microsoft Defender für Endpunkt-Dienst-URLs.](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)

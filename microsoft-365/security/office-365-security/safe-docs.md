@@ -16,12 +16,12 @@ ms.collection:
 description: Erfahren Sie mehr über Tresor Dokumente in Microsoft 365 E5 oder Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054426"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108607"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sichere Dokumente in Microsoft 365 E5
 
@@ -32,7 +32,7 @@ ms.locfileid: "53054426"
 
 Tresor Dokumente sind ein Feature in Microsoft 365 E5 oder Microsoft 365 E5 Security, das [Microsoft Defender für Endpunkt](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) zum Scannen von Dokumenten und Dateien verwendet, die in der [geschützten Ansicht](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) oder in Application Guard für [Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)geöffnet werden.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Wissenswertes, bevor Sie anfangen
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
 - Tresor Dokumente sind nur für Benutzer mit *Microsoft 365 E5* oder *Microsoft 365 E5 Security* Lizenzen verfügbar. Diese Lizenzen sind in Microsoft Defender für Office 365 Pläne nicht enthalten.
 
@@ -62,7 +62,7 @@ Dateien, die von Tresor Dokumente gesendet werden, werden in Defender nicht übe
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Verwenden der Microsoft 365 Defender zum Konfigurieren Tresor Dokumente
 
-1. Öffnen Sie das Microsoft 365 Defender Portal, und wechseln Sie zum Abschnitt "Richtlinien für die **E-Mail-& Zusammenarbeit** \> **& Regeln** für \> **Bedrohungsrichtlinien"** Tresor \>  \> **Anlagen.**
+1. Öffnen Sie das portal Microsoft 365 Defender, und wechseln Sie zu **E-Mail & Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Bedrohungsregeln** Seite \> **Richtlinien** \> **Tresor Anlagen**.
 
 2. Klicken Sie auf der Seite **Tresor Anlagen** auf **globale Einstellungen.**
 
@@ -103,7 +103,7 @@ Weitere Informationen finden Sie unter [Onboarding für den Microsoft Defender f
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Tresor Dokumente aktiviert und konfiguriert haben:
 
-- Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Tresor "Attachments** \> **Global"-Einstellungen,** und überprüfen Sie die Option **"Tresor Dokumente für Office Clients aktivieren",** und ermöglichen Sie Es Personen, durch die geschützte Ansicht zu **klicken, auch wenn Tresor Dokumente die Datei als schädliche** Einstellungen identifiziert.
+- Wechseln Sie im Microsoft 365 Defender Portal zur Seite "Richtlinien für **E-Mail-& Zusammenarbeit** & Richtlinien für \> **Bedrohungsregeln"** im Abschnitt \> "Richtlinien für **Bedrohungsregeln"** \>  \> **Tresor "Attachments** \> **Global"-Einstellungen,** und überprüfen Sie die Option **"Tresor Dokumente für Office Clients aktivieren"** und **"Personen das Klicken durch die geschützte Ansicht erlauben", auch wenn Tresor "Dokumente" die Datei als schädliche** Einstellungen identifiziert.
 
 - Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, und überprüfen Sie die Eigenschaftswerte:
 

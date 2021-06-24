@@ -17,7 +17,7 @@ description: Informieren Sie sich über die neuen Regionen der Office 365-Rechen
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 797ac69e2c60c2e4c3ece38b376406027ff65e36
 ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2021
 ms.locfileid: "52908305"
@@ -26,7 +26,7 @@ ms.locfileid: "52908305"
 
 Wir eröffnen weiterhin neue Rechenzentrum-Geos für Microsoft 365-Dienste. Diese neuen Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. 
 
-Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten, z. B.: 
+Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten, z. B.: 
 - Exchange Online-Postfachinhalte (E-Mail-Texte, Kalendereinträge und der Inhalt von E-Mail-Anlagen)
 - SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien
 - Nach OneDrive for Business hochgeladene Dateien
@@ -38,7 +38,7 @@ Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzent
 |:-----|:-----|:-----|:-----|
 |**Japan**| Asien/Pazifik | Japan | Dezember 2014 |
 |**Australien, Neuseeland, Fidschi**| Asien/Pazifik | Australien | März 2015 |
-|**Indien**| Asien/Pazifik | Indien | Oktober 2015 |
+|**Indien**| Asien/Pazifik | Indien | Oktober 2015 |
 |**Kanada**| Vereinigte Staaten | Kanada | Mai 2016 |
 |**Vereinigtes Königreich**| Europäische Union | Vereinigtes Königreich | September 2016 |
 |**Südkorea**| Asien/Pazifik | Südkorea | April 2017 |
@@ -60,7 +60,7 @@ Wir bieten berechtigten Microsoft 365-Kunden eine Datenresidenz-Option an, die v
 
 Mit der neuen Rechenzentrumsregion stellen wir keine eigenen Funktionen, Features oder Compliancezertifizierungen bereit.
     
-Aufgrund der Komplexität, Präzision und Skalierbarkeit, mit der Datenverschiebungen in einer global betriebenen und automatisierten Umgebung ausgeführt werden müssen, ist es uns unmöglich anzugeben, wann eine Datenverschiebung für Ihren oder einen anderen Mandanten voraussichtlich abgeschlossen sein wird. Kunden erhalten über das Nachrichtencenter eine Bestätigung pro teilnehmendem Dienst, sobald die Verschiebung ihrer Daten abgeschlossen ist. 
+Die Komplexität, Genauigkeit und Skalierung, mit der wir Datenverschiebevorgänge innerhalb einer global betriebenen und automatisierten Umgebung durchführen müssen, verhindern, dass wir teilen, wenn eine Datenverlagerung für Ihren Mandanten oder einen anderen einzelnen Mandanten abgeschlossen sein soll. Kunden erhalten über das Nachrichtencenter eine Bestätigung pro teilnehmendem Dienst, sobald die Verschiebung ihrer Daten abgeschlossen ist. 
     
 Bei der Datenverschiebung handelt es sich um Back-End-Vorgänge mit minimalen Auswirkungen auf die Endbenutzer. Eventuell betroffene Features sind auf der Seite [Während und nach der Datenverschiebung](during-and-after-your-data-move.md) aufgelistet. Wir halten uns an die [Vereinbarung zum Servicelevel für Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) im Hinblick auf die Verfügbarkeit, sodass Kunden nichts für die Verschiebung vorbereiten oder während dieser überwachen müssen. Die Benachrichtigung über eine eventuelle Dienstwartung erfolgt im Bedarfsfall. 
 
@@ -76,4 +76,4 @@ Für die Datenverschiebung in die neue Rechenzentrumsregion fallen keine zusätz
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/regions/)
 
-[Teams Erfahrung in einem Microsoft 365 Multi-Geo-fähigen Mandanten](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Teams-Erfahrung in einem Microsoft 365 Multi-Geo-fähigen Mandanten](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

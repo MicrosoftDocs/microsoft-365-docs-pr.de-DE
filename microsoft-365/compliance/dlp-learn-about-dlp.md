@@ -14,123 +14,125 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Ihre vertraulichen Informationen mithilfe Microsoft 365 Richtlinien und Tools zur Verhinderung von Datenverlust schützen und einen Rundgang durch den DLP-Lebenszyklus unternehmen.
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erfahren Sie, wie Sie Ihre vertraulichen Informationen mithilfe Microsoft 365 Richtlinien und Tools zur Verhinderung von Datenverlust schützen und eine Tour durch den DLP-Lebenszyklus unternehmen.
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244612"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108259"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Informationen zur Verhinderung von Datenverlust
 
-Organisationen haben vertrauliche Informationen unter ihrer Kontrolle, z. B. Finanzdaten, proprietäre Daten, Kreditkartennummern, Gesundheitsdatensätze oder Sozialversicherungsnummern. Um diese vertraulichen Daten zu schützen und Risiken zu reduzieren, benötigen sie eine Möglichkeit, um zu verhindern, dass ihre Benutzer sie unangemessen für Personen freigeben, die sie nicht haben sollten. Diese Vorgehensweise wird als Verhinderung von Datenverlust (Data Loss Prevention, DLP) bezeichnet.
+Organisationen haben vertrauliche Informationen unter ihrer Kontrolle, z. B. Finanzdaten, proprietäre Daten, Kreditkartennummern, Gesundheitsdatensätze oder Sozialversicherungsnummern. Um diese vertraulichen Daten zu schützen und Risiken zu verringern, benötigen sie eine Möglichkeit, um zu verhindern, dass ihre Benutzer sie unangemessen an Personen weitergeben, die sie nicht haben sollten. Diese Vorgehensweise wird als Verhinderung von Datenverlust (Data Loss Prevention, DLP) bezeichnet.
 
-In Microsoft 365 implementieren Sie die Verhinderung von Datenverlust, indem Sie DLP-Richtlinien definieren und anwenden. Mit einer DLP-Richtlinie können Sie vertrauliche Elemente in den bereichen identifizieren, überwachen und automatisch schützen:
+In Microsoft 365 implementieren Sie die Verhinderung von Datenverlust, indem Sie DLP-Richtlinien definieren und anwenden. Mit einer DLP-Richtlinie können Sie vertrauliche Elemente in folgendem Bereich identifizieren, überwachen und automatisch schützen:
 
 - Microsoft 365 Dienste wie Teams, Exchange, SharePoint und OneDrive
-- Office wie Word, Excel und PowerPoint
+- Office Anwendungen wie Word, Excel und PowerPoint
 - Windows 10 Endpunkte
-- Nicht-Microsoft-Cloud-Apps
+- Nicht von Microsoft stammende Cloud-Apps
 - Lokale Dateifreigaben und lokale SharePoint.
 
-Microsoft 365 erkennt vertrauliche Elemente mithilfe einer tiefen Inhaltsanalyse, nicht nur durch einen einfachen Textscan. Inhalte werden auf Übereinstimmungen primärer Daten mit Schlüsselwörtern, durch die Auswertung regulärer Ausdrücke, durch interne Funktionsüberprüfung und sekundäre Daten übereinstimmungen analysiert, die sich in der Nähe der primären Daten übereinstimmung befinden. Darüber hinaus verwendet DLP auch Algorithmen für maschinelles Lernen und andere Methoden, um Inhalte zu erkennen, die Ihren DLP-Richtlinien entspricht.
+Microsoft 365 erkennt vertrauliche Elemente mithilfe einer umfassenden Inhaltsanalyse, nicht nur durch eine einfache Textüberprüfung. Der Inhalt wird auf primäre Datenüberstimmungen mit Schlüsselwörtern, durch die Auswertung regulärer Ausdrücke, durch interne Funktionsüberprüfung und durch sekundäre Datenüberstimmungen analysiert, die sich in der Nähe der primären Datenüberstimmung befinden. Darüber hinaus verwendet DLP auch Machine Learning-Algorithmen und andere Methoden, um Inhalte zu erkennen, die Ihren DLP-Richtlinien entsprechen.
   
-## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP ist Teil des größeren Microsoft 365 Complianceangebots
+## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP ist Teil des größeren Microsoft 365 Compliance-Angebots
 
-Microsoft 365 DLP ist nur eines der Microsoft 365 Compliance-Tools, die Sie verwenden, um Ihre vertraulichen Elemente zu schützen, unabhängig davon, wo sie leben oder reisen. Sie sollten die anderen Tools im Microsoft 365 compliance tools set verstehen, wie sie miteinander in Einklang stehen und besser zusammenarbeiten.  Weitere Informationen [zum Information Protection-Prozess finden](protect-information.md) Sie unter Microsoft 365 compliance tools.
+Microsoft 365 DLP ist nur eines der Microsoft 365 Compliance-Tools, mit denen Sie Ihre vertraulichen Elemente überall dort schützen können, wo sie sich befinden oder unterwegs sind. Sie sollten die anderen Tools in den Microsoft 365 Compliance-Tools kennen, verstehen, wie sie miteinander interagieren und besser zusammenarbeiten.  Weitere Informationen zum Informationsschutzprozess finden Sie [unter Microsoft 365 Compliancetools.](protect-information.md)
 
 ## <a name="protective-actions-of-dlp-policies"></a>Schutzaktionen von DLP-Richtlinien
 
-Microsoft 365 Mithilfe von DLP-Richtlinien überwachen Sie die Aktivitäten, die Benutzer für vertrauliche Elemente im Ruhebereich, vertrauliche Elemente bei der Übertragung oder vertrauliche Elemente, die verwendet werden, und ergreifen Schutzmaßnahmen. Wenn ein Benutzer beispielsweise versucht, eine unzulässige Aktion zu ergreifen, z. B. das Kopieren eines vertraulichen Elements an einen nicht genehmigten Speicherort oder das Freigeben medizinischer Informationen in einer E-Mail oder anderen Bedingungen, die in einer Richtlinie festgelegt sind, kann DLP folgendes:
+Microsoft 365 Mit DLP-Richtlinien überwachen Sie die Aktivitäten, die Benutzer für vertrauliche Elemente im Ruhezustand, vertrauliche Elemente während der Übertragung oder vertrauliche Elemente, die verwendet werden, und ergreifen Schutzmaßnahmen. Wenn ein Benutzer beispielsweise versucht, eine unzulässige Aktion auszuführen, z. B. ein vertrauliches Element an einen nicht genehmigten Speicherort zu kopieren oder medizinische Informationen in einer E-Mail oder andere Bedingungen in einer Richtlinie freizugeben, kann DLP Folgendes tun:
 
-- Anzeigen eines Popuprichtlinientipps für den Benutzer, der ihn warnt, dass er möglicherweise versucht, ein vertrauliches Element unangemessen zu teilen
-- blockieren Sie die Freigabe, und ermöglichen Sie dem Benutzer über einen Richtlinientipp, den Block zu überschreiben und die Begründung der Benutzer zu erfassen.
-- Blockieren der Freigabe ohne die Außerkraftsetzungsoption
-- Für ruhende Daten können vertrauliche Elemente gesperrt und an einen sicheren Quarantänespeicherort verschoben werden.
-- Für Teams werden die vertraulichen Informationen nicht angezeigt
+- Zeigen Sie dem Benutzer einen Popup-Richtlinientipp an, der sie warnt, dass er möglicherweise versucht, ein vertrauliches Element unangemessen freizugeben.
+- blockieren Sie die Freigabe, und ermöglichen Sie dem Benutzer über einen Richtlinientipp, die Blockierung außer Kraft zu setzen und die Begründung der Benutzer zu erfassen.
+- Blockieren der Freigabe ohne Die Außerkraftsetzungsoption
+- für ruhenden Daten können vertrauliche Elemente gesperrt und an einen sicheren Quarantänespeicherort verschoben werden.
+- für Teams Chat werden die vertraulichen Informationen nicht angezeigt.
 
-Alle von DLP überwachten Aktivitäten werden standardmäßig im überwachungsprotokoll [Microsoft 365 aufgezeichnet](search-the-audit-log-in-security-and-compliance.md) und an den [Aktivitäts-Explorer geroutet.](data-classification-activity-explorer.md) Wenn ein Benutzer eine Aktion ausführt, die den Kriterien einer DLP-Richtlinie entspricht und Warnungen konfiguriert sind, stellt DLP Warnungen im DLP-Warnungsverwaltungsdashboard [zur Verfügung.](dlp-configure-view-alerts-policies.md)
+Alle überwachten DLP-Aktivitäten werden standardmäßig im [Microsoft 365 Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) aufgezeichnet und an den [Aktivitäten-Explorer](data-classification-activity-explorer.md)weitergeleitet. Wenn ein Benutzer eine Aktion ausführt, die den Kriterien einer DLP-Richtlinie entspricht, und Sie Warnungen konfiguriert haben, stellt DLP Warnungen im [DLP-Warnungsverwaltungsdashboard](dlp-configure-view-alerts-policies.md)bereit.
 
 ## <a name="dlp-lifecycle"></a>DLP-Lebenszyklus
 
-Eine DLP-Implementierung folgt in der Regel diesen Hauptphasen.
+Eine DLP-Implementierung folgt in der Regel diesen hauptphasen.
 
-- [Planen von DLP](#plan-for-dlp)
-- [Vorbereiten auf DLP](#prepare-for-dlp)
-- [Bereitstellen Ihrer Richtlinien in der Produktion](#deploy-your-policies-in-production)
+- [Plan für DLP](#plan-for-dlp)
+- [Vorbereiten von DLP](#prepare-for-dlp)
+- [Bereitstellen ihrer Richtlinien in der Produktion](#deploy-your-policies-in-production)
 
 
 <!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
-### <a name="plan-for-dlp"></a>Planen von DLP
+### <a name="plan-for-dlp"></a>Plan für DLP
 
-Microsoft 365 DLP-Überwachung und -Schutz sind systemeigene Anwendungen, die Benutzer täglich verwenden. Dies trägt dazu bei, die vertraulichen Elemente Ihrer Organisation vor riskanten Aktivitäten zu schützen, auch wenn Ihre Benutzer nicht für das Denken und die Methoden zur Verhinderung von Datenverlusten gekonnt sind. Wenn Ihre Organisation und Ihre Benutzer mit methoden zur Verhinderung von Datenverlust neu sind, kann die Einführung von DLP eine Änderung ihrer Geschäftsprozesse erfordern, und es gibt eine Kulturverschiebung für Ihre Benutzer. Bei ordnungsgemäßer Planung, Tests und Optimierung schützen Ihre DLP-Richtlinien ihre vertraulichen Elemente und minimieren gleichzeitig potenzielle Unterbrechungen von Geschäftsprozessen.
+Microsoft 365 DLP-Überwachung und -Schutz sind systemeigen für die Anwendungen, die Benutzer täglich verwenden. Dies trägt dazu bei, die vertraulichen Elemente Ihrer Organisation vor riskanten Aktivitäten zu schützen, auch wenn Ihre Benutzer nicht an das Denken und Vorgehen zur Verhinderung von Datenverlust angepasst sind. Wenn Ihre Organisation und Ihre Benutzer noch nicht mit den Methoden zur Verhinderung von Datenverlust in Verbindung stehen, kann die Einführung von DLP eine Änderung Ihrer Geschäftsprozesse erfordern, und es gibt einen Kulturwechsel für Ihre Benutzer. Bei ordnungsgemäßer Planung, Tests und Optimierung schützen Ihre DLP-Richtlinien ihre vertraulichen Elemente, während potenzielle Geschäftsprozessunterbrechungen minimiert werden.
 
 **Technologieplanung für DLP**
 
-Denken Sie daran, dass DLP als Technologie Ihre ruhen, verwendeten und bewegten Daten über Microsoft 365-Dienste, Windows 10-Geräte, lokale Dateifreigaben und lokale Dateifreigaben hinweg überwachen und schützen SharePoint. Es gibt Planungsauswirkungen für die verschiedenen Speicherorte, die Art der Daten, die Sie überwachen und schützen möchten, und die Aktionen, die beim Auftreten einer Richtlinien übereinstimmung ergriffen werden müssen.  
+Bedenken Sie, dass DLP als Technologie Ihre ruhenden Daten, die verwendeten Daten und daten in Bewegung über Microsoft 365 Dienste, Windows 10 Geräte, lokale Dateifreigaben und lokale SharePoint überwachen und schützen kann. Es gibt Planungsauswirkungen für die verschiedenen Speicherorte, den Typ der Daten, die Sie überwachen und schützen möchten, und die Aktionen, die ausgeführt werden sollen, wenn eine Richtlinienübersprechung auftritt.  
 
-**Planung von Geschäftsprozessen für DLP**
+**Planen von Geschäftsprozessen für DLP**
 
-DLP-Richtlinien können verbotene Aktivitäten blockieren, z. B. die unangemessene Freigabe vertraulicher Informationen per E-Mail. Bei der Planung Ihrer DLP-Richtlinien müssen Sie die Geschäftsprozesse identifizieren, die Ihre vertraulichen Elemente berühren. Die Besitzer von Geschäftsprozessen können Ihnen dabei helfen, geeignete Benutzerverhalten zu identifizieren, die zulässig sein sollten, und unangemessene Benutzerverhalten, vor dem geschützt werden sollte. Sie sollten Ihre Richtlinien planen und im Testmodus [](data-classification-activity-explorer.md) bereitstellen und ihre Auswirkungen zunächst über den Aktivitäts-Explorer auswerten, bevor Sie sie in restriktiveren Modi anwenden.
+DLP-Richtlinien können unzulässige Aktivitäten blockieren, z. B. unangemessene Freigabe vertraulicher Informationen per E-Mail. Bei der Planung Ihrer DLP-Richtlinien müssen Sie die Geschäftsprozesse identifizieren, die Ihre vertraulichen Elemente betreffen. Die Besitzer von Geschäftsprozessen können Ihnen dabei helfen, geeignete Benutzerverhalten zu identifizieren, die zulässig sein sollten, und unangemessene Benutzerverhalten, vor denen geschützt werden sollte. Sie sollten Ihre Richtlinien planen und im Testmodus bereitstellen und deren Auswirkungen zuerst über [den Aktivitäten-Explorer](data-classification-activity-explorer.md) auswerten, bevor Sie sie in restriktiveren Modi anwenden.
 
-**Organisationskulturplanung für DLP**
+**Planung der Organisationskultur für DLP**
 
-Eine erfolgreiche DLP-Implementierung hängt genauso davon ab, dass Ihre Benutzer geschult und für Methoden zur Verhinderung von Datenverlust aklimiert werden wie für gut geplante und abgestimmte Richtlinien. Da Ihre Benutzer stark eingebunden sind, sollten Sie auch schulungen für sie planen. Sie können Richtlinientipps strategisch verwenden, um ihre Benutzer zu sensibilisieren, bevor Sie die Richtliniendurchsetzung vom Testmodus in restriktivere Modi ändern.
+Eine erfolgreiche DLP-Implementierung hängt ebenso davon ab, dass Ihre Benutzer geschult und an die Praktiken zur Verhinderung von Datenverlust angepasst werden, wie von gut geplanten und abgestimmten Richtlinien. Da Ihre Benutzer stark beteiligt sind, sollten Sie auch die Schulung für sie planen. Sie können Richtlinientipps strategieweise verwenden, um die Aufmerksamkeit ihrer Benutzer zu erhöhen, bevor Sie die Richtlinienerzwingung vom Testmodus in restriktiveren Modus ändern.
 
 <!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
 
-### <a name="prepare-for-dlp"></a>Vorbereiten auf DLP
+### <a name="prepare-for-dlp"></a>Vorbereiten von DLP
 
-Sie können DLP-Richtlinien auf Ruhedaten, daten in Verwendung und daten in Bewegung an Speicherorten anwenden, z. B.:
+Sie können DLP-Richtlinien auf Ruhedaten, verwendete Daten und Daten in Bewegung an Orten anwenden, z. B.:
 
 - Exchange Online E-Mail
-- SharePoint Online-Websites
+- SharePoint Online-Sites
 - OneDrive-Konten
 - Teams-Chat- und Teams-Kanalnachrichten
 - Microsoft Cloud App Security
 - Windows 10-Geräte
 - Lokale Repositorys
 
-Jeder hat unterschiedliche Voraussetzungen. Vertrauliche Elemente an einigen Orten, z. B. Exchange Online, können unter den DLP-Regenschirm gebracht werden, indem sie lediglich eine Richtlinie konfigurieren, die für sie gilt. Andere, z. B. lokale Dateirepositorys, erfordern eine Bereitstellung des Azure Information Protection (AIP)-Scanners. Sie müssen Ihre Umgebung vorbereiten, Richtlinienentwürfe codieren und gründlich testen, bevor Sie blockierende Aktionen aktivieren.
+Jede hat unterschiedliche Voraussetzungen. Vertrauliche Elemente an einigen Orten, z. B. Exchange online, können unter den DLP-Schirm gestellt werden, indem Sie einfach eine Richtlinie konfigurieren, die für sie gilt. Andere, z. B. lokale Dateirepositorys, erfordern eine Bereitstellung des Azure Information Protection (AIP)-Scanners. Sie müssen Ihre Umgebung vorbereiten, Richtlinien entwerfen und sorgfältig testen, bevor Sie blockierende Aktionen aktivieren.
 
-### <a name="deploy-your-policies-in-production"></a>Bereitstellen Ihrer Richtlinien in der Produktion
+### <a name="deploy-your-policies-in-production"></a>Bereitstellen ihrer Richtlinien in der Produktion
 
 #### <a name="design-your-policies"></a>Entwerfen Ihrer Richtlinien
 
-Beginnen Sie mit der Definition Ihrer Steuerungsziele und deren Anwendung auf die jeweilige Arbeitsauslastung. Entwurf einer Richtlinie, die Ihre Ziele verkörpert. Beginnen Sie mit einer Arbeitsauslastung gleichzeitig oder über alle Workloads hinweg – es gibt noch keine Auswirkungen.
+Beginnen Sie mit der Definition Ihrer Steuerungsziele und deren Anwendung für die einzelnen Workloads. Entwerfen Sie eine Richtlinie, die Ihre Ziele darstellt. Sie können jederzeit mit einer Workload oder über alle Workloads hinweg beginnen – es gibt noch keine Auswirkungen.
 
-#### <a name="implement-policy-in-test-mode"></a>Implementieren der Richtlinie im Testmodus
+#### <a name="implement-policy-in-test-mode"></a>Implementieren von Richtlinien im Testmodus
 
-Bewerten Sie die Auswirkungen der Steuerelemente, indem Sie sie mit einer DLP-Richtlinie im Testmodus implementieren. Es ist in Ordnung, die Richtlinie auf alle Arbeitsauslastungen im Testmodus anzuwenden, damit Sie die vollständige Bandbreite der Ergebnisse erhalten können. Sie können jedoch bei Bedarf mit einer Arbeitsauslastung beginnen.
+Bewerten Sie die Auswirkungen der Steuerelemente, indem Sie sie mit einer DLP-Richtlinie im Testmodus implementieren. Es ist in Ordnung, die Richtlinie auf alle Workloads im Testmodus anzuwenden, damit Sie die vollständige Breite der Ergebnisse erhalten, aber Sie können bei Bedarf mit einer Workload beginnen.
 
 #### <a name="monitor-outcomes-and-fine-tune-the-policy"></a>Überwachen der Ergebnisse und Optimieren der Richtlinie
 
-Überwachen Sie im Testmodus die Ergebnisse der Richtlinie, und optimieren Sie sie so, dass sie Ihre Kontrollziele erfüllt, und stellen Sie sicher, dass Sie keine negativen oder unbeabsichtigten Auswirkungen auf gültige Benutzerworkflows und Produktivität haben. Im Folgenden finden Sie einige Beispiele für die Feinabstimmung:
+Überwachen Sie im Testmodus die Ergebnisse der Richtlinie, und optimieren Sie sie so, dass sie Ihren Kontrollzielen entspricht und gleichzeitig sicherstellt, dass Sie sich nicht negativ oder versehentlich auf gültige Benutzerworkflows und die Produktivität auswirken. Hier sind einige Beispiele für Dinge, die Sie optimieren müssen:
 
-- Anpassen der Standorte und Personen/Orte, die sich in oder nicht im Bereich befinden
-- Optimieren der Bedingungen und Ausnahmen, die verwendet werden, um zu bestimmen, ob ein Element und was damit geschieht, mit der Richtlinie
-- definition/s für vertrauliche Informationen
+- Anpassen der Speicherorte und Personen/Orte, die sich in oder außerhalb des Bereichs befinden
+- Optimieren der Bedingungen und Ausnahmen, die verwendet werden, um festzustellen, ob ein Element und was damit ausgeführt wird, der Richtlinie entspricht
+- Die Definitionen vertraulicher Informationen
 - die Aktionen
-- Die Stufe der Einschränkungen
+- Das Maß an Einschränkungen
 - Hinzufügen neuer Steuerelemente
-- Hinzufügen neuer Personen
+- Neue Personen hinzufügen
 - Hinzufügen neuer eingeschränkter Apps
 - Hinzufügen neuer eingeschränkter Websites
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Aktivieren des Steuerelements und Optimieren Ihrer Richtlinien
 
-Sobald die Richtlinie alle Ihre Ziele erfüllt, aktivieren Sie sie. Überwachen Sie weiterhin die Ergebnisse der Richtlinienanwendung, und stimmen Sie sie nach Bedarf ab. Im Allgemeinen werden Richtlinien etwa eine Stunde nach dem Aktivierten wirksam. <!--See, LINK TO topic for SLAs for location specific details- >
+Sobald die Richtlinie alle Ihre Ziele erfüllt, aktivieren Sie sie. Überwachen Sie weiterhin die Ergebnisse der Richtlinienanwendung, und optimieren Sie sie nach Bedarf. Im Allgemeinen werden Richtlinien etwa eine Stunde nach dem Aktivieren wirksam. 
 
-## <a name="dlp-policy-configuration-overview"></a>Übersicht über die Konfiguration von DLP-Richtlinien
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
-Sie haben Flexibilität bei der Erstellung und Konfiguration Ihrer DLP-Richtlinien. Sie können mit einer vordefinierten Vorlage beginnen und mit nur wenigen Klicks eine Richtlinie erstellen, oder Sie können ihre eigene von Grund auf entwerfen. Unabhängig davon, welche Option Sie auswählen, benötigen alle DLP-Richtlinien dieselben Informationen von Ihnen.
+## <a name="dlp-policy-configuration-overview"></a>Übersicht über die DLP-Richtlinienkonfiguration
 
-1. **Wählen Sie aus,** was Sie überwachen Microsoft 365 enthält viele vordefinierte Richtlinienvorlagen, die Ihnen beim Einstieg helfen oder eine benutzerdefinierte Richtlinie erstellen können.
-    - Eine vordefinierte Richtlinienvorlage: Finanzdaten, Medizinische und Gesundheitsdaten, Datenschutzdaten für verschiedene Länder und Regionen.
+Sie haben Flexibilität bei der Erstellung und Konfiguration Ihrer DLP-Richtlinien. Sie können mit einer vordefinierten Vorlage beginnen und mit nur wenigen Klicks eine Richtlinie erstellen, oder Sie können Ihre eigene von Grund auf entwerfen. Unabhängig davon, welcheN Sie auswählen, benötigen alle DLP-Richtlinien die gleichen Informationen von Ihnen.
+
+1. **Wählen Sie aus, was Sie überwachen möchten** – Microsoft 365 enthält viele vordefinierte Richtlinienvorlagen, die Ihnen bei den ersten Schritten helfen, oder Sie können eine benutzerdefinierte Richtlinie erstellen.
+    - Eine vordefinierte Richtlinienvorlage: Finanzdaten, Medizinische daten und Gesundheitsdaten, Datenschutzdaten für verschiedene Länder und Regionen.
     - Eine benutzerdefinierte Richtlinie, die die verfügbaren Typen vertraulicher Informationen, Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen verwendet.
-2. **Wählen Sie aus, wo Sie überwachen möchten:** Wählen Sie einen oder mehrere Speicherorte aus, die von DLP auf vertrauliche Informationen überwacht werden soll. Sie können:
+2. **Wählen Sie aus, wo Sie überwachen möchten–** Wählen Sie einen oder mehrere Speicherorte aus, die DLP auf vertrauliche Informationen überwachen soll. Sie können Folgendes überwachen:
     
 Speicherort | einschließen/ausschließen nach|
 |---------|---------|
@@ -140,24 +142,24 @@ Speicherort | einschließen/ausschließen nach|
 |Teams-Chat- und Teams-Kanalnachrichten |Konten |
 |Windows 10-Geräte |Benutzer oder Gruppe |
 |Microsoft Cloud App Security |Instanz |
-|Lokale Repositorys| Pfad der Repositorydatei|
+|Lokale Repositorys| Repositorydateipfad|
 
-3. **Wählen Sie die Bedingungen** aus, die erfüllt werden müssen, damit eine Richtlinie auf ein Element angewendet werden kann. Sie können vorkonfigurierte Bedingungen akzeptieren oder benutzerdefinierte Bedingungen definieren. Einige Beispiele:
+3. **Wählen Sie die Bedingungen aus, die erfüllt werden müssen, damit eine Richtlinie auf ein Element angewendet werden kann.** Sie können vorkonfigurierte Bedingungen akzeptieren oder benutzerdefinierte Bedingungen definieren. Einige Beispiele:
 
-- element enthält eine bestimmte Art vertraulicher Informationen, die in einem bestimmten Kontext verwendet werden. Beispielsweise werden 95 Sozialversicherungsnummern per E-Mail an Empfänger außerhalb Ihrer Organisation gesendet.
+- enthält eine bestimmte Art vertraulicher Informationen, die in einem bestimmten Kontext verwendet werden. Beispielsweise werden 95 Sozialversicherungsnummern per E-Mail an Empfänger außerhalb Ihrer Organisation gesendet.
 - Element hat eine angegebene Vertraulichkeitsbezeichnung
-- Element mit vertraulichen Informationen wird intern oder extern freigegeben
+- Element mit vertraulichen Informationen wird entweder intern oder extern freigegeben
 
-4. **Wählen Sie die Aktion aus, die** sie ausführen soll, wenn die Richtlinienbedingungen erfüllt sind : Die Aktionen hängen vom Ort ab, an dem die Aktivität gerade geschieht.  Einige Beispiele:
+4. **Wählen Sie die Aktion aus, die ausgeführt werden soll, wenn die Richtlinienbedingungen erfüllt sind** . Die Aktionen hängen vom Ort ab, an dem die Aktivität stattfindet.  Einige Beispiele:
 
-- SharePoint/Exchange/OneDrive: Personen außerhalb Ihres Organisationsformulars den Zugriff auf den Inhalt blockieren. Zeigen Sie dem Benutzer einen Tipp an, und senden Sie eine E-Mail-Benachrichtigung, dass er eine Aktion unternimmt, die durch die DLP-Richtlinie verboten ist.
+- SharePoint/Exchange/OneDrive: Personen außerhalb Ihres Organisationsformulars den Zugriff auf den Inhalt blockieren. Zeigen Sie dem Benutzer einen Tipp und senden Sie eine E-Mail-Benachrichtigung, dass er eine Aktion ausführt, die durch die DLP-Richtlinie verboten ist.
 - Teams Chat und Kanal: Blockieren der Freigabe vertraulicher Informationen im Chat oder Kanal
-- Windows 10 Geräte: Überwachen oder Einschränken des Kopierens eines vertraulichen Elements auf ein entfernbares USB-Gerät 
-- Office Apps: Zeigen Sie ein Popup an, das den Benutzer darüber informiert, dass er ein riskantes Verhalten einrät, blockiert oder blockiert, außer Kraft setzen lässt.
-- Lokale Dateifreigaben: Verschieben der Datei in einen Quarantäneordner
+- Windows 10 Geräte: Überwachen oder Einschränken des Kopierens eines vertraulichen Elements auf ein usb-Gerät, das entfernt werden kann 
+- Office Apps: Zeigen Sie ein Popup an, in dem der Benutzer benachrichtigt wird, dass er ein riskantes Verhalten eingibt und die Außerkraftsetzung blockiert oder blockiert, aber die Außerkraftsetzung zulässt.
+- Lokale Dateifreigaben: Verschieben der Datei von ihrem Speicherort in einen Quarantäneordner
 
 > [!NOTE]
-> Die Bedingungen und die zu ergreifende Aktion werden in einem Objekt definiert, das als Rule bezeichnet wird.
+> Die Bedingungen und die auszuführenden Aktionen werden in einem Objekt definiert, das als Regel bezeichnet wird.
 
 <!--## Create a DLP policy
 
@@ -175,11 +177,11 @@ Nachdem die Richtlinie mit den richtigen Speicherorten synchronisiert wurde, wer
 
 ## <a name="viewing-policy-application-results"></a>Anzeigen von Richtlinienanwendungsergebnissen
 
-DLP meldet eine große Menge von Informationen Microsoft 365 Überwachung, Richtlinien übereinstimmungen und Aktionen sowie Benutzeraktivitäten. Sie müssen diese Informationen nutzen und darauf reagieren, um Ihre Richtlinien und Triageaktionen für vertrauliche Elemente zu optimieren. Die Telemetrie wird zuerst Microsoft 365 [Compliance Center Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) verwendet, wird verarbeitet und führt zu unterschiedlichen Berichterstellungstools. Jedes Berichterstellungstool hat einen anderen Zweck.  
+DLP meldet eine große Menge an Informationen in Microsoft 365 aus Überwachung, Richtlinienüberstimmungen und -aktionen sowie Benutzeraktivitäten. Sie müssen diese Informationen nutzen und darauf reagieren, um Ihre Richtlinien zu optimieren und Aktionen für vertrauliche Elemente zu selektieren. Die Telemetriedaten werden zuerst in das [Microsoft 365 Compliance Center Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) aufgenommen, verarbeitet und gelangen zu unterschiedlichen Berichterstellungstools. Jedes Berichterstellungstool hat einen anderen Zweck.  
 
 ### <a name="dlp-alerts-dashboard"></a>Dashboard für DLP-Warnungen
 
-Wenn DLP eine Aktion für ein vertrauliches Element ergreift, können Sie über eine konfigurierbare Warnung benachrichtigt werden. Anstatt diese Warnungen in einem Postfach aufstapeln zu lassen, damit Sie sie durchspiften können, stellt das Compliance Center sie im [DLP Alerts Management Dashboard zur Verfügung.](dlp-configure-view-alerts-policies.md) Verwenden Sie das DLP-Benachrichtigungsdashboard, um Warnungen zu konfigurieren, zu überprüfen, zu verdingen und die Auflösung von DLP-Warnungen nachverfolgt zu werden. Im Folgenden finden Sie ein Beispiel für Warnungen, die durch Richtlinien übereinstimmungen und Aktivitäten von Windows 10 werden.
+Wenn DLP eine Aktion für ein vertrauliches Element ausführt, können Sie über eine konfigurierbare Warnung über diese Aktion benachrichtigt werden. Anstatt diese Warnungen in einem Postfach zu durchsuchen, stellt das Compliance Center sie im [Verwaltungsdashboard für DLP-Warnungen](dlp-configure-view-alerts-policies.md)zur Verfügung. Verwenden Sie das Dashboard für DLP-Warnungen, um Warnungen zu konfigurieren, zu überprüfen, zu selektieren und die Auflösung von DLP-Warnungen nachzuverfolgen. Hier ist ein Beispiel für Warnungen, die von Richtlinienüberstimmungen und Aktivitäten von Windows 10-Geräten generiert werden.
 
 > [!div class="mx-imgBorder"]
 > ![Warninformationen](../media/Alert-info-1.png)
@@ -191,19 +193,19 @@ Sie können ebenfalls Details des zugehörigen Ereignisses mit umfangreichen Met
 
 ### <a name="reports"></a>Berichte
 
-Die [DLP-Berichte](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) zeigen im Laufe der Zeit breite Trends und geben spezifische Einblicke in:
+Die [DLP-Berichte](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) zeigen allgemeine Trends im Laufe der Zeit und geben spezifische Einblicke in:
 
-- **DLP Policy Matches** over time and filter by date range, location, policy, or action
-- **Übereinstimmungen mit DLP-Vorfällen** zeigen auch Übereinstimmungen im Laufe der Zeit an, drehen sich jedoch nicht auf die Richtlinienregeln, sondern auf die Elemente.
-- **Bei falsch positiven** Und Außerkraftsetzungen von DLP wird die Anzahl der falsch positiven Werte und, falls konfiguriert, benutzerüberschreibungen zusammen mit der Begründung des Benutzers angezeigt.
+- **DLP-Richtlinienüberstimmungen** im Laufe der Zeit und Filtern nach Datumsbereich, Speicherort, Richtlinie oder Aktion
+- **DLP-Vorfallübereinstimmungen** zeigen auch Übereinstimmungen im Laufe der Zeit an, aber Pivots für die Elemente und nicht für die Richtlinienregeln.
+- **Falsch positive DLP-Ergebnisse und Außerkraftsetzungen** zeigen die Anzahl falsch positiver Ergebnisse und, falls konfiguriert, Benutzerüberschreibungen zusammen mit der Benutzerausrichtung an.
 
 ### <a name="dlp-activity-explorer"></a>DLP-Aktivitäts-Explorer
 
-Auf der Registerkarte Aktivitäts-Explorer auf der Seite DLP ist der *Aktivitätsfilter* auf *DLPRuleMatch voreingestellt.* Verwenden Sie dieses Tool, um Aktivitäten im Zusammenhang mit Inhalten zu überprüfen, die vertrauliche Informationen enthalten oder Bezeichnungen angewendet wurden, z. B. welche Bezeichnungen geändert wurden, dateien geändert wurden und einer Regel entsprechen.
+Auf der Registerkarte "Aktivitäten-Explorer" auf der DLP-Seite ist der *Aktivitätsfilter* auf *DLPRuleMatch* voreingestellt. Verwenden Sie dieses Tool, um Aktivitäten im Zusammenhang mit Inhalten zu überprüfen, die vertrauliche Informationen enthalten oder Bezeichnungen angewendet haben, z. B. welche Bezeichnungen geändert wurden, Dateien geändert wurden und mit einer Regel übereinstimmten.
 
-![Screenshot des DLPRuleMatch-Bereichsaktivitäts-Explorers ](../media/dlp-activity-explorer.png)
+![Screenshot des DLPRuleMatch-Aktivitäten-Explorers mit Bereichsdefinition ](../media/dlp-activity-explorer.png)
 
-Weitere Informationen finden Sie unter [Erste Schritte mit dem Aktivitäts-Explorer.](data-classification-activity-explorer.md)
+Weitere Informationen finden Sie unter [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 
 Weitere Informationen zu Microsoft 365 DLP finden Sie unter:
 
@@ -213,4 +215,4 @@ Weitere Informationen zu Microsoft 365 DLP finden Sie unter:
 - [Erfahren Sie mehr über die Microsoft Compliance-Erweiterung (Vorschau)](dlp-chrome-learn-about.md)
 - [Informationen zum Dashboard zur Verhinderung von Datenverlust](dlp-alerts-dashboard-learn.md)
 
-Informationen zur Verhinderung von Datenverlust zur Einhaltung von Datenschutzbestimmungen finden Sie unter [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+Informationen zur Verwendung der Verhinderung von Datenverlust zur Einhaltung von Datenschutzbestimmungen finden Sie unter ["Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).

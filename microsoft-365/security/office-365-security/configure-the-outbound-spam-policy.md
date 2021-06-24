@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie ausgehende Spamrichtlinien in Exchange Online Protection (EOP) angezeigt, erstellt, geändert und gelöscht werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dadea740267225ff2df316b96ba7ccef92fe01e
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 97b429584371dbe49778163a7f1bbe6f36aea54c
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933131"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108415"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der ausgehenden Spamfilterung in EOP
 
@@ -35,7 +35,7 @@ ms.locfileid: "52933131"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer werden ausgehende E-Mail-Nachrichten, die über EOP gesendet werden, automatisch auf Spam und ungewöhnliche Sendeaktivitäten überprüft.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächern werden ausgehende E-Mail-Nachrichten, die über EOP gesendet werden, automatisch auf Spam und ungewöhnliche Sendeaktivitäten überprüft.
 
 Ausgehende Spamnachrichten von einem Benutzer in Ihrer Organisation weisen in der Regel auf ein kompromittiertes Konto hin. Verdächtige ausgehende Nachrichten werden als Spam gekennzeichnet (unabhängig von der Spam-Konfidenzstufe oder SCL) und werden über den [Übermittlungspool](high-risk-delivery-pool-for-outbound-messages.md) mit hohem Risiko weitergeleitet, um den Ruf des Diensts zu schützen (d. a. Microsoft 365 Quell-E-Mail-Server von IP-Sperrlisten fernzuhalten). Administratoren werden automatisch über verdächtige ausgehende E-Mail-Aktivitäten benachrichtigt und Benutzer über [Warnungsrichtlinien](../../compliance/alert-policies.md)blockiert.
 
@@ -43,14 +43,14 @@ EOP verwendet ausgehende Spamrichtlinien als Teil des allgemeinen Schutzes Ihrer
 
 Administratoren können die standardmäßige richtlinie für ausgehende Spamnachrichten anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Für eine höhere Granularität können Sie auch benutzerdefinierte ausgehende Spamrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
-Sie können ausgehende Spamrichtlinien im Microsoft 365 Microsoft 365 Defender-Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer).
+Sie können ausgehende Spamrichtlinien im Microsoft 365 Microsoft 365 Defender Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer).
 
 Die grundlegenden Elemente einer Richtlinie für ausgehende Spamnachrichten in EOP sind:
 
 - Die Richtlinie für **den ausgehenden Spamfilter:** Gibt die Aktionen für ausgehende Spamfilterbewertungen und die Benachrichtigungsoptionen an.
 - **Die Ausgehende Spamfilterregel:** Gibt die Prioritäts- und Empfängerfilter (für die die Richtlinie gilt) für eine richtlinie für ausgehende Spamfilter an.
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie ausgehende Spamrichtlinien im Microsoft 365 Defender-Portal verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie ausgehende Spamrichtlinien im Microsoft 365 Defender Portal verwalten:
 
 - Wenn Sie eine Richtlinie erstellen, erstellen Sie tatsächlich eine ausgehende Spamfilterregel und die zugeordnete Richtlinie für den ausgehenden Spamfilter gleichzeitig mit demselben Namen für beide.
 - Wenn Sie eine Richtlinie ändern, ändern Einstellungen, die sich auf den Namen, die Priorität, aktiviert oder deaktiviert beziehen, und Empfängerfilter die ausgehende Spamfilterregel. Alle anderen Einstellungen ändern die zugeordnete Richtlinie für ausgehende Spamfilter.
@@ -85,13 +85,13 @@ Um die Effektivität der ausgehenden Spamfilterung zu erhöhen, können Sie benu
 
 - Unsere empfohlenen Einstellungen für ausgehende Spamrichtlinien finden Sie unter [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
-- Die [Standardmäßige Warnungsrichtlinien](../../compliance/alert-policies.md) namens **"E-Mail-Sendegrenzwert" wurde überschritten,** **verdächtige E-Mail-Versandmuster erkannt,** und der Benutzer, dem das **Senden von E-Mails eingeschränkt** ist, sendet bereits E-Mail-Benachrichtigungen an Mitglieder der Gruppe **"TenantAdmins** (**Globale Administratoren)**" über ungewöhnliche ausgehende E-Mail-Aktivitäten und blockierte Benutzer aufgrund ausgehender Spamnachrichten. Weitere Informationen finden Sie unter [Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Es wird empfohlen, diese Warnungsrichtlinien anstelle der Benachrichtigungsoptionen in ausgehenden Spamrichtlinien zu verwenden.
+- Die [Standardmäßige Warnungsrichtlinien](../../compliance/alert-policies.md) mit dem Namen **"E-Mail-Sendegrenzwert" wurde überschritten,** **verdächtige E-Mail-Versandmuster erkannt,** und der Benutzer, der auf das **Senden von E-Mails beschränkt ist,** sendet bereits E-Mail-Benachrichtigungen an Mitglieder der Gruppe **"TenantAdmins** (**Globale Administratoren)**" über ungewöhnliche ausgehende E-Mail-Aktivitäten und blockierte Benutzer aufgrund ausgehender Spamnachrichten. Weitere Informationen finden Sie unter [Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Es wird empfohlen, diese Warnungsrichtlinien anstelle der Benachrichtigungsoptionen in ausgehenden Spamrichtlinien zu verwenden.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen ausgehender Spamrichtlinien
 
-Beim Erstellen einer benutzerdefinierten Richtlinie für ausgehende Spamnachrichten im Microsoft 365 Defender-Portal werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie gleichzeitig mit demselben Namen für beide erstellt.
+Beim Erstellen einer benutzerdefinierten Richtlinie für ausgehende Spamnachrichten im Microsoft 365 Defender Portal werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \>  \> **"Richtlinien für Bedrohungsregeln"** im Abschnitt \>  \> **"Antispam".**
 
 2. Klicken Sie auf der Seite **"Antispamrichtlinien"** auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Richtlinie erstellen",** und wählen Sie dann in der Dropdownliste **"Ausgehend"** aus.
 
@@ -128,19 +128,19 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für ausgehende Spamnachrich
 
    - **Einschränkung für Benutzer, die das Nachrichtenlimit erreichen:** Wählen Sie eine Aktion aus der Dropdownliste aus, wenn eine der Grenzwerte im Abschnitt **"Schutzeinstellungen"** überschritten wird.
 
-     Für alle Aktionen erhalten die im Benutzer angegebenen Empfänger, die das **Senden von E-Mail-Warnungsrichtlinien eingeschränkt** haben (und in der jetzt redundanten **Benachrichtigung dieser Benutzer und Gruppen, wenn ein Absender aufgrund des Sendens ausgehender Spam-Einstellungen** später auf dieser Seite blockiert wird) E-Mail-Benachrichtigungen.
+     Für alle Aktionen erhalten die im Benutzer angegebenen Empfänger, die das **Senden von E-Mail-Warnungsrichtlinien eingeschränkt** haben (und in der jetzt redundanten **Benachrichtigung dieser Benutzer und Gruppen, wenn ein Absender aufgrund des Sendens ausgehender Spam-Einstellungen** später auf dieser Seite blockiert ist) E-Mail-Benachrichtigungen.
 
      - **Beschränken Sie das Senden von E-Mails durch den Benutzer bis zum folgenden Tag:** Dies ist der Standardwert. E-Mail-Benachrichtigungen werden gesendet, und der Benutzer kann basierend auf der UTC-Zeit bis zum folgenden Tag keine weiteren Nachrichten mehr senden. Es gibt keine Möglichkeit für den Administrator, diesen Block außer Kraft zu setzen.
        - Die Aktivitätswarnung namens **"Benutzer, der das Senden von E-Mails eingeschränkt** hat" benachrichtigt Administratoren (per E-Mail und auf der Seite **"Warnungen anzeigen").**
        - Alle Empfänger, die in der Richtlinie **"Bestimmte Personen benachrichtigen" angegeben sind, wenn ein Absender aufgrund des Sendens ausgehender Spam-Einstellungen** in der Richtlinie blockiert wird, werden ebenfalls benachrichtigt.
        - Der Benutzer kann basierend auf der UTC-Zeit bis zum folgenden Tag keine weiteren Nachrichten mehr senden. Es gibt keine Möglichkeit für den Administrator, diesen Block außer Kraft zu setzen.
-     - **Einschränken, dass der Benutzer E-Mails sendet:** E-Mail-Benachrichtigungen werden gesendet, der Benutzer wird im Microsoft 365 Defender-Portal zu **eingeschränkten Benutzern** <https://security.microsoft.com/restrictedusers> hinzugefügt, und der Benutzer kann keine E-Mails senden, bis er von einem Administrator aus **eingeschränkten Benutzern** entfernt wird. Nachdem ein Administrator den Benutzer aus der Liste entfernt hat, wird der Benutzer für diesen Tag nicht erneut eingeschränkt. Anweisungen finden Sie unter [Entfernen eines Benutzers aus dem Portal für eingeschränkte Benutzer nach dem Senden von Spam-E-Mails.](removing-user-from-restricted-users-portal-after-spam.md)
+     - **Einschränken des Sendens von E-Mails** durch den Benutzer: E-Mail-Benachrichtigungen werden gesendet, der Benutzer wird eingeschränkten **Benutzern** <https://security.microsoft.com/restrictedusers> im Microsoft 365 Defender Portal hinzugefügt, und der Benutzer kann keine E-Mails senden, bis er von einem Administrator aus **eingeschränkten Benutzern** entfernt wird. Nachdem ein Administrator den Benutzer aus der Liste entfernt hat, wird der Benutzer für diesen Tag nicht mehr eingeschränkt. Anweisungen finden Sie unter [Entfernen eines Benutzers aus dem Portal für eingeschränkte Benutzer nach dem Senden von Spam-E-Mails.](removing-user-from-restricted-users-portal-after-spam.md)
      - **Keine Aktion, nur Warnung:** E-Mail-Benachrichtigungen werden gesendet.
 
    - **Weiterleitungsregeln:** Verwenden Sie die Einstellungen in diesem Abschnitt, um die automatische E-Mail-Weiterleitung durch **Exchange Online Postfächer** an externe Absender zu steuern. Weitere Informationen finden Sie unter [Steuerung der automatischen externen E-Mail-Weiterleitung in Microsoft 365](external-email-forwarding.md).
 
      > [!NOTE]
-     > Wenn die automatische Weiterleitung deaktiviert ist, erhält der Empfänger einen Unzustellbarkeitsbericht (auch als Unzustellbarkeitsbericht oder Unzustellbarkeitsnachricht bezeichnet), wenn externe Absender E-Mails an ein Postfach senden, das über eine Weiterleitung verfügt. Wenn die Nachricht von einem internen Absender gesendet wird **und** die Weiterleitungsmethode die [Postfachweiterleitung](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) ist (auch bekannt als _SMTP-Weiterleitung),_ erhält der interne Absender den NDR. Der interne Absender erhält keinen NDR, wenn die Weiterleitung aufgrund einer Posteingangsregel erfolgt ist.
+     > Wenn die automatische Weiterleitung deaktiviert ist, erhält der Empfänger einen Unzustellbarkeitsbericht (auch als Unzustellbarkeitsbericht oder Unzustellbarkeitsnachricht bezeichnet), wenn externe Absender E-Mails an ein Postfach senden, für das eine Weiterleitung vorhanden ist. Wenn die Nachricht von einem internen Absender gesendet wird **und** die Weiterleitungsmethode die [Postfachweiterleitung](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) ist (auch bekannt als _SMTP-Weiterleitung),_ erhält der interne Absender den NDR. Der interne Absender erhält keinen NDR, wenn die Weiterleitung aufgrund einer Posteingangsregel erfolgt ist.
 
      Wählen Sie eine der folgenden Aktionen aus der Dropdownliste "Regeln für die **automatische Weiterleitung"** aus:
 
@@ -175,9 +175,9 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für ausgehende Spamnachrich
 
 7. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen ausgehender Spamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Anzeigen ausgehender Spamrichtlinien
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \>  \> **"Richtlinien für Bedrohungsregeln"** im Abschnitt \>  \> **"Antispam".**
 
 2. Suchen Sie auf der Seite **Antispamrichtlinien** nach einem der folgenden Werte:
    - Der **Typwert** ist **eine benutzerdefinierte Richtlinie für ausgehende Spamnachrichten.**
@@ -192,15 +192,15 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für ausgehende Spamnachrich
 
 3. Wenn Sie eine Richtlinie für ausgehende Spamnachrichten auswählen, indem Sie auf den Namen klicken, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern ausgehender Spamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Ändern ausgehender Spamrichtlinien
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \>  \> **"Richtlinien für Bedrohungsregeln"** im Abschnitt \>  \> **"Antispam".**
 
 2. Wählen Sie auf der Seite **"Antispamrichtlinien"** eine ausgehende Spamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, bei der der Wert in der Spalte **"Typ"** **eine benutzerdefinierte Richtlinie für ausgehende Spamnachrichten** ist.
    - Die Standardrichtlinie mit dem Namen **Antispam ausgehende Richtlinie (Standard).**
 
-3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen ausgehender Spamrichtlinien"](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies) in diesem Artikel.
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im abschnitt ["Verwenden des Microsoft 365 Defender Portals zum Erstellen ausgehender Spamrichtlinien"](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies) in diesem Artikel.
 
    Für die standardmäßige richtlinie für ausgehende Spamnachrichten ist der Abschnitt **"Angewendet auf"** nicht verfügbar (die Richtlinie gilt für alle), und Sie können die Richtlinie nicht umbenennen.
 
@@ -210,7 +210,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie, zum Festlegen d
 
 Sie können die standardmäßige richtlinie für ausgehende Spamnachrichten nicht deaktivieren.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \>  \> **"Richtlinien für Bedrohungsregeln"** im Abschnitt \>  \> **"Antispam".**
 
 2. Wählen Sie auf der Seite **"Antispamrichtlinien"** eine Richtlinie mit dem **Typwert** **"Benutzerdefinierte ausgehende Spamrichtlinie"** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -232,10 +232,10 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
  **Anmerkungen**:
 
-- Im Microsoft 365 Defender-Portal können Sie die Priorität der Richtlinie für ausgehende Spamnachrichten erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Im Microsoft 365 Defender Portal können Sie die Priorität der Richtlinie für ausgehende Spamnachrichten erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
 - Ausgehende Spamrichtlinien werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Die standardmäßige richtlinie für ausgehende Spamnachrichten hat den Prioritätswert **Niedrigste**, und Sie können sie nicht ändern.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \>  \> **"Richtlinien für Bedrohungsregeln"** im Abschnitt \>  \> **"Antispam".**
 
 2. Wählen Sie auf der Seite **"Antispamrichtlinien"** eine Richtlinie mit dem **Typwert** **"Benutzerdefinierte ausgehende Spamrichtlinie"** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -248,11 +248,11 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 4. Wenn Sie den Vorgang abgeschlossen haben, klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Entfernen benutzerdefinierter ausgehender Spamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Entfernen benutzerdefinierter ausgehender Spamrichtlinien
 
-Wenn Sie das Microsoft 365 Defender-Portal verwenden, um eine benutzerdefinierte ausgehende Spamrichtlinie zu entfernen, werden die Spamfilterregel und die entsprechende Spamfilterrichtlinie gelöscht. Sie können die standardmäßige Richtlinie für ausgehende Spamnachrichten nicht entfernen.
+Wenn Sie das Microsoft 365 Defender Portal verwenden, um eine benutzerdefinierte ausgehende Spamrichtlinie zu entfernen, werden die Spamfilterregel und die entsprechende Spamfilterrichtlinie gelöscht. Sie können die standardmäßige Richtlinie für ausgehende Spamnachrichten nicht entfernen.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \>  \> **"Richtlinien für Bedrohungsregeln"** im Abschnitt \>  \> **"Antispam".**
 
 2. Wählen Sie auf der Seite **"Antispamrichtlinien"** eine Richtlinie mit dem **Typwert** **"Benutzerdefinierte ausgehende Spamrichtlinie"** aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
@@ -278,14 +278,14 @@ Das Erstellen einer Richtlinie für ausgehende Spamnachrichten in PowerShell bes
    **Hinweise**:
 
    - Sie können eine neue ausgehende Spamfilterregel erstellen und ihr eine vorhandene, nicht zugeordnete Richtlinie für ausgehende Spamfilter zuweisen. Eine Ausgehende Spamfilterregel kann nicht mehr als einer Richtlinie für ausgehende Spamfilter zugeordnet werden.
-   - Sie können die folgenden Einstellungen für neue richtlinien für ausgehende Spamfilter in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Microsoft 365 Defender-Portal verfügbar sind:
+   - Sie können die folgenden Einstellungen für neue Richtlinien für ausgehende Spamfilter in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Microsoft 365 Defender Portal verfügbar sind:
      - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` für das Cmdlet **&quot;New-HostedOutboundSpamFilterRule").**
      - Legen Sie die Priorität der Richtlinie während der Erstellung _(Priorität)_ _\<Number\>_ für das Cmdlet **"New-HostedOutboundSpamFilterRule"** fest.
-   - Eine neue richtlinie für ausgehende Spamfilter, die Sie in PowerShell erstellen, ist erst im Microsoft 365 Defender-Portal sichtbar, wenn Sie die Richtlinie einer ausgehenden Spamfilterregel zuweisen.
+   - Eine neue ausgehende Spamfilterrichtlinie, die Sie in PowerShell erstellen, ist erst im Microsoft 365 Defender-Portal sichtbar, wenn Sie die Richtlinie einer ausgehenden Spamfilterregel zuweisen.
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für ausgehende Spamfilter
 
-Verwenden Sie diese Syntax, um eine Richtlinie für ausgehende Spamfilter zu erstellen:
+Verwenden Sie die folgende Syntax, um eine Richtlinie für ausgehende Spamfilter zu erstellen:
 
 ```PowerShell
 New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
@@ -305,7 +305,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Hoste
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>Schritt 2: Verwenden von PowerShell zum Erstellen einer ausgehenden Spamfilterregel
 
-Verwenden Sie die folgende Syntax, um eine ausgehende Spamfilterregel zu erstellen:
+Verwenden Sie diese Syntax, um eine ausgehende Spamfilterregel zu erstellen:
 
 ```PowerShell
 New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
@@ -384,10 +384,10 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-Host
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>Verwenden von PowerShell zum Ändern ausgehender Spamfilterrichtlinien
 
-Die gleichen Einstellungen sind verfügbar, wenn Sie eine Schadsoftwarefilterrichtlinie in PowerShell ändern, wie beim Erstellen der Richtlinie, wie in [Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für ausgehende Spamfilter](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) weiter oben in diesem Artikel beschrieben.
+Die gleichen Einstellungen sind verfügbar, wenn Sie eine Schadsoftwarefilterrichtlinie in PowerShell ändern wie beim Erstellen der Richtlinie, wie in [Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für ausgehende Spamfilter](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) weiter oben in diesem Artikel beschrieben.
 
 > [!NOTE]
-> Sie können eine Richtlinie für ausgehende Spamfilter nicht umbenennen (das Cmdlet **"Set-HostedOutboundSpamFilterPolicy"** hat keinen _Name-Parameter)._ Wenn Sie eine Richtlinie für ausgehende Spamnachrichten im Microsoft 365 Defender-Portal umbenennen, werden Sie nur die _Filterregel_ für ausgehende Spamnachrichten umbenennen.
+> Sie können eine Richtlinie für ausgehende Spamfilter nicht umbenennen (das Cmdlet **"Set-HostedOutboundSpamFilterPolicy"** hat keinen _Name-Parameter)._ Wenn Sie eine Richtlinie für ausgehende Spamnachrichten im Microsoft 365 Defender-Portal umbenennen, benennen Sie nur die _Filterregel_ für ausgehende Spamnachrichten um.
 
 Verwenden Sie die folgende Syntax, um eine Richtlinie für ausgehende Spamfilter zu ändern:
 
@@ -494,7 +494,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Ho
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Entfernen von blockierten Benutzern aus dem Portal „Eingeschränkte Benutzer“](removing-user-from-restricted-users-portal-after-spam.md)
+[Entfernen blockierter Benutzer aus dem Portal für eingeschränkte Benutzer](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Pool für besonders riskante Zustellungen für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md)
 

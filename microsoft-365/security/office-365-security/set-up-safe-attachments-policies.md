@@ -18,12 +18,12 @@ description: Erfahren Sie, wie Sie Tresor Anlagenrichtlinien definieren, um Ihre
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054334"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108223"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Einrichten Tresor Anlagenrichtlinien in Microsoft Defender für Office 365
 
@@ -34,29 +34,29 @@ ms.locfileid: "53054334"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](whats-new-in-defender-for-office-365.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zum Scannen von Anlagen in Outlook sucht, finden Sie weitere Informationen unter [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](whats-new-in-defender-for-office-365.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zum Scannen von Anlagen in Outlook sucht, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Tresor Anlagen ist ein Feature in [Microsoft Defender für Office 365,](whats-new-in-defender-for-office-365.md) das eine virtuelle Umgebung verwendet, um Anlagen in eingehenden E-Mail-Nachrichten zu überprüfen, nachdem sie vom [Antischadsoftwareschutz in Exchange Online Protection (EOP)](anti-malware-protection.md)gescannt wurden, jedoch vor der Übermittlung an Empfänger. Weitere Informationen finden Sie unter [Tresor Anlagen in Microsoft Defender für Office 365](safe-attachments.md).
 
-Es gibt keine integrierte oder standardmäßige richtlinie für Tresor Anlagen. Um Tresor Attachments-Überprüfung von E-Mail-Nachrichtenanlagen zu erhalten, müssen Sie eine oder mehrere Tresor Anlagenrichtlinien erstellen, wie in diesem Artikel beschrieben.
+Es gibt keine integrierte oder standardmäßige richtlinie für Tresor Anlagen. Um Tresor Anlagenüberprüfung von E-Mail-Nachrichtenanlagen zu erhalten, müssen Sie eine oder mehrere Tresor Anlagenrichtlinien erstellen, wie in diesem Artikel beschrieben.
 
-Sie können Tresor Anlagenrichtlinien im Microsoft 365 Defender Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige eOP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Defender für Office 365-Add-On-Abonnements).
+Sie können Tresor Anlagenrichtlinien im Microsoft 365 Defender Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Defender für Office 365 Add-On-Abonnements).
 
 Die grundlegenden Elemente einer Tresor Attachments-Richtlinie sind:
 
 - Die Richtlinie für **sichere Anlagen:** Gibt die Aktionen für unbekannte Schadsoftwareerkennungen an, gibt an, ob Nachrichten mit Schadsoftwareanlagen an eine angegebene E-Mail-Adresse gesendet werden sollen und ob Nachrichten übermittelt werden sollen, wenn Tresor Attachments-Überprüfung nicht abgeschlossen werden kann.
 - **Die Regel für sichere Anlagen:** Gibt die Prioritäts- und Empfängerfilter an (für wen die Richtlinie gilt).
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Tresor Anlagenrichtlinien im Microsoft 365 Defender-Portal verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Tresor Anlagenrichtlinien im Microsoft 365 Defender Portal verwalten:
 
 - Wenn Sie eine Tresor Anlagenrichtlinie erstellen, erstellen Sie tatsächlich eine Regel für sichere Anlagen und die zugeordnete Richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide.
-- Wenn Sie eine Tresor Anlagenrichtlinie ändern, ändern Einstellungen im Zusammenhang mit dem Namen, der Priorität, aktiviert oder deaktiviert und Empfängerfiltern die Regel für sichere Anlagen. Alle anderen Einstellungen ändern die zugeordnete Richtlinie für sichere Anlagen.
-- Wenn Sie eine Tresor Attachments-Richtlinie entfernen, werden die Regel für sichere Anlagen und die zugehörige Richtlinie für sichere Anlagen entfernt.
+- Wenn Sie eine Tresor Anlagenrichtlinie ändern, ändern Einstellungen im Zusammenhang mit dem Namen, der Priorität, aktiviert oder deaktiviert und empfängerfiltern die Regel für sichere Anlagen. Alle anderen Einstellungen ändern die zugeordnete Richtlinie für sichere Anlagen.
+- Wenn Sie eine Tresor Anlagenrichtlinie entfernen, werden die Regel für sichere Anlagen und die zugehörige Richtlinie für sichere Anlagen entfernt.
 
 In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt ["Use Exchange Online PowerShell or standalone EOP PowerShell to configure Tresor Attachments policies"](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) weiter unten in diesem Artikel.
 
 > [!NOTE]
-> Im globalen Einstellungsbereich von Tresor Anlageneinstellungen konfigurieren Sie Features, die nicht von Tresor Anlagenrichtlinien abhängig sind. Anweisungen finden Sie unter [Aktivieren Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) und [Tresor Dokumente in Microsoft 365 E5](safe-docs.md).
+> Im globalen Einstellungsbereich von Tresor Anlageneinstellungen konfigurieren Sie Features, die nicht von Tresor Anlagenrichtlinien abhängig sind. Anweisungen finden Sie unter [Aktivieren von Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) und Tresor Dokumente in [Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -68,7 +68,7 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
   - Um Tresor Anlagenrichtlinien zu erstellen, zu ändern und zu löschen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** im Microsoft 365 Defender-Portal **und** Mitglied der Rollengruppe **"Organisationsverwaltung"** in Exchange Online sein.
   - Für den schreibgeschützten Zugriff auf Tresor Anlagenrichtlinien müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** im Microsoft 365 Defender Portal sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md) und [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter ["Berechtigungen" im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md) und ["Berechtigungen" in Exchange Online.](/exchange/permissions-exo/permissions-exo)
 
   **Hinweise**:
 
@@ -81,9 +81,9 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Erstellen Tresor Anlagenrichtlinien
 
-Beim Erstellen einer benutzerdefinierten Tresor Anlagenrichtlinie im Microsoft 365 Defender Portal werden die Regel für sichere Anlagen und die zugeordnete Richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide erstellt.
+Beim Erstellen einer benutzerdefinierten Tresor Anlagenrichtlinie im Microsoft 365 Defender Portal werden die Regel für sichere Anlagen und die zugehörige Richtlinie für sichere Anlagen gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
+1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für Die \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.**
 
 2. Klicken Sie auf der Seite **Tresor Anlagen** auf das ![ Symbol ](../../media/m365-cc-sc-create-icon.png) **"Erstellen".**
 
@@ -108,7 +108,7 @@ Beim Erstellen einer benutzerdefinierten Tresor Anlagenrichtlinie im Microsoft 3
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-5. Konfigurieren Sie auf der **Einstellungen** Seite die folgenden Einstellungen:
+5. Konfigurieren Sie auf der **seite Einstellungen** die folgenden Einstellungen:
 
    - **Tresor Attachments unknown malware response:** Select one of the following values:
      - **Aus:** In der Regel wird dieser Wert nicht empfohlen.
@@ -123,19 +123,19 @@ Beim Erstellen einer benutzerdefinierten Tresor Anlagenrichtlinie im Microsoft 3
 
      Die Empfehlung für Standard- und Strict-Richtlinieneinstellungen besteht darin, die Umleitung zu aktivieren. Weitere Informationen finden Sie unter [Tresor Anlageneinstellungen.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
-   - **Wenden Sie die erkennungsantwort Tresor Anlagen an, wenn die Überprüfung nicht abgeschlossen werden kann (Timeout oder Fehler):** Die durch Tresor Anlagen angegebene **Antwort auf unbekannte Schadsoftware** wird auf Nachrichten ausgeführt, auch wenn Tresor Attachments-Überprüfung nicht abgeschlossen werden kann. Wenn Sie diese Option ausgewählt haben, wählen Sie immer **Umleitung aktivieren** aus, und geben Sie eine E-Mail-Adresse an, um Nachrichten zu senden, die Schadsoftwareanlagen enthalten. Andernfalls können Nachrichten verloren gegangen sein.
+   - **Wenden Sie die Erkennungsantwort Tresor Anlagen an, wenn die Überprüfung nicht abgeschlossen werden kann (Timeout oder Fehler):** Die durch Tresor Anlagen angegebene **Antwort auf unbekannte Schadsoftware** wird für Nachrichten ausgeführt, auch wenn Tresor Attachments-Überprüfung nicht abgeschlossen werden kann. Wenn Sie diese Option ausgewählt haben, wählen Sie immer **Umleitung aktivieren** aus, und geben Sie eine E-Mail-Adresse an, um Nachrichten zu senden, die Schadsoftwareanlagen enthalten. Andernfalls können Nachrichten verloren gegangen sein.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
 6. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
-   Wenn Sie fertig sind, klicken Sie auf **"Absenden".**
+   Klicken Sie nach Abschluss des Vorgangs auf **Senden**.
 
 7. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Anzeigen Tresor Anlagenrichtlinien
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
+1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für Die \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.**
 
 2. Auf der Seite **Tresor Anlagen** werden die folgenden Eigenschaften in der Liste der Richtlinien angezeigt:
    - **Name**
@@ -144,19 +144,19 @@ Beim Erstellen einer benutzerdefinierten Tresor Anlagenrichtlinie im Microsoft 3
 
 3. Wenn Sie eine Richtlinie auswählen, indem Sie auf den Namen klicken, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern Tresor Anlagenrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Ändern Tresor Anlagenrichtlinien
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
+1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für Die \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.**
 
 2. Wählen Sie auf der Seite **Tresor Anlagen** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im Abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen Tresor Anlagenrichtlinien"](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) weiter oben in diesem Artikel.  
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im Abschnitt ["Verwenden des Microsoft 365 Defender Portals zum Erstellen Tresor Anlagenrichtlinien"](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) weiter oben in diesem Artikel.  
 
 Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festlegen der Reihenfolge der Richtlinienpriorität finden Sie in den folgenden Abschnitten.
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Aktivieren oder Deaktivieren Tresor Anlagenrichtlinien
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
+1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für Die \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.**
 
 2. Wählen Sie auf der Seite **Tresor Anlagen** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -182,11 +182,11 @@ Tresor Anlagenrichtlinien werden in der Reihenfolge angezeigt, in der sie verarb
 
 Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Microsoft 365 Defender-Portal nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
+1. Wechseln Sie im Portal Microsoft 365 Defender zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.**
 
 2. Wählen Sie auf der Seite **Tresor Anlagen** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-3. Oben im angezeigten Flyout für Richtliniendetails wird  die **Priorität** erhöhen oder verringern angezeigt, basierend auf dem aktuellen Prioritätswert und der Anzahl der Richtlinien:
+3. Oben im angezeigten Flyout für Richtliniendetails wird angezeigt, wie Sie die **Priorität** erhöhen oder **verringern,** basierend auf dem aktuellen Prioritätswert und der Anzahl der Richtlinien:
    - Für die Richtlinie mit dem **Prioritätswert** **0** ist nur die Option **"Priorität verringern"** verfügbar.
    - Für die Richtlinie mit dem niedrigsten **Prioritätswert** (z. B. **3)** ist nur die Option **"Priorität erhöhen"** verfügbar.
    - Wenn Sie über drei oder mehr Richtlinien verfügen, stehen für die Richtlinien zwischen den Werten mit der höchsten und der niedrigsten Priorität die Optionen **"Priorität erhöhen"** und **"Verringern"** zur Verfügung.
@@ -197,7 +197,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Verwenden des Microsoft 365 Defender Portals zum Entfernen Tresor Anlagenrichtlinien
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.**
+1. Wechseln Sie im Portal Microsoft 365 Defender zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.**
 
 2. Wählen Sie auf der Seite **Tresor Anlagen** eine benutzerdefinierte Richtlinie aus der Liste aus, indem Sie auf den Namen der Richtlinie klicken.
 
@@ -205,9 +205,9 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 4. Klicken Sie im angezeigten Bestätigungsdialog auf **Ja**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies&quot;></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren Tresor Anlagenrichtlinien
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies&quot;></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren Tresor Anlagenrichtlinien
 
-Wie zuvor beschrieben besteht eine Tresor Attachments-Richtlinie aus einer Richtlinie für sichere Anlagen und einer Regel für sichere Anlagen.
+Wie zuvor beschrieben besteht eine richtlinie für Tresor Anlagen aus einer Richtlinie für sichere Anlagen und einer Regel für sichere Anlagen.
 
 In PowerShell ist der Unterschied zwischen Richtlinien für sichere Anlagen und Regeln für sichere Anlagen offensichtlich. Sie verwalten Richtlinien für sichere Anlagen mithilfe der Cmdlets **\* &quot;-SafeAttachmentPolicy&quot;,** und Sie verwalten Regeln für sichere Anlagen mithilfe der Cmdlets **\* &quot;-SafeAttachmentRule&quot;.**
 
@@ -230,7 +230,7 @@ Das Erstellen einer Tresor Anlagenrichtlinie in PowerShell besteht aus zwei Schr
   - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` im Cmdlet **&quot;New-SafeAttachmentRule").**
   - Legen Sie die Priorität der Richtlinie während der Erstellung _(Priorität)_ _\<Number\>_ im Cmdlet **"New-SafeAttachmentRule"** fest.
 
-- Eine neue Richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, ist erst im Microsoft 365 Defender Portal sichtbar, wenn Sie die Richtlinie einer Regel für sichere Anlagen zuweisen.
+- Eine neue Richtlinie für sichere Anlagen, die Sie in PowerShell erstellen, ist erst im Microsoft 365 Defender-Portal sichtbar, wenn Sie die Richtlinie einer Regel für sichere Anlagen zuweisen.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für sichere Anlagen
 
@@ -240,9 +240,9 @@ Verwenden Sie die folgende Syntax, um eine Richtlinie für sichere Anlagen zu er
 New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
-In diesem Beispiel wird eine Richtlinie für sichere Anlagen mit dem Namen "Contoso All" mit den folgenden Werten erstellt:
+In diesem Beispiel wird eine Richtlinie für sichere Anlagen namens "Contoso All" mit den folgenden Werten erstellt:
 
-- Blockieren Sie Nachrichten, die gefunden werden, dass sie Schadsoftware enthalten, indem sie Tresor Dokumente scannen (wir verwenden nicht den _Parameter "Action",_ und der Standardwert lautet `Block` ).
+- Blockieren Sie Nachrichten, die gefunden werden, dass sie Schadsoftware enthalten, indem Tresor Dokumente scannen (der _Parameter "Action"_ wird nicht verwendet, und der Standardwert lautet `Block` ).
 - Die Umleitung ist aktiviert, und Nachrichten, die Schadsoftware enthalten, werden zur Analyse und Untersuchung an sec-ops@contoso.com gesendet.
 - Wenn Tresor Attachments-Überprüfung nicht verfügbar ist oder Fehler auftreten, übermitteln Sie die Nachricht nicht (wir verwenden den _Parameter ActionOnError_ nicht und der Standardwert lautet `$true` ).
 
@@ -439,7 +439,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Sa
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Tresor Anlagenrichtlinien erfolgreich erstellt, geändert oder entfernt haben:
 
-- Wechseln Sie im Portal Microsoft 365 Defender zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für \>  \>  \> **Bedrohungsrichtlinien** \> **Tresor Anlagen.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, indem Sie auf den Namen klicken, und zeigen Sie die Details im Flyout an.
+- Wechseln Sie im Portal Microsoft 365 Defender zur Seite Richtlinien für **E-Mail-&** \> **Zusammenarbeitsrichtlinien & Richtlinien** für \> **Bedrohungsregeln** \>  Tresor \> **Anlagen.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, indem Sie auf den Namen klicken, und zeigen Sie die Details im Flyout an.
 
 - Ersetzen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell \<Name\> durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
