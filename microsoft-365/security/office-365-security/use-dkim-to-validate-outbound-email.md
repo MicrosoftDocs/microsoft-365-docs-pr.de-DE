@@ -20,12 +20,12 @@ ms.custom:
 description: Erfahren Sie, wie Sie DomainKeys Identified Mail (DKIM) mit Microsoft 365 verwenden können, um sicherzustellen, dass die von Ihrer benutzerdefinierten Domäne gesendeten Nachrichten von den Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 9aa67d7875bb7f81c6569b56704d221b57378962
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082780"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108499"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden
 
@@ -198,7 +198,7 @@ Nachdem Sie die CNAME-Einträge im DNS veröffentlicht haben, können Sie die DK
 
 1. Öffnen Sie das Microsoft 365 Defender-Portal [mit Ihrem Geschäfts-, Schul- oder Unikonto](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Navigieren Sie zu **E-Mail & Zusammenarbeit** \> **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> Abschnitt **Regeln** \> **DKIM**. Oder verwenden Sie <https://security.microsoft.com/dkimv2>, um direkt zur DKIM-Seite zu wechseln.
+2. Navigieren Sie zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** Seite \> **Regeln** Abschnitt \> **DKIM**. Oder verwenden Sie <https://security.microsoft.com/dkimv2>, um direkt zur DKIM-Seite zu wechseln.
 
 3. Wählen Sie auf der Seite **DKIM** die Domäne aus, indem Sie auf den Namen klicken.
 
