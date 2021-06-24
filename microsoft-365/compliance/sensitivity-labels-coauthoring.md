@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796054"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062186"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Dieses Feature ist derzeit in der Vorschau und kann jederzeit geändert werden. 
->
-> Aktivieren Sie dieses Feature in einem Testmandanten und nicht in einem Produktionsmandanten, aus folgendem Grund:
-> - Dieses Feature nimmt Änderungen an den Bezeichnungen von Metadaten vor und nicht alle Apps auf allen Plattformen unterstützen diese Änderung derzeit
-> - Sie können dieses Feature nicht selbst deaktivieren, nachdem es aktiviert wurde
+> Dieses Feature ist derzeit in der Vorschau und kann jederzeit geändert werden.
 
 Aktivieren Sie die Einstellung, um die [gemeinsame Erstellung](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) für Office-Desktop-Apps zu unterstützen, sodass mehrere Benutzer diese Dokumente gleichzeitig bearbeiten können, wenn Dokumente mit [Vertraulichkeitsbeschriftungen](sensitivity-labels.md)gekennzeichnet und verschlüsselt werden.
 
@@ -76,15 +72,13 @@ Im folgenden Abschnitt finden Sie eine Liste der Apps und Dienste, die diese Ein
 
 Stellen Sie sicher, dass Sie die folgenden Voraussetzungen verstanden haben, bevor Sie dieses Feature aktivieren.
 
-- Sie müssen für diese Vorschau einen Testmandanten verwenden.
-
 - Sie müssen ein globaler Administrator sein, um dieses Feature aktivieren zu können.
 
 - Vertraulichkeitsbezeichnungen müssen für [ Office-Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md) sein für den Mandanten. Wenn dieses Feature noch nicht aktiviert ist, wird es automatisch aktiviert, wenn Sie die Einstellung auswählen, mit der die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen aktiviert werden soll.
 
 - Microsoft 365 Apps for Enterprise:
-    - **Windows**: Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)
-    - **macOS**: Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider)
+    - **Windows**: Mindestversion 2105: 18. Juni
+    - **macOS**: Mindestversion 16.50
     - **iOS**: Wird noch nicht unterstützt
     - **Android**: Wird noch nicht unterstützt
 
@@ -142,34 +136,26 @@ Diese Vorschau-Version des gemeinsamen Erstellens für Dateien, die mit Vertraul
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>So aktivieren Sie die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen
 
 > [!CAUTION]
-> Die Aktivierung dieses Features kann nicht rückgängig gemacht werden. Während sich das Feature in der Vorschau befindet, testen Sie es nur in einer Nicht-Produktionsumgebung, und erst, nachdem Sie die auf dieser Seite dokumentierten Metadatenänderungen, Voraussetzungen, Einschränkungen und bekannten Probleme gelesen und verstanden haben.
+> Die Aktivierung dieses Features kann nicht rückgängig gemacht werden. Während sich das Feature in der Vorschau befindet, aktivieren Sie es nur nachdem Sie die auf dieser Seite dokumentierten Metadatenänderungen, Voraussetzungen, Einschränkungen und bekannten Probleme gelesen und verstanden haben.
 
-Während der Vorschau müssen Sie eine bestimmte URL verwenden, um auf diese Einstellung im Microsoft 365 Compliance Center zuzugreifen.
+1. Melden Sie sich beim [Microsoft 365 Compliance Center](https://compliance.microsoft.com) als globaler Administrator für Ihren Mandanten an.
 
-1. Melden Sie sich über den folgenden Link beim Microsoft 365 Compliance Center als globaler Administrator für Ihren Testmandanten an:
+2. Wählen Sie im Navigationsbereich **Einstellungen** > **gemeinsame Dokumenterstellung für Dateien mit Vertraulichkeitsdateien** aus.
+
+2. Lesen Sie auf der Seite **gemeinsame Dokumenterstellung für Dateien mit Vertraulichkeitsbezeichnungen (Vorschau)** Seite die Zusammenfassungsbeschreibung, die Voraussetzungen, die zu erwartenden Komponenten und die Warnung, dass Sie diese Einstellung nicht deaktivieren können, nachdem Sie sie aktiviert haben.
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    Über diesen Link gelangen Sie direkt zur Mandanteneinstellung, **Gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen**.
-
-    > [!IMPORTANT]
-    > Bevor Sie fortfahren, überprüfen Sie, ob Sie bei einem Testmandanten angemeldet sind, der Ihre Benutzer nicht beeinträchtigt: 
-    >
-    > Wählen Sie den Kreis mit Ihren Kontoinitialen oben rechts im Compliance Center aus und bestätigen Sie, dass der Name des Mandanten Ihren beabsichtigten Testmandanten anzeigt.
-    
-2. Lesen Sie die zusammenfassende Beschreibung, die Voraussetzungen, die zu erwartenden Ereignisse und die Warnung, dass Sie diese Einstellung nach dem Einschalten nicht deaktivieren können. Wählen Sie dann **Aktivieren der gemeinsamen Erstellung für Dateien mit Vertraulichkeitsbezeichnungen**, und **Anwenden**:
+    Wählen Sie dann **Aktivieren der gemeinsamen Erstellung für Dateien mit Vertraulichkeitsbezeichnungen**, und **Anwenden**:
     
     ![Option zum Aktivieren der gemeinsamen Erstellung für Dateien mit Vertraulichkeitsbezeichnungen](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. Warten Sie 24 Stunden, bis diese Einstellung in Ihrer Umgebung repliziert wurde, bevor Sie dieses neue Feature für die gemeinsame Erstellung testen.
+3. Warten Sie 24 Stunden, bis diese Einstellung in Ihrer Umgebung repliziert wurde, bevor Sie dieses neue Feature für die gemeinsame Erstellung nutzen.
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>Wenden Sie sich an den Support, wenn Sie dieses Feature deaktivieren müssen
 
 > [!IMPORTANT]
 > Wenn Sie dieses Feature deaktivieren müssen, beachten Sie, dass Bezeichnungsinformationen verloren gehen können.
 
-Nachdem Sie die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen für Ihren Mandanten aktiviert haben, können Sie diese Einstellung nicht selbst deaktivieren. Aus diesem Grund ist es so wichtig, dass Sie die Voraussetzungen, Konsequenzen und Einschränkungen überprüfen und verstehen, bevor Sie diese Einstellung aktivieren. Aus diesem Grund empfehlen wir auch, dieses Feature nicht mit einem Produktionsmandanten, sondern mit einem Testmandanten zu testen.
+Nachdem Sie die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen für Ihren Mandanten aktiviert haben, können Sie diese Einstellung nicht selbst deaktivieren. Aus diesem Grund ist es so wichtig, dass Sie die Voraussetzungen, Konsequenzen und Einschränkungen überprüfen und verstehen, bevor Sie diese Einstellung aktivieren.
 
 ![Option, bei der die gemeinsame Erstellung für Vertraulichkeitsbezeichnungen aktiviert ist](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 

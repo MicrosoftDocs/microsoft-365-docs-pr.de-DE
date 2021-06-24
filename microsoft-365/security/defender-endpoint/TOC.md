@@ -273,6 +273,8 @@
 #### [Herunterladen von Updates für Antivirensoftware und Antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Verwalten der Quellen für Updates für Microsoft Defender Antivirus-Schutz](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Verwalten des Zeitplans für Download und Anwendung von Schutzupdates](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Verwalten des schrittweisen Rollouts von Microsoft Defender-Updates](manage-gradual-rollout.md)
+##### [Konfigurieren des schrittweisen Rollouts von Microsoft Defender-Updates](configure-updates.md)
 ##### [Verwalten von Updates und Scans von Microsoft Defender Antivirus für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Verwalten von ereignisbasierten erzwungenen Updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Verwalten von Updates für Mobilgeräte und virtuelle Computer (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -309,7 +311,6 @@
 ##### [Behandlung von Leistungsproblemen](troubleshoot-performance-issues.md)
 ##### [Überprüfen von Ereignisprotokollen und Fehlercodes zum Behandeln von Problemen mit Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Behandeln von Problemen mit Microsoft Defender Antivirus bei der Migration von einer Drittanbieterlösung](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
 
 #### [Hardwarebasierte Isolation]()
 ##### [Hardwarebasierte Isolation in Windows 10](overview-hardware-based-isolation.md)
