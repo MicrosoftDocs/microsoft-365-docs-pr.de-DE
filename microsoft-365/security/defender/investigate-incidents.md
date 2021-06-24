@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fdfc065aea3549e99de72c968c0fa19412f9e246
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782825"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105356"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Untersuchen von Vorfällen in Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "52782825"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender fasst alle zugehörigen Warnungen, Ressourcen, Untersuchungen und Nachweise aus Ihren Geräten, Benutzern und Postfächern zu einem Vorfall zusammen, um Ihnen einen umfassenden Überblick über die gesamte Breite eines Angriffs zu geben.
+Microsoft 365 Defender aggregiert alle zugehörigen Warnungen, Ressourcen, Untersuchungen und Nachweise aus Ihren Geräten, Benutzern und Postfächern zu einem Vorfall, um Ihnen einen umfassenden Überblick über die gesamte Breite eines Angriffs zu geben.
 
 Innerhalb eines Vorfalls analysieren Sie die Warnungen, die sich auf Ihr Netzwerk auswirken, verstehen, was sie bedeuten, und sortieren die Nachweise, damit Sie einen effektiven Korrekturplan erstellen können.
 
@@ -62,7 +62,7 @@ Sie können auch die Hauptseite für einen Vorfall öffnen, indem Sie den Namen 
 
 ## <a name="summary"></a>Zusammenfassung
 
-Auf der **Zusammenfassungsseite** erhalten Sie einen Momentaufnahme-Blick auf die wichtigsten Dinge, die Sie über den Vorfall feststellen können.
+Auf der **Zusammenfassungsseite** erhalten Sie einen Momentaufnahme-Blick auf die wichtigsten Punkte, die Sie über den Vorfall feststellen können.
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Beispiel für die Seite &quot;Zusammenfassung&quot; für einen Vorfall im Microsoft 365 Security Center":::
 
@@ -91,7 +91,7 @@ Im Folgenden sehen Sie ein Beispiel.
 
 Standardmäßig sind die Warnungen chronologisch sortiert, damit Sie sehen können, wie der Vorfall im Laufe der Zeit ausgespielt wurde. Wenn Sie eine Warnung innerhalb eines Vorfalls auswählen, zeigt Microsoft 365 Defender die spezifischen Warnungsinformationen für den Kontext des Gesamtvorfalls an. 
 
-Sie können die Ereignisse der Warnung sehen, die andere ausgelöste Warnungen die aktuelle Warnung verursacht haben, sowie alle betroffenen Entitäten und Aktivitäten, die an dem Angriff beteiligt sind, einschließlich Dateien, Benutzern und Postfächern.
+Sie können die Ereignisse der Warnung sehen, durch die andere ausgelöste Warnungen die aktuelle Warnung verursacht haben, sowie alle betroffenen Entitäten und Aktivitäten, die an dem Angriff beteiligt sind, einschließlich Dateien, Benutzern und Postfächern.
 
 Im Folgenden sehen Sie ein Beispiel.
 
@@ -118,7 +118,7 @@ Sie können das Häkchen für ein Gerät aktivieren, um Details zu Gerät, Verze
 Auf der Geräteseite können Sie zusätzliche Informationen über das Gerät sammeln, z. B. alle Warnungen, eine Zeitachse und Sicherheitsempfehlungen. Beispielsweise können Sie auf der Registerkarte **"Zeitachse"** einen Bildlauf durch die Computerzeitachse durchführen und alle auf dem Computer beobachteten Ereignisse und Verhaltensweisen in chronologischer Reihenfolge anzeigen, durchsetzt mit den ausgelösten Warnungen.
 
 > [!TIP]
-> Sie können Scans bei Bedarf auf einer Geräteseite durchführen. Wählen Sie im Microsoft 365 Security Center **Endpunkte > Gerätebestand** aus. Wählen Sie ein Gerät mit Warnungen aus, und führen Sie dann einen Antivirenscan aus. Aktionen, z. B. Antivirenscans, werden nachverfolgt und auf der **Gerätebestandsseite** angezeigt. Weitere Informationen finden Sie unter [Ausführen Microsoft Defender Antivirus Scans auf Geräten.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Sie können Scans bei Bedarf auf einer Geräteseite durchführen. Wählen Sie im Microsoft 365 Security Center **Endpunkte > Gerätebestand** aus. Wählen Sie ein Gerät mit Warnungen aus, und führen Sie dann einen Antivirenscan aus. Aktionen, z. B. Antivirenscans, werden nachverfolgt und auf der **Gerätebestandsseite** angezeigt. Weitere Informationen finden Sie unter [Ausführen Microsoft Defender Antivirus Überprüfung auf Geräten.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
 
 ## <a name="users"></a>Benutzer
 
@@ -141,13 +141,21 @@ Sie können das Häkchen für ein Postfach aktivieren, um eine Liste aktiver War
 
 ## <a name="investigations"></a>Untersuchungen
 
-Die Registerkarte **"Untersuchungen"** listet alle [automatisierten Untersuchungen auf,](m365d-autoir.md) die durch Warnungen in diesem Vorfall ausgelöst werden. Die Untersuchungen führen Korrekturmaßnahmen aus oder warten auf die Genehmigung von Aktionen durch den Analysten, je nachdem, wie Sie Ihre automatisierten Untersuchungen für die Ausführung in Microsoft Defender für Endpunkt und Defender für Office 365 konfiguriert haben.
+Die Registerkarte **"Untersuchungen"** listet alle [automatisierten Untersuchungen auf,](m365d-autoir.md) die durch Warnungen in diesem Vorfall ausgelöst werden. Die Untersuchungen führen Korrekturmaßnahmen aus oder warten auf die Genehmigung von Aktionen durch den Analysten, je nachdem, wie Sie Ihre automatisierten Untersuchungen so konfiguriert haben, dass sie in Microsoft Defender für Endpunkt und Defender für Office 365 ausgeführt werden.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Beispiel für eine Seite &quot;Untersuchungen&quot; für einen Vorfall":::
 
-Wählen Sie eine Untersuchung aus, um zur Seite mit den Untersuchungsdetails zu navigieren und vollständige Informationen zum Untersuchungs- und Behebungsstatus zu erhalten. Wenn im Rahmen der Untersuchung Aktionen zur Genehmigung ausstehen, werden sie auf der Registerkarte "Ausstehende Aktionen" angezeigt. Ergreifen sie Maßnahmen im Rahmen der Vorfallbehebung.
+Wählen Sie eine Untersuchung aus, um zur Detailseite zu navigieren, um vollständige Informationen zum Untersuchungs- und Wartungsstatus zu erhalten. Wenn im Rahmen der Untersuchung Aktionen zur Genehmigung ausstehen, werden sie auf der Registerkarte **"Verlauf ausstehender Aktionen"** angezeigt. Ergreifen sie Maßnahmen im Rahmen der Vorfallbehebung.
 
-Weitere Informationen finden Sie unter ["Automatisierte Untersuchung und Reaktion" in Microsoft 365 Defender.](m365d-autoir.md)
+Es gibt auch eine Registerkarte **"Untersuchungsdiagramm",** die Zeigt:
+
+- Die Verbindung von Warnungen zu den betroffenen Ressourcen in Ihrer Organisation.
+- Welche Entitäten mit welchen Warnungen zusammenhängen und wie sie Teil der Geschichte des Angriffs sind.
+- Die Warnungen für den Vorfall.
+
+Das Untersuchungsdiagramm hilft Ihnen, den gesamten Umfang des Angriffs schnell zu verstehen, indem die verschiedenen verdächtigen Entitäten, die Teil des Angriffs sind, mit ihren verwandten Ressourcen wie Benutzern, Geräten und Postfächern verbunden werden. 
+
+Weitere Informationen finden Sie [unter "Automatisierte Untersuchung und Reaktion" in Microsoft 365 Defender.](m365d-autoir.md)
 
 ## <a name="evidence-and-response"></a>Nachweise und Antworten
 
@@ -158,22 +166,6 @@ Auf der Registerkarte **"Nachweise und Reaktion"** werden alle unterstützten Er
 Microsoft 365 Defender untersucht automatisch alle von den Vorfällen unterstützten Ereignisse und verdächtigen Entitäten in den Warnungen und stellt Ihnen Informationen zu wichtigen E-Mails, Dateien, Prozessen, Diensten, IP-Adressen und mehr bereit. Auf diese Weise können Sie potenzielle Bedrohungen im Vorfall schnell erkennen und blockieren.
 
 Jede der analysierten Entitäten ist mit einem Bewertungsstatus (bösartig, verdächtig, sauber) und einem Korrekturstatus gekennzeichnet. Dies hilft Ihnen, den Wartungsstatus des gesamten Vorfalls zu verstehen und zu verstehen, welche nächsten Schritte ausgeführt werden können.
-
-## <a name="graph-in-preview"></a>Graph (in der Vorschau)
-
-Mit der neuen **Registerkarte Graph** (in der Vorschau) können Sie Folgendes sehen:
-
-- Die Verbindung von Warnungen zu den betroffenen Ressourcen in Ihrer Organisation.
-- Welche Entitäten mit welchen Warnungen zusammenhängen und wie sie Teil der Geschichte des Angriffs sind.
-- Die Warnungen für den Vorfall.
-
-Im Folgenden sehen Sie ein Beispiel.
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Beispiel für eine Graph Seite für einen Vorfall":::
-
-Das Vorfalldiagramm hilft Ihnen, den gesamten Umfang des Angriffs schnell zu verstehen, indem die verschiedenen verdächtigen Entitäten, die Teil des Angriffs sind, mit ihren verwandten Ressourcen wie Benutzern, Geräten und Postfächern verbunden werden. 
-
-Jetzt können Sie verstehen, wie sich der Angriff über Ihr Netzwerk im Laufe der Zeit ausbreitet, wo er begonnen hat und wie weit der Angriff verlaufen ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

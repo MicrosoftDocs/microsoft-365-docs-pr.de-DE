@@ -1,6 +1,6 @@
 ---
 title: Onboarding von Windows 10 Geräten in Microsoft Defender für Endpunkt über Gruppenrichtlinien
-description: Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Windows 10 Geräten bereitzustellen, sodass sie in den Dienst integriert sind.
+description: Verwenden Sie die Gruppenrichtlinie, um das Konfigurationspaket auf Windows 10 Geräten bereitzustellen, sodass sie in den Dienst integriert sind.
 keywords: Konfigurieren von Geräten mithilfe von Gruppenrichtlinien, Geräteverwaltung, Konfigurieren von Microsoft Defender für Endpunktgeräte, Onboarding von Microsoft Defender für Endpunktgeräte, Gruppenrichtlinie
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841834"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105686"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10 Geräten mithilfe von Gruppenrichtlinien 
 
@@ -34,7 +34,7 @@ ms.locfileid: "52841834"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
@@ -66,7 +66,7 @@ Sehen Sie sich die [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
 4. Wechseln Sie im **Gruppenrichtlinienverwaltungs-Editor** zu **"Computerkonfiguration",** **"Einstellungen"** und dann **"Systemsteuerungseinstellungen".**
 
-5. Klicken Sie mit der rechten Maustaste auf **geplante Vorgänge,** zeigen Sie auf **Neu,** und klicken Sie dann auf **"Sofortvorgang" (mindestens Windows 7).**
+5. Klicken Sie mit der rechten Maustaste auf **geplante Vorgänge,** zeigen Sie auf **Neu,** und klicken Sie dann auf **"Direktvorgang" (mindestens Windows 7).**
 
 6. Wechseln Sie im geöffneten **Aufgabenfenster** zur Registerkarte **"Allgemein".** Klicken Sie unter **"Sicherheitsoptionen"** auf **"Benutzer oder Gruppe ändern",** und geben Sie "SYSTEM" ein, und klicken Sie dann auf **"Namen überprüfen",** und klicken Sie dann auf **"OK".** NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird.
 
@@ -103,7 +103,7 @@ Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren
 
 4.  Klicken Sie auf **"Richtlinien"** und dann auf **"Administrative Vorlagen".**
 
-5.  Klicken Sie auf **Windows Komponenten,** und **Windows Defender Sie SmartScreen.**
+5.  Klicken Sie auf **Windows Komponenten,** und **Windows Defender Sie Dann SmartScreen.**
 
 6.  Wählen Sie aus, ob Sie die Beispielfreigabe auf Ihren Geräten aktivieren oder deaktivieren möchten.
 
@@ -119,9 +119,9 @@ Fahren Sie nach dem Konfigurieren des Onboardingskripts mit der Bearbeitung ders
 
 Alle Richtlinien befinden sich unter `Computer Configuration\Policies\Administrative Templates` .
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Windows Defender SmartScreen*
+**Richtlinienspeicherort:** \Windows-Komponenten\Windows Defender ATP
 
-Richtlinie | Einstellung 
+Richtlinie | Setting 
 :---|:---
 Enable\Disable Sample collection|   Aktiviert – "Beispielsammlung auf Computern aktivieren" aktiviert
 
@@ -129,7 +129,7 @@ Enable\Disable Sample collection|   Aktiviert – "Beispielsammlung auf Computer
 
 **Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus
 
-Richtlinie | Einstellung 
+Richtlinie | Setting 
 :---|:---
 Konfigurieren der Erkennung für potenziell unerwünschte Anwendungen | Aktiviert, Blockieren
 
@@ -137,7 +137,7 @@ Konfigurieren der Erkennung für potenziell unerwünschte Anwendungen | Aktivier
 
 **Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\MAPS
 
-Richtlinie | Einstellung 
+Richtlinie | Setting 
 :---|:---
 Microsoft MAPS beitreten | Aktiviert, Erweiterte KARTEN
 Senden von Dateibeispielen, wenn eine weitere Analyse erforderlich ist | Aktiviert, Sichere Beispiele senden
@@ -146,7 +146,7 @@ Senden von Dateibeispielen, wenn eine weitere Analyse erforderlich ist | Aktivie
 
 **Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\Echtzeitschutz
 
-Richtlinie | Einstellung 
+Richtlinie | Setting 
 :---|:---
 Deaktivieren des Echtzeitschutzes|Deaktiviert
 Aktivieren der Verhaltensüberwachung|Aktiviert
@@ -155,11 +155,11 @@ Scannen aller heruntergeladenen Dateien und Anlagen|Aktiviert
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender AntivirusScan
+**Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\Scan
 
 Diese Einstellungen konfigurieren regelmäßige Scans des Endpunkts. Es wird empfohlen, einen wöchentlichen Schnellscan durchzuführen, der die Leistung zulässt.
 
-Richtlinie | Einstellung 
+Richtlinie | Setting 
 :---|:---
 Überprüfen Sie die neuesten Informationen zur Viren- und Spywaresicherheit, bevor Sie einen geplanten Scan ausführen. |Aktiviert
 
@@ -168,7 +168,7 @@ Richtlinie | Einstellung
 
 **Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
-Abrufen der aktuellen Liste der GUIDs zur Verringerung der Angriffsfläche aus dem Anpassen der Regeln zur Verringerung der [Angriffsfläche](customize-attack-surface-reduction.md)
+Abrufen der aktuellen Liste der GUIDs zur Verringerung der Angriffsfläche aus der Anpassung der Regeln zur Verringerung der [Angriffsfläche](customize-attack-surface-reduction.md)
 
 1. Öffnen Sie die **Richtlinie "Attack Surface Reduction konfigurieren".**
 
@@ -184,7 +184,7 @@ Abrufen der aktuellen Liste der GUIDs zur Verringerung der Angriffsfläche aus d
 
 
 
-Richtlinie | Einstellung 
+Richtlinie | Setting 
 :---|:---
 Konfigurieren des kontrollierten Ordnerzugriffs| Aktiviert, Überwachungsmodus
 
@@ -206,7 +206,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 
     1. Klicken Sie auf **"Paket herunterladen",** und speichern Sie die .zip Datei.
 
-2. Extrahieren Sie den Inhalt der .zip-Datei an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über eine Datei mit dem Namen *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
+2. Extrahieren Sie den Inhalt der .zip-Datei an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über eine Datei mit dem Namen *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* verfügen.
 
 3. Öffnen Sie die [Gruppenrichtlinien-Verwaltungskonsole (Group Policy Management Console,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt (Group Policy Object, GPO), das Sie konfigurieren möchten, und klicken Sie auf **"Bearbeiten".**
 
@@ -218,7 +218,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 
 7. Wählen Sie **"Ausführen" aus, ob der Benutzer angemeldet ist oder nicht,** und aktivieren Sie das Kontrollkästchen **"Ausführen mit den höchsten Berechtigungen".**
 
-8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den Dateinamen und Speicherort der freigegebenen  *Datei WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ein.
+8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den Dateinamen und speicherort der freigegebenen  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd-Datei* ein.
 
 9. Klicken Sie auf **"OK",** und schließen Sie alle geöffneten GPMC-Fenster.
 
@@ -238,7 +238,7 @@ Bei Gruppenrichtlinien gibt es keine Option zum Überwachen der Bereitstellung v
 > Es kann mehrere Tage dauern, bis Geräte in der Geräteliste angezeigt **werden.** Dies umfasst die Zeit, die es dauert, bis die Richtlinien auf das Gerät verteilt werden, die Zeit, bis sich der Benutzer anmeldet, und die Zeit, die der Endpunkt benötigt, um mit der Berichterstellung zu beginnen.
 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-topics"></a>Ähnliche Themen
 - [Onboarding von Windows 10 Geräten mithilfe von Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md)

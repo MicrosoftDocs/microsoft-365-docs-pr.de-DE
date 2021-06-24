@@ -20,12 +20,12 @@ description: Administratoren können mehr über den Bedrohungsschutz in Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083680"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105392"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -95,8 +95,8 @@ Weitere Informationen zu den empfohlenen Einstellungen für Antischadsoftware fi
 
 3. Klicken Sie im daraufhin geöffneten Flyout mit den Richtliniendetails auf **"Schutzeinstellungen bearbeiten",** und konfigurieren Sie dann die folgenden Einstellungen:
    - Abschnitt **"Schutzeinstellungen":**
-     - Wählen Sie **"Allgemeinen Anlagenfilter aktivieren"** aus, um den allgemeinen Anlagenfilter zu aktivieren. Klicken Sie auf **Dateitypen anpassen,** um weitere Dateitypen hinzuzufügen.
-     - **Automatische Bereinigung der Nullstunde für Schadsoftware aktivieren:** Überprüfen Sie, ob diese Einstellung ausgewählt ist. Weitere Informationen zu ZAP für Schadsoftware finden Sie unter [Zero-Hour Auto Purge (ZAP) für Schadsoftware.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)
+     - **Aktivieren Sie den allgemeinen Anlagenfilter:** Auswählen (aktivieren). Klicken Sie auf **Dateitypen anpassen,** um weitere Dateitypen hinzuzufügen.
+     - **Automatische Bereinigung von Nullstunden für Schadsoftware aktivieren:** Überprüfen Sie, ob diese Einstellung ausgewählt ist. Weitere Informationen zu ZAP für Schadsoftware finden Sie unter [Zero-Hour Auto Purge (ZAP) für Schadsoftware.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)
    - **Benachrichtigungsbereich:** Stellen Sie sicher, dass keine der Benachrichtigungseinstellungen ausgewählt ist.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
@@ -157,7 +157,7 @@ Ausführliche Anweisungen zum Konfigurieren von Antiphishingrichtlinien finden S
 
 Weitere Informationen zu den empfohlenen Einstellungen für Antispam finden Sie unter [EOP Antispamrichtlinieneinstellungen.](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-1. Öffnen Sie die Seite **"Antispamrichtlinien"** im portal Microsoft 365 Defender unter <https://security.microsoft.com/antispam> .
+1. Öffnen Sie die Seite **"Antispamrichtlinien"** im Microsoft 365 Defender-Portal unter <https://security.microsoft.com/antispam> .
 
 2. Wählen Sie auf der Seite **"Antispamrichtlinien"** die Richtlinie mit dem Namen **"Eingehende Antispamrichtlinie" (Standard)** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -211,12 +211,12 @@ Weitere Informationen zu den empfohlenen Einstellungen für Tresor Anlagen finde
      > [!IMPORTANT]
      > **Bevor Sie Tresor Anlagen für SharePoint, OneDrive und Microsoft Teams aktivieren, überprüfen Sie, ob die Überwachungsprotokollierung in Ihrer Organisation aktiviert ist.** Diese Aktion wird in der Regel von einer Person ausgeführt, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren der [Überwachungsprotokollsuche!](../../compliance/turn-audit-log-search-on-or-off.md)
 
-   - **Aktivieren Sie Tresor Dokumente für Office Clients:** Aktivieren Sie diese Einstellung ( ![ Umschalten ](../../media/scc-toggle-on.png) ). Beachten Sie, dass dieses Feature nur mit Microsoft 365 E5- oder Microsoft 365 E5 Security-Lizenzen verfügbar und von Bedeutung ist.
+   - **Aktivieren Sie Tresor Dokumente für Office Clients:** Aktivieren Sie diese Einstellung ( ![ Umschalten ](../../media/scc-toggle-on.png) ). Beachten Sie, dass dieses Feature nur mit Microsoft 365 E5- oder Microsoft 365 E5 Security-Lizenzen verfügbar und sinnvoll ist.
    - **Zulassen, dass Benutzer durch geschützte Ansicht klicken, auch wenn Tresor Dokumente die Datei als schädlich identifiziert** haben: Überprüfen Sie, ob diese Einstellung deaktiviert ist ( ![ Deaktivieren ](../../media/scc-toggle-off.png) ).
 
    Wenn Sie fertig sind, klicken Sie auf **"Speichern".**
 
-3. Klicken Sie wieder auf der Seite **Tresor Anlagen** auf das ![ Symbol Erstellen . ](../../media/m365-cc-sc-create-icon.png)
+3. Klicken Sie zurück auf der **Seite Tresor Anlagen** auf das Symbol ![ Erstellen . ](../../media/m365-cc-sc-create-icon.png)
 
 4. Konfigurieren Sie im daraufhin geöffneten Assistenten zum **Erstellen Tresor Anlagenrichtlinien** die folgenden Einstellungen:
    - **Benennen Sie die Seite "Richtlinie":**
@@ -230,8 +230,8 @@ Weitere Informationen zu den empfohlenen Einstellungen für Tresor Anlagen finde
 
 5. Wenn Sie fertig sind, klicken Sie auf **"Absenden"** und dann auf **"Fertig".**
 
-6. (Empfohlen) Führen Sie als globaler Administrator oder SharePoint Onlineadministrator das Cmdlet **["Set-SPOTenant"](/powershell/module/sharepoint-online/Set-SPOTenant)** aus, wobei der Parameter _"DisallowInfectedFileDownload"_ in SharePoint Online PowerShell festgelegt `$true` ist.
-   - `$true` blockiert alle Aktionen (mit Ausnahme von Delete) für erkannte Dateien. Personen können erkannte Dateien nicht öffnen, verschieben, kopieren oder freigeben.
+6. (Empfohlen) Führen Sie als globaler Administrator oder SharePoint Onlineadministrator das Cmdlet **["Set-SPOTenant"](/powershell/module/sharepoint-online/Set-SPOTenant)** aus, wobei der _Parameter "DisallowInfectedFileDownload"_ `$true` in SharePoint Online-PowerShell festgelegt ist.
+   - `$true` blockiert alle Aktionen (mit Ausnahme von "Löschen") für erkannte Dateien. Personen können erkannte Dateien nicht öffnen, verschieben, kopieren oder freigeben.
    - `$false` blockiert alle Aktionen außer "Löschen" und "Herunterladen". Personen können das Risiko akzeptieren und eine erkannte Datei herunterladen.
 
 7. Es kann bis zu 30 Minuten dauern, bis ihre Änderungen auf alle Microsoft 365 Rechenzentren verteilt sind.
@@ -251,7 +251,7 @@ Weitere Informationen zu den empfohlenen Einstellungen für Tresor Links finden 
 2. Klicken Sie auf der Seite **Tresor Links** auf **globale Einstellungen,** und konfigurieren Sie dann die folgenden Einstellungen für das angezeigte Flyout:
    - **Einstellungen, die für Inhalte im Abschnitt "Unterstützte Office 365 Apps" gelten:**
      - **Verwenden Sie Tresor Links in Office 365 Apps:** Überprüfen Sie, ob diese Einstellung aktiviert ist ( ![ Umschalten ](../../media/scc-toggle-on.png) ).
-     - **Nicht nachverfolgen, wenn Benutzer in Office 365 Apps auf geschützte Links klicken:** Deaktivieren ( ![ Deaktivieren ](../../media/scc-toggle-off.png) )
+     - **Nicht nachverfolgen, wenn Benutzer in Office 365 Apps auf geschützte Links klicken:** Deaktivieren Sie diese Einstellung ( ![ Deaktivieren ](../../media/scc-toggle-off.png) ).
      - **Benutzer dürfen in Office 365 Apps nicht auf die ursprüngliche URL klicken:** Überprüfen Sie, ob diese Einstellung aktiviert ist ( ![ Umschalten ](../../media/scc-toggle-on.png) ).
 
    Wenn Sie fertig sind, klicken Sie auf **"Speichern".**
@@ -271,7 +271,7 @@ Weitere Informationen zu den empfohlenen Einstellungen für Tresor Links finden 
      - **Wenden Sie Tresor Links auf E-Mail-Nachrichten** an, die innerhalb der Organisation gesendet werden: Wählen Sie diese Einstellung aus (aktivieren).
      - **Benutzerklicks nicht nachverfolgen:** Überprüfen Sie, ob diese Einstellung nicht ausgewählt (deaktiviert) ist.
      - **Benutzer dürfen nicht auf die ursprüngliche URL klicken:** Überprüfen Sie, ob diese Einstellung aktiviert (ausgewählt) ist.
-     - **Anzeigen des Organisationsbrandings auf Benachrichtigungs- und Warnseiten:** Das Auswählen dieser Einstellung (Aktivieren) ist erst sinnvoll, nachdem Sie die Anweisungen unter ["Anpassen des Microsoft 365 Designs für Ihre Organisation](../../admin/setup/customize-your-organization-theme.md) zum Hochladen Ihres Unternehmenslogos" befolgt haben.
+     - **Anzeigen des Organisationsbrandings auf Benachrichtigungs- und Warnseiten:** Das Auswählen dieser Einstellung (Aktivieren) ist erst sinnvoll, nachdem Sie die Anweisungen unter ["Anpassen des Microsoft 365 Designs für Ihre Organisation](../../admin/setup/customize-your-organization-theme.md) zum Hochladen Ihres Firmenlogos" befolgt haben.
      - **Schreiben Sie die folgenden URLs nicht neu:** Es gibt keine spezifische Empfehlung für diese Einstellung. Weitere Informationen finden Sie unter ["Die folgenden URLs nicht umschreiben" in Tresor Verknüpfungsrichtlinien.](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
    - **Benachrichtigungsseite:**
      - **Wie möchten Sie Benutzer benachrichtigen?** section: Optional, you can select **Use custom notification text** to enter customized notification text to use. Sie können auch **Microsoft Translator für die automatische Lokalisierung** verwenden auswählen, um den benutzerdefinierten Benachrichtigungstext in die Sprache des Benutzers zu übersetzen. Andernfalls lassen **Sie den Standardmäßigen Benachrichtigungstext** ausgewählt.

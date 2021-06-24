@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841791"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105572"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Manuelles Bereitstellen von Microsoft Defender für Endpunkt unter Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "52841791"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 In diesem Artikel wird beschrieben, wie Sie Microsoft Defender für Endpunkt manuell unter Linux bereitstellen. Eine erfolgreiche Bereitstellung erfordert den Abschluss aller folgenden Aufgaben:
 
@@ -65,7 +65,7 @@ Die Wahl des Kanals bestimmt den Typ und die Häufigkeit von Updates, die auf Ih
 Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geben, empfiehlt es sich, einige Geräte in Ihrem Unternehmen so zu konfigurieren, dass sie entweder *insiderschnell* oder langsam verwendet *werden.*
 
 > [!WARNING]
-> Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort aus zu installieren.
+> Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort zu installieren.
 
 ### <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL und Varianten (CentOS und Oracle Linux)
 
@@ -268,13 +268,13 @@ Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geb
 
 Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
 
-1. Wechseln Sie in Microsoft Defender Security Center zu **Einstellungen > Geräteverwaltung > Onboarding.**
+1. Gehen Sie im Microsoft Defender Security Center zu **Einstellungen > Geräteverwaltung > Onboarding**.
 2. Wählen Sie im ersten Dropdownmenü **Linux Server** als Betriebssystem aus. Wählen Sie im zweiten Dropdownmenü **"Lokales Skript" (für bis zu 10 Geräte)** als Bereitstellungsmethode aus.
 3. Wählen Sie **"Onboardingpaket herunterladen"** aus. Speichern Sie die Datei als WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Screenshot Microsoft Defender Security Center](images/atp-portal-onboarding-linux.png)
+    ![Screenshot des Microsoft Defender Security Center](images/atp-portal-onboarding-linux.png)
 
-4. Überprüfen Sie an einer Eingabeaufforderung, ob Die Datei vorhanden ist.
+4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen.
     Extrahieren Sie den Inhalt des Archivs:
 
     ```bash
@@ -330,7 +330,7 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
     > ```
     > Bitte beachten Sie, dass Sie nach Abschluss der Erstinstallation möglicherweise auch einen Proxy konfigurieren müssen. Siehe [Konfigurieren von Defender für Endpunkt unter Linux für statische Proxyermittlung: Konfiguration nach der Installation.](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
-5. Führen Sie einen Erkennungstest aus, um sicherzustellen, dass das Gerät ordnungsgemäß integriert ist, und melden Sie sich an den Dienst. Führen Sie die folgenden Schritte auf dem neu integrierten Gerät aus:
+5. Führen Sie einen Erkennungstest aus, um sicherzustellen, dass das Gerät ordnungsgemäß integriert ist, und melden Sie sich an den Dienst. Führen Sie die folgenden Schritte auf dem neu eingebundenen Gerät durch:
 
     - Stellen Sie sicher, dass der Echtzeitschutz aktiviert ist (angegeben durch ein Ergebnis der `1` Ausführung des folgenden Befehls):
 
@@ -338,17 +338,32 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
         mdatp health --field real_time_protection_enabled
         ```
 
-    - Öffnen Sie ein Terminalfenster. Kopieren Sie den folgenden Befehl, und führen Sie diesen aus:
+    - Öffnen Sie ein Terminal-Fenster. Kopieren Sie den folgenden Befehl und führen Sie ihn aus:
 
         ``` bash
         curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Die Datei sollte von Defender für Endpunkt unter Linux in Quarantäne gestellt worden sein. Verwenden Sie den folgenden Befehl, um alle erkannten Bedrohungen aufzuführen:
+    - Die Datei sollte von Defender für Endpunkt unter Linux in Quarantäne gestellt worden sein. Verwenden Sie den folgenden Befehl, um alle entdeckten Bedrohungen aufzulisten:
 
         ```bash
         mdatp threat list
         ```
+
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Linux-EDR (EDR)-Funktionen mit simulierten Angriffen
+
+Um die Funktionen von EDR für Linux zu testen, führen Sie die folgenden Schritte aus, um eine Erkennung auf Ihrem Linux-Server zu simulieren und den Fall zu untersuchen. 
+
+1.  Stellen Sie sicher, dass der integrierte Linux-Server in Microsoft Defender Security Center angezeigt wird. Wenn es sich um das erste Onboarding des Computers handelt, kann es bis zu 20 Minuten dauern, bis er angezeigt wird. 
+
+2.  Laden Sie die [Skriptdatei](https://aka.ms/LinuxDIY) herunter, extrahieren Sie sie auf einen integrierten Linux-Server, und führen Sie den folgenden Befehl aus: `./mde_linux_edr_diy.sh`
+
+3.  Nach ein paar Minuten sollte eine Erkennung in Microsoft Defender Security Center ausgelöst werden.
+
+4.  Sehen Sie sich die Warnungsdetails, die Computerzeitachse und die typischen Untersuchungsschritte an.
+
+
+
 
 ## <a name="installer-script"></a>Installer-Skript
 
@@ -381,7 +396,7 @@ Weitere Informationen zum Auffinden des automatisch generierten Protokolls, das 
 
 ## <a name="operating-system-upgrades"></a>Betriebssystemupgrades
 
-Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zuerst Defender für Endpunkt unter Linux deinstallieren, das Upgrade installieren und defender für Endpunkt auf Linux auf Ihrem Gerät neu konfigurieren.
+Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zuerst Defender für Endpunkt unter Linux deinstallieren, das Upgrade installieren und schließlich Defender für Endpunkt unter Linux auf Ihrem Gerät neu konfigurieren.
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Migrieren von Insiders-Fast zum Produktionskanal
 

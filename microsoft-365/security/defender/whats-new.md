@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096816"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105404"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Neuerungen in Microsoft 365 Defender
 
@@ -32,25 +32,29 @@ ms.locfileid: "53096816"
 > Sie möchten Microsoft 365 Defender ausprobieren? Sie können [in einer Laborumgebung auswerten](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) oder [ein Pilotprojekt in der Produktionsumgebung ausführen](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-Die folgenden Features sind in der neuesten Version von Microsoft 365 Defender allgemein verfügbar.
+Die folgenden Features sind allgemein verfügbar (GA) in der neuesten Version von Microsoft 365 Defender.
 
 RSS-Feed: Erhalten Sie Benachrichtigungen, wenn diese Seite aktualisiert wird, indem Sie die folgende URL kopieren und in Ihren Feed-Reader einfügen:
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Juni 2021
-- Bedrohungstags in [Microsoft 365 Defender Bericht zur Bedrohungsanalyse](threat-analytics.md) <br> Mithilfe von Bedrohungstags können Sie sich auf bestimmte Bedrohungskategorien konzentrieren und die relevantesten Berichte überprüfen. 
+
+## <a name="may-2021"></a>Mai 2021
+
+- [Neue Warnungsseite im Microsoft 365 Defender-Portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Stellt erweiterte Informationen für den Kontext eines Angriffs bereit. Sie können sehen, welche andere ausgelöste Warnung die aktuelle Warnung verursacht hat, sowie alle betroffenen Entitäten und Aktivitäten, die an dem Angriff beteiligt sind, einschließlich Dateien, Benutzern und Postfächern. Weitere Informationen finden Sie unter [Untersuchen von Warnungen.](/microsoft-365/security/defender/investigate-alerts)
+- [Trenddiagramm für Vorfälle und Warnungen im Microsoft 365 Defender Portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> Ermitteln Sie, ob es mehrere Warnungen für einen einzelnen Vorfall gibt oder ob Ihre Organisation mit mehreren verschiedenen Vorfällen angegriffen wird. Weitere Informationen finden Sie unter Priorisieren von [Vorfällen.](/microsoft-365/security/defender/incident-queue)
+
 
 ## <a name="april-2021"></a>April 2021
-- Microsoft 365 Defender<br> Das verbesserte [Microsoft 365 Defender-Portal](https://security.microsoft.com) ist jetzt verfügbar. Diese neue Erfahrung vereint Defender für Endpunkt, Defender für Office 365, Defender for Identity und vieles mehr in einem einzigen Portal. Dies ist die neue Startseite zum Verwalten Ihrer Sicherheitskontrollen. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
+- Microsoft 365 Defender<br> Das verbesserte [Microsoft 365 Defender-Portal](https://security.microsoft.com) ist jetzt verfügbar. Diese neue Oberfläche vereint Defender für Endpunkt, Defender für Office 365, Defender for Identity und vieles mehr in einem einzigen Portal. Dies ist die neue Startseite zum Verwalten Ihrer Sicherheitskontrollen. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
 
 - [bericht über Microsoft 365 Defender Bedrohungsanalyse](threat-analytics.md)<br>
- Die Bedrohungsanalyse hilft Ihnen, auf aktive Angriffe zu reagieren und sie zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die durch Microsoft 365 Defender Lösungen blockiert werden, und vorbeugende Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Resilienz zu erhöhen. Als Teil der einheitlichen Sicherheitsumgebung ist die Bedrohungsanalyse jetzt für Microsoft Defender für Endpunkt und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
+ Die Bedrohungsanalyse hilft Ihnen, auf aktive Angriffe zu reagieren und sie zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die durch Microsoft 365 Defender Lösungen blockiert werden, und vorbeugende Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Resilienz zu erhöhen. Im Rahmen der einheitlichen Sicherheitsumgebung ist die Bedrohungsanalyse jetzt für Microsoft Defender für Endpunkt und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
 
 ## <a name="march-2021"></a>März 2021
 - [CloudAppEvents-Tabelle](advanced-hunting-cloudappevents-table.md) <br>Hier finden Sie Informationen zu Ereignissen in verschiedenen Cloud-Apps und -Diensten, die von Microsoft Cloud App Security abgedeckt werden. Diese Tabelle enthält auch Informationen, die zuvor in verfügbar `AppFileEvents` waren.
 ## <a name="february-2021"></a>Februar 2021
-- (Vorschau) Das erweiterte [Microsoft 365 Security Center https://security.microsoft.com) (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender für Endpunkt und Defender für Office 365 in die Mitte. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
+- (Vorschau) Das erweiterte [Microsoft 365 Security https://security.microsoft.com) Center (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender für Endpunkt und Defender für Office 365 in die Mitte. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
 
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents-Tabelle](advanced-hunting-identitydirectoryevents-table.md) <br> Suchen von Ereignissen, die einen lokalen Domänencontroller betreffen, auf dem Active Directory (AD) ausgeführt wird. Diese Schematabelle für die [erweiterte Suche](advanced-hunting-overview.md) umfasst eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller.
@@ -62,7 +66,7 @@ RSS-Feed: Erhalten Sie Benachrichtigungen, wenn diese Seite aktualisiert wird, i
 - [Suche starten](advanced-hunting-go-hunt.md)<br> Schnelles Pivot von der Untersuchung eines Vorfalls bis hin zur Überprüfung eines bestimmten Ereignisses, eines Benutzers, eines Geräts oder anderer Entitätstypen bei der erweiterten Suche.
 
 ## <a name="june-2020"></a>Juni 2020
-- Twitter-Feed <br> Holen Sie sich die neuesten Sicherheitsanalysen, Informationen zu Bedrohungen, Produktnachrichten und vieles mehr – direkt im Dashboard.
+- Twitter-Feed <br> Holen Sie sich die neuesten Sicherheitsanalysen, Bedrohungsinformationen, Produktnachrichten und vieles mehr – direkt im Dashboard.
 - [EmailPostDeliveryEvents-Schematabelle](advanced-hunting-emailpostdeliveryevents-table.md) <br> Integrieren Sie Informationen zu Aktionen nach der Zustellung, die für E-Mail-Nachrichten ausgeführt werden, in Ihre erweiterten Suchabfragen.
 - [Überprüfen von Datensätzen in der erweiterten Suche](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Überprüfen Sie Datensätze in Den Abfrageergebnissen schnell mit dem neuen Detailbereich.
 

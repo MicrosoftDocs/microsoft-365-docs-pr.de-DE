@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929443"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105332"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen
 
@@ -41,7 +41,7 @@ Es ist wichtig, Microsoft Defender Antivirus auf dem neuesten Stand zu halten, u
 
 ## <a name="security-intelligence-updates"></a>Security Intelligence-Updates
 
-Microsoft Defender Antivirus verwendet über die [Cloud bereitgestellten Schutz](cloud-protection-microsoft-defender-antivirus.md) (auch als Microsoft Advanced Protection Service oder MAPS bezeichnet) und lädt regelmäßig Sicherheitsupdates herunter, um Schutz bereitzustellen.
+Microsoft Defender Antivirus verwendet über die Cloud bereitgestellten Schutz (auch als Microsoft Advanced Protection Service oder MAPS bezeichnet) und lädt regelmäßig Security [Intelligence-Updates](cloud-protection-microsoft-defender-antivirus.md) herunter, um Schutz bereitzustellen.
 
 > [!NOTE]
 > Updates werden unter den folgenden KB-Nummern veröffentlicht:  
@@ -56,7 +56,7 @@ Modulupdates sind in Security Intelligence-Updates enthalten und werden monatlic
 
 ## <a name="product-updates"></a>Produktupdates
 
-Microsoft Defender Antivirus erfordert [monatliche Updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (als *Plattformupdates* bezeichnet) und erhält wichtige Featureupdates zusammen mit Windows 10 Versionen.
+Microsoft Defender Antivirus erfordert [monatliche Updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (als *Plattformupdates* bezeichnet) und erhält wichtige Funktionsupdates zusammen mit Windows 10 Versionen.
 
 Sie können die Verteilung von Updates über eine der folgenden Methoden verwalten: 
 
@@ -76,7 +76,7 @@ Informationen zum Aktualisieren oder Installieren des Plattformupdates finden Si
 Alle unsere Updates enthalten 
 - Leistungsverbesserungen;
 - Verbesserungen der Dienstbarkeit; Und 
-- Integrationsverbesserungen (Cloud, [Microsoft 365 Defender).](/microsoft-365/security/defender/microsoft-365-defender)
+- Integrationsverbesserungen (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
 <summary> Mai-2021 (Plattform: 4.18.2105.4 | Modul: 1.1.18200.4)</summary>
@@ -105,6 +105,8 @@ Keine bekannten Probleme
 ### <a name="whats-new"></a>Neuerungen
 - Zusätzliche Verhaltensüberwachungslogik
 - Verbesserte Kernelmodus-Keyloggererkennung
+- Neue Steuerelemente zum Verwalten des schrittweisen Rollouts für [Microsoft Defender-Updates hinzugefügt](manage-gradual-rollout.md)
+
 
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
@@ -471,7 +473,7 @@ Informationen zu Windows 10 Version finden Sie im [Windows-Lifecycle-Information
 
 Es wird empfohlen, ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 Betriebssysteminstallationsimages mit den neuesten Antiviren- und Antischadsoftwareupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsimages auf dem neuesten Stand halten, vermeiden Sie eine Lücke beim Schutz. 
 
-Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Betriebssysteminstallationsimages.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
+Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Installationsimages](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)des Betriebssystems.
 
 <details>
 <summary>1.1.2106.01</summary>

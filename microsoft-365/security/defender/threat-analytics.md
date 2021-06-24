@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096834"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105656"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen 
 
@@ -115,24 +115,6 @@ Jeder Bericht enthält Diagramme, die Informationen über die Auswirkungen einer
 Jeder Bericht enthält Diagramme, die einen Überblick darüber bieten, wie stabil Ihre Organisation gegen eine bestimmte Bedrohung ist:
 - Status der **sicheren Konfiguration**– zeigt die Anzahl der Geräte mit falsch konfigurierten Sicherheitseinstellungen an. Wenden Sie die empfohlenen Sicherheitseinstellungen an, um die Bedrohung zu mindern. Geräte gelten als **sicher,** wenn _sie alle_ nachverfolgten Einstellungen angewendet haben.
 - **Sicherheitsrisikopatchingstatus**– zeigt die Anzahl der anfälligen Geräte an. Wenden Sie Sicherheitsupdates oder Patches an, um von der Bedrohung ausgenutzte Sicherheitsrisiken zu beheben.
-
-#### <a name="view-reports-per-threat-tags"></a>Anzeigen von Berichten pro Bedrohungstags
-Sie können die Bedrohungsberichtsliste filtern und die relevantesten Berichte nach einem bestimmten Bedrohungstag (Kategorie) oder berichtstyp anzeigen. 
-- **Bedrohungstags**– unterstützen Sie beim Anzeigen der relevantesten Berichte gemäß einer bestimmten Bedrohungskategorie. Beispielsweise alle Berichte im Zusammenhang mit Ransomware.
-- **Berichtstypen**– unterstützen Sie beim Anzeigen der relevantesten Berichte gemäß einem bestimmten Berichtstyp. Beispielsweise alle Berichte, in denen Tools und Techniken behandelt werden. 
-- **Filter**– Unterstützen Sie bei der effizienten Überprüfung der Bedrohungsberichtsliste und beim Filtern der Ansicht anhand eines bestimmten Bedrohungstags oder Berichtstyps. Überprüfen Sie beispielsweise alle Bedrohungsberichte im Zusammenhang mit der Ransomware-Kategorie oder Bedrohungsberichte, die Sicherheitsrisiken abdecken.
-
-##### <a name="how-does-it-work"></a>Wie funktioniert das?
-Das Microsoft Threat Intelligence-Team hat jedem Bedrohungsbericht Bedrohungstags hinzugefügt:
-- Vier Bedrohungstags sind jetzt verfügbar:
-  - Ransomware
-  - Phishing
-  - Sicherheitsrisiko
-  - Aktivitätsgruppe
-- Bedrohungstags werden oben auf der Seite zur Bedrohungsanalyse mit Indikatoren für die Anzahl der verfügbaren Berichte unter jedem Tag angezeigt.
-    ![Bedrohungstags](../../media/threat-analytics/ta-threattags-mtp.png)
-- Die Liste kann auch nach Bedrohungstags sortiert werden:   ![ Listen](../../media/threat-analytics//ta-taglist-mtp.png)
-- Filter sind pro Bedrohungstag und Berichtstyp verfügbar:   ![ Filter](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Analystenbericht: Abrufen von Experten-Einblicken von Microsoft-Sicherheitsexperten
 Lesen Sie im Abschnitt **"Analystenbericht"** den detaillierten Expertenbericht. Die meisten Berichte enthalten detaillierte Beschreibungen von Angriffsketten, einschließlich Taktiken und Techniken, die dem MITRE ATT&CK-Framework zugeordnet sind, vollständige Listen mit Empfehlungen und leistungsstarke Anleitungen zur [Bedrohungssuche.](advanced-hunting-overview.md)
