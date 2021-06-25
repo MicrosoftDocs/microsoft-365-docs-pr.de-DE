@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061890"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137775"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -140,6 +140,9 @@ Weitere Informationen zu diesen Konfigurationsoptionen finden Sie in der DLP-Dok
 
 Darüber hinaus können Sie, ähnlich wie bei der Konfiguration der DLP-Richtlinien, auswählen, ob eine Bedingung alle vertraulichen Informationstypen oder nur einen dieser Typen erkennen muss. Und um Ihre Bedingungen flexibler oder komplexer zu gestalten, können Sie [Gruppen hinzufügen und logische Operatoren zwischen den Gruppen verwenden](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
+> [!NOTE]
+> Richtlinien für die automatische Bezeichnung, die auf benutzerdefinierten vertraulichen Informationstypen basieren, gelten nur für neu erstellte oder geänderte Inhalte in OneDrive and SharePoint. 
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurieren von trainierbaren Klassifizierungen für eine Bezeichnung
 
 Diese Option befindet zurzeit in der Vorschau. Wenn Sie diese Option verwenden, stellen Sie sicher, dass Sie in Ihrem Mandanten mindestens eine andere Vertraulichkeitsbezeichnung veröffentlicht haben, die für die automatische Bezeichnung und die [Option "Vertrauliche Informationstypen"](#configuring-sensitive-info-types-for-a-label) konfiguriert ist.
@@ -190,7 +193,7 @@ Spezifisch für integrierte Bezeichnungen:
 
 - Bei empfohlenen Bezeichnungen in den Desktopversionen von Word wird der sensible Inhalt, der die Empfehlung ausgelöst hat, markiert, sodass Benutzer den sensiblen Inhalt überprüfen und entfernen können, anstatt die empfohlene Vertraulichkeitsbezeichnung anzuwenden.
 
-- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/de-DE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnungen:
 
@@ -215,7 +218,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
     - Zum Zeitpunkt der Ausführung der Richtlinie zum automatischen Bezeichnen darf die Datei nicht von einem anderen Prozess oder Benutzer geöffnet sein. Eine Datei, die zur Bearbeitung ausgecheckt ist, fällt in diese Kategorie.
 
 - Wenn Sie vorhaben, anstelle der integrierten Vertraulichkeitstypen [benutzerdefinierte sensible Informationstypen](sensitive-information-type-learn-about.md) zu verwenden: 
-    - Benutzerdefinierte Vertraulichkeitsinformationstypen werden für Inhalte ausgewertet, die nach dem Speichern der benutzerdefinierten Vertraulichkeitsinformationstypen zu SharePoint oder OneDrive hinzugefügt wurden. 
+    - Benutzerdefinierte Vertraulichkeitsinformationstypen gelten nur für Inhalte, die in SharePoint oder OneDrive hinzugefügt oder geändert werden, nachdem die benutzerdefinierten Vertraulichkeitsinformationstypen in Kraft gesetzt sind. 
     - Um neue benutzerdefinierte Typen sensibler Informationen zu testen, erstellen Sie diese, bevor Sie Ihre Richtlinie zum automatischen Bezeichnen erstellen, und erstellen Sie dann neue Dokumente mit Beispieldaten zum Testen.
 
 - Eine oder mehrere Vertraulichkeitsbezeichnungen wurden [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), den Sie für Ihre Richtlinie zum automatischen Bezeichnen auswählen können. Für diese Bezeichnungen:

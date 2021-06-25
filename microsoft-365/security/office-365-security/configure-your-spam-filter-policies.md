@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108235"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137763"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -203,7 +203,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Microsoft 365 Def
    >
    > Überlegen Sie es sich genau, bevor Sie Domänen zur Liste der erlaubten Domänen hinzufügen. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in EOP](create-safe-sender-lists-in-office-365.md).
    >
-   > Fügen Sie der Liste der zulässigen Domänen niemals Ihre eigenen [akzeptierte Domänen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) oder allgemeine Domänen (z. B. microsoft.com oder office.com) hinzu. Wenn diese Domänen die Spam-Filterung umgehen dürfen, können Angreifer problemlos E-Mails in Ihr Unternehmen senden.
+   > Fügen Sie der Liste der zulässigen Domänen niemals Ihre eigenen [akzeptierte Domänen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) oder allgemeine Domänen (z. B. microsoft.com oder office.com) hinzu. Wenn diese Domänen die Spam-Filterung umgehen dürfen, können Angreifer problemlos Nachrichten senden, die diese vertrauenswürdigen Domänen in Ihr Unternehmen spoofen.
    >
    > Das manuelle Sperren von Domänen durch das Hinzufügen zur Liste der blockierten Domänen ist nicht gefährlich, kann jedoch zusätzliche Verwaltungsarbeit bedeuten. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
    >

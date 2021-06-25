@@ -11,20 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: noindex,nofollow
 description: Erfahren Sie, wie Sie einen 17a-4-SQL DataParser-Connector einrichten und verwenden, um SQL Daten in Microsoft 365 zu importieren und zu archivieren.
-ms.openlocfilehash: 17e7da9e064e6d149ebdca0436f9180c8d17ca41
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 51fd433ad072ba5afe0b314d7b61041728337240
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097057"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137667"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data-preview"></a>Einrichten eines Connectors zum Archivieren SQL Daten (Vorschau)
 
-Verwenden Sie die [SQL DataParser](https://www.17a-4.com/sql-dataparser/) von 17a-4 LLC, um Daten aus einer SQL Datenbank in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. The DataParser includes a SQL connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der SQL DataParser-Connector konvertiert SQL Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie die [SQL DataParser](https://www.17a-4.com/sql-dataparser/) von 17a-4 LLC, um Daten aus einer SQL-Datenbank in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. The DataParser includes a SQL connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der SQL DataParser-Connector konvertiert SQL Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
-Nachdem SQL Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines SQL Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
+Nachdem SQL Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines SQL Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Regierungsrichtlinien und behördlichen Richtlinien zu unterstützen.
 
 ## <a name="overview-of-archiving-sql-data"></a>Übersicht über die Archivierung SQL Daten
 
@@ -44,13 +43,13 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Datenkonnektor
 
 - Erstellen Sie ein DataParser-Konto für Microsoft Connectors. Wenden Sie sich hierzu an [17a-4 LLC.](https://www.17a-4.com/contact/) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
-- Der Benutzer, der den SQL DataParser-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig wird diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den SQL DataParser-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-set-up-a-sql-dataparser-connector"></a>Schritt 1: Einrichten eines SQL DataParser-Connectors
 
 Der erste Schritt besteht darin, auf die Seite "Datenkonnektoren" im Microsoft 365 Compliance Center zuzugreifen und einen 17a-4-Connector für SQL Daten zu erstellen.
 
-1. Wechseln Sie zu <https://compliance.microsoft.com> und klicken Sie dann auf **Datenconnectors**  >  **SQL DataParser**.
+1. Wechseln Sie zu <https://compliance.microsoft.com> Und klicken Sie dann auf **Datenconnectors**  >  **SQL DataParser**.
 
 2. Klicken Sie auf der **Seite SQL DataParser-Produktbeschreibung** auf **Connector hinzufügen.**
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: e39f4e65d5c4bdf4235e7ae2d8aa207c986c76c8
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055045"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137691"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -283,11 +283,11 @@ Wenn Elemente in diesem Szenario von mehreren Aufbewahrungseinstellungen betroff
 
 Die Antwort lautet nicht, dass eine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnung vor anderen Vorrang hat, sondern hängt davon ab, wie lange ein Element aufbewahrt wird (sofern zutreffend), und wann ein Element gelöscht wird (sofern zutreffend). Diese beiden Aktionen werden unabhängig voneinander aus allen Aufbewahrungseinstellungen ermittelt, die für ein Element gelten.
 
-So kann beispielsweise ein Element einer Aufbewahrungsrichtlinie unterliegen, die für eine reine Löschaktion konfiguriert ist, und einer anderen Aufbewahrungsrichtlinie, die für die Aufbewahrung und Löschung konfiguriert ist. Demzufolge hat dieses Element also nur eine Aufbewahrungsaktion, aber zwei Löschaktionen. Zwischen Aufbewahrungs- und Löschaktionen könnte ein Konflikt bestehen, und die beiden Löschaktionen könnten sich widersprechende Datumsangaben haben. Um das Ergebnis zu bestimmen, müssen Sie die Prinzipien der Aufbewahrung anwenden.
+So kann beispielsweise ein Element einer Aufbewahrungsrichtlinie unterliegen, die für eine reine Löschaktion konfiguriert ist, und einer anderen Aufbewahrungsrichtlinie, die für die Aufbewahrung und Löschung konfiguriert ist. Demzufolge hat dieses Element also nur eine Aufbewahrungsaktion, aber zwei Löschaktionen. Zwischen Aufbewahrungs- und Löschaktionen könnte ein Konflikt bestehen, und die beiden Löschaktionen könnten sich widersprechende Datumsangaben haben. Die Prinzipien der Aufbewahrung erläutern das Ergebnis.
 
-Ganz allgemein gilt, dass die Aufbewahrung immer Vorrang vor der Löschung hat, und danach der längste Aufbewahrungszeitraum. Diese beiden einfachen Regeln entscheiden immer, wie lange ein Element beibehalten wird.
+Auf hoher Ebene können Sie sicher sein, dass die Aufbewahrung immer Vorrang vor dauerhaften Löschungen hat und der längste Aufbewahrungszeitraum gewinnt. Diese beiden einfachen Regeln entscheiden immer, wie lange ein Element beibehalten wird.
 
-Wann ein Element gelöscht wird, hängt von ein paar weiteren Faktoren ab. Die Löschaktion aufgrund einer Aufbewahrungsbezeichnung hat beispielsweise immer Vorrang vor einer aufgrund einer Aufbewahrungsrichtlinie.
+Wann ein Element gelöscht wird, hängt von ein paar weiteren Faktoren ab. Die Löschaktion aufgrund einer Aufbewahrungsbezeichnung hat beispielsweise immer Vorrang vor einer Löschaktion aufgrund einer Aufbewahrungsrichtlinie.
 
 Verwenden Sie den folgenden Ablauf, um die Aufbewahrungs- und Löschergebnisse für ein einzelnes Element zu verstehen. Dabei fungiert jede Ebene als Unterbrechung für Konflikte, von oben nach unten. Wenn das Ergebnis durch die erste Ebene bestimmt wird, weil es keine weiteren Konflikte gibt, ist es nicht nötig, zur nächsten Ebene vorzurücken, und so weiter.
 
@@ -296,13 +296,18 @@ Verwenden Sie den folgenden Ablauf, um die Aufbewahrungs- und Löschergebnisse f
 
 ![Diagramm der Grundsätze der Aufbewahrung](../media/principles-of-retention.png)
   
-Erläuterung der vier verschiedenen Ebenen:
+Erläuterung der vier verschiedenen Prinzipien:
   
-1. **Aufbewahrung hat Vorrang vor Löschen.** Inhalt wird nicht dauerhaft gelöscht, wenn für ihn zusätzlich Aufbewahrungseinstellungen gelten.  
+1. **Aufbewahrung hat Vorrang vor Löschen.** Inhalt wird nicht dauerhaft gelöscht, wenn für ihn zusätzlich Aufbewahrungseinstellungen gelten. Dieses Prinzip stellt zwar sicher, dass Inhalte aus Compliancegründen beibehalten werden, aber der Löschvorgang wird weiterhin initiiert und kann den Inhalt aus der Benutzeransicht entfernen. Beispielsweise wird ein Dokument in SharePoint aus dem ursprünglichen Ordner in den Ordner "Permanente Aufbewahrung" verschoben. Das endgültige Löschen wird jedoch angehalten. Weitere Informationen dazu, wie und wo Inhalte beibehalten werden, finden Sie unter den folgenden Links für die einzelnen Workloads:
+    
+    - [Funktionsweise der Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
+    - [Funktionsweise der Aufbewahrung mit Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
+    - [Funktionsweise der Aufbewahrung mit Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
+    - [Funktionsweise einer Aufbewahrung für Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
     Beispiel: Eine E-Mail unterliegt einer Aufbewahrungsrichtlinie für Exchange, die so konfiguriert ist, dass Elemente nach drei Jahren gelöscht werden. Außerdem gilt für das Element eine Aufbewahrungsbezeichnung, wonach dieses für fünf Jahre aufbewahrt werden muss.
     
-    Die E-Mail-Nachricht wird fünf Jahre lang aufbewahrt, da diese Aufbewahrungsaktion Vorrang vor der Löschung hat. Die E-Mail-Nachricht wird aufgrund der verzögerten Löschung am Ende der fünf Jahre gelöscht.
+    Die E-Mail-Nachricht wird fünf Jahre lang aufbewahrt, da diese Aufbewahrungsaktion Vorrang vor der Löschung hat. Die E-Mail-Nachricht wird dann am Ende der fünf Jahre aufgrund der Löschaktion endgültig gelöscht.
 
 2. **Der längste Aufbewahrungszeitraum hat Vorrang.** Inhalte, die mehreren Aufbewahrungsrichtlinien mit unterschiedlichen Aufbewahrungszeiträumen unterliegen, werden bis zum Ende des längsten Aufbewahrungszeitraums aufbewahrt.
     
@@ -316,7 +321,7 @@ Erläuterung der vier verschiedenen Ebenen:
         
         Beispiel: Ein Dokument unterliegt zwei Aufbewahrungsrichtlinien, die eine Löschung nach fünf bzw. zehn Jahren vorsehen, sowie einer Aufbewahrungsbezeichnung, die die Löschung nach sieben Jahren vorsieht.
         
-        Das Dokument wird nach sieben Jahren gelöscht, weil die von der Aufbewahrungsbezeichnung vorgesehene Löschung Vorrang hat.
+        Das Dokument wird nach sieben Jahren endgültig gelöscht, da die Löschaktion aus der Aufbewahrungsbezeichnung Vorrang hat.
     
     2. Wenn nur Aufbewahrungsrichtlinien vorliegen: Wenn für einen Speicherort eine Aufbewahrungsrichtlinie gilt, die auf bestimmte Elemente (z. B. bestimmte Benutzer für Exchange-E-Mails) beschränkt ist, hat diese Aufbewahrungsrichtlinie Vorrang vor Aufbewahrungsrichtlinien ohne Bereichseinschränkung für den gleichen Speicherort.
         
@@ -324,19 +329,19 @@ Erläuterung der vier verschiedenen Ebenen:
         
         Beispiel 1: Eine E-Mail-Nachricht unterliegt zwei Aufbewahrungsrichtlinien. Die erste Aufbewahrungsrichtlinie ist nicht auf einen Bereich beschränkt und sieht die Löschung von Elementen nach zehn Jahren vor. Die zweite gilt nur für bestimmte Postfächer und sieht die Löschung der Elemente nach fünf Jahren vor.
         
-        Die E-Mail-Nachricht wird nach fünf Jahren gelöscht, weil die Löschung durch die Aufbewahrungsrichtlinie mit Bereichseinschränkung Vorrang vor der uneingeschränkten Aufbewahrungsrichtlinie hat.
+        Die E-Mail-Nachricht wird nach fünf Jahren endgültig gelöscht, da die Löschaktion aus der bereichsbezogenen Aufbewahrungsrichtlinie Vorrang vor der Aufbewahrungsrichtlinie ohne Bereichseinschränkung hat.
         
         Beispiel 2: Ein Dokument im OneDrive-Konto eines Benutzers unterliegt zwei Aufbewahrungsrichtlinien. Die erste gilt für das OneDrive-Konto dieses Benutzers und sieht eine Löschung nach 10 Jahren vor. Die zweite Aufbewahrungsrichtlinie gilt für das OneDrive-Konto dieses Benutzers und sieht eine Löschung nach sieben Jahren vor.
         
-        Wann dieses Dokument gelöscht wird, kann auf dieser Ebene nicht bestimmt werden, da beide Aufbewahrungsrichtlinien auf einen Bereich beschränkt sind.
+        Wann dieses Dokument endgültig gelöscht wird, kann auf dieser Ebene nicht bestimmt werden, da beide Aufbewahrungsrichtlinien auf einen Bereich beschränkt sind.
 
-4. **Der kürzeste Zeitraum bis zur Löschungen hat Vorrang.** Wird beim Bestimmen, wann Elemente durch Aufbewahrungsrichtlinien gelöscht werden, angewendet, wenn das Ergebnis nicht auf der vorherigen Ebene ermittelt werden kann: Inhalte werden am Ende des kürzesten Aufbewahrungszeitraums gelöscht.
+4. **Der kürzeste Zeitraum bis zur Löschungen hat Vorrang.** Anwendbar, um zu bestimmen, wann Elemente aus den Aufbewahrungsrichtlinien gelöscht werden und das Ergebnis nicht aus der vorherigen Ebene gelöst werden konnte: Der Inhalt wird am Ende der kürzesten Aufbewahrungsfrist endgültig gelöscht.
     
     Beispiel: Ein Dokument im OneDrive-Konto eines Benutzers unterliegt zwei Aufbewahrungsrichtlinien. Die erste gilt für das OneDrive-Konto dieses Benutzers und sieht eine Löschung nach 10 Jahren vor. Die zweite Aufbewahrungsrichtlinie gilt für das OneDrive-Konto dieses Benutzers und sieht eine Löschung nach sieben Jahren vor.
     
-    Dieses Dokument wird nach sieben Jahren gelöscht, da es sich hierbei um den kürzesten Aufbewahrungszeitraum für diese beiden auf einen Bereich beschränkten Aufbewahrungsrichtlinien handelt.
+    Dieses Dokument wird nach sieben Jahren endgültig gelöscht, da es sich hierbei um den kürzesten Aufbewahrungszeitraum für diese beiden auf einen Bereich beschränkten Aufbewahrungsrichtlinien handelt.
 
-Beachten Sie, dass auch für Elemente, die einer eDiscovery-Archivierung unterliegen, der erste Grundsatz für die Aufbewahrung gilt. Sie können durch keine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnung gelöscht werden. Wenn die Archivierung aufgehoben wird, gelten für sie weiterhin die Aufbewahrungsgrundsätze. So könnten sie dann beispielsweise einer noch nicht abgelaufenen Aufbewahrung oder einer verzögerten Löschung unterzogen werden.
+Beachten Sie, dass auch für Elemente, die einer eDiscovery-Archivierung unterliegen, der erste Grundsatz für die Aufbewahrung gilt. Sie können durch keine Aufbewahrungsrichtlinie oder Aufbewahrungsbezeichnung endgültig gelöscht werden. Wenn die Archivierung aufgehoben wird, gelten für sie weiterhin die Aufbewahrungsgrundsätze. Beispielsweise können sie dann einem nicht abgelaufenen Aufbewahrungszeitraum oder einer Löschaktion unterliegen.
 
 Komplexere Beispiele mit einer Kombination aus Aufbewahrung und Löschung:
 
@@ -346,9 +351,9 @@ Komplexere Beispiele mit einer Kombination aus Aufbewahrung und Löschung:
     - Eine Aufbewahrungsrichtlinie, die eine dreijährige Aufbewahrung und die anschließende Löschung vorsieht
     - Eine Aufbewahrungsbezeichnung für die reine Aufbewahrung für sieben Jahre
     
-    **Ergebnis**: Das Element wird sieben Jahre lang aufbewahrt, da die Aufbewahrung Vorrang vor der Löschung hat, und sieben Jahre der längste Aufbewahrungszeitraum sind. Am Ende dieses Aufbewahrungszeitraums wird das Element gelöscht, da die von den Aufbewahrungsrichtlinien vorgesehene Löschung während der Aufbewahrung des Elements verzögert wurde.
+    **Ergebnis**: Das Element wird sieben Jahre lang aufbewahrt, da die Aufbewahrung Vorrang vor der Löschung hat, und sieben Jahre der längste Aufbewahrungszeitraum sind. Am Ende dieses Aufbewahrungszeitraums wird das Element aufgrund der Löschaktion aus den Aufbewahrungsrichtlinien endgültig gelöscht.
     
-    Obwohl die beiden Aufbewahrungsrichtlinien unterschiedliche Termine für die Löschaktionen haben, kann das Element frühestens am Ende des längsten Aufbewahrungszeitraums gelöscht werden, der über beide Löschtermine hinausgeht. In diesem Beispiel gibt es für die Löschdaten keinen Konflikt zu klären, so dass alle Konflikte von der zweiten Ebene gelöst werden.
+    Obwohl die beiden Aufbewahrungsrichtlinien unterschiedliche Termine für die Löschaktionen haben, kann das Element frühestens am Ende des längsten Aufbewahrungszeitraums endgültig gelöscht werden, der über beide Löschtermine hinausgeht. 
 
 2.  Für ein Element gelten die folgenden Aufbewahrungseinstellungen:
     
@@ -356,7 +361,7 @@ Komplexere Beispiele mit einer Kombination aus Aufbewahrung und Löschung:
     - Eine bereichsbezogene Aufbewahrungsrichtlinie, die eine fünfjährige Aufbewahrung und die anschließende Löschung vorsieht
     - Eine Aufbewahrungsbezeichnung, die eine dreijährige Aufbewahrung und die anschließende Löschung vorsieht
     
-    **Ergebnis**: Das Element wird fünf Jahre lang aufbewahrt, weil das die längste Aufbewahrungsfrist ist. Am Ende dieses Aufbewahrungszeitraums wird das Element gelöscht, da die von der Aufbewahrungsbezeichnung vorgesehene Löschung nach drei Jahren während der Aufbewahrung des Elements verzögert wurde. Das Löschen aus Aufbewahrungsbezeichnungen hat Vorrang vor dem Löschen aus allen Aufbewahrungsrichtlinien. In diesem Beispiel werden alle Konflikte durch die dritte Ebene geklärt.
+    **Ergebnis**: Das Element wird fünf Jahre lang aufbewahrt, weil das die längste Aufbewahrungsfrist ist. Am Ende dieses Aufbewahrungszeitraums wird das Element aufgrund der Löschaktion von drei Jahren aus der Aufbewahrungsbezeichnung endgültig gelöscht. Das Löschen aus Aufbewahrungsbezeichnungen hat Vorrang vor dem Löschen aus allen Aufbewahrungsrichtlinien. In diesem Beispiel werden alle Konflikte durch die dritte Ebene geklärt.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Verwenden der Erhaltungssperre zum Einschränken von Änderungen an Richtlinien
 
