@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Erfahren Sie mehr über die standardmäßige Richtlinie zur Verhinderung von Datenverlust in Microsoft Teams
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Erfahren Sie mehr über die Standardmäßige Richtlinie zur Verhinderung von Datenverlust in Microsoft Teams
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114143"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149118"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Weitere Informationen zur Standardrichtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)
 
-[Die Funktionen zur Verhinderung von](dlp-learn-about-dlp.md) Datenverlust wurden um chat- Microsoft Teams Kanalnachrichten erweitert, einschließlich Nachrichten im privaten Kanal. Als Teil dieser Version haben wir eine Standard-DLP-Richtlinie für Erstkunden im Compliance Center erstellt.
+Die Funktionen [zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md) wurden erweitert, um Microsoft Teams Chat- und Kanalnachrichten, einschließlich Nachrichten im privaten Kanal, einzuschließen. Als Teil dieser Version haben wir eine Standard-DLP-Richtlinie für Microsoft Teams für Erstmalige Kunden im Compliance Center erstellt.
 
-## <a name="applies-to"></a>Betrifft
+## <a name="applies-to"></a>Gilt für
 
-Jeder Mandant, der mit einer oder mehreren der folgenden Lizenzen lizenziert ist und über aktive Teams verfügt
+Jeder Mandant, der mit einer oder mehreren der folgenden Lizenzen lizenziert ist und über aktive Teams Benutzer verfügt
  
 - ME5, 
 - MA5, 
@@ -39,17 +39,17 @@ Jeder Mandant, der mit einer oder mehreren der folgenden Lizenzen lizenziert ist
 - EMS E5
 
 
-## <a name="what-does-the-default-policy-do"></a>Was macht die Standardrichtlinie?
+## <a name="what-does-the-default-policy-do"></a>Was bewirkt die Standardrichtlinie?
 
-Die Standardmäßige DLP-Richtlinie verfolgt alle Kreditkartennummern, die intern und extern für die Organisation freigegeben wurden. Diese Richtlinie ist standardmäßig für alle Benutzer des Mandanten aktiviert. Es generiert keine Richtlinientipps für Endbenutzer, generiert aber ein Warnungsereignis und löst auch eine E-Mail mit geringem Schweregrad an den Administrator aus (in der Richtlinie hinzugefügt). Der Administrator kann die Aktivitäten anzeigen und die Richtliniendetails bearbeiten, indem er sich beim Compliance Center einmeldet.
+Die Standardmäßige DLP-Richtlinie für Teams verfolgt alle Kreditkartennummern nach, die intern und extern für die Organisation freigegeben wurden. Diese Richtlinie ist standardmäßig für alle Benutzer des Mandanten aktiviert. Es generiert keine Richtlinientipps für Endbenutzer, generiert jedoch ein Warnungsereignis und löst auch eine E-Mail mit geringem Schweregrad an den Administrator aus (hinzugefügt in der Richtlinie). Der Administrator kann die Aktivitäten anzeigen und die Richtliniendetails bearbeiten, indem er sich beim Compliance Center anmeldet.
 
-Administratoren können diese Richtlinie auf der Seite Compliance [Center >](https://compliance.microsoft.com/compliancesettings) Richtlinie zur Verhinderung von Datenverlust anzeigen.
+Administratoren können diese Richtlinie im [Compliance Center](https://compliance.microsoft.com/compliancesettings) > Seite "Richtlinien zur Verhinderung von Datenverlust" anzeigen.
 
 
 > [!div class="mx-imgBorder"]
-> ![Standardrichtlinie Teams DLP](../media/default-teams-dlp-policy.png)
+> ![Standardmäßige Teams DLP-Richtlinie](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>Bearbeiten oder Löschen der Standardrichtlinie
 
-Um [die Standardrichtlinie zu](create-test-tune-dlp-policy.md#tune-a-dlp-policy)bearbeiten, um eine bessere Leistung zu erzielen oder sie zu löschen, verwenden Sie einfach ein Konto mit **DLP Compliance Management-Berechtigungen.** Weitere Informationen finden Sie unter [Permissions](create-test-tune-dlp-policy.md#permissions).
+Um [die Standardrichtlinie für eine bessere Leistung zu bearbeiten oder zu löschen,](create-test-tune-dlp-policy.md#tune-a-dlp-policy)verwenden Sie einfach ein Konto mit **DLP-Complianceverwaltungsberechtigungen.** Weitere Informationen finden Sie unter ["Berechtigungen".](create-test-tune-dlp-policy.md#permissions)
 

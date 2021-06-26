@@ -11,13 +11,13 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Erfahren Sie, wie Sie Microsoft Teams verwenden, um Ihren Vertragsverwaltungskanal mithilfe einer Microsoft 365-Lösung zu erstellen.
-ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+description: Erfahren Sie, wie Sie Microsoft Teams verwenden, um Ihren Vertragsverwaltungskanal mithilfe einer Microsoft 365 Lösung zu erstellen.
+ms.openlocfilehash: 7c7d3ef30d376e14e033243413637cdb51ba548a
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054753"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148974"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Schritt 2. Verwenden Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals
 
@@ -31,12 +31,12 @@ Wenn Ihre Organisation eine Lösung für die Vertragsverwaltung einrichtet, ben�
 
      ![Registerkarte "Beiträge".](../media/content-understanding/posts.png)
 
-- **Haben Sie einen Ort, an dem Mitglieder genehmigte Verträge sehen können, um zu wissen, wann sie zur Zahlung eingereicht werden können.** In SharePoint müssen Sie eine **"For Payout"-Liste** erstellen und Spalten für **den Betrag "Client",** **"Auszahlung"** und **"Gebühr"** einschließen, wobei **"Einzelne Textzeile"** als Spaltentyp ausgewählt wird. Sie müssen die For **Payout-Liste** als Teams Registerkarte im Vertragsverwaltungskanal hinzufügen, ähnlich wie [bei der Registerkarte **"Verträge".**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) Auf der Registerkarte **"Für Auszahlung"** werden alle Verträge aufgeführt, die zur Zahlung übermittelt werden müssen. Sie können diese Lösung einfach erweitern, um diese Informationen stattdessen direkt in eine Finanzanwendung eines Drittanbieters (z. B. Dynamics CRM) zu schreiben. 
+- **Haben Sie einen Ort, an dem Mitglieder genehmigte Verträge sehen können, um zu wissen, wann sie zur Zahlung eingereicht werden können.** In SharePoint müssen Sie eine **"Für** Auszahlung"-Liste erstellen und Spalten für **den Betrag "Client",** **"Auszahlung"** und **"Gebühr"** einfügen, wobei **"Einzelne Textzeile"** als Spaltentyp ausgewählt wird. Sie müssen die For **Payout-Liste** als Teams Registerkarte im Vertragsverwaltungskanal hinzufügen, ähnlich wie [bei der Registerkarte **"Verträge".**](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) Auf der Registerkarte **"Für Auszahlung"** werden alle Verträge aufgeführt, die zur Zahlung übermittelt werden müssen. Sie können diese Lösung einfach erweitern, um diese Informationen stattdessen direkt in eine Finanzanwendung eines Drittanbieters (z. B. Dynamics CRM) zu schreiben. 
 
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Fügen Sie Ihre SharePoint Dokumentbibliothek an die Registerkarte "Verträge" an.
 
-Nachdem Sie im Kanal "Vertragsverwaltung" eine Registerkarte **"Verträge"** erstellt haben, müssen Sie [ihre SharePoint Dokumentbibliothek an diese anfügen.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) Die SharePoint Dokumentbibliothek, die Sie anfügen möchten, ist diejenige, in der Sie ihr SharePoint Syntex Dokumentverständnismodell im vorherigen Abschnitt angewendet haben.
+Nachdem Sie in Ihrem Vertragsverwaltungskanal eine Registerkarte **"Verträge"** erstellt haben, müssen Sie [Ihre SharePoint Dokumentbibliothek an diese anfügen.](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b) Die SharePoint Dokumentbibliothek, die Sie anfügen möchten, ist diejenige, in der Sie ihr SharePoint Syntex Dokumentverständnismodell im vorherigen Abschnitt angewendet haben.
 
 Nachdem Sie die SharePoint Dokumentbibliothek angefügt haben, können Sie alle klassifizierten Verträge über eine Standardlistenansicht anzeigen.
 
@@ -45,7 +45,7 @@ Nachdem Sie die SharePoint Dokumentbibliothek angefügt haben, können Sie alle 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassen der Kachelansicht der Registerkarte "Verträge"
 
 > [!NOTE]
-> In diesem Abschnitt wird auf [ Codebeispiele](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) verwiesen, die in derContractTileFormatting.js-Datei enthalten sind, die im [Repository "Contracts Management Solution Assets"](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)enthalten ist.
+> In diesem Abschnitt wird auf Codebeispiele verwiesen, die in der [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) für die Datei enthalten sind, die im [Repository "Contracts Management Solution Assets"](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)enthalten ist.
 
 Während Sie mit Teams Ihre Verträge in einer Kachelansicht anzeigen können, können Sie sie anpassen, um die Vertragsdaten anzuzeigen, die Sie auf der Vertragskarte sichtbar machen möchten. Für die Registerkarte **"Verträge"** ist es beispielsweise wichtig, dass Mitglieder den Client, den Vertragsnehmer und den Gebührenbetrag auf der Vertragskarte sehen. Alle diese Felder wurden aus jedem Vertrag über Ihr SharePoint Syntex Modell extrahiert, das auf Ihre Dokumentbibliothek angewendet wurde. Sie möchten auch in der Lage sein, die Kachelkopfleiste für jeden Status in unterschiedliche Farben zu ändern, damit mitglieder leicht sehen können, wo sich der Vertrag im Genehmigungsprozess befindet. Beispielsweise verfügen alle genehmigten Verträge über eine blaue Kopfzeile.
 
@@ -139,23 +139,23 @@ In diesem Abschnitt wird definiert, wie "Client" auf der Karte angezeigt wird, u
 In diesem Abschnitt wird definiert, wie die "Benachrichtigung" auf der Karte angezeigt wird, und der Wert für den jeweiligen Vertrag wird verwendet.
 
 ```JSON
-                      {
-                        "elmType": "div",
-                        "style": {
-                          "color": "#767676",
-                          "font-size": "12px"
-                        },
-                        "txtContent": "Client"
-                      },
-                      {
-                        "elmType": "div",
-                        "style": {
-                          "margin-bottom": "12px",
-                          "font-size": "16px",
-                          "font-weight": "600"
-                        },
-                        "txtContent": "[$Client]"
-},
+                        {
+                            "elmType": "div",
+                            "txtContent": "Contractor",
+                            "style": {
+                              "color": "#767676",
+                              "font-size": "12px",
+                              "margin-bottom": "2px"
+                            }
+                          },
+                          {
+                            "elmType": "div",
+                            "style": {
+                              "margin-bottom": "12px",
+                              "font-size": "14px"
+                            },
+                            "txtContent": "[$Contractor]"
+                          },
 ```
 
 ### <a name="fee-amount"></a>Gebührenbetrag
