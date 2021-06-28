@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053071"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169592"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -116,7 +116,7 @@ Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Grup
 ### <a name="retention-policy-for-yammer-locations"></a>Aufbewahrungsrichtlinie für Yammer-Speicherorte
 
 > [!NOTE]
-> Die Aufbewahrungsrichtlinien für Yammer werden in Kürze eingeführt.
+> Aufbewahrungsrichtlinien für Yammer befinden sich in der Vorschauphase und informieren Benutzer derzeit nicht, wenn Nachrichten aufgrund einer Aufbewahrungsrichtlinie gelöscht werden.
 >
 > Um diese Funktion nutzen zu können, muss Ihr Yammer-Netzwerk im [nativen Modus](/yammer/configure-your-yammer-network/overview-native-mode) und nicht im Hybridmodus arbeiten.
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096732"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169580"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
 
@@ -51,6 +51,8 @@ Sie können bewerten, wie sich eine Regel zur Verringerung der Angriffsfläche a
 :::image type="content" source="images/asrrecommendation.png" alt-text="Sicherheitsreco für Attack Surface Reduction-Regel":::
 
 Überprüfen Sie im Bereich mit den Empfehlungsdetails, welche Auswirkungen auf die Benutzer haben, um festzustellen, welcher Prozentsatz Ihrer Geräte eine neue Richtlinie akzeptieren kann, die die Regel im Blockierungsmodus aktiviert, ohne die Produktivität zu beeinträchtigen.
+
+Weitere [Informationen](enable-attack-surface-reduction.md#requirements) zu unterstützten Betriebssystemen finden Sie im Artikel "Aktivieren von Regeln zur Verringerung der Angriffsfläche".
 
 ## <a name="audit-mode-for-evaluation"></a>Überwachungsmodus für die Auswertung
 
@@ -94,7 +96,7 @@ Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine 
 
 Wenn außerdem bestimmte Regeln zur Verringerung der Angriffsfläche ausgelöst werden, werden Warnungen generiert.
 
-Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( ) angezeigt werden [https://security.microsoft.com](https://security.microsoft.com) (früher [als Microsoft Defender Security Center](microsoft-defender-security-center.md)bezeichnet).
+Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) ) (früher [Microsoft Defender Security Center](microsoft-defender-security-center.md)genannt) angezeigt werden.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Erweiterte Suche und Attack Surface Reduction-Ereignisse
 
@@ -228,7 +230,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern
 
-Diese Regel verhindert, dass Office Apps untergeordnete Prozesse erstellen. Office Apps umfassen Word, Excel, PowerPoint, OneNote und Access.
+Mit dieser Regel wird verhindert, dass Office Apps untergeordnete Prozesse erstellen. Office Apps umfassen Word, Excel, PowerPoint, OneNote und Access.
 
 Das Erstellen bösartiger untergeordneter Prozesse ist eine gängige Schadsoftwarestrategie. Schadsoftware, die Office als Vektor missbraucht, führt häufig VBA-Makros und Exploit-Code aus, um weitere Nutzlasten herunterzuladen und auszuführen. Einige legitime Branchenanwendungen können jedoch auch untergeordnete Prozesse für unfreundliche Zwecke generieren. z. B. das Auslösen einer Eingabeaufforderung oder die Verwendung von PowerShell zum Konfigurieren von Registrierungseinstellungen.
 
@@ -272,7 +274,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet wurden:
 
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
-- Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic-VBS- oder JavaScript-.js datei)
+- Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic -VBS- oder JavaScript-.js datei)
 
 Diese Regel wurde eingeführt in:
 
@@ -383,9 +385,9 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
 
-Diese Regel blockiert Codeinjektionsversuche von Office Apps in andere Prozesse.
+Diese Regel blockiert Codeeinfügungsversuche von Office Apps in andere Prozesse.
 
-Angreifer versuchen möglicherweise, Office Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
+Angreifer versuchen möglicherweise, Office-Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
 
 Es gibt keine bekannten legitimen Geschäftszwecke für die Verwendung von Codeeinfügung.
 

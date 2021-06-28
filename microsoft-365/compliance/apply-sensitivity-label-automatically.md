@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137775"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169616"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -89,6 +89,7 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 |Nach Speicherort einschränken|Nein |Ja |
 |Bedingungen: trainierbare Klassifizierungen|Ja |Nein |
 |Bedingungen: Freigabeoptionen und zusätzliche E-Mail-Optionen|Nein |Ja |
+|Bedingungen: Ausnahmen|Nein |Ja (nur E-Mail) |
 |Empfehlungen, Richtlinien-Tooltipps und Benutzer-Außerkraftsetzungen|Ja |Nein |
 |Simulationsmodus|Nein |Ja |
 |Exchange-Anlagen auf Bedingungen geprüft|Nein | Ja|
@@ -297,7 +298,17 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     - Anlage ist passwortgeschützt
     - Der Inhalt einer E-Mail-Anlage konnte nicht vollständig gescannt werden
     - Der Inhalt einer E-Mail-Anlage wurde nicht vollständig gescannt
-
+    - Kopfzeile stimmt mit Mustern überein
+    - Betreff stimmt mit Mustern überein
+    - Empfängeradresse enthält Wörter
+    - Empfängeradresse stimmt mit Mustern überein
+    - Absenderadresse stimmt mit Mustern überein
+    - Absenderdomäne ist
+    - Empfänger ist Mitglied von
+    - Absender ist
+    
+    Für jede dieser Bedingungen können Sie dann Ausnahmen festlegen.
+    
 8. Je nachdem, welche Einstellungen Sie bisher ausgewählt haben, können Sie nun neue Regeln unter Verwendung von Bedingungen und Ausnahmen erstellen.
     
     Die Konfigurationsoptionen für Typen sensibler Informationen sind die gleichen wie die, die Sie für das automatische Bezeichnen von Office-Anwendungen auswählen. Wenn Sie weitere Informationen benötigen, lesen Sie [Konfigurieren sensibler Informationstypen für eine Bezeichnung](#configuring-sensitive-info-types-for-a-label).

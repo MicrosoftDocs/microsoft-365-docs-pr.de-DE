@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984796"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169604"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
@@ -33,16 +33,18 @@ ms.locfileid: "52984796"
 > [!TIP]
 > Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md) (ATTACK Surface Reduction Rules, ASR-Regeln) tragen dazu bei, Aktionen zu verhindern, die schadsoftware häufig missbraucht, um Geräte und Netzwerke zu kompromittieren.
+[Attack Surface Reduction-Regeln](attack-surface-reduction.md) (ASR-Regeln) tragen dazu bei, Aktionen zu verhindern, die schadsoftware häufig missbraucht, um Geräte und Netzwerke zu kompromittieren.
 
-**Anforderungen** Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, auf denen eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
+## <a name="requirements"></a>Anforderungen
+
+Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, auf denen eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
 
 - Windows 10 Pro, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows 10 Enterprise, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Diese erweiterten Funktionen sind nicht mit einer Windows Professional oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
 
 Jede ASR-Regel enthält eine von vier Einstellungen:
 
@@ -54,7 +56,7 @@ Jede ASR-Regel enthält eine von vier Einstellungen:
 > [!IMPORTANT]
 > Derzeit wird der Warnmodus für drei ASR-Regeln nicht unterstützt, wenn Sie ASR-Regeln in Microsoft Endpoint Manager (MEM) konfigurieren. Weitere Informationen finden Sie unter Fälle, in denen der [Warnmodus nicht unterstützt wird.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Es wird dringend empfohlen, ASR-Regeln mit einer Windows E5-Lizenz (oder einer ähnlichen Lizenzierungs-SKU) zu verwenden, um die erweiterten Überwachungs- und Berichtsfunktionen in [Microsoft Defender für Endpunkt](microsoft-defender-endpoint.md) (Defender für Endpunkt) zu nutzen. Wenn Sie jedoch über eine andere Lizenz verfügen, z. B. Windows Professional oder Windows E3, die keine erweiterten Überwachungs- und Berichtsfunktionen umfassen, können Sie ihre eigenen Überwachungs- und Berichterstellungstools zusätzlich zu den Ereignissen entwickeln, die an jedem Endpunkt generiert werden, wenn ASR-Regeln ausgelöst werden (z. B. Ereignisweiterleitung).
+Es wird dringend empfohlen, ASR-Regeln mit einer Windows E5-Lizenz (oder einer ähnlichen Lizenzierungs-SKU) zu verwenden, um die erweiterten Überwachungs- und Berichtsfunktionen zu [nutzen,](microsoft-defender-endpoint.md) die in Microsoft Defender für Endpunkt (Defender für Endpunkt) verfügbar sind. Wenn Sie jedoch über eine andere Lizenz verfügen, z. B. Windows Professional oder Windows E3, die keine erweiterten Überwachungs- und Berichtsfunktionen enthalten, können Sie ihre eigenen Überwachungs- und Berichterstellungstools zusätzlich zu den Ereignissen entwickeln, die an jedem Endpunkt generiert werden, wenn ASR-Regeln ausgelöst werden (z. B. Ereignisweiterleitung).
 
 > [!TIP]
 > Weitere Informationen zu Windows Lizenzierung finden Sie unter [Windows 10 Lizenzierung](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) und im [Volumenlizenzierungshandbuch für Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
@@ -89,7 +91,7 @@ Die folgenden Verfahren zum Aktivieren von ASR-Regeln umfassen Anweisungen zum A
 
 1. Wählen Sie **Gerätekonfigurationsprofile**  >  **aus.** Wählen Sie ein vorhandenes Endpunktschutzprofil aus, oder erstellen Sie ein neues. Um ein neues Profil zu erstellen, wählen Sie **Profil erstellen** aus, und geben Sie Informationen für dieses Profil ein. Wählen Sie für **Profiltyp** **Endpunktschutz** aus. Wenn Sie ein vorhandenes Profil ausgewählt haben, wählen Sie **Eigenschaften** und dann **Einstellungen** aus.
 
-2. Wählen Sie im **Endpunktschutzbereich** **Windows Defender Exploit Guard** und dann Attack Surface **Reduction** aus. Wählen Sie die gewünschte Einstellung für jede ASR-Regel aus.
+2. Wählen Sie im **Endpunktschutzbereich** **Windows Defender Exploit Guard** aus, und wählen Sie dann Attack Surface **Reduction** aus. Wählen Sie die gewünschte Einstellung für jede ASR-Regel aus.
 
 3. Geben Sie unter **Attack Surface Reduction-Ausnahmen** einzelne Dateien und Ordner ein. Sie können auch **"Importieren"** auswählen, um eine CSV-Datei zu importieren, die Dateien und Ordner enthält, die von ASR-Regeln ausgeschlossen werden sollen. Jede Zeile in der CSV-Datei sollte wie folgt formatiert werden:
 
@@ -192,7 +194,7 @@ Die Werte zum Aktivieren (Blockieren), Deaktivieren, Warnen oder Aktivieren im �
 - 0 : Deaktivieren (Asr-Regel deaktivieren)
 - 1 : Blockieren (ASR-Regel aktivieren)
 - 2 : Überwachung (Bewerten, wie sich die ASR-Regel bei Aktivierung auf Ihre Organisation auswirken würde)
-- 6 : Warnen (Aktivieren Sie die ASR-Regel, aber lassen Sie zu, dass der Endbenutzer den Block umgehen kann). Der Warnmodus ist jetzt für die meisten ASR-Regeln verfügbar.
+- 6 : Warnen (Aktivieren sie die ASR-Regel, aber lassen Sie zu, dass der Endbenutzer den Block umgehen kann). Der Warnmodus ist jetzt für die meisten ASR-Regeln verfügbar.
 
 Verwenden Sie [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) Configuration Service Provider (CSP), um Ausschlüsse hinzuzufügen.
 
@@ -251,7 +253,7 @@ Beispiel:
 > [!WARNING]
 > Wenn Sie Ihre Computer und Geräte mit Intune, Configuration Manager oder einer anderen Verwaltungsplattform auf Unternehmensebene verwalten, überschreibt die Verwaltungssoftware beim Start alle widersprüchlichen PowerShell-Einstellungen. Damit Benutzer den Wert mithilfe von PowerShell definieren können, verwenden Sie die Option "Benutzerdefiniert" für die Regel in der Verwaltungsplattform.
 
-1. Geben Sie **powershell** in die Menü "Start" ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
+1. Geben Sie **powershell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **Als Administrator ausführen** aus.
 
 2. Geben Sie das folgende Cmdlet ein:
 
