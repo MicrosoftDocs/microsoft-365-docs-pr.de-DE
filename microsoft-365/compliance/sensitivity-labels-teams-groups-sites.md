@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096756"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149190"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -141,6 +141,8 @@ Um in der Dropdownliste für die Auswahl angezeigt zu werden, müssen Authentifi
 Nicht alle Apps unterstützen Authentifizierungskontexte. Wenn ein Benutzer mit einer nicht unterstützten App eine Verbindung mit der Website herstellt, die für einen Authentifizierungskontext konfiguriert ist, wird entweder eine Nachricht angezeigt, dass der Zugriff verweigert wurde, oder er wird aufgefordert, sich zu authentifizieren, aber abgelehnt. Die folgenden Apps unterstützen derzeit Authentifizierungskontexte:
 
 - Office im Web, welches Outlook im Web umfasst
+
+- Microsoft Teams für Windows und macOS (ausgenommen Teams-Web-App)
 
 - Microsoft Planner
 

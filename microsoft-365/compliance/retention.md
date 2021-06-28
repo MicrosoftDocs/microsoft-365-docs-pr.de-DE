@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 9337bddd87dd24d42b4d06fe77225901701cbdee
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137691"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149178"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -298,7 +298,7 @@ Verwenden Sie den folgenden Ablauf, um die Aufbewahrungs- und Löschergebnisse f
   
 Erläuterung der vier verschiedenen Prinzipien:
   
-1. **Aufbewahrung hat Vorrang vor Löschen.** Inhalt wird nicht dauerhaft gelöscht, wenn für ihn zusätzlich Aufbewahrungseinstellungen gelten. Dieses Prinzip stellt zwar sicher, dass Inhalte aus Compliancegründen beibehalten werden, aber der Löschvorgang wird weiterhin initiiert und kann den Inhalt aus der Benutzeransicht entfernen. Beispielsweise wird ein Dokument in SharePoint aus dem ursprünglichen Ordner in den Ordner "Permanente Aufbewahrung" verschoben. Das endgültige Löschen wird jedoch angehalten. Weitere Informationen dazu, wie und wo Inhalte beibehalten werden, finden Sie unter den folgenden Links für die einzelnen Workloads:
+1. **Aufbewahrung hat Vorrang vor Löschen.** Inhalt wird nicht dauerhaft gelöscht, wenn für ihn zusätzlich Aufbewahrungseinstellungen gelten. Dieses Prinzip stellt zwar sicher, dass Inhalte aus Compliancegründen beibehalten werden, aber der Löschvorgang wird weiterhin initiiert und kann den Inhalt aus der Benutzeransicht und den Suchvorgängen entfernen. Bei SharePoint wird beispielsweise ein Dokument aus dem ursprünglichen Ordner in den Ordner "Aufbewahrungsspeicher" verschoben. Das endgültige Löschen wird jedoch angehalten. Weitere Informationen dazu, wie und wo Inhalte aufbewahrt werden, finden Sie unter den folgenden Links für jeden Workload:
     
     - [Funktionsweise der Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Funktionsweise der Aufbewahrung mit Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
@@ -307,7 +307,7 @@ Erläuterung der vier verschiedenen Prinzipien:
     
     Beispiel: Eine E-Mail unterliegt einer Aufbewahrungsrichtlinie für Exchange, die so konfiguriert ist, dass Elemente nach drei Jahren gelöscht werden. Außerdem gilt für das Element eine Aufbewahrungsbezeichnung, wonach dieses für fünf Jahre aufbewahrt werden muss.
     
-    Die E-Mail-Nachricht wird fünf Jahre lang aufbewahrt, da diese Aufbewahrungsaktion Vorrang vor der Löschung hat. Die E-Mail-Nachricht wird dann am Ende der fünf Jahre aufgrund der Löschaktion endgültig gelöscht.
+    Die E-Mail-Nachricht wird fünf Jahre lang aufbewahrt, da diese Aufbewahrungsaktion Vorrang vor der Löschung hat. Die E-Mail wird am Ende der fünf Jahre aufgrund der Löschaktion, die angehalten wurde, während die Aufbewahrungsaktion in Kraft war, endgültig gelöscht.
 
 2. **Der längste Aufbewahrungszeitraum hat Vorrang.** Inhalte, die mehreren Aufbewahrungsrichtlinien mit unterschiedlichen Aufbewahrungszeiträumen unterliegen, werden bis zum Ende des längsten Aufbewahrungszeitraums aufbewahrt.
     
