@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie Compliance-Begrenzungen verwenden, um logische Grenzen zu erstellen, die die Speicherorte von Benutzerinhalten steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022342"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194709"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliancegrenzen für eDiscovery-Untersuchungen
 
 Die Anleitungen in diesem Artikel können angewendet werden, wenn Sie entweder Core eDiscovery oder Advanced eDiscovery verwenden, um Untersuchungen zu verwalten.
 
-Compliancegrenzen erstellen logische Grenzen innerhalb einer Organisation, die die Speicherorte von Benutzerinhalten (z. B. Postfächer, OneDrive Konten und SharePoint Websites) steuern, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Begrenzungen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der Rechts-, Personal- oder anderen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Begrenzungen ist häufig für multinationale Unternehmen erforderlich, die geografische Aufsichtsbereiche und Vorschriften berücksichtigen müssen, und für Behörden, die häufig in verschiedene Behörden unterteilt sind. In Microsoft 365 helfen Ihnen Compliance-Grenzen, diese Anforderungen zu erfüllen, wenn Sie Inhaltssuchen durchführen und Untersuchungen mit eDiscovery-Fällen verwalten.
+Compliancegrenzen erstellen logische Grenzen innerhalb einer Organisation, die die Speicherorte von Benutzerinhalten (z. B. Postfächer, OneDrive Konten und SharePoint Websites) steuern, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Begrenzungen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der Rechts-, Personal- oder anderen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Begrenzungen ist häufig für multinationale Unternehmen erforderlich, die geografische Aufsichtsbereiche und Vorschriften berücksichtigen müssen, und für Behörden, die häufig in verschiedene Behörden unterteilt sind. In Microsoft 365 helfen Ihnen Compliance-Begrenzungen, diese Anforderungen zu erfüllen, wenn Sie Inhaltssuchen durchführen und Untersuchungen mit eDiscovery-Fällen verwalten.
   
 Wir verwenden das Beispiel in der folgenden Abbildung, um zu erläutern, wie Compliance-Grenzen funktionieren.
   
@@ -82,7 +82,7 @@ Eine vollständige Liste finden Sie in der vollständigen Liste der unterstützt
 
 ## <a name="step-2-create-a-role-group-for-each-agency"></a>Schritt 2: Erstellen einer Rollengruppe für jede Organisation
 
-Der nächste Schritt besteht darin, die Rollengruppen im Security & Compliance Center zu erstellen, die mit Ihren Behörden übereinstimmen. Es wird empfohlen, eine Rollengruppe zu erstellen, indem Sie die integrierte Gruppe der eDiscovery-Manager kopieren, die entsprechenden Mitglieder hinzufügen und Rollen entfernen, die möglicherweise nicht Ihren Anforderungen entsprechen. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen.](assign-ediscovery-permissions.md)
+Der nächste Schritt besteht darin, die Rollengruppen im Security & Compliance Center zu erstellen, die mit Ihren Behörden abgestimmt sind. Es wird empfohlen, eine Rollengruppe zu erstellen, indem Sie die integrierte Gruppe der eDiscovery-Manager kopieren, die entsprechenden Mitglieder hinzufügen und Rollen entfernen, die möglicherweise nicht Ihren Anforderungen entsprechen. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen.](assign-ediscovery-permissions.md)
   
 Um die Rollengruppen zu erstellen, wechseln Sie im Security & Compliance Center zur Seite **Berechtigungen**, und erstellen Sie eine Rollengruppe für jedes Team in jeder Organisation, die Compliance-Begrenzungen sowie eDiscovery-Fälle zum Verwalten von Untersuchungen verwendet.
   
@@ -116,7 +116,7 @@ Nachfolgend finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
 
 - `Filters`: Gibt die Suchkriterien für den Filter an. Für die Compliancegrenzen definieren Sie die folgenden Filter. Jeder gilt für einen Inhaltsspeicherort.
 
-    - `Mailbox`: Gibt die Postfächer oder OneDrive Konten an, die von den im Parameter definierten Rollengruppen `Users` durchsucht werden können. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer oder OneDrive Konten in einer bestimmten Organisation durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"` .
+    - `Mailbox`: Gibt die Postfächer oder OneDrive Konten an, die die im Parameter definierten Rollengruppen `Users` durchsuchen können. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer oder OneDrive Konten in einer bestimmten Organisation durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"` .
 
     - `Site_Path`: Gibt die SharePoint Websites an, die von den im Parameter definierten Rollengruppen `Users` durchsucht werden können. Die  *SharePointURL*  gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Zum Beispiel: `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Beachten Sie, dass die `Site` `Site_Path` Und-Filter durch einen **-or-Operator** verbunden sind.
 
@@ -147,7 +147,7 @@ Der letzte Schritt besteht darin, einen Core eDiscovery-Fall oder Advanced eDisc
   
 - Nur Mitglieder der Rollengruppe, die dem Fall hinzugefügt wurden, können den Fall im Security & Compliance Center anzeigen und darauf zugreifen. Wenn beispielsweise die Rollengruppe "Fourth Coffee Investigators" das einzige Mitglied eines Falls ist, können Mitglieder der Rollengruppe "Fourth Coffee eDiscovery-Manager" (oder Mitglieder einer anderen Rollengruppe) den Fall nicht sehen oder darauf zugreifen.
 
-- Wenn ein Mitglied der Rollengruppe, die einem Fall zugewiesen ist, eine dem Fall zugeordnete Suche ausführt, kann er nur die Inhaltsspeicherorte in seiner Organisation durchsuchen (die durch den Suchberechtigungsfilter definiert wird, den Sie in Schritt 3 erstellt haben).
+- Wenn ein Mitglied der Rollengruppe, die einem Fall zugewiesen ist, eine dem Fall zugeordnete Suche ausführt, kann er nur die Inhaltsspeicherorte in ihrer Organisation durchsuchen (die durch den Suchberechtigungsfilter definiert wird, den Sie in Schritt 3 erstellt haben).
 
 So erstellen Sie einen Fall und weisen Mitglieder zu:
 
@@ -205,9 +205,9 @@ MitHilfe von Suchberechtigungsfiltern können Sie auch steuern, wo Inhalte für 
    Zur Vereinfachung des Konzepts steuert der Parameter **Region** das Datencenter, das zum Suchen nach Inhalten in SharePoint und OneDrive verwendet wird. Dies gilt nicht für die Suche nach Inhalten in Exchange, da Exchange Inhaltssuchen nicht an den geografischen Standort von Rechenzentren gebunden sind. Außerdem kann derselbe Wert des **Regionsparameters** auch das Rechenzentrum bestimmen, durch das Exporte weitergeleitet werden. Dies ist häufig erforderlich, um die Verschiebung von Daten über geografische Grenzen hinweg zu steuern.
 
 > [!NOTE]
-> Wenn Sie Advanced eDiscovery verwenden, steuert der Parameter **Region** nicht den Bereich, aus dem Daten exportiert werden. Daten werden aus dem primären Rechenzentrum der Organisation exportiert. Außerdem ist die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort von Rechenzentren gebunden. Alle Rechenzentren werden durchsucht. Weitere Informationen zu Advanced eDiscovery finden Sie unter [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
+> Wenn Sie Advanced eDiscovery verwenden, steuert der Parameter **Region** nicht den Bereich, aus dem Daten exportiert werden. Die Daten werden vom zentralen Standort der Organisation exportiert. Außerdem ist die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort von Rechenzentren gebunden. Alle Rechenzentren werden durchsucht. Weitere Informationen zu Advanced eDiscovery finden Sie unter [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
 
-Hier sind Beispiele für die Verwendung des Parameters **Region** beim Erstellen von Suchberechtigungsfiltern für Compliancegrenzen. Dabei wird davon ausgegangen, dass sich die vierte Coffee-Tochtergesellschaft in Nordamerika befindet und dass sich Coho Coffee in Europa befindet. 
+Hier sind Beispiele für die Verwendung des Parameters **Region** beim Erstellen von Suchberechtigungsfiltern für Compliancegrenzen. Dabei wird davon ausgegangen, dass sich die Vierte Coffee-Tochtergesellschaft in Nordamerika befindet und dass sich coho-Cafés in Europa befinden. 
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
@@ -219,13 +219,15 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen die folgenden Punkte.
   
-- Der Parameter **Region** steuert keine Suchvorgänge in Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Um den Umfang zu beschränken, in dem Exchange Postfächer durchsucht werden, verwenden Sie **den** Filterparameter beim Erstellen oder Ändern eines Suchberechtigungsfilters.
+- Der Parameter **Region** steuert keine Suchvorgänge in Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Verwenden Sie zum Einschränken des Bereichs, in dem Exchange Postfächer durchsucht werden, den Parameter **Filters** beim Erstellen oder Ändern eines Suchberechtigungsfilters.
 
 - Wenn es für einen eDiscovery-Manager erforderlich ist, in mehreren SharePoint Regionen zu suchen, müssen Sie ein anderes Benutzerkonto für diesen eDiscovery-Manager erstellen, das im Suchberechtigungsfilter verwendet werden kann, um die Region anzugeben, in der sich die SharePoint Websites oder OneDrive-Konten befinden. Weitere Informationen zum Einrichten finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint Multi-Geo Umgebung" in der [Inhaltssuche.](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment)
 
-- Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der **Parameter "Region"** Suchvorgänge entweder an den primären oder Satellitenstandort weiter, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint und OneDrive Websites außerhalb der Region durchsucht, die im Suchberechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben.
+- Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der **Parameter "Region"** Suchvorgänge an den primären oder Satellitenstandort weiter, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint sucht und Websites außerhalb der Region OneDrive, die im Suchberechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben.
 
-- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Diensten, die Sie mit dem Tool für die Inhaltssuche durchsuchen können) in den Azure Storage Speicherort im Rechenzentrum hochgeladen, der durch den Parameter **Region** angegeben wird. Dies hilft Organisationen, die Compliance zu halten, indem inhalte nicht über kontrollierte Grenzen exportiert werden dürfen. Wenn im Suchberechtigungsfilter keine Region angegeben ist, werden Inhalte in das primäre Rechenzentrum der Organisation hochgeladen.
+- Beim Exportieren von Suchergebnissen aus Core eDiscovery werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Diensten, die Sie mithilfe des Inhaltssuche-Tools durchsuchen können) in den Azure Storage Speicherort im Rechenzentrum hochgeladen, der vom Parameter **Region** angegeben wird. Dies hilft Organisationen, die Compliance zu halten, indem inhalte nicht über kontrollierte Grenzen exportiert werden dürfen. Wenn im Suchberechtigungsfilter keine Region angegeben ist, werden Inhalte in das primäre Rechenzentrum der Organisation hochgeladen.
+
+  Beim Exportieren von Inhalten aus Advanced eDiscovery können Sie nicht steuern, wo Inhalte hochgeladen werden, indem Sie den Parameter **Region** verwenden. Inhalte werden an einen Azure Storage Speicherort in einem Rechenzentrum am zentralen Standort Ihrer Organisation hochgeladen. Eine Liste der geografischen Standorte basierend auf Ihrem zentralen Standort finden Sie unter [Microsoft 365 Multi-Geo eDiscovery-Konfiguration.](../enterprise/multi-geo-ediscovery-configuration.md)
 
 - Sie können einen vorhandenen Suchberechtigungsfilter bearbeiten, um die Region hinzuzufügen oder zu ändern, indem Sie den folgenden Befehl ausführen:
 
@@ -259,7 +261,7 @@ Beachten Sie beim Verwalten von eDiscovery-Fällen und -Untersuchungen, die Comp
 
     Außerdem gelten Haltestatistiken nur für Inhaltsspeicherorte in der Organisation.
 
-- Wenn Ihnen ein Suchberechtigungsfilter (ein Postfach oder ein Websitefilter) zugewiesen ist und Sie versuchen, nicht indizierte Elemente für eine Suche zu exportieren, die alle SharePoint Websites in Ihrer Organisation enthält, wird die folgende Fehlermeldung angezeigt: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` . Wenn Ihnen ein Suchberechtigungsfilter zugewiesen ist und Sie nicht indizierte Elemente aus SharePoint exportieren möchten, müssen Sie die Suche erneut ausführen und bestimmte SharePoint Websites für die Suche einschließen. Andernfalls können Sie nur indizierte Elemente aus einer Suche exportieren, die alle SharePoint Websites enthält. Weitere Informationen zu den Optionen beim Exportieren von Suchergebnissen finden Sie unter [Exportieren von Inhaltssuchergebnissen.](export-search-results.md#step-1-prepare-search-results-for-export)
+- Wenn Ihnen ein Suchberechtigungsfilter (ein Postfach oder ein Websitefilter) zugewiesen ist und Sie versuchen, nicht indizierte Elemente für eine Suche zu exportieren, die alle SharePoint Websites in Ihrer Organisation enthält, wird die folgende Fehlermeldung angezeigt: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` . Wenn Ihnen ein Suchberechtigungsfilter zugewiesen ist und Sie nicht indizierte Elemente aus SharePoint exportieren möchten, müssen Sie die Suche erneut ausführen und bestimmte SharePoint zu durchsuchende Websites einschließen. Andernfalls können Sie nur indizierte Elemente aus einer Suche exportieren, die alle SharePoint Websites enthält. Weitere Informationen zu den Optionen beim Exportieren von Suchergebnissen finden Sie unter [Exportieren von Inhaltssuchergebnissen.](export-search-results.md#step-1-prepare-search-results-for-export)
 
 - Suchberechtigungsfilter werden nicht auf öffentliche Exchange-Ordner angewendet.
 
@@ -269,19 +271,19 @@ Beachten Sie beim Verwalten von eDiscovery-Fällen und -Untersuchungen, die Comp
 
 - Wenn Compliance-Begrenzungen und Suchberechtigungsfilter für einen Benutzer implementiert sind, wird empfohlen, das Postfach eines Benutzers und nicht dessen OneDrive Konto nicht zu löschen. Mit anderen Worten: Wenn Sie das Postfach eines Benutzers löschen, sollten Sie auch das OneDrive Konto des Benutzers entfernen, da mailbox_RecipientFilter zum Erzwingen des Suchberechtigungsfilters für OneDrive verwendet wird.
 
-- Compliance-Begrenzungen und Suchberechtigungsfilter hängen von Attributen ab, die für Inhalte in Exchange, OneDrive und SharePoint gestempelt werden, und von der nachfolgenden Indizierung dieses stempelten Inhalts.
+- Compliancegrenzen und Suchberechtigungsfilter hängen von Attributen ab, die für Inhalte in Exchange, OneDrive und SharePoint gestempelt werden, sowie von der nachfolgenden Indizierung dieses stempelten Inhalts.
 
 - Es wird nicht empfohlen, Ausschlussfilter (z. B. die Verwendung `-not()` in einem Suchberechtigungsfilter) für eine inhaltsbasierte Compliancegrenze zu verwenden. Die Verwendung eines Ausschlussfilters kann unerwartete Ergebnisse haben, wenn Inhalte mit kürzlich aktualisierten Attributen nicht indiziert wurden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Wer kann Suchberechtigungsfilter erstellen und verwalten (mit New-ComplianceSecurityFilter und Set-ComplianceSecurityFilter Cmdlets)?**
+**Wer können Suchberechtigungsfilter erstellen und verwalten (mit New-ComplianceSecurityFilter und Set-ComplianceSecurityFilter Cmdlets)?**
   
 Zum Erstellen, Anzeigen und Ändern von Suchberechtigungsfiltern müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Microsoft 365 Compliance Center sein.
   
 **Wenn ein eDiscovery-Manager mehr als einer Rollengruppe zugewiesen ist, die mehrere Behörden umfasst, wie wird nach Inhalten in einer Oder der anderen Agentur gesucht?**
   
-Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche auf eine bestimmte Agentur beschränken. Wenn eine Organisation beispielsweise die **Eigenschaft CustomAttribute10** angegeben hat, um Behörden zu unterscheiden, können sie Folgendes an ihre Suchabfrage anfügen, um Postfächer und OneDrive-Konten in einer bestimmten Organisation zu durchsuchen:  `CustomAttribute10:<value>` .
+Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche auf eine bestimmte Agentur beschränken. Wenn eine Organisation beispielsweise die **Eigenschaft CustomAttribute10** angegeben hat, um Behörden zu unterscheiden, können sie Folgendes an ihre Suchabfrage anhängen, um Postfächer und OneDrive Konten in einer bestimmten Organisation zu durchsuchen: `CustomAttribute10:<value>` .
   
 **Was geschieht, wenn der Wert des Attributs, das als Complianceattribut in einem Suchberechtigungsfilter verwendet wird, geändert wird?**
   
@@ -289,16 +291,16 @@ Es dauert bis zu drei Tage, bis ein Suchberechtigungsfilter die Compliancegrenze
   
 **Kann ein eDiscovery-Manager Inhalte von zwei separaten Compliance-Grenzen anzeigen?**
   
-Ja, dies kann beim Durchsuchen von Exchange-Postfächern durch Hinzufügen des eDiscovery-Managers zu Rollengruppen erfolgen, die für beide Behörden sichtbar sind. Beim Durchsuchen von SharePoint-Websites und OneDrive-Konten kann ein eDiscovery-Manager jedoch nur dann nach Inhalten in unterschiedlichen Compliance-Grenzen suchen, wenn sich die Behörden am selben Geografischen Standort befinden. **Hinweis:** Diese Einschränkung für Websites gilt nicht in Advanced eDiscovery, da die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort gebunden ist.
+Ja, dies kann beim Durchsuchen von Exchange Postfächern durch Hinzufügen des eDiscovery-Managers zu Rollengruppen erfolgen, die für beide Behörden sichtbar sind. Beim Durchsuchen SharePoint Websites und OneDrive Konten kann ein eDiscovery-Manager jedoch nur dann nach Inhalten in unterschiedlichen Compliancegrenzen suchen, wenn sich die Behörden am selben Geografischen Standort befinden. **Hinweis:** Diese Einschränkung für Websites gilt nicht in Advanced eDiscovery, da die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort gebunden ist.
   
-**Funktionieren Suchberechtigungsfilter für eDiscovery-Fallarchive, Microsoft 365-Aufbewahrungsrichtlinien oder DLP?**
+**Funktionieren Suchberechtigungsfilter für eDiscovery-Fallarchive, Microsoft 365 Aufbewahrungsrichtlinien oder DLP?**
   
 Nein, nicht zu diesem Zeitpunkt.
   
-**Kann ich sharePoint weiterhin durchsuchen, wenn ich eine Region zum Steuern des Inhaltsexports angibt, aber keine SharePoint-Organisation in dieser Region habe?**
+**Kann ich weiterhin nach SharePoint suchen, wenn ich eine Region zum Steuern des Inhaltsexports angibt, aber keine SharePoint Organisation in dieser Region habe?**
   
 Wenn die im Suchberechtigungsfilter angegebene Region in Ihrer Organisation nicht vorhanden ist, wird die Standardregion durchsucht.
   
 **Wie viele Suchberechtigungsfilter können maximal in einer Organisation erstellt werden?**
   
-Es gibt keine Beschränkung für die Anzahl der Suchberechtigungsfilter, die in einer Organisation erstellt werden können. Die Suchleistung wird jedoch beeinträchtigt, wenn mehr als 100 Suchberechtigungsfilter vorhanden sind. Um die Anzahl der Suchberechtigungsfilter in Ihrer Organisation so klein wie möglich zu halten, erstellen Sie Filter, die Regeln für Exchange, SharePoint und OneDrive nach Möglichkeit in einem einzigen Suchberechtigungsfilter kombinieren.
+Es gibt keine Beschränkung für die Anzahl der Suchberechtigungsfilter, die in einer Organisation erstellt werden können. Die Suchleistung wird jedoch beeinträchtigt, wenn mehr als 100 Suchberechtigungsfilter vorhanden sind. Um die Anzahl der Suchberechtigungsfilter in Ihrer Organisation so klein wie möglich zu halten, erstellen Sie Filter, die Regeln für Exchange, SharePoint und OneDrive in einem einzigen Suchberechtigungsfilter kombinieren, wann immer möglich.

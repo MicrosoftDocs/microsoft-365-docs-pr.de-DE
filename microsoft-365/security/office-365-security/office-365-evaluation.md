@@ -1,5 +1,5 @@
 ---
-title: Auswerten von Microsoft Defender für Office 365
+title: Bewerten von Microsoft Defender für Office 365
 description: Defender für Office 365 im Evaluierungsmodus erstellt Defender für Office 365 E-Mail-Richtlinien, die Bewertungen protokollieren, z. B. Schadsoftware, aber nicht auf Nachrichten reagieren.
 keywords: auswerten Office 365, Microsoft Defender für Office 365, Office 365-Evaluierung, Office 365, Microsoft Defender, Microsoft Defender für Endpunkt testen
 f1.keywords:
@@ -19,14 +19,14 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108331"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194781"
 ---
-# <a name="evaluate-microsoft-defender-for-office-365"></a>Auswerten von Microsoft Defender für Office 365
+# <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,24 +35,24 @@ ms.locfileid: "53108331"
 
 Die Durchführung einer sorgfältigen Sicherheitsproduktbewertung kann Ihnen helfen, fundierte Entscheidungen in Bezug auf Upgrades und Einkäufe zu treffen. Es hilft, die Funktionen des Sicherheitsprodukts auszuprobieren, um zu bewerten, wie es Ihrem Sicherheitsteam bei ihren täglichen Aufgaben helfen kann.
 
-Die Evaluierungsumgebung von [Microsoft Defender für Office 365](defender-for-office-365.md) wurde entwickelt, um die Komplexität der Geräte- und Umgebungskonfiguration zu vermeiden, sodass Sie sich auf die Bewertung der Funktionen von Microsoft Defender für Office 365 konzentrieren können. Im Evaluierungsmodus können alle Nachrichten, die an Exchange Online Postfächer gesendet werden, ausgewertet werden, ohne mx-Einträge auf Microsoft zu verweisen. Das Feature gilt nur für den E-Mail-Schutz und nicht für Office Clients wie Word, SharePoint oder Teams.
+Die Evaluierungserfahrung von [Microsoft Defender für Office 365](defender-for-office-365.md) wurde entwickelt, um die Komplexität der Geräte- und Umgebungskonfiguration zu vermeiden, sodass Sie sich auf die Bewertung der Funktionen von Microsoft Defender für Office 365 konzentrieren können. Im Evaluierungsmodus können alle Nachrichten, die an Exchange Online Postfächer gesendet werden, ausgewertet werden, ohne MX-Einträge auf Microsoft zu verweisen. Das Feature gilt nur für den E-Mail-Schutz und nicht für Office Clients wie Word, SharePoint oder Teams.
 
 Wenn Sie noch nicht über eine Lizenz verfügen, die Microsoft Defender für Office 365 unterstützt, können Sie eine [kostenlose 30-Tage-Evaluierung](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) starten und die Funktionen im Microsoft 365 Defender-Portal unter <https://security.microsoft.com> testen. Sie werden die schnelle Einrichtung genießen und sie bei Bedarf ganz einfach deaktivieren.
 
 > [!NOTE]
-> Wenn Sie sich im Microsoft 365 Defender-Portal ( ) befinden, <https://security.microsoft.com> können Sie hier einen Defender für Office 365 Evaluierung starten: **E-Mail-& Richtlinien** für die Zusammenarbeit & Seite \> **"Regelbedrohungsrichtlinien"** im Abschnitt \>  \> "Evaluierungsmodus".  \> 
+> Wenn Sie sich im Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) befinden, können Sie hier einen Defender für Office 365 Evaluierung starten: **E-Mail-& Richtlinien** für die Zusammenarbeit \> **&** \> **Regelbedrohungsrichtlinien** Seite \> **Andere** Abschnitt \> **Evaluierungsmodus**.
 
 ## <a name="how-the-evaluation-works"></a>Funktionsweise der Auswertung
 
 Defender für Office 365 im Evaluierungsmodus erstellt Defender für Office 365 E-Mail-Richtlinien, die Bewertungen protokollieren, z. B. Schadsoftware, aber nicht auf Nachrichten reagieren. Sie müssen ihre MX-Eintragskonfiguration nicht ändern.
 
-Im [Evaluierungsmodus](safe-attachments.md)werden Tresor Anlagen, [Tresor Links](safe-links.md)und [Postfachintelligenz-basierte Identitätswechselrichtlinien](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Ihrem Auftrag eingerichtet. Alle Defender für Office 365 Richtlinien werden im Nichterzwingungsmodus im Hintergrund erstellt und sind für Sie nicht sichtbar.
+Im [Evaluierungsmodus](safe-attachments.md)werden Tresor Anlagen, [Tresor Links](safe-links.md)und [Postfachintelligenz-basierte Identitätswechselrichtlinien](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Ihrem Auftrag eingerichtet. Alle Defender for Office 365-Richtlinien werden im Nichterzwingungsmodus im Hintergrund erstellt und sind für Sie nicht sichtbar.
 
 Im Rahmen des Setups wird im Evaluierungsmodus auch die [erweiterte Filterung für Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)konfiguriert. Die Filtergenauigkeit wird verbessert, indem IP-Adresse und Absenderinformationen beibehalten werden, die andernfalls verloren gehen, wenn E-Mails über ein E-Mail-Sicherheitsgateway (ESG) vor Defender für Office 365 übergeben werden. Die erweiterte Filterung für Connectors verbessert auch die Filtergenauigkeit für Ihre vorhandenen Antispam- und Antiphishingrichtlinien für Exchange Online Protection (EOP).
 
-Die erweiterte Filterung für Connectors verbessert die Filtergenauigkeit, kann jedoch die Zustellbarkeit für bestimmte Nachrichten ändern, wenn Sie eine ESG vor Defender für Office 365 haben und derzeit die EOP-Filterung nicht umgehen. Die Auswirkungen sind auf EOP-Richtlinien beschränkt. MDO-Richtlinien, die im Rahmen der Auswertung eingerichtet wurden, werden im Nichterzwingungsmodus erstellt. Um potenzielle Auswirkungen auf die Produktion zu minimieren, können Sie die gesamte EOP-Filterung umgehen, indem Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet) erstellen, um die Spam-Konfidenzstufe (Spam Confidence Level, SCL) von Nachrichten auf -1 festzulegen. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln zum Festlegen der Spamzustimmungsstufe (Spam Confidence Level, SCL) in Nachrichten in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)  
+Die erweiterte Filterung für Connectors verbessert die Filtergenauigkeit, kann jedoch die Zustellbarkeit für bestimmte Nachrichten ändern, wenn Sie eine ESG vor Defender für Office 365 haben und derzeit die EOP-Filterung nicht umgehen. Die Auswirkungen sind auf EOP-Richtlinien beschränkt. Defender für Office 365 Richtlinien, die im Rahmen der Auswertung eingerichtet wurden, werden im Nichterzwingungsmodus erstellt. Um potenzielle Auswirkungen auf die Produktion zu minimieren, können Sie die gesamte EOP-Filterung umgehen, indem Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet) erstellen, um die Spam-Konfidenzstufe (Spam Confidence Level, SCL) von Nachrichten auf -1 festzulegen. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln zum Festlegen der Spamzustimmungsstufe (Spam Confidence Level, SCL) in Nachrichten in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)  
 
-Wenn der Auswertungsmodus eingerichtet ist, wird täglich ein Bericht mit bis zu 90 Tagen Daten aktualisiert, in dem die Nachrichten quantifiziert werden, die blockiert worden wären, wenn die Richtlinien implementiert worden wären (z. B. Löschen, Senden an Junk, Quarantäne). Berichte werden für alle Defender für Office 365 und EOP-Erkennungen generiert. Sie werden pro Erkennungstechnologie (z. B. Identitätswechsel) aggregiert und können nach Zeitraum gefiltert werden. Darüber hinaus können Nachrichtenberichte bei Bedarf erstellt werden, um benutzerdefinierte Pivots oder Deep Dive-Nachrichten mithilfe von Explorer zu erstellen.
+Wenn der Auswertungsmodus eingerichtet ist, wird täglich ein Bericht mit bis zu 90 Tagen Daten aktualisiert, in dem die Nachrichten quantifiziert werden, die blockiert worden wären, wenn die Richtlinien implementiert worden wären (z. B. Löschen, Senden an Junk, Quarantäne). Berichte werden für alle Defender für Office 365- und EOP-Erkennungen generiert. Sie werden pro Erkennungstechnologie (z. B. Identitätswechsel) aggregiert und können nach Zeitraum gefiltert werden. Darüber hinaus können Nachrichtenberichte bei Bedarf erstellt werden, um benutzerdefinierte Pivots oder Deep Dive-Nachrichten mithilfe von Explorer zu erstellen.
 
 Mit der vereinfachten Einrichtungsoberfläche können Sie sich auf Folgendes konzentrieren:
 
@@ -102,7 +102,7 @@ Die folgenden Rollen sind erforderlich:
 
 ### <a name="enhanced-filtering"></a>Erweiterte Filterung
 
-Ihre Exchange Online Protection-Richtlinien, z. B. Massen- und Spamschutz, bleiben unverändert. Bei der Auswertung wird jedoch die erweiterte Filterung für Connectors aktiviert, was sich möglicherweise auf den Nachrichtenfluss und Exchange Online Protection Richtlinien auswirkt, sofern sie nicht umgangen wird.
+Ihre Exchange Online Protection-Richtlinien, z. B. Massen- und Spamschutz, bleiben unverändert. Bei der Auswertung wird jedoch die erweiterte Filterung für Connectors aktiviert, was sich möglicherweise auf den Nachrichtenfluss und Exchange Online Protection Richtlinien auswirken kann, sofern sie nicht umgangen wird.
 
 Die erweiterte Filterung für Connectors ermöglicht Mandanten die Verwendung von Antispoofingschutz. Antispoofing wird nicht unterstützt, wenn Sie ein E-Mail-Sicherheitsgateway (ESG) verwenden, ohne die erweiterte Filterung für Connectors aktiviert zu haben.
 
@@ -149,7 +149,7 @@ Suchen Sie die Setupkarte für Microsoft Defender für Office 365-Evaluierung im
 
 ## <a name="setting-up-the-evaluation"></a>Einrichten der Auswertung
 
-Nachdem Sie den Einrichtungsfluss für Ihre Auswertung gestartet haben, erhalten Sie zwei Routingoptionen. Abhängig von den Anforderungen für die Einrichtung und Auswertung des E-Mail-Routings In Ihrer Organisation können Sie auswählen, ob Sie einen Drittanbieter und/oder lokalen Dienstanbieter verwenden oder nur Microsoft Exchange Online.
+Nachdem Sie den Einrichtungsfluss für Ihre Auswertung gestartet haben, erhalten Sie zwei Routingoptionen. Je nach den Anforderungen für die Einrichtung und Auswertung des E-Mail-Routings In Ihrer Organisation können Sie auswählen, ob Sie einen Drittanbieter und/oder lokalen Dienstanbieter verwenden oder nur Microsoft Exchange Online.
 
 - Wenn Sie einen Drittanbieter und/oder lokalen Dienstanbieter verwenden, müssen Sie den Namen des Anbieters im Dropdownmenü auswählen. Geben Sie die anderen connectorbezogenen Details an.
 
@@ -169,7 +169,7 @@ Nachdem der Evaluierungsbericht generiert wurde, sehen Sie, wie viele erweiterte
 
 Sobald die Testversion abgelaufen ist, können Sie 90 Tage lang auf den Bericht zugreifen. Es werden jedoch keine weiteren Informationen gesammelt. Wenn Sie Microsoft Defender weiterhin für Office 365 verwenden möchten, nachdem Ihre Testversion abgelaufen ist, stellen Sie sicher, dass Sie [ein kostenpflichtiges Abonnement für Microsoft Defender für Office 365 (Plan 2) kaufen.](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
-Sie können zu **Einstellungen** wechseln, um Ihr Routing zu aktualisieren oder Die Auswertung jederzeit zu deaktivieren. Sie müssen jedoch den gleichen Einrichtungsprozess erneut durchlaufen, wenn Sie sich entscheiden, die Auswertung fortzusetzen, nachdem Sie sie deaktiviert haben.
+Sie können jederzeit zu **Einstellungen** wechseln, um Ihr Routing zu aktualisieren oder die Auswertung zu deaktivieren. Sie müssen jedoch den gleichen Einrichtungsprozess erneut durchlaufen, wenn Sie sich entscheiden, die Auswertung fortzusetzen, nachdem Sie sie deaktiviert haben.
 
 ## <a name="provide-feedback"></a>Feedback geben
 

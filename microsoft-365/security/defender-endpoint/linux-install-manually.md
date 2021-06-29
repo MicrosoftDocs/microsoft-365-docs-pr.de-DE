@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105572"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195021"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Manuelles Bereitstellen von Microsoft Defender für Endpunkt unter Linux
 
@@ -65,7 +65,7 @@ Die Wahl des Kanals bestimmt den Typ und die Häufigkeit von Updates, die auf Ih
 Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geben, empfiehlt es sich, einige Geräte in Ihrem Unternehmen so zu konfigurieren, dass sie entweder *insiderschnell* oder langsam verwendet *werden.*
 
 > [!WARNING]
-> Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort zu installieren.
+> Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort aus zu installieren.
 
 ### <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL und Varianten (CentOS und Oracle Linux)
 
@@ -92,7 +92,7 @@ Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geb
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Oder wenn Sie neue Features auf ausgewählten Geräten erkunden möchten, sollten Sie MDE für Linux im *Insider-Fast-Kanal* bereitstellen:
+    Oder wenn Sie neue Features auf ausgewählten Geräten erkunden möchten, sollten Sie Microsoft Defender für Endpunkt unter Linux im *Insider-Fast-Kanal* bereitstellen:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -120,7 +120,7 @@ Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geb
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Wenn Sie beispielsweise SLES 12 ausführen und MDE für Linux über den *Prod-Kanal* bereitstellen möchten:
+    Wenn Sie beispielsweise SLES 12 ausführen und Microsoft Defender für Endpunkt unter Linux über den *prod-Kanal* bereitstellen möchten:
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -274,7 +274,7 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
 
     ![Screenshot des Microsoft Defender Security Center](images/atp-portal-onboarding-linux.png)
 
-4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen.
+4. Überprüfen Sie an einer Eingabeaufforderung, ob Die Datei vorhanden ist.
     Extrahieren Sie den Inhalt des Archivs:
 
     ```bash
@@ -367,7 +367,7 @@ Um die Funktionen von EDR für Linux zu testen, führen Sie die folgenden Schrit
 
 ## <a name="installer-script"></a>Installer-Skript
 
-Alternativ können Sie ein automatisiertes [Installer-Bash-Skript](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) verwenden, das in unserem [öffentlichen GitHub-Repository](https://github.com/microsoft/mdatp-xplat/)bereitgestellt wird.
+Alternativ können Sie ein automatisiertes [Installer-Bash-Skript](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) verwenden, das in unserem [öffentlichen GitHub Repository](https://github.com/microsoft/mdatp-xplat/)bereitgestellt wird.
 Das Skript identifiziert die Verteilung und Version und richtet das Gerät so ein, dass das neueste Paket abgerufen und installiert wird.
 Sie können das Onboarding auch mit einem bereitgestellten Skript ausführen.
 
@@ -400,13 +400,13 @@ Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Si
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Migrieren von Insiders-Fast zum Produktionskanal
 
-1. Deinstallieren Sie die Version "Insiders-Fast Channel" von MDE für Linux.
+1. Deinstallieren Sie die Version "Insiders-Fast Channel" von Defender für Endpunkt unter Linux.
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Deaktivieren des Repositorys für MDE für Linux Insiders-Fast  ``
+1. Deaktivieren des Repositorys für Defender für Endpunkt unter Linux Insiders-Fast  ``
     sudo yum repolist
     ``
 

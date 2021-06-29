@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054315"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194961"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Intune-basierte Bereitstellung für Microsoft Defender für Endpunkt unter macOS
 
@@ -45,17 +45,17 @@ In diesem Thema wird beschrieben, wie Sie Microsoft Defender für Endpunkt unter
 
 Beachten Sie vor dem Start [die Hauptseite „Microsoft Defender für Endpunkt auf macOS“](microsoft-defender-endpoint-mac.md) für eine Beschreibung der Voraussetzungen und Systemanforderungen für die aktuelle Softwareversion.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 In der folgenden Tabelle sind die Schritte zusammengefasst, die Sie ausführen müssen, um Microsoft Defender für Endpunkt auf Macs über Intune bereitzustellen und zu verwalten. Ausführlichere Schritte finden Sie unten.
 
 | Schritt | Beispieldateinamen | BundleIdentifier |
 |-|-|-|
 | [Herunterladen des Onboardingpakets](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [Genehmigen der Systemerweiterung für Microsoft Defender für Endpunkt](#approve-system-extensions) | MDATP_SysExt.xml | – |
-| [Genehmigen der Kernelerweiterung für Microsoft Defender für Endpunkt](#download-the-onboarding-package) | MDATP_KExt.xml | – |
+| [Genehmigen der Systemerweiterung für Microsoft Defender für Endpunkt](#approve-system-extensions) | MDATP_SysExt.xml | Nicht zutreffend |
+| [Genehmigen der Kernelerweiterung für Microsoft Defender für Endpunkt](#download-the-onboarding-package) | MDATP_KExt.xml | Nicht zutreffend |
 | [Gewähren des vollständigen Datenträgerzugriffs auf Microsoft Defender für Endpunkt](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [Netzwerkerweiterungsrichtlinie](#network-filter) | MDATP_NetExt.xml | – |
+| [Netzwerkerweiterungsrichtlinie](#network-filter) | MDATP_NetExt.xml | Nicht zutreffend |
 | [Konfigurieren von Microsoft AutoUpdate (MAU)](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Konfigurationseinstellungen für Microsoft Defender für Endpunkt](mac-preferences.md#intune-profile-1)<br/><br/> **Hinweis:** Wenn Sie planen, eine AV-Datei eines Drittanbieters für macOS auszuführen, legen Sie `passiveMode` dies auf `true` fest. | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [Konfigurieren von Microsoft Defender für Endpunkt- und MS AutoUpdate (MAU)-Benachrichtigungen](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 oder com.microsoft.wdav.tray |
@@ -101,13 +101,13 @@ Dieses Profil enthält eine Lizenzinformationen für Microsoft Defender für End
     > [!div class="mx-imgBorder"]
     > ![Erstellen eines benutzerdefinierten Konfigurationsprofils](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Wählen Sie einen Namen für das Profil aus, z. B. "MDE-Onboarding für macOS". Klicken Sie auf **Weiter**.
+1. Wählen Sie einen Namen für das Profil aus, z. B. "Defender- oder Endpunkt-Onboarding für macOS". Klicken Sie auf **Weiter**.
 
     > [!div class="mx-imgBorder"]
     > ![Benutzerdefiniertes Konfigurationsprofil – Name](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. Wählen Sie einen Namen für den Konfigurationsprofilnamen aus, z. B. "MDE-Onboarding für macOS".
-1. Wählen Sie intune/WindowsDefenderATPOnboarding.xml aus, die Sie aus dem obigen Onboardingpaket als Konfigurationsprofildatei extrahiert haben.
+1. Wählen Sie einen Namen für den Konfigurationsprofilnamen aus, z. B. "Defender für Endpunkt-Onboarding für macOS".
+1. Wählen Sie Intune/WindowsDefenderATPOnboarding.xml aus, die Sie aus dem obigen Onboardingpaket als Konfigurationsprofildatei extrahiert haben.
 
     > [!div class="mx-imgBorder"]
     > ![Importieren einer Konfiguration aus einer Datei für benutzerdefiniertes Konfigurationsprofil](images/mdatp-6-systemconfigurationprofiles.png)
@@ -141,7 +141,7 @@ Dieses Profil wird für macOS 10.15 (Gif) oder höher benötigt. Sie wird unter 
     > [!div class="mx-imgBorder"]
     > ![Systemerweiterungseinstellungen](images/mac-system-extension-intune2.png)
 
-1. Weisen Sie dieses Profil auf der Registerkarte **Aufgaben** allen Benutzern & allen **Geräten** zu.
+1. Weisen Sie dieses Profil auf der Registerkarte **Aufgaben** allen Benutzern & Allen **Geräten** zu.
 1. Überprüfen und erstellen Sie dieses Konfigurationsprofil.
 
 ### <a name="kernel-extensions"></a>Kernelerweiterungen
@@ -160,7 +160,7 @@ Dieses Profil wird für macOS 10.15 (Macintosh) oder älter benötigt. Sie wird 
     > [!div class="mx-imgBorder"]
     > ![Kernelerweiterungseinstellungen](images/mac-kernel-extension-intune2.png)
 
-1. Weisen Sie dieses Profil auf der Registerkarte **Aufgaben** allen Benutzern & allen **Geräten** zu.
+1. Weisen Sie dieses Profil auf der Registerkarte **"Zuordnungen"** **allen Benutzern & allen Geräten** zu.
 1. Überprüfen und erstellen Sie dieses Konfigurationsprofil.
 
 ### <a name="full-disk-access"></a>Vollzugriff auf Datenträger
@@ -172,23 +172,23 @@ Dieses Profil wird für macOS 10.15 (Macintosh) oder älter benötigt. Sie wird 
 
 Laden Sie [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) aus [unserem GitHub-Repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)herunter.
 
-Folgen Sie den Anweisungen für das [Onboarding](#onboarding-blob) von BLOB von oben, wobei Sie "MDE Full Disk Access" als Profilnamen verwenden und **"fulldisk.mobileconfig"** als Konfigurationsprofilnamen heruntergeladen haben.
+Folgen Sie den Anweisungen für das [Onboarding](#onboarding-blob) von BLOB von oben, wobei Sie "Defender für Endpunkt Volldatenträgerzugriff" als Profilnamen verwenden und **"fulldisk.mobileconfig"** als Konfigurationsprofilnamen heruntergeladen haben.
 
 ### <a name="network-filter"></a>Netzwerkfilter
 
-Als Teil der Funktionen für Endpunkterkennung und -reaktion prüft Microsoft Defender für Endpunkt unter macOS socket-Datenverkehr und meldet diese Informationen an das Microsoft Defender Security Center Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
+Als Teil der Funktionen für Endpunkterkennung und -reaktion prüft Microsoft Defender für Endpunkt unter macOS Socketdatenverkehr und meldet diese Informationen an das Microsoft Defender Security Center Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
 
 Laden Sie [**"netfilter.mobileconfig"**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) aus [unserem GitHub-Repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)herunter.
 
-Folgen Sie den Anweisungen für das [Onboarding](#onboarding-blob) von BLOB von oben, wobei Sie "MDE-Netzwerkfilter" als Profilnamen verwenden und **"netfilter.mobileconfig"** als Konfigurationsprofilnamen heruntergeladen haben.
+Folgen Sie den Anweisungen für das [Onboarding](#onboarding-blob) von BLOB von oben, wobei Sie "Defender für Endpunkt-Netzwerkfilter" als Profilnamen und **"netfilter.mobileconfig"** als Konfigurationsprofilnamen heruntergeladen haben.
 
 ### <a name="notifications"></a>Benachrichtigungen
 
 Dieses Profil wird verwendet, damit Microsoft Defender für Endpunkt unter macOS und Microsoft Auto Update Benachrichtigungen auf der Benutzeroberfläche unter macOS 10.15 (Gif) oder höher anzeigen kann.
 
-Laden Sie [**"notif.mobileconfig"**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) aus [unserem GitHub-Repository herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Laden Sie [**"notif.mobileconfig"**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) aus [unserem GitHub-Repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)herunter.
 
-Folgen Sie den Anweisungen für das [Onboarding](#onboarding-blob) von BLOB von oben, wobei Sie "MDE-Benachrichtigungen" als Profilnamen verwenden und **"notif.mobileconfig"** als Konfigurationsprofilnamen heruntergeladen haben.
+Folgen Sie den Anweisungen für das [Onboarding](#onboarding-blob) von BLOB von oben, wobei Sie "Defender für Endpunktbenachrichtigungen" als Profilnamen verwenden und **"notif.mobileconfig"** als Konfigurationsprofilnamen heruntergeladen haben.
 
 ### <a name="view-status"></a>Status anzeigen
 
@@ -248,7 +248,7 @@ Sie benötigen keine spezielle Bereitstellung für ein Mac-Gerät, die über ein
 
 2. Wählen Sie **"Weiter"** aus, und schließen Sie die Registrierung ab.
 
-   Sie können jetzt weitere Geräte registrieren. Sie können sie auch später registrieren, nachdem Sie die Bereitstellung der Systemkonfiguration und der Anwendungspakete abgeschlossen haben.
+   Sie können jetzt weitere Geräte registrieren. Sie können sie auch später registrieren, nachdem Sie die Bereitstellung von Systemkonfigurations- und Anwendungspaketen abgeschlossen haben.
 
 3. Öffnen **Sie** in Intune alle  >    >  **Geräte** verwalten. Hier sehen Sie Ihr Gerät unter den aufgeführten:
 

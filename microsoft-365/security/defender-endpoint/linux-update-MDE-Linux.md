@@ -1,7 +1,7 @@
 ---
-title: So planen Sie ein Update von Microsoft Defender for Endpoint (Linux)
-description: Erfahren Sie, wie Sie ein Update von Microsoft Defender for Endpoint (Linux) planen, um die Ressourcen Ihrer Organisation besser zu schützen.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint (linux)
+title: Planen eines Updates von Microsoft Defender für Endpunkt (Linux)
+description: Erfahren Sie, wie Sie ein Update von Microsoft Defender für Endpunkt (Linux) planen, um die Ressourcen Ihrer Organisation besser zu schützen.
+keywords: Microsoft, Defender, Microsoft Defender für Endpunkt, Linux, Scans, Antivirus, Microsoft Defender für Endpunkt (Linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,33 +16,33 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7ebb37e80cae0e9dd70d01600c47bd1459c122c3
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730870"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194901"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planen eines Updates von Microsoft Defender für Endpunkt (Linux)
 
-Informationen zum Ausführen eines Updates für Microsoft Defender for Endpoint unter Linux finden Sie unter [Deploy updates for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-updates).
+Informationen zum Ausführen eines Updates auf Microsoft Defender für Endpunkt unter Linux finden Sie unter [Bereitstellen von Updates für Microsoft Defender für Endpunkt unter Linux.](/microsoft-365/security/defender-endpoint/linux-updates)
 
-Linux (und Unix) verfügen über ein Tool namens **"crontab"** (ähnlich wie Task Scheduler), um geplante Aufgaben ausführen zu können.
+Linux (und Unix) verfügen über ein Tool namens **Crontab** (ähnlich wie Task Scheduler), um geplante Aufgaben ausführen zu können.
 
 ## <a name="pre-requisite"></a>Voraussetzungen
 
 > [!NOTE]
-> Führen Sie den folgenden Befehl aus, um eine Liste aller Zeitzonen zu erhalten: `timedatectl list-timezones`<br>
+> Führen Sie den folgenden Befehl aus, um eine Liste aller Zeitzonen abzurufen: `timedatectl list-timezones`<br>
 > Beispiele für Zeitzonen: <br>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
-## <a name="to-set-the-cron-job"></a>So legen Sie den Auftrag "Cron"
+## <a name="to-set-the-cron-job"></a>So legen Sie den Cron-Auftrag fest
 Verwenden Sie die folgenden Befehle:
 
-**So sichern Sie "crontab"-Einträge**
+**So sichern Sie Crontabeinträge**
 
 `sudo crontab -l > /var/tmp/cron_backup_201118.dat`
 
@@ -50,29 +50,29 @@ Verwenden Sie die folgenden Befehle:
 > Where 201118 == YYMMDD
 
 > [!TIP]
-> Gehen Sie dazu vor dem Bearbeiten oder Entfernen vor. <br>
+> Führen Sie dies vor dem Bearbeiten oder Entfernen aus. <br>
 
-So bearbeiten Sie die crontab, und fügen Sie einen neuen Auftrag als Stammbenutzer hinzu: <br>
+So bearbeiten Sie die Crontab und fügen einen neuen Auftrag als Stammbenutzer hinzu: <br>
 `sudo crontab -e`
 
 > [!NOTE]
-> Der Standardeditor ist VIM.
+> Der Standard-Editor ist VIM.
 
-Möglicherweise sehen Sie:
+Möglicherweise wird Folgendes angezeigt:
 
-0****/etc/opt/microsoft/mdatp/logrorate.sh
+0.../etc/opt/microsoft/mdatp/logrorate.sh
 
 Und
 
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 
-Siehe [Planen von Scans mit Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)
+Siehe ["Planen von Scans mit Microsoft Defender für Endpunkt (Linux)](linux-schedule-scan-atp.md)
 
-Drücken Sie "Insert"
+Drücken Sie "Einfügen".
 
 Fügen Sie die folgenden Einträge hinzu:
 
-CRON_TZ=Amerika/Los_Angeles
+CRON_TZ=America/Los_Angeles
 
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL und Varianten (CentOS und Oracle Linux)
 
@@ -82,81 +82,81 @@ CRON_TZ=Amerika/Los_Angeles
 
 `06**sun[$(date +\%d) -le 15] sudo zypper update mdatp>>~/mdatp_cron_job.log`
 
-> #<a name="ubuntu-and-debian-systems"></a>! Ubuntu- und Debian-Systeme
+> #<a name="ubuntu-and-debian-systems"></a>! Ubuntu- und Ubuntu-Systeme
 
 `0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
-> In den obigen Beispielen wird dies auf 00 Minuten, 6 Uhr (Stunde im 24-Stunden-Format), jeden Tag des Monats, jeden Monat, sonntags, festlegen. [$(date + d) -le 15] == Wird nicht ausgeführt, es sei denn, er ist gleich oder kleiner als der \% 15. Tag (3. Woche). Dies bedeutet, dass sie jeden dritten Sonntag (7) des Monats um 6:00 Uhr ausgeführt wird. Pazifik (UTC -8).
+> In den obigen Beispielen legen wir sie auf 00 Minuten, 6 Uhr (Stunde im 24-Stunden-Format), jeden Tag des Monats, jeden Monat und sonntags fest. [$(date + \% d) -le 15] == Wird nur ausgeführt, wenn sie gleich oder kleiner als der 15. Tag (3. Woche) ist. Dies bedeutet, dass sie jeden 3. Sonntag(7) des Monats um 6:00 Uhr ausgeführt wird. Pacific (UTC -8).
 
 Drücken Sie "Esc"
 
-Geben Sie ":wq" w/o die doppelten Anführungszeichen ein.
+Geben Sie ":wq" mit den doppelten Anführungszeichen ein.
 
 > [!NOTE]
 > w == write, q == quit
 
-Geben Sie ein, um Ihre aufträge für krümmungsaufträge anzeigen `sudo crontab -l`
+Geben Sie zum Anzeigen Ihrer Cron-Aufträge `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="aktualisieren von MDE linux":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="Aktualisieren von Defender für Endpunkt unter Linux":::
 
-So überprüfen Sie die Ausgeführten von "cron"-Auftrags: `sudo grep mdatp /var/log/cron`
+So überprüfen Sie die Ausführung von Cron-Aufträgen: `sudo grep mdatp /var/log/cron`
 
-So überprüfen Sie mdatp_cron_job.log `sudo nano mdatp_cron_job.log`
+So überprüfen Sie die mdatp_cron_job.log `sudo nano mdatp_cron_job.log`
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Für diejenigen, die Ansible, Chef oder Puppet verwenden
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a>Für Diejenigen, die Ansible, Theater oder Diess verwenden
 
 Verwenden Sie die folgenden Befehle:
-### <a name="to-set-cron-jobs-in-ansible"></a>So legen Sie krümmte Aufträge in Ansible
+### <a name="to-set-cron-jobs-in-ansible"></a>So legen Sie Cron-Aufträge in Ansible fest
 
 `cron – Manage cron.d and crontab entries`
 
 Weitere Informationen finden Sie unter [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html).
 
-### <a name="to-set-crontabs-in-chef"></a>So legen Sie "crontabs" in "Chef"
+### <a name="to-set-crontabs-in-chef"></a>So legen Sie Crontabs in "Hobby" fest
 `cron resource`
 
 Weitere Informationen finden Sie unter [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/).
 
-### <a name="to-set-cron-jobs-in-puppet"></a>So legen Sie in "Puppet" "krümmte Aufträge"
+### <a name="to-set-cron-jobs-in-puppet"></a>So legen Sie Cron-Aufträge in "Überbauung" fest
 Ressourcentyp: cron
 
 Weitere Informationen finden Sie unter [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html).
 
-Automatisieren mit "Puppet": Aufträge und geplante Aufgaben
+Automatisieren mit "Aufarbeitung": Cron-Aufträge und geplante Aufgaben
 
 Weitere Informationen finden Sie unter [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
 ## <a name="additional-information"></a>Weitere Informationen
 
-**So erhalten Sie Hilfe zu crontab**
+**So erhalten Sie Hilfe zu Crontab**
 
 `man crontab`
 
-**So erhalten Sie eine Liste der listenbenutzerdefinierten Dateien des aktuellen Benutzers**
+**So rufen Sie eine Liste der Crontab-Datei des aktuellen Benutzers ab**
 
 `crontab -l`
 
-**So erhalten Sie eine Liste der Listendatei eines anderen Benutzers**
+**So rufen Sie eine Liste der Crontab-Datei eines anderen Benutzers ab**
 
 `crontab -u username -l`
 
-**So sichern Sie "crontab"-Einträge**
+**So sichern Sie Crontabeinträge**
 
 `crontab -l > /var/tmp/cron_backup.dat`
 
 > [!TIP]
-> Gehen Sie dazu vor dem Bearbeiten oder Entfernen vor. <br>
+> Führen Sie dies vor dem Bearbeiten oder Entfernen aus. <br>
 
-**So stellen Sie "crontab"-Einträge wieder auf**
+**So stellen Sie Crontabeinträge wieder her**
 
 `crontab /var/tmp/cron_backup.dat`
 
-**So bearbeiten Sie die Crontab, und fügen Sie einen neuen Auftrag als Stammbenutzer hinzu**
+**So bearbeiten Sie die Crontab und fügen einen neuen Auftrag als Stammbenutzer hinzu**
 
 `sudo crontab -e`
 
-**So bearbeiten Sie die crontab, und fügen Sie einen neuen Auftrag hinzu**
+**So bearbeiten Sie die Crontab und fügen einen neuen Auftrag hinzu**
 
 `crontab -e`
 
@@ -164,7 +164,7 @@ Weitere Informationen finden Sie unter [https://puppet.com/blog/automating-puppe
 
 `crontab -u username -e`
 
-**So entfernen Sie alle Crontabeinträge**
+**So entfernen Sie alle Crontab-Einträge**
 
 `crontab -r`
 

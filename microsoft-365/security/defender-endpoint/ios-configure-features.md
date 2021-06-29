@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842254"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194949"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurieren von Microsoft Defender für Endpunkt unter iOS-Features
 
@@ -32,13 +32,13 @@ ms.locfileid: "52842254"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 > [!NOTE]
 > Defender für Endpunkt unter iOS würde ein VPN verwenden, um das Webschutzfeature bereitzustellen. Dies ist kein reguläres VPN und ein lokales/selbstschleifendes VPN, das keinen Datenverkehr außerhalb des Geräts aufnimmt.
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Bedingter Zugriff mit Defender für Endpunkt unter iOS  
-Microsoft Defender für Endpunkt unter iOS zusammen mit Microsoft Intune und Azure Active Directory ermöglicht das Erzwingen der Gerätekompatibilität und richtlinien für bedingten Zugriff basierend auf der Geräterisikobewertung. Defender für Endpunkt ist eine MTD-Lösung (Mobile Threat Defense), die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
+Microsoft Defender für Endpunkt unter iOS zusammen mit Microsoft Intune und Azure Active Directory ermöglicht das Erzwingen von Gerätekompatibilitäts- und Richtlinien für bedingten Zugriff basierend auf der Geräterisikobewertung. Defender für Endpunkt ist eine MTD-Lösung (Mobile Threat Defense), die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
 
 Weitere Informationen zum Einrichten des bedingten Zugriffs mit Defender für Endpunkt unter iOS finden Sie unter [Defender für Endpunkt und Intune.](/mem/intune/protect/advanced-threat-protection)
 
@@ -47,13 +47,13 @@ Microsoft Defender für Endpunkt verfügt über die Möglichkeit, nicht verwalte
 
 ## <a name="web-protection-and-vpn"></a>Webschutz und VPN
 
-Standardmäßig enthält Defender für Endpunkt unter iOS das Webschutzfeature und aktiviert es. [Der Webschutz](web-protection-overview.md) hilft, Geräte vor Webbedrohungen zu schützen und Benutzer vor Phishingangriffen zu schützen. Defender für Endpunkt unter iOS verwendet ein VPN, um diesen Schutz bereitzustellen. Bitte beachten Sie, dass es sich um ein lokales VPN handelt und im Gegensatz zu herkömmlichem VPN kein Netzwerkdatenverkehr außerhalb des Geräts gesendet wird.
+Standardmäßig enthält Defender für Endpunkt unter iOS das Webschutzfeature und aktiviert es. [Webschutz](web-protection-overview.md) hilft dabei, Geräte vor Webbedrohungen zu schützen und Benutzer vor Phishingangriffen zu schützen. Defender für Endpunkt unter iOS verwendet ein VPN, um diesen Schutz bereitzustellen. Bitte beachten Sie, dass es sich um ein lokales VPN handelt und im Gegensatz zu herkömmlichem VPN kein Netzwerkdatenverkehr außerhalb des Geräts gesendet wird.
 
 Obwohl sie standardmäßig aktiviert ist, kann es einige Fälle geben, in denen Sie VPN deaktivieren müssen. Sie möchten beispielsweise einige Apps ausführen, die nicht funktionieren, wenn ein VPN konfiguriert ist. In solchen Fällen können Sie vpn von der App auf dem Gerät deaktivieren, indem Sie die folgenden Schritte ausführen:
 
 1. Öffnen Sie auf Ihrem iOS-Gerät die **Einstellungen** App, klicken oder tippen Sie auf **"Allgemein"** und dann auf **"VPN".**
 1. Klicken oder tippen Sie auf die Schaltfläche "i" für Microsoft Defender für Endpunkt.
-1. Deaktivieren Sie **Verbinden Bei Bedarf,** um VPN zu deaktivieren.
+1. Schalten Sie **Verbinden bei Bedarf** aus, um VPN zu deaktivieren.
 
     > [!div class="mx-imgBorder"]
     > ![VPN config connect on demand](images/ios-vpn-config.png)
@@ -65,6 +65,26 @@ Obwohl sie standardmäßig aktiviert ist, kann es einige Fälle geben, in denen 
 
 Apple iOS unterstützt nicht, dass mehrere geräteweite VPNs gleichzeitig aktiv sind. Während mehrere VPN-Profile auf dem Gerät vorhanden sein können, kann jeweils nur ein VPN aktiv sein.
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>Konfigurieren des Microsoft Defender für Endpunkt-Risikosignals in der App-Schutzrichtlinie (MAM)
+
+Microsoft Defender für Endpunkt kann so konfiguriert werden, dass Bedrohungssignale gesendet werden, die in App-Schutzrichtlinien (APP, auch als MAM bezeichnet) unter iOS/iPadOS verwendet werden. Mit dieser Funktion können Sie Microsoft Defender für Endpunkt verwenden, um den Zugriff auf Unternehmensdaten auch von nicht registrierungierten Geräten aus zu schützen.
+
+Schritte zum Einrichten von App-Schutzrichtlinien mit Microsoft Defender für Endpunkt sind wie folgt:
+
+1. Richten Sie die Verbindung von Ihrem Microsoft Endpoint Manager-Mandanten zu Microsoft Defender für Endpunkt ein. Wechseln Sie [im Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu **Mandantenverwaltungsconnectors**  >  **und -token**  >  **Microsoft Defender für Endpunkt** (plattformübergreifend) oder **Endpunktsicherheit**  >  **Microsoft Defender für Endpunkt** (unter Setup), und aktivieren Sie die Umschaltflächen unter **App-Schutzrichtlinie Einstellungen für iOS.**
+1. Wählen Sie "Speichern" aus. Es sollte angezeigt werden, dass der **Verbindungsstatus** jetzt auf **"Aktiviert"** festgelegt ist.
+1. Erstellen einer App-Schutzrichtlinie: Navigieren Sie nach Abschluss des Setups des Microsoft Defender für Endpunkt-Connectors zu **den**  >  **App-Schutzrichtlinien** (unter "Richtlinie"), um eine neue Richtlinie zu erstellen oder eine vorhandene zu aktualisieren.
+1. Wählen Sie die Plattform, **Apps, Datenschutz, Zugriffsanforderungseinstellungen aus,** die Ihre Organisation für Ihre Richtlinie benötigt.
+1. Unter Bedingungen des Geräts für **bedingten Start** finden Sie die Einstellung  >   **"Maximale Gerätegefährdungsstufe"**. Dies muss entweder auf "Niedrig", "Mittel", "Hoch" oder "Gesichert" konfiguriert werden. Die verfügbaren Aktionen sind **"Zugriff blockieren"** oder **"Daten zurücksetzen".** Möglicherweise wird ein Informationsdialogfeld angezeigt, um sicherzustellen, dass Ihr Connector eingerichtet ist, bevor diese Einstellung wirksam wird. Wenn Ihr Connector bereits eingerichtet ist, können Sie dieses Dialogfeld ignorieren.
+1. Schließen Sie die Aufgaben ab, und speichern Sie Ihre Richtlinie.
+
+Weitere Informationen zur MAM- oder App-Schutzrichtlinie finden Sie unter [iOS-App-Schutzrichtlinieneinstellungen.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Bereitstellen von Microsoft Defender für Endpunkt für MAM oder auf nicht angemeldeten Geräten
+
+Microsoft Defender für Endpunkt unter iOS aktiviert das App Protection Policy-Szenario und ist im Apple App Store verfügbar.
+
+Endbenutzer sollten die neueste Version der App direkt aus dem Apple App Store installieren.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Konfigurieren der Compliancerichtlinie für Geräte mit Jailbreak
 
@@ -75,23 +95,23 @@ Um den Zugriff auf Unternehmensdaten auf iOS-Geräten mit Jailbreak zu schützen
 
 Führen Sie die folgenden Schritte aus, um eine Compliancerichtlinie für Geräte mit Jailbreak zu erstellen.
 
-1. Wechseln Sie [im Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu **"Gerätecompliancerichtlinien**  ->    ->  **erstellen".** Wählen Sie "iOS/iPadOS" als Plattform aus, und klicken Sie auf **"Erstellen".**
+1. Wechseln [Sie in Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu **"Gerätecompliancerichtlinien**  ->    ->  **erstellen".** Wählen Sie "iOS/iPadOS" als Plattform aus, und klicken Sie auf **"Erstellen".**
 
     > [!div class="mx-imgBorder"]
     > ![Richtlinie erstellen](images/ios-jb-policy.png)
 
 2. Geben Sie einen Namen der Richtlinie an, z. B. "Compliancerichtlinie für Jailbreak".
-3. Klicken Sie auf der Seite "Complianceeinstellungen" auf den Abschnitt **"Geräteintegrität",** und klicken Sie auf das Feld **"Für** **Jailbroken** blockieren".
+3. Klicken Sie auf der Seite "Complianceeinstellungen" auf den Abschnitt **"Geräteintegrität",** und klicken Sie auf das Feld **"Für** **Jailbroken-Geräte** blockieren".
 
     > [!div class="mx-imgBorder"]
     > ![Richtlinien-Einstellungen](images/ios-jb-settings.png)
 
-4. Wählen Sie im Abschnitt *"Aktion für Nichtkonformität"* die Aktionen gemäß Ihren Anforderungen aus, und wählen Sie **"Weiter"** aus.
+4. Wählen Sie im Abschnitt **"Aktion für Nichtkonformität"** die Aktionen gemäß Ihren Anforderungen aus, und wählen Sie **"Weiter"** aus.
 
     > [!div class="mx-imgBorder"]
     > ![Richtlinienaktionen](images/ios-jb-actions.png)
 
-5. Wählen Sie im Abschnitt *"Aufgaben"* die Benutzergruppen aus, die Sie für diese Richtlinie einschließen möchten, und wählen Sie dann **"Weiter"** aus.
+5. Wählen Sie im Abschnitt **"Aufgaben"** die Benutzergruppen aus, die Sie für diese Richtlinie einschließen möchten, und wählen Sie dann **"Weiter"** aus.
 6. Überprüfen Sie im Abschnitt **"Überprüfen und Erstellen",** ob alle eingegebenen Informationen korrekt sind, und wählen Sie dann **"Erstellen"** aus.
 
 ## <a name="configure-custom-indicators"></a>Konfigurieren von benutzerdefinierten Indikatoren

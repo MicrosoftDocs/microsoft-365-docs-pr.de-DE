@@ -1,5 +1,5 @@
 ---
-title: Die Microsoft Defender für Office 365 (MDO)-E-Mail-Entitätsseite
+title: Die Microsoft Defender für Office 365 E-Mail-Entitätsseite
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender für Office 365 E5 sowie P1- und P2-Kunden können jetzt eine 360-Grad-Ansicht jeder E-Mail mit der E-Mail-Entitätsseite erhalten.
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083278"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194991"
 ---
 # <a name="the-email-entity-page"></a>Die Seite „E-Mail-Entität"
 
@@ -30,7 +30,7 @@ ms.locfileid: "53083278"
 - [Verwenden von Registerkarten der E-Mail-Entitätsseite](#use-email-entity-page-tabs)
 - [Neu bei der E-Mail-Entitätsseite](#new-to-the-email-entity-page)
 
-Administratoren von Microsoft Defender für Office 365 (oder MDO) E5 und MDO P1 und P2 verfügen über eine 360-Grad-Ansicht von E-Mails mithilfe der **Entitätsseite "E-Mail".** Diese Go-to-E-Mail-Seite wurde erstellt, um informationen zu verbessern, die im [Flyout "E-Mail-Details" des Bedrohungs-Explorers](threat-explorer-views.md)bereitgestellt werden.
+Administratoren von Microsoft Defender für Office 365 E5 und Defender für Office P1 und P2 verfügen über eine 360-Grad-Ansicht von E-Mails über die **Entitätsseite "E-Mail".** Diese Go-to-E-Mail-Seite wurde erstellt, um informationen zu verbessern, die im [Flyout "E-Mail-Details" des Bedrohungs-Explorers](threat-explorer-views.md)bereitgestellt werden.
 
 ## <a name="reach-the-email-entity-page"></a>Erreichen der E-Mail-Entitätsseite
 
@@ -53,7 +53,7 @@ Die Struktur ist so konzipiert, dass sie auf einen Blick leicht zu lesen und zu 
 
     :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Grafik der E-Mail-Entitätsseite mit hervorgehobener linker Seite. Der Titel und die Fakten zur E-Mail-Zustellung sind hier vorbei.":::
 
-2. In der oberen rechten Ecke befinden sich die Aktionen, die für eine E-Mail ausgeführt werden können. Alle Aktionen, die über **explorer** ausgeführt werden können, sind auch über die E-Mail-Entitätsseite verfügbar.
+2. In der oberen rechten Ecke befinden sich die Aktionen, die für eine E-Mail ausgeführt werden können. Alle Aktionen, die über **den Explorer** ausgeführt werden können, sind auch über die E-Mail-Entitätsseite verfügbar.
 
     :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="Grafik der E-Mail-Entitätsseite mit hervorgehobener *right*-Seite, dieses Mal. Aktionen wie &quot;E-Mail-Vorschau&quot; und &quot;In Quarantäne gehen&quot; sind hier.":::
 
@@ -77,10 +77,10 @@ Diese E-Mail-Entitätsseite enthält neue Funktionen. Hier ist die Liste.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>E-Mail-Vorschau für Cloudpostfächer
 
-Administratoren können eine Vorschau von E-Mails in Cloudpostfächern anzeigen, ***wenn*** die E-Mails noch in der Cloud vorhanden sind. Im Falle eines vorläufigen Löschens (durch einen Administrator oder Benutzer) oder ZAP (unter Quarantäne) sind E-Mails nicht mehr am Cloud-Speicherort vorhanden. In diesem Fall können Administratoren keine Vorschau dieser spezifischen E-Mails anzeigen. E-Mails, die verworfen wurden oder bei denen die Zustellung fehlgeschlagen ist, gelangten nie in das Postfach. Daher können Administratoren auch keine Vorschau dieser E-Mails anzeigen.
+Administratoren können eine Vorschau von E-Mails in Cloudpostfächern anzeigen, ***wenn*** die E-Mails noch in der Cloud vorhanden sind. Im Falle eines vorläufigen Löschens (von einem Administrator oder Benutzer) oder ZAP (unter Quarantäne) sind E-Mails nicht mehr am Cloud-Speicherort vorhanden. In diesem Fall können Administratoren keine Vorschau dieser spezifischen E-Mails anzeigen. E-Mails, die verworfen wurden oder bei denen die Zustellung fehlgeschlagen ist, gelangten nie in das Postfach. Daher können Administratoren auch keine Vorschau dieser E-Mails anzeigen.
 
 > [!WARNING]
-> Für die Vorschau von E-Mails ist eine spezielle Rolle namens **"Vorschau"** erforderlich. Sie können diese Rolle im Microsoft 365 Defender Portal hinzufügen, wie unter [E-Mail & Rollen für die Zusammenarbeit im Microsoft 365 Defender Portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)beschrieben. Möglicherweise müssen Sie dort eine neue Rollengruppe **"E-Mail & Zusammenarbeit"** erstellen und die **Rolle "Vorschau"** zu dieser neuen Rollengruppe hinzufügen oder die **Rolle "Vorschau"** zu einer Rollengruppe hinzufügen, mit der Administratoren in Ihrer Organisation im **Explorer** arbeiten können.
+> Für die Vorschau von E-Mails ist eine spezielle Rolle namens **"Vorschau"** erforderlich. Sie können diese Rolle im Microsoft 365 Defender Portal hinzufügen, wie unter [E-Mail & Rollen für die Zusammenarbeit im Microsoft 365 Defender Portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)beschrieben. Möglicherweise müssen Sie dort eine neue Rollengruppe **"E-Mail & Zusammenarbeit"** erstellen und der neuen Rollengruppe die **Rolle "Vorschau"** hinzufügen oder die **Rolle "Vorschau"** zu einer Rollengruppe hinzufügen, mit der Administratoren in Ihrer Organisation im **Explorer** arbeiten können.
 
 ### <a name="detonation-details"></a>Detonationsdetails
 
@@ -110,7 +110,7 @@ Benutzern werden erweiterte Detonationsdetails für bekannte bösartige Anlagen 
 
 *E-Mail-Details:* Details, die für ein tieferes Verständnis der E-Mails erforderlich sind, die auf der Registerkarte *"Analyse"* verfügbar sind.
 
-- *Exchange Transportregeln (auch als Nachrichtenflussregeln oder ETRs bezeichnet):* Diese Regeln werden auf eine Nachricht auf der Transportebene angewendet und haben Vorrang vor Phishing- und Spambewertungen. Diese können nur im Exchange Admin Center erstellt und geändert werden, aber wenn etr für eine Nachricht gilt, werden hier der ETR-Name und die GUID angezeigt. Wertvolle Informationen für Nachverfolgungszwecke.
+- *Exchange Transportregeln (auch als Nachrichtenflussregeln oder ETRs bezeichnet):* Diese Regeln werden auf eine Nachricht auf der Transportebene angewendet und haben Vorrang vor Phishing- und Spambewertungen. Diese können nur im Exchange Admin Center erstellt und geändert werden. Wenn etr für eine Nachricht gilt, werden hier der ETR-Name und die GUID angezeigt. Wertvolle Informationen für Nachverfolgungszwecke.
 
 - *Systemüberschreibungen: Dies* ist eine Möglichkeit, Ausnahmen vom Übermittlungsort zu machen, der für eine Nachricht vorgesehen ist, indem der vom System angegebene Übermittlungsort überschrieben wird (gemäß der Bedrohungs- und Erkennungstechnologie).
 

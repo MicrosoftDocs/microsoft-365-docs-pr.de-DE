@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2d586cd23a346db1bcebf891689ff648b639b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cbe2fb39221bd9907a3d690503a392edb019d61b
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844706"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194853"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender für Endpunkt für iOS
 
@@ -34,9 +34,9 @@ ms.locfileid: "52844706"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender für Endpunkt unter iOS** bietet Schutz vor Phishing und unsicheren Netzwerkverbindungen von Websites, E-Mails und Apps. Alle Warnungen werden über einen einzelnen Fensterausschnitt im Microsoft Defender Security Center verfügbar sein. Das Portal bietet Sicherheitsteams eine zentrale Übersicht über Bedrohungen auf iOS-Geräten und anderen Plattformen.
+**Microsoft Defender für Endpunkt unter iOS** bietet Schutz vor Phishing und unsicheren Netzwerkverbindungen von Websites, E-Mails und Apps. Alle Warnungen sind über einen einzelnen Ausschnitt im Microsoft Defender Security Center verfügbar. Das Portal bietet Sicherheitsteams eine zentrale Übersicht über Bedrohungen auf iOS-Geräten und anderen Plattformen.
 
 > [!CAUTION]
 > Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Defender für Endpunkt unter iOS führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Systemfehlern.
@@ -47,9 +47,11 @@ ms.locfileid: "52844706"
 
 - Microsoft Defender für Endpunkt-Lizenz, die den Endbenutzern der App zugewiesen ist. Siehe [Microsoft Defender für Endpunkt-Lizenzierungsanforderungen.](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
-- Geräte werden über die Intune-Unternehmensportal-App [registriert,](/mem/intune/user-help/enroll-your-device-in-intune-ios) um Intune-Gerätekompatibilitätsrichtlinien zu erzwingen. Dies erfordert, dass dem Endbenutzer eine Microsoft Intune Lizenz zugewiesen wird.
+- **Für registrierte Geräte:** Geräte werden über die Intune-Unternehmensportal-App [registriert,](/mem/intune/user-help/enroll-your-device-in-intune-ios) um Intune-Gerätecompliancerichtlinien zu erzwingen. Dies erfordert, dass dem Endbenutzer eine Microsoft Intune-Lizenz zugewiesen wird.
     - Intune-Unternehmensportal App kann aus der [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358)heruntergeladen werden.
     - Beachten Sie, dass Apple das Umleiten von Benutzern zum Herunterladen anderer Apps aus dem App Store nicht zulässt. Daher muss dieser Schritt vom Benutzer vor dem Onboarding in die Microsoft Defender für Endpunkt-App ausgeführt werden.
+
+- **Für nicht registrierte Geräte:** Geräte werden bei Azure Active Directory registriert. Dazu muss der Endbenutzer über [Microsoft Authenticator App](https://apps.apple.com/app/microsoft-authenticator/id983156458)angemeldet sein.
 
 - Weitere Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
@@ -57,20 +59,20 @@ ms.locfileid: "52844706"
 
 - Zugriff auf das Microsoft Defender Security Center-Portal.
 
-    > [!NOTE]
-    > Microsoft Intune ist die einzige unterstützte Unified Endpoint Management (UEM)-Lösung zum Bereitstellen von Microsoft Defender für Endpunkt und Erzwingen von Defender für Endpunkt-bezogenen Gerätekompatibilitätsrichtlinien in Intune.
-
 - Zugriff auf [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)um die App für registrierte Benutzergruppen in Ihrer Organisation bereitzustellen.
+
+    > [!NOTE]
+    > Microsoft Intune ist die einzige unterstützte Unified Endpoint Management (UEM)-Lösung für die Bereitstellung von Microsoft Defender für Endpunkt und das Erzwingen von Defender für Endpunkt-bezogenen Gerätekompatibilitätsrichtlinien in Intune.
 
 **Systemanforderungen**
 
-- iOS-Geräte mit iOS 11.0 und höher. iPad Geräte werden ab Version 1.1.15010101 offiziell unterstützt.
+- iOS-Gerät mit iOS 11.0 und höher. iPad Geräte werden ab Version 1.1.15010101 offiziell unterstützt.
 
-- Das Gerät ist bei der [Intune-Unternehmensportal-App](https://apps.apple.com/us/app/intune-company-portal/id719171358)registriert.
+- Das Gerät ist entweder bei der [Intune-Unternehmensportal-App](https://apps.apple.com/us/app/intune-company-portal/id719171358) registriert oder über Microsoft Authenticator bei [Azure Active Directory](https://apps.apple.com/app/microsoft-authenticator/id983156458)registriert.
 
 ## <a name="installation-instructions"></a>Installationsanweisungen
 
-Die Bereitstellung von Microsoft Defender für Endpunkt unter iOS erfolgt über Microsoft Intune (MDM), und sowohl überwachte als auch nicht überwachte Geräte werden unterstützt. Endbenutzer können die App auch direkt aus dem [Apple App Store](https://aka.ms/mdatpiosappstore)installieren.
+Die Bereitstellung von Microsoft Defender für Endpunkt unter iOS kann über Microsoft Endpoint Manager (MEM) erfolgen, und sowohl überwachte als auch nicht überwachte Geräte werden unterstützt. Endbenutzer können die App auch direkt aus dem [Apple App Store](https://aka.ms/mdatpiosappstore)installieren.
 Weitere Informationen finden Sie unter [Bereitstellen von Microsoft Defender für Endpunkt unter iOS.](ios-install.md)
 
 ## <a name="resources"></a>Ressourcen

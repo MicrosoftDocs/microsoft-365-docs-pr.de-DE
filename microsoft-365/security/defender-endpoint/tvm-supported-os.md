@@ -1,7 +1,7 @@
 ---
 title: Unterstützte Betriebssystemplattformen und -funktionen
 description: Stellen Sie sicher, dass Sie die Betriebssystem- oder Plattformanforderungen für Bedrohungs- und Sicherheitsrisikomanagement erfüllen, damit die Aktivitäten auf allen Geräten ordnungsgemäß berücksichtigt werden.
-keywords: Bedrohung & Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement, Betriebssystem, Plattformanforderungen, Voraussetzungen, von Microsoft Defender für Endpunkt-tvm unterstützte Betriebssysteme, Microsoft Defender für Endpunkt-tvm, unterstützte Betriebssysteme, unterstützte Plattformen, Linux-Support, Mac-Unterstützung
+keywords: Bedrohung & Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement, Betriebssystem, Plattformanforderungen, Voraussetzungen, von Microsoft Defender für Endpoint-tvm unterstützte Betriebssysteme, Microsoft Defender für Endpunkt-tvm, unterstützte Betriebssysteme, unterstützte Plattformen, Linux-Support, Mac-Support
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821973"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194685"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Unterstützte Betriebssysteme, Plattformen und Funktionen – für Bedrohungs- und Sicherheitsrisikomanagement
 
@@ -35,7 +35,7 @@ ms.locfileid: "52821973"
 - [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Betriebssystem- oder Plattformanforderungen für Bedrohungs- und Sicherheitsrisikomanagement erfüllen, damit die Aktivitäten auf Ihren Geräten ordnungsgemäß berücksichtigt werden.
 
@@ -44,11 +44,11 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Betriebssystem- o
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>Funktionen pro unterstützten Betriebssystemen und Plattformen
 
-In der folgenden Tabelle gibt "Ja" an, dass eine Bedrohungs- und Sicherheitsrisikomanagement-Funktion für das Betriebssystem oder die Plattform in dieser Zeile unterstützt wird.
+In der folgenden Tabelle gibt "Ja" an, dass eine Bedrohungs- und Sicherheitsrisikomanagement Funktion für das Betriebssystem oder die Plattform in dieser Zeile unterstützt wird.
 
 Unterstützte Betriebssysteme oder Plattformen | BS-Sicherheitsrisiken | Sicherheitsrisiken für Softwareprodukt | Bewertung der Betriebssystemkonfiguration | Konfigurationsbewertung für Sicherheitskontrollen | Bewertung der Softwareproduktkonfiguration
 :---|:---|:---|:---|:---|:---
-Windows 7 | Ja | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt
+Windows 7 | Ja | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt
 Windows 8.1 | Ja | Ja | Ja | Ja| Ja
 Windows 10, Versionen 1607-1703 | Ja  | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt
 Windows 10, Version 1709 oder höher | Ja | Ja | Ja | Ja | Ja
@@ -56,11 +56,11 @@ Windows Server 2008 R2 | Ja | Ja | Ja | Ja | Ja
 Windows Server 2012 R2 | Ja | Ja | Ja | Ja | Ja
 Windows Server 2016 | Ja | Ja | Ja | Ja | Ja
 Windows Server 2019 | Ja | Ja | Ja | Ja | Ja
-macOS 10.14 "Mojave" und höher | Ja | Ja | Ja (Vorschau) | Ja (Vorschau) | Ja (Vorschau)
-Red Hat Enterprise Linux 7.2 oder höher **(Vorschau)** ( \* Siehe "Wichtiger Hinweis unten") | Ja | Ja | Ja | Ja | Ja
-CentOS 7.2 oder höher **(Vorschau)** | Ja | Ja | Ja | Ja | Ja
-Ubuntu 16.04 LTS oder höher LTS **(Vorschau)** | Ja | Ja | Ja | Ja | Ja
-Oracle Linux 7.2 oder höher **(Vorschau)** | Ja | Ja | Ja | Ja | Ja
+macOS 10.14 "Mojave" und höher | Ja | Ja | Ja | Ja | Ja 
+Red Hat Enterprise Linux 7.2 oder höher ( \* Siehe "Wichtiger Hinweis unten") | Ja | Ja | Ja | Ja | Ja
+CentOS 7.2 oder höher | Ja | Ja | Ja | Ja | Ja
+Ubuntu 16.04 LTS oder höher LTS | Ja | Ja | Ja | Ja | Ja
+Oracle Linux 7.2 oder höher | Ja | Ja | Ja | Ja | Ja
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "Die Sicherheitsrisikodaten, die als Teil Ihrer Microsoft Defender für Endpunkt-Dienste bereitgestellt und angezeigt werden, werden Ihnen in der rohen Form "AS IS" von Red Hat, Inc. zur Verfügung gestellt und sind möglicherweise nicht auf dem neuesten Stand. Die Daten, auf die in der Red Hat Security Data API zugegriffen werden kann, sind unter der Creative Commons Attribution 4.0 International License lizenziert. Sie tragen das Risiko bei der Verwendung dieser Daten. Microsoft und seine Drittanbieter verweigern jegliche Haftung für Folgeschäden und andere indirekte Schäden und konkludente Gewährleistungen, einschließlich konkludente Gewährleistungen von Nichtverletzung, Handelsüblichkeit und Eignung für einen bestimmten Zweck. © 2020 Red Hat. Alle Rechte vorbehalten. © 2020 Microsoft. Alle Rechte vorbehalten."
