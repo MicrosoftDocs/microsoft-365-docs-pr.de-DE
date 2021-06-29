@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169580"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177633"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
 
@@ -32,7 +32,7 @@ ms.locfileid: "53169580"
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Warum Regeln zur Verringerung der Angriffsfläche wichtig sind
 
-Die Angriffsfläche Ihrer Organisation umfasst alle Stellen, an denen ein Angreifer die Geräte oder Netzwerke Ihrer Organisation kompromittieren könnte. Die Reduzierung der Angriffsfläche bedeutet, die Geräte und das Netzwerk Ihrer Organisation zu schützen, sodass Angreifer weniger Möglichkeiten haben, Angriffe auszuführen. Das Konfigurieren von Regeln zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt kann hilfreich sein!
+Die Angriffsfläche Ihrer Organisation umfasst alle Orte, an denen ein Angreifer die Geräte oder Netzwerke Ihrer Organisation kompromittieren könnte. Die Reduzierung der Angriffsfläche bedeutet, die Geräte und das Netzwerk Ihrer Organisation zu schützen, sodass Angreifer weniger Möglichkeiten haben, Angriffe auszuführen. Das Konfigurieren von Regeln zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt kann hilfreich sein!
 
 Regeln zur Verringerung der Angriffsfläche zielen auf bestimmte Softwareverhalten ab, z. B.:
 
@@ -52,7 +52,7 @@ Sie können bewerten, wie sich eine Regel zur Verringerung der Angriffsfläche a
 
 Überprüfen Sie im Bereich mit den Empfehlungsdetails, welche Auswirkungen auf die Benutzer haben, um festzustellen, welcher Prozentsatz Ihrer Geräte eine neue Richtlinie akzeptieren kann, die die Regel im Blockierungsmodus aktiviert, ohne die Produktivität zu beeinträchtigen.
 
-Weitere [Informationen](enable-attack-surface-reduction.md#requirements) zu unterstützten Betriebssystemen finden Sie im Artikel "Aktivieren von Regeln zur Verringerung der Angriffsfläche".
+Weitere Informationen zu unterstützten Betriebssystemen und zusätzliche Anforderungsinformationen finden Sie unter ["Anforderungen"](enable-attack-surface-reduction.md#requirements) im Artikel "Attack Surface Reduction-Regeln aktivieren".
 
 ## <a name="audit-mode-for-evaluation"></a>Überwachungsmodus für die Auswertung
 
@@ -96,11 +96,11 @@ Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine 
 
 Wenn außerdem bestimmte Regeln zur Verringerung der Angriffsfläche ausgelöst werden, werden Warnungen generiert.
 
-Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) ) (früher [Microsoft Defender Security Center](microsoft-defender-security-center.md)genannt) angezeigt werden.
+Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( ) angezeigt werden [https://security.microsoft.com](https://security.microsoft.com) (früher [Microsoft Defender Security Center).](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Erweiterte Suche und Attack Surface Reduction-Ereignisse
 
-Sie können die erweiterte Suche verwenden, um Attack Surface Reduction-Ereignisse anzuzeigen. Um das Volumen der eingehenden Daten zu optimieren, können mit der erweiterten Suche nur eindeutige Prozesse pro Stunde angezeigt werden. Die Zeit eines Attack Surface Reduction-Ereignisses ist das erste Mal, dass das Ereignis innerhalb der Stunde angezeigt wird.
+Sie können die erweiterte Suche verwenden, um Attack Surface Reduction-Ereignisse anzuzeigen. Um das Volumen der eingehenden Daten zu optimieren, können mit der erweiterten Suche nur eindeutige Prozesse für jede Stunde angezeigt werden. Die Zeit eines Attack Surface Reduction-Ereignisses ist das erste Mal, dass das Ereignis innerhalb der Stunde angezeigt wird.
 
 Nehmen wir beispielsweise an, dass ein Angriffsflächenreduzierungsereignis auf 10 Geräten während der Stunde 14:00 Uhr auftritt. Angenommen, das erste Ereignis ist um 2:15 Und das letzte um 2:45 aufgetreten. Bei der erweiterten Suche sehen Sie eine Instanz dieses Ereignisses (obwohl es tatsächlich auf 10 Geräten aufgetreten ist), und der Zeitstempel lautet 14:15 Uhr.
 
@@ -126,7 +126,7 @@ Diese erweiterten Funktionen sind mit einer Windows Professional- oder Windows E
 
 Defender für Endpunkt bietet detaillierte Berichte für Ereignisse und Blöcke im Rahmen von Warnungsuntersuchungsszenarien.
 
-Sie können Defender für Endpunktdaten in [Microsoft 365 Defender](microsoft-defender-security-center.md) mithilfe der [erweiterten Suche](advanced-hunting-query-language.md)abfragen. Wenn Sie den [Überwachungsmodus](audit-windows-defender.md)ausführen, können Sie die erweiterte Suche verwenden, um zu verstehen, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Umgebung auswirken können.
+Sie können Defender für Endpunktdaten in [Microsoft 365 Defender](microsoft-defender-security-center.md) abfragen, indem Sie [die erweiterte Suche](advanced-hunting-query-language.md)verwenden. Wenn Sie den [Überwachungsmodus](audit-windows-defender.md)ausführen, können Sie die erweiterte Suche verwenden, um zu verstehen, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Umgebung auswirken können.
 
 Hier ist eine Beispielabfrage:
 

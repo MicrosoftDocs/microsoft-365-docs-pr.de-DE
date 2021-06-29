@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169604"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177621"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
@@ -37,6 +37,8 @@ ms.locfileid: "53169604"
 
 ## <a name="requirements"></a>Anforderungen
 
+Attack Surface Reduction-Features in Windows Versionen
+
 Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, auf denen eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
 
 - Windows 10 Pro, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
@@ -44,7 +46,13 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Diese erweiterten Funktionen sind nicht mit einer Windows Professional oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+Um den gesamten Featuresatz von Regeln zur Verringerung der Angriffsfläche zu verwenden, benötigen Sie Folgendes:
+
+- Windows Defender Antivirus als primäre AV(Echtzeitschutz aktiviert)
+- [Cloud-Delivery Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (einige Regeln erfordern dies)
+- Windows 10 Enterprise E5- oder E3-Lizenz oder Microsoft 365 Business-Lizenz
+
+Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie mit einer Windows E5-Lizenz erweiterte Verwaltungsfunktionen, einschließlich Überwachung, Analyse und Workflows, die in Defender für Endpunkt verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security Center. Diese erweiterten Funktionen sind nicht mit einer E3-Lizenz verfügbar, sie können jedoch weiterhin die Ereignisanzeige verwenden, um Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
 
 Jede ASR-Regel enthält eine von vier Einstellungen:
 

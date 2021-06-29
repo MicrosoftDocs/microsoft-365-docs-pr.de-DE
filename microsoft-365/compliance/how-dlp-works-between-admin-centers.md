@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Erfahren Sie, wie DLP im Security & Compliance Center mit DLP- und Nachrichtenflussregeln (Transportregeln) im Exchange Admin Center funktioniert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d71c45e5483bc73afbe2598415e30b84e97c2539
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 34ddee1c1f0997852b6e59295ab9b630acc3ba3c
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149142"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177177"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Funktionsweise von DLP zwischen dem Microsoft 365 Compliance Center und Exchange Admin Center
 
@@ -46,6 +46,8 @@ Wenn Sie DLP-Richtlinien im Exchange Admin Center erstellt haben, funktionieren 
 Dies bedeutet Folgendes:
   
 - Nachrichten, die durch Exchange Nachrichtenflussregeln blockiert werden, werden nicht durch DLP-Regeln gescannt, die im Security & Compliance Center erstellt wurden.
+
+- Nachrichten, die durch Exchange Nachrichtenflussregeln unter Quarantäne gestellt werden, oder andere Filter, die ausgeführt werden, bevor DLP von DLP gescannt wird
     
 - Wenn eine Exchange Nachrichtenflussregel eine Nachricht so ändert, dass sie mit einer DLP-Richtlinie im Security & Compliance Center übereinstimmt , z. B. durch hinzufügen externer Benutzer, werden die DLP-Regeln dies erkennen und die Richtlinie nach Bedarf erzwingen.
     

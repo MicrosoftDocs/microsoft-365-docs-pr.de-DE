@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um Informationen über das Modell abzurufen und die Bibliothek, auf die es angewendet wurde.
-ms.openlocfilehash: 6cd61364ed3b360ef235aaba21a2735002fe481e
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904225"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177069"
 ---
 # <a name="get-model-and-library-information"></a>Modell- und Bibliotheksinformationen abrufen
 
@@ -25,13 +25,13 @@ Ruft Informationen ab über das Modell und die Bibliothek, auf die es angewendet
 ## <a name="http-request"></a>HTTP-Anforderung
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI-Parameter
 
 | Name | In | Erforderlich | Typ | Beschreibung |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|Abfrage|True|GUID|Die eindeutige ID der Modelldatei.|
 
 ## <a name="request-headers"></a>Anforderungsheader
@@ -41,22 +41,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |Annehmen|application/json;odata=verbose|
 
 
-## <a name="request-body"></a>Anforderungstext
-
-| Name | Erforderlich | Typ | Beschreibung |
-|--------|-------|--------|------------|
-|ModelUniqueId|ja|Zeichenfolge|Die eindeutige ID der Modelldatei.|
-|TargetSiteUrl|ja|Zeichenfolge|Die vollständige URL der Zielbibliothekswebsite.|
-|TargetWebServerRelativeUrl|ja|Zeichenfolge|Die relative Server-URL aus dem Web für die Zielbibliothek.|
-|TargetLibraryServerRelativeUrl|ja|Zeichenfolge|Die relative Server-URL der Zielbibliothek.|
-|TargetLibraryRemoved|ja|int|Die Kennzeichnung, die angibt, ob die Zielbibliothek entfernt wurde oder nicht.|
-
 ## <a name="response"></a>Antwort
 
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
 |200 OK| |Erfolg|
-|201 Erstellt| |Beachten Sie: Da diese API das Anwenden von Modellen auf mehrere Bibliotheken unterstützt, kann ein 201 zurückgegeben werden, auch wenn das Anwenden des Modells auf eine der Bibliotheken fehlschlägt. <br>Überprüfen Sie den Antworttext, um zu verstehen, ob das Modell erfolgreich auf alle angegebenen Bibliotheken angewendet wurde. Weitere Details finden Sie im [Anforderungstext](rest-getmodelandlibraryinfo.md#request-body).|
 
 ## <a name="examples"></a>Beispiele
 
@@ -67,7 +56,7 @@ In diesem Beispiel lautet die ID des Dokumentverständnismodells für den Contos
 #### <a name="sample-request"></a>Beispielanfrage
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 #### <a name="sample-response"></a>Beispielantwort
 
@@ -130,7 +119,7 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
             "ViewOption": "NewViewAsDefault"
         }
     ]
-}```
+}
 ```
 
 ## <a name="see-also"></a>Siehe auch

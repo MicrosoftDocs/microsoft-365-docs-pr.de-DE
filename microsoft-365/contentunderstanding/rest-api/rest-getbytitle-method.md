@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST API, um Informationen zu einem SharePoint Syntex-Dokumentverständnismodell mittels dem Modelltitel abzurufen oder zu aktualisieren.
-ms.openlocfilehash: a6fbe9ba9d3f5240c7b775613f97b83bfa2caa50
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904247"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177129"
 ---
 # <a name="getbytitle"></a>GetByTitle
 
@@ -25,13 +25,13 @@ Abrufen oder Aktualisieren von Informationen zu einem SharePoint Syntex-Dokument
 ## <a name="http-request"></a>HTTP-Anforderung
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 Dieselbe Methode kann auch zum Löschen eines Modells verwendet werden.
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI-Parameter
@@ -65,12 +65,12 @@ In diesem Beispiel lautet der Name des Syntex-Dokumentverständnismodells `Conto
 #### <a name="sample-request"></a>Beispielanfrage
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>Beispielantwort
 
-**Statuscode:** 204
+**Statuscode:** 200
 
 ```HTTP
 {
@@ -109,7 +109,7 @@ In diesem Beispiel lautet der Name des Dokumentverständnismodells für den Cont
 ##### <a name="sample-request"></a>Beispielanforderung
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>Siehe auch

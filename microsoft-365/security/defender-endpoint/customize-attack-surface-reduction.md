@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6d2770dec270e2d1c1b9750387a0f07f82b357f9
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055243"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177093"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Anpassen der Regeln zur Verringerung der Angriffsfläche
 
@@ -33,7 +33,7 @@ ms.locfileid: "53055243"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-[Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) helfen, Softwareverhalten zu verhindern, die häufig missbraucht werden, um Ihr Gerät oder Netzwerk zu kompromittieren. Ein Angreifer kann beispielsweise versuchen, ein nicht signiertes Skript von einem USB-Laufwerk aus auszuführen, oder ein Makro in einem Office Dokument aufruft direkt an die Win32-API. Regeln zur Verringerung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die verteidigungsbereitschaft Ihrer Organisation verbessern.
+[Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) helfen, Softwareverhalten zu verhindern, die häufig missbraucht werden, um Ihr Gerät oder Netzwerk zu kompromittieren. Ein Angreifer kann beispielsweise versuchen, ein nicht signiertes Skript von einem USB-Laufwerk aus auszuführen, oder ein Makro in einem Office Dokument aufruft direkt an die Win32-API. Regeln zur Verringerung der Angriffsfläche können diese Arten von riskanten Verhaltensweisen einschränken und die Verteidigungslage Ihrer Organisation verbessern.
 
 Erfahren Sie, wie Sie Regeln zur Verringerung der Angriffsfläche anpassen, indem [Sie Dateien und Ordner ausschließen](#exclude-files-and-folders) oder der [Benachrichtigungswarnung, die](#customize-the-notification) auf dem Computer eines Benutzers angezeigt wird, benutzerdefinierten Text hinzufügen.
 
@@ -42,7 +42,11 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 - Windows 10 Pro, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows 10 Enterprise, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19) Sie können diese Einstellungen mithilfe von Gruppenrichtlinien- und PowerShell-Konfigurationsdienstanbietern (CSP) für die mobile Geräteverwaltung (Mobile Device Management, MDM) konfigurieren.
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+Sie können diese Einstellungen mithilfe von Gruppenrichtlinien- und PowerShell-Konfigurationsdienstanbietern (CSP) für die mobile Geräteverwaltung (Mobile Device Management, MDM) konfigurieren.
+
+Weitere Informationen zu unterstützten Betriebssystemen und zusätzliche Anforderungsinformationen finden Sie unter ["Anforderungen"](enable-attack-surface-reduction.md#requirements) im Artikel "Attack Surface Reduction-Regeln aktivieren".
 
 ## <a name="exclude-files-and-folders"></a>Ausschließen von Dateien und Ordnern
 
@@ -66,21 +70,22 @@ Wenn Probleme mit Regeln auftreten, die Dateien erkennen, von denen Sie glauben,
 
 | Regelbeschreibung | GUID |
 |:----|:----|
+| Blockieren des Missbrauchs von gefährdeten signierten Treibern | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
+| Adobe Reader am Erstellen von untergeordneten Prozessen hindern | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
 | Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
-| Ausführung potenziell verborgener Skripts blockieren | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| Blockieren von Win32-API-Aufrufen von Office Makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
-| Office-Anwendungen am Erstellen ausführbarer Inhalte hindern | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
-| JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | Blockieren der Ausführung ausführbarer Dateien, es sei denn, sie erfüllen verbreitungs-, alters- oder vertrauenswürdige Listenkriterien. | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| Erweiterten Schutz vor Ransomware verwenden | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
-| Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
+| Ausführung potenziell verborgener Skripts blockieren | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Office-Anwendungen am Erstellen ausführbarer Inhalte hindern | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| Verhindern, dass Office Kommunikationsanwendungen untergeordnete Prozesse erstellen | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| Persistenz durch WMI-Ereignisabonnement blockieren | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Verhindern, dass Office Kommunikationsanwendungen untergeordnete Prozesse erstellen | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| Adobe Reader am Erstellen von untergeordneten Prozessen hindern | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Persistenz durch WMI-Ereignisabonnement blockieren | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
+| Blockieren von Win32-API-Aufrufen von Office Makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| Erweiterten Schutz vor Ransomware verwenden | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 Weitere Informationen zu den einzelnen Regeln finden Sie im Thema zur Verringerung der [Angriffsfläche.](attack-surface-reduction.md)
 
@@ -99,7 +104,7 @@ Weitere Informationen zu den einzelnen Regeln finden Sie im Thema zur Verringeru
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>Verwenden von PowerShell zum Ausschließen von Dateien und Ordnern
 
-1. Geben Sie **PowerShell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
+1. Geben Sie **powershell** in die Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
 2. Geben Sie das folgende Cmdlet ein:
 
     ```PowerShell
@@ -119,7 +124,7 @@ Verwenden Sie [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyEx
 
 Sie können die Benachrichtigung anpassen, wenn eine Regel ausgelöst wird und eine App oder Datei blockiert wird. Weitere Informationen finden Sie im [Artikel Windows-Sicherheit.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
 
-## <a name="related-topics"></a>Ähnliche Themen
+## <a name="related-topics"></a>Verwandte Themen
 
 - [Reduzieren von Angriffsflächen mit Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 - [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)

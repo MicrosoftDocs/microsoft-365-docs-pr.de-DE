@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um ein Modell und den zugehörigen Inhaltstyp zu erstellen.
-ms.openlocfilehash: 4af980d0733fce63767c6570003342eadb079f26
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 0a1b6ef9b7e38f2c4f52082103530da432e3e855
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904222"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177153"
 ---
 # <a name="create-model"></a>Ein Modell erstellen
 
@@ -65,7 +65,7 @@ Keine
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
     },
     "ContentTypeGroup": "Intelligent Document Content Types",
-    "ContentTypeName": "Contoso Contract",
+    "ContentTypeName": "Contoso Contract"
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Geräteermittlung
-description: Informationen zum Konfigurieren der Geräteerkennung in Microsoft 365 Defender mithilfe der einfachen oder standardermittlung
-keywords: Basic, Standard, Configure Endpoint Discovery, Device Discovery
+description: Erfahren Sie, wie Sie die Geräteermittlung in Microsoft 365 Defender mithilfe der Einfach- oder Standardermittlung konfigurieren.
+keywords: einfach, Standard, Endpunktermittlung konfigurieren, Geräteermittlung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0d722b4f4bef5b4d178edc5f2142c887690d4c63
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e1efeff77657e04223b21d639a0a09287f3707cc
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765251"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177585"
 ---
 # <a name="configure-device-discovery"></a>Konfigurieren der Geräteermittlung
 
@@ -38,71 +38,88 @@ ms.locfileid: "51765251"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Die Ermittlung kann so konfiguriert werden, dass sie sich im Standard- oder Basismodus befindet. Verwenden Sie die Standardoption, um Aktiv nach Geräten in Ihrem Netzwerk zu suchen, wodurch die Ermittlung von Endpunkten besser gewährleistet und eine bessere Geräteklassifizierung ermöglicht wird. 
+Die Ermittlung kann so konfiguriert werden, dass sie sich im Standard- oder Standardmodus befindet. Verwenden Sie die Standardoption, um Geräte in Ihrem Netzwerk aktiv zu finden, wodurch die Ermittlung von Endpunkten besser gewährleistet und eine umfassendere Geräteklassifizierung bereitgestellt wird. 
 
-Sie können die Liste der Geräte anpassen, die zum Ausführen der Standarderkennung verwendet werden. Sie können entweder die Standarderkennung auf allen integrierten Geräten aktivieren, die diese Funktion auch unterstützen (derzeit nur Windows 10 Geräte), oder Sie können eine Teilmenge oder Teilmenge Ihrer Geräte auswählen, indem Sie ihre Gerätetags angeben. 
+Sie können die Liste der Geräte anpassen, die für die Standardermittlung verwendet werden. Sie können entweder die Standardermittlung auf allen integrierten Geräten aktivieren, die diese Funktion ebenfalls unterstützen (derzeit – nur Windows 10 Geräte) oder eine Teilmenge oder Teilmengen Ihrer Geräte auswählen, indem Sie deren Gerätetags angeben. 
 
 
 > [!IMPORTANT]
-> Für die Vorschau müssen Sie zunächst die Vorschaufeatures in Microsoft Defender Security Center.
-> Anschließend können Sie auf die Geräteermittlungskonfiguration im Microsoft 365 zugreifen. Die Liste der nicht verwalteten Geräte und Sicherheitsempfehlungen ist sowohl im Microsoft Defender Security Center als auch im Microsoft 365 Security Center verfügbar, während die Dashboardkacheln nur in Microsoft 365 Security Center verfügbar sind.
+> Für die Vorschau müssen Sie zuerst die Vorschaufeatures in Microsoft Defender Security Center aktivieren.
+> Anschließend können Sie auf die Geräteermittlungskonfiguration im Microsoft 365 Security Center zugreifen. Die Liste der nicht verwalteten Geräte und Sicherheitsempfehlungen wird sowohl in Microsoft Defender Security Center als auch Microsoft 365 Security Center verfügbar sein, während die Dashboardkacheln nur in Microsoft 365 Security Center verfügbar sind.
 
 
-Gehen Sie in Microsoft 365 Security Center wie folgt vor:
+Führen Sie die folgenden Konfigurationsschritte in Microsoft 365 Security Center aus:
 
-1.  Navigieren Sie zu **Einstellungen > Geräteermittlung**.
-2.  Wählen Sie den Suchmodus aus, der auf Ihren integrierten Geräten verwendet werden soll. 
-3.  Wenn Sie die Standarderkennung verwenden möchten, wählen Sie aus, welche Geräte für die aktive Suche verwendet werden: alle Geräte oder eine Teilmenge, indem Sie ihre Gerätetags angeben.
+1.  Navigieren Sie zu **Einstellungen > Geräteermittlung.**
+2.  Wählen Sie den Ermittlungsmodus aus, der auf Ihren integrierten Geräten verwendet werden soll. 
+3.  Wenn Sie sich für die Verwendung der Standardermittlung entschieden haben, wählen Sie aus, welche Geräte für die aktive Untersuchung verwendet werden sollen: alle Geräte oder eine Teilmenge, indem Sie deren Gerätetags angeben.
 4. Klicken Sie auf **Speichern**.
 
 
-## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Ausschließen, dass Geräte bei der Standarderkennung aktiv untersucht werden
-Wenn ihr Netzwerk Geräte enthält, die nicht aktiv gescannt werden sollten (z. B. Geräte, die als Vorrichtungen für ein anderes Sicherheitstool verwendet werden), können Sie auch eine Liste von Ausschlüssen definieren, um zu verhindern, dass sie gescannt werden. Beachten Sie, dass Geräte weiterhin im Basisermittlungsmodus ermittelt werden können. Diese Geräte werden passiv erkannt, aber nicht aktiv untersucht. 
+## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Ausschließen, dass Geräte bei der Standardermittlung aktiv untersucht werden
+Wenn in Ihrem Netzwerk Geräte vorhanden sind, die nicht aktiv gescannt werden sollten (z. B. Geräte, die alsPots für ein anderes Sicherheitstool verwendet werden), können Sie auch eine Liste von Ausschlüssen definieren, um zu verhindern, dass sie gescannt werden. Beachten Sie, dass Geräte weiterhin im Basic-Ermittlungsmodus ermittelt werden können. Diese Geräte werden passiv erkannt, aber nicht aktiv untersucht. 
 
 ## <a name="select-networks-to-monitor"></a>Auswählen von Netzwerken, die überwacht werden sollen
- Microsoft Defender for Endpoint analysiert ein Netzwerk und ermittelt, ob es sich um ein Unternehmensnetzwerk handelt, das überwacht werden muss, oder um ein Nicht-Unternehmensnetzwerk, das ignoriert werden kann. Unternehmensnetzwerke werden in der Regel als überwacht ausgewählt. Sie können diese Entscheidung jedoch außer Kraft setzen, indem Sie sich für die Überwachung von Nicht-Unternehmensnetzwerken entscheiden, in denen integrierte Geräte gefunden werden. 
+ Microsoft Defender für Endpunkt analysiert ein Netzwerk und ermittelt, ob es sich um ein Unternehmensnetzwerk handelt, das überwacht werden muss, oder um ein Nicht-Unternehmensnetzwerk, das ignoriert werden kann. Unternehmensnetzwerke werden in der Regel für die Überwachung ausgewählt. Sie können diese Entscheidung jedoch außer Kraft setzen, indem Sie auswählen, dass Nicht-Unternehmensnetzwerke überwacht werden, in denen integrierte Geräte gefunden werden. 
 
-Sie können konfigurieren, wo die Geräteermittlung durchgeführt werden kann, indem Sie angeben, welche Netzwerke überwacht werden sollen. Wenn ein Netzwerk überwacht wird, kann die Geräteermittlung ausgeführt werden. 
+Sie können konfigurieren, wo die Geräteermittlung durchgeführt werden kann, indem Sie angeben, welche Netzwerke überwacht werden sollen. Wenn ein Netzwerk überwacht wird, kann die Geräteermittlung für es ausgeführt werden. 
 
-Eine Liste der Netzwerke, in denen die Geräteerkennung durchgeführt werden kann, wird auf der Seite **Überwachte Netzwerke** angezeigt. 
+Eine Liste der Netzwerke, in denen die Geräteermittlung durchgeführt werden kann, wird auf der Seite **"Überwachte Netzwerke"** angezeigt. 
 
 
 >[!NOTE]
-> Nur die 50 besten Netzwerke (je nach Anzahl der zugeordneten Geräte) stehen in der Netzwerkliste zur Verfügung. 
+> Nur die 50 wichtigsten Netzwerke (entsprechend der Anzahl der zugeordneten Geräte) sind in der Netzwerkliste verfügbar. 
 
 
 Die Liste der überwachten Netzwerke wird basierend auf der Gesamtzahl der Geräte sortiert, die in den letzten 7 Tagen im Netzwerk angezeigt wurden.
 
 
-Sie können einen Filter anwenden, um einen der folgenden Netzwerkerkennungszustände anzeigen zu können:
+Sie können einen Filter anwenden, um einen der folgenden Netzwerkermittlungszustände anzuzeigen:
 
-- **Überwachte Netzwerke** – Netzwerke, in denen die Geräteerkennung durchgeführt wird.
-- **Ignorierte Netzwerke:** Dieses Netzwerk wird ignoriert, und die Geräteermittlung wird nicht ausgeführt.
-- **Alle** : Sowohl überwachte als auch ignorierte Netzwerke werden angezeigt. 
+- **Überwachte Netzwerke** – Netzwerke, in denen die Geräteermittlung durchgeführt wird.
+- **Ignorierte Netzwerke–** Dieses Netzwerk wird ignoriert, und die Geräteermittlung wird nicht ausgeführt.
+- **Alle** – sowohl überwachte als auch ignorierte Netzwerke werden angezeigt. 
 
 
 ### <a name="configure-the-network-monitor-state"></a>Konfigurieren des Netzwerküberwachungsstatus
-Sie steuern, wo die Geräteermittlung stattfindet. In überwachten Netzwerken wird die Geräteerkennung durchgeführt, und es handelt sich in der Regel um Unternehmensnetzwerke. Sie können auch netzwerke ignorieren oder nach dem Ändern eines Zustands die anfängliche Erkennungsklassifizierung auswählen. 
+Sie steuern, wo die Geräteermittlung stattfindet. Überwachte Netzwerke sind der Ort, an dem die Geräteermittlung durchgeführt wird und in der Regel Unternehmensnetzwerke sind. Sie können auch auswählen, ob Netzwerke ignoriert oder die klassifizierung für die erste Ermittlung ausgewählt werden soll, nachdem Sie einen Status geändert haben. 
 
-Wenn Sie die anfängliche Erkennungsklassifizierung auswählen, wird der standardmäßige Systemmonitorstatus angewendet. Wenn Sie den standardmäßigen Systemmonitorstatus auswählen, werden Netzwerke, die als Unternehmensnetzwerke identifiziert wurden, überwacht und als nicht unternehmensverbunden identifizierte Netzwerke automatisch ignoriert.
+Wenn Sie die anfängliche Ermittlungsklassifizierung auswählen, müssen Sie den standardmäßigen systembasierten Netzwerküberwachungsstatus anwenden. Das Auswählen des standardmäßigen systembasierten Netzwerküberwachungsstatus bedeutet, dass Netzwerke, die als Unternehmensnetzwerke identifiziert wurden, überwacht und als nicht unternehmenseigene Netzwerke identifiziert werden, automatisch ignoriert werden.
  
-1. Wählen **Einstellungen > Geräteermittlung aus.**
-2. Wählen **Sie Überwachte Netzwerke aus.** 
+1. Wählen Sie **Einstellungen > Geräteermittlung aus.**
+2. Wählen Sie **überwachte Netzwerke** aus. 
 3. Zeigen Sie die Liste der Netzwerke an. 
 4. Wählen Sie die drei Punkte neben dem Netzwerknamen aus. 
 5. Wählen Sie aus, ob Sie die anfängliche Ermittlungsklassifizierung überwachen, ignorieren oder verwenden möchten. 
     
     > [!WARNING]
-    >- Wenn Sie ein Netzwerk überwachen möchten, das von Microsoft Defender for Endpoint nicht als Unternehmensnetzwerk identifiziert wurde, kann dies zu einer Geräteerkennung außerhalb Ihres Unternehmensnetzwerks führen und daher heim- oder andere nicht unternehmensfreie Geräte erkennen. 
-    > - Wenn Sie ein Netzwerk ignorieren, werden die Überwachung und das Ermitteln von Geräten in diesem Netzwerk beendet. Geräte, die bereits erkannt wurden, werden nicht aus dem Bestand entfernt, aber nicht mehr aktualisiert, und Die Details werden aufbewahrt, bis der Aufbewahrungszeitraum von Defender for Endpoint abläuft.
+    >- Wenn Sie sich für die Überwachung eines Netzwerks entscheiden, das von Microsoft Defender für Endpunkt nicht als Unternehmensnetzwerk identifiziert wurde, kann dies zu einer Geräteermittlung außerhalb Ihres Unternehmensnetzwerks führen und kann daher private oder andere Nicht-Unternehmensgeräte erkennen. 
+    > - Wenn Sie ein Netzwerk ignorieren, wird die Überwachung und Ermittlung von Geräten in diesem Netzwerk beendet. Geräte, die bereits ermittelt wurden, werden nicht aus dem Bestand entfernt, aber nicht mehr aktualisiert, und Details werden bis zum Ablauf des Datenaufbewahrungszeitraums von Defender für Endpunkt aufbewahrt.
     > - Bevor Sie sich für die Überwachung von Nicht-Unternehmensnetzwerken entscheiden, müssen Sie sicherstellen, dass Sie dazu berechtigt sind. <br>
 
 
-6. Bestätigen Sie, dass Sie die Änderung ändern möchten. 
+6. Vergewissern Sie sich, dass Sie die Änderung vornehmen möchten. 
+
+
+## <a name="explore-devices-in-the-network"></a>Erkunden von Geräten im Netzwerk
+
+Sie können die folgende erweiterte Suchabfrage verwenden, um mehr Kontext zu jedem in der Netzwerkliste beschriebenen Netzwerknamen zu erhalten. Die Abfrage listet alle integrierten Geräte auf, die innerhalb der letzten 7 Tage mit einem bestimmten Netzwerk verbunden waren.
 
 
 
+```kusto
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| where ConnectedNetworks  != ""
+| extend ConnectedNetworksExp = parse_json(ConnectedNetworks)
+| mv-expand bagexpansion = array ConnectedNetworks=ConnectedNetworksExp
+| extend NetworkName = tostring(ConnectedNetworks ["Name"]), Description = tostring(ConnectedNetworks ["Description"]), NetworkCategory = tostring(ConnectedNetworks ["Category"])
+| where NetworkName == "<your network name here>"
+
+
+```
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über die Geräteermittlung](device-discovery.md)
-- [Häufig gestellte Fragen zur Geräteerkennung](device-discovery-faq.md)
+- [Häufig gestellte Fragen zur Geräteermittlung](device-discovery-faq.md)
