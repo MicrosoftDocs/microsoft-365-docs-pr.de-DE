@@ -393,7 +393,7 @@
             - name: Datenschutz und Sicherheit
               href: basic-mobility-security/privacy-and-security.md
             - name: Häufig gestellte Fragen
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: Zurücksetzen mobiler Geräte
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Deaktivieren von grundlegender Mobilität und Sicherheit

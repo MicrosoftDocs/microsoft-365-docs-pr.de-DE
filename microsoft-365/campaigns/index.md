@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 Business Premium-Sicherheits- und Zusammenarbeitsempfehlungen für kleinere Unternehmen, einschließlich kleinerer Firmen, Praxen und politischer Kampagnen.
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245028"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177465"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 für kleinere Unternehmen und Kampagnen
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 für kleinere Unternehmen und Kampagnen
 
 Wenn Sie über Microsoft 365 Business Premium verfügen, zeigen Ihnen die Anleitungen in dieser Bibliothek den schnellsten Weg zum Einrichten der Sicherheit und zum Start der sicheren Zusammenarbeit. Heutzutage ist es mehr denn je wichtig, Daten und Kommunikation zu sichern. Das gilt besonders für Arztpraxen und Kanzleien, politische Kampagnen sowie viele weitere kleinere Unternehmen. Diese Lösung bietet eine Reihe an Empfehlungen, die Ihnen dabei helfen sollen, sich und Ihre Daten zu schützen. Diese Bibliothek enthält außerdem Hilfestellung für die Einrichtung und Verwendung der empfohlenen Umgebung, unabhängig von Ihrer Unternehmensart.
 
 
-![Microsoft 365 Business Premium schützt Ihre Tools für Produktivität und Zusammenarbeit, Ihren Datenspeicher sowie Ihre E-Mails, Geräte und Identitäten](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium schützt Ihre Tools für Produktivität und Zusammenarbeit, Ihren Datenspeicher sowie Ihre E-Mails, Geräte und Identitäten](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 Diese Konfiguration umfasst die folgenden Anleitungen für Produktivität, Zusammenarbeit, Dateispeicherung, E-Mail, Geräte und Identität zum Schutz Ihres Unternehmens:
 
@@ -50,8 +49,7 @@ Diese Konfiguration umfasst die folgenden Anleitungen für Produktivität, Zusam
 |Sicheres Speichern und Freigeben von Dateien | Teilen Sie Dateien und Videos aus Microsoft Teams, OneDrive, SharePoint und Microsoft Stream, und schützen Sie vertrauliche Daten.| [Freigeben von Dateien und Videos](share-files-and-videos.md) |
 |Windows 10-Geräte verwalten |Verwenden Sie verwaltete Geräte für wichtige Mitarbeiter, und sichern Sie diese Geräte. | [Einrichten von verwalteten Geräten](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Eine empfohlene Sicherheitskonfiguration für Microsoft 365 Business Premium
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Eine empfohlene Sicherheitskonfiguration für Microsoft 365 Business Premium
 
 Diese empfohlene Sicherheitskonfiguration für Microsoft 365 Business Premium ermöglicht Ihnen:
 
@@ -71,8 +69,7 @@ Die Bibliothek enthält Folgendes:
 
 Weitere Informationen zum Funktionsumfang finden Sie unter [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
 
-<a name="get-started"></a>Erste Schritte
---------------------------
+## <a name="get-started"></a>Erste Schritte
 
 Gehen Sie folgendermaßen vor, um loszulegen:
 
@@ -80,8 +77,7 @@ Gehen Sie folgendermaßen vor, um loszulegen:
 - Für alle Geschäftsbereiche: [Erfahren Sie, wie Ihre Benutzer mit Microsoft 365 arbeiten](m365-campaigns-users.md)
 - Für alle Geschäftsbereiche: [Einrichten von Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-business"></a>Lösungen für Ihr Unternehmen
---------------------------
+## <a name="solutions-for-your-business"></a>Lösungen für Ihr Unternehmen
 
 Nachdem Sie Ihre sichere Microsoft 365-Umgebung eingerichtet haben, können Sie mit den folgenden Lösungen zu arbeiten beginnen:
 
