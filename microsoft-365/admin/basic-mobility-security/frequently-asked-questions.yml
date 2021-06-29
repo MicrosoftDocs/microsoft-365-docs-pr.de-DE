@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Häufig gestellte Fragen (FAQ) zu Basic Mobility und Security
+  f1.keywords:
+  - NOCSH
+  ms.author: kwekua
+  author: kwekua
+  manager: scotv
+  audience: Admin
+  ms.topic: reference
+  ms.service: o365-administration
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  ms.custom:
+  - AdminSurgePortfolio
+  search.appverid:
+  - MET150
+  description: Häufig gestellte Fragen zu Basic Mobility and Security.
+  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
+  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 06/29/2021
+  ms.locfileid: "53177660"
+title: Häufig gestellte Fragen (FAQ) zu Basic Mobility und Security
+summary: Dieser Artikel enthält häufig gestellte Fragen zu Basic Mobility and Security, einem Feature, mit dem Sie mobile Geräte in Microsoft 365 verwalten und sichern können. Wenn Sie keine Antwort auf Ihre Frage finden können, teilen Sie uns dies mit, indem Sie einen Kommentar auf der Seite hinterlassen, damit wir erwägen können, Ihre Frage zu diesem Artikel hinzuzufügen.
+sections:
+- name: Ignoriert
+  questions:
+  - question: >
+      Wie erhalte ich grundlegende Mobilität und Sicherheit? Ich sehe es nicht in der Microsoft 365 Admin Center
+    answer: >
+      1.  Aktivieren Sie basic Mobility and Security, indem Sie zur Seite [Office 365 Security & Compliance](https://protection.office.com/) wechseln.
+
+
+      2.  Wechseln Sie zu "Verhinderung von Datenverlust > Geräteverwaltung".
+  - question: >
+      Wie kann ich mit der Geräteverwaltung in Basic Mobility and Security beginnen?
+    answer: "Es gibt vier Schritte für die ersten Schritte mit Basic Mobility and Security: \n\n1. Aktivieren Sie Die grundlegende Mobilität und Sicherheit, indem Sie zur [Office 365 Security & Compliance](https://protection.office.com/)wechseln.\n\n2. Wechseln Sie zu \"Verhinderung von Datenverlust > Geräteverwaltung > Geräterichtlinien\".\n    \n3. Erstellen Sie Geräteverwaltungsrichtlinien, und wenden Sie diese auf Benutzergruppen an, die in Sicherheitsgruppen eingerichtet sind. Es wird empfohlen, zunächst die Richtlinien für eine kleine Testgruppe bereitzustellen. Weitere Informationen finden Sie unter [Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security.](create-device-security-policies.md)\n\n4. Benutzer, auf die eine Richtlinie angewendet wurde, werden aufgefordert, ihre Geräte zu registrieren, wenn sie versuchen, auf Microsoft 365 Daten zuzugreifen. Weitere Informationen finden Sie unter [Registrieren Ihres mobilen Geräts mit basic Mobility and Security.](enroll-your-mobile-device.md)\n\nWeitere Informationen finden Sie unter [\"Grundlegende Mobilität und Sicherheit einrichten\".](set-up.md)\n"
+  - question: >
+      Ich versuche, grundlegende Mobilität und Sicherheit einzurichten, aber es scheint nicht weiterzuhängen. Der Microsoft 365 Dienststatus zeigt seit einer Weile "Bereitstellung" an. Wie gehe ich vor?
+    answer: >
+      Es kann einige Zeit dauern, bis der Dienst für Sie bereit ist. Wenn die Bereitstellung abgeschlossen ist, wird die Seite "Grundlegende Mobilität und Sicherheit" angezeigt. Wenn Sie 24 Stunden gewartet haben und der Status weiterhin bereitgestellt wird, wenden Sie sich an den Support, und wir helfen Ihnen herauszufinden, was das Problem ist.
+  - question: >
+      Was kann ich tun, wenn die Geräteregistrierung fehlschlägt?
+    answer: "Wenn Sie Probleme haben, ein Gerät zu registrieren, überprüfen Sie zuerst Folgendes:\n\n- Stellen Sie sicher, dass das Gerät noch nicht bei einem anderen Anbieter für die Verwaltung mobiler Geräte registriert ist, z. B. Intune.\n\n- Stellen Sie sicher, dass das Gerät auf das richtige Datum und die richtige Uhrzeit festgelegt ist.\n\n- Wechseln Sie zu einem anderen WLAN oder Mobilfunknetz auf dem Gerät.\n\n- Deinstallieren Sie für Android- oder iOS-Geräte die Intune-Unternehmensportal-App auf dem Gerät, und installieren Sie sie neu.\n    \nWenn die Registrierung weiterhin nicht funktioniert, finden Sie Informationen unter [Problembehandlung für grundlegende Mobilität und Sicherheit.](troubleshoot.md)\n"
+  - question: >
+      Was ist der Unterschied zwischen Intune und Basic Mobility and Security?
+    answer: >
+      Grundlegende Mobilität und Sicherheit wird vom Intune-Dienst gehostet. Es ist eine Teilmenge der Intune-Dienste, die als zusätzlicher Vorteil für Microsoft 365 bereitgestellt wird, und ist eine integrierte cloudbasierte Lösung zum Verwalten von Geräten in Ihrer Organisation. Einen parallelen Vergleich der beiden Dienste, der Ihnen bei der Entscheidung hilft, ob die Verwendung von Intune oder Basic Mobility and Security für Microsoft 365 für Sie am besten geeignet ist, finden Sie unter ["Auswählen zwischen Basic Mobility Security und Intune".](choose-between-basic-mobility-and-security-and-intune.md)
+  - question: >
+      Wie funktionieren Richtlinien für grundlegende Mobilität und Sicherheit? Wie kann ich sie einrichten? Deaktivieren Sie sie?
+    answer: >
+      Nachdem Sie die Ersteinrichtung für Grundlegende Mobilität und Sicherheit abgeschlossen haben, erstellen Sie Richtlinien und wenden sie auf Benutzergruppen im Security & Compliance Center an. Richtlinien erfordern, dass Benutzer der Richtlinien ihre Geräte in Basic Mobility and Security registrieren, bevor das Gerät für den Zugriff auf Microsoft 365 Daten verwendet werden kann. Die von Ihnen eingerichteten Richtlinien bestimmen Einstellungen für mobile Geräte, z. B. wie oft Kennwörter zurückgesetzt werden müssen oder ob eine Datenverschlüsselung erforderlich ist. Weitere Informationen finden Sie unter [Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security](create-device-security-policies.md)und   [Microsoft 365 Compliance Center](../../compliance/microsoft-365-compliance-center.md).
+
+
+      Schritt-für-Schritt-Anleitungen zum Erstellen und Bereitstellen von Geräterichtlinien finden Sie unter [Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security.](create-device-security-policies.md)
+
+
+      Wenn Sie eine bestimmte Gruppe von Benutzern davon ausschließen möchten, von Richtlinien betroffen zu sein, können Sie der Ausschlussgruppe eine Gruppe hinzufügen.
+  - question: >
+      Kann ich von Exchange ActiveSync Geräteverwaltung zu Basic Mobility and Security für Microsoft 365 wechseln?
+    answer: >
+      Wenn Sie bereits Exchange ActiveSync Richtlinien zum Verwalten mobiler Geräte verwenden, können Sie mit der Verwendung von Basic Mobility and Security beginnen, indem Sie die Schritte zum Einrichten von Basic Mobility and Security ausführen. Weitere Informationen finden Sie unter ["Benutzer- und Gerätezugriff schützen"](../../compliance/protect-access-to-data-and-services.md) und ["Grundlegende Mobilität und Sicherheit einrichten".](set-up.md)
+
+
+      Wenn Sie die Richtlinien, die Sie in Basic Mobility and Security erstellen, auf Benutzergruppen anwenden, setzen diese Richtlinien Exchange ActiveSync Postfachrichtlinien für mobile Geräte und Gerätezugriffsregeln außer Kraft, die Sie zuvor im Exchange Admin Center für diese Benutzer erstellt haben.
+
+
+      Nachdem ein Gerät in Basic Mobility and Security registriert wurde, wird jede Exchange ActiveSync Postfachrichtlinie oder Gerätezugriffsregel für mobile Geräte, die auf das Gerät angewendet wird, ignoriert.
+  - question: >
+      Ich set up Basic Mobility and Security but now I want to remove it. Was sind die Schritte?
+    answer: Leider können Sie die Grundlegende Mobilität und Sicherheit nicht einfach "aufheben", nachdem Sie sie eingerichtet haben. Sie können sie jedoch für Benutzergruppen entfernen, indem Sie Benutzersicherheitsgruppen aus den von Ihnen erstellten Geräterichtlinien entfernen. Sie können sie auch für alle Benutzer deaktivieren, indem Sie die Geräterichtlinien entfernen, damit sie nicht vorhanden sind und nicht erzwungen werden. Weitere Informationen finden Sie unter ["Grundlegende Mobilität und Sicherheit deaktivieren".](turn-off.md)
