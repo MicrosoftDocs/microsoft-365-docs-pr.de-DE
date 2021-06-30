@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können erfahren, wie Sie angriffssimulationsschulungen verwenden, um simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen auszuführen.
+description: Administratoren können erfahren, wie Sie mithilfe von Angriffssimulationsschulungen simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
+ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082900"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53222670"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Angriffssimulationstraining
 
@@ -36,7 +36,7 @@ ms.locfileid: "53082900"
 Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen für [die Untersuchung und Reaktion auf Bedrohungen](office-365-ti.md)umfasst, können Sie die Angriffssimulationsschulung im Microsoft 365 Defender Portal verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein realer Angriff auf Ihre Unterlinie auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 > [!NOTE]
-> Das Angriffssimulationstraining ersetzt die alte Angriffssimulator-V1-Erfahrung, die im [Angriffssimulator in Microsoft Defender für Office 365](attack-simulator.md)beschrieben ist.
+> Das Angriffssimulationstraining ersetzt die alte Angriffssimulator-V1-Erfahrung, die im [Angriffssimulator in Microsoft Defender für Office 365](attack-simulator.md)beschrieben wird.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Wissenswertes, bevor Sie anfangen
 
@@ -44,7 +44,7 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
 
 - Weitere Informationen zur Verfügbarkeit von Angriffssimulationsschulungen in verschiedenen Microsoft 365-Abonnements finden Sie unter [Microsoft Defender für Office 365 Dienstbeschreibung.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-- Ihnen müssen Berechtigungen im Microsoft 365 Defender Portal oder in Azure Active Directory zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere müssen Sie Mitglied der **Organisationsverwaltung,** des **Sicherheitsadministrators** oder einer der folgenden Rollen sein:
+- Ihnen müssen Berechtigungen im Microsoft 365 Defender-Portal oder in Azure Active Directory zugewiesen werden, bevor Sie die Verfahren in diesem Artikel ausführen können. Insbesondere müssen Sie Mitglied der **Organisationsverwaltung,** des **Sicherheitsadministrators** oder einer der folgenden Rollen sein:
   - Administratoren des **Angriffssimulators:** Erstellen und Verwalten aller Aspekte von Angriffssimulationskampagnen.
   - Autoren der **Angriffssimulatornutzlast:** Erstellen Sie Angriffsnutzlasten, die ein Administrator später initiieren kann.
 
@@ -52,7 +52,7 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
 
 - Es gibt keine entsprechenden PowerShell-Cmdlets für Angriffssimulationsschulungen.
 
-- Angriffssimulations- und Schulungsdaten werden zusammen mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365 Datenspeicherorten.](../../enterprise/o365-data-locations.md) Die Angriffssimulation ist in den folgenden Regionen verfügbar: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN und KOR.
+- Angriffssimulations- und Schulungsdaten werden mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365 Datenspeicherorte.](../../enterprise/o365-data-locations.md) Die Angriffssimulation ist in den folgenden Regionen verfügbar: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, DOPPELKLICK und CHE.
 
 - Ab dem 15. Juni 2021 ist das Angriffssimulationstraining in GCC verfügbar. Wenn Ihre Organisation über Office 365 G5-GCC oder Microsoft Defender für Office 365 (Plan 2) für Behörden verfügt, können Sie die Angriffssimulationsschulung im Microsoft 365 Defender Portal verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen, wie in diesem Artikel beschrieben. Angriffssimulationsschulungen sind in GCC High- oder DoD-Umgebungen noch nicht verfügbar.
 
@@ -71,7 +71,7 @@ Im Angriffssimulationstraining stehen mehrere Arten von Social Engineering-Techn
 
 - **Link in Anlage:** Dies ist eine Hybridbereitstellung einer Anmeldeinformationsauswahl. Ein Angreifer sendet dem Empfänger eine Nachricht, die eine URL innerhalb einer Anlage enthält. Wenn der Empfänger die Anlage öffnet und auf die URL klickt, wird er zu einer Website geleitet, die in der Regel ein Dialogfeld anzeigt, in dem der Benutzer nach dem Benutzernamen und Kennwort gefragt wird. In der Regel ist die Zielseite so angeordnet, dass sie eine bekannte Website darstellt, um dem Benutzer vertrauen zu können.
 
-- **Link zu Schadsoftware:** Ein Angreifer sendet dem Empfänger eine Nachricht mit einem Link zu einer Anlage auf einer bekannten Dateifreigabewebsite (z. B. SharePoint Online oder Dropbox). Wenn der Empfänger auf die URL klickt, wird die Anlage geöffnet, und beliebiger Code (z. B. ein Makro) wird auf dem Gerät des Benutzers ausgeführt, um dem Angreifer zu helfen, zusätzlichen Code zu installieren oder sich weiter zu verfeinern.
+- **Link zu Schadsoftware:** Ein Angreifer sendet dem Empfänger eine Nachricht mit einem Link zu einer Anlage auf einer bekannten Dateifreigabewebsite (z. B. SharePoint Online oder Dropbox). Wenn der Empfänger auf die URL klickt, wird die Anlage geöffnet, und beliebiger Code (z. B. ein Makro) wird auf dem Gerät des Benutzers ausgeführt, um dem Angreifer zu helfen, zusätzlichen Code zu installieren oder sich weiter zu verfangen.
 
 - **Drive-by-URL:** Ein Angreifer sendet dem Empfänger eine Nachricht, die eine URL enthält. Wenn der Empfänger auf die URL klickt, wird er zu einer Website geleitet, die versucht, Hintergrundcode auszuführen. Dieser Hintergrundcode versucht, Informationen über den Empfänger zu sammeln oder beliebigen Code auf dem Gerät bereitzustellen. In der Regel ist die Zielwebsite eine bekannte Website, die kompromittiert wurde, oder ein Klon einer bekannten Website. Wenn Sie mit der Website vertraut sind, können Sie den Benutzer davon überzeugen, dass der Link sicher angeklickt werden kann. Diese Technik wird auch als _Wasserangriff bezeichnet._
 
