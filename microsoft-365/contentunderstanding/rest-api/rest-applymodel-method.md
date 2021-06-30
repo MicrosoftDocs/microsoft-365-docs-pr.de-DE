@@ -1,5 +1,5 @@
 ---
-title: Modell anwenden
+title: Modell mit Batch anwenden
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um ein Dokumentverständnismodell auf eine oder mehrere Bibliotheken anzuwenden.
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904266"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177261"
 ---
-# <a name="apply-model"></a>Modell anwenden
+# <a name="batch-apply-model"></a>Modell mit Batch anwenden
 
 Wendet ein trainiertes Dokumentverständnismodell auf eine oder mehrere Bibliotheken an (oder synchronisiert es) (siehe [Beispiel](rest-applymodel-method.md#examples)).
 
@@ -44,18 +44,45 @@ Keine
 
 | Name | Erforderlich | Typ | Beschreibung |
 |--------|-------|--------|------------|
+|__metadata|ja|Zeichenfolge|Festlegen der Objekt-Metadaten auf dem SPO. Verwenden Sie immer den Wert: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.|
+|Publikationen|ja|MachineLearningPublicationEntityData[]|Die Sammlung von MachineLearningPublicationEntityData, von denen jedes Element das Modell und die Zieldokumentbibliothek angibt.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Name | Erforderlich | Typ | Beschreibung |
+|--------|-------|--------|------------|
 |ModelUniqueId|ja|Zeichenfolge|Die eindeutige ID der Modelldatei.|
-TargetSiteUrl|ja|Zeichenfolge|Die vollständige URL der Zielbibliothekswebsite.|
-TargetWebServerRelativeUrl|ja|Zeichenfolge|Die relative Server-URL aus dem Web für die Zielbibliothek.|
-TargetLibraryServerRelativeUrl|ja|Zeichenfolge|Die relative Server-URL der Zielbibliothek.|
-ViewOption|Nein|Zeichenfolge|Gibt an, ob die Ansicht „neues Modell“ als Bibliotheksstandard festgelegt werden soll.|
+|TargetSiteUrl|ja|Zeichenfolge|Die vollständige URL der Zielbibliothekswebsite.|
+|TargetWebServerRelativeUrl|ja|Zeichenfolge|Die relative Server-URL aus dem Web für die Zielbibliothek.|
+|TargetLibraryServerRelativeUrl|ja|Zeichenfolge|Die relative Server-URL der Zielbibliothek.|
+|ViewOption|Nein|Zeichenfolge|Gibt an, ob die Ansicht „neues Modell“ als Bibliotheksstandard festgelegt werden soll.|
 
 ## <a name="response"></a>Antwort
 
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
-|200 OK| |Erfolg|
-|201 Erstellt| |Beachten Sie: Da diese API das Anwenden von Modellen auf mehrere Bibliotheken unterstützt, kann ein 201 zurückgegeben werden, auch wenn das Anwenden des Modells auf eine der Bibliotheken fehlschlägt. <br>Überprüfen Sie den Antworttext, um zu verstehen, ob das Modell erfolgreich auf alle angegebenen Bibliotheken angewendet wurde. Weitere Details finden Sie im [Anforderungstext](rest-applymodel-method.md#request-body).|
+|201 Erstellt||Dies ist ein benutzerdefiniertes API zur Unterstützung der Anwendung eines Modells auf Mehrfach-Dokumentbibliotheken. Im Falle eines Teilerfolgs könnte immer noch „201 erstellt“ zurückgegeben werden und der Aufrufer muss den Antworttext untersuchen, um zu verstehen, ob das Modell erfolgreich auf eine Dokumentbibliothek angewendet wurde.|
+
+## <a name="response-body"></a>Antworttext
+| Name   | Typ  | Beschreibung|
+|--------|-------|------------|
+|TotalSuccesses|Ganzzahl|Die Gesamtzahl eines Modells, das erfolgreich auf eine Dokumentbibliothek angewendet wurde.|
+|TotalFailures|Ganzzahl|Die Gesamtzahl eines Modells, das nicht auf eine Dokumentbibliothek angewendet werden konnte.|
+|Details|MachineLearningPublicationResult[]|Sie Sammlung von MachineLearningPublicationResult, von denen jedes Element das detaillierte Ergebnis der Anwendung des Modells in der Dokumentbibliothek angibt.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Name   | Typ  | Beschreibung|
+|--------|-------|------------|
+|StatusCode|Ganzzahl|Der HTTP-Statuscode.|
+|ErrorMessage|Zeichenfolge|Die Fehlermeldung, welche erläutert, was beim Anwenden des Modells auf die Dokumentbibliothek falsch ist.|
+|Veröffentlichung|MachineLearningPublicationEntityData|Es gibt die Modellinformation und die Zieldokumentbibliothek an.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Name | Typ | Beschreibung |
+|--------|--------|------------|
+|ModelUniqueId|Zeichenfolge|Die eindeutige ID der Modelldatei.|
+|TargetSiteUrl|Zeichenfolge|Die vollständige URL der Zielbibliothekswebsite.|
+|TargetWebServerRelativeUrl|Zeichenfolge|Die relative Server-URL aus dem Web für die Zielbibliothek.|
+|TargetLibraryServerRelativeUrl|Zeichenfolge|Die relative Server-URL der Zielbibliothek.|
 
 ## <a name="examples"></a>Beispiele
 
@@ -89,7 +116,7 @@ In diesem Beispiel lautet die ID des Dokumentverständnismodells für den Contos
 
 In der Antwort beziehen sich TotalFailures und TotalSuccesses auf die Anzahl der Fehlschläge und Erfolge des Modells, das auf die angegebenen Bibliotheken angewendet wird.
 
-**Statuscode:** 200
+**Statuscode:** 201
 
 ```JSON
 {
@@ -103,7 +130,7 @@ In der Antwort beziehen sich TotalFailures und TotalSuccesses auf die Anzahl der
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,

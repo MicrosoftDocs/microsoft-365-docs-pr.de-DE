@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen wie der Service-Administrator ordnen Geschäftsfunktionen zu und erteilen Berechtigungen für bestimmte Aufgaben im Admin Center.
-ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 073e82971906ea817da9971ba737874711dc43d3
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964572"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177453"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -76,8 +76,8 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Lizenzadministrator    |   Weisen Sie die Rolle des Lizenzadministrators Benutzern zu, die Lizenzen für Benutzer zuweisen und entfernen und deren Verwendungsort bearbeiten müssen. <br/><br/> Lizenzadministratoren können ebenfalls: <br> – Lizenzzuweisungen für die gruppenbasierte Lizenzierung erneut verarbeiten <br> – Produktlizenzen für die gruppenbasierte Lizenzierung an Gruppen zuweisen  |
 |Office-Apps-Administrator    |   Weisen Sie die Rolle des Office-Apps-Administrators Benutzern zu, die folgende Aktionen ausführen müssen: <br> - Verwenden des Office-Cloudrichtliniendiensts zum Erstellen und Verwalten von cloudbasierten Richtlinien für Office <br> - Serviceanfragen erstellen und verwalten <br> - Verwalten der Inhalte im Dialogfenster "Neuigkeiten", das den Benutzern in ihren Office-Apps angezeigt wird   <br> - Den Dienststatus überwachen  |
 |Kennwortadministrator  |   Weisen Sie die Rolle des Kennwortadministrators Benutzern zu, die Kennwörter für Nicht-Administratoren und Kennwortadministratoren zurücksetzen müssen.   |
-|Nachrichtencenter-Leseberechtigter |   Weisen Sie die Rolle „Berichtleseberechtigter“ Benutzern zu, die folgende Aktionen ausführen müssen: <br> – Überwachen der Nachrichtencenter-Benachrichtigungen <br> – Wöchentliche E-Mail-Zusammenfassungen von Beiträgen und Aktualisierungen des Nachrichtencenters erhalten <br> – Freigeben von Beiträgen im Nachrichtencenter <br> – Schreibgeschützten Zugriff auf Azure AD-Dienste haben, wie z. B. Benutzer und Gruppen|
-|Power Plattform-Administrator |   Weisen Sie die Rolle „Berichtleseberechtigter“ Benutzern zu, die folgende Aktionen ausführen müssen: <br> – Verwalten aller Administratorfunktionen für Power Apps, Power Automate und die Verhinderung von Datenverlust <br> – Serviceanfragen erstellen und verwalten <br> – Den Dienststatus überwachen  |
+|Nachrichtencenter-Leseberechtigter |   Weisen Sie die Rolle „Nachrichtencenter-Leseberechtigter“ Benutzern zu, die Folgendes ausführen müssen: <br> – Überwachen der Nachrichtencenter-Benachrichtigungen <br> – Wöchentliche E-Mail-Zusammenfassungen von Beiträgen und Aktualisierungen des Nachrichtencenters erhalten <br> – Freigeben von Beiträgen im Nachrichtencenter <br> – Schreibgeschützten Zugriff auf Azure AD-Dienste haben, wie z. B. Benutzer und Gruppen|
+|Power Plattform-Administrator |   Weisen Sie die Power Platform-Administratorrolle Benutzern zu, die Folgendes ausführen müssen: <br> – Verwalten aller Administratorfunktionen für Power Apps, Power Automate und die Verhinderung von Datenverlust <br> – Serviceanfragen erstellen und verwalten <br> – Den Dienststatus überwachen  |
 |Berichtleseberechtigter |   Weisen Sie die Rolle „Berichtleseberechtigter“ Benutzern zu, die folgende Aktionen ausführen müssen: <br> – Nutzungsdaten und Aktivitätsberichte im Microsoft 365 Admin Center anzeigen <br> – Zugriff auf das Inhaltspakets zur Power BI-Einführung erhalten <br> – Zugriff auf Anmeldeberichte und Aktivitäten in Azure AD erhalten <br> – Vom Microsoft Graph-Berichterstellungs--API zurückgegebene Daten anzeigen|
 |Dienstsupportadministrator   |   Weisen Sie die Rolle des Dienstsupportadministrators als zusätzliche Rolle Administratoren oder Benutzern zu, die zusätzlich zu ihrer normalen Administratorrolle folgende Aufgaben erfüllen müssen: <br> - Serviceanfragen öffnen und verwalten <br> - Nachrichtencenter-Beiträge anzeigen und freigeben <br> - Den Dienststatus überwachen   |
 |SharePoint-Administrator    |   Weisen Sie die SharePoint-Administratorrolle Benutzern zu, die auf das SharePoint Online Admin Center zugreifen und dieses verwalten müssen. <br><br>SharePoint-Administratoren sind zudem zu Folgendem berechtigt: <br> - Erstellen und Löschen von Websites <br> - Verwalten von Websitesammlungen und globalen SharePoint-Einstellungen   |

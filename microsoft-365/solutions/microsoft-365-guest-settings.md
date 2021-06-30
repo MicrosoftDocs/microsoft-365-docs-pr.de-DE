@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Gastfreigabeeinstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation auswirken können.
-ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 622e3ac0c44ec763cffff51773edbe6c64515a11
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625442"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177444"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -165,8 +165,10 @@ Da OneDrive eine Hierarchie von Websites in SharePoint ist, wirken sich die Frei
 | Einstellung | Standard | Beschreibung |
 |:-----|:-----|:-----|
 |Einschränken der externen Freigabe mithilfe von Domänen|Aus|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung wirkt sich auf alle SharePoint- und OneDrive-Websites in der Organisation aus.|
+|Ausschließlich Benutzern in bestimmten Sicherheitsgruppen die externe Freigabe erlauben|Aus|Wenn Sie einschränken möchten, welche Personen in SharePoint und OneDrive Elemente für Gäste freigeben können, können Sie die Freigabe für Personen in bestimmten Sicherheitsgruppen einschränken. Diese Einstellungen wirken sich nicht auf die Freigabe über Microsoft 365-Gruppen oder -Teams aus. Gäste, die über eine Gruppe oder ein Team eingeladen wurden, haben auch Zugriff auf die zugehörige Website, obwohl die Freigabe von Dokumenten und Ordnern nur von Personen in den angegebenen Sicherheitsgruppen ausgeführt werden kann.<br><br>Für jede angegebene Gruppe können Sie auswählen, welche dieser Benutzer mit „Jeder“-Links teilen können.|
 |Gäste müssen sich mit dem gleichen Konto anmelden, an das auch Freigabeeinladungen gesendet werden|Aus|Hindert Gäste daran, Websitefreigabeeinladungen mit einer anderen E-Mail-Adresse als der Adresse einzulösen, an die die Einladung gesendet wurde.<br><br>In [SharePoint- und OneDrive-Integration in Azure AD B2B (Vorschau)](/sharepoint/sharepoint-azureb2b-integration-preview) wird diese Einstellung nicht verwendet, da alle Gäste dem Verzeichnis basierend auf der E-Mail-Adresse, an die die Einladung gesendet wurde, hinzugefügt werden. Alternative E-Mail-Adressen können für den Zugriff auf die Website nicht verwendet werden.|
 |Gästen das Freigeben von Elementen erlauben, die sich nicht in ihrem Besitz befinden|Ein|Ist diese Option aktiviert, können Gäste Elemente, die Sie nicht besitzen, für andere Benutzer oder Gäste freigeben. Ist die Option deaktiviert, ist dies nicht möglich. Gäste können Elemente, für die Sie über Vollzugriff verfügen, immer freigeben.|
+|Personen, die einen Verifizierungscode verwenden, müssen sich nach so vielen Tagen wieder authentifizieren.|Aus|Mit dieser Einstellung können Sie festlegen, dass Benutzer, die sich mit einem Einmalkennung authentifizieren, sich nach einer bestimmten Anzahl von Tagen erneut authentifizieren müssen.|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Linkeinstellungen für Dateien und Ordner in SharePoint und OneDrive
 
@@ -182,21 +184,6 @@ Wenn Dateien und Ordner in SharePoint und OneDrive freigegeben werden, wird den 
 |Diese Links müssen innerhalb dieser Anzahl von Tagen ablaufen|Aus (kein Ablaufdatum)|Gibt an, wie viele Tage nach Erstellung ein *Jeder*-Link abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
 |Dateiberechtigungen|Anzeigen und bearbeiten|Gibt die Dateiberechtigungsstufen an, die für Benutzer beim Erstellen eines *Jeder*-Links verfügbar sind. Wird **Anzeigen** ausgewählt, können Benutzer nur *Jeder*-Dateilinks mit der Berechtigung "Anzeigen" erstellen. Wird **Anzeigen und bearbeiten** ausgewählt, können Benutzer beim Erstellen des Links zwischen den Berechtigungen "Anzeigen" und "Anzeigen und bearbeiten" auswählen.|
 |Ordnerberechtigungen|Anzeigen, bearbeiten und hochladen|Gibt die Ordnerberechtigungsstufen an, die für Benutzer beim Erstellen eines *Jeder*-Links verfügbar sind. Wird **Anzeigen** ausgewählt, können Benutzer nur *Jeder*-Ordnerlinks mit der Berechtigung "Anzeigen" erstellen. Wird **Anzeigen, bearbeiten und hochladen** ausgewählt, können Benutzer beim Erstellen des Links zwischen den Berechtigungen "Anzeigen" und "Anzeigen, bearbeiten und hochladen" auswählen.|
-
-### <a name="sharepoint-and-onedrive-security-group-settings"></a>Einstellungen für SharePoint- und OneDrive-Sicherheitsgruppen
-
-Wenn Sie einschränken möchten, welche Personen in SharePoint und OneDrive Elemente für Gäste freigeben können, können Sie die Freigabe für Personen in bestimmten Sicherheitsgruppen einschränken. Diese Einstellungen wirken sich nicht auf die Freigabe über Microsoft 365-Gruppen oder -Teams aus. Gäste, die über eine Gruppe oder ein Team eingeladen wurden, haben auch Zugriff auf die zugehörige Website, obwohl die Freigabe von Dokumenten und Ordnern nur von Personen in den angegebenen Sicherheitsgruppen ausgeführt werden kann.
-
-**Navigation:** SharePoint Admin Center > Freigabe > Externes Teilen auf bestimmte Sicherheitsgruppen einschränken
-
-![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene für Sicherheitsgruppen](../media/sharepoint-organization-external-sharing-security-groups.png)
-
-| Einstellung | Standard | Beschreibung |
-|:-----|:-----|:-----|
-|Zulassen, dass nur Benutzer in ausgewählten Sicherheitsgruppen mit authentifizierten externen Benutzern teilen:|Aus|Ist diese Option **aktiviert**, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Personen außerhalb der Organisation freigeben. Es sind nur *Bestimmte Personen*-Links verfügbar. Die *Jeder*-Freigabe wird effektiv deaktiviert, es sei denn, **Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen** ist ebenfalls aktiviert.|
-|Nur Benutzer in ausgewählten Sicherheitsgruppen dürfen mit authentifizierten externen Benutzern und mittels anonymer Links teilen|Aus|Ist diese Option aktiviert, können nur die Personen in den angegebenen Sicherheitsgruppen Elemente für Gäste freigeben. Es sind *Jeder*- und *Bestimmte Personen*- Links verfügbar.|
-
-Beide Einstellungen können gleichzeitig verwendet werden. Wenn ein Benutzer in Sicherheitsgruppen für beide Einstellungen enthalten ist, hat die höhere Berechtigungsstufe Vorrang (*Jeder* plus *Bestimmter Benutzer*). Geschachtelte Sicherheitsgruppen werden unterstützt.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (Websiteebene)
 
