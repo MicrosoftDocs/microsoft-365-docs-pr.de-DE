@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer- und Echtzeiterkennungen im Microsoft 365 De
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195033"
+ms.locfileid: "53203256"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -56,7 +56,8 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Verbesserungen bei der Bedrohungssuche
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Einführung der Warnungs-ID für Defender für Office 365 Warnungen innerhalb von Explorer-/Echtzeiterkennungen (Vorschau)
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Einführung der Warnungs-ID für Defender für Office 365 Warnungen innerhalb von Explorer-/Echtzeiterkennungen
 
 Wenn Sie heute von einer Warnung zum Bedrohungs-Explorer navigieren, wird eine gefilterte Ansicht im Explorer geöffnet, wobei die Ansicht nach Warnungsrichtlinien-ID gefiltert ist (Richtlinien-ID ist ein eindeutiger Bezeichner für eine Warnungsrichtlinie).
 Wir machen diese Integration relevanter, indem wir die Warnungs-ID (siehe beispiel für die Warnungs-ID unten) im Bedrohungs-Explorer und Echtzeiterkennungen einführen, damit Sie Nachrichten sehen, die für die jeweilige Warnung relevant sind, sowie eine Anzahl von E-Mails. Sie können auch sehen, ob eine Nachricht Teil einer Warnung war, und von dieser Nachricht zu der spezifischen Warnung navigieren.
@@ -69,12 +70,12 @@ Die Warnungs-ID ist innerhalb der URL verfügbar, wenn Sie eine einzelne Warnung
 > [!div class="mx-imgBorder"]
 > ![Warnungs-ID im Detail-Flyout](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Erweitern des Explorer-Datenaufbewahrungs- und Suchlimits für Testmandanten von 7 auf 30 Tage (Vorschau)
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Erweitern des Explorer-Datenaufbewahrungs- und Suchlimits für Testmandanten von 7 auf 30 Tage
 
 Im Rahmen dieser Änderung können Sie E-Mail-Daten innerhalb von 30 Tagen (eine Erhöhung gegenüber den vorherigen 7 Tagen) in Bedrohungs-Explorer/Echtzeiterkennungen für Defender für Office P1- und P2-Testmandanten suchen und filtern.
 Dies wirkt sich nicht auf Produktionsmandanten für P1- und P2/E5-Kunden aus, die bereits über die 30-tägigen Datenaufbewahrungs- und Suchfunktionen verfügen.
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Aktualisierte Grenzwerte für das Exportieren von Datensätzen für den Bedrohungs-Explorer (Vorschau)
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Aktualisierte Grenzwerte für das Exportieren von Datensätzen für den Bedrohungs-Explorer
 
 Im Rahmen dieser Aktualisierung wird die Anzahl der Zeilen für E-Mail-Datensätze, die aus dem Bedrohungs-Explorer exportiert werden können, von 9990 auf 200.000 Datensätze erhöht. Der Satz von Spalten, die derzeit exportiert werden können, bleibt gleich, aber die Anzahl der Zeilen nimmt ab dem aktuellen Grenzwert zu.
 
@@ -120,13 +121,13 @@ Tags-Informationen werden auch im Flyout für URL-Klicks angezeigt. Um sie anzuz
 >
 Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) ansehen.
 
-## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Verbesserungen der Bedrohungssuche (anstehendes Ereignis)
+## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Verbesserungen bei der Bedrohungssuche (anstehendes Ereignis)
 
 ### <a name="updated-threat-information-for-emails"></a>Aktualisierte Bedrohungsinformationen für E-Mails
 
 Wir haben uns auf Die Plattform- und Datenqualitätsverbesserungen konzentriert, um die Genauigkeit und Konsistenz von E-Mail-Datensätzen zu erhöhen. Verbesserungen umfassen die Konsolidierung von Pre-Delivery- und Post-Delivery-Informationen, z. B. Aktionen, die für eine E-Mail als Teil des ZAP-Prozesses ausgeführt werden, in einem einzigen Datensatz. Weitere Details wie Spambewertung, Bedrohungen auf Entitätsebene (z. B. welche URL bösartig war) und die neuesten Übermittlungsorte sind ebenfalls enthalten.
 
-Nach diesen Updates wird ein einzelner Eintrag für jede Nachricht angezeigt, unabhängig von den verschiedenen Ereignissen nach der Übermittlung, die sich auf die Nachricht auswirken. Zu den Aktionen zählen ZAP, manuelle Wartung (d. h. Administratoraktionen), dynamische Bereitstellung usw.
+Nach diesen Updates wird ein einzelner Eintrag für jede Nachricht angezeigt, unabhängig von den verschiedenen Ereignissen nach der Übermittlung, die sich auf die Nachricht auswirken. Zu den Aktionen gehören ZAP, manuelle Wartung (d. h. Administratoraktion), dynamische Bereitstellung usw.
 
 Zusätzlich zum Anzeigen von Schadsoftware und Phishing-Bedrohungen sehen Sie die Spambewertung, die einer E-Mail zugeordnet ist. Sehen Sie sich in der E-Mail alle mit der E-Mail verbundenen Bedrohungen zusammen mit den entsprechenden Erkennungstechnologien an. Eine E-Mail kann null, eine oder mehrere Bedrohungen haben. Die aktuellen Bedrohungen werden im Abschnitt **"Details"** des E-Mail-Flyouts angezeigt. Bei mehreren Bedrohungen (z. B. Schadsoftware und Phishing) zeigt das **Feld "Erkennungstechnologie"** die Zuordnung zur Bedrohungserkennung an, bei der es sich um die Erkennungstechnologie handelt, die die Bedrohung identifiziert hat.
 
@@ -153,7 +154,7 @@ Die Zeitachsenansicht identifiziert alle Übermittlungs- und Nachzustellereignis
 - **Ereignis:** Umfasst Ereignisse der obersten Ebene wie die ursprüngliche Zustellung, manuelle Wartung, ZAP, Übermittlungen und dynamische Übermittlung.
 - **Aktion:** Die spezifische Aktion, die entweder als Teil von ZAP oder als Administratoraktion (z. B. vorläufiges Löschen) ausgeführt wurde.
 - **Bedrohungen:** Deckt die Bedrohungen (Schadsoftware, Phishing, Spam) ab, die zu diesem Zeitpunkt identifiziert wurden.
-- **Ergebnis/Details:** Weitere Informationen über das Ergebnis der Aktion, z. B. ob sie als Teil der ZAP-/Administratoraktion ausgeführt wurde.
+- **Ergebnis/Details:** Weitere Informationen über das Ergebnis der Aktion, z. B. ob sie im Rahmen der ZAP-/Administratoraktion ausgeführt wurde.
 
 ### <a name="original-and-latest-delivery-location"></a>Ursprüngliche und neueste Übermittlungsspeicherort
 
@@ -409,7 +410,7 @@ Sie können jetzt Berichte für URL-Klicks exportieren, um Microsoft Excel, um d
 
 **Explorer** \> **Phishing anzeigen** \> **Klicks** \> **Top URLs** or **URL Top Clicks** \> select any record to open the URL flyout.
 
-Wenn Sie eine URL in der Liste auswählen, wird im Fly-Out-Bereich eine neue Schaltfläche **"Exportieren"** angezeigt. Verwenden Sie diese Schaltfläche, um Daten zur einfacheren Berichterstellung in eine Excel Tabelle zu verschieben.
+Wenn Sie eine URL in der Liste auswählen, wird im Fly-Out-Bereich eine neue Schaltfläche **"Exportieren"** angezeigt. Verwenden Sie diese Schaltfläche, um Daten zur einfacheren Berichterstellung in ein Excel-Arbeitsblatt zu verschieben.
 
 Folgen Sie diesem Pfad, um zum gleichen Speicherort im Bericht über Echtzeiterkennungen zu gelangen:
 
@@ -423,7 +424,7 @@ Folgen Sie diesem Pfad, um zum gleichen Speicherort im Bericht über Echtzeiterk
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Anzeigen von Schadsoftware, die in E-Mails nach Technologie erkannt wurde
 
-Angenommen, Sie möchten Schadsoftware in E-Mails nach Microsoft 365 Technologie sortiert sehen. Verwenden Sie dazu die [E-Mail-> Schadsoftwareansicht](threat-explorer-views.md#email--malware) des Explorers (oder Echtzeiterkennungen).
+Angenommen, Sie möchten Schadsoftware in E-Mails erkennen, sortiert nach Microsoft 365 Technologie. Verwenden Sie dazu die [E-Mail-> Schadsoftwareansicht](threat-explorer-views.md#email--malware) des Explorers (oder Echtzeiterkennungen).
 
 1. Wählen Sie im Security & Compliance Center ( <https://protection.office.com> ) den **Bedrohungsverwaltungs-Explorer** \>  (oder **Echtzeiterkennungen)** aus. (In diesem Beispiel wird Explorer verwendet.)
 
@@ -480,7 +481,7 @@ Verwenden Sie die [ **E-Mail-Phishing-Ansicht**  > ](threat-explorer-views.md#em
    Wählen Sie eine URL aus, um ausführlichere Informationen anzuzeigen.
 
    > [!NOTE]
-   > Im Dialogfeld "URL-Flyout&quot; wird die Filterung nach E-Mail-Nachrichten entfernt, um die vollständige Ansicht der Url-Belichtung in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach E-Mail-Nachrichten filtern, über die Sie sich im Explorer Gedanken machen, nach bestimmten URLs suchen, die potenzielle Bedrohungen sind, und dann Ihr Verständnis der URL-Gefährdung in Ihrer Umgebung erweitern (über das Dialogfeld &quot;URL-Details"), ohne der Explorer-Ansicht selbst URL-Filter hinzufügen zu müssen.
+   > Im Dialogfeld "URL-Flyout&quot; wird die Filterung nach E-Mail-Nachrichten entfernt, um die vollständige Ansicht der Url-Belichtung in Ihrer Umgebung anzuzeigen. Auf diese Weise können Sie nach E-Mail-Nachrichten filtern, über die Sie sich im Explorer Gedanken machen, nach bestimmten URLs suchen, die potenzielle Bedrohungen sind, und dann Ihr Verständnis der URL-Gefährdung in Ihrer Umgebung erweitern (über das Dialogfeld &quot;URL-Details"), ohne url-Filter zur Explorer-Ansicht selbst hinzufügen zu müssen.
 
 ### <a name="interpretation-of-click-verdicts"></a>Interpretation von Klickbewertungen
 
@@ -490,7 +491,7 @@ In den Flyouts "E-Mail" oder "URL", "Häufigste Klicks" sowie innerhalb unserer 
 - **Zulässig:** Der Benutzer konnte zur URL navigieren.
 - **Blockiert:** Der Benutzer wurde am Navigieren zur URL gehindert.
 - **Ausstehende Bewertung:** Dem Benutzer wurde die Seite "Detonation ausstehend" angezeigt.
-- **Blockiert außer Kraft gesetzt:** Der Benutzer wurde am direkten Navigieren zur URL gehindert. Der Benutzer hat den Block jedoch überschrieben, um zur URL zu navigieren.
+- **Blockiert außer Kraft gesetzt:** Der Benutzer wurde daran gehindert, direkt zur URL zu navigieren. Der Benutzer hat den Block jedoch überschrieben, um zur URL zu navigieren.
 - **Ausstehendes Diktat umgangen:** Dem Benutzer wurde die Detonationsseite angezeigt. Der Benutzer hat die Nachricht jedoch überschrieben, um auf die URL zuzugreifen.
 - **Fehler:** Dem Benutzer wurde die Fehlerseite angezeigt, oder beim Erfassen der Bewertung ist ein Fehler aufgetreten.
 - **Fehler:** Beim Erfassen des Diktats ist eine unbekannte Ausnahme aufgetreten. Der Benutzer hat möglicherweise durch die URL geklickt.

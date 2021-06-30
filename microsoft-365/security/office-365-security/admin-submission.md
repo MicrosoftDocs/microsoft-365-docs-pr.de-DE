@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Microsoft 365 Defender-Portal verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und E-Mail-Anlagen zur erneuten Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: eecb635972be85e1a1a4f95c2786f209ee249745
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062035"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203280"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -40,7 +40,7 @@ In Microsoft 365 Organisationen mit Exchange Online Postfächern können Adminis
 Wenn Sie eine E-Mail-Nachricht übermitteln, erhalten Sie Folgendes:
 
 - **E-Mail-Authentifizierungsprüfung:** Details dazu, ob die E-Mail-Authentifizierung bei der Zustellung erfolgreich war oder fehlgeschlagen ist.
-- **Richtlinientreffer:** Informationen zu allen Richtlinien, die eingehende E-Mails in Ihrem Mandanten möglicherweise zugelassen oder blockiert haben, und überschreiben unsere Dienstfilterbewertungen.
+- **Richtlinientreffer:** Informationen zu allen Richtlinien, die eingehende E-Mails möglicherweise in Ihrem Mandanten zugelassen oder blockiert haben, und überschreiben unsere Dienstfilterbewertungen.
 - **Nutzlastreputation/-detonation:** Untersuchung aller URLs und Anlagen in der Nachricht.
 - **Benotungsanalyse:** Überprüfung durch Benotungsprüfer, um zu überprüfen, ob Nachrichten bösartig sind oder nicht.
 
@@ -55,8 +55,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 - Um Nachrichten und Dateien an Microsoft zu übermitteln, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
   - **Organisationsverwaltung** oder **Sicherheitsleseberechtigter** im [Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
-  - **Organisationsverwaltung** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
     Beachten Sie, dass die Mitgliedschaft in dieser Rollengruppe erforderlich ist, um [Benutzerübermittlungen an das benutzerdefinierte Postfach anzuzeigen,](#view-user-submissions-to-microsoft) wie weiter unten in diesem Artikel beschrieben.
 
 - Weitere Informationen dazu, wie Benutzer Nachrichten und Dateien an Microsoft übermitteln können, finden Sie unter ["Melden von Nachrichten und Dateien an Microsoft".](report-junk-email-messages-to-microsoft.md)
@@ -142,7 +141,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
      - **Grund für Übermittlung/Blockierung**
      - **Übermittlungs-ID**
      - **Netzwerknachrichten-ID/Objekt-ID**
-     - **Richtung**
+     - **Direction**
      - **Sender-IP**
      - **Massenkonforme Ebene (Bulk Compliant Level, BCL)**
      - **Ziel**
@@ -185,7 +184,7 @@ Wenn eine Überschreibung gefunden wurde, sollte der erneute Scan in einigen Min
 
 ## <a name="view-user-submissions-to-microsoft"></a>Anzeigen von Benutzerübermittlungen an Microsoft
 
-Wenn Sie das [Add-In "Nachricht melden",](enable-the-report-message-add-in.md)das [Add-In "Phishing melden"](enable-the-report-phish-add-in.md)bereitgestellt haben oder Personen die [integrierte Berichterstellung in Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)verwenden, können Sie sehen, welche Benutzer auf der Registerkarte **"Benutzer gemeldete Nachrichten"** berichtigen.
+Wenn Sie das [Add-In "Nachricht melden",](enable-the-report-message-add-in.md)das [Add-In "Phishing melden"](enable-the-report-phish-add-in.md)bereitgestellt haben oder Benutzer die [integrierte Berichterstellung in Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)verwenden, können Sie sehen, welche Benutzer auf der Registerkarte **"Benutzer gemeldete Nachrichten"** berichtigen.
 
 1. Wechseln Sie im Microsoft 365 Defender Portal zu **E-Mail-&** \> **Übermittlungen für** die Zusammenarbeit.
 
@@ -240,7 +239,7 @@ Sobald ein Benutzer eine verdächtige E-Mail an das benutzerdefinierte Postfach 
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Senden von Nachrichten aus dem benutzerdefinierten Postfach an Microsoft
 
-Wenn Sie das benutzerdefinierte Postfach so konfiguriert haben, dass von Benutzern gemeldete Nachrichten abgefangen werden, ohne die Nachrichten an Microsoft zu senden, können Sie bestimmte Nachrichten suchen und zur Analyse an Microsoft senden. Dadurch wird eine Benutzerübermittlung effektiv an eine Administratorübermittlung verschoben.
+Wenn Sie das benutzerdefinierte Postfach so konfiguriert haben, dass von Benutzern gemeldete Nachrichten abgefangen werden, ohne die Nachrichten an Microsoft zu senden, können Sie bestimmte Nachrichten zur Analyse suchen und an Microsoft senden. Dadurch wird eine Benutzerübermittlung effektiv an eine Administratorübermittlung verschoben.
 
 Wählen Sie auf der Registerkarte **"Vom Benutzer gemeldete Nachrichten"** eine Nachricht in der Liste aus, klicken Sie auf **"Zur Analyse an Microsoft übermitteln",** und wählen Sie dann einen der folgenden Werte aus der Dropdownliste aus:
 

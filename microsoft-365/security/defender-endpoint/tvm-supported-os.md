@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 81b0594044e238f5855c627b2ce80baf8d8cb9c2
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194685"
+ms.locfileid: "53203184"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Unterstützte Betriebssysteme, Plattformen und Funktionen – für Bedrohungs- und Sicherheitsrisikomanagement
 
@@ -61,6 +61,7 @@ Red Hat Enterprise Linux 7.2 oder höher ( \* Siehe "Wichtiger Hinweis unten") |
 CentOS 7.2 oder höher | Ja | Ja | Ja | Ja | Ja
 Ubuntu 16.04 LTS oder höher LTS | Ja | Ja | Ja | Ja | Ja
 Oracle Linux 7.2 oder höher | Ja | Ja | Ja | Ja | Ja
+SUSE Linux Enterprise Server 12 oder höher | Ja | Ja | Ja | Ja | Ja
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "Die Sicherheitsrisikodaten, die als Teil Ihrer Microsoft Defender für Endpunkt-Dienste bereitgestellt und angezeigt werden, werden Ihnen in der rohen Form "AS IS" von Red Hat, Inc. zur Verfügung gestellt und sind möglicherweise nicht auf dem neuesten Stand. Die Daten, auf die in der Red Hat Security Data API zugegriffen werden kann, sind unter der Creative Commons Attribution 4.0 International License lizenziert. Sie tragen das Risiko bei der Verwendung dieser Daten. Microsoft und seine Drittanbieter verweigern jegliche Haftung für Folgeschäden und andere indirekte Schäden und konkludente Gewährleistungen, einschließlich konkludente Gewährleistungen von Nichtverletzung, Handelsüblichkeit und Eignung für einen bestimmten Zweck. © 2020 Red Hat. Alle Rechte vorbehalten. © 2020 Microsoft. Alle Rechte vorbehalten."

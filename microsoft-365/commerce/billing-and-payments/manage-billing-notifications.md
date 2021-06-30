@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie verwalten, wer Rechnungsbenachrichtigungs-E-Mails und Rechnungsanlagen empfängt.
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054583"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203244"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Verwalten von Benachrichtigungen zur Abrechnung und Rechnungsanlagen
 
@@ -55,7 +55,7 @@ Die Abrechnungsbenachrichtigungen Ihrer Organisation werden an die primäre und 
 3. Wählen Sie im rechten Bereich auf der Registerkarte **"Zugewiesene Administratoren"** die Option **"Hinzufügen"** aus.
 4. Geben Sie im Bereich **"Administratoren hinzufügen"** den Anzeigenamen oder Benutzernamen des Benutzers ein, und wählen Sie dann den Benutzer aus der Liste der Vorschläge aus.
 5. Fügen Sie mehrere Benutzer hinzu, bis Sie fertig sind.
-6. Wählen Sie **Speichern**. Der Benutzer wird der Liste der zugewiesenen Administratoren hinzugefügt.
+6. Klicken Sie auf **Speichern**. Der Benutzer wird der Liste der zugewiesenen Administratoren hinzugefügt.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Entfernen von Administratorrollen über die Seite "Abrechnungsbenachrichtigungen"
 
@@ -127,6 +127,6 @@ Um Ihre Rechnungen als Anlagen zu Ihren Rechnungsbenachrichtigungen zu erhalten,
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) (Artikel)\
-[Abrechnungsinformationen für Microsoft 365 für Unternehmen in Mexiko](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (Artikel) \
+[Abrechnungsinformationen für Microsoft 365 für Unternehmen in Mexiko](mexico-billing-info.md) (Artikel) \
 [Grundlegendes zu Ihrer Rechnung für Microsoft 365 business](understand-your-invoice2.md) (Artikel)\
 [Gleichzeitiges Hinzufügen von Benutzern und Zuweisen von Lizenzen](../../admin/add-users/add-users.md) (Artikel)

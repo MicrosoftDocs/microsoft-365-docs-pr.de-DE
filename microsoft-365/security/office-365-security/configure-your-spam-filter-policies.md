@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137763"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203292"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -149,7 +149,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Microsoft 365 Def
 
      |Aktion|Spam|Hoch<br>Konfidenz<br>Spam|Phishing|Hoch<br>Konfidenz<br>Phishing|Masse|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Nachricht in Junk-E-Mail-Ordner verschieben**: Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
+     |**Nachricht in Junk-E-Mail-Ordner verschieben**: Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
      |**X-Header hinzufügen**: Fügt dem Nachrichtenheader einen X-Header hinzu und übermittelt die Nachricht an das Postfach. <p> Sie geben den Namen des X-Header-Felds (nicht den Wert) zu einem späteren Zeitpunkt in das Feld **Diesen X-Header-Text hinzufügen** ein. <p> Bei den Bewertungen **Spam** und **Nachricht mit hoher Spamwahrscheinlichkeit** wird die Nachricht in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
      |**Text in Betreffzeile voranstellen**: Fügt Text am Anfang der Betreffzeile der Nachricht ein. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup> <p> Sie geben den Text später im Feld **Text in Betreffzeile voranstellen** ein.|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)|
      |**Nachricht an E-Mail-Adresse umleiten**: Sendet die Nachricht an andere Empfänger statt an die vorgesehenen Empfänger. <p> Sie geben die Empfänger später im Feld **An diese E-Mail-Adresse umleiten** an.|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
@@ -182,7 +182,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Microsoft 365 Def
 
    - **An diese E-Mail-Adresse umleiten**: Dieses Feld ist nur dann erforderlich und verfügbar, wenn Sie **An diese E-Mail-Adresse umleiten** als Aktion für eine Spamfilterbewertung ausgewählt haben. Geben Sie die E-Mail-Adresse ein, an die Sie die Nachricht senden möchten. Mehrere Werte können durch Semikolons (;) getrennt angegeben werden.
 
-   - **Sicherheitstipps aktivieren**: Standardmäßig sind Sicherheitstipps aktiviert, Sie können sie jedoch deaktivieren, indem Sie das Kontrollkästchen löschen. Weitere Informationen zu Sicherheitstipps finden Sie unter [Sicherheitstipps in E-Mail-Nachrichten](safety-tips-in-office-365.md).
+   - **Sicherheitstipps aktivieren**: Standardmäßig sind Sicherheitstipps aktiviert, Sie können sie jedoch deaktivieren, indem Sie das Kontrollkästchen löschen.
 
    - **Automatische Bereinigung zur Nullstunde (Zero-Hour Auto Purge, ZAP) aktivieren**: ZAP erkennt Nachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden, und ergreift Maßnahmen für diese. Weitere Informationen finden Sie unter [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](zero-hour-auto-purge.md).
 
