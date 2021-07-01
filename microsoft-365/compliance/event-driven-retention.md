@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Normalerweise ein Bestandteil einer Datensatzverwaltungslösung. Sie können eine Aufbewahrungsbezeichnung so konfigurieren, dass der Aufbewahrungszeitraum basierend auf einem von Ihnen festgelegten Ereignis gestartet wird.
-ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 83f1be417b706fdb66b1df71ba351ce16d5ad485
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034246"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226623"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Beginn der Aufbewahrung bei Auftreten eines Ereignisses
 
@@ -60,7 +60,7 @@ Um die ereignisbasierte Aufbewahrung erfolgreich zu verwenden, müssen Sie die B
   
 ![Diagramm 2 von 2: Ereignistyp, Bezeichnungen, Ereignisse und Objekt-IDs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
-1. Sie erstellen Aufbewahrungsbezeichnungen für unterschiedliche Arten von Inhalten und ordnen diesen dann einen Ereignistyp zu. Aufbewahrungsbezeichnungen für verschiedene Arten von Produktdateien und Datensätzen werden beispielsweise einem Ereignistyp mit der Bezeichnung „Product Lifetime“ zugeordnet, da diese Datensätze ab dem Ende des Produktlebenszyklus für 10 Jahre aufbewahrt werden müssen.
+1. Sie erstellen Aufbewahrungsbezeichnungen für unterschiedliche Arten von Inhalten und ordnen sie dann einem Ereignistyp zu. Aufbewahrungsbezeichnungen für verschiedene Arten von Produktdateien und Datensätzen werden beispielsweise einem Ereignistyp mit der Bezeichnung „Product Lifetime“ zugeordnet, da diese Datensätze ab dem Ende des Produktlebenszyklus für zehn Jahre aufbewahrt werden müssen.
     
 2. Benutzer (in der Regel Datensatzverwalter) wenden diese Aufbewahrungsbezeichnungen auf Inhalte an, und geben (bei Dokumenten in SharePoint und OneDrive) eine Objekt-ID für jedes Element ein. In diesem Beispiel ist die Objekt-ID ein von der Organisation verwendeter Produktname oder -code. Dann wird den Datensätzen jedes Produkts eine Aufbewahrungsbezeichnung zugewiesen, und jeder Datensatz verfügt über eine Eigenschaft, die eine Objekt-ID enthält. Das Diagramm stellt **alle Inhalte** für alle Produktdatensätze in einer Organisation dar, wobei jedes Element die Objekt-ID des Produkts trägt, um dessen Datensatz es sich handelt. 
     
@@ -72,11 +72,11 @@ Um die ereignisbasierte Aufbewahrung erfolgreich zu verwenden, müssen Sie die B
     
    - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann das aktuelle, ein vergangenes oder ein zukünftiges Datum sein.
 
-4. Nach der Erstellung eines Ereignisses wird dieses Ereignisdatum mit allen Inhalten synchronisiert, die eine Aufbewahrungsbezeichnung dieses Ereignistyps aufweisen und die angegebene Objekt-ID bzw. das angegebene Schlüsselwort enthalten. Wie bei jeder Aufbewahrungsbezeichnung kann die Synchronisierung bis zu 7 Tage dauern. Bei allen rot eingekreisten Elementen im vorigen Diagramm wird der Aufbewahrungszeitraum durch dieses Ereignis ausgelöst. Mit anderen Worten, wenn dieses Produkt das Ende seiner Lebensdauer erreicht, löst dieses Ereignis den Aufbewahrungszeitraum für die Produktdatensätze aus.
+4. Nach dem Erstellen eines Ereignisses wird das Ereignisdatum mit den gesamten Inhalten synchronisiert, die über eine Aufbewahrungsbezeichnung mit diesem Ereignistyp verfügen und die angegebene Asset-ID oder das Schlüsselwort enthalten. Wie bei jeder anderen Aufbewahrungsbezeichnung kann diese Synchronisierung bis zu sieben Tage dauern. Im vorherig aufgeführten Diagramm wird für alle Elemente, die rot eingekreist sind, der Aufbewahrungszeitraum durch dieses Ereignis ausgelöst. Anders ausgedrückt: Wenn dieses Produkt das Ende seiner Lebensdauer erreicht hat, löst das Ereignis den Aufbewahrungszeitraum für die Datensätze dieses Produkts aus.
 
 Es ist wichtig zu verstehen, dass der Aufbewahrungszeitraum für **alle Inhalte** mit einer Bezeichnung dieses Ereignistyps durch das Ereignis ausgelöst wird, wenn Sie keine Objekt-ID oder Schlüsselwörter für ein Ereignis angeben. Dies bedeutet, dass im vorherigen Diagramm der Aufbewahrungszeitraum für alle Inhalte beginnen würde. Dies ist möglicherweise nicht, was Sie beabsichtigen.
 
-Denken Sie schließlich daran, dass es zu jeder Aufbewahrungsbezeichnung eigene Aufbewahrungseinstellungen gibt. In diesem Beispiel ist für alle ein Zeitraum von 10 Jahren angegeben, aber es ist möglich, dass ein Ereignis Aufbewahrungsbezeichnungen mit unterschiedlichen Aufbewahrungszeiträumen auslöst.
+Denken Sie zum Schluss auch daran, dass jede Aufbewahrungsbezeichnung eigene Aufbewahrungseinstellungen hat. In diesem Beispiel geben sie alle zehn Jahre an, es kann jedoch sein, dass ein Ereignis Aufbewahrungsbezeichnungen auslöst, die alle über einen anderen Aufbewahrungszeitraum verfügen.
   
 ## <a name="how-to-set-up-event-driven-retention"></a>So richten Sie die ereignisgesteuerte Aufbewahrung ein
 
@@ -125,7 +125,7 @@ Wie jede Aufbewahrungsbezeichnung müssen Sie auch ereignisbasierte Bezeichnunge
 
 ### <a name="step-4-enter-an-asset-id"></a>Schritt 4: Eine Asset-ID eingeben
 
-Nachdem eine ereignisbasierte Bezeichnung auf Inhalte angewendet wurde, können Sie für jedes Element eine Objekt-ID eingeben. Ihre Organisation kann beispielsweise folgende Elemente verwenden:
+Nachdem eine ereignisbasierte Bezeichnung auf Inhalt angewendet wurde, können Sie für jedes Element eine Objekt-ID eingeben. Ihre Organisation kann beispielsweise folgende Elemente verwenden:
   
 - Produktcodes, um Inhalt nur für ein bestimmtes Produkt aufzubewahren.
     
@@ -139,7 +139,7 @@ Die Objekt-ID ist einfach eine weitere in SharePoint und OneDrive verfügbare Do
   
 ### <a name="step-5-create-an-event"></a>Schritt 5: Erstellen eines Ereignisses
 
-Wenn eine bestimmte Instanz dieses Ereignistyps auftritt – z. B. wenn ein Produkt das Ende seiner Lebensdauer erreicht –, rufen Sie die Seite **Datensatzverwaltung** > **Ereignisse** im Microsoft 365 Compliance Center auf, und klicken Sie auf **+ Erstellen**, um ein Ereignis zu erstellen. Sie lösen das Ereignis aus, indem Sie es hier erstellen.
+Wenn eine bestimmte Instanz dieses Ereignistyps auftritt – z. B. wenn ein Produkt das Ende seiner Lebensdauer erreicht –, rufen Sie die Seite **Datensatzverwaltung** > **Ereignisse** im Microsoft 365 Compliance Center auf, und klicken Sie auf **+ Erstellen**, um ein Ereignis zu erstellen. Sie lösen das Ereignis aus, indem Sie es hier erstellen.
 
 ![Erstellen eines Ereignisses zum Auslösen des Aufbewahrungsbeginns für ereignisbasierte Aufbewahrungsbezeichnungen](../media/create-event-records-management.png)
 
@@ -153,17 +153,19 @@ Wenn Sie das Ereignis erstellen, wählen Sie den gleichen Ereignistyp aus, der i
 
 Wenn Sie ein Ereignis für mehrere Aufbewahrungsbezeichnungen erstellen müssen, die unterschiedliche Ereignistypen aufweisen, können Sie auch die Option **Vorhandene Bezeichnungen auswählen** auswählen. Wählen Sie dann die Bezeichnungen aus, die für die Ereignistypen konfiguriert sind, die Sie diesem Ereignis zuordnen möchten.
 
-### <a name="step-7-enter-keywords-or-an-asset-id"></a>Schritt 7: Stichwörter oder Asset-ID eingeben
+### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Schritt 7: Eingeben von Schlüsselwörtern oder Abfragen für Exchange, Objekt-ID für SharePoint und OneDrive
 
-Schränken Sie nun den Umfang des Inhalts ein, indem Sie Objekt-IDs für SharePoint- und OneDrive-Inhalte bzw. Schlüsselwörter für Exchange-Inhalte angeben. Bei Objekt-IDs wird die Aufbewahrung nur für Inhalte mit der angegebenen Kombination aus *Eigenschaft und Wert* erzwungen. Wird keine Objekt-ID eingegeben, wird auf alle Inhalte mit Bezeichnungen dieses Ereignistyps dasselbe Aufbewahrungslimit angewendet.
+Nun schränken Sie den Umfang des Inhalts ein. Für Exchange-Inhalte geben Sie dazu Schlüsselwörter oder eine Abfrage an. Für SharePoint- und OneDrive-Inhalte geben Sie dazu Objekt-IDs an.
 
-Ein Beispiel: Wenn Sie die Eigenschaft "Objekt-ID" verwenden, geben Sie `ComplianceAssetID:<value>` in das untenstehende Feld für Objekt-IDs ein.
-  
+Verwenden Sie für Exchange-Elemente Schlüsselwörter oder eine Abfrage, die Keyword Query Language (KQL) verwendet. Ausführlichere Informationen zur Abfragesyntax finden Sie in der [KQL-Syntaxreferenz (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Weitere Informationen zu den durchsuchbaren Eigenschaften, die Sie für Exchange verwenden können, finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
+
+Bei Objekt-IDs wird die Aufbewahrung nur für Inhalte mit der angegebenen Kombination aus *Eigenschaft und Wert* erzwungen. Ein Beispiel: Wenn Sie die Eigenschaft "Objekt-ID" verwenden, geben Sie `ComplianceAssetID:<value>` in das in der folgenden Abbildung gezeigte Feld für Objekt-IDs ein.
+
+Wird keine Objekt-ID eingegeben, wird auf alle Inhalte mit Bezeichnungen dieses Ereignistyps dasselbe Aufbewahrungslimit angewendet.
+
 Möglicherweise hat Ihre Organisation andere Eigenschaften und IDs auf die mit diesem Ereignistyp verknüpften Dokumente angewendet. Wenn Sie beispielsweise die Datensätze zu einem bestimmten Produkt ermitteln müssen, könnte die ID eine Kombination aus Ihrer benutzerdefinierten Eigenschaft "ProductID" und dem Wert "XYZ" sein. In diesem Fall würden Sie in das Feld für Objekt-IDs, das in der folgenden Abbildung dargestellt ist, `ProductID:XYZ` eingeben.
-  
-Verwenden Sie für Exchange-Elemente Stichworte. Für eine Abfrage können Sie Suchoperatoren wie AND, OR und NOT verwenden. Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
-  
-Wählen Sie schließlich das Datum aus, an dem das Ereignis eingetreten ist. Dieses Datum wird als Anfang des Aufbewahrungszeitraums verwendet. Nach der Erstellung eines Ereignisses wird dieses Ereignisdatum mit allen Inhalten synchronisiert, die eine Aufbewahrungsbezeichnung dieses Ereignistyps, die Objekt-ID und die Schlüsselwörter aufweisen.  Wie bei jeder Aufbewahrungsbezeichnung kann die Synchronisierung bis zu 7 Tage dauern.
+
+Zum Schluss wählen Sie das Datum aus, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Nachdem Sie ein Ereignis erstellt haben, wird dieses Ereignisdatum für alle Inhalte mit einer Aufbewahrungsbezeichnung für den entsprechenden Ereignistyp, eine Objekt-ID und Schlüsselwörter oder Abfragen synchronisiert. Wie bei jeder anderen Aufbewahrungsbezeichnung kann die Synchronisierung bis zu sieben Tage dauern.
   
 ![Seite „Ereigniseinstellungen“](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
@@ -280,7 +282,7 @@ Beispielcode zum Aufrufen der REST-API:
 |Parameter|Beschreibung|Anmerkungen|
 |--- |--- |--- |
 |<d:Name></d:Name>|Geben Sie einen eindeutigen Namen für das Ereignis an.|Der Name darf nachfolgende Leerzeichen oder die folgenden Zeichen nicht enthalten: % * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|Geben Sie den Namen des Ereignistyps (oder GUID) ein.|Beispiel: "Mitarbeiterkündigung". Der Ereignistyp muss einer Aufbewahrungsbezeichnung zugeordnet sein.|
+|<d:EventType></d:EventType>|Geben Sie den Namen des Ereignistyps (oder GUID) ein.|Beispiel: „Austritt eines Mitarbeiters“. Der Ereignistyp muss mit einer Aufbewahrungsbezeichnung verknüpft sein.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Geben Sie "ComplianceAssetId:" + Mitarbeiter-ID ein|Beispiel: "ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|Datum und Uhrzeit des Ereignisses|Format: jjjj-MM-ttTHH:mm:ssZ, Beispiel: 2018-12-01T00:00:00Z
 |
