@@ -66,7 +66,7 @@
 #### [Microsoft Defender für Endpunkt unter Mac OS]()
 ##### [Übersicht über Microsoft Defender für Endpunkt unter macOS](microsoft-defender-endpoint-mac.md)
 ##### [Neuerungen](mac-whatsnew.md)
- 
+
 ##### [Bereitstellen]()
 ###### [Microsoft-Intune-basierte Bereitstellung](mac-install-with-intune.md)
 ###### [JAMF-Pro-basierte Bereitstellung]()
@@ -75,11 +75,11 @@
 ####### [Gerätegruppen einrichten](mac-jamfpro-device-groups.md)
 ####### [Einrichten von Richtlinien](mac-jamfpro-policies.md)
 ####### [Registrieren von Geräten](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [Bereitstellung mit einem anderen MDM-System (Mobile Device Management)](mac-install-with-other-mdm.md)
 ###### [Manuelle Bereitstellung](mac-install-manually.md)
 ##### [Update](mac-updates.md)
- 
+
 ##### [Konfigurieren]()
 ###### [Konfigurieren und Überprüfen von Ausschlüssen](mac-exclusions.md)
 ###### [Festlegen von Einstellungen](mac-preferences.md)
@@ -89,14 +89,14 @@
 ####### [JAMF-Beispiele](mac-device-control-jamf.md)
 ####### [Intune-Beispiele](mac-device-control-intune.md)
 ###### [Scans planen](mac-schedule-scan.md)
- 
+
 ##### [Problembehandlung]()
 ###### [Problembehandlung bei Problemen mit Installation und Update](mac-support-install.md)
 ###### [Behandlung von Leistungsproblemen](mac-support-perf.md)
 ###### [Behandlung von Cloudverbindungen](troubleshoot-cloud-connect-mdemac.md)
 ###### [Problembehandlung bei Kernelerweiterungsproblemen](mac-support-kext.md)
 ###### [Behandeln von Lizenzproblemen](mac-support-license.md)
- 
+
 ##### [Datenschutz](mac-privacy.md)
 ##### [Ressourcen](mac-resources.md)
 
@@ -104,10 +104,10 @@
 #### [Microsoft Defender für Endpunkt für iOS]()
 ##### [Übersicht über Microsoft Defender für Endpunkt unter iOS](microsoft-defender-endpoint-ios.md)
 ##### [Neuigkeiten](ios-whatsnew.md)
- 
+
 ##### [Bereitstellen]()
 ###### [Bereitstellen von Microsoft Defender für Endpunkt unter iOS über Intune](ios-install.md)
- 
+
 ##### [Konfigurieren]()
 ###### [Konfigurieren von iOS-Features](ios-configure-features.md)
 
@@ -115,8 +115,8 @@
 ###### [Häufig gestellte Fragen und Problembehandlung](ios-troubleshoot.md)
 
 ##### [Datenschutz](ios-privacy.md)
- 
- 
+
+
 #### [Microsoft Defender für Endpunkt unter Linux]()
 ##### [Übersicht über Microsoft Defender für Endpunkt unter Linux](microsoft-defender-endpoint-linux.md)
 ##### [Neuigkeiten](linux-whatsnew.md)
@@ -127,7 +127,7 @@
 ###### [Microsoft Defender für Endpunkt unter Linux mit Chef bereitstellen](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [Update](linux-updates.md)
- 
+
 ##### [Konfigurieren]()
 ###### [Konfigurieren und Überprüfen von Ausschlüssen](linux-exclusions.md)
 ###### [Konfiguration von statischen Proxys](linux-static-proxy-configuration.md)
@@ -136,29 +136,29 @@
 ###### [Scans planen mit Microsoft Defender für Endpunkt unter Linux](linux-schedule-scan-atp.md)
 ###### [Planen eines Updates von Microsoft Defender für Endpunkt (Linux)](linux-update-MDE-Linux.md)
 
- 
+
 ##### [Problembehandlung]()
 ###### [Problembehandlung bei Installationsproblemen](linux-support-install.md)
 ###### [Untersuchen von Problemen mit der Agent-Integrität](health-status.md)
 ###### [Behandlung von Cloudverbindungsproblemen](linux-support-connectivity.md)
 ###### [Behandlung von Leistungsproblemen](linux-support-perf.md)
 ###### [Behandeln von Problemen mit fehlenden Ereignissen](linux-support-events.md)
- 
+
 ##### [Datenschutz](linux-privacy.md)
 ##### [Ressourcen](linux-resources.md)
- 
+
 #### [Microsoft Defender für Endpunkt unter Android]()
 ##### [Übersicht über Microsoft Defender für Endpunkt unter Android](microsoft-defender-endpoint-android.md)
- 
+
 ##### [Bereitstellen]()
 ###### [Bereitstellen von Microsoft Defender für Endpunkt unter Android mit Microsoft Intune](android-intune.md)
- 
+
 ##### [Konfigurieren]()
 ###### [Konfigurieren von Funktionen von Microsoft Defender für Endpunkt unter Android](android-configure.md)
- 
+
 ##### [Datenschutz]()
 ###### [Microsoft Defender für Endpunkt unter Android – Datenschutzinformationen](android-privacy.md)
- 
+
 ##### [Problembehandlung]()
 ###### [Behandeln von Problemen](android-support-signin.md)
 
@@ -321,13 +321,13 @@
 ##### [Aktivieren des Exploit-Schutzes](enable-exploit-protection.md)
 ##### [Anpassen des Exploit-Schutzes](customize-exploit-protection.md)
 ##### [Importieren, Exportieren und Bereitstellen von Konfigurationen für Exploit-Schutz](import-export-exploit-protection-emet-xml.md)
-##### [Referenz zum Exploit-Schutz](exploit-protection-reference.md )
+##### [Referenz zum Exploit-Schutz](exploit-protection-reference.md)
 
 #### [Netzwerkschutz]()
 ##### [Schützen Sie Ihr Netzwerk](network-protection.md)
 ##### [Auswerten des Netzwerkschutzes](evaluate-network-protection.md)
 ##### [Netzwerkschutz aktivieren](enable-network-protection.md)
- 
+
 #### [Internetschutz]()
 ##### [Übersicht über Internetschutz](web-protection-overview.md)
 ##### [Internet-Bedrohungsschutz]()
@@ -335,7 +335,7 @@
 ###### [Überwachen der Websicherheit](web-protection-monitoring.md)
 ###### [Reagieren auf Internetbedrohungen](web-protection-response.md)
 ##### [Internet-Inhaltsfilterung](web-content-filtering.md)
- 
+
 #### [Kontrollierter Ordnerzugriff]()
 ##### [Schützen von Ordnern](controlled-folders.md)
 ##### [Auswerten des kontrollierten Ordnerzugriffs](evaluate-controlled-folder-access.md)
@@ -371,7 +371,7 @@
 ##### [Anzeigen und Organisieren der Vorfallswarteschlange](view-incidents-queue.md)
 ##### [Verwalten von Vorfällen](manage-incidents.md)
 ##### [Untersuchen von Vorfällen](investigate-incidents.md)
- 
+
 #### [Benachrichtigungswarteschlange]()
 ##### [Anzeigen und Organisieren der Benachrichtigungswarteschlange](alerts-queue.md)
 ##### [Warnungen überprüfen](review-alerts.md)
@@ -383,12 +383,12 @@
 ##### [Untersuchen einer Domain](investigate-domain.md)
 ###### [Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys](investigate-behind-proxy.md)
 ##### [Untersuchen eines Benutzerkontos](investigate-user.md)
- 
+
 #### [Geräteliste]()
 ##### [Anzeigen und Organisieren der Geräteliste](machines-view-overview.md)
 ##### [Gerätezeitachsen-Ereigniskennzeichen](device-timeline-event-flag.md)
 ##### [Verwalten der Gerätegruppe und -kategorien](machine-tags.md)
- 
+
 #### [Ergreifen von Reaktionen]()
 ##### [Ergreifen von Reaktionen auf einem Gerät]()
 ###### [Reaktionen auf Geräten](respond-machine-alerts.md)
@@ -547,7 +547,7 @@
 ####### [Einschränken der App-Ausführung](restrict-code-execution.md)
 ####### [Entfernen von App-Einschränkungen](unrestrict-code-execution.md)
 ####### [Antivirusscan ausführen](run-av-scan.md)
-####### [Ausführen einer Live-Antwort](run-live-response.md) 
+####### [Ausführen einer Live-Antwort](run-live-response.md)
 ####### [Offboarding des Computers](offboard-machine-api.md)
 ####### [Beenden und Datei unter Quarantäne stellen](stop-and-quarantine-file.md)
 ####### [Abbrechen einer Computeraktion](cancel-machine-action.md)
@@ -661,7 +661,7 @@
 ##### [Inaktive Geräte](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Falsch konfigurierte Geräte](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Überprüfen von sensorischen Ereignissen und Fehlern auf Computern mit der Ereignisanzeige](event-error-codes.md)
-  
+
 #### [Behandeln von Problemen mit dem Dienst "Microsoft Defender für Endpunkt"]()
 ##### [Behandeln von Dienstproblemen](troubleshoot-mdatp.md)
 ##### [Überprüfen des Dienststatus](service-status.md)
@@ -670,7 +670,7 @@
 #### [Behandeln von Problemen mit Liveantworten](troubleshoot-live-response.md)
 
 #### [Erfassen von Supportprotokollen mithilfe von LiveAnalyzer ](troubleshoot-collect-support-log.md)
- 
+
 #### [Behandlung von Problemen mit der Verringerung von Angriffen]()
 ##### [Netzwerkschutz](troubleshoot-np.md)
 ##### [Regeln zur Verringerung der Angriffsfläche](troubleshoot-asr.md)
@@ -678,4 +678,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)
-# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
+# [Defender for Identity](/defender-for-identity/)
