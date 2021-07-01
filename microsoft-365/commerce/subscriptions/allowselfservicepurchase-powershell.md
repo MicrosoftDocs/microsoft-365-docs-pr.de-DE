@@ -1,5 +1,5 @@
 ---
-title: Verwenden von AllowSelfServicePurchase für das MS Commerce PowerShell-Modul
+title: Verwenden von AllowSelfServicePurchase für das MSShell-PowerShell-Modul
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,54 +18,54 @@ ms.custom:
 - commerce_ssp
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie das AllowSelfServicePurchase PowerShell-Cmdlet verwenden, um den Self-Service-Kauf ein- oder auszuschalten.
+description: Erfahren Sie, wie Sie das PowerShell-Cmdlet "AllowSelfServicePurchase" verwenden, um den Self-Service-Kauf zu aktivieren oder zu deaktivieren.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536130"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227475"
 ---
-# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MS Commerce PowerShell-Modul
+# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MSShell-PowerShell-Modul
 
-Das **MS Commerce** PowerShell-Modul ist jetzt im [PowerShell Gallery verfügbar.](https://aka.ms/allowselfservicepurchase-powershell-gallery) Das Modul enthält einen **PolicyID-Parameterwert** für **AllowSelfServicePurchase,** mit dem Sie steuern können, ob Benutzer in Ihrer Organisation Self-Service-Käufe tätigen können.
+Das **MSShell-PowerShell-Modul** ist jetzt im [PowerShell-Katalog](https://aka.ms/allowselfservicepurchase-powershell-gallery)verfügbar. Das Modul enthält einen **PolicyID-Parameterwert** für **AllowSelfServicePurchase,** mit dem Sie steuern können, ob Benutzer in Ihrer Organisation Self-Service-Käufe tätigen können.
 
-Sie können das **MS Commerce PowerShell-Modul** verwenden, um:
+Sie können das **MSShell-PowerShell-Modul** für Folgendes verwenden:
 
-- Anzeigen des Standardzustands des **Parameterwerts AllowSelfServicePurchase** – unabhängig davon, ob er aktiviert oder deaktiviert ist
-- Anzeigen einer Liste der zutreffenden Produkte und ob der Self-Service-Kauf aktiviert oder deaktiviert ist
-- Anzeigen oder Ändern der aktuellen Einstellung für ein bestimmtes Produkt, um sie entweder zu aktivieren oder zu deaktivieren
+- Anzeigen des Standardzustands des **AllowSelfServicePurchase-Parameterwerts** – unabhängig davon, ob er aktiviert oder deaktiviert ist
+- Anzeigen einer Liste der anwendbaren Produkte und ob self-service purchase aktiviert oder deaktiviert ist
+- Anzeigen oder Ändern der aktuellen Einstellung für ein bestimmtes Produkt, um es zu aktivieren oder zu deaktivieren
 
 ## <a name="requirements"></a>Anforderungen
 
-Für die Verwendung des **MS Commerce** PowerShell-Moduls benötigen Sie:
+Zum Verwenden des **MSShell-PowerShell-Moduls** benötigen Sie Folgendes:
 
 - Ein Windows 10 Gerät
-- PowerShell 5 oder darunter. Derzeit wird PowerShell 6.x/7.x mit diesem Modul nicht unterstützt.
+- PowerShell 5 oder darunter. PowerShell 6.x/7.x wird derzeit mit diesem Modul nicht unterstützt.
 - Administratorberechtigung für das Gerät
 - Rolle "Globaler Administrator" oder "Abrechnungsadministrator" für Ihren Mandanten
 
-## <a name="install-the-mscommerce-powershell-module"></a>Installieren des MS Commerce PowerShell-Moduls
+## <a name="install-the-mscommerce-powershell-module"></a>Installieren des MSShell-PowerShell-Moduls
 
-Sie installieren das **MS Commerce** PowerShell-Modul einmal auf Ihrem Windows 10 und importieren es dann in jede gestartete PowerShell-Sitzung. Laden Sie **das MS Commerce** PowerShell-Modul aus dem [PowerShell-Katalog herunter.](https://aka.ms/allowselfservicepurchase-powershell-gallery)
+Sie installieren das **MSShell-PowerShell-Modul** einmal auf Ihrem Windows 10 Gerät und importieren es dann in jede PowerShell-Sitzung, die Sie starten. Laden Sie das **MSShell-PowerShell-Modul** aus dem [PowerShell-Katalog herunter.](https://aka.ms/allowselfservicepurchase-powershell-gallery)
 
-Führen Sie den folgenden Befehl **aus,** um das MS Commerce PowerShell-Modul mit **PowerShellGet** zu installieren:
+Führen Sie den folgenden Befehl aus, um das **MSShell PowerShell-Modul** mit **PowerShellGet** zu installieren:
 
 ```powershell
 Install-Module -Name MSCommerce
 ```
 
-## <a name="import-mscommerce-into-the-powershell-session"></a>Importieren von MSCommerce in die PowerShell-Sitzung
+## <a name="import-mscommerce-into-the-powershell-session"></a>Importieren von MSImport in die PowerShell-Sitzung
 
-Nachdem Sie das Modul auf Ihrem Windows 10 installiert haben, importieren Sie es in jede gestartete PowerShell-Sitzung. Führen Sie den folgenden Befehl aus, um ihn in eine PowerShell-Sitzung zu importieren:
+Nachdem Sie das Modul auf Ihrem Windows 10 Gerät installiert haben, importieren Sie es in jede PowerShell-Sitzung, die Sie starten. Führen Sie den folgenden Befehl aus, um sie in eine PowerShell-Sitzung zu importieren:
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Verbinden mit Ihren Anmeldeinformationen zu MSCommerce
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Verbinden mit Ihren Anmeldeinformationen zu MS Commerce
 
 Führen Sie den folgenden Befehl aus, um eine Verbindung mit dem PowerShell-Modul mit Ihren Anmeldeinformationen herzustellen.
 
@@ -73,31 +73,31 @@ Führen Sie den folgenden Befehl aus, um eine Verbindung mit dem PowerShell-Modu
 Connect-MSCommerce
 ```
 
-Dieser Befehl verbindet die aktuelle PowerShell-Sitzung mit einem Azure Active Directory Mandanten. Der Befehl fordert Sie auf, einen Benutzernamen und ein Kennwort für den Mandanten einzugeben, mit dem Sie eine Verbindung herstellen möchten. Wenn die mehrstufige Authentifizierung für Ihre Anmeldeinformationen aktiviert ist, verwenden Sie die interaktive Option zum Anmelden.
+Mit diesem Befehl wird die aktuelle PowerShell-Sitzung mit einem Azure Active Directory Mandanten verbunden. Der Befehl fordert Sie auf, einen Benutzernamen und ein Kennwort für den Mandanten einzugeben, mit dem Sie eine Verbindung herstellen möchten. Wenn die mehrstufige Authentifizierung für Ihre Anmeldeinformationen aktiviert ist, verwenden Sie die interaktive Option zum Anmelden.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Anzeigen von Details für AllowSelfServicePurchase
 
-Führen Sie zum Anzeigen einer Beschreibung des **AllowSelfServicePurchase-Parameterwerts** und des Standardstatus basierend auf Ihrer Organisation den folgenden Befehl aus:
+Führen Sie den folgenden Befehl aus, um eine Beschreibung des **AllowSelfServicePurchase-Parameterwerts** und des Standardstatus basierend auf Ihrer Organisation anzuzeigen:
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 ```
 
-## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>Anzeigen einer Liste der Self-Service-Einkaufsprodukte und deren Status
+## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>Anzeigen einer Liste von Self-Service-Einkaufsprodukten und deren Status
 
-Führen Sie den folgenden Befehl aus, um eine Liste aller verfügbaren Self-Service-Einkaufsprodukte und den Status der einzelnen Produkte anzeigen zu können:
+Führen Sie den folgenden Befehl aus, um eine Liste aller verfügbaren Self-Service Purchase-Produkte und den Status der einzelnen Produkte anzuzeigen:
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-In der folgenden Tabelle sind die verfügbaren Produkte und deren **ProductId aufgeführt.**
+In der folgenden Tabelle sind die verfügbaren Produkte und ihre **ProductId aufgeführt.**
 
-| Produkt | ProductId |
+| Produkt | Productid |
 |-----------------------------|--------------|
 | Power Apps pro Benutzer | CFQ7TTC0KP0P |
 | Power Automate pro Benutzer | CFQ7TTC0KP0N |
-| Power Automate RPA | CFQ7TTC0KXG6  |
+| Power Automate Rpa | CFQ7TTC0KXG6  |
 | Power BI Premium (eigenständig) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
 | Project Plan 1 | CFQ7TTC0KXND |
@@ -107,9 +107,9 @@ In der folgenden Tabelle sind die verfügbaren Produkte und deren **ProductId au
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Anzeigen oder Festlegen des Status für AllowSelfServicePurchase
 
-Nachdem Sie die Liste der Produkte angezeigt haben, die für den Self-Service-Kauf verfügbar sind, können Sie die Einstellung für ein bestimmtes Produkt anzeigen oder ändern.
+Nachdem Sie die Liste der für den Self-Service-Kauf verfügbaren Produkte angezeigt haben, können Sie die Einstellung für ein bestimmtes Produkt anzeigen oder ändern.
 
-Führen Sie den folgenden Befehl aus, um die Richtlinieneinstellung für ein bestimmtes Produkt zu erhalten:
+Führen Sie den folgenden Befehl aus, um die Richtlinieneinstellung für ein bestimmtes Produkt abzurufen:
 
 ```powershell
 Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N
@@ -129,7 +129,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Beispielskript zum Deaktivieren von AllowSelfServicePurchase
 
-Im folgenden Beispiel erfahren Sie, wie Sie das **MS Commerce-Modul** importieren, sich mit Ihrem Konto anmelden, **die ProductId** für Power Automate erhalten und **dann AllowSelfServicePurchase** für dieses Produkt deaktivieren.
+Im folgenden Beispiel werden Sie durch das Importieren des **MSBuild-Moduls,** das Anmelden mit Ihrem Konto, das Abrufen der **ProductId** für Power Automate und das Deaktivieren von **AllowSelfServicePurchase** für dieses Produkt führt.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -144,13 +144,13 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 Die folgende Fehlermeldung wird angezeigt:
 
-> HandleError : Fehler beim Abrufen der Richtlinie mit PolicyId 'AllowSelfServicePurchase', ErrorMessage – Die zugrunde liegende Verbindung wurde geschlossen: Bei einem Senden ist ein unerwarteter Fehler aufgetreten.
+> HandleError: Fehler beim Abrufen der Richtlinie mit "AllowSelfServicePurchase", ErrorMessage : Die zugrunde liegende Verbindung wurde geschlossen: Beim Senden ist ein unerwarteter Fehler aufgetreten.
 
-Dies liegt möglicherweise an einer älteren Version von Transport Layer Security (TLS). Zum Verbinden dieses Diensts müssen Sie TLS 1.2 oder höher verwenden.
+Dies kann auf eine ältere Version von Transport Layer Security (TLS) zurückzuführen sein. Um diesen Dienst zu verbinden, müssen Sie TLS 1.2 oder höher verwenden.
 
 ### <a name="solution"></a>Lösung
 
-Upgrade auf TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Upgrade auf TLS 1.2: (/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module
@@ -165,6 +165,6 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwalten von Self-Service-Käufen (Admin)](manage-self-service-purchases-admins.md) (Artikel)
+[Verwalten von Self-Service-Käufen (Administrator)](manage-self-service-purchases-admins.md) (Artikel)
 
-[Häufig gestellte Fragen zum Self-Service-Kauf](self-service-purchase-faq.yml) (Artikel)
+Häufig gestellte Fragen zum [Self-Service-Kauf](self-service-purchase-faq.yml) (Artikel)

@@ -14,45 +14,45 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Entfernen Sie Gruppen oder Richtlinien, um grundlegende Mobilität und Sicherheit zu deaktivieren.
-ms.openlocfilehash: 1d81aed01193fb2ba821ebc055958ac6cd8ac382
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023869"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228135"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Deaktivieren von grundlegender Mobilität und Sicherheit
 
-Um grundlegende Mobilität und Sicherheit effektiv zu deaktivieren, entfernen Sie Gruppen von Personen, die von Sicherheitsgruppen definiert sind, aus den Geräteverwaltungsrichtlinien, oder entfernen Sie die Richtlinien selbst.
+Um grundlegende Mobilität und Sicherheit effektiv zu deaktivieren, entfernen Sie gruppen von Sicherheitsgruppen definierte Personen aus den Geräteverwaltungsrichtlinien oder entfernen die Richtlinien selbst.
 
 - Entfernen Sie Benutzergruppen, indem Sie Benutzersicherheitsgruppen aus den von Ihnen erstellten Geräterichtlinien entfernen.
 
-- Deaktivieren Sie grundlegende Mobilität und Sicherheit für alle Benutzer, indem Sie alle Geräterichtlinien für Grundlegende Mobilität und Sicherheit entfernen.
+- Deaktivieren Sie die grundlegende Mobilität und Sicherheit für alle Benutzer, indem Sie alle Geräterichtlinien für grundlegende Mobilität und Sicherheit entfernen.
 
-Mit diesen Optionen wird die Erzwingung von Basic Mobility and Security für Geräte in Ihrer Organisation entfernt. Leider können Sie grundlegende Mobilität und Sicherheit nach der Einrichtung nicht einfach "unprovision". 
+Diese Optionen entfernen die Basic Mobility and Security-Erzwingung für Geräte in Ihrer Organisation. Leider können Sie die Grundlegende Mobilität und Sicherheit nicht einfach "aufheben", nachdem Sie sie eingerichtet haben.
 
->[!IMPORTANT]
->Beachten Sie die Auswirkungen auf die Geräte von Benutzern, wenn Sie Benutzersicherheitsgruppen aus Richtlinien entfernen oder die Richtlinien selbst entfernen. Je nach Gerät können beispielsweise E-Mail-Profile und zwischengespeicherte E-Mails entfernt werden. Weitere Informationen finden Sie unter Was geschieht, wenn Sie eine Richtlinie löschen oder  [einen Benutzer aus der Richtlinie entfernen?](../../admin/basic-mobility-security/create-device-security-policies.md)
+> [!IMPORTANT]
+> Beachten Sie die Auswirkungen auf die Geräte der Benutzer, wenn Sie Benutzersicherheitsgruppen aus Richtlinien entfernen oder die Richtlinien selbst entfernen. Beispielsweise können E-Mail-Profile und zwischengespeicherte E-Mails je nach Gerät entfernt werden. Weitere Informationen finden Sie unter  [Was geschieht, wenn Sie eine Richtlinie löschen oder einen Benutzer aus der Richtlinie entfernen?](../../admin/basic-mobility-security/create-device-security-policies.md)
 
-## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Entfernen von Benutzersicherheitsgruppen aus Geräterichtlinien für grundlegende Mobilität und Sicherheit
+## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Entfernen von Benutzersicherheitsgruppen aus grundlegenden Mobilitäts- und Sicherheitsgeräterichtlinien
 
 1. In Ihrem Browsertyp:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2. Wählen Sie eine Geräterichtlinie aus, und wählen Sie **Richtlinie bearbeiten aus.** 
+2. Wählen Sie eine Geräterichtlinie und dann **"Richtlinie bearbeiten"** aus.
 
-3. Wählen Sie  **auf der** Seite Bereitstellung die Option   Entfernen **aus.**
+3. Wählen Sie auf der Seite  **"Bereitstellung"** die   Option **"Entfernen" aus.**
 
-4. Wählen  **Sie unter Gruppen** eine Sicherheitsgruppe aus.
+4. Wählen Sie unter  **"Gruppen"** eine Sicherheitsgruppe aus.
 
-5. Wählen  **Sie Entfernen** aus, und wählen Sie Speichern **aus.**
+5. Wählen Sie  **"Entfernen"** und dann **"Speichern"** aus.
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>Entfernen grundlegender Mobilitäts- und Sicherheitsgeräterichtlinien
 
-1.  In Ihrem Browsertyp:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) . 
+1. In Ihrem Browsertyp:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2.  Wählen Sie eine Geräterichtlinie aus, und wählen Sie dann  **Richtlinie löschen aus.**
-    
-3.  Wählen Sie im Dialogfeld Warnung ja **aus.**
+2. Wählen Sie eine Geräterichtlinie und dann  **"Richtlinie löschen"** aus.
 
->[!NOTE]
->Weitere Schritte zum Aufheben der Blockierung von Geräten, wenn sich Ihre Organisationsgeräte noch in einem blockierten Zustand befinden, finden Sie im Blogbeitrag Entfernen der Zugriffssteuerung aus [Verwaltung mobiler Geräte für Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+3. Wählen Sie im Dialogfeld "Warnung" die Option **"Ja"** aus.
+
+> [!NOTE]
+> Weitere Schritte zum Aufheben der Blockierung von Geräten, wenn sich Ihre Unternehmensgeräte weiterhin in einem blockierten Zustand befinden, finden Sie im Blogbeitrag ["Entfernen der Zugriffssteuerung aus Verwaltung mobiler Geräte für Office 365."](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)

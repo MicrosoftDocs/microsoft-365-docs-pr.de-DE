@@ -15,134 +15,126 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Erfahren Sie mehr über das Unterhaltungsrekonstruktionsfeature in Advanced eDiscovery (unterhaltungsthreading) zum Rekonstruieren, Überprüfen und Exportieren von Chatunterhaltungen in Microsoft Teams und Yammer Gruppen.
+description: Erfahren Sie mehr über die Unterhaltungswiederherstellungsfunktion in Advanced eDiscovery (als Unterhaltungsthreading bezeichnet), um Chatunterhaltungen in Microsoft Teams und Yammer Gruppen zu rekonstruieren, zu überprüfen und zu exportieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 12887ba8dd74c3dab445dcc76e155e274a371539
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9848280a7d6dbcbd6128fff06f150c8458f09701
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838304"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227187"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Unterhaltungsthreading in Advanced eDiscovery
 
-Instant Messaging ist eine bequeme Möglichkeit, Fragen zu stellen, Ideen auszutauschen oder schnell über große Zielgruppen zu kommunizieren. Da Sofortnachrichtenplattformen wie Microsoft Teams- und Yammer-Gruppen zum Kern der Zusammenarbeit im Unternehmen werden, müssen Organisationen bewerten, wie ihr eDiscovery-Workflow diese neuen Formen der Kommunikation und Zusammenarbeit behandelt.
+Chat ist eine bequeme Möglichkeit, Fragen zu stellen, Ideen zu teilen oder schnell über große Zielgruppen hinweg zu kommunizieren. Da Chatplattformen wie Microsoft Teams und Yammer-Gruppen zum Kern der Zusammenarbeit im Unternehmen werden, müssen Organisationen bewerten, wie ihr eDiscovery-Workflow diese neuen Formen der Kommunikation und Zusammenarbeit adressiert.
 
-Das Unterhaltungsrekonstruktionsfeature in Advanced eDiscovery soll Ihnen helfen, kontextbezogene Inhalte zu identifizieren und unterschiedliche Unterhaltungsansichten zu erzeugen. Mit dieser Funktion können Sie vollständige Chatunterhaltungen (auch Threadunterhaltungen *genannt)* effizient und schnell überprüfen, die auf Plattformen wie Microsoft Teams.
+Die Unterhaltungswiederherstellungsfunktion in Advanced eDiscovery soll Ihnen helfen, kontextbezogene Inhalte zu identifizieren und unterschiedliche Unterhaltungsansichten zu erzeugen. Mit dieser Funktion können Sie vollständige Chatunterhaltungen (auch *als Threadunterhaltungen* bezeichnet) effizient und schnell überprüfen, die auf Plattformen wie Microsoft Teams generiert werden.
 
-Mit der Unterhaltungsrekonstruktion können Sie integrierte Funktionen zum Rekonstruieren, Überprüfen und Exportieren von Threadunterhaltungen verwenden. Verwenden Advanced eDiscovery Unterhaltungsrekonstruktion für:
+Mit der Unterhaltungswiederherstellung können Sie integrierte Funktionen verwenden, um Threadunterhaltungen zu rekonstruieren, zu überprüfen und zu exportieren. Verwenden Sie Advanced eDiscovery Unterhaltungswiederherstellung für Folgendes:
 
-- Bewahren Sie eindeutige Metadaten auf Nachrichtenebene für alle Nachrichten in einer Unterhaltung auf.
+- Beibehalten eindeutiger Metadaten auf Nachrichtenebene für alle Nachrichten innerhalb einer Unterhaltung.
 
-- Sammeln von Kontextnachrichten rund um Ihre Suchergebnisse.
+- Sammeln Sie Kontextnachrichten in Ihren Suchergebnissen.
 
-- Überprüfen, Kommentieren und Redact-Threadunterhaltungen.
+- Überprüfen, Kommentieren und Bearbeiten von Threadunterhaltungen.
 
 - Exportieren einzelner Nachrichten oder Threadunterhaltungen
 
-## <a name="terminology"></a>Begrifflichkeiten
+## <a name="terminology"></a>Terminologie
 
-Im Folgenden finden Sie einige Definitionen, mit deren Hilfe Sie mit der Unterhaltungsrekonstruktion beginnen können.
+Hier sind einige Definitionen, die Ihnen bei den ersten Schritten mit der Wiederherstellung von Unterhaltungen helfen.
 
-- **Nachrichten:** Stellen Sie die kleinste Einheit einer Unterhaltung dar. Nachrichten können in Größe, Struktur und Metadaten variieren. 
+- **Nachrichten:** Stellt die kleinste Einheit einer Unterhaltung dar. Nachrichten können in Größe, Struktur und Metadaten variieren.
 
-- **Unterhaltung:** Stellt eine Gruppierung einer oder mehreren Nachrichten dar. In verschiedenen Anwendungen können Unterhaltungen auf unterschiedliche Weise dargestellt werden. In einigen Anwendungen gibt es eine explizite Aktion, die aus der Antwort auf eine vorhandene Nachricht resultiert. Unterhaltungen werden explizit als Ergebnis dieser Benutzeraktion gebildet. Hier ist z. B. ein Screenshot einer Kanal unterhaltung in Microsoft Teams.
+- **Unterhaltung:** Stellt eine Gruppierung einer oder mehrerer Nachrichten dar. Unterhaltungen können in verschiedenen Anwendungen auf unterschiedliche Weise dargestellt werden. In einigen Anwendungen gibt es eine explizite Aktion, die aus dem Antworten auf eine vorhandene Nachricht resultiert. Unterhaltungen werden explizit als Ergebnis dieser Benutzeraktion gebildet. Hier sehen Sie beispielsweise einen Screenshot einer Kanalunterhaltung in Microsoft Teams.
 
-   ![Microsoft Teams Kanal-Unterhaltung](../media/threadedchat.png)
+   ![Microsoft Teams Kanalunterhaltung](../media/threadedchat.png)
 
-   In anderen Apps (z. B. 1xN-Chatnachrichten in Teams) gibt es keine formale Antwortkette, sondern Nachrichten werden in einem einzigen Thread als "flacher Fluss von Nachrichten" angezeigt. In diesen Typen von Apps werden Unterhaltungen aus einer Gruppe von Nachrichten abgeleitet, die innerhalb einer bestimmten Zeit auftreten. Diese "soft-grouping" von Nachrichten (im Gegensatz zu einer Antwortkette) stellt die "Hin und Her"-Unterhaltung zu einem bestimmten Thema dar, das von Interesse ist.
+   In anderen Apps (z. B. 1xN-Chatnachrichten in Teams) gibt es keine formale Antwortkette, und stattdessen werden Nachrichten in einem einzigen Thread als "flacher Fluss von Nachrichten" angezeigt. In diesen Typen von Apps werden Unterhaltungen aus einer Gruppe von Nachrichten abgeleitet, die innerhalb eines bestimmten Zeitraums auftreten. Diese "Soft-Grouping" von Nachrichten (im Gegensatz zu einer Antwortkette) stellt die "Hin- und Her"-Unterhaltung zu einem bestimmten interessanten Thema dar.
 
 ## <a name="step-1-create-a-draft-collection"></a>Schritt 1: Erstellen einer Entwurfssammlung
 
-Nachdem Sie relevante Custodians und Inhaltsstandorte identifiziert haben, können Sie eine Suche erstellen, um potenziell relevante Inhalte zu finden. Auf der **Registerkarte** Sammlungen im Advanced eDiscovery können Sie eine Auflistung erstellen, indem Sie auf **Neue** Auflistung klicken und dem Assistenten folgen. Informationen dazu, wie Sie eine Auflistung erstellen, eine Suchabfrage erstellen und eine Vorschau der Suchergebnisse anzeigen können, finden Sie unter [Create a draft collection](create-draft-collection.md).
+Nachdem Sie relevante Verwahrer und Inhaltsspeicherorte identifiziert haben, können Sie eine Suche erstellen, um potenziell relevante Inhalte zu finden. Auf der Registerkarte **"Sammlungen"** im Advanced eDiscovery Fall können Sie eine Auflistung erstellen, indem Sie auf **"Neue Auflistung"** klicken und dem Assistenten folgen. Informationen dazu, wie Sie eine Sammlung erstellen, eine Suchabfrage erstellen und eine Vorschau der Suchergebnisse anzeigen können, finden Sie unter [Erstellen einer Entwurfssammlung.](create-draft-collection.md)
 
-## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Schritt 2: Commit einer Entwurfssammlung für einen Überprüfungssatz
+## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Schritt 2: Commit einer Entwurfssammlung in einen Prüfdateisatz
 
-Nachdem Sie die Suchabfrage in einer Auflistung überprüft und abschließend erstellt haben, können Sie die Suchergebnisse einem Überprüfungssatz hinzufügen. Wenn Sie Ihre Suchergebnisse zu einem Überprüfungssatz hinzufügen, werden die ursprünglichen Daten in einen Azure Storage kopiert, um den Überprüfungs- und Analyseprozess zu erleichtern. Weitere Informationen zum Hinzufügen von Suchergebnissen zu einem Überprüfungssatz finden Sie unter [Commit a draft collection to a review set](commit-draft-collection.md).
+Nachdem Sie die Suchabfrage in einer Sammlung überprüft und abgeschlossen haben, können Sie die Suchergebnisse einem Prüfdateisatz hinzufügen. Wenn Sie Ihre Suchergebnisse zu einem Prüfdateisatz hinzufügen, werden die ursprünglichen Daten in einen Azure Storage Bereich kopiert, um den Überprüfungs- und Analysevorgang zu vereinfachen. Weitere Informationen zum Hinzufügen von Suchergebnissen zu einem Prüfdateisatz finden Sie unter [Commit einer Entwurfssammlung in einen Prüfdateisatz.](commit-draft-collection.md)
 
-Wenn Sie Einem Überprüfungssatz Elemente aus Unterhaltungen hinzufügen, können Sie die Option Threadunterhaltungen verwenden, um kontextbezogene Nachrichten aus Unterhaltungen zu sammeln, die Elemente enthalten, die den Suchkriterien der Auflistung entsprechen. Nachdem Sie die Option Threadunterhaltungen ausgewählt haben, können die folgenden Schritte ausgeführt werden:
+Wenn Sie Elemente aus Unterhaltungen zu einem Prüfdateisatz hinzufügen, können Sie die Threadunterhaltungsoption verwenden, um Kontextnachrichten aus Unterhaltungen zu sammeln, die Elemente enthalten, die den Suchkriterien der Sammlung entsprechen. Nachdem Sie die Option "Threadunterhaltungen" ausgewählt haben, kann Folgendes passieren:
 
-  ![Unterhaltungsabruf](../media/messagesandconversations.png)
-  
-1. Mithilfe einer Schlüsselwort- und Datumsbereichsabfrage hat die Suche einen Treffer in *Nachricht 3 zurückgegeben.* Diese Nachricht war Teil einer größeren Unterhaltung, dargestellt von *CRC1*.
-  
-2. Wenn Sie die Daten zu einem Überprüfungssatz hinzufügen und die Optionen für den Unterhaltungsabruf aktivieren, wird Advanced eDiscovery zurück und andere Elemente in *CRC1 sammeln.*
-  
-3. Nachdem die Elemente dem Überprüfungssatz hinzugefügt wurden, können Sie alle einzelnen Nachrichten aus *CRC1 überprüfen.*
+  ![Abrufen von Unterhaltungen](../media/messagesandconversations.png)
 
-Informationen zum Aktivieren der Option threaded conversations finden Sie unter [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
-  
+1. Mithilfe einer Stichwort- und Datumsbereichsabfrage hat die Suche einen Treffer in *Nachricht 3* zurückgegeben. Diese Nachricht war Teil einer größeren Unterhaltung, die durch *CRC1* veranschaulicht wurde.
+
+2. Wenn Sie die Daten zu einem Prüfdateisatz hinzufügen und die Optionen zum Abrufen von Unterhaltungen aktivieren, gehen Advanced eDiscovery zurück und sammeln andere Elemente in *CRC1.*
+
+3. Nachdem die Elemente dem Prüfdateisatz hinzugefügt wurden, können Sie alle einzelnen Nachrichten von *CRC1* überprüfen.
+
+Informationen zum Aktivieren der Threadunterhaltungsoption finden Sie unter [Commit einer Entwurfssammlung in einen Prüfdateisatz.](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set)
+
 ## <a name="step-3-review-and-export-threaded-conversations"></a>Schritt 3: Überprüfen und Exportieren von Threadunterhaltungen
 
-Nachdem der Inhalt verarbeitet und dem Überprüfungssatz hinzugefügt wurde, können Sie mit der Überprüfung der Daten im Überprüfungssatz beginnen. Die Überprüfungsfunktionen unterscheiden sich je nachdem, ob der Inhalt einem Standardüberprüfungssatz oder einem Unterhaltungsüberprüfungssatz hinzugefügt wurde.
+Nachdem der Inhalt verarbeitet und dem Prüfdateisatz hinzugefügt wurde, können Sie mit der Überprüfung der Daten im Prüfdateisatz beginnen. Die Überprüfungsfunktionen sind unterschiedlich, je nachdem, ob der Inhalt einem Standardprüfdateisatz oder einem Unterhaltungsüberprüfungssatz hinzugefügt wurde.
 
-### <a name="reviewing-conversations-in-a-standard-review-set"></a>Überprüfen von Unterhaltungen in einem Standardüberprüfungssatz
+### <a name="reviewing-conversations-in-a-standard-review-set"></a>Überprüfen von Unterhaltungen in einem Standardmäßigen Prüfdateisatz
 
-In einem Standardüberprüfungssatz werden Nachrichten wie in einem Postfachordner verarbeitet und als einzelne Elemente angezeigt. In diesem Workflow wird jede Nachricht als separates Element verarbeitet. Dies hat zur Folge, dass die Zusammenfassungs- und Exportoptionen im Thread nicht in einem Standardüberprüfungssatz verfügbar sind.
+In einem standardmäßigen Prüfdateisatz werden Nachrichten verarbeitet und als einzelne Elemente angezeigt, ähnlich wie sie in einem Postfachordner gespeichert werden. In diesem Workflow wird jede Nachricht als separates Element verarbeitet. Daher sind die Thread-Zusammenfassungs- und Exportoptionen in einem Standardmäßigen Prüfdateisatz nicht verfügbar.
 
-  ![Standardüberprüfungssatz](../media/standardrs.PNG)
+  ![Standardprüfdateisatz](../media/standardrs.PNG)
 
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Überprüfen von Unterhaltungen in einem Unterhaltungsüberprüfungssatz
 
-In einem Unterhaltungsüberprüfungssatz werden einzelne Nachrichten zusammengefädelt und als Unterhaltungen dargestellt. Auf diese Weise können Sie Kontextunterhaltungen überprüfen und exportieren. 
+In einem Unterhaltungsüberprüfungssatz werden einzelne Nachrichten miteinander gethreadt und als Unterhaltungen dargestellt. Auf diese Weise können Sie Kontextunterhaltungen überprüfen und exportieren.
 
-  ![Unterhaltungsüberprüfungssatz](../media/ConversationRSOptions.PNG)
+  ![Prüfdateisatz für Unterhaltungen](../media/ConversationRSOptions.PNG)
 
 In den folgenden Abschnitten wird das Überprüfen und Exportieren von Unterhaltungen in einem Unterhaltungsüberprüfungssatz beschrieben.
 
 #### <a name="reviewing-conversations"></a>Überprüfen von Unterhaltungen
 
-In einem Unterhaltungsüberprüfungssatz können Sie die folgenden Optionen verwenden, um den Überprüfungsprozess zu erleichtern.
+In einem Unterhaltungsprüfdateisatz können Sie die folgenden Optionen verwenden, um den Überprüfungsprozess zu vereinfachen.
 
-- **Gruppieren nach Unterhaltung:** Gruppen von Nachrichten in derselben Unterhaltung, um Benutzern zu helfen, ihren Überprüfungsprozess zu vereinfachen und zu beschleunigen.
+- **Gruppieren nach Unterhaltung:** Gruppiert Nachrichten innerhalb derselben Unterhaltung zusammen, um Benutzern zu helfen, ihren Überprüfungsprozess zu vereinfachen und zu beschleunigen.
 
-- **Zusammenfassungsansicht:** Zeigt die Thread-Unterhaltung an. In dieser Ansicht können Sie die gesamte Unterhaltung anzeigen und auch auf die Metadaten für jede einzelne Nachricht zugreifen.  
-  
+- **Zusammenfassungsansicht:** Zeigt die Threadunterhaltung an. In dieser Ansicht können Sie die gesamte Unterhaltung anzeigen und auch auf die Metadaten für jede einzelne Nachricht zugreifen.
+
    - Anzeigen von Metadaten für einzelne Nachrichten
-   
+
    - Herunterladen einzelner Nachrichten
 
-- **Textansicht:** Stellt den extrahierten Text für die gesamte Unterhaltung.
+- **Textansicht:** Stellt den extrahierten Text für die gesamte Unterhaltung bereit.
 
-- **Anmerkungsansicht:** Ermöglicht das Markup einer Threadansicht der Unterhaltung. Alle Nachrichten in der Unterhaltung haben dasselbe mit Anmerkungen versehene Dokument.
+- **Kommentaransicht:** Hier können Sie eine Threadansicht der Unterhaltung markupen. Alle Nachrichten in der Unterhaltung teilen sich dasselbe kommentierte Dokument.
 
-- **Tagging:** Wenn Sie Unterhaltungen in einem Überprüfungssatz anzeigen, können Sie Tags anzeigen und anwenden, indem Sie im Codierungspanel auf **Tagging-Bereich** klicken.
+- **Tagging:** Beim Anzeigen von Unterhaltungen in einem Prüfdateisatz können Sie Tags anzeigen und anwenden, indem Sie im Codebereich auf den **Bereich "Tagging"** klicken.
 
-- **Erneutes Ausführen der Unterhaltungskonvertierung:** Wenn Nachrichten zu einem Unterhaltungsüberprüfungssatz hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Zusammenfassung im Thread zu erstellen und Ansichten mit Anmerkungen zu versehen. Wenn beim Auftrag Unterhaltungsrekonstruktion ein Fehler auftritt, können Sie diesen Auftrag erneut ausführen, indem Sie im Überprüfungssatz auf Aktion **> Unterhaltungs-PDFs** erstellen klicken.
+- **Unterhaltungskonvertierung erneut ausführen:** Wenn Einem Unterhaltungsüberprüfungssatz Nachrichten hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Threadzusammenfassung zu erstellen und Ansichten mit Anmerkungen zu versehen. Wenn der Auftrag für die Wiederherstellung von Unterhaltungen fehlschlägt, können Sie diesen Auftrag erneut ausführen, indem Sie im Prüfdateisatz auf **Aktion > Unterhaltungs-PDFs erstellen** klicken.
 
 #### <a name="exporting-conversations"></a>Exportieren von Unterhaltungen
 
-In einem Unterhaltungsüberprüfungssatz können Sie die folgenden Optionen zum Exportieren von Unterhaltungen festlegen:
+In einem Prüfdateisatz für Unterhaltungen können Sie die folgenden Optionen zum Exportieren von Unterhaltungen festlegen:
 
 ![Exportoptionen für Unterhaltungen](../media/export.png)
 
-a. Metadatenoptionen
+1. Metadatenoptionen:
+   - **Datei laden:** Metadaten sind für jede einzelne Nachricht, E-Mail und jedes Dokument enthalten. Es gibt eine Zeile für jede Nachricht in einer Unterhaltung.
+   - **Tags:** Tags aus Ihrem Überprüfungsprozess sind in der Metadatendatei enthalten. Nachrichten in einer Unterhaltung verwenden dieselben Tags.
 
-   - **Datei laden:** Metadaten sind für jede einzelne Nachricht, E-Mail und jedes Dokument enthalten. Es gibt eine Zeile für jede Nachricht in einer Unterhaltung. 
+2. Unterhaltungsoptionen:
+   - **Unterhaltungsdateien:** Wenn Sie Unterhaltungsdateien exportieren, wird die kommentierte Ansicht in eine PDF-Datei konvertiert und in den Exportordner heruntergeladen. Nachrichten in einer Unterhaltungsdatei verweisen auf die PDF-Version derselben Unterhaltungsdatei.
+   - **Einzelne Chatnachrichten:** Wenn Sie einzelne Nachrichten exportieren, wird jede eindeutige Nachricht in der Unterhaltung als eigenständiges Element exportiert. Die Datei wird in demselben Format exportiert, wie sie im Postfach gespeichert wurde. Für eine bestimmte Unterhaltung erhalten Sie mehrere MSG-Dateien.
 
-   - **Tags:** Tags aus Ihrem Überprüfungsprozess sind in der Metadatendatei enthalten. Nachrichten in einer Unterhaltung verwenden dieselben Tags. 
-
-b. Unterhaltungsoptionen
-  
-   - **Unterhaltungsdateien:** Wenn Sie Unterhaltungsdateien exportieren, wird die mit Anmerkungen versehene Ansicht in eine PDF-Datei konvertiert und in den Exportordner heruntergeladen. Nachrichten in einer Unterhaltungsdatei verweisen auf die PDF-Version derselben Unterhaltungsdatei.  
-  
-   - **Einzelne Chatnachrichten:** Wenn Sie einzelne Nachrichten exportieren, wird jede eindeutige Nachricht in der Unterhaltung als eigenständiges Element exportiert. Die Datei wird im gleichen Format exportiert wie im Postfach. Für eine bestimmte Unterhaltung erhalten Sie mehrere MSG-Dateien.
-
-     >[!NOTE]
+     > [!NOTE]
      > Wenn Sie Anmerkungen auf die Unterhaltungsdatei angewendet haben, werden diese Anmerkungen nicht auf die einzelnen Nachrichten übertragen.
 
-c. Weitere Optionen
-
-   - **Generieren von Textdateien für alle exportierten Inhalte:** Generiert eine Textdatei für jede Unterhaltung, die aus dem Überprüfungssatz exportiert wurde.
-
-   - **Ersetzen Sie exportierten Inhalt durch redaktierte PDFs:** Wenn während des Überprüfungsprozesses redaktierte Unterhaltungsdateien generiert werden, sind diese Dateien während des Exports verfügbar. Sie können entscheiden, ob Sie nur die systemeigenen Dateien exportieren (indem Sie diese Option nicht auswählen) oder die systemeigenen Dateien durch die rotierten Versionen der systemeigenen Dateien ersetzen (indem Sie diese Option auswählen), die als PDF-Dateien exportiert werden.
+3. Weitere Optionen:
+   - **Generieren Sie Textdateien für alle exportierten Inhalte:** Generiert eine Textdatei für jede Unterhaltung, die aus dem Prüfdateisatz exportiert wurde.
+   - **Ersetzen Sie exportierte Inhalte durch bearbeitete PDFs:** Wenn während des Überprüfungsprozesses bearbeitete Unterhaltungsdateien generiert werden, sind diese Dateien während des Exports verfügbar. Sie können entscheiden, ob Sie nur die systemeigenen Dateien exportieren (indem Sie diese Option nicht auswählen) oder die nativen Dateien durch die bearbeiteten Versionen der nativen Dateien (durch Auswahl dieser Option) ersetzen, die als PDF-Dateien exportiert werden.
 
 ## <a name="more-information"></a>Weitere Informationen
 
 Weitere Informationen zum Überprüfen von Falldaten in Advanced eDiscovery finden Sie in den folgenden Artikeln:
 
 - [Anzeigen von Falldaten](view-documents-in-review-set.md)
-
 - [Analysieren von Falldaten](analyzing-data-in-review-set.md)
-
 - [Exportieren von Falldaten](exporting-data-ediscover20.md)

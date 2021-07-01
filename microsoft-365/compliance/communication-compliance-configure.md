@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821379"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227343"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -36,11 +36,11 @@ Verwenden Sie Richtlinien zur Kommunikationscompliance, um die Benutzerkommunika
 Bevor Sie mit der Kommunikationscompliance beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und alle Add-Ons bestätigen. Um auf die Kommunikationscompliance zuzugreifen und diese zu verwenden, muss Ihre Organisation über eines der folgenden Abonnements oder Add-Ons verfügen:
 
 - Microsoft 365 E5-Abonnement (kostenpflichtige oder Testversion)
-- Microsoft 365 E3 Abonnement und das Microsoft 365 E5 Compliance-Add-On
+- Microsoft 365 E3 Abonnement + das Microsoft 365 E5 Compliance-Add-On
 - Microsoft 365 E3 Abonnement und das Add-On Microsoft 365 E5 Insider-Risikomanagement
 - Microsoft 365 A5-Abonnement (kostenpflichtige oder Testversion)
-- Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Compliance-Add-On
-- Microsoft 365 A3-Abonnement + das Microsoft 365 A5 Insider Risk Management-Add-On
+- Microsoft 365 A3 Abonnement und das Microsoft 365 A5 Compliance-Add-On
+- Microsoft 365 A3 Abonnement und das Add-On Microsoft 365 A5 Insider-Risikomanagement
 - Microsoft 365 G5-Abonnement (kostenpflichtige oder Testversion)
 - Microsoft 365 G5-Abonnement + das Microsoft 365 G5 Compliance-Add-On
 - Microsoft 365 G5-Abonnement + das add-on Microsoft 365 G5 Insider Risk Management
@@ -50,17 +50,17 @@ Bevor Sie mit der Kommunikationscompliance beginnen, sollten Sie Ihr [Microsoft 
 
 Benutzern, die in Richtlinien zur Kommunikationscompliance enthalten sind, muss eine der oben genannten Lizenzen zugewiesen werden.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn aktuelle Abonnements ablaufen, sollten Kunden auf eines der oben genannten Abonnements umsteigen, die die gleichen oder zusätzlichen Compliancefeatures enthalten.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance wird nicht mehr als eigenständiges Abonnement verkauft. Wenn aktuelle Abonnements ablaufen, sollten Kunden auf eines der oben genannten Abonnements umsteigen, die die gleichen oder zusätzlichen Compliancefeatures enthalten.
 
 Wenn Sie keinen vorhandenen Office 365 Enterprise E5-Plan haben und die Kommunikationscompliance ausprobieren möchten, können Sie Ihrem vorhandenen Abonnement [Microsoft 365 hinzufügen](/office365/admin/try-or-buy-microsoft-365) oder sich für eine Testversion von Office 365 Enterprise E5 [registrieren.](https://www.microsoft.com/microsoft-365/enterprise)
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Schritt 1 (erforderlich): Aktivieren von Berechtigungen für die Kommunikationscompliance
 
->[!Important]
->Standardmäßig haben globale Administratoren keinen Zugriff auf Kommunikationscompliancefeatures. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikationscompliancefeatures zugegriffen werden kann. Nach dem Konfigurieren Ihrer Rollengruppen kann es bis zu 30 Minuten dauern, bis die Rollengruppenberechtigungen für zugewiesene Benutzer in Ihrer Organisation gelten.
+> [!IMPORTANT]
+> Standardmäßig haben globale Administratoren keinen Zugriff auf Kommunikationscompliancefeatures. Die in diesem Schritt zugewiesenen Rollen sind erforderlich, bevor auf Kommunikationscompliancefeatures zugegriffen werden kann. Nach dem Konfigurieren Ihrer Rollengruppen kann es bis zu 30 Minuten dauern, bis die Rollengruppenberechtigungen für zugewiesene Benutzer in Ihrer Organisation gelten.
 
-Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikationscompliancefeatures verwendet werden. Um **die Kommunikationscompliance** als Menüoption im Microsoft 365 Compliance Center verfügbar zu machen und mit diesen Konfigurationsschritten fortzufahren, müssen Sie den Rollengruppen *"Kommunikationscompliance"* oder *"Kommunikationscompliance-Administrator"* zugewiesen werden. Um nach der anfänglichen Konfiguration auf Kommunikationscompliancefeatures zuzugreifen und diese zu verwalten, müssen Benutzer Mitglied mindestens einer Rollengruppe für die Kommunikationscompliance sein.
+Es gibt fünf Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Kommunikationscompliancefeatures verwendet werden. Um **die Kommunikationscompliance** als Menüoption in Microsoft 365 Compliance Center verfügbar zu machen und mit diesen Konfigurationsschritten fortzufahren, müssen Sie den Rollengruppen *"Kommunikationscompliance"* oder *"Kommunikationscompliance-Administrator"* zugewiesen werden. Um nach der anfänglichen Konfiguration auf Kommunikationscompliancefeatures zuzugreifen und diese zu verwalten, müssen Benutzer Mitglied mindestens einer Rollengruppe für die Kommunikationscompliance sein.
 
 Je nachdem, wie Sie Kommunikationsrichtlinien und -warnungen verwalten möchten, müssen Sie Benutzern bestimmte Rollengruppen zuweisen. Sie haben die Möglichkeit, bestimmten Rollengruppen Benutzer mit unterschiedlichen Compliance-Verantwortlichkeiten zuzuweisen, um unterschiedliche Bereiche der Kommunikationscompliancefeatures zu verwalten. Sie können auch alle Benutzerkonten für bestimmte Administratoren, Analysten, Ermittler und Betrachter der Rollengruppe *"Kommunikationscompliance"* zuweisen. Verwenden Sie eine einzelne Rollengruppe oder mehrere Rollengruppen, um Ihre Compliance-Verwaltungsanforderungen am besten zu erfüllen.
 
@@ -129,9 +129,9 @@ Verwenden Sie das folgende Diagramm, um Gruppen in Ihrer Organisation für Richt
 | **Policy Member** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
 |Überwachte Benutzer <br> Ausgeschlossene Benutzer | Verteilergruppen <br> Microsoft 365-Gruppen | Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen <br> Microsoft 365 Von Gruppen mit dynamischer Mitgliedschaft |
-| Prüfer | Keine | Verteilergruppen <br> Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
-  
-Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams Chats von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365 Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams an diese Gruppe gesendeten Chats, nicht die einzelnen E-Mails und Chats, die von jedem Gruppenmitglied empfangen werden.
+| Prüfer | Keiner | Verteilergruppen <br> Dynamische Verteilergruppen <br> Geschachtelte Verteilergruppen <br> E-Mail-aktivierte Sicherheitsgruppen |
+
+Wenn Sie eine Verteilergruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams Chats von jedem Benutzer in der Verteilergruppe. Wenn Sie eine Microsoft 365 Gruppe in der Richtlinie zuweisen, überwacht die Richtlinie alle E-Mails und Teams An diese Gruppe gesendeten Chats, nicht die einzelnen E-Mails und Chats, die von jedem Gruppenmitglied empfangen werden.
 
 Wenn Sie eine Organisation mit einer Exchange lokalen Bereitstellung oder einem externen E-Mail-Anbieter sind und Microsoft Teams Chats für Ihre Benutzer überwachen möchten, müssen Sie eine Verteilergruppe für die Benutzer mit lokalen oder externen Postfächern erstellen, die überwacht werden sollen. Später in diesen Schritten weisen Sie diese Verteilergruppe im Richtlinien-Assistenten als Auswahl **überwachter Benutzer und Gruppen** zu. Weitere Informationen zu den Anforderungen und Einschränkungen für die Aktivierung von cloudbasiertem Speicher und Teams Unterstützung für lokale Benutzer finden Sie unter [Suchen nach Teams Chatdaten für lokale Benutzer.](search-cloud-based-mailboxes-for-on-premises-users.md)
 
@@ -154,11 +154,11 @@ Um überwachte Benutzer in großen Unternehmen zu verwalten, müssen Sie möglic
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
-    ForEach ($M in $Mbx) 
+    ForEach ($M in $Mbx)
     {
       Write-Host "Adding" $M.DisplayName
       Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
-      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded
       $i++
     }
     Write-Host $i "Mailboxes added to supervisory review distribution group."
@@ -169,7 +169,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 - [Erstellen und Verwalten von Verteilergruppen](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Übersicht über Microsoft 365-Gruppen](/office365/admin/create-groups/office-365-groups)
 
-## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Schritt 4 (optional): Überprüfen Sie, ob sich Ihr Yammer-Mandant im nativen Modus befindet.
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Schritt 4 (optional): Überprüfen Sie, ob sich Ihr Yammer-Mandant im nativen Modus befindet
 
 Im nativen Modus befinden sich alle Yammer Benutzer in Azure Active Directory (Azure AD), alle Gruppen sind Office 365 Gruppen, und alle Dateien werden in SharePoint Online gespeichert. Ihr Yammer Mandant muss sich im nativen Modus befinden, damit Richtlinien zur Kommunikationscompliance riskante Unterhaltungen in privaten Nachrichten und Community-Unterhaltungen in Yammer überprüfen und identifizieren können.
 
@@ -179,21 +179,21 @@ Weitere Informationen zum Konfigurieren von Yammer im nativen Modus finden Sie u
 - [Konfigurieren eines Yammer-Netzwerks für den nativen Modus für Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Schritt 5 (erforderlich): Erstellen einer Kommunikationscompliancerichtlinie
-  
->[!Important]
->Die Verwendung von PowerShell zum Erstellen und Verwalten von Richtlinien zur Kommunikationscompliance wird nicht unterstützt. Um diese Richtlinien zu erstellen und zu verwalten, müssen Sie die Richtlinienverwaltungssteuerelemente in der [Microsoft 365 Kommunikationscompliancelösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
 
-1. Melden Sie sich [https://compliance.microsoft.com](https://compliance.microsoft.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
+> [!IMPORTANT]
+> Die Verwendung von PowerShell zum Erstellen und Verwalten von Richtlinien zur Kommunikationscompliance wird nicht unterstützt. Um diese Richtlinien zu erstellen und zu verwalten, müssen Sie die Richtlinienverwaltungssteuerelemente in der [Microsoft 365 Kommunikationscompliancelösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
+
+1. Melden Sie sich <https://compliance.microsoft.com> mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
 
 2. Wählen Sie im Microsoft 365 Compliance Center die Option **"Kommunikationscompliance"** aus.
-  
+
 3. Wählen Sie die Registerkarte **Richtlinien** aus.
 
 4. Wählen Sie **"Richtlinie erstellen"** aus, um eine neue Richtlinie aus einer Vorlage zu erstellen und zu konfigurieren, oder um eine benutzerdefinierte Richtlinie zu erstellen und zu konfigurieren.
 
     Wenn Sie eine Richtlinienvorlage zum Erstellen einer Richtlinie auswählen, führen Sie folgende Aktionen aus:
 
-    - Bestätigen oder aktualisieren Sie den Richtliniennamen. Richtliniennamen können nicht mehr geändert werden, nachdem die Richtlinie erstellt wurde.
+    - Bestätigen oder aktualisieren Sie den Richtliniennamen. Richtliniennamen können nicht geändert werden, nachdem die Richtlinie erstellt wurde.
 
     - Wählen Sie die zu überwachenden Benutzer oder Gruppen aus, einschließlich der Auswahl von Benutzern oder Gruppen, die Sie ausschließen möchten. Wenn Sie die Vorlage für Interessengruppen verwenden, wählen Sie zwei Gruppen oder zwei Benutzer aus, die für die interne Kommunikation überwacht werden sollen.
 
@@ -201,8 +201,8 @@ Weitere Informationen zum Konfigurieren von Yammer im nativen Modus finden Sie u
 
     - Wählen Sie ein eingeschränktes Bedingungsfeld aus, in der Regel ein vertraulicher Informationstyp oder ein Schlüsselwortwörterbuch, das auf die Richtlinie angewendet werden soll.
 
-    >[!NOTE]
-    >Wenn Sie die [optische Zeichenerkennung (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) aktivieren möchten, um eingebettete oder angefügte Bilder in Nachrichten nach gedrucktem oder handschriftlichem Text zu scannen, der richtlinienbedingungen entspricht, wählen Sie **"Richtlinienbedingungen** und Prozentsatz anpassen" aus, und aktivieren Sie  >   **"Gedruckten oder handschriftlichen Text aus Bildern extrahieren" für die Auswertung.**
+    > [!NOTE]
+    > Wenn Sie die [optische Zeichenerkennung (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) aktivieren möchten, um eingebettete oder angefügte Bilder in Nachrichten nach gedrucktem oder handschriftlichem Text zu scannen, der richtlinienbedingungen entspricht, wählen Sie **"Richtlinienbedingungen** und Prozentsatz anpassen"  >   aus, und aktivieren Sie **"Gedruckten oder handschriftlichen Text aus Bildern extrahieren" für die Auswertung.**
 
     Wenn Sie den Richtlinien-Assistenten zum Erstellen einer benutzerdefinierten Richtlinie verwenden möchten, führen Sie folgende Aktionen aus:
 
@@ -218,9 +218,9 @@ Weitere Informationen zum Konfigurieren von Yammer im nativen Modus finden Sie u
 
     - Definieren Sie die [Kommunikationscompliancerichtlinienbedingungen.](communication-compliance-feature-reference.md#ConditionalSettings) Sie können zwischen Nachrichtenadresse, Schlüsselwort, Dateitypen und Übereinstimmungsbedingungen für die Größe auswählen.
 
-    - Wählen Sie aus, ob Sie Typen vertraulicher Informationen einschließen möchten. In diesem Schritt können Sie standardmäßige und benutzerdefinierte Typen vertraulicher Informationen auswählen. Wählen Sie aus vorhandenen benutzerdefinierten Typen vertraulicher Informationen oder benutzerdefinierten Schlüsselwörterbüchern im Assistenten für kommunikationscompliance-Richtlinien aus. Sie können diese Elemente erstellen, bevor Sie den Assistenten bei Bedarf ausführen. Sie können auch neue Typen vertraulicher Informationen im Assistenten für Kommunikationscompliancerichtlinien erstellen.
+    - Wählen Sie aus, ob Sie Typen vertraulicher Informationen einschließen möchten. In diesem Schritt können Sie standardmäßige und benutzerdefinierte Typen vertraulicher Informationen auswählen. Wählen Sie aus vorhandenen benutzerdefinierten Typen vertraulicher Informationen oder benutzerdefinierten Schlüsselwörterbüchern im Assistenten für Kommunikationscompliancerichtlinien aus. Sie können diese Elemente erstellen, bevor Sie den Assistenten bei Bedarf ausführen. Sie können auch neue Typen vertraulicher Informationen im Assistenten für Kommunikationscompliancerichtlinien erstellen.
 
-    - Wählen Sie aus, ob Sie Klassifizierer aktivieren möchten. Klassifizierer können unangemessene Sprache und Bilder erkennen, die im Textkörper von E-Mail-Nachrichten oder anderen Texttypen gesendet oder empfangen werden. Sie können die folgenden integrierten Klassifizierer auswählen: *Bedrohungs-,* *Profanitäts-,* *gezielte Belästigungs-,* Bilder für *Erwachsene,* *Racy-Bilder* und Bilder von *Hary.*
+    - Wählen Sie aus, ob Sie Klassifizierer aktivieren möchten. Klassifizierer können unangemessene Sprache und Bilder erkennen, die im Textkörper von E-Mail-Nachrichten oder anderen Texttypen gesendet oder empfangen werden. Sie können die folgenden integrierten Klassifizierer auswählen: *Bedrohung,* *Anstößigkeit,* *gezielte Belästigung,* Bilder für *Erwachsene,* *Racy-Bilder* und *Bilder von Hary*.
 
     - Aktivieren Sie [die optische Zeichenerkennung (OCR),](communication-compliance-feature-reference.md#optical-character-recognition-ocr) um eingebettete oder angefügte Bilder in Nachrichten auf gedruckten oder handschriftlichen Text zu überprüfen, der richtlinienbedingungen entspricht. Für benutzerdefinierte Richtlinien müssen eine oder mehrere bedingte Einstellungen, die Text, Schlüsselwörtern, Klassifizierungen oder Typen vertraulicher Informationen zugeordnet sind, in der Richtlinie konfiguriert werden, um die Auswahl der optischen Zeichenerkennungsüberprüfung zu ermöglichen.
 
@@ -246,7 +246,7 @@ Sie können auch die Anonymisierung für angezeigte Benutzernamen aktivieren, we
 
 4. Um die Anonymisierung zu aktivieren, wählen Sie **anonymisierte Versionen von Benutzernamen anzeigen** aus.
 
-5. Wählen Sie **Speichern**.
+5. Klicken Sie auf **Speichern**.
 
 6. Navigieren Sie zur Registerkarte **"Benachrichtigungsvorlagen",** und wählen Sie dann **Benachrichtigungsvorlage** erstellen aus.
 
@@ -271,9 +271,9 @@ Führen Sie die folgenden Schritte aus, um Ihre Kommunikationscompliancerichtlin
 2. Senden Sie eine E-Mail, Microsoft Teams Chat oder Yammer Nachricht, die die kriterien erfüllt, die Sie in der Richtlinie zur Kommunikationscompliance definiert haben. Dieser Test kann ein Schlüsselwort, eine Anlagengröße, eine Domäne usw. sein. Stellen Sie sicher, dass Sie feststellen, ob die konfigurierten bedingten Einstellungen in der Richtlinie zu restriktiv oder zu lenient sind.
 
     > [!NOTE]
-    > Es kann bis zu 24 Stunden dauern, bis E-Mail-Nachrichten in einer Richtlinie vollständig verarbeitet wurden. Die vollständige Verarbeitung der Kommunikation in Microsoft Teams-, Yammer- und Drittanbieterplattformen kann bis zu 48 Stunden dauern.
+    > Es kann bis zu 24 Stunden dauern, bis E-Mail-Nachrichten in einer Richtlinie vollständig verarbeitet wurden. Es kann bis zu 48 Stunden dauern, bis die Kommunikation in Microsoft Teams- Yammer- und Drittanbieterplattformen vollständig in einer Richtlinie verarbeitet wird.
 
-3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikationscompliancerichtlinie festgelegt ist. Navigieren Sie zu Benachrichtigungen zur **Kommunikationscompliance,**  >   um die Warnungen für Ihre Richtlinien anzuzeigen.
+3. Melden Sie sich bei Microsoft 365 als Prüfer an, der in der Kommunikationscompliance-Richtlinie festgelegt ist. Navigieren Sie zu Benachrichtigungen zur **Kommunikationscompliance,**  >   um die Warnungen für Ihre Richtlinien anzuzeigen.
 
 4. Korrigieren Sie die Warnung mithilfe der Korrektursteuerelemente, und stellen Sie sicher, dass die Warnung ordnungsgemäß aufgelöst wurde.
 

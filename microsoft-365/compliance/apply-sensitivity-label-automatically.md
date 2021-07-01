@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 6b74c36707b9fe1fdbe00eb7058554b54ec95755
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194769"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227531"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -44,20 +44,20 @@ Wenn der Inhalt manuell bezeichnet wurde, wird diese Bezeichnung niemals durch e
 
 Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Vertraulichkeitsbezeichnung auf Inhalte in Microsoft 365:
 
-- **Clientseitige Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen (auch beantworten oder weiterleiten)**: Verwenden Sie ein Label, das für die automatische Bezeichnung für Dateien und E-Mails (einschließlich Word, Excel, PowerPoint und Outlook) konfiguriert ist. 
-    
-    Diese Methode unterstützt das Empfehlen einer Bezeichnung für Benutzer sowie das automatische Anwenden einer Bezeichnung. In beiden Fällen entscheidet der Benutzer aber, ob die Bezeichnung angenommen oder abgelehnt werden soll, um die richtige Bezeichnung von Inhalten zu gewährleisten. Diese clientseitige Beschriftung hat nur minimale Verzögerungen für Dokumente, da die Bezeichnung noch vor dem Speichern des Dokuments angewendet werden kann. Allerdings unterstützen nicht alle Client-Apps die automatische Bezeichnung. Diese Fähigkeit wird durch den Assistent für einheitliche Bezeichnungen von Azure Information Protection und [einige Versionen von Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) unterstützt. 
-    
+- **Clientseitige Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen (auch beantworten oder weiterleiten)**: Verwenden Sie ein Label, das für die automatische Bezeichnung für Dateien und E-Mails (einschließlich Word, Excel, PowerPoint und Outlook) konfiguriert ist.
+
+    Diese Methode unterstützt das Empfehlen einer Bezeichnung für Benutzer sowie das automatische Anwenden einer Bezeichnung. In beiden Fällen entscheidet der Benutzer aber, ob die Bezeichnung angenommen oder abgelehnt werden soll, um die richtige Bezeichnung von Inhalten zu gewährleisten. Diese clientseitige Beschriftung hat nur minimale Verzögerungen für Dokumente, da die Bezeichnung noch vor dem Speichern des Dokuments angewendet werden kann. Allerdings unterstützen nicht alle Client-Apps die automatische Bezeichnung. Diese Fähigkeit wird durch den Assistent für einheitliche Bezeichnungen von Azure Information Protection und [einige Versionen von Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) unterstützt.
+
     Konfigurationsanweisungen finden Sie unter [Konfigurieren der automatischen Bezeichnung von Office-Apps](#how-to-configure-auto-labeling-for-office-apps) auf dieser Seite.
 
-- **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint oder OneDrive) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie. 
-    
+- **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint oder OneDrive) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie.
+
     Möglicherweise spricht man bei dieser Methode auch vom automatischen Bezeichnen von ruhenden Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten bei der Übertragung (E-Mails, die von Exchange gesendet oder empfangen werden). Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer).
-    
+
     Da diese Bezeichnung eher von Diensten als von Anwendungen angewendet wird, müssen Sie sich keine Gedanken darüber machen, welche Apps-Benutzer über welche Version verfügen. Dies hat zur Folge, dass diese Funktion sofort in ihrer gesamten Organisation zur Verfügung steht, und sie eignet sich für Bezeichnungen jeder Größe. Richtlinien zum automatischen Bezeichnen unterstützen die empfohlene Bezeichnung nicht, da der Benutzer nicht mit dem Bezeichnungsprozess interagiert. Stattdessen führt der Administrator die Richtlinien im Simulationsmodus aus, um sicherzustellen, dass der Inhalt korrekt bezeichnet wird, bevor die Bezeichnung tatsächlich angewendet wird.
-    
+
     Konfigurationsanweisungen finden Sie unter [Konfigurieren von Richtlinien zum automatischen Bezeichnen für Microsoft Office SharePoint Online, OneDrive und Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) auf dieser Seite.
-    
+
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
     - Office-Dateien Word, PowerPoint und Excel werden unterstützt . Das Open XML-Format wird unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
         - Diese Dateien können automatisch im Ruhezustand mit einer Bezeichnung versehen werden, bevor oder nachdem die Richtlinien für automatische Bezeichnungen erstellt wurden. Dateien können nicht automatisch bezeichnet werden, wenn sie Teil einer geöffneten Sitzung sind (die Datei ist geöffnet).
@@ -77,7 +77,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
         - Wenn die Bezeichnung jedoch für die [Verschlüsselung](encryption-sensitivity-labels.md) konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
         - Wenn die Bezeichnung so konfiguriert ist, dass sie [dynamische Markierungen](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)anwendet, beachten Sie, dass sich dadurch Namen von Personen außerhalb Ihrer Organisation ergeben können.
     - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet. Derzeit gibt es keine Möglichkeit, einen Besitzer der Rechteverwaltung für alle eingehenden E-Mail-Nachrichten, die automatisch verschlüsselt werden, festzulegen.
-    
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Vergleichen Sie das automatische Bezeichnen für Office-Anwendungen mit den Richtlinien für das automatische Bezeichnen
 
@@ -115,7 +115,7 @@ Weitere Informationen zu übergeordneten Bezeichnungen und Unterbezeichnungen fi
 
 Die automatische Zuweisung von Bezeichnungen in Office-Apps für Windows wird durch den Client mit einheitlichen Bezeichnungen von Azure Information Protection unterstützt. Für die integrierte Beschriftung in Office-Apps finden Sie diese Funktion unter [unterschiedliche Phasen der Verfügbarkeit für unterschiedliche Apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Die Einstellungen für das automatische Bezeichnen für Office-Apps sind verfügbar, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md). Stellen Sie sicher, dass **Dateien und E-Mails** für den Bereich der Bezeichnung ausgewählt ist: 
+Die Einstellungen für das automatische Bezeichnen für Office-Apps sind verfügbar, wenn Sie [eine Vertraulichkeitsbezeichnung erstellen oder bearbeiten](create-sensitivity-labels.md). Stellen Sie sicher, dass **Dateien und E-Mails** für den Bereich der Bezeichnung ausgewählt ist:
 
 ![Bereichsoptionen bei Vertraulichkeitsbezeichnungen für Dateien und E-Mails](../media/filesandemails-scope-options-sensitivity-label.png)
 
@@ -142,7 +142,7 @@ Weitere Informationen zu diesen Konfigurationsoptionen finden Sie in der DLP-Dok
 Darüber hinaus können Sie, ähnlich wie bei der Konfiguration der DLP-Richtlinien, auswählen, ob eine Bedingung alle vertraulichen Informationstypen oder nur einen dieser Typen erkennen muss. Und um Ihre Bedingungen flexibler oder komplexer zu gestalten, können Sie [Gruppen hinzufügen und logische Operatoren zwischen den Gruppen verwenden](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 > [!NOTE]
-> Richtlinien für die automatische Bezeichnung, die auf benutzerdefinierten vertraulichen Informationstypen basieren, gelten nur für neu erstellte oder geänderte Inhalte in OneDrive und SharePoint, nicht für bereits vorhandene Inhalte. 
+> Richtlinien für die automatische Bezeichnung, die auf benutzerdefinierten vertraulichen Informationstypen basieren, gelten nur für neu erstellte oder geänderte Inhalte in OneDrive und SharePoint, nicht für bereits vorhandene Inhalte.
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurieren von trainierbaren Klassifizierungen für eine Bezeichnung
 
@@ -194,7 +194,7 @@ Spezifisch für integrierte Bezeichnungen:
 
 - Bei empfohlenen Bezeichnungen in den Desktopversionen von Word wird der sensible Inhalt, der die Empfehlung ausgelöst hat, markiert, sodass Benutzer den sensiblen Inhalt überprüfen und entfernen können, anstatt die empfohlene Vertraulichkeitsbezeichnung anzuwenden.
 
-- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/de-DE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnungen:
 
@@ -206,7 +206,7 @@ Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnu
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Konfigurieren von Richtlinien für die automatische Bezeichnung von Microsoft Office SharePoint Online, OneDrive und Exchange
 
-Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatische Bezeichnungsrichtlinien konfigurieren. 
+Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatische Bezeichnungsrichtlinien konfigurieren.
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Voraussetzungen für Richtlinien der automatischen Bezeichnung
 
@@ -218,7 +218,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).
     - Zum Zeitpunkt der Ausführung der Richtlinie zum automatischen Bezeichnen darf die Datei nicht von einem anderen Prozess oder Benutzer geöffnet sein. Eine Datei, die zur Bearbeitung ausgecheckt ist, fällt in diese Kategorie.
 
-- Wenn Sie vorhaben, anstelle der integrierten Vertraulichkeitstypen [benutzerdefinierte sensible Informationstypen](sensitive-information-type-learn-about.md) zu verwenden: 
+- Wenn Sie vorhaben, anstelle der integrierten Vertraulichkeitstypen [benutzerdefinierte sensible Informationstypen](sensitive-information-type-learn-about.md) zu verwenden:
     - Benutzerdefinierte Vertraulichkeitsinformationstypen gelten nur für Inhalte, die in SharePoint oder OneDrive hinzugefügt oder geändert werden, nachdem die benutzerdefinierten Vertraulichkeitsinformationstypen in Kraft gesetzt sind.
     - Um neue benutzerdefinierte Typen sensibler Informationen zu testen, erstellen Sie diese, bevor Sie Ihre Richtlinie zum automatischen Bezeichnen erstellen, und erstellen Sie dann neue Dokumente mit Beispieldaten zum Testen.
 
@@ -254,42 +254,42 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
 ### <a name="creating-an-auto-labeling-policy"></a>Erstellen einer Richtlinie für die automatische Bezeichnung
 
 1. Navigieren Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) zu Vertraulichkeitsbezeichnungen:
-    
+
     - **Lösungen** > **Informationsschutz**
-    
+
     Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus.
 
 2. Wählen Sie die Registerkarte **Automatisches Bezeichnen** aus:
-    
+
     ![Registerkarte „Automatisches Bezeichnen“](../media/auto-labeling-tab.png)
-    
+
     > [!NOTE]
     > Wenn die Registerkarte **Automatisches Bezeichnen** nicht angezeigt wird, steht diese Funktion in Ihrer Region derzeit nicht zur Verfügung.
 
 3. Wählen Sie **+ Richtlinie für die automatische Bezeichnung erstellen** aus. Dadurch wird der Assistent für neue Richtlinien gestartet:
-    
-    ![Assistent für neue Richtlinien für die automatische Bezeichnung ](../media/auto-labeling-wizard.png)
+
+    ![Assistent für neue Richtlinien für die automatische Bezeichnung](../media/auto-labeling-wizard.png)
 
 4. Wählen Sie für die Seite **Informationen auswählen, auf die diese Bezeichnung angewendet werden soll**, eine der Vorlagen aus, z. B. **Finanzen** oder **Datenschutz**. Sie können die Suche verfeinern, indem Sie die Dropdownliste **Optionen anzeigen für** verwenden. Sie können aber auch **Benutzerdefinierte Richtlinie** auswählen, wenn die Vorlagen Ihren Anforderungen nicht entsprechen. Wählen Sie **Weiter** aus.
 
 5. Für die Seite **Benennen Sie Ihre Richtlinie zum automatischen Bezeichnen**: Geben Sie einen eindeutigen Namen und optional eine Beschreibung an, um die automatisch angewandte Bezeichnung, die Speicherorte und Bedingungen zu identifizieren, die den zu bezeichnenden Inhalt identifizieren.
 
 6. Für die Seite **Wählen Sie Orte aus, an denen Sie die Bezeichnung anwenden möchten**: Wählen und geben Sie Orte für Exchange, Microsoft Office SharePoint Online-Websites und OneDrive an. Wählen Sie dann **Weiter** aus.
-    
-    ![Seite "Standorte" auswählen, Assistent für automatischen Bezeichnung ](../media/locations-auto-labeling-wizard.png)
-    
+
+    ![Seite "Standorte" auswählen, Assistent für automatischen Bezeichnung](../media/locations-auto-labeling-wizard.png)
+
     Sie müssen einzelne SharePoint-Websites und OneDrive-Konten angeben. In OneDrive hat die URL eines OneDrive-Benutzers das folgende Format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-    
+
     Beispielsweise bei einem Benutzer im Mandanten „Contoso“, der den Benutzernamen „rsimone“ hat: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-    
+
     Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifizieren von URLs für Benutzer finden Sie unter [Abrufen einer Liste aller Benutzer OneDrive-URLs in Ihrer Organisation](/onedrive/list-onedrive-urls).
 
 7. Für die Seite **Allgemeine oder erweiterte Regeln einrichten**: Behalten Sie die Standardeinstellung **Allgemeine Regeln** bei, um Regeln zu definieren, mit denen zu bezeichnende Inhalte für alle ausgewählten Speicherorte identifiziert werden. Wenn Sie pro Speicherort unterschiedliche Regeln benötigen, wählen Sie **Erweiterte Regeln** aus. Wählen Sie dann **Weiter** aus.
-    
+
     Die Regeln verwenden Bedingungen, die sensible Informationstypen und Freigabeoptionen umfassen:
     - Sie können integrierte und benutzerdefinierte Typen für vertrauliche Informationen auswählen.
     - Bei den freigegebenen Optionen können Sie **nur für Personen in meiner Organisation** oder **mit Personen außerhalb meiner Organisation** auswählen.
-    
+
     Wenn Ihr einziger Speicherort **Exchange** ist oder Sie **Erweiterte Regeln** auswählen, können Sie zusätzliche Bedingungen auswählen:
     - IP-Adresse des Absenders lautet
     - Empfängerdomäne lautet
@@ -306,19 +306,19 @@ Schließlich können Sie den Simulationsmodus verwenden, um einen Näherungswert
     - Absenderdomäne ist
     - Empfänger ist Mitglied von
     - Absender ist
-    
+
     Für jede dieser Bedingungen können Sie dann Ausnahmen festlegen.
-    
+
 8. Je nachdem, welche Einstellungen Sie bisher ausgewählt haben, können Sie nun neue Regeln unter Verwendung von Bedingungen und Ausnahmen erstellen.
-    
+
     Die Konfigurationsoptionen für Typen sensibler Informationen sind die gleichen wie die, die Sie für das automatische Bezeichnen von Office-Anwendungen auswählen. Wenn Sie weitere Informationen benötigen, lesen Sie [Konfigurieren sensibler Informationstypen für eine Bezeichnung](#configuring-sensitive-info-types-for-a-label).
-    
+
     Wenn Sie alle erforderlichen Regeln definiert und bestätigt haben, dass der Status "Aktiviert" lautet, wählen Sie **Weiter** aus, mit der Auswahl einer Bezeichnung fortzufahren, die automatisch angewendet werden soll.
 
 11. Für die Seite **Wählen Sie eine Bezeichnung zum automatischen Bezeichnen aus**: Wählen Sie **+ Wählen Sie eine Bezeichnung aus**, eine Bezeichnung aus dem Bereich **Wählen Sie ein Vertraulichkeitsbezeichnung** und dann **Weiter** aus.
 
-12. Für die Seite **Entscheiden, ob Sie die Richtlinie jetzt oder später testen möchten**: Wählen Sie **Richtlinie im Simulationsmodus ausführen** aus, wenn Sie bereit sind, die Richtlinie zum automatischen Anwenden von Bezeichnungen jetzt im Simulationsmodus auszuführen. Andernfalls wählen Sie **Richtlinie deaktiviert lassen** aus. Wählen Sie **Weiter** aus: 
-    
+12. Für die Seite **Entscheiden, ob Sie die Richtlinie jetzt oder später testen möchten**: Wählen Sie **Richtlinie im Simulationsmodus ausführen** aus, wenn Sie bereit sind, die Richtlinie zum automatischen Anwenden von Bezeichnungen jetzt im Simulationsmodus auszuführen. Andernfalls wählen Sie **Richtlinie deaktiviert lassen** aus. Wählen Sie **Weiter** aus:
+
     ![Testen des Assistenten für die Richtlinie: automatisches Bezeichnen](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. Auf der Seite **Zusammenfassung**: Überprüfen Sie die Konfiguration Ihrer Richtlinie für die automatische Bezeichnung, nehmen Sie die erforderlichen Änderungen vor, und schließen Sie den Assistenten ab.
@@ -330,9 +330,9 @@ Sie können Ihre Richtlinie direkt über diese Oberfläche ändern:
 - Wählen Sie für eine Richtlinie im Abschnitt **Aus** die Schaltfläche **Bearbeiten** aus.
 
 - Wählen Sie für eine Richtlinie im Abschnitt **Simulation** auf einer der beiden Registerkarten die Schaltfläche **bearbeiten** oben auf der Seite aus:
-    
+
     ![Option "Richtlinie für die automatische Bezeichnung"](../media/auto-labeling-edit.png)
-    
+
     Wenn Sie die Richtlinie ohne Simulation ausführen möchten, wählen Sie die Option **Richtlinie aktivieren** aus.
 
 Ihre Richtlinien werden fortlaufend ausgeführt, bis sie gelöscht werden. So beziehen die aktuellen Richtlinieneinstellungen beispielsweise neue und geänderte Dokumente ein.
@@ -350,12 +350,12 @@ Sie können [Security & Compliance Center PowerShell](/powershell/exchange/scc-p
 
 Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](/powershell/exchange/connect-to-scc-powershell).
 
-So erstellen Sie eine neue automatische Bezeichnungsrichtlinie: 
+So erstellen Sie eine neue automatische Bezeichnungsrichtlinie:
 
 ```powershell
 New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
-Mit diesem Befehl wird eine automatische Bezeichnungsrichtlinie für eine von Ihnen angegebene SharePoint-Website erstellt. Verwenden Sie bei einem OneDrive-Speicherort stattdessen den Parameter *OneDriveLocation*. 
+Mit diesem Befehl wird eine automatische Bezeichnungsrichtlinie für eine von Ihnen angegebene SharePoint-Website erstellt. Verwenden Sie bei einem OneDrive-Speicherort stattdessen den Parameter *OneDriveLocation*.
 
 So fügen Sie einer vorhandenen automatischen Bezeichnungsrichtlinie weitere Websites hinzu:
 
@@ -389,11 +389,11 @@ Weitere Informationen zu den PowerShell-Cmdlets, die automatische Bezeichnungsri
 Obwohl das automatische Bezeichnen eine der effizientesten Methoden zum Klassifizieren, Bezeichnen, und Schützen von Office-Dateien ist, die Ihrer Organisation gehören, überprüfen Sie, ob Sie sie mit einer zusätzlichen Methoden ergänzen können, um Ihre Bezeichnungsreichweite zu erhöhen:
 
 - Wenn Sie den [einheitlichen Bezeichnungs-Assistenten von Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) verwenden:
-    
+
     - Für Dateien in lokalen Datenspeichern, wie z. B. Netzwerkfreigaben und SharePoint-Server-Bibliotheken: Verwenden Sie [Scanner](/azure/information-protection/deploy-aip-scanner), um vertrauliche Informationen in diesen Dateien zu ermitteln und sie entsprechend zu bezeichnen. Wenn Sie planen, diese Dateien in SharePoint in Microsoft 365 zu verschieben oder hochzuladen, verwenden Sie den Scanner, um die Dateien zu bezeichnen, bevor Sie sie in die Cloud verschieben.
-    
+
     - Wenn Sie vor der Verwendung von Vertraulichkeitsbezeichnungen eine andere Bezeichnungslösung verwendet haben: Verwenden Sie PowerShell und [eine erweiterte Einstellung zum Wiederzuverwenden der Bezeichnungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) aus diesen Lösungen.
 
-- Fördern Sie die [manuelle Bezeichnung](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9), nachdem Sie die Benutzer darüber geschult haben, welche Bezeichnungen angewendet werden sollen. Wenn Sie sicher sind, dass Benutzer wissen, welche Bezeichnung angewendet werden soll, erwägen Sie eine Standardbezeichnung und das obligatorische Bezeichnen als [Richtlinieneinstellungen](sensitivity-labels.md#what-label-policies-can-do) zu konfigurieren. 
+- Fördern Sie die [manuelle Bezeichnung](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9), nachdem Sie die Benutzer darüber geschult haben, welche Bezeichnungen angewendet werden sollen. Wenn Sie sicher sind, dass Benutzer wissen, welche Bezeichnung angewendet werden soll, erwägen Sie eine Standardbezeichnung und das obligatorische Bezeichnen als [Richtlinieneinstellungen](sensitivity-labels.md#what-label-policies-can-do) zu konfigurieren.
 
 Erwägen Sie außerdem die Einstellung [neue Dateien standardmäßig als vertraulich markieren](/sharepoint/sensitive-by-default) in SharePoint einzurichten, um Gäste daran zu hindern, auf neu hinzugefügte Dateien zuzugreifen, bis mindestens eine DLP-Richtlinie den Inhalt der Datei überprüft hat.

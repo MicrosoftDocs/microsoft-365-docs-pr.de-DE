@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903900"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226995"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren
 
@@ -36,7 +36,7 @@ Danach können Sie diese Bezeichnungen entweder in einer Aufbewahrungsrichtlinie
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>So zeigen Sie die Option zum Markieren von Inhalten als regulatorischen Datensatz an
 
->[!NOTE] 
+> [!NOTE]
 > Bei dem folgenden Verfahren handelt es sich um eine überwachbare Aktion, die Protokollierung **Option für die Festlegung von Auflagen für Aufbewahrungsbezeichnungen** im Abschnitt [Aufbewahrungsrichtlinie und Aufbewahrungsaktivitäten](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) des Überwachungsprotokolls.
 
 Standardmäßig wird die Aufbewahrungsbezeichnungsoption zum Markieren von Inhalten als regulatorischer Datensatz im Aufbewahrungsbezeichnungs-Assistenten nicht angezeigt. Wenn Sie diese Option anzeigen möchten, müssen Sie zuerst einen PowerShell-Befehl ausführen:
@@ -44,13 +44,14 @@ Standardmäßig wird die Aufbewahrungsbezeichnungsoption zum Markieren von Inhal
 1. [Herstellen einer Verbindung mit der Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Führen Sie das folgende Cmdlet aus:
-    
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+
     Es wird keine Bestätigung angezeigt, und die Einstellung wird sofort wirksam.
 
-Wenn Sie es sich anders überlegen, können Sie sie erneut ausblenden, indem Sie dasselbe Cmdlet mit dem Wert **false** ausführen: `Set-RegulatoryComplianceUI -Enabled $false` 
+Wenn Sie es sich anders überlegen, können Sie sie erneut ausblenden, indem Sie dasselbe Cmdlet mit dem Wert **false** ausführen: `Set-RegulatoryComplianceUI -Enabled $false`
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Aufbewahrungsbezeichnugen zum Deklarieren von Datensätzen konfigurieren
 
@@ -60,7 +61,7 @@ Zum Beispiel:
 
 ![Konfigurieren einer Aufbewahrungsbezeichnung zum Markieren von Inhalten als Datensatz oder regulatorisch](../media/recordversioning6.png)
 
-Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf Microsoft Office SharePoint Online oder OneDrive-Dokumente und Exchange-E-Mails an. 
+Wenden Sie die Aufbewahrungsbezeichnung nach Bedarf auf Microsoft Office SharePoint Online oder OneDrive-Dokumente und Exchange-E-Mails an.
 
 Vollständige Anweisungen:
 
@@ -73,7 +74,7 @@ Vollständige Anweisungen:
 
 Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz oder regulatorischen Datensatz markieren, Benutzern zur Verfügung gestellt werden, um sie in Apps anzuwenden:
 
-- Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach diese Bezeichnung anwenden. 
+- Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach diese Bezeichnung anwenden.
 - Bei SharePoint und OneDrive kann jeder Benutzer in der Standardgruppe &quot;Mitglieder&quot; (Berechtigungsstufe &quot;Beitrag") diese Bezeichnung anwenden.
 
 Beispiel für ein Dokument, das mithilfe einer Aufbewahrungsbezeichnung als Datensatz markiert wurde:
@@ -84,7 +85,7 @@ Beispiel für ein Dokument, das mithilfe einer Aufbewahrungsbezeichnung als Date
 
 Die Aktionen der Kennzeichnung, um Elemente als Datensätze zu deklarieren, werden im Überwachungsprotokoll festgeschrieben.
 
-Für SharePoint-Elemente: 
+Für SharePoint-Elemente:
 - Wählen Sie aus **Datei- und Seiten-Aktivitäten** die Option **Geänderte Aufbewahrungsbezeichnung für eine Datei** aus. Dieses Überwachungsereignis wird für Aufbewahrungsbezeichnungen angewendet, die Elemente als Datensätze oder regulatorische Datensätze markieren, oder die Standard-Aufbewahrungsbezeichnungen sind.
 
 Für Exchange-Elemente:

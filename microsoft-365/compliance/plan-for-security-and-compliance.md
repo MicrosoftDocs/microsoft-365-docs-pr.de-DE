@@ -1,5 +1,5 @@
 ---
-title: Planen der &amp; Sicherheitskonformität
+title: Planen der &amp; Sicherheitscompliance
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,32 +17,32 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Diese Angebotsseite enthält Links und Planungsinformationen für Sicherheit und Compliance in Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198058"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226251"
 ---
-# <a name="plan-for-security-amp-compliance"></a>Planen der &amp; Sicherheitskonformität
+# <a name="plan-for-security-amp-compliance"></a>Planen der &amp; Sicherheitscompliance
 
-Das Verwalten von Sicherheit und Compliance ist eine partnerschaftliche Aufgabe. Sie sind für den Schutz Ihrer Daten, Identitäten und Geräte verantwortlich, während Microsoft Microsoft 365 schützt. Sie können die Microsoft 365 und Enterprise Mobility + Security (EMS) zusammen verwenden, um Ihnen zu helfen, das entsprechende Schutzniveau für Ihre Organisation zu erreichen.
+Das Verwalten von Sicherheit und Compliance ist eine partnerschaftliche Aufgabe. Sie sind für den Schutz Ihrer Daten, Identitäten und Geräte verantwortlich, während Microsoft Microsoft 365 Dienste dauerhaft schützt. Sie können Microsoft 365 und Enterprise Mobility + Security (EMS) zusammen verwenden, um ihnen zu helfen, das entsprechende Schutzniveau für Ihre Organisation zu erreichen.
   
 ## <a name="step-1-review-capabilities"></a>Schritt 1: Überprüfung der Möglichkeiten
 
 Verschaffen Sie sich einen Überblick über die Möglichkeiten zum Schutz von Informationen mithilfe des Posters „Informationsschutz für Office 365“. 
   
-[Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>Schritt 2: Überprüfen Sie Ihre Sicherheitsbewertung
 
-Beachten Sie nach dem Einrichten Microsoft 365 Abonnement Ihre Startpunktzahl. Secure Score bietet Konfigurationsvorschläge, die Sie zum Erhöhen Ihrer Bewertung verwenden können. Das Ziel besteht darin, vorhandene Möglichkeiten zu erkennen, mit denen Sie nutzen Ihre Umgebung schützen können, ohne die Produktivität Ihrer Benutzer einzuschränken.
+Nachdem Sie Ihr Microsoft 365-Abonnement eingerichtet haben, notieren Sie sich Ihre Startbewertung. Die Sicherheitsbewertung bietet Konfigurationsvorschläge, die Sie ergreifen können, um Ihre Bewertung zu erhöhen. Das Ziel besteht darin, vorhandene Möglichkeiten zu erkennen, mit denen Sie nutzen Ihre Umgebung schützen können, ohne die Produktivität Ihrer Benutzer einzuschränken.
   
 - [Einführung der Office 365 Sicherheitsbewertung](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Schritt 3: Planen des Zugriffsschutzes für Identität und Geräte
 
-Der Schutz des Zugriffs auf Ihre Microsoft 365 und Dienste ist entscheidend für die Verteidigung vor Cyberangriffen und den Schutz vor Datenverlust.
+Der Schutz des Zugriffs auf Ihre Microsoft 365 Daten und Dienste ist entscheidend, um sich vor Cyberangriffen zu schützen und vor Datenverlusten zu schützen.
   
 - [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
     
@@ -58,13 +58,13 @@ Der Schutz des Zugriffs auf Ihre Microsoft 365 und Dienste ist entscheidend für
   
 ## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Schritt 5: Nutzen des Microsoft 365 Security &amp; Compliance-Centers
 
-Das Security Compliance Center bietet Ihnen einen einzigen Einblick in die Steuerelemente, mit denen Sie das Spektrum der Microsoft 365-Sicherheit verwalten, einschließlich Bedrohungsverwaltung, Datenkontrolle und Suche &amp; und Untersuchung. 
+Das Security &amp; Compliance Center bietet Ihnen einen überblick über die Steuerelemente, die Sie zum Verwalten des Spektrums von Microsoft 365 Sicherheit verwenden, einschließlich Bedrohungsmanagement, Datengovernance sowie Suche und Untersuchung. 
   
-- [Wechseln zum Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
+- [Wechseln Sie zum Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
 - [Berechtigungen im Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
-- [Benutzern Zugriff auf das Security &amp; Compliance Center ermöglichen](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Benutzern Zugriff auf das Security Compliance Center gewähren &amp;](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Schritt 6: Verwenden von End-to-End-Sicherheitsszenarien als Ausgangspunkt
 
@@ -76,7 +76,7 @@ Verwenden Sie diese empfohlene Konfiguration als Ausgangspunkt für Zugriffssich
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 Admin-Center und Dashboards
 
-Konfigurieren Ihrer Sicherheits- und Complianceeinstellungen in diesen Admin Centern und Dashboards zum Schutz Microsoft 365 Umgebung
+Konfigurieren Sie Ihre Sicherheits- und Complianceeinstellungen in diesen Admin Centern und Dashboards, um Ihre Microsoft 365 Umgebung zu schützen.
   
 |**Abonnement**|**Verwaltungs-URL**|**Dashboards und Admin-Center**|
 |:-----|:-----|:-----|

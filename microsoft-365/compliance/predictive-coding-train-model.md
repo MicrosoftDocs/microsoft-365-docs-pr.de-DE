@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ef6d1cf23d6cca58f4226696bc63c1dea5816cc1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822553"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226215"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Trainieren eines vorhersagebasierten Codierungsmodells (Vorschau)
 
@@ -29,7 +29,7 @@ Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden
 
 ## <a name="before-you-train-a-model"></a>Vor dem Trainieren eines Modells
 
-- Kennzeichnen Sie während einer Schulungsrunde Elemente basierend auf der Relevanz des Inhalts im Dokument als **relevant** oder **nicht relevant.** Basieren Sie Ihre Entscheidung nicht auf den Werten in den Metadatenfeldern. Legen Sie beispielsweise für E-Mail-Nachrichten oder Teams Unterhaltungen Ihre Bezeichnungsentscheidung nicht auf die Teilnehmer der Nachricht fest. 
+- Kennzeichnen Sie während einer Schulungsrunde Elemente basierend auf der Relevanz des Inhalts im Dokument als **relevant** oder **nicht relevant.** Basieren Sie Ihre Entscheidung nicht auf den Werten in den Metadatenfeldern. Wenn Sie z. B. E-Mail-Nachrichten oder Teams Unterhaltungen verwenden möchten, legen Sie ihre Bezeichnungsentscheidung nicht auf die Teilnehmer der Nachricht fest.
 
 ## <a name="train-a-model-for-the-first-time"></a>Erstmaliges Trainieren eines Modells
 
@@ -63,10 +63,10 @@ Nachdem Sie die erste Schulungsrunde durchgeführt haben, wird ein Auftrag gesta
 
 - Basierend auf der Art und Weise, wie Sie die 40 Elemente im Schulungssatz beschriftet haben, lernt das Modell aus Ihrer Bezeichnung und aktualisiert sich, um genauer zu werden.
 
-- Das Modell verarbeitet dann jedes Element im gesamten Prüfdateisatz und weist eine Vorhersagebewertung zwischen **0** (nicht relevant) und **1** (relevant) zu.  
+- Das Modell verarbeitet dann jedes Element im gesamten Prüfdateisatz und weist eine Vorhersagebewertung zwischen **0** (nicht relevant) und **1** (relevant) zu.
 
-- Das Modell weist den 10 Elementen in der Steuerelementgruppe, die Sie während der Schulungsrunde bezeichnet haben, eine Vorhersagebewertung zu. Das Modell vergleicht die Vorhersagebewertung dieser 10 Elemente mit der tatsächlichen Bezeichnung, die Sie dem Element während der Schulungsrunde zugewiesen haben. Basierend auf diesem Vergleich identifiziert das Modell die folgende Klassifizierung (die so genannte *Steuerelementsatz-Verwirrungsmatrix),* um die Vorhersageleistung des Modells zu bewerten:
-  
+- Das Modell weist den 10 Elementen in der Steuerelementgruppe, die Sie während der Schulungsrunde bezeichnet haben, eine Vorhersagebewertung zu. Das Modell vergleicht die Vorhersagebewertung dieser 10 Elemente mit der tatsächlichen Bezeichnung, die Sie dem Element während der Schulungsrunde zugewiesen haben. Basierend auf diesem Vergleich identifiziert das Modell die folgende Klassifizierung (die so genannte *Steuerelementsatz-Verwechslungsmatrix),* um die Vorhersageleistung des Modells zu bewerten:
+
   |          |Modell prognostiziert Element ist relevant |Modell prognostiziert Element ist nicht relevant |
   |:---------|:---------|:---------|
   |**Bearbeiterbeschriftungselement als relevant**| True positive| Falsch positiv |

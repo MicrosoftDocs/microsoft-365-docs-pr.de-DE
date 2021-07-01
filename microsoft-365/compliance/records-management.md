@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1af3ff5fac9a95afb15f680f8f46e8d0de0b4567
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245432"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226047"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
@@ -70,11 +70,11 @@ Durch die Verwendung von Aufbewahrungsbezeichungen zur Deklaration von Aufzeichn
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>Vergleichen Sie Einschränkungen dazu, welche Aktionen erlaubt oder blockiert sind.
 
-Verwenden Sie die folgende Tabelle, um zu ermitteln, welche inhaltlichen Einschränkungen sich aus der Anwendung einer Standard-Aufbewahrungsbezeichnung und von Aufbewahrungsbezeichnungen ergeben, die den Inhalt als Datensatz oder regulatorischen Datensatz kennzeichnen. 
+Verwenden Sie die folgende Tabelle, um zu ermitteln, welche inhaltlichen Einschränkungen sich aus der Anwendung einer Standard-Aufbewahrungsbezeichnung und von Aufbewahrungsbezeichnungen ergeben, die den Inhalt als Datensatz oder regulatorischen Datensatz kennzeichnen.
 
 Eine Standard-Aufbewahrungsbezeichnung verfügt über Aufbewahrungseinstellungen und -aktionen, kennzeichnet den Inhalt jedoch nicht als Datensatz oder alsregulatorischen Datensatz.
 
->[!NOTE] 
+> [!NOTE]
 > Der Vollständigkeit halber enthält die Tabelle Spalten für einen gesperrten und entsperrten Datensatz, die für SharePoint und OneDrive gelten, jedoch nicht für Exchange. Die Möglichkeit zum Sperren und Entsperren eines Datensatzes verwendet die [Datensatzversionsverwaltung](record-versioning.md), die für Exchange-Elemente nicht unterstützt wird. Für alle Exchange-Elemente, die als Datensatz markiert sind, ist das Verhalten der Spalte **Datensatz gesperrt** und der Spalte **Datensatz entsperrt** nicht relevant.
 
 
@@ -94,19 +94,20 @@ Fußnoten:
 
 <sup>1</sup> Unterstützt von OneDrive und Exchange durch Aufbewahren einer Kopie an einem gesicherten Ort, jedoch blockiert von SharePoint.
 
-Wenn Sie eine Aufbewahrungsbezeichnung auf ein Listenelement anwenden, das eine Dokumentanlage enthält, erbt dieses Dokument die Aufbewahrungseinstellungen nicht und kann aus dem Listenelement gelöscht werden. Im Vergleich dazu würde die Dokumentanlage die Aufbewahrungseinstellungen erben und könnte nicht gelöscht werden, wenn dieses Listenelement als Datensatz mit einer Aufbewahrungsbezeichnung deklariert würde. 
+Wenn Sie eine Aufbewahrungsbezeichnung auf ein Listenelement anwenden, das eine Dokumentanlage enthält, erbt dieses Dokument die Aufbewahrungseinstellungen nicht und kann aus dem Listenelement gelöscht werden. Im Vergleich dazu würde die Dokumentanlage die Aufbewahrungseinstellungen erben und könnte nicht gelöscht werden, wenn dieses Listenelement als Datensatz mit einer Aufbewahrungsbezeichnung deklariert würde.
 
 <sup>2</sup> Zu den Containern gehören SharePoint-Dokumentbibliotheken, OneDrive-Konten und Exchange-Postfächer.
 
->[!IMPORTANT] 
-> Der wichtigste Unterschied für einen regulatorischen Datensatz besteht darin, dass nach der Anwendung auf den Inhalt niemand, nicht einmal ein globaler Administrator, die Bezeichnung entfernen kann. 
+> [!IMPORTANT]
+> Der wichtigste Unterschied für einen regulatorischen Datensatz besteht darin, dass nach der Anwendung auf den Inhalt niemand, nicht einmal ein globaler Administrator, die Bezeichnung entfernen kann.
 >
 > Für Aufbewahrungsbezeichnungen, die für regulatorische Datensätze konfiguriert sind, gelten zudem die folgenden administrativen Einschränkungen:
+>
 > - Die Aufbewahrungsfrist kann nach dem Speichern der Bezeichnung nicht verkürzt, sondern nur verlängert werden.
-> - Diese Bezeichnungen werden nicht durch Autobezeichnungsrichtlinien unterstützt und müssen mit Hilfe von [Richtlinien für Aufbewahrungsbezeichnungen](create-apply-retention-labels.md) angewendet werden. 
+> - Diese Bezeichnungen werden nicht durch Autobezeichnungsrichtlinien unterstützt und müssen mit Hilfe von [Richtlinien für Aufbewahrungsbezeichnungen](create-apply-retention-labels.md) angewendet werden.
 >
 > Darüber hinaus kann eine regulatorische Bezeichnung nicht auf ein Dokument angewendet werden, das in SharePoint ausgecheckt ist.
-> 
+>
 > Vergewissern Sie sich aufgrund der Einschränkungen und irreversiblen Aktionen, dass Sie wirklich regulatorische Datensätze verwenden müssen, bevor Sie diese Option für Ihre Aufbewahrungsbezeichnungen wählen. Um eine versehentliche Konfiguration zu verhindern, ist diese Option nicht standardmäßig verfügbar, sondern muss zunächst mithilfe von PowerShell aktiviert werden. Anweisungen sind in [Deklarieren von Datensätzen unter Verwendung von Aufbewahrungsbezeichnungen](declare-records.md) enthalten.
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden

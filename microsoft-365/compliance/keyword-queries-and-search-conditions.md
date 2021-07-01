@@ -22,20 +22,20 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über E-Mail- und Dokumenteigenschaften, die Sie mithilfe der eDiscovery-Suchtools in Microsoft 365 durchsuchen können.
-ms.openlocfilehash: 1e6612d658ff2fbcbee36b64dab9d352663f75b2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: bb87125b8cb4091121c6a389bcba8d69be7cc71e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866703"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226359"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Stichwortabfragen und Suchbedingungen für eDiscovery
 
-In diesem Thema werden die E-Mail- und Dokumenteigenschaften beschrieben, nach denen Sie in E-Mail-Elementen suchen und Chatunterhaltungen in Exchange Online Microsoft Teams können, sowie Dokumente, die auf SharePoint und OneDrive for Business Websites mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center gespeichert sind. Dazu gehören die Inhaltssuche, Core eDiscovery und Advanced eDiscovery (eDiscovery-Suchvorgänge in Advanced eDiscovery als *Sammlungen* bezeichnet werden). Sie können auch die **\* -ComplianceSearch-Cmdlets** in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. In diesem Thema wird außerdem Folgendes beschrieben:
+In diesem Thema werden die E-Mail- und Dokumenteigenschaften beschrieben, nach denen Sie in E-Mail-Elementen und Microsoft Teams Chatunterhaltungen in Exchange Online suchen können, sowie Dokumente, die auf SharePoint und OneDrive for Business Websites mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center gespeichert sind. Dazu gehören inhaltssuche, Core eDiscovery und Advanced eDiscovery (eDiscovery-Suchvorgänge in Advanced eDiscovery werden *sammlungen* genannt). Sie können auch die Cmdlets **\* "-ComplianceSearch"** in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. In diesem Thema wird außerdem Folgendes beschrieben:
   
 - Verwenden von booleschen Suchoperatoren, Suchbedingungen und anderen Suchabfragetechniken, um Ihre Suchergebnisse zu verfeinern.
 
-- Suchen nach vertraulichen Datentypen und benutzerdefinierten vertraulichen Datentypen in SharePoint und OneDrive for Business.
+- Suchen nach vertraulichen Datentypen und benutzerdefinierten typen vertraulicher Daten in SharePoint und OneDrive for Business.
 
 - Suchen nach Websiteinhalten, die für Benutzer außerhalb Ihrer Organisation freigegeben sind
 
@@ -52,7 +52,7 @@ Schritt-für-Schritt-Anleitungen zum Erstellen verschiedener eDiscovery-Suchvorg
   
 ## <a name="searchable-email-properties"></a>Durchsuchbare E-Mail-Eigenschaften
 
-In der folgenden Tabelle sind E-Mail-Nachrichteneigenschaften aufgeführt, die mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center oder mithilfe der **New-ComplianceSearch** oder des **Set-ComplianceSearch-Cmdlets** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese  `property:value` Paare in das Schlüsselwörterfeld für eine eDiscovery-Suche eingeben. 
+In der folgenden Tabelle sind E-Mail-Nachrichteneigenschaften aufgeführt, die mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center oder mithilfe der **New-ComplianceSearch** oder des **Cmdlets "Set-ComplianceSearch"** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese  `property:value` Paare in das Schlüsselwörterfeld für eine eDiscovery-Suche eingeben. 
 
 > [!NOTE]
 > Beim Durchsuchen von E-Mail-Eigenschaften ist es nicht möglich, nach Elementen zu suchen, in denen die angegebene Eigenschaft leer oder leer ist. Wenn Sie z. B. das *"property:value"-Paar* **"betreff:""** verwenden, um nach E-Mail-Nachrichten mit einer leeren Betreffzeile zu suchen, werden keine Ergebnisse zurückgegeben. Dies gilt auch beim Durchsuchen von Website- und Kontakteigenschaften.
@@ -67,7 +67,7 @@ In der folgenden Tabelle sind E-Mail-Nachrichteneigenschaften aufgeführt, die m
 |Von|Der Absender einer E-Mail-Nachricht.<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Nachrichten, die vom angegebenen Benutzer oder einer bestimmten Domäne gesendet wurden.|
 |HasAttachment|Gibt an, ob eine Nachricht über eine Anlage verfügt. Verwenden Sie die Werte **"true"** oder **"false".**|`from:pilar@contoso.com AND hasattachment:true`|Nachrichten, die vom angegebenen Benutzer mit Anlagen gesendet wurden.|
 |Wichtigkeit|Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Standardmäßig werden Nachrichten mit normaler Wichtigkeit gesendet, außer wenn der Absender die Wichtigkeit auf **Hoch** oder **Niedrig** setzt.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Nachrichten, deren Wichtigkeit auf "Hoch", "Mittel" bzw. "Niedrig" eingestellt ist.|
-|IsRead|Gibt an, ob Nachrichten gelesen wurden. Verwenden Sie die Werte **"true"** oder **"false".**|`isread:true`  <br/> `isread:false`|Im ersten Beispiel werden Nachrichten zurückgegeben, bei denen die IsRead-Eigenschaft auf **"True"** festgelegt ist. Im zweiten Beispiel werden Nachrichten zurückgegeben, bei denen die IsRead-Eigenschaft auf **"False"** festgelegt ist.|
+|IsRead|Gibt an, ob Nachrichten gelesen wurden. Verwenden Sie die Werte **"true"** oder **"false".**|`isread:true`  <br/> `isread:false`|Im ersten Beispiel werden Nachrichten zurückgegeben, bei denen die IsRead-Eigenschaft auf **True** festgelegt ist. Im zweiten Beispiel werden Nachrichten zurückgegeben, bei denen die IsRead-Eigenschaft auf **"False"** festgelegt ist.|
 |ItemClass|Verwenden Sie diese Eigenschaft, um bestimmte Datentypen von Drittanbietern zu durchsuchen, die Ihre Organisation in Office 365 importiert hat. Verwenden Sie die folgende Syntax für diese Eigenschaft:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Im ersten Beispiel werden Facebook-Elemente zurückgegeben, die das Wort "contoso" in der Subject-Eigenschaft enthalten. Das zweite Beispiel gibt Twitter-Elemente zurück, die von Ann Beebe gepostet wurden und den Schlüsselwortsatz "Northwind-Händler" enthalten.  <br/> Eine vollständige Liste der Werte, die für Datentypen von Drittanbietern für die ItemClass-Eigenschaft verwendet werden sollen, finden Sie unter Verwenden der [Inhaltssuche, um Daten von Drittanbietern zu durchsuchen, die in Office 365 importiert wurden.](use-content-search-to-search-third-party-data-that-was-imported.md)|
 |Art| Der Typ der E-Mail-Nachricht, nach der gesucht werden soll. Mögliche Werte:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  Externe Daten  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (gibt Elemente aus Chats, Besprechungen und Anrufen in Microsoft Teams zurück)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Im ersten Beispiel werden E-Mail-Nachrichten zurückgegeben, die den Suchkriterien entsprechen. Im zweiten Beispiel werden E-Mail-Nachrichten, Chatunterhaltungen (einschließlich Skype for Business Unterhaltungen und Chats in Microsoft Teams) und Sprachnachrichten zurückgegeben, die die Suchkriterien erfüllen. Im dritten Beispiel werden Elemente zurückgegeben, die in Postfächer in Microsoft 365 aus Datenquellen von Drittanbietern importiert wurden, z. B. Twitter, Facebook und Cisco Jabber, die die Suchkriterien erfüllen. Weitere Informationen finden Sie unter Archivierung von [Drittanbieterdaten in Office 365.](https://www.microsoft.com/?ref=go)|
 |Teilnehmer|Alle Personenfelder in einer E-Mail-Nachricht. Diese Felder sind From, To, Cc und Bcc.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Nachrichten, die von oder an garthf@contoso.com gesendet wurden. Im zweiten Beispiel werden alle Nachrichten zurückgegeben, die von oder an einen Benutzer in der Domäne contoso.com gesendet wurden.|
@@ -84,11 +84,11 @@ In der folgenden Tabelle sind E-Mail-Nachrichteneigenschaften aufgeführt, die m
 
 ### <a name="recipient-expansion"></a>Empfängererweiterung
 
-Beim Durchsuchen einer der Empfängereigenschaften (From, To, Cc, Bcc, Participants und Recipients) versucht Microsoft 365, die Identität der einzelnen Benutzer zu erweitern, indem sie sie in Azure Active Directory (Azure AD) nachschlagen.  Wenn der Benutzer in Azure AD gefunden wird, wird die Abfrage erweitert, um die E-Mail-Adresse (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN des Benutzers einzuschließen. Eine Abfrage wie z. B. wird z. `participants:ronnie@contoso.com` B. bis `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` erweitert.
+Beim Durchsuchen einer der Empfängereigenschaften (From, To, Cc, Bcc, Participants und Recipients) versucht Microsoft 365, die Identität der einzelnen Benutzer zu erweitern, indem sie in Azure Active Directory (Azure AD) nachschlagen.  Wenn der Benutzer in Azure AD gefunden wird, wird die Abfrage erweitert, um die E-Mail-Adresse (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN des Benutzers einzuschließen. Eine Abfrage wie z. B. wird z. `participants:ronnie@contoso.com` B. bis `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` erweitert.
 
 Um eine Empfängererweiterung zu verhindern, fügen Sie am Ende der E-Mail-Adresse ein Platzhalterzeichen (Sternchen) hinzu, und verwenden Sie einen reduzierten Domänennamen. Achten Sie beispielsweise `participants:"ronnie@contoso*"` darauf, die E-Mail-Adresse in doppelte Anführungszeichen einzuschließen.
 
-Beachten Sie jedoch, dass das Verhindern der Empfängererweiterung in der Suchabfrage dazu führen kann, dass relevante Elemente nicht in den Suchergebnissen zurückgegeben werden. E-Mail-Nachrichten in Exchange können in verschiedenen Textformaten in den Empfängerfeldern gespeichert werden. Die Empfängererweiterung soll dazu beitragen, diese Tatsache zu mindern, indem Nachrichten zurückgegeben werden, die unterschiedliche Textformate enthalten können. Das Verhindern der Empfängererweiterung kann dazu führen, dass die Suchabfrage nicht alle Elemente zurückgibt, die für Ihre Untersuchung relevant sein können.
+Beachten Sie jedoch, dass das Verhindern der Empfängererweiterung in der Suchabfrage dazu führen kann, dass relevante Elemente nicht in den Suchergebnissen zurückgegeben werden. E-Mail-Nachrichten in Exchange können mit unterschiedlichen Textformaten in den Empfängerfeldern gespeichert werden. Die Empfängererweiterung soll dazu beitragen, diese Tatsache zu mindern, indem Nachrichten zurückgegeben werden, die unterschiedliche Textformate enthalten können. Das Verhindern der Empfängererweiterung kann dazu führen, dass die Suchabfrage nicht alle Elemente zurückgibt, die für Ihre Untersuchung relevant sein könnten.
 
 > [!NOTE]
 > Wenn Sie die von einer Suchabfrage aufgrund der Empfängererweiterung zurückgegebenen Elemente überprüfen oder reduzieren müssen, sollten Sie Advanced eDiscovery verwenden. Sie können nach Nachrichten suchen (unter Nutzung der Empfängererweiterung), sie einem Prüfdateisatz hinzufügen und dann Prüfdateisatzabfragen oder Filter verwenden, um die Ergebnisse zu überprüfen oder einzugrenzen. Weitere Informationen finden Sie unter [Sammeln von Daten für einen Fall](collecting-data-for-ediscovery.md) und Abfragen der Daten in einem [Prüfdateisatz.](review-set-search.md)
@@ -102,11 +102,11 @@ Eine vollständige Liste der SharePoint Eigenschaften, die durchsucht werden kö
 | Eigenschaft | Beschreibung der Eigenschaft | Beispiel | Von den Beispielen zurückgegebene Suchergebnisse |
 |:-----|:-----|:-----|:-----|
 |Ursprung|Das Feld "Autor" aus Office Dokumenten, das beim Kopieren eines Dokuments beibehalten wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und die E-Mails an eine andere Person sendet, die es dann in SharePoint hochlädt, behält das Dokument den ursprünglichen Autor bei. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`author:"Garth Fort"`|Alle Dokumente, die von Garth Fort erstellt wurden.|
-|ContentType|Die SharePoint Inhaltstyp eines Elements, z. B. "Element", "Dokument" oder "Video".|`contenttype:document`|Alle Dokumente würden zurückgegeben.|
+|ContentType|Der SharePoint Inhaltstyp eines Elements, z. B. Element, Dokument oder Video.|`contenttype:document`|Alle Dokumente würden zurückgegeben.|
 |Erstellt|Das Erstellungsdatum eines Elements.|`created>=06/01/2016`|Alle Elemente, die am oder nach dem 1. Juni 2016 erstellt wurden.|
 |CreatedBy|Die Person, die ein Element erstellt oder hochgeladen hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`createdby:"Garth Fort"`|Alle von Garth Fort erstellten oder hochgeladenen Elemente.|
 |DetectedLanguage|Die Sprache eines Elements.|`detectedlanguage:english`|Alle Elemente in Englisch.|
-|DocumentLink|Der Pfad (URL) eines bestimmten Ordners auf einer SharePoint oder OneDrive for Business Website. Wenn Sie diese Eigenschaft verwenden, müssen Sie die Website durchsuchen, in der sich der angegebene Ordner befindet.  <br/> Um Elemente zurückzugeben, die sich in Unterordnern des Ordners befinden, den Sie für die documentlink-Eigenschaft angeben, müssen Sie \* der URL des angegebenen Ordners /hinzufügen, z. B.  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Weitere Informationen zum Suchen nach der documentlink-Eigenschaft und zum Verwenden eines Skripts zum Abrufen der Documentlink-URLs für Ordner auf einer bestimmten Website finden Sie unter Verwenden der [Inhaltssuche für Gezielte Sammlungen.](use-content-search-for-targeted-collections.md)|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen OneDrive for Business Ordner zurückgegeben. Im zweiten Beispiel werden Dokumente im angegebenen Websiteordner (und allen Unterordnern) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
+|DocumentLink|Der Pfad (URL) eines bestimmten Ordners auf einer SharePoint oder OneDrive for Business Website. Wenn Sie diese Eigenschaft verwenden, müssen Sie die Website durchsuchen, in der sich der angegebene Ordner befindet.  <br/> Um Elemente zurückzugeben, die sich in Unterordnern des Ordners befinden, den Sie für die documentlink-Eigenschaft angeben, müssen Sie \* der URL des angegebenen Ordners /hinzufügen, z. B.  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Weitere Informationen zum Suchen nach der documentlink-Eigenschaft und zum Verwenden eines Skripts zum Abrufen der Documentlink-URLs für Ordner auf einer bestimmten Website finden Sie unter Verwenden der [Inhaltssuche für gezielte Sammlungen.](use-content-search-for-targeted-collections.md)|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen OneDrive for Business Ordner zurückgegeben. Im zweiten Beispiel werden Dokumente im angegebenen Websiteordner (und allen Unterordnern) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
 |Fileextension|Die Erweiterung einer Datei; z. B. docx, one, pptx oder xlsx.|`fileextension:xlsx`|Alle Excel Dateien (Excel 2007 und höher)|
 |FileName|Der Name einer Datei.|`filename:"marketing plan"`  <br/> `filename:estimate`|Im ersten Beispiel werden Dateien mit dem exakten Ausdruck "Marketingplan" im Titel zurückgegeben. Im zweiten Beispiel werden Dateien mit dem Wort "estimate" im Dateinamen zurückgegeben.|
 |LastModifiedTime|Das Datum, an dem ein Element zuletzt geändert wurde.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Im ersten Beispiel werden Elemente zurückgegeben, die am oder nach dem 1. Mai 2016 geändert wurden. Im zweiten Beispiel werden Elemente zurückgegeben, die zwischen dem 1. Mai 2016 und dem 1. Juni 2016 geändert wurden.|
@@ -128,7 +128,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indizier
 |Eigenschaft |Beschreibung der Eigenschaft |
 |:-----|:-----|
 |BusinessAddress|Die Adresse in der **Business Address-Eigenschaft.** Die Eigenschaft wird auch als **Arbeitsadresse** auf der Kontakteigenschaftenseite bezeichnet.|
-|BusinessPhone|Die Telefonnummer in einer der **Eigenschaften "Business Telefon** Number".|
+|BusinessPhone|Die Telefonnummer in einer der **Geschäfts-Telefon** Nummerneigenschaften.|
 |CompanyName|Der Name in der **Eigenschaft "Company".**|
 |Abteilung|Der Name in der **Department-Eigenschaft.**|
 |DisplayName|Der Anzeigename des Kontakts. Dies ist der Name in der **Eigenschaft "Vollständiger Name"** des Kontakts.|
@@ -153,13 +153,13 @@ Sie können eDiscovery-Suchtools im Microsoft 365 Compliance Center verwenden, u
 
 Eine Liste der Typen vertraulicher Informationen, nach denen Sie suchen können, finden Sie unter **"Datenklassifizierungen** \> **vertraulicher Informationstypen"** im Microsoft 365 Compliance Center. Sie können auch das Cmdlet **"Get-DlpSensitiveInformationType"** in Security & Compliance Center PowerShell verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen.
   
-Weitere Informationen zum Erstellen von Abfragen mithilfe der `SensitiveType` Eigenschaft finden Sie unter [Formularieren einer Abfrage, um vertrauliche Daten zu finden, die auf Websites gespeichert sind.](form-a-query-to-find-sensitive-data-stored-on-sites.md)
+Weitere Informationen zum Erstellen von Abfragen mithilfe der `SensitiveType` Eigenschaft finden Sie unter [Formularieren einer Abfrage zum Suchen vertraulicher Daten, die auf Websites gespeichert sind.](form-a-query-to-find-sensitive-data-stored-on-sites.md)
 
 ### <a name="limitations-for-searching-sensitive-data-types"></a>Einschränkungen für die Suche nach vertraulichen Datentypen
 
-- Um nach benutzerdefinierten Typen vertraulicher Informationen zu suchen, müssen Sie die ID des Typs für vertrauliche Informationen in der `SensitiveType` Eigenschaft angeben. Die Verwendung des Namens eines benutzerdefinierten vertraulichen Informationstyps (wie im Beispiel für integrierte Typen vertraulicher Informationen im vorherigen Abschnitt gezeigt) gibt keine Ergebnisse zurück. Verwenden Sie die **Spalte Publisher** auf der Seite **"Typen vertraulicher Informationen"** im Compliance Center (oder die **Publisher-Eigenschaft** in PowerShell), um zwischen integrierten und benutzerdefinierten Typen vertraulicher Informationen zu unterscheiden. Integrierte typen vertraulicher Daten weisen einen Wert `Microsoft Corporation` für die eigenschaft Publisher **auf.**
+- Um nach benutzerdefinierten Typen vertraulicher Informationen zu suchen, müssen Sie die ID des Typs für vertrauliche Informationen in der `SensitiveType` Eigenschaft angeben. Die Verwendung des Namens eines benutzerdefinierten vertraulichen Informationstyps (wie im Beispiel für integrierte Typen vertraulicher Informationen im vorherigen Abschnitt gezeigt) gibt keine Ergebnisse zurück. Verwenden Sie die **Spalte Publisher** auf der Seite **"Typen vertraulicher Informationen"** im Compliance Center (oder die **eigenschaft Publisher** in PowerShell), um zwischen integrierten und benutzerdefinierten Typen vertraulicher Informationen zu unterscheiden. Integrierte typen vertraulicher Daten weisen einen Wert `Microsoft Corporation` für die **Publisher-Eigenschaft auf.**
 
-  Um den Namen und die ID für die benutzerdefinierten typen vertraulicher Daten in Ihrer Organisation anzuzeigen, führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus:
+  Führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus, um den Namen und die ID für die benutzerdefinierten typen vertraulicher Daten in Ihrer Organisation anzuzeigen:
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
@@ -171,7 +171,7 @@ Weitere Informationen zum Erstellen von Abfragen mithilfe der `SensitiveType` Ei
   
 ## <a name="search-operators"></a>Suchoperatoren
 
-Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen bei der Definition präziserer Suchvorgänge, indem bestimmte Wörter in die Suchabfrage eingeschlossen oder ausgeschlossen werden. Andere Techniken, z. B. die Verwendung von Eigenschaftsoperatoren (z. `>=` B. oder `..` ), Anführungszeichen, Klammern und Platzhaltern, helfen Ihnen bei der Verfeinerung einer Suchabfrage. In der folgenden Tabelle sind die Operatoren aufgeführt, mit denen Sie Suchergebnisse eingrenzen oder erweitern können. 
+Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen bei der Definition präziserer Suchvorgänge, indem sie bestimmte Wörter in die Suchabfrage einschließen oder ausschließen. Andere Techniken, z. B. die Verwendung von Eigenschaftsoperatoren (z. `>=` B. oder `..` ), Anführungszeichen, Klammern und Platzhaltern, helfen Ihnen bei der Verfeinerung einer Suchabfrage. In der folgenden Tabelle sind die Operatoren aufgeführt, mit denen Sie Suchergebnisse eingrenzen oder erweitern können. 
   
 |Operator |Verwendung |Beschreibung |
 |:-----|:-----|:-----|
@@ -189,7 +189,7 @@ Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen bei der De
 |\>=|Eigenschaft\>=Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer gleich dem angegebenen Wert ist.<sup>1</sup>|
 |..|property:value1.. Wert2|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer gleich Wert1 und kleiner gleich Wert2 ist.<sup>1</sup>|
 |"  "|"fair Value"  <br/> Betreff:"Vierteljährliche Finanzdaten"|Verwenden Sie doppelte Anführungszeichen (" ") zum Suchen nach einem exakten Ausdruck oder Begriff in Stichwort- und  `property:value` Suchabfragen.|
-|\*|cat\*  <br/> Betreff:set\*|Präfixsuchen (auch *Präfixvergleich* genannt), bei denen ein Platzhalterzeichen ( * ) in Schlüsselwörtern oder Abfragen am Ende eines Worts platziert `property:value` wird. Bei Präfixsuchen gibt die Suche Ergebnisse mit Begriffen zurück, die das Wort gefolgt von Null oder mehr Zeichen enthalten. Gibt beispielsweise Dokumente zurück, `title:set*` die das Wort "set", "setup" und "setting" (und andere Wörter, die mit "set" beginnen) im Dokumenttitel enthalten.  <br/><br/> **Hinweis:** Sie können nur Präfixsuchen verwenden. z. B. **Cat _ oder \* *_* set \* *_. Suffixsuchen (_* \* Cat** ), Infixsuchen (**c \* t**) und Teilzeichenfolgensuchen (**\* Katze \***) werden nicht unterstützt.<br/><br/>Hinzufügen eines Punkts ( \. ) zu einer Präfixsuche werden die zurückgegebenen Ergebnisse geändert. Der Grund dafür ist, dass ein Punkt als Stoppwort behandelt wird. For example, searching for **cat _ and searching for \* *_* cat. \*** will return different results. Es wird empfohlen, keinen Punkt in einer Präfixsuche zu verwenden. |
+|\*|cat\*  <br/> Betreff:set\*|Präfixsuchen (auch *Präfixvergleich* genannt), bei denen ein Platzhalterzeichen ( * ) in Schlüsselwörtern oder Abfragen am Ende eines Worts platziert `property:value` wird. Bei Präfixsuchen gibt die Suche Ergebnisse mit Begriffen zurück, die das Wort gefolgt von Null oder mehr Zeichen enthalten. Gibt beispielsweise Dokumente zurück, `title:set*` die das Wort "set", "setup" und "setting" (und andere Wörter, die mit "set" beginnen) im Dokumenttitel enthalten.  <br/><br/> **Hinweis:** Sie können nur Präfixsuchen verwenden. z. B. **Cat _ oder \* *_* set \* *_. Suffixsuchen (_* \* Cat**), Infixsuchen (**c \* t**) und Teilzeichenfolgensuchen (**\* Katze \***) werden nicht unterstützt.<br/><br/>Fügen Sie auch einen Punkt ( \. ) zu einer Präfixsuche werden die zurückgegebenen Ergebnisse geändert. Der Grund dafür ist, dass ein Punkt als Stoppwort behandelt wird. For example, searching for **cat _ and searching for \* *_* cat. \*** will return different results. Es wird empfohlen, keinen Punkt in einer Präfixsuche zu verwenden. |
 |(  )| (fair OR frei) AND (Von:contoso.com)  <br/> (IPO OR Initiale) AND (Aktien OR Anteile)  <br/> (Vierteljährliche Finanzdaten)|Mit Klammern werden Boolesche Ausdrücke,  `property:value`-Elemente und Schlüsselwörter gruppiert.  `(quarterly financials)` gibt z. B. Elemente zurück, die die Wörter "Vierteljährliche" und "Finanzdaten" enthalten.  |
 |||||
    
@@ -219,7 +219,7 @@ Erstellen Sie eine Bedingung mit allgemeinen Eigenschaften beim Durchsuchen von 
 | Bedingung | Beschreibung |
 |:-----|:-----|
 |Datum|Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Bei Dokumenten das Datum, an dem ein Dokument zuletzt geändert wurde.|
-|Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten die Person, die im Feld "Autor" aus Office Dokumenten erwähnt wird. Sie können mehrere Namen durch Kommas getrennt eingeben. Zwei oder mehr Werte werden vom **OR-Operator** logisch verbunden.|
+|Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten die Person, die im Feld "Autor" aus Office Dokumenten stammt. Sie können mehrere Namen durch Kommas getrennt eingeben. Zwei oder mehr Werte werden vom **OR-Operator** logisch verbunden.|
 |Größe (in Bytes)|Für E-Mails und Dokumente die Größe des Elements (in Bytes).|
 |Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Bei Dokumenten der Titel des Dokuments. Wie zuvor erläutert, handelt es sich bei der Title-Eigenschaft um Metadaten, die in Microsoft Office Dokumenten angegeben sind. Sie können den Namen mehrerer Subjekte/Titel durch Kommas getrennt eingeben. Zwei oder mehr Werte werden vom **OR-Operator** logisch verbunden.|
 |Aufbewahrungsbezeichnung|Sowohl für E-Mails als auch für Dokumente: Aufbewahrungsbezeichnungen, die Nachrichten und Dokumenten automatisch durch Richtlinien für automatische Bezeichnungen zugewiesen wurden, oder Aufbewahrungsbezeichnungen, die manuell von Benutzern zugewiesen wurden. Aufbewahrungsbezeichnungen werden verwendet, um E-Mails und Dokumente für die Informationsgovernance zu klassifizieren und Aufbewahrungsregeln basierend auf den durch die Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Aufbewahrungsbezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Bezeichnungsnamen eingeben. Weitere Informationen zu Aufbewahrungsbezeichnungen finden Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](retention.md)|
@@ -308,7 +308,7 @@ Beachten Sie Folgendes bei der Verwendung von Suchbedingungen:
 
 Die folgenden Beispiele zeigen die GUI-basierte Version einer Suchabfrage mit Bedingungen, die Suchabfragesyntax, die im Detailbereich der ausgewählten Suche angezeigt wird (die auch vom Cmdlet **Get-ComplianceSearch** zurückgegeben wird) und die Logik der entsprechenden KQL-Abfrage.
   
-#### <a name="example-1"></a>Beispiel 1
+#### <a name="example-1"></a>Beispiel 1
 
 In diesem Beispiel werden Dokumente auf SharePoint und OneDrive for Business Websites zurückgegeben, die eine Kreditkartennummer enthalten und zuletzt vor dem 1. Januar 2021 geändert wurden.
   
@@ -326,7 +326,7 @@ In diesem Beispiel werden Dokumente auf SharePoint und OneDrive for Business Web
   
 Beachten Sie im vorherigen Screenshot, dass die Benutzeroberfläche der Suche bestätigt, dass die Schlüsselwortabfrage und -bedingung durch den **OPERATOR AND** verbunden sind.
 
-#### <a name="example-2"></a>Beispiel 2
+#### <a name="example-2"></a>Beispiel 2
 
 In diesem Beispiel werden E-Mail-Elemente oder Dokumente zurückgegeben, die das Schlüsselwort "report" enthalten, die vor dem 1. April 2021 gesendet oder erstellt wurden und das Wort "northwind" im Betrefffeld von E-Mail-Nachrichten oder in der Titeleigenschaft von Dokumenten enthalten. Die Abfrage schließt Webseiten aus, die den anderen Suchkriterien entsprechen.
   
@@ -342,7 +342,7 @@ In diesem Beispiel werden E-Mail-Elemente oder Dokumente zurückgegeben, die das
   
  `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
-#### <a name="example-3"></a>Beispiel 3
+#### <a name="example-3"></a>Beispiel 3
 
 In diesem Beispiel werden E-Mail-Nachrichten oder Kalenderbesprechungen zurückgegeben, die zwischen dem 1.1.2019 und dem 30.11.2020 gesendet wurden und Wörter enthalten, die mit "Telefon" oder "Smartphone" beginnen.
   
@@ -405,7 +405,7 @@ In diesen Szenarien gibt die  `ViewableByExternalUsers` Eigenschaft erst dann de
 
 Wie zuvor erläutert, können Sie die Eigenschaft verwenden,  `SharedWithUsersOWSUser` um nach Dokumenten zu suchen, die von Personen in Ihrer Organisation freigegeben wurden. Wenn eine Person eine Datei (oder einen Ordner) für einen anderen Benutzer innerhalb Ihrer Organisation freigibt, wird auf der Seite **"Für mich freigegeben"** im OneDrive for Business Konto der Person, für die die Datei freigegeben wurde, ein Link zu der freigegebenen Datei angezeigt. Um z. B. nach den Dokumenten zu suchen, die für Sara David freigegeben wurden, können Sie die Abfrage  `SharedWithUsersOWSUser:"sarad@contoso.com"` verwenden. Wenn Sie die Ergebnisse dieser Suche exportieren, werden die Originaldokumente (die sich am Inhaltsspeicherort der Person befinden, die die Dokumente für Sara freigegeben hat) heruntergeladen.
   
-Dokumente müssen explizit für einen bestimmten Benutzer freigegeben werden, damit sie bei Verwendung der Eigenschaft in den Suchergebnissen zurückgegeben  `SharedWithUsersOWSUser` werden. Wenn eine Person beispielsweise ein Dokument in ihrem OneDrive-Konto freigibt, hat sie die Möglichkeit, es für alle Personen (innerhalb oder außerhalb der Organisation) freizugeben, es nur für Personen innerhalb der Organisation oder für eine bestimmte Person freizugeben. Hier ist ein Screenshot des **Fensters "Freigeben"** in OneDrive, in dem die drei Freigabeoptionen angezeigt werden. 
+Dokumente müssen explizit für einen bestimmten Benutzer freigegeben werden, damit sie bei Verwendung der Eigenschaft in den Suchergebnissen zurückgegeben  `SharedWithUsersOWSUser` werden. Wenn eine Person beispielsweise ein Dokument in ihrem OneDrive-Konto freigibt, hat sie die Möglichkeit, es für alle Personen (innerhalb oder außerhalb der Organisation) freizugeben, es nur für Personen innerhalb der Organisation oder für eine bestimmte Person freizugeben. Hier ist ein Screenshot des Fensters **"Freigeben"** in OneDrive, in dem die drei Freigabeoptionen angezeigt werden. 
   
 ![Nur Dateien, die für bestimmte Personen freigegeben sind, werden von einer Suchabfrage zurückgegeben, die die SharedWithUsersOWSUser-Eigenschaft verwendet.](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
@@ -419,7 +419,7 @@ Mit der folgenden Stichwortabfrage können Sie gezielt nach Inhalten in Skype fo
 kind:im
 ```
 
-Die vorherige Suchabfrage gibt auch Chats von Microsoft Teams zurück. Um dies zu verhindern, können Sie die Suchergebnisse einschränken, um nur Skype for Business Unterhaltungen einzuschließen, indem Sie die folgende Stichwortabfrage verwenden:
+Die vorherige Suchabfrage gibt auch Chats von Microsoft Teams zurück. Um dies zu verhindern, können Sie die Suchergebnisse einschränken, um nur Skype for Business Unterhaltungen mithilfe der folgenden Stichwortabfrage einzuschließen:
 
 ```powershell
 kind:im AND subject:conversation
@@ -440,7 +440,7 @@ Hier sehen Sie, wie die Gesamtzahl der Zeichen in der Suchabfrage berechnet wird
 
 - Die Zeichen in der Stichwortsuchabfrage (einschließlich Benutzer- und Filterfeldern) werden gegen diesen Grenzwert gezählt.
 
-- Die Zeichen in einer beliebigen Standorteigenschaft (z. B. die URLs für alle SharePoint Websites oder OneDrive Speicherorte, die durchsucht werden) zählen für diesen Grenzwert.
+- Die Zeichen in einer beliebigen Standorteigenschaft (z. B. die URLs für alle SharePoint Websites oder OneDrive Speicherorte, die durchsucht werden) zählen gegen diesen Grenzwert.
 
 - Die Zeichen in allen Suchberechtigungsfiltern, die auf den Benutzer angewendet werden, der die Suchanzahl für den Grenzwert ausführt.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte Typen vertraulicher Informationen für DLP im Security & Compliance Center erstellen, ändern, entfernen und testen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683843"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227151"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
 
@@ -45,7 +45,7 @@ Es gibt zwei Möglichkeiten, wie ein neuer vertraulicher Informationstyp erstell
     - [Funktionen](what-the-dlp-functions-look-for.md)
     - [Konfidenzniveaus](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- Sie müssen über globale Administrator-oder Compliance-Administratorberechtigungen verfügen, um über die Benutzeroberfläche einen benutzerdefinierten vertraulichen Informationstyp erstellen, testen und bereitstellen zu können. Informationen hierzu finden Sie unter[Zu Administratorrollen](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
+- Sie müssen über globale Administrator-oder Compliance-Administratorberechtigungen verfügen, um über die Benutzeroberfläche einen benutzerdefinierten vertraulichen Informationstyp erstellen, testen und bereitstellen zu können. Informationen hierzu finden Sie unter[Zu Administratorrollen](/office365/admin/add-users/about-admin-roles) in Office 365.
 
 - Ihre Organisation muss über ein Abonnement verfügen, z. B. Office 365 Enterprise, das Verhinderung von Datenverlust (DLP) beinhaltet. Siehe [Nachrichtenrichtlinie und Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
@@ -61,9 +61,9 @@ Verwenden Sie dieses Verfahren, um einen neuen Typ vertraulicher Informationen z
 2. Füllen Sie die Werte für **Name** und **Beschreibung** aus und wählen Sie **Weiter**.
 3. Wählen Sie **Muster erstellen**. Während Sie Ihren neuen Typ vertraulicher Informationen definieren, können Sie mehrere Muster erstellen, jedes mit unterschiedlichen Elementen und Konfidenzniveaus.
 4. Wählen Sie ein Standard-Konfidenzniveau für das Muster aus. Die Werte sind **Niedrige Konfidenz**, **Mittlere Konfidenz** und **Hohe Konfidenz**.
-5. Wählen Sie und definieren Sie das **Primäre Element**. Das primäre Element kann ein **Regulärer Ausdruck** mit einem optionalen Validator, eine **Schlüsselwortliste**, ein **Schlüsselwörterbuch**, oder eine der vorkonfigurierten **Funktionen** sein. Weitere Informationen zu DLP-Funktionen finden Sie unter [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md). Weitere Informationen zum Datum und zu den Prüfsummenüberprüfungen finden Sie unter Weitere Informationen zu [Validatoren für reguläre Ausdrücke](#more-information-on-regular-expression-validators).
+5. Wählen Sie und definieren Sie das **Primäre Element**. Das primäre Element kann ein **Regulärer Ausdruck** mit einem optionalen Validator, eine **Schlüsselwortliste**, ein **Schlüsselwörterbuch**, oder eine der vorkonfigurierten **Funktionen** sein. Weitere Informationen zu DLP-Funktionen finden Sie unter [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md). Weitere Informationen zum Datum und zu den Prüfsummenprüfern finden Sie unter Weitere Informationen zu Validatoren für [reguläre Ausdrücke.](#more-information-on-regular-expression-validators)
 6. Füllen Sie einen Wert für den **Zeichenabstand** aus.
-7. (Optional) Wenn Sie welche haben, fügen Sie unterstützende Elemente hinzu. Unterstützende Elemente können ein regulärer Ausdruck mit einem optionalen Validator, eine Schlüsselwortliste, ein Schlüsselwörterbuch, oder eine der vordefinierten Funktionen sein. Unterstützende Elemente können über eine eigene **Character-Näherungskonfiguration** verfügen. 
+7. (Optional) Wenn Sie welche haben, fügen Sie unterstützende Elemente hinzu. Unterstützende Elemente können ein regulärer Ausdruck mit einem optionalen Validator, eine Schlüsselwortliste, ein Schlüsselwörterbuch, oder eine der vordefinierten Funktionen sein. Unterstützende Elemente können eine eigene **Zeichen-Näherungskonfiguration** aufweisen. 
 8. (Optional) Fügen Sie [**zusätzliche Prüfungen**](#more-information-on-additional-checks) aus der Liste der verfügbaren Prüfungen hinzu.
 9. Wählen Sie **Erstellen**.
 10. Wählen Sie **Weiter** aus.
@@ -123,46 +123,46 @@ Sie können auch benutzerdefinierte vertrauliche Informationstypen mithilfe von 
 - [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps für DLP mit genauer Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
-## <a name="more-information-on-regular-expression-validators"></a>Weitere Informationen zu Validatoren für reguläre Ausdrücke
+## <a name="more-information-on-regular-expression-validators"></a>Weitere Informationen zu Validierern regulärer Ausdrücke
 
-### <a name="checksum-validator"></a>Prüfsummenüberprüfung
+### <a name="checksum-validator"></a>Prüfsummenprüfer
 
-Wenn Sie eine Prüfsumme für eine Ziffer in einem regulären Ausdruck ausführen müssen, können Sie den *Prüfsummen-Validator verwenden.* Beispiel: Sie müssen eine SIT für eine achtstellige Lizenznummer erstellen, wobei die letzte Ziffer eine Prüfsummenziffer ist, die mithilfe einer Mod 9-Berechnung überprüft wird. Sie haben den Prüfsummenalgorithmus so eingerichtet:
+Wenn Sie eine Prüfsumme für eine Ziffer in einem regulären Ausdruck ausführen müssen, können Sie die *Prüfsummenüberprüfung* verwenden. Angenommen, Sie müssen eine SIT für eine achtstellige Lizenznummer erstellen, wobei die letzte Ziffer eine Prüfsummenziffer ist, die mit einer Mod 9-Berechnung überprüft wird. Sie haben den Prüfsummenalgorithmus wie folgt eingerichtet:
  
-Sum = Digit 1 * Weight 1 + Digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
 
 1. Definieren Sie das primäre Element mit diesem regulären Ausdruck:
 
 `\d{8}`
 
-2. Fügen Sie dann den Prüfsummen-Validator hinzu.
-3. Fügen Sie die Durch Kommas getrennten Gewichtungswerte, die Position der Prüfziffer und den Mod-Wert hinzu. Weitere Informationen zum Modulo-Vorgang finden Sie unter [Modulo-Vorgang](https://en.wikipedia.org/wiki/Modulo_operation).
+2. Fügen Sie dann den Prüfsummenprüfer hinzu.
+3. Fügen Sie die durch Kommas getrennten Gewichtungswerte, die Position der Prüfziffer und den Mod-Wert hinzu. Weitere Informationen zum Modulo-Vorgang finden Sie unter [Modulo-Vorgang.](https://en.wikipedia.org/wiki/Modulo_operation)
 
 > [!NOTE]
-> Wenn die Prüfziffer nicht Teil der Prüfsummenberechnung ist, verwenden Sie 0 als Gewichtung für die Prüfziffer. Im obigen Fall ist die Gewichtung 8 beispielsweise gleich 0, wenn die Prüfziffer nicht zum Berechnen der Prüfziffer verwendet werden soll.  Modulo_operation).
+> Wenn die Prüfziffer nicht Teil der Prüfsummenberechnung ist, verwenden Sie 0 als Gewichtung für die Prüfziffer. Im obigen Fall entspricht die Gewichtung 8 beispielsweise 0, wenn die Prüfziffer nicht für die Berechnung der Prüfziffer verwendet werden soll.  Modulo_operation).
 
-![Screenshot des konfigurierten Prüfsummen-Validators](../media/checksum-validator.png)
+![Screenshot der konfigurierten Prüfsummenüberprüfung](../media/checksum-validator.png)
 
-### <a name="date-validator"></a>Datums validator
+### <a name="date-validator"></a>Datumsprüfer
 
-Wenn ein in regulären Ausdruck eingebetteter Datumswert Teil eines neuen Musters  ist, das Sie erstellen, können Sie mit dem Datumsprüfer testen, ob er Ihren Kriterien entspricht. Beispiel: Sie möchten eine SIT für eine neunstellige Mitarbeiteridentifikationsnummer erstellen. Die ersten sechs Ziffern sind das Einstellungsdatum im DDMMYY-Format und die letzten drei sind zufällig generierte Zahlen. So überprüfen Sie, ob die ersten sechs Ziffern im richtigen Format vorliegen. 
+Wenn ein in regulären Ausdruck eingebetteter Datumswert Teil eines neuen Musters ist, das Sie erstellen, können Sie den *Datumsprüfer* verwenden, um zu testen, ob er Ihren Kriterien entspricht. Angenommen, Sie möchten eine SIT für eine neunstellige Mitarbeiter-Identifikationsnummer erstellen. Die ersten sechs Ziffern sind das Einstellungsdatum im DDMMYY-Format, und die letzten drei Stellen sind zufällig generierte Zahlen. Um zu überprüfen, ob die ersten sechs Ziffern im richtigen Format vorliegen. 
 
 1. Definieren Sie das primäre Element mit diesem regulären Ausdruck:
 
 `\d{9}`
 
-2. Fügen Sie dann den Datums validator hinzu.
-3. Wählen Sie das Datumsformat und den Startversatz aus. Da die Datumszeichenfolge die ersten sechs Ziffern ist, ist der Offset `0` .
+2. Fügen Sie dann den Datumsprüfer hinzu.
+3. Wählen Sie das Datumsformat und den Startoffset aus. Da die Datumszeichenfolge die ersten sechs Ziffern ist, ist der Offset `0` .
 
-![Screenshot des konfigurierten Datums validators](../media/date-validator.png)
+![Screenshot des konfigurierten Datumsprüfers](../media/date-validator.png)
 
-### <a name="functional-processors-as-validators"></a>Funktionale Prozessoren als Validatoren
+### <a name="functional-processors-as-validators"></a>Funktionale Prozessoren als Validierer
 
-Sie können Funktionsprozessoren für einige der am häufigsten verwendeten SITs als Validatoren verwenden. Auf diese Weise können Sie Ihren eigenen regulären Ausdruck definieren und gleichzeitig sicherstellen, dass sie die zusätzlichen Prüfungen bestehen, die für die SIT erforderlich sind. Beispielsweise wird Func_India_Aadhar sichergestellt, dass der von Ihnen definierte benutzerdefinierte reguläre Ausdruck die validierungslogik übergibt, die für die indische Aadhar-Karte erforderlich ist. Weitere Informationen zu DLP-Funktionen, die als Validatoren verwendet werden können, finden Sie unter [What the DLP functions look for](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for). 
+Sie können Funktionsprozessoren für einige der am häufigsten verwendeten SITs als Validierer verwenden. Auf diese Weise können Sie Ihren eigenen regulären Ausdruck definieren und gleichzeitig sicherstellen, dass sie die zusätzlichen Überprüfungen bestehen, die für die SIT erforderlich sind. Func_India_Aadhar stellen beispielsweise sicher, dass der von Ihnen definierte benutzerdefinierte reguläre Ausdruck die für die Karte "Indien Aadhar" erforderliche Überprüfungslogik übergibt. Weitere Informationen zu DLP-Funktionen, die als Validierer verwendet werden können, finden Sie unter [Wonach die DLP-Funktionen suchen.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
 
 ### <a name="luhn-check-validator"></a>Luhn-Überprüfungsprüfer
 
-Sie können die Luhn-Überprüfungsüberprüfung verwenden, wenn Sie über einen benutzerdefinierten Vertraulichen Informationstyp verfügen, der einen regulären Ausdruck enthält, der den [Luhn-Algorithmus übergeben soll.](https://en.wikipedia.org/wiki/Luhn_algorithm)
+Sie können den Luhn-Prüfprüfer verwenden, wenn Sie über einen benutzerdefinierten Typ vertraulicher Informationen verfügen, der einen regulären Ausdruck enthält, der den [Luhn-Algorithmus](https://en.wikipedia.org/wiki/Luhn_algorithm)übergeben sollte.
 
 ## <a name="more-information-on-additional-checks"></a>Weitere Informationen zu zusätzlichen Prüfungen
 

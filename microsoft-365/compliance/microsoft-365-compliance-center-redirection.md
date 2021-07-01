@@ -1,5 +1,5 @@
 ---
-title: Umleiten von Benutzern vom Office 365 Security and Compliance Center zum Microsoft 365 Compliance Center
+title: Umleiten von Benutzern aus dem Office 365 Security and Compliance Center zum Microsoft 365 Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,16 +9,16 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
-description: Erfahren Sie mehr über die automatische Umleitung Office 365 Security and Compliance Center-Benutzer zum Microsoft 365 Compliance Center.
+description: Erfahren Sie mehr über das automatische Umleiten Office 365 Security and Compliance Center-Benutzer an die Microsoft 365 Compliance Center.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 83d6a08d5c189c08c8f7d25daa3af39f28cbf8f1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782837"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226275"
 ---
-# <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Umleiten von Benutzern vom Office 365 Security and Compliance Center zum Microsoft 365 Compliance Center
+# <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Umleiten von Benutzern aus dem Office 365 Security and Compliance Center zum Microsoft 365 Compliance Center
 
 In diesem Artikel wird erläutert, wie die automatische Umleitung für Benutzer funktioniert, die vom Office 365 Security and Compliance Center (protection.office.com) zum Microsoft 365 Compliance Center (compliance.microsoft.com) auf Compliancelösungen zugreifen.
 
@@ -32,10 +32,10 @@ Die automatische Umleitung ist standardmäßig für alle Benutzer aktiviert, die
 - Datensatzverwaltung
 - Kommunikationscompliance (früher "Aufsicht")
 
-Benutzer werden automatisch an die gleichen Compliance-Lösungen im Microsoft 365 Compliance Center (compliance.microsoft.com) weitergeleitet.
+Benutzer werden automatisch an die gleichen Compliancelösungen im Microsoft 365 Compliance Center (compliance.microsoft.com) weitergeleitet.
 
->[!NOTE]
->Bei anderen Compliancelösungen, die im Office 365 Security and Compliance Center enthalten sind, verwalten Benutzer diese Lösungen weiterhin im Microsoft 365 Compliance Center oder im Office 365 Security and Compliance Center. Die automatische Umleitung für diese Compliancelösungen wird in Kürze verfügbar sein.*
+> [!NOTE]
+> Bei anderen Compliancelösungen, die im Office 365 Security and Compliance Center enthalten sind, verwalten Benutzer diese Lösungen weiterhin im Microsoft 365 Compliance Center oder im Office 365 Security and Compliance Center. Die automatische Umleitung für diese Compliancelösungen wird in Kürze verfügbar sein.*
 
 Dieses Feature und die zugehörigen Steuerelemente ermöglichen nicht die automatische Umleitung von Sicherheitsfeatures für Microsoft Defender für Office 365. Informationen zum Aktivieren der Umleitung für Sicherheitsfeatures finden Sie unter ["Umleiten von Konten von Microsoft Defender für Office 365 zum Microsoft 365 Security Center".](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
@@ -43,8 +43,8 @@ Dieses Feature und die zugehörigen Steuerelemente ermöglichen nicht die automa
 
 Wenn etwas nicht für Sie funktioniert oder wenn Sie etwas nicht über das Microsoft 365 Compliance Center-Portal abschließen können, können Sie die automatische Umleitung für alle Benutzer vorübergehend deaktivieren.
 
->[!IMPORTANT]
->Das Microsoft 365 Compliance Center ist das Ersatzverwaltungsportal für Compliance-Lösungen, die derzeit im Office 365 Security and Compliance Center verwaltet werden. Alle Microsoft 365 Compliance-Lösungen werden ausschließlich im Microsoft 365 Compliance Center verwaltet. Das Deaktivieren der Umleitung zum Microsoft 365 Compliance Center sollte eine kurzfristige Lösung sein.*
+> [!IMPORTANT]
+> Die Microsoft 365 Compliance Center ist das Ersatzverwaltungsportal für Compliancelösungen, die derzeit im Office 365 Security and Compliance Center verwaltet werden. Alle Microsoft 365 Compliance-Lösungen werden ausschließlich im Microsoft 365 Compliance Center verwaltet. Das Deaktivieren der Umleitung zum Microsoft 365 Compliance Center sollte eine kurzfristige Lösung sein.*
 
 Führen Sie die folgenden Schritte aus, um zum Office 365 Security and Compliance Center (protection.microsoft.com) für alle Benutzer zurückzukehren:
 
@@ -57,4 +57,4 @@ Nach der Deaktivierung werden die Benutzer nicht mehr an compliance.microsoft.co
 
 ## <a name="related-information"></a>Verwandte Informationen
 
-- [Übersicht über das Microsoft 365 Compliance Center](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [Übersicht über Microsoft 365 Compliance Center](/microsoft-365/compliance/microsoft-365-compliance-center)

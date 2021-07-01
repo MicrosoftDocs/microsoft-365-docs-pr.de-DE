@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Lesen Sie einige praxisorientierte Anleitungen für den Einstieg.
-ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244344"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226575"
 ---
 # <a name="get-started-with-records-management"></a>Erste Schritte mit der Datensatzverwaltung
 
@@ -30,14 +30,14 @@ ms.locfileid: "52244344"
 
 Sind Sie bereit, mit der Verwaltung der hochwertigen Inhalte Ihrer Organisation für rechtliche, geschäftliche oder behördliche Verpflichtungen mithilfe einer Datensatzverwaltungslösung in Microsoft 365 zu beginnen? Verwenden Sie die nachfolgende Anleitung für den Einstieg:
 
-1. **Grundlegendes zur Datensatzverwaltungslösung** und welche Aktionen zulässig bzw. blockiert sind, wenn Dokumente und E-Mails als Datensätze deklariert werden: [Mehr zur Datensatzverwaltung](records-management.md). 
+1. **Grundlegendes zur Datensatzverwaltungslösung** und welche Aktionen zulässig bzw. blockiert sind, wenn Dokumente und E-Mails als Datensätze deklariert werden: [Mehr zur Datensatzverwaltung](records-management.md).
 
 2. **Grundlegendes zu Aufbewahrungsbezeichnungen und zur Funktionsweise der Aufbewahrung** für SharePoint und Exchange, da Aufbewahrungsbezeichnungen zum Deklarieren von Datensätzen verwendet werden: [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 
-3. **Erstellen Ihres Dateiplans für Aufbewahrungseinstellungen und -aktionen**, indem Sie [einen vorhandenen Plan importieren](file-plan-manager.md#import-retention-labels-into-your-file-plan ) (falls vorhanden), oder [neue Aufbewahrungsbezeichnungen erstellen, die Datensätze deklarieren](declare-records.md).
+3. **Erstellen Ihres Dateiplans für Aufbewahrungseinstellungen und -aktionen**, indem Sie [einen vorhandenen Plan importieren](file-plan-manager.md#import-retention-labels-into-your-file-plan) (falls vorhanden), oder [neue Aufbewahrungsbezeichnungen erstellen, die Datensätze deklarieren](declare-records.md).
 
-4. **Veröffentlichen und Anwenden Ihrer Aufbewahrungsbezeichnungen**. Aufbewahrungsrichtlinien sind wiederverwendbare Bausteine, die in mehreren Richtlinien verwendet und in Benutzer-Workflows eingebunden werden können: 
-    
+4. **Veröffentlichen und Anwenden Ihrer Aufbewahrungsbezeichnungen**. Aufbewahrungsrichtlinien sind wiederverwendbare Bausteine, die in mehreren Richtlinien verwendet und in Benutzer-Workflows eingebunden werden können:
+
     - [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
     - [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)
 
@@ -49,9 +49,9 @@ Die Optionen für die Lizenzierung Ihrer Benutzer zur Nutzung der Microsoft 365-
 
 ## <a name="permissions-required-for-records-management"></a>Erforderliche Berechtigungen für die Datensatzverwaltung
 
-Die Mitglieder Ihres Complianceteams, die für die Datensatzverwaltung verantwortlich sind, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe **Datensatzverwaltung** hinzuzufügen, wodurch Berechtigungen für alle Features im Zusammenhang mit der Datensatzverwaltung zugewiesen werden, einschließlich [Dispositionsprüfung und -Verifizierung](disposition.md). 
+Die Mitglieder Ihres Complianceteams, die für die Datensatzverwaltung verantwortlich sind, benötigen Berechtigungen für das [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Standardmäßig hat der Mandantenadministrator (Globaler Administrator) Zugriff auf diese Ressource und kann anderen Personen den Zugriff darauf gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Um Berechtigungen für diese eingeschränkte Administration zu erteilen, empfehlen wir, Benutzer zur Administrator-Rollengruppe **Datensatzverwaltung** hinzuzufügen, wodurch Berechtigungen für alle Features im Zusammenhang mit der Datensatzverwaltung zugewiesen werden, einschließlich [Dispositionsprüfung und -Verifizierung](disposition.md).
 
-Für eine schreibgeschützte Rolle können Sie eine neue Rollengruppe erstellen und die Rolle **Datensatzverwaltung – nur Leserechte** zu dieser Gruppe hinzufügen. 
+Für eine schreibgeschützte Rolle können Sie eine neue Rollengruppe erstellen und die Rolle **Datensatzverwaltung – nur Leserechte** zu dieser Gruppe hinzufügen.
 
 Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 

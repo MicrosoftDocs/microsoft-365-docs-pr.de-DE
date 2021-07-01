@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Erfahren Sie, wie Sie das Standarddesign für den oberen Rand der Navigationsleiste in Microsoft 365 ändern und an Ihr Firmenlogo oder Ihre Farbe anpassen.
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006913"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227783"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
@@ -41,12 +41,12 @@ Sie können ein Standarddesign hinzufügen oder aktualisieren, das für alle Ben
 
 2. Wählen Sie auf der Registerkarte **"Organisationsprofil"** die Option **"Benutzerdefinierte Designs"** aus.
 
-Alle Designs können mithilfe der folgenden Registerkarten angepasst werden.
+Alle Organisationsdesigns können mithilfe der folgenden Registerkarten angepasst werden.
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[Allgemein](#general-modify-a-theme) <br/> |Ändern Eines Designnamens und Zuweisen zu bis zu fünf Gruppen (falls zutreffend).  <br/> |
-|[Logos](#logos-specify-your-theme-logos) <br/> |Fügen Sie Ihr Designlogo hinzu, einschließlich des Office dunklen Designs und mobiler Optionen.  <br/> |
+|[Logos](#logos-specify-your-theme-logos) <br/> |Fügen Sie Ihr Organisationslogo hinzu, einschließlich des alternativen Logos für dunkles Design.  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |Passen Sie ein Farbschema an, indem Sie Navigationsleisten-, Akzent-, Text- und Symbolfarben angeben. <br/> |
 
 ## <a name="general-modify-a-theme"></a>Allgemein: Ändern eines Designs
@@ -57,14 +57,14 @@ Ihre Erfahrung auf der Registerkarte "Allgemein" hängt davon ab, ob Sie das Sta
 
 Das Standarddesign ist das erste angezeigte Design.  
 
-1. Wenn Sie zuvor ein Design für Ihre Organisation angepasst haben, wählen Sie **"Standarddesign"** aus, und verwenden Sie eine ihrer gespeicherten Anpassungen, oder wählen Sie **"Design hinzufügen"** aus.
+1. Wenn Sie zuvor ein Design für Ihre Organisation angepasst haben, wählen Sie **"Standarddesign"** aus, und verwenden Sie eine der gespeicherten Anpassungen, oder wählen Sie **"Design hinzufügen"** aus.
 2. Auf der Seite **"Allgemein"** können Sie verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
 3. Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.  
 
 > [!IMPORTANT]
 > Das Standarddesign ist eindeutig, kann nicht umbenannt werden und gilt für alle Personen in Ihrer Organisation. Um das Standarddesign zu löschen, müssen Sie zuerst alle anderen Designs löschen.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für Ihre Organisation":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für Ihre Organisation":::
 
 ### <a name="create-a-group-theme"></a>Erstellen eines Gruppendesigns
 
@@ -76,7 +76,7 @@ Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
 3. Klicken Sie auf **Speichern**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für eine Gruppe von Benutzern in Ihrer Organisation":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für eine Gruppe von Benutzern in Ihrer Organisation":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logos: Geben Sie Ihre Designlogos an
 
@@ -84,9 +84,11 @@ Auf **der** Logos-Seite können Sie Ihre Logos hinzufügen und die URL angeben, 
 
 - **Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Stellen Sie sicher, dass die URL HTTPS verwendet. Fügen Sie eine HTTPS-Bild-URL hinzu, die anonymen Zugriff zulässt und keine Authentifizierung erfordert. Für das Standarddesign haben Sie auch die Möglichkeit, ein Logobild hochzuladen, das kleiner als 10 KB ist. Ihr Standardlogo kann im JPG-, PNG-, GIF- oder SVG-Format vorliegen. Bei SVG-Bildern werden sie so angepasst, dass sie vertikal auf 24 Pixel passen. JPG-, PNG- und GIF-Bilder werden auf 200 x 48 Pixel skaliert. Das Seitenverhältnis des Logos bleibt immer erhalten.
 - **Alternatives Logo:** Fügen Sie eine URL-Position hinzu, die auf Ihr Logo zeigt. Ihr alternatives Logo sollte für die Verwendung in Office dunklen Designs optimiert werden. Die gleichen Anforderungen wie das Standardlogo.
-- **On-Click-Link:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Sie können Ihr Logo als Link zu einer beliebigen Unternehmensressource verwenden, z. B. zur Website Ihres Unternehmens.
+- **On-Click-Link:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Sie können Ihr Logo als Link zu einer beliebigen Unternehmensressource verwenden, z. B. zur Website Ihres Unternehmens. Wenn Sie keinen URL-Speicherort für Ihr Logo auswählen, wird standardmäßig die Office Startseite angezeigt.
 
 Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Registerkarte &quot;Logos&quot; mit den Logooptionen":::
 
 Sie können Ihre Logos jederzeit entfernen. Kehren Sie einfach zur **Logos-Seite** zurück, und wählen Sie **"Entfernen" aus.**
   
@@ -98,9 +100,8 @@ Auf der Seite **"Farben"** können Sie die Standardfarben festlegen und auswähl
 - **Text- und Symbolfarbe:** Wählen Sie eine Farbe aus, die für den Text und symbole in der oberen Navigationsleiste verwendet werden soll.
 - **Akzentfarbe**: Wählen Sie eine Farbe, die auf einem weißen oder hellen Hintergrund gut zur Geltung kommt. Die Akzentfarbe wird verwendet, um einige Links und Schaltflächen einzufärben, die auf einem weißen oder hellen Hintergrund angezeigt werden. Die Akzentfarbe wird z. B. zur Einfärbung von Elementen im Posteingang eines Benutzers und auf seiner Office.com-Portalseite verwendet.
 - **Farbe zurücksetzen:** Wählen Sie diesen Link aus, um Farben auf die Standardfarben zurückzusetzen.
-- **Welches Logo sollte verwendet werden?**: Wählen Sie Standardlogos oder andere Logos aus, die Sie selbst erstellt haben.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Registerkarte &quot;Farben&quot; mit Standarddesignfarben für Ihre Organisation":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Screenshot: Registerkarte &quot;Farben&quot; mit Standarddesignfarben für Ihre Organisation":::
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -137,13 +138,13 @@ Das Standarddesign kann nur gelöscht werden, nachdem alle Gruppendesigns gelös
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Warum erhalte ich bei jedem Hochladen einer Logo-URL eine Fehlermeldung.  
 
-Stellen Sie sicher, dass das von Ihnen verwendete Logo als öffentlich adressierbare URL angegeben ist. Führen Sie die folgenden Schritte aus, um Logos in Azure Blob Storage oder die [Office 365 Netzwerk für die Inhaltsübermittlung mit SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md) [hochzuladen.](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)
+Stellen Sie sicher, dass das von Ihnen verwendete Logo als öffentlich adressierbare URL angegeben ist. Führen Sie die folgenden Schritte aus, um Logos in Azure Blob Storage oder die [Office 365 Content Delivery Network mit SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md) [hochzuladen.](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Warum erhalte ich die Meldung "Entspricht nicht dem minimalen Farbkontrastverhältnis von 4,5:1"?
 
 Das empfohlene Kontrastverhältnis zwischen Text, Symbol- oder Schaltflächenfarbe und Hintergrundfarbe beträgt 4,5:1. Sie können diese Empfehlung außer Kraft setzen und Ihr Design speichern, da dies keine Anforderung ist.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Welche Orte in Microsoft 365 werden verwendet, wenn ich ein Design definiert habe?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Welche Orte in Microsoft 365 werden verwendet, wenn ich ein Design erstelle?
 
 Jedes Design wird in der oberen Navigationsleiste für alle Benutzer in der Organisation als Teil des Microsoft 365 Suite-Headers angezeigt.  
   

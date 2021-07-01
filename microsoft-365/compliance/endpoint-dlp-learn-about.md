@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 Endpunkt-DLP erweitert die Überwachung von Dateiaktivitäten sowie schützende Maßnahmen für diese Dateien auf Endpunkte. Die Dateien werden in den Microsoft 365 Compliance-Lösungen angezeigt. '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114103"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226683"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)
 
@@ -34,7 +34,7 @@ Sie können Microsoft 365-DLP (Data Loss Prevention, Verhinderung von Datenverlu
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Endpunktaktivitäten, die Sie überwachen und für die Sie Maßnahmen festlegen können
 
-Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden. 
+Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwachen und verwalten, die von Benutzern mit und an vertraulichen Elementen auf Windows 10-Geräten ausgeführt werden.
 
 |Aktivität |Beschreibung  | Überwachbar/einschränkbar|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ Mit Microsoft Endpunkt-DLP können Sie die folgenden Aktivitätstypen überwache
 |Element erstellen|Erkennt, wenn ein Benutzer ein Element erstellt.| überwachbar|
 |Element umbenennen|Erkennt, wenn ein Benutzer ein Element umbenennt.| überwachbar|
 
- ## <a name="monitored-files"></a>Überwachte Dateien
+## <a name="monitored-files"></a>Überwachte Dateien
 
 Endpunkt-DLP unterstützt die Überwachung dieser Dateitypen:
 
@@ -66,10 +66,10 @@ Endpunkt-DLP unterstützt die Überwachung dieser Dateitypen:
 - CS-Dateien
 - H-Dateien
 - JAVA-Dateien
- 
+
 Standardmäßig überwacht Endpunkt-DLP die Aktivitäten für diese Dateitypen, auch wenn keine Richtlinienübereinstimmung vorliegt. Wenn Sie nur Daten aus Richtlinienübereinstimmungen überwachen möchten, können Sie **Dateiaktivität für Geräte immer überwachen** in den globalen Endpunkt-DLP-Einstellungen deaktivieren. Wenn diese Einstellung aktiviert ist, werden alle Aktivitäten für Word-, PowerPoint-, Excel-, PDF- und CSV-Dateien immer überwacht, auch wenn das Gerät von keiner Richtlinie betroffen ist.
 
-Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP) überwacht Aktivitäten basierend auf dem MIME-Typ, sodass sie auch dann erfasst werden, wenn die Dateierweiterung geändert wurde. 
+Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP) überwacht Aktivitäten basierend auf dem MIME-Typ, sodass sie auch dann erfasst werden, wenn die Dateierweiterung geändert wurde.
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Was ist bei Endpunkt-DLP anders?
 
@@ -153,8 +153,8 @@ Wenn eine Datei beispielsweise auf einen USB-Wechseldatenträger kopiert wird, w
 
 Jetzt, da Sie die Basics zu Endpunkt-DLP kennen, sind die nächsten Schritte folgende:
 
-1) [Erste Schritte mit Microsoft Endpunkt-DLP ](endpoint-dlp-getting-started.md)
-2) [Nutzung von Microsoft Endpunkt-DLP ](endpoint-dlp-using.md)
+1. [Erste Schritte mit Microsoft Endpunkt-DLP](endpoint-dlp-getting-started.md)
+2. [Nutzung von Microsoft Endpunkt-DLP ](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Siehe auch
 

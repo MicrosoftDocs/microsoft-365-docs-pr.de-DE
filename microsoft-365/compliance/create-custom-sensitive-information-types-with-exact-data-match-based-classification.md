@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964656"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227127"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -108,7 +108,7 @@ Die Datendatei kann maximal Folgendes umfassen:
 
 2. Strukturierung der vertraulichen Daten in der .csv- oder TSV-Datei, sodass die erste Zeile die Namen der Felder enthält, die für die EDM-basierte Klassifizierung verwendet werden. In Ihrer Datei haben Sie möglicherweise Feldnamen wie "ssn", "birthdate", "firstname", "lastname". Die Namen der Spaltenüberschriften dürfen keine Leerzeichen oder Unterstriche enthalten. Die CSV-Datei, die wir in diesem Artikel verwenden, trägt beispielsweise den Namen *PatientRecords.csv* und hat u. a. die Spalten *PatientID*, *MRN*, *LastName*, *FirstName* und *SSN*.
 
-3. Achten Sie auf das Format der Felder für die vertraulichen Daten. Insbesondere Felder, die Kommas in ihrem Inhalt enthalten können, z. B. eine Straße, die den Wert "Seattle, WA" enthält, werden bei der Analyse als zwei separate Felder analysiert, wenn das .csv Format ausgewählt ist. Um dies zu vermeiden, verwenden Sie das TSV-Format oder umgeben das Komma mit Werten in doppelte Anführungszeichen in der Tabelle mit vertraulichen Daten. Wenn Kommas, die Werte enthalten, auch Leerzeichen enthalten, müssen Sie eine benutzerdefinierte SIT erstellen, die dem entsprechenden Format entspricht. Beispielsweise eine SIT, die zeichenfolgen mit mehreren Wörtern mit Kommas und Leerzeichen erkennt.
+3. Achten Sie auf das Format der Felder für die vertraulichen Daten. Insbesondere Felder, die Kommas in ihrem Inhalt enthalten können, z. B. eine Straßenadresse, die den Wert "Seattle,WA" enthält, werden bei der Analyse als zwei separate Felder analysiert, wenn das .csv Format ausgewählt ist. Um dies zu vermeiden, verwenden Sie das TSV-Format oder umgeben das Komma mit Werten in doppelte Anführungszeichen in der Tabelle mit vertraulichen Daten. Wenn Kommas, die Werte enthalten, auch Leerzeichen enthalten, müssen Sie eine benutzerdefinierte SIT erstellen, die dem entsprechenden Format entspricht. Beispielsweise eine SIT, die zeichenfolgen mit mehreren Wörtern mit Kommas und Leerzeichen erkennt.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definieren des Schemas für Ihre Datenbank mit vertraulichen Informationen
 
@@ -206,7 +206,7 @@ In diesem Beispiel, in dem beide, `caseInsensitive` und `ignoredDelimiters`, ver
 
 1. Erstellen Sie ein Regelpaket im XML-Format (mit Unicode-Codierung), ähnlich wie im folgenden Beispiel. (Sie können das Beispiel kopieren, ändern und verwenden.)
 
-      Stellen Sie beim Einrichten des Regelpakets sicher, dass Sie ordnungsgemäß auf die .csv- oder TSV-Datei und **edm.xml** Datei verweisen. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
+      Wenn Sie das Regelpaket einrichten, stellen Sie sicher, dass Sie ordnungsgemäß auf die .csv- oder TSV-Datei und **edm.xml** Datei verweisen. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
 
       - **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
 
@@ -378,22 +378,22 @@ Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möcht
 > Wenn Sie den Assistenten für Exact Data Match Schema und vertraulicher Informationstyp verwendet haben, um Ihre Schema- und Musterdateien zu erstellen, ***müssen*** Sie das Schema für dieses Verfahren herunterladen.
 
 > [!NOTE]
-> Wenn Ihre Organisation [Den Kundenschlüssel für Microsoft 365 auf Mandantenebene](customer-key-overview.md)eingerichtet hat, nutzt die genaue Datenüberstimmung automatisch ihre Verschlüsselungsfunktionalität. Dies ist nur für Mandanten mit E5-Lizenz in der kommerziellen Cloud verfügbar.
+> Wenn Ihre Organisation [Den Kundenschlüssel für Microsoft 365 auf Mandantenebene](customer-key-overview.md)eingerichtet hat, nutzt die genaue Datenüberstimmung automatisch die Verschlüsselungsfunktionalität. Dies ist nur für Mandanten mit E5-Lizenz in der kommerziellen Cloud verfügbar.
 
 #### <a name="prerequisites"></a>Voraussetzungen
 
 - Ein Microsoft 365-Geschäfts-, Schul- oder Unikonto, das der **EDM-\_DataUploaders**-Sicherheitsgruppe hinzugefügt wird
 - Einen Computer mit Windows 10 oder Windows Server 2016 mit .NET Version 4.6.2, um den EDM-Upload-Agenten auszuführen
 - Ein Verzeichnis auf dem für das Hochladen verwendeten Computer für den:
-    -  EDM-Upload-Agenten
-    - Ihre Datei für vertrauliche Elemente im .csv- oder TSV-Format **PatientRecords.csv** in unseren Beispielen
-    -  sowie die Output-Hash- und-Saltdateien
-    - Den Namen des Datenspeichers aus der Datei **EDM.xml** (in diesem Beispiel `PatientRecords`)
+  - EDM-Upload-Agenten
+  - Ihre Datei für vertrauliche Elemente im .csv- oder TSV-Format, **PatientRecords.csv** in unseren Beispielen
+  - Die Ausgabehash- und Saltdateien
+  - Den Namen des Datenspeichers aus der Datei **EDM.xml** (in diesem Beispiel `PatientRecords`)
 - Wenn Sie den Assistenten für das [Schema exakter Datenübereinstimmung und den vertraulichen Informationstyp](sit-edm-wizard.md) verwendet haben, ***müssen*** Sie ihn herunterladen.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Einrichten der Sicherheitsgruppe und des Benutzerkontos
 
-1. Als globaler Administrator gehen Sie über den entsprechenden [Link für Ihr Abonnement](#portal-links-for-your-subscription) zum Verwaltungszentrum und [erstellen Sie eine Sicherheitsgruppe](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) namens **EDM\_DataUploaders**.
+1. Als globaler Administrator gehen Sie über den entsprechenden [Link für Ihr Abonnement](#portal-links-for-your-subscription) zum Verwaltungszentrum und [erstellen Sie eine Sicherheitsgruppe](/office365/admin/email/create-edit-or-delete-a-security-group) namens **EDM\_DataUploaders**.
 
 2. Fügen Sie einen oder mehrere Benutzer zu der **EDM\_DataUploaders**-Sicherheitsgruppe hinzu. (Diese Benutzer verwalten die Datenbank mit vertraulichen Informationen.)
 
@@ -401,18 +401,17 @@ Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möcht
 
 Dieser Computer muss direkten Zugriff auf Ihren Microsoft 365-Mandanten haben.
 
->[!NOTE]
+> [!NOTE]
+>
 > Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass Sie Mitglied der **EDM\_DataUploaders**-Sicherheitsgruppe sind.
-
-> [!TIP]
+>
 > Optional können Sie eine Überprüfung für Ihre .csv- oder TSV-Datei vor dem Hochladen ausführen, indem Sie Folgendes ausführen:
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->Weitere Informationen zu allen von EdmUploadAgent.exe >unterstützten Parametern erhalten Sie
+> Weitere Informationen zu allen von EdmUploadAgent.exe >unterstützten Parametern erhalten Sie
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Links zum EDM-Upload-Agenten nach Abonnementtyp
 

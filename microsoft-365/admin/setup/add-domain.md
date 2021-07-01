@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Verwenden Sie den Setup-Assistenten, um Ihre Domäne Microsoft 365 im Microsoft 365 Admin Center hinzuzufügen, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen.
-ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Verwenden Sie den Setup-Assistenten, um Ihre Domäne Microsoft 365 im Microsoft 365 Admin Center hinzuzufügen, indem Sie ihrem DNS-Host einen DNS-Eintrag hinzufügen.
+ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635678"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227835"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 
@@ -80,8 +80,6 @@ Führen Sie die folgenden Schritte aus, um eine Domäne hinzuzufügen, einzurich
 7. Wenn Sie ausgewählt haben, dass Sie *DNS-Einträge selbst hinzufügen* möchten, klicken Sie auf **Weiter**. Anschließend wird eine Seite mit allen Einträgen angezeigt, die Sie zur Website Ihrer Registrierungsstelle hinzufügen müssen, um Ihre Domäne einzurichten. 
 
     Wenn das Portal Ihre Registrierungsstelle nicht erkennt, können Sie [diesen allgemeinen Anleitungen folgen](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
-    
-    Suchen Sie in der Liste der [hostspezifischen Anweisungen](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) Ihren Host, und führen Sie die Schritte zum Hinzufügen aller benötigten Datensätze aus. 
     
     Wenn Sie den DNS-Hostinganbieter oder die Domänenregistrierungsstelle für Ihre Domäne nicht kennen, lesen Sie [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -136,7 +134,6 @@ Wenn Sie über eine Website verfügen, die Sie für Ihr Unternehmen verwenden, f
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Häufig gestellte Fragen](domains-faq.yml) zu Domänen (Artikel)\
+[Häufig gestellte Fragen zu Domänen](domains-faq.yml) (Artikel)\
 [Was ist eine Domäne?](../get-help-with-domains/what-is-a-domain.md) (Artikel)\
-[Kaufen eines Domänennamens in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)\
-[Einrichten Ihrer Domäne](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (Artikel)
+[Erwerben eines Domänennamens in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)\

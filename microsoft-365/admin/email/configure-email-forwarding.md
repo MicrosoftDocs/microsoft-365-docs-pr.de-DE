@@ -22,26 +22,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: Mit der E-Mail-Weiterleitung können Sie E-Mail-Nachrichten, die an ein Microsoft 365-Benutzerpostfach gesendet werden, an ein anderes Postfach innerhalb oder außerhalb Ihrer Organisation weiterleiten.
-ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+description: Mit der E-Mail-Weiterleitung können Sie E-Mail-Nachrichten, die an ein Microsoft 365 Benutzerpostfach gesendet wurden, an ein anderes Postfach innerhalb oder außerhalb Ihrer Organisation weiterleiten.
+ms.openlocfilehash: e0043fe75eefe224c63fd23f352d4bd3ddf2c326
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730138"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228051"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurieren der E-Mail-Weiterleitung in Microsoft 365
 
 Als Administrator einer Organisation haben Sie möglicherweise Unternehmensanforderungen, was die Einrichtung der E-Mail-Weiterleitung für das Postfach eines Benutzers betrifft. Mit einer E-Mail-Weiterleitung können Sie E-Mails, die an das Postfach eines Benutzers gesendet wurden, an das Postfach eines anderen Benutzers innerhalb oder außerhalb Ihrer Organisation weiterleiten.
 
 > [!IMPORTANT]
-> Sie können ausgehende Spamfilter-Richtlinien verwenden, um die automatische Weiterleitung an externe Empfänger zu steuern. Weitere Informationen finden Sie unter [Steuerung der automatischen externen E-Mail-Weiterleitung in Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> Sie können ausgehende Spamfilter-Richtlinien verwenden, um die automatische Weiterleitung an externe Empfänger zu steuern. Weitere Informationen finden Sie unter [Steuerung der automatischen externen E-Mail-Weiterleitung in Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 ## <a name="configure-email-forwarding"></a>Konfigurieren der E-Mail-Weiterleitung
 
 Bedenken Sie vor dem Einrichten der E-Mail-Weiterleitung Folgendes:
 
-- Zulassen, dass automatisch weitergeleitete Nachrichten an Personen in der Remotedomäne gesendet werden. Weitere [Informationen finden Sie unter Verwalten](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) von Remotedomänen.
+- Zulassen, dass automatisch weitergeleitete Nachrichten an Personen in der Remotedomäne gesendet werden. Weitere Informationen finden Sie unter [Verwalten von Remotedomänen.](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
 
 - Nach dem Einrichten der E-Mail-Weiterleitung werden nur **neue** E-Mails weitergeleitet, die an das *„Von“*-Postfach gesendet wurden.
 
@@ -51,7 +51,7 @@ Um dies durchzuführen, müssen Sie ein Exchange-Administrator oder ein globaler
 
 1. Wechseln Sie im Admin Center zur Seite **Benutzer** \> **[Aktive Benutzer](https://go.microsoft.com/fwlink/p/?linkid=834822)**.
 
-2. Wählen Sie den Namen des Benutzers aus, dessen E-Mails Sie weiterleiten möchten, und öffnen Sie dann die Eigenschaftenseite.
+2. Wählen Sie den Namen des Benutzers aus, dessen E-Mail Sie weiterleiten möchten, und öffnen Sie dann die Eigenschaftenseite.
 
 3. Wählen Sie auf der Registerkarte **E-Mail** die Option **E-Mail-Weiterleitung verwalten** aus.
 
@@ -59,13 +59,13 @@ Um dies durchzuführen, müssen Sie ein Exchange-Administrator oder ein globaler
 
     **Um an mehrere E-Mail-Adressen weiterzuleiten**, können Sie den Benutzer bitten, eine Outlook-Regel zum Weiterleiten an diese Adressen einzurichten. 
     
-    1.  Öffnen **von outlook**  >  **Home**  >   **Rules** > Select Manage Rules & **Alerts**
-    1. Wählen **Sie Neue Regel** Wählen Sie Regel anwenden für Nachricht  >  **aus, die ich** am ende der Liste erhalte, und klicken Sie dann auf **Weiter**.
-    1. Klicken **Sie auf Ja,** wenn Sie gefragt werden Diese Regel wird auf jede empfangene Nachricht angewendet. 
-    1. Wählen Sie in der nächsten Liste die Aktionen aus, um sie an Personen oder öffentliche Gruppen **weiterzuleiten,** und **beenden Sie die Verarbeitung von weiteren Regeln.**
-    1. Klicken Sie im **unteren** Teil des Fensters auf den unterstrichenen Ausdruck Personen oder öffentliche Gruppe.
-    1. Geben Sie die **E-Mail-Adresse ein,** an die E-Mails weitergeleitet werden, in das Feld An, und klicken Sie dann auf **OK**.
-    1. Wählen Sie **Fertig stellen aus**
+    1.  Öffnen von  >  **Outlook-Startregeln**  >    > Auswählen **von Verwaltungsregeln & Warnungen**
+    1. Wählen Sie **"Neue Regel**  >  **auswählen Regel anwenden" für die Nachricht** aus, die sich am unteren Rand der Liste befindet, und klicken Sie dann auf **"Weiter".**
+    1. Klicken Sie auf **"Ja",** wenn Sie gefragt werden, dass diese Regel auf jede empfangene Nachricht angewendet wird. 
+    1. Wählen Sie in der nächsten Liste die Aktionen aus, um **sie an Personen oder öffentliche Gruppen umzuleiten,** und beenden Sie die Verarbeitung weiterer **Regeln.**
+    1. Klicken Sie im unteren Teil des Fensters auf den unterstrichenen Ausdruck **"Personen" oder** auf die öffentliche Gruppe.
+    1. Geben Sie die **E-Mail-Adresse,** an die E-Mails weitergeleitet werden sollen, in das Feld "An" ein, und klicken Sie dann auf **"OK".**
+    1. Wählen Sie **"Fertig stellen" aus.**
     
 
      Alternativ können Sie im Admin Center [eine Verteilergruppe erstellen](../setup/create-distribution-lists.md), [die Adressen hinzufügen](add-user-or-contact-to-distribution-list.md), und dann die Weiterleitung an die Verteilergruppe einrichten, wie in diesem Artikel beschrieben.

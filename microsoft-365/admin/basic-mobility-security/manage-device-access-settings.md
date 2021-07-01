@@ -17,33 +17,33 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Grundlegende Mobilität und Sicherheit können Ihnen dabei helfen, mobile Geräte zu sichern und zu verwalten.
-ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Grundlegende Mobilität und Sicherheit können Ihnen helfen, mobile Geräte zu sichern und zu verwalten.
+ms.openlocfilehash: 24eeb1dfccef3d30e577b15ecb9d2fda4d902cdc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876948"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228159"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Verwalten von Gerätezugriffseinstellungen in Basic Mobility and Security
 
-Wenn Sie Basic Mobility and Security verwenden, gibt es möglicherweise Geräte, die Sie mit Basic Mobility and Security nicht verwalten können. Wenn ja, sollten Sie den Zugriff Exchange ActiveSync App auf Microsoft 365 für mobile Geräte blockieren, die von Basic Mobility and Security nicht unterstützt werden. Dies trägt dazu bei, Ihre Unternehmensinformationen auf mehr Geräten zu schützen.
+Wenn Sie Basic Mobility and Security verwenden, gibt es möglicherweise Geräte, die Sie nicht mit Basic Mobility and Security verwalten können. Wenn dies der Fall ist, sollten Sie Exchange ActiveSync App-Zugriff auf Microsoft 365 E-Mails für mobile Geräte blockieren, die von Basic Mobility and Security nicht unterstützt werden. Dies trägt dazu bei, Ihre Unternehmensinformationen auf weiteren Geräten zu sichern.
 
-Verwenden Sie die folgenden Schritte:
+Führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich bei Microsoft 365 mit Ihrem globalen Administratorkonto an.
+1. Melden Sie sich mit Ihrem globalen Administratorkonto bei Microsoft 365 an.
 
-2. Geben Sie in Ihrem Browser ein:  [https://protection.office.com](https://protection.office.com/) .    
+2. Geben Sie in Ihrem Browser Folgendes ein:  [https://protection.office.com](https://protection.office.com/) .
 
-    >[!IMPORTANT]
-    >Wenn Dies das erste Mal ist, dass Sie Basic Mobility and Security für Microsoft 365 Business Standard verwenden, aktivieren Sie es hier: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Nachdem Sie es aktiviert haben, verwalten Sie Ihre Geräte [mit Office 365 Security & Compliance](https://protection.office.com/).
+    > [!IMPORTANT]
+    > Wenn Sie die Grundlegende Mobilität und Sicherheit zum ersten Mal für Microsoft 365 Business Standard verwenden, aktivieren Sie sie hier: [Aktivieren Sie grundlegende Sicherheit und Mobilität.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx) Nachdem Sie es aktiviert haben, verwalten Sie Ihre Geräte mit [Office 365 Security & Compliance.](https://protection.office.com/)
 
-3. Wechseln Sie zu Verhinderung von Datenverlust > **Geräteverwaltung**   >  **Geräterichtlinien,** und wählen Sie **Organisationsweite Gerätezugriffseinstellungen verwalten aus.**
+3. Wechseln Sie zu "Verhinderung  **** von Datenverlust >  >  **Geräteverwaltungsrichtlinien",** und wählen Sie **"Organisationsweite Gerätezugriffseinstellungen verwalten"** aus.
 
-4. Wählen Sie **Blockieren** aus.
+4. Select **Block**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Kontrollkästchen Grundlegendes Kontrollkästchen für den Zugriff auf Mobilität und Sicherheit":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Kontrollkästchen &quot;Grundlegende Mobilität und Sicherheit blockieren&quot;":::
 
-5. Wählen Sie **Speichern aus.**
+5. Wählen Sie **"Speichern" aus.**
 
-Informationen zu den von Basic Mobility and Security unterstützten Geräten finden Sie unter [Capabilities of Basic Mobility and Security](capabilities.md).
+Welche Geräte Basic Mobility and Security unterstützt, erfahren Sie unter ["Funktionen der grundlegenden Mobilität und Sicherheit".](capabilities.md)

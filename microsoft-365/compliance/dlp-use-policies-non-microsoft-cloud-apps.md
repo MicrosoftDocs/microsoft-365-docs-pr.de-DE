@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden.
-ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149154"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226839"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps (Vorschau)
 
@@ -45,7 +45,7 @@ Bevor Sie mit der Verwendung von DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Vorbereiten der Cloud App Security Umgebung
 
-DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden Cloud App Security DLP-Funktionen. Um es zu verwenden, sollten Sie Ihre Cloud App Security Umgebung vorbereiten. Anweisungen finden Sie unter [Festlegen der sofortigen Sichtbarkeit, des Schutzes und der Governanceaktionen für Ihre Apps.](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)
+DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden Cloud App Security DLP-Funktionen. Um sie zu verwenden, sollten Sie Ihre Cloud App Security Umgebung vorbereiten. Anweisungen finden Sie unter [Festlegen der sofortigen Sichtbarkeit, des Schutzes und der Governanceaktionen für Ihre Apps.](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Verbinden einer Nicht-Microsoft-Cloud-App
 
@@ -59,8 +59,8 @@ Damit die DLP-Richtlinie für eine bestimmte Nicht-Microsoft-Cloud-App verwendet
 
 Nachdem Sie Ihre Cloud-Apps mit Cloud App Security verbunden haben, können Sie Microsoft 365 DLP-Richtlinien für sie erstellen.
 
->[!NOTE]
->Es ist auch möglich, Microsoft Cloud App Security zum Erstellen von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden. Es wird jedoch empfohlen, Microsoft 365 zum Erstellen und Verwalten von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden.
+> [!NOTE]
+> Es ist auch möglich, Microsoft Cloud App Security zum Erstellen von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden. Es wird jedoch empfohlen, Microsoft 365 zum Erstellen und Verwalten von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden.
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Erstellen einer DLP-Richtlinie für eine Nicht-Microsoft-Cloud-App
 
@@ -73,7 +73,7 @@ Wenn Sie einen Speicherort für die DLP-Richtlinie auswählen, aktivieren Sie de
 
    ![Box-US und Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
-Sie können für jede unterstützte Nicht-Microsoft-Cloud-App verschiedene Aktionen auswählen. Für jede App gibt es verschiedene mögliche Aktionen (abhängig von der Cloud-App-API).
+Sie können für jede unterstützte Nicht-Microsoft-Cloud-App verschiedene Aktionen auswählen. Für jede App gibt es verschiedene mögliche Aktionen (hängt von der Cloud-App-API ab).
 
 ![Regel erstellen](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
@@ -81,12 +81,12 @@ Wenn Sie eine Regel in der DLP-Richtlinie erstellen, können Sie eine Aktion fü
 
 ![Einschränken von Drittanbieter-Apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
->[HINWEIS] DLP-Richtlinien, die auf Nicht-Microsoft-Apps angewendet werden, verwenden Microsoft Cloud App Security. Wenn die DLP-Richtlinie für eine Nicht-Microsoft-App erstellt wird, wird dieselbe Richtlinie automatisch in Microsoft Cloud App Security erstellt.
+> [HINWEIS] DLP-Richtlinien, die auf Nicht-Microsoft-Apps angewendet werden, verwenden Microsoft Cloud App Security. Wenn die DLP-Richtlinie für eine Nicht-Microsoft-App erstellt wird, wird dieselbe Richtlinie automatisch in Microsoft Cloud App Security erstellt.
 
-Informationen zum Erstellen und Konfigurieren von DLP-Richtlinien finden Sie unter ["Erstellen von Tests und Optimieren einer DLP-Richtlinie".](./create-test-tune-dlp-policy.md?view=o365-worldwide)
+Informationen zum Erstellen und Konfigurieren von DLP-Richtlinien finden Sie unter ["Erstellen von Tests und Optimieren einer DLP-Richtlinie".](./create-test-tune-dlp-policy.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Tests und Optimieren einer DLP-Richtlinie](./create-test-tune-dlp-policy.md?view=o365-worldwide)
-- [Erste Schritte mit der standardmäßigen DLP-Richtlinie](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
-- [Erstellen einer DLP-Richtlinie aus einer Vorlage](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)
+- [Erstellen von Tests und Optimieren einer DLP-Richtlinie](./create-test-tune-dlp-policy.md)
+- [Erste Schritte mit der standardmäßigen DLP-Richtlinie](./get-started-with-the-default-dlp-policy.md)
+- [Erstellen einer DLP-Richtlinie aus einer Vorlage](./create-a-dlp-policy-from-a-template.md)

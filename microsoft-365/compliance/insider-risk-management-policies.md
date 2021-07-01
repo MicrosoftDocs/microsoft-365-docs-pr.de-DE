@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445685"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226431"
 ---
 # <a name="insider-risk-management-policies"></a>Insider-Risikomanagement-Richtlinien
 
@@ -52,8 +52,8 @@ Insider-Risikomanagementvorlagen sind vordefinierte Richtlinienbedingungen, mit 
 
 Wenn Benutzer Ihre Organisation verlassen, gibt es spezifische Risikoindikatoren, die in der Regel mit Datendiebstahl durch ausscheidende Benutzer verbunden sind. Diese Richtlinienvorlage verwendet zur Bewertung des Risikos Exfiltrationsindikatoren und konzentriert sich auf Erkennung und Warnungen in diesem Risikobereich. Datendiebstahl durch ausscheidende Benutzer kann das Herunterladen von Dateien von SharePoint Online, das Drucken von Dateien sowie das Kopieren von Daten in persönliche Cloud-Messaging- und -Speicherdienste in zeitlicher Nähe zu den Daten der Kündigung und des Ausscheidens umfassen. Durch die Verwendung des Microsoft 365 HR-Connectors oder mithilfe der Option zum automatischen Überwachen auf das Löschen von Benutzerkonten in Azure Active Directory für Ihre Organisation beginnt diese Vorlage mit der Bewertung von Risikoindikatoren im Zusammenhang mit diesen Aktivitäten und ihrer Korrelation mit dem Benutzeranstellungsstatus.
 
->[!IMPORTANT]
->Wenn Sie diese Vorlage verwenden, können Sie einen Microsoft 365 HR-Connector so konfigurieren, dass er regelmäßig Informationen zu Ausscheide-und Kündigungsdaten von Benutzern Ihrer Organisation importiert. Eine schrittweise Anleitung zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation finden Sie in dem Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md). Wenn Sie sich dafür entscheiden, den HR-Connector nicht zu verwenden, müssen Sie beim Konfigurieren von Triggerereignissen im Richtlinien-Assistenten die Option „Aus Azure AD gelöschtes Benutzerkonto“ auswählen.
+> [!IMPORTANT]
+> Wenn Sie diese Vorlage verwenden, können Sie einen Microsoft 365 HR-Connector so konfigurieren, dass er regelmäßig Informationen zu Ausscheide-und Kündigungsdaten von Benutzern Ihrer Organisation importiert. Eine schrittweise Anleitung zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation finden Sie in dem Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md). Wenn Sie sich dafür entscheiden, den HR-Connector nicht zu verwenden, müssen Sie beim Konfigurieren von Triggerereignissen im Richtlinien-Assistenten die Option „Aus Azure AD gelöschtes Benutzerkonto“ auswählen.
 
 ### <a name="general-data-leaks"></a>Allgemeine Datenlecks
 
@@ -74,8 +74,8 @@ Berücksichtigen Sie beim Erstellen oder Ändern von DLP-Richtlinien für die Ve
 
     ![Einstellungen für DLP-Richtlinienwarnungen](../media/insider-risk-DLP-policy-high-severity.png)
 
-     >[!NOTE]
-     >Wenn Sie eine neue DLP-Richtlinie mithilfe der integrierten Vorlagen erstellen, müssen Sie die Option **Erweiterte DLP-Regeln erstellen oder anpassen** auswählen, um die Einstellung für **Vorfallsberichte** auf den Schweregrad *Hoch* zu konfigurieren.
+     > [!NOTE]
+     > Wenn Sie eine neue DLP-Richtlinie mithilfe der integrierten Vorlagen erstellen, müssen Sie die Option **Erweiterte DLP-Regeln erstellen oder anpassen** auswählen, um die Einstellung für **Vorfallsberichte** auf den Schweregrad *Hoch* zu konfigurieren.
 
 Jeder Insider-Risikomanagement-Richtlinie, die aus der Vorlage **Datenlecks** erstellt wurde, kann nur eine DLP-Richtlinie zugewiesen werden. Erwägen Sie, eine dedizierte DLP-Richtlinie zu erstellen, die die verschiedenen Aktivitäten kombiniert, die Sie erkennen möchten und die als auslösende Ereignisse für Insider-Risikorichtlinien fungieren sollen, die die Vorlage **Datenlecks** verwenden.
 
@@ -164,8 +164,8 @@ Diese Insider-Risikomanagement-Richtlinien können bestimmte Indikatoren und die
 - **Verschleierung**: Diese Kategorie signalisiert den Fokus auf der Maskierung riskanter Aktivitäten durch im Umfang einer Richtlinie enthaltene Benutzer. Eine Beispielaktivität in dieser Kategorie wäre das Umbenennen von Dateien auf einem Gerät.
 - **Bereinigung**: Diese Kategorie signalisiert den Fokus auf Löschaktivitäten durch im Umfang einer Richtlinie enthaltene Benutzer. Eine Beispielaktivität in dieser Kategorie wäre das Löschen von Dateien auf einem Gerät.
 
->[!NOTE]
->Die Sequenzerkennung verwendet Indikatoren, die in den globalen Einstellungen für das Insider-Risikomanagement aktiviert sind, sowie Indikatoren, die in einer Richtlinie ausgewählt sind. Wenn keine geeigneten Indikatoren ausgewählt sind, funktioniert die Sequenzerkennung nicht.
+> [!NOTE]
+> Die Sequenzerkennung verwendet Indikatoren, die in den globalen Einstellungen für das Insider-Risikomanagement aktiviert sind, sowie Indikatoren, die in einer Richtlinie ausgewählt sind. Wenn keine geeigneten Indikatoren ausgewählt sind, funktioniert die Sequenzerkennung nicht.
 
 Sie können einzelne Schwellenwerteinstellungen für jeden Sequenzerkennungstyp anpassen, wenn dieser in der Richtlinie konfiguriert ist. Mit diesen Schwellenwerteinstellungen werden Warnungen auf Grundlage der Menge der Dateien angepasst, die der Sequenz zugeordnet sind.
 
@@ -182,8 +182,8 @@ Die Erkennung kumulierter Exfiltration ist standardmäßig aktiviert, wenn die f
 - Datenlecks durch prioritäre Benutzer
 - Datenlecks durch verärgerte Benutzer
 
->[!NOTE]
->Die Erkennung kumulativer Exfiltration verwendet Exfiltrationsindikatoren, die in den globalen Einstellungen für das Insider-Risikomanagement aktiviert sind, sowie Exfiltrationsindikatoren, die in einer Richtlinie ausgewählt sind. Als solches wird die Erkennung kumulativer Exfiltration nur für die erforderlichen, ausgewählten Exfiltrationsindikatoren ausgewertet.
+> [!NOTE]
+> Die Erkennung kumulativer Exfiltration verwendet Exfiltrationsindikatoren, die in den globalen Einstellungen für das Insider-Risikomanagement aktiviert sind, sowie Exfiltrationsindikatoren, die in einer Richtlinie ausgewählt sind. Als solches wird die Erkennung kumulativer Exfiltration nur für die erforderlichen, ausgewählten Exfiltrationsindikatoren ausgewertet.
 
 Wenn die Erkennung kumulativer Exfiltration für Datendiebstahl- oder Datenleckrichtlinien aktiviert ist, werden Erkenntnisse aus kumulativen Exfiltrationsaktivitäten auf der Registerkarte **Benutzeraktivität** in einem Insider-Risikomanagementfall angezeigt.
 
@@ -260,8 +260,8 @@ Führen Sie die folgenden Schritte aus, um eine neue Richtlinie zu erstellen:
 2. Wählen Sie **Richtlinie erstellen** aus, um den Richtlinien-Assistenten zu öffnen.
 3. Wählen Sie auf der Seite **Richtlinienvorlage** eine Richtlinienkategorie aus, und wählen Sie dann die Vorlage für die neue Richtlinie aus. Diese Vorlagen bestehen aus Bedingungen und Indikatoren, die die zu erkennenden und zu untersuchenden Risikoaktivitäten definieren. Überprüfen Sie die Vorlagenvoraussetzungen, die auslösenden Ereignisse und die erkannten Aktivitäten, um zu bestätigen, dass diese Richtlinienvorlage Ihren Anforderungen entspricht.
 
-    >[!IMPORTANT]
-    >Für einige Richtlinienvorlagen gibt es Voraussetzungen, die für die Richtlinie konfiguriert werden müssen, damit sie relevante Warnungen generiert. Wenn Sie die anwendbaren Richtlinienvoraussetzungen nicht konfiguriert haben, sehen Sie weiter oben unter **Schritt 4** nach.
+    > [!IMPORTANT]
+    > Für einige Richtlinienvorlagen gibt es Voraussetzungen, die für die Richtlinie konfiguriert werden müssen, damit sie relevante Warnungen generiert. Wenn Sie die anwendbaren Richtlinienvoraussetzungen nicht konfiguriert haben, sehen Sie weiter oben unter **Schritt 4** nach.
 
 4. Wählen Sie **Weiter** aus, um fortzufahren.
 5. Füllen Sie auf der Seite **Name und Beschreibung** die folgenden Felder aus:
@@ -287,8 +287,8 @@ Führen Sie die folgenden Schritte aus, um eine neue Richtlinie zu erstellen:
 12. Wählen Sie **Weiter** aus, um fortzufahren.
 13. Auf der Seite **Indikatoren und auslösende Ereignisse** werden die [Indikatoren](insider-risk-management-settings.md#indicators) angezeigt, die Sie auf der Seite **Insider-Risikoeinstellungen** > **Indikatoren** als verfügbar definiert haben. Wenn Sie am Anfang des Assistenten eine *Datenleck* vorlage ausgewählt haben, müssen Sie aus der Dropdownliste **DLP-Richtlinie** eine DLP-Richtlinie auswählen, um das Auslösen von Indikatoren für die Richtlinie zu aktivieren, oder das integrierte auslösende Ereignis auswählen.
 
-    >[!IMPORTANT]
-    >Wenn Indikatoren auf dieser Seite nicht ausgewählt werden können, müssen Sie die Indikatoren auswählen, die Sie für alle Richtlinien aktivieren möchten. Sie können die Schaltfläche **Indikatoren aktivieren** im Assistenten verwenden oder Indikatoren auf der Seite **Insider-Risikomanagement** > **Einstellungen** > **Richtlinienindikatoren** auswählen.
+    > [!IMPORTANT]
+    > Wenn Indikatoren auf dieser Seite nicht ausgewählt werden können, müssen Sie die Indikatoren auswählen, die Sie für alle Richtlinien aktivieren möchten. Sie können die Schaltfläche **Indikatoren aktivieren** im Assistenten verwenden oder Indikatoren auf der Seite **Insider-Risikomanagement** > **Einstellungen** > **Richtlinienindikatoren** auswählen.
 
     Wählen Sie die Indikatoren aus, die Sie auf die Richtlinie anwenden möchten. Wenn Sie für diese Indikatoren lieber nicht die Standardeinstellungen für Richtlinienschwellenwerte verwenden möchten, deaktivieren Sie **Von Microsoft empfohlene Standardschwellenwerte verwenden**, und geben Sie die Schwellenwerte für jeden ausgewählten Indikator ein.
 
@@ -332,8 +332,8 @@ Führen Sie die folgenden Schritte aus, um eine vorhandene Richtlinie zu verwalt
 12. Wählen Sie **Weiter** aus, um fortzufahren.
 13. Auf der Seite **Indikatoren und auslösende Ereignisse** werden die [Indikatoren](insider-risk-management-settings.md#indicators) angezeigt, die Sie auf der Seite **Insider-Risikoeinstellungen** > **Indikatoren** als verfügbar definiert haben. Wenn Sie am Anfang des Assistenten eine *Datenleck* vorlage ausgewählt haben, müssen Sie aus der Dropdownliste **DLP-Richtlinie** eine DLP-Richtlinie auswählen, um das Auslösen von Indikatoren für die Richtlinie zu aktivieren, oder das integrierte auslösende Ereignis auswählen.
 
-    >[!IMPORTANT]
-    >Wenn Indikatoren auf dieser Seite nicht ausgewählt werden können, müssen Sie die Indikatoren auswählen, die Sie für alle Richtlinien aktivieren möchten. Sie können die Schaltfläche **Indikatoren aktivieren** im Assistenten verwenden oder Indikatoren auf der Seite **Insider-Risikomanagement** > **Einstellungen** > **Richtlinienindikatoren** auswählen.
+    > [!IMPORTANT]
+    > Wenn Indikatoren auf dieser Seite nicht ausgewählt werden können, müssen Sie die Indikatoren auswählen, die Sie für alle Richtlinien aktivieren möchten. Sie können die Schaltfläche **Indikatoren aktivieren** im Assistenten verwenden oder Indikatoren auf der Seite **Insider-Risikomanagement** > **Einstellungen** > **Richtlinienindikatoren** auswählen.
 
     Wählen Sie die Indikatoren aus, die Sie auf die Richtlinie anwenden möchten. Wenn Sie für diese Indikatoren lieber nicht die Standardeinstellungen für Richtlinienschwellenwerte verwenden möchten, deaktivieren Sie **Von Microsoft empfohlene Standardschwellenwerte verwenden**, und geben Sie die Schwellenwerte für jeden ausgewählten Indikator ein.
 
@@ -366,8 +366,8 @@ Einige Szenarien, bei denen Sie eventuell sofort mit der Bewertung von Benutzera
 - Wenn es einen Vorfall gibt, der es erforderlich macht, dass Sie sofort mit dem Zuweisen von Risikobewertungen für die Aktivität der betroffenen Benutzer für eine oder mehrere Ihrer Richtlinien beginnen.
 - Wenn Sie Ihren HR-Connector noch nicht konfiguriert haben, aber damit beginnen möchten, Benutzeraktivitäten Risikobewertungen für HR-Ereignisse zuzuweisen, indem Sie eine CSV-Datei für die Benutzer hochladen.
 
->[!NOTE]
->Es kann mehrere Stunden dauern, bis neue, manuell hinzugefügte Benutzer im **Benutzer**-Dashboard angezeigt werden. Die Anzeige von Aktivitäten für die vorherigen 90 Tage für diese Benutzer kann bis zu 24 Stunden dauern. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, navigieren Sie zur Registerkarte **Benutzer**, wählen Sie den Benutzer im **Benutzer**-Dashboard aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
+> [!NOTE]
+> Es kann mehrere Stunden dauern, bis neue, manuell hinzugefügte Benutzer im **Benutzer**-Dashboard angezeigt werden. Die Anzeige von Aktivitäten für die vorherigen 90 Tage für diese Benutzer kann bis zu 24 Stunden dauern. Um Aktivitäten für manuell hinzugefügte Benutzer anzuzeigen, navigieren Sie zur Registerkarte **Benutzer**, wählen Sie den Benutzer im **Benutzer**-Dashboard aus, und öffnen Sie die Registerkarte **Benutzeraktivität** im Detailbereich.
 
 Um die Bewertung von Aktivitäten für Benutzer in einer oder mehreren Insider-Risikomanagement-Richtlinien manuell zu starten, führen Sie die folgenden Schritte aus:
 
@@ -393,8 +393,8 @@ Informationen zum Beenden der Bewertung von Benutzern in einer Richtlinie finden
 
 ## <a name="delete-a-policy"></a>Löschen einer Richtlinie
 
->[!NOTE]
->Beim Löschen einer Richtlinie werden keine aktiven oder archivierten Warnungen gelöscht, die von der Richtlinie generiert wurden.
+> [!NOTE]
+> Beim Löschen einer Richtlinie werden keine aktiven oder archivierten Warnungen gelöscht, die von der Richtlinie generiert wurden.
 
 Um eine vorhandene Insider-Risikomanagement-Richtlinie zu löschen, führen Sie die folgenden Schritte aus:
 

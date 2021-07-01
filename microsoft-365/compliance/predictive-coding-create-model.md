@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Erfahren Sie, wie Sie in Advanced eDiscovery ein Vorhersagecodierungsmodell erstellen. Dies ist der erste Schritt bei der Verwendung der Machine Learning-Funktionen in Advanced eDiscovery, mit denen Sie relevante und nicht relevante Inhalte in einem Prüfdateisatz identifizieren können.
-ms.openlocfilehash: 7724062848d8d757fbfd3a7870853d6f2c409d84
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822572"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226227"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Erstellen eines vorhersagebasierten Codierungsmodells (Vorschau)
 
 Der erste Schritt bei der Verwendung der Machine Learning-Funktionen der Vorhersagecodierung in Advanced eDiscovery besteht darin, ein Modell für die Vorhersagecodierung zu erstellen. Nachdem Sie ein Modell erstellt haben, können Sie es trainieren, um die relevanten und nicht relevanten Inhalte in einem Prüfdateisatz zu identifizieren.
 
-Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden Sie unter ["Informationen zur vorhersagebasierten Codierung in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden Sie unter ["Informationen zur Vorhersage von Codierung in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-create-a-model"></a>Vor dem Erstellen eines Modells
 
@@ -47,7 +47,7 @@ Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden
 
 4. Geben Sie auf der Flyoutseite einen Namen für das Modell und eine optionale Beschreibung ein.
 
-5. Optional können Sie erweiterte Einstellungen konfigurieren (indem Sie auf der Flyoutseite auf **"Erweiterte Optionen"** klicken), die sich auf die Konfidenzstufe und den Fehlerrand beziehen. Diese Einstellungen wirken sich auf die Anzahl der in der Steuerelementgruppe enthaltenen Elemente aus. Der *Steuerelementsatz* wird während des Schulungsprozesses verwendet, um die Vorhersageergebnisse auszuwerten, die das Modell Elementen mit der Bezeichnung zuweist, die Sie während der Schulungsrunden ausführen. Wenn Ihre Organisation Richtlinien für das Konfidenzniveau und den Fehlerrand für die Dokumentüberprüfung hat, geben Sie diese in den entsprechenden Feldern an. Verwenden Sie andernfalls die Standardeinstellungen.
+5. Optional können Sie erweiterte Einstellungen konfigurieren (indem Sie auf der Flyoutseite auf **"Erweiterte Optionen"** klicken), die sich auf die Konfidenzstufe und den Fehlerrand beziehen. Diese Einstellungen wirken sich auf die Anzahl der in der Steuerelementgruppe enthaltenen Elemente aus. Der *Steuerelementsatz* wird während des Schulungsprozesses verwendet, um die Vorhersageergebnisse zu bewerten, die das Modell Elementen mit der Bezeichnung zuweist, die Sie während der Schulungsrunden ausführen. Wenn Ihre Organisation Richtlinien für das Konfidenzniveau und den Fehlerrand für die Dokumentüberprüfung hat, geben Sie diese in den entsprechenden Feldern an. Verwenden Sie andernfalls die Standardeinstellungen.
 
 6. Klicken Sie auf **"Speichern",** um das Modell zu erstellen.
 

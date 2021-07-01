@@ -20,28 +20,28 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Erfahren Sie, wie Sie Datenverkehr an eine vorhandene öffentliche Website, die außerhalb von Microsoft gehostet wird, weiterrouten, wenn Sie Microsoft zum Verwalten von DNS-Einträgen für Ihre benutzerdefinierte Domäne festgelegt haben.
-ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Erfahren Sie, wie Sie Datenverkehr an eine vorhandene öffentliche Website weiterleiten, die außerhalb von Microsoft gehostet wird, wenn Sie Microsoft so konfiguriert haben, dass DNS-Einträge für Ihre benutzerdefinierte Domäne verwaltet werden.
+ms.openlocfilehash: d54aa4583862ce19907a3b8494a333bbb925e436
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572141"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228123"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Aktualisieren von DNS-Einträgen, um die Website beim aktuellen Hostinganbieter zu belassen
 
- **Wenn Sie die Microsoft-Einträge** Ihrer Domäne bei Ihrem DNS-Hostinganbieter verwalten, müssen Sie sich keine Gedanken über die Schritte in diesem Thema machen. Ihre Website bleibt, wo sie ist, und Benutzer können die Site weiterhin aufrufen. 
+ **Wenn Sie die Microsoft-Einträge Ihrer Domäne bei Ihrem DNS-Hostinganbieter verwalten,** müssen Sie sich keine Gedanken über die Schritte in diesem Thema machen. Ihre Website bleibt, wo sie ist, und Benutzer können die Site weiterhin aufrufen. 
   
- **Wenn Microsoft Ihre DNS-Einträge** verwaltet, um Datenverkehr an eine vorhandene öffentliche Website zu routen, die außerhalb von Microsoft gehostet wird, gehen Sie nach dem Hinzufügen Ihrer Domäne zu Microsoft wie folgt vor: 
+ **Wenn Microsoft Ihre DNS-Einträge verwaltet,** führen Sie die folgenden Schritte aus, um den Datenverkehr an eine vorhandene öffentliche Website weiterzuleiten, die außerhalb von Microsoft gehostet wird, nachdem Sie Ihre Domäne zu Microsoft hinzugefügt haben: 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Aktualisieren von DNS-Einträgen im Microsoft 365 Admin Center
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
 
 1. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **DNS-Einträge** aus.
 
-1. Wählen **Sie + Datensatz hinzufügen aus,** und geben Sie Folgendes ein: 
+1. Wählen Sie **+Datensatz hinzufügen aus,** und geben Sie Folgendes ein: 
     
-   - Für **Typ eingeben:** **A (Adresse)**
+   - Geben Sie **als Typ** ein: **A (Adresse)**
     
    - Geben Sie unter **Hostname oder Alias** Folgendes ein: **@**
     
@@ -53,9 +53,9 @@ ms.locfileid: "52572141"
     
 Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Website besser finden können.
   
-1. Wählen **Sie + Datensatz hinzufügen aus,** und geben Sie Folgendes ein: 
+1. Wählen Sie **+Datensatz hinzufügen aus,** und geben Sie Folgendes ein: 
     
-   - Für **Typ eingeben:** **CNAME (Alias)**
+   - Geben **Sie für typ:** **CNAME (Alias)**
     
    - Geben Sie unter **Hostname oder Alias** Folgendes ein: **www**
     
@@ -65,6 +65,6 @@ Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Web
     
 Führen Sie schließlich die folgenden Schritte aus:
   
-[Aktualisieren Sie die NS-Einträge Ihrer Domäne so, dass](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) sie auf Microsoft verweisen. 
+Aktualisieren Sie die [NS-Einträge Ihrer Domäne](../setup/add-domain.md) so, dass sie auf Microsoft verweisen. 
   
-Wenn die NS-Einträge so aktualisiert wurden, dass sie auf Microsoft verweisen, ist Ihre Domäne alle eingerichtet. E-Mails werden an Microsoft geroutet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin an Ihren aktuellen Websitehost gesendet.
+Wenn die NS-Einträge aktualisiert wurden, um auf Microsoft zu verweisen, ist Ihre Domäne eingerichtet. E-Mails werden an Microsoft weitergeleitet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin zu Ihrem aktuellen Websitehost geleitet.
