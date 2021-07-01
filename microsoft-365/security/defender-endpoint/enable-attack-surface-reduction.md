@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177621"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229143"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
@@ -33,7 +33,7 @@ ms.locfileid: "53177621"
 > [!TIP]
 > Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Attack Surface Reduction-Regeln](attack-surface-reduction.md) (ASR-Regeln) tragen dazu bei, Aktionen zu verhindern, die schadsoftware häufig missbraucht, um Geräte und Netzwerke zu kompromittieren.
+[Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md) (ATTACK Surface Reduction Rules, ASR-Regeln) tragen dazu bei, Aktionen zu verhindern, die schadsoftware häufig missbraucht, um Geräte und Netzwerke zu kompromittieren.
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -49,7 +49,7 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 Um den gesamten Featuresatz von Regeln zur Verringerung der Angriffsfläche zu verwenden, benötigen Sie Folgendes:
 
 - Windows Defender Antivirus als primäre AV(Echtzeitschutz aktiviert)
-- [Cloud-Delivery Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (einige Regeln erfordern dies)
+- [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (einige Regeln erfordern dies)
 - Windows 10 Enterprise E5- oder E3-Lizenz oder Microsoft 365 Business-Lizenz
 
 Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie mit einer Windows E5-Lizenz erweiterte Verwaltungsfunktionen, einschließlich Überwachung, Analyse und Workflows, die in Defender für Endpunkt verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security Center. Diese erweiterten Funktionen sind nicht mit einer E3-Lizenz verfügbar, sie können jedoch weiterhin die Ereignisanzeige verwenden, um Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
@@ -99,7 +99,7 @@ Die folgenden Verfahren zum Aktivieren von ASR-Regeln umfassen Anweisungen zum A
 
 1. Wählen Sie **Gerätekonfigurationsprofile**  >  **aus.** Wählen Sie ein vorhandenes Endpunktschutzprofil aus, oder erstellen Sie ein neues. Um ein neues Profil zu erstellen, wählen Sie **Profil erstellen** aus, und geben Sie Informationen für dieses Profil ein. Wählen Sie für **Profiltyp** **Endpunktschutz** aus. Wenn Sie ein vorhandenes Profil ausgewählt haben, wählen Sie **Eigenschaften** und dann **Einstellungen** aus.
 
-2. Wählen Sie im **Endpunktschutzbereich** **Windows Defender Exploit Guard** aus, und wählen Sie dann Attack Surface **Reduction** aus. Wählen Sie die gewünschte Einstellung für jede ASR-Regel aus.
+2. Wählen Sie im **Endpunktschutzbereich** **Windows Defender Exploit Guard** und dann Attack Surface **Reduction** aus. Wählen Sie die gewünschte Einstellung für jede ASR-Regel aus.
 
 3. Geben Sie unter **Attack Surface Reduction-Ausnahmen** einzelne Dateien und Ordner ein. Sie können auch **"Importieren"** auswählen, um eine CSV-Datei zu importieren, die Dateien und Ordner enthält, die von ASR-Regeln ausgeschlossen werden sollen. Jede Zeile in der CSV-Datei sollte wie folgt formatiert werden:
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 910923e693804c96c109c52606b62d92af51abeb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203292"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228663"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -140,7 +140,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Microsoft 365 Def
 
      In der folgenden Tabelle sind die verfügbaren Aktionen für die Spamfilterbewertungen beschrieben.
 
-     - Ein Häkchen ( ![Häkchen](../../media/checkmark.png)) gibt an, dass die Aktion verfügbar ist (nicht alle Aktionen sind für alle Bewertungen verfügbar).
+     - Ein Häkchen ( ![Häkchen](../../media/checkmark.png) ) gibt an, dass die Aktion verfügbar ist (nicht alle Aktionen sind für alle Bewertungen verfügbar).
      - Ein Sternchen ( <sup>\*</sup> ) nach dem Häkchen kennzeichnet die Standardaktion für die Spamfilterbewertung.
 
      <br>

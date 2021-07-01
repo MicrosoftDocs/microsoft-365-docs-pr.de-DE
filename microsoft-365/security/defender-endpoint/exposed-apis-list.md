@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 3f0f7a2b6a10c3469f0689419934fd8d19070999
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985000"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228627"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Unterstütze Microsoft Defender für Endpoint-APIs
 

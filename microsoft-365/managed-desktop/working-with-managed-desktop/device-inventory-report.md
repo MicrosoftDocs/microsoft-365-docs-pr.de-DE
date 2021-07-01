@@ -9,32 +9,32 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 0137bef845cace589247c35763bbf4253398cbc6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245336"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228999"
 ---
 # <a name="device-inventory-report"></a>Gerätebestandsbericht
 
-In der **Ansicht Geräte** können Sie die Registerkarte **Alle** exportieren auswählen, um eine durch Trennzeichen getrennte Datei einschließlich dieser Informationen herunterzuladen:
+In der Ansicht **"Geräte"** können Sie die Registerkarte **"Alle exportieren"** auswählen, um eine durch Trennzeichen getrennte Datei herunterzuladen, einschließlich der folgenden Informationen:
 
 - Seriennummer
 - Gerätename
-- Device Last check-in
+- Letztes Einchecken des Geräts
 - Verwaltet von
 - Hersteller
 - Modell
-- Betriebssystem
+- Os
 - Betriebssystemlizenz
 - Betriebssystemversion
 - Besitz
 - Registrierungsdatum
 - Ringname
-- Speicher – Kostenlos in GB
-- Speicher – Gesamt in GB
-- Vom Benutzer-UPN registriert
+- Storage – Kostenlos in GB
+- Storage – Gesamtanzahl in GB
+- Registriert durch Benutzer-UPN
 - Zugewiesener Benutzer
 - Status
 - Alter (Monate)
@@ -43,6 +43,6 @@ In der **Ansicht Geräte** können Sie die Registerkarte **Alle** exportieren au
 - TPM-Version
 - Sicherer Start aktiviert
 - Primärer Datenträgertyp
-- Physischer Gesamtspeicher 
+- Gesamter physischer Speicher
 
-![Geräteansicht mit Einer Liste der Geräte und zugehörigen Details. Kontrollkästchen in der Nähe der oberen Auswahlfilter für Aktivität, Registrierungsstatus. Darüber befindet sich ein Suchfeld. Registerkarten oben zum Registrieren neuer Geräte, Aktualisieren der Ansicht, Exportieren von Fehlern und Exportieren der Daten. ](../../media/mmd-devices-view.png)
+![Geräteansicht mit einer Liste von Geräten und zugehörigen Details. Kontrollkästchen in der Nähe der Filter der obersten Auswahl für Aktivität, Registrierungsstatus. Darüber befindet sich ein Suchfeld. Registerkarten oben zum Registrieren neuer Geräte, Aktualisieren der Ansicht, Exportieren von Fehlern und Exportieren der Daten.](../../media/mmd-devices-view.png)

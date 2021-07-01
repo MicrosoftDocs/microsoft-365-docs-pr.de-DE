@@ -1,5 +1,5 @@
 ---
-title: Datenschutzbestimmungen unterliegende Informationen schützen
+title: Schützen von Informationen, die der Datenschutzbestimmungen unterliegen
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,70 +16,69 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Stellen Microsoft 365 und Compliancefeatures zur Verfügung und schützen Sie Ihre persönlichen Informationen.
-ms.openlocfilehash: 659a5295f8b2973c8efef7a7d77f49b2904accf6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Stellen Sie Microsoft 365 Sicherheits- und Compliancefeatures bereit und schützen Sie Ihre persönlichen Informationen.
+ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113438"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229263"
 ---
-# <a name="protect-information-subject-to-data-privacy-regulation"></a>Datenschutzbestimmungen unterliegende Informationen schützen
+# <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen, die der Datenschutzbestimmungen unterliegen
 
-In Ihrem Abonnement können eine Reihe von Informationsschutzsteuerelementen verwendet werden, um die Anforderungen und Vorschriften zur Einhaltung der Datenschutzbestimmungen zu erfüllen. Dazu gehören die Allgemeine Datenschutzverordnung (DSGVO), HIPAA-HITECH (us Health Care Privacy Act), California Consumer Protection Act (CCPA) und das Brazil Data Protection Act (LGPD).
+In Ihrem Abonnement können eine Reihe von Informationsschutz-Steuerelementen eingesetzt werden, um die Anforderungen und Vorschriften zur Einhaltung des Datenschutzes zu erfüllen. Dazu gehören die Datenschutz-Grundverordnung (DSGVO), HIPAA-HITECH (Us Health Care Privacy Act), das California Consumer Protection Act (CCPA) und das Brazil Data Protection Act (LGPD).
 
 Diese Steuerelemente befinden sich in den folgenden Lösungsbereichen:
 
 - Vertraulichkeitsbezeichnungen
 - Verhinderung von Datenverlusten (Data Loss Prevention, DLP)
 - Office-Nachrichtenverschlüsselung (Office Message Encryption, OME)
-- Teams- und Websitezugriffssteuerelemente
+- zugriffssteuerungen für Teams und Websites
 
 ![Wichtige Dienste zum Schutz personenbezogener Informationen, die der Datenschutzbestimmungen unterliegen](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
->[!Note]
->Diese Lösung beschreibt Sicherheits- und Compliancefeatures zum Schutz von Informationen, die den Datenschutzbestimmungen unterliegen. Eine vollständige Liste der Sicherheitsfeatures in Microsoft 365 finden Sie [in Microsoft 365 Sicherheitsdokumentation](../security/index.yml). Eine vollständige Liste der Compliancefeatures in Microsoft 365 finden Sie [in Microsoft 365 Compliancedokumentation](../compliance/index.yml).
->
+> [!NOTE]
+> Diese Lösung beschreibt Sicherheits- und Compliancefeatures zum Schutz von Informationen, die den Datenschutzbestimmungen unterliegen. Eine vollständige Liste der Sicherheitsfeatures in Microsoft 365 finden Sie in [Microsoft 365 Sicherheitsdokumentation.](../security/index.yml) Eine vollständige Liste der Compliancefeatures in Microsoft 365 finden Sie in [Microsoft 365 Compliancedokumentation.](../compliance/index.yml)
 
-## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Datenschutzbestimmungen, die Auswirkungen auf Die Kontrollen zum Schutz von Informationen haben
+## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Datenschutzbestimmungen, die sich auf Steuerelemente zum Informationsschutz auswirken
 
-Im Folgenden finden Sie eine Beispielliste der Datenschutzbestimmungen, die sich auf Steuerelemente zum Schutz von Informationen beziehen können:
+Nachfolgend finden Sie eine Beispielliste der Datenschutzbestimmungen, die sich auf Steuerelemente zum Informationsschutz beziehen können:
 
-- Artikel 5(1)(f)) der DSGVO
-- Artikel zur DSGVO (32)(1)(a)
+- DSGVO Artikel 5 (1) (f))
+- DSGVO-Artikel (32)(1) (a)
 - LGPD Artikel 46
 - HIPAA-HITECH (45 CFR 164.312(e)(1))
 - HIPAA-HITECH (45 C.F.R. 164.312(e)(2)(ii))
 
-Weitere Informationen [zu den](information-protection-deploy-assess.md) oben genannten Themen finden Sie im Artikel zum Bewerten von Datenschutzrisiken und Identifizieren vertraulicher Elemente.
+Weitere Informationen zu den oben genannten Informationen finden Sie im Artikel "Bewerten von [Datenschutzrisiken und Identifizieren vertraulicher Elemente".](information-protection-deploy-assess.md)
 
 Datenschutzbestimmungen für den Informationsschutz empfehlen:
 
 - Schutz vor Verlust oder unbefugtem Zugriff, Nutzung und/oder Übertragung.
 - Risikobasierte Anwendung von Schutzmechanismen.
-- Verwendung der Verschlüsselung, sofern erforderlich.
+- Verwendung der Verschlüsselung, sofern zutreffend.
 
-Ihre Organisation möchte die Inhalte Microsoft 365 anderen Zwecken schützen, z. B. aus anderen Complianceanforderungen oder aus geschäftlichen Gründen. Die Einrichtung Ihres Informationsschutzschemas für den Datenschutz sollte im Rahmen der allgemeinen Planung, Implementierung und Verwaltung des Informationsschutzes durchgeführt werden.
+Ihre Organisation möchte möglicherweise auch Microsoft 365 Inhalte für andere Zwecke, z. B. andere Complianceanforderungen oder aus geschäftlichen Gründen, schützen. Die Einrichtung Ihres Informationsschutzschemas für den Datenschutz sollte im Rahmen der allgemeinen Planung, Implementierung und Verwaltung des Informationsschutzes erfolgen.
 
-Damit Sie mit einem Informationsschutzschema in Microsoft 365 beginnen können, enthält der folgende Abschnitt eine kurze Liste der zugehörigen Funktionen und Verbesserungsmaßnahmen für Microsoft 365. Die Liste enthält Funktionen und Verbesserungsmaßnahmen, die für Datenschutzbestimmungen gelten. Die Liste enthält jedoch keine älteren Technologien, wenn es eine neuere Funktion gibt, die die ältere weitgehend ersetzt. Beispielsweise ist die Verwaltung von Informationsrechten (Information Rights Management, IRM) für SharePoint und OneDrive nicht in der Liste enthalten, aber Vertraulichkeitsbezeichnungen sind enthalten.
+Um Ihnen die ersten Schritte mit einem Informationsschutzschema in Microsoft 365 zu erleichtern, enthält der folgende Abschnitt eine kurze Liste der zugehörigen Funktionen und Verbesserungsmaßnahmen für Microsoft 365. Die Liste enthält Funktionen und Verbesserungsmaßnahmen, die für Datenschutzbestimmungen gelten. Die Liste enthält jedoch keine älteren Technologien, wenn es eine neuere Funktion gibt, die die ältere größtenteils ersetzt. Beispielsweise ist information Rights Management (IRM) für SharePoint und OneDrive nicht in der Liste enthalten, aber Vertraulichkeitsbezeichnungen sind enthalten.
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>Verwalten des Informationsschutzes in Microsoft 365
 
-Microsoft [Information Protection-Lösungen](../compliance/information-protection.md) umfassen eine Reihe von integrierten Funktionen Microsoft 365, Microsoft Azure und Microsoft Windows. Zu Microsoft 365 Informationsschutzlösungen gehören:
+Microsoft [Information Protection-Lösungen](../compliance/information-protection.md) umfassen eine Reihe integrierter Funktionen in Microsoft 365, Microsoft Azure und Microsoft Windows. In Microsoft 365 umfassen Informationsschutzlösungen Folgendes:
 
 - [Dienstverschlüsselung mit Kundenschlüssel](../compliance/customer-key-overview.md)
-- [Typen vertraulicher Informationen](../compliance/sensitive-information-type-entity-definitions.md) (beschrieben im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Elemente")](information-protection-deploy-assess.md)
-- [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md) 
+- [Typen vertraulicher Informationen](../compliance/sensitive-information-type-entity-definitions.md) (im Artikel "Bewerten von [Datenschutzrisiken und Identifizieren vertraulicher Elemente")](information-protection-deploy-assess.md)
+- [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md)
   - Dienst-/Containerebene
   - Clientseitige/Inhaltsebene
-  - Automatisch für ruhende Daten in SharePoint und OneDrive
+  - Automatisiert für Ruhedaten in SharePoint und OneDrive
 - Verhinderung von Datenverlust (Data Loss Prevention, DLP)
-- [Microsoft 365 Verhinderung von Endpunktdatenverlusten](../compliance/endpoint-dlp-learn-about.md)
+- [Microsoft 365 Verhinderung von Datenverlust am Endpunkt](../compliance/endpoint-dlp-learn-about.md)
 - [Office 365-Nachrichtenverschlüsselung neue Funktionen (OME)](../compliance/ome.md) und OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)
 
-Darüber hinaus sind Der Schutz auf Website- und Bibliotheksebene wichtige Mechanismen, die in ein beliebiges Schutzschema mit ein-/ausggg.
+Darüber hinaus sind der Schutz auf Website- und Bibliotheksebene wichtige Mechanismen, die in jedes Schutzschema eingeschlossen werden müssen.
 
-Weitere Informationen zu anderen Informationsschutzfunktionen außerhalb Microsoft 365 finden Sie unter:
+Informationen zu anderen Informationsschutzfunktionen außerhalb von Microsoft 365 finden Sie unter:
 
 - [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
@@ -88,63 +87,63 @@ Weitere Informationen zu anderen Informationsschutzfunktionen außerhalb Microso
 
 ## <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
-Mit Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection-Framework können Sie die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und deren Zusammenarbeit zu beeinträchtigen.
+Mit Vertraulichkeitsbezeichnungen aus dem Microsoft Information Protection Framework können Sie die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und deren Fähigkeit zur Zusammenarbeit zu beeinträchtigen.
 
 > [!div class="mx-imgBorder"]
 > ![Vertraulichkeitsbezeichnungen in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Voraussetzungen für Vertraulichkeitsbezeichnungen
 
-Führen Sie diese Aktivitäten aus, bevor Sie eine der unten hervorgehobenen Funktionen für Vertraulichkeitsbezeichnungen implementieren:
+Führen Sie diese Aktivitäten aus, bevor Sie eine der unten hervorgehobenen auf Vertraulichkeitsbezeichnungen basierenden Funktionen implementieren:
 
 1. Verstehen Sie Folgendes:
-   - **Geschäftsanforderungen.** Legen Sie die geschäftlichen Gründe für die Anwendung von Vertraulichkeitsbezeichnungen in Ihrem Unternehmen fest. Beispielsweise ihre Datenschutzanforderungen für den Informationsschutz.
-   - **Vertraulichkeitsbezeichnungsfunktionen.** Die Vertraulichkeitsbezeichnung kann komplex werden. Lesen Sie daher unbedingt die Dokumentation zu [Vertraulichkeitsbezeichnungen,](../compliance/sensitivity-labels.md) bevor Sie beginnen.
-   - **Wichtige Dinge, die Sie sich merken sollten** Vertraulichkeitsbezeichnungen werden im Microsoft Compliance Admin Center verwaltet, die Ziel- und Anwendungsoptionen variieren jedoch erheblich.
-      - Es gibt Vertraulichkeitsbezeichnungen für Websites, Gruppen und Teams containerebene (die Einstellungen gelten nicht für Inhalte innerhalb des Containers). Diese werden für Benutzer und Gruppen veröffentlicht, die sie anwenden, wenn eine Website, eine Gruppe oder ein Team bereitgestellt wird.
-      - Es gibt Vertraulichkeitsbezeichnungen für aktive Inhalte. Diese werden auch für Benutzer oder Gruppen veröffentlicht, die sie entweder manuell anwenden, oder sie werden automatisch angewendet, wenn:
-        - Die Datei wird geöffnet/bearbeitet/gespeichert, entweder auf dem Desktop des Benutzers oder auf SharePoint Website.
-        - Eine E-Mail wird verfasst und gesendet.
-      - Es gibt Vertraulichkeitsbezeichnungen für die automatische Anwendung auf dateien in SharePoint und OneDrive zusätzlich zu E-Mails, die über die Exchange. Diese gelten entweder für alle Websites oder für bestimmte Websites und gelten automatisch für die dateien, die in diesen Umgebungen im Ruhe sind.
+   - **Geschäftliche Anforderungen.** Ermitteln Sie die geschäftlichen Gründe für die Anwendung von Vertraulichkeitsbezeichnungen in Ihrem Unternehmen. Beispielsweise Ihre Datenschutzanforderungen für den Informationsschutz.
+   - **Vertraulichkeitsbezeichnungsfunktionen.** Vertraulichkeitsbezeichnungen können komplex werden. Lesen Sie daher unbedingt die Dokumentation zu [Vertraulichkeitsbezeichnungen,](../compliance/sensitivity-labels.md) bevor Sie beginnen.
+   - **Wichtige Dinge, die Sie sich merken sollten** Vertraulichkeitsbezeichnungen werden im Microsoft Compliance Admin Center verwaltet, aber die Ziel- und Anwendungsoptionen variieren erheblich.
+      - Es gibt Vertraulichkeitsbezeichnungen für Websites, Gruppen und Teams auf Containerebene (die Einstellungen gelten nicht für Inhalte innerhalb des Containers). Diese werden für Benutzer und Gruppen veröffentlicht, die sie anwenden, wenn eine Website, eine Gruppe oder ein Team bereitgestellt wird.
+      - Es gibt Vertraulichkeitsbezeichnungen für aktive Inhalte. Diese werden auch für Benutzer oder Gruppen veröffentlicht, die sie entweder manuell anwenden oder automatisch angewendet werden, wenn:
+        - Die Datei wird geöffnet/bearbeitet/gespeichert, entweder auf dem Desktop des Benutzers oder auf einer SharePoint Website.
+        - Eine E-Mail ist unerzwendt und wird gesendet.
+      - Es gibt Vertraulichkeitsbezeichnungen für die automatische Anwendung auf ruhenden Dateien in SharePoint und OneDrive zusätzlich zu E-Mails während der Übertragung über Exchange. Diese sind auf alle Websites oder bestimmte Websites ausgerichtet und gelten automatisch für die ruhenden Dateien in diesen Umgebungen.
 
-2. Rationalisieren der aktuellen Vertraulichkeitsbezeichnung mit früheren oder alternativen Methoden
+2. Rationalisieren der aktuellen Vertraulichkeitsbezeichnungen mit früheren oder alternativen Methoden
 
    - Azure Information Protection
 
-      Das aktuelle Vertraulichkeitsbezeichnungsschema muss möglicherweise mit jeder vorhandenen Azure Information Protection-Bezeichnungsimplementierungsimplementierung abgestimmt werden. [](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)
+      Das aktuelle Vertraulichkeitsbezeichnungsschema muss möglicherweise mit jeder vorhandenen [Azure Information Protection-Implementierung](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) für Bezeichnungen abgeglichen werden.
    - OME
 
-      Wenn Sie planen, moderne Vertraulichkeitsbezeichnungen für den E-Mail-Schutz zu verwenden, und vorhandene E-Mail-Verschlüsselungsmethoden wie OME vorhanden sind, können sie koexistent sein, Aber Sie sollten die Szenarien verstehen, in denen beides angewendet werden sollte. Siehe [Office 365-Nachrichtenverschlüsselung neue Funktionen (OME),](#office-365-message-encryption-ome-new-capabilities)die eine Tabelle enthält, in der der moderne Schutz von Vertraulichkeitsbezeichnungen mit OME-basiertem Schutz verglichen wird.
+      Wenn Sie planen, moderne Vertraulichkeitsbezeichnungen für den E-Mail-Schutz zu verwenden, und vorhandene E-Mail-Verschlüsselungsmethoden wie OME vorhanden sind, können sie koexistieren, aber Sie sollten die Szenarien kennen, in denen beide angewendet werden sollten. Weitere Informationen finden Sie [unter Office 365-Nachrichtenverschlüsselung neuen Funktionen (OME),](#office-365-message-encryption-ome-new-capabilities)die eine Tabelle enthält, in der der Schutz moderner Vertraulichkeitsbezeichnungen mit dem OME-basierten Schutz verglichen wird.
 
-3. Planen der Integration in ein umfassenderes Informationsschutzsystem. Neben der Koexistenz mit OME können Vertraulichkeitsbezeichnungen neben funktionen wie Microsoft 365 Verhinderung von Datenverlust (Data Loss Prevention, DLP) und Microsoft Cloud App Security. Weitere [Informationen finden Sie unter Microsoft Information Protection in Microsoft 365,](../compliance/information-protection.md) um Ihre Datenschutzziele zu erreichen.
+3. Planen der Integration in ein umfassenderes Informationsschutzschema. Zusätzlich zur Koexistenz mit OME können Vertraulichkeitsbezeichnungen neben Funktionen wie Microsoft 365 Verhinderung von Datenverlust (Data Loss Prevention, DLP) und Microsoft Cloud App Security verwendet werden. Informationen zum Erreichen ihrer Datenschutzziele finden Sie [in Microsoft Information Protection in Microsoft 365.](../compliance/information-protection.md)
 
-4. Entwickeln sie ein Klassifizierungs- und Steuerungsschema für Vertraulichkeitsbezeichnungen. Weitere [Informationen finden Sie unter Taxonomie von Datenklassifizierung und Vertraulichkeitsbezeichnungen.](https://aka.ms/dataclassificationwhitepaper)
+4. Entwickeln Sie ein Klassifizierungs- und Kontrollschema für Vertraulichkeitsbezeichnungen. Siehe [Datenklassifizierung und Taxonomie von Vertraulichkeitsbezeichnungen.](https://aka.ms/dataclassificationwhitepaper)
 
 ### <a name="general-guidance"></a>Allgemeine Hinweise
 
-1. **Schemadefinition.** Bevor Sie technische Funktionen zum Anwenden von Bezeichnungen und Schutz verwenden, arbeiten Sie in Ihrer Organisation an der Definition eines Klassifizierungsschemas. Möglicherweise verfügen Sie bereits über ein Klassifizierungsschema, das das Hinzufügen personenbezogener Daten erleichtert. 
-2. **Erste Schritte.** Entscheiden Sie zunächst über die Anzahl und namen der zu implementierende Bezeichnungen. Machen Sie diese Aktivität, ohne sich Gedanken darüber zu machen, welche Technologie verwendet werden soll und wie Bezeichnungen angewendet werden. Wenden Sie dieses Schema universell in Ihrer gesamten Organisation an, einschließlich Daten, die sich lokal und in anderen Clouddiensten befinden.
-3. **Zusätzliche Empfehlungen** Berücksichtigen Sie beim Entwerfen und Implementieren von Richtlinien, Bezeichnungen und Bedingungen die folgenden Empfehlungen:
+1. **Schemadefinition.** Bevor Sie technische Funktionen zum Anwenden von Bezeichnungen und Schutz verwenden, arbeiten Sie organisationsweit an der Definition eines Klassifizierungsschemas. Möglicherweise verfügen Sie bereits über ein Klassifizierungsschema, das das Hinzufügen von personenbezogenen Daten erleichtert.
+2. **Erste Schritte.** Entscheiden Sie zunächst über die Anzahl und die Namen von Bezeichnungen, die implementiert werden sollen. Führen Sie diese Aktivität aus, ohne sich Gedanken darüber zu machen, welche Technologie verwendet werden soll und wie Bezeichnungen angewendet werden. Wenden Sie dieses Schema universell in Ihrer gesamten Organisation an, einschließlich Daten, die sich lokal und in anderen Clouddiensten befinden.
+3. **Weitere Empfehlungen** Berücksichtigen Sie beim Entwerfen und Implementieren von Richtlinien, Bezeichnungen und Bedingungen die folgenden Empfehlungen:
 
-   - **Verwenden Sie vorhandenes Klassifikationsschema (sofern vorhanden).** Viele Organisationen verwenden die Datenklassifizierung bereits in einer bestimmten Form. Werten Sie das vorhandene Bezeichnungsschema sorgfältig aus, und verwenden Sie es nach Möglichkeit wie folgt. Die Verwendung vertrauter Bezeichnungen, die für Ihre Endbenutzer erkennbar sind, wird die Akzeptanz an sich nen.
-   - **Starten Sie klein.** Die Anzahl der Bezeichnungen, die Sie erstellen können, ist praktisch nicht begrenzt. Eine große Anzahl von Bezeichnungen und Unterbezeichnungen kann jedoch die Einführung verlangsamen.
-   - **Verwenden Sie Szenarien und Anwendungsfälle.** Identifizieren Sie häufige Anwendungsfälle in Ihrer Organisation, und verwenden Sie Szenarien, die aus den Datenschutzbestimmungen abgeleitet sind, denen Sie unterliegen. Überprüfen Sie, ob die envisionierte Bezeichnungs- und Klassifizierungskonfiguration in der Praxis funktioniert.
-   - **Stellen Sie jede Anforderung für eine neue Bezeichnung in Frage.** Benötigt jedes Szenario oder jeden Fall wirklich eine neue Bezeichnung, oder können Sie die bereits vorhandenen Bezeichnungen verwenden? Die Anzahl der Bezeichnungen auf ein Minimum zu beschränken, verbessert die Akzeptanz.
-   - **Verwenden Sie Unterbezeichnungen für wichtige Abteilungen.** Einige Abteilungen haben spezielle Anforderungen, die bestimmte Bezeichnungen erfordern. Definieren Sie diese Bezeichnungen als Unterbezeichnungen für eine vorhandene Bezeichnung, und erwägen Sie die Verwendung bereichsbenutzerdefinierter Richtlinien, die Benutzergruppen anstelle von global zugewiesen sind.
-   - **Berücksichtigen Sie Bereichsrichtlinien.** Richtlinien, die auf Teilmengen von Benutzern ausgerichtet sind, verhindern eine Bezeichnungsüberladung. Eine bereichsspezifische Richtlinie ermöglicht das Zuweisen von rollen- oder abteilungsspezifischen Bezeichnungen oder Unterbezeichnungen nur mitarbeitern, die für diese bestimmte Abteilung arbeiten. 
-   - **Verwenden Sie aussagekräftige Bezeichnungsnamen.** Versuchen Sie nicht, Jargon, Standards oder Akronyme als Bezeichnungsnamen zu verwenden. Versuchen Sie, Namen zu verwenden, die mit dem Endbenutzer schwingen, um die Akzeptanz zu verbessern. Anstatt Bezeichnungen wie PII, PCI, HIPAA, LBI, MBI und HBI zu verwenden, sollten Sie Namen wie Non-Business, Public, General, Confidential und Highly Confidential berücksichtigen.
+   - **Verwenden Sie vorhandenes Klassifizierungsschema (sofern vorhanden).** Viele Organisationen verwenden die Datenklassifizierung bereits in irgendeiner Form. Bewerten Sie das vorhandene Bezeichnungsschema sorgfältig, und verwenden Sie es nach Möglichkeit wie besehen. Die Verwendung vertrauter Bezeichnungen, die für Ihre Endbenutzer erkennbar sind, wird die Akzeptanz fördern.
+   - **Beginnen Sie klein.** Es gibt praktisch keine Beschränkung für die Anzahl der Bezeichnungen, die Sie erstellen können. Eine große Anzahl von Bezeichnungen und Unterbezeichnungen kann jedoch die Akzeptanz verlangsamen.
+   - **Verwenden Sie Szenarien und Anwendungsfälle.** Identifizieren Sie häufige Anwendungsfälle in Ihrer Organisation und verwenden Sie Szenarien, die von den Datenschutzbestimmungen abgeleitet sind, denen Sie unterliegen. Überprüfen Sie, ob die geplante Bezeichnungs- und Klassifizierungskonfiguration in der Praxis funktioniert.
+   - **Stellen Sie jede Anforderung für eine neue Bezeichnung in Frage.** Benötigt jedes Szenario oder jeder Anwendungsfall wirklich eine neue Bezeichnung oder können Sie das verwenden, was Sie bereits haben? Wenn Sie die Anzahl der Bezeichnungen auf ein Minimum beschränken, wird die Akzeptanz verbessert.
+   - **Verwenden Sie Unterbezeichnungen für wichtige Abteilungen.** Einige Abteilungen haben bestimmte Anforderungen, die bestimmte Bezeichnungen erfordern. Definieren Sie diese Bezeichnungen als Unterbezeichnungen für eine vorhandene Bezeichnung, und erwägen Sie die Verwendung bereichsspezifischer Richtlinien, die Benutzergruppen anstelle von global zugewiesen werden.
+   - **Berücksichtigen Sie bereichsbezogene Richtlinien.** Richtlinien, die auf Untergruppen von Benutzern abzielen, verhindern eine Überladung von Bezeichnungen. Eine bereichsbezogene Richtlinie ermöglicht es, rollen- oder abteilungsspezifische Bezeichnungen oder Unterbezeichnungen nur Mitarbeitern zuzuweisen, die für diese bestimmte Abteilung arbeiten.
+   - **Verwenden Sie aussagekräftige Bezeichnungsnamen.** Versuchen Sie nicht, Jargon, Standards oder Akronyme als Bezeichnungsnamen zu verwenden. Versuchen Sie, Namen zu verwenden, die mit dem Endbenutzer in Verbindung bringen, um die Akzeptanz zu verbessern. Anstatt Bezeichnungen wie PII, PCI, HIPAA, LBI, MBI und HBI zu verwenden, sollten Sie Namen wie "Non-Business", "Public", "General", "Confidential" und "Highly Confidential" in Betracht ziehen.
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Erstellen und Bereitstellen von Vertraulichkeitsbezeichnungen für Websites, Gruppen und Teams
 
-Wenn Sie [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels-teams-groups-sites.md) im Microsoft 365 erstellen, können Sie sie jetzt auf die folgenden Container anwenden:
+Wenn Sie [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels-teams-groups-sites.md) im Microsoft 365 Compliance Center erstellen, können Sie sie jetzt auf diese Container anwenden:
 
 - Microsoft Teams Websites
-- Microsoft 365 (früher Office 365 Gruppen)
+- Microsoft 365-Gruppen (früher Office 365-Gruppen)
 - SharePoint-Websites
 
 Verwenden Sie die folgenden Bezeichnungseinstellungen zum Schutz von Inhalt in diesen Containern:
 
-- Datenschutz (öffentlich oder privat) von Microsoft 365 gruppengebundenen websites Teams
+- Datenschutz (öffentlich oder privat) von Microsoft 365 mit einer Gruppe verbundenen Teams Websites
 - Zugriff externer Benutzer
 - Zugriff von nicht verwalteten Geräten aus
 
@@ -152,26 +151,26 @@ Um die externe Freigabe für Container zu verhindern, die zum Speichern von Inha
 
 ### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Erstellen und Bereitstellen von Vertraulichkeitsbezeichnungen für Inhalte
 
-Mit Vertraulichkeitsbezeichnungen, die auf Dateien angewendet werden, können Sie ihre Inhalte verschlüsseln, den Inhalt mit wasserzeichen versehen und andere Steuerelemente für Office-Anwendungsinhalte definieren, einschließlich Outlook und Office im Web.
+Vertraulichkeitsbezeichnungen, die auf Dateien angewendet werden, ermöglichen es Ihnen, ihre Inhalte zu verschlüsseln, den Inhalt zu kennzeichnen und andere Steuerelemente für Office Anwendungsinhalte zu definieren, einschließlich Outlook und Office im Web.
 
-Wenn Sie mit dem Schutz der Daten Ihrer Organisation mit Vertraulichkeitsbezeichnungen beginnen möchten:
+Wenn Sie bereit sind, die Daten Ihrer Organisation mit Vertraulichkeitsbezeichnungen zu schützen:
 
-1. **Erstellen Sie die Bezeichnungen.** Erstellen und benennen Sie Ihre Vertraulichkeitsbezeichnungen gemäß der Klassifizierungstaxonomie Ihrer Organisation für unterschiedliche Vertraulichkeitsstufen von Inhalten. Weitere Informationen zum Entwickeln einer Klassifikationstaxonomie finden Sie im Whitepaper zur Datenklassifizierung und [Vertraulichkeitsbezeichnungstaxonomie](https://aka.ms/dataclassificationwhitepaper).
-2. **Legen Sie fest, wozu jede einzelne Bezeichnung dient.** Konfigurieren Sie die Schutzeinstellungen, die mit den einzelnen Bezeichnungen verknüpft werden sollen. Beispielsweise möchten Sie, dass inhalte mit niedriger Vertraulichkeit (z. B. eine Bezeichnung "Allgemein") nur eine Kopf- oder Fußzeile angewendet werden, während inhalte mit höherer Vertraulichkeit (z. B. eine Bezeichnung "Vertraulich") ein Wasserzeichen haben und die Verschlüsselung aktiviert sein sollten.
-3. **Veröffentlichen Sie die Bezeichnungen.** Nachdem Sie die Vertraulichkeitsbezeichnungen konfiguriert haben, können Sie sie mithilfe einer Bezeichnungsrichtlinie veröffentlichen. Legen Sie fest, welche Benutzer und Gruppen die Bezeichnungen haben sollen und welche Richtlinieneinstellungen verwendet werden. Eine einzelne Bezeichnung kann wiederverwendbar werden. Sie definieren ihn einmal und können ihn dann in mehrere Bezeichnungsrichtlinien für verschiedene Benutzer einbe fügen.
+1. **Erstellen Sie die Bezeichnungen.** Erstellen und benennen Sie Ihre Vertraulichkeitsbezeichnungen gemäß der Klassifizierungstaxonomie Ihrer Organisation für unterschiedliche Vertraulichkeitsstufen von Inhalten. Weitere Informationen zum Entwickeln einer Klassifizierungstaxonomie finden Sie im [Whitepaper "Datenklassifizierung und Taxonomie von Vertraulichkeitsbezeichnungen".](https://aka.ms/dataclassificationwhitepaper)
+2. **Legen Sie fest, wozu jede einzelne Bezeichnung dient.** Konfigurieren Sie die Schutzeinstellungen, die mit den einzelnen Bezeichnungen verknüpft werden sollen. Beispielsweise möchten Sie möglicherweise, dass für Inhalte mit niedriger Vertraulichkeit (z. B. eine Bezeichnung "Allgemein") nur eine Kopf- oder Fußzeile angewendet wird, während für Inhalte mit höherer Vertraulichkeit (z. B. die Bezeichnung "Vertraulich") ein Wasserzeichen und die Verschlüsselung aktiviert sein sollte.
+3. **Veröffentlichen Sie die Bezeichnungen.** Nachdem Sie die Vertraulichkeitsbezeichnungen konfiguriert haben, können Sie sie mithilfe einer Bezeichnungsrichtlinie veröffentlichen. Legen Sie fest, welche Benutzer und Gruppen die Bezeichnungen haben sollen und welche Richtlinieneinstellungen verwendet werden. Eine einzelne Bezeichnung kann wiederverwendet werden. Sie definieren es einmal und können es dann in mehrere Bezeichnungsrichtlinien einschließen, die verschiedenen Benutzern zugewiesen sind.
 
-Nachdem Sie Vertraulichkeitsbezeichnungen aus dem Microsoft 365 Compliance Center veröffentlicht haben, werden sie in [Office-Apps](../compliance/sensitivity-labels-office-apps.md) angezeigt, damit Benutzer Inhalte beim Erstellen oder Bearbeiten klassifizieren und schützen können.
+Nachdem Sie Vertraulichkeitsbezeichnungen aus dem Microsoft 365 Compliance Center veröffentlicht haben, werden sie in [Office Apps](../compliance/sensitivity-labels-office-apps.md) angezeigt, damit Benutzer Inhalte so klassifizieren und schützen können, wie sie erstellt oder bearbeitet werden.
 
-![Bereitstellungsfluss von Vertraulichkeitsbezeichnungen in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![Bereitstellungsfluss für Vertraulichkeitsbezeichnungen in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
-Für den Datenschutz wenden Sie manuell eine Vertraulichkeitsbezeichnung mit Verschlüsselung und anderen Regeln auf E-Mails oder Inhalte an, die vertrauliche persönliche Informationen enthalten.
+Für den Datenschutz wenden Sie manuell eine Vertraulichkeitsbezeichnung mit Verschlüsselung und anderen Regeln auf E-Mails oder Inhalte mit vertraulichen persönlichen Informationen an.
 
->[!Note]
->Vertraulichkeitsbezeichnungen mit aktivierter Verschlüsselung, die auf E-Mails angewendet werden, haben überlappende Funktionen mit OME. Weitere [Informationen finden Sie unter Vergleich sicherer E-Mail-Szenarien mit OME und Vertraulichkeitsbezeichnungen.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
+> [!NOTE]
+> Vertraulichkeitsbezeichnungen mit aktivierter Verschlüsselung, die auf E-Mails angewendet werden, weisen einige überlappende Funktionen mit OME auf. Siehe ["Sichere E-Mail-Szenarien" im Vergleich mit OME und Vertraulichkeitsbezeichnungen.](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)
 
 ### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>Clientseitige automatische Bezeichnung, wenn Benutzer Dokumente bearbeiten oder E-Mails verfassen
 
-Wenn Sie eine Vertraulichkeitsbezeichnung [](../compliance/apply-sensitivity-label-automatically.md) erstellen, können Sie diese Bezeichnung automatisch Inhalten einschließlich E-Mails zuweisen, wenn sie den von Ihnen angegebenen Bedingungen entspricht.
+Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie diese Bezeichnung automatisch Inhalten einschließlich E-Mails [zuweisen,](../compliance/apply-sensitivity-label-automatically.md) wenn sie den von Ihnen angegebenen Bedingungen entsprechen.
 
 Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwenden, ist aus den folgenden Gründen wichtig:
 
@@ -181,30 +180,30 @@ Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwend
 
 Die automatische Bezeichnung unterstützt das Empfehlen einer Bezeichnung für Benutzer sowie das automatische Anwenden einer Bezeichnung. In beiden Fällen entscheidet der Benutzer aber, ob die Bezeichnung angenommen oder abgelehnt werden soll, um die richtige Bezeichnung von Inhalten zu gewährleisten.
 
-Diese clientseitige Beschriftung hat nur minimale Verzögerungen für Dokumente, da die Bezeichnung noch vor dem Speichern des Dokuments angewendet werden kann. Allerdings unterstützen nicht alle Client-Apps die automatische Bezeichnung. Diese Funktion wird vom Azure Information Protection Unified Labeling Client und einigen Versionen von [Office unterstützt.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
+Diese clientseitige Beschriftung hat nur minimale Verzögerungen für Dokumente, da die Bezeichnung noch vor dem Speichern des Dokuments angewendet werden kann. Allerdings unterstützen nicht alle Client-Apps die automatische Bezeichnung. Diese Funktion wird vom Azure Information Protection-Client für einheitliche Bezeichnungen und [einigen Versionen von Office-Apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)unterstützt.
 
-Konfigurationsanweisungen finden Sie unter Konfigurieren der automatischen Bezeichnung [für Office Apps.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
+Konfigurationsanweisungen finden Sie unter [Konfigurieren der automatischen Bezeichnung für Office Apps.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
 
-Für den Datenschutz wenden Sie Vertraulichkeitsbezeichnungen automatisch auf Inhalte an, die vertrauliche persönliche Informationen enthalten.
+Aus Datenschutzgründen wenden Sie Vertraulichkeitsbezeichnungen automatisch auf Inhalte an, die vertrauliche persönliche Informationen enthalten.
 
-### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Dienstseitige automatische Bezeichnung, wenn Inhalte bereits gespeichert werden
+### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Dienstseitige automatische Bezeichnung, wenn Inhalte bereits gespeichert sind
 
-Diese Methode wird Autoklassifizierung mit Vertraulichkeitsbezeichnungen genannt. Sie können auch hören, dass es als automatische Bezeichnung für ruheende Daten (für Dokumente in SharePoint und OneDrive) und Daten während der Übertragung (für E-Mails, die von Exchange gesendet oder empfangen werden) bezeichnet wird. Für Exchange enthält es keine E-Mails in postfächern im Ruhe.
- 
-Da diese Bezeichnung vom Dienst selbst und nicht von der Benutzeranwendung angewendet wird, müssen Sie sich keine Gedanken darüber machen, welche Apps Benutzer haben und welche Version. Dies hat zur Folge, dass diese Funktion sofort in ihrer gesamten Organisation zur Verfügung steht, und sie eignet sich für Bezeichnungen jeder Größe. Richtlinien zum automatischen Bezeichnen unterstützen die empfohlene Bezeichnung nicht, da der Benutzer nicht mit dem Bezeichnungsprozess interagiert. Stattdessen führt der Administrator die Richtlinien im Simulationsmodus aus, um sicherzustellen, dass der Inhalt korrekt bezeichnet wird, bevor die Bezeichnung tatsächlich angewendet wird.
+Diese Methode wird Autoklassifizierung mit Vertraulichkeitsbezeichnungen genannt. Möglicherweise wird es auch als automatische Bezeichnung für ruhenden Daten (für Dokumente in SharePoint und OneDrive) und Daten während der Übertragung (für E-Mails, die von Exchange gesendet oder empfangen werden) bezeichnet. Für Exchange werden keine E-Mails in ruhenden Postfächern eingeschlossen.
 
-Konfigurationsanweisungen finden Sie unter [Konfigurieren automatischer Bezeichnungsrichtlinien](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)für SharePoint, OneDrive und Exchange .
+Da diese Bezeichnung vom Dienst selbst und nicht von der Benutzeranwendung angewendet wird, müssen Sie sich keine Gedanken darüber machen, welche Apps Benutzer haben und welche Version sie haben. Dies hat zur Folge, dass diese Funktion sofort in ihrer gesamten Organisation zur Verfügung steht, und sie eignet sich für Bezeichnungen jeder Größe. Richtlinien zum automatischen Bezeichnen unterstützen die empfohlene Bezeichnung nicht, da der Benutzer nicht mit dem Bezeichnungsprozess interagiert. Stattdessen führt der Administrator die Richtlinien im Simulationsmodus aus, um sicherzustellen, dass der Inhalt korrekt bezeichnet wird, bevor die Bezeichnung tatsächlich angewendet wird.
 
-Push-Vertraulichkeitsbezeichnungen für die automatische Verschlüsselung von Inhalten mit vertraulichen personenbezogenen Informationen für den Datenschutz auf Websites, die betroffen sind.
+Konfigurationsanweisungen finden Sie unter Konfigurieren von Richtlinien für die [automatische Bezeichnung für SharePoint, OneDrive und Exchange.](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
-## <a name="data-loss-prevention"></a>Verhinderung von Datenverlust 
+Um den Datenschutz auf betroffenen Websites zu gewährleisten, pushen Sie Vertraulichkeitsbezeichnungen für die automatische Verschlüsselung von Inhalten, die vertrauliche persönliche Informationen enthalten.
 
-Sie können die Verhinderung von Datenverlust [(Data Loss Prevention, DLP)](../compliance/dlp-learn-about-dlp.md) in Microsoft 365 verwenden, um riskante, unbeabsichtigte oder unangemessene Freigaben zu erkennen, zu warnen und zu blockieren, z. B. die freigabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern.
+## <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
 
-Mit DLP können Sie:
+Sie können [die Verhinderung von Datenverlust (Data Loss Prevention, DLP)](../compliance/dlp-learn-about-dlp.md) in Microsoft 365 verwenden, um riskante, unbeabsichtigte oder unangemessene Freigaben zu erkennen, zu warnen und zu blockieren, z. B. die interne und externe Freigabe von Daten, die personenbezogene Informationen enthalten.
 
-- Identifizieren und Überwachen riskanter Freigabeaktivitäten.
-- Schulen Sie Benutzer mit kontextbezogenen Anleitungen, um die richtigen Entscheidungen zu treffen.
+DLP ermöglicht Folgendes:
+
+- Identifizieren und überwachen Sie riskante Freigabeaktivitäten.
+- Informieren Sie Die Benutzer mit Kontextanleitungen, um die richtigen Entscheidungen zu treffen.
 - Erzwingen von Datennutzungsrichtlinien für Inhalte, ohne die Produktivität zu beeinträchtigen.
 - Integration in Klassifizierung und Bezeichnung, um Daten zu erkennen und zu schützen, wenn sie freigegeben werden.
 
@@ -212,132 +211,131 @@ Mit DLP können Sie:
 
 Mit einer DLP-Richtlinie im Microsoft 365 Compliance Center können Sie vertrauliche Elemente an vielen Orten in Microsoft 365 identifizieren, überwachen und automatisch schützen, z. B. Exchange Online, SharePoint, OneDrive und Microsoft Teams.
 
-Sie können beispielsweise jedes Dokument identifizieren, das eine Kreditkartennummer enthält, die auf einer beliebigen OneDrive-Website gespeichert ist, oder Sie können nur die OneDrive von bestimmten Personen überwachen.
+Sie können beispielsweise jedes Dokument identifizieren, das eine Kreditkartennummer enthält, die auf einer beliebigen OneDrive Website gespeichert ist, oder Sie können nur die OneDrive Websites bestimmter Personen überwachen.
 
-Sie können vertrauliche Elemente auch in den lokal installierten Versionen von Excel, PowerPoint und Word überwachen und schützen. Dazu gehören die Möglichkeit, vertrauliche Elemente zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine kontinuierliche Überwachung, wenn Personen Inhalte aus diesen apps Office teilen.
+Sie können vertrauliche Elemente auch in den lokal installierten Versionen von Excel, PowerPoint und Word überwachen und schützen, einschließlich der Möglichkeit, vertrauliche Elemente zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine kontinuierliche Überwachung, wenn Personen Inhalte aus diesen Office Apps freigeben.
 
 > [!div class="mx-imgBorder"]
 > ![Unterstützte Workloads für DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
-Diese Abbildung zeigt ein Beispiel für den Schutz personenbezogener Daten durch DLP.
+Diese Abbildung zeigt ein Beispiel für den DLP-Schutz personenbezogener Daten.
 
 > [!div class="mx-imgBorder"]
 > ![Beispiel für den Schutz personenbezogener Daten mithilfe von DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
-DLP wird verwendet, um ein Dokument oder eine E-Mail mit einem Integritätsdatensatz zu identifizieren und dann automatisch den Zugriff auf dieses Dokument zu sperren oder das Senden der E-Mail zu sperren. DLP benachrichtigt den Empfänger dann mit einem Richtlinientipp und sendet eine Warnung an den Endbenutzer und Administrator.
+DLP wird verwendet, um ein Dokument oder eine E-Mail mit einem Integritätseintrag zu identifizieren und dann automatisch den Zugriff auf dieses Dokument zu blockieren oder das Senden der E-Mail zu blockieren. DLP benachrichtigt dann den Empfänger mit einem Richtlinientipp und sendet eine Warnung an den Endbenutzer und Administrator.
 
 ### <a name="planning-for-dlp"></a>Planen von DLP
 
-Planen Sie Ihre DLP-Richtlinien für: 
+Planen Sie Ihre DLP-Richtlinien für:
 
 - Ihre Geschäftlichen Anforderungen.
 
-- Eine risikobasierte Bewertung der Organisation, wie im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Elemente" beschrieben.](information-protection-deploy-assess.md)
+- Eine risikobasierte Bewertung der Organisation, wie im Artikel "Bewerten von [Datenschutzrisiken und Identifizieren vertraulicher Elemente"](information-protection-deploy-assess.md)beschrieben.
 
-- Andere Mechanismen zum Schutz und zur Steuerung von Informationen, die in der Planung des Datenschutzes verwendet werden.
+- Andere Informationsschutz- und Governance-Mechanismen, die in Kraft sind oder bei der Planung des Datenschutzes sind.
 
-- Die vertraulichen Informationstypen, die Sie basierend auf Ihrer Bewertungsarbeit für personenbezogene Daten identifiziert haben, wie im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Elemente" beschrieben.](information-protection-deploy-assess.md) DLP-Richtlinienbedingungen können auf vertraulichen Informationstypen und Aufbewahrungsbezeichnungen basieren.
+- Die Typen vertraulicher Informationen, die Sie basierend auf Ihrer Bewertungsarbeit für personenbezogene Daten identifiziert haben, wie im Artikel "Bewerten von [Datenschutzrisiken und Identifizieren vertraulicher Elemente"](information-protection-deploy-assess.md)beschrieben. DLP-Richtlinienbedingungen können sowohl auf Typen vertraulicher Informationen als auch auf Aufbewahrungsbezeichnungen basieren.
 
-- Die Aufbewahrungsbezeichnungen, die Sie zum Angeben von DLP-Bedingungen benötigen. Weitere Informationen finden Sie unter Regeln von Informationen, die der Datenschutzverordnung [unterliegen, in](information-protection-deploy-govern.md) Ihrem Organisationsartikel.
+- Die Aufbewahrungsbezeichnungen, die Sie benötigen, um DLP-Bedingungen anzugeben. Weitere Informationen finden Sie im Artikel [zum Thema "Informationen zum Datenschutz" in Ihrer Organisation.](information-protection-deploy-govern.md)
 
-- Fortlaufende Verwaltung von DLP-Richtlinien, bei der eine Person in der Organisation Richtlinien für Änderungen an typen vertraulichen Informationen, Aufbewahrungsbezeichnungen, Vorschriften und Compliancerichtlinien verwenden und optimieren muss.
+- Fortlaufende DLP-Richtlinienverwaltung, bei der jemand in der Organisation Richtlinien für Änderungen an typen vertraulichen Informationen, Aufbewahrungsbezeichnungen, Vorschriften und Compliancerichtlinien ausführen und optimieren muss.
 
-Vertraulichkeitsbezeichnungen können zwar nicht in DLP-Richtlinienbedingungen verwendet werden, aber bestimmte Schutzszenarien, um den Zugriff zu verhindern, sind möglicherweise nur mit Vertraulichkeitsbezeichnungen möglich, die basierend auf vertraulichen Informationstypen automatisch angewendet werden können. Wenn eine robuste Vertraulichkeitsbezeichnung verwendet wird, überlegen Sie, ob DLP zum Erweitern des Schutzes verwendet werden soll, da:
+Obwohl Vertraulichkeitsbezeichnungen in DLP-Richtlinienbedingungen nicht verwendet werden können, sind bestimmte Schutzszenarien zum Verhindern des Zugriffs möglicherweise nur mit Vertraulichkeitsbezeichnungen erreichbar, die basierend auf vertraulichen Informationstypen automatisch angewendet werden können. Wenn eine robuste Vertraulichkeitsbezeichnung vorhanden ist, sollten Sie aus folgenden Gründen überlegen, ob DLP zur Verbesserung des Schutzes verwendet werden sollte:
 
-  - DLP kann die Freigabe von Dateien verhindern. Vertraulichkeitsbezeichnungen können den Zugriff einfach verhindern.
+  - DLP kann die Freigabe von Dateien verhindern. Vertraulichkeitsbezeichnungen können nur den Zugriff verhindern.
 
-  - DLP verfügt über detailliertere Steuerungsebenen in Bezug auf Regeln, Bedingungen und Aktionen.
+  - DLP verfügt über präzisere Steuerungsebenen in Bezug auf Regeln, Bedingungen und Aktionen.
 
-  - DLP-Richtlinien können auf chat- Teams Kanalnachrichten angewendet werden. Vertraulichkeitsbezeichnungen können nur auf Dokumente und E-Mails angewendet werden.
+  - DLP-Richtlinien können auf Teams Chat- und Kanalnachrichten angewendet werden. Vertraulichkeitsbezeichnungen können nur auf Dokumente und E-Mails angewendet werden.
 
 
 ### <a name="dlp-policies"></a>DLP-Richtlinien
 
-DLP-Richtlinien werden im Microsoft Compliance Admin Center konfiguriert und geben die Schutzebene, den vertraulichen Informationstyp, nach dem die Richtlinie sucht, und die Zielarbeitslasten an. Ihre grundlegenden Komponenten bestehen darin, den Schutz und die Arten von Daten zu identifizieren.
+DLP-Richtlinien werden im Microsoft Compliance Admin Center konfiguriert und geben den Schutzgrad, den vertraulichen Informationstyp, nach dem die Richtlinie sucht, und die Zielworkloads an. Ihre grundlegenden Komponenten bestehen aus der Identifizierung des Schutzes und der Datentypen.
 
 > [!div class="mx-imgBorder"]
 > ![DLP-Richtlinienkonfiguration in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-Im Folgenden finden Sie ein Beispiel für eine DLP-Richtlinie für das Bewusstsein der DSGVO.
+Hier ist ein Beispiel für eine DLP-Richtlinie zur Sensibilisierung für die DSGVO.
 
-![Beispiel-DLP-Richtlinie für das Bewusstsein der DSGVO](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Beispiel für eine DLP-Richtlinie zur Sensibilisierung für die DSGVO](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-Weitere [Informationen zum](../compliance/create-test-tune-dlp-policy.md) Erstellen und Anwenden von DLP-Richtlinien finden Sie in diesem Artikel.
+Weitere Informationen zum Erstellen und Anwenden von DLP-Richtlinien finden Sie in [diesem Artikel.](../compliance/create-test-tune-dlp-policy.md)
 
 ### <a name="protection-levels-for-data-privacy"></a>Schutzebenen für den Datenschutz
 
-In der folgenden Tabelle sind drei Konfigurationen aufgeführt, mit deren Hilfe der Schutz mithilfe von DLP erhöht werden kann.
+In der folgenden Tabelle sind drei Konfigurationen zum Erhöhen des Schutzes mithilfe von DLP aufgeführt.
 
-![Datenschutzebenen mit DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Schutzebenen des Datenschutzes mit DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
-Die erste Konfiguration, Awareness, kann als Ausgangspunkt und Mindestschutzniveau verwendet werden, um Complianceanforderungen für Datenschutzbestimmungen zu erfüllen.
+Die erste Konfiguration, "Awareness", kann als Ausgangspunkt und Mindestschutz verwendet werden, um die Complianceanforderungen für Datenschutzbestimmungen zu erfüllen.
 
->[!Note]
->Mit dem Anstieg des Schutzniveaus nimmt die Fähigkeit der Benutzer zum Teilen und Zugreifen auf Informationen in einigen Fällen ab und kann sich potenziell auf ihre Produktivität oder die Fähigkeit auswirken, tägliche Aufgaben auszuführen.
+> [!NOTE]
+> Mit dem erhöhten Schutzniveau nimmt die Fähigkeit der Benutzer, Informationen freizugeben und darauf zuzugreifen, in einigen Fällen ab und kann sich möglicherweise auf ihre Produktivität oder die Fähigkeit auswirken, tägliche Aufgaben auszuführen.
 
-
-Damit Ihre Mitarbeiter bei der Erhöhung der Schutzstufen weiterhin produktiv in einer sichereren Umgebung arbeiten können, nehmen Sie sich die Zeit, um sie in neuen Sicherheitsrichtlinien und -verfahren zu schulen und zu schulen.
+Um Ihren Mitarbeitern zu helfen, in einer sichereren Umgebung weiterhin produktiv zu sein, wenn sie die Schutzebene erhöhen, nehmen Sie sich Zeit, um sie in neuen Sicherheitsrichtlinien und -verfahren zu schulen und zu schulen.
 
 ### <a name="example-of-using-sensitivity-labels-with-dlp"></a>Beispiel für die Verwendung von Vertraulichkeitsbezeichnungen mit DLP
 
-Vertraulichkeitsbezeichnungen können mit DLP zusammenarbeiten, um Datenschutz in einer streng regulierten Umgebung zu gewährleisten. Hier sind die wichtigsten Schritte der integrierten Bereitstellung:
+Vertraulichkeitsbezeichnungen können mit DLP zusammenarbeiten, um Datenschutz in einer streng regulierten Umgebung bereitzustellen. Hier sind die wichtigsten Schritte der integrierten Bereitstellung:
 
-1. Gesetzliche und anderweitig geschäftliche Anforderungen für den Datenschutz sind dokumentiert.
-2. Zieldatenquellen, -typen und -besitz sind im Verhältnis zu Datenschutzbedenken gekennzeichnet.
-3. Es wird eine allgemeine Strategie zum Erfüllen von Anforderungen und zum Schutz und Zurregieren von Datenschutz-Hotspots eingerichtet.
-4. Es wird ein phasenweiser Aktionsplan für die Datenschutzkontrolle entwickelt.
+1. Rechtliche und andere geschäftliche Anforderungen für den Datenschutz sind dokumentiert.
+2. Zieldatenquellen, -typen und -besitz sind relativ zu Datenschutzbedenken gekennzeichnet.
+3. Es wird eine allgemeine Strategie zum Erfüllen von Anforderungen und zum Schutz und zur Verwaltung von Datenschutz-Hotspots eingerichtet.
+4. Ein stufenweiser Aktionsplan zur Behandlung der Datenschutzkontrollstrategie wird eingerichtet.
 
-Nachdem diese Elemente ermittelt wurden, können Sie vertrauliche Informationstypen, Die Taxonomie für Vertraulichkeitsbezeichnungen und DLP-Richtlinien zusammen verwenden. Diese Abbildung zeigt ein Beispiel.
+Sobald diese Elemente ermittelt wurden, können Sie vertrauliche Informationstypen, Ihre Taxonomie für Vertraulichkeitsbezeichnungen und DLP-Richtlinien zusammen verwenden. Diese Abbildung zeigt ein Beispiel.
 
 > [!div class="mx-imgBorder"]
 > ![Beispiel für Vertraulichkeitsbezeichnungen, die mit DLP arbeiten](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-[Eine größere Version dieses Bilds sehen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+[Anzeigen einer größeren Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-Im Folgenden finden Sie einige Datenschutzszenarien, in denen DLP und Vertraulichkeitsbezeichnungen verwendet werden, wie in der Abbildung dargestellt.
+Hier sind einige Datenschutzszenarien, in denen DLP und Vertraulichkeitsbezeichnungen zusammen verwendet werden, wie in der Abbildung dargestellt.
 
 | Szenario | Prozess |
 |:-------|:-----|
-| A | <ol><li>Vertraulichkeitsbezeichnungen für Inhalte werden von einem Administrator für Benutzer und Gruppen zur manuellen oder automatischen Anwendung auf Inhalte und E-Mails veröffentlicht. </li><li>Benutzer A wendet die Bezeichnungen manuell oder automatisch bei der Interaktion mit Inhalten, mit Verschlüsselung oder anderen Einstellungen an. </li><li>Benutzer A sendet eine geschützte E-Mail oder Datei an Benutzer B, einen Gastbenutzer. </li></ol> |
+| A | <ol><li>Vertraulichkeitsbezeichnungen für Inhalte werden von einem Administrator für Benutzer und Gruppen zur manuellen oder automatischen Anwendung auf Inhalte und E-Mails veröffentlicht. </li><li>Benutzer A wendet die Bezeichnungen manuell oder automatisch an, wenn sie mit Inhalten interagieren, wobei Verschlüsselung oder andere Einstellungen angewendet werden. </li><li>Benutzer A sendet eine geschützte E-Mail oder Datei an Benutzer B, einen Gastbenutzer. </li></ol> |
 | B | Die von einem Administrator für Benutzer A veröffentlichte DLP-Richtlinie verhindert, dass Benutzer A die E-Mail und/oder Datei an Benutzer B sendet. |
-| C |  Vertraulichkeitsbezeichnung mit der Einstellung "Der Besitzer kann keine Gäste einladen" wird für Benutzer A veröffentlicht, der ein Teams oder eine SharePoint zur Verfügung steht. Ein anderer Benutzer der Website versucht selektiv, eine Datei mit Benutzer B zu teilen, DLP blockiert sie jedoch. |
-| D | Vertraulichkeitsbezeichnungen für die automatische Anwendung auf Websiteinhalte werden auf einer oder mehreren Websites veröffentlicht und bieten eine weitere Schutzebene, was zu einer geschützten Website führt. |
+| C |  Die Vertraulichkeitsbezeichnung mit der Einstellung "Besitzer kann Gäste nicht einladen" wird für Benutzer A veröffentlicht, der ein Teams Team oder SharePoint Website angibt. Ein anderer Benutzer der Website versucht selektiv, eine Datei für Benutzer B freizugeben, aber DLP blockiert sie. |
+| D | Die Vertraulichkeitsbezeichnung für die automatische Anwendung von Websiteinhalten wird auf einer oder mehreren Websites veröffentlicht, wodurch eine andere Schutzebene bereitgestellt wird, was zu einer geschützten Website führt. |
 |||
 
-## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365-Nachrichtenverschlüsselung (OME) neue Funktionen
+## <a name="office-365-message-encryption-ome-new-capabilities"></a>neue Funktionen für Office 365-Nachrichtenverschlüsselung (OME)
 
-Personen verwenden E-Mails häufig zum Austauschen vertraulicher Elemente, z. B. Patientendaten oder Kunden- und Mitarbeiterinformationen. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
+Personen verwenden E-Mails häufig, um vertrauliche Elemente auszutauschen, z. B. Patientenstatusinformationen oder Kunden- und Mitarbeiterinformationen. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
 
-Mit [OME](../compliance/ome.md)können Sie verschlüsselte Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. OME funktioniert mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten. OME hilft sicherzustellen, dass nur beabsichtigte Empfänger Nachrichteninhalte anzeigen können.
+Mit [OME](../compliance/ome.md)können Sie verschlüsselte Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. OME arbeitet mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten. OME trägt dazu bei, dass nur beabsichtigte Empfänger Nachrichteninhalte anzeigen können.
 
-Für den Datenschutz verwenden Sie OME, um interne Nachrichten zu schützen, die vertrauliche Elemente enthalten. Office 365-Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) baut, die Teil von Azure Information Protection ist. Dies umfasst Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien, um Ihre E-Mails zu schützen. Sie können Nachrichten mithilfe von Vorlagen für die Rechteverwaltung, der Option Nicht weiterleiten und der Option nur verschlüsseln.
+Für den Datenschutz verwenden Sie OME, um interne Nachrichten zu schützen, die vertrauliche Elemente enthalten. Office 365-Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) basiert, der Teil von Azure Information Protection ist. Dies umfasst Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien, um Ihre E-Mails zu schützen. Sie können Nachrichten mithilfe von Rechteverwaltungsvorlagen, der Option "Nicht weiterleiten" und der Option "Nur verschlüsseln" verschlüsseln.
 
-Sie können auch Nachrichtenflussregeln definieren, um diesen Schutz anzuwenden. Sie können beispielsweise eine Regel erstellen, die die Verschlüsselung aller nachrichten erfordert, die an einen bestimmten Empfänger adressiert sind, oder die bestimmte Schlüsselwörter in der Betreffzeile enthält, und außerdem angeben, dass Empfänger den Inhalt der Nachricht nicht kopieren oder drucken können.
+Sie können auch Nachrichtenflussregeln definieren, um diesen Schutz anzuwenden. Sie können z. B. eine Regel erstellen, die die Verschlüsselung aller Nachrichten erfordert, die an einen bestimmten Empfänger gerichtet sind oder die bestimmte Schlüsselwörter in der Betreffzeile enthält, und außerdem angeben, dass Empfänger den Inhalt der Nachricht nicht kopieren oder drucken können.
 
-Darüber hinaus hilft Ihnen die OME [Advanced Message Encryption,](../compliance/ome-advanced-message-encryption.md) Complianceverpflichtungen zu erfüllen, die flexiblere Kontrollen über externe Empfänger und deren Zugriff auf verschlüsselte E-Mails erfordern. Mit OME Advanced Message Encryption in Microsoft 365 können Sie vertrauliche E-Mails steuern, die außerhalb der Organisation freigegeben werden, mit automatischen Richtlinien, die typen von vertraulichen Informationen erkennen. 
+Darüber hinaus hilft Ihnen OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md) bei der Erfüllung von Compliance-Verpflichtungen, die flexiblere Kontrollen über externe Empfänger und deren Zugriff auf verschlüsselte E-Mails erfordern. Mit der erweiterten OME-Nachrichtenverschlüsselung in Microsoft 365 können Sie vertrauliche E-Mails, die außerhalb der Organisation freigegeben werden, mit automatischen Richtlinien steuern, die typen vertraulicher Informationen erkennen.
 
-Wenn Sie E-Mails für eine externe Partei freigeben müssen, können Sie für den Datenschutz ein Ablaufdatum angeben und Nachrichten widerrufen. Sie können nur ein Ablaufdatum für Nachrichten widerrufen und festlegen, die an externe Empfänger gesendet werden.
+Wenn Sie E-Mails für den Datenschutz an eine externe Partei freigeben müssen, können Sie ein Ablaufdatum angeben und Nachrichten widerrufen. Sie können nur ein Ablaufdatum für Nachrichten widerrufen und festlegen, die an externe Empfänger gesendet werden.
 
-### <a name="secure-email-scenarios-comparison-with-ome-and-sensitivity-labels"></a>Sicherer Vergleich von E-Mail-Szenarien mit OME und Vertraulichkeitsbezeichnungen
+### <a name="secure-email-scenarios-comparison-with-ome-and-sensitivity-labels"></a>Vergleich sicherer E-Mail-Szenarien mit OME und Vertraulichkeitsbezeichnungen
 
-OME- und Vertraulichkeitsbezeichnungen, die auf E-Mails mit Verschlüsselung angewendet werden, haben überlappende Überschneidungen, daher ist es wichtig zu verstehen, für welche Szenarien eine der beiden Szenarien gelten kann, wie in dieser Tabelle dargestellt.
+Da OME und Vertraulichkeitsbezeichnungen, die auf E-Mails mit Verschlüsselung angewendet werden, einige Überschneidungen aufweisen, ist es wichtig zu verstehen, für welche Szenarien beide gelten können, wie in dieser Tabelle dargestellt.
 
 | Szenario | Vertraulichkeitsbezeichnungen | OME |
 |:-------|:-----|:-------|
-| Intern + Partner <br> Sichere Kommunikation und Zusammenarbeit zwischen internen Benutzern und vertrauenswürdigen Partnern | Empfehlen – Bezeichnungen mit vollständig angepasster Klassifizierung und Schutz | Ja – Nur verschlüsseln oder Schutz ohne Klassifizierung nicht weiterleiten |
+| Interne + Partner <br> Sichere Kommunikation und Zusammenarbeit zwischen internen Benutzern und vertrauenswürdigen Partnern | Empfehlen – Bezeichnungen mit vollständig angepasster Klassifizierung und Schutz | Ja – Nur verschlüsseln oder Schutz nicht weiterleiten ohne Klassifizierung |
 | Externe Parteien <br> Sichere Kommunikation und Zusammenarbeit mit externen/Verbraucherbenutzern | Ja – vordefinierte Empfänger in Bezeichnung | Empfehlen – Just-in-Time-Schutz basierend auf Empfängern |
-| Intern + Partner mit Ablauf/Widerruf <br> Steuern des Zugriffs auf E-Mails und Inhalte mit internen Benutzern und vertrauenswürdigen Partnern mit Ablauf und Widerruf | Empfehlen – vollständig angepasster Schutz mit Zugriffsdauer, Benutzer können Dateien manuell nachverfolgen und widerrufen | Nein – kein Widerruf oder Ablauf für interne E-Mails |
-| Externe Parteien mit Ablauf/Widerruf <br> Steuern des Zugriffs auf E-Mails und Inhalte mit externen/Verbraucherbenutzern mit Ablauf und Widerruf | Ja – Benutzer kann Dateien manuell nachverfolgen | Empfehlen (E5) – Administrator kann E-Mails aus dem Security & Compliance Center widerrufen |
-| Automatisches Bezeichnen <br> Organisation möchte E-Mails/Anlagen automatisch mit bestimmten vertraulichen Inhalten und/oder bestimmten Empfängern schützen | Recommend (E5) – Automatische Bezeichnung in Exchange und Outlook Clients, erweitert Nachrichtenflussregeln und DLP-Richtlinie | Ja – Nachrichtenflussregeln und DLP-Richtlinie mit Nur Verschlüsseln oder Nicht weiterleiten |
+| Interne + Partner mit Ablauf/Sperrung <br> Steuern des Zugriffs auf E-Mails und Inhalte mit internen Benutzern und vertrauenswürdigen Partnern mit Ablauf und Sperrung | Empfehlung: Vollständig angepasster Schutz mit Zugriffsdauer, Benutzer können Dateien manuell nachverfolgen und widerrufen | Nein – kein Widerruf oder Ablauf für interne E-Mails |
+| Externe Parteien mit Ablauf/Sperrung <br> Steuern des Zugriffs auf E-Mails und Inhalte mit externen/Verbraucherbenutzern mit Ablauf und Sperrung | Ja – Benutzer kann Dateien manuell nachverfolgen | Empfehlung (E5) – Der Administrator kann E-Mails aus dem Security & Compliance Center widerrufen. |
+| Automatisches Bezeichnen <br> Die Organisation möchte E-Mails/Anlagen automatisch mit bestimmten vertraulichen Inhalten und/oder bestimmten Empfängern schützen. | Recommend (E5) – Automatisches Bezeichnen in Exchange und Outlook Clients, Erweiterung von Nachrichtenflussregeln und DLP-Richtlinie | Ja – Nachrichtenflussregeln und DLP-Richtlinie mit Nur verschlüsseln oder Schutz nicht weiterleiten |
 ||||
 
-Es gibt auch Unterschiede bei den Endbenutzer- und Administratorerfahrungen zwischen diesen beiden Methoden.
+Zwischen diesen beiden Methoden gibt es auch Unterschiede bei der Endbenutzer- und Administratorerfahrung.
 
-## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams schutz für hochsensible Daten
+## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams mit Schutz für streng vertrauliche Daten
 
-Organisationen, die planen, personenbezogene Daten zu speichern, die den Datenschutzbestimmungen in Teams unterliegen, finden Sie unter [Konfigurieren](secure-teams-security-isolation.md)eines Teams mit Sicherheitsisolation , das detaillierte Anleitungen und Konfigurationsschritte für folgende Themen enthält:
+Informationen zu Organisationen, die beabsichtigen, personenbezogene Daten zu speichern, die den Datenschutzbestimmungen in Teams unterliegen, finden Sie unter ["Konfigurieren eines Teams mit Sicherheitsisolation",](secure-teams-security-isolation.md)das detaillierte Anleitungen und Konfigurationsschritte für Folgendes bereitstellt:
 
 - Identitäts- und Gerätezugriff
 - Erstellen eines privaten Teams
-- Sperren der zugrunde liegenden Teamwebsiteberechtigungen
+- Sperrung der zugrunde liegenden Berechtigungen für Teamwebsites
 - Eine gruppenbasierte Vertraulichkeitsbezeichnung mit Verschlüsselung

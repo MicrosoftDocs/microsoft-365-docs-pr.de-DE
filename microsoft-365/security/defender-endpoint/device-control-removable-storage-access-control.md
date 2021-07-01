@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028403"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229575"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugriffssteuerung
 
@@ -32,7 +32,7 @@ Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugr
 
 |Privileg |Berechtigung  |
 |---------|---------|
-|Access    |  Lese-/Schreib-/Ausführungszugriff       |
+|Zugriff    |  Lese-/Schreib-/Ausführungszugriff       |
 |Aktionsmodus    |    Überwachen, Zulassen, Verhindern     |
 |CSP-Unterstützung   |   Ja      |
 |GPO-Unterstützung    |   Ja      |
@@ -41,7 +41,7 @@ Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugr
 
 ## <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 
-Bereitstellen von wechselbaren Storage Zugriffssteuerung auf Windows 10 Geräten mit Antischadsoftware-Clientversion **4.18.2103.3 oder höher.**
+Bereitstellen von Wechselmedien Storage Zugriffssteuerung auf Windows 10 Geräten mit Antischadsoftware-Clientversion **4.18.2103.3 oder höher.**
 
 - **4.18.2104 oder höher:** Hinzufügen von SerialNumberId, VID_PID, dateipfadbasierter GPO-Unterstützung, ComputerSid
 
@@ -199,7 +199,7 @@ Um Sie mit Microsoft Defender für Endpunkt-Wechselmedien Storage Zugriffssteuer
 
     1. Gruppe 1: Wechselmedien und CD/DVD. Ein Beispiel für diesen Anwendungsfall ist: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
-    2. Gruppe 2: Nicht genehmigte USBs basierend auf Geräteeigenschaften, z. B. Anbieter-ID/Produkt-ID, Anzeigename – Gruppe **65fa649a-a111-4912-9294-fb6337a25038** in der Beispieldatei [für nicht genehmigte USBs Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 
+    2. Gruppe 2: Nicht genehmigte USBs basierend auf Geräteeigenschaften, z. B. Anbieter-ID/Produkt-ID, Anzeigename – Gruppe **65fa649a-a111-4912-9294-fb6337a25038** in der Beispieldatei "Nicht genehmigte [USBs Group.xml".](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 
 
     > [!NOTE]
     > Sie müssen `&` `&amp;` im Wert ersetzen.
@@ -234,15 +234,15 @@ Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr�
     
     :::image type="content" source="images/usage-sid-property.png" alt-text="Der Bildschirm mit einem Code, der die Verwendung des SID-Eigenschaftsattributs angibt":::
 
-3. Speichern Sie sowohl Regel- als auch Gruppen-XML-Dateien im Netzwerkfreigabeordner, und fügen Sie den Pfad des Netzwerkfreigabeordners in die Gruppenrichtlinieneinstellung ein: **Computerkonfiguration -> Administrative Vorlagen -> Windows Komponenten -> Microsoft Defender Antivirus -> Gerätesteuerung: "Gerätesteuerungsrichtliniengruppen definieren" und "Gerätesteuerungsrichtlinienregeln definieren".**
+3. Speichern Sie sowohl Regel- als auch Gruppen-XML-Dateien im Netzwerkfreigabeordner, und fügen Sie den Pfad des Netzwerkfreigabeordners in die Gruppenrichtlinieneinstellung ein: **Computerkonfiguration - > Administrative Vorlagen -> Windows Komponenten -> Microsoft Defender Antivirus -> Gerätesteuerung: "Gerätesteuerungsrichtliniengruppen definieren" und "Gerätesteuerungsrichtlinienregeln definieren".**
 
-    - Der Zielcomputer muss auf die Netzwerkfreigabe zugreifen können, um über die Richtlinie verfügen zu können. Nachdem die Richtlinie gelesen wurde, ist die Netzwerkfreigabeverbindung jedoch auch nach dem Computerneustart nicht mehr erforderlich.
+    - Der Zielcomputer muss auf die Netzwerkfreigabe zugreifen können, damit die Richtlinie vorhanden ist. Nachdem die Richtlinie gelesen wurde, ist die Netzwerkfreigabeverbindung jedoch auch nach dem Computerneustart nicht mehr erforderlich.
 
     :::image type="content" source="images/device-control.png" alt-text="Der Bildschirm des Gerätesteuerelements":::
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Bereitstellen und Verwalten von Richtlinien über Intune OMA-URI
 
-Mit dem Feature "Wechselbare Storage Zugriffssteuerung" können Sie Richtlinien über OMA-URI entweder auf Benutzer oder Geräte oder auf beides anwenden.
+Mit dem Feature für die Zugriffssteuerung für wechselbare Storage können Sie Richtlinien über OMA-URI entweder auf Benutzer oder Geräte oder auf beides anwenden.
 
 ### <a name="licensing"></a>Lizenzierung
 
@@ -289,11 +289,11 @@ Für die Richtlinienbereitstellung in Intune muss das Konto über Berechtigungen
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Bereitstellen und Verwalten von Richtlinien mithilfe der Intune-Benutzeroberfläche
 
-Diese Funktion (in Microsoft Endpoint Manager Admin Center ( https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) ist noch nicht verfügbar. 
+Diese Funktion (im Microsoft Endpoint Manager Admin Center ( https://endpoint.microsoft.com/) > Geräte > Konfigurationsprofile > Profil > Plattform erstellen: Windows 10 und höher & Profil: Gerätesteuerung) ist noch nicht verfügbar. 
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Anzeigen von Wechseldaten von Gerätesteuerungen Storage Zugriffssteuerungsdaten in Microsoft Defender für Endpunkt
 
-Das Microsoft 365-Sicherheitsportal zeigt Wechselmedien an, die von der Wechselmediensteuerung Storage Zugriffssteuerung blockiert werden. Um auf die Microsoft 365 Sicherheit zugreifen zu können, benötigen Sie das folgende Abonnement:
+Das Microsoft 365-Sicherheitsportal zeigt Wechselmedien an, die von der Gerätesteuerung (Removable Storage Access Control) blockiert werden. Um auf die Microsoft 365 Sicherheit zugreifen zu können, müssen Sie über das folgende Abonnement verfügen:
 
 - Microsoft 365 für E5-Berichte
 
@@ -328,15 +328,15 @@ Wir haben eine USB-Gruppe mit 100.000 Medien – bis zu 7 MB Größe – überpr
 
 **Warum funktioniert die Richtlinie nicht?**
 
-Der häufigste Grund ist, dass keine erforderliche [Antischadsoftware-Clientversion](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)vorhanden ist.
+Der häufigste Grund ist, dass keine erforderliche [Antischadsoftware-Clientversion](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)vorhanden ist.
 
-Ein weiterer Grund kann sein, dass die XML-Datei nicht ordnungsgemäß formatiert ist, z. B. nicht die richtige Markdownformatierung für das Zeichen "&" in der XML-Datei verwendet wird, oder dass der Texteditor am Anfang der Dateien eine Bytereihenfolgemarke (Byte Order Mark, BOM) 0xEF 0xBB 0xBF hinzugibt, was dazu führt, dass die XML-Analyse nicht funktioniert. Eine einfache Lösung besteht darin, die [Beispieldatei](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (wählen Sie **"Raw"** und dann **"Speichern unter")** herunterzuladen und dann zu aktualisieren.
+Ein weiterer Grund kann sein, dass die XML-Datei nicht richtig formatiert ist, z. B. nicht die richtige Markdownformatierung für das Zeichen "&" in der XML-Datei verwendet wird, oder dass der Texteditor am Anfang der Dateien eine Bytereihenfolgemarke (Byte Order Mark, BOM) 0xEF 0xBB 0xBF hinzugibt, was dazu führt, dass die XML-Analyse nicht funktioniert. Eine einfache Lösung besteht darin, die [Beispieldatei](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (wählen Sie **"Raw"** und dann **"Speichern unter")** herunterzuladen und dann zu aktualisieren.
 
 Wenn ein Wert vorhanden ist und die Richtlinie über die Gruppenrichtlinie verwaltet wird, überprüfen Sie, ob das Clientgerät auf den RICHTLINIEN-XML-Pfad zugreifen kann.
 
 **Wie kann ich wissen, welcher Computer die veraltete Clientversion für Antischadsoftware in der Organisation verwendet?**
 
-Sie können die folgende Abfrage verwenden, um die Clientversion für Antischadsoftware im Microsoft 365-Sicherheitsportal abzurufen:
+Sie können die folgende Abfrage verwenden, um die Clientversion für Antischadsoftware im Microsoft 365 Sicherheitsportal abzurufen:
 ```kusto
 //check the antimalware client version
 DeviceFileEvents

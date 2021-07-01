@@ -10,22 +10,22 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Erfahren Sie, wie Sie Microsoft Viva Topics einrichten
-ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893764"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229587"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Einrichten von Microsoft Viva Topics
 
-Sie können das Microsoft 365 Admin Center verwenden, um [Themen](topic-experiences-overview.md)einzurichten und zu konfigurieren. 
+Sie können die Microsoft 365 Admin Center verwenden, um [Topics](topic-experiences-overview.md)einzurichten und zu konfigurieren. 
 
 Es ist wichtig, die beste Methode zum Einrichten und Konfigurieren von Themen in Ihrer Umgebung zu planen. Lesen Sie unbedingt ["Plan für Microsoft Viva Topics",](plan-topic-experiences.md) bevor Sie mit den Verfahren in diesem Artikel beginnen.
 
-Sie müssen [Viva Topics abonniert](https://www.microsoft.com/microsoft-viva/topics) haben und ein globaler Administrator oder SharePoint Administrator sein, um auf das Microsoft 365 Admin Center zugreifen und Topics einrichten zu können.
+Sie müssen [Viva Topics abonniert](https://www.microsoft.com/microsoft-viva/topics) haben und ein globaler Administrator oder SharePoint Administrator sein, um auf die Microsoft 365 Admin Center zugreifen und Topics einrichten zu können.
 
-Wenn Sie SharePoint so konfiguriert haben, dass [verwaltete Geräte erforderlich sind,](/sharepoint/control-access-from-unmanaged-devices)müssen Sie Themen von einem verwalteten Gerät einrichten.
+Wenn Sie SharePoint so konfiguriert haben, dass [verwaltete Geräte erforderlich](/sharepoint/control-access-from-unmanaged-devices)sind, müssen Sie Themen von einem verwalteten Gerät einrichten.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
@@ -39,7 +39,7 @@ Dieses Video zeigt den Prozess zum Einrichten von Themen in Microsoft 365.
 
 ## <a name="assign-licenses"></a>Zuweisen von Lizenzen
 
-Sie müssen Lizenzen für die Benutzer zuweisen, die Topics verwenden. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und dem Themencenter anzeigen. 
+Sie müssen Lizenzen für die Benutzer zuweisen, die Topics verwenden. Nur Benutzer mit einer Lizenz können Informationen zu Themen wie Highlights, Themenkarten, Themenseiten und dem Themencenter sehen. 
 
 So weisen Sie Lizenzen zu
 
@@ -61,19 +61,19 @@ Es kann bis zu einer Stunde dauern, bis Benutzer zugriff auf Topics erhalten, na
 ## <a name="set-up-topics"></a>Einrichten von Themen
 
 > [!Note]
-> Wenn die Themensuche zum ersten Mal aktiviert ist, kann es bis zu zwei Wochen dauern, bis alle vorgeschlagenen Themen in der Ansicht "Themen verwalten" angezeigt werden. Die Themensuche wird fortgesetzt, wenn neue Inhalte oder Aktualisierungen an Inhalten vorgenommen werden. Es ist normal, dass die Anzahl der vorgeschlagenen Themen in Ihrer Organisation Mäßigungen aufweist, wenn Viva Topics neue Informationen auswertet.
+> Wenn die Themensuche zum ersten Mal aktiviert ist, kann es bis zu zwei Wochen dauern, bis alle vorgeschlagenen Themen in der Ansicht "Themen verwalten" angezeigt werden. Die Themensuche wird fortgesetzt, wenn neue Inhalte oder Aktualisierungen an Inhalten vorgenommen werden. Es ist normal, dass die Anzahl der vorgeschlagenen Themen in Ihrer Organisation Schwankungen aufweist, wenn Viva Topics neue Informationen auswertet.
 
 So richten Sie Themen ein
-1. Wählen Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)die Option **"Setup"** aus, und zeigen Sie dann den Abschnitt **"Dateien und Inhalt"** an.
+1. Wählen Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com) **setup** aus, und zeigen Sie dann den Abschnitt **"Dateien und Inhalt"** an.
 2. Klicken Sie im Abschnitt **"Dateien und Inhalt"** auf **Verbinden Personen wissen.**
 
     ![Verbinden Von Personen zu Wissen](../media/admin-org-knowledge-options.png) 
 
-3. Klicken Sie auf der **Seite Verbinden Personen zum Wissen** auf **"Erste Schritte",** um Sie durch den Einrichtungsprozess zu führen.
+3. Klicken Sie auf der **Seite Verbinden Personen zu Wissen** auf **"Erste Schritte",** um Sie durch den Einrichtungsprozess zu führen.
 
     ![Erste Schritte](../media/k-get-started.png) 
 
-4. Auf der Seite **"Auswählen, wie Viva Topics Themen finden kann"** konfigurieren Sie die Themensuche. Wählen Sie im Abschnitt **"Auswählen SharePoint Themenquellen"** aus, welche SharePoint Websites während der Suche als Quellen für Ihre Themen durchforstet werden. Wählen Sie zwischen:
+4. Auf der Seite **"Auswählen, wie Viva Topics Themen finden kann"** konfigurieren Sie die Themensuche. Wählen Sie im Abschnitt **"SharePoint Themenquellen auswählen"** aus, welche SharePoint Websites während der Suche als Quellen für Ihre Themen durchforstet werden. Wählen Sie zwischen:
     - **Alle Websites**: Alle SharePoint-Websites in Ihrer Organisation. Dies schließt aktuelle und zukünftige Websites ein.
     - **Alle, außer ausgewählten Websites:** Geben Sie die Namen der Websites ein, die Sie ausschließen möchten.  Sie können auch eine Liste der Websites hochladen, die Sie von der Ermittlung abmelden möchten. Websites, die in Zukunft erstellt werden, werden als Quellen für die Themensuche einbezogen. 
     - **Nur ausgewählte Websites:** Geben Sie die Namen der Websites ein, die Sie einschließen möchten. Sie können auch eine Liste von Websites hochladen. Zukünftig erstellte Websites werden nicht als Quellen für die Themensuche einbezogen.
@@ -99,15 +99,15 @@ So richten Sie Themen ein
 
     - **Name**: Geben Sie den Namen des Themas ein, das ausgeschlossen werden soll. Sie können auf zwei Arten vorgehen:
         - Genaue Übereinstimmung: Sie können den genauen Namen oder das Akronym angeben (z. B. *Contoso* oder *ATL).*
-        - Partielle Übereinstimmung: Sie können alle Themen ausschließen, die ein bestimmtes Wort enthalten.  Beispielsweise schließt *Arc* alle Themen mit dem Wort *Bogen* aus, z. B. *Arc Circle,* *Arc Arc-* oder *Training Arc.* Beachten Sie, dass themen, in denen der Text als Teil eines Worts enthalten ist, z. B. *Architektur,* nicht ausgeschlossen werden.
+        - Partielle Übereinstimmung: Sie können alle Themen ausschließen, die ein bestimmtes Wort enthalten.  Beispielsweise schließt *Arc* alle Themen mit dem Wort *Bogen* aus, z. B. *Arc Circle,* *Arc Arc-* oder *Training Arc.* Beachten Sie, dass Themen, in denen der Text als Teil eines Worts enthalten ist, wie z. B. *Architektur,* nicht ausgeschlossen werden.
     - **Steht für (optional):** Wenn Sie ein Akronym ausschließen möchten, geben Sie die Wörter ein, für die das Akronym steht.
     - **MatchType-Exact/Partial:** Geben Sie an, ob der eingegebene Name ein *exakter* oder *teilweiser* Übereinstimmungstyp war.
 
-    Nachdem Sie Die .csv Datei abgeschlossen und gespeichert haben, wählen Sie **"Durchsuchen"** aus, um sie zu suchen und auszuwählen.
+    Nachdem Sie Die .csv-Datei abgeschlossen und gespeichert haben, wählen Sie **"Durchsuchen"** aus, um sie zu suchen und auszuwählen.
     
     Wählen Sie **Weiter** aus.
 
-6. Auf der **Wer Themen anzeigen können und wo sie diese sehen können,** konfigurieren Sie die Themensichtbarkeit. In der Wer die **Themeneinstellung anzeigen können,** wählen Sie aus, wer Zugriff auf Themendetails hat, z. B. hervorgehobene Themen, Themenkarten, Themenantworten in der Suche und Themenseiten. Sie können Folgendes auswählen:
+6. Auf der **Wer Themen anzeigen können und wo diese angezeigt** werden, konfigurieren Sie die Themensichtbarkeit. In der Wer die **Themeneinstellung anzeigen können,** wählen Sie aus, wer Zugriff auf Themendetails hat, z. B. hervorgehobene Themen, Themenkarten, Themenantworten in der Suche und Themenseiten. Sie können Folgendes auswählen:
     - **Jeder in meiner Organisation**
     - **Nur ausgewählte Personen oder Sicherheitsgruppen**
     - **Niemand**
@@ -132,7 +132,10 @@ So richten Sie Themen ein
 
     Wählen Sie **Weiter** aus.
 
-9. Auf der Seite **"Themencenter** erstellen" können Sie Ihre Themencenterwebsite erstellen, auf der Themenseiten angezeigt und Themen verwaltet werden können. Geben Sie im **Feld "Websitename"** einen Namen für Ihr Themencenter ein. Optional können Sie eine kurze Beschreibung im **Feld "Beschreibung"** eingeben. 
+9. Auf der Seite **"Themencenter** erstellen" können Sie Ihre Themencenterwebsite erstellen, auf der Themenseiten angezeigt und Themen verwaltet werden können. Geben Sie im **Feld "Websitename"** einen Namen für Ihr Themencenter ein. Sie können auf das Stiftsymbol klicken, wenn Sie die URL ändern möchten. Geben Sie optional eine kurze Beschreibung in das **Feld Beschreibung** ein. 
+
+   > [!Important]
+   > Sie können den Websitenamen später ändern, aber sie können die URL nach Abschluss des Assistenten nicht mehr ändern.
 
    Wählen Sie **Weiter** aus.
 
@@ -142,7 +145,7 @@ So richten Sie Themen ein
 
 11. Die **aktivierte** Viva Topics-Seite wird angezeigt und bestätigt, dass das System nun mit der Analyse Ihrer ausgewählten Websites für Themen und dem Erstellen der Themencenterwebsite beginnt. Wählen Sie **Fertig** aus.
 
-12. Sie werden zu Ihrer **Verbinden Seite "Personen zum Wissen"** zurückgegeben. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
+12. Sie werden zu Ihrer **Verbinden Seite "Personen zu Wissen"** zurückgegeben. Auf dieser Seite können Sie **Verwalten** auswählen, um Änderungen an Ihren Konfigurationseinstellungen vorzunehmen. 
 
     ![angewendete Einstellungen](../media/ksetup7.png)    
 

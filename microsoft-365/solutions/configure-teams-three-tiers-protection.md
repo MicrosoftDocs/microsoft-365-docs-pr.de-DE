@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Erfahren Sie, wie Sie Teams für eine bessere Sicherheit bei der gemeinsamen Nutzung von Dateien konfigurieren können, indem Sie drei Schutzebenen verwenden, die ein Gleichgewicht zwischen Sicherheit und einfacher Zusammenarbeit herstellen.
-ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683403"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228819"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurieren von Teams mit drei Schutzebenen
 
@@ -122,7 +122,7 @@ Beachten Sie, dass Gäste oft keine Geräte haben, die von Ihrer Organisation ve
 
 Die Einstellung für nicht verwaltete Geräte in Vertraulichkeitsbezeichnungen wirkt sich nur auf den SharePoint-Zugriff aus. Wenn Sie die Kontrolle über nicht verwaltete Geräte über SharePoint hinaus erweitern möchten, können Sie stattdessen eine [Azure Active Directory-Richtlinie für bedingten Zugriff für alle Apps und Dienste in Ihrer Organisation erstellen](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). Um diese Richtlinie speziell für [Microsoft 365-Dienste](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) zu konfigurieren, wählen Sie die **Office 365**-Cloud-App unter **Cloud-Apps oder -Aktionen** aus.
 
-![Screenshot der Office 365-Cloud-App in einer Azure Active Directory-Richtlinie für den bedingten Zugriff](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Screenshot der Office 365-Cloud-App in einer Azure Active Directory-Richtlinie für den bedingten Zugriff](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
 Die Verwendung einer Richtlinie, die alle Microsoft 365-Dienste betrifft, kann zu einer besseren Sicherheit und einer besseren Benutzererfahrung führen. Wenn Sie beispielsweise nur den Zugriff auf nicht verwaltete Geräte in SharePoint blockieren, können Benutzer auf den Chat in einem Team mit einem nicht verwalteten Gerät zugreifen, verlieren jedoch den Zugriff, wenn sie versuchen, auf die Registerkarte **Dateien** zuzugreifen. Durch die Verwendung der Office 365-Cloud-App können Probleme mit [Dienstabhängigkeiten](/azure/active-directory/conditional-access/service-dependencies) vermieden werden.
 

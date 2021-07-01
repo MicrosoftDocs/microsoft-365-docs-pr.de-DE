@@ -1,7 +1,7 @@
 ---
-title: Schemareferenz für erweiterte Suche
-description: Erfahren Sie mehr über die Tabellen im erweiterten Suchschema, um die Daten zu verstehen, auf die Sie Abfragen zur Bedrohungssuche ausführen können.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungssuche, Mdatp, Microsoft Defender Atp, Microsoft Defender für Endpunkt, wdatp-Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Daten
+title: Schemareferenz für die erweiterte Suche
+description: Erfahren Sie mehr über die Tabellen im Schema für die erweiterte Suche, um die Daten zu verstehen, auf denen Sie Abfragen zur Bedrohungssuche ausführen können.
+keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, MDATP, Microsoft Defender ATP, Microsoft Defender für Endpunkt, Wdatp-Suche, Abfrage, Telemetrie, Schemareferenz, kusto, Tabelle, Daten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,49 +17,49 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: fa111197dfd68cfcca40ce8a39befe20b97d1be8
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: fcc7d96f51121824550128e89186074e1ebc3ce0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939636"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228879"
 ---
-# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Verstehen des erweiterten Jagdschemas in Microsoft Defender for Endpoint
+# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Grundlegendes zum Schema für die erweiterte Suche in Microsoft Defender für Endpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Das [schema der erweiterten](advanced-hunting-overview.md) Suche besteht aus mehreren Tabellen, die entweder Ereignisinformationen oder Informationen zu Geräten und anderen Entitäten bereitstellen. Wenn Sie effektive Abfragen erstellen möchten, die sich über mehrere Tabellen erstrecken, müssen Sie die Tabellen und Spalten im Schema "Erweiterte Suche" kennen.
+Das Schema für die [erweiterte Suche](advanced-hunting-overview.md) besteht aus mehreren Tabellen, die entweder Ereignisinformationen oder Informationen zu Geräten und anderen Entitäten bereitstellen. Wenn Sie effektive Abfragen erstellen möchten, die sich über mehrere Tabellen erstrecken, müssen Sie die Tabellen und Spalten im Schema "Erweiterte Suche" kennen.
 
-## <a name="get-schema-information-in-the-security-center"></a>Schemainformationen im Security Center erhalten
-Verwenden Sie beim Erstellen von Abfragen die integrierte Schemareferenz, um schnell die folgenden Informationen zu jeder Tabelle im Schema zu erhalten:
+## <a name="get-schema-information-in-the-security-center"></a>Abrufen von Schemainformationen im Security Center
+Verwenden Sie beim Erstellen von Abfragen die integrierte Schemareferenz, um schnell die folgenden Informationen zu jeder Tabelle im Schema abzurufen:
 
-- **Tabellenbeschreibung**– Typ der in der Tabelle enthaltenen Daten und der Quelle dieser Daten.
+- **Tabellenbeschreibung**– Typ der in der Tabelle enthaltenen Daten und die Quelle dieser Daten.
 - **Spalten**– alle Spalten in der Tabelle.
-- **Aktionstypen**– mögliche Werte in der Spalte, die `ActionType` die von der Tabelle unterstützten Ereignistypen darstellen. Dies wird nur für Tabellen bereitgestellt, die Ereignisinformationen enthalten.
-- **Beispielabfrage**– Beispielabfragen, die zeigen, wie die Tabelle verwendet werden kann.
+- **Aktionstypen**– mögliche Werte in der `ActionType` Spalte, die die von der Tabelle unterstützten Ereignistypen darstellen. Dies wird nur für Tabellen bereitgestellt, die Ereignisinformationen enthalten.
+- **Beispielabfrage**: Beispielabfragen, die angeben, wie die Tabelle verwendet werden kann.
 
 ### <a name="access-the-schema-reference"></a>Zugreifen auf die Schemareferenz
-Um schnell auf die Schemareferenz zu zugreifen, wählen Sie die Referenzaktion Anzeigen neben dem Tabellennamen in der Schemadarstellung aus.  Sie können auch **Schemaverweis auswählen,** um nach einer Tabelle zu suchen.
+Um schnell auf den Schemaverweis zuzugreifen, wählen Sie die **Ansichtsverweisaktion** neben dem Tabellennamen in der Schemadarstellung aus. Sie können auch **einen Schemaverweis** auswählen, um nach einer Tabelle zu suchen.
 
-![Abbildung des Zugriffs auf in-Portal-Schemareferenz](images/ah-reference.png)
+![Abbildung des Zugriffs auf die Schemareferenz im Portal](images/ah-reference.png)
 
-## <a name="learn-the-schema-tables"></a>Informationen zu den Schematabellen
+## <a name="learn-the-schema-tables"></a>Lernen Sie die Schematabellen kennen
 
 In der folgenden Referenz sind alle Tabellen im Schema für die erweiterte Suche aufgeführt. Jeder Tabellenname verweist auf eine Seite, auf der die Spaltennamen für diese Tabelle beschrieben werden.
 
-Tabellen- und Spaltennamen werden auch im Microsoft Defender Security Center in der Schemadarstellung auf dem bildschirm für die erweiterte Suche aufgeführt.
+Tabellen- und Spaltennamen werden auch im Microsoft Defender Security Center in der Schemadarstellung auf dem Bildschirm "Erweiterte Suche" aufgeführt.
 
 | Tabellenname | Beschreibung |
 |------------|-------------|
-| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Warnungen bei Microsoft Defender Security Center |
-| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Geräteinformationen, einschließlich Betriebssysteminformationen |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Warnungen zu Microsoft Defender Security Center |
+| **[Deviceinfo](advanced-hunting-deviceinfo-table.md)** | Geräteinformationen, einschließlich Betriebssysteminformationen |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Netzwerkeigenschaften von Geräten, einschließlich Adaptern, IP- und MAC-Adressen sowie verbundenen Netzwerken und Domänen |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Prozesserstellung und zugehörige Ereignisse |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | Netzwerkverbindung und zugehörige Ereignisse |
@@ -67,17 +67,17 @@ Tabellen- und Spaltennamen werden auch im Microsoft Defender Security Center in 
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | Erstellen und Ändern von Registrierungseinträgen |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Anmeldungen und andere Authentifizierungsereignisse |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL-Ladeereignisse |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Mehrere Ereignistypen, einschließlich Ereignisse, die durch Sicherheitssteuerelemente ausgelöst werden, z. B. Microsoft Defender Antivirus und Exploitschutz |
-| **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | Zertifikatinformationen signierter Dateien, die von Zertifikatüberprüfungsereignissen auf Endpunkten erhalten wurden |
-| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventar der auf Geräten installierten Software, einschließlich der Versionsinformationen und des End-of-Support-Status |
-| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Softwarerisiken auf Geräten und die Liste der verfügbaren Sicherheitsupdates, die die einzelnen Sicherheitsrisiken adressiert haben |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Mehrere Ereignistypen, einschließlich Ereignissen, die durch Sicherheitskontrollen ausgelöst werden, z. B. Microsoft Defender Antivirus und Exploit-Schutz |
+| **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | Zertifikatinformationen zu signierten Dateien, die von Zertifikatüberprüfungsereignissen auf Endpunkten abgerufen wurden |
+| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Inventar der auf Geräten installierten Software, einschließlich Deren Versionsinformationen und Status des Supportendes |
+| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Auf Geräten gefundene Softwaresicherheitsrisiken und die Liste der verfügbaren Sicherheitsupdates, die die einzelnen Sicherheitsrisiken beheben |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Wissensdatenbank veröffentlichter Sicherheitsrisiken, einschließlich der Angabe, ob Exploitcode öffentlich verfügbar ist |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Beurteilungsereignisse im Bereich Bedrohungs- und Sicherheitsrisikoverwaltung, mit Angabe des Status verschiedener Sicherheitskonfigurationen auf Geräten |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Wissensdatenbank zu verschiedenen Sicherheitskonfigurationen, die im Rahmen der Bedrohungs- und Sicherheitsrisikoverwaltung zum Bewerten von Geräten verwendet werden; umfasst Zuordnungen zu verschiedenen Standards und Benchmarks. |
 
 >[!TIP]
->Verwenden Sie die erweiterte Suche [in Microsoft 365 Defender,](/microsoft-365/security/defender/advanced-hunting-overview) um Bedrohungen mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zu finden. [Microsoft 365 Defender aktivieren](/microsoft-365/security/defender/m365d-enable)<br><br>
-Erfahren Sie mehr darüber, wie Sie Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint verschieben.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+>Verwenden Sie [die erweiterte Suche in Microsoft 365 Defender,](/microsoft-365/security/defender/advanced-hunting-overview) um mithilfe von Daten von Defender für Endpunkt, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity nach Bedrohungen zu suchen. [Microsoft 365 Defender aktivieren](/microsoft-365/security/defender/m365d-enable)<br><br>
+Erfahren Sie mehr darüber, wie Sie Ihre Workflows für die erweiterte Suche von Microsoft Defender für Endpunkt in Microsoft 365 Defender [migrieren, wenn Sie Abfragen für die erweiterte Suche von Microsoft Defender für Endpunkt migrieren.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
@@ -85,4 +85,4 @@ Erfahren Sie mehr darüber, wie Sie Ihre erweiterten Suchworkflows von Microsoft
 - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)
 - [Anwenden bewährter Methoden für Abfragen](advanced-hunting-best-practices.md)
 - [Benutzerdefinierte Erkennungen – Übersicht](overview-custom-detections.md)
-- [Änderungen des Erweiterten Datenschemas für die Suche](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)
+- [Änderungen des Datenschemas für die erweiterte Suche](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/advanced-hunting-data-schema-changes/ba-p/1043914)

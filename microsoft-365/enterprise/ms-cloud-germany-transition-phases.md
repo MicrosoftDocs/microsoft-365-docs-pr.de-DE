@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
-ms.translationtype: HT
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930451"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229827"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -134,7 +134,7 @@ Zusätzliche Überlegungen:
 
 - Wenn Ihre Organisation immer noch SharePoint 2010-Workflows verwendet, werden diese nach 31. Dezember 2021 nicht mehr funktionieren. SharePoint 2013-Workflows bleiben unterstützt, obwohl sie ab 1. November 2020 für neue Mandaten standardmäßig ausgeschaltet werden. Wenn die Migration zu den SharePoint Onlinediensten abgeschlossen ist, empfehlen wir, dass Sie zu Power Automate oder anderen unterstützten Lösungen wechseln.
  - Microsoft Cloud Deutschland-Kunden, deren SharePoint Online-Instanz noch nicht migriert wurde, müssen bei Version 16.0.20616.12000 (oder niedriger) von SharePoint Online-PowerShell-Modul/Microsoft.SharePointOnline.CSOM bleiben. Andernfalls schlagen Verbindungen zu SharePoint Online über PowerShell oder das clientseitige Objektmodell fehl.
-- Während dieser Phase werden sich die IP-Adressen hinter den SharePoint-URLs ändern. Nach dem Übergang zu den Office 365 Global-Diensten werden die Adressen für die erhaltenen Mandanten-URLs (z. B. `contoso.sharepoint.de` und `contoso-my.sharepoint.de`) geändert in [Weltweite Microsoft 365-URLs und IP-Adressbereiche (SharePoint Online und OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business).
+- Während dieser Phase werden sich die IP-Adressen hinter den SharePoint-URLs ändern. Nach dem Übergang zu den Office 365 Global-Diensten werden die Adressen für die erhaltenen Mandanten-URLs (z. B. `contoso.sharepoint.de` und `contoso-my.sharepoint.de`) geändert in [Weltweite Microsoft 365-URLs und IP-Adressbereiche (SharePoint Online und OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business).
 - Während SharePoint- und OneDrive-Dienste umgestellt werden, funktioniert Office Online möglicherweise nicht wie erwartet. 
 
 > [!NOTE]

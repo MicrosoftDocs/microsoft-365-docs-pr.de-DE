@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845630"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228723"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontaktieren des Microsoft Defender für Endpunkt-Support
 
@@ -32,41 +32,40 @@ ms.locfileid: "52845630"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender für Endpunkt hat kürzlich den Supportprozess aktualisiert, um eine modernere und erweiterte Supporterfahrung zu bieten. 
+Defender für Endpunkt hat kürzlich den Supportprozess aktualisiert, um eine modernere und erweiterte Supporterfahrung zu bieten.
 
 Das neue Widget ermöglicht Kunden Folgendes:
+
 - Suchen nach Lösungen für häufig auftretende Probleme
 - Übermitteln eines Supportfalls an das Microsoft-Supportteam
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Es ist wichtig, die spezifischen Rollen zu kennen, die über die Berechtigung zum Öffnen von Supportfällen verfügen.
 
 Sie müssen mindestens über eine Rolle "Dienstsupportadministrator" **oder** "Helpdeskadministrator" verfügen.
 
-
 Weitere Informationen dazu, welche Rollen über Berechtigungen verfügen, finden Sie unter [Sicherheitsadministratorberechtigungen.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Rollen, die die Aktion `microsoft.office365.supportTickets/allEntities/allTasks` enthalten, können einen Fall übermitteln.
 
-Allgemeine Informationen zu Administratorrollen finden Sie unter [Informationen zu Administratorrollen.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
-
+Allgemeine Informationen zu Administratorrollen finden Sie unter [Informationen zu Administratorrollen.](/microsoft-365/admin/add-users/about-admin-roles)
 
 ## <a name="access-the-widget"></a>Zugreifen auf das Widget
 Der Zugriff auf das neue Support-Widget kann auf zwei Arten erfolgen:
 
-1.  Klicken Sie oben rechts im Portal auf das Fragezeichen, und klicken Sie dann auf "Microsoft-Support":
+1. Klicken Sie oben rechts im Portal auf das Fragezeichen, und klicken Sie dann auf "Microsoft-Support":
 
     ![Abbildung des Widgets, wenn Fragezeichen ausgewählt wird](images/support-widget.png)
 
-2. Klicken Sie auf **"Benötigen Sie Hilfe"?**  Schaltfläche unten rechts im Microsoft Defender Security Center:
-
+2. Klicken Sie auf **"Benötigen Sie Hilfe"?**  schaltfläche unten rechts im Microsoft Defender Security Center:
 
     ![Abbildung der Schaltfläche "Hilfe benötigen"](images/need-help.png)
 
 Im Widget werden Ihnen zwei Optionen angeboten:
 
-- Suchen nach Lösungen für häufig auftretende Probleme    
-- Öffnen einer Serviceanfrage  
+- Suchen nach Lösungen für häufig auftretende Probleme
+- Öffnen einer Serviceanfrage
 
 ## <a name="find-solutions-to-common-problems"></a>Suchen nach Lösungen für häufig auftretende Probleme
 Diese Option enthält Artikel, die sich möglicherweise auf die Frage beziehen, die Sie stellen können. Beginnen Sie einfach mit der Eingabe der Frage im Suchfeld, und es werden Artikel im Zusammenhang mit Ihrer Suche angezeigt.
@@ -77,23 +76,24 @@ Falls die vorgeschlagenen Artikel nicht ausreichen, können Sie eine Serviceanfr
 
 ## <a name="open-a-service-request"></a>Öffnen einer Serviceanfrage
 
-Erfahren Sie, wie Sie Supporttickets öffnen, indem Sie sich an den Defender für Endpunkt-Support wenden. 
+Erfahren Sie, wie Sie Supporttickets öffnen, indem Sie sich an den Defender für Endpunkt-Support wenden.
 
 > [!Note]
 > Wenn Sie über einen Promier-Supportvertrag mit Microsoft verfügen, wird das Premier-Tag auf dem Widget angezeigt. Falls nicht, wenden Sie sich an Ihren Microsoft-Kontomanager.
 
 ### <a name="contact-support"></a>Support kontaktieren
+
 Diese Option ist verfügbar, indem Sie auf das Symbol klicken, das wie ein Headset aussieht. Sie erhalten dann die folgende Seite, um Ihren Supportfall zu übermitteln:
 
 ![Abbildung des Widgets zum Öffnen einer Serviceanfrage](images/Support4.png)
 
-1. Geben Sie einen Titel und eine Beschreibung des Problems ein, mit dem Sie konfrontiert sind, sowie eine Telefonnummer und E-Mail-Adresse, unter der wir Sie erreichen können. 
+1. Geben Sie einen Titel und eine Beschreibung des Problems ein, mit dem Sie konfrontiert sind, sowie eine Telefonnummer und E-Mail-Adresse, unter der wir Sie erreichen können.
 
-2. (Optional) Fügen Sie bis zu fünf Anlagen hinzu, die für das Problem relevant sind, um zusätzlichen Kontext für den Supportfall bereitzustellen. 
+2. (Optional) Fügen Sie bis zu fünf Anlagen hinzu, die für das Problem relevant sind, um zusätzlichen Kontext für den Supportfall bereitzustellen.
 
 3. Wählen Sie Ihre Zeitzone und ggf. eine alternative Sprache aus. Die Anforderung wird an das Microsoft-Supportteam gesendet. Das Team antwortet in Kürze auf Ihre Serviceanfrage.
 
-
 ## <a name="related-topics"></a>Verwandte Themen
+
 - [Behandeln von Dienstproblemen](troubleshoot-mdatp.md)
 - [Überprüfen des Dienststatus](service-status.md)

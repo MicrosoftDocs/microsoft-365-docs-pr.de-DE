@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Hier erfahren Sie, wie Sie Teams mit grundlegendem Schutz bereitstellen.
-ms.openlocfilehash: ec8c2a1a5c4480ffd36b77fe9e9accc91214c6a3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bf95c26a9bf724aaddae8321022ecdfceae82d1a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538207"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229059"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurieren von Teams mit grundlegendem Schutz
 
@@ -38,9 +38,9 @@ Außerdem empfehlen wir, die grundlegenden Defender für Office 365-Features zum
 
 |Option|Informationen|
 |:------|:-----------|
-|Sichere Anlagen für SPO, OneDrive und Microsoft Teams|[Sichere Anlagen](../security/office-365-security/safe-attachments.md)<br>[Defender für Office 365 – SharePoint, OneDrive und Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
+|Sichere Anlagen für SPO, OneDrive und Microsoft Teams|[Sichere Anlagen](../security/office-365-security/safe-attachments.md) <p> [Defender für Office 365 – SharePoint, OneDrive und Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
 |Sichere Dokumente|[Sichere Dokumente in Microsoft Defender für Office 365](../security/office-365-security/safe-docs.md)|
-|Sichere Links für Microsoft Teams|[Office 365 Sichere Links in Teams](../security/office-365-security/safe-links.md)<br>[Sichere Links](../security/office-365-security/safe-links.md)|
+|Sichere Links für Microsoft Teams|[Office 365 Sichere Links in Teams](../security/office-365-security/safe-links.md) <p> [Sichere Links](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Teams-Gastfreigabe
 

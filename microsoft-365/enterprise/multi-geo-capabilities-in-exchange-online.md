@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Erfahren Sie mehr über multi-geo-Funktionen in Exchange Online, z. B. Funktionseinschränkungen und Postfachplatzierung.
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+description: Erfahren Sie mehr über Multi-Geo-Funktionen in Exchange Online, z. B. Featureeinschränkungen und Postfachplatzierung.
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694305"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229803"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online synchronisiert die Eigenschaft **PreferredDataLocation** von Azu
 
 - Wenn **PreferredDataLocation** nicht für einen Benutzer angegeben ist, wird es bei der Bereitstellung des Postfachs in dem zentralen Geo-Speicherort bereitgestellt.
 
-- Wenn der **PreferredDataLocation-Code** falsch ist (z. B. ein Tippfehler von NAN anstelle von NAM), wird das Postfach am zentralen geografischen Standort bereitgestellt.
+- Wenn der **PreferredDataLocation-Code** falsch ist (z. B. ein Tippfehler von BÉ anstelle von NAM), wird das Postfach am zentralen geografischen Standort bereitgestellt.
 
 **Hinweis**: Multi-Geo-Funktionen und regional gehostete Besprechungen von Skype for Business Online verwenden beide die Eigenschaft **PreferredDataLocation** auf Benutzerobjekten, um Dienste zu finden. Wenn Sie die **PreferredDataLocation**-Werte für Benutzerobjekte für regional gehostete Besprechungen konfigurieren, wird das Postfach für diese Benutzer automatisch an den angegebenen Geo-Speicherort verschoben, nachdem Multi-Geo auf dem Microsoft 365-Mandanten aktiviert wurde.
 
@@ -59,4 +59,4 @@ Exchange Online synchronisiert die Eigenschaft **PreferredDataLocation** von Azu
 
 - Öffentliche Ordner werden in Multi-Geo-Organisationen unterstützt. Die öffentlichen Ordner müssen jedoch in dem zentralen Geo-Speicherort verbleiben. Sie können öffentliche Ordner nicht an Satelliten-Geo-Speicherorten verschieben.
 
-- In einer Multi-Geo-Umgebung wird die Geo-übergreifende Postfachüberwachung nicht unterstützt. Wenn beispielsweise einem Benutzer Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen Geo-Speicherort zugewiesen wurden, werden die von diesem Benutzer ausgeführten Postfachaktionen im Postfachüberwachungsprotokoll des freigegebenen Postfachs nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).
+- In einer Multi-Geo-Umgebung wird die Geo-übergreifende Postfachüberwachung nicht unterstützt. Wenn beispielsweise einem Benutzer Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen Geo-Speicherort zugewiesen wurden, werden die von diesem Benutzer ausgeführten Postfachaktionen im Postfachüberwachungsprotokoll des freigegebenen Postfachs nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](../compliance/enable-mailbox-auditing.md).

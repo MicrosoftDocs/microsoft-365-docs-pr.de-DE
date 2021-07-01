@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 749e03cb9d14476245baea82c21d322d4d726aad
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194949"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230007"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurieren von Microsoft Defender für Endpunkt unter iOS-Features
 
@@ -38,12 +38,12 @@ ms.locfileid: "53194949"
 > Defender für Endpunkt unter iOS würde ein VPN verwenden, um das Webschutzfeature bereitzustellen. Dies ist kein reguläres VPN und ein lokales/selbstschleifendes VPN, das keinen Datenverkehr außerhalb des Geräts aufnimmt.
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Bedingter Zugriff mit Defender für Endpunkt unter iOS  
-Microsoft Defender für Endpunkt unter iOS zusammen mit Microsoft Intune und Azure Active Directory ermöglicht das Erzwingen von Gerätekompatibilitäts- und Richtlinien für bedingten Zugriff basierend auf der Geräterisikobewertung. Defender für Endpunkt ist eine MTD-Lösung (Mobile Threat Defense), die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
+Microsoft Defender für Endpunkt unter iOS zusammen mit Microsoft Intune und Azure Active Directory ermöglicht das Erzwingen von Gerätecompliance und Richtlinien für bedingten Zugriff basierend auf der Geräterisikobewertung. Defender für Endpunkt ist eine MTD-Lösung (Mobile Threat Defense), die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
 
 Weitere Informationen zum Einrichten des bedingten Zugriffs mit Defender für Endpunkt unter iOS finden Sie unter [Defender für Endpunkt und Intune.](/mem/intune/protect/advanced-threat-protection)
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Jailbreak-Erkennung durch Microsoft Defender für Endpunkt
-Microsoft Defender für Endpunkt verfügt über die Möglichkeit, nicht verwaltete und verwaltete Geräte zu erkennen, die ohne Jailbreak sind. Wenn festgestellt wird, dass ein Gerät im Jailbreak ist, wird eine Warnung mit **hohem** Risiko an das Security Center gemeldet. Wenn der bedingte Zugriff basierend auf der Geräterisikobewertung eingerichtet wird, wird das Gerät am Zugriff auf Unternehmensdaten gehindert.
+Microsoft Defender für Endpunkt verfügt über die Möglichkeit, nicht verwaltete und verwaltete Geräte zu erkennen, die ohne Jailbreak sind. Wenn festgestellt wird, dass ein Gerät im Jailbreak ist, wird eine Warnung mit **hohem** Risiko an das Security Center gemeldet. Wenn der bedingte Zugriff basierend auf der Geräterisikobewertung eingerichtet wird, wird der Zugriff auf Unternehmensdaten für das Gerät blockiert.
 
 ## <a name="web-protection-and-vpn"></a>Webschutz und VPN
 
@@ -78,7 +78,7 @@ Schritte zum Einrichten von App-Schutzrichtlinien mit Microsoft Defender für En
 1. Unter Bedingungen des Geräts für **bedingten Start** finden Sie die Einstellung  >   **"Maximale Gerätegefährdungsstufe"**. Dies muss entweder auf "Niedrig", "Mittel", "Hoch" oder "Gesichert" konfiguriert werden. Die verfügbaren Aktionen sind **"Zugriff blockieren"** oder **"Daten zurücksetzen".** Möglicherweise wird ein Informationsdialogfeld angezeigt, um sicherzustellen, dass Ihr Connector eingerichtet ist, bevor diese Einstellung wirksam wird. Wenn Ihr Connector bereits eingerichtet ist, können Sie dieses Dialogfeld ignorieren.
 1. Schließen Sie die Aufgaben ab, und speichern Sie Ihre Richtlinie.
 
-Weitere Informationen zur MAM- oder App-Schutzrichtlinie finden Sie unter [iOS-App-Schutzrichtlinieneinstellungen.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+Weitere Informationen zur MAM- oder App-Schutzrichtlinie finden Sie unter [iOS-App-Schutzrichtlinieneinstellungen.](/mem/intune/apps/app-protection-policy-settings-ios)
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Bereitstellen von Microsoft Defender für Endpunkt für MAM oder auf nicht angemeldeten Geräten
 
@@ -101,7 +101,7 @@ Führen Sie die folgenden Schritte aus, um eine Compliancerichtlinie für Gerät
     > ![Richtlinie erstellen](images/ios-jb-policy.png)
 
 2. Geben Sie einen Namen der Richtlinie an, z. B. "Compliancerichtlinie für Jailbreak".
-3. Klicken Sie auf der Seite "Complianceeinstellungen" auf den Abschnitt **"Geräteintegrität",** und klicken Sie auf das Feld **"Für** **Jailbroken-Geräte** blockieren".
+3. Klicken Sie auf der Seite "Complianceeinstellungen" auf den Abschnitt **"Geräteintegrität",** und klicken Sie auf das Feld **"Für** **Jailbroken** blockieren".
 
     > [!div class="mx-imgBorder"]
     > ![Richtlinien-Einstellungen](images/ios-jb-settings.png)
@@ -123,5 +123,5 @@ Mit Defender für Endpunkt unter iOS können Administratoren auch benutzerdefini
 
 ## <a name="report-unsafe-site"></a>Unsichere Website melden
 
-Phishing-Websites imitieren vertrauenswürdige Websites, um Ihre persönlichen oder finanziellen Informationen zu erhalten. Besuchen Sie die Seite ["Feedback zum Netzwerkschutz",](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) wenn Sie eine Website melden möchten, bei der es sich um eine Phishingwebsite handeln könnte.
+Phishing-Websites imitieren vertrauenswürdige Websites, um Ihre persönlichen oder finanziellen Informationen zu erhalten. Besuchen Sie die Seite ["Feedback zum Netzwerkschutz",](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) wenn Sie eine Website melden möchten, bei der es sich um eine Phishing-Website handeln könnte.
 
