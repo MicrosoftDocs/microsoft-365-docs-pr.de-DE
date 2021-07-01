@@ -114,7 +114,7 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Erstellen von Benachrichtigungen für exakte Datenübereinstimmungsaktivitäten (Vorschau)
           href: sit-edm-notifications-activities.md
-        - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – Compliance Center
+        - name: Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen – Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md

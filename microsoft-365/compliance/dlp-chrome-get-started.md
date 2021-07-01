@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vorbereitung und Bereitstellung der Microsoft Compliance Erweiterung.
-ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843830"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226959"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Erste Schritte mit der Microsoft Compliance Erweiterung
 
@@ -84,11 +84,11 @@ Die Bereitstellung der Microsoft Compliance-Erweiterung ist ein mehrstufiger Pro
 4. [Bereitstellen über Gruppenrichtlinie](#deploy-using-group-policy)
 5. [Testen der Erweiterung](#test-the-extension)
 6. [Verwenden Sie das Verwaltung von Benachrichtigungen Dashboard, um Chrome DLP-Benachrichtigungen anzuzeigen](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Anzeigen von Chrome-DLP-Daten im Aktivitäten-Explorer](#viewing-chrome-dlp-data-in-activity-explorer)  
+7. [Anzeigen von Chrome-DLP-Daten im Aktivitäten-Explorer](#viewing-chrome-dlp-data-in-activity-explorer) 
 
 ### <a name="prepare-infrastructure"></a>Infrastruktur vorbereiten
 
-Wenn Sie die Microsoft Compliance Erweiterung auf alle Ihre überwachten Windows 10-Geräte ausrollen, sollten Sie Google Chrome aus der Liste der nicht zugelassenen Apps und unerlaubten Browser entfernen. Weitere Informationen finden Sie unter [Unerlaubte Browser](endpoint-dlp-using.md#unallowed-browsers). Wenn Sie es nur auf einige wenige Geräte ausrollen, können Sie Chrome auf der Liste der unerlaubten Browser oder nicht zugelassenen App belassen. Die Microsoft Compliance Erweiterung umgeht die Beschränkungen beider Listen für die Computer, auf denen sie installiert ist.  
+Wenn Sie die Microsoft Compliance Erweiterung auf alle Ihre überwachten Windows 10-Geräte ausrollen, sollten Sie Google Chrome aus der Liste der nicht zugelassenen Apps und unerlaubten Browser entfernen. Weitere Informationen finden Sie unter [Unerlaubte Browser](endpoint-dlp-using.md#unallowed-browsers). Wenn Sie es nur auf einige wenige Geräte ausrollen, können Sie Chrome auf der Liste der unerlaubten Browser oder nicht zugelassenen App belassen. Die Microsoft Compliance Erweiterung umgeht die Beschränkungen beider Listen für die Computer, auf denen sie installiert ist.
 
 ### <a name="prepare-your-devices"></a>Bereiten Sie Ihre Geräte vor
 
@@ -99,13 +99,13 @@ Wenn Sie die Microsoft Compliance Erweiterung auf alle Ihre überwachten Windows
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Grundlegende Einrichtung Einzel Computer Selfhost
 
-Diese Methode wird empfohlen. 
+Diese Methode wird empfohlen.
 
-1. Melden Sie sich an dem Windows 10-Computer an, auf dem Sie die Microsoft Compliance Erweiterung installieren möchten, und führen Sie das PowerShell-Skript als Administrator aus. 
+1. Melden Sie sich an dem Windows 10-Computer an, auf dem Sie die Microsoft Compliance Erweiterung installieren möchten, und führen Sie das PowerShell-Skript als Administrator aus.
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.  [Navigieren Sie zu Microsoft Compliance Erweiterung- Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
@@ -158,7 +158,7 @@ Bevor Sie die Microsoft Compliance Erweiterung in die Liste der zwangsinstallier
 7.  Klicken Sie auf **Hinzufügen**.
 
 8.  Geben Sie die folgenden Richtlinieninformationen ein.
-    
+
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Datentyp: `String`<br/>
     Wert: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -221,34 +221,32 @@ Wenn Sie Microsoft Endpoint Manager nicht verwenden möchten, können Sie Gruppe
 
 ### <a name="test-the-extension"></a>Testen der Erweiterung
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Zum Cloud-Dienst hochladen oder Zugriff durch nicht zugelassene Browser Cloud Egress  
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Zum Cloud-Dienst hochladen oder Zugriff durch nicht zugelassene Browser Cloud Egress
 
 1. Ein vertrauliches Element erstellen oder beziehen und versuchen, eine Datei in eine der eingeschränkten Dienstdomänen Ihres Unternehmens hochzuladen. Die vertraulichen Daten müssen einem unserer eingebauten [Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md) oder einem der Typ vertraulicher Informationen Ihrer Organisation entsprechen. Sie sollten auf dem Gerät, von dem aus Sie testen, eine DLP-Popupbenachrichtigung erhalten, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
 
-#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Testen anderer DLP-Szenarien in Chrome 
+#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Testen anderer DLP-Szenarien in Chrome
 
 Nachdem Sie nun Chrome aus der Liste der nicht zugelassenen Browser/Apps entfernt haben, können Sie die folgenden Szenarien testen, um zu bestätigen, dass das Verhalten den Anforderungen Ihrer Organisation entspricht:
 
 - Daten aus einem vertraulichem Element in ein anderes Dokument über die Zwischenablage kopieren
-    - Öffnen Sie zum Testen eine Datei, die gegen Aktionen von Kopieren in die Zwischenablage geschützt ist, im Chrome-Browser und versuchen Sie, Daten aus der Datei zu kopieren.
-    - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
+  - Öffnen Sie zum Testen eine Datei, die gegen Aktionen von Kopieren in die Zwischenablage geschützt ist, im Chrome-Browser und versuchen Sie, Daten aus der Datei zu kopieren.
+  - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
 - Drucken eines Dokuments
-    - Öffnen Sie zum Testen eine Datei, die gegen Druckaktionen geschützt ist, im Chrome-Browser und versuchen Sie, die Datei zu drucken.
-    - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
+  - Öffnen Sie zum Testen eine Datei, die gegen Druckaktionen geschützt ist, im Chrome-Browser und versuchen Sie, die Datei zu drucken.
+  - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
 - Auf USB-Wechseldatenträger kopieren
-    - Versuchen Sie zum Test, die Datei auf einem Wechselmedium zu speichern.
-    - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
+  - Versuchen Sie zum Test, die Datei auf einem Wechselmedium zu speichern.
+  - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
 - Auf Netzwerkfreigabe kopieren
-    - Versuchen Sie zum Test, die Datei auf einer Netzwerkfreigabe zu speichern.
-    - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
-
+  - Versuchen Sie zum Test, die Datei auf einer Netzwerkfreigabe zu speichern.
+  - Erwartetes Ergebnis: Eine DLP-Popupbenachrichtigung, die anzeigt, dass diese Aktion nicht erlaubt ist, wenn die Datei geöffnet ist.
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Verwenden Sie das Verwaltung von Benachrichtigungen Dashboard, um Chrome DLP-Benachrichtigungen anzuzeigen
 
 1. Öffnen Sie die **Seite zur Verhinderung von Datenverlust** im [Microsoft 365 Compliance Center](https://compliance.microsoft.com) und wählen Sie **Benachrichtigungen** aus.
 
 2. Wenden Sie in [Konfigurieren und Anzeigen von Benachrichtigungen für DLP-Richtlinien](dlp-configure-view-alerts-policies.md) beschriebenen Verfahrensweisen an, um Benachrichtigungen für Ihre Endpunkt-DLP-Richtlinien anzuzeigen.
-
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Anzeigen von Endpunkt-DLP-Daten im Aktivitäten-Explorer
 
@@ -265,14 +263,15 @@ Nachdem Sie nun Chrome aus der Liste der nicht zugelassenen Browser/Apps entfern
 2. Der Inkognito-Modus wird nicht unterstützt und muss deaktiviert werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivitäten-Explorer angezeigt werden, können Sie mit dem nächsten Schritt fortfahren, bei dem Sie DLP-Richtlinien zum Schutz Ihrer vertraulichen Elemente erstellen werden.
 
 - [Nutzen der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zur Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-learn-about.md)
-- [Verwenden der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
+- [Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md)
+- [Nutzen der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
 - [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)

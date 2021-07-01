@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business Basic-Abonnement einrichten.
-ms.openlocfilehash: 0251f601b8200bcd5f4f5a2d5640ff774cc94562
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d0ac9835be25377496893d62076a5cdc426f3b9e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706334"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227739"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Einrichten von Microsoft 365 Basic
 
@@ -71,7 +71,7 @@ Wenn Sie Microsoft 365 Business Basic erwerben, haben Sie die Möglichkeit, eine
     > Wenn Sie während der Registrierung eine Domäne erworben haben, wird der Schritt **eine Domäne hinzufügen** nicht angezeigt. Wechseln Sie stattdessen zu [Benutzer hinzufügen](#add-users-and-assign-licenses).
 
     
-4. Führen Sie die Schritte im Assistenten aus, um [DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 zu erstellen](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), der verifiziert, dass Sie die Domäne besitzen. Wenn Sie Ihren Domänenhost kennen, lesen Sie auch die [hostspezifischen Anweisungen](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Führen Sie die Schritte im Assistenten aus, um [DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 zu erstellen](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), der verifiziert, dass Sie die Domäne besitzen. Wenn Sie Ihren Domänenhost kennen, lesen Sie auch [Hinzufügen einer Domäne zu Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Wenn es sich bei Ihrem Hostinganbieter um GoDaddy oder einen anderen Host handelt, der mit [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) arbeitet, ist der Vorgang einfach, und Sie werden aufgefordert, sich anzumelden, um Microsoft in Ihrem Auftrag authentifizieren zu lassen.
 

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Wenn Sie Microsoft 365 Business Standard erwerben, haben Sie die Möglichkeit, eine Domäne zu verwenden, die Sie besitzen, oder während der Registrierung eine zu erwerben.
-ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 188f6c396cfb3a4448306070da0fd75dd11a46b3
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635630"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227727"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Einrichten von Microsoft Business Standard
 
@@ -53,7 +53,7 @@ Wenn Sie Microsoft 365 Business Standard erwerben, haben Sie die Möglichkeit, e
     > Wenn Sie während der Registrierung eine Domäne erworben haben, wird der Schritt **eine Domäne hinzufügen** nicht angezeigt. Wechseln Sie stattdessen zu [Benutzer hinzufügen](#add-users-and-assign-licenses).
 
     
-4. Führen Sie die Schritte im Assistenten aus, um [DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 zu erstellen](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), der verifiziert, dass Sie die Domäne besitzen. Wenn Sie Ihren Domänenhost kennen, lesen Sie auch die [hostspezifischen Anweisungen](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Führen Sie die Schritte im Assistenten aus, um [DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Office 365 zu erstellen](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), der verifiziert, dass Sie die Domäne besitzen. Wenn Sie Ihren Domänenhost kennen, lesen Sie auch [Hinzufügen einer Domäne zu Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Wenn es sich bei Ihrem Hostinganbieter um GoDaddy oder einen anderen Host handelt, der mit [Domain Connect](/office365/admin/get-help-with-domains/domain-connect) arbeitet, ist der Vorgang einfach, und Sie werden aufgefordert, sich anzumelden, um Microsoft in Ihrem Auftrag authentifizieren zu lassen.
 
