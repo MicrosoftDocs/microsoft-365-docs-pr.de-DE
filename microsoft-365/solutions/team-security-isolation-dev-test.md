@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: Konfigurieren Sie Sicherheit und Infrastruktur, die es Ihren Mitarbeitern ermöglicht, von überall und jederzeit remote zu arbeiten.
-ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c58f0849937d7a807c9969e1651c51b3a9470ba5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778339"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228603"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Konfigurieren eines Teams mit Sicherheitsisolierung in einer Entwicklungs-/Testumgebung
 
@@ -30,57 +30,56 @@ Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zum Erstellen eines 
 ![Konfiguration für das isolierte Team „Unternehmensstrategie“](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Verwenden Sie diese Entwicklungs-/Testumgebung zum Experimentieren und zur Feinabstimmung der Einstellungen für Ihre spezifischen Bedürfnisse, bevor Sie diese Art von Team in der Produktion einsetzen.
-  
+
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 Enterprise-Testumgebung
 
 Wenn Sie vertrauliche und streng vertrauliche Teams auf einfache Weise mit Minimalanforderungen testen möchten, befolgen Sie die Anweisungen unter [Einfache Basiskonfiguration](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Wenn Sie vertrauliche und hochgradig vertrauliche Teams in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung](../enterprise/password-hash-sync-m365-ent-test-environment.md).
 
->[!Note]
->Das Testen eines Teams mit Sicherheitsisolierung erfordert nicht die simulierte Unternehmenstestumgebung, die ein simuliertes, mit dem Internet verbundenes Intranet und die Verzeichnissynchronisierung für eine Active Directory Domain Services (AD DS)-Struktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie ein Team mit Sicherheitsisolation testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.
->
-    
+> [!NOTE]
+> Das Testen eines Teams mit Sicherheitsisolierung erfordert nicht die simulierte Unternehmenstestumgebung, die ein simuliertes, mit dem Internet verbundenes Intranet und die Verzeichnissynchronisierung für eine Active Directory Domain Services (AD DS)-Struktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie ein Team mit Sicherheitsisolation testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.
+
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>Phase 2: Azure Active Directory (Azure AD)-Gruppe und -Benutzende erstellen und konfigurieren
 
 In dieser Phase erstellen und konfigurieren Sie eine Azure AD-Gruppe und -Benutzer für eine fiktive Organisation.
-  
+
 Erstellen Sie zunächst eine Sicherheitsgruppe mit dem Azure-Portal.
-  
+
 1. Erstellen Sie eine separate Registerkarte in Ihrem Browser, und wechseln Sie dann zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com). Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Microsoft 365 E5-Testabonnement oder Ihr kostenpflichtiges Abonnement an.
-    
+
 2. Klicken Sie im Azure-Portal auf **Azure Active Directory > Gruppen**.
-    
+
 3. Klicken Sie auf dem Blatt **Gruppen - Alle Gruppen** auf **+ Neue Gruppe**.
-    
+
 4. Auf dem Blatt **Gruppe**:
-    
+
   - Wählen Sie unter **Gruppentyp** die Option **Sicherheit** aus.
-    
+
   - Geben **C-Suite** unter **Name** ein.
-    
+
   - Wählen Sie **Zugewiesen** unter **Mitgliedschaftstyp** aus.
-      
+
 5. Klicken Sie auf **Erstellen**, und schließen Sie dann das Blatt **Gruppe**.
-    
+
 Konfigurieren Sie als Nächstes die automatische Lizenzierung so, dass den Mitgliedern der neuen **C-Suite**-Gruppe automatisch eine Microsoft 365 E5-Lizenz zugewiesen wird.
-  
+
 1. Klicken Sie im Azure-Portal auf **Azure Active Directory > Lizenzen > Alle Produkte**.
-    
+
 2. Wählen Sie in der Liste **Microsoft 365 Enterprise E5** aus, und klicken Sie dann auf **Zuweisen**.
-    
+
 3. Klicken Sie auf dem Blatt **Lizenz zuweisen** auf **Benutzer und Gruppen**.
-    
+
 4. Wählen Sie in der Liste der Gruppen die Gruppe **C-Suite** aus.
-    
+
 5. Klicken Sie auf **Auswählen** und dann auf **Zuweisen**.
-    
+
 6. Schließen Sie die Registerkarte für das Azure Portal in Ihrem Browser.
-    
+
 Als Nächstes, [stellen Sie eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul her](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
+
 Geben Sie den Namen Ihrer Organisation, Ihren Standort und ein gemeinsames Kennwort ein, und führen Sie dann die folgenden Befehle über die PowerShell-Eingabeaufforderung oder in der ISE-Umgebung (Integrated Script Environment) aus, um neue Benutzerkonten zu erstellen und sie zu der C-Suite-Gruppe hinzuzufügen:
-  
+
 ```powershell
 $orgName="<organization name, such as contoso-test for the contoso-test.onmicrosoft.com trial subscription domain name>"
 $location="<the ISO ALPHA2 country code, such as US for the United States>"
@@ -90,27 +89,27 @@ $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfi
 $PasswordProfile.Password=$commonPassword
 
 $groupName="C-Suite"
-$userNames=@("CEO","CFO","CIO") 
+$userNames=@("CEO","CFO","CIO")
 $groupID=(Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
-ForEach ($element in $userNames){ 
-New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location 
+ForEach ($element in $userNames){
+New-AzureADUser -DisplayName $element -PasswordProfile $PasswordProfile -UserPrincipalName ($element + "@" + $orgName + ".onmicrosoft.com") -AccountEnabled $true -MailNickName $element -UsageLocation $location
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $element }).ObjectID -ObjectId $groupID
 }
 ```
 
 > [!NOTE]
-> Für die Automatisierung und Vereinfachung der Konfiguration einer Dev/Test-Umgebung wird hier ein gemeinsames Kennwort verwendet. Natürlich ist davon bei Produktionsabonnements dringend abzuraten. 
-  
+> Die Verwendung eines allgemeinen Kennworts dient hier der Automatisierung und der einfachen Konfiguration für eine Entwicklungs-/Testumgebung. Natürlich ist davon bei Produktionsabonnements dringend abzuraten.
+
 Gehen Sie folgendermaßen vor, um sicherzustellen, dass die gruppenbasierte Lizenzierung ordnungsgemäß funktioniert.
-  
+
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
-    
+
 2. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** des Browsers auf **Benutzer**.
-    
+
 3. Klicken Sie in der Liste der Benutzer auf **CEO**.
-    
+
 4. Stellen Sie im Bereich, der die Eigenschaften des Benutzerkontos **CEO** anzeigt, sicher, dass ihm die Lizenz **Microsoft 365 Enterprise E5** in **Produktlizenzen** zugewiesen wurde.
-    
+
 ## <a name="phase-3-create-your-team"></a>Phase 3: Erstellen Ihres Teams
 
 In dieser Phase erstellen und konfigurieren Sie ein Team mit Sicherheitsisolierung, in dem die Mitglieder des leitenden Führungsteams an der Unternehmensstrategie mitarbeiten.
@@ -141,11 +140,11 @@ Konfigurieren Sie als nächstes eine Vertraulichkeitsbezeichnung mit den folgend
 Führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
-2. Klicken Sie unter **Lösungen**auf **Informationsschutz**.
+2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
 4. Geben Sie **Unternehmensstrategie** für den Bezeichnungsnamen ein.
 5. Geben Sie als QuickInfo **Dokumente zur Unternehmensstrategie für leitende Angestellte** ein, und klicken Sie dann auf **Weiter**.
-6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden**aus.
+6. Wählen Sie auf der Seite **Verschlüsselung** im Dropdownmenü **Verschlüsselung** **Anwenden** aus.
 7. Hinzufügen der Team-Berechtigungen:<br>
   a. Klicken Sie auf **Zuweisen von Berechtigungen**.<br>
   b. Klicken Sie auf **Benutzer oder Gruppen hinzufügen**, wählen Sie **Unternehmensstrategie** aus, und klicken Sie dann auf **Hinzufügen**.<br>
@@ -160,7 +159,7 @@ Führen Sie die folgenden Schritte aus:
 14. Klicken Sie auf der Seite **Automatisches Bezeichnen für Office-Apps** auf **Weiter**.
 15. Klicken Sie auf **Absenden** und anschließend auf **Fertig**.
 
-Als Nächstes, veröffentlichen Sie die neue Bezeichnung mit diesen Schritten: 
+Als Nächstes, veröffentlichen Sie die neue Bezeichnung mit diesen Schritten:
 
 1. Wählen Sie im Microsoft 365 Compliance Center auf der Seite **Informationsschutz** die Registerkarte **Bezeichnungsrichtlinien**.
 2. Klicken Sie auf **Bezeichnungen veröffentlichen**.
@@ -177,7 +176,7 @@ Als Nächstes, veröffentlichen Sie die neue Bezeichnung mit diesen Schritten:
 
 Es kann einige Zeit dauern, bis die Bezeichnung **Unternehmensstrategie** nach ihrer Veröffentlichung verfügbar ist.
 
-Als Nächstes wenden Sie Ihre neue Bezeichnung auf das Team für **Unternehmensstrategie** an und aktualisieren den standardmäßigen Linktyp für die Freigabe, um das Risiko zu verringern, dass Dateien und Ordner versehentlich für ein breiteres Publikum freigegeben werden als beabsichtigt. 
+Als Nächstes wenden Sie Ihre neue Bezeichnung auf das Team für **Unternehmensstrategie** an und aktualisieren den standardmäßigen Linktyp für die Freigabe, um das Risiko zu verringern, dass Dateien und Ordner versehentlich für ein breiteres Publikum freigegeben werden als beabsichtigt.
 
 1. Öffnen Sie das [SharePoint Admin Center](https://admin.microsoft.com/sharepoint).
 2. Klicken Sie unter **Websites** auf **Aktive Websites**.
