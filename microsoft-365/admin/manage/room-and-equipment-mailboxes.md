@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Erstellen Sie ein Raum- oder Gerätepostfach, damit jeder im Unternehmen mithilfe von Outlook eine Reservierung für Besprechungen oder Ereignisse vornehmen. '
-ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915170"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227931"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Raum- und Gerätepostfächer
 
@@ -55,13 +55,13 @@ Zum Verwenden von Raum- oder Gerätepostfächern öffnen Sie Outlook auf Ihrem C
     
 8. Damit andere Personen online teilnehmen oder sich in die Besprechung einwählen können, klicken Sie auf **Skype-Besprechung**.
     
-9. Um sicherzustellen, dass der Raum, das Gerät und die eingeladenen Personen verfügbar sind, klicken Sie oben auf **Terminplanungs-Assistent**. Wählen Sie dann eine verfügbare Zeit im Kalender aus.<br/> ![Prüfen, ob Raum oder Gerät verfügbar ist](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>Tipp: Im Terminplanungskalender bedeutet blau, dass der Raum oder das Gerät reserviert ist bzw. gerade verwendet wird. Wählen Sie einen weißen (leeren) Bereich im Kalender aus. 
+9. Um sicherzustellen, dass der Raum, das Gerät und die eingeladenen Personen verfügbar sind, klicken Sie oben auf **Terminplanungs-Assistent**. Wählen Sie dann eine verfügbare Zeit im Kalender aus.<br/> ![Prüfen, ob Raum oder Gerät verfügbar ist](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>TIPP: Im Terminplanungskalender bedeutet blau, dass der Raum oder das Gerät reserviert ist bzw. gerade verwendet wird. Wählen Sie den weißen (oder leeren) Bereich im Kalender aus. 
   
 10. Wählen Sie anschließend **Senden**.
     
 ## <a name="set-up-room-and-equipment-mailboxes"></a>Einrichten von Raum- und Gerätepostfächern
 
-Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Microsoft 365 Admin Center. (Dazu müssen Sie über Administratorberechtigungen verfügen.) Erstellen Sie das Postfach, und teilen Sie allen Personen mit, dass sie es ab sofort zum Reservieren für Besprechungen und Veranstaltungen verwenden können.
+Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Microsoft 365 Admin Center. (Dazu müssen Sie über Administratorberechtigungen verfügen.) Erstellen Sie das Postfach und teilen Sie allen Personen mit, dass sie es ab sofort zum Reservieren für Besprechungen und Veranstaltungen verwenden können.
   
 1. Wechseln Sie im Admin Center zur Seite **Ressourcen** \> [Räume &amp; Equipment](https://go.microsoft.com/fwlink/p/?linkid=2067334).
   
@@ -88,7 +88,7 @@ Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Mi
 6. Wenn Sie Änderungen vorgenommen haben, wählen Sie **Speichern** und dann **Schließen** aus.
 
 > [!Note]
-> Damit Ihre Raum-und Gerätepostfächer geschützt bleiben, blockieren Sie die Anmeldung bei diesen Postfächern. Weitere Informationen finden Sie unter [Blockieren der Anmeldung für das freigegebene Postfachkonto](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Damit Ihre Raum-und Gerätepostfächer geschützt bleiben, blockieren Sie die Anmeldung bei diesen Postfächern. Weitere Informationen finden Sie unter [Blockieren der Anmeldung für das freigegebene Postfachkonto](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Häufige Fragen zu Raum- und Gerätepostfächern
 
@@ -106,7 +106,7 @@ Wenn Sie ein Raum- oder Gerätepostfach einrichten möchten, wechseln Sie zum Mi
   
 ### <a name="does-a-room-mailbox-or-equipment-mailbox-need-a-product-license"></a>Benötigt ein Raum- oder Gerätepostfach eine Produktlizenz?
 
-Nein. Obwohl für die meisten Benutzer in Ihrer Organisation eine Lizenz für die Nutzung von Microsoft 365 erforderlich ist, müssen Sie einem Raum- oder Gerätepostfach keine Lizenz zuweisen.
+Nein. Obwohl für die meisten Benutzer in Ihrer Organisation eine Lizenz für die Nutzung von Microsoft 365 erforderlich ist, müssen Sie einem Raum- oder Gerätepostfach keine Lizenz zuweisen.
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>Benötige ich jemanden, der für das Buchen der Räume oder Geräte zuständig ist?
 
