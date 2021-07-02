@@ -17,19 +17,19 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Übersicht über die Verarbeitung verschiedener Arten von Daten in Advanced eDiscovery.
-ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: Übersicht über die Verarbeitung verschiedener Formen von Daten in Advanced eDiscovery.
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751512"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256303"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Arbeiten mit Verarbeitungsfehlern in Advanced eDiscovery
 
-*Die* Verarbeitung ist der Prozess der Dateiidentifikation, der Erweiterung eingebetteter Dokumente und Anlagen, der Textextraktion und der optischen Zeichenerkennung (Optical Character Recognition, OCR)) von Bilddateien und der anschließenden Indizierung dieses Inhalts.  
+*Bei* der Verarbeitung handelt es sich um den Prozess der Dateiidentifikation, der Erweiterung eingebetteter Dokumente und Anlagen, der Textextraktion und der optischen Zeichenerkennung (OCR) von Bilddateien und der nachfolgenden Indizierung dieses Inhalts.  
 
-Wenn Sie einem Fall auf der Registerkarte Quellen  Custodians und nicht vertrauenswürdige Datenquellen hinzufügen, werden alle teilweise indizierten Elemente aus Microsoft 365 verarbeitet, um sie vollständig durchsuchbar zu machen. Ebenso wird dieser Inhalt verarbeitet, wenn Inhalt aus Microsoft 365 und nicht Microsoft 365 einem Überprüfungssatz hinzugefügt wird.
+Wenn Sie verwahrte und nicht verwahrte Datenquellen zu einem Fall auf der Registerkarte **"Quellen"** hinzufügen, werden alle teilweise indizierten Elemente aus Microsoft 365 verarbeitet, um sie vollständig durchsuchbar zu machen. Wenn Inhalte sowohl aus Microsoft 365 als auch aus nicht Microsoft 365 Datenquellen zu einem Prüfdateisatz hinzugefügt werden, wird dieser Inhalt ebenfalls verarbeitet.
 
 Die Registerkarte **Verarbeitung** in Advanced eDiscovery bietet einen Einblick in den Status der erweiterten Indizierung für unterschiedliche Verarbeitungsszenarien.
 

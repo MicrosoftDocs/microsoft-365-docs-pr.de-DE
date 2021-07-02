@@ -14,15 +14,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Administratoren können erfahren, wie Sie die erweiterte Übermittlungsrichtlinie in Exchange Online Protection (EOP) verwenden, um Nachrichten zu identifizieren, die in bestimmten unterstützten Szenarien (Phishingsimulationen von Drittanbietern und Nachrichten, die an Sicherheitsvorgänge (SecOps)-Postfächer übermittelt werden, nicht gefiltert werden sollten.
+description: Administratoren können erfahren, wie Sie die erweiterte Übermittlungsrichtlinie in Exchange Online Protection (EOP) verwenden, um Nachrichten zu identifizieren, die in bestimmten unterstützten Szenarien (Phishingsimulationen von Drittanbietern und Nachrichten, die an SecOps-Postfächer (Security Operations) übermittelt werden, nicht gefiltert werden sollten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d35c1f0c7abc7b6ce34fc9c2ec4d5fd5b228ae
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 053f88da96983b03ad03e75c11a4fa692ac6a850
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137739"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256867"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurieren der Übermittlung von Phishingsimulationen von Drittanbietern an Benutzer und ungefilterte Nachrichten an SecOps-Postfächer
 
@@ -34,10 +34,10 @@ ms.locfileid: "53137739"
 > [!NOTE]
 > Das in diesem Artikel beschriebene Feature befindet sich in der Vorschau, ist nicht für alle verfügbar und kann geändert werden.
 
-Um Ihre Organisation [standardmäßig zu schützen,](secure-by-default.md)lässt Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die als Schadsoftware oder Phishing mit hoher Vertrauenswürdigkeit identifiziert werden. Es gibt jedoch bestimmte Szenarien, die die Übermittlung ungefilterter Nachrichten erfordern. Zum Beispiel:
+Um Ihre Organisation [standardmäßig zu schützen,](secure-by-default.md)erlaubt Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten, die als Schadsoftware oder Phishing mit hoher Vertrauenswürdigkeit identifiziert werden. Es gibt jedoch bestimmte Szenarien, die die Übermittlung ungefilterter Nachrichten erfordern. Beispiel:
 
 - **Phishingsimulationen von Drittanbietern:** Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein tatsächlicher Angriff auf Ihre Organisation auswirkt.
-- **SecOps-Postfächer (Security Operations):** Dedizierte Postfächer, die von Sicherheitsteams verwendet werden, um ungefilterte Nachrichten zu sammeln und zu analysieren (sowohl gute als auch schlechte).
+- **Sicherheitsvorgänge (SecOps) Postfächer:** Dedizierte Postfächer, die von Sicherheitsteams verwendet werden, um ungefilterte Nachrichten zu sammeln und zu analysieren (sowohl gut als auch schlecht).
 
 Sie verwenden die _erweiterte Übermittlungsrichtlinie_ in Microsoft 365, um zu verhindern, dass diese Nachrichten _in diesen spezifischen Szenarien_ gefiltert werden. <sup>\*</sup> Die erweiterte Übermittlungsrichtlinie stellt sicher, dass Nachrichten in diesen Szenarien die folgenden Ergebnisse erzielen:
 
@@ -67,7 +67,7 @@ Nachrichten, die von der erweiterten Übermittlungsrichtlinie identifiziert werd
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen Berechtigungen zugewiesen werden:
-  - Um konfigurierte Einstellungen in der erweiterten Übermittlungsrichtlinie zu erstellen, zu ändern oder zu entfernen, müssen Sie Mitglied der **Rollengruppe "Sicherheitsadministrator"** im **Microsoft 365 Defender-Portal** und Mitglied der **Rollengruppe "Organisationsverwaltung"** in **Exchange Online** sein.
+  - Um konfigurierte Einstellungen in der erweiterten Übermittlungsrichtlinie zu erstellen, zu ändern oder zu entfernen, müssen Sie Mitglied der Rollengruppe **"Sicherheitsadministrator"** im **Microsoft 365 Defender-Portal** und Mitglied der **Rollengruppe "Organisationsverwaltung"** in **Exchange Online** sein.
   - Für den schreibgeschützten Zugriff auf die Erweiterte Übermittlungsrichtlinie müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** sein.
 
   Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-microsoft-365-security-center.md) und [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -77,7 +77,7 @@ Nachrichten, die von der erweiterten Übermittlungsrichtlinie identifiziert werd
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Verwenden des Microsoft 365 Defender-Portals zum Konfigurieren von SecOps-Postfächern in der erweiterten Übermittlungsrichtlinie
 
-1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite **"E-Mail &** \> **Zusammenarbeitsrichtlinien & Richtlinien** für \> **Bedrohungsregeln"** im Abschnitt \>  \> **"Erweiterte Zustellung".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Seite \> "Regeln für **Bedrohungsrichtlinien"** im Abschnitt \>  \> **"Erweiterte Zustellung".**
 
 2. Überprüfen Sie auf der Seite **"Erweiterte Zustellung",** ob die Registerkarte **"SecOps-Postfach"** ausgewählt ist, und führen Sie dann einen der folgenden Schritte aus:
    - Klicken Sie auf ![ ](../../media/m365-cc-sc-edit-icon.png) **"Bearbeiten"-Symbol**.
@@ -97,7 +97,7 @@ Die von Ihnen konfigurierten SecOps-Postfacheinträge werden auf der Registerkar
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Verwenden des Microsoft 365 Defender Portals zum Konfigurieren von Phishingsimulationen von Drittanbietern in der erweiterten Übermittlungsrichtlinie
 
-1. Wechseln Sie im Microsoft 365 Defender Portal zur Seite **"E-Mail &** \> **Zusammenarbeitsrichtlinien & Richtlinien** für \> **Bedrohungsregeln"** im Abschnitt \>  \> **"Erweiterte Zustellung".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Seite \> "Regeln für **Bedrohungsrichtlinien"** im Abschnitt \>  \> **"Erweiterte Zustellung".**
 
 2. Wählen Sie auf der Seite **"Erweiterte Übermittlung"** die Registerkarte **"Phishingsimulation"** aus, und führen Sie dann einen der folgenden Schritte aus:
    - Klicken Sie auf ![ ](../../media/m365-cc-sc-edit-icon.png) **"Bearbeiten"-Symbol**.
@@ -124,7 +124,7 @@ Die von Ihnen konfigurierten Einträge für Phishingsimulationen von Drittanbiet
 
 Zusätzlich zu den beiden Szenarien, die Ihnen mit der erweiterten Übermittlungsrichtlinie helfen können, gibt es weitere Szenarien, in denen Sie die Filterung umgehen müssen:
 
-- **Filter von Drittanbietern:** Wenn der MX-Eintrag Ihrer Domäne *nicht* auf Office 365 verweist (Nachrichten werden zuerst an eine andere Stelle weitergeleitet), ist [die Standardmäßige Sicherheit](secure-by-default.md) nicht *verfügbar.* Wenn Sie Schutz hinzufügen möchten, müssen Sie die erweiterte Filterung für Connectors aktivieren (auch als *Skip-Eintrag* bezeichnet). Weitere Informationen finden Sie unter Verwalten des [Nachrichtenflusses mithilfe eines Clouddiensts eines Drittanbieters mit Exchange Online.](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) Wenn Sie die erweiterte Filterung für Connectors nicht wünschen, verwenden Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), um die Microsoft-Filterung für Nachrichten zu umgehen, die bereits von der Drittanbieterfilterung ausgewertet wurden. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln, um die SCL in Nachrichten festzulegen.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
+- **Filter von Drittanbietern:** Wenn der MX-Eintrag Ihrer Domäne *nicht* auf Office 365 verweist (Nachrichten werden zuerst an eine andere Stelle weitergeleitet), ist [die standardmäßige Sicherheit](secure-by-default.md) nicht *verfügbar.* Wenn Sie Schutz hinzufügen möchten, müssen Sie die erweiterte Filterung für Connectors aktivieren (auch als *Skip-Eintrag* bezeichnet). Weitere Informationen finden Sie unter Verwalten des [Nachrichtenflusses mithilfe eines Clouddiensts eines Drittanbieters mit Exchange Online.](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud) Wenn Sie die erweiterte Filterung für Connectors nicht wünschen, verwenden Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), um die Microsoft-Filterung für Nachrichten zu umgehen, die bereits von der Drittanbieterfilterung ausgewertet wurden. Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln, um die SCL in Nachrichten festzulegen.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - **Falsch positive Ergebnisse, die überprüft** werden: Möglicherweise möchten Sie bestimmten Nachrichten, die noch von Microsoft über [Administratorübermittlungen](admin-submission.md) analysiert werden, vorübergehend gestatten, bekannte gute Nachrichten zu melden, die fälschlicherweise als falsch für Microsoft gekennzeichnet sind (falsch positive Ergebnisse). Wie bei allen Außerkraftsetzungen wird **_dringend empfohlen,_** dass diese Außerkraftsetzungen temporär sind.
 
@@ -161,7 +161,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<Ema
 In diesem Beispiel wird die SecOps-Postfachrichtlinie erstellt.
 
 ```powershell
-New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 ```
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-SecOpsOverridePolicy](/powershell/module/exchange/new-secopsoverridepolicy).
@@ -267,7 +267,7 @@ In Exchange Online PowerShell sind die grundlegenden Elemente von Phishingsimula
 
 Dieses Verhalten hat die folgenden Ergebnisse:
 
-- Sie erstellen zuerst die Richtlinie, dann die Regel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
+- Sie erstellen zuerst die Richtlinie und dann die Regel, die die Richtlinie identifiziert, auf die die Regel angewendet wird.
 - Sie ändern die Einstellungen in der Richtlinie und der Regel separat.
 - Wenn Sie eine Richtlinie aus PowerShell entfernen, wird auch die entsprechende Regel entfernt.
 - Wenn Sie eine Regel aus PowerShell entfernen, wird die entsprechende Richtlinie nicht entfernt. Sie müssen die entsprechende Richtlinie manuell entfernen.

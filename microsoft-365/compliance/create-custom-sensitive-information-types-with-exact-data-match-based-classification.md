@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dc1d3f08ab55f496ae7c6a12f35b71fa5b384688
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227127"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256699"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -51,14 +51,14 @@ Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp (SIT)
 Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrauliche Informationstypen zu erstellen, die sich auf genaue Werte in einer Datenbank mit vertraulichen Informationen beziehen. Die Datenbank kann täglich aktualisiert werden und bis zu 100 Millionen Datenzeilen enthalten. Mitarbeiter, Patienten oder Kunden kommen und gehen und Datensätze ändern sich, aber Ihre benutzerdefinierten vertraulichen Informationstypen bleiben aktuell und anwendbar. Darüber hinaus können Sie EDM-basierte Klassifikation mit Richtlinien verwenden, z. B. [Richtlinien zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md) oder [Microsoft Cloud App Security-Dateirichtlinien](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> Microsoft 365 Information Protection unterstützt in der Vorschauversion Sprachen mit Doppelbyte-Zeichensätzen für:
+> Microsoft 365 Information Protection unterstützt Doppelbyte-Zeichensatzsprachen für:
 > - Chinesisch (vereinfacht)
 > - Chinesisch (traditionell)
 > - Koreanisch
 > - Japanisch
 > 
 > Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
- 
+
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
@@ -106,7 +106,7 @@ Die Datendatei kann maximal Folgendes umfassen:
       - bis zu 32 Spalten (Felder) pro Datenquelle
       - bis zu 5 als durchsuchbar markierte Spalten (Felder)
 
-2. Strukturierung der vertraulichen Daten in der .csv- oder TSV-Datei, sodass die erste Zeile die Namen der Felder enthält, die für die EDM-basierte Klassifizierung verwendet werden. In Ihrer Datei haben Sie möglicherweise Feldnamen wie "ssn", "birthdate", "firstname", "lastname". Die Namen der Spaltenüberschriften dürfen keine Leerzeichen oder Unterstriche enthalten. Die CSV-Datei, die wir in diesem Artikel verwenden, trägt beispielsweise den Namen *PatientRecords.csv* und hat u. a. die Spalten *PatientID*, *MRN*, *LastName*, *FirstName* und *SSN*.
+2. Strukturierung der vertraulichen Daten in der .csv- oder TSV-Datei, sodass die erste Zeile die Namen der Felder enthält, die für die EDM-basierte Klassifizierung verwendet werden. In Ihrer Datei befinden sich möglicherweise Feldnamen wie "ssn", "birthdate", "firstname", "lastname". Die Namen der Spaltenüberschriften dürfen keine Leerzeichen oder Unterstriche enthalten. Die CSV-Datei, die wir in diesem Artikel verwenden, trägt beispielsweise den Namen *PatientRecords.csv* und hat u. a. die Spalten *PatientID*, *MRN*, *LastName*, *FirstName* und *SSN*.
 
 3. Achten Sie auf das Format der Felder für die vertraulichen Daten. Insbesondere Felder, die Kommas in ihrem Inhalt enthalten können, z. B. eine Straßenadresse, die den Wert "Seattle,WA" enthält, werden bei der Analyse als zwei separate Felder analysiert, wenn das .csv Format ausgewählt ist. Um dies zu vermeiden, verwenden Sie das TSV-Format oder umgeben das Komma mit Werten in doppelte Anführungszeichen in der Tabelle mit vertraulichen Daten. Wenn Kommas, die Werte enthalten, auch Leerzeichen enthalten, müssen Sie eine benutzerdefinierte SIT erstellen, die dem entsprechenden Format entspricht. Beispielsweise eine SIT, die zeichenfolgen mit mehreren Wörtern mit Kommas und Leerzeichen erkennt.
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c200d4ac81f12e46b085261c5ece279839255f4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228387"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277013"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Neuigkeiten in Microsoft Defender für Endpunkt
 
@@ -48,45 +48,53 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 ## <a name="june-2021"></a>Juni 2021
 
+- Bewertung von [Software-Sicherheitsrisiken beim Delta-Export](get-assessment-methods-properties.md#31-methods) Api <br> Eine Ergänzung zu den [Exportbewertungen von Sicherheitsrisiken und](get-assessment-methods-properties.md) der API-Sammlung sicherer Konfigurationen. <br> Im Gegensatz zur vollständigen Bewertung von Software-Sicherheitsrisiken (JSON-Antwort), die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten, wird der Delta-Export-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der Delta-Export-API-Aufruf kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken behoben wurden" oder "wie viele neue Sicherheitsrisiken einer Organisation hinzugefügt wurden".
+
+- [Exportieren von Bewertungen von Sicherheitsrisiken und sicheren Konfigurationen](get-assessment-methods-properties.md) Api <br> Fügt eine Sammlung von APIs hinzu, die Bedrohungs- und Sicherheitsrisikomanagement Daten pro Gerät abrufen. Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen: Bewertung der sicheren Konfiguration, Bewertung des Softwarebestands und Bewertung von Software-Sicherheitsrisiken. Jeder API-Aufruf enthält die erforderlichen Daten für Geräte in Ihrer Organisation.
+
+- [Korrekturaktivität](get-remediation-methods-properties.md) Api <br>  Fügt eine Auflistung von APIs mit Antworten hinzu, die Bedrohungs- und Sicherheitsrisikomanagement Korrekturaktivitäten enthalten, die in Ihrem Mandanten erstellt wurden. Antwortinformationstypen umfassen eine Korrekturaktivität nach ID, alle Korrekturaktivitäten und verfügbar gemachte Geräte einer Korrekturaktivität.
+
 - [Geräteermittlung](device-discovery.md) <br> Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder umständliche Prozessänderungen erforderlich sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Sie können dann ermittelte Geräte integrieren, um risiken im Zusammenhang mit nicht verwalteten Endpunkten in Ihrem Netzwerk zu verringern.
 
    > [!IMPORTANT]
    > Die Standardermittlung ist ab dem 19. Juli 2021 der Standardmodus für alle Kunden. Sie können den Basismodus über die Einstellungsseite beibehalten.
 
-
 - [Gerätegruppendefinitionen](/microsoft-365/security/defender-endpoint/machine-groups) können jetzt mehrere Werte für jede Bedingung enthalten. Sie können mehrere Tags, Gerätenamen und Domänen auf die Definition einer einzelnen Gerätegruppe festlegen.
 
 ## <a name="march-2021"></a>März 2021
+
 - [Verwalten des Manipulationsschutzes mithilfe der Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Sie können Manipulationsschutzeinstellungen auf Windows 10, Windows Server 2016 und Windows Server 2019 mithilfe einer Methode namens *Tenant Attach* verwalten.
 
 ## <a name="january-2021"></a>Januar 2021
 
-- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender für Endpunkt bietet jetzt Unterstützung für Windows Virtual Desktop.
+- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender für Endpunkt fügt jetzt Unterstützung für Windows Virtual Desktop hinzu.
 
 ## <a name="december-2020"></a>Dezember 2020
+
 - [Microsoft Defender für Endpunkt für iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender für Endpunkt fügt jetzt Unterstützung für iOS hinzu. Erfahren Sie, wie Sie Microsoft Defender für Endpunkt unter iOS installieren, konfigurieren, aktualisieren und verwenden.
 
 ## <a name="september-2020"></a>September 2020
+
 - [Microsoft Defender für Endpunkt unter Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender für Endpunkt fügt jetzt Unterstützung für Android hinzu. Erfahren Sie, wie Sie Microsoft Defender für Endpunkt unter Android installieren, konfigurieren, aktualisieren und verwenden.
 - [MacOS-Unterstützung für Bedrohungen und Sicherheitsrisikomanagement](tvm-supported-os.md)<br> Bedrohungen und Sicherheitsrisikomanagement für macOS befinden sich jetzt in der öffentlichen Vorschau und erkennen kontinuierlich Sicherheitsrisiken auf Ihren macOS-Geräten, damit Sie die Behebung priorisieren können, indem Sie sich auf risiken konzentrieren. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)
 
-
 ## <a name="august-2020"></a>August 2020
+
 - [Microsoft Defender für Endpunkt unter Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender für Endpunkt fügt jetzt Unterstützung für Android hinzu. Erfahren Sie, wie Sie Microsoft Defender für Endpunkt unter Android installieren, konfigurieren und verwenden.
 
-
 ## <a name="july-2020"></a>Juli 2020
+
 - [Erstellen von Indikatoren für Zertifikate](manage-indicators.md) <br> Erstellen sie Indikatoren, um Zertifikate zuzulassen oder zu blockieren.
 
 ## <a name="june-2020"></a>Juni 2020
+
 - [Microsoft Defender für Endpunkt unter Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender für Endpunkt fügt jetzt Unterstützung für Linux hinzu. Erfahren Sie, wie Sie Microsoft Defender für Endpunkt unter Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 - [Angriffssimulatoren im Evaluierungslabor](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender für Endpunkt hat sich mit verschiedenen Bedrohungssimulationsplattformen zusammen entwickelt, um Ihnen bequemen Zugriff zu bieten, um die Funktionen der Plattform direkt im Portal zu testen.
 
-
 ## <a name="april-2020"></a>April 2020
 
-- [Unterstützung der API für die Bedrohungs- &-Sicherheitsrisikoverwaltung](exposed-apis-list.md) <BR>Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungsverwaltung & aus, z. B. abrufen der Bewertung der Bedrohungsrisiken Oder der Sicherheitsbewertung ihres Geräts, des Inventars von Software- und Gerätesicherheitsrisiken, der Softwareversionsverteilung, Informationen zu Sicherheitsrisiken des Geräts, Informationen zu Sicherheitsempfehlungen. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+- [Api-Unterstützung für die Bedrohungs- &-Sicherheitsrisikoverwaltung](exposed-apis-list.md) <BR>Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungsverwaltung & aus, z. B. abrufen der Bewertung der Bedrohungsrisiken Oder der Sicherheitsbewertung ihres Geräts, des Inventars von Software- und Gerätesicherheitsrisiken, der Softwareversionsverteilung, Informationen zu Sicherheitsrisiken des Geräts, Informationen zu Sicherheitsempfehlungen. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
 ## <a name="november-december-2019"></a>November-December 2019
 
@@ -98,12 +106,11 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
  - [Rollenbasierte Zugriffssteuerungen für die Bedrohungs- &-Sicherheitsrisikoverwaltung](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Verwenden Sie die neuen Berechtigungen, um maximale Flexibilität beim Erstellen von SecOps-orientierten Rollen, Bedrohungs- & Anfälligkeitsmanagement-orientierten Rollen oder Hybridrollen zu ermöglichen, sodass nur autorisierte Benutzer auf bestimmte Daten zugreifen, um ihre Aufgabe auszuführen. Sie können auch noch mehr Granularität erreichen, indem Sie angeben, ob eine Rolle "Bedrohungs- & Sicherheitsrisikoverwaltung" nur Sicherheitsrisiko-bezogene Daten anzeigen oder Wiederherstellungs- und Ausnahmen erstellen und verwalten kann.
 
-- [Bericht über Geräteintegrität und -compliance](machine-reports.md) <br/> Der Bericht über Geräteintegrität und -compliance enthält allgemeine Informationen zu den Geräten in Ihrer Organisation.
+- [Bericht „Geräteintegrität und -Compliance“](machine-reports.md) <br/> Der Bericht über Geräteintegrität und -compliance enthält allgemeine Informationen zu den Geräten in Ihrer Organisation.
 
 ## <a name="october-2019"></a>Oktober 2019
 
 - [Indikatoren für IP-Adressen, URLs/Domänen](manage-indicators.md) <BR> Sie können jetzt URLs/Domänen mitHilfe Ihrer eigenen Bedrohungserkennung zulassen oder blockieren.
-
 
 - [Microsoft-Bedrohungsexperten – Experten bei Bedarf](microsoft-threat-experts.md) <BR> Sie haben jetzt die Möglichkeit, sich mit Microsoft-Bedrohungsexperten von mehreren Stellen im Portal in Verbindung zu nehmen, um Sie im Zusammenhang mit Ihrer Untersuchung zu unterstützen.
 
@@ -111,17 +118,15 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 - [API-Explorer](api-explorer.md)<br> Der API-Explorer erleichtert das Erstellen und Ausführen von API-Abfragen, das Testen und Senden von Anforderungen für alle verfügbaren Microsoft Defender für Endpunkt-API-Endpunkte.
 
-
 ## <a name="september-2019"></a>September 2019
 
-- [Manipulationsschutzeinstellungen mit Intune](prevent-changes-to-security-settings-with-tamper-protection.md)<br/>Sie können nun den Manipulationsschutz für Ihre Organisation im Microsoft 365 Device Management Portal (Intune) aktivieren (oder deaktivieren).
+- [Manipulationsschutzeinstellungen mit Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Sie können nun den Manipulationsschutz für Ihre Organisation im Microsoft 365 Device Management Portal (Intune) aktivieren (oder deaktivieren).
 
-- [Live-Antwort](live-response.md)<BR> Erhalten Sie sofortigen Zugriff auf ein Gerät über eine Remoteshell-Verbindung. Führen Sie eine eingehende Untersuchung durch und ergreifen Sie sofortige Maßnahmen, um erkannte Bedrohungen umgehend einzudämmen – in Echtzeit.
+- [Live-Antwort](live-response.md) <BR> Erhalten Sie sofortigen Zugriff auf ein Gerät über eine Remoteshell-Verbindung. Führen Sie eine eingehende Untersuchung durch und ergreifen Sie sofortige Maßnahmen, um erkannte Bedrohungen umgehend einzudämmen – in Echtzeit.
 
 - [Evaluierungslabor](evaluation-lab.md) <BR> Das Evaluierungslabor von Microsoft Defender für Endpunkt wurde entwickelt, um die Komplexität der Geräte- und Umgebungskonfiguration zu beseitigen, sodass Sie sich auf die Bewertung der Funktionen der Plattform, das Ausführen von Simulationen und das Anzeigen der Funktionen zur Verhinderung, Erkennung und Wartung konzentrieren können.
 
 - [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Sie können jetzt Windows Server 2008 R2 SP1 integrieren.
-
 
 ## <a name="june-2019"></a>Juni 2019
 
@@ -133,29 +138,26 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 - [Berichte zum Bedrohungsschutz](threat-protection-reports.md)<BR>Der Bedrohungsschutzbericht enthält allgemeine Informationen zu Warnungen, die in Ihrer Organisation generiert werden.
 
-
 - [Microsoft-Bedrohungsexperten](microsoft-threat-experts.md)<BR> Microsoft-Bedrohungsexperten ist der neue Dienst für die verwaltete Bedrohungssuche in Microsoft Defender für Endpunkt, der proaktive Suche, Priorisierung und zusätzlichen Kontext und Einblicke bietet, die Sicherheits-Operations Center (SOCs) weiter unterstützen, Bedrohungen schnell und präzise zu identifizieren und darauf zu reagieren. Es bietet zusätzliche Expertise und Optik, die Microsoft-Kunden nutzen können, um die Sicherheitsfunktionen im Rahmen Microsoft 365 zu erweitern.
 
 - [Indikatoren](ti-indicator.md) <BR> APIs für Indikatoren sind jetzt allgemein verfügbar.
 
-
 - [Interoperabilität](partner-applications.md) <BR> Microsoft Defender für Endpunkt unterstützt Drittanbieteranwendungen, um die Erkennungs-, Untersuchungs- und Bedrohungserkennungsfunktionen der Plattform zu verbessern.
 
-
 ## <a name="april-2019"></a>April 2019
-- [Microsoft-Bedrohungsexperten Benachrichtigungsfunktion für gezielte Angriffe](microsoft-threat-experts.md) <BR> Die Benachrichtigungen über gezielte Angriffsbenachrichtigungen von Microsoft-Bedrohungsexperten sind auf Organisationen zugeschnitten, um so viele Informationen bereitzustellen, wie sie schnell bereitgestellt werden können, um die Aufmerksamkeit auf kritische Bedrohungen in ihrem Netzwerk zu lenken, einschließlich der Zeitachse, des Umfangs von Sicherheitsverletzungen und der Angriffsmethoden.
+
+- [Microsoft-Bedrohungsexperten Benachrichtigungsfunktion für gezielte Angriffe](microsoft-threat-experts.md) <BR> Die Benachrichtigungen über gezielte Angriffsbenachrichtigungen Microsoft-Bedrohungsexperten sind auf Organisationen zugeschnitten, um so viele Informationen bereitzustellen, wie sie schnell bereitgestellt werden können, um die Aufmerksamkeit auf kritische Bedrohungen in ihrem Netzwerk zu lenken, einschließlich der Zeitachse, des Umfangs der Verletzung und der Angriffsmethoden.
 
 - [Microsoft Defender für Endpunkt API](apis-intro.md) <BR> Microsoft Defender für Endpunkt macht einen Großteil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Workflows automatisieren und Innovationen basierend auf den Microsoft Defender für Endpunkt-Funktionen durchführen.
 
-
-
 ## <a name="february-2019"></a>Februar 2019
+
 - [Vorfälle](view-incidents-queue.md) <BR> Incident ist eine neue Entität in Microsoft Defender für Endpunkt, die alle relevanten Warnungen und zugehörigen Entitäten zusammenführt, um die umfassendere Angriffsstory zu erzählen und Analysten eine bessere Perspektive auf die Bereinigung komplexer Bedrohungen zu geben.
 
-- [Onboarding von früheren Windows-Versionen](onboard-downlevel.md)<BR> Integrieren Sie unterstützte Versionen von Windows-Geräten, damit sie Sensordaten an den Microsoft Defender für Endpunkt-Sensor senden können.
-
+- [Onboarding von früheren Windows-Versionen](onboard-downlevel.md)<BR> Integrieren Sie unterstützte Versionen von Windows Geräten, damit sie Sensordaten an den Microsoft Defender für Endpunkt-Sensor senden können.
 
 ## <a name="october-2018"></a>Oktober 2018
+
 - [Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)<BR>Alle Attack Surface Reduction-Regeln werden jetzt auf Windows Server 2019 unterstützt.
 
 - [Kontrollierter Ordnerzugriff](enable-controlled-folders.md)<BR> Der kontrollierte Ordnerzugriff wird jetzt auf Windows Server 2019 unterstützt.
@@ -164,7 +166,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 - [Integration in Azure Defender](configure-server-endpoints.md)<BR> Microsoft Defender für Endpunkt lässt sich in Azure Defender integrieren, um eine umfassende Serverschutzlösung bereitzustellen. Mit dieser Integration kann Azure Defender die Leistungsfähigkeit von Microsoft Defender für Endpunkt nutzen, um eine verbesserte Bedrohungserkennung für Windows Server bereitzustellen.
 
-- [Unterstützung von Verwalteten Sicherheitsdienstanbietern (Managed Security Service Provider, MSSP)](mssp-support.md)<BR> Microsoft Defender für Endpunkt fügt Unterstützung für dieses Szenario hinzu, indem MSSP-Integration bereitgestellt wird. Die Integration ermöglicht MSSPs die folgenden Aktionen: Zugriff auf das Microsoft Defender Security Center-Portal des MSSP-Kunden, Abrufen von E-Mail-Benachrichtigungen und Abrufen von Warnungen über SIEM-Tools (Security Information and Event Management).
+- [Unterstützung von Verwalteten Sicherheitsdienstanbietern (Managed Security Service Provider, MSSP)](mssp-support.md)<BR> Microsoft Defender für Endpunkt fügt Unterstützung für dieses Szenario hinzu, indem MSSP-Integration bereitgestellt wird. Mit der Integration können MSSPs die folgenden Aktionen ausführen: Zugriff auf das Microsoft Defender Security Center-Portal des MSSP-Kunden, Abrufen von E-Mail-Benachrichtigungen und Abrufen von Warnungen über SIEM-Tools (Security Information and Event Management).
 
 - [Steuerelement für Wechselmedien](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/)<BR>Microsoft Defender für Endpunkt bietet mehrere Überwachungs- und Steuerungsfunktionen, um Bedrohungen durch Wechselmedien zu verhindern, einschließlich neuer Einstellungen zum Zulassen oder Blockieren bestimmter Hardware-IDs.
 
@@ -222,5 +224,3 @@ Sie können jetzt verhindern, dass nicht vertrauenswürdige Prozesse mithilfe de
 Microsoft Defender Antivirus teilt jetzt den Erkennungsstatus zwischen Microsoft 365 Diensten und arbeitet mit Microsoft Defender für Endpunkt zusammen. Weitere Informationen finden Sie unter Verwenden von Technologien der nächsten Generation in Microsoft Defender Antivirus über über [die Cloud bereitgestellten Schutz.](cloud-protection-microsoft-defender-antivirus.md)
 
     "Bei erster Anzeige blockieren" kann jetzt nicht portierbare ausführbare Dateien (z. B. JS, VBS oder Makros) sowie ausführbare Dateien blockieren. Weitere Informationen finden Sie unter [Aktivieren von "Bei erster Anzeige blockieren".](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-
-

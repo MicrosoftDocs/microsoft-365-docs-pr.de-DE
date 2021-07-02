@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908269"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256315"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -44,8 +44,10 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
 Teams-Chatnachrichten und -Kanalnachrichten können mithilfe von Aufbewahrungsrichtlinien für Teams gelöscht werden. Zusätzlich zum Text in den Nachrichten können die folgenden Elemente aus Compliance-Gründen beibehalten werden: Eingebettete Bilder, Tabellen, Hypertext-Links, Links zu anderen Teams-Nachrichten und Dateien und [Karteninhalt](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
+> [!NOTE]
+> Die Unterstützung für Nachrichten in privaten Kanälen wird derzeit als Vorschauversion eingeführt.
 
-Teams-Nachrichten in privaten Kanälen werden derzeit nicht für Aufbewahrungsrichtlinien unterstützt. Codeausschnitte, aufgezeichnete Sprachnotizen vom Mobile Microsoft Teams-Clients, Miniaturansichten, Ankündigungsbilder und Reaktionen anderer in Form von Emoticons sind nicht beibehalten, wenn Sie Aufbewahrungsrichtlinien für Teams verwenden.
+Codeausschnitte, aufgezeichnete Sprachnotizen vom Mobile Microsoft Teams-Clients, Miniaturansichten, Ankündigungsbilder und Reaktionen anderer in Form von Emoticons sind nicht beibehalten, wenn Sie Aufbewahrungsrichtlinien für Teams verwenden.
 
 E-Mails und Dateien, die Sie mit Teams verwenden, sind in den Aufbewahrungsrichtlinien für Teams nicht beinhaltet. Diese Elemente haben ihre eigenen Aufbewahrungsrichtlinien.
 
@@ -59,7 +61,7 @@ Diese Postfächer sind nach ihrem Attribut "RecipientTypeDetails" aufgelistet:
 
 - **UserMailbox**: In diesen Postfächern werden Nachrichtendaten für cloudbasierte Teams-Benutzer gespeichert.
 - **MailUser**: In diesen Postfächern werden Nachrichtendaten für [lokale Teams-Benutzer](search-cloud-based-mailboxes-for-on-premises-users.md) gespeichert.
-- **GroupMailbox**: In diesen Postfächern werden Nachrichtendaten für Teams-Kanäle gespeichert.
+- **GroupMailbox**: In diesen Postfächern werden Nachrichtendaten für Standardkanäle in Teams gespeichert.
 
 Andere Postfachtypen, z. B. RoomMailbox, die für Teams-Konferenzräume verwendet werden, werden für Teams-Aufbewahrungsrichtlinien nicht unterstützt.
 

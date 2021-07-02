@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen Connector einrichten, um RingCentral-Daten von Microsoft 365 zu importieren und zu archivieren. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliance-Features wie gesetzliche Aufbewahrung, eDiscovery und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
-ms.openlocfilehash: 57c993ce99556677c0161649254b5ab43caace0e
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+description: Administratoren können einen Connector zum Importieren und Archivieren von RingCentral-Daten aus Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliance-Features wie gesetzliche Aufbewahrung, eDiscovery und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
+ms.openlocfilehash: b5e98df50b0610c9fb583a8521c7a6d6fdb48e44
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53244013"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276857"
 ---
-# <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Einrichten eines Connectors zum Archivieren von RingCentral-Daten
+# <a name="set-up-a-connector-to-archive-ringcentral-data-preview"></a>Einrichten eines Connectors zum Archivieren von RingCentral-Daten (Vorschau)
 
-Verwenden Sie einen Connectors im Microsoft 365 Compliance Center, um Daten von der RingCentral-Plattform in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Stellt einen [RingCentral-Connector](https://www.veritas.com/insights/merge1/ringcentral) bereit, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert Inhalte wie Chats, Anlagen, Aufgaben, Notizen und Beiträge von RingCentral in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in die Benutzerpostfächer in Microsoft 365.
+Verwenden Sie einen Connectors in der Microsoft 365 Compliance Center, um Daten von der RingCentral-Plattform in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Stellt einen [RingCentral-Connector](https://www.veritas.com/insights/merge1/ringcentral) bereit, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert Inhalte wie Chats, Anlagen, Aufgaben, Notizen und Beiträge von RingCentral in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in die Benutzerpostfächer in Microsoft 365.
 
 Nachdem RingCentral-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines RingCentral-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
 

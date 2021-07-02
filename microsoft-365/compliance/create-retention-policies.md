@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169592"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256531"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -70,13 +70,14 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie** aus, um den Assistenten zum Erstellen einer Aufbewahrungsrichtlinie zu starten, und benennen Sie die neue Aufbewahrungsrichtlinie.
 
-3. Wählen Sie für die Seite **Speicherorte für die Anwendung der Richtlinie auswählen** einen oder beide Speicherorte für Teams aus: **Teams Kanalnachricht** und **Teams Chats**.
-
-   Bei **Teams-Kanalnachrichten** sind Nachrichten von Standardkanälen, jedoch nicht von [privaten Kanälen](/microsoftteams/private-channels) eingeschlossen. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt.
-
+3. Wählen Sie für die Seite **Speicherorte auswählen, an denen die Richtlinie anzuwenden ist** einen oder alle Speicherorte für Teams aus:
+    - **Teams-Kanal-Nachricht**: Nachrichten von Standardkanalchats und Standardkanalbesprechungen, aber nicht von [privaten Kanälen](/microsoftteams/private-channels), die über einen eigenen Richtlinienspeicherort verfügen.
+    - **Teams-Chats**: Nachrichten aus privaten 1:1-Chats, Gruppenchats und Besprechungschats.
+    - **Private Teams-Kanal-Nachrichten**: Nachrichten aus Chats und Besprechungen im privaten Kanal. Diese Option wird derzeit in der Vorschauversion eingeführt. Wenn sie nicht angezeigt wird, versuchen Sie es in ein paar Tagen noch einmal.
+    
    Standardmäßig sind [alle Teams und alle Benutzer ausgewählt](#a-policy-that-applies-to-entire-locations), aber Sie können dies verfeinern, indem Sie die Optionen [**Auswählen** und **Ausschließen** auswählen](#a-policy-with-specific-inclusions-or-exclusions). Beachten Sie vor dem Ändern der Standardeinstellungen die folgenden Auswirkungen auf eine Aufbewahrungsrichtlinie, die Nachrichten löscht, wenn diese für das Aus- oder Einschließen konfiguriert sind:
     
-    - Für Gruppenchats, da eine Kopie der Nachrichten im Postfach jedes Benutzers gespeichert wird, der am Chat beteiligt ist. Kopien von Nachrichten von Benutzern, auf die die Richtlinie nicht zutrifft, werden weiterhin in eDiscovery-Ergebnissen angezeigt.
+    - Für Gruppenchatnachrichten und private Kanalnachrichten gilt: Da eine Kopie der Nachrichten im Postfach jedes Benutzers gespeichert wird, der am Chat beteiligt ist, werden Kopien von Nachrichten von Benutzern, auf die die Richtlinie nicht zutrifft, weiterhin in eDiscovery-Ergebnissen angezeigt.
     - Benutzern, auf die die Richtlinie nicht zutrifft, werden die gelöschten Nachrichten in deren Teams-Suchergebnissen angezeigt. Jedoch wird aufgrund der dauerhaften Löschung in der dem Benutzer zugewiesenen Richtlinie, der Inhalt der Nachricht nicht angezeigt.
 
 4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an.
@@ -182,11 +183,15 @@ Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für 
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Konfigurationsinformationen für Exchange-E-Mail und öffentliche Exchange-Ordner
 
-Der Speicherort von **Exchange-E-Mail** unterstützt die Aufbewahrung von E-Mail-, Kalender- und anderen Postfachelementen der Benutzer, indem die Aufbewahrungseinstellungen auf Postfachebene angewendet werden.
+Der Speicherort von **Exchange-E-Mail** unterstützt die Aufbewahrung von E-Mail-, Kalender- und anderen Postfachelementen der Benutzer, indem die Aufbewahrungseinstellungen auf Postfachebene angewendet werden. Freigegebene Postfächer werden ebenfalls unterstützt.
 
-Ausführliche Informationen zu den Elementen, die beim Konfigurieren von Aufbewahrungseinstellungen für Exchange enthalten und ausgeschlossen werden, finden Sie unter [Lieferumfang für Aufbewahrung und Löschung](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
+Wenn Sie die Aufbewahrungseinstellungen auf **Alle Empfänger** anwenden, werden alle [inaktiven Postfächer](create-and-manage-inactive-mailboxes.md) eingeschlossen. Wenn Sie diese Standardeinstellung jedoch ändern und [bestimmte Ein- oder Ausschlüsse](#a-policy-with-specific-inclusions-or-exclusions)konfigurieren, werden inaktive Postfächer nicht unterstützt, und Aufbewahrungseinstellungen werden für diese Postfächer nicht angewendet oder ausgeschlossen.
 
-Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Wenn Sie Inhalte in diesen Postfächern aufbewahren möchten, wählen Sie den Speicherort **Microsoft 365-Gruppen** aus.
+Darüber hinaus werden Ressourcenpostfächer und Microsoft 365-Gruppenpostfächer nicht für die Standardeinstellung **Alle Empfänger** oder für bestimmte Ein- oder Ausschlüsse unterstützt. Für Microsoft 365-Gruppenpostfächern wählen Sie stattdessen den Speicherort **Microsoft 365-Gruppen** aus.
+
+Wenn Sie Empfänger auswählen, die eingeschlossen oder ausgeschlossen werden sollen, können Sie Verteilergruppen und E-Mail-aktivierte Sicherheitsgruppen auswählen. Im Hintergrund werden diese Gruppen zum Zeitpunkt der Konfiguration automatisch erweitert, um die Postfächer der Benutzer in der Gruppe auszuwählen. Wenn sich die Mitgliedschaft dieser Gruppen später ändert, wird eine vorhandene Aufbewahrungsrichtlinie nicht automatisch aktualisiert.
+
+Ausführliche Informationen zu den Postfachelementen, die beim Konfigurieren von Aufbewahrungseinstellungen für Exchange eingeschlossen oder ausgeschlossen werden, finden Sie unter [Umfang für Aufbewahrung und Löschung](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
 Der Speicherort von **öffentlichen Exchange-Ordnern** wendet die Aufbewahrungseinstellungen auf alle öffentlichen Ordner an und kann nicht auf der Ordner- oder Postfachebene angewendet werden.
 

@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Indikatoren für Dateien
 ms.reviewer: ''
-description: Erstellen Sie Indikatoren für einen Dateihash, der die Erkennung, Verhinderung und den Ausschluss von Entitäten definiert.
-keywords: datei, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
+description: Erstellen Sie Indikatoren für einen Dateihash, die die Erkennung, Verhinderung und den Ausschluss von Entitäten definieren.
+keywords: Datei, Hash, verwalten, zulässig, blockiert, blockieren, sauber, bösartig, Dateihash, IP-Adresse, URLs, Domäne
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730534"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256915"
 ---
 # <a name="create-indicators-for-files"></a>Erstellen von Indikatoren für Dateien
 
@@ -33,84 +33,87 @@ ms.locfileid: "52730534"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Verhindern Sie die weitere Verbreitung eines Angriffs in Ihrer Organisation, indem Sie potenziell schädliche Dateien oder mutmaßliche Schadsoftware verbieten. Wenn Sie eine potenziell schädliche ausführbare Datei (PE) kennen, können Sie sie blockieren. Dieser Vorgang verhindert, dass er auf Geräten in Ihrer Organisation gelesen, geschrieben oder ausgeführt wird.
+Verhindern Sie die weitere Verbreitung eines Angriffs in Ihrer Organisation, indem Sie potenziell schädliche Dateien oder verdächtige Schadsoftware verbieten. Wenn Sie eine potenziell schädliche portierbare ausführbare Datei (PE) kennen, können Sie sie blockieren. Dieser Vorgang verhindert, dass er auf Geräten in Ihrer Organisation gelesen, geschrieben oder ausgeführt wird.
 
-Es gibt drei Möglichkeiten zum Erstellen von Indikatoren für Dateien:
+Es gibt drei Möglichkeiten, Indikatoren für Dateien zu erstellen:
 
 - Durch Erstellen eines Indikators über die Einstellungsseite
-- Durch Erstellen eines kontextbezogenen Indikators mithilfe der Schaltfläche "Indikator hinzufügen" auf der Seite "Dateidetails"
+- Durch Erstellen eines Kontextindikators mithilfe der Schaltfläche "Indikator hinzufügen" auf der Dateidetailseite
 - Durch Erstellen eines Indikators über die [Indikator-API](ti-indicator.md)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
-Es ist wichtig, die folgenden Voraussetzungen zu kennen, bevor Sie Indikatoren für Dateien erstellen:
+Es ist wichtig, die folgenden Voraussetzungen zu verstehen, bevor Sie Indikatoren für Dateien erstellen:
 
-- Dieses Feature ist verfügbar, wenn Ihre Organisation **Microsoft Defender Antivirus (im** aktiven Modus) verwendet und **der cloudbasierte Schutz aktiviert ist.** Weitere Informationen finden Sie unter [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Dieses Feature ist verfügbar, wenn Ihre Organisation **Microsoft Defender Antivirus (im aktiven Modus)** verwendet und **der cloudbasierte Schutz aktiviert ist.** Weitere Informationen finden Sie unter [Verwalten des cloudbasierten Schutzes.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 
-- Die Antischalwareclientversion muss 4.18.1901.x oder höher sein. Siehe [Monatliche Plattform- und Modulversionen](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+- Die Antischadsoftware-Clientversion muss 4.18.1901.x oder höher sein. Siehe [monatliche Plattform- und Modulversionen](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Unterstützt auf Geräten mit Windows 10 Version 1703 oder höher, Windows Server 2016 und 2019.
+- Unterstützt auf Geräten mit Windows 10, Version 1703 oder höher, Windows Server 2016 und 2019.
 
-- Um mit dem Blockieren von Dateien zu beginnen, müssen Sie zuerst das Feature ["Blockieren oder zulassen"](advanced-features.md) in der Einstellungen.
+- Um mit dem Blockieren von Dateien zu beginnen, müssen Sie zuerst [das Feature "Blockieren oder Zulassen"](advanced-features.md) in Einstellungen aktivieren.
 
-Dieses Feature soll verhindern, dass mutmaßliche Schadsoftware (oder potenziell schädliche Dateien) aus dem Web heruntergeladen werden. Derzeit werden portable ausführbare Dateien (PE) unterstützt, einschließlich .exe und .dll Dateien. Die Abdeckung wird im Laufe der Zeit erweitert.
+Dieses Feature soll verhindern, dass verdächtige Schadsoftware (oder potenziell schädliche Dateien) aus dem Web heruntergeladen wird. Derzeit werden portierbare ausführbare Dateien (PORTABLE Executable, PE) unterstützt, einschließlich .exe- und .dll dateien. Die Abdeckung wird im Laufe der Zeit erweitert.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Erstellen eines Indikators für Dateien auf der Einstellungsseite
 
-1. Wählen Sie im Navigationsbereich Einstellungen > **Indikatoren aus.**
+1. Wählen Sie im Navigationsbereich **Einstellungen > Indikatoren** aus.
 
-2. Wählen Sie die **Registerkarte Dateihash**   aus.
+2. Wählen Sie die Registerkarte **"Dateihash"**   aus.
 
-3. Wählen **Sie Indikator hinzufügen aus.**
+3. Wählen Sie **"Indikator hinzufügen" aus.**
 
 4. Geben Sie die folgenden Details an:
     - Indikator – Geben Sie die Entitätsdetails an, und definieren Sie den Ablauf des Indikators.
-    - Aktion – Geben Sie die zu ergreifende Aktion an, und geben Sie eine Beschreibung an.
-    - Bereich : Definieren Sie den Bereich der Gerätegruppe.
+    - Aktion – Geben Sie die auszuführende Aktion an, und geben Sie eine Beschreibung an.
+    - Bereich – Definieren Sie den Bereich der Gerätegruppe.
 
-5. Überprüfen Sie die Details auf der Registerkarte Zusammenfassung, und wählen Sie dann **Speichern aus.**
+5. Überprüfen Sie die Details auf der Registerkarte "Zusammenfassung", und wählen Sie dann **"Speichern"** aus.
 
-## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Erstellen eines Kontextindikators auf der Seite mit den Dateidetails
+## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Erstellen eines Kontextindikators auf der Dateidetailseite
 
-Eine der Optionen beim Ausführen von [Reaktionsaktionen für eine](respond-file-alerts.md)Datei ist das   Hinzufügen eines Indikators für die Datei. Wenn Sie einen Indikatorhash für eine Datei hinzufügen, können Sie eine Warnung ausgelöst und die Datei blockieren, wenn ein Gerät in Ihrer Organisation versucht, sie zu ausführen.
+Eine der Optionen beim Ausführen von [Antwortaktionen für eine Datei](respond-file-alerts.md)ist das   Hinzufügen eines Indikators für die Datei. Wenn Sie einen Indikatorhash für eine Datei hinzufügen, können Sie eine Warnung auslösen und die Datei blockieren, wenn ein Gerät in Ihrer Organisation versucht, sie auszuführen.
 
-Dateien, die automatisch von einem Indikator blockiert werden, werden nicht im Aktionscenter der Datei angezeigt, aber die Warnungen werden weiterhin in der Warnungswarteschlange angezeigt.
+Dateien, die automatisch durch einen Indikator blockiert werden, werden nicht im Info-Center der Datei angezeigt, aber die Warnungen werden weiterhin in der Warnungswarteschlange angezeigt.
 
 >[!IMPORTANT]
->- In der Regel werden Dateiblöcke innerhalb weniger Minuten erzwungen und entfernt, können jedoch bis zu 30 Minuten dauern.
->- Wenn Richtlinien für Dateiindikator in Konflikt stehen, wird die Erzwingungsrichtlinie der sichereren Richtlinie angewendet. Beispielsweise hat eine SHA-256-Dateihashindikatorrichtlinie Vorrang vor einer MD5-Dateihashindikatorrichtlinie, wenn beide Hashtypen dieselbe Datei definieren.
->- Wenn die Gruppenrichtlinie EnableFileHashComputation deaktiviert ist, wird die Sperrgenauigkeit der Datei IoC reduziert. Das Aktivieren von EnableFileHashComputation kann sich jedoch auf die Geräteleistung auswirken.
->    - Das Kopieren großer Dateien aus einer Netzwerkfreigabe auf Ihr lokales Gerät, insbesondere über eine VPN-Verbindung, kann sich beispielsweise auf die Geräteleistung auswirken.
->    - Weitere Informationen zur Gruppenrichtlinie EnableFileHashComputation finden Sie unter [Defender CSP](/windows/client-management/mdm/defender-csp)
+>- Dateiblöcke werden in der Regel innerhalb weniger Minuten erzwungen und entfernt, können jedoch bis zu 30 Minuten dauern.
+> 
+>- Wenn es widersprüchliche Datei-IoC-Richtlinien mit demselben Erzwingungstyp und Ziel gibt, wird die Richtlinie des sichereren Hash angewendet. Eine SHA-256-Dateihash-IoC-Richtlinie hat Vorrang vor einer SHA-1-Dateihash-IoC-Richtlinie, die eine MD5-Dateihash-IoC-Richtlinie gewinnen wird, wenn die Hashtypen dieselbe Datei definieren. Dies gilt unabhängig von der Gerätegruppe. 
+>   Wenn in allen anderen Fällen in Konflikt stehende Datei-IoC-Richtlinien mit demselben Erzwingungsziel auf alle Geräte und auf die Gruppe des Geräts angewendet werden, wird für ein Gerät die Richtlinie in der Gerätegruppe gewonnen. 
+>   
+>- Wenn die EnableFileHashComputation-Gruppenrichtlinie deaktiviert ist, wird die Blockiergenauigkeit der Datei IoC verringert. Die Aktivierung kann sich jedoch `EnableFileHashComputation` auf die Geräteleistung auswirken. Das Kopieren großer Dateien von einer Netzwerkfreigabe auf Ihr lokales Gerät, insbesondere über eine VPN-Verbindung, kann sich beispielsweise auf die Geräteleistung auswirken.
+>
+>   Weitere Informationen zur Gruppenrichtlinie "EnableFileHashComputation" finden Sie unter [Defender CSP.](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>Behandlung von Richtlinienkonflikten  
 
-Die Behandlung von Konflikten zwischen Cert- und File IoC-Richtlinien folgt der folgenden Reihenfolge:
+Der Konflikt bei der Behandlung von Zertifikat- und Datei-IoC-Richtlinien folgt der folgenden Reihenfolge:
 
-- Wenn die Datei nicht von der Anwendungskontrolle Windows Defender appLocker richtlinien/richtlinien für den Erzwungenen Modus zulässig ist, dann **Blockieren**
+- Wenn die Datei von Windows Defender Anwendungssteuerung und AppLocker-Richtlinie/Richtlinien für den Erzwingungsmodus nicht zulässig ist, blockieren **Sie**
 
-- Andern falls die Datei durch den Microsoft Defender Antivirus zulässig ist, dann **Zulassen**
+- Andernfalls, wenn die Datei durch den Microsoft Defender Antivirus Ausschluss zulässig ist, dann **zulassen**
 
-- Andern falls die Datei durch einen Block oder eine Warndatei blockiert oder gewarnt wird, dann **Blockieren/Warnen**
+- Andernfalls, wenn die Datei blockiert oder durch eine Blockierung oder warnungsdatei IoC gewarnt wird, dann **blockieren/warnen**
 
-- Andern falls die Datei von einer IoC-Richtlinie für zugelassene Dateien zulässig ist, dann **Zulassen**
+- Andernfalls, wenn die Datei durch eine Allow-Datei-IoC-Richtlinie zulässig ist, dann **zulassen**
 
-- Andern falls die Datei durch #A0 blockiert wird, CFA, AV, SmartScreen und **dann Blockieren**  
+- Andernfalls, wenn die Datei durch ASR-Regeln blockiert wird, CFA, AV, SmartScreen, dann **blockieren**  
 
-- Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
+- Else **Allow** (übergibt Windows Defender Anwendungssteuerung & AppLocker-Richtlinie, es gelten keine IoC-Regeln)
 
-Wenn #A0 in Konflikt stehen, die denselben Erzwingungstyp und dasselbe Ziel haben, wird die Richtlinie des sichereren (d. h. längeren) Hashs angewendet. Eine SHA-256-Dateihash-IoC-Richtlinie z. B. gewinnt eine #A0 für MD5-Dateihash, wenn beide Hashtypen dieselbe Datei definieren.
+Wenn es widersprüchliche Datei-IoC-Richtlinien mit demselben Erzwingungstyp und Ziel gibt, wird die Richtlinie des sichereren (d. h. längeren) Hash angewendet. Beispielsweise wird eine IOC-Richtlinie mit SHA-256-Dateihash eine MD5-Dateihash-IoC-Richtlinie gewinnen, wenn beide Hashtypen dieselbe Datei definieren.
 
-Beachten Sie, Bedrohungs- und Sicherheitsrisikomanagement für die blockverwundbaren Anwendungsfeatures die Datei-IoCs für die Erzwingung verwenden und die oben aufgeführte Reihenfolge für die Konfliktbehandlung befolgen.
+Die Features von Bedrohungen und Sicherheitsrisikomanagement blockieren anfällige Anwendungen verwenden die Datei-IoCs für die Erzwingung und folgen der oben genannten Konfliktbehandlungsreihenfolge.
 
 ### <a name="examples"></a>Beispiele
 
-|Komponente |Komponentenersetzung |Dateiindikatoraktion |Ergebnis
+|Komponente |Erzwingung von Komponenten |Dateiindikatoraktion |Ergebnis
 |--|--|--|--|
-|Dateipfadausschluss zur Attack Surface Reduction |Zulassen |Blockieren |Blockieren
-|Regel zur Reduzierung der Angriffsfläche |Blockieren |Zulassen |Zulassen
+|Ausschluss des Dateipfads zur Verringerung der Angriffsfläche |Zulassen |Blockieren |Blockieren
+|Regel zur Verringerung der Angriffsfläche |Blockieren |Zulassen |Zulassen
 |Windows Defender Application Control |Zulassen |Blockieren |Zulassen |
 |Windows Defender Application Control |Blockieren |Zulassen |Blockieren
 |Microsoft Defender Antivirus Ausschluss |Zulassen |Blockieren |Zulassen

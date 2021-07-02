@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a6415ec7d39bceeb4b68de164bbdcf6ef34755ff
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984772"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276905"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Neuigkeiten in Microsoft Defender für Endpunkt auf dem Mac
 
@@ -37,6 +37,11 @@ ms.locfileid: "52984772"
 
 > [!IMPORTANT]
 > Unter macOS 11 (Big Sur) erfordert Microsoft Defender für Endpunkt zusätzliche Konfigurationsprofile. Wenn Sie bereits ein Kundenupdate von früheren Versionen von macOS durchführen, stellen Sie sicher, dass Sie die zusätzlichen Konfigurationsprofile bereitstellen, die auf [dieser Seite](mac-sysext-policies.md)aufgeführt sind.
+
+## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
+
+- Es wurde ein Problem behoben, bei dem ein Schnellscan nicht über das Statusmenü unter macOS 11 (Big Sur) gestartet werden konnte.
+- Andere Fehlerbehebungen
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
 
@@ -120,7 +125,7 @@ ms.locfileid: "52984772"
 
 ## <a name="1010949"></a>101.09.49
 
-- Verbesserungen der Benutzeroberfläche zur Unterscheidung von Ausschlüssen, die vom IT-Administrator verwaltet werden, und Ausschlüssen, die vom lokalen Benutzer definiert sind
+- Verbesserungen der Benutzeroberfläche zur Unterscheidung von Ausschlüssen, die vom IT-Administrator verwaltet werden, und Ausschlüssen, die vom lokalen Benutzer definiert wurden
 - Verbesserte CPU-Auslastung bei Bedarfsscans
 - Leistungsverbesserungen & Fehlerbehebungen
 

@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Connectors zum Archivieren von ServiceNow-Daten in Microsoft 365
+title: Einrichten eines Connectors zum Archivieren von ServiceNow 17a-4 DataParser-Daten in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Erfahren Sie, wie Sie einen 17a-4 ServiceNow DataParser-Connector einrichten und verwenden, um ServiceNow-Daten in Microsoft 365 zu importieren und zu archivieren.
-ms.openlocfilehash: 9faa5fb1bf03bb7ab1e97b0bbd24aad4c38e91ae
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 992f34864f0de7ddff1f8159e9970157bcffb964
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097033"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276965"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>Einrichten eines Connectors zum Archivieren von ServiceNow-Daten (Vorschau)
 
-Verwenden Sie [ServiceNow DataParser](https://www.17a-4.com/dataparser/) von 17a-4 LLC zum Importieren und Archivieren von Daten aus ServiceNow in Benutzerpostfächer in Ihrer Microsoft 365 Organisation. The DataParser includes a ServiceNow connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der ServiceNow DataParser-Connector konvertiert ServiceNow-Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie [ServiceNow DataParser](https://www.17a-4.com/dataparser/) von 17a-4 LLC, um Daten aus ServiceNow in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. The DataParser includes a ServiceNow connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der ServiceNow DataParser-Connector konvertiert ServiceNow-Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
-Nachdem ServiceNow-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliance-Features wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines ServiceNow-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Gesetzlichen und behördlichen Richtlinien einhalten kann.
+Nachdem ServiceNow-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines ServiceNow-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Gesetzlichen und behördlichen Richtlinien einhalten kann.
 
 ## <a name="overview-of-archiving-servicenow-data"></a>Übersicht über die Archivierung von ServiceNow-Daten
 
@@ -43,7 +43,7 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Datenkonnektor
 
 - Erstellen Sie ein DataParser-Konto für Microsoft Connectors. Wenden Sie sich hierzu an [17a-4 LLC.](https://www.17a-4.com/contact/) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
-- Der Benutzer, der den ServiceNow DataParser-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den ServiceNow DataParser-Connector in Schritt 1 erstellt (und in Schritt 3 abschließt), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-set-up-a-servicenow-dataparser-connector"></a>Schritt 1: Einrichten eines ServiceNow DataParser-Connectors
 
@@ -65,13 +65,13 @@ Arbeiten Sie mit dem 17a-4-Support, um den ServiceNow DataParser-Connector zu ko
 
 ## <a name="step-3-map-users"></a>Schritt 3: Zuordnen von Benutzern
 
-Der ServiceNow DataParser-Connector weist Benutzern automatisch ihre Microsoft 365 E-Mail-Adressen zu, bevor Daten in Microsoft 365 importiert werden.
+Der ServiceNow DataParser-Connector ordnen Benutzer automatisch ihren Microsoft 365 E-Mail-Adressen zu, bevor Daten in Microsoft 365 importiert werden.
 
 ## <a name="step-4-monitor-the-servicenow-dataparser-connector"></a>Schritt 4: Überwachen des ServiceNow DataParser-Connectors
 
 Nachdem Sie einen ServiceNow DataParser-Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
-1. Navigieren Sie im linken Navigationsbereich zu <https://compliance.microsoft.com> "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
+1. Wechseln Sie in <https://compliance.microsoft.com> der linken Navigationsleiste zu "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
 
 2. Klicken Sie auf die Registerkarte **Connectors,** und wählen Sie dann den ServiceNow DataParser-Connector aus, den Sie erstellt haben, um die Flyoutseite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
 

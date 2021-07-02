@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 50273fabc85ecedc92b9c3ec379d3b82a63dd6e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226443"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256327"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
 Verwenden Sie Insider-Risikomanagementrichtlinien, um riskante Aktivitäten und Verwaltungstools zu identifizieren, um auf Risikowarnungen in Ihrer Organisation zu reagieren. Führen Sie die folgenden Schritte aus, um voraussetzungen einzurichten und eine Richtlinie für das Insider-Risikomanagement zu konfigurieren.
 
 > [!IMPORTANT]
-> Die Microsoft 365 Lösung für das Insider-Risikomanagement bietet eine Option auf Mandantenebene, die Kunden dabei hilft, die interne Governance auf Benutzerebene zu vereinfachen. Administratoren auf Mandantenebene können Berechtigungen einrichten, um Mitgliedern Ihrer Organisation Zugriff auf diese Lösung zu gewähren, und Datenconnectors in der Microsoft 365 Compliance Center einrichten, um relevante Daten zu importieren, um die Identifizierung potenziell riskanter Aktivitäten auf Benutzerebene zu unterstützen. Kunden bestätigen, dass Einblicke in Bezug auf das Verhalten, den Charakter oder die Leistung des einzelnen Benutzers, die in wesentlichem Zusammenhang mit der Anstellung stehen, vom Administrator berechnet und anderen Personen in der Organisation zur Verfügung gestellt werden können. Darüber hinaus bestätigen Kunden, dass sie ihre eigene vollständige Untersuchung im Zusammenhang mit dem Verhalten, dem Charakter oder der Leistung des einzelnen Benutzers durchführen müssen, die in wesentlichem Zusammenhang mit der Anstellung steht, und sich nicht nur auf Erkenntnisse aus dem Insider-Risikomanagementdienst verlassen müssen. Kunden sind allein dafür verantwortlich, den Microsoft 365 Insider-Risikomanagementdienst und alle zugehörigen Features oder Dienste in Übereinstimmung mit allen geltenden Gesetzen zu verwenden, einschließlich Gesetzen zur individuellen Benutzeridentifikation und etwaigen Abhilfemaßnahmen.
+> Die Microsoft 365 Insider-Risikomanagementlösung bietet eine Option auf Mandantenebene, die Kunden dabei hilft, die interne Governance auf Benutzerebene zu vereinfachen. Administratoren auf Mandantenebene können Berechtigungen einrichten, um Mitgliedern Ihrer Organisation Zugriff auf diese Lösung zu gewähren, und Datenconnectors in der Microsoft 365 Compliance Center einrichten, um relevante Daten zu importieren, um die Identifizierung potenziell riskanter Aktivitäten auf Benutzerebene zu unterstützen. Kunden bestätigen, dass Einblicke in Bezug auf das Verhalten, den Charakter oder die Leistung des einzelnen Benutzers, die in wesentlichem Zusammenhang mit der Anstellung stehen, vom Administrator berechnet und anderen Personen in der Organisation zur Verfügung gestellt werden können. Darüber hinaus bestätigen Kunden, dass sie ihre eigene vollständige Untersuchung im Zusammenhang mit dem Verhalten, dem Charakter oder der Leistung des einzelnen Benutzers durchführen müssen, die in wesentlichem Zusammenhang mit der Anstellung steht, und sich nicht nur auf Erkenntnisse aus dem Insider-Risikomanagementdienst verlassen müssen. Kunden sind allein dafür verantwortlich, den Microsoft 365 Insider-Risikomanagementdienst und alle zugehörigen Features oder Dienste in Übereinstimmung mit allen geltenden Gesetzen zu verwenden, einschließlich Gesetzen zur individuellen Benutzeridentifikation und etwaigen Abhilfemaßnahmen.
 
 Weitere Informationen dazu, wie Richtlinien für Insider-Risiken Ihnen bei der Verwaltung von Risiken in Ihrer Organisation helfen können, finden Sie [unter Insider-Risikomanagement in Microsoft 365.](insider-risk-management.md)
 
@@ -57,7 +57,7 @@ Wenn Sie über keinen vorhandenen Microsoft 365 Enterprise E5-Plan verfügen und
 
 Es gibt vier Rollengruppen, die zum Konfigurieren von Berechtigungen zum Verwalten von Insider-Risikomanagementfeatures verwendet werden. Um mit diesen Konfigurationsschritten fortzufahren, müssen Ihre Mandantenadministratoren Sie zuerst der Rollengruppe **"Insider-Risikomanagement"** oder **"Administrator für Insider-Risikomanagement"** zuweisen. Um nach der anfänglichen Konfiguration auf Insider-Risikomanagementfeatures zuzugreifen und diese zu verwalten, müssen Benutzer Mitglied mindestens einer Rollengruppe für das Insider-Risikomanagement sein.
 
-Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Um die Registerkarte **"Berechtigungen"** im Office 365 Security & Compliance Center anzuzeigen und Rollengruppen zu verwalten, müssen Sie der Rollengruppe *"Organisationsverwaltung"* oder der *Rollenverwaltungsrolle* zugewiesen werden. Wählen Sie bei der Konfiguration des Insider-Risikomanagements aus den folgenden Rollengruppenoptionen:
+Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Um die Registerkarte **"Berechtigungen"** im Office 365 Security & Compliance Center anzuzeigen und Rollengruppen zu verwalten, müssen Sie der Rollengruppe *"Organisationsverwaltung"* oder der *Rollenverwaltungsrolle* zugewiesen werden. Wählen Sie bei der Konfiguration des Insider-Risikomanagements aus den folgenden Rollengruppenoptionen aus:
 
 | **Rollengruppe** | **Rollenberechtigungen** |
 | :------------- | :------------------- |
@@ -74,7 +74,7 @@ Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen,
 
 Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe für das Insider-Risikomanagement hinzuzufügen:
 
-1. Melden Sie sich [https://protection.office.com/permissions](https://protection.office.com/permissions) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
+1. Melden Sie sich [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
 
 2. Wechseln Sie im Security &amp; Compliance Center zu **"Berechtigungen".** Wählen Sie den Link aus, um Rollen in Office 365 anzuzeigen und zu verwalten.
 
@@ -90,7 +90,7 @@ Führen Sie die folgenden Schritte aus, um Benutzer zu einer Rollengruppe für d
 
 ## <a name="step-2-enable-the-microsoft-365-audit-log"></a>Schritt 2: Aktivieren des Microsoft 365 Überwachungsprotokolls
 
-Das Insider-Risikomanagement verwendet Microsoft 365 Überwachungsprotokolle für Benutzerinblicke und -aktivitäten, die in Richtlinien und Analyse-Insights identifiziert werden. Die Microsoft 365 Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten in Ihrer Organisation, und Richtlinien für das Insider-Risikomanagement können diese Aktivitäten verwenden, um Richtlinienerkenntnisse zu generieren.
+Das Insider-Risikomanagement verwendet Microsoft 365 Überwachungsprotokolle für Benutzerinblicke und -aktivitäten, die in Richtlinien und Analyse-Insights identifiziert werden. Die Microsoft 365 Überwachungsprotokolle sind eine Zusammenfassung aller Aktivitäten innerhalb Ihrer Organisation, und Richtlinien für das Insider-Risikomanagement können diese Aktivitäten verwenden, um Richtlinienerkenntnisse zu generieren.
 
 Schritt-für-Schritt-Anleitungen zum Aktivieren der Überwachung finden Sie unter Aktivieren oder Deaktivieren der [Überwachungsprotokollsuche.](turn-audit-log-search-on-or-off.md) Daraufhin teilt Ihnen eine Meldung mit, dass das Überwachungsprotokoll vorbereitet wird und Sie in ein paar Stunden nach Abschluss der Vorbereitung eine Suche durchführen können. Sie müssen diese Aktion nur einmal ausführen. Weitere Informationen zur Verwendung des Microsoft 365 Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls.](search-the-audit-log-in-security-and-compliance.md)
 
@@ -98,7 +98,7 @@ Schritt-für-Schritt-Anleitungen zum Aktivieren der Überwachung finden Sie unte
 
 Mithilfe von Insider-Risikomanagementanalysen können Sie eine Bewertung potenzieller Insider-Risiken in Ihrer Organisation durchführen, ohne Insider-Risikorichtlinien zu konfigurieren. Diese Auswertung kann Ihrer Organisation dabei helfen, potenzielle Bereiche mit höherem Benutzerrisiko zu identifizieren und den Typ und Umfang von Insider-Risikomanagement-Richtlinien zu bestimmen, die Sie konfigurieren sollten. Diese Auswertung kann Ihnen auch dabei helfen, die Anforderungen für zusätzliche Lizenzierung oder zukünftige Optimierungen vorhandener Richtlinien zu ermitteln. Analysescanergebnisse können bis zu 48 Stunden dauern, bis Einblicke als Berichte zur Überprüfung verfügbar sind. Weitere Informationen zu Analyseerkenntnissen finden Sie in den [Insider-Risikomanagementeinstellungen: Analysen (Vorschau)](insider-risk-management-settings.md#analytics-preview) und im Video zu [Insider Risk Management Analytics,](https://www.youtube.com/watch?v=5c0P5MCXNXk) um zu verstehen, wie Analysen die Identifizierung potenzieller Insider-Risiken beschleunigen und Ihnen helfen können, schnell Maßnahmen zu ergreifen.
 
-Um die Insider-Risikoanalyse zu aktivieren, müssen Sie Mitglied der Rollengruppe *"Insider-Risikomanagement",* *"Insider-Risikomanagement-Administrator"* oder "Microsoft 365 *globalen Administrator"* sein.
+Um die Insider-Risikoanalyse zu aktivieren, müssen Sie Mitglied der Rollengruppe *"Insider-Risikomanagement",* *"Insider-Risikomanagement-Administrator"* oder Microsoft 365 *"Globaler Administrator"* sein.
 
 Führen Sie die folgenden Schritte aus, um Insider-Risikoanalysen zu ermöglichen:
 
@@ -114,7 +114,7 @@ Die meisten Insider-Risikomanagementrichtlinien verfügen über Voraussetzungen,
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Konfigurieren Microsoft 365 HR-Connectors
 
-Das Insider-Risikomanagement unterstützt den Import von Benutzer- und Protokolldaten, die aus Risikomanagement- und Personalplattformen von Drittanbietern importiert wurden. Mit dem Datenkonnektor für Microsoft 365 Personalwesen (HR) können Sie Personaldaten aus CSV-Dateien abrufen, einschließlich Datumsangaben für die Beendigung des Benutzers, datumsangaben für das letzte Arbeitsverhältnis, Benachrichtigungen zu Leistungsverbesserungsplan, Leistungsüberprüfungsaktionen und Status von Änderungen auf Stellenebene. Diese Daten helfen bei der Entwicklung von Warnindikatoren für Insider-Risikomanagement-Richtlinien und sind ein wichtiger Bestandteil bei der Konfiguration einer vollständigen Risikomanagement-Abdeckung in Ihrer Organisation. Wenn Sie mehr als einen HR-Connector für Ihre Organisation konfigurieren, ruft das Insider-Risikomanagement automatisch Indikatoren aus allen HR-Connectors ab.
+Das Insider-Risikomanagement unterstützt den Import von Benutzer- und Protokolldaten, die aus Risikomanagement- und Personalplattformen von Drittanbietern importiert wurden. Mit dem Datenkonnektor für Microsoft 365 Personalwesen (HR) können Sie Personaldaten aus CSV-Dateien abrufen, einschließlich Datumsangaben für die Beendigung des Benutzers, datumsangaben für das letzte Anstellungsverhältnis, Benachrichtigungen zu Leistungsverbesserungsplan, Leistungsüberprüfungsaktionen und Status von Arbeitsplatzebenenänderungen. Diese Daten helfen bei der Entwicklung von Warnindikatoren für Insider-Risikomanagement-Richtlinien und sind ein wichtiger Bestandteil bei der Konfiguration einer vollständigen Risikomanagement-Abdeckung in Ihrer Organisation. Wenn Sie mehr als einen HR-Connector für Ihre Organisation konfigurieren, ruft das Insider-Risikomanagement automatisch Indikatoren aus allen HR-Connectors ab.
 
 Der Microsoft 365 HR-Connector ist bei Verwendung der folgenden Richtlinienvorlagen erforderlich:
 
@@ -183,7 +183,7 @@ Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellunge
 3. Wählen Sie auf der Seite **"Indikatoren"** die Warnungsindikatoren aus, die Sie auf alle Richtlinien für Insider-Risiken anwenden möchten.
 
     > [!IMPORTANT]
-    > Um Warnungen für riskante Aktivitäten zu erhalten, die in Ihren Richtlinien definiert sind, müssen Sie einen oder mehrere Indikatoren auswählen. Wenn Indikatoren nicht in Einstellungen konfiguriert sind, sind die Indikatoren in Insider-Risikorichtlinien nicht auswählbar.
+    > Um Warnungen für riskante Aktivitäten zu erhalten, die in Ihren Richtlinien definiert sind, müssen Sie einen oder mehrere Indikatoren auswählen. Wenn Indikatoren in Einstellungen nicht konfiguriert sind, können die Indikatoren in Insider-Risikorichtlinien nicht ausgewählt werden.
 
 4. Wählen Sie auf der Seite **"Richtlinien-Zeitrahmen"** die [Richtlinien-Zeitrahmen](insider-risk-management-settings.md#policy-timeframes) aus, die für einen Benutzer wirksam werden sollen, wenn er eine Übereinstimmung für eine Insider-Risikorichtlinie auslöst.
 5. Konfigurieren Sie auf der Seite **"Intelligente Erkennungen"** die folgenden Einstellungen für Insider-Risikorichtlinien:

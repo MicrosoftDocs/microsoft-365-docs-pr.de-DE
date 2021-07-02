@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 008263bfb948d1a2c52031635d074aca323e6764
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893740"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256891"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender für Endpunkt unter Linux
 
@@ -34,12 +34,12 @@ ms.locfileid: "52893740"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 In diesem Thema wird beschrieben, wie Sie Microsoft Defender für Endpunkt unter Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender für Endpunkt unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebeneffekten. Wenn der Schutz nicht von Microsoft stammender Endpunkte eine absolute Anforderung in Ihrer Umgebung ist, können Sie nach der Konfiguration der Antivirenfunktionen für die Ausführung im [passiven Modus](linux-preferences.md#enable--disable-passive-mode)weiterhin die Funktionen von Defender für Endpunkt unter Linux EDR nutzen.
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender für Endpunkt unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebeneffekten. Wenn der Nicht-Microsoft-Endpunktschutz eine absolute Anforderung in Ihrer Umgebung ist, können Sie nach der Konfiguration der Antivirusfunktion für die Ausführung im [passiven Modus](linux-preferences.md#enable--disable-passive-mode)weiterhin die Funktionen von Defender für Endpunkt unter Linux EDR nutzen.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>So installieren Sie Microsoft Defender für Endpunkt unter Linux
 
@@ -70,7 +70,8 @@ Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
   - Verwaltungstools von Drittanbietern:
     - [Bereitstellen mithilfe des Konfigurationsverwaltungstools für die Konfiguration von "Durchbauen"](linux-install-with-puppet.md)
     - [Bereitstellen mithilfe des Ansible-Konfigurationsverwaltungstools](linux-install-with-ansible.md)
-
+    - [Bereitstellen mithilfe des Konfigurationsverwaltungstools](linux-deploy-defender-for-endpoint-with-chef.md)
+    
 Wenn Installationsfehler auftreten, finden Sie informationen zur [Problembehandlung von Installationsfehlern in Microsoft Defender für Endpunkt unter Linux.](linux-support-install.md)
 
 
@@ -139,7 +140,7 @@ In der folgenden herunterladbaren Tabelle sind die Dienste und die zugehörigen 
 
 | Kalkulationstabelle der Domänenliste | Beschreibung |
 |:-----|:-----|
-|![Miniaturbild für Microsoft Defender für Endpunkt-URLs-Tabellenkalkulation](images/mdatp-urls.png)<br/>  | Kalkulationstabelle für bestimmte DNS-Einträge für Dienststandorte, geografische Standorte und Das Betriebssystem. <br><br>[Laden Sie das Arbeitsblatt hier herunter.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|![Miniaturbild für Microsoft Defender für Endpunkt-URLs-Tabellenkalkulation](images/mdatp-urls.png)<br/>  | Kalkulationstabelle mit bestimmten DNS-Einträgen für Dienststandorte, geografische Standorte und Das Betriebssystem. <br><br>[Laden Sie das Arbeitsblatt hier herunter.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 > [!NOTE]
 > Eine spezifischere URL-Liste finden Sie unter [Konfigurieren von Proxy- und Internetverbindungseinstellungen.](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)

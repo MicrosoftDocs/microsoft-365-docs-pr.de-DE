@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b44977252b18c29a5f05a67f4ffbdb7dc85a8188
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227399"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256783"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Fallstudie – Contoso konfiguriert schnell eine Richtlinie für anstößige Sprache für Microsoft Teams-, Exchange- und Yammer-Kommunikation
 
@@ -91,7 +91,7 @@ Contoso beschließt, die Rollengruppe *"Kommunikationscompliance"* zu verwenden,
 | **Kommunikationscompliance-Ermittler** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Ermittler für die Kommunikationscompliance fungieren. Benutzer, die dieser Rollengruppe zugewiesen sind, können Nachrichtenmetadaten und Inhalte anzeigen, an zusätzliche Prüfer eskalieren, zu einem Advanced eDiscovery Fall eskalieren, Benachrichtigungen an Benutzer senden und die Warnung auflösen. |
 | **Kommunikationscompliance-Anzeigender** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die Kommunikationsberichte verwalten. Benutzer, die dieser Rollengruppe zugewiesen sind, können auf der Startseite zur Kommunikationscompliance auf alle Berichterstellungs-Widgets zugreifen und alle Kommunikationscomplianceberichte anzeigen. |
 
-1. It-Administratoren von Contoso melden sich bei der Berechtigungsseite **Office 365 Security & Compliance Center** an [( https://protection.office.com/permissions)](https://protection.office.com/permissions) verwenden Sie anmeldeinformationen für ein globales Administratorkonto, und wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Microsoft 365 aus.
+1. It-Administratoren von Contoso melden sich bei der Berechtigungsseite **Office 365 Security & Compliance Center** an [( https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions) verwenden Sie anmeldeinformationen für ein globales Administratorkonto, und wählen Sie den Link zum Anzeigen und Verwalten von Rollen in Microsoft 365 aus.
 2. Im **Security & Compliance Center** wechseln sie zu **"Berechtigungen",** und wählen den Link aus, um Rollen in Office 365 anzuzeigen und zu verwalten.
 3. Die Administratoren wählen die Rollengruppe *"Kommunikationscompliance"* und dann die **Rollengruppe "Bearbeiten"** aus.
 4. Die Administratoren wählen **Mitglieder** aus dem linken Navigationsbereich und dann **bearbeiten** aus.
@@ -122,13 +122,13 @@ Eine weitere einfache Möglichkeit für IT-Administratoren und Compliance-Spezia
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>Ab dem Microsoft 365 Lösungskatalog
 
-IT-Administratoren und Compliance-Spezialisten von Contoso können auch auf die Kommunikationscompliancelösung zugreifen, indem sie den Microsoft 365 Lösungskatalog auswählen. Durch Auswählen des Abschnitts **"Katalog"** im Abschnitt **"Lösungen"** der linken Navigationsleiste im **Microsoft 365 Compliance Center** können sie den Lösungskatalog öffnen, der alle Microsoft 365 Compliancelösungen auflistet. Wenn Sie nach unten zum Abschnitt **"Insider-Risikomanagement"** scrollen, können IT-Administratoren von Contoso kommunikationscompliance auswählen, um zu beginnen. It-Administratoren von Contoso entscheiden sich auch für die Verwendung des Steuerelements "Im Navigation anzeigen", um die Kommunikationscompliancelösung an den linken Navigationsbereich zu anheften, um schneller auf die Anmeldung zuzugreifen.
+IT-Administratoren und Compliance-Spezialisten von Contoso können auch auf die Kommunikationscompliancelösung zugreifen, indem sie den Microsoft 365 Lösungskatalog auswählen. Durch Auswahl des Abschnitts **"Katalog"** im Abschnitt **"Lösungen"** der linken Navigationsleiste im **Microsoft 365 Compliance Center** können sie den Lösungskatalog öffnen, in dem alle Microsoft 365 Compliancelösungen aufgeführt sind. Wenn Sie nach unten zum Abschnitt **"Insider-Risikomanagement"** scrollen, können IT-Administratoren von Contoso kommunikationscompliance auswählen, um zu beginnen. It-Administratoren von Contoso entscheiden sich auch für die Verwendung des Steuerelements "Im Navigation anzeigen", um die Kommunikationscompliancelösung an den linken Navigationsbereich zu anheften, damit sie sich in Zukunft schneller anmelden können.
 
 ![Lösungskatalog](../media/communication-compliance-case-solution.png)
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>Ab der Microsoft 365 Admin Center
 
-Um auf die Kommunikationscompliance zuzugreifen, wenn Sie von der Microsoft 365 Admin Center aus beginnen, melden sich IT-Administratoren und Compliance-Spezialisten von Contoso beim Microsoft 365 Admin Center [an https://admin.microsoft.com) (](https://admin.microsoft.com) und navigieren Sie zu **Microsoft 365 Admin Center**  >  **Compliance.**
+Um auf die Kommunikationscompliance zuzugreifen, wenn Sie von der Microsoft 365 Admin Center aus beginnen, melden sich IT-Administratoren und Compliance-Spezialisten von Contoso beim Microsoft 365 Admin Center [an ( https://admin.microsoft.com)](https://admin.microsoft.com) und navigieren Sie zu **Microsoft 365 Admin Center**  >  **Compliance**.
 
 ![Link zur Kommunikationscompliance](../media/communication-compliance-case-compliance-link.png)
 
@@ -136,7 +136,7 @@ Mit dieser Aktion wird das **Office 365 Security and Compliance Center** geöffn
 
 ![Office 365 Security and Compliance Center](../media/communication-compliance-case-scc.png)
 
-Sobald sich der **Microsoft 365 Compliance Center** befindet, wählen IT-Administratoren von Contoso **"Alle** anzeigen" aus, um die vollständige Liste der Compliancelösungen anzuzeigen.
+Im **Microsoft 365 Compliance Center** wählen CONTOSO-IT-Administratoren **"Alle** anzeigen" aus, um die vollständige Liste der Compliancelösungen anzuzeigen.
 
 ![Menü "Kommunikationscompliance"](../media/communication-compliance-case-show-all.png)
 

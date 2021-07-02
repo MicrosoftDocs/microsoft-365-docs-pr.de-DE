@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227343"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256735"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -76,7 +76,7 @@ Wählen Sie bei der Konfiguration der Kommunikationscompliance aus den folgenden
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Option 1: Zuweisen aller Compliancebenutzer zur Rollengruppe "Kommunikationscompliance"
 
-1. Melden Sie sich [https://protection.office.com/permissions](https://protection.office.com/permissions) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
+1. Melden Sie sich [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
 
 2. Wechseln Sie im Security &amp; Compliance Center zu **"Berechtigungen".** Wählen Sie den Link aus, um Rollen in Office 365 anzuzeigen und zu verwalten.
 
@@ -94,7 +94,7 @@ Wählen Sie bei der Konfiguration der Kommunikationscompliance aus den folgenden
 
 Verwenden Sie diese Option, um Benutzern bestimmte Rollengruppen zuzuweisen, um den Zugriff auf die Kommunikationscompliance und die Zuständigkeiten zwischen den verschiedenen Benutzern in Ihrer Organisation zu segmentieren.
 
-1. Melden Sie sich [https://protection.office.com/permissions](https://protection.office.com/permissions) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
+1. Melden Sie sich [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Microsoft 365 Organisation an.
 
 2. Wechseln Sie im Security &amp; Compliance Center zu **"Berechtigungen".** Wählen Sie den Link aus, um Rollen in Office 365 anzuzeigen und zu verwalten.
 

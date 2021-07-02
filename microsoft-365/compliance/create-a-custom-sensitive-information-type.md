@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte Typen vertraulicher Informationen für DLP im Security & Compliance Center erstellen, ändern, entfernen und testen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227151"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256723"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
 
@@ -158,7 +158,7 @@ Wenn ein in regulären Ausdruck eingebetteter Datumswert Teil eines neuen Muster
 
 ### <a name="functional-processors-as-validators"></a>Funktionale Prozessoren als Validierer
 
-Sie können Funktionsprozessoren für einige der am häufigsten verwendeten SITs als Validierer verwenden. Auf diese Weise können Sie Ihren eigenen regulären Ausdruck definieren und gleichzeitig sicherstellen, dass sie die zusätzlichen Überprüfungen bestehen, die für die SIT erforderlich sind. Func_India_Aadhar stellen beispielsweise sicher, dass der von Ihnen definierte benutzerdefinierte reguläre Ausdruck die für die Karte "Indien Aadhar" erforderliche Überprüfungslogik übergibt. Weitere Informationen zu DLP-Funktionen, die als Validierer verwendet werden können, finden Sie unter [Wonach die DLP-Funktionen suchen.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
+Sie können Funktionsprozessoren für einige der am häufigsten verwendeten SITs als Validierer verwenden. Auf diese Weise können Sie Ihren eigenen regulären Ausdruck definieren und gleichzeitig sicherstellen, dass sie die zusätzlichen Überprüfungen bestehen, die für die SIT erforderlich sind. So stellen Func_India_Aadhar beispielsweise sicher, dass der von Ihnen definierte benutzerdefinierte reguläre Ausdruck die für die Karte "Indien Aadhar" erforderliche Überprüfungslogik übergibt. Weitere Informationen zu DLP-Funktionen, die als Validierer verwendet werden können, finden Sie unter [Wonach die DLP-Funktionen suchen.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
 
 ### <a name="luhn-check-validator"></a>Luhn-Überprüfungsprüfer
 
@@ -182,10 +182,16 @@ Hier sind die Definitionen und einige Beispiele für die verfügbaren zusätzlic
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection unterstützt in der Vorschau Sprachen mit Doppelbyte-Zeichensätzen für:
+> Microsoft 365 Information Protection unterstützt Doppelbyte-Zeichensatzsprachen für:
 > - Chinesisch (vereinfacht)
 > - Chinesisch (traditionell)
 > - Koreanisch
 > - Japanisch
 >
 >Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
+
+> [!TIP]
+> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regex. Um beispielsweise ein Schlüsselwort wie "机密的document" zu erkennen, verwenden Sie zwei Varianten des Schlüsselworts. eine mit einem Leerzeichen zwischen dem japanischen und englischen Text und einer anderen ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in der SIT hinzugefügt werden sollen, "机密的 document" und "机密的document" sein. Auf ähnliche Weise sollten zwei Varianten verwendet werden, um einen Ausdruck "プンンンンンピッン2020" zu erkennen; "プンンンンピッン 2020" und "プンンンンピッン2020".
+> Stellen Sie beim Erstellen eines regulären Ausdrucks mithilfe eines Doppelbyte-Bindestrichs oder eines doppelten Byte-Punkts sicher, dass beide Zeichen wie ein Trennstrich oder ein Punkt in einem regulären Ausdruck escapet werden. Hier ist ein Beispiel für einen regulären Ausdruck als Referenz:
+    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Es wird empfohlen, eine Zeichenfolgenüberstimmung anstelle einer Wortüberstimmung in einer Schlüsselwortliste zu verwenden.

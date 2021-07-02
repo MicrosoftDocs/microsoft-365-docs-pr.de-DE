@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
+title: Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion durch Schadsoftware zu verhindern
 description: Regeln zur Verringerung der Angriffsfläche können dazu beitragen, zu verhindern, dass Exploits Apps und Skripts verwenden, um Geräte mit Schadsoftware zu infizieren.
 keywords: Attack Surface Reduction-Regeln, Asr, Hips, Host Intrusion Prevention System, Schutzregeln, Anti-Exploit, Antiexploit, Exploit, Infektionsverhinderung, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177633"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276989"
 ---
-# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
+# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion durch Schadsoftware zu verhindern
 
 **Gilt für:**
 
@@ -32,7 +32,7 @@ ms.locfileid: "53177633"
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Warum Regeln zur Verringerung der Angriffsfläche wichtig sind
 
-Die Angriffsfläche Ihrer Organisation umfasst alle Orte, an denen ein Angreifer die Geräte oder Netzwerke Ihrer Organisation kompromittieren könnte. Die Reduzierung der Angriffsfläche bedeutet, die Geräte und das Netzwerk Ihrer Organisation zu schützen, sodass Angreifer weniger Möglichkeiten haben, Angriffe auszuführen. Das Konfigurieren von Regeln zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt kann hilfreich sein!
+Die Angriffsfläche Ihrer Organisation umfasst alle Stellen, an denen ein Angreifer die Geräte oder Netzwerke Ihrer Organisation kompromittieren könnte. Die Reduzierung der Angriffsfläche bedeutet, die Geräte und das Netzwerk Ihrer Organisation zu schützen, sodass Angreifer weniger Möglichkeiten haben, Angriffe auszuführen. Das Konfigurieren von Regeln zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt kann hilfreich sein!
 
 Regeln zur Verringerung der Angriffsfläche zielen auf bestimmte Softwareverhalten ab, z. B.:
 
@@ -96,11 +96,11 @@ Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine 
 
 Wenn außerdem bestimmte Regeln zur Verringerung der Angriffsfläche ausgelöst werden, werden Warnungen generiert.
 
-Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( ) angezeigt werden [https://security.microsoft.com](https://security.microsoft.com) (früher [Microsoft Defender Security Center).](microsoft-defender-security-center.md)
+Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) ) (früher [Microsoft Defender Security Center](microsoft-defender-security-center.md)genannt) angezeigt werden.
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Erweiterte Suche und Attack Surface Reduction-Ereignisse
 
-Sie können die erweiterte Suche verwenden, um Attack Surface Reduction-Ereignisse anzuzeigen. Um das Volumen der eingehenden Daten zu optimieren, können mit der erweiterten Suche nur eindeutige Prozesse für jede Stunde angezeigt werden. Die Zeit eines Attack Surface Reduction-Ereignisses ist das erste Mal, dass das Ereignis innerhalb der Stunde angezeigt wird.
+Sie können die erweiterte Suche verwenden, um Attack Surface Reduction-Ereignisse anzuzeigen. Um das Volumen der eingehenden Daten zu optimieren, können mit der erweiterten Suche nur eindeutige Prozesse pro Stunde angezeigt werden. Die Zeit eines Attack Surface Reduction-Ereignisses ist das erste Mal, dass das Ereignis innerhalb der Stunde angezeigt wird.
 
 Nehmen wir beispielsweise an, dass ein Angriffsflächenreduzierungsereignis auf 10 Geräten während der Stunde 14:00 Uhr auftritt. Angenommen, das erste Ereignis ist um 2:15 Und das letzte um 2:45 aufgetreten. Bei der erweiterten Suche sehen Sie eine Instanz dieses Ereignisses (obwohl es tatsächlich auf 10 Geräten aufgetreten ist), und der Zeitstempel lautet 14:15 Uhr.
 
@@ -120,7 +120,7 @@ Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz]
 - Überwachung, Analyse und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md) verfügbar sind
 - Die Berichterstellungs- und Konfigurationsfunktionen in [Microsoft 365 Defender.](/microsoft-365/security/defender/overview-security-center)
 
-Diese erweiterten Funktionen sind mit einer Windows Professional- oder Windows E3-Lizenz nicht verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Überprüfen von Attack Surface Reduction-Ereignissen im Microsoft 365 Defender Portal
 
@@ -183,7 +183,6 @@ Wenn Sie Regeln zur Verringerung der Angriffsfläche mithilfe von Gruppenrichtli
 |[Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Unterstützt|[Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher|
 |[Win32-API-Aufrufe von Office-Makros blockieren](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Unterstützt|[Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher|
 |[Erweiterten Schutz vor Ransomware verwenden](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Unterstützt|[Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher|
-|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockieren des Missbrauchs von gefährdeten signierten Treibern
 
@@ -199,7 +198,7 @@ Die Regel zum **Blockieren des Missbrauchs gefährdeter signierter Treiber** ver
 >
 > Um einen Treiber untersuchen zu lassen, verwenden Sie diese Website, um [einen Treiber für die Analyse zu übermitteln.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
-Diese Regel wird in allen Versionen unterstützt, in denen ASR unterstützt wird. dies ist:
+Unterstützte Betriebssysteme:
 
 - [Windows 10 Pro, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - [Windows 10 Enterprise, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
@@ -216,7 +215,7 @@ Diese Regel verhindert Angriffe, indem Adobe Reader am Erstellen von Prozessen g
 
 Durch Social Engineering oder Exploits kann Schadsoftware Nutzlasten herunterladen und starten und aus Adobe Reader ausbrechen. Durch das Blockieren der Generierung von untergeordneten Prozessen durch Adobe Reader wird verhindert, dass Schadsoftware versucht, sie als Vektor zu verwenden.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ Mit dieser Regel wird verhindert, dass Office Apps untergeordnete Prozesse erste
 
 Das Erstellen bösartiger untergeordneter Prozesse ist eine gängige Schadsoftwarestrategie. Schadsoftware, die Office als Vektor missbraucht, führt häufig VBA-Makros und Exploit-Code aus, um weitere Nutzlasten herunterzuladen und auszuführen. Einige legitime Branchenanwendungen können jedoch auch untergeordnete Prozesse für unfreundliche Zwecke generieren. z. B. das Auslösen einer Eingabeaufforderung oder die Verwendung von PowerShell zum Konfigurieren von Registrierungseinstellungen.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS authentifiziert Benutzer, die sich auf einem Windows Computer anmelden. Mi
 > [!NOTE]
 > In einigen Apps zählt der Code alle ausgeführten Prozesse auf und versucht, sie mit vollständigen Berechtigungen zu öffnen. Diese Regel verweigert die Vorgangsöffnungsaktion der App und protokolliert die Details im Sicherheitsereignisprotokoll. Diese Regel kann viel Rauschen erzeugen. Wenn Sie über eine App verfügen, die LSASS einfach aufzählt, aber keine echten Auswirkungen auf die Funktionalität hat, ist es NICHT erforderlich, sie der Ausschlussliste hinzuzufügen. Dieser Ereignisprotokolleintrag allein weist nicht unbedingt auf eine böswillige Bedrohung hin.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werd
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
 - Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic -VBS- oder JavaScript-.js datei)
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ Das Starten nicht vertrauenswürdiger oder unbekannter ausführbarer Dateien kan
 >
 > Sie können einzelne Dateien oder Ordner (mithilfe von Ordnerpfaden oder vollqualifizierten Ressourcennamen) angeben, jedoch nicht angeben, welche Regeln oder Ausschlüsse gelten.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ Diese Regel erkennt verdächtige Eigenschaften in einem verborgenen Skript.
 
 Das Verbergen von Skripts ist eine gängige Technik, die sowohl Von Schadsoftwareautoren als auch legitimen Anwendungen verwendet wird, um geistiges Eigentum auszublenden oder die Ladezeiten von Skripts zu verringern. Autoren von Schadsoftware verwenden auch die Verschleierung, um das Lesen von schadhaftem Code zu erschweren, wodurch eine genaue Prüfung durch Menschen und Sicherheitssoftware verhindert wird.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ Diese Regel verhindert, dass Skripts potenziell schädliche heruntergeladene Inh
 
 Obwohl branchenspezifische Anwendungen nicht üblich sind, verwenden sie manchmal Skripts, um Installationsprogramme herunterzuladen und zu starten.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ Diese Regel verhindert, dass Office Apps, einschließlich Word, Excel und PowerP
 
 Schadsoftware, die Office als Vektor missbraucht, versucht möglicherweise, Office zu unterbrechen und schädliche Komponenten auf dem Datenträger zu speichern. Diese schädlichen Komponenten würden einen Computerneustart überstehen und auf dem System beibehalten. Daher schützt diese Regel vor einer gängigen Persistenztechnik.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ Es gibt keine bekannten legitimen Geschäftszwecke für die Verwendung von Codee
 
 Diese Regel gilt für Word, Excel und PowerPoint.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code 
 > [!NOTE]
 > Diese Regel blockiert DLP-Richtlinientipps und QuickInfos in Outlook. Diese Regel gilt nur für Outlook und Outlook.com.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ Diese Regel verhindert, dass Schadsoftware WMI missbraucht, um Dauerhaftigkeit a
 
 Dateilose Bedrohungen verwenden verschiedene Taktiken, um ausgeblendet zu bleiben, um zu verhindern, dass sie im Dateisystem angezeigt werden, und um eine regelmäßige Ausführungskontrolle zu erhalten. Einige Bedrohungen können das WMI-Repository und das Ereignismodell missbrauchen, um ausgeblendet zu bleiben.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ Diese Regel blockiert die Ausführung von Prozessen, die über [PsExec](/sysinte
 > [!WARNING]
 > Verwenden Sie diese Regel nur, wenn Sie Ihre Geräte mit [Intune](/intune) oder einer anderen MDM-Lösung verwalten. Diese Regel ist mit der Verwaltung über [Microsoft Endpoint Configuration Manager](/configmgr) nicht kompatibel, da diese Regel WMI-Befehle blockiert, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 Mit dieser Regel können Administratoren verhindern, dass nicht signierte oder nicht vertrauenswürdige ausführbare Dateien von USB-Wechseldatenträgern ausgeführt werden, einschließlich SD-Karten. Zu den blockierten Dateitypen gehören ausführbare Dateien (z. B. .exe, .dll oder SCR).
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ Diese Regel verhindert, dass VBA-Makros Win32-APIs aufrufen.
 
 Office VBA aktiviert Win32-API-Aufrufe. Schadsoftware kann diese Funktion missbrauchen, z. B. [indem sie Win32-APIs aufruft, um bösartige Shellcode zu starten,](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) ohne etwas direkt auf die Festplatte zu schreiben. Die meisten Organisationen verlassen sich nicht auf die Möglichkeit, Win32-APIs in ihrer täglichen Funktionsweise aufzurufen, auch wenn sie Makros auf andere Weise verwenden.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -504,7 +503,7 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Erweiterten Schutz vor Ransomware verwenden
 
-Diese Regel bietet eine zusätzliche Schutzebene vor Ransomware. Es verwendet sowohl Client- als auch Cloud-Heuristiken, um zu bestimmen, ob eine Datei Ransomware ähnelt. Diese Regel blockiert keine Dateien mit einem oder mehreren der folgenden Merkmale:
+Diese Regel bietet eine zusätzliche Schutzebene vor Ransomware. Es verwendet Client- und Cloud-Heuristiken, um festzustellen, ob eine Datei Ransomware ähnelt. Diese Regel blockiert keine Dateien mit einem oder mehreren der folgenden Merkmale:
 
 - Die Datei wurde bereits in der Microsoft-Cloud als nicht vertrauenswürdig eingestuft.
 - Die Datei ist eine gültige signierte Datei.
@@ -515,7 +514,7 @@ Die Regel tendiert zu einem Fehler auf der Seite der Vorsicht, um Ransomware zu 
 > [!NOTE]
 > Sie müssen den über die [Cloud bereitgestellten Schutz aktivieren,](enable-cloud-protection-microsoft-defender-antivirus.md) um diese Regel verwenden zu können.
 
-Diese Regel wurde eingeführt in:
+Unterstützte Betriebssysteme:
 
 - [Windows 10, Version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)

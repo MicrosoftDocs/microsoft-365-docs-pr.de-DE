@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841282"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276929"
 ---
 # <a name="device-images"></a>Gerätebilder
 
@@ -25,10 +25,10 @@ ms.locfileid: "52841282"
 Unabhängig davon, ob Sie [neue Geräte](#new-devices) bestellen oder [vorhandene](#existing-devices) wiederverwenden, haben Sie mehrere Optionen, um sicherzustellen, dass das Bild auf dem Gerät unseren [Geräteanforderungen](device-requirements.md#check-hardware-requirements)entspricht.
 
 ## <a name="new-devices"></a>Neue Geräte
-Wenn Sie ein neues Gerät von einem [genehmigten Hersteller](device-requirements.md#minimum-requirements)bestellen, führen Sie die folgenden Schritte aus, um sicherzustellen, dass geräte mit der richtigen Microsoft Managed Desktop Image- und Softwarekonfiguration ausgeliefert werden.
+Wenn Sie ein neues Gerät von einem [genehmigten Hersteller](device-requirements.md#minimum-requirements)bestellen, führen Sie die folgenden Schritte aus, um sicherzustellen, dass geräte mit der richtigen Microsoft Managed Desktop Image- und Softwarekonfiguration ausgeliefert werden. Jedes Mal, wenn Sie ein bestimmtes Gerätemodell zum ersten Mal im Dienst registrieren möchten, sollten Sie ein Beispiel testen, um sicherzustellen, dass es die erwartete Benutzererfahrung bietet. Weitere Informationen finden Sie unter [Überprüfen neuer Geräte.](/microsoft-365/managed-desktop/get-started/validate-device)
 
 ### <a name="dell"></a>Dell
-Wenden Sie sich direkt an den Dell-Vertriebsmitarbeiter, der sicherstellt, dass das von Microsoft Managed Desktop genehmigte Image auf Geräte für Ihre Bestellung angewendet wird. Wenden Sie sich bei weiteren Fragen zu Dell-Geräten, dem Image und dem Bestellvorgang an MMD_at_dell@dell.com.
+Wenden Sie sich direkt an den Dell-Vertriebsmitarbeiter, der sicherstellen wird, dass das von Microsoft Managed Desktop genehmigte Image auf Geräte für Ihre Bestellung angewendet wird. Wenn Sie weitere Fragen zu Dell-Geräten, dem Image und dem Bestellvorgang haben, wenden Sie sich an MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>Hp 
 Wenn Sie neue Geräte von HP bestellen, müssen Sie die spezifische SKU verwenden, die im Abschnitt "Zusätzliche Anforderungen" für jedes Modell auf der Website ["Shop Windows 10 Pro Business Devices"](https://www.microsoft.com/windowsforbusiness/view-all-devices) aufgeführt ist (filtern Sie die Ansicht, um Microsoft Managed Desktop Geräte anzuzeigen).
@@ -41,7 +41,7 @@ Wenn Sie ein Gerät von HP sortieren, das als [Ausnahme](customizing.md) genehmi
 - Global: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Wenn Sie Geräte von Lenovo für die Verwendung in Microsoft Managed Desktop bestellen, müssen Sie eine bestimmte Teilenummer angeben, die im Rahmen der Bestellung enthalten ist. Wenden Sie sich an Ihren Lenovo-Vertriebsmitarbeiter oder Lenovo Channel Partner, und bitten Sie ihn, ein *Sonderangebotsmodell* mit einem System zu erstellen, das unsere [Geräteanforderungen](device-requirements.md#minimum-requirements)erfüllt. Um ein vorinstalliertes Bild einzuschließen, das mit Microsoft Managed Desktop kompatibel ist, bitten Sie den Vertriebsmitarbeiter, auf *"Systembausteinteilnummer NV0Q94938 – MMD Enablement"* zu verweisen.
+Wenn Sie Geräte von Lenovo für die Verwendung in Microsoft Managed Desktop bestellen, müssen Sie eine bestimmte Teilenummer angeben, die im Rahmen der Bestellung enthalten ist. Wenden Sie sich an Ihren Lenovo-Vertriebsmitarbeiter oder Lenovo Channel Partner, und bitten Sie ihn, ein *Sonderangebotsmodell* mit einem System zu erstellen, das unsere [Geräteanforderungen](device-requirements.md#minimum-requirements)erfüllt. Um ein vorinstalliertes Bild einzuschließen, das mit Microsoft Managed Desktop kompatibel ist, bitten Sie den Vertriebsmitarbeiter, auf *"system building block part number NV0Q94938 – MMD Enablement"* zu verweisen.
 
 Die folgenden Produkte sind derzeit für Microsoft Managed Desktop Support aktiviert:
 
@@ -68,7 +68,7 @@ Um das neueste Image zu erhalten, das in der Werksversion auf einem Microsoft-Ge
 
 Sie können vorhandene Geräte wiederverwenden, solange sie sowohl den  [Geräteanforderungen](device-requirements.md#minimum-requirements) als auch den [Softwareanforderungen](device-requirements.md#installed-software)entsprechen. Führen Sie die für Ihren Hersteller relevanten Schritte aus.
 
-Sie können Geräte entweder mit einem Image des Herstellers oder mithilfe des Microsoft Managed Desktop "universellen Bilds" neu abbilden. Um ein entsprechendes Herstellerimage zu erhalten, können Sie mindestens ein [neues Gerät](#new-devices) des Modells bestellen, das Sie wiederverwenden. Anschließend können Sie das Bild von diesem Gerät abrufen und es auf andere Geräte desselben Modells anwenden.
+Sie können Geräte entweder mit einem Image des Herstellers oder mithilfe des Microsoft Managed Desktop "universelles Image" neu abbilden. Um ein entsprechendes Herstellerimage zu erhalten, können Sie mindestens ein [neues Gerät](#new-devices) des Modells bestellen, das Sie wiederverwenden. Anschließend können Sie das Bild von diesem Gerät abrufen und es auf andere Geräte desselben Modells anwenden.
 
 > [!NOTE]
 > Es liegt in Ihrer Verantwortung, Bilder zu erstellen, zu testen und bereitzustellen. Wir empfehlen außerdem, nach Möglichkeit geeignete, vom Hersteller bereitgestellte Bilder anstelle von benutzerdefinierten Bildern zu verwenden , einschließlich des "universellen Bilds".
@@ -77,7 +77,7 @@ Sie können Geräte entweder mit einem Image des Herstellers oder mithilfe des M
 
 Hp Commercial PCs, die mit dem HP Corporate Ready Image ausgeliefert wurden, enthalten ein . WIM-Datei für die Wiederherstellung. Sie können dieses Image verwenden, um das Factorywiederherstellungsimage auf andere Geräte desselben Modells anzuwenden.
 
-Durch diese Schritte werden alle Daten auf dem Gerät entfernt. Bevor Sie also beginnen, sollten Sie alle Daten sichern, die Sie beibehalten möchten.
+Durch diese Schritte werden alle Daten auf dem Gerät entfernt, daher sollten Sie vor dem Starten alle Daten sichern, die Sie beibehalten möchten.
 
 1. [Erstellen Sie ein startbares USB-Laufwerk](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) mit WinPE.
 2. Kopieren Sie diese Dateien aus C: \\ SOURCES auf das USB-Laufwerk:
@@ -85,21 +85,21 @@ Durch diese Schritte werden alle Daten auf dem Gerät entfernt. Bevor Sie also b
     - Bereitstellen. Cmd
     - ReCreatePartitions.txt
 3. [Starten des Geräts in WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) USB-Laufwerk.
-4. Führen Sie an einer Eingabeaufforderung [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references)aus.
+4. Führen Sie in einer Eingabeaufforderung [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references)aus.
 5. Führen Sie in Diskpart `list disk` die primäre Speicherdatenträgernummer aus (in der Regel Datenträger 0).
 6. Beenden Sie Diskpart, indem Sie `exit` .
-7. Führen Sie an der Eingabeaufforderung `deploy.cmd <sys_disk> <recovery_wim>` aus, wobei *sys_disk* die Datenträgernummer des primären Speicherdatenträgers ist, den Sie gerade ermittelt haben, und *recovery_wim* der Dateiname der . WIM-Datei, die Sie zuvor kopiert haben.
+7. Führen Sie an der Eingabeaufforderung `deploy.cmd <sys_disk> <recovery_wim>` aus, wobei *sys_disk* die Datenträgernummer des primären Speicherdatenträgers ist, den Sie soeben ermittelt haben, und *recovery_wim* der Dateiname der . WIM-Datei, die Sie zuvor kopiert haben.
 8. Entfernen Sie das USB-Laufwerk, und starten Sie das Gerät neu.
 
 ### <a name="microsoft"></a>Microsoft 
 
 Microsoft Surface-Geräte enthalten "Bare Metal [Recovery"-Images,](https://support.microsoft.com/en-us/surfacerecoveryimage) die für jedes Modell spezifisch sind. Sie können diese Bilder verwenden, um Geräte neu abzubilden.
 
-Diese Images verwenden die Windows Wiederherstellungsumgebung (WinRE) und dies ist ein manueller (nicht automatisierter) Prozess. Führen Sie die Schritte zum [Erstellen und Verwenden eines USB-Wiederherstellungslaufwerks für Surface](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)aus.
+Diese Bilder verwenden die Windows Wiederherstellungsumgebung (WinRE) und dies ist ein manueller (nicht automatisierter) Prozess. Führen Sie die Schritte zum [Erstellen und Verwenden eines USB-Wiederherstellungslaufwerks für Surface](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)aus.
 
 
 ### <a name="universal-image"></a>Universelles Bild
-Microsoft Managed Desktop hat ein Bild erstellt, das Windows 10 Pro und Microsoft 365 Apps für Enterprise enthält, die Sie mit Microsoft Managed Desktop verwenden können. Es empfiehlt sich jedoch, nach Möglichkeit Bilder zu verwenden, die für Microsoft Managed Desktop vom Hersteller bereitgestellt werden, auch wenn dies eine ältere Windows Version bedeutet, die aktualisiert werden muss, sobald sich der Benutzer anmeldet. Die Verwendung des Microsoft Managed Desktop universellen Bilds sollte eine letzte Option sein.
+Microsoft Managed Desktop hat ein Bild erstellt, das Windows 10 Pro und Microsoft 365 Apps für Enterprise enthält, die Sie mit Microsoft Managed Desktop verwenden können. Es empfiehlt sich jedoch, bilder zu verwenden, die dem vom Hersteller bereitgestellten Microsoft Managed Desktop entsprechen, auch wenn dies eine ältere Windows Version bedeutet, die aktualisiert werden muss, sobald sich der Benutzer anmeldet. Die Verwendung des Microsoft Managed Desktop Universellen Bilds sollte eine letzte Option sein.
 
 - Wir aktualisieren das Image alle 30 bis 60 Tage mit den neuesten Windows monatlichen Qualitätsupdates und Microsoft 365 Apps für Enterprise Updates mindestens zweimal pro Jahr.
 - Das Image enthält ein Wiederherstellungsbereitstellungspaket, um sicherzustellen, dass Microsoft 365 Apps für Enterprise nach Windows Wiederherstellungsszenarien wiederhergestellt wird.

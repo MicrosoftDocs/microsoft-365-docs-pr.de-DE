@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Aktivitäten von Benutzern und Administratoren in Ihrer Microsoft 365-Organisation überwachen können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d4a753a640b98125bc6ad02bd6043f28336e29b7
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538518"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256759"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Überwachungslösungen in Microsoft 365
 
@@ -165,4 +165,4 @@ Ausführlichere Anweisungen finden Sie unter [Einrichten der Erweiterten Überwa
 
 ## <a name="training"></a>Schulung
 
-Die Schulung Ihres Teams für Sicherheitsabläufe, von IT-Administratoren und Compliance-Ermittlern in der Grundlegenden und der Erweiterten Überwachung kann Ihrer Organisation helfen, schneller mit der Verwendung von Überwachungen zur Unterstützung Ihrer Untersuchungen zu beginnen. Microsoft 365 stellt die folgende Ressource zur Verfügung, um diesen Benutzern in Ihrer Organisation den Einstieg in die Überwachung zu erleichtern: [Die Überwachungsfunktionen in Microsoft 365 beschreiben](/learn/modules/describe-audit-capabilities-microsoft-365).
+Die Schulung Ihres Teams für Sicherheitsvorgänge, Ihrer IT-Administratoren und Ihres Compliance-Ermittler-Teams in der grundlegenden und der erweiterten Überwachung kann Ihrer Organisation helfen, schneller mit der Verwendung von Überwachungen zur Unterstützung Ihrer Untersuchungen zu beginnen. Microsoft 365 stellt die folgende Ressource zur Verfügung, um diesen Benutzern in Ihrer Organisation den Einstieg in die Überwachung zu erleichtern: [eDiscovery-Funktionen und Überwachungsfunktionen von Microsoft 365 beschreiben](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

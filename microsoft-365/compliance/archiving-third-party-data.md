@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit von Dokumenten in Microsoft 365 Postfächer importieren.
-ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: 76df1ffa7afdeeda9a35744e9e4bfffae4576ca9
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243959"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276953"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archivieren von Drittanbieterdaten in Microsoft 365
 
@@ -103,11 +103,11 @@ Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen
 
 ### <a name="telemessage-data-connectors"></a>TeleMessage Datenconnectors
 
-In der Tabelle in diesem Abschnitt sind die datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit TeleMessage verfügbar sind. Die Tabelle enthält außerdem eine Zusammenfassung der Compliancelösungen, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Daten von Drittanbietern anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+In der Tabelle in diesem Abschnitt sind die datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit TeleMessage verfügbar sind. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Drittanbieterdaten anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
 
 Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen Sie mit TeleMessage zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Klicken Sie für weitere Informationen auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
 
-TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Weitere Informationen finden Sie im Abschnitt "Datenkonnektoren" im Abschnitt "US Government Cloud" in diesem Artikel.
+TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Weitere Informationen finden Sie im Abschnitt ["Datenkonnektoren" im Abschnitt "US Government Cloud"](#data-connectors-in-the-us-government-cloud) in diesem Artikel.
 
 |Drittanbieterdaten  |Beweissicherungsverfahren|eDiscovery  |Aufbewahrungseinstellungen  |Datensatzverwaltung  |Kommunikationscompliance  |Insider-Risikomanagement  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -124,7 +124,7 @@ TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US 
 
 ### <a name="17a-4-data-connectors"></a>17a-4-Datenconnectors
 
-In der Tabelle in diesem Abschnitt sind die Datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit 17a-4 LLC verfügbar sind. Die Tabelle enthält außerdem eine Zusammenfassung der Compliancelösungen, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Daten von Drittanbietern anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
+In der Tabelle in diesem Abschnitt sind die Datenkonnektoren von Drittanbietern aufgeführt, die in Zusammenarbeit mit 17a-4 LLC verfügbar sind. In der Tabelle sind auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Drittanbieterdaten anwenden können. Im Abschnitt ["Übersicht über Compliancelösungen, die Daten](#overview-of-compliance-solutions-that-support-third-party-data) von Drittanbietern unterstützen" finden Sie eine detailliertere Beschreibung der einzelnen Compliancelösungen und der Unterstützung von Drittanbieterdaten.
 
 Bevor Sie Daten von Drittanbietern in Microsoft 365 archivieren können, müssen Sie mit Deren Archivierungsdienst *(dataparser* genannt) für Ihre Organisation zusammenarbeiten. Klicken Sie für weitere Informationen auf den Link in der **Datenspalte** des Drittanbieters, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
 
