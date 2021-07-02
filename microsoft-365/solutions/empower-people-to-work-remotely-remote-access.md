@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste'
+title: 'Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Stellen Sie sicher, dass Ihre Remotemitarbeiter auf lokale Ressourcen zugreifen können, während Sie den Zugriff auf die Microsoft 365-Clouddienste optimieren.
-ms.openlocfilehash: 9fea86bb9c564a37a519d2c7e0ef2e2fd0a59470
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029134"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229431"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Schritt 2: Bereitstellung des Remotezugriffs auf lokale Apps und Dienste
 
-Wenn Ihre Organisation eine VPN-Lösung für den Remotezugriff verwendet, die in der Regel VPN-Servern am Rande des Netzwerks und VPN-Clients umfasst, die auf den Geräten Ihrer Benutzer installiert sind, können Ihre Benutzer VPN-Verbindungen für den Remotezugriff auf lokale Apps und Server verwenden. Möglicherweise müssen Sie jedoch den Datenverkehr zu den cloudbasierten Diensten von Microsoft 365 optimieren.
+Wenn Ihre Organisation eine VPN-Lösung für den Remotezugriff verwendet, die in der Regel VPN-Server am Rande des Netzwerks und VPN-Clients umfasst, die auf den Geräten Ihrer Benutzer installiert sind, können Ihre Benutzer VPN-Verbindungen für den Remotezugriff auf lokale Apps und Server verwenden. Möglicherweise müssen Sie jedoch den Datenverkehr zu Microsoft 365 cloudbasierten Diensten optimieren.
 
 Wenn Ihre Benutzer keine VPN-Lösung verwenden, können Sie Azure Active Directory (Azure AD)-Anwendungs-Proxy und Azure-Punkt-zu-Standort-VPN (P2S) verwenden, um den Zugriff bereitzustellen, je nachdem, ob alle Ihre Apps webbasiert sind.
 
@@ -51,7 +51,7 @@ Ohne geteilte Tunnel wird der gesamte Datenverkehr im Rahmend er Remotearbeit ü
 
 ![Netzwerkdatenverkehr von VPN-Clients ohne Tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Der Microsoft 365-Datenverkehr muss eine indirekte Route durch Ihre Organisation nehmen, die zu einem Microsoft-Netzwerkeintrittspunkt weit entfernt vom physischen Standort des VPN-Clients weitergeleitet werden könnte. Dieser indirekte Pfad erhöht die Latenz des Netzwerkverkehrs und verringert die Gesamtleistung. 
+Microsoft 365-Datenverkehr muss eine indirekte Route durch Ihre Organisation nehmen, die an einen Microsoft-Netzwerkeinstiegspunkt weit vom physischen Standort des VPN-Clients weitergeleitet werden kann. Dieser indirekte Pfad erhöht die Latenz des Netzwerkdatenverkehrs und verringert die Gesamtleistung.
 
 Mit geteilten Tunneln können Sie Ihren VPN-Client so konfigurieren, dass bestimmte Typen von Datenverkehr von der Übertragung über die VPN-Verbindung zum Unternehmensnetzwerk ausgeschlossen werden.
 
@@ -67,7 +67,7 @@ Weitere Informationen und eine Anleitung finden Sie unter[Optimieren der Office 
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Remotezugriff bereitstellen, wenn alle Ihre Apps Web-Apps sind und Sie über eine hybride Identität verfügen
 
-Wenn Ihre Remotemitarbeiter keinen herkömmlichen VPN-Client verwenden und ihre lokalen Benutzerkonten und -gruppen mit Azure AD synchronisiert werden, können Sie Azure AD-Anwendungsproxy verwenden, um einen sicheren Remotezugriff für webbasierte Anwendungen zu gewährleisten, die auf lokalen Servern gehostet werden. Webbasierte Anwendungen umfassen SharePoint Server-Websites, Outlook Web Access-Server oder beliebige andere webbasierte Branchenanwendungen. 
+Wenn Ihre Remotemitarbeiter keinen herkömmlichen VPN-Client verwenden und Ihre lokalen Benutzerkonten und Gruppen mit Azure AD synchronisiert werden, können Sie Azure AD-Anwendungsproxy verwenden, um sicheren Remotezugriff für webbasierte Anwendungen bereitzustellen, die auf lokalen Servern gehostet werden. Zu webbasierten Anwendungen gehören SharePoint Server-Websites, Outlook Webzugriff-Server oder andere webbasierte Geschäftsanwendungen.
 
 Hier sind die Komponenten des Azure AD-Anwendungsproxys.
 
@@ -75,35 +75,32 @@ Hier sind die Komponenten des Azure AD-Anwendungsproxys.
 
 Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Anwendungsproxy](/azure/active-directory/manage-apps/application-proxy).
 
->[!Note]
->Der Azure AD-Anwendungsproxy ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
->
+> [!NOTE]
+> Der Azure AD-Anwendungsproxy ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Remotezugriff bereitstellen, wenn nicht alle Ihre Apps Web-Apps sind
 
 Wenn Ihre Remotemitarbeiter keinen herkömmlichen VPN-Client verwenden und Sie über Apps verfügen, die nicht webbasiert ist, können Sie ein Azure-Punkt-zu-Standort-VPN (P2S) verwenden.
 
-Eine P2S-VPN-Verbindung erstellt eine sichere Verbindung vom Gerät eines Remotemitarbeiters zu Ihrem Organisationsnetzwerk über ein virtuelles Azure-Netzwerk. 
+Eine P2S-VPN-Verbindung erstellt eine sichere Verbindung vom Gerät eines Remotemitarbeiters zu Ihrem Organisationsnetzwerk über ein virtuelles Azure-Netzwerk.
 
 ![Komponenten von Azure P2S-VPN](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 Weitere Informationen finden Sie in dieser [Übersicht über P2S-VPN](/azure/vpn-gateway/point-to-site-about).
 
->[!Note]
->Der Azure P2S VPN ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
->
+> [!NOTE]
+> Der Azure P2S VPN ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Bereitstellen von Windows Virtual Desktop zur Gewährleistung des Remotezugriffs für Mitarbeiter auf persönlichen Geräten 
+## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Bereitstellen von Windows Virtual Desktop zur Gewährleistung des Remotezugriffs für Mitarbeiter auf persönlichen Geräten
 
-Nutzen Sie zur Unterstützung von Remotemitarbeitern, die nur Ihre persönlichen und nicht verwalteten Geräte verwenden können, Windows Virtual Desktop in Azure, um virtuelle Desktops für Ihre Benutzer zu erstellen und zuzuweisen, die sie von zu Hause aus nutzen können. Virtualisierte PCs können sich genauso wie PCs verhalten, die mit Ihrem Unternehmensnetzwerk verbunden sind.
+Um Remotemitarbeiter zu unterstützen, die nur ihre persönlichen und nicht verwalteten Geräte verwenden können, verwenden Sie Windows Virtual Desktop in Azure, um virtuelle Desktops zu erstellen und zuzuordnen, die Ihre Benutzer von zu Hause aus verwenden können. Virtualisierte PCs können wie PCs fungieren, die mit Ihrem Organisationsnetzwerk verbunden sind.
 
 ![Komponenten von Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Weitere Informationen finden Sie in dieser [Übersicht über Windows Virtual Desktop](/azure/virtual-desktop/overview). 
+Weitere Informationen finden Sie in dieser [Übersicht über Windows Virtual Desktop](/azure/virtual-desktop/overview).
 
->[!Note]
+> [!NOTE]
 >Windows Virtual Desktop ist in einem Microsoft 365-Abonnement nicht enthalten. Sie müssen die Nutzung mit einem separaten Azure-Abonnement bezahlen.
->
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Schützen der Remotedesktopdienste-Verbindungen mit dem Remotedesktopdienste-Gateway
 
@@ -133,6 +130,6 @@ Nach der Bereitstellung einer Remotezugriffslösung für Ihre Remotemitarbeiter:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[![Schritt 3: Bereitstellen von Sicherheits- und Compliancediensten von Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+[![Schritt 3: Bereitstellen von Sicherheits- und Compliancediensten von Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 Fahren Sie mit [Schritt 3](empower-people-to-work-remotely-security-compliance.md) fort, um die Sicherheits- und Compliance-Dienste von Microsoft 365 zum Schutz Ihrer Apps, Daten und Geräte für Remotemitarbeiter bereitzustellen.
