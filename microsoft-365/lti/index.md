@@ -1,0 +1,80 @@
+---
+title: Übersicht über LTI-Apps
+ms.author: heidip
+author: MicrosoftHeidi
+manager: serdars
+ms.reviewer: amitman, sovaish
+ms.date: 06/15/2021
+audience: admin
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+search.appverid: ''
+ms.collection:
+- M365-modern-desktop
+localization_priority: None
+description: Erfahren Sie mehr über Learning Tools Interoperability (LTI) Office-Apps in M365 und wie sie Lehrkräften bei der Integration Office Apps in ihr Learning Management System (LMS) helfen.
+ms.openlocfilehash: 4fd7b25b6463eec4f681e3090bb65db8b00351a8
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256678"
+---
+# <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a><span data-ttu-id="e4de9-103">Integrieren von Microsoft-Produkten in Ihr Learning Management System (LMS)</span><span class="sxs-lookup"><span data-stu-id="e4de9-103">Integrating Microsoft products with your Learning Management System (LMS)</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="e4de9-104">Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können.</span><span class="sxs-lookup"><span data-stu-id="e4de9-104">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="e4de9-105">Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.</span><span class="sxs-lookup"><span data-stu-id="e4de9-105">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+
+- [<span data-ttu-id="e4de9-106">OneDrive LTI mit Canvas</span><span class="sxs-lookup"><span data-stu-id="e4de9-106">OneDrive LTI with Canvas</span></span>](#onedrive-lti-with-canvas)
+- [<span data-ttu-id="e4de9-107">Teams Besprechungen LTI mit Canvas</span><span class="sxs-lookup"><span data-stu-id="e4de9-107">Teams Meetings LTI with Canvas</span></span>](#teams-meetings-lti-with-canvas)
+- [<span data-ttu-id="e4de9-108">Teams Klassen LTI</span><span class="sxs-lookup"><span data-stu-id="e4de9-108">Teams Classes LTI</span></span>](#teams-classes-lti)
+
+<span data-ttu-id="e4de9-109">Microsoft Education und unsere Drittanbieterpartner wissen, dass der Fluss von Lehren und Lernen immer Lösungsgrenzen überschreitet.</span><span class="sxs-lookup"><span data-stu-id="e4de9-109">Microsoft Education and our third-party partners understand that the flow of teaching and learning invariably crosses solution boundaries.</span></span> <span data-ttu-id="e4de9-110">Wir arbeiten daran, nahtlosere Erfahrungen zu bieten, sodass Lehrkräfte und Lernende sich auf ihre Ziele konzentrieren, anstatt Tools umschalten zu müssen.</span><span class="sxs-lookup"><span data-stu-id="e4de9-110">We're working on providing more seamless experiences, keeping educators and learners focused on their goals, rather than having to juggle tools.</span></span> <span data-ttu-id="e4de9-111">Wir integrieren Microsoft-Produkte überall dort, wo Lehren und Lernen stattfinden, einschließlich innerhalb und zusammen mit Learning Management Systems (LMS).</span><span class="sxs-lookup"><span data-stu-id="e4de9-111">We're integrating Microsoft products wherever teaching and learning occurs, including within and alongside Learning Management Systems (LMS).</span></span> <span data-ttu-id="e4de9-112">Wir haben mit unseren LMS-Partnern zusammengearbeitet, um eine Suite von Tools mit dem [LTI-Standard (Learning Tools Interoperability)](https://www.imsglobal.org/activity/learning-tools-interoperability) zu erstellen, der das Beste von Microsoft direkt in Ihr LMS bringt.</span><span class="sxs-lookup"><span data-stu-id="e4de9-112">We've worked with our LMS partners to create a suite of tools using the [Learning Tools Interoperability (LTI) standard](https://www.imsglobal.org/activity/learning-tools-interoperability) that brings the best of Microsoft directly into your LMS.</span></span>
+
+<span data-ttu-id="e4de9-113">Diese Tools umfassen eine neue OneDrive LTI-App, eine neue Teams Besprechungs-LTI-App und eine neue Class Teams LTI-App.</span><span class="sxs-lookup"><span data-stu-id="e4de9-113">These tools include a new OneDrive LTI app, a new Teams Meetings LTI app, and a new Class Teams LTI app.</span></span> <span data-ttu-id="e4de9-114">Diese neuen Tools sind äußerst sicher und vollständig kompatibel mit den LTI 1.3- und LTI Advantage-Standards.</span><span class="sxs-lookup"><span data-stu-id="e4de9-114">These new tools are highly secure and fully compatible with LTI 1.3 and LTI Advantage standards.</span></span> <span data-ttu-id="e4de9-115">Mit der OneDrive LTI-App können Lehrkräfte und Schüler OneDrive Cloudspeicher und Office 365 Dateien direkt in Aufgaben- und Inhaltserstellungsworkflows innerhalb eines LMS integrieren.</span><span class="sxs-lookup"><span data-stu-id="e4de9-115">The OneDrive LTI app allows educators and students to bring OneDrive cloud storage and Office 365 files directly into assignment and content creation workflows within an LMS.</span></span> <span data-ttu-id="e4de9-116">Die LTI-App Teams Besprechungen ermöglicht Lehrkräften und Schülern die Verwaltung, Planung und den Zugriff auf ihre Teams Besprechungen über einen Besprechungshub in ihrem LMS.</span><span class="sxs-lookup"><span data-stu-id="e4de9-116">The Teams Meetings LTI app allows educators and students to manage, schedule, and access their Teams Meetings from within a meetings hub in their LMS.</span></span> <span data-ttu-id="e4de9-117">Mit der LTI-App "Kurs Teams" können Lehrkräfte ein Team für ihren Kurs in ihrem LMS erstellen, indem sie die LMS-Kursliste mit täglichen Listenupdates verwenden.</span><span class="sxs-lookup"><span data-stu-id="e4de9-117">The Class Teams LTI app allows educators to create a team for their course within their LMS using the LMS course roster with daily roster updates.</span></span> <span data-ttu-id="e4de9-118">Die Kursteilnehmer können dann direkt innerhalb des LMS auf das Team zugreifen.</span><span class="sxs-lookup"><span data-stu-id="e4de9-118">Students can then access the team right from within the LMS.</span></span> <span data-ttu-id="e4de9-119">Wir freuen uns, diese neuen Tools für Kunden bereitzustellen und unsere Lösungen gemäß Ihrem Feedback weiter zu verbessern.</span><span class="sxs-lookup"><span data-stu-id="e4de9-119">We are excited to bring these new tools to customers and continue to improve our solutions according to your feedback.</span></span>
+
+## <a name="onedrive-lti-with-canvas"></a><span data-ttu-id="e4de9-120">OneDrive LTI mit Canvas</span><span class="sxs-lookup"><span data-stu-id="e4de9-120">OneDrive LTI with Canvas</span></span>
+
+<span data-ttu-id="e4de9-121">Erfahren Sie mehr über die Verwendung von Microsoft OneDrive mit Ihrem Learning Management System (LMS).</span><span class="sxs-lookup"><span data-stu-id="e4de9-121">Learn more about using Microsoft OneDrive with your Learning Management System (LMS).</span></span>
+
+- <span data-ttu-id="e4de9-122">**Bringt Microsoft Office 365 direkt in Ihre Workflows**</span><span class="sxs-lookup"><span data-stu-id="e4de9-122">**Brings Microsoft Office 365 directly into your workflows**</span></span>
+
+<span data-ttu-id="e4de9-123">Die Microsoft OneDrive LTI-App lässt sich in Ihr LMS integrieren, um Microsoft OneDrive und Microsoft Office 365 direkt in Ihre wichtigsten Workflows zu integrieren, die Folgendes umfassen:</span><span class="sxs-lookup"><span data-stu-id="e4de9-123">The Microsoft OneDrive LTI app integrates with your LMS to bring Microsoft OneDrive and Microsoft Office 365 directly into your most important workflows that include:</span></span>
+
+- <span data-ttu-id="e4de9-124">Anfügen von Ressourcen und Organisieren von Inhalten.</span><span class="sxs-lookup"><span data-stu-id="e4de9-124">Attaching resources and organizing content.</span></span>
+- <span data-ttu-id="e4de9-125">Starten von Dokumenten für die Zusammenarbeit.</span><span class="sxs-lookup"><span data-stu-id="e4de9-125">Starting collaborative documents.</span></span>
+- <span data-ttu-id="e4de9-126">Erstellen und Benoten von Zuordnungen.</span><span class="sxs-lookup"><span data-stu-id="e4de9-126">Creating and grading assignments.</span></span>
+
+- <span data-ttu-id="e4de9-127">**Sicher und vollständig kompatibel mit den neuesten LTI-Standards**</span><span class="sxs-lookup"><span data-stu-id="e4de9-127">**Secure and fully compliant with latest LTI standards**</span></span>
+
+<span data-ttu-id="e4de9-128">Die Microsoft OneDrive LTI-App ist mit LTI 1.3 und LTI Advantage kompatibel.</span><span class="sxs-lookup"><span data-stu-id="e4de9-128">The Microsoft OneDrive LTI App is compatible with LTI 1.3 and LTI Advantage.</span></span> <span data-ttu-id="e4de9-129">Dieser Vorteil ermöglicht eine äußerst sichere und eng integrierte Benutzeroberfläche.</span><span class="sxs-lookup"><span data-stu-id="e4de9-129">This advantage allows for a highly secure and tightly integrated user experience.</span></span>
+
+- <span data-ttu-id="e4de9-130">**Moderne und umfangreiche Benutzeroberfläche**</span><span class="sxs-lookup"><span data-stu-id="e4de9-130">**Modern and Rich User Experience**</span></span>
+
+<span data-ttu-id="e4de9-131">Die Microsoft OneDrive LTI-App bietet das Beste von Microsoft direkt in Ihre LMS-Umgebung.</span><span class="sxs-lookup"><span data-stu-id="e4de9-131">The Microsoft OneDrive LTI App brings the best of Microsoft right into your LMS experience.</span></span> <span data-ttu-id="e4de9-132">Wir verbessern die vorhandene Office 365 Integration in Ihr LMS, indem wir eine modernere Benutzeroberfläche bereitstellen, die mit einer neuen und erweiterten Microsoft OneDrive Dateiauswahl und umfangreicheren Bearbeitungsfunktionen für Office Dateien ergänzt wird.</span><span class="sxs-lookup"><span data-stu-id="e4de9-132">We're improving upon the existing Office 365 integration in your LMS by delivering a more modern user experience, complete with a new and expanded Microsoft OneDrive file picker and richer editing experiences for Office files.</span></span> <span data-ttu-id="e4de9-133">Microsoft ist auch in Zukunft voll im Besitz der Microsoft OneDrive LTI-App, was bedeutet, dass Sie immer die neuesten und besten Informationen von Microsoft erhalten.</span><span class="sxs-lookup"><span data-stu-id="e4de9-133">Microsoft will also fully own the Microsoft OneDrive LTI App going forward, which means you’ll always get the latest and greatest from Microsoft automatically.</span></span>
+
+<span data-ttu-id="e4de9-134">Die Microsoft OneDrive LTI-App ermöglicht Folgendes:</span><span class="sxs-lookup"><span data-stu-id="e4de9-134">The Microsoft OneDrive LTI App allows you to:</span></span>
+
+- <span data-ttu-id="e4de9-135">Fügen Sie Office 365 Dateien wie Word-Dokumente, PowerPoint Präsentationen und Excel aus dem Rich Content Editor an.</span><span class="sxs-lookup"><span data-stu-id="e4de9-135">Attach Office 365 files including Word documents, PowerPoint presentations, and Excel from the Rich Content Editor.</span></span>
+- <span data-ttu-id="e4de9-136">Verteilen Office 365 Cloudzuweisungen.</span><span class="sxs-lookup"><span data-stu-id="e4de9-136">Distribute Office 365 cloud assignments.</span></span>
+- <span data-ttu-id="e4de9-137">Anzeigen und Organisieren Ihrer persönlichen und Kurs-Microsoft OneDrive Dateien.</span><span class="sxs-lookup"><span data-stu-id="e4de9-137">View and organize your personal and course Microsoft OneDrive files.</span></span>
+- <span data-ttu-id="e4de9-138">Erstellen Sie Zusammenarbeiten, bei denen Kursmitglieder in Echtzeit gemeinsam an freigegebenen Dokumenten arbeiten können.</span><span class="sxs-lookup"><span data-stu-id="e4de9-138">Create collaborations where course members can work together on shared documents in real time.</span></span>
+- <span data-ttu-id="e4de9-139">Zugriff auf mehrere Microsoft OneDrive Konten, einschließlich persönlichen Konten und Schulkonten.</span><span class="sxs-lookup"><span data-stu-id="e4de9-139">Access multiple Microsoft OneDrive accounts, including personal and school accounts.</span></span>
+- <span data-ttu-id="e4de9-140">Integrieren Sie Office 365-Dateien in Ihre Kursmodule.</span><span class="sxs-lookup"><span data-stu-id="e4de9-140">Integrate Office 365 files with your course modules.</span></span>
+- <span data-ttu-id="e4de9-141">Verwenden Sie Ihr Microsoft-Konto für einmaliges Anmelden mit Ihrem LMS.</span><span class="sxs-lookup"><span data-stu-id="e4de9-141">Use your Microsoft account for single sign-on with your LMS.</span></span>
+
+<span data-ttu-id="e4de9-142">Konfigurationsschritte finden Sie unter [Verwenden Microsoft OneDrive LTI mit Canvas](use-onedrive-with-lms.md).</span><span class="sxs-lookup"><span data-stu-id="e4de9-142">For configuration steps, see [Use Microsoft OneDrive LTI with Canvas](use-onedrive-with-lms.md).</span></span>
+
+## <a name="teams-lti-apps"></a><span data-ttu-id="e4de9-143">Teams LTI-Apps</span><span class="sxs-lookup"><span data-stu-id="e4de9-143">Teams LTI apps</span></span>
+
+### <a name="teams-meetings-lti-with-canvas"></a><span data-ttu-id="e4de9-144">Teams Besprechungen LTI mit Canvas</span><span class="sxs-lookup"><span data-stu-id="e4de9-144">Teams Meetings LTI with Canvas</span></span>
+
+<span data-ttu-id="e4de9-145">Microsoft Teams Besprechungen unterstützt die LTI-App Administratoren dabei, Teams Besprechungen in den LMS-Kurs ihrer Bildungseinrichtung zu integrieren.</span><span class="sxs-lookup"><span data-stu-id="e4de9-145">Microsoft Teams meetings LTI app helps admins incorporate Teams meetings into their educational institution's LMS course.</span></span> <span data-ttu-id="e4de9-146">Lehrkräfte und Schüler/Studenten können vergangene und anstehende Besprechungen anzeigen, einzelne oder wiederkehrende Besprechungen planen und teambesprechungen im Zusammenhang mit dem Kurs aus ihrem LMS teilnehmen.</span><span class="sxs-lookup"><span data-stu-id="e4de9-146">Educators and students can view past and upcoming meetings, schedule individual or recurring meetings, and join team meetings related to the course, all from within their LMS.</span></span>
+
+<span data-ttu-id="e4de9-147">Konfigurationsschritte finden Sie unter [Verwenden Microsoft Teams Besprechungen mit Canvas](teams-meetings-with-canvas.md).</span><span class="sxs-lookup"><span data-stu-id="e4de9-147">For configuration steps, see [Use Microsoft Teams meetings with Canvas](teams-meetings-with-canvas.md).</span></span>
+
+### <a name="teams-classes-lti"></a><span data-ttu-id="e4de9-148">Teams Klassen LTI</span><span class="sxs-lookup"><span data-stu-id="e4de9-148">Teams Classes LTI</span></span>
+
+<span data-ttu-id="e4de9-149">Mit der LTI-App für Microsoft Teams Klassen können Lehrkräfte und Schüler zwischen ihren LMS und Teams navigieren.</span><span class="sxs-lookup"><span data-stu-id="e4de9-149">The Microsoft Teams classes LTI app helps educators and students navigate between their LMS and Teams.</span></span> <span data-ttu-id="e4de9-150">Benutzer können direkt in ihrem LMS auf ihre Kursteams zugreifen, die ihrem Kurs zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="e4de9-150">Users can access their class teams associated with their course directly from within their LMS.</span></span> <span data-ttu-id="e4de9-151">Konfigurationsschritte finden Sie unten:</span><span class="sxs-lookup"><span data-stu-id="e4de9-151">You can find configuration steps below:</span></span>
+
+- <span data-ttu-id="e4de9-152">**Teams Klassen LTI mit Canvas** [Verwenden Sie Microsoft Teams Klassen mit Canvas](teams-classes-with-canvas.md).</span><span class="sxs-lookup"><span data-stu-id="e4de9-152">**Teams Classes LTI with Canvas** [Use Microsoft Teams classes with Canvas](teams-classes-with-canvas.md).</span></span>
