@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
-description: Die Postfachüberwachungsprotokollierung ist in Microsoft 365 standardmäßig aktiviert (auch standardmäßig als Postfachüberwachung oder Postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretungen und Administratoren ausgeführt werden, automatisch in einem Postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten suchen können, die für das Postfach ausgeführt werden.
-ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Die Postfachüberwachungsprotokollierung ist in Microsoft 365 standardmäßig aktiviert (standardmäßig auch als Standardpostfachüberwachung oder Postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretungen und Administratoren ausgeführt werden, automatisch in einem Postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten suchen können, die für das Postfach ausgeführt werden.
+ms.openlocfilehash: f74cb23a029d4710a19aeb18999169f6adc636a4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226779"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287029"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -34,7 +34,7 @@ Nachfolgend sind einige Vorteile der Postfachüberwachung standardmäßig aufgef
 - Die Überwachung wird automatisch aktiviert, wenn Sie ein neues Postfach erstellen. Sie müssen es nicht manuell für neue Benutzer aktivieren.
 - Sie müssen die Postfachaktionen, die überwacht werden, nicht verwalten. Ein vordefinierter Satz von Postfachaktionen wird standardmäßig für jeden Anmeldetyp (Administrator, Stellvertreter und Besitzer) überwacht.
 - Wenn Microsoft eine neue Postfachaktion freigibt, wird die Aktion möglicherweise automatisch der Liste der Postfachaktionen hinzugefügt, die standardmäßig überwacht werden (sofern der Benutzer über die entsprechende Lizenz verfügt). Dies bedeutet, dass Sie das Hinzufügen neuer Aktionen für Postfächer nicht überwachen müssen.
-- Sie verfügen über eine konsistente Postfachüberwachungsrichtlinie in Ihrer organisationweiten Organisation (da Sie die gleichen Aktionen für alle Postfächer überwachen).
+- Sie verfügen über eine konsistente Postfachüberwachungsrichtlinie in Ihrer Organisation (da Sie die gleichen Aktionen für alle Postfächer überwachen).
 
 > [!NOTE]
 >
@@ -43,7 +43,7 @@ Nachfolgend sind einige Vorteile der Postfachüberwachung standardmäßig aufgef
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die Postfachüberwachung standardmäßig aktiviert ist
 
-Um zu überprüfen, ob die Postfachüberwachung für Ihre Organisation standardmäßig aktiviert ist, führen Sie den folgenden Befehl in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)aus:
+Um zu überprüfen, ob die Postfachüberwachung standardmäßig für Ihre Organisation aktiviert ist, führen Sie den folgenden Befehl in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)aus:
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
@@ -111,7 +111,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der Pos
 |**MailboxLogin**|Der Benutzer hat sich bei dessen Postfach angemeldet.|||![Häkchen](../media/checkmark.png)|
 |**MailItemsAccessed**|**Hinweis:** Dieser Wert ist nur für Benutzer von E5- oder E5 Compliance-Add-On-Abonnements verfügbar. Weitere Informationen finden Sie unter [Einrichten der erweiterten Überwachung in Microsoft 365.](set-up-advanced-audit.md) <p> E-Mail-Daten werden von E-Mail-Protokollen und -Clients aufgerufen.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Hinweis:** Dieser Wert ist nur für E3-Benutzer (Benutzer ohne E5- oder E5 Compliance-Add-On-Abonnements) verfügbar. <p> Eine Nachricht wurde im Vorschaubereich angezeigt oder von einem Administrator geöffnet.|![Häkchen](../media/checkmark.png)|||
-|**ModifyFolderPermissions**|Obwohl dieser Wert als Postfachaktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions-Aktion** enthalten und wird nicht separat überwacht. Verwenden Sie diesen Wert also nicht.|||||
+|**ModifyFolderPermissions**|Obwohl dieser Wert als Postfachaktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions-Aktion** enthalten und wird nicht separat überwacht. Verwenden Sie diesen Wert also nicht.||||
 |**Verschieben**|Eine Nachricht wurde in einen anderen Ordner verschoben.|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Ein Als Datensatz bezeichnetes Element wurde vorläufig gelöscht (in den Ordner "Wiederherstellbare Elemente" verschoben). Elemente, die als Datensätze bezeichnet werden, können nicht dauerhaft gelöscht werden (aus dem Ordner "Wiederherstellbare Elemente" gelöscht).|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|
@@ -338,10 +338,10 @@ Der Wert **"True"** gibt an, dass die Postfachüberwachungsprotokollierung für 
   Um Postfachüberwachungsprotokolleinträge für Benutzer ohne E5-Lizenzen abzurufen, können Sie Folgendes ausführen:
 
   - Aktivieren Sie die Postfachüberwachung manuell für einzelne Postfächer (führen Sie den Befehl `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` aus. Danach können Sie Überwachungsprotokollsuchen im Security & Compliance Center oder über die Office 365-Verwaltungsaktivitäts-API verwenden.
-  
+
     > [!NOTE]
     > Wenn die Postfachüberwachung für das Postfach bereits aktiviert zu sein scheint, ihre Suchvorgänge jedoch keine Ergebnisse zurückgeben, ändern Sie den Wert des _Parameters AuditEnabled_ in `$false` und dann zurück zu `$true` .
-  
+
   - Verwenden Sie die folgenden Cmdlets in Exchange Online PowerShell:
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) zum Durchsuchen des Postfachüberwachungsprotokolls nach bestimmten Benutzern.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) zum Durchsuchen des Postfachüberwachungsprotokolls nach bestimmten Benutzern und zum Senden der Ergebnisse per E-Mail an angegebene Empfänger.
@@ -377,6 +377,6 @@ Der Wert **"True"** gibt an, dass die Postfachüberwachungsprotokollierung für 
 
     - Sie können nicht direkt auf einen Überwachungsprotokolleintrag im Ordner "Wiederherstellbare Elemente" zugreifen. Verwenden Sie stattdessen das Cmdlet **"Search-MailboxAuditLog",** oder durchsuchen Sie das Überwachungsprotokoll, um Postfachüberwachungseinträge zu suchen und anzuzeigen.
 
-- Wenn ein Postfach im Compliance Center aufbewahrt oder einer Aufbewahrungsrichtlinie zugewiesen wird, werden Überwachungsprotokolleinträge weiterhin für die Dauer aufbewahrt, die durch die *AuditLogAgeLimit-Eigenschaft* des Postfachs definiert ist (standardmäßig 90 Tage). Um Überwachungsprotokolldatensätze länger für Postfächer aufzubewahren, müssen Sie den *AuditLogAgeLimit-Wert* des Postfachs erhöhen.
+- Wenn ein Postfach im Compliance Center aufbewahrt oder einer Aufbewahrungsrichtlinie zugewiesen wird, werden Überwachungsprotokolleinträge weiterhin für die Dauer aufbewahrt, die durch die *AuditLogAgeLimit-Eigenschaft* des Postfachs definiert ist (standardmäßig 90 Tage). Um Überwachungsprotokolle für Postfächer länger aufzubewahren, müssen Sie den *AuditLogAgeLimit-Wert* des Postfachs erhöhen.
 
 - In einer Multi-Geo-Umgebung wird die Geo-übergreifende Postfachüberwachung nicht unterstützt. Wenn beispielsweise einem Benutzer Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen Geo-Speicherort zugewiesen wurden, werden die von diesem Benutzer ausgeführten Postfachaktionen im Postfachüberwachungsprotokoll des freigegebenen Postfachs nicht protokolliert.

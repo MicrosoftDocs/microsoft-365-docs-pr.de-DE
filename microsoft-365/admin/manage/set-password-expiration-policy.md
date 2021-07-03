@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Erfahren Sie, wie ein Administrator im Microsoft 365 Admin Center eine Richtlinie zum Ablauf von Passwörtern für Ihr Unternehmen, Ihre Schule oder Ihre gemeinnützige Organisation festlegen kann.
-ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: fdd219e4fc99e2388acb5b19eacb2fc470041f79
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635822"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286729"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
 
@@ -85,9 +85,10 @@ Sie können weitere Kennwortrichtlinien und Einschränkungen in Azure Active Dir
 
 Das Cmdlet "Set-MsolPasswordPolicy" aktualisiert die Kennwortrichtlinie einer angegebenen Domäne oder eines Mandanten. Zwei Einstellungen sind erforderlich; die erste ist die Angabe der Zeitspanne, die ein Kennwort gültig bleibt, bevor es geändert werden muss, und die zweite ist die Angabe der Anzahl von Tagen vor dem Ablaufdatum des Kennworts, das ausgelöst wird, wenn Benutzer ihre erste Benachrichtigung erhalten, dass ihr Kennwort bald abläuft.
 
-Wie Sie die Kennwortrichtlinie für eine bestimmte Domäne oder einen bestimmten Mandanten aktualisieren, erfahren Sie unter [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+Wie Sie die Kennwortrichtlinie für eine bestimmte Domäne oder einen bestimmten Mandanten aktualisieren, erfahren Sie unter [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)\
+
 [Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)

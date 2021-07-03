@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984700"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286921"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Hinzufügen und Überprüfen von Administrator-Kontakten im Administratorportal
 
@@ -23,15 +23,16 @@ Es gibt verschiedene Möglichkeiten, wie Microsoft Managed Desktop Dienst mit Ku
 > [!IMPORTANT]
 > Möglicherweise haben Sie diese Kontakte bereits im Verwaltungsportal hinzugefügt. Wenn dies der Fall ist, nehmen Sie sich einen Moment Zeit, um zu überprüfen, ob die Kontaktliste korrekt ist, da Microsoft Managed Desktop in der Lage sein **muss,** sie zu erreichen, wenn ein schwerwiegender Vorfall auftritt.
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory Zugriff für Microsoft Managed Desktop Verwaltungsportal
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory Zugriff für Microsoft Managed Desktop-Verwaltungsportal
 
 Microsoft Managed Desktop Das Verwaltungsportal erfordert, dass Personen, die auf das Portal zugreifen, über eine der folgenden Azure Active Directory (AD)-Rollen verfügen:
+
 - Globaler Administrator
 - Intune-Dienstadministrator
 - Globaler Leser
 - Dienstsupportadministrator
 
-Der globale Administrator muss der Globale Administrator sein, der Ihre Organisation in Microsoft Managed Desktop registriert. Alle fünf Rollen haben den gleichen Zugriff innerhalb des Verwaltungsportals, um Aufgaben zu initiieren und anzuzeigen. Weitere Informationen zum Zuweisen dieser Rollen in Azure AD finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
+Der globale Administrator muss der globale Administrator sein, der Ihre Organisation in Microsoft Managed Desktop registriert. Alle fünf Rollen haben den gleichen Zugriff innerhalb des Verwaltungsportals, um Aufgaben zu initiieren und anzuzeigen. Weitere Informationen zum Zuweisen dieser Rollen in Azure AD finden Sie unter [Administratorrollenberechtigungen in Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="admin-contact-areas-of-focus"></a>Admin-Kontaktbereiche im Fokus
 
@@ -47,21 +48,21 @@ Andere | Für Probleme, die nicht von anderen Bereichen abgedeckt werden
 
 **Jeder, den Sie für diese Kontakte auswählen, muss über das Wissen und die Autorität verfügen, entscheidungen für Ihre Microsoft Managed Desktop Umgebung zu treffen.** Wenn Sie Ihre Microsoft Managed Desktop Umgebung integrieren, werden Sie aufgefordert, Kontakte für Ihr lokales Helpdesk und Die Sicherheit hinzuzufügen. 
 
-Administratorkontakte sind erforderlich, wenn Sie [eine Supportanfrage senden.](../service-description/support.md) Sie benötigen einen Administratorkontakt für den Fokusbereich der Supportanfrage. 
+Administratorkontakte sind erforderlich, wenn Sie [eine Supportanfrage senden.](../service-description/support.md) Sie benötigen einen Administratorkontakt für den Fokusbereich der Supportanfrage.
 
 **So fügen Sie Administratorkontakte hinzu**
 
-1.  Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com)an. 
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com)an.
 
-2.  Suchen Sie unter **Mandantenverwaltung** nach dem **Abschnitt Microsoft Managed Desktop** und wählen Sie dann **Administratorkontakte** aus. 
+2. Suchen Sie unter **Mandantenverwaltung** nach dem **Abschnitt Microsoft Managed Desktop,** und wählen Sie dann **Administratorkontakte** aus.
 
-3. Wählen Sie **Hinzufügen**.
+3. Klicken Sie auf **Hinzufügen**.
 
-4.  Wählen Sie einen **Fokusbereich aus,** und geben Sie die Informationen für den Kontakt ein. 
+4. Wählen Sie einen **Fokusbereich aus,** und geben Sie die Informationen für den Kontakt ein. 
 
     ![die Liste der Schwerpunktbereiche, z. B. "Andere", "Apps" und "Sicherheit".](../../media/areaoffocus.png)
 
-5. Wiederholen Sie dies für jeden Fokusbereich. 
+5. Wiederholen Sie dies für jeden Fokusbereich.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte für die ersten Schritte mit Microsoft Managed Desktop
 

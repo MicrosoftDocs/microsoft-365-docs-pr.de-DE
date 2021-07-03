@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurieren Sie den Informationsschutz in Microsoft 365 für Datenschutzbestimmungen wie die DSGVO und den California Consumer Privacy Act (CCPA), einschließlich Microsoft Teams, SharePoint und E-Mails.
-ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229203"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287711"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365
 
@@ -33,6 +33,11 @@ Beispiele für die Datentypen in Microsoft 365 sind Chatsitzungen in Microsoft T
 ![Was ist Informationsschutz für Datenschutzbestimmungen?](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 Darüber hinaus werden zusätzliche Informationen zur Verwendung Microsoft 365 Identitäts-, Geräte- und Bedrohungsschutz-Steuerelemente für Ihre Datenschutzanforderungen bereitgestellt.
+
+Schauen Sie sich dieses Video an, um einen Überblick über den Bereitstellungsprozess zu erhalten.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
 
 Diese Microsoft 365 Funktionen und Features helfen Ihnen, die Kriterien für den Schutz von Informationen zu erfüllen.
 
@@ -80,11 +85,11 @@ Microsoft 365 bietet Identitäts-, Geräte- und Bedrohungsschutzfunktionen, die 
 
 Weitere Informationen finden Sie unter [Verwenden von Identität, Gerät und Bedrohungsschutz für Datenschutzbestimmungen.](information-protection-deploy-identity-device-threat.md)
 
-In diesem Artikel wird kurz beschrieben, was in den Datenschutzbestimmungen in diesen Bereichen im Allgemeinen erforderlich ist, und es finden Sie eine Liste verwandter Microsoft 365 Lösungen mit Links zu weiteren Informationen, die Ihnen bei der Erfüllung von Implementierungsanforderungen helfen.
+Dieser Artikel beschreibt kurz, was die Datenschutzbestimmungen in diesen Bereichen im Allgemeinen fordern, und enthält eine Liste verwandter Microsoft 365 Lösungen mit Links zu weiteren Informationen, die Ihnen bei der Erfüllung von Implementierungsanforderungen helfen.
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen, die der Datenschutzbestimmungen unterliegen
 
-Datenschutzbestimmungen legen eine Reihe von Steuerelementen zum Schutz personenbezogener Informationen fest, die in Ihrer Umgebung eingesetzt werden können, einschließlich mehr als 40 Kontrollen zum Schutz von Informationen über nur die vier Datenschutzbestimmungen in unseren Beispielen DSGVO, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD).
+Datenschutzbestimmungen bestimmen eine Reihe von Steuerelementen zum Schutz personenbezogener Informationen, die in Ihrer Umgebung eingesetzt werden können, einschließlich mehr als 40 Kontrollen zum Schutz von Informationen über nur die vier Datenschutzbestimmungen in unseren Beispielen DSGVO, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD).
 
 Weitere Informationen finden Sie unter ["Schützen von Informationen, die den Datenschutzbestimmungen in Ihrer Organisation unterliegen".](information-protection-deploy-protect-information.md)
 
@@ -105,3 +110,26 @@ Es stehen Microsoft 365 Features zur Verfügung, mit denen Sie Datenschutzvorfä
 Prozesse, Verfahren und andere Dokumentationen für die Verwendung dieser Features können wichtig sein, um die Einhaltung von Vorschriften nachzuweisen.
 
 Weitere Informationen finden Sie unter [Überwachen und Reagieren auf Datenschutzvorfälle in Ihrer Organisation.](information-protection-deploy-monitor-respond.md)
+
+## <a name="training-for-administrators"></a>Schulung für Administratoren
+
+Diese Schulungsmodule von Microsoft Learn helfen Ihnen dabei, zu erfahren, welche Funktionen für den Informationsschutz wichtig sind.
+
+
+#### <a name="information-protection"></a>Information Protection
+
+|Ausbildung:|Schützen von Unternehmensinformationen mit Microsoft 365|
+|:---|:---|
+|![Schulungssymbol für Teams Infoschutz](../media/protect-enterprise-information-microsoft-365.svg)|Es ist schwieriger als je zuvor, die Informationen Ihrer Organisation zu schützen und zu sichern. Im Lernpfad Schützen von Unternehmensinformationen mit Microsoft 365 wird erläutert, wie Sie Ihre vertraulichen Informationen vor versehentlichem Teilen oder Missbrauch schützen, wie Sie Daten erkennen und klassifizieren, wie Sie sie mit Vertraulichkeitsbezeichnungen schützen können und wie Sie vertrauliche Informationen überwachen und analysieren können, um sich gegen den Verlust dieser Daten zu schützen. Dieser Lernpfad kann Ihnen helfen, sich auf die Zertifizierungen Microsoft 365 Certified: Security Administrator Associate und Microsoft 365 Certified: Enterprise Administration Expert vorzubereiten.<br><br>1 Std. – Learning Pfad – 5 Module|
+
+> [!div class="nextstepaction"]
+> [Starten >](/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>Identität und Zugriff
+
+|Ausbildung:|Identität schützen und Zugriff mit Azure Active Directory|
+|:---|:---|
+|![Identitäts- und Zugriffsschulungssymbol](../media/protect-identity-and-access-with-microsoft-365.svg)|Der Lernpfad Identität und Zugriff umfasst die neuesten Identitäts- und Zugriffstechnologien, Tools zur Stärkung der Authentifizierung und Anleitungen zum Identitätsschutz in Ihrer Organisation. Die Zugriffs- und Identitätstechnologien von Microsoft ermöglichen es Ihnen, die Identität Ihrer Organisation zu schützen, ob vor Ort oder in der Cloud, und ermöglichen es Ihren Benutzern, von jedem Standort aus sicher zu arbeiten. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365-Zertifizierung: Security Administrator Associate und Microsoft 365 Zertifizierung: Enterprise Administration Expert helfen.<br><br>2 Std. 52 Min. – Learning Pfad – 6 Module|
+
+> [!div class="nextstepaction"]
+> [Starten >](/learn/modules/m365-identity-overview/introduction/)

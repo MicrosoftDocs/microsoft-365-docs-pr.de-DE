@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177573"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286885"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
@@ -27,7 +27,7 @@ Für jede Überprüfung meldet das Tool eines von vier möglichen Ergebnissen:
 |Bereit     | Vor Abschluss der Registrierung ist keine Aktion erforderlich.        |
 |Empfehlung    | Führen Sie die Schritte im Tool oder in diesem Artikel aus, um die beste Erfahrung mit der Registrierung und für Benutzer zu erzielen. Sie *können* die Registrierung abschließen, aber Sie müssen diese Probleme beheben, bevor Sie Ihr erstes Gerät bereitstellen.        |
 |Nicht bereit | *Die Registrierung schlägt fehl, wenn Sie diese Probleme nicht beheben.* Führen Sie die Schritte im Tool oder in diesem Artikel aus, um sie zu beheben.        |
-|Fehler (ungefährer Wortlaut) | Die Azure Active Directory (AD)-Rolle, die Sie verwenden, verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung auszuführen. |
+|Fehler | Die Azure Active Directory (AD)-Rolle, die Sie verwenden, verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung auszuführen. |
 
 > [!NOTE]
 > Die von diesem Tool gemeldeten Ergebnisse geben den Status Ihrer Einstellungen nur zu dem bestimmten Zeitpunkt wieder, zu dem Sie es ausgeführt haben. Wenn Sie später Änderungen an Richtlinien in Microsoft Intune, Azure Active Directory oder Microsoft 365 vornehmen, können Elemente, die "Bereit" waren, "Nicht bereit" werden. Um Probleme mit Microsoft Managed Desktop Vorgängen zu vermeiden, überprüfen Sie die in diesem Artikel beschriebenen spezifischen Einstellungen, bevor Sie Richtlinien ändern.
@@ -162,11 +162,11 @@ Die mehrstufige Authentifizierung darf Microsoft Managed Desktop nicht daran hin
 
 **Nicht bereit**
 
-Sie haben einige mehrstufige Authentifizierungsrichtlinien als **erforderlich** für Richtlinien für bedingten Zugriff festgelegt, die allen Benutzern zugewiesen sind. Während der Registrierung schließen wir Microsoft Managed Desktop Dienstkonten von relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standardvorgehensweisen.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Sie haben einige mehrstufige Authentifizierungsrichtlinien als **erforderlich** für Richtlinien für bedingten Zugriff festgelegt, die allen Benutzern zugewiesen sind. Während der Registrierung schließen wir Microsoft Managed Desktop Dienstkonten von den relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standardvorgehensweisen.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Empfehlung**
 
-Für Richtlinien für bedingten Zugriff ist eine mehrstufige Authentifizierung erforderlich, die verhindern könnte, dass Microsoft Managed Desktop den Microsoft Managed Desktop Dienst verwalten. Während der Registrierung schließen wir Microsoft Managed Desktop Dienstkonten von relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standardvorgehensweisen.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
+Für Richtlinien für bedingten Zugriff ist eine mehrstufige Authentifizierung erforderlich, die Microsoft Managed Desktop daran hindern könnte, den Microsoft Managed Desktop Dienst zu verwalten. Während der Registrierung schließen wir Microsoft Managed Desktop Dienstkonten von den relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standardvorgehensweisen.](../service-description/operations-and-monitoring.md#standard-operating-procedures)
 
 **Error**
 
@@ -206,11 +206,11 @@ Richtlinien für Sicherheitsgrundwerte sollten nicht auf Microsoft Managed Deskt
 
 **Nicht bereit**
 
-Sie verfügen über ein Sicherheitsbaselineprofil, das auf alle Benutzer, alle Geräte oder beides ausgerichtet ist. Ändern Sie die Richtlinie so, dass eine Zuordnung verwendet wird, die auf eine bestimmte Azure AD-Gruppe ausgerichtet ist, die keine Microsoft Managed Desktop Geräte enthält. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Nach der Registrierung können Sie die Richtlinie für Microsoft Managed Desktop Sicherheitsgrundwerte im Bereich der **Konfigurationsrichtlinien** von Microsoft Endpoint Manager überprüfen.
+Sie verfügen über ein Sicherheitsbaselineprofil, das auf alle Benutzer, alle Geräte oder beides ausgerichtet ist. Ändern Sie die Richtlinie so, dass eine Zuweisung verwendet wird, die auf eine bestimmte Azure AD-Gruppe ausgerichtet ist, die keine Microsoft Managed Desktop Geräte enthält. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Nach der Registrierung können Sie die Richtlinie für Microsoft Managed Desktop Sicherheitsgrundwerte im Bereich der **Konfigurationsrichtlinien** von Microsoft Endpoint Manager überprüfen.
 
 **Empfehlung**
 
-Stellen Sie sicher, dass alle Sicherheitsgrundwerterichtlinien, die Sie Microsoft Managed Desktop Geräten ausgeschlossen haben. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Die **Gruppe "Moderne Workplace-Geräte – Alle** Azure AD-Gruppen" ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich bei Microsoft Managed Desktop registrieren. Sie müssen daher zurückkehren, um diese Gruppe nach der Registrierung auszuschließen. 
+Stellen Sie sicher, dass alle Sicherheitsgrundwerterichtlinien, die Sie Microsoft Managed Desktop Geräte ausgeschlossen haben. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Die **Gruppe "Moderne Workplace-Geräte – Alle** Azure AD-Gruppen" ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich bei Microsoft Managed Desktop registrieren. Sie müssen daher zurückkehren, um diese Gruppe nach der Registrierung auszuschließen. 
 
 
 ### <a name="windows-apps"></a>Windows-Apps
@@ -260,8 +260,7 @@ Windows 10 Geräte in Ihrer Azure AD-Organisation müssen automatisch in Intune 
 
 **Empfehlung**
 
-Stellen Sie sicher, dass der **MDM-Benutzerbereich** auf **"Some"** oder **"All"** und nicht **"None"** festgelegt ist. Wenn Sie **"Einige"** auswählen, kehren Sie nach der Registrierung zurück und wählen Sie die Gruppe **"Modern Workplace -All** Azure AD" für **Gruppen** oder eine entsprechende Gruppe für alle Ihre Microsoft Managed Desktop Benutzer aus.  Weitere Informationen finden [Sie unter Einrichten der Registrierung für Windows Geräte mithilfe von Microsoft Intune.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
-
+Stellen Sie sicher, dass der **MDM-Benutzerbereich** auf **"Some"** oder **"All"** und nicht **"None"** festgelegt ist. Wenn Sie **"Einige"** auswählen, kehren Sie nach der Registrierung zurück, und wählen Sie die Gruppe **"Moderner Arbeitsplatz – Alle** Azure AD" für **Gruppen** oder eine entsprechende Gruppe für alle Ihre Microsoft Managed Desktop Benutzer aus.  Weitere Informationen finden [Sie unter Einrichten der Registrierung für Windows Geräte mithilfe von Microsoft Intune.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 ### <a name="ad-hoc-subscriptions"></a>Ad-hoc-Abonnements
 
@@ -269,7 +268,7 @@ Gibt an, wie Sie eine Einstellung überprüfen, die (bei Festlegung auf "false")
 
 **Empfehlung**
 
-Stellen Sie sicher, dass **AllowAdHocSubscriptions** auf **True** festgelegt ist. Andernfalls funktioniert Enterprise Statusroaming möglicherweise nicht. Weitere Informationen finden Sie unter ["Set-MsolCompanySettings".](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)
+Stellen Sie sicher, dass **AllowAdHocSubscriptions** auf **True** festgelegt ist. Andernfalls funktioniert Enterprise Statusroaming möglicherweise nicht. Weitere Informationen finden Sie unter ["Set-MsolCompanySettings".](/powershell/module/msonline/set-msolcompanysettings)
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming

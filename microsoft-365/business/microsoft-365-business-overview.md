@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Erfahren Sie Microsoft 365 Business Premium, einen Abonnementdienst, der Office und erweiterten Schutz vor Cyberbedrohungen umfasst.
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Erfahren Sie mehr über Microsoft 365 Business Premium, einen Abonnementdienst, der Office Apps und erweiterten Schutz vor Cyberbedrohungen umfasst.
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705520"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287625"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Überblick über Microsoft 365 Business Premium
 
@@ -42,16 +42,16 @@ ms.locfileid: "52705520"
 
 Microsoft 365 Business Premium (vormals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Er enthält Ihre bevorzugten Office-Produktivitäts-Apps und -Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: Was ist Microsoft 365 Business Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Schauen Sie sich an: Was ist Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../business-video/index.yml), an. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../business-video/index.yml), an.
 
 Microsoft 365 Business Premium ist für bis zu 300 Lizenzen vorgesehen. Wenn Sie weitere Lizenzen benötigen, lesen Sie die Dokumentation zu [Microsoft 365 Enterprise](../enterprise/index.yml), um weitere Informationen zu erhalten.
 
 Die vollständige Liste der Features finden Sie in der [Microsoft 365 Business Premium-Dienstbeschreibung](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
-  
+
 ## <a name="small-business-security-needs"></a>Die Sicherheitsanforderungen der kleinen Unternehmen
 
 Ihre Geschäftsdaten können auf vielerlei Weise gefährdet werden. Sie und Ihre Benutzer können die Sicherheit Ihrer Organisation gefährden, wenn Sie sich mit kompromittierten Anmeldeinformationen anmelden oder Organisationsdaten auf unterschiedlichen Geräten und Anwendungen anzeigen. Im Einzelnen ist Ihr Unternehmen von folgenden Risiken bedroht:
@@ -71,19 +71,19 @@ Microsoft 365 Business Premium trägt dazu bei, Ihre Daten in allen diesen Insta
 
 So hilft Microsoft 365 Business Premium bei dem **Schutz vor Bedrohungen**:
 
-- Scannen von Links in E-Mails und Dokumenten in Echtzeit, um unsichere Websites zu blockieren (sichere Links).
+- Scannen von Links in E-Mails und Dokumenten in Echtzeit, um unsichere Websites (Tresor Links) zu blockieren.
 
-- Durchführen einer erweiterten Analyse von E-Mail-Anlagen in einer Sandkastenumgebung zum Erkennen neu entwickelter Schadsoftware (Sichere Anlagen). 
+- Durchführen einer erweiterten Analyse von E-Mail-Anlagen in einer Sandkastenumgebung, um neu entwickelte Schadsoftware (Tresor Anlagen) zu erkennen.
 
-- Aktivieren von Antiphishingrichtlinien, die Computerlernmodelle und Identitätswechselerkennung verwenden, um Schutz vor erweiterten Angriffen zu bieten (Antiphishing in Defender für Office 365 Intelligence). 
+- Aktivieren von Antiphishingrichtlinien, die Machine Learning-Modelle und Identitätswechselerkennung verwenden, um Schutz vor erweiterten Angriffen zu bieten (Antiphishing in Defender für Office 365 Intelligence).
 
-- Einrichten von erweiterten Richtlinien, die den Zugriff von nicht vertrauenswürdigen Speicherorten deaktivieren oder die mehrstufige Authentifizierung von vertrauenswürdigen Orten wie Ihrem Office-Netzwerk umgehen (Azure MFA mit vertrauenswürdigen IPs und bedingtem Zugriff). 
+- Einrichten von erweiterten Richtlinien, die den Zugriff von nicht vertrauenswürdigen Speicherorten deaktivieren oder die mehrstufige Authentifizierung von vertrauenswürdigen Orten wie Ihrem Office-Netzwerk umgehen (Azure MFA mit vertrauenswürdigen IPs und bedingtem Zugriff).
 
 - Erzwingen des Schadsoftwareschutzes auf allen Windows 10-Geräten Ihrer Organisation und schützen von Dateien in den wichtigsten Systemordnern vor Änderungen, die von Ransomware vorgenommen wurden (Windows Defender)
 
 So werden **Ihre Geschäftsdaten geschützt**:
 
-- Mithilfe der automatischen Erkennung können Sie verhindern, dass vertrauliche Informationen, z. B. Sozialversicherungsnummern oder Kreditkarten, außerhalb Ihres Unternehmens verloren gehen (Verhinderung von Datenverlust). 
+- Mithilfe der automatischen Erkennung können Sie verhindern, dass vertrauliche Informationen, z. B. Sozialversicherungsnummern oder Kreditkarten, außerhalb Ihres Unternehmens verloren gehen (Verhinderung von Datenverlust).
 
 - Verschlüsseln vertraulicher E-Mails, damit Sie mit Kunden oder anderen Personen außerhalb Ihrer Organisation sicher kommunizieren können. Die Nachrichtenverschlüsselung stellt sicher, dass nur der beabsichtigte Empfänger die Nachricht öffnen und lesen kann (Office 365-Nachrichtenverschlüsselung).
 

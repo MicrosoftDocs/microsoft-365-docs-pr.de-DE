@@ -11,13 +11,13 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Erfahren Sie, wie Sie SharePoint Syntex verwenden, um Vertragsdateien zu identifizieren und Daten mithilfe einer Microsoft 365-Lösung zu extrahieren.
-ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+description: Erfahren Sie, wie Sie SharePoint Syntex verwenden, um Vertragsdateien zu identifizieren und Daten mithilfe einer Microsoft 365 Lösung zu extrahieren.
+ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054497"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287353"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Schritt 1. Verwenden von SharePoint Syntex zum Identifizieren von Vertragsdateien und Extrahieren von Daten
 
@@ -25,7 +25,9 @@ Ihre Organisation benötigt eine Möglichkeit, alle Vertragsdokumente aus den vi
 
 ## <a name="overview-of-the-process"></a>Übersicht über den Vorgang
 
-[Das Dokumentverständnis](document-understanding-overview.md) verwendet KI-Modelle (Künstliche Intelligenz), um die Klassifizierung von Dateien und die Extraktion von Informationen zu automatisieren. Dokumentverständnismodelle sind auch optimal beim Extrahieren von Informationen aus unstrukturierten und halbstrukturierten Dokumenten, in denen die benötigten Informationen nicht in Tabellen oder Formularen, z. B. Verträgen, enthalten sind.
+[Das Dokumentverständnis](document-understanding-overview.md) verwendet KI-Modelle (Künstliche Intelligenz), um die Klassifizierung von Dateien und die Extraktion von Informationen zu automatisieren. Dokumentverständnismodelle sind auch optimal beim Extrahieren von Informationen aus unstrukturierten und halbstrukturierten Dokumenten, in denen die benötigten Informationen nicht in Tabellen oder Formularen, z. B. Verträgen, enthalten sind. 
+
+Dokumentverständnismodelle nutzen die Technik der optischen Zeichenerkennung (OCR), um PDF-, Bild- und TIFF-Dateien zu scannen, und zwar sowohl beim Trainieren eines Modells mit Beispieldateien als auch beim Ausführen des Modells mit Dateien einer Dokumentbibliothek.
 
 1. Zuerst müssen Sie mindestens fünf Beispieldateien finden, mit denen Sie das Modell "trainieren" können, um nach Merkmalen zu suchen, die für den zu identifizierenden Inhaltstyp (einen Vertrag) spezifisch sind. 
 
@@ -83,7 +85,7 @@ Sie müssen mindestens fünf Beispieldateien hinzufügen, bei denen es sich um V
 
 #### <a name="add-at-least-one-explanation-to-train-the-classifier&quot;></a>Fügen Sie mindestens eine Erklärung hinzu, um den Klassifizierer zu trainieren. 
 
-1. Wählen Sie auf der Seite **&quot;Modelle > Vertrag > Vertragsklassifizierung&quot;** die Registerkarte **&quot;Trainieren&quot;** aus.
+1. Wählen Sie auf der Seite **&quot;Modelle > Vertrag > Klassifizierer&quot;** die Registerkarte **&quot;Trainieren&quot;** aus.
 
 2. Im Abschnitt **&quot;Trainierte Dateien&quot;** wird eine Liste der Beispieldateien angezeigt, die Sie zuvor bezeichnet haben. Wählen Sie eine der positiven Dateien aus der Liste aus, um sie im Viewer anzuzeigen.
 
@@ -115,7 +117,7 @@ Sie können Ihr Vertragsmodell mit Beispieldateien testen, die es noch nicht ges
 
 ### <a name="create-and-train-an-extractor"></a>Erstellen und Trainieren eines Extraktors
 
-1. On the **Models > Contract** page, under Key **actions** Create and  >  **train extractors,** select Create **extractor**.
+1. Wählen Sie auf der Seite **"Modelle > Vertrag"** unter **"Wichtige Aktionen**  >  **Erstellen und Trainieren von Extraktoren"** die Option **"Extraktor erstellen"** aus.
 
    ![Screenshot der Seite "Verträge" mit hervorgehobener Option "Extraktoren erstellen und trainieren".](../media/content-understanding/key-actions-create-extractors.png)
 
@@ -180,11 +182,11 @@ Sie können Ihr Vertragsmodell mit Beispieldateien testen, die es noch nicht ges
 
 So wenden Sie Ihr Modell auf eine SharePoint Dokumentbibliothek an:
 
-1. On the **Models > Contract** page, under Key **actions** Apply model  >  **to libraries,** select **Apply model**.
+1. Wählen Sie auf der Seite **"Modelle > Vertrag"** unter **"Schlüsselaktionen**  >  **Modell auf Bibliotheken anwenden"** die Option **"Modell anwenden"** aus.
 
    ![Screenshot der Seite "Verträge" mit hervorgehobener Option "Modell auf Bibliotheken anwenden".](../media/content-understanding/key-actions-apply-model.png)
 
-2. Wählen Sie im Bereich **"Vertrag hinzufügen"** die SharePoint Website aus, die die Dokumentbibliothek enthält, auf die Sie das Modell anwenden möchten. Wenn die Website in der Liste nicht angezeigt wird, verwenden Sie das Suchfeld, um Sie zu finden. Wählen Sie **Hinzufügen**.
+2. Wählen Sie im Bereich **"Vertrag hinzufügen"** die SharePoint Website aus, die die Dokumentbibliothek enthält, auf die Sie das Modell anwenden möchten. Wenn die Website in der Liste nicht angezeigt wird, verwenden Sie das Suchfeld, um Sie zu finden. Klicken Sie auf **Hinzufügen**.
 
     > [!NOTE]
     > Sie müssen über die Berechtigung *Listen verwalten* oder *Bearbeiten* für die Dokumentbibliothek verfügen, auf die Sie das Modell anwenden möchten.
@@ -208,4 +210,4 @@ Nachdem Sie das Modell auf die Dokumentbibliothek angewendet haben, können Sie 
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Schritt 2. Verwenden Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals](solution-manage-contracts-step2.md)
+[Schritt 2. Verwenden von Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals](solution-manage-contracts-step2.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte Typen vertraulicher Informationen für DLP im Security & Compliance Center erstellen, ändern, entfernen und testen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256723"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287539"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
 
@@ -128,12 +128,14 @@ Sie können auch benutzerdefinierte vertrauliche Informationstypen mithilfe von 
 ### <a name="checksum-validator"></a>Prüfsummenprüfer
 
 Wenn Sie eine Prüfsumme für eine Ziffer in einem regulären Ausdruck ausführen müssen, können Sie die *Prüfsummenüberprüfung* verwenden. Angenommen, Sie müssen eine SIT für eine achtstellige Lizenznummer erstellen, wobei die letzte Ziffer eine Prüfsummenziffer ist, die mit einer Mod 9-Berechnung überprüft wird. Sie haben den Prüfsummenalgorithmus wie folgt eingerichtet:
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
 
 1. Definieren Sie das primäre Element mit diesem regulären Ausdruck:
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. Fügen Sie dann den Prüfsummenprüfer hinzu.
 3. Fügen Sie die durch Kommas getrennten Gewichtungswerte, die Position der Prüfziffer und den Mod-Wert hinzu. Weitere Informationen zum Modulo-Vorgang finden Sie unter [Modulo-Vorgang.](https://en.wikipedia.org/wiki/Modulo_operation)
@@ -145,11 +147,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>Datumsprüfer
 
-Wenn ein in regulären Ausdruck eingebetteter Datumswert Teil eines neuen Musters ist, das Sie erstellen, können Sie den *Datumsprüfer* verwenden, um zu testen, ob er Ihren Kriterien entspricht. Angenommen, Sie möchten eine SIT für eine neunstellige Mitarbeiter-Identifikationsnummer erstellen. Die ersten sechs Ziffern sind das Einstellungsdatum im DDMMYY-Format, und die letzten drei Stellen sind zufällig generierte Zahlen. Um zu überprüfen, ob die ersten sechs Ziffern im richtigen Format vorliegen. 
+Wenn ein in regulären Ausdruck eingebetteter Datumswert Teil eines neuen Musters ist, das Sie erstellen, können Sie den *Datumsprüfer* verwenden, um zu testen, ob er Ihren Kriterien entspricht. Angenommen, Sie möchten eine SIT für eine neunstellige Mitarbeiter-Identifikationsnummer erstellen. Die ersten sechs Ziffern sind das Einstellungsdatum im DDMMYY-Format, und die letzten drei Stellen sind zufällig generierte Zahlen. Um zu überprüfen, ob die ersten sechs Ziffern im richtigen Format vorliegen.
 
 1. Definieren Sie das primäre Element mit diesem regulären Ausdruck:
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. Fügen Sie dann den Datumsprüfer hinzu.
 3. Wählen Sie das Datumsformat und den Startoffset aus. Da die Datumszeichenfolge die ersten sechs Ziffern ist, ist der Offset `0` .
@@ -182,7 +186,7 @@ Hier sind die Definitionen und einige Beispiele für die verfügbaren zusätzlic
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection unterstützt Doppelbyte-Zeichensatzsprachen für:
+> Microsoft 365 Information Protection unterstützt Sprachen mit Doppelbyte-Zeichensätzen für:
 > - Chinesisch (vereinfacht)
 > - Chinesisch (traditionell)
 > - Koreanisch
@@ -191,7 +195,7 @@ Hier sind die Definitionen und einige Beispiele für die verfügbaren zusätzlic
 >Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regex. Um beispielsweise ein Schlüsselwort wie "机密的document" zu erkennen, verwenden Sie zwei Varianten des Schlüsselworts. eine mit einem Leerzeichen zwischen dem japanischen und englischen Text und einer anderen ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in der SIT hinzugefügt werden sollen, "机密的 document" und "机密的document" sein. Auf ähnliche Weise sollten zwei Varianten verwendet werden, um einen Ausdruck "プンンンンンピッン2020" zu erkennen; "プンンンンピッン 2020" und "プンンンンピッン2020".
-> Stellen Sie beim Erstellen eines regulären Ausdrucks mithilfe eines Doppelbyte-Bindestrichs oder eines doppelten Byte-Punkts sicher, dass beide Zeichen wie ein Trennstrich oder ein Punkt in einem regulären Ausdruck escapet werden. Hier ist ein Beispiel für einen regulären Ausdruck als Referenz:
-    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
-> Es wird empfohlen, eine Zeichenfolgenüberstimmung anstelle einer Wortüberstimmung in einer Schlüsselwortliste zu verwenden.
+> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regulären Ausdrucks. Verwenden Sie z. B. zwei Varianten des Schlüsselworts, um ein Schlüsselwort wie „机密的document“ zu erkennen; eine mit einem Leerzeichen zwischen dem japanischen und dem englischen Text und eine andere ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in SIT hinzugefügt werden sollen, „机密的 document“ und „机密的document“ lauten. Ebenso sollten zwei Varianten verwendet werden, um den Ausdruck „東京オリンピック2020“ zu erkennen; „東京オリンピック 2020“ und „東京オリンピック2020“.
+> Achten Sie beim Erstellen eines regulären Ausdrucks mit einem Doppeltbyte-Bindestrich oder einem Doppeltbyte-Punkt darauf, beide Zeichen mit Escapezeichen zu versehen, so wie man einen Bindestrich oder einen Punkt in einem regulären Ausdruck mit Escapezeichen versehen würde. Hier sehen Sie ein Beispiel für einen regulären Ausdruck als Referenz:
+    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> Es wird empfohlen, eine Zeichenfolgenübereinstimmung anstelle einer Wortübereinstimmung in einer Schlüsselwortliste zu verwenden.

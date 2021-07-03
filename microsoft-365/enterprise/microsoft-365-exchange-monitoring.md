@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Verwenden Sie die Exchange Online-Überwachung, um Informationen zu E-Mail-Vorfällen oder Empfehlungen in Microsoft 365 zu erhalten.
-ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: 3d88378449879d451b21ba8bf2a7b5c3032a2c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707296"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286441"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Exchange Online-Überwachung für Microsoft 365
 
@@ -133,4 +133,3 @@ Wenn Sie Feedback zu Vorfällen oder Empfehlungen geben möchten, verwenden Sie 
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. Wo werden die Daten für die Szenarien instrumentiert, die Aktivitätstrends aufweisen?
 
 Die Daten werden im Exchange Online-Dienst instrumentiert. Wenn ein Fehler auftritt, bevor die Anforderung Exchange Online erreicht, oder wenn in Exchange Online ein Fehler auftritt, wird das Aktivitätssignal zurückgehen.
-

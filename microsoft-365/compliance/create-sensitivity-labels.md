@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Daten Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ac87608a2a7c4913811c090ae3c2befadaf2327e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878184"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286621"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -41,36 +41,36 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
 ## <a name="create-and-configure-sensitivity-labels"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen
 
 1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu Vertraulichkeitsbezeichnungen:
-    
+
     - Microsoft 365 Compliance Center: 
         - **Lösungen** > **Informationsschutz**
-        
+
         Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
-    
+
     - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
 2. Wählen Sie auf der Seite **Bezeichnungen** die Option **+ Bezeichnung erstellen** aus, um den Assistenten für neue Vertraulichkeitsbezeichnungen zu starten. 
-    
+
     Öffnen Sie z. B. im Microsoft 365 Compliance Center:
-    
+
     ![Erstellen einer Vertraulichkeitsbezeichnung](../media/create-sensitivity-label-full.png)
-    
+
     > [!NOTE]
     > Hinweis: Standardmäßig verfügen Mandanten über keine Bezeichnungen, und Sie müssen sie erstellen. Die Bezeichnungen im Beispielbild zeigen Standardbezeichnungen, die [aus Azure Information Protection migriert wurden](/azure/information-protection/configure-policy-migrate-labels).
 
 3. Auf der Seite **Bereich für diese Bezeichnung festlegen** bestimmen die ausgewählten Optionen, welchen Bereich die Bezeichnung für die von Ihnen konfigurierten Einstellungen umfasst, und wo die veröffentlichten Bezeichnungen sichtbar sind:
-    
+
     ![Bereiche für Vertraulichkeitsbezeichnungen](../media/sensitivity-labels-scopes.png)
-    
+
     - Wenn Sie **Dateien und E-Mails** ausgewählt haben, können Sie in diesem Assistenten Einstellungen für Apps konfigurieren, die Vertraulichkeitsbezeichnungen unterstützen, darunter Office Word und Outlook. Wenn Sie diese Option nicht ausgewählt haben, zeigt der Assistent die erste Seite dieser Einstellungen zwar an, diese können aber nicht konfiguriert werden. Außerdem können die Bezeichnungen nicht von Benutzern in diesen Apps ausgewählt werden.
-    
+
     - Wenn Sie **Gruppen und Websites** ausgewählt haben, können Sie in diesem Assistenten Einstellungen konfigurieren, die für Microsoft 365-Gruppen sowie Seiten für Teams und SharePoint gelten. Wenn Sie diese Option nicht ausgewählt haben, zeigt der Assistent die erste Seite dieser Einstellungen zwar an, diese können aber nicht konfiguriert werden. Außerdem können die Bezeichnungen nicht von Benutzern in diesen Gruppen und auf diesen Seiten ausgewählt werden.
-    
+
     Weitere Informationen über den Umfang der Ressourcen in **Azure Purview (Vorschau)** finden Sie unter [Automatische Beschriftung Ihrer Inhalte in Azure Purview](/azure/purview/create-sensitivity-label).
 
 4. Folgen Sie für die Bezeichnungseinstellungen den Eingabeaufforderungen im Assistenten.
-    
+
     Weitere Informationen zu den Bezeichnungseinstellungen finden Sie unter [Wirkung von Vertraulichkeitsbezeichnungen](sensitivity-labels.md#what-sensitivity-labels-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
 
 5. Wiederholen Sie diese Schritte, um weitere Bezeichnungen zu erstellen. Wenn Sie jedoch eine Unterbezeichnung erstellen möchten, wählen Sie zuerst die übergeordnete Bezeichnung sowie **...** für **Weitere Aktionen** und dann **Unterbezeichnung hinzufügen** aus.
@@ -113,7 +113,6 @@ Für die zu unterstützenden Sprachen verwenden Sie die Office [Sprachen-IDs](/d
 
 Bevor Sie die Befehle in PowerShell ausführen, müssen Sie zunächst [eine Verbindung zu Security & Compliance Center PowerShell herstellen](/powershell/exchange/connect-to-scc-powershell).
 
-
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
@@ -135,42 +134,42 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Veröffentlichen von Vertraulichkeitsbezeichnungen durch Erstellen einer Bezeichnungsrichtlinie
 
 1. Navigieren Sie in Ihrem Admin Center für Bezeichnungen zu Vertraulichkeitsbezeichnungen:
-    
+
     - Microsoft 365 Compliance Center: 
         - **Lösungen** > **Informationsschutz**
-        
+
         Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
-    
+
     - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
 2. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** und dann **Bezeichnungen veröffentlichen** aus, um den Assistenten zum Erstellen von Richtlinien zu starten:
-    
+
     Öffnen Sie z. B. im Microsoft 365 Compliance Center:
-        
+
     ![Bezeichnungen veröffentlichen](../media/publish-sensitivity-labels-full.png)
-    
+
     > [!NOTE]
     > Hinweis: Standardmäßig verfügen Mandanten über keine Bezeichnungsrichtlinien, und Sie müssen sie erstellen. 
 
 3. Wählen Sie im Assistenten **Zu veröffentlichende Vertraulichkeitsbezeichnungen auswählen** aus. Wählen Sie die Bezeichnungen, die Sie in Apps und Diensten zur Verfügung stellen möchten, und dann **Hinzufügen** aus.
-    
+
     > [!IMPORTANT]
     > Wenn Sie eine Unterbezeichnung auswählen, stellen Sie sicher, dass Sie auch deren übergeordnete Bezeichnung auswählen.
-    
+
 4. Überprüfen Sie die ausgewählten Bezeichnungen, und wählen Sie **Bearbeiten** aus, wenn Sie Änderungen vornehmen möchten. Anderenfalls klicken Sie auf **Weiter**.
 
 5. Folgen Sie den Eingabeaufforderungen, um die Richtlinieneinstellungen zu konfigurieren.
-    
+
     Die Richtlinieneinstellungen, die Sie sehen, entspricht dem von Ihnen festgelegten Bereich der Bezeichnungen. Wenn Sie beispielsweise Bezeichnungen ausgewählt haben, denen nur der Bereich **Dateien und E-Mails** zugewiesen ist, sehen Sie die Richtlinieneinstellungen **Diese Bezeichnung standardmäßig auf Gruppen und Websites anwenden** und **Benutzer auffordern, ihren Gruppen und Websites eine Bezeichnung zuzuweisen** nicht.
-    
+
     Weitere Informationen zu diesen Einstellungen finden Sie unter [Wirkung von Bezeichnungsrichtlinien](sensitivity-labels.md#what-label-policies-can-do) in den Übersichtsinformationen sowie im Assistenten in der Hilfe zu den einzelnen Einstellungen.
-    
+
     Für Bezeichnungen, die für **Azure Purview-Ressourcen (Vorschau)** konfiguriert wurden, gilt: Diese Bezeichnungen sind mit keinen Richtlinieneinstellungen verknüpft.
 
-7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Bereiche unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen. Oder Sie haben Bezeichnungen so konfiguriert, dass ihnen unterschiedliche Bereiche zugewiesen sind.
+6. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Bereiche unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen. Oder Sie haben Bezeichnungen so konfiguriert, dass ihnen unterschiedliche Bereiche zugewiesen sind.
 
-8. Wenn Sie mehrere Bezeichnungsrichtlinie erstellen, die zu einem Konflikt für einen Benutzer führen könnten, überprüfen Sie die Reihenfolge der Richtlinien und verschieben Sie einzelne Richtlinien gegebenenfalls nach oben oder unten. Wenn Sie die Reihenfolge der Bezeichnungsrichtlinien ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)](sensitivity-labels.md#label-policy-priority-order-matters) aus den Übersichtsinformationen.
+7. Wenn Sie mehrere Bezeichnungsrichtlinie erstellen, die zu einem Konflikt für einen Benutzer führen könnten, überprüfen Sie die Reihenfolge der Richtlinien und verschieben Sie einzelne Richtlinien gegebenenfalls nach oben oder unten. Wenn Sie die Reihenfolge der Bezeichnungsrichtlinien ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)](sensitivity-labels.md#label-policy-priority-order-matters) aus den Übersichtsinformationen.
 
 Nach Abschluss des Assistenten wird die Bezeichnungsrichtlinie automatisch veröffentlicht. Um Änderungen an einer veröffentlichten Richtlinie vorzunehmen, bearbeiten Sie diese einfach. Es gibt keine spezielle Aktion zum Veröffentlichen oder Wiederveröffentlichen, die Sie auswählen können.
 

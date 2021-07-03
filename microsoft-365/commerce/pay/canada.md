@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a7152a8bfae62a4dda7b9b291b98528c788c8b7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537006"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287563"
 ---
 # <a name="payment-information-for-canada"></a>Zahlungsinformationen für Kanada
 
@@ -26,24 +26,14 @@ ms.locfileid: "52537006"
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
-**Bitte zahlen Sie in CAD, und verweisen Sie auf Ihre Rechnungsnummer(n) für Ihre Zahlungsüberweisung.**
+**Bitte zahlen Sie in CAD, und verweisen Sie auf Ihre Rechnungsnummer(n) bei Ihrer Auszahlung.**
 
-Wenn Sie eine Rechnung von Der Microsoft Corporation in Rechnung gestellt **haben,** verwenden Sie diese Bankinformationen:
+Wenn Sie eine Von **Microsoft Corporation** in Rechnung gestellte Rechnung haben, verwenden Sie diese Bankinformationen:
 
-**Bank:** Bank of America, Toronto  
-**SWIFT-Code:** BOFACATT  
-**Kontonummer:** 45571239  
-**Kontoname:** MICROSOFT  
-**Bank-ID:** 241  
-**Zweigstelle:** 56792  
-**Kontoname:** MICROSOFT
+**Bank:** Bank of America, Toronto **SWIFT Code:** BOFACATT **Account Number:** 45571239 **Account Name:** MICROSOFT **Bank ID:** 241 **Branch:** 56792 **Account Name:** MICROSOFT
 
-Wenn Sie ab dem 1. März 2021 eine Rechnung von **Microsoft Canada Inc.** für Bestellungen und Verbrauch in Rechnung gestellt haben, verwenden Sie diese Bankinformationen:
+Wenn Sie eine Rechnung von **Microsoft Canada Inc.** für Bestellungen und Verbrauch ab dem 1. März 2021 in Rechnung stellen, verwenden Sie diese Bankinformationen:
 
-**Bank:** Citibank N.A., Canadian Branch  
-**Routingnummer:** 032820012  
-**BIC/SWIFT-Code:** CITICATTBCH  
-**Kontonummer:** 3003600001  
-**Kontoname:** MICROSOFT
+**Bank:** Citibank N.A., Canadian Branch **Routing Number:** 032820012 **BIC/SWIFT Code:** CITICATTBCH **Account Number:** 3003600001 **Account Name:** MICROSOFT
 
-Von einer lokalen Microsoft-Niederlassung ausgestellte Rechnungen werden mit dem Standardsatz der Mehrwertsteuer/Mehrwertsteuer/GST ausgestellt und gelten als inländische Dienstleistungen für Zwecke der Mehrwertsteuer/Mehrwertsteuer/GST.
+Rechnungen, die von einer lokalen Microsoft-Niederlassung ausgestellt wurden, werden mit dem Standardsatz der Umsatzsteuer/Umsatzsteuer/GST ausgestellt und gelten als Inlandsdienstleistungen für Umsatzsteuer-/Umsatzsteuer-/GST-Zwecke.

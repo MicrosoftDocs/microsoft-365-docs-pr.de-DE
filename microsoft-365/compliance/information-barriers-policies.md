@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842722"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286033"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -38,8 +38,8 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 - Benutzerkontoattribute sind in Azure Active Directory (oder Exchange Online) definiert. Diese Attribute können Abteilung, Position, Standort, Teamname und andere Auftragsprofildetails umfassen. 
 - Segmente sind Benutzergruppen, die im Security & Compliance Center mithilfe eines ausgewählten **Benutzerkontoattributs** definiert sind. (Siehe auch die [Liste der unterstützten Attribute](information-barriers-attributes.md).)
 - Mit Richtlinien für Kommunikationsbarrieren werden bestimmte Kommunikationsbeschränkungen festgelegt. Beim Definieren von Richtlinien für Informationsbarrieren können Sie aus zwei Arten von Richtlinien auswählen:
-    - "Blockieren"-Richtlinien verhindern, dass ein Segment mit einem anderen Segment kommuniziert.
-    - "Zulassen"-Richtlinien ermöglichen es einem Segment, nur mit bestimmten anderen Segmenten zu kommunizieren.
+  - "Blockieren"-Richtlinien verhindern, dass ein Segment mit einem anderen Segment kommuniziert.
+  - "Zulassen"-Richtlinien ermöglichen es einem Segment, nur mit bestimmten anderen Segmenten zu kommunizieren.
 - Die Richtlinienanwendung erfolgt, nachdem alle Richtlinien für Kommunikationsbarrieren definiert wurden und Sie bereit sind, sie in Ihrer Organisation anzuwenden.
 
 ## <a name="the-work-flow-at-a-glance"></a>Der Workflow auf einen Blick
@@ -59,7 +59,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Verzeichnisdaten – Stellen Sie sicher, dass die Struktur Ihrer Organisation in Verzeichnisdaten widergespiegelt wird. Um diese Aktion auszuführen, stellen Sie sicher, dass Benutzerkontoattribute wie Gruppenmitgliedschaft, Abteilungsname usw. in Azure Active Directory (oder Exchange Online) richtig ausgefüllt sind. Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
   - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
-  - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 - Bereichsbezogene Verzeichnissuche: Bevor Sie die erste Richtlinie für Informationsbarrieren In Ihrer Organisation definieren, müssen Sie [die Bereichsverzeichnissuche in Microsoft Teams aktivieren.](/MicrosoftTeams/teams-scoped-directory-search) Warten Sie mindestens 24 Stunden, nachdem Sie die bereichsbezogene Verzeichnissuche aktiviert haben, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
@@ -71,10 +71,10 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 - Keine Adressbuchrichtlinien– Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, stellen Sie sicher, dass keine Exchange Adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie über solche Richtlinien verfügen, stellen Sie sicher, dass [Sie ihre Adressbuchrichtlinien](/exchange/address-books/address-book-policies/remove-an-address-book-policy) zuerst entfernen. Sobald Richtlinien für Informationsbarrieren aktiviert sind und Sie hierarchisches Adressbuch aktiviert haben, wird allen ***Benutzern, die nicht*** in einem Informationsbarrierensegment enthalten sind, das hierarchische [Adressbuch](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online angezeigt.
 
 - PowerShell – Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. Obwohl in diesem Artikel mehrere Beispiele bereitgestellt werden, müssen Sie mit PowerShell-Cmdlets und -Parametern vertraut sein. Sie benötigen auch das Azure PowerShell Modul.
-    - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [Installieren des Azure PowerShell Moduls](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Installieren des Azure PowerShell-Moduls](/powershell/azure/install-az-ps)
 
-- Administratorzustimmung für Informationsbarrieren in Microsoft Teams – Wenn Ihre IB-Richtlinien vorhanden sind, können sie Nicht-IB-Compliancebenutzer aus Gruppen entfernen (d. h. Teams Kanäle, die auf Gruppen basieren). Diese Konfiguration trägt dazu bei, dass Ihre Organisation weiterhin richtlinien- und regelkonform ist. Verwenden Sie das folgende Verfahren, um zu ermöglichen, dass Richtlinien für Informationsbarrieren in Microsoft Teams wie erwartet funktionieren.
+- Administratorzustimmung für Informationsbarrieren in Microsoft Teams – Wenn Ihre IB-Richtlinien vorhanden sind, können sie Nicht-IB-Compliancebenutzer aus Gruppen entfernen (d. h. Teams Kanäle, die auf Gruppen basieren). Diese Konfiguration trägt dazu bei, dass Ihre Organisation weiterhin richtlinien- und regelkonform ist. Verwenden Sie das folgende Verfahren, um zu ermöglichen, dass Richtlinien für Informationsbarrieren in Microsoft Teams erwartungsgemäß funktionieren.
 
    1. Voraussetzung: Installieren Sie Azure PowerShell von [Install Azure PowerShell.](/powershell/azure/install-az-ps)
 
@@ -91,10 +91,9 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
    1. Wenn Sie dazu aufgefordert werden, melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto für Office 365 an.
 
    1. Überprüfen Sie im Dialogfeld **"Angeforderte Berechtigungen"** die Informationen, und wählen Sie dann **"Annehmen"** aus. Die von der App angeforderten Berechtigungen werden unten angegeben.
-      
+
       > [!div class="mx-imgBorder"]
       > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 Wenn alle Voraussetzungen erfüllt sind, fahren Sie mit dem nächsten Abschnitt fort.
 
@@ -187,7 +186,7 @@ Wählen Sie mit Ihrer Liste der Benutzersegmente und den Richtlinien für Inform
 
 ### <a name="scenario-1-block-communications-between-segments"></a>Szenario 1: Blockieren der Kommunikation zwischen Segmenten
 
-Wenn Sie verhindern möchten, dass Segmente miteinander kommunizieren, definieren Sie zwei Richtlinien: eine für jede Richtung. Jede Richtlinie blockiert die Kommunikation nur auf eine Weise.
+Wenn Sie verhindern möchten, dass Segmente miteinander kommunizieren, definieren Sie zwei Richtlinien: eine für jede Richtung. Jede Richtlinie blockiert nur die Kommunikation auf eine Weise.
 
 Angenommen, Sie möchten die Kommunikation zwischen Segment A und Segment B blockieren. In diesem Fall definieren Sie eine Richtlinie, die verhindert, dass Segment A mit Segment B kommuniziert, und definieren dann eine zweite Richtlinie, um zu verhindern, dass Segment B mit Segment A kommuniziert.
 
@@ -214,7 +213,7 @@ Angenommen, Sie möchten die Kommunikation zwischen Segment A und Segment B bloc
 
     | Syntax | Beispiel |
     |:----------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> In diesem Beispiel haben wir eine Richtlinie namens *Manufacturing-HR* für ein Segment namens *Manufacturing* definiert. Wenn diese Richtlinie aktiv und angewendet wird, können Personen in *der Fertigung* nur mit Personen in einem Segment namens *HR* kommunizieren. (In diesem Fall kann *die Fertigung* nicht mit Benutzern kommunizieren, die nicht Teil der *Personalabteilung* sind.) |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> In diesem Beispiel haben wir eine Richtlinie namens *Manufacturing-HR* für ein Segment namens *Manufacturing* definiert. Wenn diese Richtlinie aktiv und angewendet wird, können Personen in der *Fertigung* nur mit Personen in einem Segment namens *HR* kommunizieren. (In diesem Fall kann *die Fertigung* nicht mit Benutzern kommunizieren, die nicht Teil der *Personalabteilung* sind.) |
 
     **Bei Bedarf können Sie mit diesem Cmdlet mehrere Segmente angeben, wie im folgenden Beispiel gezeigt.**
 
@@ -245,7 +244,7 @@ Richtlinien für Informationsbarrieren sind erst wirksam, wenn Sie sie auf den a
 
     Wiederholen Sie diesen Schritt nach Bedarf für jede Richtlinie.
 
-3. Wenn Sie die Richtlinien für Informationsbarrieren auf den aktiven Status festgelegt haben, verwenden Sie das Cmdlet **"Start-InformationBarrierPoliciesApplication"** im Security & Compliance Center.
+3. Wenn Sie ihre Richtlinien für Informationsbarrieren auf den aktiven Status festgelegt haben, verwenden Sie das Cmdlet **"Start-InformationBarrierPoliciesApplication"** im Security & Compliance Center.
 
     Syntax: `Start-InformationBarrierPoliciesApplication`
 
@@ -257,7 +256,7 @@ Mit PowerShell können Sie den Status von Benutzerkonten, Segmenten, Richtlinien
 
 | So zeigen Sie diese Informationen an | Führen Sie diese Aktion aus |
 |:---------------|:----------|
-| Benutzerkonten | Verwenden Sie das Cmdlet **"Get-InformationBarrierRecipientStatus"** mit Identity-Parametern. <p> Syntax: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID. <p> Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In diesem Beispiel beziehen wir uns auf zwei Benutzerkonten in Office 365: *meganb* für *Megan* und *Alexw* für *Alex*. <p> (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p> Dieses Cmdlet gibt Informationen zu Benutzern zurück, z. B. Attributwerte und angewendete Richtlinien für Informationsbarrieren.|
+| Benutzerkonten | Verwenden Sie das Cmdlet **"Get-InformationBarrierRecipientStatus"** mit Identity-Parametern. <p> Syntax: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID. <p> Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In diesem Beispiel beziehen wir uns auf zwei Benutzerkonten in Office 365: *Meganb* für *Megan* und *Alexw* für *Alex*. <p> (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p> Dieses Cmdlet gibt Informationen zu Benutzern zurück, z. B. Attributwerte und angewendete Richtlinien für Informationsbarrieren.|
 | Segmente | Verwenden Sie das Cmdlet **"Get-OrganizationSegment".**<p> Syntax: `Get-OrganizationSegment` <p> Dieses Cmdlet zeigt eine Liste aller Segmente an, die für Ihre Organisation definiert sind. |
 | Richtlinien für Informationsbarrieren | Verwenden Sie das Cmdlet **"Get-InformationBarrierPolicy".** <p> Syntax: `Get-InformationBarrierPolicy` <p> Dieses Cmdlet zeigt eine Liste der Definierten Richtlinien für Informationsbarrieren und deren Status an. |
 | Die neueste Anwendung für Richtlinien für Informationsbarrieren | Verwenden Sie das Cmdlet **"Get-InformationBarrierPoliciesApplicationStatus".** <p> Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p> Dieses Cmdlet zeigt Informationen dazu an, ob die Richtlinienanwendung abgeschlossen wurde, fehlgeschlagen ist oder in Bearbeitung ist. |
@@ -284,9 +283,9 @@ Contoso verfügt über fünf Abteilungen: Personal, Vertrieb, Marketing, Forschu
 
 | Segment | Kann sprechen mit | Kann nicht sprechen mit |
 |:----------|:--------------|:-----------------|
-| Personal | Alle | (keine Beschränkungen) |
+| Personal | Jeder | (keine Beschränkungen) |
 | Vertrieb | Personalwesen, Marketing, Fertigung | Forschung |
-| Marketing | Alle | (keine Beschränkungen) |
+| Marketing | Jeder | (keine Beschränkungen) |
 | Forschung | Personalwesen, Marketing, Fertigung | Vertrieb |
 | Fertigung | Personalwesen, Marketing | Andere Personen als Personalwesen oder Marketing |
 

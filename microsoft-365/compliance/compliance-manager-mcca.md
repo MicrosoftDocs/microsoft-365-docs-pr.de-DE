@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verstehen Sie, wie Sie Microsoft Compliance Configuration Analyzer verwenden, um schnell mit Microsoft Compliance Manager zu beginnen.
-ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148962"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287053"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (Vorschau)
 
@@ -31,9 +31,9 @@ Microsoft Compliance Configuration Analyzer (MCCA) ist ein Vorschautool, das Ihn
 
 MCCA kann Ihnen helfen, schnell zu sehen, welche Verbesserungsmaßnahmen im Compliance-Manager für Ihre aktuelle Microsoft 365 umgebung gelten. Jede von MCCA identifizierte Aktion gibt Ihnen Empfehlungen für die Implementierung mit direkten Links zum Compliance-Manager und der entsprechenden Lösung, um korrekturmaßnahmen zu ergreifen.
 
-Eine weitere Ressource zum Verständnis von MCCA finden Sie in den [README-Anweisungen auf GitHub](https://github.com/OfficeDev/MCCA#overview). Auf dieser Seite finden Sie ausführliche Informationen zu den erforderlichen Komponenten und vollständige Installationsanweisungen. Sie benötigen kein GitHub Konto, um auf diese Seite zuzugreifen.
+Eine weitere Ressource zum Verständnis von MCCA finden Sie in den [README-Anweisungen auf GitHub](https://github.com/OfficeDev/MCCA#overview). Auf dieser Seite finden Sie ausführliche Informationen zu den erforderlichen Komponenten und vollständige Installationsanweisungen. Sie benötigen kein GitHub Konto, um auf diese Seite zugreifen zu können.
 
-**Verfügbarkeit:** MCCA ist für alle Organisationen mit Office 365- und Microsoft 365-Lizenzen und Kunden von US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar.
+**Verfügbarkeit:** MCCA ist für alle Organisationen mit Office 365- und Microsoft 365 lizenzen sowie Kunden von US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar.
 
 ## <a name="install-mcca-and-run-a-report"></a>Installieren von MCCA und Ausführen eines Berichts
 
@@ -101,9 +101,9 @@ Befolgen Sie die folgenden Anweisungen, um einen Bericht basierend auf einem bes
     ```
   | Input |  Land oder Region | 
   | :------------- | :------------: |
-  | 1  | Asien-Pazifik |
-  | 2  | Australien |
-  | 3  | Kanada |
+  | 1 | Asien-Pazifik |
+  | 2 | Australien |
+  | 3 | Kanada |
   | 4  | Europa (ohne Frankreich) / Naher Osten/Afrika |
   | 5  | Frankreich |
   | 6  | Indien |
@@ -129,10 +129,10 @@ Die folgende Tabelle zeigt, welche Rollen Zugriff auf welche Abschnitte des Beri
 ![MCCA – Rollen](../media/compliance-manager-mcca-roles.png "MCCA-Rollen")
 
 Ausnahmen:
-1. Benutzer können keinen Bericht für IP außerhalb des Abschnitts "IRM für Exchange Online verwenden" generieren.
+1. Benutzer können keinen Bericht für die IP-Adresse außerhalb des Abschnitts "IRM für Exchange Online verwenden" generieren.
 2. Benutzer können unabhängig vom Abschnitt "IRM für Exchange Online verwenden" einen Bericht für ip generieren.
 3. Benutzer können unabhängig vom Abschnitt "Kommunikationscompliance in O365 aktivieren" einen Bericht für IP generieren.
-4. Benutzer können keinen Bericht für DIE IP-Adresse außerhalb des Abschnitts "Überwachung in Office 365 aktivieren" generieren.
+4. Benutzer können keinen Bericht für IP außerhalb des Abschnitts "Überwachung in Office 365 aktivieren" generieren.
 5. Benutzer können unabhängig vom Abschnitt "Überwachung in Office 365 aktivieren" einen Bericht für ip generieren.
 
 #### <a name="solutions-summary-section"></a>Zusammenfassungsabschnitt "Lösungen"
@@ -167,4 +167,4 @@ Wählen Sie die Dropdownliste neben der **Bezeichnung "Empfehlung"** rechts nebe
 
 Ausführlichere Informationen zum Installieren, Einrichten und Verwenden von MCCA finden Sie in den [README-Anweisungen zu GitHub](https://github.com/OfficeDev/MCCA#overview) (kein GitHub Konto erforderlich).
 
-Weitere Informationen zu Windows PowerShell finden Sie unter [Verwendung der PowerShell-Dokumentation.](/powershell/scripting/how-to-use-docs?view=powershell-7) Siehe auch [Start Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Weitere Informationen zu Windows PowerShell finden Sie unter [Verwendung der PowerShell-Dokumentation.](/powershell/scripting/how-to-use-docs) Siehe auch [Start Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).

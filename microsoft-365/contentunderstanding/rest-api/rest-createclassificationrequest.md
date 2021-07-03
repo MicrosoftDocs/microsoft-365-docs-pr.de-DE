@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um eine Anforderung zur Klassifizierung einer oder mehrerer Dateien mithilfe eines trainierten Dokumentverständnismodells zu erstellen.
-ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: b1022787d6e11ebe36c88ecd29936a777289dd74
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177081"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287233"
 ---
 # <a name="create-classification-request"></a>Erstellen einer Klassifizierungsanforderung
 
@@ -26,7 +26,7 @@ Der REST-Dienst in SharePoint Online (sowie in lokalen Bereitstellungen von Shar
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
-```
+```http
 POST /_api/machinelearning/workItems HTTP/1.1
 ```
 ## <a name="uri-parameters"></a>URI-Parameter
@@ -62,7 +62,7 @@ Keine
 
 #### <a name="sample-request"></a>Beispielanfrage
 
-```
+```JSON
 {
     "__metadata": {
         "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"

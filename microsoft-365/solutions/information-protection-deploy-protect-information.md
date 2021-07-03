@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Stellen Sie Microsoft 365 Sicherheits- und Compliancefeatures bereit und schützen Sie Ihre persönlichen Informationen.
-ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7325aad0392d559703199c81f2544a582d7eadcb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229263"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287747"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen, die der Datenschutzbestimmungen unterliegen
 
@@ -66,7 +66,6 @@ Um Ihnen die ersten Schritte mit einem Informationsschutzschema in Microsoft 365
 
 Microsoft [Information Protection-Lösungen](../compliance/information-protection.md) umfassen eine Reihe integrierter Funktionen in Microsoft 365, Microsoft Azure und Microsoft Windows. In Microsoft 365 umfassen Informationsschutzlösungen Folgendes:
 
-- [Dienstverschlüsselung mit Kundenschlüssel](../compliance/customer-key-overview.md)
 - [Typen vertraulicher Informationen](../compliance/sensitive-information-type-entity-definitions.md) (im Artikel "Bewerten von [Datenschutzrisiken und Identifizieren vertraulicher Elemente")](information-protection-deploy-assess.md)
 - [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md)
   - Dienst-/Containerebene
@@ -306,7 +305,7 @@ Hier sind einige Datenschutzszenarien, in denen DLP und Vertraulichkeitsbezeichn
 
 Personen verwenden E-Mails häufig, um vertrauliche Elemente auszutauschen, z. B. Patientenstatusinformationen oder Kunden- und Mitarbeiterinformationen. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
 
-Mit [OME](../compliance/ome.md)können Sie verschlüsselte Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. OME arbeitet mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten. OME trägt dazu bei, dass nur beabsichtigte Empfänger Nachrichteninhalte anzeigen können.
+Mit [OME](../compliance/ome.md)können Sie verschlüsselte Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. OME arbeitet mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten zusammen. OME trägt dazu bei, dass nur beabsichtigte Empfänger Nachrichteninhalte anzeigen können.
 
 Für den Datenschutz verwenden Sie OME, um interne Nachrichten zu schützen, die vertrauliche Elemente enthalten. Office 365-Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) basiert, der Teil von Azure Information Protection ist. Dies umfasst Verschlüsselungs-, Identitäts- und Autorisierungsrichtlinien, um Ihre E-Mails zu schützen. Sie können Nachrichten mithilfe von Rechteverwaltungsvorlagen, der Option "Nicht weiterleiten" und der Option "Nur verschlüsseln" verschlüsseln.
 

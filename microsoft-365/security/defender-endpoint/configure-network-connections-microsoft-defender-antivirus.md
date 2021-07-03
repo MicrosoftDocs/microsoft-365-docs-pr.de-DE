@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ccc2eb171e85793899a7862ed9a317815d89626
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 5b6ed22b38d0795073fc72f380bcad89683ada9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007583"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286813"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Konfigurieren und Validieren von Microsoft Defender Antivirus-Netzwerkverbindungen
 
@@ -44,7 +44,7 @@ Weitere Informationen zur Netzwerkkonnektivität finden Sie im Blogbeitrag ["Wic
 
 Der Microsoft Defender Antivirus Clouddienst bietet schnellen, starken Schutz für Ihre Endpunkte. Die Aktivierung des über die Cloud bereitgestellten Schutzdiensts ist optional, wird jedoch dringend empfohlen, da er wichtigen Schutz vor Schadsoftware auf Ihren Endpunkten und in Ihrem Netzwerk bietet. Weitere Informationen zum Aktivieren des Diensts mit Intune, Microsoft Endpoint Configuration Manager, Gruppenrichtlinien, PowerShell-Cmdlets oder auf einzelnen Clients in der Windows-Sicherheit-App finden Sie unter Aktivieren des über die [Cloud bereitgestellten Schutzes.](enable-cloud-protection-microsoft-defender-antivirus.md) 
 
-Nachdem Sie den Dienst aktiviert haben, müssen Sie möglicherweise Ihr Netzwerk oder Ihre Firewall konfigurieren, um Verbindungen zwischen ihm und Ihren Endpunkten zuzulassen. Da Ihr Schutz ein Clouddienst ist, müssen Computer Zugriff auf das Internet haben und Microsoft Defender für Office 365 Machine Learning-Dienste erreichen. Schließen Sie die URL nicht `*.blob.core.windows.net` von jeder Art von Netzwerküberprüfung aus. 
+Nachdem Sie den Dienst aktiviert haben, müssen Sie möglicherweise Ihr Netzwerk oder Ihre Firewall konfigurieren, um Verbindungen zwischen ihm und Ihren Endpunkten zuzulassen. Da Ihr Schutz ein Clouddienst ist, müssen Computer Zugriff auf das Internet haben und Microsoft Defender für Office 365 Machine Learning-Dienste erreichen. Schließen Sie die URL nicht `*.blob.core.windows.net` von jeder Art von Netzwerküberprüfung aus.
 
 > [!NOTE]
 > Der Microsoft Defender Antivirus Clouddienst ist ein Mechanismus zum Bereitstellen eines aktualisierten Schutzes für Ihr Netzwerk und Ihre Endpunkte. Obwohl er als Clouddienst bezeichnet wird, ist er nicht nur Schutz für in der Cloud gespeicherte Dateien, sondern verwendet stattdessen verteilte Ressourcen und maschinelles Lernen, um Ihre Endpunkte in einer Geschwindigkeit zu schützen, die viel schneller als herkömmliche Security Intelligence-Updates ist.
@@ -58,12 +58,12 @@ Stellen Sie sicher, dass keine Firewall- oder Netzwerkfilterregeln vorhanden sin
 | Dienst und Beschreibung | URL |
 |----|---- |
 | Microsoft Defender Antivirus über die Cloud bereitgestellten Schutzdienst, auch als Microsoft Active Protection Service (MAPS) bezeichnet<p>Dieser Dienst wird von Microsoft Defender Antivirus verwendet, um über die Cloud bereitgestellten Schutz bereitzustellen.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU) und Windows Update Service (WU) <p>Diese Dienste ermöglichen Sicherheitsintelligenz und Produktupdates   |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Weitere Informationen finden Sie unter [Verbindungsendpunkte für Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Security Intelligence-Updates – Alternativer Downloadspeicherort (ADL)<p>Dies ist ein alternativer Speicherort für Microsoft Defender Antivirus Security Intelligence-Updates, wenn die installierte Security Intelligence veraltet ist (7 oder mehr Tage zurück)|  `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+| Microsoft Update Service (MU) und Windows Update Service (WU) <p>Diese Dienste ermöglichen Sicherheitsintelligenz und Produktupdates |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Weitere Informationen finden Sie unter [Verbindungsendpunkte für Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|Security Intelligence-Updates – Alternativer Downloadspeicherort (ADL)<p>Dies ist ein alternativer Speicherort für Microsoft Defender Antivirus Security Intelligence-Updates, wenn die installierte Security Intelligence veraltet ist (7 oder mehr Tage zurück)| `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 | Schadsoftwareübermittlungsspeicher <p>Dies ist der Uploadspeicherort für Dateien, die über das Übermittlungsformular oder die automatische Beispielübermittlung an Microsoft übermittelt wurden. | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
-| Zertifikatsperrliste (Certificate Revocation List, CRL) <p>Diese Liste wird von Windows beim Erstellen der SSL-Verbindung mit MAPS zum Aktualisieren der CRL verwendet.   | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
-| Symbol Store <p>Der Symbolspeicher wird von Microsoft Defender Antivirus verwendet, um bestimmte kritische Dateien während der Wiederherstellungsflüsse wiederherzustellen.   | `https://msdl.microsoft.com/download/symbols` |
-| Universeller Telemetrieclient <p>Dieser Client wird von Windows zum Senden von Clientdiagnosedaten verwendet.<p> Microsoft Defender Antivirus verwendet Telemetrie für Die Überwachung der Qualität der Produkte    | Das Update verwendet SSL (TCP-Port 443), um Manifeste herunterzuladen und Diagnosedaten an Microsoft hochzuladen, die die folgenden DNS-Endpunkte verwenden: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
+| Zertifikatsperrliste (Certificate Revocation List, CRL) <p>Diese Liste wird von Windows beim Erstellen der SSL-Verbindung mit MAPS zum Aktualisieren der CRL verwendet. | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
+| Symbol Store <p>Der Symbolspeicher wird von Microsoft Defender Antivirus verwendet, um bestimmte kritische Dateien während der Wartungsabläufe wiederherzustellen. | `https://msdl.microsoft.com/download/symbols` |
+| Universeller Telemetrieclient <p>Dieser Client wird von Windows verwendet, um Clientdiagnosedaten zu senden.<p> Microsoft Defender Antivirus verwendet Telemetrie für Die Überwachung der Qualität der Produkte | Das Update verwendet SSL (TCP-Port 443), um Manifeste herunterzuladen und Diagnosedaten an Microsoft hochzuladen, die die folgenden DNS-Endpunkte verwenden: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Überprüfen von Verbindungen zwischen Ihrem Netzwerk und der Cloud
 
@@ -71,14 +71,14 @@ Nachdem Sie die oben aufgeführten URLs zugelassen haben, können Sie testen, ob
 
 ### <a name="use-the-cmdline-tool-to-validate-cloud-delivered-protection"></a>Verwenden des Cmdline-Tools zum Überprüfen des über die Cloud bereitgestellten Schutzes
 
-Verwenden Sie das folgende Argument mit dem Befehlszeilenprogramm Microsoft Defender Antivirus ( `mpcmdrun.exe` ), um zu überprüfen, ob Ihr Netzwerk mit dem Microsoft Defender Antivirus Clouddienst kommunizieren kann:
+Verwenden Sie das folgende Argument mit dem Microsoft Defender Antivirus Befehlszeilenprogramm ( `mpcmdrun.exe` ), um zu überprüfen, ob Ihr Netzwerk mit dem Microsoft Defender Antivirus Clouddienst kommunizieren kann:
 
 ```console
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 ```
 
 > [!NOTE]
-> Sie müssen eine Version der Eingabeaufforderung auf Administratorebene öffnen. Klicken Sie mit der rechten Maustaste auf das Element im Menü "Start", klicken Sie **auf "Als Administrator ausführen",** und klicken Sie an der Eingabeaufforderung "Berechtigungen" auf **"Ja".** Dieser Befehl funktioniert nur für Windows 10, Version 1703 oder höher.
+> Sie müssen eine Version der Eingabeaufforderung auf Administratorebene öffnen. Klicken Sie mit der rechten Maustaste auf das Element im Startmenü, klicken Sie **auf "Als Administrator ausführen",** und klicken Sie an der Eingabeaufforderung der Berechtigungen auf **"Ja".** Dieser Befehl funktioniert nur auf Windows 10 Version 1703 oder höher.
 
 Weitere Informationen finden Sie unter [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
@@ -101,7 +101,7 @@ Eine ähnliche Meldung tritt auf, wenn Sie Internet Explorer verwenden:
 
 :::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Microsoft Defender AV-Benachrichtigung, dass Schadsoftware gefunden wurde":::
 
-Im Abschnitt **"Scanverlauf"** in der Windows-Sicherheit-App wird außerdem eine Erkennung unter **Quarantäne gestellten Bedrohungen** angezeigt:
+Außerdem wird im Abschnitt **"Scanverlauf"** in der Windows-Sicherheit-App eine Erkennung unter **Quarantäne gestellten Bedrohungen** angezeigt:
 
 1. Öffnen Sie die Windows-Sicherheit App, indem Sie auf das Schildsymbol in der Taskleiste klicken oder im Startmenü nach **Sicherheit** suchen.
 
@@ -112,5 +112,4 @@ Im Abschnitt **"Scanverlauf"** in der Windows-Sicherheit-App wird außerdem eine
    > [!NOTE]
    > Versionen von Windows 10 vor Version 1703 weisen eine andere Benutzeroberfläche auf. Siehe [Microsoft Defender Antivirus in der Windows-Sicherheit-App.](microsoft-defender-security-center-antivirus.md)
 
-   Im Windows-Ereignisprotokoll wird auch [Windows Defender Clientereignis-ID 1116](troubleshoot-microsoft-defender-antivirus.md)angezeigt.
-
+   Im Windows Ereignisprotokoll wird auch [Windows Defender Clientereignis-ID 1116](troubleshoot-microsoft-defender-antivirus.md)angezeigt.

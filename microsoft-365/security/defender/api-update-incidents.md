@@ -1,6 +1,6 @@
 ---
 title: Api zum Aktualisieren von Vorfällen
-description: Erfahren Sie, wie Sie Vorfälle mithilfe Microsoft 365 Defender-API aktualisieren.
+description: Erfahren Sie, wie Sie Vorfälle mit Microsoft 365 Defender-API aktualisieren
 keywords: Update, API, Vorfall
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861503"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287819"
 ---
 # <a name="update-incidents-api"></a>API zum Aktualisieren von Vorfällen
 
@@ -128,7 +128,7 @@ Hier ist ein Beispiel für die Anforderung.
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
-- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
+- [Informationen zu API-Beschränkungen und Lizenzierung](api-terms.md)
 - [Grundlegendes zu Fehlercodes](api-error-codes.md)
 - [Vorfall-APIs](api-incident.md)
 - [Auflisten von Vorfällen](api-list-incidents.md)
