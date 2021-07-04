@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771443"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289259"
 ---
 # <a name="advanced-hunting-using-python"></a>Erweiterte Bedrohungssuche mit Python
 
@@ -30,24 +30,23 @@ ms.locfileid: "52771443"
 
 **Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Führen Sie erweiterte Abfragen mit Python aus. Weitere Informationen finden Sie unter ["Erweiterte Suche"-API.](run-advanced-query-api.md)
+Führen Sie erweiterte Abfragen mit Python aus, siehe [Api für die erweiterte Suche.](run-advanced-query-api.md)
 
 In diesem Abschnitt geben wir Python-Beispiele frei, um ein Token abzurufen und es zum Ausführen einer Abfrage zu verwenden.
 
->**Voraussetzung:** Sie müssen zuerst [eine App erstellen.](apis-intro.md)
+> **Voraussetzung:** Sie müssen zuerst [eine App erstellen.](apis-intro.md)
 
 ## <a name="get-token"></a>Token abrufen
 
 - Führen Sie die folgenden Befehle aus:
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,10 +72,10 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
 Wo
+
 - tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. a. die Abfrage wird auf den Daten dieses Mandanten ausgeführt)
 - appId: ID Ihrer Azure AD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Microsoft Defender für Endpunkt verfügen)
 - appSecret: Geheimer Schlüssel Ihrer Azure AD-App
@@ -85,7 +84,7 @@ Wo
 
  Führen Sie die folgende Abfrage aus:
 
-```
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,7 +101,6 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
 - schema contains the schema of the results of your query
@@ -110,9 +108,9 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>Komplexe Abfragen
 
-Wenn Sie komplexe Abfragen (oder Abfragen mit mehreren Leitungen) ausführen möchten, speichern Sie Ihre Abfrage in einer Datei, und führen Sie anstelle der ersten Zeile im obigen Beispiel den folgenden Befehl aus:
+Wenn Sie komplexe Abfragen (oder mehrzeilige Abfragen) ausführen möchten, speichern Sie Ihre Abfrage in einer Datei, und führen Sie anstelle der ersten Zeile im obigen Beispiel den folgenden Befehl aus:
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
@@ -124,18 +122,15 @@ Sie können jetzt die Abfrageergebnisse verwenden.
 
 Führen Sie die folgenden Schritte aus, um die Ergebnisse zu durchlaufen:
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
 
+Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im CSV-Format in datei file1.csv ausgeben:
 
-Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im CSV-Format in einer Datei auszugeben file1.csv:
-
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -147,16 +142,16 @@ for result in results:
 outputFile.close()
 ```
 
-Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im JSON-Format in Datei file1.jsauszugeben:
+Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im JSON-Format in datei file1.json auszugeben:
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
-
 ## <a name="related-topic"></a>Verwandtes Thema
+
 - [Microsoft Defender für Endpunkt-APIs](apis-intro.md)
-- [Erweiterte Suche-API](run-advanced-query-api.md)
+- [Erweiterte Bedrohungssuche-API](run-advanced-query-api.md)
 - [Erweiterte Bedrohungssuche mit PowerShell](run-advanced-query-sample-powershell.md)

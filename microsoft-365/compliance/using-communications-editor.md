@@ -15,36 +15,40 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Verwenden Sie den Kommunikations-Editor, um Text- und Serienfeldvariablen zu ändern, wenn Sie Ihre Inhalte formatieren.
+description: Verwenden Sie den Kommunikations-Editor, um Text zu ändern und Feldvariablen zusammenzuführen, wenn Sie Ihre Inhalte formatieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769160"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288119"
 ---
 # <a name="use-the-communications-editor"></a>Verwenden des Kommunikations-Editors
 
-Wenn Sie den Inhalt Ihrer Portalinhalte, Benachrichtigungen über gesetzliche Benachrichtigungen und zugehörige Erinnerungen/Eskalationen definieren, können Sie den Kommunikations-Editor verwenden, um Ihre Inhalte zu formatieren und dynamisch anzupassen.
+Wenn Sie die Inhalte Ihrer Portalinhalte, Benachrichtigungen über gesetzliche Aufbewahrungspflicht und zugehörige Erinnerungen/Eskalationen definieren, können Sie den Kommunikations-Editor verwenden, um Ihre Inhalte zu formatieren und dynamisch anzupassen.
 
 ## <a name="rich-text-editor"></a>Rich-Text-Editor
 
-Der Kommunikations-Editor ermöglicht benutzern das Anpassen des Texts mithilfe der Editoroptionen. Beispielsweise können Benutzer Schriftartentypen ändern, Aufzählungen erstellen, Inhalte hervorheben und vieles mehr.
+Mit dem Kommunikations-Editor können Benutzer den Text mithilfe der Editoroptionen anpassen. Beispielsweise können Benutzer Schriftartentypen ändern, Aufzählungen erstellen, Inhalte hervorheben und vieles mehr.
 
 ## <a name="merge-field-variables"></a>Zusammenführen von Feldvariablen
 
-Sie können E-Mail-Zusammenführungsvariablen aus dem Kommunikations-Editor verwenden, um angepasste Verwahrerattribute in den Textkörper einer Kommunikation einzubetten. Wenn es an den Verwahrer gesendet wird, wird das Seriendruckfeld mit dem entsprechenden Feld aufgefüllt. Wenn sie z. B. an den Verwahrer John Smith gesendet werden, wird das Seriendruckfeld [Custodian Name] mit dem entsprechenden Namen übersetzt.
+Sie können E-Mail-Seriendruckvariablen aus dem Kommunikations-Editor verwenden, um angepasste Verwahrerattribute in den Textkörper einer Kommunikation einzubetten. Wenn es an den Verwahrer gesendet wird, wird das Seriendruckfeld mit dem entsprechenden Feld aufgefüllt. Wenn sie beispielsweise an den Verwalter John Smith gesendet werden, wird das Seriendruckfeld [Verwahrername] mit dem entsprechenden Namen übersetzt.
 
-Sie können E-Mail-Seriendruckfelder verwenden, indem Sie die Symbole des Seriendruckfelds oben im Rich-Text-Editor-Steuerelement auswählen.  Der Platzhalter wird basierend auf der Position des Cursors der Benutzer hinzugefügt.
+Sie können Seriendruckfelder verwenden, indem Sie die **Seriendruckfeldsymbole** oben im Rich-Text-Editor-Steuerelement auswählen. Der Platzhalter wird basierend auf der Position des Cursors des Benutzers hinzugefügt.
 
-### <a name="list-of-merge-field-variables"></a>Liste der Seriendruckfeldvariablen
+### <a name="list-of-merge-field-variables"></a>Liste der Zusammenführungsfeldvariablen
 
-| Feldname                  | Felddetails |
-| :------------------- | :------------------- |
-| Anzeigename  | Der Vor- und Nachname des Verwahrers. | 
-| Bestätigungslink | Ein angepasster Link zum Aufzeichnen der Bestätigung jedes Custodians.|                 |
-| Portallink     | Ein angepasster Link für das Complianceportal des Custodians.|                |
-| Ausstellende Beauftragte                   | Die E-Mail-Adresse des angegebenen ausstellenden Beauftragten.|                   |
-| Ausgabedatum                   | Das Datum, an dem der Hinweis ausgegeben wurde (UTC).              |
-|||
+<br>
+
+****
+
+|Feldname|Felddetails|
+|---|---|
+|Anzeigename|Vor- und Nachname des Verwalters.|
+|Bestätigungslink|Ein angepasster Link zum Aufzeichnen der Bestätigung jedes Verwahrers.|
+|Portallink|Ein angepasster Link für das Compliance-Portal des Verwalters.|
+|Ausstellende Beauftragte|Die E-Mail-Adresse des angegebenen Ausstellenden Beauftragten.|
+|Ausgabedatum|Das Datum, an dem die Benachrichtigung ausgegeben wurde (UTC).|
+|

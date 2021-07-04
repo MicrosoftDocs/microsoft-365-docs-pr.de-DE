@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861551"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289487"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Festlegen von Einstellungen für Microsoft Defender für Endpunkt unter Linux
 
@@ -34,10 +34,10 @@ ms.locfileid: "52861551"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
->[!IMPORTANT]
->Dieses Thema enthält Anweisungen zum Festlegen von Einstellungen für Defender für Endpunkt unter Linux in Unternehmensumgebungen. Wenn Sie das Produkt über die Befehlszeile auf einem Gerät konfigurieren möchten, finden Sie weitere Informationen unter ["Ressourcen".](linux-resources.md#configure-from-the-command-line)
+> [!IMPORTANT]
+> Dieses Thema enthält Anweisungen zum Festlegen von Einstellungen für Defender für Endpunkt unter Linux in Unternehmensumgebungen. Wenn Sie an der Konfiguration des Produkts auf einem Gerät über die Befehlszeile interessiert sind, finden Sie weitere Informationen unter ["Ressourcen".](linux-resources.md#configure-from-the-command-line)
 
 In Unternehmensumgebungen kann Defender für Endpunkt unter Linux über ein Konfigurationsprofil verwaltet werden. Dieses Profil wird über das Verwaltungstool Ihrer Wahl bereitgestellt. Vom Unternehmen verwaltete Einstellungen haben Vorrang vor den Einstellungen, die lokal auf dem Gerät festgelegt sind. Mit anderen Worten: Benutzer in Ihrem Unternehmen können keine Einstellungen ändern, die über dieses Konfigurationsprofil festgelegt werden.
 
@@ -55,169 +55,226 @@ Die oberste Ebene des Konfigurationsprofils enthält produktweite Einstellungen 
 
 Der Abschnitt *"antivirusEngine"* des Konfigurationsprofils wird verwendet, um die Einstellungen der Antivirenkomponente des Produkts zu verwalten.
 
-|||
-|:---|:---|
-| **Schlüssel** | antivirusEngine |
-| **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
-| **Comments** | Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|antivirusEngine|
+|**Datentyp**|Wörterbuch (geschachtelte Präferenz)|
+|**Comments**|Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten.|
+|
 
 #### <a name="enable--disable-real-time-protection"></a>Aktivieren/Deaktivieren des Echtzeitschutzes
 
 Bestimmt, ob der Echtzeitschutz (Beim Zugriff auf Dateien scannen) aktiviert ist oder nicht.
 
-|||
-|:---|:---|
-| **Schlüssel** | enableRealTimeProtection |
-| **Datentyp** | Boolesch |
-| **Mögliche Werte** | true (Standard) <br/> false |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|enableRealTimeProtection|
+|**Datentyp**|Boolesch|
+|**Mögliche Werte**|true (Standard) <p> false|
+|
 
 #### <a name="enable--disable-passive-mode"></a>Aktivieren/Deaktivieren des passiven Modus
 
 Bestimmt, ob das Antivirenmodul im passiven Modus ausgeführt wird oder nicht. Im passiven Modus:
+
 - Der Echtzeitschutz ist deaktiviert.
 - On-Demand-Überprüfung ist aktiviert.
 - Die automatische Bedrohungsbehebung ist deaktiviert.
 - Sicherheitsupdates sind aktiviert.
 - Das Statusmenüsymbol ist ausgeblendet.
 
-|||
-|:---|:---|
-| **Schlüssel** | passiveMode |
-| **Datentyp** | Boolesch |
-| **Mögliche Werte** | false (Standard) <br/> true |
-| **Comments** | Verfügbar in Defender für Endpunkt Version 100.67.60 oder höher. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|passiveMode|
+|**Datentyp**|Boolesch|
+|**Mögliche Werte**|false (Standard) <p> true|
+|**Comments**|Verfügbar in Defender für Endpunkt Version 100.67.60 oder höher.|
+|
 
 #### <a name="exclusion-merge-policy"></a>Richtlinie zum Zusammenführen von Ausschlüssen
 
 Gibt die Zusammenführungsrichtlinie für Ausschlüsse an. Dies kann eine Kombination aus vom Administrator definierten und benutzerdefinierten Ausschlüssen ( `merge` ) oder nur von einem Administrator definierten Ausschlüssen ( ) `admin_only` sein. Diese Einstellung kann verwendet werden, um lokale Benutzer daran zu hindern, ihre eigenen Ausschlüsse zu definieren.
 
-|||
-|:---|:---|
-| **Schlüssel** | exclusionsMergePolicy |
-| **Datentyp** | String |
-| **Mögliche Werte** | Zusammenführen (Standard) <br/> admin_only |
-| **Comments** | Verfügbar in Defender für Endpunkt Version 100.83.73 oder höher. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|exclusionsMergePolicy|
+|**Datentyp**|String|
+|**Mögliche Werte**|Zusammenführen (Standard) <p> admin_only|
+|**Comments**|Verfügbar in Defender für Endpunkt Version 100.83.73 oder höher.|
+|
 
 #### <a name="scan-exclusions"></a>Scanausschlüsse
 
 Entitäten, die von der Überprüfung ausgeschlossen wurden. Ausschlüsse können durch vollständige Pfade, Erweiterungen oder Dateinamen angegeben werden.
 (Ausschlüsse werden als Array von Elementen angegeben, der Administrator kann beliebig viele Elemente angeben.)
 
-|||
-|:---|:---|
-| **Schlüssel** | Ausschlüsse |
-| **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
-| **Comments** | Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten. |
-|||
+<br>
 
-**Art des Ausschlusses**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|Ausschlüsse|
+|**Datentyp**|Wörterbuch (geschachtelte Präferenz)|
+|**Comments**|Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten.|
+|
+
+##### <a name="type-of-exclusion"></a>Art des Ausschlusses
 
 Gibt den Vom Scan ausgeschlossenen Inhaltstyp an.
 
-|||
-|:---|:---|
-| **Schlüssel** | $type |
-| **Datentyp** | String |
-| **Mögliche Werte** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
-|||
+<br>
 
-**Pfad zu ausgeschlossenen Inhalten**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|$type|
+|**Datentyp**|String|
+|**Mögliche Werte**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+|
+
+##### <a name="path-to-excluded-content"></a>Pfad zu ausgeschlossenen Inhalten
 
 Wird verwendet, um Inhalte vom Scan nach vollständigem Dateipfad auszuschließen.
 
-|||
-|:---|:---|
-| **Schlüssel** | path |
-| **Datentyp** | String |
-| **Mögliche Werte** | Gültige Pfade |
-| **Comments** | Gilt nur, wenn *$type* *ausgeschlossenPath* ist |
-|||
+<br>
 
-**Pfadtyp (Datei/Verzeichnis)**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|path|
+|**Datentyp**|String|
+|**Mögliche Werte**|Gültige Pfade|
+|**Comments**|Gilt nur, wenn *$type* *ausgeschlossen IstPath*|
+|
+
+##### <a name="path-type-file--directory"></a>Pfadtyp (Datei/Verzeichnis)
 
 Gibt an, ob die *Pfadeigenschaft* auf eine Datei oder ein Verzeichnis verweist.
 
-|||
-|:---|:---|
-| **Schlüssel** | Isdirectory |
-| **Datentyp** | Boolesch |
-| **Mögliche Werte** | false (Standard) <br/> true |
-| **Comments** | Gilt nur, wenn *$type* *ausgeschlossenPath* ist |
-|||
+<br>
 
-**Dateierweiterung, die von der Überprüfung ausgeschlossen ist**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|Isdirectory|
+|**Datentyp**|Boolesch|
+|**Mögliche Werte**|false (Standard) <p> true|
+|**Comments**|Gilt nur, wenn *$type* *ausgeschlossen IstPath*|
+|
+
+##### <a name="file-extension-excluded-from-the-scan"></a>Dateierweiterung, die von der Überprüfung ausgeschlossen ist
 
 Wird verwendet, um Inhalte von der Überprüfung mithilfe der Dateierweiterung auszuschließen.
 
-|||
-|:---|:---|
-| **Schlüssel** | Erweiterung |
-| **Datentyp** | String |
-| **Mögliche Werte** | gültige Dateierweiterungen |
-| **Comments** | Gilt nur, wenn *$type* *ausgeschlossen istFileExtension* |
-|||
+<br>
 
-**Vom Scan ausgeschlossener Prozess**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|Erweiterung|
+|**Datentyp**|String|
+|**Mögliche Werte**|gültige Dateierweiterungen|
+|**Comments**|Gilt nur, wenn *$type* *ausgeschlossen istFileExtension*|
+|
+
+##### <a name="process-excluded-from-the-scan"></a>Vom Scan ausgeschlossener Prozess*
 
 Gibt einen Prozess an, für den alle Dateiaktivitäten von der Überprüfung ausgeschlossen werden. Der Prozess kann entweder durch seinen Namen (z. `cat` B. ) oder durch den vollständigen Pfad (z. B. ) angegeben `/bin/cat` werden.
 
-|||
-|:---|:---|
-| **Schlüssel** | name |
-| **Datentyp** | String |
-| **Mögliche Werte** | Eine beliebige Zeichenfolge |
-| **Comments** | Gilt nur, wenn *$type* *ausgeschlossen IstFileName* |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|name|
+|**Datentyp**|String|
+|**Mögliche Werte**|Eine beliebige Zeichenfolge|
+|**Comments**|Gilt nur, wenn *$type* *ausgeschlossen IstFileName*|
+|
 
 #### <a name="allowed-threats"></a>Zulässige Bedrohungen
 
 Liste der Bedrohungen (identifiziert durch ihren Namen), die nicht vom Produkt blockiert werden und stattdessen ausgeführt werden dürfen.
 
-|||
-|:---|:---|
-| **Schlüssel** | allowedThreats |
-| **Datentyp** | Array aus Zeichenfolgen |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|allowedThreats|
+|**Datentyp**|Array aus Zeichenfolgen|
+|
 
 #### <a name="disallowed-threat-actions"></a>Unzulässige Bedrohungsaktionen
 
 Schränkt die Aktionen ein, die der lokale Benutzer eines Geräts ausführen kann, wenn Bedrohungen erkannt werden. Die in dieser Liste enthaltenen Aktionen werden nicht auf der Benutzeroberfläche angezeigt.
 
-|||
-|:---|:---|
-| **Schlüssel** | disallowedThreatActions |
-| **Datentyp** | Array aus Zeichenfolgen |
-| **Mögliche Werte** | zulassen (verhindert, dass Benutzer Bedrohungen zulassen) <br/> Wiederherstellen (verhindert, dass Benutzer Bedrohungen aus der Quarantäne wiederherstellen) |
-| **Comments** | Verfügbar in Defender für Endpunkt Version 100.83.73 oder höher. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|disallowedThreatActions|
+|**Datentyp**|Array aus Zeichenfolgen|
+|**Mögliche Werte**|zulassen (verhindert, dass Benutzer Bedrohungen zulassen) <p> Wiederherstellen (verhindert, dass Benutzer Bedrohungen aus der Quarantäne wiederherstellen)|
+|**Comments**|Verfügbar in Defender für Endpunkt Version 100.83.73 oder höher.|
+|
 
 #### <a name="threat-type-settings"></a>Einstellungen für den Bedrohungstyp
 
 Die *Einstellung "threatTypeSettings"* im Antivirenmodul wird verwendet, um zu steuern, wie bestimmte Bedrohungstypen vom Produkt behandelt werden.
 
-|||
-|:---|:---|
-| **Schlüssel** | threatTypeSettings |
-| **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
-| **Comments** | Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten. |
-|||
+<br>
 
-**Bedrohungstyp**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|threatTypeSettings|
+|**Datentyp**|Wörterbuch (geschachtelte Präferenz)|
+|**Comments**|Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten.|
+|
+
+##### <a name="threat-type"></a>Bedrohungstyp
 
 Art der Bedrohung, für die das Verhalten konfiguriert ist.
 
-|||
-|:---|:---|
-| **Schlüssel** | Schlüssel |
-| **Datentyp** | String |
-| **Mögliche Werte** | potentially_unwanted_application <br/> archive_bomb |
-|||
+<br>
 
-**Zu ergreifende Maßnahme**
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|Schlüssel|
+|**Datentyp**|String|
+|**Mögliche Werte**|potentially_unwanted_application <p> archive_bomb|
+|
+
+##### <a name="action-to-take"></a>Zu ergreifende Maßnahme
 
 Auszuführende Aktion, wenn eine Bedrohung des im vorherigen Abschnitt angegebenen Typs angezeigt wird. Dies kann folgende sein:
 
@@ -225,107 +282,143 @@ Auszuführende Aktion, wenn eine Bedrohung des im vorherigen Abschnitt angegeben
 - **Blockieren:** Das Gerät ist vor dieser Art von Bedrohung geschützt, und Sie werden in der Sicherheitskonsole benachrichtigt.
 - **Deaktiviert:** Das Gerät ist nicht vor dieser Art von Bedrohung geschützt, und es wird nichts protokolliert.
 
-|||
-|:---|:---|
-| **Schlüssel** | Wert |
-| **Datentyp** | String |
-| **Mögliche Werte** | Überwachung (Standard) <br/> Block <br/> Aus |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|Wert|
+|**Datentyp**|String|
+|**Mögliche Werte**|Überwachung (Standard) <p> Block <p> Aus|
+|
 
 #### <a name="threat-type-settings-merge-policy"></a>Richtlinie zum Zusammenführen von Bedrohungstypeinstellungen
 
 Gibt die Zusammenführungsrichtlinie für Einstellungen für den Bedrohungstyp an. Dies kann eine Kombination aus vom Administrator definierten und benutzerdefinierten Einstellungen ( `merge` ) oder nur administratordefinierten Einstellungen ( `admin_only` ) sein. Diese Einstellung kann verwendet werden, um zu verhindern, dass lokale Benutzer ihre eigenen Einstellungen für unterschiedliche Bedrohungstypen definieren.
 
-|||
-|:---|:---|
-| **Schlüssel** | threatTypeSettingsMergePolicy |
-| **Datentyp** | String |
-| **Mögliche Werte** | Zusammenführen (Standard) <br/> admin_only |
-| **Comments** | Verfügbar in Defender für Endpunkt Version 100.83.73 oder höher. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|threatTypeSettingsMergePolicy|
+|**Datentyp**|String|
+|**Mögliche Werte**|Zusammenführen (Standard) <p> admin_only|
+|**Comments**|Verfügbar in Defender für Endpunkt Version 100.83.73 oder höher.|
+|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Aufbewahrung des Antivirusscanverlaufs (in Tagen)
 
 Geben Sie die Anzahl der Tage an, für die die Ergebnisse im Scanverlauf auf dem Gerät aufbewahrt werden. Alte Scanergebnisse werden aus dem Verlauf entfernt. Alte isolierte Dateien, die ebenfalls vom Datenträger entfernt werden.
 
-|||
-|:---|:---|
-| **Schlüssel** | scanResultsRetentionDays |
-| **Datentyp** | String |
-| **Mögliche Werte** | 90 (Standard). Zulässige Werte liegen zwischen 1 Tag und 180 Tagen. |
-| **Comments** | Verfügbar in Defender für Endpunkt Version 101.04.76 oder höher. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|scanResultsRetentionDays|
+|**Datentyp**|String|
+|**Mögliche Werte**|90 (Standard). Zulässige Werte liegen zwischen 1 Tag und 180 Tagen.|
+|**Comments**|Verfügbar in Defender für Endpunkt Version 101.04.76 oder höher.|
+|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maximale Anzahl von Elementen im Antivirusscanverlauf
 
 Geben Sie die maximale Anzahl von Einträgen an, die im Scanverlauf beibehalten werden sollen. Die Einträge enthalten alle on-Demand-Scans, die in der Vergangenheit durchgeführt wurden, sowie alle Antivirenerkennungen.
 
-|||
-|:---|:---|
-| **Schlüssel** | scanHistoryMaximumItems |
-| **Datentyp** | String |
-| **Mögliche Werte** | 10000 (Standard). Zulässige Werte liegen zwischen 5000 Elementen und 15.000 Elementen. |
-| **Comments** | Verfügbar in Defender für Endpunkt Version 101.04.76 oder höher. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|scanHistoryMaximumItems|
+|**Datentyp**|String|
+|**Mögliche Werte**|10000 (Standard). Zulässige Werte liegen zwischen 5000 Elementen und 15.000 Elementen.|
+|**Comments**|Verfügbar in Defender für Endpunkt Version 101.04.76 oder höher.|
+|
 
 ### <a name="cloud-delivered-protection-preferences"></a>Über die Cloud bereitgestellte Schutzeinstellungen
 
 Der *cloudService-Eintrag* im Konfigurationsprofil wird verwendet, um das cloudgesteuerte Schutzfeature des Produkts zu konfigurieren.
 
-|||
-|:---|:---|
-| **Schlüssel** | cloudService |
-| **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
-| **Comments** | Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten. |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|cloudService|
+|**Datentyp**|Wörterbuch (geschachtelte Präferenz)|
+|**Comments**|Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten.|
+|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Aktivieren/Deaktivieren des über die Cloud bereitgestellten Schutzes
 
 Bestimmt, ob der über die Cloud bereitgestellte Schutz auf dem Gerät aktiviert ist oder nicht. Um die Sicherheit Ihrer Dienste zu verbessern, empfehlen wir, dieses Feature aktiviert zu halten.
 
-|||
-|:---|:---|
-| **Schlüssel** | aktiviert |
-| **Datentyp** | Boolesch |
-| **Mögliche Werte** | true (Standard) <br/> false |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|aktiviert|
+|**Datentyp**|Boolesch|
+|**Mögliche Werte**|true (Standard) <p> false|
+|
 
 #### <a name="diagnostic-collection-level"></a>Diagnosesammlungsebene
 
 Diagnosedaten werden verwendet, um Defender für Endpunkt sicher und auf dem neuesten Stand zu halten, Probleme zu erkennen, zu diagnostizieren und zu beheben sowie Produktverbesserungen vorzunehmen. Diese Einstellung bestimmt die Diagnosestufe, die vom Produkt an Microsoft gesendet wird.
 
-|||
-|:---|:---|
-| **Schlüssel** | diagnosticLevel |
-| **Datentyp** | String |
-| **Mögliche Werte** | optional (Standard) <br/> erforderlich |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|diagnosticLevel|
+|**Datentyp**|String|
+|**Mögliche Werte**|optional (Standard) <p> erforderlich|
+|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Aktivieren/Deaktivieren automatischer Beispielübermittlungen
 
 Bestimmt, ob verdächtige Beispiele (die wahrscheinlich Bedrohungen enthalten) an Microsoft gesendet werden. Es gibt drei Ebenen zum Steuern der Beispielübermittlung:
 
 - **Keine:** Es werden keine verdächtigen Beispiele an Microsoft übermittelt.
-- **Sicher:** Nur verdächtige Beispiele, die keine personenbezogenen Informationen (PII) enthalten, werden automatisch übermittelt. Dies ist der Standardwert für diese Einstellung.
+- **Tresor:** nur verdächtige Beispiele, die keine personenbezogenen Informationen (PII) enthalten, werden automatisch übermittelt. Dies ist der Standardwert für diese Einstellung.
 - **Alle:** Alle verdächtigen Beispiele werden an Microsoft übermittelt.
 
-|||
-|:---|:---|
-| **Schlüssel** | automaticSampleSubmissionConsent |
-| **Datentyp** | String |
-| **Mögliche Werte** | keine <br/> sicher (Standard) <br/> Alle |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|automaticSampleSubmissionConsent|
+|**Datentyp**|String|
+|**Mögliche Werte**|keine <p> sicher (Standard) <p> Alle|
+|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Aktivieren/Deaktivieren automatischer Security Intelligence-Updates
 
 Bestimmt, ob Sicherheitsupdates automatisch installiert werden:
 
-|||
-|:---|:---|
-| **Schlüssel** | automaticDefinitionUpdateEnabled |
-| **Datentyp** | Boolesch |
-| **Mögliche Werte** | true (Standard) <br/> false |
-|||
+<br>
+
+****
+
+|Beschreibung|Wert|
+|---|---|
+|**Key**|automaticDefinitionUpdateEnabled|
+|**Datentyp**|Boolesch|
+|**Mögliche Werte**|true (Standard) <p> false|
+|
 
 ## <a name="recommended-configuration-profile"></a>Empfohlenes Konfigurationsprofil
 
@@ -444,10 +537,12 @@ python -m json.tool mdatp_managed.json
 Wenn der JSON-Code wohlgeformt ist, gibt der obige Befehl ihn zurück an das Terminal und gibt den Exitcode `0` von zurück. Andernfalls wird ein Fehler angezeigt, der das Problem beschreibt, und der Befehl gibt den Exitcode `1` .
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Überprüfen, ob die mdatp_managed.json-Datei wie erwartet funktioniert
+
 Um zu überprüfen, ob /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsordnungsgemäß funktioniert, sollte neben diesen Einstellungen "[verwaltet]" angezeigt werden:
+
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
-- passice_mode_enabled
+- passive_mode_enabled
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 

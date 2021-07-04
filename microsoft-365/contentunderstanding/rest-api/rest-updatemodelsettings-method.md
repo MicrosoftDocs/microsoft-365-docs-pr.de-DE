@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um die verfügbaren Modelleinstellungen für ein SharePoint Syntex-Dokumentverständnismodell zu aktualisieren.
-ms.openlocfilehash: cd288812044f3b02839c3c11c321947bd02cccaa
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: c75f669913f16233c6015230a60643cf86f33f5a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177165"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288647"
 ---
 # <a name="updatemodelsettings"></a>UpdateModelSettings
 

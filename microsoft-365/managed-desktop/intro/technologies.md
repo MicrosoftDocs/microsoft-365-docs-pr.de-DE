@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203268"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287963"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft Managed Desktop-Technologien
 
@@ -23,22 +23,22 @@ In diesem Artikel werden die Technologien und Apps aufgeführt, die in Microsoft
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- in O365 table, standard suite, removed this sentence "Please see the Installation of Project/Visio 64bit Click to Run Addendum for important deployment instructions. -->
 
-Microsoft 365 Enterprise Lizenzierung ist für alle Microsoft Managed Desktop Benutzer erforderlich. Weitere Informationen zu den Lizenzierungsanforderungen für den Dienst finden Sie unter ["Voraussetzungen für Microsoft Managed Desktop."](../get-ready/prerequisites.md)
+Microsoft 365 Enterprise Lizenzierung ist für alle Microsoft Managed Desktop Benutzer erforderlich. Weitere Informationen zu den Lizenzierungsanforderungen für den Dienst finden Sie unter [Voraussetzungen für Microsoft Managed Desktop.](../get-ready/prerequisites.md)
 
 In diesem Artikel werden die Komponenten zusammengefasst, die in den erforderlichen Enterprise Lizenzen enthalten sind, mit einer Beschreibung, wie der Dienst jede Komponente mit Microsoft Managed Desktop Geräten verwendet. Spezifische Rollen und Zuständigkeiten für jeden Bereich werden in Microsoft Managed Desktop Dokumentation ausführlich beschrieben. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 oder E5
+
 | Produkt |Informationen |
 --- |--- 
 Microsoft 365 Apps for Enterprise (64-Bit) | Diese Office Anwendungen werden mit dem Gerät ausgeliefert: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, OneNote.<br><br>Die 64-Bit-Vollversionen von Microsoft Project und Microsoft Visio sind nicht enthalten. Da die Installation dieser Anwendungen jedoch von der Microsoft 365 Apps for Enterprise Installation abhängt, hat Microsoft Managed Desktop standard Microsoft Intune Bereitstellungen und Sicherheitsgruppen erstellt, die Sie dann verwenden können, um diese Anwendungen für lizenzierte Benutzer bereitzustellen. Weitere Informationen finden Sie unter [Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop Geräten.](../get-started/project-visio.md)
 OneDrive |Azure Active Directory Einmaliges Anmelden ist für Benutzer aktiviert, wenn sie sich zum ersten Mal bei OneDrive anmelden.<br><br>Die Umleitung bekannter Ordner für Ordner "Desktop", "Dokument" und "Bilder" ist enthalten. aktiviert und von Microsoft Managed Desktop konfiguriert.
-Store-Apps |    Microsoft Sway und Power BI werden nicht mit dem Gerät ausgeliefert. Diese Apps stehen über Microsoft Store zum Download zur Verfügung.
-Win32-Anwendungen |    Teams wird nicht mit dem Gerät ausgeliefert, sondern verpackt und von Microsoft für Microsoft Managed Desktop Geräte bereitgestellt. Der Azure Information Protection-Client ist nicht mit dem Gerät ausgeliefert, sie können ihn jedoch für die Bereitstellung packen lassen.
-Webanwendungen |  Yammer, Office in einem Browser, Delve, Flow, StaffHub, PowerApps und Planner werden nicht mit dem Gerät ausgeliefert. Benutzer können mit einem Browser auf die Webversion dieser Anwendungen zugreifen.
-
-
+Store-Apps | Microsoft Sway und Power BI werden nicht mit dem Gerät ausgeliefert. Diese Apps können von Microsoft Store heruntergeladen werden.
+Win32-Anwendungen | Teams wird nicht mit dem Gerät ausgeliefert, sondern verpackt und von Microsoft für Microsoft Managed Desktop Geräte bereitgestellt. Der Azure Information Protection-Client ist nicht mit dem Gerät ausgeliefert, sie können ihn jedoch für die Bereitstellung packen lassen.
+Webanwendungen | Yammer, Office in einem Browser, Delve, Flow, StaffHub, PowerApps und Planner werden nicht mit dem Gerät ausgeliefert. Benutzer können mit einem Browser auf die Webversion dieser Anwendungen zugreifen.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 oder E3 mit Microsoft Defender für Endpunkt
+
 Es wird empfohlen, dass Ihre IT-Administratoren die folgenden Einstellungen konfigurieren. Diese Einstellungen werden nicht in Microsoft Managed Desktop eingeschlossen oder verwaltet.
 
 Produkt  |Informationen
@@ -47,11 +47,10 @@ Windows Hello for Business | Sie sollten Windows Hello for Business implementier
 Anwendungsvirtualisierung | Sie können Application Virtualization (App-V)-Pakete mit dem Intune Win32-App-Verwaltungsclient bereitstellen. Weitere Informationen finden Sie unter [Application Virtualization](/windows/application-management/app-v/appv-technical-reference).
 Microsoft 365 Verhinderung von Datenverlust | Sie sollten Microsoft 365 Verhinderung von Datenverlust implementieren, um die Aktionen zu überwachen, die für Elemente ausgeführt werden, die Sie als vertraulich eingestuft haben, und um die unbeabsichtigte Freigabe dieser Elemente zu verhindern. Weitere Informationen finden Sie unter [Microsoft 365 Verhinderung von Datenverlust.](../../compliance/endpoint-dlp-learn-about.md)
 
-
 Im Rahmen Microsoft Managed Desktop enthaltene und verwaltete Features:
 
 Produkt |Informationen
---- |--- 
+--- |---
 BitLocker-Laufwerkverschlüsselung | Die BitLocker-Laufwerkverschlüsselung wird verwendet, um alle Systemlaufwerke zu verschlüsseln. Weitere Informationen finden Sie unter [BitLocker-Laufwerkverschlüsselung.](/windows/security/information-protection/bitlocker/bitlocker-overview)
 Windows Defender System Guard | Schützt die Integrität des Systems beim Start und überprüft, ob die Systemintegrität wirklich aufrechterhalten wurde. Weitere Informationen finden Sie unter [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
 Windows Defender Credential Guard | Windows Defender Credential Guard verwendet virtualisierungsbasierte Sicherheit, um geheime Schlüssel zu isolieren, damit nur privilegierte Systemsoftware darauf zugreifen kann. Weitere Informationen finden Sie unter [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows).
@@ -72,8 +71,8 @@ Benutzerkontensteuerung | Die Benutzerkontensteuerung wechselt zum sicheren Desk
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
-Produkt |Informationen 
+Produkt |Informationen
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Sie können alle Features von Enterprise Mobility + Security E3 verwenden, um MDM-Geräte zu verwalten. Sie können Azure Active Directory Premium P2 als optionales Feature mit Microsoft Managed Desktop verwenden.
-Microsoft Cloud App Security |  Sie können dieses optionale Feature mit Microsoft Managed Desktop verwenden.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | Sie können alle Features von Enterprise Mobility + Security E3 verwenden, um MDM-Geräte zu verwalten. Sie können Azure Active Directory Premium P2 als optionales Feature mit Microsoft Managed Desktop verwenden.
+Microsoft Cloud App Security | Sie können dieses optionale Feature mit Microsoft Managed Desktop verwenden.
 Azure Information Protection P2  | Sie können dieses optionale Feature mit Microsoft Managed Desktop verwenden.

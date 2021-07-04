@@ -20,27 +20,27 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie die Seitendiagnose verwenden, um die Leistung von Webparts auf modernen SharePoint online zu optimieren.
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sie die Seitendiagnose verwenden, um die Leistung von Webparts in SharePoint modernen Onlinewebsiteseiten zu optimieren.
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929060"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288899"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung von Webparts in modernen SharePoint Online-Websites
 
 Die Seiten von modernen SharePoint Online-Website enthalten Webparts, die sich auf die allgemeinen Seitenladezeiten auswirken können. In diesem Artikel erfahren Sie, wie Sie die Auswirkungen von Webparts auf Ihren Seiten auf die vom Benutzer empfundene Latenz bestimmen und häufig auftretende Probleme beheben können.
 
->[!NOTE]
->Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](/sharepoint/modern-experience-performance).
+> [!NOTE]
+> Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Verwenden des Tools "Seitendiagnose für SharePoint" zum Analysieren von Webparts
 
 Das Tool "Seitendiagnose für SharePoint" ist eine Browsererweiterung für neue Microsoft Edge- (https://www.microsoft.com/edge) und Chrome-Browser, mit der Sie SharePoint Online-Seiten sowohl in modernen Portal- als auch in klassischen Veröffentlichungs-Websites analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Wenn Sie das Tool "Seitendiagnose für SharePoint" installieren und mehr darüber erfahren möchten, besuchen Sie [Verwenden des Seitendiagnose-Tools für SharePoint Online](page-diagnostics-for-spo.md).
 
->[!NOTE]
->Das Seitendiagnose-Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
+> [!NOTE]
+> Das Seitendiagnose-Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
 
 Wenn Sie eine Seite einer SharePoint-Website mit dem Tool "Seitendiagnose für SharePoint" analysieren, werden im Ergebnis **Webparts, die sich auf die Seitenladezeit auswirken** im Bereich _Diagnosetests_ Informationen über Webparts angezeigt, die die Baselinemetrik überschreiten.
 
@@ -56,16 +56,19 @@ Wenn das Ergebnis **Webparts, die sich auf die Seitenladezeit auswirken** entwed
 
 Die verfügbaren Informationen in den Ergebnissen umfassen:
 
-- **Made by** zeigt an, ob das Webteil benutzerdefinierter Oder Microsoft OOTB ist.
-- **Name und ID zeigt** identifizierende Informationen an, die Ihnen bei der Suche nach dem Webteil auf der Seite helfen können.
-- **Total** zeigt die Gesamtzeit für das Webteil zum Laden, Initialisieren und Rendern des Webteils an. Es handelt sich um die gesamte relative Zeit, die das Webteil für das Rendern auf der Seite von Anfang bis Ende an sich genommen hat.
-- **Modullast** zeigt die Zeit zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien an. Anschließend wird der Init-Prozess gestartet.
-- **Verzögertes Laden** zeigt die Zeit für das verzögerte Laden von Webparts an, die im Hauptabschnitt der Seite nicht angezeigt werden. Es gibt bestimmte Bedingungen, unter denen zu viele Webparts gerendert werden können, und sie werden in die Warteschlange eingereiht, um die Ladezeit der Seite zu minimieren.
-- **Init** zeigt die Zeit an, die das Webteil zum Initialisieren der Daten in Sich genommen hat.
-    Es handelt sich um einen asynchronen Aufruf, und die Initzeit ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
-- **Render** zeigt die Zeit an, die zum Rendern der Benutzeroberfläche (Benutzeroberfläche) nach Abschluss der Modullast und des Init-Vorgangs verwendet wird.
-    Es ist die JavaScript-Ausführungszeit, um das DOM im Dokument (Seite) zu mounten.
-    Das Rendern asynchroner Ressourcen, z. B. Bilder, kann zusätzliche Zeit in Sich nehmen.
+- **Erstellt von** zeigt an, ob das Webpart benutzerdefinierte oder Microsoft OOTB ist.
+- **Name und ID** zeigen Identifizieren von Informationen, die Ihnen helfen können, das Webpart auf der Seite zu finden.
+-  Gesamtzeit zeigt die Gesamtzeit für das Laden, Initialisieren und Rendern des Webparts an. Dies ist die relative Gesamtzeit, die das Webpart für das Rendern auf der Seite von Anfang bis Ende benötigte.
+- **Module Load** zeigt die Zeit an, die zum Herunterladen, Auswerten und Laden der JavaScript- und CSS-Dateien der Erweiterungen benötigt wird. Anschließend wird der Init-Prozess gestartet.
+- **"Verzögertes Laden"** zeigt die Zeit für das verzögerte Laden von Webparts an, die im Hauptabschnitt der Seite nicht angezeigt werden. Es gibt bestimmte Bedingungen, unter denen zu viele Webparts zum Rendern vorhanden sind und sie zum Rendern in die Warteschlange eingereiht werden, um die Seitenladezeit zu minimieren.
+- **Init** zeigt die Zeit an, die das Webpart benötigt, um die Daten zu initialisieren.
+
+  Es handelt sich um einen asynchronen Aufruf, und "init time" ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
+
+- **Rendern** zeigt die Zeit an, die zum Rendern der Benutzeroberfläche (User Interface) nach Abschluss des Ladens des Moduls und des Init-Vorgangs erforderlich ist.
+
+  Es ist die JavaScript-Ausführungszeit zum Einbinden des DOM im Dokument (Seite).
+  Das Rendern asynchroner Ressourcen, z. B. Bilder, kann zusätzliche Zeit in Anspruch nehmen.
 
 Diese Informationen dienen Designern und Entwicklern zum Beheben von Problemen. Diese Informationen sollten Ihrem Entwurfs- und Entwicklungsteam bereitgestellt werden.
 
@@ -83,7 +86,7 @@ Es gibt drei Kategorien möglicher Ursachen für eine schlechte Webpartleistung.
   - Verwenden Sie Frameworks wie _React_ und _Fabric-Importe_, die Bestandteil des SharePoint-Frameworks (SPFx) sind. Weitere Informationen finden Sie unter [Übersicht über das SharePoint-Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Stellen Sie sicher, dass Sie die neueste Version des SharePoint-Frameworks verwenden, und führen Sie stets Aktualisierungen auf neue Versionen durch, sobald diese verfügbar sind.
 - Datenabruf/-zwischenspeicherung
-  - Wenn das Webteil zusätzliche Serveraufrufe zum Abrufen von Daten für die Anzeige verwendet, stellen Sie sicher, dass diese Server-APIs schnell sind, und/oder implementieren Sie clientseitige Zwischenspeicherung (z. B. die Verwendung von _localStorage_ oder _IndexedDB_ für größere Sätze).
+  - Wenn das Webpart auf zusätzliche Serveraufrufe angewiesen ist, um Daten für die Anzeige abzurufen, stellen Sie sicher, dass diese Server-APIs schnell sind und/oder clientseitiges Zwischenspeichern implementieren (z. B. _localStorage_ oder _IndexedDB_ für größere Mengen).
   - Wenn zum Rendern wichtiger Daten mehrere Aufrufe erforderlich sind, sollten Sie die Batchverarbeitung auf dem Server oder andere Methoden zum Konsolidieren von Anforderungen in einen einzigen Anruf erwägen.
   - Wenn bestimmte Datenelemente eine langsamere API benötigen, für das anfängliche Rendern aber nicht kritisch sind, entkoppeln Sie diese mit einem separaten Aufruf, der nach dem Rendern kritischer Daten ausgeführt wird.
   - Wenn mehrere Webparts dieselben Daten nutzen, verwenden Sie eine gemeinsame Datenschicht, um doppelte Aufrufe zu vermeiden.

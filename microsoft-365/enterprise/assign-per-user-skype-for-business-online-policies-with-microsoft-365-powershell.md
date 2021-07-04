@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Benutzerrichtlinien Skype for Business Onlinerichtlinien mit PowerShell für Microsoft 365
+title: Zuweisen von benutzerbezogenen Skype for Business Onlinerichtlinien mit PowerShell für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Zusammenfassung: Verwenden Sie PowerShell Microsoft 365, um Benutzerkommunikationseinstellungen mit Skype for Business Onlinerichtlinien zuzuordnen.'
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365 zum Zuweisen von Benutzerkommunikationseinstellungen mit Skype for Business Onlinerichtlinien.'
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905404"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288083"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Benutzerrichtlinien Skype for Business Onlinerichtlinien mit PowerShell für Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von benutzerbezogenen Skype for Business Onlinerichtlinien mit PowerShell für Microsoft 365
 
-*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Möglichkeit zum Zuweisen von Benutzerkommunikationseinstellungen mit Skype for Business Onlinerichtlinien.
+Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Möglichkeit, benutzerspezifische Kommunikationseinstellungen mit Skype for Business Onlinerichtlinien zuzuweisen.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Vorbereiten der Ausführung der PowerShell-Befehle
 
@@ -53,13 +53,13 @@ Angenommen, Sie möchten Einstellungen für die externe Kommunikation für ein B
     
 2. Weisen Sie Alex diese externe Zugriffsrichtlinie ist.
     
-Wie bestimmen Sie, welche Richtlinie für den externen Zugriff Alex zugewiesen werden soll? Der folgende Befehl gibt alle externen Zugriffsrichtlinien zurück, in denen EnableFederationAccess auf „True“ und EnablePublicCloudAccess auf „False“ festgelegt ist:
+Wie bestimmen Sie, welche Externe Zugriffsrichtlinie Alex zugewiesen werden soll? Der folgende Befehl gibt alle externen Zugriffsrichtlinien zurück, in denen EnableFederationAccess auf „True“ und EnablePublicCloudAccess auf „False“ festgelegt ist:
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Wenn Sie keine benutzerdefinierten Instanzen von ExternalAccessPolicy erstellt haben, gibt dieser Befehl eine Richtlinie zurück, die unsere Kriterien erfüllt (FederationOnly). Hier ein Beispiel:
+Sofern Sie keine benutzerdefinierten Instanzen von ExternalAccessPolicy erstellt haben, gibt dieser Befehl eine Richtlinie zurück, die unseren Kriterien entspricht (FederationOnly). Hier ein Beispiel:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 Dieser Befehl legt den Namen der Alex zugewiesenen externen Zugriffsrichtlinie auf einen Nullwert ($Null) fest. Null bedeutet „nichts". Anders ausgedrückt, Alex wird keine externe Zugriffsrichtlinie zugewiesen. Wenn einem Benutzer keine externe Zugriffsrichtlinie zugewiesen ist, wird der Benutzer von der globalen Richtlinie verwaltet.
-  
 
 ## <a name="managing-large-numbers-of-users"></a>Verwalten einer großen Anzahl von Benutzern
 
-Zum Verwalten einer großen Anzahl von Benutzern (1000 oder mehr) müssen Sie die Befehle über einen Skriptblock mit dem [Cmdlet Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) batchen.  In den vorherigen Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurücksennen.  Bei Verwendung eines Skriptblocks können die Cmdlets remote ausgeführt und nach Abschluss der Ausführung die Daten zurück gesendet werden. 
+Um eine große Anzahl von Benutzern (1000 oder mehr) zu verwalten, müssen Sie die Befehle mithilfe des Cmdlets ["Invoke-Command"](/powershell/module/microsoft.powershell.core/invoke-command) über einen Skriptblock stapeln.  In früheren Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurück gesendet wird.  Bei Verwendung eines Skriptblocks können die Cmdlets auf diese Weise remote ausgeführt werden, und nach Abschluss senden Sie die Daten zurück.
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
@@ -133,12 +132,12 @@ $count = 0
 }
 ```
 
-Dies werden 500 Benutzer gleichzeitig finden, die nicht über eine Clientrichtlinie verfügen. Es gewährt ihnen die Clientrichtlinie "ClientPolicyNoIMURL" und die Richtlinie für den externen Zugriff "FederationAndPicDefault". Die Ergebnisse werden in Gruppen von 50 Batches unterteilt, und jeder Batch mit 50 wird dann an den Remotecomputer gesendet.
+Dadurch werden jeweils 500 Benutzer gefunden, die nicht über eine Clientrichtlinie verfügen. Sie gewährt ihnen die Clientrichtlinie "ClientPolicyNoIMURL" und die Richtlinie für den externen Zugriff "FederationAndPicDefault". Die Ergebnisse werden in Gruppen von 50 zusammengefasst, und jeder Batch von 50 wird dann an den Remotecomputer gesendet.
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Verwalten von Skype for Business Online mit PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   
-[Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

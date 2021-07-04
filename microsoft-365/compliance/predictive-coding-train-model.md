@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226215"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288191"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Trainieren eines vorhersagebasierten Codierungsmodells (Vorschau)
 
 Nachdem Sie in Advanced eDiscovery ein Modell für die Vorhersagecodierung erstellt haben, besteht der nächste Schritt darin, die erste Schulungsrunde durchzuführen, um das Modell zu relevanten und nicht relevanten Inhalten in Ihrem Prüfdateisatz zu schulen. Nachdem Sie die erste Schulungsrunde abgeschlossen haben, können Sie nachfolgende Schulungsrunden durchführen, um die Fähigkeit des Modells zu verbessern, relevante und nicht relevante Inhalte vorherzusagen.
 
-Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden Sie unter ["Informationen zur vorhersagebasierten Codierung in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden Sie unter ["Informationen zur Vorhersage von Codierung in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-train-a-model"></a>Vor dem Trainieren eines Modells
 
-- Kennzeichnen Sie während einer Schulungsrunde Elemente basierend auf der Relevanz des Inhalts im Dokument als **relevant** oder **nicht relevant.** Basieren Sie Ihre Entscheidung nicht auf den Werten in den Metadatenfeldern. Wenn Sie z. B. E-Mail-Nachrichten oder Teams Unterhaltungen verwenden möchten, legen Sie ihre Bezeichnungsentscheidung nicht auf die Teilnehmer der Nachricht fest.
+- Kennzeichnen Sie während einer Schulungsrunde Elemente basierend auf der Relevanz des Inhalts im Dokument als **relevant** oder **nicht relevant.** Basieren Sie Ihre Entscheidung nicht auf den Werten in den Metadatenfeldern. Wenn Sie z. B. E-Mail-Nachrichten oder Teams Unterhaltungen verwenden möchten, basieren Sie ihre Bezeichnungsentscheidung nicht auf den Teilnehmern der Nachricht.
 
 ## <a name="train-a-model-for-the-first-time"></a>Erstmaliges Trainieren eines Modells
 
@@ -45,7 +45,7 @@ Informationen zum Überprüfen des Workflows für die Vorhersagecodierung finden
 
 5. Überprüfen Sie jedes Dokument,  und wählen Sie dann unten im Lesebereich die Schaltfläche Relevant oder Nicht relevant aus, um es zu bezeichnen. 
 
-   ![Beschriften Sie jedes Dokument als relevant oder nicht relevant](..\media\TrainModel1.png)
+   ![Jedes Dokument als relevant oder nicht relevant kennzeichnen](..\media\TrainModel1.png)
 
 6. Nachdem Sie alle 50 Elemente beschriftet haben, klicken Sie auf **Fertig stellen.**
 
@@ -67,11 +67,15 @@ Nachdem Sie die erste Schulungsrunde durchgeführt haben, wird ein Auftrag gesta
 
 - Das Modell weist den 10 Elementen in der Steuerelementgruppe, die Sie während der Schulungsrunde bezeichnet haben, eine Vorhersagebewertung zu. Das Modell vergleicht die Vorhersagebewertung dieser 10 Elemente mit der tatsächlichen Bezeichnung, die Sie dem Element während der Schulungsrunde zugewiesen haben. Basierend auf diesem Vergleich identifiziert das Modell die folgende Klassifizierung (die so genannte *Steuerelementsatz-Verwechslungsmatrix),* um die Vorhersageleistung des Modells zu bewerten:
 
-  |          |Modell prognostiziert Element ist relevant |Modell prognostiziert Element ist nicht relevant |
-  |:---------|:---------|:---------|
-  |**Bearbeiterbeschriftungselement als relevant**| True positive| Falsch positiv |
-  |**Bearbeiter bezeichnet Element als nicht relevant**| Falsch negativ |True negativ |
-  ||||
+  <br>
+
+  ****
+
+  |Label|Modell prognostiziert Element ist relevant|Modell prognostiziert Element ist nicht relevant|
+  |---|---|---|
+  |**Bearbeiterbeschriftungselement als relevant**|True positive|Falsch positiv|
+  |**Bearbeiter bezeichnet Element als nicht relevant**|Falsch negativ|True negativ|
+  |
 
   Basierend auf diesen Vergleichen leitet das Modell Werte für die Metriken F-Bewertung, Genauigkeit und Rückruf sowie den Fehlerrand für jeden ab. Bewertungen für diese Modellleistungsmetriken werden auf einer Flyoutseite für die Schulungsrunde angezeigt. Eine Beschreibung dieser Metriken finden Sie unter ["Referenz zur prädiktiven Codierung".](predictive-coding-reference.md)
 

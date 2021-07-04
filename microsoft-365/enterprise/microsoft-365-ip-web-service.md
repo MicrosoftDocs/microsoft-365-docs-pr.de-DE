@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 - BCS160
 description: Erfahren Sie, wie Sie den Office 365-IP-Adress- und URL-Webdienst nutzen können, um den Netzwerkverkehr von Office 365 besser zu identifizieren und zu differenzieren.
-ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918954"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286417"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adress- und -URL-Webdienst
 
-Der Office 365-IP-Adress- und URL-Dienst unterstützt Sie beim besseren Erkennen und Differenzieren des Netzwerkdatenverkehrs in Office 365, was es Ihnen erleichtert, Änderungen auszuwerten, zu konfigurieren und auf dem neuesten Stand zu bleiben. Dieser REST-basierte Webdienst ersetzt die vorherigen herunterladbaren XML-Dateien, die am 2. Oktober 2018 ausliefen.
+Der Webdienst für Office 365-IP-Adressen und -URLs unterstützt Sie beim besseren Erkennen und Differenzieren des Netzwerkdatenverkehrs in Office 365, was die Auswertung von Änderungen und die Konfiguration vereinfacht und Ihnen erleichtert, auf dem neuesten Stand zu bleiben. Dieser REST-basierte Webdienst ersetzt die vorherigen herunterladbaren XML-Dateien, die am 2. Oktober 2018 ausliefen.
 
-Als Kunde oder Hersteller von Netzwerkumkreisgeräten können Sie den Build für den Webdienst für die Office 365-IP-Adress- und -FQDN-Einträge erstellen. Sie können direkt in einem Webbrowser auf die Daten zugreifen, indem Sie diese URLs verwenden:
+Als Kunde oder Anbieter von Netzwerkperimetergeräten können Sie den Webdienst für Office 365-IP-Adress- und -FQDN-Einträge verwenden. Sie können direkt in einem Webbrowser auf die Daten zugreifen, indem Sie diese URLs verwenden:
 
 - Verwenden Sie für die neueste Version der Office 365-URLs und -IP-Adressbereiche [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 - Verwenden Sie für die Daten auf der Seite für die Office 365-URLs und -IP-Adressbereiche für Firewalls und Proxyserver [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
@@ -52,7 +52,7 @@ Als Anbieter von Netzwerkperimetergeräten können Sie diesen Webdienst für Fol
 - Rufen Sie die aktuellen Änderungen ab.
 
 > [!NOTE]
-> Wenn Sie Azure ExpressRoute für die Verbindung mit Office 365 verwenden, lesen Sie bitte [Azure ExpressRoute for Office 365](azure-expressroute.md), um sich mit den Office 365-Diensten vertraut zu machen, die von Azure ExpressRoute unterstützt werden.  Bitte lesen Sie auch den Artikel [Office 365-URLs und -IP-Adressbereiche](urls-and-ip-address-ranges.md), um zu verstehen, welche Netzwerke für Office 365-Apps eine Internetverbindung benötigen. Das wird Ihnen helfen, Ihre Umkreis-Sicherheitsgeräte besser zu konfigurieren.
+> Wenn Sie Azure ExpressRoute für die Verbindung mit Office 365 verwenden, lesen Sie bitte [Azure ExpressRoute for Office 365](azure-expressroute.md), um sich mit den Office 365-Diensten vertraut zu machen, die von Azure ExpressRoute unterstützt werden.  Bitte lesen Sie auch den Artikel [Office 365-URLs und -IP-Adressbereiche](urls-and-ip-address-ranges.md), um zu verstehen, welche Netzwerke für Office 365-Apps eine Internetverbindung benötigen. Das wird Ihnen helfen, Ihre Umkreis-Sicherheitsgeräte besser zu konfigurieren.
 
 Weitere Informationen finden Sie unter:
 
@@ -66,7 +66,7 @@ Diese Parameter gelten für sämtliche Webdienstmethoden:
 - **format=<JSON | CSV>** – standardmäßig ist die zurückgegebene Datei als JSON formatiert. Verwenden Sie diesen optionalen Parameter, um die Daten in durch Trennzeichen getrennten Werten (CSV-Format) zurückzuerhalten.
 - **ClientRequestId=\<guid>** – eine erforderliche GUID, die Sie für die Clientzuordnung generieren. Generieren Sie eine eindeutige GUID für jeden Computer, von dem der Webdienst aufgerufen wird (die auf dieser Seite enthaltenen Skripts generieren eine GUID für Sie). Nutzen Sie nicht die in den folgenden Beispielen dargestellten GUIDs, da sie künftig durch den Webdienst blockiert werden könnten. Das GUID-Format ist _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, wobei x eine hexadezimale Zahl darstellt.
 
-  Wenn Sie eine GUID generieren möchten, können Sie den PowerShell-Befehl [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) verwenden oder einen Onlinedienst wie den [Online GUID Generator](https://www.guidgenerator.com/) nutzen.
+  Wenn Sie eine GUID generieren möchten, können Sie den PowerShell-Befehl [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid) verwenden oder einen Onlinedienst wie den [Online GUID Generator](https://www.guidgenerator.com/) nutzen.
 
 ## <a name="version-web-method"></a>Versionswebmethode
 
@@ -80,11 +80,11 @@ Parameter für die Versionswebmethode sind:
 - **Format=<JSON | CSV | RSS>** – zusätzlich zu den Formaten JSON und CSV unterstützt die Versionswebmethode auch RSS. Diesen optionalen Parameter können Sie zusammen mit dem Parameter _AllVersions=true_ verwenden, um einen RSS-Feed anzufordern, der mit Outlook oder anderen RSS-Readern genutzt werden kann.
 - **Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** – dieser optionale Parameter gibt die Instanz an, für die die Version zurückgegeben werden soll. Wenn nicht angegeben, werden alle Instanzen zurückgegeben. Gültige Instanzen sind: Weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
 
-Die Rate der Versionswebmethode ist nicht beschränkt, und sie gibt nie 429-HTTP-Antwortcodes zurück. Die Antwort auf die Versionswebmethode enthält einen Cache-Control-Header, der empfiehlt, die Daten für eine Stunde zwischenzuspeichern. Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Array aus Datensätzen sein. Die Elemente jedes Datensatzes sind:
+Die Versionswebmethode ist nicht beschränkt und gibt nie die HTTP-Antwortcodes 429 zurück. Das Ergebnis der Versionswebmethode umfasst keinen Cache-Control-Header, der empfiehlt, die Daten eine Stunde lang zwischenzuspeichern. Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Datensatzarray sein. Die Elemente der einzelnen Datensätze sind:
 
 - instance – die Kurzform der Office 365-Serviceinstanz.
 - latest – die neueste Version für Endpunkte der angegebenen Instanz.
-- versions – eine Liste aller vorherigen Versionen für die angegebene Instanz. Dieses Element wird nur einbezogen, wenn der Parameter _AllVersions_ wahr ist.
+- versions – Eine Liste aller vorherigen Versionen für die angegebene Instanz. Dieses Element ist nur enthalten, wenn der Parameter _AllVersions_ „true“ ist.
 
 ### <a name="examples"></a>Beispiele:
 
@@ -187,24 +187,24 @@ Parameter für die Endpunktwebmethode sind:
 
 Wenn Sie die Endpunktwebmethode zu häufig von derselben Client-IP-Adresse abrufen, erhalten Sie möglicherweise den HTTP-Antwortcode _429 (zu viele Anforderungen)_. Wenn Sie diesen Antwortcode erhalten, warten Sie eine Stunde, bevor Sie Ihre Anforderung wiederholen, oder generieren Sie eine neue GUID für sie. Als allgemein bewährte Methode rufen Sie die Endpunktwebmethode nur auf, wenn die Versionswebmethode besagt, dass eine neue Version verfügbar ist.
 
-Das Ergebnis der Endpunktwebmethode ist ein Array aus Datensätzen, in dem jeder Datensatz einen bestimmten Endpunktsatz darstellt. Die Elemente für jeden Datensatz sind:
+Das Ergebnis der Endpunktwebmethode ist ein Datensatz-Array, bei dem jeder Datensatz einen Endpunktsatz darstellt. Die Elemente für jeden Datensatz lauten:
 
 - id – die unveränderliche ID-Nummer des Endpunktsatzes.
 - serviceArea – der Servicebereich, zu dem Folgendes gehört: _Common_, _Exchange_, _SharePoint_ oder _Skype_.
-- urls – URLs für den Endpunktsatz. ein JSON-Array von DNS-Einträgen. Weggelassen, falls leer.
-- tcpPorts – TCP-Ports für den Endpunktsatz. Alle Ports-Elemente sind als eine durch Trennzeichen getrennte Liste von Ports oder Portbereichen formatiert, die durch einen Bindestrich (-) getrennt sind. Ports werden auf alle IP-Adressen und alle URLs im Endpunktsatz für eine bestimmte Kategorie angewendet. Weggelassen, falls leer.
-- udpPorts – UDP-Ports für die IP-Adressbereiche in diesem Endpunktsatz. Weggelassen, falls leer.
-- ips – die zu diesem Endpunktsatz gehörigen IP-Adressbereiche (den aufgeführten TCP- oder UDP-Ports zugeordnet). ein JSON-Array von IP-Adressbereichen. Weggelassen, falls leer.
+- urls – URLs für den Endpunktsatz. Ein JSON-Array von DNS-Datensätzen. Wird ausgelassen, falls leer.
+- tcpPorts – TCP-Ports für den Endpunktsatz. Alle Portelemente werden als eine kommagetrennte Liste von Ports oder Portbereichen formatiert, getrennt durch einen Bindestrich (-). Ports gelten für alle IP-Adressen und alle URLs im Endpunktsatz für eine bestimmte Kategorie. Wird ausgelassen, falls leer.
+- udpPorts – UDP-Ports für die IP-Adressbereiche in diesem Endpunktsatz. Wird ausgelassen, falls leer.
+- ips – Der mit diesem Endpunktsatz verknüpfte IP-Adressbereich (verknüpft mit den aufgeführten TCP- oder UDP-Ports). Ein JSON-Array von IP-Adressbereichen. Wird ausgelassen, falls lehr.
 - category – die Kategorie „Konnektivität“ des Endpunktsatzes. Gültige Werte sind _Optimize_, _Allow_ und _Default_. Wenn Sie die Ausgabe der Endpunktwebmethode für die Kategorie einer bestimmten IP-Adresse oder URL durchsuchen, kann die Abfrage mehrere Kategorien zurückgeben. Folgen Sie in diesem Fall der Empfehlung für die Kategorie mit der höchsten Priorität. Wenn der Endpunkt beispielsweise sowohl in _Optimize_ als auch _Allow_ angezeigt wird, sollten Sie den Anforderungen für _Optimize_ entsprechen. Erforderlich.
 - expressRoute – _True_, wenn dieser Endpunktsatz über ExpressRoute weitergeleitet wird; _False_, wenn nicht.
 - required – _True_, wenn für diesen Endpunktsatz Konnektivität erforderlich ist, damit Office 365 unterstützt wird. _False_, wenn dieser Endpunktsatz optional ist.
-- notes – für optionale Endpunkte beschreibt dieser Text die Office 365-Funktionalität, die nicht verfügbar wäre, wenn der Zugriff auf IP-Adressen oder URLs in diesem Endpunktsatz nicht auf Netzwerkebene möglich ist. Weggelassen, falls leer.
+- notes – Für optionale Endpunkte beschreibt dieser Text die Office 365-Funktionalität, die nicht verfügbar wäre, wenn der Zugriff auf IP-Adressen oder URLs in diesem Endpunktsatz nicht auf Netzwerkebene möglich ist. Wird ausgelassen, falls leer.
 
 ### <a name="examples"></a>Beispiele:
 
 Anfrage-URI – Beispiel 1: [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
-Dieser URI ruft alle Endpunkte für die Instanz von Office 365 weltweit für alle Workloads ab. Das Beispielergebnis zeigt einen Auszug der Ausgabe:
+Dieser URI ruft alle Endpunkte für die Instanz von Office 365 weltweit für alle Workloads ab. Das Beispielergebnis zeigt einen Auszug der Ausgabe an:
 
 ```json
 [
@@ -254,7 +254,7 @@ Die nötigen Parameter für die Änderungswebmethode sind:
 
 Für die Änderungswebmethode sind die Gebühren auf dieselbe Art und Weise beschränkt wie bei der Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, warten Sie eine Stunde, bevor Sie Ihre Anforderung wiederholen, oder generieren Sie eine neue GUID für sie.
 
-Das Ergebnis der Änderungswebmethode ist ein Array aus Datensätzen, in dem jeder Datensatz eine Änderung in einer bestimmten Version der Endpunkte darstellt. Die Elemente für jeden Datensatz sind:
+Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Datensatz eine Änderung in einer speziellen Version des Endpunkts darstellt. Die Elemente für jeden Datensatz lauten:
 
 - id – die unveränderliche ID des Änderungsdatensatzes.
 - endpointSetId – die ID des Endpunktsatz-Datensatzes, der geändert wird.
@@ -267,7 +267,7 @@ Das Ergebnis der Änderungswebmethode ist ein Array aus Datensätzen, in dem jed
   – MovedIpOrUrl: Eine IP-Adresse oder URL wurde zwischen diesem Endpunktsatz und einem anderen verschoben. Im Allgemeinen ist keine Aktion erforderlich.
   – RemovedDuplicateIpOrUrl: Eine doppelte IP-Adresse oder URL wurde entfernt, diese ist aber immer noch für Office 365 veröffentlicht. Im Allgemeinen ist keine Aktion erforderlich.
   – OtherNonPriorityChanges: Es wurde etwas weniger wichtiges als alle anderen Optionen geändert, z. B. die Inhalte eines Notizfelds.
-- version – die Version des veröffentlichten Endpunktsatzes, in dem die Änderung eingeführt wurde. Versionsnummern besitzen das Format _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden sollen.
+- version – Die Version des veröffentlichten Endpunktsatzes, in dem die Änderung eingeführt wurde. Versionsnummern werden im Format _JJJJMMTTNN_ angegeben, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, wenn mehrere Versionen an einem einzigen Tag veröffentlicht werden müssen.
 - previous – eine Unterstruktur, die vorherige Werte von Änderungselementen im Endpunktsatz angibt. Dies ist bei neu hinzugefügten Endpunktsätzen nicht enthalten. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
 - current – eine Unterstruktur, die aktualisierte Werte von Änderungselementen im Endpunktsatz angibt. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
 - add – eine Unterstruktur, die Elemente angibt, die zu Endpunktsatzsammlungen hinzugefügt werden sollen. Wird weggelassen, wenn es keine Ergänzungen gibt.
@@ -595,7 +595,7 @@ else:
 
 ## <a name="web-service-interface-versioning"></a>Versionsverwaltung der Webdienstschnittstelle
 
-Möglicherweise sind Updates für die Parameter oder Ergebnisse für diese Webdienstmethoden zukünftig erforderlich. Nach der Veröffentlichung der allgemein verfügbaren Version dieser Webdienste wird Microsoft angemessene Anstrengungen unternehmen, um die Aktualisierung des Webdiensts im Voraus anzukündigen. Wenn Microsoft der Auffassung ist, dass für ein Update Änderungen an Clients nötig sind, die den Webdienst verwenden, wird Microsoft die vorherige Version (um eine Version älter) des Webdienstes für mindestens 12 Monate nach der Veröffentlichung der neuen Version verfügbar halten. Kunden, die während dieses Zeitraums kein Upgrade durchführen, können möglicherweise nicht auf den Webdienst und seine Methoden zugreifen. Kunden müssen sicherstellen, dass die Clients des Webdiensts fehlerfrei weiterarbeiten, wenn die folgenden Änderungen an der Signatur der Webdienstschnittstelle vorgenommen werden:
+In der Zukunft sind möglicherweise Updates für die Parameter oder die Ergebnisse für diese Webdienstmethoden erforderlich. Nachdem die allgemein verfügbare Version dieser Webdienste veröffentlicht wurde, bemüht sich Microsoft in angemessener Weise, bedeutende Updates im Hinblick auf den Webdienst im Vorfeld anzukündigen. Wenn Microsoft davon ausgeht, dass für ein Update Änderungen an Clients erforderlich sind, die den Webdienst nutzen, behält Microsoft die vorherige Version (eine Version zurück) des verfügbaren Webdiensts für mindestens 12 Monate nach der Veröffentlichung der neuen Version bei. Kunden, die während dieses Zeitraums nicht aktualisieren, können möglicherweise nicht mehr auf den Webdienst und die zugehörigen Methoden zugreifen. Kunden müssen sicherstellen, dass Clients des Webdiensts weiterhin ohne Fehler funktionieren, wenn die folgenden Änderungen an der Webdienst-Schnittstellensignatur vorgenommen werden:
 
 - Hinzufügen eines neuen optionalen Parameters zu einer vorhandenen Webmethode, die nicht notwendigerweise von älteren Clients bereitgestellt werden muss und das Ergebnis nicht beeinträchtigt, das ein älterer Client erhält.
 - Hinzufügen eines neuen benannten Attributs zu einem der REST-Antwortelemente oder zusätzlicher Spalten zur Antwort-CSV.

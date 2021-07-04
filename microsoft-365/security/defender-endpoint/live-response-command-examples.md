@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007069"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289331"
 ---
 # <a name="live-response-command-examples"></a>Kommandobeispiele für Liveantworten
 
@@ -38,8 +38,7 @@ Erfahren Sie mehr über allgemeine Befehle, die in der Liveantwort verwendet wer
 
 Je nachdem, welche Rolle Ihnen zugewiesen wurde, können Sie einfache oder erweiterte Liveantwortbefehle ausführen. Weitere Informationen zu grundlegenden und erweiterten Befehlen finden Sie unter Untersuchen von [Entitäten auf Geräten mit Liveantwort.](live-response.md)
 
-
-## <a name="analyze"></a>Analysieren 
+## <a name="analyze"></a>Analysieren
 
 ```console
 # Analyze the file malware.txt
@@ -108,14 +107,14 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 >[!NOTE]
 >
-> Die folgenden Dateitypen **können nicht** mit diesem Befehl aus der Live-Antwort heruntergeladen werden:
+> Die folgenden Dateitypen **können nicht** mithilfe dieses Befehls aus der Live-Antwort heruntergeladen werden:
 >
-> * [Analysepunktdateien](/windows/desktop/fileio/reparse-points/)
-> * [Spärliche Dateien](/windows/desktop/fileio/sparse-files/)
-> * Leere Dateien
-> * Virtuelle Dateien oder Dateien, die nicht vollständig lokal vorhanden sind
+> - [Analysepunktdateien](/windows/desktop/fileio/reparse-points/)
+> - [Spärliche Dateien](/windows/desktop/fileio/sparse-files/)
+> - Leere Dateien
+> - Virtuelle Dateien oder Dateien, die nicht vollständig lokal vorhanden sind
 >
-> Diese Dateitypen **werden** von [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)unterstützt.
+> Diese Dateitypen **werden** von [PowerShell](/powershell/scripting/overview)unterstützt.
 >
 > Verwenden Sie PowerShell als Alternative, wenn Sie Probleme bei der Verwendung dieses Befehls in Live Response haben.
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>Prozesse
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > Für lange ausgeführte Befehle wie **"Ausführen"** oder **"Getfile"** empfiehlt es sich, das **&** Symbol " " am Ende des Befehls zu verwenden, um diese Aktion im Hintergrund auszuführen.
 > Auf diese Weise können Sie den Computer weiter untersuchen und zum Hintergrundbefehl zurückkehren, wenn Sie mit dem [Einfachbefehl](live-response.md#basic-commands)'**fg**' fertig sind.
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>Rückgängig
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

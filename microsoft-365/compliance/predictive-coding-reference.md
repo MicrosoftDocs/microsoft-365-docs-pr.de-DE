@@ -1,5 +1,5 @@
 ---
-title: Referenz zur prädiktiven Codierung
+title: Predictive Coding-Referenz
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 90c76fade54c109fc02e145a49bbe93d11ad8b79
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822524"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288275"
 ---
 # <a name="predictive-coding-reference-preview"></a>Referenz zur prädiktiven Codierung (Vorschau)
 
@@ -36,14 +36,18 @@ Während des Schulungsprozesses eines vorhersagebasierten Codierungsmodells wird
 ## <a name="control-set-confusion-matrix"></a>Matrix der Steuerelementsatz-Verwirrung
 
 Nachdem Sie eine Schulungsrunde abgeschlossen haben, weist das Modell den 10 Elementen im Steuerelementsatz, die Sie während der Schulungsrunde bezeichnet haben, eine Vorhersagebewertung zu. Das Modell vergleicht die Vorhersagebewertung dieser 10 Elemente mit der tatsächlichen Bezeichnung, die Sie dem Element während der Schulungsrunde zugewiesen haben. Basierend auf diesem Vergleich identifiziert das Modell die folgenden Klassifizierungen, um die Vorhersageleistung des Modells zu bewerten:
-  
-  |          |Modell prognostiziert Element ist relevant |Modell prognostiziert Element ist nicht relevant |
-  |:---------|:---------|:---------|
-  |**Bearbeiterbeschriftungselement als relevant**| True positive| Falsch positiv |
-  |**Bearbeiter bezeichnet Element als nicht relevant**| Falsch negativ |True negativ |
-  ||||
 
-  Basierend auf diesen Vergleichen leitet das Modell Werte für die Metriken F-Bewertung, Genauigkeit und Rückruf sowie den Fehlerrand für jeden ab. Die Anzahl der einzelnen Verwechslungstypen aus der Matrix wird auf der Flyoutseite für eine Schulungsrunde angezeigt.
+<br>
+
+****
+
+|Label|Modell prognostiziert Element ist relevant|Modell prognostiziert Element ist nicht relevant|
+|---|---|---|
+|**Bearbeiterbeschriftungselement als relevant**|True positive|Falsch positiv|
+|**Bearbeiter bezeichnet Element als nicht relevant**|Falsch negativ|True negativ|
+|
+
+Basierend auf diesen Vergleichen leitet das Modell Werte für die Metriken F-Bewertung, Genauigkeit und Rückruf sowie den Fehlerrand für jeden ab. Die Anzahl der einzelnen Verwechslungstypen aus der Matrix wird auf der Flyoutseite für eine Schulungsrunde angezeigt.
 
 ## <a name="f-score"></a>F-Bewertung
 
@@ -75,7 +79,7 @@ Die Rückrufmetrik misst den Anteil der Elemente, die das Modell prognostiziert 
 
 ## <a name="review-set"></a>Prüfdateisatz
 
-Ein Prüfdateisatz bietet den Umfang eines vorhersagebasierten Codierungsmodells. Wenn Sie ein neues Modell für den Prüfdateisatz erstellen, werden Elemente für den Steuerelementsatz und Schulungssätze aus dem Prüfdateisatz ausgewählt. Wenn das Modell Vorhersageergebnisse zuweist, werden diese Bewertungen den Elementen in der Rezension zugewiesen. Sie müssen alle Elemente zum Prüfdateisatz hinzufügen, bevor Sie ein Modell für die Vorhersagecodierung erstellen. Wenn Sie Elemente hinzufügen, nachdem Sie ein Modell erstellt haben, wird diesen Elementen keine Vorhersagebewertung zugewiesen.
+Ein Prüfdateisatz bietet den Umfang eines vorhersagebasierten Codierungsmodells. Wenn Sie ein neues Modell für den Prüfdateisatz erstellen, werden Elemente für den Steuerelementsatz und Schulungssätze aus dem Prüfdateisatz ausgewählt. Wenn das Modell Vorhersageergebnisse zuweist, weist es diese Bewertungen den Elementen in der Rezension zu. Sie müssen alle Elemente zum Prüfdateisatz hinzufügen, bevor Sie ein Modell für die Vorhersagecodierung erstellen. Wenn Sie Elemente hinzufügen, nachdem Sie ein Modell erstellt haben, wird diesen Elementen keine Vorhersagebewertung zugewiesen.
 
 ## <a name="richness"></a>Reichtum
 
@@ -87,4 +91,4 @@ Der Begriff *"Stichprobenelemente"* ist ein Verweis auf zufällige Beispiele von
 
 ## <a name="training-set"></a>Schulungssatz
 
-Das Modell wählt nach dem Zufallsprinzip Elemente aus dem Prüfdateisatz aus und fügt sie einem Schulungssatz hinzu. Während einer Schulungsrunde werden Ihnen Elemente aus dem Schulungssatz (zusätzlich zu Elementen aus dem Steuerelementsatz) angezeigt, sodass Sie jede als "relevant" oder "nicht relevant" bezeichnen können. Dieser Bezeichnungs- oder "Schulungs"-Prozess hilft dem Modell, vorherzusagen, welche Elemente in der Rezension relevant oder nicht relevant sind. Jedes Mal, wenn Sie eine Schulungsrunde durchführen, wählt das Modell weitere Elemente aus der Rezension aus und fügt sie dem Schulungssatz für diese Schulungsrunde hinzu. Elemente aus dem Steuerelementsatz werden nie für einen Schulungssatz ausgewählt.
+Das Modell wählt nach dem Zufallsprinzip Elemente aus dem Prüfdateisatz aus und fügt sie einem Schulungssatz hinzu. Während einer Schulungsrunde werden Ihnen Elemente aus dem Schulungssatz (zusätzlich zu Elementen aus dem Steuerelementsatz) angezeigt, sodass Sie jedes Element als "relevant" oder "nicht relevant" bezeichnen können. Dieser Bezeichnungs- oder "Schulungs"-Prozess hilft dem Modell, vorherzusagen, welche Elemente in der Rezension relevant oder nicht relevant sind. Jedes Mal, wenn Sie eine Schulungsrunde durchführen, wählt das Modell weitere Elemente aus der Rezension aus und fügt sie dem Schulungssatz für diese Schulungsrunde hinzu. Elemente aus dem Steuerelementsatz werden nie für einen Schulungssatz ausgewählt.

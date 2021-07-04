@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die MailItemsAccessed-Postfachüberwachungsaktion, um forensische Untersuchungen kompromittierter Benutzerkonten auszuführen.
-ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 64f3e5f3423f5182277fe7640199a39dc11068f2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903481"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288779"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Verwenden der erweiterten Überwachung zur Untersuchung kompromittierter Konten
 
@@ -37,7 +37,7 @@ Die Postfachüberwachungsaktion "MailItemsAccessed" deckt alle E-Mail-Protokolle
 
 ### <a name="auditing-sync-access"></a>Überwachen des Synchronisierungszugriffs
 
-Synchronisierungsvorgänge werden nur aufgezeichnet, wenn durch eine Desktopversion des Outlook-Clients für Windows oder Mac auf ein Postfach zugegriffen wird. Während des Synchronisierungsvorgangs laden diese Clients in der Regel eine große Menge von E-Mail-Elementen aus der Cloud auf einen lokalen Computer herunter. Das Überwachungsvolumen für Synchronisierungsvorgänge ist riesig. Statt also einen Überwachungseintrag für jedes synchronisierte E-Mail-Element zu generieren, wird lediglich ein Überwachungsereignis für den E-Mail-Ordner generiert, der die synchronisierten Elemente enthält. Damit wird angenommen, dass *alle* E-Mail-Elemente im synchronisierten Ordner kompromittiert wurden. Der Zugriffstyp wird im OperationsProperties-Feld des Überwachungsdatensatzes aufgezeichnet. 
+Synchronisierungsvorgänge werden nur aufgezeichnet, wenn durch eine Desktopversion des Outlook-Clients für Windows oder Mac auf ein Postfach zugegriffen wird. Während des Synchronisierungsvorgangs laden diese Clients in der Regel eine große Menge von E-Mail-Elementen aus der Cloud auf einen lokalen Computer herunter. Das Überwachungsvolumen für Synchronisierungsvorgänge ist riesig. Statt also einen Überwachungseintrag für jedes synchronisierte E-Mail-Element zu generieren, wird lediglich ein Überwachungsereignis für den E-Mail-Ordner generiert, der die synchronisierten Elemente enthält. Damit wird angenommen, dass *alle* E-Mail-Elemente im synchronisierten Ordner kompromittiert wurden. Der Zugriffstyp wird im OperationsProperties-Feld des Überwachungsdatensatzes aufgezeichnet.
 
 Ein Beispiel für die Darstellung des Synchronisierungszugriffstyps in einem Überwachungsdatensatz finden Sie in Schritt 2 im Abschnitt [Verwenden von MailItemsAccessed-Überwachungsdatensätzen für forensische Untersuchungen](#use-mailitemsaccessed-audit-records-for-forensic-investigations).
 
@@ -49,16 +49,13 @@ Ein Beispiel für die Darstellung des Bindungszugriffstyps in einem Überwachung
 
 ### <a name="throttling-of-mailitemsaccessed-audit-records"></a>Drosseln von MailItemsAccessed-Überwachungsdatensätzen
 
-Wenn mehr als 1.000 MailItemsAccessed-Überwachungsdatensätze in weniger als 24 Stunden generiert werden, beendet Exchange Online die Generierung von Überwachungsdatensätze für MailItemsAccessed-Aktivitäten. Wenn ein Postfach gedrosselt wird, werden die MailItemsAccessed-Aktivitäten ab dem Zeitpunkt der Drosselung des Postfachs 24 Stunden lang nicht mehr protokolliert. In diesem Fall besteht das Risiko, dass das Postfach während dieses Zeitraums kompromittiert wurde. Die Aufzeichnung der MailItemsAccessed-Aktivität wird nach Ablauf des 24-Stunden-Zeitraums fortgesetzt.  
+Wenn mehr als 1.000 MailItemsAccessed-Überwachungsdatensätze in weniger als 24 Stunden generiert werden, beendet Exchange Online die Generierung von Überwachungsdatensätze für MailItemsAccessed-Aktivitäten. Wenn ein Postfach gedrosselt wird, werden die MailItemsAccessed-Aktivitäten ab dem Zeitpunkt der Drosselung des Postfachs 24 Stunden lang nicht mehr protokolliert. In diesem Fall besteht das Risiko, dass das Postfach während dieses Zeitraums kompromittiert wurde. Die Aufzeichnung der MailItemsAccessed-Aktivität wird nach Ablauf des 24-Stunden-Zeitraums fortgesetzt.
 
 Hier einige Punkte, die Sie im Hinblick auf die Drosselung beachten sollten:
 
 - Weniger als 1 % aller Postfächer in Exchange Online werden gedrosselt.
-
-- Wenn ein Postfach gedrosselt wird, werden nur Überwachungsdatensätze für MailItemsAccessed-Aktivitäten nicht überwacht. Andere Postfachüberwachungsaktionen sind davon nicht betroffen.
-
+- Wenn ein Postfach gedrosselt wird, werden nur Überwachungsdatensätze für die MailItemsAccessed-Aktivität nicht überwacht. Andere Postfachüberwachungsaktionen sind nicht betroffen.
 - Postfächer werden nur für Bindungsvorgänge gedrosselt. Überwachungseinträge für Synchronisierungsvorgänge werden nicht gedrosselt.
-
 - Wenn ein Postfach gedrosselt wird, können Sie davon ausgehen, dass es MailItemsAccessed-Aktivitäten gab, die nicht in den Überwachungsprotokollen aufgezeichnet wurden.
 
 Ein Beispiel für die Darstellung der IsThrottled-Eigenschaft in einem Überwachungsdatensatz finden Sie in Schritt 1 im Abschnitt [Verwenden von MailItemsAccessed-Überwachungsdatensätzen für forensische Untersuchungen](#use-mailitemsaccessed-audit-records-for-forensic-investigations).
@@ -67,17 +64,17 @@ Ein Beispiel für die Darstellung der IsThrottled-Eigenschaft in einem Überwach
 
 Bei der Postfachüberwachung werden Überwachungseinträge für den Zugriff auf E-Mail-Nachrichten generiert, damit Sie sicher sein können, dass E-Mail-Nachrichten nicht kompromittiert wurden. Aus diesem Grund wird in Situationen, in denen nicht sicher ist, ob auf bestimmte Daten zugegriffen wurde, davon ausgegangen, dass ein Zugriff erfolgt ist, indem alle E-Mail-Access-Aktivitäten aufgezeichnet werden.
 
-Die Verwendung von MailItemsAccessed-Überwachungsdatensätzen für forensische Zwecke erfolgt in der Regel nach dem Beheben einer Datenverletzung und dem Entfernen des Angreifers. Um mit der Untersuchung zu beginnen, sollten Sie die Gruppe von Postfächern identifizieren, die kompromittiert wurden, und den Zeitrahmen ermitteln, in dem der Angreifer auf Postfächer in Ihrer Organisation zugreifen konnte. Anschließend können Sie die Cmdlets **Search-UnifiedAuditLog** oder **Search-MailboxAuditLog** in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Überwachungsdatensätze zu durchsuchen, die der Datenverletzung entsprechen. 
+Die Verwendung von MailItemsAccessed-Überwachungsdatensätzen für forensische Zwecke erfolgt in der Regel nach dem Beheben einer Datenverletzung und dem Entfernen des Angreifers. Um mit der Untersuchung zu beginnen, sollten Sie die Gruppe von Postfächern identifizieren, die kompromittiert wurden, und den Zeitrahmen ermitteln, in dem der Angreifer auf Postfächer in Ihrer Organisation zugreifen konnte. Anschließend können Sie die Cmdlets **Search-UnifiedAuditLog** oder **Search-MailboxAuditLog** in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Überwachungsdatensätze zu durchsuchen, die der Datenverletzung entsprechen.
 
 Sie können einen der folgenden Befehle ausführen, um nach MailItemsAccessed-Überwachungsdatensätzen zu suchen:
 
-**Einheitliches Überwachungsprotokoll**
+**Einheitliches Überwachungsprotokoll**:
 
 ```powershell
 Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000
 ```
 
-**Postfachüberwachungsprotokoll**
+**Postfachüberwachungsprotokoll**:
 
 ```powershell
 Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/2020 -Operations MailItemsAccessed -ResultSize 1000 -ShowDetails
@@ -92,13 +89,13 @@ Nachfolgend finden Sie die Schritte für die Verwendung von MailItemsAccessed-Ü
 
    Führen Sie den folgenden Befehl aus, um nach MailItemsAccessed-Datensätzen zu suchen, während das Postfach gedrosselt wurde:
 
-   **Einheitliches Überwachungsprotokoll**
- 
+   **Einheitliches Überwachungsprotokoll**:
+
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"IsThrottled","Value":"True"*'} | FL
    ```
 
-   **Postfachüberwachungsprotokoll**
+   **Postfachüberwachungsprotokoll**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
@@ -108,13 +105,13 @@ Nachfolgend finden Sie die Schritte für die Verwendung von MailItemsAccessed-Ü
 
    Führen Sie den folgenden Befehl aus, um nach MailItemsAccessed-Datensätzen zu suchen, bei denen mittels Synchronisierungsvorgängen auf E-Mail-Elemente zugegriffen wurde:
 
-   **Einheitliches Überwachungsprotokoll**
+   **Einheitliches Überwachungsprotokoll**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Sync"*'} | FL
    ```
 
-   **Postfachüberwachungsprotokoll**
+   **Postfachüberwachungsprotokoll**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Sync*"} | FL
@@ -124,67 +121,78 @@ Nachfolgend finden Sie die Schritte für die Verwendung von MailItemsAccessed-Ü
 
    Verwenden Sie die nachstehend aufgeführten Eigenschaften für die Ermittlungen. Diese Eigenschaften befinden sich in der AuditData- oder OperationProperties-Eigenschaft. Wenn eine der Synchronisierungen im selben Kontext wie die Angreiferaktivität stattgefunden hat, gehen Sie davon aus, dass der Angreifer alle E-Mail-Elemente mit seinem Client synchronisiert hat, was wiederum bedeutet, dass das gesamte Postfach wahrscheinlich kompromittiert wurde.
 
-   |Eigenschaft         | Beschreibung |
-   |:---------------- | :----------|
-   |ClientInfoString | Beschreibt Protokoll und Client (einschließlich Version)|
-   |ClientIPAddress  | IP-Adresse des Clientcomputers.|
-   |SessionId        | Die Sitzungs-ID trägt dazu bei, die Aktionen des Angreifers von täglichen Benutzeraktivitäten mit dem gleichen Konto (im Fall eines kompromittierten Kontos) zu unterscheiden.|
-   |UserId           | UPN des Benutzers, der die Nachricht liest.|
-   |||
+   <br>
 
-4. Suchen Sie nach Bindungsaktivitäten. Nachdem Sie die Schritte 2 und 3 durchgeführt haben, können Sie sicher sein, dass alle anderen Zugriffe auf E-Mail-Nachrichten durch den Angreifer in den MailItemsAccessed-Überwachungsdatensätzen erfasst werden, die eine MailAccessType-Eigenschaft mit dem Wert "Bind" aufweisen.
+   ****
 
-   Führen Sie den folgenden Befehl aus, um nach MailItemsAccessed-Datensätzen zu suchen, bei denen mittels Bindungsvorgängen auf E-Mail-Elemente zugegriffen wurde.
+   |Eigenschaft|Beschreibung|
+   |---|---|
+   |ClientInfoString|Beschreibt Protokoll und Client (einschließlich Version)|
+   |ClientIPAddress|IP-Adresse des Clientcomputers.|
+   |SessionId|Die Sitzungs-ID trägt dazu bei, die Aktionen des Angreifers von täglichen Benutzeraktivitäten mit dem gleichen Konto (im Fall eines kompromittierten Kontos) zu unterscheiden.|
+   |UserId|UPN des Benutzers, der die Nachricht liest.|
+   |
 
-   **Einheitliches Überwachungsprotokoll**
+4. Suchen Sie nach Bindungsaktivitäten. Nachdem Sie die Schritte 2 und 3 ausgeführt haben, können Sie sicher sein, dass alle anderen Zugriffe des Angreifers auf E-Mail-Nachrichten in den MailItemsAccessed-Überwachungsdatensätzen erfasst werden, die über eine MailAccessType-Eigenschaft mit dem Wert "Bind" verfügen.
+
+   Führen Sie den folgenden Befehl aus, um nach MailItemsAccessed-Datensätzen zu suchen, auf die von einem Bindungsvorgang auf die E-Mail-Elemente zugegriffen wurde.
+
+   **Einheitliches Überwachungsprotokoll**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Bind"*'} | FL
    ```
- 
-   **Postfachüberwachungsprotokoll**
-   
+
+   **Postfachüberwachungsprotokoll**:
+
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
    E-Mail-Nachrichten, auf die zugegriffen wurde, werden anhand ihrer Internetnachrichten-ID identifiziert. Sie können auch überprüfen, ob Überwachungsdatensätze den gleichen Kontext aufweisen wie bei anderen Angriffsaktivitäten. Weitere Informationen hierzu finden Sie im Abschnitt [Ermitteln des Zugriffskontexts verschiedener Überwachungsdatensätze](#identifying-the-access-contexts-of-different-audit-records).
- 
+
    Sie können die Überwachungsdaten für Bindungsvorgänge auf zwei verschiedene Arten verwenden:
 
-     - Zugreifen oder Sammeln aller E-Mail-Nachrichten, auf die der Angreifer zugegriffen hat, anhand der Internetnachrichten-ID (internet-message-id), um die Nachrichten zu finden und zu überprüfen, ob eine dieser Nachrichten vertrauliche Informationen enthält.
-
-     - Verwenden Sie die Internetnachrichten-ID zum Durchsuchen von Überwachungsdatensätzen, die sich auf einen Satz potenziell vertraulicher E-Mails beziehen. Dies ist nützlich, wenn Sie nur bei einer kleinen Anzahl von Nachrichten besorgt sind.
+   - Zugreifen oder Sammeln aller E-Mail-Nachrichten, auf die der Angreifer zugegriffen hat, anhand der Internetnachrichten-ID (internet-message-id), um die Nachrichten zu finden und zu überprüfen, ob eine dieser Nachrichten vertrauliche Informationen enthält.
+   - Verwenden Sie die Internetnachrichten-ID zum Durchsuchen von Überwachungsdatensätzen, die sich auf einen Satz potenziell vertraulicher E-Mails beziehen. Dies ist nützlich, wenn Sie nur bei einer kleinen Anzahl von Nachrichten besorgt sind.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtern von doppelten Überwachungsdatensätzen
 
 Duplikate von Überwachungsdatensätzen für innerhalb einer Stunde auftretende gleiche Bindungsvorgänge werden herausgefiltert, um Stördatenverkehr bei der Überwachung zu entfernen. Synchronisierungsvorgänge werden ebenfalls in 1-Stunden-Intervallen herausgefiltert. Die Ausnahme von diesem Deduplizierungsprozess tritt auf, wenn für dieselbe Internetnachrichten-ID eine der in der folgenden Tabelle beschriebenen Eigenschaften abweicht. Wenn sich eine dieser Eigenschaften in einem doppelten Vorgang unterscheidet, wird ein neuer Überwachungsdatensatz generiert. Dieser Vorgang wird im nächsten Abschnitt ausführlicher beschrieben.
 
-| Eigenschaft| Beschreibung|
-|:--------|:---------|
-|ClientIPAddress | IP-Adresse des Clientcomputers.|
-|ClientInfoString| Clientprotokoll, für den Zugriff auf das Postfach verwendeter Client.| 
-|ParentFolder    | Vollständiger Ordnerpfad des E-Mail-Elements, auf das zugegriffen wurde. |
-|Logon_type      | Anmeldetyp des Benutzers, der die Aktion ausgeführt hat. Die Anmeldetypen (und deren zugehörige Enum-Werte) sind Besitzer (0), Administrator (1) oder Stellvertreter (2).|
-|MailAccessType  | Gibt an, ob es sich bei dem Zugriff um einen Bindungs oder Synchronisierungsvorgang handelt.|
-|MailboxUPN      | UPN des Postfachs, in dem sich die gelesene Nachricht befindet.|
-|User            | UPN des Benutzers, der die Nachricht liest.|
-|SessionId       | Die Sitzungs-ID hilft bei der Unterscheidung von Angreiferaktionen und alltäglichen Benutzeraktivitäten im selben Postfach (im Falle einer Kontokompromittierung). Weitere Informationen über Sitzungen finden Sie unter [Contextualizing attacker activity within sessions in Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801) (Kontextualisierung von Angreiferaktivitäten innerhalb von Sitzungen in Exchange Online).|
-||||
+<br>
+
+****
+
+|Eigenschaft|Beschreibung|
+|---|---|
+|ClientIPAddress|IP-Adresse des Clientcomputers.|
+|ClientInfoString|Clientprotokoll, für den Zugriff auf das Postfach verwendeter Client.|
+|ParentFolder|Vollständiger Ordnerpfad des E-Mail-Elements, auf das zugegriffen wurde.|
+|Logon_type|Anmeldetyp des Benutzers, der die Aktion ausgeführt hat. Die Anmeldetypen (und deren zugehörige Enum-Werte) sind Besitzer (0), Administrator (1) oder Stellvertreter (2).|
+|MailAccessType|Gibt an, ob es sich bei dem Zugriff um einen Bindungs oder Synchronisierungsvorgang handelt.|
+|MailboxUPN|UPN des Postfachs, in dem sich die gelesene Nachricht befindet.|
+|User|UPN des Benutzers, der die Nachricht liest.|
+|SessionId|Die Sitzungs-ID hilft bei der Unterscheidung von Angreiferaktionen und alltäglichen Benutzeraktivitäten im selben Postfach (im Falle einer Kontokompromittierung). Weitere Informationen über Sitzungen finden Sie unter [Contextualizing attacker activity within sessions in Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801) (Kontextualisierung von Angreiferaktivitäten innerhalb von Sitzungen in Exchange Online).|
+|
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>Ermitteln des Zugriffskontexts verschiedener Überwachungsdatensätze
 
 Es kommt häufig vor, dass ein Angreifer und der Besitzer eines Postfachs gleichzeitig auf das Postfach zugreifen. Um zwischen dem Zugriff durch den Angreifer und dem Zugriff durch den Postfachbesitzer zu unterscheiden, gibt es Überwachungsprotokolleigenschaften, die den Kontext des Zugriffs definieren. Wie bereits erläutert, werden bei unterschiedlichen Werten für diese Eigenschaften separate Überwachungsdatensätze generiert, selbst wenn die Aktivität innerhalb eines Aggregationsintervalls stattfindet. Im folgenden Beispiel gibt es drei verschiedene Überwachungsdatensätze. Sie unterscheiden sich in den Eigenschaften "Session Id" und "ClientIPAddress". Die Nachrichten, auf die zugegriffen wurde, werden ebenfalls identifiziert.
 
-|Überwachungsdatensatz 1  |Überwachungsdatensatz 2  |Überwachungsdatensatz 3|
-|---------|---------|---------|
+<br>
+
+****
+
+|Überwachungsdatensatz 1|Überwachungsdatensatz 2|Überwachungsdatensatz 3|
+|---|---|---|
 |ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
-|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
-||||
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B**|
+|
 
 Wenn eine der in der Tabelle im [vorherigen Abschnitt](#filtering-of-duplicate-audit-records) aufgeführten Eigenschaften unterschiedlich ist, wird ein separater Überwachungsdatensatz generiert, um den neuen Kontext zu verfolgen. Die Zugriffe werden je nach dem Kontext, in dem die Aktivität stattgefunden hat, in separate Überwachungsdatensätze sortiert.
 
-In den im folgenden Screenshot gezeigten Überwachungsdatensätzen wird die Zugriffsaktivität in verschiedenen Überwachungsdatensätzen zusammengestellt, je nachdem, in welchem Kontext der Zugriff stattgefunden hat, obwohl gleichzeitig von EWSEditor und OWA auf E-Mails zugegriffen wird. In diesem Fall wird der Kontext durch verschiedene Werte für die ClientInfoString-Eigenschaft definiert.
+Beispielsweise wird in Überwachungsdatensätzen, die im folgenden Screenshot gezeigt werden, zwar gleichzeitig über EWSEditor und OWA auf E-Mails zugegriffen, die Zugriffsaktivität wird jedoch je nach Kontext, in dem der Zugriff erfolgt ist, in verschiedenen Überwachungsdatensätzen sortiert. In diesem Fall wird der Kontext durch verschiedene Werte für die ClientInfoString-Eigenschaft definiert.
 
 ![Unterschiedliche Überwachungsdatensätze je nach Kontext](../media/MailItemsAccessed4.png)
 

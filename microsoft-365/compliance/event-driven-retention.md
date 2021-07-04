@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Normalerweise ein Bestandteil einer Datensatzverwaltungslösung. Sie können eine Aufbewahrungsbezeichnung so konfigurieren, dass der Aufbewahrungszeitraum basierend auf einem von Ihnen festgelegten Ereignis gestartet wird.
-ms.openlocfilehash: 83f1be417b706fdb66b1df71ba351ce16d5ad485
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e5b3b1f5d3af8185c424abede2f31675ab854f4a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226623"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287527"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Beginn der Aufbewahrung bei Auftreten eines Ereignisses
 
@@ -238,7 +238,7 @@ Beispielcode zum Aufrufen der REST-API:
 - **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     
@@ -270,7 +270,7 @@ Beispielcode zum Aufrufen der REST-API:
     
     </entry>
     ```
-    
+
 - **Authentication**: Basic
 - **Username**: "Complianceuser"
 - **Password**: "Compliancepassword"
@@ -309,7 +309,6 @@ Beispielcode zum Aufrufen der REST-API:
 - **Username**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### <a name="response-codes"></a>Antwortcodes
 
@@ -358,7 +357,6 @@ Beispielcode zum Aufrufen der REST-API:
 - **Username**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### <a name="response-codes"></a>Antwortcodes
 
@@ -450,5 +448,4 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 }
 
 $event | fl *
-
 ```

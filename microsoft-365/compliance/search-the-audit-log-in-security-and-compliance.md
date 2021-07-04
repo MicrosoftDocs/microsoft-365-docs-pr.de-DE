@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Microsoft 365 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten aus Ihrer Organisation anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809143"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287503"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
 Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Dann verwenden Sie das Microsoft 365 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten aus Ihrer Organisation anzuzeigen. Warum ein einheitliches Überwachungsprotokoll? Weil Sie in Microsoft 365 nach den folgenden Arten von [Benutzer- und Verwaltungsaktivitäten](#audited-activities) suchen können:
 
 - Benutzeraktivitäten in SharePoint Online und OneDrive for Business
-
 - Benutzeraktivitäten in Exchange Online (Postfachüberwachungsprotokollierung)
-
 - Administratoraktivitäten in SharePoint Online
-
 - Administratoraktivitäten in Azure Active Directory (der Verzeichnisdienst für Microsoft 365)
-
 - Administratoraktivitäten in Exchange Online (Exchange-Administratorüberwachungsprotokollierung)
-
 - eDiscovery-Aktivitäten im Security und Compliance Center
-
 - Aktivitäten von Benutzern und Administratoren in Power BI
-
 - Aktivitäten von Benutzern und Administratoren in Microsoft Teams
-
 - Aktivitäten von Benutzern und Administratoren in Dynamics 365
-
 - Aktivitäten von Benutzern und Administratoren in Yammer
-
 - Aktivitäten von Benutzern und Administratoren in Microsoft Power Automate
-
 - Aktivitäten von Benutzern und Administratoren in Microsoft Stream
-
 - Aktivitäten von Analysten und Administratoren in Microsoft Workplace Analytics
-
 - Aktivitäten von Benutzern und Administratoren in Microsoft Power Apps
-
 - Aktivitäten von Benutzern und Administratoren in Microsoft Forms
-
 - Benutzer- und Administratoraktivität für Vertraulichkeitsbezeichnungen für Websites, die SharePoint Online oder Microsoft Teams verwenden
-
 - Administratoraktivität in Briefing-E-Mail und MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Voraussetzungen für die Durchsuchung des Überwachungsprotokolls
@@ -73,6 +57,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   Der Wert `True` für die Eigenschaft *UnifiedLogIngestionEnabled* gibt an, dass die Überwachungsprotokollsuche aktiviert ist. Weitere Informationen finden Sie unter [Aktivieren und Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
 
 - Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen**. Bitte beachten Sie, dass globale Administratoren in Office 365 und Microsoft 365 automatisch Mitglieder der Verwaltungsrollengruppe „Organisationsverwaltung“ in Exchange Online sind. Damit ein Benutzer die Möglichkeit hat, das Überwachungsprotokoll mit minimalen Rechten zu durchsuchen, können Sie in Exchange Online eine benutzerdefinierte Rollengruppe erstellen, ihr die Rollen "Überwachungsprotokolle nur anzeigen" oder "Überwachungsprotokolle" hinzufügen und den Benutzer dann als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](/Exchange/permissions-exo/role-groups).
@@ -114,8 +99,12 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
 - Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Ergebnissen der Überwachungsprotokollsuche angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
 
+  <br>
+
+  ****
+
   |Microsoft 365-Dienst oder -Feature|30 Minuten|24 Stunden|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender für Office 365 und Threat Intelligence|![Häkchen](../media/checkmark.png)||
   |Azure Active Directory (Benutzeranmeldungen)||![Häkchen](../media/checkmark.png)|
   |Azure Active Directory (Administratorereignisse)||![Häkchen](../media/checkmark.png)|
@@ -133,9 +122,9 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Vertraulichkeitsbezeichnungen||![Häkchen](../media/checkmark.png)|
   |SharePoint Online und OneDrive for Business|![Häkchen](../media/checkmark.png)||
   |Workplace Analytics|![Häkchen](../media/checkmark.png)||
-  |Yammer||![Häkchen](../media/checkmark.png)||
-  |Microsoft Forms|![Häkchen](../media/checkmark.png)|
-  ||||
+  |Yammer||![Häkchen](../media/checkmark.png)|
+  |Microsoft Forms|![Häkchen](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) ist der Verzeichnisdienst von Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen- und Verzeichnisaktivitäten, die im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal ausgeführt wurden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsberichtsereignisse](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
@@ -612,7 +601,7 @@ In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen vo
 |Benutzer oder Gruppe zu SharePoint-Gruppe hinzugefügt|AddedToGroup|Ein Benutzer hat ein Mitglied oder einen Gast zu einer SharePoint-Gruppe hinzugefügt. Dies kann eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität wie eines Freigabeereignisses gewesen sein.|
 |Vererbung der Berechtigungsstufe unterbrochen|PermissionLevelsInheritanceBroken|Ein Element wurde geändert, sodass es die Berechtigungsstufen nicht mehr vom übergeordneten Element erbt.|
 |Vererbung der Freigabe unterbrochen|SharingInheritanceBroken|Ein Element wurde geändert, sodass es die Freigabeberechtigung nicht mehr vom übergeordneten Element erbt.|
-|Gruppe erstellt|GroupAdded|Der Websiteadministrator oder -besitzer erstellt eine Gruppe für eine Website oder führt eine Aufgabe aus, die zur Erstellung einer Gruppe führt. Wenn ein Benutzer beispielsweise zum ersten Mal einen Link zum Freigeben einer Datei erstellt, wird eine Systemgruppe zur OneDrive for Business-Website hinzugefügt. Dieses Ereignis kann auch dadurch entstehen, dass ein Benutzer einen Link mit Bearbeitungsberechtigungen für eine freigegebene Datei erstellt.|
+|Gruppe erstellt|GroupAdded|Der Websiteadministrator oder -besitzer erstellt eine Gruppe für eine Website oder führt eine Aufgabe aus, die zur Erstellung einer Gruppe führt. Wenn ein Benutzer beispielsweise zum ersten Mal einen Link zum Freigeben einer Datei erstellt, wird eine Systemgruppe zur OneDrive for Business-Website des Benutzers hinzugefügt. Dieses Ereignis kann sich auch dadurch ergeben, dass ein Benutzer einen Link mit Bearbeitungsberechtigungen für eine freigegebene Datei erstellt.|
 |Gruppe gelöscht|GroupRemoved|Der Benutzer löscht eine Gruppe von einer Website.|
 |Zugriffsanforderungseinstellungen geändert|WebRequestAccessModified|Die Einstellungen für die Zugriffsanforderungseinstellungen wurden auf einer-Website geändert.|
 |Einstellung „Mitglieder können teilen“ geändert|WebMembersCanShareModified|Die Einstellung **Mitglieder können freigeben** wurde auf einer Website geändert.|
@@ -623,7 +612,7 @@ In der folgenden Tabelle sind die Ereignisse im Zusammenhang mit dem Zuweisen vo
 |Benutzer oder Gruppe aus SharePoint-Gruppe entfernt|RemovedFromGroup|Ein Benutzer hat ein Mitglied oder einen Gast aus einer SharePoint-Gruppe entfernt. Dies kann eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität wie dem Aufheben einer Freigabe gewesen sein.|
 |Website-Administratorberechtigungen angefordert|SiteAdminChangeRequest|Der Benutzer fordert an, als Websitesammlungsadministrator für eine Websitesammlung hinzugefügt zu werden. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites.|
 |Vererbung der Freigabe wiederhergestellt|SharingInheritanceReset|Eine Änderung wurde vorgenommen, sodass ein Element die Freigabeberechtigung vom übergeordneten Element erbt.|
-|Gruppe aktualisiert|GroupUpdated|Der Websiteadministrator oder -besitzer ändert die Einstellungen einer Gruppe für eine Website. Dazu kann das Ändern des Gruppennamens, das Anzeigen oder Bearbeiten der Gruppenmitgliedschaft und die Art der Verarbeitung von Mitgliedsanträgen gehören.|
+|Gruppe aktualisiert|GroupUpdated|Der Websiteadministrator oder -besitzer ändert die Einstellungen einer Gruppe für eine Website. Dies kann das Ändern des Gruppennamens, das Ändern der Personen, die Gruppenmitgliedschaften anzeigen oder bearbeiten können, sowie das Ändern der Handhabung von Mitgliedschaftsanforderungen umfassen.|
 ||||
 
 ### <a name="site-administration-activities"></a>Websiteverwaltungsaktivitäten
@@ -642,14 +631,14 @@ Die folgende Tabelle enthält die Ereignisse, die aus Websiteverwaltungsaufgaben
 |Ausgenommene Benutzer-Agents geändert|CustomizeExemptUsers|Ein SharePoint- oder globaler Administrator hat die Liste der ausgenommenen Benutzer-Agents im SharePoint Admin Center angepasst. Sie können angeben, welche Benutzer-Agents vom Empfangen einer gesamten Webseite zum Indizieren ausgenommen werden sollen. Das bedeutet: Wenn ein Benutzer-Agent, den Sie als ausgenommen festgelegt haben, auf ein InfoPath-Formular trifft, wird das Formular als eine XML-Datei und nicht als eine gesamte Webseite zurückgegeben. Dadurch werden InfoPath-Formulare schneller indiziert.|
 |Netzwerkzugriffsrichtlinie geändert|NetworkAccessPolicyChanged|Ein SharePoint- oder globaler Administrator hat die standortbasierte Zugriffsrichtlinie (auch als „Grenze des vertrauenswürdigen Netzwerks“ bezeichnet) im SharePoint Admin Center oder mithilfe der SharePoint PowerShell geändert. Dieser Richtlinientyp steuert, wer basierend auf von Ihnen festgelegten autorisierten IP-Adressbereichen Zugriff auf SharePoint- und OneDrive-Ressourcen in Ihrer Organisation hat. Weitere Informationen finden Sie unter [Steuern des Zugriffs auf SharePoint Online- und OneDrive-Daten auf der Grundlage von definierten Netzwerkspeicherorten](/sharepoint/control-access-based-on-network-location).|
 |Verschiebung der Websitegeografie abgeschlossen|SiteGeoMoveCompleted|Eine von einem globalen Administrator in Ihrer Organisation angesetzte Verschiebung der Websitegeografie wurde erfolgreich abgeschlossen. Mit der Multi-Geo-Funktion kann eine Organisation mehrere Microsoft-Rechenzentrumregionen, so genannte Geos, umfassen. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
-|Senden-an-Verbindung erstellt|SendToConnectionAdded|Ein SharePoint- oder globaler Administrator erstellt eine neue Senden-an-Verbindung auf der Verwaltungsseite für Datensätze im SharePoint Admin Center. Mit einer Senden-an-Verbindung werden die Einstellungen für ein Dokumentrepository oder ein Datenarchiv festgelegt. Wenn Sie eine Senden-an-Verbindung erstellen, kann eine Inhaltsorganisation Dokumente an den angegebenen Speicherort übermitteln.|
+|Senden-an-Verbindung erstellt|SendToConnectionAdded|Ein SharePoint- oder globaler Administrator erstellt eine neue Senden-an-Verbindung auf der Verwaltungsseite für Datensätze im SharePoint Admin Center. Eine Senden-an-Verbindung legt Einstellungen für ein Dokumentrepository oder ein Datenarchiv fest. Wenn Sie eine Senden-an-Verbindung erstellen, kann eine Inhaltsorganisation Dokumente an den angegebenen Speicherort übermitteln.|
 |Websitesammlung erstellt|SiteCollectionCreated|Ein SharePoint- oder globaler Administrator erstellt eine Websitesammlung in Ihrer SharePoint Online-Organisation, oder ein Benutzer stellt seine OneDrive for Business-Website bereit.|
 |Verwaiste Hub-Website gelöscht|HubSiteOrphanHubDeleted|Ein SharePoint- oder globaler Administrator hat eine verwaiste Hub-Website gelöscht. Es handelt sich dabei um eine Hub-Website, der keine Websites zugeordnet sind. Ein verwaister Hub ist wahrscheinlich durch den Löschvorgang der ursprünglichen Hub-Website entstanden.|
 |Senden-an-Verbindung gelöscht|SendToConnectionRemoved|Ein SharePoint- oder globaler Administrator löscht eine Senden-an-Verbindung auf der Verwaltungsseite für Datensätze im SharePoint Admin Center.|
 |Website gelöscht|SiteDeleted|Der Websiteadministrator löscht eine Website.|
 |Dokumentvorschau aktiviert|PreviewModeEnabledSet|Der Websiteadministrator aktiviert die Dokumentvorschau für eine Website.|
 |Älterer Workflow aktiviert|LegacyWorkflowEnabledSet|Websiteadministrator oder Besitzer fügt der Website den Inhaltstyp für SharePoint 2013-Workflowtask hinzu. Globale Administratoren können auch im SharePoint Admin Center Workflows für die gesamte Organisation aktivieren.|
-|Office on Demand aktiviert|OfficeOnDemandSet|Der Websiteadministrator aktiviert Office on Demand, wodurch Benutzer auf die neueste Version von Office-Desktopanwendungen zugreifen können. Office on Demand wird im SharePoint Admin Center aktiviert und erfordert ein Microsoft 365-Abonnement, bei dem alle Office-Anwendungen installiert werden.|
+|Office on Demand aktiviert|OfficeOnDemandSet|Der Websiteadministrator aktiviert Office on Demand, wodurch Benutzer auf die neueste Version von Office-Desktopanwendungen zugreifen können. Office on Demand wird im SharePoint Admin Center aktiviert und erfordert ein Microsoft 365-Abonnement, das vollständige, installierte Office-Anwendungen umfasst.|
 |Ergebnisquelle für Personensuchen aktiviert|PeopleResultsScopeSet|Der Websiteadministrator erstellt die Ergebnisquelle für Personensuchen für eine Website.|
 |RSS-Feeds aktiviert|NewsFeedEnabledSet|Der Websiteadministrator oder -besitzer aktiviert RSS-Feeds für eine Website. Globale Administratoren können RSS-Feeds für die gesamte Organisation im SharePoint Admin Center aktivieren.|
 |Website mit Hub-Website verbunden|HubSiteJoined|Der Besitzer einer Website verknüpft seine Website mit einer Hub-Website.|
@@ -689,7 +678,7 @@ In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfach
 |Postfachberechtigungen für Stellvertretung entfernt|Remove-MailboxPermission|Ein Administrator hat die Berechtigung „FullAccess“ (die einer Stellvertretung zugewiesen wurde) aus dem Postfach einer Person entfernt. Nachdem die Berechtigung „FullAccess“ entfernt wurde, kann die Stellvertretung das Postfach der anderen Person nicht mehr öffnen und nicht mehr auf Inhalte in dem Postfach zugreifen.|
 |Ordnerberechtigung entfernt|RemoveFolderPermissions|Eine Ordnerberechtigung wurde entfernt. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Ordner in einem Postfach zugreifen können und welche Nachrichten sich in diesen Ordnern befinden.|
 |Gesendete Nachricht|Senden|Eine Nachricht wurde gesendet, beantwortet oder weitergeleitet. Diese Aktivität wird nur für Benutzer mit einer Office 365- oder Microsoft 365 E5-Lizenz protokolliert. Weitere Informationen finden Sie im Abschnitt "Zugriff auf wichtige Ereignisse für Untersuchungen" in [Erweiterte Überwachung](advanced-audit.md#access-to-crucial-events-for-investigations).|
-|Nachricht mit Berechtigungen vom Typ "Senden als" gesendet|SendAs|Eine Nachricht wurde unter Verwendung der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.|
+|Nachricht mit Berechtigungen vom Typ "Senden als" gesendet|SendAs|Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.|
 |Nachricht mit Berechtigungen vom Typ "Senden im Auftrag von" gesendet|SendOnBehalf|Eine Nachricht wurde unter Verwendung der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Bei der Nachricht ist für den Empfänger angegeben, in wessen Auftrag die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.|
 |Posteingangsregeln des Outlook-Clients aktualisiert|UpdateInboxRules|Ein Postfachbesitzer oder ein anderer Benutzer mit Zugriff auf das Postfach hat im Outlook-Client eine Posteingangsregel geändert.|
 |Nachricht aktualisiert|Update|Eine Nachricht oder ihre Eigenschaften wurden geändert.|
@@ -963,7 +952,7 @@ In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informatione
 |Gemeinsame Dokumenterstellung|Intern|UPN|Organisation des Formularbesitzers|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|UPN<br>|Organisation des Koautors<br>|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Koautor|
-|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
+|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Responder|
 |Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 |Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 ||||

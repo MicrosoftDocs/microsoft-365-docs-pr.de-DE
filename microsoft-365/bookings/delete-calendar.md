@@ -8,26 +8,26 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: Verwenden Sie Microsoft 365 Admin Center oder Windows PowerShell, um Bookings-Kalender zu löschen.
-ms.openlocfilehash: 21fc7b9994ffd7f76ed04000a50bd0ee8f7f167e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: Verwenden Sie die Microsoft 365 Admin Center oder Windows PowerShell, um Bookings-Kalender zu löschen.
+ms.openlocfilehash: 1ef67ce4dbf67da6f081106815f76ff85f11ef92
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034091"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288443"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Löschen eines Buchungskalenders in Bookings
 
-In diesem Artikel wird erläutert, wie Sie einen unerwünschten Buchungskalender löschen können. Sie können den Buchungskalender im Microsoft 365 oder PowerShell löschen. Der Bookings-Kalender ist ein Postfach in Exchange Online löschen Sie daher das entsprechende Benutzerkonto, um den Buchungskalender zu löschen.
+In diesem Artikel wird erläutert, wie Sie einen kalender für unerwünschte Buchungen löschen können. Sie können den Buchungskalender im Microsoft 365 Admin Center löschen oder PowerShell verwenden. Der Bookings-Kalender ist ein Postfach in Exchange Online sodass Sie das entsprechende Benutzerkonto löschen, um den Buchungskalender zu löschen.
 
 > [!IMPORTANT]
-> Alle Buchungskalender, die Sie 2017 oder früher erstellt haben, müssen mithilfe der PowerShell-Anweisungen zu diesem Thema gelöscht werden. Alle Buchungskalender, die 2018 oder danach erstellt wurden, können im Microsoft 365 gelöscht werden.
+> Alle Buchungskalender, die Sie 2017 oder zuvor erstellt haben, müssen mithilfe der PowerShell-Anweisungen zu diesem Thema gelöscht werden. Alle Buchungskalender, die 2018 oder danach erstellt wurden, können im Microsoft 365 Admin Center gelöscht werden.
 
-Im Buchungskalender werden alle relevanten Informationen zu diesem Buchungskalender und zu den Daten gespeichert, einschließlich:
+Im Buchungskalender werden alle relevanten Informationen zu diesem Buchungskalender und die daten gespeichert, einschließlich:
 
-- Geschäftsinformationen, Logo und Arbeitszeiten, die beim Erstellen des Buchungskalenders hinzugefügt wurden
-- Relevante Mitarbeiter und Dienste, die beim Erstellen des Buchungskalenders hinzugefügt wurden
-- Alle Buchungen und Termine mit Auszeit, die dem Buchungskalender hinzugefügt wurden, nachdem er erstellt wurde.
+- Geschäftsinformationen, Logo und Arbeitszeiten, die hinzugefügt wurden, als der Buchungskalender erstellt wurde
+- Relevante Mitarbeiter und Dienste, die hinzugefügt wurden, als der Buchungskalender erstellt wurde
+- Alle Buchungen und Abwesenheitstermine, die dem Buchungskalender hinzugefügt wurden, nachdem er erstellt wurde.
 
 > [!WARNING]
 > Nachdem ein Buchungskalender gelöscht wurde, werden diese zusätzlichen Informationen auch dauerhaft gelöscht und können nicht wiederhergestellt werden.
@@ -38,15 +38,15 @@ Im Buchungskalender werden alle relevanten Informationen zu diesem Buchungskalen
 
 1. Wählen Sie im Admin Center **Benutzer** aus.
 
-   ![Abbildung der Benutzerbenutzeroberfläche im Microsoft 365 Admin Center](../media/bookings-admin-center-users.png)
+   ![Abbildung der Benutzeroberfläche von Benutzern in Microsoft 365 Admin Center](../media/bookings-admin-center-users.png)
 
 1. Wählen Sie auf der Seite **Aktive Benutzer** die Namen der Benutzer aus, die Sie löschen möchten, und wählen Sie dann **Benutzer löschen** aus.
 
-   ![Abbildung der Benutzerbenutzeroberfläche löschen in Microsoft 365 Admin Center](../media/bookings-delete-user.png)
+   ![Abbildung der Benutzeroberfläche zum Löschen von Benutzern in Microsoft 365 Admin Center](../media/bookings-delete-user.png)
 
-## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Löschen eines Buchungskalenders mithilfe Exchange Online PowerShell
+## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Löschen eines Buchungskalenders mit Exchange Online PowerShell
 
-Unter [Verbinden, Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) zu finden, finden Sie Informationen zu Voraussetzungen und Anleitungen für die Verbindung mit Exchange Online PowerShell.
+Unter [Verbinden Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) finden Sie Voraussetzungen und Anleitungen zum Herstellen einer Verbindung mit Exchange Online PowerShell.
 
 Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befehlsfenster verwenden, das Sie ausgeführt haben, indem Sie die Option "Als Administrator ausführen" auswählen.
 
@@ -57,7 +57,7 @@ Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befe
    ```
 
    > [!NOTE]
-   > Wenn Sie [das EXO V2-Modul bereits installiert](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module) haben, funktioniert der vorherige Befehl wie beschrieben.
+   > Wenn Sie [das EXO V2-Modul bereits installiert](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module) haben, funktioniert der vorherige Befehl wie beschrieben.
    
 2. Die Syntax des Befehls, den Sie ausführen müssen, sieht so aus:
 
@@ -67,7 +67,7 @@ Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befe
 
    - _\<UPN\>_ ist Ihr Konto im Benutzerprinzipalnamen-Format (z. B. `john@contoso.com`).
 
-3. Wenn Sie dazu aufgefordert werden, melden Sie sich mit den Anmeldeinformationen des Mandantenadministrators beim Microsoft 365 an, der den Buchungskalender hostet, den Sie dauerhaft löschen möchten.
+3. Wenn Sie dazu aufgefordert werden, melden Sie sich mit Mandantenadministratoranmeldeinformationen beim Microsoft 365 Mandanten an, der den Buchungskalender hostet, den Sie dauerhaft löschen möchten.
 
 4. Sobald dieser Befehl verarbeitet wurde, geben Sie den folgenden Befehl ein, um eine Liste der Buchungspostfächer in Ihrem Mandanten abzurufen:
 
@@ -82,9 +82,9 @@ Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befe
    ```
 
    > [!IMPORTANT]
-   > Achten Sie darauf, den genauen Namen des Buchungspostfachalias ein, den Sie dauerhaft löschen möchten.
+   > Achten Sie darauf, den genauen Namen des Buchungspostfachalias einzugeben, den Sie dauerhaft löschen möchten.
 
-6. Geben Sie den folgenden Befehl ein, um zu überprüfen, ob der Kalender gelöscht wurde:
+6. Um zu überprüfen, ob der Kalender gelöscht wurde, geben Sie den folgenden Befehl ein:
 
    ```powershell
     Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox

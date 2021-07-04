@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Ganz gleich, ob sie neue Lösungen zum Compliance Center hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft auf dem Laufenden zu halten. Finden Sie heraus, was wir diesen Monat vorhaben.
+description: Ganz gleich, ob sie dem Compliance Center neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft zu überblicken. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228459"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288131"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
-Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft auf dem Laufenden zu halten. Sehen Sie sich unten an, was in Microsoft 365 Compliance neu ist.
+Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft zu überblicken. Sehen Sie sich unten an, was in Microsoft 365 Compliance neu ist.
 
 > [!NOTE]
 > Einige Compliance-Features werden für unsere Kunden mit unterschiedlicher Geschwindigkeit eingeführt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich selbst zu [Gezieltes Release](/office365/admin/manage/release-options-in-office-365) hinzuzufügen.
@@ -49,7 +49,7 @@ Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-complian
 
 ### <a name="retention-and-records-management"></a>Aufbewahrung und Datensatzverwaltung
 
-- Wenn Sie eine Aufbewahrungsrichtlinie von einer SharePoint Website oder einem OneDrive Konto freigeben, müssen Sie die 30-tägige Nachfrist nicht mehr warten, bevor Sie die Website oder das Konto löschen können. Eine beliebte Anforderung von Kunden, diese Änderung ist jetzt für alle Mandanten abgeschlossen.
+- Wenn Sie eine Aufbewahrungsrichtlinie von einem SharePoint Standort oder OneDrive Konto freigeben, müssen Sie die 30-tägige Nachfrist nicht mehr warten, bevor Sie die Website oder das Konto löschen können. Eine beliebte Anforderung von Kunden, diese Änderung ist jetzt für alle Mandanten abgeschlossen.
 - In der Vorschau, **mehrstufige Löschungsprüfung:** Ein Administrator kann jetzt bis zu fünf aufeinander folgende Stufen der [Löschungsprüfung](disposition.md) für eine Aufbewahrungsbezeichnung hinzufügen, und Prüfer können andere Benutzer zu ihrer Löschungsprüfungsphase hinzufügen. Sie können auch die E-Mail-Benachrichtigungen und -Erinnerungen anpassen.
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
@@ -103,7 +103,7 @@ Hier sind einige änderungen an Microsoft 365 Compliancelösungen und Inhalten f
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - **Advanced eDiscovery Sammlungen** unterstützt jetzt das [neue Sammlungstool und den Workflow.](/microsoft-365/compliance/collections-overview) Weitere neue Themen sind [das Erstellen einer Entwurfssammlung,](/microsoft-365/compliance/create-draft-collection) [das Übernehmen eines Commits einer Entwurfssammlung in einen Prüfdateisatz](/microsoft-365/compliance/commit-draft-collection)sowie [Sammlungsstatistiken und -berichte.](/microsoft-365/compliance/collection-statistics-reports)
-- **Exportieren sie Dokumente** in einem Prüfdateisatz auf ein [Azure Storage](/microsoft-365/compliance/download-export-jobs) Konto.
+- **Exportieren Sie Dokumente** in einem Prüfdateisatz auf ein [Azure Storage](/microsoft-365/compliance/download-export-jobs) Konto.
 - **Modul für prädiktive Codierung für Advanced eDiscovery**. Sehen Sie sich zunächst die neue Funktion für [die Vorhersagecodierung](/microsoft-365/compliance/predictive-coding-overview) an, die das veraltete Relevanzmodul ersetzt.
 
 ### <a name="data-classification"></a>Datenklassifizierung
@@ -116,7 +116,7 @@ Hier sind einige änderungen an Microsoft 365 Compliancelösungen und Inhalten f
 
 ### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
 
-- **Microsoft Teams Unterstützung.** Die Unterstützung der Verhinderung von Datenverlust wurde auf [Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)erweitert.
+- **Microsoft Teams Unterstützung.** Die Unterstützung zur Verhinderung von Datenverlust wurde auf [Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy)erweitert.
 - **Microsoft Compliance-Erweiterung**. Erste Schritte mit der [Microsoft Compliance-Erweiterung.](/microsoft-365/compliance/dlp-chrome-get-started)
 
 ### <a name="encryption"></a>Verschlüsselung
@@ -202,7 +202,7 @@ Inhalte wurden in den folgenden Themen hinzugefügt oder aktualisiert:
 - [Erste Schritte mit dem lokalen Scanner zur Verhinderung von Datenverlust](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI- oder anderen Eigenschaften](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
 - [Nutzen der Verhinderung von Datenverlust am Endpunkt](/microsoft-365/compliance/endpoint-dlp-using)
-- [Endpunkt-DLP – Erste Schritte](/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [Verhinderung von Datenverlust am Endpunkt – Erste Schritte](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
 

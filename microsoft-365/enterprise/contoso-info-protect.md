@@ -14,27 +14,27 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Erfahren Sie, wie Contoso die Informationsschutzfeatures in Microsoft 365 unternehmen verwendet, um ihre digitalen Ressourcen in der Cloud zu sichern.
-ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Verstehen, wie Contoso die Informationsschutzfeatures in Microsoft 365 für Unternehmen verwendet, um seine digitalen Objekte in der Cloud zu sichern.
+ms.openlocfilehash: bb797fa4f71b699069f8542b8bc7a353a9ee1698
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051496"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288671"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Informationsschutz für die Contoso Corporation
 
-Contoso hat große Probleme mit der Informationssicherheit. Leckagen oder Zerstörungen geistigen Eigentums, die ihre Produktdesigns und proprietären Herstellungstechniken beschreiben, würden sie zu einem Wettbewerbsnachteil machen.
+Contoso ist mit seiner Informationssicherheit sehr ernst. Die Vernichtung oder Vernichtung von geistigem Eigentum, die ihre Produktdesigns und proprietären Herstellungstechniken beschreibt, würde sie in einen Wettbewerbsvorteil benachteiligen.
 
-Vor dem Verschieben ihrer vertraulichen digitalen Ressourcen in die Cloud hat Contoso sichergestellt, dass die lokalen Informationsklassifizierungs- und Schutzanforderungen von den cloudbasierten Diensten von Microsoft 365 Enterprise unterstützt werden.
+Bevor Contoso seine vertraulichen digitalen Objekte in die Cloud verlagern musste, vergewisserte sich Contoso, dass die lokalen Anforderungen an die Informationsklassifizierung und den Schutz durch die cloudbasierten Dienste von Microsoft 365 für Unternehmen unterstützt wurden.
 
 ## <a name="contoso-data-security-classification"></a>Contoso-Datensicherheitsklassifizierung
 
-Contoso hat eine Analyse ihrer Daten durchgeführt und die folgenden Klassifizierungsstufen ermittelt.
+Contoso führte eine Analyse seiner Daten durch und ermittelte die folgenden Klassifizierungsebenen.
 
 | Stufe 1: Baseline | Stufe 2: Vertraulich | Stufe 3: Hochgradig reguliert |
 |:-------|:-----|:-----|
-| Daten sind verschlüsselt und nur für authentifizierte Benutzer verfügbar.<BR> <BR> Bereitgestellt für alle lokal und in cloudbasierten Speicher- und Workloads gespeicherten Daten. Daten werden verschlüsselt, während sie sich im Dienst und im Übergang zwischen dem Dienst und Clientgeräten befinden. <BR><BR>Beispiele für die Daten der Stufe 1 sind normale Geschäftskommunikation (E-Mail) und Dateien für Mitarbeiter in der Verwaltung, im Vertrieb oder im Kundendienst. | Stufe 1 plus strenger Authentifizierung und Schutz vor Datenverlust.<BR> <BR> Die starke Authentifizierung umfasst azure AD Multi-Factor Authentication (MFA) mit SMS Überprüfung. Die Verhinderung von Datenverlust stellt sicher, dass vertrauliche oder kritische Informationen nicht außerhalb der Microsoft Cloud gespeichert werden.<BR><BR>Beispiele für Daten der Stufe 2 sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte. | Stufe 2 plus höchstmöglicher Verschlüsselung, Authentifizierung und Überwachung.<BR><BR>Die höchstmögliche, den regionalen Regelungen entsprechende Verschlüsselung für gespeicherte Daten oder Daten in der Cloud kombiniert mit MFA über Smartcards und präzise Überwachung und Benachrichtigung.<BR> <BR>Beispiele für Daten der Stufe 3 sind persönliche Kunden- und Partnerinformationen, Produktentwicklungsspezifikationen und proprietäre Fertigungstechniken.  |
+| Daten sind verschlüsselt und nur für authentifizierte Benutzer verfügbar.<BR> <BR> Wird für alle Daten bereitgestellt, die lokal und in cloudbasiertem Speicher und Workloads gespeichert sind. Daten werden verschlüsselt, während sie sich im Dienst und im Übergang zwischen dem Dienst und Clientgeräten befinden. <BR><BR>Beispiele für die Daten der Stufe 1 sind normale Geschäftskommunikation (E-Mail) und Dateien für Mitarbeiter in der Verwaltung, im Vertrieb oder im Kundendienst. | Stufe 1 plus strenger Authentifizierung und Schutz vor Datenverlust.<BR> <BR> Die starke Authentifizierung umfasst die mehrstufige Azure AD-Authentifizierung (Multi-Factor Authentication, MFA) mit SMS-Überprüfung. Die Verhinderung von Datenverlust stellt sicher, dass vertrauliche oder kritische Informationen nicht außerhalb der Microsoft-Cloud übertragen werden.<BR><BR>Beispiele für Daten der Stufe 2 sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte. | Stufe 2 plus höchstmöglicher Verschlüsselung, Authentifizierung und Überwachung.<BR><BR>Die höchstmögliche, den regionalen Regelungen entsprechende Verschlüsselung für gespeicherte Daten oder Daten in der Cloud kombiniert mit MFA über Smartcards und präzise Überwachung und Benachrichtigung.<BR> <BR>Beispiele für Daten der Stufe 3 sind persönliche Kunden- und Partnerinformationen, Produktentwicklungsspezifikationen und proprietäre Fertigungstechniken.  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso-Informationsrichtlinien
@@ -46,41 +46,41 @@ In der folgenden Tabelle sind die Contoso-Informationsrichtlinien aufgeführt.
  |
 |:-------|:-----|:-----|:-----|
 | Geringer Geschäftswert (Stufe 1: Baseline) | Zugriff auf alle zulassen.  | 6 Monate | Verschlüsselung verwenden. |
-| Mittlerer Geschäftswert (Stufe 2: Vertraulich) | Zulassen des Zugriffs auf Contoso-Mitarbeiter, Subunternehmer und Partner. <BR><BR> MFA, Transport Layer Security (TLS) und mobile Anwendungsverwaltung (Mobile Application Management, MAM) verwenden. | 2 Jahre  | Hashwerte für Datenintegrität verwenden.  |
+| Mittlerer Geschäftswert (Stufe 2: Vertraulich) | Zugriff auf Contoso-Mitarbeiter, Subunternehmer und Partner zulassen. <BR><BR> MFA, Transport Layer Security (TLS) und mobile Anwendungsverwaltung (Mobile Application Management, MAM) verwenden. | 2 Jahre  | Hashwerte für Datenintegrität verwenden.  |
 | Hoher Geschäftswert (Stufe 3: Hochgradig reguliert) | Zugriff für Manager und Führungskräfte in Technik und Fertigung zulassen. <BR> <BR> Rechteverwaltungssystem (Rights Management System, RMS) nur mit verwalteten Netzwerkgeräten.  | 7 Jahre  | Digitale Signaturen für Nachweisbarkeit (Unleugbarkeit) verwenden.  |
 |||||
 
-## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Der Contoso-Pfad zum Informationsschutz mit Microsoft 365 Für Unternehmen
+## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Der Contoso-Pfad zum Informationsschutz mit Microsoft 365 enterprise
 
-Contoso hat die folgenden Schritte befolgt, um Microsoft 365 für Unternehmen auf ihre Anforderungen an den Informationsschutz vorzubereiten:
+Contoso hat die folgenden Schritte ausgeführt, um Microsoft 365 für Unternehmen auf seine Anforderungen an den Informationsschutz vorzubereiten:
 
 1. Identifizieren, welche Informationen geschützt werden sollen
 
-   Contoso hat eine umfassende Überprüfung der vorhandenen digitalen Ressourcen auf lokalen Websites und Dateifreigaben SharePoint und jede Ressource klassifiziert.
+   Contoso hat seine vorhandenen digitalen Ressourcen, die sich lokal SharePoint Websites und Dateifreigaben befinden, umfassend überprüft und jede Ressource klassifiziert.
 
 2. Bestimmen von Zugriffs-, Aufbewahrungs- und Datensicherungsrichtlinien für Datenstufen
 
    Basierend auf den Datenstufen ermittelte Contoso detaillierte Richtlinienanforderungen, die zum Schützen vorhandener digitaler Datenbestände während des Verschiebens in die Cloud verwendet wurden.
 
-3. Erstellen von Vertraulichkeitsbezeichnungen und deren Einstellungen für die verschiedenen Informationsstufen
+3. Erstellen von Vertraulichkeitsbezeichnungen und deren Einstellungen für die verschiedenen Informationsebenen
 
    Contoso hat Vertraulichkeitsbezeichnungen (hochgradig reguliert) für seine Datenstufen erstellt, die Verschlüsselung, Berechtigungen und Wasserzeichen umfasst.
 
-4.  Verschieben von Daten aus lokalen SharePoint und Dateifreigaben zu ihren neuen SharePoint Websites
+4. Verschieben von Daten von lokalen SharePoint Websites und Dateifreigaben zu ihren neuen SharePoint Websites
 
     Die Dateien, die zu den neuen SharePoint-Websites migriert wurden, übernahmen die standardmäßigen Aufbewahrungsbezeichnungen, die der Website zugewiesen waren.
 
-5.  Schulen von Mitarbeitern, wie Sie Vertraulichkeitsbezeichnungen für neue Dokumente verwenden, wie Sie beim Erstellen neuer SharePoint-Websites mit contoso IT interagieren und digitale Objekte immer auf SharePoint speichern
+5. Schulen Von Mitarbeitern, wie Vertraulichkeitsbezeichnungen für neue Dokumente verwendet werden, wie sie mit contoso IT interagieren, wenn sie neue SharePoint Websites erstellen, und digitale Objekte immer auf SharePoint Websites speichern
 
-    Das Ändern schlechter Informationsspeichergewohnheiten für Mitarbeiter wird häufig als der schwierigste Teil des Übergangs zum Informationsschutz für die Cloud betrachtet. Contoso IT und Management mussten Mitarbeiter dazu bewnennen, ihre digitalen Objekte immer in der Cloud zu beschriften und zu speichern, keine lokalen Dateifreigaben zu verwenden und keine Cloudspeicherdienste oder USB-Laufwerke von Drittanbietern zu verwenden.
+    Das Ändern schlechter Arbeitsdatenspeicherungsgewohnheiten wird häufig als der schwierigste Teil des Informationsschutzübergangs für die Cloud betrachtet. Die IT-Abteilung und das Management von Contoso mussten dazu führen, dass Mitarbeiter ihre digitalen Ressourcen immer in der Cloud bezeichnen und speichern, keine lokalen Dateifreigaben verwenden und keine Cloudspeicherdienste von Drittanbietern oder USB-Laufwerke verwenden.
 
 ## <a name="conditional-access-policies-for-information-protection"></a>Bedingte Zugriffsrichtlinien für Informationsschutz
 
-Im Rahmen des Rollouts von Exchange Online und SharePoint hat Contoso die folgenden Richtlinien für bedingten Zugriff konfiguriert und auf die entsprechenden Gruppen angewendet:
+Im Rahmen des Rollouts von Exchange Online und SharePoint konfigurierte Contoso den folgenden Satz von Richtlinien für bedingten Zugriff und wendete sie auf die entsprechenden Gruppen an:
 
-- [Richtlinien für den verwalteten und nicht verwalteten Zugriff auf Geräteanwendungen](../security/defender-365-security/identity-access-policies.md)
-- [Exchange Online-Zugriffsrichtlinien](../security/defender-365-security/secure-email-recommended-policies.md)
-- [SharePoint-Zugriffsrichtlinien](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [Richtlinien für den verwalteten und nicht verwalteten Zugriff auf Geräteanwendungen](../security/office-365-security/identity-access-policies.md)
+- [Exchange Online-Zugriffsrichtlinien](../security/office-365-security/secure-email-recommended-policies.md)
+- [SharePoint-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Hier sehen Sie eine Reihe von Contoso-Richtlinien für den Informationsschutz.
 
@@ -94,19 +94,19 @@ Diese Richtlinien stellen Folgendes sicher:
 
 - Apps, die zulässig sind, und die Aktionen, die sie mit den Daten der Organisation ausführen können, werden durch App-Schutzrichtlinien definiert.
 - PCs und mobile Geräte müssen diesen Richtlinien entsprechen.
-- Exchange Online verwendet Office 365 Nachrichtenverschlüsselung (OME) für Exchange Online.
-- SharePoint verwendet Einschränkungen, die von Apps erzwungen werden.
+- Exchange Online verwendet Office 365 Nachrichtenverschlüsselung (Message Encryption, OME) für Exchange Online.
+- SharePoint verwendet von der App erzwungene Einschränkungen.
 - SharePoint verwendet Zugriffssteuerungsrichtlinien für den reinen Browserzugriff und zum Blockieren des Zugriffs über nicht verwaltete Geräte.
 
-## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>Zuordnen Microsoft 365 für Unternehmensfeatures zu Contoso-Datenebenen
+## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>Zuordnen von Microsoft 365 für Unternehmensfeatures zu Contoso-Datenebenen
 
-In der folgenden Tabelle werden Die Contoso-Datenebenen den Informationsschutzfeatures in Microsoft 365 Enterprise..
+In der folgenden Tabelle werden Contoso-Datenebenen den Informationsschutzfeatures in Microsoft 365 enterprise zugeordnet.
 
-| Ebene | Microsoft 365 cloud services | Windows 10 und Microsoft 365 Apps for Enterprise | Sicherheit und Compliance |
+| Ebene | Microsoft 365 Clouddienste | Windows 10 und Microsoft 365 Apps for Enterprise | Sicherheit und Compliance |
 |:-------|:-----|:-----|:-----|
 | Stufe 1: Baseline  | Bedingte Zugriffsrichtlinien für SharePoint und Exchange Online <BR> Berechtigungen für SharePoint-Websites | Vertraulichkeitsbezeichnungen <BR> BitLocker <BR> Windows Information Protection | Bedingte Zugriffsrichtlinien für Geräte und MAM-Richtlinien (Mobile Application Management) |
 | Stufe 2: Vertraulich | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen <BR> Microsoft 365-Aufbewahrungsbezeichnungen auf SharePoint-Websites <BR> Verhinderung von Datenverlust für SharePoint und Exchange Online <BR> Isolierte SharePoint-Websites  | Stufe 1 plus: <BR> <BR> Vertraulichkeitsbezeichnungen auf digitalen Assets  | Stufe 1 |
-| Stufe 3: Hochgradig reguliert | Stufe 2 plus: <BR><BR> Bring your own key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault für Business Line-of-Business-Anwendungen, die mit Microsoft 365 interagieren | Stufe 2 | Stufe 1 |
+| Stufe 3: Hochgradig reguliert | Stufe 2 plus: <BR><BR> Bring your own key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault für Branchenanwendungen, die mit Microsoft 365 Diensten interagieren | Stufe 2 | Stufe 1 |
 |||||
 
 Hier sehen Sie die resultierende Contoso-Informationsschutzkonfiguration.
@@ -115,11 +115,11 @@ Hier sehen Sie die resultierende Contoso-Informationsschutzkonfiguration.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Erfahren Sie, wie Contoso die [Sicherheitsfeatures Microsoft 365 Unternehmens](contoso-security-summary.md) für Identitäts- und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung verwendet.
+Erfahren Sie, wie Contoso die [Sicherheitsfeatures für Microsoft 365 Unternehmen für](contoso-security-summary.md) Identitäts- und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung verwendet.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
-[Sicherheitsroadmap](../security/defender-365-security/security-roadmap.md)
+[Sicherheitsroadmap](../security/office-365-security/security-roadmap.md)
 
 [Übersicht über Microsoft 365 Enterprise](microsoft-365-overview.md)
 

@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten optimieren können.
-ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923057"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288947"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten
 
@@ -45,17 +45,18 @@ Mögliche Ergebnisse sind:
 - **Verbesserungsmöglichkeiten** (gelb) Werden **fünf** oder mehr Erweiterungen verwendet, werden sie in diesem Abschnitt als Warnung hervorgehoben. Sobald sieben oder mehr verwendet werden, werden diese dann unter "Aktion erforderlich" hervorgehoben.
 - **Keine Aktion erforderlich** (grün): Keine Erweiterung benötigt länger als eine Sekunde zum Laden.
 
-Wenn sich eine Erweiterung auf die Ladezeit der Seite auswirken oder zu  viele Erweiterungen auf der Seite verfügbar sind, wird das Ergebnis im Abschnitt Aufmerksamkeit erforderlich der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
+Wenn sich eine Erweiterung auf die Ladezeit der Seite auswirkt oder zu viele Erweiterungen auf der Seite vorhanden sind, wird das Ergebnis im Abschnitt **"Achtung erforderlich"** der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
 
 ![Ergebnisse der Seitenladezeiten](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Die verfügbaren Informationen in den Ergebnissen umfassen:
 
 - **Name und ID** zeigt identifizierende Informationen an, die Ihnen beim Auffinden der Erweiterung auf der Seite helfen können.
-- **Total** zeigt die Gesamtzeit für die Erweiterung zum Laden und Initialisieren des Moduls an. Es handelt sich um die gesamte relative Zeit, die die Erweiterung für die Ausführung auf der Seite von Anfang bis Ende auf sich genommen hat.
-- **Modullast** zeigt die Zeit zum Herunterladen, Auswerten und Laden der Erweiterungen JavaScript- und CSS-Dateien an. Anschließend wird der Init-Prozess gestartet.
-- **Init** zeigt die Zeit an, die für die Initialisierung der Daten für die Erweiterung verwendet wurde.
-    Es handelt sich um einen asynchronen Aufruf, und die Initzeit ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
+- **Total** zeigt die Gesamtzeit für das Laden und Initialisieren der Erweiterung an. Dies ist die relative Gesamtzeit, die die Erweiterung für die Ausführung auf der Seite von Anfang bis Ende benötigte.
+- **Module Load** zeigt die Zeit an, die zum Herunterladen, Auswerten und Laden der JavaScript- und CSS-Dateien der Erweiterungen benötigt wird. Anschließend wird der Init-Prozess gestartet.
+- **Init** zeigt die Zeit an, die die Erweiterung benötigt, um die Daten zu initialisieren.
+
+  Es handelt sich um einen asynchronen Aufruf, und "init time" ist die Berechnung der Zeit für die onInit-Funktion, wenn die zurückgegebene Zusage aufgelöst wird.
 
 Diese Informationen dienen Designern und Entwicklern zum Beheben von Problemen. Diese Informationen sollten Ihrem Entwurfs- und Entwicklungsteam bereitgestellt werden.
 

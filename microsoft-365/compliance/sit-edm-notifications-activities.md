@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benachrichtigungen für genaue Datenübereinstimmungsaktivitäten erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: da00c43ae9ba5b129129027df16f49ef80b8757d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007561"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288167"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Erstellen von Benachrichtigungen für genaue Datenübereinstimmungsaktivitäten
 
-Wenn Sie [benutzerdefinierte vertrauliche Informationstypen mit exakter Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) erstellen, werden im [Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) eine Reihe von Aktivitäten erstellt. Mit dem PowerShell-Cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) können Sie Benachrichtigungen erstellen, die Sie über folgende Aktivitäten informieren:
+Wenn Sie [benutzerdefinierte vertrauliche Informationstypen mit exakter Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) erstellen, werden im [Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) eine Reihe von Aktivitäten erstellt. Mit dem PowerShell-Cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) können Sie Benachrichtigungen erstellen, die Sie über folgende Aktivitäten informieren:
 
 - CreateSchema
 - EditSchema
@@ -55,7 +55,7 @@ Weitere Informationen zur DLP-Lizenzierung finden Sie in den [Microsoft 365-Lize
 
 ## <a name="configure-notifications-for-edm-activities"></a>Konfigurieren von Benachrichtigungen für EDM-Aktivitäten
 
-1. Stellen Sie eine Verbindung mit der [Security & Compliance Center PowerShell her](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps). 
+1. Stellen Sie eine Verbindung mit der [Security & Compliance Center PowerShell her](/powershell/exchange/connect-to-scc-powershell). 
 
 2. Führen Sie das `New-ProtectionAlert` -Cmdlet mit der Aktivität aus, für die Sie die Benachrichtigung erstellen möchten.  Wenn Sie beispielsweise benachrichtigt werden möchten, wenn die Aktion **UploadDataCompleted-Aktion** ausgeführt wurde, führen Sie das Folgende aus
 
@@ -72,4 +72,4 @@ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUse
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Erstellen benutzerdefinierter Typen vertraulicher Informationen mit genauer Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps)
+- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

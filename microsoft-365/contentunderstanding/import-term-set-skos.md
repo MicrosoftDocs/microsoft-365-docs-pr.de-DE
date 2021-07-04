@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928248"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288515"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importieren eines Ausdruckssatzes mithilfe eines SKOS-basierten Formats
 
@@ -29,16 +29,16 @@ Es wird empfohlen, Ihre Importdateien auf weniger als 20.000 Ausdrücke zu belas
 2. Wählen Sie die Ausdrucksgruppe aus, in die Sie den Ausdruckssatz importieren möchten.
 
 3. Klicken Sie auf der Befehlsleiste auf **Import Ausdruckssatz**.
- 
-4.  Wenn Sie eine Beispieldatei herunterladen möchten, die Sie als Vorlage verwenden möchten, klicken Sie auf **sample-metadata.ttl**, um eine Beispieldatei mit dem SKOS-basierten Format abzurufen.
- 
-5.  Erstellen Sie die Importdatei mit den Ausdruckssätze & Ausdrücke, die Sie importieren möchten.
 
-6.  Unter **Dateiformat**, wählen Sie **SKOS (*.ttl)** aus.
+4. Wenn Sie eine Beispieldatei herunterladen möchten, die Sie als Vorlage verwenden möchten, klicken Sie auf **sample-metadata.ttl**, um eine Beispieldatei mit dem SKOS-basierten Format abzurufen.
 
-7.  Klicken Sie auf **Durchsuchen**, navigieren Sie zu Ihrer Importdatei, und fügen Sie sie hinzu.
+5. Erstellen Sie die Importdatei mit den Ausdruckssätze & Ausdrücke, die Sie importieren möchten.
 
-8.  Klicken Sie auf **Importieren**. Schließen Sie den Bereich erst, wenn der Import abgeschlossen ist.
+6. Unter **Dateiformat**, wählen Sie **SKOS (*.ttl)** aus.
+
+7. Klicken Sie auf **Durchsuchen**, navigieren Sie zu Ihrer Importdatei, und fügen Sie sie hinzu.
+
+8. Klicken Sie auf **Importieren**. Schließen Sie den Bereich erst, wenn der Import abgeschlossen ist.
 
 Bei einem erfolgreichen Import der Datei wird eine Erfolgsmeldung angezeigt, und der Terminologiespeicher wird aktualisiert, und Sie können zu den neu erstellten Ausdruckssätzen wechseln.
 

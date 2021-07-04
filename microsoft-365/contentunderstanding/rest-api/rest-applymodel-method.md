@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um ein Dokumentverständnismodell auf eine oder mehrere Bibliotheken anzuwenden.
-ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177261"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286537"
 ---
 # <a name="batch-apply-model"></a>Modell mit Batch anwenden
 
@@ -48,6 +48,7 @@ Keine
 |Publikationen|ja|MachineLearningPublicationEntityData[]|Die Sammlung von MachineLearningPublicationEntityData, von denen jedes Element das Modell und die Zieldokumentbibliothek angibt.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Name | Erforderlich | Typ | Beschreibung |
 |--------|-------|--------|------------|
 |ModelUniqueId|ja|Zeichenfolge|Die eindeutige ID der Modelldatei.|
@@ -60,9 +61,10 @@ Keine
 
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
-|201 Erstellt||Dies ist ein benutzerdefiniertes API zur Unterstützung der Anwendung eines Modells auf Mehrfach-Dokumentbibliotheken. Im Falle eines Teilerfolgs könnte immer noch „201 erstellt“ zurückgegeben werden und der Aufrufer muss den Antworttext untersuchen, um zu verstehen, ob das Modell erfolgreich auf eine Dokumentbibliothek angewendet wurde.|
+|201 Erstellt||Dies ist eine benutzerdefinierte API, die das Anwenden eines Modells auf mehrere Dokumentbibliotheken unterstützt. Im Falle eines teilweisen Erfolgs könnte immer noch „201 erstellt“ zurückgegeben werden und der Aufrufer muss den Antworttext überprüfen, um zu verstehen, ob das Modell erfolgreich auf eine Dokumentbibliothek angewendet wurde.|
 
 ## <a name="response-body"></a>Antworttext
+
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
 |TotalSuccesses|Ganzzahl|Die Gesamtzahl eines Modells, das erfolgreich auf eine Dokumentbibliothek angewendet wurde.|
@@ -70,6 +72,7 @@ Keine
 |Details|MachineLearningPublicationResult[]|Sie Sammlung von MachineLearningPublicationResult, von denen jedes Element das detaillierte Ergebnis der Anwendung des Modells in der Dokumentbibliothek angibt.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
 |StatusCode|Ganzzahl|Der HTTP-Statuscode.|
@@ -77,6 +80,7 @@ Keine
 |Veröffentlichung|MachineLearningPublicationEntityData|Es gibt die Modellinformation und die Zieldokumentbibliothek an.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Name | Typ | Beschreibung |
 |--------|--------|------------|
 |ModelUniqueId|Zeichenfolge|Die eindeutige ID der Modelldatei.|

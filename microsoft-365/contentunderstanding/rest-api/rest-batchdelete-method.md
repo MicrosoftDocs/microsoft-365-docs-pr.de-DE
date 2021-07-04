@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um ein angewendetes Dokumentverständnismodell von einer oder mehreren Bibliotheken zu entfernen.
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177237"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287453"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -47,6 +47,7 @@ Keine
 |Publikationen|ja|MachineLearningPublicationEntityData[]|Die Sammlung von MachineLearningPublicationEntityData, von denen jedes Element das Modell und die Zieldokumentbibliothek angibt.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Name | Erforderlich | Typ | Beschreibung |
 |--------|-------|--------|------------|
 |ModelUniqueId|ja|Zeichenfolge|Die eindeutige ID der Modelldatei.|
@@ -58,9 +59,10 @@ Keine
 
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
-|200 OK||Dies ist ein benutzerdefiniertes API, um das Entfernen eines Modells aus einer Mehrfach-Dokumentbibliothek zu unterstützen. Im Falle eines Teilerfolgs könnte immer noch „200 OK“ zurückgegeben werden und der Aufrufer muss den Antworttext untersuchen, um zu verstehen, ob das Modell erfolgreich aus einer Dokumentbibliothek entfernt wurde.|
+|200 OK||Dies ist eine benutzerdefinierte API, die das Entfernen eines Modells aus mehreren Dokumentbibliotheken unterstützt. Im Falle eines teilweisen Erfolgs könnte immer noch „200 OK“ zurückgegeben werden und der Aufrufer muss den Antworttext überprüfen, um zu verstehen, ob das Modell erfolgreich aus einer Dokumentbibliothek entfernt wurde.|
 
 ## <a name="response-body"></a>Antworttext
+
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
 |TotalSuccesses|Ganzzahl|Die Gesamtzahl eines Modells, das erfolgreich aus einer Dokumentbibliothek entfernt wurde.|
@@ -68,6 +70,7 @@ Keine
 |Details|MachineLearningPublicationResult[]|Die Sammlung von MachineLearningPublicationResult, von denen jedes Element das detaillierte Ergebnis der Entfernung des Modells aus der Dokumentbibliothek angibt.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Name   | Typ  | Beschreibung|
 |--------|-------|------------|
 |StatusCode|Ganzzahl|Der HTTP-Statuscode.|
@@ -75,6 +78,7 @@ Keine
 |Veröffentlichung|MachineLearningPublicationEntityData|Es gibt die Modellinformation und die Zieldokumentbibliothek an.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Name | Typ | Beschreibung |
 |--------|--------|------------|
 |ModelUniqueId|Zeichenfolge|Die eindeutige ID der Modelldatei.|
@@ -102,7 +106,6 @@ In diesem Beispiel lautet die ID des Dokumentverständnismodells für den Contos
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>Beispielantwort
 

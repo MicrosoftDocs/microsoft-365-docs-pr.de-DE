@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Einrichten des lokalen Microsoft 365-Scanners zur Verhinderung von Datenverlust
-ms.openlocfilehash: b21474f3a9e045bf353d62ef6c7c8d4174801a1b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 0390ac48b351b30b75109a3e3a5d18c80847c9d2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623833"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289199"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Erste Schritte mit dem lokalen Scanner zur Verhinderung von Datenverlust (Vorschau)
 
@@ -115,7 +115,7 @@ Daten vom lokalen DLP-Scanner können im [Aktivitäts-Explorer](data-classificat
 
 2. Beziehen Sie sich auf die Anweisungen unter [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md), um auf alle Daten für Ihre lokalen Scannerstandorte zuzugreifen und diese zu filtern.
 
-3. Öffnen Sie das [Überwachungsprotokoll im Compliance Center](https://security.microsoft.com/auditlogsearch). Während der öffentlichen Vorschau sind die DLP-Regelübereinstimmungen in der Benutzeroberfläche des Überwachungsprotokolls verfügbar oder können über [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps)PowerShell aufgerufen werden. 
+3. Öffnen Sie das [Überwachungsprotokoll im Compliance Center](https://security.microsoft.com/auditlogsearch). Während der öffentlichen Vorschau sind die DLP-Regelübereinstimmungen in der Benutzeroberfläche des Überwachungsprotokolls verfügbar oder können über [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)PowerShell aufgerufen werden. 
 
 
 ## <a name="next-steps"></a>Nächste Schritte

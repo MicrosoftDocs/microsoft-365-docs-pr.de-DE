@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c578a353501ac7b38ac541b0200ffaad1d6743e1
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888448"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289607"
 ---
 # <a name="get-incident-information-api"></a>Api zum Abrufen von Vorfallinformationen
 
@@ -30,7 +30,7 @@ ms.locfileid: "52888448"
 **Gilt für:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,27 +38,31 @@ ms.locfileid: "52888448"
 
 
 ## <a name="api-description"></a>API-Beschreibung
+
 Ruft einen bestimmten Vorfall anhand seiner ID ab.
 
-
 ## <a name="limitations"></a>Einschränkungen
+
 1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. 
 
-Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Incident.Read.All | "Alle Vorfälle lesen"
-Anwendung |   Incident.ReadWrite.All |    "Alle Vorfälle lesen und schreiben"
+Anwendung | Incident.Read.All | "Alle Vorfälle lesen"
+Anwendung | Incident.ReadWrite.All | "Alle Vorfälle lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.Read | "Vorfälle lesen"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.ReadWrite | "Vorfälle lesen und schreiben"
 
->[!Note]
+> [!NOTE]
+>
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen".
->- Die Antwort enthält nur Vorfälle, denen der Benutzer ausgesetzt ist.
+>
+> - Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen".
+> - Die Antwort enthält nur Vorfälle, denen der Benutzer ausgesetzt ist.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -72,8 +76,8 @@ Name | Typ | Beschreibung
 :---|:---|:---
 Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
-
 ## <a name="request-body"></a>Anforderungstext
+
 Empty
 
 ## <a name="response"></a>Antwort

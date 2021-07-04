@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Zusammenfassung: Verstehen Sie, warum Sie PowerShell verwenden müssen, um Microsoft 365 zu verwalten, in einigen Fällen effizienter und in anderen Fällen durch Notwendigkeit.'
-ms.openlocfilehash: baae3f5682edb65f1bc8114fcc96021b144b93ab
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cbbceddc98bebaed030f4cff2f183d473d716df6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228423"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288467"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Warum Sie PowerShell für Microsoft 365 verwenden müssen
 
@@ -61,7 +61,7 @@ PowerShell für Microsoft 365 wurde entwickelt, um Sie beim Verwalten von Micros
 
 Nachdem Sie diese grundlegenden Fähigkeiten erlernen, müssen Sie Ihre Postfachbenutzer nicht mithilfe des Befehls **"Get-Mailbox"** auflisten. Sie müssen auch nicht verstehen, wie Sie einen neuen Befehl wie den zuvor erwähnten erstellen, um alle Elemente in allen Listen für alle Websites für alle Ihre Web-Apps zu zählen. Microsoft und die Community der Administratoren können Ihnen bei solchen Aufgaben bei Bedarf helfen.
 
-## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>PowerShell für Microsoft 365 kann Informationen offenlegen, die Sie mit dem Microsoft 365 Admin Center
+## <a name="powershell-for-microsoft-365-can-reveal-information-that-you-cant-see-with-the-microsoft-365-admin-center"></a>PowerShell für Microsoft 365 kann Informationen offenlegen, die sie mit dem Microsoft 365 Admin Center
 
 Im Microsoft 365 Admin Center werden viele nützliche Informationen angezeigt. Es werden jedoch nicht alle möglichen Informationen angezeigt, die Microsoft 365 zu Benutzern, Lizenzen, Postfächern und Websites speichert. Hier ist ein Beispiel für *Benutzer und Gruppen* im Microsoft 365 Admin Center:
 
@@ -163,7 +163,7 @@ $x | Select DisplayName, UsageLocation
 ```
 
 Die Interpretation dieser PowerShell-Befehle lautet:
-1. Rufen Sie alle Benutzer im aktuellen Microsoft 365 Abonnement ab, und speichern Sie die Informationen in einer Variablen mit dem Namen $x (**$x = Get-AzureADUser**).
+1. Rufen Sie alle Benutzer im aktuellen Microsoft 365-Abonnement ab, und speichern Sie die Informationen in einer Variablen mit dem Namen $x (**$x = Get-AzureADUser**).
 1.  Zeigt den Inhalt der Variablen *$x* an, enthält jedoch nur den Namen und speicherort für jeden Benutzer (**$x | Wählen Sie DisplayName, UsageLocation**).
 
 ## <a name="microsoft-365-has-features-that-you-can-only-configure-with-powershell-for-microsoft-365"></a>Microsoft 365 verfügt über Features, die Sie nur mit PowerShell für Microsoft 365
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> Für diesen Befehl müssen Sie das [SharePoint Online PowerShell-Modul](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)installieren.
+> Für diesen Befehl müssen Sie das [SharePoint Online PowerShell-Modul](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)installieren.
 
 Die Interpretation dieses PowerShell-Befehls lautet: Rufen Sie alle SharePoint Websites im aktuellen Microsoft 365-Abonnement (**Get-SPOSite**) ab, und entfernen Sie für jede Website Ken Cmdlet aus der Liste der Benutzer, die darauf zugreifen können (**ForEach {Remove-SPOUser -Site $ \_ . Url -LoginName "kenmyer \@ litwareinc.com"}**).
 
@@ -424,7 +424,7 @@ Die Interpretation dieses PowerShell-Skripts lautet:
 1. Fügen Sie den Benutzerinformationen mit dem Namen *EnabledForSfB* eine neue Eigenschaft hinzu. Legen Sie ihn auf den Wert der Enabled-Eigenschaft der Skype for Business Onlineinformationen des Benutzers fest (**$i | Add-Member -MemberType NoteProperty -Name EnabledForSfB -Value $y.Enabled**).
 1. Zeigt die Liste der Benutzer an, enthält aber nur ihren Namen, ob sie lizenziert sind, und die beiden neuen Eigenschaften, die angeben, ob ihr Postfach aktiviert ist und ob sie für Skype for Business Online aktiviert sind (**$x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB**).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 

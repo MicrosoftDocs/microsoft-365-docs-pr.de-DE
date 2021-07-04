@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230055"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287891"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Geräte
 
@@ -32,9 +32,8 @@ Um in Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines der
 
 Die Links zu Geräten hier dienen nur als Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit Ihren Kontakten im kommerziellen Kanal zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen. In dieser Tabelle ist das *Archivdatum* das Datum, an dem diese Modelle einer kürzeren Microsoft Managed Desktop Nutzungsdauer unterliegen; Alle geräte, die nach diesem Datum integriert wurden, erhalten keine vollständige Drei-Jahres-Laufzeit des Supports von Microsoft Managed Desktop. Archivierte Geräte werden auch in [Microsoft Managed Desktop archivierten Geräten](archived-device-list.md)aufgeführt. *Das Einstellungsdatum* ist das Datum, an dem dieses Modell von Microsoft Managed Desktop überhaupt nicht mehr unterstützt wird. An diesem Datum werden alle registrierten Geräte dieses Modells aus Microsoft Managed Desktop entfernt, unabhängig davon, wann sie registriert wurden.
 
->[!NOTE]
->Geräte können dieser Tabelle jederzeit hinzugefügt werden, aber wir stellen 90 Tage Benachrichtigung für alle Änderungen bereit, die sich auf das Archiv oder das Einstellungsdatum auswirken. Die zuletzt hinzugefügten Geräte sind mit **\*** gekennzeichnet.
-
+> [!NOTE]
+> Geräte können dieser Tabelle jederzeit hinzugefügt werden, aber wir stellen 90 Tage Benachrichtigung für alle Änderungen bereit, die sich auf das Archiv oder das Einstellungsdatum auswirken. Die zuletzt hinzugefügten Geräte sind mit **\*** gekennzeichnet.
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Geräte
 
@@ -85,13 +84,14 @@ Darüber hinaus muss das Gerät auch die folgenden Kriterien erfüllen:
 - Die Windows erste Ausführung wurde nicht abgeschlossen.
 - Mithilfe der [Geräteregistrierungsfunktion](../get-started/register-devices-self.md) bei Microsoft Managed Desktop registriert werden
 
->[!NOTE]
->Geräte mit einem Prozessor mit 2,0 GHz oder schneller bieten benutzern, die an diesen Aktivitäten beteiligt sind, eine viel bessere Benutzererfahrung:
->- Verwenden von Videokonferenzen mit Teams. Weitere Informationen finden Sie unter ["Hardwareanforderungen für Microsoft Teams".](/microsoftteams/hardware-requirements-for-the-teams-app)
->-  Verwenden eines Geräts für mehrere verschiedene Workloads.
->- Verwenden mehrerer Monitore.
+> [!NOTE]
+> Geräte mit einem Prozessor mit 2,0 GHz oder schneller bieten benutzern, die an diesen Aktivitäten beteiligt sind, eine viel bessere Benutzererfahrung:
+>
+> - Verwenden von Videokonferenzen mit Teams. Weitere Informationen finden Sie unter ["Hardwareanforderungen für Microsoft Teams".](/microsoftteams/hardware-requirements-for-the-teams-app)
+> - Verwenden eines Geräts für mehrere verschiedene Workloads.
+> - Verwenden mehrerer Monitore.
 
-**Weitere Hilfe**
+## <a name="more-help"></a>Weitere Hilfe
 
 Diese Ressourcen können Ihnen helfen, Fragen zu bestimmten Geräten zu beantworten:
 

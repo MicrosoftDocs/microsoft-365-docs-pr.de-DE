@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Verwenden Sie die REST-API, um Informationen über das Modell abzurufen und die Bibliothek, auf die es angewendet wurde.
-ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 29240a6210e2079a082be6c3a07aae890d932719
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177069"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288755"
 ---
 # <a name="get-model-and-library-information"></a>Modell- und Bibliotheksinformationen abrufen
 
@@ -58,6 +58,7 @@ In diesem Beispiel lautet die ID des Dokumentverständnismodells für den Contos
 ```HTTP
 GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
+
 #### <a name="sample-response"></a>Beispielantwort
 
 **Statuscode:** 200

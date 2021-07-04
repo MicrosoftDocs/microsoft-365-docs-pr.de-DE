@@ -1,6 +1,6 @@
 ---
 title: Streamen von Microsoft 365 Defender-Ereignissen an den Azure Event Hub
-description: Erfahren Sie, wie Sie Microsoft 365 Defender so konfigurieren, dass Advanced Hunting-Ereignisse an Ihren Event Hub gestreamt werden.
+description: Erfahren Sie, wie Sie Microsoft 365 Defender konfigurieren, um Advanced Hunting-Ereignisse auf Ihren Event Hub zu streamen.
 keywords: Rohdatenexport, Streaming-API, API, Azure Event Hub, Azure-Speicher, Speicherkonto, Erweiterte Suche, Freigabe von Rohdaten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903816"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289236"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Konfigurieren Microsoft 365 Defender zum Streamen von Advanced Hunting-Ereignissen auf Ihren Azure Event Hub
 
@@ -33,16 +33,18 @@ ms.locfileid: "52903816"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>Bevor Sie loslegen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 1. Erstellen Sie einen [Event Hub](/azure/event-hubs/) in Ihrem Mandanten.
 
-2. Melden Sie sich bei Ihrem [Azure-Mandanten](https://ms.portal.azure.com/)an, wechseln Sie zu **Abonnements > Ihr Abonnement > Ressourcenanbieter > Registrieren bei Microsoft.Insights.**
+2. Melden Sie sich bei Ihrem [Azure-Mandanten](https://ms.portal.azure.com/)an, wechseln Sie zu **Abonnements > Ihr Abonnement > Ressourcenanbieter > Registrieren bei Microsoft.Insights**.
 
-3. Erstellen Sie einen Event Hub-Namespace, wechseln Sie zu **Event Hub > Hinzufügen,** und wählen Sie die Preisstufe, die Durchsatzeinheiten und die automatische Aufblasung aus, die für die erwartete Last geeignet sind. Weitere Informationen finden Sie unter [Preise – Event Hub-| Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
+3. Erstellen Sie einen Event Hub-Namespace, wechseln Sie zu **Event Hub > Hinzufügen,** und wählen Sie die Preisstufe, die Durchsatzeinheiten und die automatische Aufblasung aus, die für die erwartete Last geeignet sind. Weitere Informationen finden Sie unter [Preise – Event Hub | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-### <a name="add-contributor-permissions"></a>Hinzufügen von Mitwirkendenberechtigungen 
+### <a name="add-contributor-permissions"></a>Hinzufügen von Mitwirkendenberechtigungen
+
 Nachdem der Event Hub-Namespace erstellt wurde, müssen Sie:
+
 1. Definieren Sie den Benutzer, der sich bei Microsoft 365 Defender als Mitwirkender anmeldet.
 
 2. Wenn Sie eine Verbindung mit einer Anwendung herstellen, fügen Sie den App-Registrierungsdienstprinzipal als Reader, Azure Event Hub-Datenempfänger, hinzu (dies kann auch auf Ressourcengruppen- oder Abonnementebene erfolgen). 
@@ -51,7 +53,7 @@ Nachdem der Event Hub-Namespace erstellt wurde, müssen Sie:
 
 ## <a name="enable-raw-data-streaming"></a>Aktivieren des Streamings von Rohdaten
 
-1. Melden Sie sich beim [Microsoft 365 Defender Security Center](https://security.microsoft.com) als * globaler **Administrator** _ oder _*_Sicherheitsadministrator_**an.
+1. Melden Sie sich beim [Microsoft 365 Defender Security Center](https://security.microsoft.com) als * globaler **Administrator** _ oder _*_Sicherheitsadministrator_** an.
 
 2. Wechseln Sie zur [Seite "Streaming-API-Einstellungen".](https://security.microsoft.com/settings/mtp_settings/raw_data_export)
 
@@ -75,15 +77,15 @@ Nachdem der Event Hub-Namespace erstellt wurde, müssen Sie:
 
 ```JSON
 {
-    "records": [
-                    {
-                        "time": "<The time Microsoft 365 Defender received the event>"
-                        "tenantId": "<The Id of the tenant that the event belongs to>"
-                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-                    }
-                    ...
-                ]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
@@ -91,12 +93,9 @@ Nachdem der Event Hub-Namespace erstellt wurde, müssen Sie:
 
 - Jeder Datensatz enthält den Ereignisnamen, den Zeitpunkt, zu dem Microsoft 365 Defender das Ereignis empfangen hat, den Mandanten, zu dem es gehört (Sie erhalten nur Ereignisse von Ihrem Mandanten) und das Ereignis im JSON-Format in einer Eigenschaft namens **"Properties".**
 
-- Weitere Informationen zum Schema von Microsoft 365 Defender-Ereignissen finden Sie unter ["Erweiterte Suche" (Übersicht).](advanced-hunting-overview.md)
+- Weitere Informationen zum Schema von Microsoft 365 Defender-Ereignissen finden Sie in der [Übersicht über die erweiterte Suche.](advanced-hunting-overview.md)
 
 - Bei der erweiterten Suche verfügt die **DeviceInfo-Tabelle** über eine Spalte mit dem Namen **MachineGroup,** die die Gruppe des Geräts enthält. Hier wird jedes Ereignis auch mit dieser Spalte versehen. 
-
-
-
 
 ## <a name="data-types-mapping"></a>Zuordnung von Datentypen
 
@@ -105,7 +104,7 @@ Gehen Sie folgendermaßen vor, um die Datentypen für Ereigniseigenschaften abzu
 1. Melden Sie sich bei [Microsoft 365 Security Center](https://security.microsoft.com) an, und wechseln Sie zur Seite ["Erweiterte Suche".](https://security.microsoft.com/hunting-package)
 
 2. Führen Sie die folgende Abfrage aus, um die Datentypzuordnung für jedes Ereignis abzurufen:
- 
+
    ```kusto
    {EventType}
    | getschema
@@ -117,8 +116,9 @@ Gehen Sie folgendermaßen vor, um die Datentypen für Ereigniseigenschaften abzu
   ![Abbildung der Event Hub-Ressourcen-ID2](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
+
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Microsoft 365 Defender-Streaming-API](streaming-api.md)
-- [Streamen Microsoft 365 Defender-Ereignisse auf Ihr Azure-Speicherkonto](streaming-api-storage.md)
+- [Streamen Microsoft 365 Defender Ereignisse auf Ihr Azure-Speicherkonto](streaming-api-storage.md)
 - [Dokumentation zum Azure Event Hub](/azure/event-hubs/)
 - [Behandeln von Konnektivitätsproblemen – Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

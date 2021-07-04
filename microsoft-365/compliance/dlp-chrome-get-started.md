@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vorbereitung und Bereitstellung der Microsoft Compliance Erweiterung.
-ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226959"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288371"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Erste Schritte mit der Microsoft Compliance Erweiterung
 
@@ -107,35 +107,34 @@ Diese Methode wird empfohlen.
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.  [Navigieren Sie zu Microsoft Compliance Erweiterung- Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+2. [Navigieren Sie zu Microsoft Compliance Erweiterung- Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-3.  Installieren Sie die Erweiterung anhand der Anweisungen auf der Seite des Chrome Web Store.
+3. Installieren Sie die Erweiterung anhand der Anweisungen auf der Seite des Chrome Web Store.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Bereitstellen mit Microsoft Endpoint Manager
 
 Verwenden Sie diese Einrichtungsmethode für organisationsweite Bereitstellungen.
 
-
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Erforderlichen Registrierungsschlüssel über Microsoft Endpoint Manager aktivieren
 
-1.  Erstellen Sie ein PowerShell-Skript mit dem folgenden Inhalt:
+1. Erstellen Sie ein PowerShell-Skript mit dem folgenden Inhalt:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.  Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an.
+2. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com) an.
 
-3.  Navigieren Sie zu **Geräte** > **-Skripte** und wählen Sie **Hinzufügen**.
+3. Navigieren Sie zu **Geräte** > **-Skripte** und wählen Sie **Hinzufügen**.
 
-4.  Navigieren Sie zu dem Speicherort des erstellten Skripts, wenn Sie dazu aufgefordert werden.
+4. Navigieren Sie zu dem Speicherort des erstellten Skripts, wenn Sie dazu aufgefordert werden.
 
-5.  Wählen Sie die folgenden Einstellungen aus:
+5. Wählen Sie die folgenden Einstellungen aus:
     1. Führen Sie dieses Skript mit den angemeldeten Anmeldedaten aus: JA
     1. Skript-Signaturprüfung erzwingen: NEIN
     1. Skript in 64-Bit-PowerShell-Host ausführen: JA
 
-6.  Wählen Sie die richtigen Gerätegruppen aus und wenden Sie die Richtlinie an.
+6. Wählen Sie die richtigen Gerätegruppen aus und wenden Sie die Richtlinie an.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft Endpoint Manager Schritte zur erzwungenen Installation
 
@@ -143,27 +142,27 @@ Bevor Sie die Microsoft Compliance Erweiterung in die Liste der zwangsinstallier
 
  Nach dem Einlesen des ADMX können die folgenden Schritte ausgeführt werden, um ein Konfigurationsprofil für diese Erweiterung zu erstellen.
 
-1.  Melden Sie sich beim Microsoft Endpoint Manager Admin Center an (https://endpoint.microsoft.com).
+1. Melden Sie sich beim Microsoft Endpoint Manager Admin Center an (https://endpoint.microsoft.com).
 
-2.  Navigieren Sie zu den Konfigurationsprofilen.
+2. Navigieren Sie zu den Konfigurationsprofilen.
 
-3.  Wählen Sie **Profil erstellen**.
+3. Wählen Sie **Profil erstellen**.
 
-4.  Wählen Sie **Windows 10** als Plattform aus.
+4. Wählen Sie **Windows 10** als Plattform aus.
 
-5.  Wählen Sie **Benutzerdefiniert** als Profiltyp.
+5. Wählen Sie **Benutzerdefiniert** als Profiltyp.
 
-6.  Wählen Sie die Registerkarte **Einstellungen**.
+6. Wählen Sie die Registerkarte **Einstellungen**.
 
-7.  Klicken Sie auf **Hinzufügen**.
+7. Klicken Sie auf **Hinzufügen**.
 
-8.  Geben Sie die folgenden Richtlinieninformationen ein.
+8. Geben Sie die folgenden Richtlinieninformationen ein.
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Datentyp: `String`<br/>
     Wert: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.  Klicken Sie auf Erstellen.
+9. Klicken Sie auf Erstellen.
 
 ### <a name="deploy-using-group-policy"></a>Bereitstellen über Gruppenrichtlinie
 
@@ -171,25 +170,25 @@ Wenn Sie Microsoft Endpoint Manager nicht verwenden möchten, können Sie Gruppe
 
 1. Ihre Geräte müssen über Gruppenrichtlinien verwaltbar sein, und Sie müssen alle Chrome-ADMXs in den zentralen Gruppenrichtlinienspeicher importieren. Weitere Informationen finden Sie unter [Erstellen und Verwalten des zentralen Speichers für administrative Gruppenrichtlinienvorlagen in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-2.  Erstellen Sie ein PowerShell-Skript mit diesem PowerShell -Befehl:
+2. Erstellen Sie ein PowerShell-Skript mit diesem PowerShell -Befehl:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.  Öffnen Sie die **Gruppenrichtlinien-Verwaltungskonsole** und navigieren Sie zu Ihrer Organisationseinheit (OU).
+3. Öffnen Sie die **Gruppenrichtlinien-Verwaltungskonsole** und navigieren Sie zu Ihrer Organisationseinheit (OU).
 
-4.  Klicken Sie mit der rechten Maustaste und wählen Sie **GPO in dieser Domäne erstellen und hier verlinken**. Wenn Sie dazu aufgefordert werden, geben Sie diesem Gruppenrichtlinienobjekt (GPO) einen beschreibenden Namen und schließen Sie die Erstellung ab.
+4. Klicken Sie mit der rechten Maustaste und wählen Sie **GPO in dieser Domäne erstellen und hier verlinken**. Wenn Sie dazu aufgefordert werden, geben Sie diesem Gruppenrichtlinienobjekt (GPO) einen beschreibenden Namen und schließen Sie die Erstellung ab.
 
-5.  Klicken Sie mit der rechten Maustaste auf das GPO und wählen Sie **Bearbeiten**.
+5. Klicken Sie mit der rechten Maustaste auf das GPO und wählen Sie **Bearbeiten**.
 
-6.  Gehen Sie zu **Computerkonfiguration** > **Einstellungen** > **Systemsteuerung Einstellungen** > **Geplante Tasks**.
+6. Gehen Sie zu **Computerkonfiguration** > **Einstellungen** > **Systemsteuerung Einstellungen** > **Geplante Tasks**.
 
-7.  Erstellen Sie eine neue Sofortaufgabe, indem Sie mit der rechten Maustaste klicken und **Neue** > **Sofortaufgabe wählen (mindestens Windows 7)**.
+7. Erstellen Sie eine neue Sofortaufgabe, indem Sie mit der rechten Maustaste klicken und **Neue** > **Sofortaufgabe wählen (mindestens Windows 7)**.
 
-8.  Geben Sie der Aufgabe einen Namen und eine Beschreibung.
+8. Geben Sie der Aufgabe einen Namen und eine Beschreibung.
 
-9.  Wählen Sie das entsprechende Konto, um die Sofortaufgabe auszuführen, z. B. NT Authority
+9. Wählen Sie das entsprechende Konto, um die Sofortaufgabe auszuführen, z. B. NT Authority
 
 10. Wählen Sie **Ausführen mit höchsten Rechten**.
 
@@ -203,21 +202,21 @@ Wenn Sie Microsoft Endpoint Manager nicht verwenden möchten, können Sie Gruppe
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Hinzufügen der Chrome-Erweiterung zur ForceInstall-Liste
 
-1.  Navigieren Sie im Gruppenrichtlinien-Verwaltungseditor zu Ihrer OU.
+1. Navigieren Sie im Gruppenrichtlinien-Verwaltungseditor zu Ihrer OU.
 
-2.  Erweitern Sie den folgenden Pfad **Computer-/Benutzerkonfiguration** > **Richtlinien** > **Administrative Vorlagen** > **Klassische administrative Vorlagen** > **Google** > **Google Chrome** > **Erweiterungen**. Dieser Pfad kann je nach Ihrer Konfiguration variieren.
+2. Erweitern Sie den folgenden Pfad **Computer-/Benutzerkonfiguration** > **Richtlinien** > **Administrative Vorlagen** > **Klassische administrative Vorlagen** > **Google** > **Google Chrome** > **Erweiterungen**. Dieser Pfad kann je nach Ihrer Konfiguration variieren.
 
-3.  Wählen Sie **Liste der zwangsinstallierten Erweiterungen konfigurieren**.
+3. Wählen Sie **Liste der zwangsinstallierten Erweiterungen konfigurieren**.
 
-4.  Klicken Sie mit der rechten Maustaste und wählen Sie **Bearbeiten**.
+4. Klicken Sie mit der rechten Maustaste und wählen Sie **Bearbeiten**.
 
-5.  Wählen Sie **Aktiviert** aus.
+5. Wählen Sie **Aktiviert** aus.
 
-6.  Wählen Sie **Anzeigen** aus.
+6. Wählen Sie **Anzeigen** aus.
 
-7.  Fügen Sie unter **Wert** den folgenden Eintrag hinzu: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. Fügen Sie unter **Wert** den folgenden Eintrag hinzu: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.  Wählen Sie **OK** und dann **Anwenden**.
+8. Wählen Sie **OK** und dann **Anwenden**.
 
 ### <a name="test-the-extension"></a>Testen der Erweiterung
 
