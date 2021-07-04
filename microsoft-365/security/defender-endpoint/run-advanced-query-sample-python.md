@@ -17,37 +17,36 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771443"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289259"
 ---
-# <a name="advanced-hunting-using-python"></a><span data-ttu-id="bfa87-104">Erweiterte Bedrohungssuche mit Python</span><span class="sxs-lookup"><span data-stu-id="bfa87-104">Advanced Hunting using Python</span></span>
+# <a name="advanced-hunting-using-python"></a><span data-ttu-id="713df-104">Erweiterte Bedrohungssuche mit Python</span><span class="sxs-lookup"><span data-stu-id="713df-104">Advanced Hunting using Python</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="bfa87-105">**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="bfa87-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="713df-105">**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="713df-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="bfa87-106">Möchten Sie Microsoft Defender für Endpunkt erleben?</span><span class="sxs-lookup"><span data-stu-id="bfa87-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="bfa87-107">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="bfa87-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="713df-106">Möchten Sie Microsoft Defender für Endpunkt erleben?</span><span class="sxs-lookup"><span data-stu-id="713df-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="713df-107">Registrieren Sie sich für eine kostenlose Testversion</span><span class="sxs-lookup"><span data-stu-id="713df-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="bfa87-108">Führen Sie erweiterte Abfragen mit Python aus. Weitere Informationen finden Sie unter ["Erweiterte Suche"-API.](run-advanced-query-api.md)</span><span class="sxs-lookup"><span data-stu-id="bfa87-108">Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).</span></span>
+<span data-ttu-id="713df-108">Führen Sie erweiterte Abfragen mit Python aus, siehe [Api für die erweiterte Suche.](run-advanced-query-api.md)</span><span class="sxs-lookup"><span data-stu-id="713df-108">Run advanced queries using Python, see [Advanced Hunting API](run-advanced-query-api.md).</span></span>
 
-<span data-ttu-id="bfa87-109">In diesem Abschnitt geben wir Python-Beispiele frei, um ein Token abzurufen und es zum Ausführen einer Abfrage zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="bfa87-109">In this section, we share Python samples to retrieve a token and use it to run a query.</span></span>
+<span data-ttu-id="713df-109">In diesem Abschnitt geben wir Python-Beispiele frei, um ein Token abzurufen und es zum Ausführen einer Abfrage zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="713df-109">In this section, we share Python samples to retrieve a token and use it to run a query.</span></span>
 
-><span data-ttu-id="bfa87-110">**Voraussetzung:** Sie müssen zuerst [eine App erstellen.](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="bfa87-110">**Prerequisite**: You first need to [create an app](apis-intro.md).</span></span>
+> <span data-ttu-id="713df-110">**Voraussetzung:** Sie müssen zuerst [eine App erstellen.](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="713df-110">**Prerequisite**: You first need to [create an app](apis-intro.md).</span></span>
 
-## <a name="get-token"></a><span data-ttu-id="bfa87-111">Token abrufen</span><span class="sxs-lookup"><span data-stu-id="bfa87-111">Get token</span></span>
+## <a name="get-token"></a><span data-ttu-id="713df-111">Token abrufen</span><span class="sxs-lookup"><span data-stu-id="713df-111">Get token</span></span>
 
-- <span data-ttu-id="bfa87-112">Führen Sie die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="bfa87-112">Run the following commands:</span></span>
+- <span data-ttu-id="713df-112">Führen Sie die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="713df-112">Run the following commands:</span></span>
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,19 +72,19 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
-<span data-ttu-id="bfa87-113">Wo</span><span class="sxs-lookup"><span data-stu-id="bfa87-113">where</span></span>
-- <span data-ttu-id="bfa87-114">tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. a. die Abfrage wird auf den Daten dieses Mandanten ausgeführt)</span><span class="sxs-lookup"><span data-stu-id="bfa87-114">tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)</span></span>
-- <span data-ttu-id="bfa87-115">appId: ID Ihrer Azure AD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Microsoft Defender für Endpunkt verfügen)</span><span class="sxs-lookup"><span data-stu-id="bfa87-115">appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)</span></span>
-- <span data-ttu-id="bfa87-116">appSecret: Geheimer Schlüssel Ihrer Azure AD-App</span><span class="sxs-lookup"><span data-stu-id="bfa87-116">appSecret: Secret of your Azure AD app</span></span>
+<span data-ttu-id="713df-113">Wo</span><span class="sxs-lookup"><span data-stu-id="713df-113">where</span></span>
 
-## <a name="run-query"></a><span data-ttu-id="bfa87-117">Abfrage ausführen</span><span class="sxs-lookup"><span data-stu-id="bfa87-117">Run query</span></span>
+- <span data-ttu-id="713df-114">tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. a. die Abfrage wird auf den Daten dieses Mandanten ausgeführt)</span><span class="sxs-lookup"><span data-stu-id="713df-114">tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)</span></span>
+- <span data-ttu-id="713df-115">appId: ID Ihrer Azure AD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Microsoft Defender für Endpunkt verfügen)</span><span class="sxs-lookup"><span data-stu-id="713df-115">appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)</span></span>
+- <span data-ttu-id="713df-116">appSecret: Geheimer Schlüssel Ihrer Azure AD-App</span><span class="sxs-lookup"><span data-stu-id="713df-116">appSecret: Secret of your Azure AD app</span></span>
 
- <span data-ttu-id="bfa87-118">Führen Sie die folgende Abfrage aus:</span><span class="sxs-lookup"><span data-stu-id="bfa87-118">Run the following query:</span></span>
+## <a name="run-query"></a><span data-ttu-id="713df-117">Abfrage ausführen</span><span class="sxs-lookup"><span data-stu-id="713df-117">Run query</span></span>
 
-```
+ <span data-ttu-id="713df-118">Führen Sie die folgende Abfrage aus:</span><span class="sxs-lookup"><span data-stu-id="713df-118">Run the following query:</span></span>
+
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,40 +101,36 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
-- <span data-ttu-id="bfa87-119">schema contains the schema of the results of your query</span><span class="sxs-lookup"><span data-stu-id="bfa87-119">schema contains the schema of the results of your query</span></span>
-- <span data-ttu-id="bfa87-120">die Ergebnisse der Abfrage enthalten</span><span class="sxs-lookup"><span data-stu-id="bfa87-120">results contain the results of your query</span></span>
+- <span data-ttu-id="713df-119">schema contains the schema of the results of your query</span><span class="sxs-lookup"><span data-stu-id="713df-119">schema contains the schema of the results of your query</span></span>
+- <span data-ttu-id="713df-120">die Ergebnisse der Abfrage enthalten</span><span class="sxs-lookup"><span data-stu-id="713df-120">results contain the results of your query</span></span>
 
-### <a name="complex-queries"></a><span data-ttu-id="bfa87-121">Komplexe Abfragen</span><span class="sxs-lookup"><span data-stu-id="bfa87-121">Complex queries</span></span>
+### <a name="complex-queries"></a><span data-ttu-id="713df-121">Komplexe Abfragen</span><span class="sxs-lookup"><span data-stu-id="713df-121">Complex queries</span></span>
 
-<span data-ttu-id="bfa87-122">Wenn Sie komplexe Abfragen (oder Abfragen mit mehreren Leitungen) ausführen möchten, speichern Sie Ihre Abfrage in einer Datei, und führen Sie anstelle der ersten Zeile im obigen Beispiel den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="bfa87-122">If you want to run complex queries (or multilines queries), save your query in a file and, instead of the first line in the above sample, run the below command:</span></span>
+<span data-ttu-id="713df-122">Wenn Sie komplexe Abfragen (oder mehrzeilige Abfragen) ausführen möchten, speichern Sie Ihre Abfrage in einer Datei, und führen Sie anstelle der ersten Zeile im obigen Beispiel den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="713df-122">If you want to run complex queries (or multiline queries), save your query in a file and, instead of the first line in the above sample, run the below command:</span></span>
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
 ```
 
-## <a name="work-with-query-results"></a><span data-ttu-id="bfa87-123">Arbeiten mit Abfrageergebnissen</span><span class="sxs-lookup"><span data-stu-id="bfa87-123">Work with query results</span></span>
+## <a name="work-with-query-results"></a><span data-ttu-id="713df-123">Arbeiten mit Abfrageergebnissen</span><span class="sxs-lookup"><span data-stu-id="713df-123">Work with query results</span></span>
 
-<span data-ttu-id="bfa87-124">Sie können jetzt die Abfrageergebnisse verwenden.</span><span class="sxs-lookup"><span data-stu-id="bfa87-124">You can now use the query results.</span></span>
+<span data-ttu-id="713df-124">Sie können jetzt die Abfrageergebnisse verwenden.</span><span class="sxs-lookup"><span data-stu-id="713df-124">You can now use the query results.</span></span>
 
-<span data-ttu-id="bfa87-125">Führen Sie die folgenden Schritte aus, um die Ergebnisse zu durchlaufen:</span><span class="sxs-lookup"><span data-stu-id="bfa87-125">To iterate over the results do the below:</span></span>
+<span data-ttu-id="713df-125">Führen Sie die folgenden Schritte aus, um die Ergebnisse zu durchlaufen:</span><span class="sxs-lookup"><span data-stu-id="713df-125">To iterate over the results do the below:</span></span>
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
 
+<span data-ttu-id="713df-126">Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im CSV-Format in datei file1.csv ausgeben:</span><span class="sxs-lookup"><span data-stu-id="713df-126">To output the results of the query in CSV format in file file1.csv do the below:</span></span>
 
-<span data-ttu-id="bfa87-126">Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im CSV-Format in einer Datei auszugeben file1.csv:</span><span class="sxs-lookup"><span data-stu-id="bfa87-126">To output the results of the query in CSV format in file file1.csv do the below:</span></span>
-
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -147,16 +142,16 @@ for result in results:
 outputFile.close()
 ```
 
-<span data-ttu-id="bfa87-127">Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im JSON-Format in Datei file1.jsauszugeben:</span><span class="sxs-lookup"><span data-stu-id="bfa87-127">To output the results of the query in JSON format in file file1.json do the below:</span></span>
+<span data-ttu-id="713df-127">Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im JSON-Format in datei file1.json auszugeben:</span><span class="sxs-lookup"><span data-stu-id="713df-127">To output the results of the query in JSON format in file file1.json do the below:</span></span>
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
+## <a name="related-topic"></a><span data-ttu-id="713df-128">Verwandtes Thema</span><span class="sxs-lookup"><span data-stu-id="713df-128">Related topic</span></span>
 
-## <a name="related-topic"></a><span data-ttu-id="bfa87-128">Verwandtes Thema</span><span class="sxs-lookup"><span data-stu-id="bfa87-128">Related topic</span></span>
-- [<span data-ttu-id="bfa87-129">Microsoft Defender für Endpunkt-APIs</span><span class="sxs-lookup"><span data-stu-id="bfa87-129">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="bfa87-130">Erweiterte Suche-API</span><span class="sxs-lookup"><span data-stu-id="bfa87-130">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="bfa87-131">Erweiterte Bedrohungssuche mit PowerShell</span><span class="sxs-lookup"><span data-stu-id="bfa87-131">Advanced Hunting using PowerShell</span></span>](run-advanced-query-sample-powershell.md)
+- [<span data-ttu-id="713df-129">Microsoft Defender für Endpunkt-APIs</span><span class="sxs-lookup"><span data-stu-id="713df-129">Microsoft Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="713df-130">Erweiterte Bedrohungssuche-API</span><span class="sxs-lookup"><span data-stu-id="713df-130">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="713df-131">Erweiterte Bedrohungssuche mit PowerShell</span><span class="sxs-lookup"><span data-stu-id="713df-131">Advanced Hunting using PowerShell</span></span>](run-advanced-query-sample-powershell.md)
