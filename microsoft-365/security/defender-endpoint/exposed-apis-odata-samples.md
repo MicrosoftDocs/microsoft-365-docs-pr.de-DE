@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff13a382f7c59083c217f937b996e63abc2ff52a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771045"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290003"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>OData-Abfragen mit Microsoft Defender für Endpunkt
 
@@ -31,7 +31,7 @@ ms.locfileid: "52771045"
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,14 +41,14 @@ Wenn Sie nicht mit OData-Abfragen vertraut sind, lesen Sie: [OData V4-Abfragen](
 
 Nicht alle Eigenschaften sind filterbar.
 
-## <a name="properties-that-support-filter"></a>Eigenschaften, die $filter unterstützen:
-```
-- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
-- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
-- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
-- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-```
-### <a name="example-1"></a>Beispiel 1
+## <a name="properties-that-support-filter"></a>Eigenschaften, die $filter unterstützen
+
+- [Warnung:](alerts.md) `alertCreationTime` , , , , und `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
+- [Computer](machine.md): `ComputerDnsName` , , , und `LastSeen` `HealthStatus` `OsPlatform` `RiskScore` `RbacGroupId` .
+- [MachineAction](machineaction.md): `Status` , , und `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
+- [Indikator:](ti-indicator.md) `indicatorValue` , , , und `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+
+### <a name="example-1"></a>Beispiel 1
 
 Abrufen von 10 neuesten Warnungen mit verwandten Nachweisen:
 
@@ -56,7 +56,7 @@ Abrufen von 10 neuesten Warnungen mit verwandten Nachweisen:
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 {
@@ -193,7 +193,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 }
 ```
 
-### <a name="example-2"></a>Beispiel 2
+### <a name="example-2"></a>Beispiel 2
 
 Abrufen aller Warnungen, die zuletzt nach 2019-11-22 00:00:00 aktualisiert wurden:
 
@@ -201,7 +201,7 @@ Abrufen aller Warnungen, die zuletzt nach 2019-11-22 00:00:00 aktualisiert wurde
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 {
@@ -255,7 +255,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 }
 ```
 
-### <a name="example-3"></a>Beispiel 3
+### <a name="example-3"></a>Beispiel 3
 
 Rufen Sie alle Geräte mit "High" "RiskScore" ab:
 
@@ -263,7 +263,7 @@ Rufen Sie alle Geräte mit "High" "RiskScore" ab:
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 {
@@ -316,7 +316,7 @@ Rufen Sie die 100 wichtigsten Geräte mit "HealthStatus" ab, die nicht "Aktiv" s
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 {
@@ -369,7 +369,7 @@ Rufen Sie alle Geräte ab, die zuletzt nach 2018-10-20 angezeigt wurden:
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 {
@@ -422,7 +422,7 @@ Rufen Sie alle Virenscans ab, die der Benutzer mit Microsoft Defender für Endpu
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 json{
@@ -454,7 +454,7 @@ Rufen Sie die Anzahl der geöffneten Warnungen für ein bestimmtes Gerät ab:
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 4
@@ -468,7 +468,7 @@ Rufen Sie alle Geräte mit "computerDnsName" ab "mymachine" ab:
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-**Antwort:**
+#### <a name="response"></a>Antwort
 
 ```json
 json{
@@ -514,4 +514,5 @@ json{
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Microsoft Defender für Endpunkt-APIs](apis-intro.md)
+
+[Microsoft Defender für Endpunkt-APIs](apis-intro.md)

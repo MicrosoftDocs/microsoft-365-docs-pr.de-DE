@@ -1,7 +1,7 @@
 ---
 title: Verwenden grundlegender Berechtigungen für den Zugriff auf Microsoft Defender Security Center
 description: Erfahren Sie, wie Sie grundlegende Berechtigungen für den Zugriff auf das Microsoft Defender für Endpunkt-Portal verwenden.
-keywords: Zuweisen von Benutzerrollen, Zuweisen von Lese- und Schreibzugriff, Zuweisen von schreibgeschütztem Zugriff, Benutzer, Benutzerrollen, Rollen
+keywords: Benutzerrollen zuweisen, Lese- und Schreibzugriff zuweisen, schreibgeschützten Zugriff zuweisen, Benutzer, Benutzerrollen, Rollen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844658"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290195"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Verwenden von grundlegenden Berechtigungen für den Zugriff auf das Portal
 
@@ -32,7 +32,7 @@ ms.locfileid: "52844658"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-basicaccess-abovefoldlink)
 
 Informationen zur Verwendung der grundlegenden Berechtigungsverwaltung finden Sie in den nachstehenden Anweisungen.
 
@@ -49,12 +49,12 @@ Sie können Benutzern eine der folgenden Berechtigungsstufen zuweisen:
 
 ### <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Installieren Sie Azure PowerShell. Weitere Informationen finden Sie unter [Installieren und Konfigurieren Azure PowerShell.](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
+- Installieren Sie Azure PowerShell. Weitere Informationen finden Sie unter ["So installieren und konfigurieren Sie Azure PowerShell.](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
 
     > [!NOTE]
     > Sie müssen die PowerShell-Cmdlets in einer Befehlszeile mit erhöhten Rechten ausführen.
 
-- Verbinden zu Ihrem Azure Active Directory. Weitere Informationen finden Sie unter [Verbinden-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Verbinden zu Ihrem Azure Active Directory. Weitere Informationen finden Sie unter [Verbinden-MsolService](/powershell/module/msonline/connect-msolservice).
 
 **Vollzugriff** <br>
 Benutzer mit Vollzugriff können sich anmelden, alle Systeminformationen anzeigen und Warnungen auflösen, Dateien für eine umfassende Analyse übermitteln und das Onboardingpaket herunterladen.
@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um Sicherheitsrollen zuzuweisen:
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-Weitere Informationen finden Sie unter [Hinzufügen oder Entfernen von Gruppenmitgliedern mit Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
+Weitere Informationen finden Sie unter [Hinzufügen oder Entfernen von Gruppenmitgliedern mit Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Zuweisen des Benutzerzugriffs über das Azure-Portal
 

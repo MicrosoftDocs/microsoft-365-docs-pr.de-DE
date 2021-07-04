@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022562"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289727"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Details und Ergebnisse einer automatisierten Untersuchung
 
@@ -45,7 +45,7 @@ Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen über Ihre
 
 - Jede Untersuchungsseite im Office 365 Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) )
 - Jede Untersuchungsseite im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Jede Vorfall- oder Info-Center-Oberfläche im Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Jede Vorfall- oder Info-Center-Erfahrung im Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Öffnen der Anzeige mit Untersuchungsdetails
 
@@ -104,14 +104,14 @@ In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuch
 
 | Registerkarte | Beschreibung |
 |:--------|:--------|
-| **Untersuchungsdiagramm**   | Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können ein Element im Diagramm auswählen, um weitere Details anzuzeigen. Wenn Sie z. B. das **Symbol "Nachweis"** auswählen, gelangen Sie zur Registerkarte **"Nachweis",** auf der Sie erkannte Entitäten und deren Bewertungen sehen können. |
-| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office Apps, Microsoft Cloud App Security und anderen Microsoft 365 Defender Features stammen.|
+| **Untersuchungsdiagramm** | Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können ein Element im Diagramm auswählen, um weitere Details anzuzeigen. Wenn Sie z. B. das **Symbol "Nachweis"** auswählen, gelangen Sie zur Registerkarte **"Nachweis",** auf der Sie erkannte Entitäten und deren Bewertungen sehen können. |
+| **Benachrichtigungen** | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office Apps, Microsoft Cloud App Security und anderen Microsoft 365 Defender Features stammen.|
 | **Geräte** | Listet die in der Untersuchung enthaltenen Geräte zusammen mit deren Korrekturstufe auf. (Korrekturstufen entsprechen [der Automatisierungsstufe für Gerätegruppen.)](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Postfächer** |Listet Postfächer auf, die von erkannten Bedrohungen betroffen sind.  |
-| **Users**  | Listet Benutzerkonten auf, die von erkannten Bedrohungen betroffen sind. |
+| **Benutzer**  | Listet Benutzerkonten auf, die von erkannten Bedrohungen betroffen sind. |
 | **Beweise** | Listet Nachweise auf, die durch Warnungen oder Untersuchungen ausgelöst werden. Umfasst Bewertungen (*bösartig*, *verdächtig,* *unbekannt* oder *keine Bedrohungen gefunden*) und Den Wartungsstatus. |
-| **Entities**  | Enthält Details zu jeder analysierten Entität, einschließlich einer Bewertung für jeden Entitätstyp (*Bösartig,* *Verdächtig* oder *keine Bedrohungen gefunden*).|
-|**Log**    | Bietet eine chronologische, detaillierte Ansicht aller Untersuchungsaktionen, die nach dem Auslösen einer Warnung ausgeführt wurden.|
+| **Entities** | Enthält Details zu jeder analysierten Entität, einschließlich einer Bewertung für jeden Entitätstyp (*Bösartig,* *Verdächtig* oder *keine Bedrohungen gefunden*).|
+|**Log** | Bietet eine chronologische, detaillierte Ansicht aller Untersuchungsaktionen, die nach dem Auslösen einer Warnung ausgeführt wurden.|
 | **Verlauf ausstehender Aktionen** | Listet Elemente auf, für die eine Genehmigung erforderlich, um fortzufahren. Wechseln Sie zum Info-Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ), um ausstehende Aktionen zu genehmigen. |
 
 ## <a name="next-steps"></a>Nächste Schritte

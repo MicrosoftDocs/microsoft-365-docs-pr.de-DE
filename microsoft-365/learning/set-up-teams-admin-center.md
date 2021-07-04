@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Erfahren Sie, wie Sie Microsoft Viva Learning (Vorschau) im Teams Admin Center konfigurieren.
-ms.openlocfilehash: 860f16bee7d93f2212072c5d738263402704272f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789231"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290219"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Einrichten von Microsoft Viva Learning (Vorschau) im Teams Admin Center
 
@@ -33,21 +33,21 @@ Der Teams-Administrator muss bestimmte Schritte ausführen, um Viva Learning (Vo
 
 ### <a name="administrator-steps-for-public-preview-tenants"></a>Administratorschritte für Öffentliche Vorschaumandanten
 
-Da Viva Learning (Vorschau) noch nicht allgemein verfügbar ist, sind bestimmte Schritte erforderlich, um die Features zu aktivieren und Berechtigungen für bestimmte Benutzer oder Gruppen festzulegen. 
+Da viva Learning (Vorschau) noch nicht allgemein verfügbar ist, sind bestimmte Schritte erforderlich, um die Features zu aktivieren und Berechtigungen für bestimmte Benutzer oder Gruppen festzulegen. 
 
-1. Aktivieren Sie öffentliche Vorschaufeatures für Viva Learning-Benutzer (Vorschau).
+1. Aktivieren Sie public Preview-Features für Viva Learning (Vorschau)-Benutzer.
 
     a. Ändern Sie Teams Updaterichtlinie, um Public Preview-Features zu aktivieren. Siehe [Microsoft Teams Public Preview](/microsoftteams/public-preview-doc-updates).
 
-    b. Aktivieren Sie die Updaterichtlinie für Benutzer oder Gruppen, die Viva Learning (Vorschau)-Tests durchführen. Siehe [Zuweisen von Richtlinien zu Benutzern und Gruppen.](/microsoftteams/assign-policies-users-and-groups)
+    b. Aktivieren Sie die Updaterichtlinie für Benutzer oder Gruppen, die Viva Learning (Vorschau) testen. Siehe [Zuweisen von Richtlinien zu Benutzern und Gruppen.](/microsoftteams/assign-policies-users-and-groups)
 
-2. Ändern Sie die App-Berechtigungsrichtlinie für Viva Learning -Benutzer (Vorschau).
+2. Ändern Sie die App-Berechtigungsrichtlinie für Benutzer von Viva Learning (Vorschau).
 
     a. Sofern sie nicht aktuell Teil der globalen Richtlinie ist, lassen Sie alle Microsoft-Apps in der App-Berechtigungsrichtlinie zu. Weitere Informationen finden [Sie unter Verwalten von App-Berechtigungsrichtlinien in Microsoft Teams.](/microsoftteams/teams-app-permission-policies) 
 
-    b. Aktivieren Sie die App-Berechtigungsrichtlinie für Benutzer oder Gruppen, die Viva Learning (Vorschau)-Tests durchführen. Siehe [Zuweisen von Richtlinien zu Benutzern und Gruppen.](/microsoftteams/assign-policies-users-and-groups)
+    b. Aktivieren Sie die App-Berechtigungsrichtlinie für Benutzer oder Gruppen, die Viva Learning (Vorschau) testen. Siehe [Zuweisen von Richtlinien zu Benutzern und Gruppen.](/microsoftteams/assign-policies-users-and-groups)
 
-3.  Benachrichtigen Sie Benutzer, die Viva Learning (Vorschau) testen werden, [um ihren Buildclient für Teams zur öffentlichen Vorschau zu wechseln.](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
+3. Benachrichtigen Sie Benutzer, die Viva Learning (Vorschau) testen werden, [ihren Buildclient für Teams in die öffentliche Vorschau zu wechseln.](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
 
 > [!IMPORTANT]
 > Für Öffentliche Vorschau-Mandanten wird Viva Learning (Vorschau) erst in der endgültigen Produktversion in **verwalteten Apps** im Teams Admin Center angezeigt. Aktivierte Benutzer der öffentlichen Vorschau können Viva Learning (Vorschau) jedoch im Teams App Store finden und verwenden, sobald die richtigen Richtlinien und Berechtigungen eingerichtet wurden.
@@ -57,14 +57,14 @@ Da Viva Learning (Vorschau) noch nicht allgemein verfügbar ist, sind bestimmte 
 Benutzer, die für öffentliche Vorschautests aktiviert wurden – durch Aktivieren der [zuvor beschriebenen Richtlinien](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) – müssen in ihrem Teams Client [zur öffentlichen Vorschau wechseln.](/microsoftteams/public-preview-doc-updates#enable-public-preview)
 
 1. Benutzer müssen ihr Profilbild > **Informationen**  >  **zur öffentlichen Vorschau** auswählen.
-   
+
     ![Obere Navigation in der Teams-Anwendung, die das Profil des Benutzers anzeigt](../media/learning/learning-app-select-profile-teams.png)
-    
+
 2. Benutzer müssen die Allgemeinen Geschäftsbedingungen für die öffentliche Vorschau akzeptieren.
 
     ![Wechseln zum öffentlichen Vorschaubuild](../media/learning/learning-app-switch-to-public-preview.png)
- 
-3. Benutzer finden Viva Learning (Vorschau) jetzt im Teams App Store und beginnen damit.
+
+3. Benutzer finden Viva Learning (Vorschau) jetzt im Teams App Store und beginnen mit der Verwendung.
 
 ## <a name="private-preview-tenants"></a>Private Preview-Mandanten
 
@@ -78,12 +78,11 @@ Für Private Preview-Mandanten gibt es keine zusätzlichen Richtlinien, die akti
 
 2. Geben Sie auf der Seite **"Apps verwalten"** im Suchfeld *Viva Learning* ein, und wählen Sie dann **Viva Learning (Vorschau)** aus.
 
-   ![Seite "Apps verwalten" im Teams Admin Center mit dem Suchfeld.](../media/learning/learning-app-teams-manage-apps-page.png)
+   ![Seite "Apps verwalten" im Teams Admin Center, auf der das Suchfeld angezeigt wird.](../media/learning/learning-app-teams-manage-apps-page.png)
 
 3. On the **Viva Learning (Preview)** page, under **Status**, select **Allowed** to turn on Viva Learning (Preview).
 
-   ![Lernseite im Teams Admin Center mit dem Abschnitt "Status- und App-Einstellungen".](../media/learning/learning-app-teams-learning-page.png)
-
+   ![Learning Seite im Teams Admin Center, auf der der Abschnitt "Status- und App-Einstellungen" angezeigt wird.](../media/learning/learning-app-teams-learning-page.png)
 
 <!---
 The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.

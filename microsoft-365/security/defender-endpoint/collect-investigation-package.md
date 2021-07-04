@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0083d806f3e52307e6dce30f74e255073a09c16a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770493"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289895"
 ---
 # <a name="collect-investigation-package-api"></a>Erfassen der Untersuchungspaket-API
 
@@ -32,7 +32,7 @@ ms.locfileid: "52770493"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,28 +40,31 @@ ms.locfileid: "52770493"
 
 
 ## <a name="api-description"></a>API-Beschreibung
+
 Erfassen Sie untersuchungspaket von einem Gerät.
 
+## <a name="limitations"></a>Einschränkungen
 
-## <a name="limitations"></a>Begrenzungen
 1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
-
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Defender für Endpunkt-APIs](apis-intro.md)
 
-Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Machine.CollectForensics |  "Forensik sammeln"
-Delegiert (Geschäfts-, Schul- oder Unikonto) |    Machine.CollectForensics |  "Forensik sammeln"
+Anwendung | Machine.CollectForensics | "Forensik sammeln"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.CollectForensics | "Forensik sammeln"
 
->[!Note]
+> [!NOTE]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
->- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
+>
+> - Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+> - Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
@@ -69,23 +72,24 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
+
 Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an:
 
-Parameter | Typ    | Beschreibung
+Parameter | Typ | Beschreibung
 :---|:---|:---
-Kommentar |   Zeichenfolge |    Kommentar, der der Aktion zugeordnet werden soll. **Erforderlich**.
+Kommentar | Zeichenfolge | Kommentar, der der Aktion zugeordnet werden soll. **Erforderlich**.
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Methode den Antwortcode 201 – Erstellt und die [Computeraktion](machineaction.md) im Antworttext zurück.
 
+Bei erfolgreicher Ausführung gibt die Methode den Antwortcode 201 – Erstellt und die [Computeraktion](machineaction.md) im Antworttext zurück.
 
 ## <a name="example"></a>Beispiel
 
-**Anforderung**
+### <a name="request"></a>Anforderung
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 

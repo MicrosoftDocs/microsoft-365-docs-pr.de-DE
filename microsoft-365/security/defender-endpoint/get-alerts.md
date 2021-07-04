@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769243"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289847"
 ---
 # <a name="list-alerts-api"></a>API zum Auflisten von Warnungen
 
@@ -31,7 +31,7 @@ ms.locfileid: "52769243"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -50,7 +50,7 @@ Ruft eine Sammlung von Warnungen ab.
 <br>Beispiele für [OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Begrenzungen
+## <a name="limitations"></a>Einschränkungen
 1. Sie können Benachrichtigungen erhalten, die nach Dem konfigurierten Aufbewahrungszeitraum zuletzt aktualisiert wurden.
 2. Die maximale Seitengröße beträgt 10.000.
 3. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde. 
@@ -59,20 +59,22 @@ Ruft eine Sammlung von Warnungen ab.
 ## <a name="permissions"></a>Berechtigungen
 Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
-Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Alert.Read.All |    "Alle Warnungen lesen"
-Anwendung |   Alert.ReadWrite.All |   "Alle Warnungen lesen und schreiben"
+Anwendung | Alert.Read.All | "Alle Warnungen lesen"
+Anwendung | Alert.ReadWrite.All | "Alle Warnungen lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.Read | "Warnungen lesen"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.ReadWrite | "Warnungen lesen und schreiben"
 
->[!Note]
+> [!NOTE]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
->- Die Antwort enthält nur Warnungen, die Geräten zugeordnet sind, auf die der Benutzer zugreifen kann, basierend auf Gerätegruppeneinstellungen (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
+>
+> - Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+> - Die Antwort enthält nur Warnungen, die Geräten zugeordnet sind, auf die der Benutzer zugreifen kann, basierend auf Gerätegruppeneinstellungen (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
-```
+
+```http
 GET /api/alerts
 ```
 
@@ -80,19 +82,19 @@ GET /api/alerts
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
-
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
+
 Empty
 
 ## <a name="response"></a>Antwort
-Bei erfolgreicher Ausführung gibt die Methode 200 OK und eine Liste der [Warnungsobjekte](alerts.md) im Antworttext zurück.
 
+Bei erfolgreicher Ausführung gibt die Methode 200 OK und eine Liste der [Warnungsobjekte](alerts.md) im Antworttext zurück.
 
 ## <a name="example-1---default"></a>Beispiel 1 – Standard
 
-**Anforderung**
+### <a name="request"></a>Anforderung
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
@@ -100,13 +102,12 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**Antwort**
+### <a name="response"></a>Antwort
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
->[!NOTE]
->Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. Alle Warnungen werden von einem tatsächlichen Aufruf zurückgegeben.
-
+> [!NOTE]
+> Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. Alle Warnungen werden von einem tatsächlichen Aufruf zurückgegeben.
 
 ```json
 {
@@ -162,7 +163,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Beispiel 2 – Abrufen von 10 neuesten Warnungen mit zugehörigen Nachweisen
 
-**Anforderung**
+### <a name="request"></a>Anforderung
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
@@ -170,14 +171,12 @@ Nachfolgend sehen Sie ein Beispiel der Anforderung.
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**Antwort**
+### <a name="response"></a>Antwort
 
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
->[!NOTE]
->Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. Alle Warnungen werden von einem tatsächlichen Aufruf zurückgegeben.
-
+> [!NOTE]
+> Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. Alle Warnungen werden von einem tatsächlichen Aufruf zurückgegeben.
 
 ```json
 {
@@ -314,6 +313,6 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 }
 ```
 
+## <a name="see-also"></a>Weitere Informationen:
 
-## <a name="see-also"></a>Siehe auch
-- [OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)
+[OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)

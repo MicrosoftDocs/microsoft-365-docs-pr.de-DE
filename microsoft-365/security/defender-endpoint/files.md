@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771189"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290015"
 ---
 # <a name="file-resource-type"></a>File-Ressourcentyp
 
@@ -30,16 +30,16 @@ ms.locfileid: "52771189"
 
 **Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Stellt eine Dateientität in Defender für Endpunkt dar.
 
 ## <a name="methods"></a>Methoden
+
 Methode|Rückgabetyp |Beschreibung
 :---|:---|:---
 [Datei abrufen](get-file-information.md) | [file](files.md) | Abrufen einer einzelnen Datei 
@@ -49,25 +49,25 @@ Methode|Rückgabetyp |Beschreibung
 
 
 ## <a name="properties"></a>Eigenschaften
-|Eigenschaft | Typ    |   Beschreibung |
+
+|Eigenschaft | Typ | Beschreibung |
 |:---|:---|:---|
-|sha1 | String | Sha1-Hash des Dateiinhalts |
-|sha256 | String | Sha256-Hash des Dateiinhalts |
+|sha1 | Zeichenfolge | Sha1-Hash des Dateiinhalts |
+|sha256 | Zeichenfolge | Sha256-Hash des Dateiinhalts |
 |globalPrevalence | Nullable long | Dateiprävalenz in der gesamten Organisation |
 |globalFirstObserved | DateTimeOffset | Zeitpunkt, zu dem die Datei zum ersten Mal beobachtet wurde |
 |globalLastObserved | DateTimeOffset | Zeitpunkt, zu dem die Datei zuletzt beobachtet wurde |
 |Größe | Nullable long | Größe der Datei |
-|Filetype | String | Typ der Datei |
+|Filetype | Zeichenfolge | Typ der Datei |
 |isPeFile | Boolesch | "true", wenn die Datei portierbar ist (z. B. "DLL", "EXE" usw.) |
-|filePublisher | String | Dateiherausgeber |
-|fileProductName | String | Produktname |
-|Signer | String | Dateisignierer |
-|Emittenten | String | Dateiaussteller |
-|signerHash | String | Hash des Signaturzertifikats |
+|filePublisher | Zeichenfolge | Dateiherausgeber |
+|fileProductName | Zeichenfolge | Produktname |
+|Signer | Zeichenfolge | Dateisignierer |
+|Emittenten | Zeichenfolge | Dateiaussteller |
+|signerHash | Zeichenfolge | Hash des Signaturzertifikats |
 |isValidCertificate | Boolesch | Wurde das Signaturzertifikat vom Microsoft Defender für Endpunkt-Agent erfolgreich überprüft? |
-|determinationType | String | Der Bestimmungstyp der Datei |
-|determinationValue | String | Ermittlungswert |
-
+|determinationType | Zeichenfolge | Der Bestimmungstyp der Datei |
+|determinationValue | Zeichenfolge | Ermittlungswert |
 
 ## <a name="json-representation"></a>JSON-Darstellung
 

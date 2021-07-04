@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a506f4913369e53fd2ed4943bb2557935f1d62e5
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a7a560cb33190105f8df5922e04aeada4d75f398
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105560"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290039"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Erstellen eines benutzerdefinierten schrittweisen Rollouts für Microsoft Defender-Updates
 
@@ -42,8 +42,8 @@ Um Einen eigenen benutzerdefinierten graduellen Rolloutprozess für Defender-Upd
 
 In der folgenden Tabelle sind die verfügbaren Gruppenrichtlinieneinstellungen zum Konfigurieren von Updatekanälen aufgeführt:
 
-| Festlegen des Titels  | Beschreibung  | Ort  |
-|-|-|-|
+| Festlegen des Titels  | Beschreibung  | Speicherort  |
+|:---|:---|:---|
 | Auswählen des Rolloutkanals für graduelle monatliche Microsoft Defender-Plattformupdates  | Aktivieren Sie diese Richtlinie, um anzugeben, wann Geräte Während des monatlichen graduellen Rollouts Microsoft Defender-Plattformupdates erhalten. Betakanal: Geräte, die auf diesen Kanal festgelegt sind, erhalten als Erste neue Updates. Wählen Sie "Betakanal" aus, um an der Identifizierung und Meldung von Problemen an Microsoft teilzunehmen. Geräte im Windows-Insider-Programm sind standardmäßig für diesen Kanal abonniert. Nur zur Verwendung in (manuellen) Testumgebungen und einer begrenzten Anzahl von Geräten.  <br><br>  Aktueller Kanal (Vorschau): Geräte, die auf diesen Kanal festgelegt sind, werden frühestens während des monatlichen schrittweisen Veröffentlichungszyklus Updates angeboten. Wird für Vorproduktions-/Validierungsumgebungen vorgeschlagen.  <br><br>  Aktueller Kanal (bereitgestellt): Geräten werden Updates nach dem monatlichen schrittweisen Releasezyklus angeboten. Es wird empfohlen, einen kleinen, repräsentativen Teil Ihrer Produktionsgesamtheit (ca. 10 %) anzuwenden.  <br><br>  Aktueller Kanal (allgemein): Geräte werden Updates erst nach Abschluss des schrittweisen Veröffentlichungszyklus angeboten. Es wird empfohlen, eine breite Palette von Geräten in Ihrer Produktionsgesamtheit anzuwenden (ca. 10-100 %).  <br><br>   Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, bleibt das Gerät während des schrittweisen Releasezyklus automatisch auf dem neuesten Stand. Geeignet für die meisten Geräte.  | Windows Components\Microsoft Defender Antivirus  |
 | Auswählen des Rolloutkanals für schrittweise Updates des Microsoft Defender-Moduls  | Aktivieren Sie diese Richtlinie, um anzugeben, wann Geräte während des monatlichen graduellen Rollouts Updates des Microsoft Defender-Moduls erhalten.  <br><br>  Betakanal: Geräte, die auf diesen Kanal festgelegt sind, erhalten als Erste neue Updates. Wählen Sie "Betakanal" aus, um an der Identifizierung und Meldung von Problemen an Microsoft teilzunehmen. Geräte im Windows-Insider-Programm sind standardmäßig für diesen Kanal abonniert. Nur zur Verwendung in (manuellen) Testumgebungen und einer begrenzten Anzahl von Geräten.  <br><br>  Aktueller Kanal (Vorschau): Geräte, die auf diesen Kanal festgelegt sind, werden frühestens während des monatlichen schrittweisen Veröffentlichungszyklus Updates angeboten. Wird für Vorproduktions-/Validierungsumgebungen vorgeschlagen.  <br><br>  Aktueller Kanal (bereitgestellt): Geräten werden Updates nach dem monatlichen schrittweisen Releasezyklus angeboten. Es wird empfohlen, einen kleinen, repräsentativen Teil Ihrer Produktionsgesamtheit (ca. 10 %) anzuwenden.  <br><br>  Aktueller Kanal (allgemein): Geräte werden Updates erst nach Abschluss des schrittweisen Veröffentlichungszyklus angeboten. Es wird empfohlen, eine breite Palette von Geräten in Ihrer Produktionsgesamtheit anzuwenden (ca. 10-100 %).  <br><br>  Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, bleibt das Gerät während des schrittweisen Releasezyklus automatisch auf dem neuesten Stand. Geeignet für die meisten Geräte.  | Windows Components\Microsoft Defender Antivirus  |
 | Auswählen des Rolloutkanals für schrittweise tägliche Microsoft Defender-Definitionsupdates  | Aktivieren Sie diese Richtlinie, um anzugeben, wann Geräte während des täglichen graduellen Rollouts Microsoft Defender-Definitionsupdates erhalten. <br><br> Aktueller Kanal (bereitgestellt): Geräten werden nach dem Veröffentlichungszyklus Updates angeboten. Es wird empfohlen, einen kleinen, repräsentativen Teil der Produktionsgesamtheit (~10 %) anzuwenden. <br><br>   Aktueller Kanal (allgemein): Geräte werden Updates erst nach Abschluss des schrittweisen Veröffentlichungszyklus angeboten. Es wird empfohlen, eine breite Palette von Geräten in Ihrer Produktionsgesamtheit anzuwenden (ca. 10-100 %). <br><br>   Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, bleibt das Gerät während des täglichen Veröffentlichungszyklus automatisch auf dem neuesten Stand. Geeignet für die meisten Geräte.  | Windows Components\Microsoft Defender Antivirus  |
@@ -58,13 +58,13 @@ Sie können [gruppenrichtlinien](/windows/win32/srvnodes/group-policy?redirect
 
 Im Allgemeinen können Sie das folgende Verfahren verwenden, um Microsoft Defender Antivirus Gruppenrichtlinieneinstellungen zu konfigurieren oder zu ändern:
 
-1. Öffnen Sie auf dem Computer für die Gruppenrichtlinienverwaltung die  **Gruppenrichtlinien-Verwaltungskonsole,** klicken Sie mit der rechten Maustaste auf das **Gruppenrichtlinienobjekt** ( Group Policy Object, GPO), das Sie konfigurieren möchten, und klicken Sie auf  **Bearbeiten.**
+1. Öffnen Sie auf dem Computer für die Gruppenrichtlinienverwaltung die  **Gruppenrichtlinien-Verwaltungskonsole,** klicken Sie mit der rechten Maustaste auf das **Gruppenrichtlinienobjekt** , das Sie konfigurieren möchten, und klicken Sie auf  **"Bearbeiten".**
 
-2. Mit dem Gruppenrichtlinienverwaltungs-Editor wechseln Sie zur **Computerkonfiguration.**
+2. Navigieren Sie mithilfe des Gruppenrichtlinienverwaltungs-Editors zur **Computerkonfiguration.**
 
 3. Klicken Sie auf **"Administrative Vorlagen".**
 
-4. Erweitern Sie die Struktur bis Windows **Komponenten > Microsoft Defender Antivirus.**
+4. Erweitern Sie die Struktur, um **komponenten > Microsoft Defender Antivirus Windows.**
 
 5. Erweitern Sie den Abschnitt (in der Tabelle in diesem Thema als **Speicherort**   bezeichnet), der die zu konfigurierende Einstellung enthält, doppelklicken Sie auf die Einstellung, um sie zu öffnen, und nehmen Sie Konfigurationsänderungen vor.
 
@@ -75,6 +75,8 @@ Im Allgemeinen können Sie das folgende Verfahren verwenden, um Microsoft Defend
 Folgen Sie den Anweisungen im folgenden Link, um eine benutzerdefinierte Richtlinie in Intune zu erstellen:
 
 [Hinzufügen von benutzerdefinierten Einstellungen für Windows 10 Geräte in Microsoft Intune – Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
+
+Weitere Informationen zu den Defender-CSPs, die für den graduellen Rollout-Prozess verwendet werden, finden Sie unter [Defender CSP.](/windows/client-management/mdm/defender-csp)
 
 ## <a name="powershell"></a>PowerShell
 
@@ -94,4 +96,4 @@ Beispiel:
 
 Dient zum Konfigurieren von `Set-MpPreference -PlatformUpdatesChannel Beta` Plattformupdates für die Eintreffen aus dem Betakanal.
 
-Weitere Informationen zu den Parametern und deren Konfiguration finden Sie unter ["Set-MpPreference (Defender)"-| Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps&preserve-view=true).
+Weitere Informationen zu den Parametern und deren Konfiguration finden Sie unter [Set-MpPreference (Defender) | Microsoft Docs](/powershell/module/defender/set-mppreference).

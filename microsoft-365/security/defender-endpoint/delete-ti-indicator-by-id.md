@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eaef6b25e2db72149a1a1128899d8a79a38a4c60
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771021"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289919"
 ---
 # <a name="delete-indicator-api"></a>Indikator-API löschen
 
@@ -31,7 +31,7 @@ ms.locfileid: "52771021"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,24 +39,25 @@ ms.locfileid: "52771021"
 
 
 ## <a name="api-description"></a>API-Beschreibung
+
 Löscht eine [](ti-indicator.md) Indikatorentität nach ID.
 
+## <a name="limitations"></a>Einschränkungen
 
-## <a name="limitations"></a>Begrenzungen
-1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
-
+Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 ## <a name="permissions"></a>Berechtigungen
+
 Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter ["Erste Schritte".](apis-intro.md)
 
-Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Ti.ReadWrite |  "TI-Indikatoren lesen und schreiben"
-Anwendung |   Ti.ReadWrite.All |  "Indikatoren lesen und schreiben"
-
+Anwendung | Ti.ReadWrite | "TI-Indikatoren lesen und schreiben"
+Anwendung | Ti.ReadWrite.All | "Indikatoren lesen und schreiben"
 
 ## <a name="http-request"></a>HTTP-Anforderung
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
@@ -66,19 +67,21 @@ Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
-
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
+
 Empty
 
 ## <a name="response"></a>Antwort
+
 Wenn Indikator vorhanden und erfolgreich gelöscht – 204 OK ohne Inhalt.
+
 Wenn indikator mit der angegebenen ID nicht gefunden wurde - 404 Nicht gefunden.
 
 ## <a name="example"></a>Beispiel
 
-**Anforderung**
+### <a name="request"></a>Anforderung
 
 Nachfolgend sehen Sie ein Beispiel der Anforderung.
 
