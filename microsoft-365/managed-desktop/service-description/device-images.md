@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276929"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300105"
 ---
 # <a name="device-images"></a>Gerätebilder
 
@@ -31,7 +31,7 @@ Wenn Sie ein neues Gerät von einem [genehmigten Hersteller](device-requirements
 Wenden Sie sich direkt an den Dell-Vertriebsmitarbeiter, der sicherstellen wird, dass das von Microsoft Managed Desktop genehmigte Image auf Geräte für Ihre Bestellung angewendet wird. Wenn Sie weitere Fragen zu Dell-Geräten, dem Image und dem Bestellvorgang haben, wenden Sie sich an MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>Hp 
-Wenn Sie neue Geräte von HP bestellen, müssen Sie die spezifische SKU verwenden, die im Abschnitt "Zusätzliche Anforderungen" für jedes Modell auf der Website ["Shop Windows 10 Pro Business Devices"](https://www.microsoft.com/windowsforbusiness/view-all-devices) aufgeführt ist (filtern Sie die Ansicht, um Microsoft Managed Desktop Geräte anzuzeigen).
+Wenn Sie neue Geräte von HP bestellen, müssen Sie die spezifische SKU verwenden, die im Abschnitt "Zusätzliche Anforderungen" für jedes Modell auf der Website ["Shop Windows 10 Pro Business Devices"](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) aufgeführt ist (filtern Sie die Ansicht, um Microsoft Managed Desktop Geräte anzuzeigen).
 
 Wenn Sie ein Gerät von HP sortieren, das als [Ausnahme](customizing.md) genehmigt wurde, aber derzeit nicht auf der Seite "Geräteliste" aufgeführt ist, stellen Sie sicher, dass Sie die SKU anfordern, die für Ihr Modell verwendet werden soll. Wir arbeiten mit HP, um Diese Informationen mithilfe Ihrer Ausnahmeanforderung abzurufen. Sie können hp auch direkt kontaktieren, um Fragen zu Geräten und Anweisungen zur Gerätereihenfolge zu erhalten, indem Sie die folgenden Adressen verwenden:
  
@@ -88,7 +88,7 @@ Durch diese Schritte werden alle Daten auf dem Gerät entfernt, daher sollten Si
 4. Führen Sie in einer Eingabeaufforderung [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references)aus.
 5. Führen Sie in Diskpart `list disk` die primäre Speicherdatenträgernummer aus (in der Regel Datenträger 0).
 6. Beenden Sie Diskpart, indem Sie `exit` .
-7. Führen Sie an der Eingabeaufforderung `deploy.cmd <sys_disk> <recovery_wim>` aus, wobei *sys_disk* die Datenträgernummer des primären Speicherdatenträgers ist, den Sie soeben ermittelt haben, und *recovery_wim* der Dateiname der . WIM-Datei, die Sie zuvor kopiert haben.
+7. Führen Sie an der Eingabeaufforderung `deploy.cmd <sys_disk> <recovery_wim>` aus, wobei *sys_disk* die Datenträgernummer des primären Speicherdatenträgers ist, den Sie gerade ermittelt haben, und *recovery_wim* der Dateiname der . WIM-Datei, die Sie zuvor kopiert haben.
 8. Entfernen Sie das USB-Laufwerk, und starten Sie das Gerät neu.
 
 ### <a name="microsoft"></a>Microsoft 
@@ -99,7 +99,7 @@ Diese Bilder verwenden die Windows Wiederherstellungsumgebung (WinRE) und dies i
 
 
 ### <a name="universal-image"></a>Universelles Bild
-Microsoft Managed Desktop hat ein Bild erstellt, das Windows 10 Pro und Microsoft 365 Apps für Enterprise enthält, die Sie mit Microsoft Managed Desktop verwenden können. Es empfiehlt sich jedoch, bilder zu verwenden, die dem vom Hersteller bereitgestellten Microsoft Managed Desktop entsprechen, auch wenn dies eine ältere Windows Version bedeutet, die aktualisiert werden muss, sobald sich der Benutzer anmeldet. Die Verwendung des Microsoft Managed Desktop Universellen Bilds sollte eine letzte Option sein.
+Microsoft Managed Desktop hat ein Bild erstellt, das Windows 10 Pro und Microsoft 365 Apps für Enterprise enthält, die Sie mit Microsoft Managed Desktop verwenden können. Es empfiehlt sich jedoch, nach Möglichkeit Bilder zu verwenden, die für Microsoft Managed Desktop vom Hersteller bereitgestellt werden, auch wenn dies eine ältere Windows Version bedeutet, die aktualisiert werden muss, sobald sich der Benutzer anmeldet. Die Verwendung des Microsoft Managed Desktop Universellen Bilds sollte eine letzte Option sein.
 
 - Wir aktualisieren das Image alle 30 bis 60 Tage mit den neuesten Windows monatlichen Qualitätsupdates und Microsoft 365 Apps für Enterprise Updates mindestens zweimal pro Jahr.
 - Das Image enthält ein Wiederherstellungsbereitstellungspaket, um sicherzustellen, dass Microsoft 365 Apps für Enterprise nach Windows Wiederherstellungsszenarien wiederhergestellt wird.

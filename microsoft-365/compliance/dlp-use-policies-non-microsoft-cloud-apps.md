@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps (Vorschau)
+title: Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden.
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226839"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300124"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps (Vorschau)
 
@@ -41,7 +41,13 @@ Bevor Sie mit der Verwendung von DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
-- Microsoft 365 E5 Security
+- Microsoft 365 E5 Security
+
+### <a name="permissions"></a>Berechtigungen
+Der Benutzer, der die DLP-Richtlinie erstellt, sollte Folgendes sein:
+- Globaler Administrator
+- Complianceadministrator
+- Compliancedatenadministrator
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Vorbereiten der Cloud App Security Umgebung
 
@@ -73,7 +79,7 @@ Wenn Sie einen Speicherort für die DLP-Richtlinie auswählen, aktivieren Sie de
 
    ![Box-US und Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
-Sie können für jede unterstützte Nicht-Microsoft-Cloud-App verschiedene Aktionen auswählen. Für jede App gibt es verschiedene mögliche Aktionen (hängt von der Cloud-App-API ab).
+Sie können für jede unterstützte Nicht-Microsoft-Cloud-App verschiedene Aktionen auswählen. Für jede App gibt es verschiedene mögliche Aktionen (abhängig von der Cloud-App-API).
 
 ![Regel erstellen](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
@@ -81,7 +87,8 @@ Wenn Sie eine Regel in der DLP-Richtlinie erstellen, können Sie eine Aktion fü
 
 ![Einschränken von Drittanbieter-Apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [HINWEIS] DLP-Richtlinien, die auf Nicht-Microsoft-Apps angewendet werden, verwenden Microsoft Cloud App Security. Wenn die DLP-Richtlinie für eine Nicht-Microsoft-App erstellt wird, wird dieselbe Richtlinie automatisch in Microsoft Cloud App Security erstellt.
+> [!NOTE]
+> DLP-Richtlinien, die auf Nicht-Microsoft-Apps angewendet werden, verwenden Microsoft Cloud App Security. Wenn die DLP-Richtlinie für eine Nicht-Microsoft-App erstellt wird, wird dieselbe Richtlinie automatisch in Microsoft Cloud App Security erstellt.
 
 Informationen zum Erstellen und Konfigurieren von DLP-Richtlinien finden Sie unter ["Erstellen von Tests und Optimieren einer DLP-Richtlinie".](./create-test-tune-dlp-policy.md)
 

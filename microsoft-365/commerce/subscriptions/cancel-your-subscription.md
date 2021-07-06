@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Wenn Sie weniger als 25 Benutzerlizenzen haben, können Sie Ihre Microsoft 365 für Unternehmen Testversion oder Ihr bezahltes Abonnement im Admin Center kündigen.
 ms.date: 04/08/2021
-ms.openlocfilehash: d327a09eba06e9a2bbc92959b6048649b41b72fe
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e0b23d785a86102891f24cb16419794773d64356
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256795"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300040"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -82,7 +82,7 @@ Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nu
 
 Wenn Sie ein Abonnement vor Ablauf der Laufzeit kündigen, wird es direkt in den Status "Deaktiviert" versetzt. Der Status "Deaktiviert" dauert bei den meisten Abonnements, in den meisten Ländern und Regionen, 90 Tage. Administratoren können zwar weiterhin auf die Daten ihrer Organisation zugreifen und diese sichern, während sich das Abonnement im Status "Deaktiviert" befindet, es empfiehlt sich jedoch, dass sie [ihre Daten sichern](back-up-data-before-switching-plans.md), bevor sie das Abonnement kündigen, insbesondere, wenn es sich um das einzige Abonnement handelt. Administratoren können das Abonnement auch im deaktivierten Zustand reaktivieren.
 
-Nach 90 Tagen wechselt das Abonnement in den gelöschten Zustand. Alle Daten, die Sie zurücklassen, können nach diesen 90 Tagen gelöscht werden. Sie werden spätestens 180 Tage nach der Stornierung gelöscht. Sie können eine Zahlungsmethode erst dann aus einem gekündigten Abonnement entfernen, wenn der gelöschte Status erreicht ist.
+Nach 90 Tagen wechselt das Abonnement in den gelöschten Zustand. Sämtliche Daten, die zurückgelassen werden, können nach diesen 90 Tagen gelöscht werden. Sie werden spätestens 180 Tage nach der Kündigung gelöscht. Sie können eine Zahlungsmethode erst dann aus einem gekündigten Abonnement entfernen, wenn der gelöschte Status erreicht ist.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Mit Folgendem können Sie für sich und Ihre Benutzer rechnen, wenn Sie ein Abonnement kündigen:
   

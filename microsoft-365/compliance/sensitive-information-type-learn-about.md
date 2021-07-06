@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256855"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300381"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
@@ -104,7 +104,7 @@ Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art vertraulicher Inform
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
+- Identität 
 - Nationale Identifikationskarte 
 - Dni 
 - Nationale NIC-Registrierung von Personen 
@@ -154,10 +154,12 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 > Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regex. Um beispielsweise ein Schlüsselwort wie "机密的document" zu erkennen, verwenden Sie zwei Varianten des Schlüsselworts. eine mit einem Leerzeichen zwischen dem japanischen und englischen Text und einer anderen ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in der SIT hinzugefügt werden sollen, "机密的 document" und "机密的document" sein. Auf ähnliche Weise sollten zwei Varianten verwendet werden, um einen Ausdruck "プンンンンンピッン2020" zu erkennen; "プンンンンピッン 2020" und "プンンンンピッン2020".
+> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regulären Ausdrucks.
 > 
-> Stellen Sie beim Erstellen eines regulären Ausdrucks mithilfe eines Doppelbyte-Bindestrichs oder eines doppelten Byte-Punkts sicher, dass beide Zeichen wie ein Trennstrich oder ein Punkt in einem regulären Ausdruck escapet werden. Hier ist ein Beispiel für einen regulären Ausdruck als Referenz:
->    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Verwenden Sie z. B. zwei Varianten des Schlüsselworts, um ein Schlüsselwort wie „机密的document“ zu erkennen; eine mit einem Leerzeichen zwischen dem japanischen und dem englischen Text und eine andere ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in SIT hinzugefügt werden sollen, „机密的 document“ und „机密的document“ lauten. Ebenso sollten zwei Varianten verwendet werden, um den Ausdruck „東京オリンピック2020“ zu erkennen; „東京オリンピック 2020“ und „東京オリンピック2020“.
+> 
+> Achten Sie beim Erstellen eines regulären Ausdrucks mit einem Doppeltbyte-Bindestrich oder einem Doppeltbyte-Punkt darauf, beide Zeichen mit Escapezeichen zu versehen, so wie man einen Bindestrich oder einen Punkt in einem regulären Ausdruck mit Escapezeichen versehen würde. Hier sehen Sie ein Beispiel für einen regulären Ausdruck als Referenz:
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Es wird empfohlen, die Zeichenfolgenüberstimmung anstelle der Wortüberstimmung in einer Schlüsselwortliste zu verwenden.
 

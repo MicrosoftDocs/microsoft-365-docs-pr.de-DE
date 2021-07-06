@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte Typen vertraulicher Informationen für DLP im Security & Compliance Center erstellen, ändern, entfernen und testen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0f65ba38c75cc1d9886cb4c3013d7f707912f72a
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287539"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300393"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Erste Schritte mit benutzerdefinierten Typen vertraulicher Informationen
 
@@ -162,7 +162,7 @@ Wenn ein in regulären Ausdruck eingebetteter Datumswert Teil eines neuen Muster
 
 ### <a name="functional-processors-as-validators"></a>Funktionale Prozessoren als Validierer
 
-Sie können Funktionsprozessoren für einige der am häufigsten verwendeten SITs als Validierer verwenden. Auf diese Weise können Sie Ihren eigenen regulären Ausdruck definieren und gleichzeitig sicherstellen, dass sie die zusätzlichen Überprüfungen bestehen, die für die SIT erforderlich sind. So stellen Func_India_Aadhar beispielsweise sicher, dass der von Ihnen definierte benutzerdefinierte reguläre Ausdruck die für die Karte "Indien Aadhar" erforderliche Überprüfungslogik übergibt. Weitere Informationen zu DLP-Funktionen, die als Validierer verwendet werden können, finden Sie unter [Wonach die DLP-Funktionen suchen.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
+Sie können Funktionsprozessoren für einige der am häufigsten verwendeten SITs als Validierer verwenden. Auf diese Weise können Sie Ihren eigenen regulären Ausdruck definieren und gleichzeitig sicherstellen, dass sie die zusätzlichen Überprüfungen bestehen, die für die SIT erforderlich sind. Func_India_Aadhar stellen beispielsweise sicher, dass der von Ihnen definierte benutzerdefinierte reguläre Ausdruck die für die Karte "Indien Aadhar" erforderliche Überprüfungslogik übergibt. Weitere Informationen zu DLP-Funktionen, die als Validierer verwendet werden können, finden Sie unter [Wonach die DLP-Funktionen suchen.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
 
 ### <a name="luhn-check-validator"></a>Luhn-Überprüfungsprüfer
 
@@ -195,7 +195,12 @@ Hier sind die Definitionen und einige Beispiele für die verfügbaren zusätzlic
 >Diese Unterstützung ist für vertrauliche Informationstypen verfügbar. Mehr dazu finden Sie in den [Versionshinweisen (Vorschau) zur Unterstützung des Informationsschutzes für Doppelbyte-Zeichensätze](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regulären Ausdrucks. Verwenden Sie z. B. zwei Varianten des Schlüsselworts, um ein Schlüsselwort wie „机密的document“ zu erkennen; eine mit einem Leerzeichen zwischen dem japanischen und dem englischen Text und eine andere ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in SIT hinzugefügt werden sollen, „机密的 document“ und „机密的document“ lauten. Ebenso sollten zwei Varianten verwendet werden, um den Ausdruck „東京オリンピック2020“ zu erkennen; „東京オリンピック 2020“ und „東京オリンピック2020“.
+> Um Muster zu erkennen, die chinesische/japanische Zeichen und einzelne Bytezeichen enthalten, oder um Muster zu erkennen, die Chinesisch/Japanisch und Englisch enthalten, definieren Sie zwei Varianten des Schlüsselworts oder regulären Ausdrucks. 
+>
+> Verwenden Sie z. B. zwei Varianten des Schlüsselworts, um ein Schlüsselwort wie „机密的document“ zu erkennen; eine mit einem Leerzeichen zwischen dem japanischen und dem englischen Text und eine andere ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in SIT hinzugefügt werden sollen, „机密的 document“ und „机密的document“ lauten. Ebenso sollten zwei Varianten verwendet werden, um den Ausdruck „東京オリンピック2020“ zu erkennen; „東京オリンピック 2020“ und „東京オリンピック2020“.
+>
 > Achten Sie beim Erstellen eines regulären Ausdrucks mit einem Doppeltbyte-Bindestrich oder einem Doppeltbyte-Punkt darauf, beide Zeichen mit Escapezeichen zu versehen, so wie man einen Bindestrich oder einen Punkt in einem regulären Ausdruck mit Escapezeichen versehen würde. Hier sehen Sie ein Beispiel für einen regulären Ausdruck als Referenz:
-    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
 > Es wird empfohlen, eine Zeichenfolgenübereinstimmung anstelle einer Wortübereinstimmung in einer Schlüsselwortliste zu verwenden.

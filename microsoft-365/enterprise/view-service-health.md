@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Integritätsstatus von Microsoft 365 Diensten an, bevor Sie den Support anrufen, um festzustellen, ob eine aktive Dienstunterbrechung vorliegt.
-ms.openlocfilehash: 28ec578fa0f2321c459284519be62e6e8448b4a5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 95ab260b4950d261eed1288b8fdf1f59883ff15f
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842038"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300405"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienststatus
 
@@ -39,38 +39,41 @@ ms.locfileid: "52842038"
 
 Sie können den Status Ihrer Microsoft-Dienste, einschließlich Office im Web, Yammer, Microsoft Dynamics CRM und Clouddienste für die Verwaltung mobiler Geräte, auf der Seite **"Dienstintegrität"** im [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)anzeigen. Wenn bei einem Clouddienst Probleme auftreten, können Sie den Dienststatus überprüfen, um festzustellen, ob es sich um ein bekanntes Problem handelt, für das bereits an einer Lösung gearbeitet wird, bevor Sie den Support anrufen oder Zeit für die Problembehandlung aufwenden.
 
-Wenn Sie sich nicht beim Admin Center anmelden können, können Sie die [Dienststatusseite](https://status.office365.com) verwenden, um nach bekannten Problemen zu suchen, die Sie daran hindern, sich bei Ihrem Mandanten anzumelden.  Registrieren Sie sich auch, um uns bei [@MSFT365status](https://twitter.com/MSFT365Status) auf Twitter zu folgen, um Informationen zu bestimmten Ereignissen anzuzeigen.
+Wenn Sie sich nicht beim Admin Center anmelden können, können Sie die [Dienststatusseite](https://status.office365.com) verwenden, um nach bekannten Problemen zu suchen, die Sie daran hindern, sich bei Ihrem Mandanten anzumelden.  Registrieren Sie sich auch, um uns bei [@MSFT365status](https://twitter.com/MSFT365Status) auf Twitter zu folgen, um Informationen zu bestimmten Ereignissen zu erhalten.
 
 ## <a name="how-to-check-service-health"></a>Überprüfen des Dienststatus
 
-1. Wechseln Sie zum Microsoft 365 Admin Center, [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) und melden Sie sich mit einem Administratorkonto an.
+1. Wechseln Sie zum Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) , und melden Sie sich mit einem Administratorkonto an.
 
     > [!NOTE]
     > Personen, denen die Administratorrolle "Globaler Administrator" oder "Dienstsupport" zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein. Weitere Informationen zu Rollen, die den Dienststatus anzeigen können, finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. Wenn Sie das neue Admin Center nicht verwenden, wählen Sie auf der **Startseite** in der oberen rechten Ecke die Umschaltfläche **"Neues Admin Center testen"** aus.
+2. Zum Anzeigen des Dienststatus wechseln Sie im Admin Center zu **Status** > **Dienststatus**, oder wählen Sie auf dem **Startdashboard** die Karte **Dienststatus** aus. Die Dashboardkarte gibt an, ob ein Problem mit einem aktiven Dienst vorliegt, und stellt einen Link zur Seite mit Details zum **Dienststatus** bereit.
 
-3. Zum Anzeigen des Dienststatus wechseln Sie im Admin Center zu **Status** > **Dienststatus**, oder wählen Sie auf dem **Startdashboard** die Karte **Dienststatus** aus. Die Dashboardkarte gibt an, ob ein Problem mit einem aktiven Dienst vorliegt, und stellt einen Link zur Seite mit Details zum **Dienststatus** bereit.
-
-4. Der Status der einzelnen Clouddienste wird auf der Seite **Dienstatus** in einem Tabellenformat angezeigt.
+3. Der Status der einzelnen Clouddienste wird auf der Seite **Dienstatus** in einem Tabellenformat angezeigt.
 
    ![Ansicht der aktuellen Probleme unter "Dienststatus"](../media/service-health-all-services.png)
 
-Auf der Registerkarte **Alle Dienste** (Standardansicht) werden alle Dienste und ihr aktueller Status angezeigt. Ein Symbol und die Spalte **Status** geben den Status jedes Diensts an.
+Auf der Registerkarte **"Alle Dienste"** (Standardansicht) werden alle Dienste, deren aktueller Integritätsstatus sowie alle aktiven Vorfälle oder Empfehlungen angezeigt. Ein Symbol und ein Status in der Spalte **"Integrität"** geben den Status der einzelnen Dienste an.
 
-Wenn Sie die Ansicht nach Diensten filtern möchten, die aktuell einen Vorfall aufweisen, wählen Sie die Registerkarte **Vorfälle** oben auf der Seite aus. Bei Auswahl der Registerkarte **Empfehlungen** werden nur Dienste angezeigt, für die derzeit eine Empfehlung angegeben ist.
+Wenn ein aktiver Vorfall oder eine Empfehlung für einen Dienst vorhanden ist, werden diese direkt unter dem Dienstnamen in einer geschachtelten Tabelle aufgeführt. Sie können die geschachtelte Tabelle reduzieren, um die Vorfälle oder Empfehlungen in dieser Ansicht auszublenden, indem Sie links neben dem Dienstnamen auf das Chevronsymbol klicken.   
 
-Auf der Registerkarte **Verlauf** wird der Verlauf von Vorfällen und Empfehlungen angezeigt, die aufgelöst wurden.
+Um Ihre Ansicht so zu filtern, dass nur alle aktiven Vorfälle angezeigt werden, wählen Sie oben auf der Seite die Registerkarte **"Vorfälle"** aus. Wenn Sie die Registerkarte **"Empfehlungen"** auswählen, werden nur alle aktiven bereitgestellten Empfehlungen angezeigt.
 
-Wenn ein Problem mit einem Microsoft 365 Dienst auftritt und sie nicht auf der Seite **"Dienstintegrität"** aufgeführt wird, teilen Sie uns dies mit, indem Sie **"Problem melden"** auswählen und das kurze Formular ausfüllen. Wir sehen uns verwandte Daten und Berichte aus anderen Organisationen an, um zu sehen, wie weit das Problem verbreitet ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir sie als neuen Vorfall oder eine Empfehlung auf der Seite **"Dienststatus"** hinzu, auf der Sie die Lösung nachverfolgen können. Wenn sie nicht innerhalb von ca. 30 Minuten in der Liste angezeigt wird, sollten Sie sich an den Support wenden, um das Problem zu beheben.
+Auf der Registerkarte **"Verlauf"** werden alle Vorfälle und Empfehlungen angezeigt, die innerhalb der letzten sieben oder 30 Tage behoben wurden.
 
-Um Ihre Ansicht anzupassen, welche Dienste im Dashboard angezeigt werden, wählen Sie **"Benutzerdefinierte**  >  **Einstellungsansicht"** aus, und deaktivieren Sie die Kontrollkästchen für die Dienste, die Sie aus der Ansicht des Dienststatus-Dashboards herausfiltern möchten. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.
+Wenn ein Problem mit einem Microsoft 365 Dienst auftritt und er nicht auf der Seite **"Dienstintegrität"** aufgeführt wird, teilen Sie uns dies mit, indem Sie **"Problem melden"** auswählen und das Kurzformular ausfüllen. Wir sehen uns verwandte Daten und Berichte aus anderen Organisationen an, um zu sehen, wie weit das Problem verbreitet ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir sie als neuen Vorfall oder eine Empfehlung auf der Seite **"Dienststatus"** hinzu, auf der Sie die Lösung nachverfolgen können. Auf der Seite **"Gemeldete Probleme"** werden alle Probleme angezeigt, die Ihr Mandant in diesem Formular gemeldet hat, sowie den Status.
 
-Um sich für E-Mail-Benachrichtigungen über neue Vorfälle zu registrieren, die sich auf Ihren Mandanten und Statusänderungen für einen aktiven Vorfall auswirken, wählen Sie **"Einstellungs-E-Mail"**  >  aus, klicken Sie auf **"Dienstbenachrichtigungen per E-Mail senden"** und geben Sie dann Folgendes an:
+Um Ihre Ansicht anzupassen, welche Dienste im Dashboard angezeigt werden, wählen Sie die Ansicht  >  **"Einstellungen" aus,** und deaktivieren Sie die Kontrollkästchen für die Dienste, die Sie aus der Ansicht des Dienststatus-Dashboards herausfiltern möchten. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.
+
+Um sich für E-Mail-Benachrichtigungen über neue Vorfälle zu registrieren, die sich auf Ihren Mandanten auswirken, und Statusänderungen für einen aktiven Vorfall, wählen Sie   >  **"Einstellungs-E-Mail"** aus, klicken Sie auf **"Dienstbenachrichtigungen per E-Mail senden"** und geben Sie dann Folgendes an:
 
 - Bis zu zwei E-Mail-Adressen.
 - Ob Sie Benachrichtigungen für Vorfälle oder Empfehlungen wünschen
 - Die Dienste, für die Sie eine Benachrichtigung wünschen
+
+Sie können auch E-Mail-Benachrichtigungen für einzelne Ereignisse anstelle jedes Ereignisses für einen Dienst abonnieren. Wählen Sie dazu das aktive Problem aus, für das Sie E-Mail-Benachrichtigungsupdates erhalten möchten, wählen Sie **"Benachrichtigungen für dieses Problem verwalten"** aus, und geben Sie dann Folgendes an: 
+- Bis zu zwei E-Mail-Adressen.
 
 > [!NOTE]
 > Jeder Administrator kann seine Einstellungen festlegen, und das oben genannte Limit von zwei E-Mail-Adressen ist pro Administratorkonto.
@@ -80,32 +83,26 @@ Um sich für E-Mail-Benachrichtigungen über neue Vorfälle zu registrieren, die
 
 ### <a name="view-details-of-posted-service-health"></a>Anzeigen von Details des veröffentlichten Dienststatus
 
-Wenn Sie in der Ansicht **Alle Dienste** den Dienststatus auswählen, wird eine Zusammenfassungsansicht der Empfehlungen oder Vorfälle angezeigt.
+Wählen Sie in der Ansicht **"Alle Dienste"** den Problemtitel aus, um die Problemdetailseite anzuzeigen, auf der weitere Informationen zu dem Problem angezeigt werden, einschließlich eines Feeds aller Nachrichten, die während der Arbeit an einer Lösung veröffentlicht wurden. 
 
 [![Screenshot der Dienstempfehlung ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 Die Empfehlungs- oder Vorfallzusammenfassung enthält folgende Informationen:
 
 - **Titel**: Eine Zusammenfassung des Problems.
-- **Dienst**: Der Name des betroffenen Diensts.
 - **ID**: Ein numerischer Bezeichner für das Problem.
+- **Dienst**: Der Name des betroffenen Diensts.
+- **Letzte Aktualisierung**: Der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus.
+- **Geschätzte Startzeit** – Die geschätzte Zeit, zu der das Problem gestartet wurde.
 - **Status**: Wie sich dieses Problem auf den Dienst auswirkt.
-- **Startzeit**: Der Zeitpunkt, zu dem das Problem begann.
-- **Letzte Aktualisierung**: Der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus. Wir veröffentlichen häufig Nachrichten, um Sie über die Fortschritte beim Anwenden einer Lösung zu informieren.
-
-Wählen Sie das Problem aus, um die Detailseite mit weiteren Informationen zum Problem anzuzeigen, einschließlich des [Verlaufs](#history) aller Nachrichten, die wir während unserer Arbeit an einer Lösung veröffentlicht haben.
+- **Auswirkungen auf** benutzer – Eine kurze Beschreibung der Auswirkungen, die dieses Problem auf den Endbenutzer hat.
+- **Alle Updates** – Wir veröffentlichen häufig Nachrichten, um Sie über den Fortschritt beim Anwenden einer Lösung zu informieren.
 
 ![Screenshot mit Details zum Problem](../media/service-health-advisory-detail.png)
 
 ### <a name="translate-service-health-details"></a>Übersetzen von Dienststatusdetails
 
-Da Erläuterungen zum Dienststatus in Echtzeit veröffentlicht werden, sind sie nicht automatisch in Ihre Sprache übersetzt, und die Details eines Dienstereignisses sind nur in Englisch angegeben. Zum Übersetzen der Erläuterung führen Sie die folgenden Schritte aus: 
-
-1. Wechseln Sie zu [Translator](https://www.bing.com/translator/).
-
-2. Wählen Sie auf der Seite **Dienststatus** einen Vorfall oder eine Empfehlung aus. Kopieren Sie unter **Details anzeigen** den Text zum Problem.
-
-3. Fügen Sie den Text in Translator ein, und klicken Sie auf **Übersetzen**.
+Wir verwenden maschinelle Übersetzung, um Nachrichten automatisch in Ihrer bevorzugten Sprache anzuzeigen. Lesen Sie [die Sprachübersetzung für Nachrichtencenterbeiträge,](/microsoft-365/admin/manage/language-translation-for-message-center-posts) um weitere Informationen zum Festlegen Ihrer Sprache zu finden.
 
 ### <a name="definitions"></a>Definitionen
 
@@ -135,17 +132,16 @@ Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen ang
 |**Falsch positives Ergebnis** | Nach einer detaillierten Untersuchung haben wir bestätigt, dass der Dienst fehlerfrei ist und wie vorgesehen funktioniert. Es wurden keine Auswirkungen auf den Dienst oder die Ursache des Vorfalls festgestellt, der außerhalb des Diensts aufgetreten ist. |
 |**Vorfallnachsorgebericht veröffentlicht** | Wir haben für ein bestimmtes Problem einen Beitrag veröffentlicht, der Informationen zu den Ursachen sowie nächste Schritte umfasst, um sicherzustellen, dass ein ähnliches Problem nicht wieder auftritt. |
 
+### <a name="message-post-types"></a>Nachrichtenbeitragstypen
+
+| Typ | Definition |
+|:-----|:-----|
+|**Schnellaktualisierung** | Kurze und häufige inkrementelle Updates für Vorfälle mit großen Auswirkungen, die für alle Kunden verfügbar sind. |
+|**Weitere Details** | Diese zusätzlichen Beiträge bieten umfassendere technische und Lösungsdetails, um einen tieferen Einblick in die Behandlung von Vorfällen zu bieten. Dies ist für Mandanten verfügbar, die die gleichen Anforderungen für [Exchange Online Überwachung](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-worldwide#requirements)erfüllen. |
+
 ### <a name="history"></a>Verlauf
 
-Der Dienststatus zeigt den aktuellen Status sowie den Verlauf aller Empfehlungen und Vorfälle für Dienste, die Ihren Mandanten in den letzten 30 Tagen betroffen haben. Zum Anzeigen des früheren Status aller Dienste wählen Sie auf der Seite mit den Problemdetails die Option **Verlauf anzeigen** aus.
-
-![Anzeigen des Links zum Statusverlauf](../media/service-health-view-history.png)
-
-Es wird eine Liste aller Nachrichten zum Dienststatus angezeigt, die im ausgewählten Zeitraum veröffentlicht wurden (siehe unten).
-
-![Anzeigen des Dienststatusverlaufs](../media/service-health-history.png)
-
-Erweitern Sie eine beliebige Zeile, um weitere Details zum Problem anzuzeigen.
+Mit der Dienstintegrität können Sie Ihren aktuellen Integritätsstatus anzeigen und den Verlauf aller Dienstratgeber und Vorfälle anzeigen, die Ihren Mandanten in den letzten 30 Tagen betroffen haben. Wählen Sie die **Verlaufsansicht** aus, um die frühere Integrität aller Dienste anzuzeigen.
 
 Weitere Informationen zu unserer Verpflichtung zur Betriebszeit finden Sie unter ["Transparente Vorgänge aus Microsoft 365."](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)
 
