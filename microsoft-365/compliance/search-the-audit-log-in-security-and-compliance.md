@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Microsoft 365 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten aus Ihrer Organisation anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287503"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300136"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
@@ -912,11 +912,11 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
 |Ersteller Kommentar|CreateComment|Der Formularbesitzer fügt Kommentare oder Bewertungen zu einem Quiz hinzu.|
-|Erstelltes Formular|CreateForm|Der Besitzer erstellt ein neues Formular.|
-|Bearbeitetes Formular|EditForm|Der Formularbesitzer bearbeitet ein Formular, indem er eine Frage erstellt, entfernt oder bearbeitet. Die Eigenschaft *EditOperation:string* gibt den Namen des Bearbeitungsvorgangs an. Mögliche Vorgänge sind:<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage enthält jede Stelle in Formularen, an der Benutzer ein Bild hochladen können, z. B. in einer Abfrage oder als Hintergrunddesign.|
-|Formular verschoben|MoveForm|Der Formularbesitzer verschiebt ein Formular. <br><br>Eigenschaft DestinationUserId: Zeichenfolge gibt die Benutzer-ID der Person an, die das Formular verschoben hat. Eigenschafts NewFormId: Zeichenfolge ist die neue ID für das neu kopierte Formular.|
+|Erstelltes Formular|CreateForm|Der Besitzer erstellt ein neues Formular. <br><br>Eigenschaft DataMode:string gibt an, dass das aktuelle Formular so eingestellt ist, dass es mit einer neuen oder vorhandenen Excel-Arbeitsmappe synchronisiert wird, wenn der Eigenschaftswert DataSync entspricht. Die Eigenschaft ExcelWorkbookLink:string gibt die zugehörige Excel-Arbeitsmappen-ID des aktuellen Formulars an.|
+|Bearbeitetes Formular|EditForm|Der Formularbesitzer bearbeitet ein Formular, z. B. das Erstellen, Entfernen oder Bearbeiten einer Frage. Die Eigenschaft *EditOperation:string* gibt den Namen des Bearbeitungsvorgangs an. Mögliche Vorgänge sind:<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage enthält jede Stelle in Formularen, an der Benutzer ein Bild hochladen können, z. B. in einer Abfrage oder als Hintergrunddesign.|
+|Formular verschoben|MoveForm|Der Formularbesitzer verschiebt ein Formular. <br><br>Eigenschaft DestinationUserId: Zeichenfolge gibt die Benutzer-ID der Person an, die das Formular verschoben hat. Eigenschafts NewFormId: Zeichenfolge ist die neue ID für das neu kopierte Formular. Die Eigenschaft IsDelegateAccess:boolean gibt an, dass die aktuelle Aktion zum Verschieben des Formulars über die Seite der Administrator-Stellvertretung ausgeführt wird.|
 |Gelöschtes Formular|DeleteForm|Der Formularbesitzer löscht ein Formular. Dazu gehören SoftDelete (Löschoption wird verwendet, Formular wird in den Papierkorb verschoben) und HardDelete (Papierkorb wird geleert).|
-|Angezeigtes Formular (Entwurfszeit)|ViewForm|Der Formularbesitzer öffnet ein vorhandenes Formular für die Bearbeitung.|
+|Angezeigtes Formular (Entwurfszeit)|ViewForm|Der Formularbesitzer öffnet ein vorhandenes Formular für die Bearbeitung. <br><br>Die Eigenschaft AccessDenied:boolean gibt an, dass der Zugriff auf das aktuelle Formular aufgrund einer Berechtigungsprüfung verweigert wurde. Die Eigenschaft FromSummaryLink:boolean gibt an, dass die aktuelle Anforderung von der Zusammenfassungs-Linkseite stammt.|
 |Formular in der Vorschau|PreviewForm|Der Formularbesitzer zeigt ein Formular mit der Vorschaufunktion an.|
 |Exportiertes Formular|ExportForm|Der Formularbesitzer exportiert Ergebnisse nach Excel. <br><br>Eigenschaft ExportFormat: Zeichenfolge gibt an, ob die Excel-Datei heruntergeladen wurde oder online verfügbar ist.|
 |Freigabe von Formularkopie zulassen|AllowShareFormForCopy|Der Formularbesitzer erstellt einen Vorlagen-Link, um das Formular für andere Benutzer freizugeben. Dieses Ereignis wird protokolliert, wenn der Formularbesitzer klickt, um eine Vorlagen-URL zu generieren.|
@@ -935,10 +935,21 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Aktualisierter Phishing-Status von Formularen|UpdatePhishingStatus|Dieses Ereignis wird protokolliert, wenn der detaillierte Wert des internen Sicherheitsstatus geändert wurde, und zwar unabhängig davon, ob dadurch der endgültige Sicherheitsstatus geändert wurde (z. B. Formular ist nun geschlossen oder geöffnet). Dies bedeutet, dass Ihnen möglicherweise doppelte Ereignisse ohne eine endgültige Sicherheitsstatusänderung angezeigt werden. Zu den möglichen Statuswerten für dieses Ereignis gehören:<br/>– Take Down <br/>– Take Down by Admin <br/>– Admin Unblocked <br/>– Auto Blocked <br/>– Auto Unblocked <br/>– Customer Reported <br/>– Reset Customer Reported|
 |Updated user phishing status|UpdateUserPhishingStatus|Dieses Ereignis wird protokolliert, wenn der Wert für den Sicherheitsstatus des Benutzers geändert wurde. Der Wert des Benutzerstatus im Überwachungsdatensatz ist **Confirmed as Phisher**, wenn der Benutzer ein Phishing-Formular erstellt hat, das vom Microsoft Online Safety-Team heruntergenommen wurde. Wenn ein Administrator die Sperrung des Benutzers aufhebt, wird der Wert des Benutzerstatus auf **Reset as Normal User** festgelegt.|
 |Versendete Forms-Pro-Einladung|ProInvitation|Der Benutzer klickt, um eine Pro-Testversion zu aktivieren.|
-|Aktualisierte Formulareinstellung|UpdateFormSetting|Der Formularbesitzer aktualisiert eine Formulareinstellung. <br><br>Eigenschaft FormSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
+|Aktualisierte Formulareinstellung|UpdateFormSetting|Der Formularbesitzer aktualisiert eine oder mehrere Formulareinstellungen. <br><br>Die Eigenschaft FormSettingName:string gibt den Namen der aktualisierten vertraulichen Einstellungen an. Die Eigenschaft NewFormSettings:string gibt den Namen und den neuen Wert der aktualisierten Einstellungen an. Die Eigenschaft thankYouMessageContainsLink:boolean gibt an, dass die aktualisierte Dankesnachricht einen URL-Link enthält.|
 |Aktualisierte Benutzereinstellung|UpdateUserSetting|Der Formularbesitzer aktualisiert eine Benutzereinstellung. <br><br>Eigenschaft UserSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
 |Aufgelistete Formulare|ListForms|Der Formularbesitzer zeigt eine Liste der Formulare an. <br><br>Property ViewType: Zeichenfolge gibt an, welche Ansicht der Besitzer betrachtet: Alle Formulare, Mit mir geteilt oder Gruppenformulare.|
 |Gesendete Antwort|SubmitResponse|Ein Benutzer sendet eine Antwort auf ein Formular. <br><br>Eigenschaft IsInternalForm: Boolescher Wert gibt an, ob der Responder der gleichen Organisation angehört wie der Formularbesitzer.|
+|Einstellung für "Jeder kann antworten" aktiviert|AllowAnonymousResponse|Der Formularbesitzer aktiviert die Einstellung, die es jedem ermöglicht, auf das Formular zu antworten.|
+|Einstellung für "Jeder kann antworten" deaktiviert|DisallowAnonymousResponse|Der Formularbesitzer deaktiviert die Einstellung, die es jedem ermöglicht, auf das Formular zu antworten.|
+|Einstellung für "Bestimmte Personen können antworten" aktiviert|EnableSpecificResponse|Der Formularbesitzer aktiviert die Einstellung, die es nur bestimmten Personen oder bestimmten Gruppen in der aktuellen Organisation erlaubt, auf das Formular zu antworten.|
+|Einstellung für "Bestimmte Personen können antworten" deaktiviert|DisableSpecificResponse|Der Formularbesitzer deaktiviert die Einstellung, die es nur bestimmten Personen oder bestimmten Gruppen in der aktuellen Organisation erlaubt, auf das Formular zu antworten.|
+|Spezifischer Antwortender hinzugefügt|AddSpecificResponder|Der Formularbesitzer fügt der Liste der spezifischen Antwortenden einen neuen Benutzer oder eine neue Gruppe hinzu.|
+|Bestimmter Antwortender entfernt|RemoveSpecificResponder|Der Formularbesitzer entfernt einen Benutzer oder eine Gruppe aus der Liste der spezifischen Antwortenden.|
+|"Zusammenarbeit" deaktiviert|DisableCollaboration|Der Formularbesitzer deaktiviert die Einstellung der Zusammenarbeit im Formular.|
+|"Zusammenarbeit mit Office 365-Arbeits- oder Schulkonten" aktiviert|EnableWorkOrSchoolCollaboration|Der Formularbesitzer aktiviert die Einstellung, die es Benutzern mit einem Office 365-Geschäfts- oder Schulkonto ermöglicht, das Formular anzuzeigen und zu bearbeiten.|
+|"Zusammenarbeit von Personen in meiner Organisation" aktiviert|EnableSameOrgCollaboration|Der Formularbesitzer aktiviert die Einstellung, die es Benutzern in der aktuellen Organisation ermöglicht, das Formular anzuzeigen und zu bearbeiten.|
+|"Zusammenarbeit bestimmter Personen" aktiviert|EnableSpecificCollaboaration|Der Formularbesitzer aktiviert die Einstellung, die es nur bestimmten Personen oder bestimmten Gruppen in der aktuellen Organisation erlaubt, das Formular anzuzeigen und zu bearbeiten.|
+|Mit Excel-Arbeitsmappe verbunden|ConnectToExcelWorkbook|Das Formular wurde mit einer Excel-Arbeitsmappe verbunden. <br><br>Die Eigenschaft ExcelWorkbookLink:string gibt die zugehörige Excel-Arbeitsmappen-ID des aktuellen Formulars an.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Formular-Aktivitäten, die von Koautoren und anonym Antwortenden durchgeführt werden
@@ -952,7 +963,7 @@ In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informatione
 |Gemeinsame Dokumenterstellung|Intern|UPN|Organisation des Formularbesitzers|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|UPN<br>|Organisation des Koautors<br>|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Koautor|
-|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Responder|
+|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
 |Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 |Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 ||||

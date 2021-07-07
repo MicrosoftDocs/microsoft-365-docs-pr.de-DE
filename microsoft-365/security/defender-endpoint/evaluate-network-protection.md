@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
+ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926571"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53309364"
 ---
 # <a name="evaluate-network-protection"></a>Auswerten des Netzwerkschutzes
 
@@ -40,7 +40,7 @@ Dieser Artikel hilft Ihnen bei der Bewertung des Netzwerkschutzes, indem er das 
 
 Aktivieren Sie den Netzwerkschutz im Überwachungsmodus, um festzustellen, welche IP-Adressen und Domänen blockiert worden wären. Sie können sicherstellen, dass dies keine Auswirkungen auf Branchen-Apps hat, oder eine Vorstellung davon erhalten, wie oft Blöcke auftreten.
 
-1. Geben Sie **PowerShell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
+1. Geben Sie **PowerShell** in die Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
 2. Geben Sie das folgende Cmdlet ein:
 
     ```PowerShell
@@ -55,7 +55,7 @@ Aktivieren Sie den Netzwerkschutz im Überwachungsmodus, um festzustellen, welch
 
 Die Netzwerkverbindung ist zulässig, und es wird eine Testmeldung angezeigt.
 
-![Beispielbenachrichtigung, die besagt, dass die Verbindung blockiert ist: Ihr IT-Administrator hat bewirkt, dass Windows-Sicherheit diese Netzwerkverbindung blockiert hat. Wenden Sie sich an Ihren IT-Helpdesk.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Beispielbenachrichtigung, die besagt, dass die Verbindung blockiert ist: Ihr IT-Administrator hat bewirkt, dass Windows-Sicherheit diese Netzwerkverbindung blockiert hat. Wenden Sie sich an Ihren IT-Helpdesk.](images/np-notif.png)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Überprüfen von Netzwerkschutzereignissen in Windows Ereignisanzeige
 

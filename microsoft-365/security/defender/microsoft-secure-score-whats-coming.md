@@ -1,7 +1,7 @@
 ---
-title: What's coming to Microsoft Secure Score
-description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 werden.
-keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, microsoft 365 Security Center, Verbesserungsmaßnahmen
+title: Neuerungen in der Microsoft-Sicherheitsbewertung
+description: Beschreibt, welche neuen Änderungen an der Microsoft-Sicherheitsbewertung im Microsoft 365 Security Center vorgenommen werden.
+keywords: Microsoft-Sicherheitsbewertung, Sicherheitsbewertung, Office 365-Sicherheitsbewertung, Microsoft-Sicherheitsbewertung, Microsoft 365 Security Center, Verbesserungsmaßnahmen
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,32 +18,37 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657717"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314368"
 ---
-# <a name="whats-coming-to-microsoft-secure-score"></a>What's coming to Microsoft Secure Score
+# <a name="whats-coming-to-microsoft-secure-score"></a>Neuerungen in der Microsoft-Sicherheitsbewertung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score finden Sie im https://security.microsoft.com/securescore [Microsoft 365 Security Center](overview-security-center.md).
+Die Microsoft-Sicherheitsbewertung finden Sie https://security.microsoft.com/securescore im [Microsoft 365 Security Center.](overview-security-center.md)
 
 ## <a name="proposed-changes"></a>Vorgeschlagene Änderungen
 
-Wir nehmen in naher Zukunft einige Änderungen vor, um [Microsoft Secure Score](microsoft-secure-score.md) zu einem besseren Vertreter Ihrer Sicherheitslage zu machen und die Benutzerfreundlichkeit zu verbessern. Ihre Bewertung und die maximal mögliche Bewertung können sich ändern.
+Wir nehmen in naher Zukunft einige Änderungen vor, um [die Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) zu einem besseren Vertreter Ihres Sicherheitsstatus zu machen und die Benutzerfreundlichkeit zu verbessern. Ihre Bewertung und die maximal mögliche Bewertung können sich ändern.
 
-### <a name="june-2021"></a>Juni 2021
+### <a name="july-2021"></a>Juli 2021
 
-#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Entfernen von Verbesserungsmaßnahmen im Zusammenhang mit Microsoft Cloud App Security
+#### <a name="add-improvement-action-related-to-microsoft-teams"></a>Hinzufügen von Verbesserungsmaßnahmen im Zusammenhang mit Microsoft Teams
 
-- Verwenden Cloud App Security, um anomales Verhalten zu erkennen
+- Einwahlbenutzer am Umgehen eines Besprechungslobbys hindern.
+- Einschränken der Kontrolle externer Teilnehmer in einer Teams Besprechung.
+- Einschränken, dass anonyme Benutzer Teams Besprechungen starten.
+- Lobbies müssen für Teams Besprechungen eingerichtet werden.
+- Konfigurieren Sie, welche Benutzer in Teams Besprechungen teilnehmen dürfen.
+
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-- [Übersicht über die Microsoft Secure Score](microsoft-secure-score.md)
+- [Übersicht über die Microsoft-Sicherheitsbewertung](microsoft-secure-score.md)
 - [Zugreifen auf Ihren Sicherheitsstatus](microsoft-secure-score-improvement-actions.md)
-- [Nachverfolgen Ihres Microsoft Secure Score-Verlaufs und Erreichen von Zielen](microsoft-secure-score-history-metrics-trends.md)
+- [Nachverfolgen des Microsoft-Verlaufs der Sicherheitsbewertung und Erreichen der Ziele](microsoft-secure-score-history-metrics-trends.md)
 - [Neuerungen](microsoft-secure-score-whats-new.md)

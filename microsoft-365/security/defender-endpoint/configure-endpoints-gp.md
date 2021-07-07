@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286957"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314404"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10 Geräten mithilfe von Gruppenrichtlinien 
 
@@ -211,7 +211,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 
 7. Wählen Sie **"Ausführen" aus, ob der Benutzer angemeldet ist oder nicht,** und aktivieren Sie das Kontrollkästchen **"Ausführen mit den höchsten Berechtigungen".**
 
-8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den Dateinamen und speicherort der freigegebenen  *Datei WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ein.
+8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den NetBIOS-Pfad der freigegebenen *Datei WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ein.
 
 9. Klicken Sie auf **"OK",** und schließen Sie alle geöffneten GPMC-Fenster.
 
