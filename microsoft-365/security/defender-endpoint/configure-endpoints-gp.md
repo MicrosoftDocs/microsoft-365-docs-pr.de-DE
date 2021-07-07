@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314404"
+ms.locfileid: "53326963"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10 Geräten mithilfe von Gruppenrichtlinien 
 
@@ -30,7 +30,7 @@ ms.locfileid: "53314404"
 
 **Gilt für:**
 
-- Gruppenrichtlinien
+- Gruppenrichtlinie
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -101,7 +101,7 @@ Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren
 
 4. Klicken Sie auf **"Richtlinien"** und dann auf **"Administrative Vorlagen".**
 
-5. Klicken Sie auf **Windows Komponenten,** und **Windows Defender Sie SmartScreen.**
+5. Klicken Sie auf **Windows Komponenten,** und **Windows Defender ATP.**
 
 6. Wählen Sie aus, ob Sie die Beispielfreigabe auf Ihren Geräten aktivieren oder deaktivieren möchten.
 
@@ -152,7 +152,7 @@ Scannen aller heruntergeladenen Dateien und Anlagen|Aktiviert
 
 <br>
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\Scan
+**Richtlinienspeicherort:** \Windows Components\Microsoft Defender Antivirus\Scan
 
 Diese Einstellungen konfigurieren regelmäßige Scans des Endpunkts. Es wird empfohlen, einen wöchentlichen Schnellscan durchzuführen, der die Leistung zulässt.
 
@@ -189,7 +189,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 > [!NOTE]
 > Onboarding- und Offboarding-Richtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, andernfalls führt dies zu unvorhersehbaren Kollisionen.
 
-1. Abrufen des Offboarding-Pakets aus [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Rufen Sie das Offboarding-Paket aus [Microsoft Defender Security Center](https://securitycenter.windows.com/)ab:
 
     1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Offboarding** aus.
 
@@ -211,7 +211,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 
 7. Wählen Sie **"Ausführen" aus, ob der Benutzer angemeldet ist oder nicht,** und aktivieren Sie das Kontrollkästchen **"Ausführen mit den höchsten Berechtigungen".**
 
-8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den NetBIOS-Pfad der freigegebenen *Datei WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ein.
+8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den NetBIOS-Pfad der freigegebenen *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd-Datei* ein.
 
 9. Klicken Sie auf **"OK",** und schließen Sie alle geöffneten GPMC-Fenster.
 

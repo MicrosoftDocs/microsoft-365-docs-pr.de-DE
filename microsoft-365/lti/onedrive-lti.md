@@ -12,21 +12,21 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erstellen und Bewerten von Aufgaben, Erstellen und Kuratieren von Kursinhalten und Zusammenarbeit an Dateien in Echtzeit mit der neuen Interoperabilitäts-App für Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: 985a316bac689b9bc6c53ab65782d548fcad0db8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+description: Erstellen und Bewerten von Aufgaben, Erstellen und Kuratieren von Kursinhalten und Zusammenarbeit an Dateien in Echtzeit mit der neuen Microsoft OneDrive Learning Tools Interoperability App.
+ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53257018"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322221"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrieren Microsoft OneDrive LTI in Canvas
 
-Die Integration Microsoft OneDrive LTI in Canvas ist ein zweistufiger Prozess. Der erste Schritt aktiviert Microsoft OneDrive in Canvas, und im zweiten Schritt wird die Microsoft OneDrive LTI in Canvas-Kursen verfügbar.
+Die Integration von Microsoft OneDrive LTI in Canvas ist ein zweistufiger Prozess. Der erste Schritt aktiviert Microsoft OneDrive in Canvas, und im zweiten Schritt wird die Microsoft OneDrive LTI in Canvas-Kursen verfügbar.
 
 ## <a name="recommended-browser-settings"></a>Empfohlene Browsereinstellungen
 
-- Cookies sollten für Microsoft OneDrive aktiviert sein.
+- Cookies sollten für Microsoft OneDrive aktiviert werden.
 - Popups sollten nicht für Microsoft OneDrive blockiert werden.
 
 > [!NOTE]
@@ -40,7 +40,11 @@ Die Integration Microsoft OneDrive LTI in Canvas ist ein zweistufiger Prozess. D
 
 1. Melden Sie sich beim <a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive LTI-Registrierungsportal an.</a>
 1. Wählen Sie die Schaltfläche **"Administratorzustimmung"** aus, und akzeptieren Sie die Berechtigungen.
-1. Wählen Sie die Schaltfläche **"Neuen LTI-Mandanten erstellen"** aus. **Wählen** Sie auf der LTI-Registrierungsseite canvas in der Dropdownliste aus, und geben Sie die Basis-URL Ihrer Canvas-Instanz ein.
+
+> [!CAUTION]
+> Wenn dieser Schritt nicht ausgeführt wird, erhalten Sie im folgenden Schritt einen Fehler, und Sie können diesen Schritt nach dem Auftreten des Fehlers eine Stunde lang nicht ausführen.
+
+3. Wählen Sie die Schaltfläche **"Neuen LTI-Mandanten erstellen"** aus. **Wählen** Sie auf der LTI-Registrierungsseite canvas in der Dropdownliste aus, und geben Sie die Basis-URL Ihrer Canvas-Instanz ein.
 
 > [!NOTE]
 > Wenn Ihre Canvas-Instanz z. B. https://contoso.test.instructure.com ]( https://contoso.test.instructure.com) ist, sollte die vollständige URL eingegeben werden.
@@ -53,9 +57,9 @@ Die Integration Microsoft OneDrive LTI in Canvas ist ein zweistufiger Prozess. D
 
 5. Melden Sie sich als Administrator bei Ihrer Canvas-Instanz an, und wählen Sie im Menü auf der linken Seite der Seite die Option **"Entwicklerschlüssel"** aus. Erstellen Sie in der Dropdownliste einen Entwicklerschlüssel, indem Sie **LTI Key** aus der Dropdownliste oben rechts auf der Seite auswählen.
 
-:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Screenshot der linken Navigationsleiste mit ausgewählten Entwicklerschlüsseln und ausgewählter LTI-Tasteneingabe in einer Dropdownliste auf der rechten Seite.":::
+:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Screenshot der linken Navigationsleiste mit aktivierten Entwicklerschlüsseln und ausgewählter LTI-Tasteneingabe in einer Dropdownliste auf der rechten Seite.":::
 
-6. Wählen Sie auf der Seite "Konfigurieren" im Dropdown **"Methode"** die Option "JSON als Methode **einfügen"** aus, und fügen Sie den JSON-Text, den Sie in Schritt 5 kopiert haben, in das angezeigte Textfeld ein.
+6. Wählen Sie auf der Seite "Konfigurieren" im Dropdown **"Methode"** die Option JSON als Methode **einfügen** aus, und fügen Sie den JSON-Text, den Sie in Schritt 5 kopiert haben, in das angezeigte Textfeld ein.
 7. Speichern Sie den Schlüssel, und er wird in Canvas im **Status "Aus"** verfügbar. Aktivieren Sie den **Schlüssel,** und kopieren Sie den in der Spalte **"Details"** angegebenen Schlüssel, der im nächsten Schritt verwendet werden soll.
 
 :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Die Canvas-Seite, auf der der Schlüssel in einem ausgeschalteten Zustand festgelegt ist. Sie muss aktiviert sein, und der Schlüssel muss aus der Detailspalte auf dieser Seite kopiert werden.":::
@@ -77,7 +81,7 @@ Ein Canvas-Administrator kann Microsoft OneDrive LTI für alle Kurse aktivieren.
 4. Wählen Sie im Dropdownmenü **"Konfigurationstyp"** die Option **"Nach Client-ID"** aus.
 5. Fügen Sie den Wert des zuvor generierten Entwicklerschlüssels in das **Feld "Client-ID"** ein, und wählen Sie die Schaltfläche **"Absenden"** aus.
 
-:::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Die Seite &quot;App hinzufügen&quot;, auf der die Option &quot;Nach Client-ID&quot; im Dropdownmenü &quot;Konfigurationstyp&quot; angezeigt wird.":::
+:::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Die Seite &quot;App hinzufügen&quot; mit der Option &quot;Nach Client-ID&quot; im Dropdownmenü &quot;Konfigurationstyp&quot;.":::
 
 ## <a name="collaboration-settings-for-microsoft-onedrive-lti-in-canvas-courses"></a>Zusammenarbeits-Einstellungen für Microsoft OneDrive LTI in Canvas-Kursen
 

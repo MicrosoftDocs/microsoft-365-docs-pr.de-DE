@@ -1,0 +1,38 @@
+- name: Testbasisdokumentation
+  href: index.yml
+- name: Übersicht
+  items:
+    - name: Was ist Test Base?
+      href: overview.md
+- name: Schnellstarts
+  items:
+    - name: Erstellen eines Testbasiskontos
+      href: createAccount.md
+    - name: Hochladen eines Pakets
+      href: uploadApplication.md
+    - name: Hochladen Binärdateien & Abhängigkeiten
+      href: binaries.md
+    - name: Festlegen von Testaufgaben
+      href: testtask.md
+    - name: Festlegen von Testoptionen
+      href: testoptions.md
+    - name: Überprüfung
+      href: review.md
+    - name: Paketrichtlinie
+      href: contentguideline.md
+- name: Schrittanleitungen
+  items:
+    - name: Serveranwendungstests
+      href: server.md
+    - name: Funktionstests
+      href: functional.md
+    - name: Überprüfung von Funktionsupdates
+      href: feature.md
+    - name: Analyse der Speicherregression
+      href: memory.md
+    - name: CPU-Regressionsanalyse
+      href: cpu.md
+- name: Referenz
+  items:
+    - name: Häufig gestellte Fragen
+      href: faq.md

@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden.
-ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300124"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322317"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps (Vorschau)
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps
 
 Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) für Nicht-Microsoft-Cloud-Apps sind Teil der Microsoft 365 DLP-Suite von Features. Mithilfe dieser Features können Sie vertrauliche Elemente in Microsoft 365 Diensten ermitteln und schützen. Weitere Informationen zu allen Microsoft DLP-Angeboten finden Sie unter ["Verhinderung von Datenverlust".](dlp-learn-about-dlp.md)
 

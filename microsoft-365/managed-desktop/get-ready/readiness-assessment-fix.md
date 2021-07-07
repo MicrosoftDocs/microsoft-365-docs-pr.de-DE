@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286885"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327011"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Lösen von Problemen, die durch das Tool zur Bereitschaftsbewertung gefunden wurden
 
@@ -30,7 +30,7 @@ Für jede Überprüfung meldet das Tool eines von vier möglichen Ergebnissen:
 |Fehler | Die Azure Active Directory (AD)-Rolle, die Sie verwenden, verfügt nicht über ausreichende Berechtigungen, um diese Überprüfung auszuführen. |
 
 > [!NOTE]
-> Die von diesem Tool gemeldeten Ergebnisse geben den Status Ihrer Einstellungen nur zu dem bestimmten Zeitpunkt wieder, zu dem Sie es ausgeführt haben. Wenn Sie später Änderungen an Richtlinien in Microsoft Intune, Azure Active Directory oder Microsoft 365 vornehmen, können Elemente, die "Bereit" waren, "Nicht bereit" werden. Um Probleme mit Microsoft Managed Desktop Vorgängen zu vermeiden, überprüfen Sie die in diesem Artikel beschriebenen spezifischen Einstellungen, bevor Sie Richtlinien ändern.
+> Die von diesem Tool gemeldeten Ergebnisse geben den Status Ihrer Einstellungen nur zu dem bestimmten Zeitpunkt wieder, zu dem Sie sie ausgeführt haben. Wenn Sie später Änderungen an Richtlinien in Microsoft Intune, Azure Active Directory oder Microsoft 365 vornehmen, können Elemente, die "Bereit" waren, "Nicht bereit" werden. Um Probleme mit Microsoft Managed Desktop Vorgängen zu vermeiden, überprüfen Sie die in diesem Artikel beschriebenen spezifischen Einstellungen, bevor Sie Richtlinien ändern.
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune Einstellungen
 
@@ -108,7 +108,7 @@ Sie verfügen über mindestens eine Compliancerichtlinie, die auf alle Benutzer 
 
 **Empfehlung**
 
-Stellen Sie sicher, dass alle Compliancerichtlinien, die Sie haben, nicht für Microsoft Managed Desktop Benutzer bestimmt sind. Schritte finden Sie unter [Erstellen einer Compliancerichtlinie in Microsoft Intune.](/mem/intune/protect/create-compliance-policy)
+Stellen Sie sicher, dass alle Compliancerichtlinien, die Sie haben, nicht auf Microsoft Managed Desktop Benutzer ausgerichtet sind. Schritte finden Sie unter [Erstellen einer Compliancerichtlinie in Microsoft Intune.](/mem/intune/protect/create-compliance-policy)
 
 
 
@@ -132,7 +132,7 @@ Microsoft Managed Desktop Geräte müssen in Intune registriert werden dürfen.
 
 **Nicht bereit**
 
-Sie haben derzeit mindestens eine Registrierungseinschränkungsrichtlinie konfiguriert, um zu verhindern, dass Windows Geräte in Intune registriert werden. Führen Sie die Schritte unter [Festlegen von Registrierungseinschränkungen](/mem/intune/enrollment/enrollment-restrictions-set) für jede Registrierungseinschränkungsrichtlinie aus, die auf Microsoft Managed Desktop Benutzer ausgerichtet ist, und ändern Sie die Einstellung **Windows (MDM)** in **"Zulassen".** Sie können jedoch alle **persönlichen** **Windows (MDM)-Geräte** auf **"Blockieren"** festlegen. 
+Sie haben derzeit mindestens eine Registrierungseinschränkungsrichtlinie konfiguriert, um zu verhindern, dass sich Windows Geräte in Intune registrieren. Führen Sie die Schritte unter [Festlegen von Registrierungseinschränkungen](/mem/intune/enrollment/enrollment-restrictions-set) für jede Registrierungseinschränkungsrichtlinie aus, die auf Microsoft Managed Desktop Benutzer ausgerichtet ist, und ändern Sie die Einstellung **Windows (MDM)** in **"Zulassen".** Sie können jedoch alle **persönlichen** **Windows (MDM)-Geräte** auf **"Blockieren"** festlegen. 
 
 
 ### <a name="enrollment-status-page"></a>Registrierungsstatusseite
@@ -206,12 +206,19 @@ Richtlinien für Sicherheitsgrundwerte sollten nicht auf Microsoft Managed Deskt
 
 **Nicht bereit**
 
-Sie verfügen über ein Sicherheitsbaselineprofil, das auf alle Benutzer, alle Geräte oder beides ausgerichtet ist. Ändern Sie die Richtlinie so, dass eine Zuweisung verwendet wird, die auf eine bestimmte Azure AD-Gruppe ausgerichtet ist, die keine Microsoft Managed Desktop Geräte enthält. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Nach der Registrierung können Sie die Richtlinie für Microsoft Managed Desktop Sicherheitsgrundwerte im Bereich der **Konfigurationsrichtlinien** von Microsoft Endpoint Manager überprüfen.
+Sie verfügen über ein Sicherheitsbaselineprofil, das auf alle Benutzer, alle Geräte oder beides ausgerichtet ist. Ändern Sie die Richtlinie so, dass eine Zuordnung verwendet wird, die auf eine bestimmte Azure AD-Gruppe ausgerichtet ist, die keine Microsoft Managed Desktop Geräte enthält. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Nach der Registrierung können Sie die Richtlinie für Microsoft Managed Desktop Sicherheitsgrundwerte im Bereich der **Konfigurationsrichtlinien** von Microsoft Endpoint Manager überprüfen.
 
 **Empfehlung**
 
-Stellen Sie sicher, dass alle Sicherheitsgrundwerterichtlinien, die Sie Microsoft Managed Desktop Geräte ausgeschlossen haben. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Die **Gruppe "Moderne Workplace-Geräte – Alle** Azure AD-Gruppen" ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich bei Microsoft Managed Desktop registrieren. Sie müssen daher zurückkehren, um diese Gruppe nach der Registrierung auszuschließen. 
+Stellen Sie sicher, dass alle Sicherheitsgrundwerterichtlinien, die Sie Microsoft Managed Desktop Geräten ausgeschlossen haben. Schritte finden Sie unter [Verwenden von Sicherheitsgrundwerten zum Konfigurieren Windows 10 Geräte in Intune.](/mem/intune/protect/security-baselines) Während der Registrierung wenden wir eine neue Sicherheitsgrundlinie auf alle Microsoft Managed Desktop Geräte an. Die **Gruppe "Moderne Workplace-Geräte – Alle** Azure AD-Gruppen" ist eine dynamische Gruppe, die wir erstellen, wenn Sie sich bei Microsoft Managed Desktop registrieren. Sie müssen daher zurückkehren, um diese Gruppe nach der Registrierung auszuschließen. 
 
+### <a name="unlicensed-admins"></a>Nicht lizenzierte Administratoren
+
+Diese Einstellung muss aktiviert sein, um einen Fehler "Fehlende Berechtigungen" zu vermeiden, wenn wir mit Ihrer Azure AD-Organisation interagieren. 
+
+**Nicht bereit**
+
+**Der Zugriff auf nicht lizenzierte Administratoren** sollte aktiviert sein. Schritte finden Sie unter ["Voraussetzungen für Gastkonten".](/microsoft-365/managed-desktop/get-ready/guest-accounts)
 
 ### <a name="windows-apps"></a>Windows-Apps
 

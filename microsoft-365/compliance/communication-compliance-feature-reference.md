@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8a81c65d65704262230e6eb6245d882b63a18bab
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227375"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322293"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationscompliancefeatures
 
@@ -32,10 +32,10 @@ ms.locfileid: "53227375"
 > [!IMPORTANT]
 > Die Verwendung von PowerShell zum Erstellen und Verwalten von Richtlinien zur Kommunikationscompliance wird nicht unterstützt. Um diese Richtlinien zu erstellen und zu verwalten, müssen Sie die Richtlinienverwaltungssteuerelemente in der [Microsoft 365 Kommunikationscompliancelösung](https://compliance.microsoft.com/supervisoryreview)verwenden.
 
-Im Microsoft 365 Compliance Center erstellen Sie Richtlinien zur Kommunikationscompliance für Microsoft 365-Organisationen. Richtlinien für die Kommunikationscompliance definieren, welche Kommunikationen und Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und geben an, wer Überprüfungen durchführen soll. Benutzer, denen die Administratorrolle *"Kommunikationscompliance"* zugewiesen ist, können Richtlinien einrichten, und jeder Benutzer, dem diese Rolle zugewiesen ist, kann auf die Seite **"Kommunikationscompliance"** und die globalen Einstellungen im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Änderungsverlauf an einer Richtlinie in eine .csv datei (durch Trennzeichen getrennte Werte) exportieren, die auch den Status von warnungen ausstehenden Überprüfungen, eskalierten Elementen und aufgelösten Elementen enthält. Richtlinien können nicht umbenannt und gelöscht werden, wenn sie nicht mehr benötigt werden.
+Im Microsoft 365 Compliance Center erstellen Sie Richtlinien zur Kommunikationscompliance für Microsoft 365-Organisationen. Richtlinien für die Kommunikationscompliance definieren, welche Kommunikationen und Benutzer in Ihrer Organisation überprüft werden sollen, definieren, welche benutzerdefinierten Bedingungen die Kommunikation erfüllen muss, und geben an, wer Überprüfungen durchführen soll. Benutzer, denen die Administratorrolle *"Kommunikationscompliance"* zugewiesen ist, können Richtlinien einrichten, und jeder Benutzer, dem diese Rolle zugewiesen ist, kann auf die Seite **"Kommunikationscompliance"** und die globalen Einstellungen im Microsoft 365 Compliance Center zugreifen. Bei Bedarf können Sie den Änderungsverlauf an einer Richtlinie in eine datei mit .csv (durch Trennzeichen getrennte Werte) exportieren, die auch den Status von warnungen ausstehender Überprüfung, eskalierten Elementen und aufgelösten Elementen enthält. Richtlinien können nicht umbenannt und gelöscht werden, wenn sie nicht mehr benötigt werden.
 
 > [!NOTE]
-> Aufsichtsrichtlinien, die im Security & Compliance Center für Office 365 Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365-Abonnement migrieren, müssen Sie neue Richtlinien zur Kommunikationscompliance erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
+> Aufsichtsrichtlinien, die im Security & Compliance Center für Office 365 Abonnements erstellt wurden, können nicht zu Microsoft 365 migriert werden. Wenn Sie von einem Office 365-Abonnement zu einem Microsoft 365 Abonnement migrieren, müssen Sie neue Richtlinien zur Kommunikationscompliance erstellen, um vorhandene Aufsichtsrichtlinien zu ersetzen.
 
 ## <a name="policy-templates"></a>Richtlinienvorlagen
 
@@ -44,15 +44,15 @@ Richtlinienvorlagen sind vordefinierte Richtlinieneinstellungen, mit denen Sie s
 |**Bereich**|**Richtlinienvorlage**|**Details**|
 |:-----|:-----|:-----|
 | **Anstößige Sprache und Anti-Belästigung** | Überwachen der Kommunikation auf anstößige Sprache | - Speicherorte: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Richtung: Eingehend, Ausgehend, Intern <br> - Prozentsatz der Überprüfung: 100 % <br> - Bedingungen: Klassifizierer für anstößige Sprache |
-| **Vertrauliche Informationen** | Überwachen der Kommunikation auf vertrauliche Informationen | - Speicherorte: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Richtung: Eingehend, Ausgehend, Intern <br> - Prozentsatz der Überprüfung: 10 % <br> - Bedingungen: Vertrauliche Informationen, out-of-the-box-Inhaltsmuster und -typen, Benutzerwörterbuchoption, Anlagen größer als 1 MB |
+| **Vertrauliche Informationen** | Überwachen der Kommunikation auf vertrauliche Informationen | - Speicherorte: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Richtung: Eingehend, Ausgehend, Intern <br> - Prozentsatz der Überprüfung: 10 % <br> - Bedingungen: Vertrauliche Informationen, vordefinierte Inhaltsmuster und Typen, Benutzerwörterbuchoption, Anlagen, die größer als 1 MB sind |
 | **Einhaltung gesetzlicher Bestimmungen** | Überwachen der Kommunikation auf Informationen im Zusammenhang mit der Einhaltung gesetzlicher Vorschriften | - Speicherorte: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Richtung: Eingehend, Ausgehend <br> - Prozentsatz der Überprüfung: 10 % <br> - Bedingungen: Benutzerwörterbuchoption, Anlagen größer als 1 MB |
 | **Interessengruppen** | Überwachen der Kommunikation zwischen zwei Gruppen oder zwei Benutzern, um Interessengruppen zu vermeiden | - Speicherorte: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Richtung: Intern <br> - Prozentsatz der Überprüfung: 100 % <br> - Bedingungen: Keine |
 
-Die Kommunikation wird alle 24 Stunden ab dem Zeitpunkt der Erstellung von Richtlinien überprüft. Wenn Sie beispielsweise um 11:00 Uhr eine Richtlinie für anstößige Sprachen erstellen, sammelt die Richtlinie alle 24 Stunden um 11:00 Uhr die Kommunikationscompliancesignale. Das Bearbeiten einer Richtlinie ändert sich dieses Mal nicht. Navigieren Sie zur Spalte *"Letzte Richtlinienüberprüfung"* auf der Seite "Richtlinie", um das Datum und die Uhrzeit der letzten Überprüfung für eine **Richtlinie** anzuzeigen. Nach dem Erstellen einer neuen Richtlinie kann es bis zu 24 Stunden dauern, bis das Datum und die Uhrzeit der ersten Richtlinienüberprüfung angezeigt werden. Datum und Uhrzeit der letzten Überprüfung werden in die Zeitzone Ihres lokalen Systems konvertiert.
+Die Kommunikation wird alle 24 Stunden ab dem Zeitpunkt der Erstellung von Richtlinien überprüft. Wenn Sie z. B. um 11:00 Uhr eine Richtlinie für anstößige Sprachen erstellen, sammelt die Richtlinie alle 24 Stunden um 11:00 Uhr täglich Kommunikationscompliancesignale. Das Bearbeiten einer Richtlinie ändert sich dieses Mal nicht. Navigieren Sie zur Spalte *"Letzte Richtlinienüberprüfung"* auf der Seite "Richtlinie", um das Datum und die Uhrzeit der letzten Überprüfung für eine **Richtlinie** anzuzeigen. Nach dem Erstellen einer neuen Richtlinie kann es bis zu 24 Stunden dauern, bis das Datum und die Uhrzeit der ersten Richtlinienüberprüfung angezeigt werden. Datum und Uhrzeit der letzten Überprüfung werden in die Zeitzone Ihres lokalen Systems konvertiert.
 
 ## <a name="pausing-a-policy-preview"></a>Anhalten einer Richtlinie (Vorschau)
 
-Nachdem Sie eine Richtlinie zur Kommunikationscompliance erstellt haben, wird die Richtlinie bei Bedarf möglicherweise vorübergehend angehalten. Das Anhalten einer Richtlinie kann zum Testen oder Beheben von Richtlinienüberstimmungen oder zum Optimieren von Richtlinienbedingungen verwendet werden. Anstatt eine Richtlinie unter diesen Umständen zu löschen, behält das Anhalten einer Richtlinie auch vorhandene Richtlinienwarnungen und Nachrichten für laufende Untersuchungen und Überprüfungen bei. Das Anhalten einer Richtlinie verhindert die Überprüfung und Generierung von Warnungen für alle in der Richtlinie definierten Benutzernachrichtenbedingungen für den Zeitraum, an dem die Richtlinie angehalten wird. Um eine Richtlinie anzuhalten oder neu zu starten, müssen Benutzer Mitglied der Rollengruppe *"Kommunikationscompliance-Administrator"* sein.
+Nachdem Sie eine Richtlinie zur Kommunikationscompliance erstellt haben, wird die Richtlinie bei Bedarf möglicherweise vorübergehend angehalten. Das Anhalten einer Richtlinie kann zum Testen oder Beheben von Richtlinienüberstimmungen oder zum Optimieren von Richtlinienbedingungen verwendet werden. Anstatt eine Richtlinie unter diesen Umständen zu löschen, behält das Anhalten einer Richtlinie auch vorhandene Richtlinienwarnungen und Nachrichten für laufende Untersuchungen und Überprüfungen bei. Das Anhalten einer Richtlinie verhindert die Überprüfung und Generierung von Warnungen für alle Benutzernachrichtenbedingungen, die in der Richtlinie für den Zeitraum definiert sind, zu dem die Richtlinie angehalten wird. Um eine Richtlinie anzuhalten oder neu zu starten, müssen Benutzer Mitglied der Rollengruppe *"Kommunikationscompliance-Administrator"* sein.
 
 Navigieren Sie zum Anhalten einer Richtlinie zur Seite **"Richtlinie",** wählen Sie eine Richtlinie aus, und wählen Sie dann auf der Symbolleiste "Aktionen" die Option **"Richtlinie anhalten"** aus. Bestätigen Sie im **Bereich "Richtlinie anhalten",** dass Sie die Richtlinie anhalten möchten, indem Sie **"Anhalten"** auswählen. In einigen Fällen kann es bis zu 24 Stunden dauern, bis eine Richtlinie angehalten wurde. Nachdem die Richtlinie angehalten wurde, werden keine Warnungen für Nachrichten erstellt, die mit der Richtlinie übereinstimmen. Nachrichten, die Warnungen zugeordnet sind, die vor dem Anhalten der Richtlinie erstellt wurden, bleiben jedoch zur Untersuchung, Überprüfung und Behebung verfügbar.
 
@@ -126,10 +126,10 @@ Das Hinzufügen von Gruppen und Verteilerlisten zu Kommunikationscompliancericht
 
 Mit Richtlinien zur Kommunikationscompliance können Sie auswählen, ob Nachrichten auf einer oder mehreren der folgenden Kommunikationsplattformen als Gruppe oder als eigenständige Quellen gescannt werden sollen. Auf diesen Plattformen erfasste Kommunikationen werden für jede Richtlinie standardmäßig sieben Jahre lang aufbewahrt, auch wenn Benutzer Ihre Organisation verlassen und ihre Postfächer gelöscht werden.
 
-- **Microsoft Teams:** Chatkommunikation in öffentlichen und privaten Microsoft Teams Kanälen und einzelnen Chats kann gescannt werden. Wenn Benutzer einer Richtlinie zur Kommunikationscompliance mit ausgewählter Microsoft Teams Abdeckung zugewiesen werden, wird die Chatkommunikation für die Benutzer automatisch in allen Microsoft Teams überwacht, in denen die Benutzer Mitglied sind. Microsoft Teams Abdeckung wird automatisch für vordefinierte Richtlinienvorlagen eingeschlossen und standardmäßig in der benutzerdefinierten Richtlinienvorlage ausgewählt. Teams Chats, die den Kommunikationscompliance-Richtlinienbedingungen entsprechen, können bis zu 48 Stunden dauern. Verwenden Sie die folgenden Gruppenverwaltungskonfigurationen, um einzelne Benutzerchats und Kanalkommunikation in Teams zu überwachen:
+- **Microsoft Teams:** Chatkommunikation in öffentlichen und privaten Microsoft Teams Kanälen und einzelnen Chats kann gescannt werden. Wenn Benutzer einer Richtlinie zur Kommunikationscompliance zugewiesen werden, für die Microsoft Teams Abdeckung ausgewählt ist, wird die Chatkommunikation für die Benutzer automatisch in allen Microsoft Teams überwacht, in denen die Benutzer Mitglied sind. Microsoft Teams Abdeckung wird automatisch für vordefinierte Richtlinienvorlagen eingeschlossen und standardmäßig in der benutzerdefinierten Richtlinienvorlage ausgewählt. Teams Chats, die den Richtlinienbedingungen für die Kommunikationscompliance entsprechen, können bis zu 48 Stunden dauern. Verwenden Sie die folgenden Gruppenverwaltungskonfigurationen, um einzelne Benutzerchats und Kanalkommunikation in Teams zu überwachen:
 
     - **Für Teams Chatkommunikation:** Weisen Sie der Richtlinie zur Kommunikationscompliance einzelne Benutzer oder eine [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zu. Diese Einstellung gilt für Eins-zu-eins- oder Eins-zu-viele-Benutzer/Chat-Beziehungen.
-    - **Für Teams Kanalkommunikation:** Weisen Sie jeder Microsoft Teams Kanal oder Microsoft 365 Gruppe, die Sie überprüfen möchten, die einen bestimmten Benutzer enthält, der Richtlinie zur Kommunikationscompliance zu. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, stellen Sie sicher, dass Sie diese neuen Kanäle und Gruppen in die Richtlinie zur Kommunikationscompliance aufnehmen. Wenn ein Mitglied des Kanals ein überwachter Benutzer innerhalb einer Richtlinie ist und die *Eingehende* Richtung in einer Richtlinie konfiguriert ist, unterliegen alle nachrichten, die innerhalb des Kanals gesendet werden, der Überprüfung und potenziellen Richtlinienüberstimmungen (auch für Benutzer im Kanal, die nicht explizit überwacht werden). Beispielsweise ist Benutzer A der Besitzer oder ein Mitglied eines Kanals. Benutzer B und Benutzer C sind Mitglieder desselben Kanals und verwenden die Sprache, die mit der Richtlinie für anstößige Sprachen übereinstimmt, die nur Benutzer A überwacht. Benutzer B und Benutzer C erstellen Richtlinienübersprechungen für Unterhaltungen innerhalb des Kanals, obwohl sie nicht direkt in der Richtlinie für anstößige Sprachen überwacht werden. Teams Unterhaltungen zwischen Benutzer B und Benutzer C, die sich außerhalb des Kanals befinden, der Benutzer A enthält, unterliegen nicht der Richtlinie für anstößige Sprache, die Benutzer A enthält. Um Kanalmitglieder von der Aufsicht auszuschließen, wenn andere Mitglieder des Kanals explizit überwacht werden, deaktivieren Sie die Einstellung für die Richtung der *eingehenden* Kommunikation in der geltenden Richtlinie zur Kommunikationscompliance.
+    - **Für Teams Kanalkommunikation:** Weisen Sie jeder Microsoft Teams Kanal oder Microsoft 365 Gruppe, die Sie überprüfen möchten, die einen bestimmten Benutzer enthält, der Richtlinie zur Kommunikationscompliance zu. Wenn Sie denselben Benutzer zu anderen Microsoft Teams-Kanälen oder Microsoft 365-Gruppen hinzufügen, stellen Sie sicher, dass Sie diese neuen Kanäle und Gruppen in die Richtlinie zur Kommunikationscompliance aufnehmen. Wenn ein Mitglied des Kanals ein überwachter Benutzer innerhalb einer Richtlinie ist und die *Eingehende* Richtung in einer Richtlinie konfiguriert ist, unterliegen alle nachrichten, die innerhalb des Kanals gesendet werden, der Überprüfung und potenziellen Richtlinienübersprechung (auch für Benutzer im Kanal, die nicht explizit überwacht werden). Beispielsweise ist Benutzer A der Besitzer oder ein Mitglied eines Kanals. Benutzer B und Benutzer C sind Mitglieder desselben Kanals und verwenden die Sprache, die mit der Richtlinie für anstößige Sprachen übereinstimmt, die nur Benutzer A überwacht. Benutzer B und Benutzer C erstellen Richtlinienübersprechungen für Unterhaltungen innerhalb des Kanals, obwohl sie nicht direkt in der Richtlinie für anstößige Sprachen überwacht werden. Teams Unterhaltungen zwischen Benutzer B und Benutzer C, die sich außerhalb des Kanals befinden, der Benutzer A enthält, unterliegen nicht der Richtlinie für anstößige Sprache, die Benutzer A enthält. Um Kanalmitglieder von der Aufsicht auszuschließen, wenn andere Mitglieder des Kanals explizit überwacht werden, deaktivieren Sie die Einstellung für die Richtung der *eingehenden* Kommunikation in der geltenden Richtlinie zur Kommunikationscompliance.
     - **Für Teams Chatkommunikation mit hybriden E-Mail-Umgebungen:** Kommunikationscompliance kann Chatnachrichten für Benutzer für Organisationen mit einer Exchange lokalen Bereitstellung oder einem externen E-Mail-Anbieter überwachen, die Microsoft Teams aktiviert haben. Sie müssen eine Verteilergruppe für die Benutzer mit lokalen oder externen Postfächern erstellen, die überwacht werden sollen. Beim Erstellen einer Kommunikationscompliancerichtlinie weisen Sie diese Verteilergruppe im Richtlinien-Assistenten als Auswahl für **überwachte Benutzer und Gruppen** zu. Weitere Informationen zu den Anforderungen und Einschränkungen für die Aktivierung von cloudbasiertem Speicher und Teams Unterstützung für lokale Benutzer finden Sie unter [Suchen nach Teams Chatdaten für lokale Benutzer.](search-cloud-based-mailboxes-for-on-premises-users.md)
 
 - **Exchange E-Mail:** Postfächer, die im Rahmen Ihres Microsoft 365- oder Office 365-Abonnements auf Exchange Online gehostet werden, sind alle für die Überprüfung von Nachrichten berechtigt. Exchange E-Mail-Nachrichten und Anlagen, die den Richtlinienbedingungen für die Kommunikationscompliance entsprechen, kann bis zu 24 Stunden dauern. Die für die Kommunikationscompliance unterstützten Anlagetypen sind die gleichen wie die [Dateitypen, die für die Inhaltsüberprüfung von Exchange-Mailflussregeln unterstützt werden](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
@@ -188,12 +188,13 @@ Integrierte trainierbare und globale Klassifizierer überprüfen gesendete oder 
 
 Integrierte trainierbare und globale Klassifizierer überprüfen die Kommunikation nach Begriffen, Bildern und Gefühlen für die folgenden Arten von Sprache und Inhalten:
 
-- **Bedrohung:** Sucht nach Bedrohungen, um Gewalt oder physischen Schaden an einer Person oder einem Eigentum zu begehen.
-- **Gezielte Belästigung:** Sucht nach anstößigem Verhalten, das auf Personen in Bezug auf Rasen, Farbe, Herkunft, nationale Herkunft ausgerichtet ist.
-- **Profanität:** Sucht nach profanen Ausdrücken, die die meisten Menschen verungifizieren.
 - **Bilder für Erwachsene:** Sucht nach Bildern, die sexueller Art sind.
-- **Rassige Bilder:** Sucht nach Bildern, die sexuelle Suggestivität aufweisen, aber weniger explizite Inhalte enthalten als Bilder, die als nicht jugendfrei eingestuft werden.
+- **Belästigung (Vorschau):** Sucht nach expliziter, englischsprachiger Sprache und ist besonders sensibel für die englischsprachige Sprache gegenüber den American/Black-Communitys im Vergleich zu anderen Communitys.
 - **Graue Bilder:** Sucht nach Bildern, die Gewalt und Grauen darstellen.
+- **Profanität:** Sucht nach profanen Ausdrücken, die die meisten Menschen verungifizieren.
+- **Rassige Bilder:** Sucht nach Bildern, die sexuelle Suggestivität aufweisen, aber weniger explizite Inhalte enthalten als Bilder, die als nicht jugendfrei eingestuft werden.
+- **Gezielte Belästigung:** Sucht nach anstößigem Verhalten, das auf Personen in Bezug auf Rasen, Farbe, Herkunft, nationale Herkunft ausgerichtet ist.
+- **Bedrohung:** Sucht nach Bedrohungen, um Gewalt oder physischen Schaden an einer Person oder einem Eigentum zu begehen.
 
 Die Bildklassifizierungen *"Adult",* *"Racy"* und *"Gory"* scannen Dateien im JPEG-, .png-, .gif- und .bmp-Format. Die Größe für Bilddateien muss kleiner als 4 MB sein, und die Abmessungen der Bilder müssen größer als 50 x 50 Pixel und größer als 50 KB sein, damit das Bild für die Auswertung qualifiziert ist. Die Bildidentifikation wird für Exchange Online E-Mail-Nachrichten und Microsoft Teams Kanäle und Chats unterstützt.
 
@@ -246,7 +247,7 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"> </a>
 
-Jedes eingegebene und durch Komma getrennte Wort wird separat angewendet (es muss nur ein Wort gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung: **"Nachricht" enthält eines dieser Wörter,** wobei die Schlüsselwörter "Banker", "vertraulich" und "Insider-Handel" durch ein Komma getrennt sind (Banker, vertraulich,"Insider-Handel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insider-Handel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit der Eingabe übereinstimmen.
+Jedes eingegebene und durch Komma getrennte Wort wird separat angewendet (es muss nur ein Wort gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung: **Nachricht enthält eines dieser Wörter,** wobei die Schlüsselwörter "Banker", "vertraulich" und "Insider-Handel" durch ein Komma getrennt sind (Banker, vertraulich,"Insider-Handel"). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insider-Handel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit der Eingabe übereinstimmen.
 
 > [!IMPORTANT]
 >
@@ -264,7 +265,7 @@ Wenn Sie mehrere Bedingungen eingeben, verwendet Microsoft 365 alle Bedingungen 
 
 - **Message contains any of these words**, with the keyword "trade"
 - **Nachrichtengröße ist größer als**, mit dem Wert 2 MB
-- **Nachricht enthält keines dieser Wörter** mit den Schlüsselwörtern "Genehmigt von Contoso-Finanzteam"
+- **Die Nachricht enthält keines dieser Wörter** mit den Schlüsselwörtern "Genehmigt vom Contoso-Finanzteam"
 
 ### <a name="review-percentage"></a>Prozentsatz der Überprüfung
 
@@ -285,7 +286,7 @@ Sie können Benachrichtigungsvorlagen erstellen, wenn Sie Benutzern im Rahmen de
 
 Hinweisvorlagen sind benutzerdefinierte E-Mail-Vorlagen, in denen Sie die folgenden Nachrichtenfelder im Bereich **"Kommunikationscomplianceeinstellungen"** definieren können:
 
-|**Feld**|**Required**| **Details** |
+|**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Vorlagenname** | Ja | Der Anzeigename für die Benachrichtigungsvorlage, die Sie während der Wartung im Benachrichtigungsworkflow auswählen werden, unterstützt Textzeichen. |
 | **Absenderadresse** | Ja | Die Adresse eines oder mehrerer Benutzer oder Gruppen, die die Nachricht mit einer Richtlinienüberstimmung an den Benutzer senden, ausgewählt aus dem Active Directory für Ihr Abonnement. |
@@ -319,7 +320,7 @@ Kommunikationscompliancefilter ermöglichen es Ihnen, Warnmeldungen zu filtern u
 
 |**Filter**|**Details**|
 |:-----|:-----|
-| **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. Um nach einem einzelnen Tag zu filtern, wählen Sie einen Datumsbereich aus, der mit dem Tag beginnt, für den Ergebnisse erzielt werden sollen, und mit dem folgenden Tag enden. Wenn Sie z. B. Ergebnisse nach dem 20.09.2020 filtern möchten, wählen Sie einen Filterdatumsbereich vom 20.09.2020 bis 21.09.2020 aus.|
+| **Date** | Das Datum, an dem die Nachricht von einem Benutzer in Ihrer Organisation gesendet oder empfangen wurde. Um nach einem einzelnen Tag zu filtern, wählen Sie einen Datumsbereich aus, der mit dem Tag beginnt, für den Ergebnisse erzielt werden sollen, und mit dem folgenden Tag enden. Wenn Sie z. B. Die Ergebnisse nach dem 20.09.2020 filtern möchten, wählen Sie einen Filterdatumsbereich vom 20.09.2020 bis 21.09.2020 aus.|
 | **Dateiklasse** | Die Klasse der Nachricht basierend auf dem Nachrichtentyp, entweder *Nachricht* oder *Anlage.* |
 | **Hat Anlage** | Die Anlagenanwesenheit in der Nachricht. |
 | **Elementklasse** | Die Quelle der Nachricht basierend auf dem Nachrichtentyp, der E-Mail, dem Microsoft Team-Chat, Bloomberg usw. Weitere Informationen zu allgemeinen Elementtypen und Nachrichtenklassen finden Sie unter [Elementtypen und Nachrichtenklassen.](/office/vba/outlook/concepts/forms/item-types-and-message-classes) |
@@ -373,27 +374,27 @@ Wenn Sie den Schweregrad ändern möchten, der in einer Warnungsrichtlinie für 
 
 [Microsoft Power Automate](/power-automate/getting-started) ist ein Workflowdienst, der Aktionen über Anwendungen und Dienste hinweg automatisiert. Durch die Verwendung von Flüssen aus Vorlagen oder manuell erstellte, können Sie allgemeine Aufgaben im Zusammenhang mit diesen Anwendungen und Diensten automatisieren. Wenn Sie Power Automate Flüsse für die Kommunikationscompliance aktivieren, können Sie wichtige Aufgaben für Warnungen und Benutzer automatisieren. Sie können Power Automate Flüsse so konfigurieren, dass Manager benachrichtigt werden, wenn Benutzer über Warnungen zur Kommunikationscompliance und andere Anwendungen verfügen.
 
-Kunden mit Microsoft 365 Abonnements, die Kommunikationscompliance enthalten, benötigen keine zusätzlichen Power Automate Lizenzen, um die empfohlene Standard-Kommunikationscompliance Power Automate Vorlage zu verwenden. Die Standardvorlage kann angepasst werden, um Ihre Organisation zu unterstützen und die wichtigsten Kommunikationscomplianceszenarien abzudecken. Wenn Sie premium Power Automate Features in diesen Vorlagen verwenden, eine benutzerdefinierte Vorlage mit dem Microsoft 365 Compliance Connector erstellen oder Power Automate Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise zusätzliche Power Automate Lizenzen.
+Kunden mit Microsoft 365 Abonnements, die Kommunikationscompliance enthalten, benötigen keine zusätzlichen Power Automate Lizenzen, um die empfohlene Standardvorlage für kommunikationscompliance Power Automate verwenden zu können. Die Standardvorlage kann angepasst werden, um Ihre Organisation zu unterstützen und die wichtigsten Kommunikationscomplianceszenarien abzudecken. Wenn Sie premium Power Automate Features in diesen Vorlagen verwenden, eine benutzerdefinierte Vorlage mit dem Microsoft 365 Compliance Connector erstellen oder Power Automate Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise zusätzliche Power Automate Lizenzen.
 
 > [!IMPORTANT]
-> Erhalten Sie beim Testen Power Automate Flüsse Aufforderungen zur zusätzlichen Lizenzüberprüfung? Möglicherweise hat Ihre Organisation noch keine Dienstupdates für dieses Vorschaufeature erhalten. Updates werden bereitgestellt, und alle Organisationen mit Microsoft 365 Abonnements, die Kommunikationscompliance enthalten, sollten bis zum 30. Oktober 2020 Lizenzunterstützung für Flüsse haben, die aus den empfohlenen Power Automate Vorlagen erstellt wurden.
+> Erhalten Sie beim Testen Power Automate Flüsse Aufforderungen zur zusätzlichen Lizenzüberprüfung? Möglicherweise hat Ihre Organisation noch keine Dienstupdates für dieses Vorschaufeature erhalten. Updates werden bereitgestellt, und alle Organisationen mit Microsoft 365 Abonnements, die Kommunikationscompliance enthalten, sollten bis zum 30. Oktober 2020 Lizenzunterstützung für Flüsse erhalten, die aus den empfohlenen Power Automate Vorlagen erstellt wurden.
 
 ![Kommunikationscompliance Power Automate](../media/communication-compliance-power-automate.png)
 
 Die folgende Power Automate Vorlage wird Kunden bereitgestellt, um die Prozessautomatisierung für Kommunikationscompliancewarnungen zu unterstützen:
 
-- **Benachrichtigen Sie den Vorgesetzten, wenn ein Benutzer über eine Kommunikationscompliancewarnung verfügt:** Einige Organisationen müssen möglicherweise eine sofortige Verwaltungsbenachrichtigung erhalten, wenn ein Benutzer über eine Kommunikationscompliancewarnung verfügt. Wenn dieser Fluss konfiguriert und ausgewählt ist, wird dem Vorgesetzten für den Fallbenutzer eine E-Mail-Nachricht mit den folgenden Informationen zu allen Warnungen gesendet:
+- **Benachrichtigen Sie den Vorgesetzten, wenn ein Benutzer über eine Kommunikationscompliance-Warnung verfügt:** Einige Organisationen müssen möglicherweise eine sofortige Verwaltungsbenachrichtigung erhalten, wenn ein Benutzer über eine Benachrichtigung zur Kommunikationscompliance verfügt. Wenn dieser Fluss konfiguriert und ausgewählt ist, wird dem Vorgesetzten für den Fallbenutzer eine E-Mail-Nachricht mit den folgenden Informationen zu allen Warnungen gesendet:
   - Anwendbare Richtlinie für die Warnung
   - Datum/Uhrzeit der Warnung
   - Schweregrad der Warnung
 
 ### <a name="create-a-power-automate-flow"></a>Erstellen eines Power Automate Flusses
 
-Zum Erstellen eines Power Automate Flusses aus einer empfohlenen Standardvorlage verwenden Sie die Option **"Verwalten Power Automate Flüsse"** aus dem **Steuerelement "Automatisieren",** wenn Sie direkt in einer Warnung arbeiten. Um einen Power Automate Fluss mit **manage Power Automate flows** zu erstellen, müssen Sie Mitglied mindestens einer Gruppe von Kommunikationscompliance-Rollen sein.
+Um einen Power Automate Fluss aus einer empfohlenen Standardvorlage zu erstellen, verwenden Sie die Option **"Verwalten Power Automate Flüsse"** aus dem **Steuerelement "Automatisieren",** wenn Sie direkt in einer Warnung arbeiten. Um einen Power Automate Fluss mit **manage Power Automate flows** zu erstellen, müssen Sie Mitglied mindestens einer Gruppe von Kommunikationscompliance-Rollen sein.
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss aus einer Standardvorlage zu erstellen:
 
-1. Wechseln Sie im Microsoft 365 Compliance Center zu **"Kommunikationscompliancerichtlinien",** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
+1. Wechseln Sie im Microsoft 365 Compliance Center zu Richtlinien für die **Kommunikationscompliance,** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
 2. Wählen Sie in der Richtlinie die Registerkarte **"Ausstehend"** aus, und wählen Sie eine ausstehende Warnung aus.
 3. Wählen Sie im Warnungsaktionsmenü **Power Automate** aus.
 4. Wählen Sie auf der **Seite Power Automate** eine Standardvorlage aus den **Kommunikationscompliancevorlagen** aus, die Ihnen auf der Seite möglicherweise gefällt.
@@ -407,10 +408,10 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss aus einer 
 
 Standardmäßig sind Power Automate von einem Benutzer erstellten Flüsse nur für diesen Benutzer verfügbar. Damit andere Kommunikationscompliance-Benutzer Zugriff auf einen Flow haben und diesen verwenden können, muss der Fluss vom Flowersteller gemeinsam genutzt werden. Um einen Fluss freizugeben,  verwenden Sie das Power Automate-Steuerelement, wenn Sie direkt in einer Warnung arbeiten.
 
-Um einen Power Automate Fluss freizugeben, müssen Sie Mitglied mindestens einer Gruppe von Kommunikationscompliance-Rollen sein.
+Um einen Power Automate Fluss freizugeben, müssen Sie Mitglied mindestens einer Kommunikationscompliance-Rollengruppe sein.
 Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss freizugeben:
 
-1. Wechseln Sie im Microsoft 365 Compliance Center zu **"Kommunikationscompliancerichtlinien",** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
+1. Wechseln Sie im Microsoft 365 Compliance Center zu Richtlinien für die **Kommunikationscompliance,** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
 2. Wählen Sie in der Richtlinie die Registerkarte **"Ausstehend"** aus, und wählen Sie eine ausstehende Warnung aus.
 3. Wählen Sie im Warnungsaktionsmenü **Power Automate** aus.
 4. Wählen Sie auf der Seite **Power Automate Flüsse** die Registerkarte **Meine** Flüsse oder Teamflüsse aus. 
@@ -420,11 +421,11 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss freizugebe
 
 ### <a name="edit-a-power-automate-flow"></a>Bearbeiten eines Power Automate Flusses
 
-Wenn Sie einen Fluss bearbeiten müssen,  verwenden Sie das Power Automate-Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Zum Bearbeiten eines Power Automate Flusses müssen Sie Mitglied mindestens einer Kommunikationscompliance-Rollengruppe sein.
+Wenn Sie einen Fluss bearbeiten müssen,  verwenden Sie das Power Automate-Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Zum Bearbeiten eines Power Automate Flusses müssen Sie Mitglied mindestens einer Gruppe von Kommunikationscompliance-Rollen sein.
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss zu bearbeiten:
 
-1. Wechseln Sie im Microsoft 365 Compliance Center zu **"Kommunikationscompliancerichtlinien",** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
+1. Wechseln Sie im Microsoft 365 Compliance Center zu Richtlinien für die **Kommunikationscompliance,** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
 2. Wählen Sie in der Richtlinie die Registerkarte **"Ausstehend"** aus, und wählen Sie eine ausstehende Warnung aus.
 3. Wählen Sie im Warnungsaktionsmenü **Power Automate** aus.
 4. Wählen Sie auf der **Seite Power Automate Flüsse** den zu bearbeitenden Fluss aus. Wählen Sie im Flusssteuerungsmenü die Option **"Bearbeiten"** aus.
@@ -433,11 +434,11 @@ Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss zu bearbei
 
 ### <a name="delete-a-power-automate-flow"></a>Löschen eines Power Automate Flusses
 
-Wenn Sie einen Fluss löschen müssen,  verwenden Sie das Power Automate-Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Um einen Power Automate Ablauf zu löschen, müssen Sie Mitglied mindestens einer Kommunikationscompliance-Rollengruppe sein.
+Wenn Sie einen Fluss löschen müssen,  verwenden Sie das Power Automate-Steuerelement, wenn Sie direkt in einer Warnung arbeiten. Zum Löschen eines Power Automate Flusses müssen Sie Mitglied mindestens einer Kommunikationscompliance-Rollengruppe sein.
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate Fluss zu löschen:
 
-1. Wechseln Sie im Microsoft 365 Compliance Center zu **"Kommunikationscompliancerichtlinien",** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
+1. Wechseln Sie im Microsoft 365 Compliance Center zu Richtlinien für die **Kommunikationscompliance,** und wählen Sie die Richtlinie mit der Warnung aus,  >   die Sie überprüfen möchten.
 2. Wählen Sie in der Richtlinie die Registerkarte **"Ausstehend"** aus, und wählen Sie eine ausstehende Warnung aus.
 3. Wählen Sie im Warnungsaktionsmenü **Power Automate** aus.
 4. Wählen Sie auf der **Seite Power Automate Flüsse** den zu löschenden Fluss aus. Wählen Sie im Flusssteuerungsmenü die Option **"Löschen"** aus.
@@ -517,7 +518,7 @@ In einigen Fällen müssen Sie Informationen für regulatorische oder Compliance
 
 Wählen Sie zum Anzeigen von Updateaktivitäten für Die Kommunikationscompliancerichtlinien auf der Hauptseite für eine beliebige Richtlinie das Steuerelement **"Richtlinienupdates exportieren"** aus. Ihnen müssen die Rollen *"Globaler Administrator"* oder *"Kommunikationscompliance-Administrator"* zugewiesen sein, um Updateaktivitäten zu exportieren. Diese Aktion generiert eine Überwachungsdatei im .csv Format, das die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Aktualisierungsaktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Aktualisierungsaktivität in einer Richtlinie ausgeführt hat. |
@@ -526,7 +527,7 @@ Wählen Sie zum Anzeigen von Updateaktivitäten für Die Kommunikationscomplianc
 
 Um die Aktivitäten zur Überprüfung der Kommunikationscompliance für eine Richtlinie anzuzeigen, wählen Sie das Steuerelement **"Überprüfungsaktivitäten exportieren"** auf der Seite **"Übersicht"** für eine bestimmte Richtlinie aus. Ihnen müssen die Rollen *"Globaler Administrator"* oder *"Kommunikationscompliance-Administrator"* zugewiesen sein, um Überprüfungsaktivitäten zu exportieren. Diese Aktion generiert eine Überwachungsdatei im .csv Format, das die folgenden Informationen enthält:
 
-|**Feld**|**Details**|
+|**Field**|**Details**|
 |:-----|:-----|
 | **CreationDate** | Das Datum, an dem die Überprüfungsaktivität in einer Richtlinie ausgeführt wurde. |
 | **UserIds** | Der Benutzer, der die Überprüfungsaktivität in einer Richtlinie ausgeführt hat. |
@@ -572,8 +573,8 @@ Führen Sie die folgenden Schritte aus, um die Größe eines Aufsichtspostfachs 
 
 Organisationen, die Aufsichtsrichtlinien in Office 365 verwenden, sollten sofort planen, in Microsoft 365 auf Richtlinien zur Kommunikationscompliance umgestellt zu werden, und müssen die folgenden wichtigen Punkte verstehen:
 
-- Die Aufsichtslösung in Office 365 wurde in Microsoft 365 vollständig durch die Lösung zur Kommunikationscompliance ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationscompliance zu erstellen, die dieselben Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Behebung zu nutzen.
-- Nachrichten, die in Office 365 Richtlinienüberlegungen unter Aufsicht gespeichert wurden, können in Microsoft 365 nicht verschoben oder in die Kommunikationscompliance freigegeben werden.
+- Die Aufsichtslösung in Office 365 wurde vollständig durch die Kommunikationscompliancelösung in Microsoft 365 ersetzt. Es wird empfohlen, neue Richtlinien für die Kommunikationscompliance zu erstellen, die dieselben Einstellungen wie vorhandene Aufsichtsrichtlinien haben, um die neuen Verbesserungen bei Untersuchung und Behebung zu nutzen.
+- Nachrichten, die in Office 365 Richtlinienüberlegungen unter Aufsicht gespeichert werden, können in Microsoft 365 nicht verschoben oder in die Kommunikationscompliance freigegeben werden.
 - Für Organisationen mit beiden Lösungen, die während des Übergangsprozesses nebeneinander verwendet werden, müssen die in jeder Lösung verwendeten Richtlinien eindeutige Richtliniennamen aufweisen. Gruppen und benutzerdefinierte Schlüsselwortwörterbücher können während einer Übergangszeit von Lösungen gemeinsam genutzt werden.
 
 Ausführliche Informationen zur Einstellung der Aufsicht in Office 365 finden Sie in der [Microsoft 365 Roadmap.](https://www.microsoft.com/microsoft-365/roadmap)

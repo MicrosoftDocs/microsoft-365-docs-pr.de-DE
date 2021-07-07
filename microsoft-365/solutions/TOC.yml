@@ -175,13 +175,13 @@
               href: /sharepoint/intelligent-internet-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
             - name: So sollten Sie Ihr intelligentes Intranet betrachten
               href: /sharepoint/itrad-vs-modern-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-            - name: Intranet-Roadmap
+            - name: Intranetroadmap
               href: /sharepoint/iintranet-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
             - name: Planen Ihres Intranets
               href: /sharepoint/iplan-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
             - name: Überlegungen bei der Planung eines globalen Intranets
               href: /sharepoint/iset-up-global-intranet.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
-            - name: Intranet-Governance
+            - name: Intranetgovernance
               href: /sharepoint/iintranet-governance.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
             - name: Kommunikation am Arbeitsplatz
               href: /sharepoint/iworkplace-communications.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
@@ -259,7 +259,7 @@
           href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
         - name: Migrieren von McAfee zu Microsoft Defender für Endpunkt
           href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
-        - name: Wechseln von Nicht-Microsoft-Endpunktsicherheitslösung zu Microsoft Defender für Endpunkt
+        - name: Wechseln von einer Nicht-Microsoft-Endpunktsicherheitslösung zu Microsoft Defender für Endpunkt
           href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
     - name: Contoso-Fallstudien
       items:

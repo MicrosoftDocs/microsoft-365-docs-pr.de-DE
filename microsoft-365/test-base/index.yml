@@ -1,0 +1,62 @@
+### YamlMime:Landing
+title: Testbasis für Microsoft 365 Dokumentation
+summary: Test base for Microsoft 365 is an Azure service that facilitates data-driven testing of applications. Dank der Leistungsfähigkeit von Daten und der Cloud können IT-Experten intelligente Tests von überall auf der Welt nutzen. Es hilft Ihnen, Ihre Anwendungen ohne Denkaufwand, Zeitaufwand und Aufwand beim Einrichten und Warten komplexer Testumgebungen zu testen. Am wichtigsten ist, dass sie Ihnen Zugriff auf Vorabversionen Windows Updates auf sicheren virtuellen Computern (VMs) und erstklassiger Intelligenz für Ihre Anwendungen gewähren.
+metadata:
+  title: Testbasis für M365-Dokumentation
+  description: Test base for Microsoft 365 is an Azure service that facilitates data-driven testing of applications. Dank der Leistungsfähigkeit von Daten und der Cloud können IT-Experten intelligente Tests von überall auf der Welt nutzen.
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: v-zhifufeng
+  ms.author: v-zhifufeng
+  ms.date: 03/29/2021
+  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
+  ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "53322753"
+landingContent:
+- title: Informationen zur Testbasis
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Was ist Test Base?
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: Erstellen eines Testbasiskontos
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: zusätzliche Ressourcen
+      url: faq.md
+- title: Erste Schritte
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Erstellen eines Testbasiskontos
+      url: createAccount.md
+    - text: Hochladen Ihrer Anwendung
+      url: uploadApplication.md
+    - text: Hochladen Ihrer Binärdateien
+      url: binaries.md
+    - text: Festlegen der Testaufgaben
+      url: testtask.md
+    - text: Auswählen der Testoptionen
+      url: testoptions.md
+    - text: Überprüfen Ihrer Auswahl
+      url: review.md
+    - text: Testpaketrichtlinien
+      url: contentguideline.md
+    - text: Analyse der Speicherregression
+      url: memory.md
+    - text: CPU-Regressionsanalyse
+      url: cpu.md
+- title: Abrufen von Verweisen
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Häufig gestellte Fragen
+      url: faq.md

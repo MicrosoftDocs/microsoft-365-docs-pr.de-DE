@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286933"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327035"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurieren von Warnungsbenachrichtigungen in Microsoft Defender für Endpunkt
 
@@ -104,3 +104,4 @@ In diesem Abschnitt werden verschiedene Probleme aufgeführt, die bei der Verwen
 
 - [Aktualisieren der Einstellungen für die Datenaufbewahrung](data-retention-settings.md)
 - [Konfigurieren erweiterter Funktionen](advanced-features.md)
+- [Konfigurieren von E-Mail-Benachrichtigungen zu Sicherheitsrisiken in Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications)

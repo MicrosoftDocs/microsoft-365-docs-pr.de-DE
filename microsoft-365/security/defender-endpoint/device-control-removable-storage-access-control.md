@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugriffssteuerung
+title: Microsoft Defender für Endpunkt-Gerätesteuerung , wechselbar Storage Zugriffssteuerung
 description: Eine exemplarische Vorgehensweise zu Microsoft Defender für Endpunkt
 keywords: Wechselmedien
 search.product: eADQiWindows 10XVcnh
@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229575"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327047"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugriffssteuerung
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender für Endpunkt-Gerätesteuerung , wechselbar Storage Zugriffssteuerung
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugriffssteuerung ermöglicht Ihnen die folgende Aufgabe:
+
 - Überwachen, Zulassen oder Verhindern des Lese-, Schreib- oder Ausführungszugriffs auf Wechselmedien mit oder ohne Ausschluss
 
 |Privileg |Berechtigung  |
@@ -41,16 +42,18 @@ Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugr
 
 ## <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 
-Bereitstellen von Wechselmedien Storage Zugriffssteuerung auf Windows 10 Geräten mit Antischadsoftware-Clientversion **4.18.2103.3 oder höher.**
+Bereitstellen von wechselbaren Storage Zugriffssteuerung auf Windows 10 Geräten mit Antischadsoftware-Clientversion **4.18.2103.3 oder höher.**
 
 - **4.18.2104 oder höher:** Hinzufügen von SerialNumberId, VID_PID, dateipfadbasierter GPO-Unterstützung, ComputerSid
 
 - **4.18.2105 oder höher:** Hinzufügen von Platzhalterunterstützung für HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, die Kombination aus einem bestimmten Benutzer auf einem bestimmten Computer, entfernender SSD (sanDisk Extreme SSD)/USB Attached SCSI (UAS)-Unterstützung
 
+- **4.18.2107 oder höher:** Hinzufügen Windows Unterstützung für tragbare Geräte (WPD) (für mobile Geräte wie Tablets)
+
 :::image type="content" source="images/powershell.png" alt-text="Die PowerShell-Schnittstelle":::
 
 > [!NOTE]
-> Keine der Windows-Sicherheit Komponenten aktiv sein muss, können Sie wechselbare Storage Zugriffssteuerung unabhängig von Windows-Sicherheit Status ausführen.
+> Keine der Windows-Sicherheit Komponenten aktiv sein muss, können Sie removable Storage Access Control unabhängig von Windows-Sicherheit Status ausführen.
 
 ## <a name="policy-properties"></a>Richtlinieneigenschaften
 
@@ -62,15 +65,14 @@ Sie können die folgenden Eigenschaften verwenden, um eine Wechselmediengruppe z
 
 **Eigenschaftenname: DescriptorIdList**
 
-1. Beschreibung: Auflisten der Geräteeigenschaften, die Sie in der Gruppe abdecken möchten.
-Listet die Geräteeigenschaften auf, die Sie in der Gruppe abdecken möchten.
+2. Beschreibung: Auflisten der Geräteeigenschaften, die Sie in der Gruppe abdecken möchten.
 Weitere Informationen zu jeder Geräteeigenschaft finden Sie weiter oben im Abschnitt **"Geräteeigenschaften".**
 
-1. Optionen:
-
-    - Primäre ID
+3. Optionen:
+    - PrimaryId
         - RemovableMediaDevices
         - CdRomDevices
+        - WpdDevices
     - Deviceid
     - HardwareId
     - InstancePathId: InstancePathId ist eine Zeichenfolge, die das Gerät im System eindeutig identifiziert, z. B. USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Die Zahl am Ende (z. **B.&0)** stellt den verfügbaren Steckplatz dar und kann sich von Gerät zu Gerät ändern. Um optimale Ergebnisse zu erzielen, verwenden Sie am Ende einen Platzhalter. Beispiel: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -87,7 +89,7 @@ Weitere Informationen zu jeder Geräteeigenschaft finden Sie weiter oben im Absc
 
 1. Beschreibung: Wenn mehrere Geräteeigenschaften in der DescriptorIDList verwendet werden, definiert MatchType die Beziehung.
 
-1. Optionen:
+2. Optionen:
 
     - MatchAll: Alle Attribute unter der DescriptorIdList sind **"And"-Beziehung;** Wenn der Administrator beispielsweise DeviceID und InstancePathID platziert, überprüft das System für jeden angeschlossenen USB-Stick, ob der USB beide Werte erfüllt.
     - MatchAny: Die Attribute unter "DescriptorIdList" sind **"Or".** Wenn der Administrator beispielsweise DeviceID und InstancePathID platziert, führt das System für jeden angeschlossenen USB-Stick die Erzwingung aus, solange der USB-Stick entweder über einen identischen **DeviceID-** oder **InstanceID-Wert** verfügt.
@@ -100,9 +102,9 @@ Es folgen die Eigenschaften der Zugriffssteuerungsrichtlinie:
 
 **Eigenschaftenname: IncludedIdList**
 
-2. Beschreibung: Die Gruppen, auf die die Richtlinie angewendet wird. Wenn mehrere Gruppen hinzugefügt werden, wird die Richtlinie auf alle Medien in allen diesen Gruppen angewendet.
+1. Beschreibung: Die Gruppen, auf die die Richtlinie angewendet wird. Wenn mehrere Gruppen hinzugefügt werden, wird die Richtlinie auf alle Medien in allen diesen Gruppen angewendet.
 
-3. Optionen: Die Gruppen-ID/GUID muss in dieser Instanz verwendet werden.
+2. Optionen: Die Gruppen-ID/GUID muss in dieser Instanz verwendet werden.
 
 Das folgende Beispiel zeigt die Verwendung von GroupID:
 
@@ -135,11 +137,11 @@ Wenn es Konflikttypen für dieselben Medien gibt, wendet das System den ersten i
 
 **Eigenschaftenname: Sid**
 
-Beschreibung: Definiert, ob diese Richtlinie auf bestimmte Benutzer oder Benutzergruppen angewendet wird; Ein Eintrag kann maximal eine Sid haben, und ein Eintrag ohne Sid bedeutet, dass die Richtlinie auf dem Computer angewendet wird.
+Beschreibung: Die Sid des lokalen Computers oder die Sid des AD-Objekts definiert, ob diese Richtlinie auf einen bestimmten Benutzer oder eine bestimmte Benutzergruppe angewendet werden soll. Ein Eintrag kann maximal eine Sid haben, und ein Eintrag ohne Sid bedeutet, dass die Richtlinie auf dem Computer angewendet wird.
 
 **Eigenschaftenname: ComputerSid**
 
-Beschreibung: Definiert, ob diese Richtlinie auf bestimmte Computer oder Computergruppen angewendet wird; Ein Eintrag kann maximal eine ComputerSid haben, und ein Eintrag ohne ComputerSid bedeutet, dass die Richtlinie auf dem Computer angewendet wird. Wenn Sie einen Eintrag auf einen bestimmten Benutzer und einen bestimmten Computer anwenden möchten, fügen Sie sid und computerSid demselben Eintrag hinzu.
+Beschreibung: Die Sid des lokalen Computers oder die Sid des AD-Objekts definiert, ob diese Richtlinie auf einen bestimmten Computer oder eine bestimmte Computergruppe angewendet werden soll. Ein Eintrag kann maximal eine Computer-ID haben, und ein Eintrag ohne ComputerSid bedeutet, dass die Richtlinie auf dem Computer angewendet wird. Wenn Sie einen Eintrag auf einen bestimmten Benutzer und einen bestimmten Computer anwenden möchten, fügen Sie sid und computerSid demselben Eintrag hinzu.
 
 **Eigenschaftenname: Optionen**
 
@@ -322,6 +324,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="Der Bildschirm, der die Blockierung des Wechselspeichers darstellt":::
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
 **Was ist die Beschränkung für Wechselmedien für die maximale Anzahl von USBs?**
 
 Wir haben eine USB-Gruppe mit 100.000 Medien – bis zu 7 MB Größe – überprüft. Die Richtlinie funktioniert sowohl in Intune als auch im Gruppenrichtlinienobjekt ohne Leistungsprobleme.
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-
