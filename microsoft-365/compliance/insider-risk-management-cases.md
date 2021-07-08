@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226527"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326819"
 ---
 # <a name="insider-risk-management-cases"></a>Fälle des Insider-Risikomanagements
 
@@ -93,12 +93,12 @@ Die Registerkarte **"Fallübersicht"** enthält auch einen Abschnitt **"Warnunge
 
 ![Insider-Risikomanagement – Falldetails](../media/insider-risk-case-details.png)
 
-### <a name="alerts"></a>Warnungen
+### <a name="alerts"></a>Benachrichtigungen
 
 Auf der Registerkarte **"Warnungen"** sind die aktuellen Warnungen zusammengefasst, die in dem Fall enthalten sind. Neue Warnungen können zu einem vorhandenen Fall hinzugefügt werden, und sie werden der **Warnungswarteschlange** hinzugefügt, sobald sie zugewiesen werden. Die folgenden Warnungsattribute sind in der Warteschlange aufgeführt:
 
 - Status
-- Schweregrad
+- Severity
 - Ermittelte Zeit
 
 Wählen Sie eine Warnung aus der Warteschlange aus, um die **Detailseite "Warnung"** anzuzeigen.
@@ -106,7 +106,7 @@ Wählen Sie eine Warnung aus der Warteschlange aus, um die **Detailseite "Warnun
 Verwenden Sie das Suchsteuerelement, um Warnungsnamen nach bestimmtem Text zu durchsuchen, und verwenden Sie den Warnungsfilter, um Fälle nach den folgenden Attributen zu sortieren:
 
 - Status
-- Schweregrad
+- Severity
 - Zeitpunkt der Erkennung, Startdatum und Enddatum
 
 Verwenden Sie das Filtersteuerelement, um Warnungen nach mehreren Attributen zu filtern, einschließlich:
@@ -147,7 +147,7 @@ Die Registerkarte **Benutzeraktivität** ist eines der leistungsstärksten Werkz
 
 Auf der Registerkarte **"Aktivitäten-Explorer"** können Risikoanalysten und Ermittler Aktivitätsdetails im Zusammenhang mit Risikowarnungen überprüfen. Im Rahmen der Fallverwaltungsaktionen müssen Ermittler und Analysten beispielsweise möglicherweise alle mit dem Fall verbundenen Risikoaktivitäten überprüfen, um weitere Details zu erhalten. Mit dem **Aktivitäten-Explorer** können Prüfer schnell eine Zeitachse erkannter riskanter Aktivitäten überprüfen und alle Risikoaktivitäten im Zusammenhang mit Warnungen identifizieren und filtern.
 
-Weitere Informationen zum Aktivitäts-Explorer finden Sie im Artikel ["Warnungen zum Insider-Risikomanagement".](insider-risk-management-alerts.md#activity-explorer-preview)
+Weitere Informationen zum Aktivitäts-Explorer finden Sie im Artikel ["Warnungen zum Insider-Risikomanagement".](insider-risk-management-activities.md#activity-explorer-preview)
 
 ### <a name="content-explorer"></a>Inhaltsexplorer
 
@@ -196,7 +196,7 @@ Risikoanalysten und Ermittler können in einer von mehreren Methoden maßnahmen 
 
 In den meisten Fällen sind Benutzeraktionen, die Insider-Risikowarnungen erstellen, versehentlich oder versehentlich. Das Senden einer Erinnerung an den Benutzer per E-Mail ist eine effektive Methode zum Dokumentieren von Fallüberprüfungen und -aktionen und ist eine Methode, um Benutzer an Unternehmensrichtlinien zu erinnern oder sie auf Auffrischungsschulungen hinzuweisen. Hinweise werden aus [Benachrichtigungsvorlagen generiert, die Sie](insider-risk-management-notices.md) für Ihre Infrastruktur für das Insider-Risikomanagement erstellen.
 
-Es ist wichtig zu beachten, dass das Senden einer E-Mail-Benachrichtigung an einen Benutzer * den Fall **nicht** _ als _Closed* auflöst. In einigen Fällen sollten Sie einen Fall geöffnet lassen, nachdem Sie eine Benachrichtigung an einen Benutzer gesendet haben, um nach weiteren Risikoaktivitäten zu suchen, ohne einen neuen Fall zu öffnen. Wenn Sie einen Fall nach dem Senden einer Benachrichtigung auflösen möchten, müssen Sie **Fall lösen** als Folgeschritt nach dem Senden einer Benachrichtigung auswählen.
+Es ist wichtig zu beachten, dass das Senden einer E-Mail-Benachrichtigung an einen Benutzer * den Fall **nicht** _ als _Closed* löst. In einigen Fällen sollten Sie einen Fall geöffnet lassen, nachdem Sie eine Benachrichtigung an einen Benutzer gesendet haben, um nach weiteren Risikoaktivitäten zu suchen, ohne einen neuen Fall zu öffnen. Wenn Sie einen Fall nach dem Senden einer Benachrichtigung auflösen möchten, müssen Sie **Fall lösen** als Folgeschritt nach dem Senden einer Benachrichtigung auswählen.
 
 So senden Sie eine Benachrichtigung an den Benutzer, der einem Fall zugewiesen ist:
 
@@ -218,11 +218,11 @@ So eskalieren Sie einen Fall an eine Benutzeruntersuchung:
 4. Überprüfen Sie die Benachrichtigungsfelder, und aktualisieren Sie sie nach Bedarf. Die hier eingegebenen Werte überschreiben die Werte in der Vorlage.
 5. Wählen Sie **"Bestätigen"** aus, um den Untersuchungsfall des Benutzers zu erstellen, oder wählen Sie **"Abbrechen"** aus, um das Dialogfeld zu schließen, ohne einen neuen Untersuchungsfall des Benutzers zu erstellen.
 
-Nachdem der Fall des Insider-Risikomanagements zu einem neuen Untersuchungsfall für Benutzer eskaliert wurde, können Sie den neuen Fall im Bereich **"eDiscovery**  >  **Advanced"** im Microsoft 365 Compliance Center überprüfen.
+Nachdem der Fall "Insider-Risikomanagement" zu einem neuen Untersuchungsfall für Benutzer eskaliert wurde, können Sie den neuen Fall im Bereich **"eDiscovery**  >  **Advanced"** im Microsoft 365 Compliance Center überprüfen.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ausführen automatisierter Aufgaben mit Power Automate-Flüssen für den Fall
 
-Mit den empfohlenen Power Automate Flüssen können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
+Mithilfe empfohlener Power Automate Flüsse können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
 
 - Anfordern von Informationen von PERSONAL oder Unternehmen über einen Benutzer in einem Insider-Risikofall
 - Vorgesetzten benachrichtigen, wenn ein Benutzer über eine Insider-Risikowarnung verfügt
@@ -232,16 +232,16 @@ Mit den empfohlenen Power Automate Flüssen können Risikoermittler und Analyste
 So führen Sie Power Automate Flüsse für einen Insider-Risikomanagementfall aus, verwalten oder erstellen sie:
 
 1. Wählen Sie auf der Symbolleiste für Groß-/Kleinschreibung die Option **"Automatisieren"** aus. 
-2. Wählen Sie den auszuführenden Power Automate Fluss aus, und wählen Sie dann **"Ausführungsablauf"** aus. 
+2. Wählen Sie den auszuführenden Power Automate Fluss aus, und wählen Sie dann **"Flow ausführen"** aus. 
 3. Wählen Sie nach Abschluss des Flusses **"Fertig"** aus.
 
-Weitere Informationen zu Power Automate Flüssen für das Insider-Risikomanagement finden Sie unter "Erste Schritte mit Einstellungen für [das Insider-Risikomanagement".](insider-risk-management-settings.md#power-automate-flows-preview)
+Weitere Informationen zu Power Automate Flüssen für das Insider-Risikomanagement finden Sie unter ["Erste Schritte mit Insider-Risikomanagementeinstellungen".](insider-risk-management-settings.md#power-automate-flows-preview)
 
 ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Anzeigen oder Erstellen eines Microsoft Teams Teams für den Fall
 
-Wenn Microsoft Teams Integration für das Insider-Risikomanagement in den Einstellungen aktiviert ist, wird jedes Mal, wenn eine Warnung bestätigt und ein Fall erstellt wird, automatisch ein Microsoft Teams Team erstellt. Risikoermittler und Analysten können schnell Microsoft Teams öffnen und direkt zum Team für einen Fall navigieren, indem Sie auf der Symbolleiste für Fallaktionen die Option **"Microsoft Teams Team** anzeigen" auswählen.
+Wenn Microsoft Teams Integration für das Insider-Risikomanagement in den Einstellungen aktiviert ist, wird jedes Mal, wenn eine Warnung bestätigt und ein Fall erstellt wird, automatisch ein Microsoft Teams Team erstellt. Risikoermittler und Analysten können schnell Microsoft Teams öffnen und direkt zum Team für einen Fall navigieren, indem Sie auf der Symbolleiste für Fallaktionen **"Microsoft Teams Team anzeigen"** auswählen.
 
-Für Fälle, die vor der Aktivierung der Microsoft Team-Integration geöffnet wurden, können Risikoermittler und Analysten ein neues Microsoft Teams Team für einen Fall erstellen, indem sie auf der Symbolleiste für Fallaktionen **Microsoft Teams Team** erstellen auswählen.
+Für Fälle, die vor der Aktivierung der Microsoft Team-Integration geöffnet wurden, können Risikoermittler und Analysten ein neues Microsoft Teams Team für einen Fall erstellen, indem sie auf der Symbolleiste für Fallaktionen die Option **"Microsoft Teams Team** erstellen" auswählen.
 
 Wenn ein Fall gelöst ist, wird das zugeordnete Microsoft-Team automatisch archiviert (ausgeblendet und schreibgeschützt).
 

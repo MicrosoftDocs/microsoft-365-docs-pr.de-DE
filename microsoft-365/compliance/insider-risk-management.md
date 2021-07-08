@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226347"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326747"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informationen zum Insider-Risikomanagement in Microsoft 365
 
-Das Insider-Risikomanagement ist eine Compliancelösung in Microsoft 365, die interne Risiken minimiert, indem Es Ihnen ermöglicht, böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und darauf zu reagieren. Richtlinien für Insider-Risiken ermöglichen es Ihnen, die Arten von Risiken zu definieren, die in Ihrer Organisation identifiziert und erkannt werden sollen, einschließlich des Handelns in Fällen und des Eskalierens von Fällen an Microsoft Advanced eDiscovery, falls erforderlich. Risikoanalysten in Ihrer Organisation können schnell geeignete Maßnahmen ergreifen, um sicherzustellen, dass die Benutzer den Compliance-Standards Ihrer Organisation entsprechen.
+Das Insider-Risikomanagement ist eine Compliance-Lösung in Microsoft 365, die interne Risiken minimiert, indem Sie böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation erkennen, untersuchen und darauf reagieren können. MitHilfe von Insider-Risikorichtlinien können Sie die Arten von Risiken definieren, die in Ihrer Organisation identifiziert und erkannt werden sollen, einschließlich des Handelns in Fällen und des Eskalierens von Fällen an Microsoft Advanced eDiscovery bei Bedarf. Risikoanalysten in Ihrer Organisation können schnell geeignete Maßnahmen ergreifen, um sicherzustellen, dass die Benutzer den Compliance-Standards Ihrer Organisation entsprechen.
 
 Sehen Sie sich das folgende Video an, um zu erfahren, wie Das Insider-Risikomanagement Ihrer Organisation dabei helfen kann, Risiken zu verhindern, zu erkennen und einzudämmen und gleichzeitig Die Werte, Kultur und Benutzererfahrung Ihrer Organisation zu priorisieren:
 <br>
@@ -50,7 +50,7 @@ Das Insider-Risikomanagement basiert auf den folgenden Prinzipien:
 
 - **Transparenz:** Abwägen des Datenschutzes von Benutzern im Vergleich zu Unternehmensrisiken mit der Architektur für den datenschutzbasierten Entwurf.
 - **Konfigurierbar:** Konfigurierbare Richtlinien basierend auf Branchen-, geografischen und Unternehmensgruppen.
-- **Integriert:** Integrierter Workflow über Microsoft 365 Compliance-Lösungen hinweg.
+- **Integriert:** Integrierter Workflow über Microsoft 365 Compliancelösungen hinweg.
 - **Umsetzbar:** Bietet Einblicke, um Prüferbenachrichtigungen, Datenuntersuchungen und Benutzeruntersuchungen zu ermöglichen.
 
 ## <a name="identifying-potential-risks-with-analytics-preview"></a>Identifizieren potenzieller Risiken mitHilfe von Analysen (Vorschau)
@@ -84,12 +84,12 @@ Sie können aus den folgenden Richtlinienvorlagen auswählen, um schnell mit dem
 
 ![Insider-Risikomanagement-Richtlinien-Dashboard](../media/insider-risk-policy-dashboard.png)
 
-### <a name="alerts"></a>Warnungen
+### <a name="alerts"></a>Benachrichtigungen
 
-Warnungen werden automatisch von Risikoindikatoren generiert, die richtlinienbedingungen entsprechen, und werden im [Warnungsdashboard](insider-risk-management-alerts.md)angezeigt. Dieses Dashboard ermöglicht eine schnelle Übersicht über alle Warnungen, die überprüft werden müssen, offene Warnungen im Laufe der Zeit und Warnungsstatistiken für Ihre Organisation. Alle Richtlinienwarnungen werden mit den folgenden Informationen angezeigt, damit Sie den Status vorhandener Warnungen und neuer Warnungen, die eine Aktion erfordern, schnell identifizieren können:
+Warnungen werden automatisch von Risikoindikatoren generiert, die richtlinienbedingungen entsprechen, und werden im [Warnungsdashboard](insider-risk-management-activities.md#alert-dashboard)angezeigt. Dieses Dashboard ermöglicht eine schnelle Übersicht über alle Warnungen, die überprüft werden müssen, offene Warnungen im Laufe der Zeit und Warnungsstatistiken für Ihre Organisation. Alle Richtlinienwarnungen werden mit den folgenden Informationen angezeigt, damit Sie den Status vorhandener Warnungen und neuer Warnungen, die eine Aktion erfordern, schnell identifizieren können:
 
 - Status
-- Schweregrad
+- Severity
 - Ermittelte Zeit
 - Fall
 - Fallstatus
@@ -106,13 +106,15 @@ Warnungen werden gelöst, indem ein neuer Fall eröffnet, die Warnung einem best
 
 ### <a name="investigate"></a>Untersuchen
 
+Untersuchen Sie schnell alle Aktivitäten für einen ausgewählten Benutzer mit [Benutzeraktivitätsberichten (Vorschau).](insider-risk-management-activities.md#user-activity-reports-preview) Diese Berichte ermöglichen es Ermittlern in Ihrer Organisation, Aktivitäten für bestimmte Benutzer für einen definierten Zeitraum zu untersuchen, ohne sie vorübergehend oder explizit einer Insider-Risikomanagementrichtlinie zuweisen zu müssen. Nach der Untersuchung von Aktivitäten für einen Benutzer können Ermittler einzelne Aktivitäten als gutartig schließen, einen Link zum Bericht mit anderen Ermittlern teilen oder per E-Mail senden oder den Benutzer vorübergehend oder explizit einer Insider-Risikomanagementrichtlinie zuweisen.
+
 [Fälle](insider-risk-management-cases.md) werden für Warnungen erstellt, die eine eingehendere Überprüfung und Untersuchung der Aktivitätsdetails und -umstände rund um die Richtlinienüberstimmung erfordern. Das **Falldashboard** bietet eine Übersicht über alle aktiven Fälle, offene Fälle im Laufe der Zeit und Fallstatistiken für Ihre Organisation. Prüfer können Fälle schnell nach Status, Dem Datum des Öffnens der Groß-/Kleinschreibung und dem Datum der letzten Aktualisierung filtern.
 
 Wenn Sie einen Fall im Falldashboard auswählen, wird der Fall zur Untersuchung und Überprüfung geöffnet. Dieser Schritt ist das Herzstück des Insider-Risikomanagement-Workflows. In diesem Bereich werden Risikoaktivitäten, Richtlinienbedingungen, Warnungsdetails und Benutzerdetails in einer integrierten Ansicht für Prüfer synthetisiert. Die wichtigsten Untersuchungstools in diesem Bereich sind:
 
 - **Benutzeraktivität:** Benutzeraktivität wird automatisch in einem interaktiven Diagramm angezeigt, in dem Aktivitäten im Laufe der Zeit und nach Risikostufe für aktuelle oder frühere Risikoaktivitäten dargestellt werden. Prüfer können den gesamten Risikoverlauf für den Benutzer schnell filtern und anzeigen und detaillierte Informationen zu bestimmten Aktivitäten anzeigen.
 - **Inhalts-Explorer:** Alle Mit Benachrichtigungsaktivitäten verknüpften Datendateien und E-Mail-Nachrichten werden automatisch im Inhalts-Explorer erfasst und angezeigt. Prüfer können Dateien und Nachrichten nach Datenquelle, Dateityp, Tags, Unterhaltung und vielen weiteren Attributen filtern und anzeigen.
-- **Fallhinweise:** Prüfer können Hinweise zu einem Fall im Abschnitt "Fallnotizen" bereitstellen. In dieser Liste werden alle Notizen in einer zentralen Ansicht konsolidiert, und es werden Prüfer- und Datumsinformationen hinzugefügt.
+- **Fallhinweise:** Prüfer können Hinweise zu einem Fall im Abschnitt "Fallnotizen" bereitstellen. In dieser Liste werden alle Notizen in einer zentralen Ansicht konsolidiert, und die Übermittelten Informationen des Prüfers und des Datums sind enthalten.
 
 ![Untersuchung des Insider-Risikomanagements](../media/insider-risk-investigate.png)
 
@@ -124,7 +126,7 @@ Nachdem Fälle untersucht wurden, können Prüfer schnell handeln, um den Fall z
 
 In schwerwiegenderen Situationen müssen Sie möglicherweise die Fallinformationen zum Insider-Risikomanagement mit anderen Prüfern oder Diensten in Ihrer Organisation teilen. Das Insider-Risikomanagement ist eng in andere Microsoft 365 Compliance-Lösungen integriert, um Sie bei der End-to-End-Risikobehebung zu unterstützen.
 
-- **Advanced eDiscovery:** Wenn Sie einen Fall für die Untersuchung eskalieren, können Sie Daten und die Verwaltung des Falls an Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Advanced eDiscovery:** Durch das Eskalieren eines Untersuchungsfalls können Sie Daten und die Verwaltung des Falls an Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 - Office 365 Integration von **Verwaltungs-APIs (Vorschau):** Das Insider-Risikomanagement unterstützt den Export von Warnungsinformationen in SIEM-Dienste (Security Information and Event Management) über die Office 365 Management-APIs. Wenn Sie Zugriff auf Benachrichtigungsinformationen auf der Plattform haben, die am besten zu den Risikoprozessen Ihrer Organisation passen, können Sie flexibler auf Risikoaktivitäten reagieren. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter Exportieren von [Warnungen.](insider-risk-management-settings.md#export-alerts-preview)
 
 > [!NOTE]

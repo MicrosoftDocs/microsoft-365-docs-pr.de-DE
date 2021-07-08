@@ -1,0 +1,120 @@
+### YamlMime:FAQ
+metadata:
+  title: Häufig gestellte Fragen zum Microsoft Compliance Manager
+  f1.keywords:
+  - NOCSH
+  ms.author: chvukosw
+  author: chvukosw
+  manager: laurawi
+  audience: Admin
+  ms.topic: article
+  ms.service: O365-seccomp
+  localization_priority: Normal
+  ms.collection: M365-security-compliance
+  search.appverid:
+  - MOE150
+  - MET150
+  description: Hier finden Sie Antworten auf häufig gestellte Fragen zu Microsoft Compliance Manager, die Organisationen dabei helfen, Risikobewertungen zu vereinfachen und zu automatisieren.
+  ms.openlocfilehash: 85a059accd390bd21cd48d728fb76e183251e097
+  ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 07/08/2021
+  ms.locfileid: "53331455"
+title: Häufig gestellte Fragen zum Compliance-Manager
+summary: ''
+sections:
+- name: Ignoriert
+  questions:
+  - question: >
+      Sind Compliance-Manager und Compliancebewertung identisch oder unterscheiden sie sich?
+    answer: >
+      Es gibt jetzt nur noch eine Lösung: Compliance-Manager. Dieser Abschnitt führt Sie durch den Übergang, beginnend mit einer grundlegenden Übersicht unten. Möglicherweise ist es auch hilfreich, direkt zu einem der folgenden Abschnitte zu wechseln:
+
+
+      - [Ihre Organisation hat in erster Linie den Compliance-Manager (entweder die klassische oder die öffentliche Vorschauversion) verwendet, der sich im Microsoft Service Trust Portal befindet.](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
+
+
+      - [Ihre Organisation hat in erster Linie die Compliancebewertung (öffentliche Vorschau) verwendet, die sich im Microsoft 365 Compliance Center](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
+
+
+      - [Ihre Organisation ist neu im Compliance-Manager](#youre-new-to-compliance-manager
+
+      )
+
+      ### <a name="the-basics"></a>Die Grundlagen
+
+
+      Microsoft Compliance Manager begann als Compliance-Verwaltungslösung im Microsoft Service Trust Portal.  Da Compliancelösungen in die Microsoft 365 Compliance Center gelangt sind, haben wir eine neue Oberfläche mit einem benutzerfreundlicheren Design für diesen Standort entwickelt. Die öffentliche Vorschau der Compliancebewertung wurde im Microsoft 365 Compliance Center im November 2019 veröffentlicht. Die Compliancebewertung hat dasselbe Back-End wie der Compliance-Manager verwendet, sodass Kunden an beiden Orten arbeiten können. Seit November 2019 haben wir mehrere Updates veröffentlicht, während wir neue Funktionen erstellt haben und auf Kundenfeedback geantwortet haben.
+
+
+      Die allgemeine Verfügbarkeit des Compliance-Managers im Microsoft 365 Compliance Center im September 2020 schließt diese Entwicklung ab. Compliance-Manager ist die einheitliche End-to-End-Compliance-Lösung. Ihre Compliancebewertung bleibt eine wichtige Komponente des Compliance-Managers.
+
+
+      Lesen Sie diesen [Blogbeitrag,](https://aka.ms/compliancemanager/GAblog) um mehr über die Neuerungen mit der GA-Version des Compliance-Managers zu erfahren.
+
+
+      ### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>Ihre Organisation hat den Compliance-Manager regelmäßig im Service Trust Portal verwendet.
+
+
+      Wenn Sie den Compliance-Manager im Service Trust Portal verwendet haben, sind jetzt alle Daten Ihrer Organisation im Compliance-Manager im Microsoft 365 Compliance Center unter https://compliance.microsoft.com/compliancemanager vorhanden. Es gibt nichts, was Sie tun müssen, um ihre Compliance-Manager-Arbeit an seinem neuen Speicherort fortzusetzen, außer um alle Lesezeichen, die Sie haben, an den vorherigen Speicherort zu aktualisieren. Alle Ihre Bewertungen und andere Daten wurden für Sie übernommen.
+
+
+      Beachten Sie, dass der Compliance-Manager (Vorschau) im Service Trust Portal nicht mehr zugänglich ist und alle Links dazu Sie an den neuen Speicherort im Microsoft 365 Compliance Center umleiten. Compliance-Manager (klassisch) verbleibt im Service Trust Portal, es wird jedoch davon abgeraten.
+
+
+      Alles, was Sie in früheren Versionen von Compliance-Manager ausgeführt haben, z. B. das Abschließen von Aktionen (jetzt als "Verbesserungsmaßnahmen" bezeichnet) und das Erstellen von Bewertungen, kann im neuen Compliance-Manager durchgeführt werden. Wir haben mehr als 150 neue Bewertungsvorlagen hinzugefügt und den Erstellungsprozess für Vorlagen verbessert. Wir werden in zukünftigen Versionen weitere Verbesserungen hinzufügen.
+
+
+      Nachfolgend finden Sie einige hilfreiche Ressourcen:
+
+
+      - [Machen Sie sich mit Ihrer neuen Compliance-Manager-Erfahrung vertraut](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
+
+      - [Suchen von Berechtigungen und anderen Setupinformationen für Compliance-Manager in der neuen Startseite](compliance-manager-setup.md#who-can-access-compliance-manager)
+
+      - [Weitere Informationen zum Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
+
+
+      ### <a name="your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center"></a>Ihre Organisation hat die Compliancebewertung (öffentliche Vorschau) in der Microsoft 365 Compliance Center
+
+
+      Wenn Sie die Compliancebewertung in der öffentlichen Vorschau verwendet haben, werden Sie feststellen, dass der Compliance-Manager größtenteils gleich aussieht, und Ihre Bewertung wird auf Ihrem Dashboard hervorgehoben. Mit der GA-Version müssen Sie die Microsoft 365 Compliance Center nicht mehr verlassen, um bestimmte Funktionen für die Bewertungsverwaltung auszuführen, z. B. das Erstellen und Ändern von Vorlagen für Bewertungen. Alle Funktionen befinden sich jetzt an einem Ort. Alle Daten, die Sie in der Vorschauversion der Compliancebewertung hatten, verbleiben in der GA-Version des Compliance-Managers.
+
+
+      Beachten Sie, dass diese Filter bei der Bereitstellung des neuen Compliance-Managers im September zurückgesetzt wurden, wenn Sie ihre Dashboardansicht für die Compliancebewertung gefiltert haben. Sie müssen alle Filter, die Sie hatten, erneut anwenden.
+
+
+      Compliance-Manager hat auch neue Lizenzbedingungen. Weitere Informationen zur Lizenzierung finden Sie unten in der Frage.
+
+
+      ### <a name="youre-new-to-compliance-manager"></a>Sie sind neu im Compliance-Manager
+
+
+      Compliance-Manager ist eine End-to-End-Lösung im Microsoft 365 Compliance Center zum Verwalten und Nachverfolgen von Complianceaktivitäten. Dies ist ein hervorragender Ort, um ihre Compliance-Reise zu beginnen, da Sie beim ersten Besuch eine erste Bewertung Ihrer Compliance-Position erhalten. Nachfolgend finden Sie gute Orte, an denen Sie mehr erfahren können:
+
+
+      - [Übersicht über Compliance-Manager](compliance-manager.md)
+
+      - [Verwenden Sie unsere Schnellstartanleitung, um schrittweise zum Hochfahren zu beitragen.](compliance-manager-quickstart.md)
+
+      - [Weitere Informationen zum Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
+  - question: >
+      Gibt es Lizenzierungsanforderungen für die Verwendung des Compliance-Managers?
+    answer: >
+      Ja. Die GA-Version des Compliance-Managers enthält neue Lizenzierungsbedingungen. Alle Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie Kunden von US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) haben Zugriff auf den Compliance-Manager. Die für Ihre Organisation verfügbaren Bewertungen und die Verwaltung von Bewertungsvorlagen hängen jedoch von Ihrem Lizenzvertrag ab. Weitere Informationen finden Sie unter [Microsoft 365 Lizenzierungsleitfaden für Sicherheit und Compliance.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+  - question: >
+      Wenn ich einen Highscore habe, bedeutet dies, dass ich vollständig konform bin?
+    answer: >
+      Nein. Ihre Compliancebewertung misst Ihre Fortschritte bei der Durchführung empfohlener Maßnahmen, die dazu beitragen, Risiken im Hinblick auf Datenschutz und behördliche Standards zu verringern. Es ist kein absolutes Maß für die Einhaltung organisatorischer Vorschriften in Bezug auf einen bestimmten Standard oder eine bestimmte Verordnung. Compliance-Manager und Ihre Compliancebewertung sollten in keiner Weise als Garantie interpretiert werden.
+  - question: >
+      Kann ich Compliance-Manager für Nicht-Microsoft-Produkte verwenden?
+    answer: >
+      Compliance-Manager bietet zwar kontinuierliche Überwachung und empfohlene Aktionen nur für Microsoft-Clouddienste, Sie können jedoch benutzerdefinierte Bewertungen im Compliance-Manager für Ihre Drittanbieterdienste hinzufügen. Auf diese Weise können Sie Microsoft Compliance Manager als SaaS-Compliance-Verwaltungstool verwenden, das Ihnen bei der Verwaltung aller Steuerelemente in Ihren digitalen Ressourcen hilft.
+  - question: >
+      Was geschieht mit dem Compliance-Manager (klassisch) im Service Trust Portal?
+    answer: >-
+      Die klassische Version des Compliance-Managers, die sich im Microsoft Service Trust Portal befindet, wird in Kürze eingestellt. Eine Microsoft 365 Meldungscenter-Benachrichtigung wird mindestens 60 Tage vor der endgültigen Einstellung des Compliance-Managers (klassisch) ausgegeben. Kunden, die ihre Complianceaktivitäten im Compliance-Manager (klassisch) verwalten, müssen ihre Daten, einschließlich Bewertungen und Kontrollen, auf die neue Compliance-Manager-Lösung im Microsoft 365 Compliance Center übertragen. Kundendaten werden nicht automatisch an den Compliance-Manager im Microsoft 365 Compliance Center übertragen, wenn Compliance-Manager (klassisch) eingestellt wird.
+
+
+      Um zu erfahren, wie Sie den neuen Compliance-Manager schnell einrichten können, lesen Sie unsere [Compliance-Manager-Schnellstartanleitung.](compliance-manager-quickstart.md)

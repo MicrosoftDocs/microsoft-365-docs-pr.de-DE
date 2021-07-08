@@ -48,3 +48,5 @@
   items:
     - name: Erste Schritte mit Driving Adoption
       href: topics-adoption-getstarted.md
+    - name: Testversion ausführen
+      href: trial-topics.md

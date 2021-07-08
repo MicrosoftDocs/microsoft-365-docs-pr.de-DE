@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f9cd78cb41a7cbe5011163d1f5734ff0b3c2261e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256327"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326795"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Erste Schritte mit dem Insider-Risikomanagement
 
@@ -194,7 +194,7 @@ Definieren Sie vor dem Konfigurieren einer Richtlinie die folgenden Einstellunge
     - [Domäneneinstellungen](insider-risk-management-settings.md#domains-preview)
 6. Aktivieren Sie auf der Seite **"Warnungen exportieren"** bei Bedarf den Export von Informationen zu Insider-Risikowarnungen mithilfe der Office 365-Verwaltungs-APIs.
 7. Erstellen Sie auf der Seite **"Prioritätsbenutzergruppen"** eine Benutzergruppe mit Priorität, und fügen Sie Benutzer hinzu, wenn sie nicht in **Schritt 3** erstellt wurden.
-8. Konfigurieren **Sie** auf der Seite Power Automate Flüsse einen Fluss aus Vorlagen für Insider-Risikoflüsse, oder erstellen Sie einen neuen Fluss. Schritt-für-Schritt-Anleitungen finden Sie im Artikel ["Erste Schritte mit Insider-Risikomanagementeinstellungen".](insider-risk-management-settings.md#power-automate-flows-preview)
+8. Konfigurieren **Sie** auf der Seite Power Automate Flüsse einen Fluss aus Insider-Risikoflussvorlagen, oder erstellen Sie einen neuen Fluss. Schritt-für-Schritt-Anleitungen finden Sie im Artikel ["Erste Schritte mit Insider-Risikomanagementeinstellungen".](insider-risk-management-settings.md#power-automate-flows-preview)
 9. Konfigurieren Sie auf der **Seite "Prioritätsressourcen"** Prioritätsressourcen, um Daten aus Ihrer physischen Steuerungs- und Zugriffsplattform zu verwenden, die vom Connector für physisches Fehlerhaftes importiert wurden. Schritt-für-Schritt-Anleitungen finden Sie im Artikel ["Erste Schritte mit Insider-Risikomanagementeinstellungen".](insider-risk-management-settings.md#priority-physical-assets-preview)
 10. Aktivieren **Sie auf** der Microsoft Teams Seite Microsoft Teams Integration in das Insider-Risikomanagement, um automatisch ein Team für die Fall- oder Benutzerzusammenarbeit zu erstellen. Schritt-für-Schritt-Anleitungen finden Sie im Artikel ["Erste Schritte mit Insider-Risikomanagementeinstellungen".](insider-risk-management-settings.md#microsoft-teams-preview)
 11. Wählen Sie **"Speichern"** aus, um diese Einstellungen für Ihre Insider-Risikorichtlinien zu aktivieren.
@@ -251,4 +251,4 @@ Richtlinien für das Insider-Risikomanagement umfassen die zugewiesenen Benutzer
 
 Nachdem Sie diese Schritte zum Erstellen Ihrer ersten Insider-Risikomanagementrichtlinie abgeschlossen haben, erhalten Sie nach etwa 24 Stunden Warnungen von Aktivitätsindikatoren. Konfigurieren Sie nach Bedarf zusätzliche Richtlinien mithilfe der Anleitungen in Schritt 4 dieses Artikels oder der Schritte unter ["Erstellen einer neuen Richtlinie für Insider-Risiken".](insider-risk-management-policies.md#create-a-new-policy)
 
-Weitere Informationen zur Untersuchung von Warnungen zu Insider-Risiken und des **Warnungs-Dashboards** finden Sie unter [Insider-Risikomanagementwarnungen.](insider-risk-management-alerts.md)
+Weitere Informationen zur Untersuchung von Insider-Risikowarnungen und dem **Warnungs-Dashboard** finden Sie unter [Insider-Risikomanagementaktivitäten.](insider-risk-management-activities.md#alert-dashboard)
