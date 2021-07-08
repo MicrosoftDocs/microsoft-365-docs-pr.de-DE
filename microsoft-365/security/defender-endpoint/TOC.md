@@ -202,7 +202,7 @@
 #### [Konfigurieren der Zeitzoneneinstellungen im Microsoft Defender Security Center](time-settings.md)
 
 ## [Entdecken von Bedrohungen und Schützen von Endpunkten]()
-### [Bedrohungs- und Sicherheitsrisikomanagement]():
+### [Bedrohungs- und Sicherheitsrisikomanagement]()
 #### [Übersicht](next-gen-threat-and-vuln-mgt.md)
 #### [Erste Schritte]()
 ##### [Voraussetzungen & Berechtigungen](tvm-prerequisites.md)
@@ -246,7 +246,8 @@
 #### [Verwenden des Überwachungsmodus zur Verringerung der Angriffsfläche](audit-windows-defender.md)
 
 ### Schutzlösungen der nächsten Generation
-#### [Übersicht über Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Übersicht über den Schutz der nächsten Generation](next-generation-protection.md)
+##### [Übersicht über Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus auf Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Noch besser zusammen: Microsoft Defender Antivirus und Microsoft Defender für Endpunkt](why-use-microsoft-defender-antivirus.md)
 ##### [Noch besser zusammen: Microsoft Defender Antivirus und Office 365](office-365-microsoft-defender-antivirus.md)
