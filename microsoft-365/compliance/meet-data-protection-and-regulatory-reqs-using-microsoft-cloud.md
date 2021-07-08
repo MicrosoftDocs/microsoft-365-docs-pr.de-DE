@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Erfahren Sie, wie Sie Compliance Manager im Microsoft-Vertrauens-Portal verwenden, um den Datenschutz und die gesetzlichen Vorschriften zu erfüllen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e308de5bdf3441a602002e2fd6f216c361f64286
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5bb7e05a211c35f2b707e7282c6975b0049dce93
+ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926525"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53330989"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Compliance-Manager (klassisch)
 
 > [!IMPORTANT]
-> **Der Compliance-Manager (klassisch) wird bald aus dem Microsoft Service Trust-Portal entfernt.** Wir empfehlen Ihnen, zum neuen [Compliance-Manager im Microsoft 365 Compliance Center](https://compliance.microsoft.com/) zu wechseln, der eine verbesserte Benutzerfreundlichkeit und eine aktualisierte Steuerelementzuordnung bietet. Kunden, die über Bewertungen der klassischen Version verfügen, müssen im neuen Compliance-Manager neue Bewertungen erstellen. Vorhandene Daten, einschließlich Ihrer Bewertungen, Kontrollmechanismen und anderer Daten, werden nicht zum neuen Compliance-Manager übertragen. [Weitere Informationen zum Übergang](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
+> **Der Compliance-Manager (klassisch) wird bald aus dem Microsoft Service Trust-Portal entfernt.** Wir empfehlen Ihnen, zum neuen [Compliance-Manager im Microsoft 365 Compliance Center](https://compliance.microsoft.com/) zu wechseln, der eine verbesserte Benutzerfreundlichkeit und eine aktualisierte Steuerelementzuordnung bietet. Kunden, die über Bewertungen der klassischen Version verfügen, müssen im neuen Compliance-Manager neue Bewertungen erstellen. Vorhandene Daten, einschließlich Ihrer Bewertungen, Kontrollmechanismen und anderer Daten, werden nicht zum neuen Compliance-Manager übertragen. [Weitere Informationen zum Übergang](compliance-manager-faq.yml#what-s-happening-to-compliance-manager--classic--in-the-service-trust-portal-).
 
 *Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.*
 
@@ -65,23 +65,23 @@ Eine Bewertung besteht aus mehreren der folgenden Komponenten:
 
   Nachfolgend finden Sie ein Beispiel von drei von Microsoft verwalteten Steuerelementen in der Steuerelementfamilie **Sicherheit** aus einer Bewertung von Office 365 und der DSGVO.
 
-    ![Details zu von Microsoft verwalteten Steuerelementen im Compliance-Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+  ![Details zu von Microsoft verwalteten Steuerelementen im Compliance-Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
 
-  a. Gibt die folgenden Informationen von der Zertifizierung oder Vorschrift an, die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
+  1. Gibt die folgenden Informationen aus der Zertifizierung oder Vorschrift an, die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
 
-  - **Steuerelement-ID**: Die Abschnit-t oder Artikelnummer der Zertifizierung oder Vorschrift, die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
+     - **Steuerelement-ID**: Die Abschnit-t oder Artikelnummer der Zertifizierung oder Vorschrift, die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
 
-  - **Titel**: Der Titel aus der entsprechenden Zertifizierung oder Vorschrift.
+     - **Titel**: Der Titel aus der entsprechenden Zertifizierung oder Vorschrift.
 
-  - **Artikel-ID**: Dieses Feld ist nur für DSGVO-Bewertungen enthalten, da es die entsprechende DSGVO-Artikelnummer angibt.
+     - **Artikel-ID**: Dieses Feld ist nur für DSGVO-Bewertungen enthalten, da es die entsprechende DSGVO-Artikelnummer angibt.
 
-  - **Beschreibung** –Text des Standards oder der Vorschrift, der bzw. die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
+     - **Beschreibung** –Text des Standards oder der Vorschrift, der bzw. die dem von Microsoft verwalteten Steuerelement zugeordnet ist.
 
-  b. Die Compliancebewertung für das Steuerelement, die das Risikoniveau (aufgrund von Nicht-Einhaltung oder aufgrund eines Steuerelementfehlers) im Zusammenhang mit jedem von Microsoft verwalteten Steuerelement angibt. Weitere Informationen finden Sie unter [Grundlegendes zur Compliancebewertung](#understanding-the-compliance-score). Beachten Sie, dass Compliance-Bewertungen von 1 bis 10 gehen und farbkodiert sind. Gelb steht für geringes Risiko, orange für mittleres Risiko und rot für hohes Risiko.
+  1. Die Compliancebewertung für das Steuerelement, die das Risikoniveau (aufgrund einer Nichtkonformität oder eines Steuerelementfehlers) angibt, das dem jeweiligen von Microsoft verwalteten Steuerelement zugeordnet ist. Weitere Informationen finden Sie unter [Grundlegendes zur Compliancebewertung](#understanding-the-compliance-score). Beachten Sie, dass Compliancebewertungen einen Wert von 1 bis 10 aufweisen und farbcodiert sind. Gelb gibt Steuerelemente mit geringem Risiko an, Orange gibt Steuerelemente mit mittlerem Risiko an, und Rot gibt Steuerelemente mit hohem Risiko an.
 
-  c. Informationen zum Implementierungsstatus eines Steuerelements, zum Datum, an dem das Steuerelement getestet wurde, zum Durchführer des Tests sowie zum Testergebnis.
+  1. Informationen zum Implementierungsstatus eines Steuerelements, das Datum, zu dem das Steuerelement getestet wurde, wer den Test durchgeführt hat und das Testergebnis.
 
-  d. Sie können für jedes Steuerelement auf **Weitere Informationen** klicken, um weitere Informationen anzuzeigen, einschließlich der Details zur Implementierung des Steuerelements durch Microsoft und Informationen dazu, wie das Steuerelement von einem unabhängigen Drittprüfer getestet und überprüft wurde.
+  1. Sie können für jedes Steuerelement auf **Mehr** klicken, um weitere Informationen anzuzeigen, wie Details zu der Implementierung des Steuerelements durch Microsoft und Details dazu, wie das Steuerelement von einem unabhängigen, externen Prüfer getestet und validiert wurde.
 
 - **Vom Kunden verwaltete Steuerelemente** – Dies ist die Sammlung der Steuerelemente, die von Ihrer Organisation verwaltet werden. Ihre Organisation ist für die Implementierung dieser Steuerelemente im Rahmen des Einhaltungsprozesses eines bestimmtes Standards oder einer Richtlinie verantwortlich. Vom Kunden verwaltete Steuerelemente werden ebenfalls in Steuerelementfamilien für die entsprechende Zertifizierung oder Vorschrift organisiert. Verwenden Sie die vom Kunden verwalteten Steuerelemente, um die von Microsoft im Rahmen Ihrer Complianceaktivitäten empfohlenen Aktionen zu implementieren. Ihre Organisation kann diesen reglementierenden Leitfaden und empfohlene Kundenaktionen in jedem vom Kunden verwalteten Steuerelement nutzen, um den Implementierungs- und Bewertungsprozess zu verwalten.
 
@@ -106,25 +106,25 @@ In der folgenden Tabelle werden die einzelnen Compliance-Manager-Berechtigungen 
 
 ## <a name="understanding-the-compliance-score"></a>Grundlegendes zur Compliancebewertung
 
-Compliance-Manager zeigt im Dashboard einen Gesamtwert für Office 365-Bewertungen in der oberen rechten Ecke der Kachel an. Dies ist der allgemeine Compliancegesamtwert für die Bewertung und stellt die Akkumulierung der Punkte dar, die für jede Steuerelementbewertung erhalten wurden, die in der Bewertung als implementiert und getestet gekennzeichnet wurde. Wenn Sie eine Bewertung hinzufügen, werden Sie feststellen, dass die Compliancebewertung bereits nahezu abgeschlossen ist, weil die Punkte für die von Microsoft verwalteten Steuerelemente, die von Microsoft implementiert und von unabhängigen Dritten getestet wurden, bereits angewendet wurden.
+Im Dashboard zeigt der Compliance-Manager einen Gesamtwert für Office 365-Bewertungen in der oberen rechten Ecke der Kachel an. Dies ist die gesamte Compliancebewertung für die Bewertung, also die Sammlung von Punkten, die für jede Steuerelementbewertung erhalten wurde, die in der Bewertung als „Implementiert“ und „Getestet“ markiert wurde. Wenn eine Bewertung hinzugefügt wird, werden Sie sehen, dass die Compliancebewertung fast abgeschlossen ist, da die Punkte für die von Microsoft verwalteten Steuerelemente, die von Microsoft implementiert und von unabhängigen Drittanbietern getestet wurden, bereits übernommen wurden.
 
 ![Compliance-Manager – Compliance-Bewertung insgesamt](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
 
 Die übrigen Punkte stammen aus der erfolgreichen Bewertung von Kundensteuerelementen, aus der Implementierung und aus dem Test der vom Kunden verwalteten Steuerelemente, von denen jedes einen bestimmten Wert hat, der einen Teil der Compliance-Bewertung ausmacht.
 
-Jede Bewertung zeigt einen Wert der risikobasierten Compliancebewertung, damit Sie das Risikoniveau (aufgrund einer Nichtkonformität oder eines Steuerelementfehlers) im Zusammenhang mit jedem Steuerelement (einschließlich der von Microsoft verwalteten und vom Kunden verwalteten Steuerelemente) in einer Bewertung abschätzen können. Jedem vom Kunden verwalteten Steuerelement wird eine mögliche Anzahl von Punkten auf einer Skala von 1 bis 10 zugeordnet (als *Schweregradeinstufung bezeichnet). Dabei werden Steuerelementen mit einem höheren Risikofaktor beim Fehlschlagen mehr Punkte und Steuerelementen mit einem geringen Risiko weniger Punkte zugeordnet.
+Für jede Bewertung wird eine risikobasierte Compliancebewertung angezeigt, damit Sie das Risikoniveau (aufgrund von Nicht-Einhaltung oder aufgrund eines Steuerelementfehlers) für jedes Steuerelement (einschließlich von Microsoft und vom Kunden verwalteter Steuerelemente) in einer Bewertung besser beurteilen können. Jedem vom Kunden verwaltete Steuerelement ist einer möglichen Anzahl von Punkten (Schwergrad) auf einer Skala von 1 bis 10 zugewiesen, wobei für Steuerelemente mit einem höheren Risikofaktor mehr Punkte vergeben werden, wenn das Steuerelement fehlschlägt, und weniger Punkte für Steuerelemente mit niedrigerem Risiko.
 
 Das unten dargestellte Bewertungssteuerelement für die Verwaltung des Benutzerzugriffs hat einen sehr hohen Schweregrad. Deshalb wird der Wert 10 angezeigt.
 
 ![Compliance-Manager – Bewertungssteuerelement mit hohem Schweregrad (10)](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
 
- Das unten dargestellte Bewertungssteuerelement für die Sicherung von Informationen hat dagegen einen niedrigeren Schweregrad. Deshalb wird der Wert 3 angezeigt.
+Das unten dargestellte Bewertungssteuerelement für die Sicherung von Informationen hat dagegen einen niedrigeren Schweregrad. Deshalb wird der Wert 3 angezeigt.
 
 ![Compliance-Manager – Bewertungssteuerelement mit niedrigem Schweregrad (3)](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
 
 Der Compliance-Manager weist einen standardmäßigen Schweregrad für jedes Steuerelement zu. Risikobewertungen werden basierend auf den folgenden Kriterien berechnet:
 
-- Ob ein Steuerelement das Auftreten von Vorfällen verhindert (die höchste Einstufung), Vorfälle, die geschehen sind, erkennt oder die Auswirkungen eines Vorfalls korrigiert (niedrigste Einstufung). Im Hinblick auf die Schweregradeinstufung wird einem obligatorischen Steuerelement, das eine Bedrohung verhindert, die höchste Punktzahl zugeordnet. Steuerelementen, die zur Erkennung oder Behebung dienen (unabhängig davon, ob sie obligatorisch sind oder nach eigenem Ermessen angewendet werden), wird die niedrigste Punktzahl zugeordnet.
+- Ob ein Steuerelement Zwischenfälle verhindert (höchste Bewertung), bereits geschehene Vorfälle erkennt oder die Auswirkungen eines Zwischenfalls korrigiert (niedrigste Bewertung). Im Hinblick auf den Schweregrad wird einem obligatorischen Steuerelement, das eine Bedrohung verhindert, die höchste Anzahl von Punkten zugewiesen; Steuerelementen, die Bedrohungen erkennen oder korrigieren (unabhängig davon, ob sie obligatorisch sind oder nach Ermessen verwendet werden), werden die niedrigsten Punktzahlen zugewiesen.
 
 - Ob ein Steuerelement (nach seiner Implementierung) erforderlich ist und deshalb von den Benutzern nicht umgangen werden kann (Benutzer müssen beispielsweise ihr Kennwort zurücksetzen und Anforderungen im Hinblick auf Kennwortlänge und -zeichen erfüllen), oder ob es frei verfügbar ist und von Benutzern umgangen werden kann (zum Beispiel Geschäftsregeln, die erfordern, dass Benutzer ihre Bildschirme sperren, wenn sie sich nicht an ihren Computern befinden).
 
@@ -134,13 +134,13 @@ Der Compliance-Manager weist einen standardmäßigen Schweregrad für jedes Steu
 
 Die angezeigten Werte für die Compliance-Bewertung für das Steuerelement werden basierend auf dem Kriterium „Bestanden/Nicht bestanden) *vollständig* auf das Gesamtergebnis angewendet – das Steuerelement wird implementiert und besteht den nachfolgenden Bewertungstest, oder es besteht den Test nicht. Nur wenn der **Implementierungsstatus** des Steuerelements auf **Implementiert** oder **Alternative Implementierung** und das **Testergebnis** auf **Bestanden** festgelegt ist, werden die zugewiesenen Punkte zum Gesamtwert addiert.
 
-Die Compliancebewertung kann Ihnen insbesondere bei der Priorisierung von Steuerelementen helfen, auf die bei der Implementierung der Schwerpunkt gelegt werden muss, indem angegeben wird, welche Steuerelemente bei einem Fehler ein höheres mögliches Risiko aufweisen. Neben der risikobasierten Priorisierung ist Folgendes zu beachten: Wenn sich die Bewertungssteuerelemente auf andere Steuerelemente beziehen (entweder innerhalb derselben Bewertung oder in einer anderen Bewertung in derselben Bewertungsgruppe), kann der erfolgreiche Abschluss eines einzelnen Steuerelements zu einer erheblichen Verringerung des Aufwands basierend auf der Synchronisierung der Steuerelement-Testergebnisse führen.
+Was am wichtigsten ist: Mithilfe der Compliancebewertung können Sie priorisieren, welche Steuerelemente für die Implementierung verwendet werden sollen, indem Sie Steuerelemente angeben, die ein höheres potenzielles Risiko aufweisen, wenn ein Fehler im Zusammenhang mit einem Steuerelement auftritt. Neben der risikobasierten Priorisierung ist zu beachten, dass wenn Bewertungssteuerelemente mit anderen Steuerelementen verknüpft sind (entweder in der gleichen Bewertung oder in einer anderen Bewertung, die sich in derselben Bewertungsgruppierung befindet), das erfolgreiche Abschließen eines einzigen Steuerelements zu einer wesentlichen Reduzierung des Aufwands basierend auf der Synchronisierung von Steuerelement-Testergebnissen führen kann.
 
 In der Abbildung unten sehen wir beispielsweise, dass die Bewertung „Office 365 – DSGVO“ derzeit zu 46 % bewertet ist, was bedeutet, dass 51 von 111 Steuerelementbewertungen mit einer Gesamtbewertung von 289 Punkten von möglichen 600 Punkten abgeschlossen wurden.
 
 ![Compliance-Manager – Zusammenfassung der Bewertung](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
 
-In der Bewertung bezieht sich das DSGVO-Steuerelement 7.5.5 auf 5 andere Steuerelemente (7.4.1, 7.4.3, 7.4.4, 7.4.8 und 7.4.9), die jeweils einen mittleren bis hohen Risikobewertungswert von 6 oder 8 für den Schweregrad aufweisen). Mithilfe des Bewertungsfilters haben wir alle diese Steuerelemente ausgewählt, sodass sie in der Bewertungsansicht angezeigt werden. Sie können unten erkennen, dass keines von ihnen bewertet wurde.
+In der Bewertung ist das DSGVO-Steuerelement 7.5.5 mit 5 anderen Steuerelementen verknüpft (7.4.1, 7.4.3, 7.4.4, 7.4.8 und 7.4.9), die alle einen mittleren bis hohen Schweregrad von 6 oder 8 aufweisen). Mithilfe des Bewertungsfilters wurden all diese Steuerelemente ausgewählt und so in der Bewertungsansicht sichtbar gemacht. Unten können Sie sehen, dass keines davon bewertet wurde.
 
 ![Compliance-Manager – Bewertungsansicht – Filtersteuerelemente, keines bewertet](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Da diese 6 Steuerelemente miteinander verknüpft sind, führt das Abschließen eines der Steuerelemente zu einer Synchronisierung dieser Testergebnisse über die verknüpften Steuerelemente in der Bewertung (genau wie bei allen verknüpften Steuerelementen in einer Bewertung, die sich in derselben Bewertungsgruppierung befindet). Bei Abschluss der Implementierung und des Tests des DSGVO-Steuerelements 7.5.5 wird der Detailbereich des Steuerelements so aktualisiert, dass angezeigt wird, dass alle 6 Steuerelemente bewertet wurden, und es ist ein entsprechender Anstieg der Anzahl bewerteter Steuerelemente auf 57 und 51 % bewertete Steuerelemente sowie eine Änderung des Gesamtwerts auf +40 zu beobachten.
 
@@ -162,7 +162,7 @@ Die Compliance-Bewertung, wie der Microsoft Secure Store, ist anderen verhaltens
 
 Bewertungen im Compliance-Manager basieren auf dem Modell für gemeinsame Verantwortung für Cloud Computing. Im Modell für gemeinsame Verantwortung teilen sich Microsoft und alle Kunden die Verantwortung für den Schutz der Kundendaten, wenn diese in unserer Cloud gespeichert werden.
 
-Wie aus der folgenden Office 365 DSGVO-Bewertung hervorgeht, sind Microsoft und seine Kunden jeweils für die Durchführung einer Reihe von Maßnahmen verantwortlich, die den Anforderungen der zu beurteilenden Standards oder Vorschriften entsprechen. Um die erforderlichen Maßnahmen für eine Vielzahl von Standards und Vorschriften zu rationalisieren und zu verstehen, behandelt der Compliance-Manager alle Standards und Vorschriften so, als wären sie Kontrollframeworks. So beinhalten die von Microsoft und den Kunden für jede Bewertung durchgeführten Maßnahmen die Implementierung und Validierung verschiedener Steuerelemente.
+Wie in der Office 365-DSGVO-Bewertung unten dargestellt, sind sowohl Microsoft als auch Kunden dafür verantwortlich, unterschiedliche Aktionen durchzuführen, die dazu dienen sollen, die Anforderungen des bewerteten Standards oder der bewerteten Vorschrift zu erfüllen. Um die erforderlichen Aktionen von einer Vielzahl von Standards und Vorschriften hinweg zu rationalisieren und zu verstehen, werden im Compliance-Manager alle Standards und Vorschriften so behandelt, als wären sie Steuerelement-Frameworks. Die für jede Bewertung von Microsoft und Kunden durchgeführten Aktionen umfassen daher die Implementierung und Überprüfung mehrerer Steuerelemente.
 
 ![Compliance-Manager – DSGVO-Bewertung](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
 
@@ -208,9 +208,9 @@ Die Grundidee des Steuerelements basiert darauf, ob das Steuerelement erforderli
 
 ### <a name="mandatory-or-discretionary"></a>Erforderlich oder frei
 
- *Erforderliche Steuerelemente* sind Steuerelemente, die weder absichtlich oder versehentlich umgangen werden können. Ein Beispiel für ein allgemeines erforderliches Steuerelement ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für Kennwortlänge, -komplexität und -ablauf festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
+*Erforderliche Steuerelemente* sind Steuerelemente, die weder absichtlich oder versehentlich umgangen werden können. Ein Beispiel für ein allgemeines erforderliches Steuerelement ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für Kennwortlänge, -komplexität und -ablauf festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
 
- *Freie Steuerelemente* basieren darauf, dass Benutzer die Richtlinie verstehen und sich entsprechend verhalten. Bei einer Richtlinie, die Benutzer auffordert, ihre Computer zu sperren, wenn sie ihren Arbeitsplatz verlassen, handelt es sich beispielsweise um ein freies Steuerelement, da es auf dem Benutzer beruht.
+*Freie Steuerelemente* basieren darauf, dass Benutzer die Richtlinie verstehen und sich entsprechend verhalten. Bei einer Richtlinie, die Benutzer auffordert, ihre Computer zu sperren, wenn sie ihren Arbeitsplatz verlassen, handelt es sich beispielsweise um ein freies Steuerelement, da es auf dem Benutzer beruht.
 
 ### <a name="preventative-detective-or-corrective"></a>Vorbeugende, erkennende oder korrigierende Steuerelemente
 
@@ -275,7 +275,7 @@ Die Compliance-Bewertung ist eine wichtige Komponente, mit deren Hilfe Complianc
 
 ## <a name="grouping-assessments"></a>Gruppieren von Bewertungen
 
-Wenn Sie eine neue Bewertung erstellen, werden Sie aufgefordert, eine neue Gruppe zu erstellen, der die Bewertung zugewiesen werden soll, oder die Bewertung einer vorhandenen Gruppe zuzuweisen. Mithilfe von Gruppen können Sie Bewertungen logisch anordnen und allgemeine Informationen sowie Workflowaufgaben zwischen Bewertungen teilen, die die gleichen oder ähnliche vom Kunden verwaltete Steuerelemente aufweisen.
+Wenn Sie eine neue Bewertung erstellen, werden Sie aufgefordert, eine Gruppe zum Zuweisen der Bewertung zu erstellen, oder die Bewertung einer vorhandenen Gruppe zuzuweisen. Mit Gruppen können Sie Bewertungen logisch organisieren und allgemeine Informationen und Workflowaufgaben zwischen Bewertungen austauschen, die über die gleichen bzw. über verknüpfte vom Kunden verwaltete Steuerelemente verfügen.
 
 Sie können Bewertungen beispielsweise nach Jahr oder Teams, Abteilungen oder Agenturen innerhalb Ihrer Organisation gruppieren. Nachfolgend finden Sie einige Beispiele von Gruppen und die darin enthaltenen Bewertungen.
 
@@ -314,11 +314,11 @@ Die folgenden Anforderungen gelten für das Gruppieren von Bewertungen:
 
 - Gruppen können Bewertungen für die gleiche Zertifizierung/Vorschrift enthalten, aber jede Gruppe kann nur eine Bewertung für eine Kombination eines bestimmten Clouddiensts/einer Zertifizierung enthalten. Eine Gruppe kann beispielsweise nicht zwei Bewertungen für Office 365 und DSGVO enthalten. In ähnlicher Weise kann eine Gruppe mehrere Bewertungen für denselben Clouddienst enthalten, vorausgesetzt, die entsprechende Zertifizierung/Vorschrift ist für jeden unterschiedlich.
 
-Nachdem eine Bewertung einer Bewertungsgruppierung hinzugefügt wurde, kann die Gruppierung nicht mehr geändert werden. Sie können die Bewertungsgruppe umbenennen. Dies ändert den Namen der Bewertungsgruppierung für alle Bewertungen, die dieser Gruppe zugeordnet sind. Sie können eine neue Bewertung und eine neue Bewertungsgruppe erstellen und Informationen aus einer vorhandenen Bewertung kopieren. Auf diese Weise wird effektiv ein Duplikat dieser Bewertung in einer anderen Bewertungsgruppe erstellt. Durch das Archivieren einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Bewertungsgruppe unterbrochen. Alle weiteren Updates zu anderen verwandten Bewertungen werden in der archivierten Bewertung nicht mehr berücksichtigt.
+Nachdem eine Bewertung einer Bewertungsgruppierung hinzugefügt wurde, kann die Gruppierung nicht geändert werden. Sie können die Bewertungsgruppe umbenennen, wodurch der Name der Bewertungsgruppierung für alle mit dieser Gruppe verknüpften Bewertungen geändert wird. Sie können eine Bewertung und eine neue Bewertungsgruppierung erstellen und Informationen von einer vorhandenen Bewertung kopieren, wodurch ein Duplikat dieser Bewertung in einer anderen Bewertungsgruppe erstellt wird. Durch Archivieren einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Bewertungsgruppe aufgehoben. Alle weiteren Aktualisierungen an anderen verknüpften Bewertungen werden in der archivierten Bewertung nicht mehr widergespiegelt.
 
-Wie bereits erläutert, besteht ein wesentlicher Vorteil der Verwendung von Gruppen darin, dass bei Nutzung desselben vom Kunden verwalteten Steuerelements für zwei verschiedene Bewertungen in der gleichen Gruppe (wodurch die Kundenaktionen für jedes Steuerelement identisch sind) die Implementierungsdetails, Testinformationen und der Status für das Steuerelement in einer Bewertung mit demselben Steuerelement in jeder anderen Bewertung in der Gruppe synchronisiert werden. Anders ausgedrückt: Wenn Bewertungen dasselbe Steuerelement verwenden und sich diese Bewertungen in derselben Gruppe befinden, müssen Sie nur den Bewertungsprozess für das Steuerelement in einer Bewertung verwalten. Die Ergebnisse für dieses Steuerelement werden automatisch mit anderen Bewertungen synchronisiert. ISO 27001 und ISO 27018 weisen beispielsweise ein Steuerelement auf, das sich auf Kennwortrichtlinien bezieht. Wenn der Teststatus für das Steuerelement in einer Bewertung auf „Erfolgreich“ gesetzt wird, wird das Steuerelement in der anderen Bewertung entsprechend aktualisiert (und als „Erfolgreich“ gekennzeichnet), sofern beide Bewertungen Teil derselben Bewertungsgruppe sind.
+Wie zuvor erläutert, besteht ein wesentlicher Vorteil der Verwendung von Gruppen darin, dass (wenn zwei unterschiedliche Bewertungen in derselben Gruppe das gleiche vom Kunden verwaltete Steuerelement verwenden und somit die Kundenaktionen für jedes Steuerelement gleich wären) das Ausfüllen der Implementierungsdetails, der Testinformationen und des Status für das Steuerelement in einer Bewertung in dasselbe Steuerelement in einer anderen Bewertung in der Gruppe synchronisiert würde. Mit anderen Worten: Wenn Bewertungen dasselbe Steuerelement verwenden und diese Bewertungen sich in derselben Gruppe befinden, müssen Sie nur den Bewertungsprozess für das Steuerelement in einer Bewertung verwalten. Die Ergebnisse für dieses Steuerelement werden automatisch in anderen Bewertungen synchronisiert. ISO 27001 und ISO 27018 weisen beispielsweise beide ein Steuerelement für Kennwortrichtlinien auf. Wenn der Teststatus für das Steuerelement in einer Bewertung auf „Bestanden“ festgelegt wird, wird das Steuerelement in der anderen Bewertung aktualisiert (und als „Bestanden“ markiert), vorausgesetzt, beide Bewertungen sind Teil derselben Bewertungsgruppe.
 
-Betrachten Sie als Beispiel hierfür diese zwei in Beziehung stehenden Bewertungssteuerelemente, die beide mit der Verschlüsselung von Daten über öffentliche Netzwerke zu tun haben: Steuerelement 6.10.1.2 in der Office 365 – DSGVO-Bewertung und Steuerelement SC-13 in der Office 365 – NIST 800-53-Bewertung. Dies sind in Beziehung stehende Bewertungssteuerelemente in zwei verschiedenen Bewertungen. Sie befinden sich beide in der Standardgruppe.  Zunächst hat keine dieser Bewertungen Steuerelementbewertungen durch den Kunden abgeschlossen, wie im Compliance-Manager-Dashboard ersichtlich wird, das diese beiden Bewertungen anzeigt.
+Betrachten Sie als Beispiel hierfür diese zwei in Beziehung stehenden Bewertungssteuerelemente, die beide mit der Verschlüsselung von Daten über öffentliche Netzwerke zu tun haben: Steuerelement 6.10.1.2 in der Office 365 – DSGVO-Bewertung und Steuerelement SC-13 in der Office 365 – NIST 800-53-Bewertung. Dies sind in Beziehung stehende Bewertungssteuerelemente in zwei verschiedenen Bewertungen. Sie befinden sich beide in der Standardgruppe. Zunächst hat keine dieser Bewertungen Steuerelementbewertungen durch den Kunden abgeschlossen, wie im Compliance-Manager-Dashboard ersichtlich wird, das diese beiden Bewertungen anzeigt.
 
 ![Compliance-Manager-Dashboard – gruppierte Bewertungen – vorher](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
 
@@ -326,7 +326,7 @@ Durch Klicken auf die Bewertung **Office 365 – DSGVO** und mithilfe der Filter
 
 ![Compliance-Manager-Bewertung – gemeinsam verwendete Steuerelemente](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
 
- Nachfolgend ist der Abschluss der Implementierung und des Tests von DSGVO-Steuerelement 6.10.1.2 dargestellt.
+Nachfolgend ist der Abschluss der Implementierung und des Tests von DSGVO-Steuerelement 6.10.1.2 dargestellt.
 
 ![Compliance-Manager – DSGVO-Bewertungssteuerelement 6.10.1.2 – erfolgreich](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
 
@@ -390,7 +390,7 @@ Bestimmte Vorschriften erfordern, dass eine Organisation in der Lage sein muss, 
 
 So suchen Sie nach einem Benutzerkonto
 
-1. Geben Sie die E-Mail-Adresse des Benutzers ein, indem Sie den Alias (die Informationen auf der linken Seite des @-Symbols) eingeben und den Domänennamen durch Klicken auf das Domänensuffix in der Liste auf der rechten Seite auswählen. Wenn es sich um einen Mandanten mehrerer registrierter Domänen handelt, sollten Sie das Domänennamensuffix der E-Mail-Adresse auf seine Richtigkeit überprüfen.
+1. Geben Sie die E-Mail-Adresse des Benutzers ein, indem Sie den Alias (die Informationen auf der linken Seite des @-Symbols) eingeben und den Domänennamen durch Klicken auf die Liste der Domänensuffixe rechts auswählen. Wenn dies ein Mandant mit mehreren registrierten Domänen ist, können Sie das Domänennamensuffix der E-Mail-Adresse erneut überprüfen, um sicherzustellen, dass es korrekt ist.
 
 2. Wenn Sie den Benutzernamen korrekt eingegeben haben, klicken Sie auf **Suchen**.
 
@@ -402,7 +402,7 @@ So suchen Sie nach einem Benutzerkonto
 
 ### <a name="export-a-report-of-account-data-history"></a>Exportieren eines Berichts mit Kontoverlaufsdaten
 
-Nachdem das Benutzerkonto identifiziert wurde, möchten Sie möglicherweise einen Bericht der Abhängigkeiten generieren, die mit diesem Konto verknüpft sind. Anhand dieser Informationen können Sie offene Aktionselemente neu zuweisen oder den Zugriff auf zuvor hochgeladene Nachweise sicherstellen.
+Nachdem das Benutzerkonto identifiziert wurde, können Sie einen Bericht der Abhängigkeiten generieren, die mit diesem Konto verknüpft sind. Anhand dieser Informationen können Sie offene Aktionselemente erneut zuweisen oder den Zugriff auf zuvor hochgeladene Nachweise sicherstellen.
 
  So generieren und exportieren Sie einen Bericht:
 
@@ -425,7 +425,7 @@ Mithilfe dieser Funktion kann eine Organisation alle aktiven oder ausstehenden A
 
 2. Wählen Sie **Ersetzen**, um alle Aktionselemente von dem zurückgegebenen Benutzer dem neu ausgewählten Benutzer zuzuweisen.
 
-3. Folgendes Bestätigungsdialogfeld wird angezeigt: „Hiermit werden alle Steuerelementaktionselemente des aktuellen Benutzers dem ausgewählten Benutzer zugewiesen. Diese Aktion kann nicht rückgängig gemacht werden. Möchten Sie den Vorgang fortsetzen?“
+3. Es wird ein Bestätigungsdialogfeld mit der Meldung angezeigt, dass dadurch alle Aktionselemente vom aktuellen Benutzer dem ausgewählten Benutzer zugewiesen werden. Diese Aktion kann nicht rückgängig gemacht werden. Sie werden gefragt, ob Sie wirklich fortfahren möchten.
 
 4. Klicken Sie auf **OK**, um fortzufahren. Andernfalls klicken Sie auf **Abbrechen**.
 
@@ -486,7 +486,7 @@ Sie können über das Service Trust Portal auf den Compliance-Manager zugreifen.
 
 ## <a name="viewing-action-items"></a>Anzeigen von Aktionselementen
 
-Compliance-Manager bietet eine bequeme Ansicht aller Ihrer zugewiesenen Steuerelementbewertungsaktionselemente, sodass Sie schnell und einfach Aktionen für diese ausführen können. Sie können alle Aktionselemente anzeigen oder die Aktionselemente auswählen, die einer bestimmten Zertifizierung entsprechen, indem Sie auf die Registerkarte für diese Bewertung klicken. Beispielsweise wurde in der nachstehenden Abbildung die Registerkarte „DSGVO“ ausgewählt, die Steuerelemente anzeigt, die sich auf die DSGVO-Bewertung beziehen.
+Compliance-Manager bietet eine praktische Ansicht aller zugewiesenen Aktionselemente von Steuerelementbewertungen, sodass Sie diese schnell und einfach umsetzen können. Sie können alle Aktionselemente anzeigen oder die Aktionselemente auswählen, die einer bestimmten Zertifizierung entsprechen, indem Sie auf die mit dieser Bewertung verbundene Registerkarte klicken. In der Abbildung unten wurde beispielswiese die DSGVO-Registerkarte ausgewählt, auf der Steuerelemente im Zusammenhang mit der DSGVO-Bewertung angezeigt werden.
 
 ![Compliance-Manager – Aktionselemente führen mehrere Registerkarten auf, DSGVO ausgewählt](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
 
@@ -510,9 +510,9 @@ So fügen Sie eine Bewertung zu Compliance-Manager hinzu
 
 3. Klicken Sie auf **Weiter**, und gehen Sie folgendermaßen vor:
 
-   a. Wählen Sie einen Microsoft-Clouddienst, dessen Compliance bewertet werden soll, aus der Dropdownliste **Produkt auswählen** aus.
+   1. Wählen Sie einen Microsoft-Clouddienst, dessen Compliance bewertet werden soll, aus der Dropdownliste **Produkt auswählen** aus.
 
-   b. Wählen Sie eine Zertifizierung, für die der ausgewählte Clouddienst bewertet werden soll, aus der Dropdownliste **Zertifizierung auswählen** aus.
+   1. Wählen Sie eine Zertifizierung, für die der ausgewählte Clouddienst bewertet werden soll, aus der Dropdownliste **Zertifizierung auswählen** aus.
 
 4. Klicken Sie auf **Zum Dashboard hinzufügen**, um die Bewertung zu erstellen. Die Bewertung wird dem Compliance-Manager-Dashboard als neue Kachel am Ende der Liste der vorhandenen Kacheln hinzugefügt.
 
@@ -526,7 +526,7 @@ So fügen Sie eine Bewertung zu Compliance-Manager hinzu
 
 ## <a name="copying-information-from-existing-assessments"></a>Kopieren von Informationen aus vorhandenen Bewertungen
 
-Wie bereits erwähnt, haben Sie beim Erstellen einer neuen Bewertungsgruppe die Möglichkeit, Informationen aus Bewertungen in einer vorhandenen Gruppe in die neue Bewertung in der neuen Gruppe zu kopieren. Dadurch können Sie abgeschlossene Bewertungen und Tests für dieselben vom Kunden verwalteten Steuerelemente in der neuen Bewertung anwenden. Wenn Sie beispielsweise über eine Gruppe für alle DSGVO-bezogenen Bewertungen in Ihrer Organisation verfügen, können Sie beim Hinzufügen einer neuen Bewertung zur Gruppe allgemeine Informationen aus der vorhandenen Bewertung kopieren.
+Beim Erstellen einer Bewertungsgruppe haben Sie, wie zuvor beschrieben, die Möglichkeit, Informationen aus Bewertungen in einer vorhandenen Gruppe in die neue Bewertung in der neuen Gruppe zu kopieren. Auf diese Weise können Sie die abgeschlossene Bewertungs- und Testarbeit in denselben vom Kunden verwalteten Steuerelementen in die neue Bewertung übernehmen. Wenn Sie beispielsweise eine Gruppe für alle Bewertungen im Zusammenhang mit der DSGVO in Ihrer Organisation haben, können Sie allgemeine Informationen von einer vorhandenen Bewertung kopieren, wenn Sie eine neue Bewertung zu der Gruppe hinzufügen.
 
 Sie können die folgenden Informationen von Kunden in eine neuen Bewertung kopieren:
 
@@ -536,11 +536,11 @@ Sie können die folgenden Informationen von Kunden in eine neuen Bewertung kopie
 
 - Implementierungsdetails und Testplaninformationen
 
-Ebenso werden Informationen von gemeinsam genutzten und vom Kunden verwalteten Steuerelementen in derselben Bewertungsgruppe synchronisiert. Auch Informationen in zugehörigen und vom Kunden verwalteten Steuerelementen in der gleichen Bewertung werden synchronisiert.
+In ähnlicher Weise werden Informationen aus freigegebenen vom Kunden verwalteten Steuerelementen innerhalb der gleichen Bewertungsgruppe synchronisiert. Und Informationen in verknüpften vom Kunden verwalteten Steuerelementen innerhalb der gleichen Bewertungsgruppe werden ebenfalls synchronisiert.
 
 ## <a name="viewing-assessments"></a>Bewertungen anzeigen
 
-1. Suchen Sie die Bewertungskachel, die der Bewertung entspricht, die Sie anzeigen möchten. Klicken Sie dann auf den Bewertungsnamen, um diese zu öffnen, und zeigen Sie die von Microsoft und von Kunden verwalteten und mit der Bewertung verknüpften Steuerelemente sowie eine Liste der Clouddienste an, die sich im Bereich der Bewertung befinden.  Nachfolgend finden Sie ein Beispiel der Bewertung für Office 365 und DSGVO.
+1. Suchen Sie die Bewertungskachel, die der Bewertung entspricht, die Sie anzeigen möchten. Klicken Sie dann auf den Bewertungsnamen, um diese zu öffnen, und zeigen Sie die von Microsoft und von Kunden verwalteten Steuerelemente die mit der Bewertung verknüpft sind, sowie eine Liste der Clouddienste an, die sich im Bereich der Bewertung befinden. Nachfolgend finden Sie ein Beispiel der Bewertung für Office 365 und DSGVO.
 
    ![Compliance-Manager-Bewertungsansicht – Vollbild mit Beschriftungen](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
 
@@ -550,9 +550,9 @@ Ebenso werden Informationen von gemeinsam genutzten und vom Kunden verwalteten S
 
 4. In diesem Abschnitt werden die einzelnen Clouddienste dargestellt, die sich im Bereich der Bewertung befinden.
 
-5. Dieser Abschnitt enthält von Microsoft verwaltete Steuerelemente. Verwandte Steuerelemente sind nach Steuerelementfamilien geordnet. Klicken Sie auf eine Steuerelementfamilie, um sie zu erweitern und einzelne Steuerelemente anzuzeigen.
+5. Dieser Abschnitt enthält von Microsoft verwaltete Steuerelemente. Verwandte Steuerelemente werden nach Steuerelementfamilie geordnet. Klicken Sie auf eine Steuerelementfamilie, um diese zu erweitern und die einzelnen Steuerelemente anzuzeigen.
 
-6. Dieser Abschnitt enthält vom Kunden verwaltete Steuerelemente, die ebenfalls nach Steuerelementfamilie angeordnet sind. Klicken Sie auf eine Steuerelementfamilie, um sie zu erweitern und einzelne Steuerelemente anzuzeigen.
+6. Dieser Abschnitt enthält vom Kunden verwaltete Steuerelemente, die auch nach Steuerelementfamilie organisiert werden. Klicken Sie auf eine Steuerelementfamilie, um diese zu erweitern und die einzelnen Steuerelemente anzuzeigen.
 
 7. Zeigt die Gesamtanzahl der Steuerelemente in der Steuerelementfamilie an und wie viele dieser Steuerelemente bewertet wurden. Eine Schlüsselfunktion des Compliance-Managers ist das Nachverfolgen des Fortschritts Ihrer Organisation bei der Bewertung der vom Kunden verwalteten Steuerelemente. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zur Compliancebewertung](#understanding-the-compliance-score).
 
@@ -568,7 +568,7 @@ Nachfolgend finden Sie eine Liste von Aufgaben, die Sie mithilfe der Workflowfea
 
    Klicken Sie auf das Trichtersymbol auf der rechten Seite der Seite, um die Steuerelemente **Filteroptionen** anzuzeigen oder auszublenden. Mit diesen Steuerelementen können Sie Filterkriterien angeben. Nur diejenigen Bewertungssteuerelemente, die diese Kriterien erfüllen, werden unten angezeigt.  ![Filtersteuerelemente für Compliance-Manager-Bewertungen](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
 
-   - **Artikel** – Filtert auf den Artikelnamen und gibt die Bewertungssteuerelemente zurück, die diesem Artikel zugeordnet sind. Wenn Sie z. B. „Artikel (5)“ eingeben, wird eine Auswahlliste der Artikel zurückgegeben, deren Namen diese Zeichenfolge enthalten, also Artikel (5)(1)(a), Artikel (5)(1)(b), Artikel (5)(1)(c) usw. Wenn Sie Artikel (5)(1)(c) auswählen, werden die mit Artikel (5)(1)(c) verbundenen Steuerelemente zurückgegeben. Dies ist ein Mehrfachauswahlfeld, das mehrere Werte mit einem ODER-Operator verwendet. Wenn Sie z. B. Artikel (5)(1)(a) auswählen und dann Artikel (5)(1)(c) hinzufügen, gibt der Filter Steuerelemente zurück, die entweder Artikel (5)(1)(a) oder Artikel (5)(1)(c) zugeordnet sind.
+   - **Artikel**: Filtert nach dem Artikelnamen und gibt die Bewertungssteuerelemente im Zusammenhang mit diesem Artikel zurück. Wenn Sie z. B. „Artikel (5)“ eingeben, wird eine Auswahlliste von Artikeln zurückgegeben, deren Name diese Zeichenfolge enthält, also Artikel (5)(1)(a), Artikel (5)(1)(b), Artikel (5)(1)(c) usw. Wenn Sie „Artikel (5)(1)(c)“ auswählen, werden die Steuerelemente im Zusammenhang mit Artikel (5)(1)(c) zurückgegeben. Dies ist ein Mehrfachauswahlfeld, das einen OR-Operator mit mehreren Werten verwendet, wenn Sie z. B. Artikel (5)(1)(a) auswählen und dann Artikel (5)(1)(c) hinzufügen, gibt der Filter Steuerelemente im Zusammenhang mit Artikel (5)(1)(a) oder Artikel (5)(1)(c) zurück.
 
      ![Compliance-Manager-Bewertungsansicht – Nach Artikelname filtern](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
 
@@ -590,13 +590,13 @@ Nachfolgend finden Sie eine Liste von Aufgaben, die Sie mithilfe der Workflowfea
 
 3. **Zuweisen eines Aktionselements zu einem Benutzer**: Sie können ein Aktionselement einer Person zuweisen, um die Anforderungen einer Zertifizierung/Vorschrift zu implementieren oder die Implementierungsanforderungen Ihrer Organisation zu testen, zu überprüfen und zu dokumentieren. Wenn Sie ein Aktionselement zuweisen, können Sie eine E-Mail mit Details zu den empfohlenen Kundenaktionen und der Aktionselementpriorität an die Person senden. Sie können die Zuweisung eines Aktionselements auch aufheben oder ein Aktionselement einer anderen Person erneut zuweisen.
 
-4. **Dokumente verwalten** – Von Kunden verwaltete Steuerelemente verfügen auch über eine Position zum Verwalten von Dokumenten, die mit der Durchführung von Implementierungsaufgaben zusammenhängen und zum Durchführen von Test- und Validierungsaufgaben. Jede Person mit der Berechtigung zum Bearbeiten von Daten im Compliance-Manager kann Dokumente hochladen, indem sie auf **Dokumente verwalten** klickt. Nachdem ein Dokument hochgeladen wurde, können Sie auf **Dokumente verwalten** klicken, um Dateien anzuzeigen und herunterzuladen.
+4. **Dokumente verwalten** – Von Kunden verwaltete Steuerelemente verfügen auch über eine Position zum Verwalten von Dokumenten, die mit der Durchführung von Implementierungsaufgaben zusammenhängen und zum Durchführen von Test- und Validierungsaufgaben. Jede Person mit der Berechtigung zum Bearbeiten von Daten im Compliance-Manager kann Dokumente hochladen, indem sie auf **Dokumente verwalten** klickt. Nachdem ein Dokument hochgeladen wurde, können Sie auf **Dokumente verwalten** klicken, um Dateien anzuzeigen und herunterzuladen.
 
 5. **Bereitstellen von Implementierungs- und Testdetails** – Jedes vom Kunden verwaltete Steuerelement weist ein bearbeitbares Feld auf, in das Benutzer Implementierungsdetails eingeben können, welche die Schritte dokumentieren, die von Ihrer Organisation zur Erfüllung der Anforderungen der Zertifizierung/Vorschrift unternommen werden und zur Prüfung und Dokumentation darüber, wie Ihre Organisation diese Anforderungen erfüllt.
 
 6. **Festlegen des Status**: Legen Sie den Status für jedes Element im Rahmen des Bewertungsprozesses fest. Die verfügbaren Statuswerte sind **Implementiert**, **Alternative Implementierung**, **Geplant** und **Nicht im Umfang**.
 
-7. **Testdatum und Testergebnis eingeben** – Die Person in der Rolle des Compliance-Manager-Sachverständigen kann überprüfen, dass der geeignete Test durchgeführt wurde, die Implementierungsdetails, den Testplan, die Testergebnisse und alle hochgeladenen Erkenntnisse prüfen und dann das Testdatum und das Testergebnis festlegen. Verfügbare Testergebniswerte sind **Erfolgreich**, **Fehlgeschlagen geringes Risiko**, **Fehlgeschlagen – mittleres Risiko** und **Fehlgeschlagen hohes Risiko**.
+7. **Testdatum und Testergebnis eingeben** – Die Person in der Rolle des Compliance-Manager-Sachverständigen kann überprüfen, dass der geeignete Test durchgeführt wurde, die Implementierungsdetails, den Testplan, die Testergebnisse und alle hochgeladenen Erkenntnisse prüfen und dann das Testdatum und das Testergebnis festlegen. Verfügbare Testergebniswerte sind **Erfolgreich**, **Fehlgeschlagen geringes Risiko**, **Fehlgeschlagen – mittleres Risiko** und **Fehlgeschlagen hohes Risiko**.
 
 ## <a name="managing-action-items"></a>Aktionselemente verwalten
 
@@ -628,7 +628,7 @@ Die dem Aktionselement zugewiesenen Hinweise werden im Hinweisbereich gespeicher
 
 ## <a name="exporting-information-from-an-assessment"></a>Exportieren von Informationen aus einer Bewertung
 
-Sie können eine Bewertung in eine Excel-Datei exportieren, die von Compliancemitwirkenden in Ihrer Organisation überprüft und für Auditoren und Datenschutzbehörden bereitgestellt werden kann. Dieser Bewertungsbericht ist eine Momentaufnahme der Bewertung zum Zeitpunkt (Datum und Uhrzeit) der Berichterstellung, und er enthält die Details der von Microsoft verwalteten Steuerelemente als auch der vom Kunden verwalteten Steuerelemente für diese Bewertung wie den Implementierungsstatus, Testdatum und Testergebnisse des Steuerelements. Außerdem enthält er Links zu den hochgeladenen Nachweisdokumenten. Es wird empfohlen, den Bewertungsbericht vor der Archivierung einer Bewertung zu exportieren, da archivierte Bewertungen ihre Links zu hochgeladenen Dokumenten nicht beibehalten.
+Sie können eine Bewertung in eine Excel-Datei exportieren, die von den Beteiligten an der Compliance in Ihrer Organisation überprüft und Prüfern und Aufsichtsbehörden bereitgestellt werden kann. Dieser Bewertungsbericht ist eine Momentaufnahme der Bewertung an dem Tag und zu der Uhrzeit, zu der der Bericht erstellt wurde, und enthält die Details zu von Microsoft und von Kunden verwalteten Steuerelementen für diese Bewertung, einschließlich des Status der Steuerelementimplementierung sowie des Testdatums des Steuerelements und des Testergebnisses, und bietet Links zu den hochgeladenen Nachweisdokumenten. Es wird empfohlen, dass Sie den Bewertungsbericht exportieren, bevor Sie eine Bewertung archivieren, da in archivierten Bewertungen die Links zu hochgeladenen Dokumenten nicht gespeichert werden.
 
 So exportieren Sie einen Bewertungsbericht
 
@@ -677,7 +677,7 @@ Standardmäßig gibt die Suche Dokumentergebnisse zurück, und Sie können die D
 
 ![Service Trust Portal – Suchen in Dokumenten mit angewendetem Filter](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Klicken Sie auf den Compliance-Manager-Link, um Suchergebnisse für Compliance-Manager-Bewertungssteuerelemente anzuzeigen. In den aufgelisteten Ergebnissen werden das Erstellungsdatum der Bewertung, der Name der Bewertungsgruppierung und der entsprechende Clouddienst angezeigt, und ob die Steuerelemente von Microsoft oder vom Kunden verwaltet werden.
+Klicken Sie auf den Compliance-Manager-Link, um Suchergebnisse für Bewertungssteuerelemente von Compliance-Manager anzuzeigen. In den aufgeführten Suchergebnissen wird das Datum angezeigt, an dem die Bewertung erstellt wurde, der Name der Bewertungsgruppierung, der zutreffende Clouddienst und ob es sich bei dem Steuerelement um ein von Microsoft oder ein vom Kunden verwaltetes Steuerelement handelt.
 
 ![Service Trust Portal – Suchen in Compliance-Manager-Steuerelementen](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
@@ -692,7 +692,7 @@ Im Service Trust Portal können Sie Seiteninhalte in unterschiedlichen Sprachen 
 
 ## <a name="change-log-for-customer-managed-controls"></a>Änderungsprotokoll für vom Kunden verwaltete Steuerelemente
 
-Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung stattfindet, um mit Änderungen in behördlichen Vorschriften sowie mit Änderungen in unseren Clouddiensten Schritt halten zu können. Diese Updates umfassen Änderungen an den vom Kunden verwalteten Steuerelementen. Ein Änderungsprotokoll wird bereitgestellt, um Ihnen das Verständnis über die Auswirkung dieser Änderungen zu erleichtern, einschließlich der Details der hinzugefügten oder geänderten Inhalte. Außerdem bietet es Anleitung dazu, welche Auswirkung die Änderungen auf vorhandene Bewertungen haben. Im Allgemeinen gibt es zwei Arten von Änderungen:
+Compliance-Manager ist so konzipiert, dass eine regelmäßige Aktualisierung stattfindet, um mit Änderungen in behördlichen Vorschriften sowie mit Änderungen in unseren Clouddiensten Schritt halten zu können. Diese Updates umfassen Änderungen an den vom Kunden verwalteten Steuerelementen. Es wird ein Änderungsprotokoll bereitgestellt, damit Sie die Auswirkungen dieser Änderungen, einschließlich der Details der Inhalte, die hinzugefügt oder geändert werden, besser verstehen und Hilfestellung dazu erhalten, welche Auswirkungen die Änderungen auf vorhandene Bewertungen haben. Im Allgemeinen gibt es zwei Arten von Änderungen:
 
 - Eine **größere** Änderung ist eine wesentliche Änderung an einer Kundenaktion, z. B. das Hinzufügen oder Entfernen eines Steuerelements oder spezielle nummerierte Schritte, oder eine Änderung der Leitfäden im Zusammenhang mit Verantwortlichkeiten, Empfehlungen oder Nachweisen. Bei größeren Änderungen empfehlen wir, dass Sie Ihre Implementierung und/oder Bewertung des betroffenen Steuerelements erneut bewerten.
 
