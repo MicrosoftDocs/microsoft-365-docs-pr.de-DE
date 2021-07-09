@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Verwenden Sie ein PowerShell-Skript, das das Cmdlet "Search-UnifiedAuditLog" in Exchange Online ausführt, um das Audit-Protokoll zu durchsuchen. Dieses Skript ist für die Rückgabe einer großen Menge (bis zu 50.000) von Überwachungsdatensätzen optimiert. Das Skript exportiert diese Einträge in eine CSV-Datei, die Sie mithilfe von Power Query in Excel anzeigen oder transformieren können.
-ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939565"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341008"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Verwenden eines PowerShell-Skripts zum Durchsuchen des Überwachungsprotokolls
 
@@ -48,7 +48,7 @@ In Situationen, in denen Sie Überwachungsdaten für eine bestimmte Untersuchung
 
   Der Wert `True` für die Eigenschaft **UnifiedAuditLogIngestionEnabled** gibt an, dass die Überwachungsprotokollsuche aktiviert ist.
 
-- Ihnen muss in Exchange Online entweder die Rolle "Überwachungsprotokolle nur anzeigen" oder "Überwachungsprotokolle" zugewiesen sein, um das Skript ausführen zu können. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite Berechtigungen. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Compliance Center](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) im Abschnitt "Voraussetzungen für die Durchsuchung des Überwachungsprotokolls".
+- Ihnen muss in Exchange Online entweder die Rolle "Überwachungsprotokolle nur anzeigen" oder "Überwachungsprotokolle" zugewiesen sein, um das Skript ausführen zu können. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite Berechtigungen. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Compliance Center](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log) im Abschnitt "Voraussetzungen für die Durchsuchung des Überwachungsprotokolls".
 
 - Das Ausführen des Skripts kann länger dauern. Wie lange es dauert, hängt vom Datumsbereich und von der Größe des Intervalls ab, für die das Skript Überwachungsdatensätze abrufen soll. Größere Datumsbereiche und kürzere Intervalle führen zu einer längeren Ausführungsdauer. Weitere Informationen zum Datumsbereich und zu den Intervallen finden Sie in der Tabelle in Schritt 2.
 
@@ -152,7 +152,7 @@ Nachdem eine Verbindung mit Exchange Online PowerShell hergestellt wurde, besteh
    |`[DateTime]$start` und `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Gibt den Datumsbereich für die Überwachungsprotokollsuche an. Das Skript gibt Datensätze für Überwachungsaktivitäten zurück, die innerhalb des angegebenen Datumsbereichs erfolgt sind. Wenn beispielsweise Aktivitäten zurückgeben werden sollen, die im Januar 2021 ausgeführt wurden, können Sie als Startdatum `"2021-01-01"` und als Enddatum `"2021-01-31"` angeben (achten Sie darauf, die Werte in doppelte Anführungszeichen zu setzen). Der Beispielwert im Skript gibt Datensätze für Aktivitäten zurück, die innerhalb der letzten 24 Stunden ausgeführt wurden. Wenn der Wert keinen Zeitstempel enthält, wird der standardmäßige Zeitstempel "00:00 Uhr" (Mitternacht) für das angegebene Datum verwendet.|
    |`$record`|"AzureActiveDirectory"|Gibt den Datensatztyp der Überwachungsaktivitäten (auch als *Überwachungsvorgänge* bezeichnet) an, nach dem gesucht werden soll. Diese Eigenschaft gibt den Dienst oder das Feature an, in dem eine Aktivität ausgelöst wurde. Eine Liste der Datensatztypen, die Sie für diese Variable verwenden können, finden Sie unter [Überwachungsprotokolle: Datensatztypen](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Sie können den Datensatztypnamen oder den ENUM-Wert verwenden. <br/><br/>**Tipp:** Verwenden Sie den Wert `$null` (ohne doppelte Anführungszeichen), wenn Überwachungsdatensätze für alle Datensatztypen zurückgegeben werden sollen.|
    |`$resultSize`|5000|Gibt die Anzahl von Ergebnissen an, die jedes Mal zurückgegeben werden, wenn das Cmdlet **Search-UnifiedAuditLog** durch das Skript aufgerufen wird (auch als *Resultset* bezeichnet). Der Wert 5.000 ist die vom Cmdlet unterstützte Höchstanzahl. Lassen Sie diesen Wert unverändert.|
-   |`$intervalMinutes`|60|Um die Einschränkung von 5.000 zurückgegebenen Datensätzen einzuhalten, teilt diese Variable den angegebenen Datumsbereich in kleinere Zeitintervalle auf. Das Ausgabelimit des Befehls von 5 000 Datensätzen gilt dann für jedes Intervall, nicht für den gesamten Datumsbereich. Für die meisten Organisationen dürfte der Standardwert von 5 000 Datensätzen pro 60-Minuten-Intervall innerhalb des Datumsbereichs ausreichend sein. Sollte das Skript aber eine Fehlermeldung zurückgeben, die besagt „`maximum results limitation reached`“, verringern Sie das Zeitintervall (z. B.auf 30 Minuten oder sogar 15 Minuten), und führen Sie das Skript erneut aus.|
+   |`$intervalMinutes`|60|Um die Einschränkung von 5.000 zurückgegebenen Datensätzen einzuhalten, teilt diese Variable den angegebenen Datumsbereich in kleinere Zeitintervalle auf. Das Ausgabelimit des Befehls von 5 000 Datensätzen gilt dann für jedes Intervall, nicht für den gesamten Datumsbereich. Für die meisten Organisationen dürfte der Standardwert von 5 000 Datensätzen pro 60-Minuten-Intervall innerhalb des Datumsbereichs ausreichend sein. Sollte das Skript aber eine Fehlermeldung zurückgeben, die besagt „`maximum results limitation reached`“, verringern Sie das Zeitintervall (z. B.auf 30 Minuten oder sogar 15 Minuten), und führen Sie das Skript erneut aus.|
    ||||
 
    Die meisten der in der vorherigen Tabelle aufgeführten Variablen entsprechen Parametern für das Cmdlet **Search-UnifiedAuditLog**. Weitere Informationen zu diesen Parametern finden Sie unter [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).

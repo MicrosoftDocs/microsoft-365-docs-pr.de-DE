@@ -1,7 +1,7 @@
 ---
-title: AADSpnSignInEventsBeta-Tabelle im schema der erweiterten Suche
-description: Informationen zu Informationen, die Azure Active Directory Dienstprinzipal und der Ereignistabelle für verwaltete Identitätsidentitätsereignisse des erweiterten Schemas für die Suche zugeordnet sind
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
+title: AADSpnSignInEventsBeta-Tabelle im Schema für die erweiterte Suche
+description: Erfahren Sie mehr über Informationen im Zusammenhang mit Azure Active Directory Anmeldeereignistabelle für dienstprinzipale und verwaltete Identitäten des Schemas für die erweiterte Suche
+keywords: Erweiterte Suche, Bedrohungssuche, Suche nach Cyberbedrohungen, Microsoft 365 Defender, Microsoft 365, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, AlertInfo, Warnung, Entitäten, Nachweis, Datei, IP-Adresse, Gerät, Computer, Benutzer, Konto, Identität, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
+ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583544"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53347907"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,11 +34,11 @@ ms.locfileid: "52583544"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, um die Suche durch Azure Active Directory (AAD)-Dienstprinzipal- und verwaltete Identitäts-Anmeldeereignisse `AADSpnSignInEventsBeta` zu ermöglichen. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.
+> Die `AADSpnSignInEventsBeta` Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, damit Sie Azure Active Directory (AAD)-Dienstprinzipal- und verwaltete Identitätsanmeldungsereignisse durchsuchen können. Wir werden schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle verschieben.
 
 
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen Azure Active Directory `AADSpnSignInEventsBeta` Dienstprinzipal und verwaltete Identitäts-Anmeldungen. Weitere Informationen zu den verschiedenen Arten von Anmeldungen finden Sie in Azure Active Directory [- Vorschau](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Die `AADSpnSignInEventsBeta` Tabelle im Schema für die erweiterte Suche enthält Informationen zu Azure Active Directory Dienstprinzipal- und verwalteten Identitätsanmeldungen. Weitere Informationen zu den verschiedenen Arten von Anmeldungen finden Sie in [Azure Active Directory Anmeldeaktivitätsberichten – Vorschau.](/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Verwenden Sie diese Referenz, um Abfragen zu erstellen, die Informationen aus der Tabelle zurückgeben.
 
@@ -48,27 +48,27 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 
 
 
-| Spaltenname     | Datentyp | Beschreibung   |
-| ----- | ----- | ---- |
-| `Timestamp` | Datum/Uhrzeit      | Datum und Uhrzeit, wann der Datensatz generiert wurde                                                                                                     |
-| `Application`          | string        | Anwendung, die die aufgezeichnete Aktion ausgeführt hat                                                                                                   |
-| `ApplicationId`        | Zeichenfolge        | Eindeutige ID für die Anwendung                                                                                                           |
-| `IsManagedIdentity`    | boolean       | Gibt an, ob die Anmeldung von einer verwalteten Identität initiiert wurde                                                                               |
-| `ErrorCode`            | int        | Enthält den Fehlercode, wenn ein Anmeldefehler auftritt. Eine Beschreibung eines bestimmten Fehlercodes finden Sie unter <https://aka.ms/AADsigninsErrorCodes> . |
-| `CorrelationId`        | Zeichenfolge        | Eindeutiger Bezeichner des Anmeldeereigniss                                                                                                          |
-| `ServicePrincipalName` | Zeichenfolge        | Name des Dienstprinzipal, der die Anmeldung initiiert hat                                                                                        |
-| `ServicePrincipalId`   | Zeichenfolge        | Eindeutiger Bezeichner des Dienstprinzipal, der die Anmeldung initiiert hat                                                                           |
-| `ResourceDisplayName`  | Zeichenfolge        | Anzeigename der Ressource, auf die zugegriffen wird                                                                                                           |
-| `ResourceId`           | Zeichenfolge        | Eindeutiger Bezeichner der Ressource, auf die zugegriffen wird                                                                                                      |
-| `ResourceTenantId`     | Zeichenfolge        | Eindeutiger Bezeichner des Mandanten der Ressource, auf die zugegriffen wird                                                                                        |
-| `IPAddress`            | Zeichenfolge        | DEM Endpunkt zugewiesene und während der zugehörigen Netzwerkkommunikation verwendete IP-Adresse                                                              |
-| `Country`          | Zeichenfolge        | Zwei-Buchstaben-Code, der das Land angibt, in dem die Client-IP-Adresse geolokaliert ist                                                                |
-| `State`                | Zeichenfolge        | Status, in dem die Anmeldung erfolgt ist( sofern verfügbar)                                                                                                  |
-| `City`                 | Zeichenfolge        | Ort, in dem sich der Kontobenutzer befindet                                                                                                          |
-| `Latitude`             | Zeichenfolge        | Die Nord-Süd-Koordinaten des Anmeldestandorts                                                                                          |
-| `Longitude`            | Zeichenfolge        | Die Ost-West-Koordinaten der Anmeldeposition                                                                                            |
-| `RequestId`            | Zeichenfolge        | Eindeutiger Bezeichner der Anforderung                                                                                                                |
-|`ReportId` | Zeichenfolge | Eindeutiger Bezeichner für das Ereignis | 
+| Spaltenname | Datentyp | Beschreibung |
+|-----|-----|-----|
+| `Timestamp` | Datum/Uhrzeit | Datum und Uhrzeit, wann der Datensatz generiert wurde |
+| `Application` | string | Anwendung, die die aufgezeichnete Aktion ausgeführt hat |
+| `ApplicationId` | string | Eindeutiger Bezeichner für die Anwendung |
+| `IsManagedIdentity`    | Boolescher Wert       | Gibt an, ob die Anmeldung durch eine verwaltete Identität initiiert wurde. |
+| `ErrorCode`    | Ganzzahl | Enthält den Fehlercode, wenn ein Anmeldefehler auftritt. Eine Beschreibung eines bestimmten Fehlercodes finden Sie unter <https://aka.ms/AADsigninsErrorCodes> . |
+| `CorrelationId`        | string        | Eindeutiger Bezeichner des Anmeldeereignisses |
+| `ServicePrincipalName` | string        | Name des Dienstprinzipals, der die Anmeldung initiiert hat  |
+| `ServicePrincipalId`   | string        | Eindeutiger Bezeichner des Dienstprinzipals, der die Anmeldung initiiert hat  |
+| `ResourceDisplayName`  | string        | Anzeigename der Ressource, auf die zugegriffen wird  |
+| `ResourceId`           | string        | Eindeutiger Bezeichner der Ressource, auf die zugegriffen wird  |
+| `ResourceTenantId`     | string        | Eindeutiger Bezeichner des Mandanten der Ressource, auf die zugegriffen wird |
+| `IPAddress`            | string        | Ip-Adresse, die dem Endpunkt zugewiesen und während der zugehörigen Netzwerkkommunikation verwendet wird  |
+| `Country`          | string        | Aus zwei Buchstaben bestehender Code, der das Land angibt, in dem die Client-IP-Adresse geolokal ist |
+| `State`                | string        | Status, in dem die Anmeldung stattgefunden hat, sofern verfügbar |
+| `City`                 | string        | Ort, in dem sich der Kontobenutzer befindet  |
+| `Latitude`             | string        | Die Nord-Nach-Süd-Koordinaten des Anmeldestandorts |
+| `Longitude`            | string        | Die Ost-Nach-West-Koordinaten des Anmeldestandorts |
+| `RequestId`            | string        | Eindeutiger Bezeichner der Anforderung |
+|`ReportId` | string | Eindeutiger Bezeichner für das Ereignis |
 
  
 
