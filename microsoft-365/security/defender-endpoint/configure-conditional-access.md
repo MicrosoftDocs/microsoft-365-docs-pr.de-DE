@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren des bedingten Zugriffs in Microsoft Defender für Endpunkt
-description: Erfahren Sie mehr über die Schritte, die Sie in Intune, Microsoft Defender Security Center und Azure ausführen müssen, um bedingten Zugriff zu implementieren.
+description: Erfahren Sie mehr über die Schritte, die Sie in Intune, Microsoft 365 Defender und Azure ausführen müssen, um bedingten Zugriff zu implementieren.
 keywords: bedingter Zugriff, bedingter Zugriff, Geräterisiko, Risikostufe, Integration, Intune-Integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843974"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339514"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Konfigurieren des bedingten Zugriffs in Microsoft Defender für Endpunkt
 
@@ -31,7 +31,7 @@ ms.locfileid: "52843974"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Dieser Abschnitt führt Sie durch alle Schritte, die Sie ausführen müssen, um den bedingten Zugriff ordnungsgemäß zu implementieren.
 
@@ -50,19 +50,19 @@ Sie müssen sicherstellen, dass alle Ihre Geräte in Intune registriert sind. Si
 
 
 
-Es gibt Schritte, die Sie in Microsoft Defender Security Center, im Intune-Portal und im Azure AD-Portal ausführen müssen.
+Es gibt Schritte, die Sie in Microsoft 365 Defender, im Intune-Portal und im Azure AD-Portal ausführen müssen.
 
 Es ist wichtig, die erforderlichen Rollen zu beachten, um auf diese Portale zuzugreifen und den bedingten Zugriff zu implementieren:
-- **Microsoft Defender Security Center** : Sie müssen sich mit einer globalen Administratorrolle beim Portal anmelden, um die Integration zu aktivieren.
+- **Microsoft 365 Defender** : Sie müssen sich mit einer globalen Administratorrolle beim Portal anmelden, um die Integration zu aktivieren.
 - **Intune** : Sie müssen sich beim Portal mit Sicherheitsadministratorrechten mit Verwaltungsberechtigungen anmelden. 
 - **Azure AD-Portal** – Sie müssen sich als globaler Administrator, Sicherheitsadministrator oder Administrator für bedingten Zugriff anmelden.
 
 
 > [!NOTE]
-> Sie benötigen eine Microsoft Intune Umgebung mit intune-verwalteten und Azure AD-Windows 10 Geräten.
+> Sie benötigen eine Microsoft Intune-Umgebung mit intune-verwalteten und Azure AD-Windows 10 Geräten.
 
 Führen Sie die folgenden Schritte aus, um den bedingten Zugriff zu aktivieren:
-- Schritt 1: Aktivieren der Microsoft Intune Verbindung von Microsoft Defender Security Center
+- Schritt 1: Aktivieren der Microsoft Intune Verbindung von Microsoft 365 Defender
 - Schritt 2: Aktivieren der Defender für Endpunkt-Integration in Intune
 - Schritt 3: Erstellen der Compliancerichtlinie in Intune
 - Schritt 4: Zuweisen der Richtlinie 
@@ -70,15 +70,15 @@ Führen Sie die folgenden Schritte aus, um den bedingten Zugriff zu aktivieren:
 
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Schritt 1: Aktivieren der Microsoft Intune Verbindung
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Erweiterte Features** Microsoft Intune  >  **Verbindung** aus.
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >    >  **Endpoints General**  >  **Advanced features** Microsoft Intune  >  **connection** aus.
 2. Umschalten der einstellung Microsoft Intune auf **"Ein".**
 3. Klicken Sie auf **"Einstellungen speichern".**
 
 
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Schritt 2: Aktivieren der Defender für Endpunkt-Integration in Intune
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **"Gerätekompatibilität"**  >  **Microsoft Defender ATP** aus.
-3. Legen Sie **Verbinden Windows 10.0.15063+-Geräte auf ein Microsoft Defender Advanced Threat Protection** **fest.**
+2. Wählen Sie **Die Gerätekompatibilität**  >  **von Microsoft Defender ATP aus.**
+3. Legen Sie **Verbinden Windows 10.0.15063+-Geräte auf Microsoft Defender Advanced Threat Protection** auf **"Ein" fest.**
 4. Klicken Sie auf **Speichern**.
 
 
@@ -116,4 +116,4 @@ Führen Sie die folgenden Schritte aus, um den bedingten Zugriff zu aktivieren:
 
 Weitere Informationen finden Sie unter Erzwingen der [Compliance für Microsoft Defender für Endpunkt mit bedingtem Zugriff in Intune.](/intune/advanced-threat-protection)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

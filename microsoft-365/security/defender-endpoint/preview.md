@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322425"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339490"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Vorschaufeatures für Microsoft Defender für Endpunkt
 
@@ -54,7 +54,7 @@ Beim Arbeiten mit Features in der öffentlichen Vorschau werden die folgenden Fe
 - Werden von Microsoft vollständig unterstützt.
 - Kann nur in ausgewählten geografischen Regionen oder Cloudumgebungen verfügbar sein. Beispielsweise ist das Feature möglicherweise nicht in der Government Cloud vorhanden.
 - Einzelne Features in der Vorschau weisen möglicherweise mehr Nutzungs- und Supporteinschränkungen auf. Wenn ja, werden diese Informationen in der Regel in der Featuredokumentation aufgeführt.
-- Die Vorschauversionen werden mit einer standardmäßigen Supportstufe bereitgestellt und für Produktionsarbeitslasten empfohlen. 
+- Die Vorschauversionen werden standardmäßig unterstützt und können für Produktionsumgebungen verwendet werden. 
 
 
 
@@ -64,7 +64,7 @@ Sie haben Zugriff auf bevorstehende Features, zu denen Sie Feedback geben könne
 
 Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu gehören, die kommende Features ausprobieren.
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >    >  **Vorschaufeatures** für erweiterte Features aus.
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Vorschaufeatures** für erweiterte  >  **Features** aus.
 
 2. Schalten Sie die Einstellung zwischen **"Ein"** und **"Aus"** um, und wählen Sie **"Einstellungen speichern" aus.**
 

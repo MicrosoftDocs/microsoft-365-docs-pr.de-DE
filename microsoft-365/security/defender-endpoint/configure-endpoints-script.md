@@ -1,6 +1,6 @@
 ---
 title: Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts
-description: Verwenden Sie ein lokales Skript, um das Konfigurationspaket auf Geräten bereitzustellen, damit sie in den Dienst integriert sind.
+description: Verwenden Sie ein lokales Skript, um das Konfigurationspaket auf Geräten bereitzustellen, um das Onboarding der Geräte in den Dienst zu ermöglichen.
 keywords: Konfigurieren von Geräten mithilfe eines lokalen Skripts, Geräteverwaltung, Konfigurieren von Microsoft Defender für Endpunktgeräte
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,28 +16,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842170"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339646"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts
+# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Onboarding der Windows 10-Geräte mithilfe eines lokalen Skripts
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Sie können auch einzelne Geräte manuell in Defender für Endpunkt integrieren. Sie sollten dies zuerst tun, wenn Sie den Dienst testen, bevor Sie einen Commit für das Onboarding aller Geräte in Ihrem Netzwerk ausführen.
 
 > [!IMPORTANT]
 > Dieses Skript wurde für die Verwendung auf bis zu 10 Geräten optimiert.
 >
-> Verwenden Sie andere [Bereitstellungsoptionen,](configure-endpoints.md)um eine skalierungsbezogene Bereitstellung durchzuführen. Beispielsweise können Sie ein Onboardingskript auf mehr als 10 Geräten in der Produktion bereitstellen, wobei das Skript im [Onboard-Windows 10-Geräten mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)verfügbar ist.
+> Verwenden Sie andere [Bereitstellungsoptionen,](configure-endpoints.md)um eine skalierungsbezogene Bereitstellung durchzuführen. Sie können z. B. ein Onboardingskript auf mehr als 10 Produktionsgeräten bereitstellen, wobei das Skript im [Onboard-Windows 10-Geräten mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)verfügbar ist.
 
 ## <a name="onboard-devices"></a>Onboarding von Geräten 
 
@@ -47,9 +47,9 @@ Sie können auch einzelne Geräte manuell in Defender für Endpunkt integrieren.
 Sehen Sie sich die [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) oder [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Defender für Endpunkt anzuzeigen. 
 
 
-1.  Öffnen Sie das GP-Konfigurationspaket .zip Datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch von [Microsoft Defender Security Center](https://securitycenter.windows.com/)abrufen:
+1.  Öffnen Sie das GP-Konfigurationspaket .zip Datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch aus [Microsoft 365 Defender-Portal](https://security.microsoft.com/)abrufen:
 
-    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding** aus.
+    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **Device Management**  >  **Onboarding** aus.
 
     1. Wählen Sie Windows 10 als Betriebssystem aus.
 
@@ -66,20 +66,20 @@ Sehen Sie sich die [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
     1.  Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie **Als Administrator ausführen** aus.
 
-        ![Startmenü des Fensters, das auf "Als Administrator ausführen" verweist](images/run-as-admin.png)
+        ![Fenster Startmenü, das auf "Als Administrator ausführen" verweist](images/run-as-admin.png)
 
 4.  Geben Sie den Speicherort der Skriptdatei ein. Wenn Sie die Datei auf den Desktop kopiert haben, geben Sie Folgendes ein: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Drücken Sie die **EINGABETASTE,** oder klicken Sie auf **"OK".**
 
-Informationen dazu, wie Sie manuell überprüfen können, ob das Gerät kompatibel ist und Sensordaten ordnungsgemäß meldet, finden Sie unter "Behandeln von Problemen beim Onboarding von [Microsoft Defender für Endpunkten".](troubleshoot-onboarding.md)
+Informationen dazu, wie Sie manuell überprüfen können, ob das Gerät kompatibel ist und Sensordaten ordnungsgemäß meldet, finden Sie unter [Problembehandlung bei Microsoft Defender für Endpunkt-Integrationsproblemen.](troubleshoot-onboarding.md)
 
 
 >[!TIP]
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um zu überprüfen, ob ein Gerät ordnungsgemäß in den Dienst integriert ist. Weitere Informationen finden Sie unter [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender für Endpunkt.](run-detection-test.md)
 
 ## <a name="configure-sample-collection-settings"></a>Konfigurieren von Beispielsammlungseinstellungen
-Für jedes Gerät können Sie einen Konfigurationswert festlegen, um anzugeben, ob Beispiele vom Gerät erfasst werden können, wenn eine Anforderung über Microsoft Defender Security Center zum Übermitteln einer Datei für eine umfassende Analyse gestellt wird.
+Für jedes Gerät können Sie einen Konfigurationswert festlegen, um anzugeben, ob Beispiele vom Gerät erfasst werden können, wenn eine Anforderung über Microsoft 365 Defender zum Übermitteln einer Datei für eine umfassende Analyse gestellt wird.
 
 Sie können die Beispielfreigabeeinstellung auf dem Gerät manuell konfigurieren, indem Sie *regedit* verwenden oder eine *REG-Datei* erstellen und ausführen.  
 
@@ -90,7 +90,7 @@ Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
-Dabei gilt:<br>
+Dabei gilt Folgendes:<br>
 Der Namenstyp ist ein D-WORD-Element. <br>
 Die folgenden Werte sind möglich:
 - 0 – lässt keine Beispielfreigabe von diesem Gerät zu
@@ -105,9 +105,9 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 > [!NOTE]
 > Onboarding- und Offboarding-Richtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, andernfalls führt dies zu unvorhersehbaren Kollisionen.
 
-1. Abrufen des Offboarding-Pakets aus [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Rufen Sie das Offboarding-Paket aus [Microsoft 365 Defender Portal](https://security.microsoft.com/)ab:
 
-    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Offboarding** aus.
+    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **Device Management**  > **Offboarding** aus.
 
     1. Wählen Sie Windows 10 als Betriebssystem aus.
 
@@ -123,7 +123,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 
     1.  Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie **Als Administrator ausführen** aus.
 
-        ![Startmenü des Fensters, das auf "Als Administrator ausführen" verweist](images/run-as-admin.png)
+        ![Fenster Startmenü, das auf "Als Administrator ausführen" verweist](images/run-as-admin.png)
 
 4.  Geben Sie den Speicherort der Skriptdatei ein. Wenn Sie die Datei auf den Desktop kopiert haben, geben Sie Folgendes ein: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -139,9 +139,9 @@ Sie können die verschiedenen Überprüfungsschritte in der [Problembehandlung v
 Die Überwachung kann auch direkt im Portal oder mithilfe der verschiedenen Bereitstellungstools erfolgen.
 
 ### <a name="monitor-devices-using-the-portal"></a>Überwachen von Geräten mithilfe des Portals
-1. Wechseln Sie zu Microsoft Defender Security Center.
+1. Wechseln Sie zu Microsoft 365 Defender Portal.
 
-2. Klicken Sie auf **"Geräteliste".**
+2. Klicken Sie auf **"Gerätebestand".**
 
 3. Stellen Sie sicher, dass Geräte angezeigt werden.
 

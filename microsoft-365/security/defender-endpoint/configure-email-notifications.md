@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 2b638742e29d5ca0a8b74adfa6796380114d24a3
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327035"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339502"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurieren von Warnungsbenachrichtigungen in Microsoft Defender für Endpunkt
 
@@ -50,7 +50,7 @@ Die E-Mail-Benachrichtigung enthält grundlegende Informationen zu der Warnung u
 Sie können Regeln erstellen, die die Geräte und Warnungsschweregrade zum Senden von E-Mail-Benachrichtigungen für und die Benachrichtigungsempfänger bestimmen.
 
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **E-Mail-Benachrichtigungen** aus.
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >    >  **Endpunkte Allgemeine**  >  **E-Mail-Benachrichtigungen** aus.
 
 2. Klicken Sie auf **"Element hinzufügen".**
 

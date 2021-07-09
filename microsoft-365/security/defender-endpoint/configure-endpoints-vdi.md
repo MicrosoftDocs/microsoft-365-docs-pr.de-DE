@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843210"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339634"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding der nicht persistenten VDI-Geräte (Virtual Desktop Infrastructure)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "52843210"
 - VDI-Geräte (Virtual Desktop Infrastructure)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)
 
@@ -63,9 +63,9 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und heb
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>For Windows 10 or Windows Server 2019
 
-1.  Öffnen Sie das VDI-Konfigurationspaket .zip Datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch von [Microsoft Defender Security Center](https://securitycenter.windows.com/)abrufen:
+1.  Öffnen Sie das VDI-Konfigurationspaket .zip Datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch aus [Microsoft 365 Defender Portal](https://security.microsoft.com/)abrufen:
 
-    1.  Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding** aus.
+    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **Device Management**  >  **Onboarding** aus.
 
     1. Wählen Sie Windows 10 als Betriebssystem aus.
 
@@ -82,7 +82,7 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und heb
     > [!NOTE]
     > Wenn der Ordner nicht angezeigt `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` wird, ist er möglicherweise ausgeblendet. Sie müssen die Option **"Ausgeblendete Dateien und Ordner anzeigen"** im Datei-Explorer auswählen.
 
-3. Öffnen Sie ein Lokales Gruppenrichtlinien-Editor-Fenster, und navigieren Sie zum Start von **Computerkonfiguration**  >  **Windows Einstellungen**  >  **Skripts.**  >  
+3. Öffnen Sie ein Fenster "Editor für lokale Gruppenrichtlinien", und navigieren Sie zum Start von **"Computerkonfiguration**  >  **Windows Einstellungen**  >  **Skripts".**  >  
 
    > [!NOTE]
    > Domänengruppenrichtlinien können auch für das Onboarding nicht persistenter VDI-Geräte verwendet werden.
@@ -111,11 +111,11 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und heb
    
       - Für einen einzelnen Eintrag für jedes Gerät: 
     
-        Überprüfen Sie nur einen Eintrag in Microsoft Defender Security Center.
+        Überprüfen Sie nur einen Eintrag im Microsoft 365 Defender Portal.
 
       - Für mehrere Einträge für jedes Gerät: 
        
-        Überprüfen Sie mehrere Einträge in Microsoft Defender Security Center.
+        Überprüfen Sie mehrere Einträge in Microsoft 365 Defender Portal.
 
 6. Klicken Sie im Navigationsbereich auf **"Geräteliste".**
 
@@ -155,7 +155,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Weitere Informationen zu DISM-Befehlen und zur Offlinewartung finden Sie in den folgenden Artikeln:
-- [Ändern eines Windows-Images mithilfe von DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Ändern eines Windows Bilds mit DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM-Imageverwaltung Command-Line Optionen](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Verringern der Größe der Komponente Store in einem Offline-Windows-Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 

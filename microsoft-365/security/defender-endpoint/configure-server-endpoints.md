@@ -1,5 +1,5 @@
 ---
-title: Onboarding Windows-Server in den Microsoft Defender für Endpunktdienst
+title: Onboarding von Windows Servern in den Microsoft Defender für Endpunktdienst
 description: Integrieren Sie Windows-Server, damit sie Sensordaten an den Microsoft Defender für Endpunkt-Sensor senden können.
 keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
@@ -16,29 +16,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844334"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339238"
 ---
-# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding Windows-Server in den Microsoft Defender für Endpunktdienst
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboarding von Windows Servern in den Microsoft Defender für Endpunktdienst
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
-- Windows Server 2008 R2 SP1
+- Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server (SAC) Version 1803 und höher
 - Windows Server 2019 und höher
 - Windows Server 2019 Core Edition
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender für Endpunkt erweitert die Unterstützung, um auch das Windows Serverbetriebssystem einzuschließen. Diese Unterstützung bietet erweiterte Angriffserkennungs- und Untersuchungsfunktionen nahtlos über die Microsoft Defender Security Center Konsole.
+Defender für Endpunkt erweitert die Unterstützung, um auch das Windows Server-Betriebssystem einzuschließen. Diese Unterstützung bietet erweiterte Angriffserkennungs- und Untersuchungsfunktionen nahtlos über die Microsoft 365 Defender Konsole.
 
 Eine praktische Anleitung dazu, was für Lizenzierung und Infrastruktur erforderlich ist, finden Sie unter ["Schützen Windows Server mit Defender für Endpunkt".](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)
 
@@ -52,7 +52,7 @@ Sie können Windows Server 2008 R2 SP1, Windows Server 2012 R2 und Windows Serve
 - **Option 2:** [Onboarding über das Azure Security Center](#option-2-onboard-windows-servers-through-azure-security-center)
 - **Option 3:** [Onboarding bis Microsoft Endpoint Manager Version 2002 und höher](#option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later)
 
-Nachdem Sie die Integrationsschritte mithilfe einer der bereitgestellten Optionen abgeschlossen haben, müssen Sie [System Center Endpoint Protection Clients konfigurieren und aktualisieren.](#configure-and-update-system-center-endpoint-protection-clients)
+Nach Abschluss der Integrationsschritte mithilfe einer der bereitgestellten Optionen müssen Sie [System Center Endpoint Protection Clients konfigurieren und aktualisieren.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
 > Die eigenständige Serverlizenz für Defender für Endpunkt ist pro Knoten erforderlich, um einen Windows Server über Microsoft Monitoring Agent (Option 1) oder über Microsoft Endpoint Manager (Option 3) zu integrieren. Alternativ ist eine Azure Defender für Server-Lizenz pro Knoten erforderlich, um einen Windows Server über das Azure Security Center (Option 2) zu integrieren. Weitere Informationen finden Sie unter ["Unterstützte Features" in Azure Defender.](/azure/security-center/security-center-services)
@@ -61,12 +61,12 @@ Nachdem Sie die Integrationsschritte mithilfe einer der bereitgestellten Optione
 
 Sie müssen MMA für Windows Server installieren und konfigurieren, um Sensordaten an Defender für Endpunkt zu melden. Weitere Informationen finden Sie unter [Sammeln von Protokolldaten mit dem Azure Log Analytics-Agent.](/azure/azure-monitor/platform/log-analytics-agent)
 
-Wenn Sie bereits System Center Operations Manager (SCOM) oder Azure Monitor (früher Operations Management Suite (OMS) verwenden, fügen Sie die Microsoft Monitoring Agent (MMA) an, um über multihoming-Unterstützung an Ihren Defender für Endpunkt-Arbeitsbereich zu berichten.
+Wenn Sie bereits System Center Operations Manager (SCOM) oder Azure Monitor (früher Operations Management Suite (OMS) verwenden, fügen Sie die Microsoft Monitoring Agent (MMA) an, um über multihoming-Unterstützung An Ihren Defender für Endpunkt-Arbeitsbereich zu melden.
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
 
 1. Erfüllen Sie die Onboardinganforderungen, die im Abschnitt **"Bevor Sie beginnen"** beschrieben sind.
-2. Aktivieren Sie die Serverüberwachung aus dem Microsoft Defender Security Center.
+2. Aktivieren Sie die Serverüberwachung über Microsoft 365 Defender Portal.
 3. Installieren und konfigurieren Sie MMA für den Server, um Sensordaten an Defender für Endpunkt zu melden.
 4. Konfigurieren und Aktualisieren System Center Endpoint Protection Clients.
 
@@ -94,7 +94,7 @@ Für Windows Server 2008 R2 SP1 und Windows Server 2012 R2: [Konfigurieren und A
 > [!NOTE]
 > Dieser Schritt ist nur erforderlich, wenn Ihre Organisation System Center Endpoint Protection (SCEP) verwendet und Sie Windows Server 2008 R2 SP1 und Windows Server 2012 R2 integrieren.
 
-### <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installieren und Konfigurieren von Microsoft Monitoring Agent (MMA) zum Melden von Sensordaten an Microsoft Defender für Endpunkt
+### <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>Installieren und Konfigurieren von Microsoft Monitoring Agent (MMA), um Sensordaten an Microsoft Defender für Endpunkt zu melden
 
 1. Laden Sie die Agent-Setupdatei herunter: [Windows 64-Bit-Agent.](https://go.microsoft.com/fwlink/?LinkId=828603)
 
@@ -117,11 +117,11 @@ Wenn Ihre Server einen Proxy für die Kommunikation mit Defender für Endpunkt v
 
 Wenn ein Proxy oder eine Firewall verwendet wird, stellen Sie sicher, dass Server direkt und ohne SSL-Abfangen auf alle Microsoft Defender für Endpunkt-Dienst-URLs zugreifen können. Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf Defender für Endpunkt-Dienst-URLs.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Die Verwendung von SSL-Abfangen verhindert, dass das System mit dem Defender für Endpunkt-Dienst kommuniziert.
 
-Nach Abschluss des Vorgangs sollten Innerhalb einer Stunde integrierte Windows-Server im Portal angezeigt werden.
+Nach Abschluss des Vorgangs sollten Innerhalb einer Stunde Windows Server im Portal integriert sein.
 
-### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Option 2: Onboarding Windows Server über das Azure Security Center
+### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Option 2: Onboarding von Windows Servern über das Azure Security Center
 
-1. Wählen Sie im Navigationsbereich Microsoft Defender Security Center **Einstellungen**  >  **Geräteverwaltungs-Onboarding**  >  aus.
+1. Wählen Sie im Navigationsbereich Microsoft 365 Defender **Einstellungen** Geräteverwaltung für  >  **Endpunkte**  >    >  **aus.**
 
 2. Wählen Sie **Windows Server 2008 R2 SP1, 2012 R2 und 2016** als Betriebssystem aus.
 
@@ -133,8 +133,8 @@ Nach Abschluss der Integrationsschritte müssen Sie [System Center Endpoint Prot
 
 > [!NOTE]
 >
-> - Damit das Onboarding über Azure Defender for Servers wie erwartet funktioniert, müssen auf dem Server ein entsprechender Arbeitsbereich und Schlüssel in den MMA-Einstellungen (Microsoft Monitoring Agent) konfiguriert sein.
-> - Nach der Konfiguration wird das entsprechende Cloud-Management Pack auf dem Computer bereitgestellt, und der Sensorprozess (MsSenseS.exe) wird bereitgestellt und gestartet.
+> - Damit das Onboarding über Azure Defender für Server wie erwartet funktioniert, müssen auf dem Server ein entsprechender Arbeitsbereich und Schlüssel in den MMA-Einstellungen (Microsoft Monitoring Agent) konfiguriert sein.
+> - Nach der Konfiguration wird das entsprechende Cloud Management Pack auf dem Computer bereitgestellt, und der Sensorprozess (MsSenseS.exe) wird bereitgestellt und gestartet.
 > - Dies ist auch erforderlich, wenn der Server für die Verwendung eines OMS-Gatewayservers als Proxy konfiguriert ist.
 
 ### <a name="option-3-onboard-windows-servers-through-microsoft-endpoint-manager-version-2002-and-later"></a>Option 3: Onboarding von Windows Servern bis Microsoft Endpoint Manager Version 2002 und höher
@@ -158,9 +158,9 @@ Sie können Windows Server (SAC) Version 1803, Windows Server 2019 oder Windows 
 > - Das Onboarding-Paket für Windows Server 2019 bis Microsoft Endpoint Manager enthält derzeit ein Skript. Weitere Informationen zum Bereitstellen von Skripts in Configuration Manager finden Sie unter [Pakete und Programme in Configuration Manager.](/configmgr/apps/deploy-use/packages-and-programs)
 > - Ein lokales Skript eignet sich für einen Machbarkeitsstudie, sollte jedoch nicht für die Produktionsbereitstellung verwendet werden. Für eine Produktionsbereitstellung empfehlen wir die Verwendung von Gruppenrichtlinien oder Microsoft Endpoint Configuration Manager.
 
-Die Unterstützung für Windows Server bietet einen tieferen Einblick in Serveraktivitäten, die Abdeckung für die Erkennung von Kernel- und Arbeitsspeicherangriffen und ermöglicht Reaktionsaktionen.
+Die Unterstützung für Windows Server bietet einen tieferen Einblick in Serveraktivitäten, die Abdeckung der Kernel- und Speicherangriffserkennung und ermöglicht Reaktionsaktionen.
 
-1. Konfigurieren Sie die Defender für Endpunkt-Onboardingeinstellungen auf dem Windows-Server mit den gleichen Tools und Methoden für Windows 10 Geräte. Weitere Informationen finden Sie unter [Onboarding Windows 10 Geräte.](configure-endpoints.md)
+1. Konfigurieren Sie die Integrationseinstellungen von Defender für Endpunkt auf dem Windows Server mit den gleichen Tools und Methoden für Windows 10 Geräte. Weitere Informationen finden Sie unter [Onboarding Windows 10 Geräte.](configure-endpoints.md)
 
 2. Wenn Sie eine Antischadsoftware-Lösung eines Drittanbieters ausführen, müssen Sie die folgenden Einstellungen für den passiven Microsoft Defender AV-Modus anwenden. Stellen Sie sicher, dass es ordnungsgemäß konfiguriert wurde:
 
@@ -186,7 +186,7 @@ Die Unterstützung für Windows Server bietet einen tieferen Einblick in Servera
 
     Wenn das Ergebnis "Der angegebene Dienst ist nicht als installierter Dienst vorhanden" lautet, müssen Sie Microsoft Defender AV installieren. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus in Windows 10.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-    Informationen zur Verwendung von Gruppenrichtlinien zum Konfigurieren und Verwalten von Microsoft Defender Antivirus auf Ihren Windows Servern finden Sie unter [Verwenden von Gruppenrichtlinieneinstellungen zum Konfigurieren und Verwalten Microsoft Defender Antivirus.](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
+    Informationen zur Verwendung von Gruppenrichtlinien zum Konfigurieren und Verwalten von Microsoft Defender Antivirus auf Ihren Windows Servern finden Sie unter [Verwenden von Gruppenrichtlinieneinstellungen zum Konfigurieren und Verwalten von Microsoft Defender Antivirus.](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
 
 ## <a name="integration-with-azure-defender"></a>Integration in Azure Defender
 
@@ -199,8 +199,8 @@ Die folgenden Funktionen sind in dieser Integration enthalten:
     > [!NOTE]
     > Die Integration zwischen Azure Defender für Server und Microsoft Defender für Endpunkt wurde erweitert, um [Windows Server 2019 und Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)zu unterstützen.
 
-- Windows Server, die von Azure Defender überwacht werden, sind auch in Defender für Endpunkt verfügbar – Azure Defender stellt nahtlos eine Verbindung mit dem Defender für Endpunkt-Mandanten her und bietet eine einheitliche Ansicht über Clients und Server hinweg.  Darüber hinaus sind Defender für Endpunkt-Warnungen in der Azure Defender-Konsole verfügbar.
-- Serveruntersuchung– Azure Defender-Kunden können auf Microsoft Defender Security Center zugreifen, um detaillierte Untersuchungen durchzuführen, um den Umfang einer potenziellen Verletzung aufdecken zu können.
+- Windows von Azure Defender überwachte Server sind auch in Defender für Endpunkt verfügbar – Azure Defender stellt eine nahtlose Verbindung mit dem Defender für Endpunkt-Mandanten her und bietet eine einheitliche Ansicht über Clients und Server hinweg.  Darüber hinaus sind Defender für Endpunkt-Warnungen in der Azure Defender-Konsole verfügbar.
+- Serveruntersuchung – Azure Defender-Kunden können auf Microsoft 365 Defender Portal zugreifen, um detaillierte Untersuchungen durchzuführen, um den Umfang einer potenziellen Verletzung aufdecken zu können.
 
 > [!IMPORTANT]
 > - Wenn Sie Azure Defender zum Überwachen von Servern verwenden, wird automatisch ein Defender für Endpunkt-Mandant erstellt (in den USA für US-Benutzer, in der EU für Benutzer in Europa und Großbritannien).<br>
@@ -223,15 +223,15 @@ Die folgenden Schritte sind erforderlich, um diese Integration zu ermöglichen:
 
 Sie können Windows Server (SAC), Windows Server 2019 und Windows Server 2019 Core Edition in derselben Methode offboarden, die für Windows 10 Clientgeräte verfügbar ist.
 
-Für andere Windows Serverversionen haben Sie zwei Möglichkeiten, Windows Server aus dem Dienst zu offboarden:
+Für andere Windows Serverversionen stehen Ihnen zwei Optionen zum Offboarding Windows Server aus dem Dienst zur Verfügung:
 
 - Deinstallieren des MMA-Agents
 - Entfernen der Defender für Endpunkt-Arbeitsbereichskonfiguration
 
 > [!NOTE]
-> Das Offboarding bewirkt, dass der Windows-Server das Senden von Sensordaten an das Portal beendet, aber Daten vom Windows-Server, einschließlich Verweise auf alle Warnungen, die er gesendet hat, werden bis zu 6 Monate lang aufbewahrt.
+> Das Offboarding bewirkt, dass der Windows Server das Senden von Sensordaten an das Portal beendet, aber Daten vom Windows-Server, einschließlich Verweise auf warnungen, die er gesendet hat, werden bis zu 6 Monate lang aufbewahrt.
 
-### <a name="uninstall-windows-servers-by-uninstalling-the-mma-agent"></a>Deinstallieren Windows Server durch Deinstallieren des MMA-Agents
+### <a name="uninstall-windows-servers-by-uninstalling-the-mma-agent"></a>Deinstallieren sie Windows Server, indem Sie den MMA-Agent deinstallieren.
 
 Um den Windows Server zu offboarden, können Sie den MMA-Agent vom Windows-Server deinstallieren oder ihn von der Berichterstellung an Ihren Defender für Endpunkt-Arbeitsbereich trennen. Nach dem Offboarding des Agents sendet der Windows Server keine Sensordaten mehr an Defender für Endpunkt.
 Weitere Informationen finden Sie unter [So deaktivieren Sie einen Agent.](/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent)
@@ -249,13 +249,13 @@ Zum Offboarding des Windows Servers können Sie eine der folgenden Methoden verw
 
 2. Wählen Sie den Defender für Endpunkt-Arbeitsbereich aus, und klicken Sie auf **"Entfernen".**
 
-    ![Abbildung von Microsoft Monitoring Agent Eigenschaften](images/atp-mma.png)
+    ![Abbildung Microsoft Monitoring Agent Eigenschaften](images/atp-mma.png)
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>Ausführen eines PowerShell-Befehls zum Entfernen der Konfiguration
 
 1. Abrufen Ihrer Arbeitsbereichs-ID:
 
-   1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding** aus.
+   1. Wählen Sie im Navigationsbereich Microsoft 365 Defender **Einstellungen** Geräteverwaltung für  >  **Endpunkte**  >    >  **aus.**
 
    1. Wählen Sie **Windows Server 2008 R2 SP1, 2012 R2 und 2016** als Betriebssystem aus, und rufen Sie Ihre Arbeitsbereichs-ID ab:
 
@@ -362,7 +362,7 @@ Stellen Sie für Windows Server 2008 R2 PS1 sicher, dass Sie die folgenden Anfor
   
 - Installieren Von [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (oder höher) oder [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-Überprüfen Sie, ob die KBs vorhanden sind, bevor Sie Windows Server 2008 R2 integrieren. Dadurch können Sie alle Server integrieren, wenn Configuration Manager keine Server verwaltet.
+Überprüfen Sie, ob die KBs vorhanden sind, bevor Sie Windows Server 2008 R2 integrieren. Dadurch können Sie alle Server integrieren, wenn Sie configuration Manager nicht über die Verwaltung von Servern verfügen.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

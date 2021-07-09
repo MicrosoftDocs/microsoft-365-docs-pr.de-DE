@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
-- m365solution-aed
+- m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
 localization_priority: Normal
@@ -19,13 +19,13 @@ search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: Microsoft 365 bietet drei eDiscovery-Tools, mit denen Sie nach Inhalten suchen und exportieren können, die sich an verschiedenen Speicherorten befinden, z. B. Exchange Postfächer, SharePoint und OneDrive for Business Websites, Microsoft 365-Gruppen, Microsoft Teams und Skype for Business Unterhaltungen. Core eDiscovery und Advanced eDiscovery bieten viele zusätzliche Features, die Sie bei der Verwaltung Ihrer Untersuchungen unterstützen.
-ms.openlocfilehash: dc332e1a399588e4a1e969af45da6cff92008461
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+description: Microsoft 365 bietet drei eDiscovery-Tools, mit denen Sie nach Inhalten suchen und exportieren können, die sich an verschiedenen Speicherorten befinden, z. B. Exchange Postfächer, SharePoint und OneDrive for Business Websites, Microsoft 365 Gruppen, Microsoft Teams und Skype for Business Unterhaltungen. Core eDiscovery und Advanced eDiscovery bieten viele zusätzliche Features, die Sie bei der Verwaltung Ihrer Untersuchungen unterstützen.
+ms.openlocfilehash: a62c8a53081a79e4afd98c82bfaca486a6155a6b
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256342"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341712"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>eDiscovery-Lösungen in Microsoft 365
 
@@ -92,7 +92,7 @@ Hier finden Sie eine Beschreibung der einzelnen eDiscovery-Funktionen.
 
 - **Verwaltung von Verwaltungsberechtigten**. Verwalten Sie die Personen, die Sie als Personen identifiziert haben, die für den Fall von Interesse sind (als *Verwahrer* bezeichnet) und andere Datenquellen, die möglicherweise keinem Verwahrer zugeordnet sind. Wenn Sie verwahrte und nicht verwahrte Datenquellen zu einem Fall hinzufügen, können Sie eine gesetzliche Aufbewahrungspflicht für diese Datenquellen festlegen, mit verwahrten Personen kommunizieren, indem Sie den Benachrichtigungsprozess für gesetzliche Aufbewahrungsdaten verwenden, und Nachschlage- und Nicht-Verwahrer-Datenquellen durchsuchen, um inhalte zu sammeln, die für den Fall relevant sind.
 
-- **Gesetzliche Aufbewahrungsbenachrichtigungen.** Verwalten sie den Prozess der Kommunikation mit den Fallverwaltern. Eine Benachrichtigung über gesetzliche Aufbewahrungspflicht weist Verwahrer an, Inhalte aufzubewahren, die für den Fall relevant sind. Sie können die Benachrichtigungen nachverfolgen, die von Verwahrern empfangen, gelesen und bestätigt wurden. Mit dem Kommunikationsworkflow in Advanced eDiscovery können Sie erste Benachrichtigungen, Erinnerungen und Eskalationen erstellen und senden, wenn Verwalter eine Aufbewahrungsbenachrichtigung nicht bestätigen.
+- **Gesetzliche Aufbewahrungsbenachrichtigungen.** Verwalten sie den Prozess der Kommunikation mit den Fallverwaltern. Eine Benachrichtigung über gesetzliche Aufbewahrungspflicht weist Verwahrer an, Inhalte aufzubewahren, die für den Fall relevant sind. Sie können die Benachrichtigungen nachverfolgen, die von Verwahrern empfangen, gelesen und bestätigt wurden. Mit dem Kommunikationsworkflow in Advanced eDiscovery können Sie anfängliche Benachrichtigungen, Erinnerungen und Eskalationen erstellen und senden, wenn Verwalter eine Aufbewahrungsbenachrichtigung nicht bestätigen.
 
 - **Erweiterte Indizierung**. Wenn Sie einem Fall Datenquellen für Verwahrer und Nicht-Verwahrer hinzufügen, werden die zugehörigen Inhaltsspeicherorte neu indiziert (in einem Prozess namens *"Erweiterte Indizierung"),* sodass alle Inhalte, die als teilweise indiziert eingestuft wurden, erneut verarbeitet werden, damit sie vollständig durchsuchbar sind, wenn Sie Daten für eine Untersuchung sammeln.
 
@@ -118,7 +118,7 @@ Hier finden Sie eine Beschreibung der einzelnen eDiscovery-Funktionen.
 
 - **Berechnete Dokumentmetadaten.** Viele Advanced eDiscovery Features, z. B. erweiterte Indizierung, Unterhaltungsthreading, Analysen und Vorhersagecodierung, fügen Metadateneigenschaften hinzu, um festgelegte Dokumente zu überprüfen. Diese Metadaten enthalten Informationen im Zusammenhang mit der Funktion, die ein bestimmtes Feature ausgeführt hat. Beim Überprüfen von Dokumenten können Sie nach Metadateneigenschaften filtern, um Dokumente anzuzeigen, die Ihren Filterkriterien entsprechen. Diese Metadaten können nach dem Exportieren von Prüfdateisatzdokumenten in Drittanbieterüberprüfungsanwendungen importiert werden.
 
-- **Transparenz lang andauernder Aufträge.** Aufträge in Advanced eDiscovery sind in der Regel lange dauernde Prozesse, die durch Benutzeraktionen ausgelöst werden, z. B. das Hinzufügen von Verwaltern zu einem Fall, das Hinzufügen von Inhalten zu einem Prüfdateisatz, das Ausführen von Analysen und das Trainieren von Vorhersagecodierungsmodellen. Sie können den Status dieser Aufträge nachverfolgen und Supportinformationen abrufen, wenn Sie Probleme an den MS-Support eskalieren müssen.
+- **Transparenz lang andauernder Aufträge.** Aufträge in Advanced eDiscovery sind in der Regel lange dauernde Prozesse, die durch Benutzeraktionen ausgelöst werden, z. B. das Hinzufügen von Verwaltern zu einem Fall, das Hinzufügen von Inhalten zu einem Prüfdateisatz, das Ausführen von Analysen und das Trainieren von Modellen für die Vorhersage von Codierung. Sie können den Status dieser Aufträge nachverfolgen und Supportinformationen abrufen, wenn Sie Probleme an den MS-Support eskalieren müssen.
 
 - **Exportieren Sie an Azure Storage Standort** im Besitz des Kunden. Wenn Sie Dokumente aus einem Prüfdateisatz exportieren, haben Sie die Möglichkeit, sie in ein Azure Storage Konto zu exportieren, das von Ihrer Organisation verwaltet wird. Darüber hinaus können Sie mit Advanced eDiscovery anpassen, welche Daten exportiert werden. Dazu gehört das Exportieren von Dateimetadaten, systemeigenen Dateien, Textdateien, Tags und bearbeiteten Dokumenten, die in einer PDF-Datei gespeichert wurden.
 
@@ -134,7 +134,7 @@ In den folgenden Abschnitten werden die Mindestabonnementanforderungen für die 
 
 ### <a name="core-ediscovery"></a>Core eDiscovery
 
-- Microsoft 365 E3-Abonnement
+- Microsoft 365 E3 Abonnement
 - Microsoft 365 G3-Abonnement
 - Microsoft 365 Education A3- oder Office 365 Education A3-Abonnement
 
@@ -174,6 +174,6 @@ In den folgenden Artikeln erfahren Sie mehr über die eDiscovery-Lösungen in Mi
 
 Informationen dazu, welche eDiscovery-Features gestartet wurden, in der Einführung sind oder sich in der Entwicklung befinden, finden Sie in der [Microsoft 365 Roadmap.](https://aka.ms/eDiscoRoadMap)
 
-## <a name="training"></a>Schulungen
+## <a name="training"></a>Schulung
 
 Die Schulung Ihrer IT-Administratoren, eDiscovery-Manager und Compliance-Untersuchungsteams in den Grundlagen für die Inhaltssuche, Core eDiscovery und Advanced eDiscovery kann Ihrer Organisation helfen, schneller mit Microsoft 365 eDiscovery-Tools zu beginnen. Microsoft 365 bietet die folgende Ressource, um diesen Benutzern in Ihrer Organisation bei den ersten Schritten mit eDiscovery zu helfen: [Beschreiben der eDiscovery- und Überwachungsfunktionen von Microsoft 365.](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365)

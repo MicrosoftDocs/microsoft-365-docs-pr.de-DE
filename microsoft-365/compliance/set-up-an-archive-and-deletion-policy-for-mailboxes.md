@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Erfahren Sie, wie Sie eine Archivierungs- und Löschrichtlinie in Microsoft 365 erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062166"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341640"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation
 
@@ -63,11 +63,11 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
 > [!NOTE]
 > Sie können Archivpostfächer während dieses Prozesses jederzeit aktivieren, solange sie zu einem bestimmten Zeitpunkt aktiviert sind, bevor Sie den Prozess abschließen. Wenn ein Archivpostfach nicht aktiviert ist, wird keine Aktion für Elemente ausgeführt, denen eine Archiv- oder Löschrichtlinie zugewiesen ist.
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie zu <https://compliance.microsoft.com>.
 
 2. Melden Sie sich mit Ihrem globalen Administratorkonto an.
     
-3. Wechseln Sie im Security & Compliance Center zum **Informationsgovernance-Archiv.** \> 
+3. Klicken Sie im Microsoft 365 Compliance Center auf **"Informationsgovernance"** und dann auf die Registerkarte **"Archiv".**
 
     Es wird eine Liste der Postfächer in Ihrer Organisation angezeigt und ob das entsprechende Archivpostfach aktiviert oder deaktiviert ist.
 
@@ -231,7 +231,7 @@ Wenn ein neues Postfach erstellt wird, wird ihm standardmäßig eine Aufbewahrun
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Optional) Schritt 5: Ausführen des Assistenten für verwaltete Ordner zum Anwenden der neuen Einstellungen
 
-Nachdem Sie die neue Aufbewahrungsrichtlinie in Schritt 4 auf Postfächer angewendet haben, kann es bis zu 7 Tage in Exchange Online dauern, bis die neuen Aufbewahrungseinstellungen auf die Postfächer angewendet wurden. Der Grund dafür ist, dass ein Prozess, der als Assistent für verwaltete Ordner bezeichnet *wird,* Postfächer mindestens einmal alle 7 Tage verarbeitet. Anstatt auf die Ausführung des Assistenten für verwaltete Ordner zu warten, können Sie dies erzwingen, indem Sie das Cmdlet **"Start-ManagedFolderAssistant"** in Exchange Online PowerShell ausführen.
+Nachdem Sie die neue Aufbewahrungsrichtlinie in Schritt 4 auf Postfächer angewendet haben, kann es bis zu 7 Tage in Exchange Online dauern, bis die neuen Aufbewahrungseinstellungen auf die Postfächer angewendet werden. Der Grund dafür ist, dass ein Prozess, der als Assistent für verwaltete Ordner bezeichnet *wird,* Postfächer mindestens einmal alle 7 Tage verarbeitet. Anstatt auf die Ausführung des Assistenten für verwaltete Ordner zu warten, können Sie dies erzwingen, indem Sie das Cmdlet **"Start-ManagedFolderAssistant"** in Exchange Online PowerShell ausführen.
 
  **Was geschieht, wenn Sie den Assistenten für verwaltete Ordner ausführen?** Es wendet die Einstellungen in der Aufbewahrungsrichtlinie an, indem Elemente im Postfach überprüft und ermittelt wird, ob sie der Aufbewahrung unterliegen. Anschließend stempelt es Elemente, die der Aufbewahrung unterliegen, mit dem entsprechenden Aufbewahrungstag und führt dann die angegebene Aufbewahrungsaktion für Elemente aus, die über das Aufbewahrungsalter hinausgeht.
   
@@ -249,14 +249,14 @@ Führen Sie die folgenden Schritte aus, um eine Verbindung mit Exchange Online P
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
-Das ist alles. Sie haben eine Archivierungs- und Löschrichtlinie für die Organisation "Almer House" eingerichtet.
+Das ist alles. Sie haben eine Archivierungs- und Löschrichtlinie für die Organisation "Dataset House" eingerichtet.
 
 > [!NOTE]
 > Wie bereits erwähnt, verarbeitet der Assistent für verwaltete Ordner Postfächer mindestens einmal alle 7 Tage. Es ist also möglich, dass ein Postfach häufiger vom Assistenten für verwaltete Ordner verarbeitet werden kann. Außerdem können Administratoren nicht prognostizieren, wenn ein Postfach das nächste Mal vom Assistenten für verwaltete Ordner verarbeitet wird. Dies ist ein Grund, warum Sie es möglicherweise manuell ausführen möchten. Wenn Sie jedoch vorübergehend verhindern möchten, dass der Assistent für verwaltete Ordner die neuen Aufbewahrungseinstellungen auf ein Postfach anwendet, können Sie den Befehl ausführen, `Set-Mailbox -ElcProcessingDisabled $true` um den Assistenten für verwaltete Ordner vorübergehend von der Verarbeitung eines Postfachs zu deaktivieren. Führen Sie den Befehl aus, um den Assistenten für verwaltete Ordner für ein Postfach erneut zu `Set-Mailbox -ElcProcessingDisabled $false` aktivieren. Wenn ein Postfachbenutzer über ein deaktiviertes Konto verfügt, verarbeiten wir die Verschiebungselemente nicht, um die Archivaktion für dieses Postfach zu archivieren.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Optional) Schritt 6: Festlegen der neuen Aufbewahrungsrichtlinie als Standard für Ihre Organisation
 
-In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfächern zuweisen. Sie können jedoch Exchange Online so konfigurieren, dass die neue Aufbewahrungsrichtlinie neuen Postfächern zugewiesen wird, die in Zukunft erstellt werden. Dazu verwenden Sie Exchange Online PowerShell, um den Standardpostfachplan Ihrer Organisation zu aktualisieren. Ein *Postfachplan* ist eine Vorlage, die Eigenschaften für neue Postfächer automatisch konfiguriert.  In diesem optionalen Schritt können Sie die aktuelle Aufbewahrungsrichtlinie, die dem Postfachplan zugewiesen ist (standardmäßig die Standard-MRM-Richtlinie), durch die Aufbewahrungsrichtlinie ersetzen, die Sie in Schritt 3 erstellt haben. Nachdem Sie den Postfachplan aktualisiert haben, wird die neue Aufbewahrungsrichtlinie neuen Postfächern zugewiesen.
+In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfächern zuweisen. Sie können jedoch Exchange Online so konfigurieren, dass die neue Aufbewahrungsrichtlinie neuen Postfächern zugewiesen wird, die in Zukunft erstellt werden. Verwenden Sie dazu Exchange Online PowerShell, um den Standardpostfachplan Ihrer Organisation zu aktualisieren. Ein *Postfachplan* ist eine Vorlage, die Eigenschaften für neue Postfächer automatisch konfiguriert.  In diesem optionalen Schritt können Sie die aktuelle Aufbewahrungsrichtlinie, die dem Postfachplan zugewiesen ist (standardmäßig die Standard-MRM-Richtlinie), durch die Aufbewahrungsrichtlinie ersetzen, die Sie in Schritt 3 erstellt haben. Nachdem Sie den Postfachplan aktualisiert haben, wird die neue Aufbewahrungsrichtlinie neuen Postfächern zugewiesen.
 
 1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -278,7 +278,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Wie wird das Aufbewahrungsalter berechnet? Das Aufbewahrungsalter von Postfachelementen wird ab dem Datum der Zustellung oder dem Erstellungsdatum für Elemente wie Nachrichtenentwürfe berechnet, die nicht gesendet, aber vom Benutzer erstellt werden. Wenn der Assistent für verwaltete Ordner Elemente in einem Postfach verarbeitet, werden alle Elemente, die Aufbewahrungstags mit der Aufbewahrungsaktion Löschen und Wiederherstellung zulassen oder Endgültig löschen aufweisen, mit einem Start- und einem Ablaufdatum gestempelt. Elemente mit einem Archivtag werden mit einem Verschiebungsdatum gestempelt. 
+- Wie wird das Aufbewahrungsalter berechnet? Das Aufbewahrungsalter von Postfachelementen wird ab dem Datum der Zustellung oder dem Erstellungsdatum für Elemente wie Entwurfsnachrichten berechnet, die nicht gesendet, aber vom Benutzer erstellt werden. Wenn der Assistent für verwaltete Ordner Elemente in einem Postfach verarbeitet, werden alle Elemente, die Aufbewahrungstags mit der Aufbewahrungsaktion Löschen und Wiederherstellung zulassen oder Endgültig löschen aufweisen, mit einem Start- und einem Ablaufdatum gestempelt. Elemente mit einem Archivtag werden mit einem Verschiebungsdatum gestempelt. 
 
 - Die folgende Tabelle enthält weitere Informationen zu jedem Aufbewahrungstag, das der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt wird, die durch Ausführen der Schritte in diesem Thema erstellt wurde.
 
@@ -296,4 +296,4 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
 
     > <sup>\*</sup>Benutzer können das Tool "Gelöschte Elemente wiederherstellen" in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) verwenden, um ein gelöschtes Element innerhalb des Aufbewahrungszeitraums für gelöschte Elemente wiederherzustellen, der standardmäßig 14 Tage in Exchange Online beträgt. Ein Administrator kann Windows PowerShell verwenden, um den Aufbewahrungszeitraum für gelöschte Elemente auf maximal 30 Tage zu erhöhen. Weitere Informationen finden Sie unter: [Wiederherstellen gelöschter Elemente in Outlook für Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) und Ändern des [Aufbewahrungszeitraums für gelöschte Elemente für ein Postfach in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
-- Mithilfe des Aufbewahrungstags **"Wiederherstellbare Elemente 14 Tage Verschieben in Archiv"** können Sie Speicherplatz im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers freigeben. Dies ist nützlich, wenn das Postfach eines Benutzers in die Warteschleife versetzt wird, was bedeutet, dass das Postfach des Benutzers nie endgültig gelöscht wird. Ohne Verschieben von Elementen in das Archivpostfach ist es möglich, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" im primären Postfach erreicht wird. Weitere Informationen dazu und wie Sie dies vermeiden können, finden Sie unter [Erhöhen des Kontingents für wiederherstellbare Elemente für postfächer, die in der Warteschleife sind.](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)
+- Mithilfe des Aufbewahrungstags **"Wiederherstellbare Elemente 14 Tage Verschieben in Archiv"** können Sie Speicherplatz im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers freigeben. Dies ist nützlich, wenn das Postfach eines Benutzers in die Warteschleife versetzt wird, was bedeutet, dass das Postfach des Benutzers nie endgültig gelöscht wird. Ohne Verschieben von Elementen in das Archivpostfach ist es möglich, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" im primären Postfach erreicht wird. Weitere Informationen hierzu und wie Sie dies vermeiden können, finden Sie unter [Erhöhen des Kontingents für wiederherstellbare Elemente für postfächer, die in der Warteschleife sind.](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)

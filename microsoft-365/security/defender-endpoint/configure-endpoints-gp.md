@@ -1,6 +1,6 @@
 ---
 title: Onboarding von Windows 10 Geräten in Microsoft Defender für Endpunkt über Gruppenrichtlinien
-description: Verwenden Sie gruppenrichtlinien, um das Konfigurationspaket auf Windows 10 Geräten bereitzustellen, damit sie in den Dienst integriert sind.
+description: Verwenden Sie die Gruppenrichtlinie, um das Konfigurationspaket auf den Windows 10 Geräten bereitzustellen, sodass sie in den Dienst integriert sind.
 keywords: Konfigurieren von Geräten mithilfe von Gruppenrichtlinien, Geräteverwaltung, Konfigurieren von Microsoft Defender für Endpunktgeräte, Onboarding von Microsoft Defender für Endpunktgeräte, Gruppenrichtlinie
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326963"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339622"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10 Geräten mithilfe von Gruppenrichtlinien 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Onboarding der Windows 10-Geräte mithilfe von Gruppenrichtlinien 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326963"
 
 Sehen Sie sich die [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) oder [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Defender für Endpunkt anzuzeigen.
 
-1. Öffnen Sie das GP-Konfigurationspaket .zip Datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch von [Microsoft Defender Security Center](https://securitycenter.windows.com/)abrufen:
+1. Öffnen Sie das GP-Konfigurationspaket .zip Datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch aus [Microsoft 365 Defender Portal](https://security.microsoft.com/)abrufen:
 
-    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding** aus.
+    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **Device Management**   >  **Onboarding** aus.
 
     1. Wählen Sie Windows 10 als Betriebssystem aus.
 
@@ -69,7 +69,7 @@ Sehen Sie sich die [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 
 7. Wählen Sie **"Ausführen" aus, ob der Benutzer angemeldet ist oder nicht,** und aktivieren Sie das Kontrollkästchen **"Ausführen mit höchsten Berechtigungen".**
 
-8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...** Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den Dateinamen und speicherort der freigegebenen *Datei "WindowsDefenderATPOnboardingScript.cmd"* ein.
+8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...** Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den NetBIOS-Pfad der freigegebenen Datei  *"WindowsDefenderATPOnboardingScript.cmd"* ein.
 
 9. Klicken Sie auf **"OK",** und schließen Sie alle geöffneten GPMC-Fenster.
 
@@ -77,7 +77,7 @@ Sehen Sie sich die [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um zu überprüfen, ob das Gerät ordnungsgemäß in den Dienst integriert ist. Weitere Informationen finden Sie unter [Ausführen eines Erkennungstests auf einem neu integrierten Defender für Endpunkt-Gerät.](run-detection-test.md)
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Zusätzliche Konfigurationseinstellungen für Defender für Endpunkt
-Für jedes Gerät können Sie angeben, ob Beispiele vom Gerät erfasst werden können, wenn eine Anforderung über Microsoft Defender Security Center gestellt wird, um eine Datei für eine umfassende Analyse zu übermitteln.
+Für jedes Gerät können Sie angeben, ob Beispiele vom Gerät erfasst werden können, wenn eine Anforderung über Microsoft 365 Defender zum Übermitteln einer Datei für eine umfassende Analyse gestellt wird.
 
 Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren, z. B. Einstellungen für die Beispielfreigabe, die im Feature für die umfassende Analyse verwendet wird.
 
@@ -152,7 +152,7 @@ Scannen aller heruntergeladenen Dateien und Anlagen|Aktiviert
 
 <br>
 
-**Richtlinienspeicherort:** \Windows Components\Microsoft Defender Antivirus\Scan
+**Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\Scan
 
 Diese Einstellungen konfigurieren regelmäßige Scans des Endpunkts. Es wird empfohlen, einen wöchentlichen Schnellscan durchzuführen, der die Leistung zulässt.
 
@@ -189,9 +189,9 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 > [!NOTE]
 > Onboarding- und Offboarding-Richtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, andernfalls führt dies zu unvorhersehbaren Kollisionen.
 
-1. Rufen Sie das Offboarding-Paket aus [Microsoft Defender Security Center](https://securitycenter.windows.com/)ab:
+1. Rufen Sie das Offboarding-Paket aus [Microsoft 365 Defender Portal](https://security.microsoft.com/)ab:
 
-    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Offboarding** aus.
+    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **Device Management**  >  **Offboarding** aus.
 
     1. Wählen Sie Windows 10 als Betriebssystem aus.
 
@@ -211,7 +211,7 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 
 7. Wählen Sie **"Ausführen" aus, ob der Benutzer angemeldet ist oder nicht,** und aktivieren Sie das Kontrollkästchen **"Ausführen mit den höchsten Berechtigungen".**
 
-8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den NetBIOS-Pfad der freigegebenen *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd-Datei* ein.
+8. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu"...**. Stellen Sie sicher, dass **"Programm starten"** im Feld **"Aktion"** ausgewählt ist. Geben Sie den NetBIOS-Pfad der freigegebenen *Datei WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* ein.
 
 9. Klicken Sie auf **"OK",** und schließen Sie alle geöffneten GPMC-Fenster.
 
@@ -224,8 +224,8 @@ Bei Gruppenrichtlinien gibt es keine Option zum Überwachen der Bereitstellung v
 
 ## <a name="monitor-devices-using-the-portal"></a>Überwachen von Geräten mithilfe des Portals
 
-1. Wechseln Sie zu [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2. Klicken Sie auf **"Geräteliste".**
+1. Wechseln Sie zu [Microsoft 365 Defender Portal.](https://security.microsoft.com/)
+2. Klicken Sie auf **"Gerätebestand".**
 3. Stellen Sie sicher, dass Geräte angezeigt werden.
 
 > [!NOTE]

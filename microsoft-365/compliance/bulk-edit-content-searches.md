@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Verwenden Sie den Massensuch-Editor im Security and Compliance Center, um die Abfrage- und Inhaltsspeicherorte für eine oder mehrere Inhaltssuchen schnell zu ändern.
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227387"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341032"
 ---
 # <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhaltssuchen
 
@@ -32,7 +32,7 @@ Weitere Informationen zur Verwendung des Tools "Suchstatistik" finden Sie unter 
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Verwenden des Massensuch-Editors zum Ändern von Abfragen
 
-1. Wechseln Sie zu <https://protection.office.com> , und wählen Sie dann Die **Suche** \> **nach Inhalten** aus.
+1. Wechseln Sie zu <https://compliance.microsoft.com> , und wählen Sie dann **Inhaltssuche** aus.
 
 2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, und wählen Sie dann die Schaltfläche **"Massensuch-Editor** ![ für Massensuche" ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) aus.
 
@@ -52,7 +52,7 @@ Weitere Informationen zur Verwendung des Tools "Suchstatistik" finden Sie unter 
 
       Oder
 
-   - Fügen Sie eine neue Abfrage in die Zelle ein. Dabei wird davon ausgegangen, dass Sie den Abfragetext aus einer Datei kopiert haben, z. B. einer Textdatei oder einer Excel Datei.
+   - Fügen Sie eine neue Abfrage in die Zelle ein. Dies setzt voraus, dass Sie den Abfragetext aus einer Datei kopiert haben, z. B. einer Textdatei oder einer Excel Datei.
 
 4. Nachdem Sie eine oder mehrere Abfragen auf der Seite **"Abfragen"** bearbeitet haben, wählen Sie **"Speichern"** aus.
 
@@ -76,7 +76,7 @@ Hier sind einige Tipps zum Bearbeiten von Abfragen mit dem Massensuch-Editor:
 
     ![Wählen Sie "Massenspeicherort-Editor aktivieren" und dann "Speicherorte" aus, um Inhaltsspeicherorte hinzuzufügen oder zu entfernen.](../media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
 
-    a. **Zu durchsuchende Postfächer** In diesem Abschnitt werden eine Spalte für jede ausgewählte Inhaltssuche und eine Zeile für jedes Postfach angezeigt, das in der Suche enthalten ist. Ein Häkchen weist darauf hin, dass das Postfach in der Suche enthalten ist. Sie können einer Suche Postfächer hinzufügen, indem Sie die E-Mail-Adresse des Postfachs in einer leeren Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, der Sie es hinzufügen möchten. Sie können auch ein Postfach aus einer Suche entfernen, indem Sie das Kontrollkästchen deaktivieren.
+    a. **Zu durchsuchende Postfächer** In diesem Abschnitt werden eine Spalte für jede ausgewählte Inhaltssuche und eine Zeile für jedes Postfach angezeigt, das in der Suche enthalten ist. Ein Häkchen gibt an, dass das Postfach in der Suche enthalten ist. Sie können einer Suche Postfächer hinzufügen, indem Sie die E-Mail-Adresse des Postfachs in einer leeren Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, der Sie es hinzufügen möchten. Sie können auch ein Postfach aus einer Suche entfernen, indem Sie das Kontrollkästchen deaktivieren.
 
     b. **SharePoint zu durchsuchende Websites** In diesem Abschnitt wird eine Zeile für jede SharePoint und OneDrive Website angezeigt, die in jeder ausgewählten Inhaltssuche enthalten ist. Ein Häkchen gibt an, dass die Website in der Suche enthalten ist. Sie können einer Suche Websites hinzufügen, indem Sie die URL für die Website in einer leeren Zeile eingeben und dann das Kontrollkästchen für die Inhaltssuche aktivieren, der Sie sie hinzufügen möchten. Sie können auch eine Website aus einer Suche entfernen, indem Sie das Kontrollkästchen deaktivieren.
 
@@ -92,11 +92,11 @@ Hier sind einige Tipps zum Bearbeiten von Abfragen mit dem Massensuch-Editor:
 
 Hier sind einige Tipps zum Bearbeiten von Inhaltsspeicherorten mithilfe des Massensuch-Editors:
 
-- Sie können Inhaltssuchen bearbeiten, um alle Postfächer oder Websites in der Organisation zu durchsuchen, indem Sie **"Alle"** in einer leeren Zeile in den **Postfächern** eingeben, um den Abschnitt zu durchsuchen, oder **websites SharePoint, um** den Abschnitt zu durchsuchen, und dann das Kontrollkästchen aktivieren.
+- Sie können Inhaltssuchen bearbeiten, um alle Postfächer oder Websites in der Organisation zu durchsuchen, indem Sie **"Alle"** in einer leeren Zeile in den **Postfächern** eingeben, um den Abschnitt zu durchsuchen, oder **Websites SharePoint, um** den Abschnitt zu durchsuchen, und dann das Kontrollkästchen aktivieren.
 
-- Sie können einer oder mehreren Suchvorgängen mehrere Inhaltsspeicherorte hinzufügen, indem Sie mehrere Zeilen aus einer Textdatei oder einer Excel datei kopieren und diese dann in einen Abschnitt auf der Seite **"Speicherorte"** einfügen. Nachdem Sie neue Speicherorte hinzugefügt haben, müssen Sie das Kontrollkästchen für jede Suche aktivieren, zu der Sie den Speicherort hinzufügen möchten.
+- Sie können einer oder mehreren Suchvorgängen mehrere Inhaltsspeicherorte hinzufügen, indem Sie mehrere Zeilen aus einer Textdatei oder einer Excel datei kopieren und dann in einen Abschnitt auf der Seite **"Speicherorte"** einfügen. Nachdem Sie neue Speicherorte hinzugefügt haben, müssen Sie das Kontrollkästchen für jede Suche aktivieren, zu der Sie den Speicherort hinzufügen möchten.
 
     > [!TIP]
-    > Um eine Liste der E-Mail-Adressen für alle Benutzer in Ihrer Organisation zu generieren, führen Sie den PowerShell-Befehl in Schritt 2 in [Schritt 2: Generieren einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)aus. Oder führen Sie die Schritte unter [Abrufen einer Liste aller Benutzer-OneDrive-URLs in Ihrer Organisation](/onedrive/list-onedrive-urls) aus, um eine Liste aller OneDrive for Business Websites in Ihrer Organisation zu generieren. Beachten Sie, dass Sie die URL für die MySite-Domäne Ihrer Organisation anfügen müssen (z. https://contoso-my.sharepoint.com) B. an die OneDrive for Business Websites, die vom Skript erstellt werden. Nachdem Sie über eine Liste von E-Mail-Adressen oder OneDrive for Business Websites verfügen, können Sie diese kopieren und auf die Seite **"Speicherorte"** im Massensuch-Editor einfügen.
+    > Um eine Liste der E-Mail-Adressen für alle Benutzer in Ihrer Organisation zu generieren, führen Sie den PowerShell-Befehl in Schritt 2 in [Schritt 2: Generieren einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)aus. Oder führen Sie die Schritte unter [Abrufen einer Liste aller Benutzer-OneDrive-URLs in Ihrer Organisation](/onedrive/list-onedrive-urls) aus, um eine Liste aller OneDrive for Business Websites in Ihrer Organisation zu generieren. Beachten Sie, dass Sie die URL für die MySite-Domäne Ihrer Organisation anhängen müssen (z. https://contoso-my.sharepoint.com) B. an die OneDrive for Business Websites, die vom Skript erstellt werden. Nachdem Sie über eine Liste von E-Mail-Adressen oder OneDrive for Business Websites verfügen, können Sie sie kopieren und auf die Seite **"Speicherorte"** im Massensuch-Editor einfügen.
 
 - Nachdem Sie **"Speichern"** ausgewählt haben, um Änderungen im Massensuch-Editor zu speichern, wird die E-Mail-Adresse für Postfächer, die Sie einer Suche hinzugefügt haben, überprüft. Wenn die E-Mail-Adresse nicht vorhanden ist, wird eine Fehlermeldung angezeigt, die besagt, dass das Postfach nicht gefunden werden kann. URLs für Websites werden nicht überprüft.

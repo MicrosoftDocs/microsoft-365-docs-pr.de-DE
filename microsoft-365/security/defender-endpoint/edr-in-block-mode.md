@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908341"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339688"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Endpunkterkennung und -antwort (EDR) im Blockierungsmodus
 
@@ -35,15 +35,15 @@ ms.locfileid: "52908341"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>Was ist EDR im Blockierungsmodus?
 
-[Endpunkterkennung und -reaktion](overview-endpoint-detection-response.md) (EDR) im Blockierungsmodus bieten Schutz vor böswilligen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Wenn sie aktiviert ist, blockiert EDR im Blockierungsmodus bösartige Artefakte oder Verhaltensweisen, die auf einem Gerät erkannt werden. EDR im Blockierungsmodus funktioniert im Hintergrund, um böswillige Artefakte zu beheben, die nach der Verletzung erkannt werden. 
+[Endpunkterkennung und -reaktion](overview-endpoint-detection-response.md) (EDR) im Blockierungsmodus bieten Schutz vor bösartigen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Wenn sie aktiviert ist, blockiert EDR im Blockierungsmodus bösartige Artefakte oder Verhaltensweisen, die auf einem Gerät erkannt werden. EDR im Blockierungsmodus funktioniert im Hintergrund, um böswillige Artefakte zu beheben, die nach der Verletzung erkannt werden. 
 
-EDR im Blockierungsmodus ist auch in [& Sicherheitsrisikomanagement für Bedrohungen](next-gen-threat-and-vuln-mgt.md)integriert. Das Sicherheitsteam Ihrer Organisation erhält eine [Sicherheitsempfehlung,](tvm-security-recommendation.md) EDR im Blockierungsmodus zu aktivieren, wenn sie noch nicht aktiviert ist. 
+EDR im Blockierungsmodus ist auch in [& Sicherheitsrisikomanagement für Bedrohungen](next-gen-threat-and-vuln-mgt.md)integriert. Das Sicherheitsteam Ihrer Organisation erhält eine [Sicherheitsempfehlung,](tvm-security-recommendation.md) EDR im Blockierungsmodus zu aktivieren, wenn es noch nicht aktiviert ist. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="Empfehlung, EDR im Blockierungsmodus zu aktivieren":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="Empfehlung, EDR im Blockmodus zu aktivieren":::
 
 > [!NOTE]
 > Um den besten Schutz zu erhalten, stellen Sie sicher, dass **[Sie Microsoft Defender für Endpunktgrundwerte bereitstellen.](configure-machines-security-baseline.md)**
@@ -54,7 +54,7 @@ Wenn EDR im Blockmodus aktiviert ist und ein böswilliges Artefakt erkannt wird,
 
 Die folgende Abbildung zeigt eine Instanz unerwünschter Software, die im Blockierungsmodus durch EDR erkannt und blockiert wurde:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR im Blockierungsmodus wurde etwas erkannt":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR im Blockierungsmodus etwas erkannt haben":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>Aktivieren EDR im Blockierungsmodus
@@ -69,18 +69,18 @@ Die folgende Abbildung zeigt eine Instanz unerwünschter Software, die im Blocki
 3. Aktivieren Sie **EDR im Blockierungsmodus.**
 
 > [!NOTE]
-> EDR im Blockmodus können nur im Microsoft Defender Security Center aktiviert werden. Sie können Registrierungsschlüssel, Intune oder Gruppenrichtlinien nicht verwenden, um EDR im Blockierungsmodus zu aktivieren oder zu deaktivieren.
+> EDR im Blockierungsmodus können nur im Microsoft 365 Defender-Portal aktiviert werden. Sie können Registrierungsschlüssel, Intune oder Gruppenrichtlinien nicht verwenden, um EDR im Blockierungsmodus zu aktivieren oder zu deaktivieren.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Anforderungen für EDR im Blockmodus
 
 |Anforderung  |Details  |
 |---------|---------|
 |Berechtigungen |Rolle "Globaler Administrator" oder "Sicherheitsadministrator" in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)zugewiesen. Siehe ["Grundlegende Berechtigungen".](basic-permissions.md) |
-|Betriebssystem     |Eine der folgenden Versionen: <br/>– Windows 10 (alle Versionen) <br/>– Windows Server, Version 1803 oder höher <br/>- Windows Server 2019 <br/>- Windows Server 2016 (nur, wenn sich Microsoft Defender Antivirus im aktiven Modus befindet)     |
-|Windows E5-Registrierung     |Windows E5 ist in den folgenden Abonnements enthalten: <br/>– Microsoft 365 E5 <br/>– Microsoft 365 E3 zusammen mit dem Identity & Threat Protection-Angebot <br/><br/>Siehe [Komponenten](/microsoft-365/enterprise/microsoft-365-overview#components) und [Features und Funktionen für jeden Plan.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
-|Microsoft Defender Antivirus  |Microsoft Defender Antivirus müssen entweder im aktiven oder passiven Modus installiert und ausgeführt werden. (Sie können Microsoft Defender Antivirus zusammen mit einer Nicht-Microsoft-Antivirenlösung verwenden.) [Stellen Sie sicher Microsoft Defender Antivirus sich im aktiven oder passiven Modus befindet.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
+|Betriebssystem     |Eine der folgenden Versionen: <br/>– Windows 10 (alle Versionen) <br/>– Windows Server, Version 1803 oder höher <br/>- Windows Server 2019 <br/>– Windows Server 2016 (nur, wenn sich Microsoft Defender Antivirus im aktiven Modus befindet)     |
+|Windows E5-Registrierung     |Windows E5 ist in den folgenden Abonnements enthalten: <br/>- Microsoft 365 E5 <br/>– Microsoft 365 E3 zusammen mit dem Identity & Threat Protection-Angebot <br/><br/>Siehe [Komponenten](/microsoft-365/enterprise/microsoft-365-overview#components) und [Features und Funktionen für jeden Plan.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
+|Microsoft Defender Antivirus  |Microsoft Defender Antivirus müssen entweder im aktiven oder passiven Modus installiert und ausgeführt werden. (Sie können Microsoft Defender Antivirus zusammen mit einer Nicht-Microsoft-Antivirenlösung verwenden.) [Vergewissern Sie sich, dass sich Microsoft Defender Antivirus im aktiven oder passiven Modus befindet.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
 |Aus der Cloud gelieferter Schutz |Stellen Sie sicher, dass Microsoft Defender Antivirus so konfiguriert ist, dass der über die [Cloud bereitgestellte Schutz aktiviert ist.](enable-cloud-protection-microsoft-defender-antivirus.md) |
-|Microsoft Defender Antivirus Antischadsoftwareclient |Stellen Sie sicher, dass Ihr Client auf dem neuesten Stand ist. Führen Sie mithilfe von PowerShell das Cmdlet ["Get-MpComputerStatus"](/powershell/module/defender/get-mpcomputerstatus) als Administrator aus. In der **ZEILE "AMProductVersion"** sollte **4.18.2001.10** oder höher angezeigt werden. |
+|Microsoft Defender Antivirus Antischadsoftware-Client |Stellen Sie sicher, dass Ihr Client auf dem neuesten Stand ist. Führen Sie mithilfe von PowerShell das Cmdlet ["Get-MpComputerStatus"](/powershell/module/defender/get-mpcomputerstatus) als Administrator aus. In der **ZEILE "AMProductVersion"** sollte **4.18.2001.10** oder höher angezeigt werden. |
 |Microsoft Defender Antivirus-Modul |Stellen Sie sicher, dass Ihr Modul auf dem neuesten Stand ist. Führen Sie mithilfe von PowerShell das Cmdlet ["Get-MpComputerStatus"](/powershell/module/defender/get-mpcomputerstatus) als Administrator aus. In der **ZEILE AMEngineVersion** sollte **1.1.16700.2** oder höher angezeigt werden. |
 
 > [!IMPORTANT]
@@ -90,7 +90,7 @@ Die folgende Abbildung zeigt eine Instanz unerwünschter Software, die im Blocki
 
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-even-when-i-have-microsoft-defender-antivirus-running-on-devices"></a>Muss ich EDR im Blockierungsmodus aktivieren, auch wenn ich Microsoft Defender Antivirus auf Geräten ausgeführt habe?
 
-Es wird empfohlen, EDR im Blockmodus zu aktivieren, unabhängig davon, ob Microsoft Defender Antivirus im passiven oder im aktiven Modus ausgeführt wird. EDR im Blockierungsmodus bietet eine weitere Schutzebene mit Microsoft Defender für Endpunkt. Es ermöglicht Defender für Endpunkt, Aktionen basierend auf verhaltensbasierten EDR Erkennungen nach der Verletzung zu ergreifen. 
+Es wird empfohlen, EDR im Blockmodus eingeschaltet zu halten, unabhängig davon, ob Microsoft Defender Antivirus im passiven modus oder im aktiven Modus ausgeführt wird. EDR im Blockierungsmodus bietet eine weitere Schutzebene mit Microsoft Defender für Endpunkt. Es ermöglicht Defender für Endpunkt, Aktionen basierend auf Verhaltenserkennungen nach der Verletzung EDR zu ergreifen. 
 
 ### <a name="will-edr-in-block-mode-have-any-impact-on-a-users-antivirus-protection"></a>Wirkt sich EDR im Blockierungsmodus auf den Antivirenschutz eines Benutzers aus? 
 
@@ -106,7 +106,7 @@ Cloudschutz ist erforderlich, um das Feature auf dem Gerät zu aktivieren. Cloud
 
 ### <a name="how-do-i-set-microsoft-defender-antivirus-to-passive-mode"></a>Wie setiere ich Microsoft Defender Antivirus auf den passiven Modus?
 
-Je nach Betriebssystem können Geräte, auf denen eine Nicht-Microsoft-Antiviren-/Antischadsoftwarelösung ausgeführt wird, automatisch in Defender für Endpunkt integriert werden, Microsoft Defender Antivirus automatisch in den passiven Modus wechseln. Weitere Informationen finden Sie unter [Wie sich Microsoft Defender Antivirus auf die Defender für Endpunkt-Funktionalität auswirkt.](microsoft-defender-antivirus-compatibility.md#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality) 
+Wenn Geräte, auf denen keine Microsoft-Antiviren-/Antischadsoftware-Lösung ausgeführt wird, in Defender für Endpunkt integriert sind, können Microsoft Defender Antivirus je nach Betriebssystem automatisch in den passiven Modus wechseln. Weitere Informationen finden Sie unter [Wie sich Microsoft Defender Antivirus auf die Defender für Endpunkt-Funktionalität auswirkt.](microsoft-defender-antivirus-compatibility.md#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality) 
 
 ### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Wie kann ich bestätigen Microsoft Defender Antivirus sich im aktiven oder passiven Modus befindet?
 
@@ -115,8 +115,8 @@ Um zu überprüfen, ob Microsoft Defender Antivirus im aktiven oder passiven Mod
 
 |Methode  |Verfahren  |
 |---------|---------|
-| PowerShell     | 1. Wählen Sie das Startmenü aus, beginnen Sie mit `PowerShell` der Eingabe, und öffnen Sie dann Windows PowerShell in den Ergebnissen. <p>2. Typ `Get-MpComputerStatus` . <p>3. Suchen Sie in der Ergebnisliste in der Zeile **"AMRunningMode"** nach einem der folgenden Werte: <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Weitere Informationen finden Sie unter [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
-|Eingabeaufforderung     | 1. Wählen Sie das Startmenü aus, beginnen Sie mit `Command Prompt` der Eingabe, und öffnen Sie dann Windows Eingabeaufforderung in den Ergebnissen. <p>2. Typ `sc query windefend` . <p>3. Vergewissern Sie sich in der Ergebnisliste in der Zeile **"STATE",** dass der Dienst ausgeführt wird.         |
+| PowerShell     | 1. Wählen Sie die Startmenü aus, beginnen Sie mit `PowerShell` der Eingabe, und öffnen Sie dann Windows PowerShell in den Ergebnissen. <p>2. Typ `Get-MpComputerStatus` . <p>3. Suchen Sie in der Ergebnisliste in der Zeile **"AMRunningMode"** nach einem der folgenden Werte: <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Weitere Informationen finden Sie unter [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
+|Eingabeaufforderung     | 1. Wählen Sie die Startmenü aus, beginnen Sie mit `Command Prompt` der Eingabe, und öffnen Sie dann Windows Eingabeaufforderung in den Ergebnissen. <p>2. Typ `sc query windefend` . <p>3. Vergewissern Sie sich in der Ergebnisliste in der Zeile **"STATE",** dass der Dienst ausgeführt wird.         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Wie lange dauert es, bis EDR im Blockierungsmodus deaktiviert ist?
 
@@ -130,10 +130,10 @@ Wenn Microsoft Defender Antivirus im aktiven oder passiven Modus ausgeführt wir
 - Windows Server, Version 1803 oder höher 
 - Windows Server 2019 
 
-Wenn Windows Server 2016 Microsoft Defender Antivirus im aktiven Modus ausgeführt wird und der Endpunkt in Defender für Endpunkt integriert ist, wird EDR im Blockierungsmodus technisch unterstützt. EDR im Blockierungsmodus ist jedoch als zusätzlicher Schutz gedacht, wenn Microsoft Defender Antivirus nicht die primäre Antivirenlösung auf einem Endpunkt ist. In diesen Fällen wird Microsoft Defender Antivirus im passiven Modus ausgeführt. Derzeit wird das Ausführen von Microsoft Defender Antivirus im passiven Modus für Windows Server 2016 nicht unterstützt. Weitere Informationen finden Sie unter Microsoft Defender Antivirus und nicht von Microsoft stammende [Antiviren-/Antischadsoftwarelösungen.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+Wenn Windows Server 2016 Microsoft Defender Antivirus im aktiven Modus ausgeführt wird und der Endpunkt in Defender für Endpunkt integriert ist, wird EDR im Blockierungsmodus technisch unterstützt. EDR im Blockierungsmodus ist jedoch als zusätzlicher Schutz gedacht, wenn Microsoft Defender Antivirus nicht die primäre Antivirenlösung auf einem Endpunkt ist. In diesen Fällen wird Microsoft Defender Antivirus im passiven Modus ausgeführt. Derzeit wird das Ausführen von Microsoft Defender Antivirus im passiven Modus für Windows Server 2016 nicht unterstützt. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus und Antiviren-/Antischadsoftware-Lösungen,](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)die nicht von Microsoft stammen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Tech Community Blog: Einführung in EDR im Blockierungsmodus: Verhindern von Angriffen auf ihren Spuren](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
+- [Tech Community Blog: Einführung in EDR im Blockierungsmodus: Verhindern von Angriffen im Hintergrund](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
 

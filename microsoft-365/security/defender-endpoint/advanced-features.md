@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845474"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339574"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender für Endpunkt
 
@@ -32,7 +32,7 @@ ms.locfileid: "52845474"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Je nach den von Ihnen verwendeten Microsoft-Sicherheitsprodukten sind möglicherweise einige erweiterte Features verfügbar, mit denen Sie Defender für Endpunkt integrieren können.
 
@@ -76,19 +76,19 @@ Diese Konfiguration kann für Szenarien verwendet werden, in denen lokale SOC-Vo
 >Das Ändern dieser Einstellung wirkt sich nur auf zukünftige Warnungskorrelationen aus.
 
 ## <a name="enable-edr-in-block-mode"></a>Aktivieren EDR im Blockierungsmodus
-Endpunkterkennung und -reaktion (EDR) im Blockierungsmodus bieten Schutz vor bösartigen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Wenn sie aktiviert ist, blockiert EDR im Blockierungsmodus bösartige Artefakte oder Verhaltensweisen, die auf einem Gerät erkannt werden. EDR im Blockierungsmodus funktioniert im Hintergrund, um böswillige Artefakte zu beheben, die nach der Verletzung erkannt werden.
+Endpunkterkennung und -antwort (EDR) im Blockierungsmodus bieten Schutz vor böswilligen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Wenn sie aktiviert ist, blockiert EDR im Blockierungsmodus bösartige Artefakte oder Verhaltensweisen, die auf einem Gerät erkannt werden. EDR im Blockierungsmodus funktioniert im Hintergrund, um böswillige Artefakte zu beheben, die nach der Verletzung erkannt werden.
 
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve remediierte Warnungen
 
-Für Mandanten, die auf oder nach Windows 10, Version 1809, erstellt wurden, ist die Funktion für automatische Untersuchung und Behebung standardmäßig so konfiguriert, dass Warnungen aufgelöst werden, bei denen der Status des automatisierten Analyseergebnisses "Keine Bedrohungen gefunden" oder "Behoben" ist.  Wenn Warnungen nicht automatisch aufgelöst werden sollen, müssen Sie das Feature manuell deaktivieren.
+Für Mandanten, die auf oder nach Windows 10, Version 1809 erstellt wurden, ist die Funktion für die automatische Untersuchung und Behebung standardmäßig so konfiguriert, dass Warnungen aufgelöst werden, bei denen der Status des automatisierten Analyseergebnisses "Keine Bedrohungen gefunden" oder "Behoben" ist.  Wenn Warnungen nicht automatisch aufgelöst werden sollen, müssen Sie das Feature manuell deaktivieren.
 
 > [!TIP]
 > Für Mandanten, die vor dieser Version erstellt wurden, müssen Sie dieses Feature auf der Seite ["Erweiterte Features"](https://securitycenter.windows.com/preferences2/integration) manuell aktivieren.
 
 > [!NOTE]
 >
-> - Das Ergebnis der Automatischen Auflösungsaktion kann die Berechnung der Geräterisikostufe beeinflussen, die auf den aktiven Warnungen auf einem Gerät basiert.
+> - Das Ergebnis der Automatischen Auflösungsaktion kann die Berechnung der Geräterisikostufe beeinflussen, die auf den aktiven Warnungen basiert, die auf einem Gerät gefunden werden.
 > - Wenn ein Sicherheitsbetriebsanalyst den Status einer Warnung manuell auf "In Bearbeitung" oder "Aufgelöst" festlegt, überschreibt die Funktion für die automatische Auflösung diese nicht.
 
 ## <a name="allow-or-block-file"></a>Datei zulassen oder blockieren
@@ -102,7 +102,7 @@ Mit diesem Feature können Sie potenziell schädliche Dateien in Ihrem Netzwerk 
 
 So aktivieren **Sie "Zulassen" oder "Blockieren"** von Dateien:
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Erweiterten Features**  >  **"Datei zulassen oder blockieren"** aus.
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **General**  >  **Advanced features** Allow or block  >  **file** aus.
 
 1. Umschalten der Einstellung zwischen **"Ein"** und **"Aus".**
 
@@ -135,7 +135,7 @@ Lassen Sie den Manipulationsschutz aktiviert, um unerwünschte Änderungen an Ih
 
 ## <a name="show-user-details"></a>Anzeigen von Benutzerdetails
 
-Aktivieren Sie dieses Feature, damit Sie benutzerdetails anzeigen können, die in Azure Active Directory gespeichert sind. Details umfassen das Bild, den Namen, den Titel und die Abteilungsinformationen eines Benutzers bei der Untersuchung von Benutzerkontoentitäten. Informationen zum Benutzerkonto finden Sie in den folgenden Ansichten:
+Aktivieren Sie dieses Feature, damit Sie Benutzerdetails sehen können, die in Azure Active Directory gespeichert sind. Details umfassen das Bild, den Namen, den Titel und die Abteilungsinformationen eines Benutzers bei der Untersuchung von Benutzerkontoentitäten. Informationen zum Benutzerkonto finden Sie in den folgenden Ansichten:
 
 - Dashboard für Sicherheitsvorgänge
 - Warnungswarteschlange
@@ -144,12 +144,12 @@ Aktivieren Sie dieses Feature, damit Sie benutzerdetails anzeigen können, die i
 Weitere Informationen finden Sie unter [Untersuchen eines Benutzerkontos.](investigate-user.md)
 
 
-## <a name="skype-for-business-integration"></a>integration von Skype for Business
+## <a name="skype-for-business-integration"></a>Skype for Business Integration
 
 Wenn Sie die Skype for Business Integration aktivieren, können Sie mit Benutzern über Skype for Business, E-Mail oder Telefon kommunizieren. Dies kann nützlich sein, wenn Sie mit dem Benutzer kommunizieren und Risiken mindern müssen.
 
 > [!NOTE]
-> Wenn ein Gerät vom Netzwerk isoliert wird, gibt es ein Popup, in dem Sie auswählen können, Outlook und Skype Kommunikation zu aktivieren, die die Kommunikation mit dem Benutzer ermöglicht, während er vom Netzwerk getrennt ist. Diese Einstellung gilt für Skype und Outlook Kommunikation, wenn sich Geräte im Isolationsmodus befinden.
+> Wenn ein Gerät vom Netzwerk isoliert wird, gibt es ein Popup, in dem Sie Outlook und Skype Kommunikation aktivieren können, die die Kommunikation mit dem Benutzer ermöglicht, während er vom Netzwerk getrennt ist. Diese Einstellung gilt für Skype und Outlook Kommunikation, wenn sich Geräte im Isolationsmodus befinden.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity-Integration
 
@@ -162,7 +162,7 @@ Die Integration in Microsoft Defender for Identity ermöglicht es Ihnen, direkt 
 
 Dieses Feature ist nur verfügbar, wenn Sie über ein aktives Office 365 E5 oder das Threat Intelligence-Add-On verfügen. Weitere Informationen finden Sie auf der Office 365 Enterprise E5-Produktseite.
 
-Wenn Sie dieses Feature aktivieren, können Sie Daten aus Microsoft Defender für Office 365 in Microsoft Defender Security Center integrieren, um eine umfassende Sicherheitsuntersuchung für Office 365 Postfächer und Windows Geräte durchzuführen.
+Wenn Sie dieses Feature aktivieren, können Sie Daten aus Microsoft Defender für Office 365 in Microsoft 365 Defender integrieren, um eine umfassende Sicherheitsuntersuchung über Office 365 Postfächer und Windows Geräte hinweg durchzuführen.
 
 > [!NOTE]
 > Sie benötigen die entsprechende Lizenz, um dieses Feature zu aktivieren.
@@ -180,7 +180,7 @@ Von den beiden Microsoft Threat Expert-Komponenten ist die Benachrichtigung übe
 Wenn Sie diese Einstellung aktivieren, werden Die Signale von Defender für Endpunkt an Microsoft Cloud App Security weitergeleitet, um einen tieferen Einblick in die Nutzung von Cloudanwendungen zu bieten. Weitergeleitete Daten werden am selben Speicherort wie Ihre Cloud App Security-Daten gespeichert und verarbeitet.
 
 > [!NOTE]
-> Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten verfügbar, auf denen Windows 10 ausgeführt wird. Version 1709 (BS Build 16299.1085 mit [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, Version 1803 (Betriebssystembuild 17134.704 mit [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (Betriebssystembuild 17763.379 mit [KB4489899)](https://support.microsoft.com/help/4489899)oder höher Windows 10 Versionen.
+> Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten verfügbar, auf denen Windows 10 ausgeführt wird. Version 1709 (OS Build 16299.1085 mit [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, Version 1803 (OS Build 17134.704 mit [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (OS Build 17763.379 mit [KB4489899](https://support.microsoft.com/help/4489899)) oder höher Windows 10 Versionen.
 
 ## <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -204,7 +204,7 @@ Blockieren Sie den Zugriff auf Websites, die unerwünschte Inhalte enthalten, un
 
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Freigeben von Endpunktwarnungen mit dem Microsoft Compliance Center
-Leitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center weiter, sodass Sie Richtlinien für das Insider-Risikomanagement mit Warnungen verbessern und interne Risiken beheben können, bevor sie Schaden verursachen. Weitergeleitete Daten werden am selben Speicherort wie Ihre Office 365-Daten verarbeitet und gespeichert.
+Leitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center weiter, sodass Sie Richtlinien für das Insider-Risikomanagement mit Warnungen verbessern und interne Risiken beheben können, bevor sie Schaden verursachen. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Office 365-Daten verarbeitet und gespeichert.
 
 Nach der Konfiguration der [Indikatoren für Sicherheitsrichtlinienverstöße](/microsoft-365/compliance/insider-risk-management-settings#indicators) in den Einstellungen für das Insider-Risikomanagement werden Defender für Endpunkt-Warnungen mit dem Insider-Risikomanagement für die entsprechenden Benutzer geteilt.
 
@@ -212,7 +212,7 @@ Nach der Konfiguration der [Indikatoren für Sicherheitsrichtlinienverstöße](/
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune Verbindung
 
-Defender für Endpunkt kann in [Microsoft Intune](/intune/what-is-intune) integriert werden, um den [risikobasierten bedingten Zugriff](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)auf Geräte zu ermöglichen. Wenn Sie [dieses Feature aktivieren,](configure-conditional-access.md)können Sie Defender für Endpunkt-Geräteinformationen für Intune freigeben, wodurch die Richtlinienerzwingung verbessert wird.
+Defender für Endpunkt kann in [Microsoft Intune](/intune/what-is-intune) integriert werden, um den [geräterisikobasierten bedingten Zugriff](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)zu ermöglichen. Wenn Sie [dieses Feature aktivieren,](configure-conditional-access.md)können Sie Defender für Endpunkt-Geräteinformationen für Intune freigeben, wodurch die Richtlinienerzwingung verbessert wird.
 
 > [!IMPORTANT]
 > Sie müssen die Integration in Intune und Defender für Endpunkt aktivieren, um dieses Feature zu verwenden. Weitere Informationen zu bestimmten Schritten finden Sie unter [Konfigurieren des bedingten Zugriffs in Defender für Endpunkt.](configure-conditional-access.md)
@@ -220,7 +220,7 @@ Defender für Endpunkt kann in [Microsoft Intune](/intune/what-is-intune) integr
 Dieses Feature ist nur verfügbar, wenn Sie über Folgendes verfügen:
 
 - Ein lizenzierter Mandant für Enterprise Mobility + Security E3 und Windows E5 (oder Microsoft 365 Enterprise E5)
-- Eine aktive Microsoft Intune-Umgebung mit intune-verwalteten Windows 10 Geräten, die [in Azure AD eingebunden sind.](/azure/active-directory/devices/concept-azure-ad-join/)
+- Eine aktive Microsoft Intune-Umgebung mit Intune-verwalteten Windows 10 Geräten, [die Azure AD beigetreten sind.](/azure/active-directory/devices/concept-azure-ad-join/)
 
 
 ### <a name="conditional-access-policy"></a>Richtlinie für bedingten Zugriff

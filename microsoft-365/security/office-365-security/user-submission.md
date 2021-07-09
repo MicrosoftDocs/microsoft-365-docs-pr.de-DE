@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie ein Postfach konfigurieren, um Spam- und Phishing-E-Mails zu sammeln, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 4f14f87355181e9b7f6c0b52aa6b122b560c5f23
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096156"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338685"
 ---
 # <a name="user-reported-message-settings"></a>Vom Benutzer gemeldete Nachrichteneinstellungen
 
@@ -50,15 +50,15 @@ Verwenden Sie die folgenden Artikel, um die erforderlichen Komponenten zu konfig
 
 - Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenflussregel erstellen, um die Spamzustimmungsstufe festzulegen. Weitere Informationen finden Sie unter [Verwenden des EAC zum Erstellen einer Nachrichtenflussregel, die die SCL einer Nachricht so festlegt, dass](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) die SCL auf **Spamfilterung umgeht.**
 
-- [Erstellen Sie eine Tresor Attachments-Richtlinie,](set-up-safe-attachments-policies.md) die das benutzerdefinierte Postfach enthält, in dem Tresor Attachments Scanning deaktiviert ist (**Tresor Attachments unknown malware response** section \> **Off**).
+- [Erstellen Sie eine Tresor Attachments-Richtlinie,](set-up-safe-attachments-policies.md) die das benutzerdefinierte Postfach enthält, in dem Tresor Attachments-Überprüfung deaktiviert ist (**Tresor Attachments unknown malware response** section \> **Off**).
 
-- [Erstellen Sie eine Tresor Links-Richtlinie,](set-up-safe-links-policies.md) die das benutzerdefinierte Postfach enthält, in dem Tresor Links-Überprüfung deaktiviert ist (**Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichtenabschnitt** \> **"Aus").**
+- [Erstellen Sie eine Tresor Verknüpfungsrichtlinie,](set-up-safe-links-policies.md) die das benutzerdefinierte Postfach enthält, in dem Tresor Links-Überprüfung deaktiviert ist (**Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichtenabschnitt** \> **"Aus").**
 
 - [Erstellen Sie eine Antischadsoftwarerichtlinie,](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) die das benutzerdefinierte Postfach enthält, in dem die automatische Bereinigung zur Nullstunde (ZAP) für Schadsoftware deaktiviert ist ( Abschnitt **"Schutzeinstellungen** Aktivieren der \> **automatischen Bereinigung** zur Nullstunde für Schadsoftware" ist nicht ausgewählt).
 
 - [Erstellen Sie eine Antispamrichtlinie,](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) die das benutzerdefinierte Postfach enthält, in dem ZAP für Spam und ZAP für Phishing deaktiviert sind (**Zero-Hour Auto Purge** Section \> **Enabled zero-hour auto purge (ZAP)** ist nicht ausgewählt).
 
-- Deaktivieren Sie die Junk-E-Mail-Regel im benutzerdefinierten Postfach. Verwenden Sie ["Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer",](configure-junk-email-settings-on-exo-mailboxes.md) um die Junk-E-Mail-Regel zu deaktivieren. Nachdem sie deaktiviert wurde, kann EOP Nachrichten basierend auf der Spamfilter-Bewertungsaktion **"Nachricht in Junk-E-Mail-Ordner** verschieben" oder der Safelist-Sammlung im Postfach nicht in den Junk-E-Mail-Ordner verschieben.
+- Deaktivieren Sie die Junk-E-Mail-Regel im benutzerdefinierten Postfach. Verwenden Sie ["Junk-E-Mail-Einstellungen für Exchange Online Postfächer](configure-junk-email-settings-on-exo-mailboxes.md) konfigurieren", um die Junk-E-Mail-Regel zu deaktivieren. Nachdem sie deaktiviert wurde, kann EOP Nachrichten basierend auf der Spamfilter-Bewertungsaktion **"Nachricht in Junk-E-Mail-Ordner** verschieben" oder der Safelist-Sammlung im Postfach nicht in den Junk-E-Mail-Ordner verschieben.
 
 Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzungen erfüllt, können Sie die Verfahren in diesem Artikel verwenden, um das Postfach für Benutzerübermittlungen zu konfigurieren.
 
@@ -68,9 +68,8 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
 - Um die Konfiguration für Benutzerübermittlungen zu ändern, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
 
-  - **Organisationsverwaltung** oder **Sicherheitsadministrator** in den [Berechtigungen im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
-  - **Organisationsverwaltung** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  - **Organisationsverwaltung** oder **Sicherheitsadministrator** in den [Berechtigungen im Microsoft 365 Defender-Portal.](permissions-microsoft-365-security-center.md)
+  
 - Sie benötigen Zugriff auf Exchange Online PowerShell. Wenn das Konto, das Sie verwenden möchten, keinen Zugriff auf Exchange Online PowerShell hat, erhalten Sie einen Fehler, der beim Angeben des Übermittlungspostfachs wie folgt aussieht:
 
   > Angeben einer E-Mail-Adresse in Ihrer Domäne
@@ -82,11 +81,11 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Verwenden des Microsoft 365 Defender-Portals zum Konfigurieren des Postfachs für Benutzerübermittlungen
 
-1. Wechseln Sie im Microsoft 365 Defender Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Andere** Abschnitt Benutzer gemeldet \> **Nachrichteneinstellungen** \> **Benutzerübermittlungen**.
+1. Wechseln Sie im portal Microsoft 365 Defender zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Andere** Abschnitt Benutzer gemeldet \> **Nachrichteneinstellungen** \> **Benutzerübermittlungen**.
 
-2. Auf der Seite **"Benutzerübermittlungen"** wird die Anzeige davon bestimmt, ob die **Schaltfläche "Nachricht melden"** von Microsoft Outlook deaktiviert **oder** **eingeschaltet** ist:
+2. Auf der Seite **"Benutzerübermittlungen"** wird die Anzeige davon bestimmt, ob die **Schaltfläche "Nachricht melden"** von Microsoft Outlook deaktiviert **oder** **aktiviert** ist:
 
-   - **Schaltfläche "Nachricht** \> melden" in Microsoft Outlook **Einschalten** ![ Umschaltfläche: ](../../media/scc-toggle-on.png) Wählen Sie diese Option aus, wenn Sie das Add-In "Nachricht melden", das Add-In "Phishing melden" oder die integrierte Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+   - Schaltfläche "Nachricht melden" in **Microsoft Outlook** \> **Einschalten** ![ Umschalten: ](../../media/scc-toggle-on.png) Wählen Sie diese Option aus, wenn Sie das Add-In "Nachricht melden", das Add-In "Phishing melden" oder die integrierte Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
      - **Senden Sie die gemeldeten Nachrichten an:** Wählen Sie eine der folgenden Optionen aus:
        - **Microsoft:** Das Postfach für Benutzerübermittlungen wird nicht verwendet (alle gemeldeten Nachrichten gehen an Microsoft).
        - **Microsoft und das Postfach meiner Organisation:** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein. Verteilergruppen sind nicht zulässig. Benutzerübermittlungen werden sowohl an Microsoft zur Analyse als auch an das benutzerdefinierte Postfach gesendet, das Ihr Administrator- oder Sicherheitsteam analysieren kann.
@@ -107,7 +106,7 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
          - **Nachricht niemals melden**
 
           > [!CAUTION]
-          > Wenn Sie die [Junk-E-Mail-Berichterstellung in Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) mit Outlook im Web Postfachrichtlinien deaktiviert haben, Aber Sie eine der vorherigen Einstellungen zum Melden von Nachrichten an Microsoft konfiguriert haben, können Benutzer Nachrichten an Microsoft in Outlook im Web mithilfe des Add-Ins "Nachricht melden" oder des Add-Ins "Phishing melden" an Microsoft melden.
+          > Wenn Sie [die Junk-E-Mail-Berichterstellung in Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) mit Outlook im Web Postfachrichtlinien deaktiviert haben, aber Sie eine der vorherigen Einstellungen zum Melden von Nachrichten an Microsoft konfiguriert haben, können Benutzer Nachrichten an Microsoft in Outlook im Web mithilfe des Add-Ins "Nachricht melden" oder des Add-Ins "Phishing melden" an Microsoft melden.
 
      - **Abschnitt "Benutzeroberfläche für die Berichterstattung"**
        - **Vor der Registerkarte "Berichterstellung":** Geben Sie in die Felder **"Titel"** und **"Nachricht"** den beschreibenden Text ein, der benutzern angezeigt wird, bevor sie eine Nachricht mithilfe des Add-Ins "Nachricht melden" oder des Add-Ins "Phishing melden" melden. Sie können die Variable %type% verwenden, um den Übermittlungstyp (Junk, nicht Junk, Phishing usw.) einzuschließen.
@@ -117,14 +116,14 @@ Nachdem Sie sichergestellt haben, dass Ihr Postfach alle anwendbaren Voraussetzu
 
           > Ihre E-Mail wird zur Analyse wie besehen an Microsoft übermittelt. Einige E-Mails können persönliche oder vertrauliche Informationen enthalten.
 
-   - **Schaltfläche "Nachricht** \> melden" in Microsoft Outlook **Aus** ![ Umschalten: ](../../media/scc-toggle-off.png) Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Add-Ins "Nachricht melden", des Add-Ins "Phishing melden" oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
-     - Wählen Sie **dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfach ein, das E-Mails empfangen kann.
+   - Schaltfläche "Nachricht melden" in **Microsoft Outlook** \> **Aus** ![ Umschalten: ](../../media/scc-toggle-off.png) Wählen Sie diese Option aus, wenn Sie Berichtstools von Drittanbietern anstelle des Add-Ins "Nachricht melden", des Add-Ins "Phishing melden" oder der integrierten Berichterstellung in Outlook im Web verwenden, und konfigurieren Sie dann die folgenden Einstellungen:
+     - Wählen Sie **dieses benutzerdefinierte Postfach verwenden, um vom Benutzer gemeldete Übermittlungen zu empfangen.** Geben Sie in das angezeigte Feld die E-Mail-Adresse eines vorhandenen Exchange Online Postfachs ein, das E-Mails empfangen kann.
 
    Wenn Sie fertig sind, klicken Sie auf **Bestätigen.** Klicken Sie zum Löschen dieser Werte auf **"Wiederherstellen".**
 
 ## <a name="third-party-reporting-tools"></a>Berichterstellungstools von Drittanbietern
 
-Sie können Tools für die Berichterstellung von Drittanbietern konfigurieren, um gemeldete Nachrichten an das benutzerdefinierte Postfach zu senden. Dazu legen Sie die **Schaltfläche "Nachricht** melden" von Microsoft Outlook auf **"Aus"** fest und legen das **Postfach der Organisation** auf ein Office 365 Postfach Ihrer Wahl fest.
+Sie können Tools für die Berichterstellung von Drittanbietern konfigurieren, um gemeldete Nachrichten an das benutzerdefinierte Postfach zu senden. Sie würden dies tun, indem Sie die **Schaltfläche "Microsoft Outlook Nachricht melden"** auf **"Aus"** festlegen und das Postfach der **Organisation** auf ein Office 365 Postfach Ihrer Wahl festlegen.
 
 Die einzige Anforderung besteht darin, dass die ursprüngliche Nachricht als . EML oder . MSG-Anlage (nicht komprimiert) in der Nachricht, die an das benutzerdefinierte Postfach gesendet wird (leiten Sie nicht nur die ursprüngliche Nachricht an das benutzerdefinierte Postfach weiter).
 

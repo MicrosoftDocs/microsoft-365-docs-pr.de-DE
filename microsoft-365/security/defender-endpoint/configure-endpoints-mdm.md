@@ -1,6 +1,6 @@
 ---
 title: Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten
-description: Verwenden Sie Tools für die mobile Geräteverwaltung, um das Konfigurationspaket auf Geräten bereitzustellen, sodass sie in den Dienst integriert sind.
+description: Verwenden Sie Tools für die mobile Geräteverwaltung, um das Konfigurationspaket auf Geräten bereitzustellen, sodass die Geräte in den Dienst integriert werden.
 keywords: Onboarding von Geräten mit mdm, Geräteverwaltung, Onboarding von Microsoft Defender für Endpunkt-Geräten, MDM
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f0a0a35d41d56abfcc7975c9e79ff7d537b72f40
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843434"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338577"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten
+# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>Onboarding der Windows 10-Geräte mithilfe von Tools für die mobile Geräteverwaltung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "52843434"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
 Sie können Lösungen für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden, um Geräte zu konfigurieren. Defender für Endpunkt unterstützt MDMs, indem OMA-URIs zum Erstellen von Richtlinien zum Verwalten von Geräten bereitgestellt wird.
 
@@ -55,7 +55,7 @@ Weitere Informationen zur Verwendung von Defender für Endpunkt-CSP finden Sie i
 
 > [!NOTE]
 > - Der **Integritätsstatus für die** Richtlinie für integrierte Geräte verwendet schreibgeschützte Eigenschaften und kann nicht behoben werden.
-> - Die Konfiguration der Diagnosedatenberichtshäufigkeit ist nur für Geräte in Windows 10, Version 1703, verfügbar.
+> - Die Konfiguration der Berichterstattungshäufigkeit von Diagnosedaten ist nur für Geräte in Windows 10, Version 1703, verfügbar.
 
 
 >[!TIP]
@@ -70,9 +70,9 @@ Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wi
 > [!NOTE]
 > Onboarding- und Offboarding-Richtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, andernfalls führt dies zu unvorhersehbaren Kollisionen.
 
-1. Abrufen des Offboarding-Pakets aus [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
+1. Rufen Sie das Offboarding-Paket aus [Microsoft 365 Defender Portal](https://security.microsoft.com/)ab:
 
-   1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Offboarding** aus.
+   1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Endpoints**  >  **Device Management**  >  **Offboarding** aus.
 
    1. Wählen Sie Windows 10 als Betriebssystem aus.
 

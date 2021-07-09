@@ -16,18 +16,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über das Business Assist-Programm und wie es Ihrer Organisation mit verbesserter Hilfe und Nutzung für Microsoft 365 für Unternehmen helfen kann.
-ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924587"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338601"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business-Assistent für Microsoft 365
 
 Profitieren Sie von Ihrem Abonnement mit experten Ratschlägen von Kleinunternehmen.
 
 **Business Assist for Microsoft 365** wurde für Unternehmen mit weniger als 5 Benutzern entwickelt, um Ihnen und Ihren Mitarbeitern rund um die Uhr Zugriff auf Kleinunternehmen zu bieten, während Sie Ihr Unternehmen erweitern– vom Onboarding bis zur täglichen Nutzung.
+
+### <a name="watch-business-assist-for-microsoft-365"></a>Watch: Business Assist for Microsoft 365
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
 ## <a name="business-assist-services"></a>Business Assist-Dienste
 
@@ -42,7 +46,7 @@ Profitieren Sie von Ihrem Abonnement mit experten Ratschlägen von Kleinunterneh
 
 ## <a name="eligibility-for-business-assist"></a>Berechtigung für Business Assist
 
-Kunden mit einem aktiven abonnementbasierten Microsoft 365 für Unternehmen können Business Assist-Onboarding-, Migrations- und Verwaltungsdienste verwenden. Ihre Organisation muss über 5 oder weniger Benutzerlizenzen verfügen.
+Kunden mit einem aktiven Microsoft 365 business-Abonnementplan können Business Assist-Onboarding-, Migrations- und Verwaltungsdienste verwenden. Ihre Organisation muss über 5 oder weniger Benutzerlizenzen verfügen.
 
 > [!IMPORTANT]
 > Business Assist ist nur in den USA verfügbar.
@@ -51,7 +55,7 @@ Kunden mit einem aktiven abonnementbasierten Microsoft 365 für Unternehmen kön
 
 Nur Organisationen, die berechtigt sind, erhalten die Möglichkeit, Business Assist zu kaufen. Business Assist kostet 5 USD pro Benutzer und Monat. Hier erfahren Sie, wie Sie Business Assist kaufen können.
 
-1. Wechseln Sie in der vereinfachten Ansicht des Microsoft 365 Admin Centers zur Registerkarte **"Abonnements",** und wählen **Sie "Produkte hinzufügen"** aus.
+1. Wechseln Sie in der vereinfachten Ansicht des Microsoft 365 Admin Center zur Registerkarte **"Abonnements",** und wählen **Sie "Produkte hinzufügen"** aus.
 
 2. Wählen Sie auf der Seite "Dienste kaufen" **Details** zu **Business Assist für Microsoft 365** aus, und schließen Sie Ihren Kauf ab.
 

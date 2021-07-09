@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861179"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339478"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
@@ -38,7 +38,7 @@ Machen Sie sich mit den [Überlegungen für nicht persistente VDI](/microsoft-36
 > - Einzelner Eintrag für jeden virtuellen Desktop 
 > - Mehrere Einträge für jeden virtuellen Desktop 
 
-Microsoft empfiehlt, Windows virtuellen Desktop als einen einzigen Eintrag pro virtuellem Desktop zu integrieren. Dadurch wird sichergestellt, dass sich die Untersuchung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts basierend auf dem Computernamen befindet. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode dringend in Betracht ziehen, da sie verhindert, dass mehrere Objekte für denselben Computer im Microsoft Defender für Endpunkt-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht veränderliche Umgebungen können Sie sich für eine andere Auswahl entscheiden. 
+Microsoft empfiehlt, Windows virtuellen Desktop als einzelnen Eintrag pro virtuellem Desktop zu integrieren. Dadurch wird sichergestellt, dass sich die Untersuchung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts basierend auf dem Computernamen befindet. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode dringend in Betracht ziehen, da sie verhindert, dass mehrere Objekte für denselben Computer im Microsoft Defender für Endpunkt-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht veränderliche Umgebungen können Sie sich für eine andere Auswahl entscheiden. 
 
 Microsoft empfiehlt das Hinzufügen des Microsoft Defender für Endpunkt-Onboarding-Skripts zum goldenen WVD-Image. Auf diese Weise können Sie sicher sein, dass dieses Onboardingskript sofort beim ersten Start ausgeführt wird. Es wird als Startskript beim ersten Start auf allen WVD-Computern ausgeführt, die vom goldenen WVD-Image bereitgestellt werden. Wenn Sie jedoch eines der Katalogbilder ohne Änderung verwenden, platzieren Sie das Skript an einem freigegebenen Speicherort, und rufen Sie es aus der lokalen oder Domänengruppenrichtlinie auf. 
 
@@ -54,7 +54,7 @@ Es gibt mehrere Möglichkeiten zum Onboarding eines WVD-Hostcomputers:
 #### <a name="scenario-1-using-local-group-policy"></a>*Szenario 1: Verwenden einer lokalen Gruppenrichtlinie*
 Dieses Szenario erfordert, dass das Skript in einem goldenen Image platziert wird und die lokale Gruppenrichtlinie verwendet wird, um früh im Startprozess ausgeführt zu werden.
 
-Verwenden Sie die Anweisungen unter [Onboarding nicht persistenter VDI-Geräte der virtuellen Desktopinfrastruktur.](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
+Verwenden Sie die Anweisungen unter [Onboarding der nicht persistenten VDI-Geräte (Virtual Desktop Infrastructure).](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)
 
 Befolgen Sie die Anweisungen für einen einzelnen Eintrag für jedes Gerät.
 

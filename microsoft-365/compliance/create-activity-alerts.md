@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Hinzufügen und Verwalten von Aktivitätswarnungen im Security & Compliance Center, damit Microsoft 365 Ihnen E-Mail-Benachrichtigungen senden, wenn Benutzer bestimmte Aktivitäten ausführen
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227163"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341604"
 ---
 # <a name="create-activity-alerts"></a>Erstellen von Aktivitätswarnungen
 
@@ -36,9 +36,9 @@ Sie können eine Aktivitätswarnung erstellen, die Ihnen eine E-Mail-Benachricht
 
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Bestätigen von Rollen und Konfigurieren der Überwachungsprotokollierung
 
-- Ihnen muss die Rolle "Organisationskonfiguration" im Security & Compliance Center zugewiesen sein, um Aktivitätswarnungen zu verwalten. Standardmäßig wird diese Rolle den Rollengruppen "Complianceadministrator" und "Organisationsverwaltung" zugewiesen. Weitere Informationen zum Hinzufügen von Mitgliedern zu Rollengruppen finden Sie unter ["Benutzern Zugriff auf das Security & Compliance Center gewähren".](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- Ihnen muss die Rolle "Organisationskonfiguration" im Security & Compliance Center zugewiesen werden, um Aktivitätswarnungen zu verwalten. Standardmäßig wird diese Rolle den Rollengruppen "Complianceadministrator" und "Organisationsverwaltung" zugewiesen. Weitere Informationen zum Hinzufügen von Mitgliedern zu Rollengruppen finden Sie unter ["Benutzern Zugriff auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)gewähren".
 
-- Sie (oder ein anderer Administrator) müssen zuerst die Überwachungsprotokollierung für Ihre Organisation aktivieren, bevor Sie mit der Verwendung von Aktivitätswarnungen beginnen können. Klicken Sie dazu einfach auf der Seite **"Aktivitätswarnungen"** auf "Aufzeichnung von **Benutzer- und Administratoraktivitäten starten".** (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung bereits für Ihre Organisation aktiviert.) Sie können die Überwachung auch auf der **Seite "Überwachungsprotokollsuche"** im Security & Compliance Center aktivieren (wechseln Sie zur **Suche** nach \> **Überwachungsprotokollen).** Sie müssen dies nur einmal für Ihre Organisation tun.
+- Sie (oder ein anderer Administrator) müssen zuerst die Überwachungsprotokollierung für Ihre Organisation aktivieren, bevor Sie mit der Verwendung von Aktivitätswarnungen beginnen können. Klicken Sie dazu einfach auf der Seite **"Aktivitätswarnungen"** auf "Aufzeichnung von **Benutzer- und Administratoraktivitäten starten".** (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung bereits für Ihre Organisation aktiviert.) Sie können die Überwachung auch auf der **Seite "Überwachungsprotokollsuche"** im Security & Compliance Center aktivieren (wechseln Sie zur **Suche** \> **nach Überwachungsprotokollen).** Sie müssen dies nur einmal für Ihre Organisation tun.
 
 - Sie können Warnungen für dieselben Aktivitäten erstellen, nach denen Sie im Überwachungsprotokoll suchen können. Im Abschnitt ["Weitere Informationen"](#more-information) finden Sie eine Liste allgemeiner Szenarien (und der zu überwachenden spezifischen Aktivität), für die Sie Warnungen erstellen können.
 
@@ -46,7 +46,7 @@ Sie können eine Aktivitätswarnung erstellen, die Ihnen eine E-Mail-Benachricht
 
 ## <a name="create-an-activity-alert"></a>Erstellen einer Aktivitätswarnung
 
-1. Wechseln Sie zu [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Wechseln Sie zu <https://compliance.microsoft.com/managealerts>.
 
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
@@ -85,7 +85,7 @@ Sie können eine Aktivitätswarnung erstellen, die Ihnen eine E-Mail-Benachricht
 
 Sie können eine Aktivitätswarnung deaktivieren, damit keine E-Mail-Benachrichtigung gesendet wird. Nachdem Sie die Aktivitätswarnung deaktiviert haben, wird sie weiterhin in der Liste der Aktivitätswarnungen für Ihre Organisation angezeigt, und Sie können ihre Eigenschaften weiterhin anzeigen.
 
-1. Wechseln Sie zu Gehe [https://protection.office.com/managealerts](https://protection.office.com/managealerts) zu .
+1. Wechseln Sie zu <https://compliance.microsoft.com/managealerts>.
 
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
@@ -103,7 +103,7 @@ Um eine Aktivitätswarnung wieder einzuschalten, wiederholen Sie einfach diese S
 
     ![Beispiel für eine E-Mail-Benachrichtigung, die für eine Aktivitätswarnung gesendet wurde](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Nachfolgend finden Sie einige allgemeine Dokument- und E-Mail-Aktivitäten, für die Sie Aktivitätswarnungen erstellen können. Die Tabellen beschreiben die Aktivität, den Namen der Aktivität, für die eine Warnung erstellt werden soll, und den Namen der Aktivitätsgruppe, unter der die Aktivität in der Dropdownliste **Aktivitäten** aufgeführt ist. Eine vollständige Liste der Aktivitäten, für die Sie Aktivitätswarnungen erstellen können, finden Sie im Abschnitt "Überwachte Aktivitäten" unter ["Durchsuchen des Überwachungsprotokolls".](search-the-audit-log-in-security-and-compliance.md#audited-activities)
+- Nachfolgend finden Sie einige allgemeine Dokument- und E-Mail-Aktivitäten, für die Sie Aktivitätswarnungen erstellen können. Die Tabellen beschreiben die Aktivität, den Namen der Aktivität, für die eine Warnung erstellt werden soll, und den Namen der Aktivitätsgruppe, unter der die Aktivität in der Dropdownliste **"Aktivitäten"** aufgeführt ist. Eine vollständige Liste der Aktivitäten, für die Sie Aktivitätswarnungen erstellen können, finden Sie im Abschnitt "Überwachte Aktivitäten" unter ["Durchsuchen des Überwachungsprotokolls".](search-the-audit-log-in-security-and-compliance.md#audited-activities)
 
     > [!TIP]
     > Möglicherweise möchten Sie eine Aktivitätswarnung für nur eine Aktivität erstellen, die von einem beliebigen Benutzer ausgeführt wird. Sie können auch eine Aktivitätswarnung erstellen, die mehrere Aktivitäten nachverfolgt, die von einem oder mehreren Benutzern ausgeführt werden.

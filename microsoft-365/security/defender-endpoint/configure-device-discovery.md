@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286945"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339526"
 ---
 # <a name="configure-device-discovery"></a>Konfigurieren der Geräteermittlung
 
@@ -43,10 +43,10 @@ Die Ermittlung kann so konfiguriert werden, dass sie sich im Standard- oder Stan
 Sie können die Liste der Geräte anpassen, die für die Standardermittlung verwendet werden. Sie können entweder die Standardermittlung auf allen integrierten Geräten aktivieren, die diese Funktion ebenfalls unterstützen (derzeit – nur Windows 10 Geräte) oder eine Teilmenge oder Teilmengen Ihrer Geräte auswählen, indem Sie deren Gerätetags angeben.
 
 > [!IMPORTANT]
-> Für die Vorschau müssen Sie zuerst die Vorschaufeatures in Microsoft Defender Security Center aktivieren.
-> Anschließend können Sie auf die Geräteermittlungskonfiguration im Microsoft 365 Security Center zugreifen. Die Liste der nicht verwalteten Geräte und Sicherheitsempfehlungen wird sowohl in Microsoft Defender Security Center als auch in Microsoft 365 Security Center verfügbar sein, während die Dashboardkacheln nur in Microsoft 365 Security Center verfügbar sind.
+> Für die Vorschau müssen Sie zuerst die Vorschaufeatures in Microsoft 365 Defender aktivieren.
+> Anschließend können Sie auf die Geräteermittlungskonfiguration im Microsoft 365 Security Center zugreifen. Die Liste der nicht verwalteten Geräte und Sicherheitsempfehlungen wird sowohl in Microsoft 365 Defender als auch in Microsoft 365 Security Center verfügbar sein, während die Dashboardkacheln nur in Microsoft 365 Security Center verfügbar sind.
 
-Führen Sie die folgenden Konfigurationsschritte im Microsoft 365 Security Center aus:
+Führen Sie die folgenden Konfigurationsschritte in Microsoft 365 Security Center aus:
 
 1. Navigieren Sie zu **Einstellungen > Geräteermittlung.**
 2. Wählen Sie den Ermittlungsmodus aus, der auf Ihren integrierten Geräten verwendet werden soll.
@@ -111,7 +111,7 @@ DeviceNetworkInfo
 | where NetworkName == "<your network name here>"
 ```
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über die Geräteermittlung](device-discovery.md)
 - [Häufig gestellte Fragen zur Geräteermittlung](device-discovery-faq.md)

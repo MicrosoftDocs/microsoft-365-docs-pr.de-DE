@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Administratoren können einen TeleMessage-Connector zum Importieren und Archivieren von Nachrichtendaten in Microsoft 365 einrichten. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, sodass Sie Compliance-Features wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien zum Verwalten der Drittanbieterdaten Ihrer Organisation verwenden können.
-ms.openlocfilehash: d3fbe02dce56bec01d66351aa69500a3d5d93a37
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+description: Administratoren können einen TeleMessage-Connector einrichten, um Nachrichtendaten in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, sodass Sie Compliance-Features wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Daten von Drittanbietern Ihrer Organisation zu verwalten.
+ms.openlocfilehash: 5db1869a1c386ed75f3d8d1381f598d907d2b5ba
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054845"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339442"
 ---
-# <a name="set-up-a-connector-to-archive-telegram-communications-data-preview"></a>Einrichten eines Connectors zum Archivieren von Kommunikationsdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Einrichten eines Connectors zum Archivieren von Kommunikationsdaten
 
-Verwenden Sie den TeleMessage-Connector im Microsoft 365 Compliance Center, um Chats, Anlagen, Dateien und gelöschte Nachrichten und Anrufe zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem TeleMessage-Konto Ihrer Organisation her und importiert die mobile Kommunikation von Mitarbeitern mithilfe des Archivarchivs "Archiv" in Postfächer in Microsoft 365.
+Verwenden Sie den TeleMessage-Connector in der Microsoft 365 Compliance Center, um Chats, Anlagen, Dateien und gelöschte Nachrichten und Anrufe zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem TeleMessage-Konto Ihrer Organisation her und importiert die mobile Kommunikation von Mitarbeitern mithilfe des Archivarchivs "Archiv" in Postfächer in Microsoft 365.
 
-Nachdem Archivarchivierungsconnectordaten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung, Inhaltssuche und Microsoft 365 Aufbewahrungsrichtlinien auf Kommunikationsdaten anwenden. Sie können z. B. über die Inhaltssuche die Kommunikation mit der Postfächer durchsuchen oder das Postfach, das die Connectordaten des Archivarchivs enthält, einem Verwahrer in einem Advanced eDiscovery Fall zuordnen. Die Verwendung eines Archiver-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Corporate Governance-Bestimmungen und behördlichen Richtlinien zu gewährleisten.
+Nachdem Archivarchivierungsconnectordaten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung, Inhaltssuche und Microsoft 365 Aufbewahrungsrichtlinien auf Kommunikationsdaten anwenden. Sie können z. B. die Kommunikation über die Inhaltssuche durchsuchen oder das Postfach, das die Connectordaten des Archivarchivs enthält, einem Verwahrer in einem Advanced eDiscovery Fall zuordnen. Die Verwendung eines Connectors für Archivarchivierungen zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Unternehmensgovernance-Bestimmungen und behördlichen Richtlinien zu gewährleisten.
 
 ## <a name="overview-of-archiving-telegram-communications-data"></a>Übersicht über die Archivierung von Kommunikationsdaten
 
@@ -35,7 +35,7 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 2. In Echtzeit werden die Datensätze Ihrer Organisation auf die TeleMessage-Website kopiert.
 
-3. Der Archivarchivierungsconnector, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit der TeleMessage-Website her und überträgt die E-Mail-Nachrichten aus den vorherigen 24 Stunden in einen sicheren Azure Storage Bereich in der Microsoft Cloud.
+3. Der Archivarchivierungsconnector, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit der TeleMessage-Website her und überträgt die E-Mail-Nachrichten aus den letzten 24 Stunden in einen sicheren Azure Storage Bereich in der Microsoft Cloud.
 
 4. Der Connector importiert die Mobilen Kommunikationselemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner namens "Archivarchivierer" wird im Postfach des bestimmten Benutzers erstellt, und die Elemente werden in das Postfach importiert. Der Connector führt diese Zuordnung mithilfe des Werts der *E-Mail-Adresseigenschaft des Benutzers* durch. Jede E-Mail-Nachricht enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers der E-Mail-Nachricht aufgefüllt wird.
 
@@ -49,13 +49,13 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 - Installieren Sie die App "Archivarchivierung" auf den Mobiltelefonen Ihrer Mitarbeiter, und aktivieren Sie sie. Mit der Archiv-App "Archivierer" können sie mit anderen Benutzern kommunizieren und mit anderen Benutzern chatten.
 
-- Dem Benutzer, der in Schritt 3 einen Archivarchiviererconnector erstellt, muss die Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Dies ist erforderlich, um Connectors auf der **Seite "Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Dem Benutzer, der in Schritt 3 einen Archivarchiviererconnector erstellt, muss die Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Dies ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="create-a-telegram-archiver-connector"></a>Erstellen eines Archivr-Connectors
 
 Nachdem Sie die im vorherigen Abschnitt beschriebenen Voraussetzungen erfüllt haben, können Sie den Connector "Archivarchivieren" im Microsoft 365 Compliance Center erstellen. Der Connector verwendet die Von Ihnen bereitgestellten Informationen, um eine Verbindung mit der TeleMessage-Website herzustellen, und überträgt Kommunikationsdaten an die entsprechenden Benutzerpostfachfelder in Microsoft 365.
 
-1. Wechseln Sie zu <https://compliance.microsoft.com> und klicken Sie dann auf **Datenconnectors** > T **elegram Archiver**.
+1. Wechseln Sie zu <https://compliance.microsoft.com> Und klicken Sie dann auf **Datenconnectors** > T **elegram Archiver**.
 
 2. Klicken Sie auf der Produktbeschreibungsseite des **Archivarchivs** auf **"Connector hinzufügen".**
 

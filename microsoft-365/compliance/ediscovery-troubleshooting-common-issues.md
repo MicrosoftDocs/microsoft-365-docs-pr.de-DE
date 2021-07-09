@@ -16,15 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Erfahren Sie mehr über grundlegende Schritte zur Problembehandlung, die Sie ausführen können, um allgemeine Probleme in Office 365 eDiscovery zu beheben.
+description: Erfahren Sie mehr über die grundlegenden Schritte zur Problembehandlung, die Sie ausführen können, um allgemeine Probleme in Office 365 eDiscovery zu beheben.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822238"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339418"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, Beheben und Beheben allgemeiner eDiscovery-Probleme
 
@@ -32,7 +32,7 @@ In diesem Thema werden grundlegende Schritte zur Problembehandlung behandelt, di
 
 ## <a name="errorissue-ambiguous-location"></a>Fehler/Problem: Mehrdeutiger Speicherort
 
-Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und es doppelte oder in Konflikt stehende Objekte mit derselben Benutzer-ID im Verzeichnis Exchange Online Protection (EOP) gibt, wird der folgende Fehler angezeigt: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
+Wenn Sie versuchen, den Postfachspeicherort des Benutzers für die Suche hinzuzufügen, und es doppelte oder in Konflikt stehende Objekte mit derselben Benutzer-ID im Verzeichnis Exchange Online Protection (EOP) gibt, wird der folgende Fehler angezeigt: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
 
 ### <a name="resolution"></a>Lösung
 
@@ -60,7 +60,7 @@ Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-
 
 Eine eDiscovery- oder Inhaltssuche kann den folgenden Fehler liefern: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![Screenshot des Fehlerfehlers für suchspezifischen Speicherort](../media/edisc-tshoot-specific-location-search-fails.png)
+![Screenshot des Fehlers "Suchspezifischer Speicherort schlägt fehl"](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### <a name="resolution"></a>Lösung
 
@@ -99,7 +99,7 @@ Dieser Fehler tritt möglicherweise auf, wenn Sie eine eDiscovery-Suche ausführ
 Die vorgeschlagene Lösung besteht darin, die Website manuell neu zu indizieren oder zu warten, bis die Website durch den automatischen Hintergrundprozess neu indiziert wird.
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Fehler/Problem: Dieses Suchergebnis wurde nicht heruntergeladen, da es sich um einen Ordner oder ein anderes Artefakt handelt, der nicht von selbst heruntergeladen werden kann. Alle Elemente innerhalb des Ordners oder der Bibliothek werden heruntergeladen.
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Fehler/Problem: Dieses Suchergebnis wurde nicht heruntergeladen, da es sich um einen Ordner oder ein anderes Artefakt handelt, das nicht von selbst heruntergeladen werden kann. Alle Elemente innerhalb des Ordners oder der Bibliothek werden heruntergeladen.
 
 Dieser Fehler tritt möglicherweise auf, wenn Sie eine eDiscovery-Suche ausführen, die SharePoint Online- und One Drive For Business-Speicherorte enthält. Dies bedeutet, dass wir das im Index gemeldete Element ausprobieren und exportieren wollten, es sich jedoch als Ordner herausstellte, sodass wir es nicht exportiert haben. Wie im Fehler erwähnt, exportieren wir keine Ordnerelemente, sondern deren Inhalte.
 
@@ -112,7 +112,7 @@ Bei einer eDiscovery-Suche tritt ein Fehler `recipient not found` auf. Dieser Fe
 
 1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) her.
 
-2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Protection synchronisiert ist:
+2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Protection synchronisiert wird:
 
    ```powershell
    Get-Recipient <userId> | FL
@@ -122,7 +122,7 @@ Bei einer eDiscovery-Suche tritt ein Fehler `recipient not found` auf. Dieser Fe
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Fehler/Problem: Das Exportieren von Suchergebnissen ist langsam
 
-Beim Exportieren von Suchergebnissen aus eDiscovery oder inhaltssuche im Security and Compliance Center dauert der Download länger als erwartet.  Sie können überprüfen, wie viele Daten heruntergeladen werden sollen, und möglicherweise die Exportgeschwindigkeit erhöhen.
+Beim Exportieren von Suchergebnissen aus der Core eDiscovery- oder Inhaltssuche im Microsoft 365 Compliance Center dauert der Download länger als erwartet.  Sie können überprüfen, wie viele Daten heruntergeladen werden sollen, und möglicherweise die Exportgeschwindigkeit erhöhen.
 
 ### <a name="resolution"></a>Lösung
 
@@ -146,9 +146,19 @@ Beim Exportieren von Suchergebnissen aus eDiscovery oder inhaltssuche im Securit
 
 6. Wenn weiterhin Probleme auftreten, sollten Sie Suchvorgänge, die eine große Gruppe von Ergebnissen zurückgeben, in kleinere Suchen unterteilen. Beispielsweise können Sie Datumsbereiche in Suchabfragen verwenden, um eine kleinere Gruppe von Ergebnissen zurückzugeben, die schneller heruntergeladen werden können.
 
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>Fehler/Problem: Exportprozess läuft nicht weiter oder bleibt hängen
+
+Beim Exportieren von Suchergebnissen aus der Core eDiscovery- oder Inhaltssuche im Microsoft 365 Compliance Center wird der Exportvorgang nicht ausgeführt oder scheint hängen zu bleiben.
+
+### <a name="resolution"></a>Lösung
+
+1. Führen Sie bei Bedarf die Suche erneut aus. Wenn die Suche zuletzt vor mehr als 7 Tagen ausgeführt wurde, müssen Sie die Suche erneut ausführen.
+
+2. Starten Sie den Export neu.
+
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Fehler/Problem: "Interner Serverfehler (500) aufgetreten"
 
-Wenn beim Ausführen einer eDiscovery-Suche ein kontinuierlicher Fehler mit dem Fehler "Interner Serverfehler (500) aufgetreten" auftritt, müssen Sie die Suche möglicherweise nur an bestimmten Postfachspeicherorten erneut ausführen.
+Wenn bei der Ausführung einer eDiscovery-Suche ein kontinuierlicher Fehler mit dem Fehler "Interner Serverfehler (500) aufgetreten" auftritt, müssen Sie die Suche möglicherweise nur an bestimmten Postfachspeicherorten erneut ausführen.
 
 ![Screenshot des internen Serverfehlers 500](../media/edisc-tshoot-error-500.png)
 
@@ -222,7 +232,7 @@ Nach einem erfolgreichen Export zeigt der abgeschlossene Download über das Expo
 
 ### <a name="resolution"></a>Lösung
 
-Dies ist ein clientseitiges Problem, und um es zu beheben, versuchen Sie die folgenden Schritte:
+Dies ist ein clientseitiges Problem. Gehen Sie folgendermaßen vor, um dies zu beheben:
 
 1. Versuchen Sie, einen anderen Client/Computer zum Herunterladen zu verwenden.
 
@@ -234,6 +244,6 @@ Dies ist ein clientseitiges Problem, und um es zu beheben, versuchen Sie die fol
 
 5. Stellen Sie sicher, dass kein anderer Export in denselben Ordner oder einen übergeordneten Ordner heruntergeladen wird.
 
-6. Wenn die vorherigen Schritte nicht funktioniert haben, deaktivieren Sie das Zipping und die Deduplizierung.
+6. Wenn die vorherigen Schritte nicht funktionieren, deaktivieren Sie Zipping und Deduplizierung.
 
 7. Wenn dies funktioniert, liegt das Problem an einem lokalen Virenscanner oder einem Datenträgerproblem.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228723"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339192"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontaktieren des Microsoft Defender für Endpunkt-Support
 
@@ -58,9 +58,9 @@ Der Zugriff auf das neue Support-Widget kann auf zwei Arten erfolgen:
 
     ![Abbildung des Widgets, wenn Fragezeichen ausgewählt wird](images/support-widget.png)
 
-2. Klicken Sie auf **"Benötigen Sie Hilfe"?**  schaltfläche unten rechts im Microsoft Defender Security Center:
+2. Klicken Sie auf **"Benötigen Sie Hilfe"?**  Schaltfläche unten rechts im Microsoft 365 Defender-Portal:
 
-    ![Abbildung der Schaltfläche "Hilfe benötigen"](images/need-help.png)
+    ![Abbildung der Schaltfläche "Hilfe benötigen"](images/need-help-option.png)
 
 Im Widget werden Ihnen zwei Optionen angeboten:
 
@@ -70,7 +70,7 @@ Im Widget werden Ihnen zwei Optionen angeboten:
 ## <a name="find-solutions-to-common-problems"></a>Suchen nach Lösungen für häufig auftretende Probleme
 Diese Option enthält Artikel, die sich möglicherweise auf die Frage beziehen, die Sie stellen können. Beginnen Sie einfach mit der Eingabe der Frage im Suchfeld, und es werden Artikel im Zusammenhang mit Ihrer Suche angezeigt.
 
-![Abbildung des Benötigt-Hilfe-Widgets](images/Support3.png)
+![Abbildung des Benötigt-Hilfe-Widgets](images/information-on-help-screen.png)
 
 Falls die vorgeschlagenen Artikel nicht ausreichen, können Sie eine Serviceanfrage öffnen.
 
@@ -85,7 +85,7 @@ Erfahren Sie, wie Sie Supporttickets öffnen, indem Sie sich an den Defender fü
 
 Diese Option ist verfügbar, indem Sie auf das Symbol klicken, das wie ein Headset aussieht. Sie erhalten dann die folgende Seite, um Ihren Supportfall zu übermitteln:
 
-![Abbildung des Widgets zum Öffnen einer Serviceanfrage](images/Support4.png)
+![Abbildung des Widgets zum Öffnen einer Serviceanfrage](images/contact-support-screen.png)
 
 1. Geben Sie einen Titel und eine Beschreibung des Problems ein, mit dem Sie konfrontiert sind, sowie eine Telefonnummer und E-Mail-Adresse, unter der wir Sie erreichen können.
 

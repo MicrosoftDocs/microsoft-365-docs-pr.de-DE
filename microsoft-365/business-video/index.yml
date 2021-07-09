@@ -4,7 +4,7 @@ summary: 'Erfahren Sie, wie Sie Microsoft 365 für Ihr Unternehmen einrichten un
 brand: m365
 metadata:
   title: Microsoft 365 Small Business-Schulung
-  description: Einrichten und Verwalten von Microsoft 365 im Microsoft 365 Admin Center.
+  description: Richten Sie Microsoft 365 im Microsoft 365 Admin Center ein und verwalten Sie sie.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -12,12 +12,12 @@ metadata:
   ms.author: twernermsft
   ms.date: 12/16/2020
   localization_priority: Priority
-  ms.custom: AdminSurgePortfolio
+  ms.custom: null
 productDirectory:
   items:
     - title: Erste Schritte
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: Planen Sie Ihren Wechsel zu Microsoft 365 Business.
+      summary: Planen Sie Ihren Umstieg auf Microsoft 365 for Business.
       url: what-is-microsoft-365.md
     - title: Einrichten von Microsoft 365 für Unternehmen
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
@@ -29,7 +29,7 @@ productDirectory:
       url: upgrade.md
     - title: Einrichten mobiler Geräte
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
-      summary: Installieren Office Apps auf mobilen Geräten.
+      summary: Installieren Sie Office Apps auf mobilen Geräten.
       url: work-from-anywhere.md
     - title: Zusammenarbeit mit anderen Personen
       imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
@@ -37,7 +37,7 @@ productDirectory:
       url: collab-outlook-teams.md
     - title: Store und Freigeben von Dateien
       imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
-      summary: Store dateien sicher und zugriff von überall aus.
+      summary: Store Dateien sicher und von überall aus zugreifen.
       url: overview-file-sharing.md
     - title: Business Voice einrichten
       imageSrc: 'https://docs.microsoft.com/office/media/icons/call-phone-blue.svg'
@@ -45,7 +45,7 @@ productDirectory:
       url: business-voice.md
     - title: Einrichten von Geschäfts-Apps
       imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
-      summary: 'Einrichten und Informationen zu Bookings, Lists, Tasks...'
+      summary: 'Einrichten und Erfahren sie mehr über Bookings, Listen, Aufgaben...'
       url: overview-bookings.md
     - title: Verwalten Ihres Abonnements
       imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
@@ -53,7 +53,7 @@ productDirectory:
       url: what-is-admin.md
     - title: Verwalten Ihrer Geräte
       imageSrc: 'https://docs.microsoft.com/office/media/icons/devices-2-blue.svg'
-      summary: Richten Sie Richtlinien für persönliche geräte und Arbeitsgeräte ein.
+      summary: Richten Sie Richtlinien für persönliche und geschäftliche Geräte ein.
       url: secure-win-10-pro-devices.md
     - title: Absichern Ihres Unternehmens
       imageSrc: 'https://docs.microsoft.com/office/media/icons/security-blue.svg'
@@ -61,18 +61,18 @@ productDirectory:
       url: overview-m365-security.md
     - title: Anfordern von Support
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
-      summary: Erhalten Sie Hilfe zu Microsoft 365 Business.
+      summary: Erhalten Sie Hilfe zu Microsoft 365 business.
       url: get-help-support.md
 additionalContent:
   sections:
     - title: Weitere Informationen
       items:
-        - title: Erfahren Sie mehr über Office
-          summary: 'Erfahren Sie, wie Sie Word, Excel, PowerPoint und andere Office verwenden.'
+        - title: Informationen zu Office
+          summary: 'Erfahren Sie, wie Sie Word, Excel, PowerPoint und andere Office-Apps verwenden.'
           url: 'https://support.microsoft.com/training'
-        - title: Schulungen für ITPros erhalten
-          summary: Vollständige Lernpfade für Kleinunternehmen und Unternehmen.
+        - title: Schulung für IT-Spezialisten erhalten
+          summary: Führen Sie Lernpfade für mittelständische und Unternehmensunternehmen durch.
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: Weitere Administratorressourcen finden
-          summary: Wechseln Sie zur Microsoft 365 Admin Center-Hilfewebsite.
+          summary: Wechseln Sie zur Microsoft 365 Admin Center Hilfewebsite.
           url: ../admin/index.yml

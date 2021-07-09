@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: af5efb669b1f73b4008ac2c3fae251a4d08511dd
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114737"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340984"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Neuerungen in Microsoft 365 Defender
 
@@ -38,12 +38,14 @@ RSS-Feed: Erhalten Sie Benachrichtigungen, wenn diese Seite aktualisiert wird, i
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Juni 2021
-- Bedrohungstags in [Microsoft 365 Defender Bericht zur Bedrohungsanalyse](threat-analytics.md) <br> Mithilfe von Bedrohungstags können Sie sich auf bestimmte Bedrohungskategorien konzentrieren und die relevantesten Berichte überprüfen. 
+
+## <a name="july-2021"></a>Juli 2021
+- [Professional-Dienstkatalog](https://sip.security.microsoft.com/interoperability/professional_services)<br>Verbessern Sie die Erkennungs-, Untersuchungs- und Bedrohungserkennungsfunktionen der Plattform mit unterstützten Partnerverbindungen.
+    
 
 ## <a name="may-2021"></a>Mai 2021
 
-- [Neue Warnungsseite im Microsoft 365 Defender Portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Stellt erweiterte Informationen für den Kontext eines Angriffs bereit. Sie können sehen, welche andere ausgelöste Warnung die aktuelle Warnung verursacht hat, sowie alle betroffenen Entitäten und Aktivitäten, die an dem Angriff beteiligt sind, einschließlich Dateien, Benutzern und Postfächern. Weitere Informationen finden Sie unter [Untersuchen von Warnungen.](/microsoft-365/security/defender/investigate-alerts)
+- [Neue Warnungsseite im Microsoft 365 Defender-Portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Stellt erweiterte Informationen für den Kontext eines Angriffs bereit. Sie können sehen, welche andere ausgelöste Warnung die aktuelle Warnung verursacht hat, sowie alle betroffenen Entitäten und Aktivitäten, die an dem Angriff beteiligt sind, einschließlich Dateien, Benutzern und Postfächern. Weitere Informationen finden Sie unter [Untersuchen von Warnungen.](/microsoft-365/security/defender/investigate-alerts)
 - [Trenddiagramm für Vorfälle und Warnungen im Microsoft 365 Defender Portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> Ermitteln Sie, ob es mehrere Warnungen für einen einzelnen Vorfall gibt oder ob Ihre Organisation mit mehreren verschiedenen Vorfällen angegriffen wird. Weitere Informationen finden Sie unter Priorisieren von [Vorfällen.](/microsoft-365/security/defender/incident-queue)
 
 
@@ -51,12 +53,12 @@ RSS-Feed: Erhalten Sie Benachrichtigungen, wenn diese Seite aktualisiert wird, i
 - Microsoft 365 Defender<br> Das verbesserte [Microsoft 365 Defender-Portal](https://security.microsoft.com) ist jetzt verfügbar. Diese neue Oberfläche vereint Defender für Endpunkt, Defender für Office 365, Defender for Identity und vieles mehr in einem einzigen Portal. Dies ist die neue Startseite zum Verwalten Ihrer Sicherheitskontrollen. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
 
 - [bericht über Microsoft 365 Defender Bedrohungsanalyse](threat-analytics.md)<br>
- Die Bedrohungsanalyse hilft Ihnen, auf aktive Angriffe zu reagieren und sie zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die durch Microsoft 365 Defender Lösungen blockiert werden, und vorbeugende Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Resilienz zu erhöhen. Als Teil der einheitlichen Sicherheitsumgebung ist die Bedrohungsanalyse jetzt für Microsoft Defender für Endpunkt und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
+ Die Bedrohungsanalyse hilft Ihnen, auf aktive Angriffe zu reagieren und sie zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die durch Microsoft 365 Defender Lösungen blockiert werden, und präventive Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Resilienz zu erhöhen. Als Teil der einheitlichen Sicherheitsumgebung ist die Bedrohungsanalyse jetzt für Microsoft Defender für Endpunkt und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
 
 ## <a name="march-2021"></a>März 2021
 - [CloudAppEvents-Tabelle](advanced-hunting-cloudappevents-table.md) <br>Hier finden Sie Informationen zu Ereignissen in verschiedenen Cloud-Apps und -Diensten, die von Microsoft Cloud App Security abgedeckt werden. Diese Tabelle enthält auch Informationen, die zuvor in verfügbar `AppFileEvents` waren.
-## <a name="february-2021"></a>Februar 2021
-- (Vorschau) Das erweiterte [Microsoft 365 Security https://security.microsoft.com) Center (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender für Endpunkt und Defender für Office 365 in die Mitte. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
+## <a name="february-2021"></a>Februar 2021
+- (Vorschau) Das erweiterte [Microsoft 365 Security Center https://security.microsoft.com) (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender für Endpunkt und Defender für Office 365 in die Mitte. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
 
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents-Tabelle](advanced-hunting-identitydirectoryevents-table.md) <br> Suchen von Ereignissen, die einen lokalen Domänencontroller betreffen, auf dem Active Directory (AD) ausgeführt wird. Diese Schematabelle für die [erweiterte Suche](advanced-hunting-overview.md) umfasst eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller.
@@ -75,12 +77,12 @@ RSS-Feed: Erhalten Sie Benachrichtigungen, wenn diese Seite aktualisiert wird, i
 ## <a name="may-2020"></a>Mai 2020
 - [Benutzerdefinierte Erkennungen](custom-detections-overview.md) <br> Verwenden Sie erweiterte Suchabfragen, um benutzerdefinierte Erkennungsregeln zu erstellen, die Sicherheitsereignisse und Systemzustände automatisch überwachen und darauf reagieren.
 
-## <a name="february-2020"></a>Februar 2020
+## <a name="february-2020"></a>Februar 2020
 - [Vorfälle](incidents-overview.md) <br> Wissen Sie genau, wo ein Angriff begonnen hat, und andere Details, die Ihnen helfen, das Ausmaß des Angriffs zu erkennen.
 - [Automatische Untersuchung und Reaktion](m365d-autoir.md) <br> Mit AIR können Ihre Sicherheitsteams die Kapazität Ihrer Organisation im Umgang mit Sicherheitswarnungen und Vorfällen erheblich verbessern.
 - [Erweiterte Erweiterungen für die Suche](advanced-hunting-overview.md) <br> Proaktive Suche nach Bedrohungen im modernen Arbeitsbereich mit Kusto Query Language und einem sicherheitsoptimiertem Schema.
 
 ## <a name="march-2019"></a>März 2019
-- Erweiterte Suche <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
+- Erweiterte Bedrohungssuche <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
 - [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) <br> Messung des Sicherheitsstatus einer Organisation mit einer höheren Zahl, die auf weitere durchgeführte Verbesserungsmaßnahmen hinweist. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. 
 - [Berichte](overview-security-center.md) <br>  Bietet eine Vielzahl von Karten, die eine Vielzahl von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs nachverfolgen.

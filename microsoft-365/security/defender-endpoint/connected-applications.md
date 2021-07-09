@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845582"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339166"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Verbundene Anwendungen in Microsoft Defender für Endpunkt
 
@@ -33,16 +33,16 @@ ms.locfileid: "52845582"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Verbundene Anwendungen können mithilfe von APIs in die Defender für Endpunkt-Plattform integriert werden. 
 
-Anwendungen verwenden das OAuth 2.0-Standardprotokoll zum Authentifizieren und Bereitstellen von Token für die Verwendung mit Microsoft Defender für Endpunkt-APIs.  Darüber hinaus können Mandantenadministratoren mit Azure Active Directory (Azure AD)-Anwendungen explizit steuern, auf welche APIs mithilfe der entsprechenden App zugegriffen werden kann.
+Anwendungen verwenden das OAuth 2.0-Standardprotokoll zum Authentifizieren und Bereitstellen von Token für die Verwendung mit Microsoft Defender für Endpunkt-APIs.  Darüber hinaus können Mandantenadministratoren Azure Active Directory (Azure AD)-Anwendungen explizit steuern, auf welche APIs mithilfe der entsprechenden App zugegriffen werden kann.
  
 Sie müssen diese [Schritte](/microsoft-365/security/defender-endpoint/apis-intro) ausführen, um die APIs mit der verbundenen Anwendung zu verwenden.
  
 ## <a name="access-the-connected-application-page"></a>Zugreifen auf die verbundene Anwendungsseite
-Wählen Sie im linken Navigationsmenü **Partner & APIs**  >  **Connected AAD applications** aus.
+Wählen Sie im linken **Navigationsmenü**  >  **Endpunktpartner und**  >  **APIs Verbundene Anwendungen** aus.
 
  
 ## <a name="view-connected-application-details"></a>Anzeigen von Details zu verbundenen Anwendungen
@@ -51,4 +51,4 @@ Die Seite "Verbundene Anwendungen" enthält Informationen zu den Azure AD-Anwend
 ![Abbildung der verbundenen Apps](images/connected-apps.png)
  
 ## <a name="edit-reconfigure-or-delete-a-connected-application"></a>Bearbeiten, Neukonfigurieren oder Löschen einer verbundenen Anwendung
-Der Link **"Anwendungseinstellungen öffnen"** öffnet die entsprechende Azure AD-Anwendungsverwaltungsseite im Azure-Portal. Über das Azure-Portal können Sie Berechtigungen verwalten, neu konfigurieren oder die verbundenen Anwendungen löschen.
+Über den Link **"Anwendungseinstellungen öffnen"** wird die entsprechende Azure AD-Anwendungsverwaltungsseite im Azure-Portal geöffnet. Über das Azure-Portal können Sie Berechtigungen verwalten, neu konfigurieren oder die verbundenen Anwendungen löschen.

@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: Ändern Sie Ihre E-Mail-Adresse in eine tom@fourthcoffee.com E-Mail-Adresse, indem Sie einen Domänennamen kaufen und Microsoft 365.
-ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Ändern Sie Ihre E-Mail-Adresse in eine benutzerfreundliche E-Mail-Adresse wie tom@fourthcoffee.com, indem Sie einen Domänennamen kaufen und Microsoft 365 hinzufügen.
+ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635522"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341460"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
@@ -58,39 +58,41 @@ Wenn Sie Ihr E-Mail-System auf Microsoft 365 ändern, indem Sie im nächsten Sch
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne über das Microsoft 365 Admin Center
 
-Sie müssen über ein globales Administratorkonto verfügen, um diese Schritte ausführen zu können. 
+Sie müssen globaler Administrator sein, um diese Schritte ausführen zu können.
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>. 
-    
+
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn</a>. 
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn</a>.
 
-::: moniker-end 
+::: moniker-end
 
-2. Wechseln Sie zur Seite **Setup** > **Domänen**. 
+2. Wechseln Sie zur Seite **Setup** > **Domänen**.
 
 3. Klicken Sie auf der Seite **Domänen** auf **Domäne hinzufügen**.
-    
-4. Befolgen Sie die angezeigten Schritte, um zu bestätigen, dass Sie die Domäne besitzen, und Ihre E-Mail-Adresse zu ändern.
-    
-Sie werden durch das Verfahren zum ordnungsgemäßen Einrichten Ihrer Domäne in Microsoft 365 geführt.
+
+4. Führen Sie die Schritte aus, um zu bestätigen, dass Sie Ihre Domäne besitzen. Sie werden durch das Verfahren zum ordnungsgemäßen Einrichten Ihrer Domäne in Microsoft 365 geführt.
+
+5. Wechseln Sie zu **"Benutzer**  >  **aktive Benutzer".**
+
+6. Wählen Sie einen Benutzer aus, um den Benutzernamen zu bearbeiten und ihn in die Domäne zu ändern, die Sie soeben hinzugefügt haben.
 
 > [!NOTE]
 > Wenn Sie keine Exchange-Lizenz verwenden, können Sie die Domäne nicht zum Senden oder Empfangen von E-Mails vom Microsoft 365-Mandanten verwenden.
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Erwerben einer benutzerdefinierten Domäne mithilfe Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)\
+[Kaufen einer benutzerdefinierten Domäne mit Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)\
 [Verwalten von Domänen](../get-help-with-domains/index.yml) (Linkseite)\
 [Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)

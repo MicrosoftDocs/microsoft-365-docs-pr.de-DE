@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290087"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338721"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen
 
@@ -34,7 +34,7 @@ ms.locfileid: "53290087"
 
 > Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Der Defender für Endpunkt-Sensor erfordert Microsoft Windows HTTP (WinHTTP), um Sensordaten zu melden und mit dem Defender für Endpunkt-Dienst zu kommunizieren.
+Der Defender für Endpunkt-Sensor erfordert, dass Microsoft Windows HTTP (WinHTTP) Sensordaten meldet und mit dem Defender für Endpunkt-Dienst kommuniziert.
 
 Der eingebettete Defender für Endpunkt-Sensor wird im Systemkontext mithilfe des LocalSystem-Kontos ausgeführt. Der Sensor verwendet Microsoft Windows HTTP Services (WinHTTP), um die Kommunikation mit dem Defender für Endpunkt-Clouddienst zu ermöglichen.
 
@@ -144,7 +144,7 @@ Wenn bei einem Proxy oder einer Firewall die HTTPS-Überprüfung aktiviert ist (
 > [!NOTE]
 > settings-win.data.microsoft.com ist nur erforderlich, wenn Sie über Windows 10 Geräte verfügen, auf denen Version 1803 oder früher ausgeführt wird.<br>
 >
-> URLs, die v20 enthalten, sind nur erforderlich, wenn Sie Windows 10 Geräte haben, auf denen Version 1803 oder höher ausgeführt wird. Wird beispielsweise für ein Windows 10 Gerät benötigt, auf `us-v20.events.data.microsoft.com` dem Version 1803 oder höher ausgeführt wird und das in die REGION "US Data Storage" integriert ist.
+> URLs, die v20 enthalten, sind nur erforderlich, wenn Sie über Windows 10 Geräte verfügen, auf denen Version 1803 oder höher ausgeführt wird. Wird beispielsweise für ein Windows 10 Gerät benötigt, auf `us-v20.events.data.microsoft.com` dem Version 1803 oder höher ausgeführt wird und das in die REGION "US Data Storage" integriert ist.
 >
 > Wenn Sie Microsoft Defender Antivirus in Ihrer Umgebung verwenden, finden Sie weitere Informationen unter [Konfigurieren von Netzwerkverbindungen mit dem Microsoft Defender Antivirus Clouddienst.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 
@@ -166,11 +166,11 @@ Die folgenden Informationen enthalten die Proxy- und Firewallkonfigurationsinfor
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Bestätigen Microsoft Monitoring Agent (MMA)-Dienst-URL-Anforderungen 
 
-Lesen Sie die folgenden Anleitungen, um die Platzhalter (*)-Anforderung für Ihre spezifische Umgebung zu vermeiden, wenn Sie die Microsoft Monitoring Agent (MMA) für frühere Versionen von Windows verwenden.
+Lesen Sie die folgenden Anleitungen, um die Platzhalter -(*)-Anforderung für Ihre spezifische Umgebung zu vermeiden, wenn Sie die Microsoft Monitoring Agent (MMA) für frühere Versionen von Windows verwenden.
 
-1. Onboarding eines vorherigen Betriebssystems mit dem Microsoft Monitoring Agent (MMA) in Defender für Endpunkt (weitere Informationen finden Sie unter [Onboarding previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
+1. Onboarding eines vorherigen Betriebssystems mit dem Microsoft Monitoring Agent (MMA) in Defender für Endpunkt (weitere Informationen finden Sie unter [Onboarding vorheriger Versionen von Windows auf Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2010326) und [Onboarding Windows Server.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
 
-2. Stellen Sie sicher, dass der Computer erfolgreich berichte in das Microsoft Defender Security Center Portal.
+2. Stellen Sie sicher, dass der Computer erfolgreich Berichte im Microsoft 365 Defender-Portal anmeldet.
 
 3. Führen Sie das TestCloudConnection.exe-Tool unter "C:\Programme\Microsoft Monitoring Agent\Agent" aus, um die Konnektivität zu überprüfen und die erforderlichen URLs für Ihren spezifischen Arbeitsbereich anzuzeigen.
 
@@ -178,7 +178,7 @@ Lesen Sie die folgenden Anleitungen, um die Platzhalter (*)-Anforderung für Ihr
 
     ![Abbildung des Administrators in Windows PowerShell](images/admin-powershell.png)
 
-Die \* in DEN URL-Endpunkten .ods.opinsights.azure.com, .oms.opinsights.azure.com und .agentsvc.azure-automation.net verwendeten Platzhalter ( ) \* können durch Ihre spezifische \* \* Arbeitsbereichs-ID ersetzt werden. Die Arbeitsbereichs-ID ist für Ihre Umgebung und Ihren Arbeitsbereich spezifisch und befindet sich im Onboarding-Abschnitt Ihres Mandanten im Microsoft Defender Security Center-Portal.
+Die \* in \* ODS.OPINSIGHTS.AZURE.COM-, \* OMS.OPINSIGHTS.AZURE.COM- und \* AGENTSVC.AZURE-AUTOMATION.NET-URL-Endpunkten verwendeten Platzhalter können durch Ihre spezifische Arbeitsbereichs-ID ersetzt werden. Die Arbeitsbereichs-ID ist für Ihre Umgebung und Ihren Arbeitsbereich spezifisch und befindet sich im Onboarding-Abschnitt Ihres Mandanten im Microsoft 365 Defender Portal.
 
 Der \* BLOB.CORE.WINDOWS.NET-URL-Endpunkt kann durch die URLs ersetzt werden, die im Abschnitt "Firewallregel: \* .blob.core.windows.net" der Testergebnisse angezeigt werden.
 
@@ -211,7 +211,7 @@ Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wur
     C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
     ```
 
-5. Extrahieren Sie die vom Tool erstellte *MDATPClientAnalyzerResult.zip-Datei* in den Ordner, der in *HardDrivePath* verwendet wird.
+5. Extrahieren Sie die vom Tool erstellte *MDATPClientAnalyzerResult.zipdatei* in den Ordner, der in *HardDrivePath* verwendet wird.
 
 6. Öffnen Sie *MDATPClientAnalyzerResult.txt*, und vergewissern Sie sich, dass Sie die Schritte zur Proxykonfiguration durchgeführt haben, um die Serverermittlung und den Zugriff auf die Dienst-URLs zu aktivieren.
 
@@ -233,7 +233,7 @@ Wenn die Ergebnisse der Verbindungsüberprüfung hingegen auf einen Fehler hinde
 > [!NOTE]
 > Das Tool für die Verbindungsanalyse ist nicht kompatibel mit der ASR-Regel [Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Sie müssen diese Regel vorübergehend deaktivieren, um das Verbindungstool auszuführen.
 >
-> Wenn telemetryProxyServer in der Registrierung oder über eine Gruppenrichtlinie festgelegt ist, greift Defender für Endpunkt auf direct zurück, wenn er nicht auf den definierten Proxy zugreifen kann.
+> Wenn der TelemetryProxyServer in der Registrierung oder über eine Gruppenrichtlinie festgelegt ist, greift Defender für Endpunkt auf direct zurück, wenn er nicht auf den definierten Proxy zugreifen kann.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

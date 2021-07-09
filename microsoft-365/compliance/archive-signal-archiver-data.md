@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen TeleMessage-Connector einrichten, um Signalkommunikationsdaten in Microsoft 365 zu importieren und zu archivieren. Auf diese Weise können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren, sodass Sie Compliance-Features wie gesetzliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Daten von Drittanbietern Ihrer Organisation zu verwalten.
-ms.openlocfilehash: a779cb312e20fdf5fac0987a33734e7e81ba9c74
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bce1788f2ce08ca8678c5ba29c01e1bec2d1c834
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054853"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339466"
 ---
-# <a name="set-up-a-connector-to-archive-signal-communications-data-preview"></a>Einrichten eines Connectors zum Archivieren von Signalkommunikationsdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>Einrichten eines Connectors zum Archivieren von Signalkommunikationsdaten
 
 Verwenden Sie den TeleMessage-Connector in der Microsoft 365 Compliance Center, um Signalchats, Anlagen, Dateien und gelöschte Nachrichten und Anrufe zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit dem TeleMessage-Konto Ihrer Organisation her und importiert die mobile Kommunikation von Mitarbeitern, die den TeleMessage-Signalarchivierer verwenden, in Postfächer in Microsoft 365.
 
-Nachdem Die Daten des Signalarchivierungsconnectors in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung, Inhaltssuche und Microsoft 365 Aufbewahrungsrichtlinien auf Signalkommunikationsdaten anwenden. Sie können beispielsweise die Signalkommunikation mithilfe der Inhaltssuche durchsuchen oder das Postfach, das die Daten des Signalarchivierungsconnectors enthält, einem Verwahrer in einem Advanced eDiscovery Fall zuordnen. Die Verwendung eines Signalarchivierer-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Corporate Governance-Bestimmungen und behördlichen Richtlinien zu gewährleisten.
+Nachdem Die Daten des Signalarchivierungsconnectors in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung, Inhaltssuche und Microsoft 365 Aufbewahrungsrichtlinien auf Signalkommunikationsdaten anwenden. Sie können z. B. die Signalkommunikation mithilfe der Inhaltssuche durchsuchen oder das Postfach, das die Daten des Signalarchivierungsconnectors enthält, einem Verwahrer in einem Advanced eDiscovery Fall zuordnen. Die Verwendung eines Signalarchivierer-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Vorschriften zur Unternehmensgovernance und die gesetzlichen Richtlinien einhalten kann.
 
 ## <a name="overview-of-archiving-signal-communications-data"></a>Übersicht über die Archivierung von Signalkommunikationsdaten
 
@@ -37,9 +37,9 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 3. Der Signalarchivierungsconnector, den Sie im Microsoft 365 Compliance Center erstellen, stellt täglich eine Verbindung mit der TeleMessage-Website her und überträgt die E-Mail-Nachrichten aus den letzten 24 Stunden in einen sicheren Azure Storage Bereich in der Microsoft Cloud.
 
-4. Der Connector importiert die Mobilen Kommunikationselemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner mit dem Namen "Signalarchivierer" wird im Postfach des bestimmten Benutzers erstellt, und die Elemente werden in das Postfach importiert. Der Connector führt die Zuordnung mithilfe des Werts der *E-Mail-Adresseigenschaft des Benutzers* durch. Jede E-Mail-Nachricht enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers der E-Mail-Nachricht aufgefüllt wird.
+4. Der Connector importiert die Mobilen Kommunikationselemente in das Postfach eines bestimmten Benutzers. Ein neuer Ordner mit dem Namen Signalarchivierer wird im Postfach des bestimmten Benutzers erstellt, und die Elemente werden in das Postfach importiert. Der Connector führt die Zuordnung mithilfe des Werts der *E-Mail-Adresseigenschaft des Benutzers* durch. Jede E-Mail-Nachricht enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers der E-Mail-Nachricht aufgefüllt wird.
 
-> Zusätzlich zur automatischen Benutzerzuordnung mithilfe des Werts der *E-Mail-Adresseigenschaft* des Benutzers können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Diese Zuordnungsdatei sollte die Mobiltelefonnummer des Benutzers und die entsprechende Microsoft 365 Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird der Connector für jedes E-Mail-Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn kein gültiger Microsoft 365 Benutzer gefunden wird, der der Mobiltelefonnummer eines Benutzers entspricht, verwendet der Connector die E-Mail-Adresseigenschaft des Benutzers des E-Mail-Elements. Wenn der Connector keinen gültigen Microsoft 365 Benutzer in der benutzerdefinierten Zuordnungsdatei oder in der *E-Mail-Adresseigenschaft des E-Mail-Elements* des Benutzers findet, wird das Element nicht importiert.
+> Zusätzlich zur automatischen Benutzerzuordnung mithilfe des Werts der *E-Mail-Adresseigenschaft* des Benutzers können Sie auch eine benutzerdefinierte Zuordnung definieren, indem Sie eine CSV-Zuordnungsdatei hochladen. Diese Zuordnungsdatei sollte die Mobiltelefonnummer des Benutzers und die entsprechende Microsoft 365 Postfachadresse für jeden Benutzer enthalten. Wenn Sie die automatische Benutzerzuordnung aktivieren und eine benutzerdefinierte Zuordnung bereitstellen, wird der Connector für jedes E-Mail-Element zuerst die benutzerdefinierte Zuordnungsdatei betrachten. Wenn kein gültiger Microsoft 365 Benutzer gefunden wird, der der Mobiltelefonnummer eines Benutzers entspricht, verwendet der Connector die E-Mail-Adresseigenschaft des Benutzers des E-Mail-Elements. Wenn der Connector keinen gültigen Microsoft 365 Benutzer in der benutzerdefinierten Zuordnungsdatei oder in der *E-Mail-Adresseigenschaft* des E-Mail-Elements des Benutzers findet, wird das Element nicht importiert.
 
 ## <a name="before-you-set-up-a-connector"></a>Vor dem Einrichten eines Connectors
 
