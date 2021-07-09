@@ -3,7 +3,7 @@ title: 'Office 365-Leistung optimieren mit Basisplänen und Leistungsverlauf '
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/31/2017
+ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,30 +23,32 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Erfahren Sie, wie Sie den Verlauf Ihrer Clientcomputerverbindungen überprüfen, um neu auftretende Probleme frühzeitig zu erkennen.
-ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339370"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341580"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365-Leistung optimieren mit Basisplänen und Leistungsverlauf 
 
 Es gibt einige einfache Möglichkeiten, die Verbindungsleistung zwischen Office 365 und Ihrem Unternehmen zu überprüfen, mit denen Sie eine grobe Grundlinie für Ihre Konnektivität erstellen können. Wenn Sie den Leistungsverlauf Ihrer Clientcomputerverbindungen kennen, können Sie neue Probleme frühzeitig erkennen, Probleme erkennen und prognostizieren.
   
-Wenn Sie es nicht gewohnt sind, an Leistungsproblemen zu arbeiten, soll dieser Artikel Ihnen helfen, einige häufige Fragen zu berücksichtigen, z. B. wie wissen Sie, dass das auftretende Problem ein Leistungsproblem und kein Office 365 Dienstvorfall ist? Wie können Sie langfristig eine gute Leistung planen? Wie können Sie die Leistung im Auge behalten? Wenn Ihr Team oder Ihre Clients bei der Verwendung von Office 365 eine langsame Leistung sehen und Sie sich über diese Fragen fragen, lesen Sie weiter.
+Wenn Sie es nicht gewohnt sind, an Leistungsproblemen zu arbeiten, hilft Ihnen dieser Artikel bei der Beantwortung einiger häufig gestellter Fragen. Woher wissen Sie, dass das Problem, das Sie sehen, ein Leistungsproblem und kein Office 365 Dienstvorfall ist? Wie können Sie langfristig eine gute Leistung planen? Wie können Sie die Leistung im Auge behalten? Wenn Ihr Team oder Ihre Clients bei der Verwendung von Office 365 eine langsame Leistung sehen und Sie sich über diese Fragen fragen, lesen Sie weiter.
   
 > [!IMPORTANT]
 > **Haben Sie gerade ein Leistungsproblem zwischen Ihrem Client und Office 365?** Führen Sie die Schritte aus, die im [Plan zur Leistungsproblembehandlung für Office 365](performance-troubleshooting-plan.md)beschrieben sind. 
     
 ## <a name="something-you-should-know-about-office-365-performance"></a>Etwas, das Sie über Office 365 Leistung wissen sollten
 
-Office 365 befinden sich in einem dedizierten Microsoft-Netzwerk mit hoher Kapazität, das nicht nur von der Automatisierung, sondern auch von realen Personen ständig überwacht wird. Ein Teil der Rolle bei der Aufrechterhaltung der Office 365 Cloud besteht darin, die Leistung zu optimieren und zu optimieren, wo dies möglich ist. Da clients of the Office 365 cloud have to connect across the Internet, there is a continuous effort to fine-tune the performance across Office 365 services too. Leistungsverbesserungen enden nie wirklich in der Cloud, und es gibt viele gesammelte Erfahrungen, um die Cloud fehlerfrei und schnell zu halten. Wenn ein Leistungsproblem beim Herstellen einer Verbindung von Ihrem Standort zu Office 365 auftritt, empfiehlt es sich, nicht mit einem Supportfall zu beginnen und darauf zu warten. Stattdessen sollten Sie mit der Untersuchung des Problems von "von innen nach außen" beginnen. Das heißt, beginnen Sie in Ihrem Netzwerk, und arbeiten Sie sich auf Office 365 aus. Bevor Sie einen Fall mit Office 365 Support öffnen, können Sie Daten erfassen und Maßnahmen ergreifen, mit denen Sie Ihr Problem untersuchen und beheben können.
+Office 365 befinden sich in einem dedizierten Microsoft-Netzwerk mit hoher Kapazität, das von Der Automatisierung und realen Personen überwacht wird. Ein Teil der Aufrechterhaltung der Office 365 Cloud ist die Leistungsoptimierung und -optimierung, wenn möglich. Da clients of the Office 365 cloud have to connect across the Internet, there's ongoing effort to fine-tune the performance across Office 365 services too.
+
+Leistungsverbesserungen enden nie wirklich in der Cloud, sodass es auch nicht darum geht, die Cloud fehlerfrei und schnell zu halten. Wenn ein Leistungsproblem beim Herstellen einer Verbindung von Ihrem Standort zu Office 365 besteht, empfiehlt es sich, nicht mit einem Supportfall zu beginnen oder zu warten. Stattdessen sollten Sie mit der Untersuchung des Problems von "von innen nach außen" beginnen. Das heißt, beginnen Sie in Ihrem Netzwerk, und arbeiten Sie sich auf Office 365 aus. Bevor Sie einen Fall beim Support öffnen, können Sie Daten erfassen und Maßnahmen ergreifen, die das Problem untersuchen und beheben.
   
 > [!IMPORTANT]
-> Beachten Sie die Kapazitätsplanung und -begrenzungen in Office 365. Diese Informationen stellen Sie vor die Kurve, wenn Sie versuchen, ein Leistungsproblem zu beheben. Hier ist ein Link zu den [Microsoft 365 und Office 365 Dienstbeschreibungen.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Dies ist ein zentraler Hub, und alle von Office 365 angebotenen Dienste verfügen über einen Link, der von hier aus zu ihren eigenen Dienstbeschreibungen wechselt. Das bedeutet, wenn Sie die Standardgrenzwerte für SharePoint Online anzeigen müssen, klicken Sie beispielsweise auf [SharePoint Onlinedienstbeschreibung,](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) und suchen Sie den [Abschnitt SharePoint Onlinebeschränkungen.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) 
+> Beachten Sie die Kapazitätsplanung und -beschränkungen in Office 365. Diese Informationen stellen Sie vor die Kurve, wenn Sie versuchen, ein Leistungsproblem zu beheben. Hier ist ein Link zu den [Microsoft 365 und Office 365 Dienstbeschreibungen.](/office365/servicedescriptions/office-365-service-descriptions-technet-library) Dies ist ein zentraler Hub, und alle von Office 365 angebotenen Dienste verfügen über einen Link, der von hier aus zu ihren eigenen Dienstbeschreibungen wechselt. Das bedeutet, wenn Sie die Standardgrenzwerte für SharePoint Online anzeigen müssen, klicken Sie beispielsweise auf [SharePoint Onlinedienstbeschreibung,](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) und suchen Sie den [Abschnitt SharePoint Onlinebeschränkungen.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
   
-Stellen Sie sicher, dass Sie sich mit der Problembehandlung befassen, indem Sie wissen, dass die Leistung eine gleitende Skalierung ist, es geht nicht darum, einen idealisierten Wert zu erreichen und dauerhaft aufrechtzuerhalten (wenn Sie der Meinung sind, dass dies der Fall ist, sind gelegentlich Aufgaben mit hoher Bandbreite wie das Onboarding einer großen Anzahl von Benutzern oder das Durchführen großer Datenmigrationen sehr stressig – planen Sie also die Leistungsauswirkungen. Sie können und sollten eine grobe Vorstellung von Ihren Leistungszielen haben, aber viele Variablen spielen in der Leistung eine Rolle. Daher variiert die Leistung. Dies ist die Art der Leistung. 
+Stellen Sie sicher, dass Sie mit der Problembehandlung beginnen, indem Sie wissen, dass die Leistung eine gleitende Skalierung ist. Es geht nicht darum, einen idealisierten Wert zu erzielen und dauerhaft zu erhalten. Gelegentliche Aufgaben mit hoher Bandbreite, z. B. das Onboarding einer großen Anzahl von Benutzern oder das Durchführen großer Datenmigrationen, sind stressig. *Planen Sie* daher die Auswirkungen auf die Leistung. Sie sollten eine grobe Vorstellung von Ihren Leistungszielen haben, aber viele Variablen spielen in der Leistung eine Rolle, sodass die Leistung unterschiedlich ist.
   
 Bei der Leistungsproblembehandlung geht es nicht darum, bestimmte Ziele zu erreichen und diese Zahlen auf unbestimmte Zeit beizubehalten, es geht darum, vorhandene Aktivitäten zu verbessern, angesichts aller Variablen. 
   
@@ -54,45 +56,45 @@ Bei der Leistungsproblembehandlung geht es nicht darum, bestimmte Ziele zu errei
 
 Zunächst müssen Sie sicherstellen, dass es sich bei dem Auftreten tatsächlich um ein Leistungsproblem und nicht um einen Dienstvorfall handelt. Ein Leistungsproblem unterscheidet sich von einem Dienstvorfall in Office 365. Hier erfahren Sie, wie Sie sie voneinander unterscheiden.
   
-Wenn der Office 365 Dienst Probleme hat, handelt es sich um einen Dienstvorfall. Im Microsoft 365 Admin Center werden unter **"Aktuelle Integrität"** rote oder gelbe Symbole angezeigt. Möglicherweise stellen Sie auch eine langsame Leistung auf Clientcomputern fest, die eine Verbindung mit Office 365 herstellen. Wenn z. B. der aktuelle Zustand ein rotes Symbol meldet und neben Exchange untersucht **wird,** erhalten Sie möglicherweise auch eine Reihe von Anrufen von Personen in Ihrer Organisation, die sich darüber beschwert haben, dass Clientpostfächer, die Exchange Online verwenden, schlecht funktionieren. In diesem Fall ist es sinnvoll, davon auszugehen, dass Ihre Exchange Online Leistung einfach zum Opfer von Problemen innerhalb des Diensts wurde. 
+Dienstvorfälle treten auf, wenn der Office 365 Dienst selbst Probleme hat. Möglicherweise werden im Microsoft 365 Admin Center unter **"Aktuelle Integrität"** rote oder gelbe Symbole angezeigt. Möglicherweise stellen Sie fest, dass die Leistung auf Clientcomputern, die eine Verbindung mit Office 365 herstellen, langsam ist. Wenn z. B. die aktuelle Integrität ein rotes Symbol meldet und **neben** Exchange untersucht wird, erhalten Sie möglicherweise auch Anrufe von Personen in Ihrer Organisation, die sich darüber beschwert haben, dass Clientpostfächer mit Exchange Online langsam sind. In diesem Fall ist es sinnvoll, davon auszugehen, dass Ihre Exchange Online Leistung ein Opfer von Dienstproblemen war.
   
 ![Das Office 365-Integritätsdashboard mit allen Workloads, die grün angezeigt werden, mit Ausnahme Exchange, in dem "Dienst wiederhergestellt" angezeigt wird.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
-An diesem Punkt sollten Sie, der Office 365-Administrator, den **aktuellen Status** überprüfen und dann **häufig Details und Verlauf anzeigen,** um über die Wartung auf dem System auf dem Laufenden zu bleiben. Das **Aktuelle Integritätsdashboard** wurde vorgenommen, um Sie über Änderungen an und Probleme im Dienst zu aktualisieren. Die Hinweise und Erläuterungen, die in den Integritätsverlauf geschrieben wurden, von Administratoren bis hin zu Administratoren, helfen Ihnen dabei, Ihre Auswirkungen zu messen und Sie über laufende Arbeit auf dem Laufenden zu halten. 
+An diesem Punkt sollten Sie, der Office 365-Administrator, den **aktuellen Status** überprüfen und dann **Details und Verlauf anzeigen,** häufig, um über die Wartung des Systems auf dem Laufenden zu bleiben. Das **Aktuelle Integritätsdashboard** wurde vorgenommen, um Sie über Änderungen an und Probleme im Dienst zu aktualisieren. Die Hinweise und Erläuterungen, die in den Integritätsverlauf geschrieben wurden, vom Administrator zum Administrator, sind vorhanden, um Sie bei der Messung zu unterstützen und Sie über laufende Arbeit auf dem Laufenden zu halten.
   
 ![Ein Bild des Office 365-Integritätsdashboards, in dem erläutert wird, dass der Exchange Online Dienst wiederhergestellt wurde und warum.](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
 Ein Leistungsproblem ist kein Dienstvorfall, obwohl Vorfälle zu einer langsamen Leistung führen können. Ein Leistungsproblem sieht wie folgt aus:
   
-- Ein Leistungsproblem tritt unabhängig davon auf, was der aktuelle Integritätsstatus des Admin **Centers** für den Dienst meldet. 
+- Ein Leistungsproblem tritt unabhängig davon auf, was der aktuelle Integritätsstatus des Admin **Centers** für den Dienst meldet.
     
--  Ein Verhalten, das früher relativ nahtlos war, dauert lange, bis es abgeschlossen ist oder nie abgeschlossen ist. 
+-  Ein Verhalten, das für den Fluss verwendet wurde, dauert lange, bis es abgeschlossen ist oder nie abgeschlossen ist.
     
-- Sie können das Problem auch replizieren oder zumindest wissen, dass es passieren wird, wenn Sie die richtige Reihe von Schritten ausführen.
+- Sie können das Problem auch replizieren oder wissen, dass es passiert, wenn Sie die richtigen Schritte ausführen.
     
--  Wenn das Problem zeitweilig auftritt, gibt es immer noch ein Muster, z. B. wissen Sie, dass Sie bis 10:00 Uhr Anrufe von Benutzern haben, die nicht zuverlässig auf Office 365 zugreifen können, und dass die Anrufe gegen Mittag absterben. 
+-  Wenn das Problem zeitweilig auftritt, kann es immer noch ein Muster geben. Sie wissen beispielsweise, dass Sie bis 10:00 Uhr Anrufe von Benutzern haben, die nicht immer auf Office 365 zugreifen können. Die Anrufe enden gegen Mittag.
     
-Dies klingt wahrscheinlich vertraut. Vielleicht zu vertraut. Sobald Sie wissen, dass es sich um ein Leistungsproblem handelt, wird die Frage gestellt: "Was tun Sie als Nächstes?" Der Rest dieses Artikels hilft Ihnen, genau dies zu ermitteln.
+Diese Liste klingt wahrscheinlich vertraut. Vielleicht zu vertraut. Sobald Sie wissen, dass es sich um ein Leistungsproblem handelt, wird die Frage gestellt: "Was tun Sie als Nächstes?" Der Rest dieses Artikels hilft Ihnen, genau dies zu ermitteln.
   
 ## <a name="how-to-define-and-test-the-performance-problem"></a>Definieren und Testen des Leistungsproblems
 
-Leistungsprobleme treten häufig im Laufe der Zeit auf, sodass es schwierig sein kann, das eigentliche Problem zu definieren. Sie müssen eine gute Problemanweisung und eine gute Vorstellung vom Problemkontext erstellen, und dann müssen Sie wiederholte Testschritte ausführen, um den Tag zu gewinnen. Andernfalls können Sie ohne eigenes Fehler verloren sein. Warum? Nun, hier sind einige Beispiele für Problemanweisungen, die nicht genügend Informationen liefern:
+Leistungsprobleme treten häufig im Laufe der Zeit auf, sodass es schwierig sein kann, das eigentliche Problem zu definieren. Erstellen Sie eine gute Problemanweisung mit einer guten Vorstellung vom Problemkontext, und dann müssen Sie wiederholte Testschritte ausführen. Hier sind einige Beispiele für Problemanweisungen, die nicht genügend Informationen liefern:
   
 - Das Wechseln von meinem Posteingang zu meinem Kalender war etwas, was ich nicht bemerkt habe, und jetzt ist es eine Coffee-Break. Können Sie festlegen, dass es sich wie gewohnt verhält?
     
 - Das Hochladen meiner Dateien in SharePoint Online dauert immer. Warum ist sie im Nachmittag langsam, aber zu jeder anderen Zeit ist sie schnell? Kann es nicht einfach schnell sein?
     
-Die obigen Problemhinweise stellen mehrere große Herausforderungen dar. Insbesondere gibt es viele Zweideutigkeiten, mit denen man umgehen muss. Beispiel:
+Die obigen Problemhinweise stellen mehrere große Herausforderungen dar. Insbesondere zu viele Zweideutigkeiten, um damit umzugehen. Beispiel:
   
 - Es ist unklar, wie zwischen Posteingang und Kalender gewechselt wird, um auf dem Laptop zu handeln.
     
 - Wenn der Benutzer sagt: "Kann es nicht einfach schnell sein", was ist "schnell"?
     
-- Wie lange ist "forever"? Sind dies mehrere Sekunden oder Minuten, oder könnte der Benutzer zum Mittagessen gehen und zehn Minuten nach dem Zurückkehren des Benutzers fertig sein?
+- Wie lange ist "forever"? Sind das mehrere Sekunden? Oder viele Minuten? Oder könnte der Benutzer zu Mittag essen, und die Aktion würde 10 Minuten nach dem Zurückkehren beendet?
     
-Dies alles geschieht, ohne zu berücksichtigen, dass der Administrator und die Problembehandlung viele Details von Problemanweisungen wie diesen nicht kennen können. Beispielsweise, wenn das Problem begonnen hat; Dass der Benutzer von zu Hause aus arbeitet und nur einen langsamen Wechsel in einem Heimnetzwerk sieht; Dass der Benutzer mehrere andere RAM-intensive Anwendungen auf dem lokalen Client ausführen muss, oder der Benutzer ein älteres Betriebssystem ausführt oder keine aktuellen Updates ausgeführt hat.
+Der Administrator und die Problembehandlung können die *Details* des Problems aus allgemeinen Anweisungen wie diesen nicht kennen. Sie wissen beispielsweise nicht, wann das Problem aufgetreten ist. Die Problembehandlung weiß möglicherweise nicht, dass der Benutzer von zu Hause aus arbeitet, und sieht immer nur einen langsamen Wechsel, während er sich im Heimnetzwerk befindet. Oder dass der Benutzer andere RAM-intensive Anwendungen auf dem lokalen Client ausführt. Administratoren wissen möglicherweise nicht, dass der Benutzer ein älteres Betriebssystem ausführt oder keine aktuellen Updates ausgeführt hat.
   
-Wenn Benutzer ein Leistungsproblem melden, müssen viele Informationen gesammelt werden. Das Sammeln dieser Informationen ist Teil eines Prozesses, der als Bereichsdefinition für das Problem bezeichnet wird oder das Problem untersucht wird. Nachfolgend finden Sie eine einfache Bereichsdefinitionsliste, mit der Sie Informationen zu Ihrem Leistungsproblem sammeln können. Diese Liste ist nicht vollständig, aber sie ist ein Ort, an dem Sie eine eigene starten können: 
+Wenn Benutzer ein Leistungsproblem melden, müssen viele Informationen gesammelt werden. Das Abrufen und Aufzeichnen von Informationen wird als Bereichsdefinition des Problems bezeichnet. Hier ist eine einfache Bereichsliste, die Sie verwenden können, um Informationen zu Leistungsproblemen zu sammeln. Diese Liste ist nicht vollständig, aber sie ist ein Ausgangspunkt:
   
 - An welchem Datum ist das Problem aufgetreten, und zu welcher Tages- oder Nachtzeit?
     
@@ -114,11 +116,11 @@ Wenn Sie ein Leistungsproblem beheben, ist dies ein wenig wie ein Tatort, Sie m�
   
 ## <a name="do-you-know-how-performance-used-to-look-when-it-was-good"></a>Wissen Sie, wie die Leistung aussieht, wenn sie gut war?
 
-Wenn Sie unerzwendt sind, weiß niemand. Niemand hatte Zahlen. Das bedeutet, dass niemand die einfache Frage beantworten kann: "Wie viele Sekunden hat es ge dauern, bis ein Posteingang in Office 365 angezeigt wurde?", oder "Wie lange brauchte es, als die Führungskräfte eine Lync Online-Besprechung hatten?", was für viele Unternehmen ein häufiges Szenario ist.
+Wenn Sie unerzwendt sind, weiß niemand. Niemand hatte Zahlen. Das bedeutet, dass niemand die einfache Frage beantworten kann: "Wie viele Sekunden hat es ge dauern, bis ein Posteingang in Office 365 angezeigt wurde?" oder "Wie lange brauchte es, als die Führungskräfte eine Lync Online-Besprechung hatten?", was für viele Unternehmen ein häufiges Szenario ist.
   
 Was hier fehlt, ist eine Leistungsbasislinie.
   
-Basispläne geben Ihnen einen Kontext für Ihre Leistung. Je nach den Anforderungen Ihres Unternehmens sollten Sie gelegentlich zu häufigen Basisplänen greifen. Wenn Sie ein größeres Unternehmen sind, übernimmt Ihr Operations-Team möglicherweise bereits Basispläne für Ihre lokale Umgebung. Wenn Sie beispielsweise alle Exchange Server am ersten Montag des Monats und alle Ihre SharePoint Server am dritten Montag patchen, verfügt Ihr Operations-Team wahrscheinlich über eine Liste von Aufgaben und Szenarien, die nach dem Patchen ausgeführt werden, um nachzuweisen, dass kritische Funktionen betriebsbereit sind. Öffnen Sie z. B. den Posteingang, klicken Sie auf "Senden/Empfangen", und stellen Sie sicher, dass die Ordner aktualisiert werden, oder durchsuchen Sie in SharePoint die Hauptseite der Website, navigieren Sie zur Unternehmenssuchseite, und führen Sie eine Suche durch, die Ergebnisse zurückgibt.
+Basispläne geben Ihnen einen Kontext für Ihre Leistung. Je nach den Anforderungen Ihres Unternehmens sollten Sie gelegentlich zu häufigen Basisplänen greifen. Wenn Sie ein größeres Unternehmen sind, übernimmt Ihr Operations-Team möglicherweise bereits Basispläne für Ihre lokale Umgebung. Wenn Sie beispielsweise alle Exchange Server am ersten Montag des Monats und alle Ihre SharePoint-Server am dritten Montag patchen, verfügt Ihr Betriebsteam wahrscheinlich über eine Liste von Aufgaben und Szenarien, die nach dem Patchen ausgeführt werden, um nachzuweisen, dass kritische Funktionen betriebsbereit sind. Öffnen Sie z. B. den Posteingang, klicken Sie auf "Senden/Empfangen", und stellen Sie sicher, dass die Ordner aktualisiert werden, oder durchsuchen Sie in SharePoint die Hauptseite der Website, navigieren Sie zur Unternehmenssuchseite, und führen Sie eine Suche durch, die Ergebnisse zurückgibt.
   
 Wenn sich Ihre Anwendungen in Office 365 befinden, können Sie die Zeit (in Millisekunden) von einem Clientcomputer innerhalb Ihres Netzwerks bis zu einem Ausgangspunkt oder dem Punkt, an dem Sie Ihr Netzwerk verlassen und zu Office 365 gehen, messen. Hier sind einige hilfreiche Baselines, die Sie untersuchen und aufzeichnen können:
   
@@ -156,7 +158,7 @@ Das bedeutet, dass Sie ihr Netzwerkteam überprüft und festgestellt haben, dass
   
 ![Grundlegendes Netzwerk mit Client, Proxy und Cloud sowie Vorschläge für PSPing, TraceTCP und Netzwerkablaufverfolgungen.](../media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
-Die Optionen werden aufgrund des Umfangs der Expertise, die Sie benötigen, um die Leistungsdaten zu finden, als **"Einfach"** und **"Erweitert"** aufgeführt. Eine Netzwerkablaufverfolgung nimmt im Vergleich zur Ausführung von Befehlszeilentools wie PsPing und TraceTCP viel Zeit in Anspruch. Diese beiden Befehlszeilentools wurden ausgewählt, da sie keine ICMP-Pakete verwenden, die durch Office 365 blockiert werden, und weil sie die Zeit in Millisekunden benötigen, um den Clientcomputer oder Proxyserver zu verlassen (wenn Sie Zugriff haben) und Office 365 eintreffen. Jeder einzelne Hop von einem Computer auf einen anderen endet mit einem Zeitwert, und das ist ideal für Basispläne! Ebenso wichtig ist, dass Sie mit diesen Befehlszeilentools dem Befehl eine Portnummer hinzufügen können. Dies ist nützlich, da Office 365 über Port 443 kommuniziert, der von Secure Sockets Layer and Transport Layer Security (SSL und TLS) verwendet wird. Andere Drittanbietertools sind jedoch möglicherweise bessere Lösungen für Ihre Situation. Microsoft unterstützt nicht alle diese Tools. Wenn Sie psPing und TraceTCP aus irgendeinem Grund nicht verwenden können, wechseln Sie mit einem Tool wie Netmon zu einer Netzwerkablaufverfolgung. 
+Die Optionen werden aufgrund des Umfangs der Expertise, die Sie benötigen, um die Leistungsdaten zu finden, als **"Einfach"** und **"Erweitert"** aufgeführt. Eine Netzwerkablaufverfolgung nimmt im Vergleich zur Ausführung von Befehlszeilentools wie PsPing und TraceTCP viel Zeit in Anspruch. Diese beiden Befehlszeilentools wurden ausgewählt, da sie keine ICMP-Pakete verwenden, die durch Office 365 blockiert werden, und weil sie die Zeit in Millisekunden benötigen, um den Clientcomputer oder Proxyserver zu verlassen (wenn Sie Zugriff haben) und bei Office 365 eintreffen. Jeder einzelne Hop von einem Computer auf einen anderen endet mit einem Zeitwert, und das ist ideal für Basispläne! Ebenso wichtig ist, dass Sie mit diesen Befehlszeilentools dem Befehl eine Portnummer hinzufügen können. Dies ist nützlich, da Office 365 über Port 443 kommuniziert, der von Secure Sockets Layer and Transport Layer Security (SSL und TLS) verwendet wird. Andere Drittanbietertools sind jedoch möglicherweise bessere Lösungen für Ihre Situation. Microsoft unterstützt nicht alle diese Tools. Wenn Sie psPing und TraceTCP aus irgendeinem Grund nicht verwenden können, wechseln Sie mit einem Tool wie Netmon zu einer Netzwerkablaufverfolgung. 
   
 Sie können einen Basisplan vor den Geschäftszeiten, erneut bei starker Nutzung und dann nach Stunden erstellen. Dies bedeutet, dass Sie möglicherweise über eine Ordnerstruktur verfügen, die am Ende ein wenig wie folgt aussieht:
   
@@ -174,13 +176,13 @@ Sie sollten auch eine Benennungskonvention für Ihre Dateien auswählen. Im Folg
     
 Es gibt viele verschiedene Möglichkeiten, dies zu tun, aber die Verwendung des Formats **\<dateTime\>\<what's happening in the test\>** ist ein guter Ausgangspunkt. Wenn Sie später versuchen, Probleme zu beheben, ist dies sehr hilfreich. Später können Sie sagen: "Ich habe am 8. Februar zwei Ablaufverfolgungen ausgeführt, eine hat eine gute Leistung und eine schlechte Leistung gezeigt, sodass wir sie vergleichen können". Dies ist äußerst hilfreich für die Problembehandlung. 
   
-Sie benötigen eine geordnete Methode, um Ihre historischen Grundwerte beizubehalten. In diesem Beispiel erzeugten die einfachen Methoden drei Befehlszeilenausgabe, und die Ergebnisse wurden als Screenshots gesammelt, es können aber stattdessen Netzwerkerfassungsdateien vorhanden sein. Verwenden Sie die Methode, die für Sie am besten geeignet ist. Store Sie Ihre historischen Basispläne und verweisen Sie auf diese an Punkten, an denen Sie Änderungen am Verhalten von Onlinediensten feststellen. 
+Sie benötigen eine geordnete Methode, um Ihre historischen Grundwerte beizubehalten. In diesem Beispiel erzeugten die einfachen Methoden drei Befehlszeilenausgabe, und die Ergebnisse wurden als Screenshots gesammelt, es können jedoch stattdessen Netzwerkerfassungsdateien vorhanden sein. Verwenden Sie die Methode, die für Sie am besten geeignet ist. Store Sie Ihre historischen Basispläne und verweisen Sie auf diese an Punkten, an denen Sie Änderungen am Verhalten von Onlinediensten feststellen. 
   
 ## <a name="why-collect-performance-data-during-a-pilot"></a>Gründe für die Erfassung von Leistungsdaten während eines Pilotprojekts
 
 Es gibt keinen besseren Zeitpunkt, um mit der Erstellung von Basisplänen zu beginnen als während eines Pilotprojekts des Office 365 Diensts. Ihr Büro kann Tausende von Benutzern haben, Hunderte von Tausenden oder fünf, aber selbst bei einer kleinen Anzahl von Benutzern können Sie Tests durchführen, um Leistungseinbußen zu messen. Im Fall eines großen Unternehmens kann eine repräsentative Stichprobe von mehreren Hundert Benutzern, die Office 365 pilotieren, auf mehrere Tausend projiziert werden, damit Sie wissen, wo Probleme auftreten können, bevor sie auftreten.
   
-Wenn es sich bei einem kleinen Unternehmen um ein kleines Unternehmen handelt, bei dem das Onboarding bedeutet, dass alle Benutzer gleichzeitig zum Dienst wechseln und es kein Pilotprojekt gibt, behalten Sie Leistungsmaßnahmen bei, sodass Sie Allen Daten anzeigen können, die möglicherweise probleme mit einem fehlerhaften Vorgang beheben müssen. Wenn Sie z. B. bemerken, dass Sie ihr Gebäude in der Zeit, in der es dauert, um eine mittelgroße Grafik hochzuladen, plötzlich ganz schnell durchlaufen können.
+Wenn es sich bei einem kleinen Unternehmen um ein kleines Unternehmen handelt, bei dem das Onboarding bedeutet, dass alle Benutzer gleichzeitig zum Dienst wechseln und es kein Pilotprojekt gibt, behalten Sie Leistungsmaßnahmen bei, sodass Sie Daten haben, die jedem angezeigt werden müssen, der möglicherweise probleme mit einem fehlerhaften Vorgang beheben muss. Wenn Sie z. B. bemerken, dass Sie ihr Gebäude in der Zeit, in der es dauert, um eine mittelgroße Grafik hochzuladen, plötzlich ganz schnell durchlaufen können.
   
 ## <a name="how-to-collect-baselines"></a>Sammeln von Basisplänen
 
@@ -188,13 +190,13 @@ Für alle Problembehandlungspläne müssen Sie mindestens folgende Dinge identif
   
 - Der clientcomputer, den Sie verwenden (der Typ des Computers oder Geräts, eine IP-Adresse und die Aktionen, die das Problem verursacht haben)
     
-- Wo sich der Clientcomputer auf der Ganzen Welt befindet (z. B. ob dieser Benutzer über ein VPN zum Netzwerk arbeitet, remote arbeitet oder sich im Unternehmensintranet befindet)
+- Wo sich der Clientcomputer in der Welt befindet (z. B. ob sich dieser Benutzer auf einem VPN zum Netzwerk befindet, remote arbeitet oder sich im Unternehmensintranet befindet)
     
 - Der Ausgangspunkt, den der Clientcomputer aus Ihrem Netzwerk verwendet (den Punkt, an dem der Datenverkehr Ihr Unternehmen für einen ISP oder das Internet verlässt)
     
  Sie können das Layout Ihres Netzwerks vom Netzwerkadministrator ermitteln. Wenn Sie sich in einem kleinen Netzwerk befinden, sehen Sie sich die Geräte an, die Sie mit dem Internet verbinden, und rufen Sie Ihren ISP an, wenn Sie Fragen zum Layout haben. Erstellen Sie eine Grafik des endgültigen Layouts für Ihre Referenz. 
   
-Dieser Abschnitt ist in einfache Befehlszeilentools und -methoden sowie erweiterte Tools unterteilt. Wir befassen uns zuerst mit einfachen Methoden. Wenn Sie jedoch gerade ein Leistungsproblem haben, sollten Sie zu erweiterten Methoden springen und den Beispielaktionsplan für die Leistungsproblembehandlung ausprobieren.
+Dieser Abschnitt ist in einfache Befehlszeilentools und -methoden sowie erweiterte Toolsoptionen unterteilt. Wir befassen uns zuerst mit einfachen Methoden. Wenn Sie jedoch gerade ein Leistungsproblem haben, sollten Sie zu erweiterten Methoden wechseln und den Beispielaktionsplan zur Leistungsbehandlung ausprobieren.
   
 ### <a name="simple-methods"></a>Einfache Methoden
 
@@ -205,7 +207,7 @@ Das Ziel dieser einfachen Methoden besteht darin, einfache Leistungsgrundwerte i
 > [!NOTE]
 > TraceTCP ist in diesem Screenshot enthalten, da es sich um ein nützliches Tool handelt, um in Millisekunden anzuzeigen, wie lange eine Anforderung für die Verarbeitung benötigt und wie viele Netzwerkhops oder Verbindungen von einem Computer zum nächsten erforderlich sind, die die Anforderung benötigt, um ein Ziel zu erreichen. TraceTCP kann auch die Namen der Server angeben, die während hops verwendet werden, was für eine Microsoft Office 365 Problembehandlung im Support hilfreich sein kann. > TraceTCP-Befehle können sehr einfach sein, z. B.: >  `tracetcp.exe outlook.office365.com:443`> Denken Sie daran, die Portnummer in den Befehl einzuschließen! > [TraceTCP](https://simulatedsimian.github.io/tracetcp_download.html) ist ein kostenloser Download, basiert aber auf Wincap. Wincap ist ein Tool, das auch von Netmon verwendet und installiert wird. Wir verwenden netmon auch im Abschnitt "Erweiterte Methoden". 
   
- Wenn Sie mehrere Büros haben, müssen Sie auch einen Satz von Daten von einem Client an jedem dieser Standorte aufbewahren. Dieser Test misst die Latenz, bei der es sich in diesem Fall um einen Zahlenwert handelt, der die Zeitspanne zwischen dem Senden einer Anforderung an Office 365 durch einen Client und Office 365 der Antwort auf die Anforderung beschreibt. Die Tests stammen aus Ihrer Domäne auf einem Clientcomputer und messen einen Roundtrip von innerhalb Ihres Netzwerks, über einen Ausgangspunkt, über das Internet zu Office 365 und zurück. 
+ Wenn Sie mehrere Büros haben, müssen Sie auch einen Satz von Daten von einem Client an jedem dieser Standorte aufbewahren. Dieser Test misst die Latenz, bei der es sich in diesem Fall um einen Zahlenwert handelt, der die Zeitspanne zwischen dem Senden einer Anforderung an Office 365 und Office 365 Antwort auf die Anforderung beschreibt. Die Tests stammen aus Ihrer Domäne auf einem Clientcomputer und messen einen Roundtrip von innerhalb Ihres Netzwerks über einen Ausgangspunkt, über das Internet zu Office 365 und zurück. 
   
 Es gibt einige Möglichkeiten, mit dem Ausgangspunkt umzugehen, in diesem Fall dem Proxyserver. Sie können entweder eine Ablaufverfolgung von 1 bis 2 und dann von 2 bis 3 ausführen und dann die Zahlen in Millisekunden hinzufügen, um eine endgültige Summe an den Rand Ihres Netzwerks zu erhalten. Sie können die Verbindung auch so konfigurieren, dass der Proxy für Office 365 Adressen umgangen wird. In einem größeren Netzwerk mit einer Firewall, einem Reverseproxy oder einer Kombination aus den beiden müssen Sie möglicherweise Ausnahmen auf dem Proxyserver vornehmen, über die Datenverkehr für viele URLs übergeben werden kann. Eine Liste der von Office 365 verwendeten Endpunkte finden Sie unter [Office 365 URLs und IP-Adressbereiche.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) Wenn Sie über einen Authentifizierungsproxy verfügen, beginnen Sie mit dem Testen von Ausnahmen für Folgendes:
   
