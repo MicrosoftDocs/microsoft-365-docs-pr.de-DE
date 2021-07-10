@@ -13,14 +13,14 @@ ms.collection:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort in Ihrer Multi-Geo-Umgebung verschieben und ihren Benutzern Erwartungen an die Änderungen vermitteln.
+description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort innerhalb Ihrer Multi-Geo-Umgebung verschieben und den Benutzern die Erwartungen an die Änderungen mitteilen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910930"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362354"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
@@ -28,7 +28,7 @@ Mit der geografischen Verschiebung von SharePoint-Websites können Sie SharePoin
 
 Die folgenden Website-Typen können zwischen geografischen Standorten verschoben werden:
 
-- Mit einer Microsoft 365-Gruppe verbundene Websites
+- Microsoft 365 Gruppenverbundene Websites, einschließlich Microsoft Teams zugeordnete Websites
 - Moderne Websites ohne eine Verbindung mit einer Microsoft 365-Gruppe
 - Klassische SharePoint-Websites
 - Kommunikationswebsites
@@ -74,13 +74,13 @@ Die Uhrzeit muss für beide Parameter in koordinierter Weltzeit (UTC) angegeben 
 
 Die geografische Verschiebung von SharePoint-Websites setzt voraus, dass Sie eine Verbindung mit der SharePoint-Admin-URL an dem Standort herstellen, an dem sich die Website befindet, und die Verschiebung von hier aus durchführen.
 
-Wenn die Website-URL beispielsweise ist, stellen Sie eine Verbindung <https://contosohealthcare.sharepoint.com/sites/Turbines> zur SharePoint Admin-URL unter <https://contosohealthcare-admin.sharepoint.com> :
+Wenn die Website-URL beispielsweise <https://contosohealthcare.sharepoint.com/sites/Turbines> lautet, stellen Sie eine Verbindung mit der SharePoint Admin-URL her <https://contosohealthcare-admin.sharepoint.com> unter:
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![SharePoint Online-Verwaltungsshellfenster mit dem befehl Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Fenster der Onlineverwaltungsshell mit dem Befehl Connect-SPOService](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Überprüfen der Umgebung
 
@@ -146,7 +146,7 @@ Sie können die Verschiebung des geografischen Standorts einer SharePoint-Websit
 Sie können den Status einer Websiteverschiebung an den geografischen Standort oder von dem geografischen Standort, mit dem Sie verbunden sind, mit den folgenden Cmdlets ermitteln:
 
 - [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (Websites, die nicht mit Gruppen verbunden sind)
-- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (mit Gruppen verbundene Websites)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Gruppenverbundene Websites)
 
 Verwenden Sie den `-SourceSiteUrl`-Parameter, um die Website anzugeben, für die Sie den Verschiebungsstatus anzeigen möchten.
 
@@ -177,11 +177,11 @@ Während die Verschiebung der Website durchgeführt wird, ist die Website kurzze
 
 Benutzer, die über Berechtigungen für die Website verfügen, können auch während des Verschiebens und nach Abschluss des Vorgangs auf die Website zugreifen.
 
-### <a name="sync-client"></a>Synchronisierungsclient
+### <a name="sync-app"></a>Synchronisierungs-App
 
-Der Synchronisierungsclient erkennt den neuen Standort der Website nach Abschluss des Vorgangs automatisch und überträgt die Synchronisierung nahtlos auf diese Website. Der Benutzer muss sich nicht erneut anmelden oder eine andere Aktion ausführen. (Es ist Version 17.3.6943.0625 oder höher für den Synchronisierungsclient erforderlich.)
+Die Synchronisierungs-App erkennt und überträgt die Synchronisierung automatisch an den neuen Standort, sobald die Verschiebung der Website abgeschlossen ist. Der Benutzer muss sich nicht erneut anmelden oder eine andere Aktion ausführen. (Version 17.3.6943.0625 oder höher der Synchronisierungs-App erforderlich.)
 
-Wenn ein Benutzer eine Datei aktualisiert, während die Verschiebung ausgeführt wird, benachrichtigt der Synchronisierungsclient den Benutzer, dass Dateiuploads ausstehen, während die Verschiebung ausgeführt wird.
+Wenn ein Benutzer eine Datei aktualisiert, während die Verschiebung ausgeführt wird, benachrichtigt die Synchronisierungs-App sie, dass Dateiuploads ausstehen, während die Verschiebung ausgeführt wird.
 
 ### <a name="sharing-links"></a>Freigabelinks
 

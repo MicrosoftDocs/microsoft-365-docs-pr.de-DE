@@ -27,10 +27,10 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: Die Verwaltung von Antivirensoftware und Universal Print sind jetzt in Microsoft 365 Business Premium verfügbar.
       url: 'https://aka.ms/M365BPQ1Update'
-    - title: Nehmen Sie an der Webinarreihe für Partner teil
+    - title: Nehmen Sie am 28. Juli am Microsoft 365 Lighthouse-Partner-Webinar teil
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
-      summary: '"Beschleunigen des Unternehmenswachstums durch verwaltete Dienste mit Microsoft 365 Business Premium" teil.'
-      url: 'https://aka.ms/acceleratewithm365bp'
+      summary: Verwenden von Microsoft 365 Lighthouse zum Sichern und Standardisieren von Microsoft 365 Business Premium-Kunden.
+      url: 'https://aka.ms/m365lighthousewebinar'
 conceptualContent:
   items:
     - title: Was ist Microsoft 365 Business Premium?

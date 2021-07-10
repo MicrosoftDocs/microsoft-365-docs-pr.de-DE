@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Sie eine Exchange Server lokal für die Verwendung der modernen Hybridauthentifizierung (Hybrid Modern Authentication, HMA) konfigurieren und Ihnen eine sicherere Benutzerauthentifizierung und Autorisierung bieten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21ffec620ac3e262679fc0e2385f6f0f1b31933b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841630"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362258"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
 
@@ -48,7 +48,7 @@ Das Aktivieren von HMA bedeutet:
 
 1. Stellen Sie sicher, dass Sie die Prereqs erfüllen, bevor Sie beginnen.
 
-1. Da viele **Voraussetzungen** sowohl für Skype for Business als auch für Exchange gelten, bietet die [moderne Hybridauthentifizierung Übersicht und Voraussetzungen für](hybrid-modern-auth-overview.md)die Verwendung mit lokalen Skype for Business und Exchange Servern. Führen Sie dies aus, bevor Sie mit den Schritten in diesem Artikel beginnen.
+1. Da viele **Voraussetzungen** sowohl für Skype for Business als auch für Exchange üblich sind, bietet die [moderne Hybridauthentifizierung Übersicht und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange Servern.](hybrid-modern-auth-overview.md) Führen Sie dies aus, bevor Sie mit den Schritten in diesem Artikel beginnen.
 
 1. Hinzufügen von lokalen Webdienst-URLs als **Dienstprinzipalnamen (Service Principal Names, SPNs)** in Azure AD. Wenn SICH EXCH in einer Hybridumgebung mit **mehreren Mandanten** befindet, müssen diese lokalen Webdienst-URLs als SPNs in Azure AD aller Mandanten hinzugefügt werden, die sich in einer Hybridumgebung mit EXCH befinden.
 
@@ -67,11 +67,11 @@ Das Aktivieren von HMA bedeutet:
 Da viele Voraussetzungen sowohl für Skype for Business als auch für Exchange gelten, überprüfen Sie [die Übersicht über die moderne Hybridauthentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange Servern.](hybrid-modern-auth-overview.md) Führen Sie dies  *aus, bevor*  Sie mit den Schritten in diesem Artikel beginnen.
 
 > [!NOTE]
-> Outlook Web App und Exchange Systemsteuerung funktioniert nicht mit der modernen Hybridauthentifizierung.
+> Outlook Web App und Exchange Systemsteuerung funktioniert nicht mit moderner Hybridauthentifizierung.
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Hinzufügen lokaler Webdienst-URLs als SPNs in Azure AD
 
-Führen Sie die Befehle aus, die Ihre lokalen Webdienst-URLs als Azure AD SPNs zuweisen. SPNs werden während der Authentifizierung und Autorisierung von Clientcomputern und -geräten verwendet. Alle URLs, die verwendet werden können, um eine Verbindung zwischen lokalen und Azure Active Directory (Azure AD) herzustellen, müssen in Azure AD registriert werden (dies umfasst sowohl interne als auch externe Namespaces).
+Führen Sie die Befehle aus, die Ihre lokalen Webdienst-URLs als Azure AD SPNs zuweisen. SPNs werden während der Authentifizierung und Autorisierung von Clientcomputern und -geräten verwendet. Alle URLs, die für die Verbindung von der lokalen Umgebung mit Azure Active Directory (Azure AD) verwendet werden können, müssen in Azure AD registriert werden (dies umfasst sowohl interne als auch externe Namespaces).
 
 Sammeln Sie zunächst alle URLs, die Sie in AAD hinzufügen müssen. Führen Sie die folgenden Befehle lokal aus:
 
@@ -88,7 +88,7 @@ Stellen Sie sicher, dass die URLs, mit denen Clients eine Verbindung herstellen 
 1. Stellen Sie zunächst mit [diesen Anweisungen](connect-to-microsoft-365-powershell.md)eine Verbindung mit AAD her.
 
     > [!NOTE]
-    > Sie müssen die _Option Verbinden-MsolService_ auf dieser Seite verwenden, um den folgenden Befehl verwenden zu können.
+    > Sie müssen die _Option Verbinden-MsolService_ von dieser Seite verwenden, um den folgenden Befehl verwenden zu können.
 
 2. Geben Sie für ihre Exchange-bezogenen URLs den folgenden Befehl ein:
 
@@ -107,7 +107,7 @@ Stellen Sie sicher, dass die URLs, mit denen Clients eine Verbindung herstellen 
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Überprüfen Sie, ob die neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/den Screenshot von zuvor mit der neuen Liste der SPNs. Sie können auch einen Screenshot der neuen Liste für Ihre Datensätze erstellen. Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs jetzt die spezifischen URLs  `https://mail.corp.contoso.com`  und  `https://owa.contoso.com` .
+4. Stellen Sie sicher, dass die neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/den Screenshot von zuvor mit der neuen Liste der SPNs. Sie können auch einen Screenshot der neuen Liste für Ihre Datensätze erstellen. Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs jetzt die spezifischen URLs  `https://mail.corp.contoso.com`  und  `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Überprüfen, ob virtuelle Verzeichnisse ordnungsgemäß konfiguriert sind
 
@@ -146,7 +146,7 @@ Get-AuthServer | where {$_.Name -like "EvoSts"}
 In der Ausgabe sollte ein AuthServer mit dem Namen "EvoSts" und der Status "Enabled" auf "True" festgelegt sein. Wenn dies nicht angezeigt wird, sollten Sie die neueste Version des Hybridkonfigurations-Assistenten herunterladen und ausführen.
 
 > [!NOTE]
-> Wenn SICH EXCH in einer Hybridumgebung mit **mehreren Mandanten** befindet, sollte ihre Ausgabe einen AuthServer des Namens "EvoSts - {GUID}" für jeden Mandanten in einer Hybridumgebung mit EXCH anzeigen, und der Status "Enabled" sollte für alle diese AuthServer-Objekte "True" sein.
+> Wenn SICH EXCH in einer Hybridumgebung mit **mehreren Mandanten** befindet, sollte die Ausgabe einen AuthServer des Namens "EvoSts - {GUID}" für jeden Mandanten in einer Hybridumgebung mit EXCH anzeigen, und der Status "Enabled" sollte für alle diese AuthServer-Objekte "True" sein.
 
  **Wichtig** Wenn Sie Exchange 2010 in Ihrer Umgebung ausführen, wird der EvoSTS-Authentifizierungsanbieter nicht erstellt.
 
@@ -167,11 +167,11 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 > [!NOTE]
-> Wenn SICH EXCH in einer Hybridumgebung mit **mehreren Mandanten** befindet, sind in EXCH mehrere AuthServer-Objekte vorhanden, deren Domänen jedem Mandanten entsprechen.  Das **IsDefaultAuthorizationEndpoint-Flag** sollte für eines dieser AuthServer-Objekte auf "true" (mithilfe des Cmdlets **"IsDefaultAuthorizationEndpoint")** festgelegt werden. Dieses Flag kann nicht für alle Authserver-Objekte auf "true" festgelegt werden, und HMA wäre auch aktiviert, wenn eines dieser AuthServer-Objekte **isDefaultAuthorizationEndpoint-Flag** auf "true" festgelegt ist.
+> Wenn SICH EXCH in einer Hybridumgebung mit **mehreren Mandanten** befindet, sind in EXCH mehrere AuthServer-Objekte mit Domänen vorhanden, die jedem Mandanten entsprechen.  Das **IsDefaultAuthorizationEndpoint-Flag** sollte für eines dieser AuthServer-Objekte auf "true" (mithilfe des Cmdlets **"IsDefaultAuthorizationEndpoint")** festgelegt werden. Dieses Flag kann nicht für alle Authserver-Objekte auf "true" festgelegt werden, und HMA wäre auch aktiviert, wenn eines dieser AuthServer-Objekte **isDefaultAuthorizationEndpoint-Flag** auf "true" festgelegt ist.
 
 ## <a name="verify"></a>Überprüfen
 
-Sobald Sie HMA aktiviert haben, verwendet die nächste Anmeldung eines Clients den neuen Authentifizierungsfluss. Beachten Sie, dass das aktivieren von HMA keine erneute Authentifizierung für einen Client auslöst. Die Clients authentifizieren sich basierend auf der Lebensdauer der Authentifizierungstoken und/oder Zertifikate, über die sie verfügen.
+Sobald Sie HMA aktiviert haben, verwendet die nächste Anmeldung eines Clients den neuen Authentifizierungsfluss. Beachten Sie, dass das aktivieren von HMA keine erneute Authentifizierung für einen Client auslöst, und es kann eine Weile dauern, bis Exchange die neuen Einstellungen übernimmt.
 
 Sie sollten auch die STRG-TASTE gedrückt halten, während Sie mit der rechten Maustaste auf das Symbol für den Outlook-Client klicken (auch im Windows Benachrichtigungsschacht), und klicken Sie auf "Verbindungsstatus". Suchen Sie nach der SMTP-Adresse des Clients für den "Authn"-Typ \* "Bearer", der das in OAuth verwendete Bearertoken darstellt.
 
@@ -188,7 +188,7 @@ Wenn Sie ein lokaler Kunde sind, der Exchange Server unter TCP 443 verwendet, um
 52.127.96.0/23
 ```
 
-Die Outlook-App für iOS und Android ist die beste Möglichkeit, Microsoft 365 oder Office 365 auf Ihrem mobilen Gerät mithilfe von Microsoft-Dienste zu erleben, um Ihren täglichen Leben und Ihre Arbeit zu suchen, zu planen und zu priorisieren. Weitere Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
+Die Outlook-App für iOS und Android ist die beste Möglichkeit, Microsoft 365 oder Office 365 auf Ihrem mobilen Gerät zu erleben, indem sie Microsoft-Dienste verwendet, um Ihren täglichen Leben und Ihre Arbeit zu suchen, zu planen und zu priorisieren. Weitere Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
 
 ## <a name="related-topics"></a>Verwandte Themen
 

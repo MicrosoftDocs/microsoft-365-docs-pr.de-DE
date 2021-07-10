@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 38be1b2e1ed1a028e629bb5ed8e0339c0f8db990
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
-ms.translationtype: HT
+ms.openlocfilehash: 08774cdfd831556c194b5175879f211efa250632
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289427"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362738"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
@@ -51,6 +51,7 @@ Wenn Sie
 Office 365-Mandanten- und Benutzer-IDs bleiben während der Migration erhalten. Azure AD-Dienstaufrufe werden von Microsoft Cloud Deutschland zu Office 365-Globalen Diensten umgeleitet und sind für Office 365-Dienste transparent.
 
 - Anträge betroffener Personen (DSRs) für die Datenschutzbestimmungen (DSGVO) werden im Azure-Verwaltungsportal für zukünftige Anforderungen ausgeführt. Alle älteren oder Nicht-Kunden-Diagnosedaten, die sich in Microsoft Cloud Deutschland befinden, werden spätestens nach 30 Tagen gelöscht.
+
 - MFA-Anforderungen (Multi-Factor Authentication), die Microsoft Authenticator als Benutzer-ObjectID (GUID) anzeigen, während der Mandant in Office 365-Dienste kopiert wird. MFA-Anforderungen werden trotz dieses Anzeigeverhaltens erwartungsgemäß ausgeführt.  Microsoft Authenticator-Konten, die mithilfe von Office 365-Dienstendpunkten aktiviert wurden, zeigen den Benutzerprinzipalnamen (User Principal Name, UPN) an.  Konten, die mithilfe von Microsoft Cloud Deutschland-Endpunkten hinzugefügt wurden, zeigen die Benutzer-ObjectID an, aber es können sowohl Microsoft Cloud Deutschland- als auch Office 365-Dienstendpunkte verwendet werden.
 
 <br>
@@ -64,7 +65,7 @@ Office 365-Mandanten- und Benutzer-IDs bleiben während der Migration erhalten. 
 |Kündigen aller Testabonnements.|Testabonnements werden nicht migriert und blockieren die Migration aller kostenpflichtigen Abonnements.|Die Testdienste sind abgelaufen und funktionieren nicht, wenn sie nach der Kündigung von Benutzern aufgerufen werden.|
 |Analysieren Sie die Unterschiede bei den Lizenzfeatures zwischen Microsoft Cloud Deutschland und den Office 365-Globalen Diensten.|Office 365-Dienste umfassen zusätzliche Features und Dienste, die in der aktuellen Microsoft Cloud Deutschland nicht verfügbar sind. Während der Abonnementübertragung stehen Benutzern neue Features zur Verfügung.|<ul><li>Analysieren Sie die unterschiedlichen Features, die über Lizenzen für Microsoft Cloud Deutschland und Office 365-Globale Dienste bereitgestellt werden. Beginnen Sie mit der [Beschreibung des Office 365-Plattformdiensts](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).</li><li>Ermitteln Sie, ob neue Features von Office 365-Diensten anfänglich deaktiviert sein sollten, um die Auswirkungen auf die Benutzer oder die Verwaltung von Benutzeränderungen einzuschränken, und ändern Sie die Benutzerlizenzzuweisungen nach Bedarf.</li><li>Bereiten Sie die Benutzer und Helpdesk-Mitarbeiter auf neue Dienste und Funktionen vor, die von Office 365-Diensten bereitgestellt werden.</li></ul>|
 |Erstellen Sie organisationsweite [Aufbewahrungsrichtlinien](/microsoft-365/compliance/retention) zum Schutz vor dem versehentlichen Löschen von Inhalten während der Migration.|<ul><li>Um sicherzustellen, dass Inhalte während der Migration nicht versehentlich von Endbenutzern gelöscht werden, können Kunden eine organisationsweite Aufbewahrungsrichtlinie aktivieren.</li><li>Eine Aufbewahrung ist zwar nicht erforderlich, da die Aufbewahrungsfristen während der Migration erwartungsgemäß funktionieren sollten. Eine Aufbewahrungsrichtlinie ist daher ein Sicherheitsmechanismus. Gleichermaßen wird eine Aufbewahrungsrichtlinie vielleicht nicht von allen Kunden verwendet, insbesondere von denjenigen, die sich Sorgen um die übermäßige Aufbewahrung machen.</li></ul>|Wenden Sie Aufbewahrungsrichtlinie so an, wie in [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](/microsoft-365/compliance/retention-policies) beschrieben. Es kann zu Ausfällen des Dienstes oder der Client-Software kommen, wenn dies nicht vor Phase 4 von 9 erfolgt.|
-|
+
 
 ## <a name="dns-entries-for-custom-domains"></a>DNS-Einträge für benutzerdefinierte Domänen
 
@@ -119,7 +120,7 @@ Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add
 |Schritte:|Beschreibung|Auswirkung|
 |---|---|---|
 |Begrenzen Sie SharePoint 2013-Workflows, die Sie während der SharePoint Online-Migration verwenden.|Reduzieren Sie SharePoint 2013-Workflows, und schließen Sie In-Flight-Workflows vor Übergängen ab.|Wenn keine Aktion ausgeführt wird, kann dies zu Verwirrung bei Benutzern und zu Helpdesk-Anrufen führen.|
-|
+
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -136,7 +137,7 @@ Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add
 |---|---|---|
 |Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten.|Kunden müssen ihre Partner benachrichtigen, für die sie die Kalenderfreigabe und die Adressraumverfügbarkeitskonfiguration aktiviert haben (ermöglichen des Teilens von Frei/Gebucht-Informationen mit Office 365). Die Verfügbarkeitskonfiguration muss umgestellt werden, damit die [weltweiten Office 365-Endpunkte](/microsoft-365/enterprise/urls-and-ip-address-ranges) verwendet werden, wenn die Exchange Online-Migration abgeschlossen wird.|Ohne Umstellung kann es in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall kommen.|
 |Benachrichtigen Sie Benutzer über erforderliche Änderungen am IMAP4-/POP3/SMTP-Client.|Benutzer, die Geräteverbindungen mit Microsoft Cloud Deutschland-Endpunkten für Clientprotokolle wie IMAP4, POP3 und SMTP haben, müssen ihre Clientgeräte manuell aktualisieren, um zu den [Exchange Online-Servernamen](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes) zu wechseln.|Teilen Sie den Benutzern dieser Protokolle vorab diese Abhängigkeit mit, und stellen Sie sicher, dass sie während dieser Migration entweder zu Outlook Mobile oder Outlook im Web wechseln. Fehler beim Aktualisieren von Clientendpunkten führen zu Clientverbindungsfehlern mit Microsoft Cloud Deutschland, wenn Benutzerpostfächer migriert werden.|
-|
+
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Online-Hybridkunden
 
@@ -156,7 +157,7 @@ Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit
 |---|---|---|
 |Erneutes Ausführen des HCW mithilfe der Einstellungen für „Office 365 Deutschland“ <p> _Sie können diese Aktivität unmittelbar nach Erhalt der Benachrichtigung des Nachrichtencenters starten, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1)._|Durch Deinstallieren und erneutes Ausführen des HCW (Version 17.0.5378.0 oder höher) aus <https://aka.ms/hybridwizard> vor der Phase 5 wird sichergestellt, dass Ihre lokale Konfiguration für das Senden und Empfangen von E-Mails sowohl für Benutzer von Microsoft Cloud Deutschland als auch für Benutzer, die zur Region „Office 365 Deutschland” migriert sind, vorbereitet ist. <p> Wählen Sie im HCW im untenstehenden Listenfeld **Meine Office 365-Organisation wird von gehostet von** die Option **Office 365 Deutschland** aus.|Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.|
 |Bewahren der Einstellungen für freigegebene Postfächer|Einige Hybrid-Kunden haben Cloud-Benutzerpostfächer mithilfe von Exchange Online-Befehlen in „freigegebene“ Postfächer konvertiert. Diese Cloud-Postfachkonfiguration wird in das Postfach und das lokale Exchange Online-Verzeichnis geschrieben, jedoch nicht über AAD Connect zurück zum Active Directory des Kunden synchronisiert. Das Ergebnis ist eine Diskrepanz zwischen der Active Directory-Darstellung der Postfachwerte „RemoteRecipientType“ und „RemoteDisplayType“ und derjenigen in Exchange Online, die das Postfach als freigegeben definiert. <p> Der Kunde ist dafür verantwortlich, dass alle freigegebenen Postfächer mit `New-RemoteMailbox -Shared`, `Enable-RemoteMailbox -Shared` oder `Set-RemoteMailbox -Shared` ordnungsgemäß bereitgestellt werden. In dieser Referenz erfahren Sie, wie Sie [das Postfach eines Benutzers in einer hybriden Umgebung konvertieren](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) können.|Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange Online-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für freigegebene Postfächer auftreten, die wieder in nicht lizenzierte Postfächer umgewandelt werden, und es kann zum Verlust des gemeinsamen Zugriffs für die betroffenen Postfächer kommen. Der Artikel [Freigegebene Postfächer werden unerwartet in Benutzerpostfächer umgewandelt, nachdem die Verzeichnissynchronisierung in einer Exchange-Hybridbereitstellung ausgeführt wurde](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) skizziert die Auswirkungen, wenn dieses Problem nicht vor Abschluss der Exchange Online-Migration behoben wird.|
-|
+
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
@@ -174,7 +175,7 @@ Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit
 |Stellen Sie den Microsoft Teams-Desktopclient für Benutzer bereit, die auf Skype for Business in Deutschland zugreifen.|Durch die Migration werden Skype for Business-Benutzer für die Zusammenarbeit, für Anrufe und Chats auf Microsoft Teams umgestellt. Stellen Sie entweder den Microsoft Teams-Desktopclient bereit, oder stellen Sie sicher, dass ein unterstützter Browser verfügbar ist.|Wenn keine Aktion ausgeführt wird, führt dies dazu, dass Microsoft Teams-Dienste für die Zusammenarbeit nicht verfügbar sind.|
 |Überprüfen und Vorbereiten von migrationsbezogenen DNS-Änderungen.|Änderungen an DNS-Zonen von Kunden für Skype for Business Online.|<ul><li>Es wird empfohlen, die Gültigkeitsdauer (Time-to-Live, TTL) für alle kundeneigenen DNS-Einträge auf 5 Minuten zu aktualisieren, um die Aktualisierung von DNS-Einträgen zu beschleunigen. Allerdings kann die von Microsoft verwaltete Umstellung im Zusammenhang mit dieser DNS-Änderung jederzeit innerhalb des bereitgestellten 24-Stunden-Änderungsfensters erfolgen.</li><li>Eine Dienstunterbrechung ist in der Zukunft möglich. Benutzer können sich nicht bei Skype for Business anmelden und werden in den Office 365-Diensten zu der migrierten Teams-Erfahrung umgeleitet.</li></ul>|
 |Vorbereiten der Endbenutzer- und Administratorschulung und der Bereitschaft für den Umstieg auf Microsoft Teams.|Wenn Sie die Benutzerkommunikation und -bereitschaft planen wird der Umstieg von Skype auf Teams erfolgreich verlaufen.|<ul><li>Kunden müssen über die neuen Dienste und die Verwendung der Dienste informiert sein, sobald ihre Dienste auf die Office 365-Dienste umgestellt wurden.</li><li>Nachdem DNS-Änderungen sowohl für die Vanity-Domänen des Kunden als auch für die ursprüngliche Domäne vorgenommen wurden, würden sich die Benutzer bei Skype for Business anmelden und sehen, dass sie nun zu Microsoft Teams migriert wurden. Dies würde auch den Desktopclient für Teams im Hintergrund herunterladen.</li></ul>|
-|
+
 
 ## <a name="mobile-device-management"></a>Verwaltung mobiler Geräte
 
@@ -190,7 +191,7 @@ Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit
 |---|---|---|---|
 |Vorbereiten der Endbenutzer- und Administratorschulung für Benutzer für iOS und Android, die ihr Konto aus Microsoft Outlook entfernen und erneut hinzufügen.|Microsoft Outlook für iOS-und Android-Konten, die mit Postfächern in Microsoft Cloud Deutschland konfiguriert sind, muss möglicherweise entfernt und erneut zu Outlook hinzugefügt werden, um die neue Office 365-Dienstkonfiguration ordnungsgemäß zu synchronisieren.|Kunden von Microsoft Outlook für iOS und Android|Zuvor für Microsoft Cloud Deutschland konfigurierte Outlook-Postfächer können die neue Office 365-Dienste-Konfiguration nicht verwenden, was zu Fehlern und schlechter Leistung anderer Benutzererfahrungen führt. IT-Administratoren werden aufgefordert, Dokumentation bereitzustellen, die Benutzer proaktiv anweist, ihre Konten für iOS und Android aus Microsoft Outlook zu entfernen und erneut hinzuzufügen, wenn nach der Migration Probleme beim Anmelden oder beim Synchronisieren von E-Mails auftreten.|
 |Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist.|MDM-Lösungen (Mobile Device Management) können als Ziel `outlook.de` -Endpunkte haben. Bei diesem Umstieg auf Office 365-Dienste sollten Clientprofile auf die Office 365-Dienst-URL `outlook.office365.com`aktualisiert werden.|Exchange Online und MDM-Kunden|Clients funktionieren möglicherweise weiterhin, solange auf den `outlook.de`-Endpunkt zugegriffen werden kann. Wenn nicht mehr auf Microsoft Cloud Deutschland-Endpunkte zugegriffen werden kann, treten Fehler auf.|
-|
+
 
 ## <a name="line-of-business-apps"></a>Branchenspezifische Apps
 
@@ -199,14 +200,18 @@ Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit
 
 Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit Office 365 integriert sind, müssen Sie alle Abhängigkeiten auf Endpunkten, die von der Microsoft Cloud Deutschland-Instanz bereitgestellt werden, auflösen. Wenn z. B. Ihre Branchen-Apps mit `https://graph.microsoft.de/` in Verbindung stehen, müssen Sie den Endpunkt in `https://graph.microsoft.com/` ändern. Die Endpunkte des Microsoft Office 365-Globalen Diensts werden Ihrem Mandanten nach Phase 2 zur Verfügung stehen.
 
-<br>
+Während der Migration, während sich Ihre Organisation zwischen Phase 2 und Phase 9 befindet, können Sie Ihrer Organisation keine mehrinstanzenfähigen Anwendungen von Drittanbietern hinzufügen. Nach Abschluss der Migrationsphase 9 können Sie das Hinzufügen oder Zustimmen zu MTA-Anwendungen für Ihre Organisation fortsetzen.
 
-****
+
+| Schritte: | Beschreibung | Auswirkung |
+|:-------|:-------|:-------|
+| Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist. | Dienste und Anwendungen von Drittanbietern, die in Office 365 integriert sind, können so programmiert werden, dass sie IP-Adressen und URLs von Microsoft Cloud Deutschland erwarten. | Erforderliche Aktion. Wenn die Aktion nicht ausgeführt wird, kann dies zu Fehlern beim Dienst oder bei der Clientsoftware führen. |
+
 
 |Schritte:|Beschreibung|Auswirkung|
 |---|---|---|
 |Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist.|Dienste und Anwendungen von Drittanbietern, die in Office 365 integriert sind, können so programmiert werden, dass sie IP-Adressen und URLs von Microsoft Cloud Deutschland erwarten.|Erforderliche Aktion. Wenn die Aktion nicht ausgeführt wird, kann dies zu Fehlern beim Dienst oder bei der Clientsoftware führen.|
-|
+
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -219,7 +224,7 @@ Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit O
 |Schritte:|Beschreibung|Auswirkung|
 |---|---|---|
 |Für Dynamics 365-Sandkastenabonnements müssen Sie unbedingt die Produktionsumgebung der SQL-Instanz von Dynamics aus Ihrem Dynamics 365-Abonnement in Microsoft Cloud Deutschland herunterladen. Die neueste Produktionssicherung sollte vor der Sandkastenmigration im Sandkasten wiederhergestellt werden.|Die Migration von Dynamics 365 setzt voraus, dass Kunden sicherstellen, dass die Sandkastenumgebung mit der neuesten Produktionsdatenbank aktualisiert wird.|Das FastTrack-Team unterstützt Kunden bei der Durchführung von Trockentests, um das Versionsupgrade von 8.x auf 9.1.x zu überprüfen.|
-|
+
 
 ## <a name="power-bi"></a>Power BI
 
@@ -232,7 +237,7 @@ Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit O
 |Schritte:|Beschreibung|Auswirkung|
 |---|---|---|
 |Entfernen von Objekten aus Power BI-Abonnements, die nicht von Power BI Microsoft Cloud Deutsch nach Office 365-Diensten migriert werden.|Für die Migration von Power BI-Diensten sind Kundenaktionen erforderlich, um bestimmte Artefakte wie Datasets und Dashboards zu löschen.|Administratoren müssen möglicherweise die folgenden Elemente aus ihrem Abonnement entfernen: <ul><li>Echtzeit-Datasets (beispielsweise Streaming- oder Push-Datasets)</li><li>Lokale Power BI-Konfiguration des Datengateways und die Datenquelle </li></ul>|
-|
+
 
 ## <a name="microsoft-azure"></a>Microsoft Azure
 
@@ -250,7 +255,7 @@ Kunden, die Office 365- und Azure-Ressourcen (z. B. Netzwerk, Datenverarbeitung 
 |Schritte:|Beschreibung|Auswirkung|
 |---|---|---|
 |Ermitteln Sie, welche Azure-Dienste verwendet werden, und bereiten Sie die künftige Migration von Deutschland zum Office 365-Dienstmandanten vor, indem Sie mit ihren Partnern zusammenarbeiten. Befolgen Sie die Schritte im [Playbook zur Azure-Migration](/azure/germany/germany-migration-main).|<ul><li>Die Migration von Azure-Ressourcen liegt in der Verantwortung des Kunden und erfordert manuellen Anstrengungen beim Ausführen der vorgeschriebenen Schritte. Für eine erfolgreiche Migration von Azure-Diensten ist es wichtig, dass Sie verstehen, welche Dienste in der Organisation verwendet werden.</li><li>Kunden von Office 365 Deutschland mit Azure-Abonnements unter derselben Identitätspartition (Organisation) müssen die von Microsoft vorgeschriebene Reihenfolge bei der Migration von Abonnement und Diensten einhalten.</li></ul>|<ul><li>Kunden können mehrere Azure-Abonnements haben, von denen jedes Abonnement Infrastruktur-, Dienst und Plattformkomponenten umfasst.</li><li>Administratoren sollten Abonnements und Beteiligte identifizieren, um sicherzustellen, dass im Rahmen dieses Migrationsereignisses eine schnelle Migration und Überprüfung möglich ist.</li><li>Wenn Sie die Migration dieser Abonnements und Azure-Komponenten nicht innerhalb der vorgegebenen Zeitachse erfolgreich abgeschlossen haben, wirkt sich dies auf den Abschluss des Office- und Azure AD-Umstiegs auf Office 365-Dienste aus. Dies kann zu Datenverlusten führen.</li><li>Eine Benachrichtigung über das Nachrichtencenter signalisiert den Punkt, an dem die von Kunden durchgeführte Migration beginnen kann.</li></ul>|
-|
+
 
 <!--
 Reworked as text:

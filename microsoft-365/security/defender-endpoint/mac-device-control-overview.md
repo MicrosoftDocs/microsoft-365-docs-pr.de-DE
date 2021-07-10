@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877836"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363979"
 ---
 # <a name="device-control-for-macos"></a>Gerätesteuerung für macOS
 
@@ -33,9 +33,7 @@ ms.locfileid: "52877836"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -43,30 +41,8 @@ Für die Gerätesteuerung für macOS sind die folgenden Voraussetzungen erforder
 
 >[!div class="checklist"]
 > - Microsoft Defender für Endpunkt-Berechtigung (kann Testversion sein)
-> - Mindestversion des Betriebssystems: macOS 10.15.4 oder höher
-> - Mindestversion des Produkts: 101.24.59
-> - Ihr Gerät muss mit Systemerweiterungen ausgeführt werden (dies ist die Standardeinstellung unter macOS 11 Big Sur). 
-> 
->   Sie können überprüfen, ob Ihr Gerät auf Systemerweiterungen ausgeführt wird, indem Sie den folgenden Befehl ausführen und überprüfen, ob es in der Konsole gedruckt `endpoint_security_extension` wird: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Ihr Gerät muss sich im `Beta` Microsoft AutoUpdate-Updatekanal (zuvor als `InsiderFast` "Microsoft AutoUpdate" bezeichnet) befindet. Weitere Informationen finden Sie unter [Bereitstellen von Updates für Microsoft Defender für Endpunkt auf dem Mac.](mac-updates.md)
-> 
->   Sie können den Updatekanal mit dem folgenden Befehl überprüfen: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    Wenn der oben genannte Befehl weder gedruckt noch `Beta` , führen Sie den folgenden Befehl aus dem Terminal `InsiderFast` aus. Das Kanalupdate wird beim nächsten Start des Produkts wirksam (wenn das nächste Produktupdate installiert oder das Gerät neu gestartet wird). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Wenn Sie sich in einer verwalteten Umgebung (JAMF oder Intune) befinden, können Sie den Updatekanal alternativ remote konfigurieren. Weitere Informationen finden Sie unter [Bereitstellen von Updates für Microsoft Defender für Endpunkt auf dem Mac.](mac-updates.md) 
+> - Mindestversion des Betriebssystems: macOS 11 oder höher
+> - Mindestversion des Produkts: 101.34.20
 
 ## <a name="device-control-policy"></a>Gerätesteuerungsrichtlinie
 
@@ -79,7 +55,7 @@ Innerhalb des Konfigurationsprofils wird die Gerätesteuerungsrichtlinie im folg
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | deviceControl |
+| **Key** | deviceControl |
 | **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
 | **Comments** | Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten. |
 
@@ -99,7 +75,7 @@ Wenn Endbenutzer auf diese Benachrichtigung klicken, wird eine Webseite im Stand
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | navigationTarget |
+| **Key** | navigationTarget |
 | **Datentyp** | Zeichenfolge |
 | **Comments** | Wenn nicht definiert, verwendet das Produkt eine Standard-URL, die auf eine generische Seite verweist, auf der die vom Produkt ausgeführte Aktion erläutert wird. |
 
@@ -113,7 +89,7 @@ Der Abschnitt "Wechselmedien" der Gerätesteuerungsrichtlinie wird verwendet, um
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
 | **Comments** | Eine Beschreibung des Wörterbuchinhalts finden Sie in den folgenden Abschnitten. |
 
@@ -143,10 +119,13 @@ Im Abschnitt "Wechselmedien" gibt es eine Option zum Festlegen der Erzwingungsst
 - `audit` – Wenn der Zugriff auf ein Gerät unter dieser Erzwingungsstufe eingeschränkt ist, wird dem Benutzer eine Benachrichtigung angezeigt, das Gerät kann jedoch weiterhin verwendet werden. Diese Erzwingungsstufe kann nützlich sein, um die Effektivität einer Richtlinie zu bewerten.
 - `block` – Unter dieser Erzwingungsstufe sind die Vorgänge, die der Benutzer auf dem Gerät ausführen kann, auf die in der Richtlinie definierten Vorgänge beschränkt. Darüber hinaus wird eine Benachrichtigung für den Benutzer ausgelöst. 
 
+> [!NOTE] 
+> Standardmäßig ist die Erzwingungsstufe `audit` auf . 
+
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **Datentyp** | String |
 | **Mögliche Werte** | Überwachung (Standard) <br/> Block |
 
@@ -171,7 +150,7 @@ Diese Einstellung kann wie folgt festgelegt werden:
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Berechtigung |
+| **Key** | Berechtigung |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | keine <br/> Lesen <br/> Schreiben <br/> Ausführen |
 
@@ -186,7 +165,7 @@ Das `vendors` Wörterbuch enthält einen oder mehrere Einträge, wobei jeder Ein
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Anbieter |
+| **Key** | Anbieter |
 | **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
 
 Für jeden Anbieter können Sie die gewünschte Berechtigungsstufe für Geräte von diesem Anbieter angeben.
@@ -194,7 +173,7 @@ Für jeden Anbieter können Sie die gewünschte Berechtigungsstufe für Geräte 
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Berechtigung |
+| **Key** | Berechtigung |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | Identisch mit [der Standardberechtigungsstufe](#default-permission-level) |
 
@@ -203,7 +182,7 @@ Darüber hinaus können Sie optional den Satz von Produkten angeben, die zu dies
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Produkte |
+| **Key** | Produkte |
 | **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
 
 Für jedes Produkt können Sie die gewünschte Berechtigungsstufe für dieses Produkt angeben.
@@ -211,7 +190,7 @@ Für jedes Produkt können Sie die gewünschte Berechtigungsstufe für dieses Pr
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Berechtigung |
+| **Key** | Berechtigung |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | Identisch mit [der Standardberechtigungsstufe](#default-permission-level) |
 
@@ -222,7 +201,7 @@ Das `serialNumbers` Wörterbuch enthält einen oder mehrere Einträge, wobei jed
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | serialNumbers |
+| **Key** | serialNumbers |
 | **Datentyp** | Wörterbuch (geschachtelte Präferenz) |
 
 Für jede Seriennummer können Sie die gewünschte Berechtigungsstufe angeben.
@@ -230,7 +209,7 @@ Für jede Seriennummer können Sie die gewünschte Berechtigungsstufe angeben.
 |Abschnitt|Wert|
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
-| **Schlüssel** | Berechtigung |
+| **Key** | Berechtigung |
 | **Datentyp** | Array aus Zeichenfolgen |
 | **Mögliche Werte** | Identisch mit [der Standardberechtigungsstufe](#default-permission-level) |
 
@@ -367,7 +346,7 @@ Beispielausgabe:
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-Im obigen Beispiel ist nur ein Wechselmediengerät angeschlossen, und es verfügt `read` über berechtigungen gemäß der `execute` Gerätesteuerungsrichtlinie, die an das Gerät übermittelt wurde.
+Im obigen Beispiel ist nur ein Wechselmediengerät angeschlossen und verfügt `read` über berechtigungen gemäß der `execute` Gerätesteuerungsrichtlinie, die an das Gerät übermittelt wurde.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

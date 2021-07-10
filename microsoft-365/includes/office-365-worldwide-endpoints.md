@@ -123,7 +123,7 @@ ID | Kategorie | ER | Addresses | Ports
 148 | Standard<BR>Erforderlich | Nein | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP:** 443, 80
 149 | Standard<BR>Erforderlich | Nein | `workplaceanalytics.cdn.office.net` | **TCP:** 443, 80
 150 | Standard<BR>Optional<BR>**Hinweise:** Die Blockierung dieser Endpunkte beeinträchtigt die Möglichkeit, über das Portal auf die Bereitstellungs- und Verwaltungsfunktionen von Microsoft 365 Apps for Enterprise zuzugreifen. | Nein | `*.officeconfig.msocdn.com` | **TCP:** 443
-152 | Standard<BR>Optional<BR>**Hinweise:** Diese Endpunkte aktivieren die Office-Skriptfunktionen in Office-Clients, die über die Registerkarte "Automatisieren" verfügbar ist. Dieses Feature kann auch über das Office 365 Admin-Portal deaktiviert werden. | Nein | `*.microsoftusercontent.com` | **TCP:** 443
+152 | Standard<BR>Optional<BR>**Hinweise:** Diese Endpunkte aktivieren die Office-Skripts-Funktionen in Office-Clients, die über die Registerkarte "Automatisieren" verfügbar sind.  Dieses Feature kann auch über das Microsoft 365 Admin Center deaktiviert werden. | Nein | `*.microsoftusercontent.com` | **TCP:** 443
 153 | Standard<BR>Erforderlich | Nein | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP:** 443
 156 | Standard<BR>Erforderlich | Nein | `activity.windows.com` | **TCP:** 443
 157 | Standard<BR>Erforderlich | Nein | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80

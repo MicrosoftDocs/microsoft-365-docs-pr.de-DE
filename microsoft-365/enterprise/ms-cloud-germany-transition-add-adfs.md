@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: AD FS-Migrationsschritte (Active Directory Federation Services, Active Directory-Verbunddienste) für die Migration von Microsoft Cloud Deutschland.'
 ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
 ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/08/2021
 ms.locfileid: "53339610"

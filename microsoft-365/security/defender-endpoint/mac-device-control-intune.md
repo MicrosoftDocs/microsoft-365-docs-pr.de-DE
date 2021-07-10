@@ -1,7 +1,7 @@
 ---
 title: Beispiele für Gerätesteuerungsrichtlinien für Intune
-description: Erfahren Sie, wie Sie Gerätesteuerungsrichtlinien mithilfe von Beispielen verwenden, die mit Intune verwendet werden können.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, intune
+description: Erfahren Sie, wie Sie Gerätesteuerungsrichtlinien anhand von Beispielen verwenden, die mit Intune verwendet werden können.
+keywords: Microsoft, Defender, Microsoft Defender für Endpunkt, Mac, Gerät, Steuerung, USB, Wechseldatenträger, Medien, Intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a7521a31b0b31fb95d2729f7068bfc9de5717f01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f52d1e9ea0d3e4c2da2ec413085a0f14efc453c7
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933817"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363803"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Beispiele für Gerätesteuerungsrichtlinien für Intune
 
@@ -33,15 +33,13 @@ ms.locfileid: "51933817"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Dieses Dokument enthält Beispiele für Gerätesteuerungsrichtlinien, die Sie für Ihre eigene Organisation anpassen können. Diese Beispiele sind anwendbar, wenn Sie Intune zum Verwalten von Geräten in Ihrem Unternehmen verwenden.
 
 ## <a name="restrict-access-to-all-removable-media"></a>Einschränken des Zugriffs auf alle Wechselmedien
 
-Im folgenden Beispiel wird der Zugriff auf alle Wechselmedien eingeschränkt. Beachten Sie die Berechtigung, die auf oberster Ebene der Richtlinie angewendet wird, was bedeutet, dass alle `none` Dateivorgänge nicht zulässig sind.
+Im folgenden Beispiel wird der Zugriff auf alle Wechselmedien eingeschränkt. Beachten Sie die `none` Berechtigung, die auf der obersten Ebene der Richtlinie angewendet wird, was bedeutet, dass alle Dateivorgänge nicht zulässig sind.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -107,7 +105,7 @@ Im folgenden Beispiel wird der Zugriff auf alle Wechselmedien eingeschränkt. Be
 
 ## <a name="set-all-removable-media-to-be-read-only"></a>Festlegen, dass alle Wechselmedien schreibgeschützt sind
 
-Im folgenden Beispiel wird konfiguriert, dass alle Wechselmedien schreibgeschützt sind. Beachten Sie die Berechtigung, die auf der obersten Ebene der Richtlinie angewendet wird, was bedeutet, dass alle Schreib- und Ausführungsvorgänge nicht zulässig `read` sind.
+Im folgenden Beispiel werden alle Wechselmedien als schreibgeschützt konfiguriert. Beachten Sie die `read` Berechtigung, die auf der obersten Ebene der Richtlinie angewendet wird, was bedeutet, dass alle Schreib- und Ausführungsvorgänge nicht zulässig sind.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -171,9 +169,9 @@ Im folgenden Beispiel wird konfiguriert, dass alle Wechselmedien schreibgeschüt
 </plist>
 ```
 
-## <a name="disallow-program-execution-from-removable-media"></a>Programmausführung von Wechselmedien nicht ermöglichen
+## <a name="disallow-program-execution-from-removable-media"></a>Verbieten der Programmausführung von Wechselmedien
 
-Das folgende Beispiel zeigt, wie die Programmausführung von Wechselmedien nicht zulässig sein kann. Beachten Sie `read` die `write` Berechtigungen, die auf der obersten Ebene der Richtlinie angewendet werden.
+Das folgende Beispiel zeigt, wie die Programmausführung von Wechselmedien unzulässig sein kann. Beachten Sie die `read` und `write` die Berechtigungen, die auf der obersten Ebene der Richtlinie angewendet werden.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -240,7 +238,7 @@ Das folgende Beispiel zeigt, wie die Programmausführung von Wechselmedien nicht
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>Einschränken aller Geräte von bestimmten Anbietern
 
-Im folgenden Beispiel werden alle Geräte von bestimmten Anbietern (in diesem Fall durch und `fff0` identifiziert) `4525` eingeschränkt. Alle anderen Geräte sind uneingeschränkt, da die auf oberster Ebene der Richtlinie definierte Berechtigung alle möglichen Berechtigungen (Lese-, Schreib- und Ausführungsberechtigungen) auflistet.
+Das folgende Beispiel schränkt alle Geräte von bestimmten Anbietern ein (in diesem Fall identifiziert von `fff0` und `4525` ). Alle anderen Geräte sind uneingeschränkt, da die auf der obersten Ebene der Richtlinie definierte Berechtigung alle möglichen Berechtigungen (Lesen, Schreiben und Ausführen) auflistet.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -323,9 +321,9 @@ Im folgenden Beispiel werden alle Geräte von bestimmten Anbietern (in diesem Fa
 </plist>
 ```
 
-## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Einschränken bestimmter Geräte, die durch Hersteller-ID, Produkt-ID und Seriennummer identifiziert werden
+## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Einschränken bestimmter Geräte, die nach Hersteller-ID, Produkt-ID und Seriennummer identifiziert werden
 
-Das folgende Beispiel schränkt zwei bestimmte Geräte ein, die durch hersteller-ID, `fff0` Produkt-ID `1000` und Seriennummern und identifiziert `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` werden. Auf allen anderen Ebenen der Richtlinie enthalten die Berechtigungen alle möglichen Werte (Lesen, Schreiben und Ausführen), was bedeutet, dass alle anderen Geräte uneingeschränkt sind.
+Im folgenden Beispiel werden zwei bestimmte Geräte eingeschränkt, die durch die Hersteller-ID, `fff0` produkt-ID `1000` und Seriennummern `04ZSSMHI2O7WBVOA` und identifiziert `04ZSSMHI2O7WBVOB` werden. Auf allen anderen Ebenen der Richtlinie enthalten die Berechtigungen alle möglichen Werte (Lesen, Schreiben und Ausführen), was bedeutet, dass alle anderen Geräte uneingeschränkt sind.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 

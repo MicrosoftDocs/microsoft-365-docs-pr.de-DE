@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Mit der E-Mail-Weiterleitung können Sie E-Mail-Nachrichten, die an ein Microsoft 365 Benutzerpostfach gesendet wurden, an ein anderes Postfach innerhalb oder außerhalb Ihrer Organisation weiterleiten.
-ms.openlocfilehash: e0043fe75eefe224c63fd23f352d4bd3ddf2c326
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 9d645c2b36bdac2ab53dcb8af4ff6ebdbd0ee601
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228051"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363791"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurieren der E-Mail-Weiterleitung in Microsoft 365
 
@@ -49,6 +49,8 @@ Bedenken Sie vor dem Einrichten der E-Mail-Weiterleitung Folgendes:
 
 Um dies durchzuführen, müssen Sie ein Exchange-Administrator oder ein globaler Administrator in Microsoft 365 sein. Weitere Informationen finden Sie im Thema [Info zu Administratorrollen](../add-users/about-admin-roles.md).
 
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zur Seite **Benutzer** \> **[Aktive Benutzer](https://go.microsoft.com/fwlink/p/?linkid=834822)**.
 
 2. Wählen Sie den Namen des Benutzers aus, dessen E-Mail Sie weiterleiten möchten, und öffnen Sie dann die Eigenschaftenseite.
@@ -59,8 +61,8 @@ Um dies durchzuführen, müssen Sie ein Exchange-Administrator oder ein globaler
 
     **Um an mehrere E-Mail-Adressen weiterzuleiten**, können Sie den Benutzer bitten, eine Outlook-Regel zum Weiterleiten an diese Adressen einzurichten. 
     
-    1.  Öffnen von  >  **Outlook-Startregeln**  >    > Auswählen **von Verwaltungsregeln & Warnungen**
-    1. Wählen Sie **"Neue Regel**  >  **auswählen Regel anwenden" für die Nachricht** aus, die sich am unteren Rand der Liste befindet, und klicken Sie dann auf **"Weiter".**
+    1.  Öffnen  von > **Outlook-Startregeln** >  > Auswählen **von Verwaltungsregeln & Warnungen**  
+    1. Wählen Sie **"Neue Regel** > **auswählen Regel anwenden" für die Nachricht** aus, die sich am unteren Rand der Liste befindet, und klicken Sie dann auf **"Weiter".**
     1. Klicken Sie auf **"Ja",** wenn Sie gefragt werden, dass diese Regel auf jede empfangene Nachricht angewendet wird. 
     1. Wählen Sie in der nächsten Liste die Aktionen aus, um **sie an Personen oder öffentliche Gruppen umzuleiten,** und beenden Sie die Verarbeitung weiterer **Regeln.**
     1. Klicken Sie im unteren Teil des Fensters auf den unterstrichenen Ausdruck **"Personen" oder** auf die öffentliche Gruppe.

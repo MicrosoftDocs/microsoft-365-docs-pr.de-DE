@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Microsoft 365-Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann, wenn sich sein Name ändert. '
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228363"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341020"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -40,7 +40,7 @@ Es kann vorkommen, dass Sie die E-Mail-Adresse und den Anzeigenamen einer Person
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../../business-video/index.yml) an.
 
-Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können.
+Um diese Schritte zu vervollständigen, müssen Sie ein [globaler Administrator](about-admin-roles.md) sein.
 
 ## <a name="change-a-users-email-address"></a>Ändern der E-Mail-Adresse eines Benutzers
 
@@ -64,7 +64,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 1. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Benutzernamen verwalten** aus.
 
-1. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
+1. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, wählen Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste aus. [Informationen zum Hinzufügen einer Domäne](../setup/add-domain.md).
 
 1. Wählen Sie **Änderungen speichern** aus.
 
@@ -118,7 +118,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>. 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Wenn Sie erfahren möchten, wie ein Benutzername einer Person in Active Director
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Administratoren: Zurücksetzen eines Kennworts für ein oder mehrere Benutzer](reset-passwords.md) (Artikel)
-[Hinzufügen einer weiteren E-Mail-Adresse für einen Benutzer](../email/add-another-email-alias-for-a-user.md) (Artikel)
-[Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) (Artikel)
+[Hinzufügen einer Domäne](../setup/add-domain.md)
+[Administratoren: Zurücksetzen eines Kennworts für einen oder mehrere Benutzer](reset-passwords.md)
+[Hinzufügen einer weiteren E-Mail-Adresse zu einem Benutzer](../email/add-another-email-alias-for-a-user.md)
+[Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md)

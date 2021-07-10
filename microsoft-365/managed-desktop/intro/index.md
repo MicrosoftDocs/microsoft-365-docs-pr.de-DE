@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841366"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362617"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -25,7 +25,6 @@ Microsoft Managed Desktop ist ein Cloud-basierter Dienst, der [Microsoft 365 Ent
 - Bereitstellung von Benutzergeräten
 - IT-Service-Management und Betrieb
 - Sicherheitsüberwachung und Reaktion
-- Benutzerunterstützung
 
 Microsoft Managed Desktop bietet eine Lösung für einige der Herausforderungen, vor denen Unternehmen und ihre Mitarbeiter heute stehen:
 - Der Übergang in die agile Welt von Software as a Service ist gewaltig.
@@ -33,7 +32,7 @@ Microsoft Managed Desktop bietet eine Lösung für einige der Herausforderungen,
 - Viele aktuelle IT-Management- und Sicherheitsprozesse sind veraltet, zeitintensiv und teuer.
 - Unternehmen möchten sich auf das konzentrieren, was sie einzigartig erfolgreich macht, anstatt die digitale Infrastruktur aufrechtzuerhalten.
 
-Ihre Benutzer werden die neuesten Versionen von Windows 10 und Microsoft 365 Apps for Enterprise (und mehr) genießen, während sie Geräte und Software verwenden, die kuratiert und streng auf beste Leistung und Zuverlässigkeit getestet wurden. Außerdem müssen Sie sich nie darum kümmern, diese Software auf dem neuesten Stand zu halten, da dies automatisch geschieht und eine sorgfältige Rollout-Sequenz folgt, bei der jeder Schritt überwacht wird. Registrierte Geräte werden 24x7 auf technische und sicherheitstechnische Probleme überwacht. Wenn also etwas schief geht, ist Hilfe unterwegs.
+Ihre Benutzer werden die neuesten Versionen von Windows 10 und Microsoft 365 Apps for Enterprise (und mehr) genießen, während sie Geräte und Software verwenden, die kuratiert und streng auf beste Leistung und Zuverlässigkeit getestet wurden. Außerdem müssen Sie sich nie darum kümmern, diese Software auf dem neuesten Stand zu halten, da dies automatisch geschieht und eine sorgfältige Rollout-Sequenz folgt, bei der jeder Schritt überwacht wird. Und registrierte Geräte werden 24 Stunden am Tag, sieben Tage die Woche auf technische und sicherheitstechnische Probleme überwacht, damit im Falle eines Fehlers Hilfe geleistet werden kann.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Einzigartig für Microsoft Managed Desktop

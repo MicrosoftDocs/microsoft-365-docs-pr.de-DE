@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP-Abonnements übertragen
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925001"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363817"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Übertragen eines Microsoft 365 Business-CSP-Abonnements
 
@@ -36,7 +36,7 @@ Wenn Sie über ein Microsoft 365 Business-Vorschau-CSP-Abonnement verfügen, les
     ![Kundenabonnements im Partner Center](../../media/pc_customer_subscriptions_1.png)
     
 3. Wählen Sie auf der Seite **"Abonnements"** des Unternehmens die Option **"Abonnement hinzufügen"** aus.
-4. Wählen Sie auf der Seite **"Neues Abonnement"** die Option **"Kleinunternehmen"** und dann **Microsoft 365 Business** aus der Liste aus.
+4. Wählen Sie auf der Seite **"Neues Abonnement"** die Option **"Kleinunternehmen"** und dann **Microsoft 365 Unternehmen** aus der Liste aus.
 5. Fügen Sie die Anzahl der Lizenzen hinzu und wählen Sie dann **Weiter: Überprüfung** aus, um das Abonnement zu überprüfen. Wählen Sie **Übermitteln** aus.
 
     ![Überprüfen Sie das neue Abonnement mit Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
@@ -44,20 +44,20 @@ Wenn Sie über ein Microsoft 365 Business-Vorschau-CSP-Abonnement verfügen, les
     Das **lizenzbasierte Abonnement** zeigt **Microsoft 365 Business-Vorschau** und **Microsoft 365 Business** an. Sie werden das Vorschauabonnement als Nächstes aussetzen.
 
 6. Wählen Sie **Microsoft 365 Business-Vorschau** aus.
-7. Wählen Sie auf der **Seite Microsoft 365 Business Vorschau** die Option **"Angehalten"** aus, um das Vorschauabonnement zu sperren.
+7. Wählen Sie auf der **Seite Microsoft 365 Business Preview** die Option **"Angehalten"** aus, um das Vorschauabonnement zu sperren.
 
     ![Anhalten des Vorschauabonnements mit Microsoft 365 Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Wählen Sie zur Bestätigung **Übermitteln** aus.
 
-    Vergewissern Sie sich auf der Seite **"Abonnements",** dass der **Status "Microsoft 365 Business Vorschau"** **"Angehalten" angezeigt wird.**
+    Vergewissern Sie sich auf der Seite **"Abonnements",** dass der **Status Microsoft 365 Geschäftsvorschau** **"Angehalten" angezeigt wird.**
 
     ![Überprüfen Sie, ob der Vorschauabonnementstatus angehalten wird](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Optional können Sie auch den Lizenzvertrag überprüfen. Gehen Sie hierzu folgendermaßen vor:
     1. Wählen Sie **Benutzer und Lizenzen** aus der Unternehmensseite **Abonnements** aus.
     2. Wählen Sie auf der Seite **"Benutzer und Lizenzen"** einen Benutzer aus.
-    3. Überprüfen Sie auf der Seite des Benutzers den Abschnitt **"Lizenzen zuweisen",** und vergewissern Sie sich, dass **Microsoft 365 Business** angezeigt wird.
+    3. Überprüfen Sie auf der Seite des Benutzers den Abschnitt **"Lizenzen zuweisen",** und vergewissern Sie sich, dass Microsoft 365 Business angezeigt **wird.**
 
         ![Stellen Sie sicher, dass dem Benutzer die Microsoft 365 Business-Lizenz zugewiesen wurde](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ In der folgende Tabelle werden die Auswirkungen auf Kunden zusammengefasst, die 
 |-------|-----------------|--------------|---------------|---------------|
 | **Status** | Karenzzeit | Abgelaufen      | Deaktiviert      | Nicht Bereitgestellt |
 | **Auswirkungen auf den Dienst**                                                        |
-| **Microsoft 365 Business-Verwaltungsportal** | Die Funktionalität wird dadurch nicht beeinträchtigt | Die Funktionalität wird dadurch nicht beeinträchtigt | Kann Benutzer hinzufügen oder entfernen, Abonnements erwerben.</br> Lizenzen können nicht zugewiesen/widerrufen werden. | Abonnement des Kunden und alle Daten werden gelöscht. Administrator kann andere kostenpflichtige Abonnements verwalten. |
+| **Microsoft 365 Admin Center** | Die Funktionalität wird dadurch nicht beeinträchtigt | Die Funktionalität wird dadurch nicht beeinträchtigt | Kann Benutzer hinzufügen oder entfernen, Abonnements erwerben.</br> Lizenzen können nicht zugewiesen/widerrufen werden. | Abonnement des Kunden und alle Daten werden gelöscht. Administrator kann andere kostenpflichtige Abonnements verwalten. |
 | **Office-Apps**                         | Keine Auswirkungen für Endbenutzer | Keine Auswirkungen für Endbenutzer | Office wechselt in den Modus mit eingeschränkter Funktionalität.</br> Benutzer können nur Dateien anzeigen. | Office wechselt in den Modus mit eingeschränkter Funktionalität.</br> Benutzer können nur Dateien anzeigen. |
 | **Cloud-Dienste (SharePoint Online, Exchange Online, Skype, Teams und mehr)** | Keine Auswirkungen für Endbenutzer | Keine Auswirkungen für Endbenutzer | Endbenutzer und Administratoren haben keinen Zugriff auf Daten in der Cloud. | Abonnement des Kunden und alle Daten werden gelöscht. |
 | **EM+S-Komponenten** | Keine Auswirkung für den Administrator</br> Keine Auswirkungen für Endbenutzer | Keine Auswirkung für den Administrator</br> Keine Auswirkungen für Endbenutzer | Die Funktion wird nicht mehr erzwungen.</br> Weitere Informationen finden Sie unter [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) und [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration). | Die Funktion wird nicht mehr erzwungen.</br> Weitere Informationen finden Sie unter [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) und [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration). |
@@ -93,7 +93,7 @@ In der folgenden Tabelle sind die Auswirkungen auf die App-Verwaltungsrichtlinie
 | **Zurücksetzen der PIN, wenn die Anmeldung fehlschlägt** | Eingeschränkter Zugriff auf Apps | Keine Beschränkung für den Zugriff auf App-Ebene |
 | **Erfordert, dass Benutzer sich erneut anmelden, wenn Office-Apps sich im Leerlauf befunden haben** | Anmeldung erforderlich | Keine Anmeldung erforderlich |
 | **Verweigern des Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen** | Auf Arbeitsdateien kann auf Geräten mit Jailbreak/Root nicht zugegriffen werden | Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen ist möglich |
-| **Benutzern ermöglichen, Inhalte von Office-Apps auf persönliche Apps zu kopieren.** | Kopieren/Einfügen, beschränkt auf Apps, die im Rahmen Microsoft 365-Abonnements verfügbar sind | Kopieren und Einfügen für alle Apps verfügbar |
+| **Benutzern ermöglichen, Inhalte von Office-Apps auf persönliche Apps zu kopieren.** | Kopieren/Einfügen, beschränkt auf Apps, die als Teil Microsoft 365-Abonnements verfügbar sind | Kopieren und Einfügen für alle Apps verfügbar |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Auswirkungen auf Windows 10 PC nach Ablauf des Abonnements
 

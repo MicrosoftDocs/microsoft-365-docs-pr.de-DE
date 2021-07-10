@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 08a0b3722bad18b2823b0ba0e5c998d570f3654e
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286033"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362582"
 ---
 # <a name="define-information-barrier-policies"></a>Definieren von Richtlinien für Informationsbarrieren
 
@@ -46,7 +46,7 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 
 | Phase | Was beteiligt ist |
 |:--------|:------------------|
-| [Stellen Sie sicher, dass die Voraussetzungen erfüllt sind](#prerequisites) | – Stellen Sie sicher, dass Sie über die [erforderlichen Lizenzen und Berechtigungen verfügen.](information-barriers.md#required-licenses-and-permissions)<br/>– Sicherstellen, dass Ihr Verzeichnis Daten zum Segmentieren von Benutzern enthält<br/>– Aktivieren der bereichsbezogenen Verzeichnissuche für Microsoft Teams<br/>– Sicherstellen, dass die Überwachungsprotokollierung aktiviert ist<br/>– Stellen Sie sicher, dass keine Exchange Adressbuchrichtlinien vorhanden sind<br/>– Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>– Erteilen der Administratorzustimmung für Microsoft Teams (Schritte sind enthalten) |
+| [Stellen Sie sicher, dass die Voraussetzungen erfüllt sind](#prerequisites) | – Stellen Sie sicher, dass Sie über die [erforderlichen Lizenzen und Berechtigungen verfügen.](information-barriers.md#required-licenses-and-permissions)<br/>– Sicherstellen, dass Ihr Verzeichnis Daten zum Segmentieren von Benutzern enthält<br/>– Aktivieren der Bereichsverzeichnissuche für Microsoft Teams<br/>– Sicherstellen, dass die Überwachungsprotokollierung aktiviert ist<br/>– Stellen Sie sicher, dass keine Exchange Adressbuchrichtlinien vorhanden sind<br/>– Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>– Erteilen der Administratorzustimmung für Microsoft Teams (Schritte sind enthalten) |
 | [Teil 1: Segmentieren von Benutzern in Ihrer Organisation](#part-1-segment-users) | – Bestimmen, welche Richtlinien erforderlich sind<br/>– Erstellen einer Liste der zu definierenden Segmente<br/>– Identifizieren, welche Attribute verwendet werden sollen<br/>- Definieren von Segmenten im Hinblick auf Richtlinienfilter |
 | [Teil 2: Definieren von Richtlinien für Informationsbarrieren](#part-2-define-information-barrier-policies) | – Definieren Sie Ihre Richtlinien (noch nicht anwendbar)<br/>– Aus zwei Arten auswählen (blockieren oder zulassen) |
 | [Teil 3: Anwenden von Richtlinien für Informationsbarrieren](#part-3-apply-information-barrier-policies) | – Festlegen von Richtlinien auf den aktiven Status<br/>– Ausführen der Richtlinienanwendung<br/>- Anzeigen des Richtlinienstatus |
@@ -59,10 +59,10 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Verzeichnisdaten – Stellen Sie sicher, dass die Struktur Ihrer Organisation in Verzeichnisdaten widergespiegelt wird. Um diese Aktion auszuführen, stellen Sie sicher, dass Benutzerkontoattribute wie Gruppenmitgliedschaft, Abteilungsname usw. in Azure Active Directory (oder Exchange Online) richtig ausgefüllt sind. Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
   - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
-  - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- Bereichsbezogene Verzeichnissuche: Bevor Sie die erste Richtlinie für Informationsbarrieren In Ihrer Organisation definieren, müssen Sie [die Bereichsverzeichnissuche in Microsoft Teams aktivieren.](/MicrosoftTeams/teams-scoped-directory-search) Warten Sie mindestens 24 Stunden, nachdem Sie die bereichsbezogene Verzeichnissuche aktiviert haben, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
+- Bereichsbezogene Verzeichnissuche: Bevor Sie die erste Richtlinie für Informationsbarrieren In Ihrer Organisation definieren, müssen Sie [die bereichsbezogene Verzeichnissuche in Microsoft Teams aktivieren.](/MicrosoftTeams/teams-scoped-directory-search) Warten Sie mindestens 24 Stunden, nachdem Sie die bereichsbezogene Verzeichnissuche aktiviert haben, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
 
 - EXO-Lizenz : IB-Richtlinien funktionieren nur, wenn den Zielbenutzern eine EXO-Lizenz zugewiesen wurde.
 
@@ -70,21 +70,21 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - Keine Adressbuchrichtlinien– Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, stellen Sie sicher, dass keine Exchange Adressbuchrichtlinien vorhanden sind. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie über solche Richtlinien verfügen, stellen Sie sicher, dass [Sie ihre Adressbuchrichtlinien](/exchange/address-books/address-book-policies/remove-an-address-book-policy) zuerst entfernen. Sobald Richtlinien für Informationsbarrieren aktiviert sind und Sie hierarchisches Adressbuch aktiviert haben, wird allen ***Benutzern, die nicht*** in einem Informationsbarrierensegment enthalten sind, das hierarchische [Adressbuch](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange Online angezeigt.
 
-- PowerShell – Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. Obwohl in diesem Artikel mehrere Beispiele bereitgestellt werden, müssen Sie mit PowerShell-Cmdlets und -Parametern vertraut sein. Sie benötigen auch das Azure PowerShell Modul.
+- PowerShell : Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. Obwohl in diesem Artikel mehrere Beispiele bereitgestellt werden, müssen Sie mit PowerShell-Cmdlets und -Parametern vertraut sein. Außerdem benötigen Sie das Azure PowerShell Modul.
   - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
-  - [Installieren des Azure PowerShell-Moduls](/powershell/azure/install-az-ps)
+  - [Installieren des Azure PowerShell Moduls](/powershell/azure/install-az-ps)
 
 - Administratorzustimmung für Informationsbarrieren in Microsoft Teams – Wenn Ihre IB-Richtlinien vorhanden sind, können sie Nicht-IB-Compliancebenutzer aus Gruppen entfernen (d. h. Teams Kanäle, die auf Gruppen basieren). Diese Konfiguration trägt dazu bei, dass Ihre Organisation weiterhin richtlinien- und regelkonform ist. Verwenden Sie das folgende Verfahren, um zu ermöglichen, dass Richtlinien für Informationsbarrieren in Microsoft Teams erwartungsgemäß funktionieren.
 
-   1. Voraussetzung: Installieren Sie Azure PowerShell von [Install Azure PowerShell.](/powershell/azure/install-az-ps)
+   1. Voraussetzung: Installieren Sie Azure PowerShell von [Install Azure PowerShell](/powershell/azure/install-az-ps).
 
    1. Führen Sie die folgenden PowerShell-Cmdlets aus:
 
       ```powershell
       Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
+      if ($sp -eq $null) { New-AzureADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -98,7 +98,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 Wenn alle Voraussetzungen erfüllt sind, fahren Sie mit dem nächsten Abschnitt fort.
 
 > [!TIP]
-> Um Ihnen bei der Vorbereitung Ihres Plans zu helfen, ist ein Beispielszenario in diesem Artikel enthalten. [Weitere Informationen finden Sie in den Abteilungen, Segmenten und Richtlinien von Contoso.](#example-contosos-departments-segments-and-policies)<p>Darüber hinaus steht eine herunterladbare Excel Arbeitsmappe zur Verfügung, mit der Sie Ihre Segmente und Richtlinien planen und definieren können (und Ihre PowerShell-Cmdlets erstellen). [Rufen Sie die Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)ab.
+> Um Ihnen bei der Vorbereitung Ihres Plans zu helfen, ist ein Beispielszenario in diesem Artikel enthalten. [Weitere Informationen finden Sie in den Abteilungen, Segmenten und Richtlinien von Contoso.](#example-contosos-departments-segments-and-policies)<p>Darüber hinaus steht eine herunterladbare Excel Arbeitsmappe zur Verfügung, die Sie beim Planen und Definieren Ihrer Segmente und Richtlinien unterstützt (und Ihre PowerShell-Cmdlets erstellt). [Rufen Sie die Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)ab.
 
 ## <a name="part-1-segment-users"></a>Teil 1: Segmentbenutzer
 
@@ -163,7 +163,7 @@ Zusätzlich zum Definieren von Segmenten mit "equals" oder "not equals" können 
 | Syntax | Beispiel |
 |:---------|:----------|
 | `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | In diesem Beispiel haben wir ein Segment namens *LocalFTE* definiert, das Personen enthält, die sich lokal befinden und deren Positionen nicht als *temporär* aufgeführt sind. |
-| `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| In diesem Beispiel haben wir ein Segment namens *"Segment1"* definiert, das Personen enthält, die Mitglieder von group1@contoso.com und nicht Mitglieder von group3@contoso.com sind. |
+| `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| In diesem Beispiel haben wir ein Segment namens *Segment1* definiert, das Personen enthält, die Mitglieder von group1@contoso.com und nicht Mitglieder von group3@contoso.com sind. |
 | `New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In diesem Beispiel haben wir ein Segment namens *Segment2* definiert, das Personen enthält, die Mitglieder von group2@contoso.com und nicht Mitglieder von group3@contoso.com sind. |
 | `New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`| In diesem Beispiel haben wir ein Segment namens *"Segment1and2"* definiert, das Personen von group1@contoso.com und group2@contoso.com und keine Mitglieder von group3@contoso.com enthält. |
 
@@ -256,7 +256,7 @@ Mit PowerShell können Sie den Status von Benutzerkonten, Segmenten, Richtlinien
 
 | So zeigen Sie diese Informationen an | Führen Sie diese Aktion aus |
 |:---------------|:----------|
-| Benutzerkonten | Verwenden Sie das Cmdlet **"Get-InformationBarrierRecipientStatus"** mit Identity-Parametern. <p> Syntax: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID. <p> Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In diesem Beispiel beziehen wir uns auf zwei Benutzerkonten in Office 365: *Meganb* für *Megan* und *Alexw* für *Alex*. <p> (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p> Dieses Cmdlet gibt Informationen zu Benutzern zurück, z. B. Attributwerte und angewendete Richtlinien für Informationsbarrieren.|
+| Benutzerkonten | Verwenden Sie das Cmdlet **"Get-InformationBarrierRecipientStatus"** mit Identity-Parametern. <p> Syntax: `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID. <p> Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In diesem Beispiel beziehen wir uns auf zwei Benutzerkonten in Office 365: *meganb* für *Megan* und *Alexw* für *Alex*. <p> (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p> Dieses Cmdlet gibt Informationen zu Benutzern zurück, z. B. Attributwerte und angewendete Richtlinien für Informationsbarrieren.|
 | Segmente | Verwenden Sie das Cmdlet **"Get-OrganizationSegment".**<p> Syntax: `Get-OrganizationSegment` <p> Dieses Cmdlet zeigt eine Liste aller Segmente an, die für Ihre Organisation definiert sind. |
 | Richtlinien für Informationsbarrieren | Verwenden Sie das Cmdlet **"Get-InformationBarrierPolicy".** <p> Syntax: `Get-InformationBarrierPolicy` <p> Dieses Cmdlet zeigt eine Liste der Definierten Richtlinien für Informationsbarrieren und deren Status an. |
 | Die neueste Anwendung für Richtlinien für Informationsbarrieren | Verwenden Sie das Cmdlet **"Get-InformationBarrierPoliciesApplicationStatus".** <p> Syntax: `Get-InformationBarrierPoliciesApplicationStatus`<p> Dieses Cmdlet zeigt Informationen dazu an, ob die Richtlinienanwendung abgeschlossen wurde, fehlgeschlagen ist oder in Bearbeitung ist. |

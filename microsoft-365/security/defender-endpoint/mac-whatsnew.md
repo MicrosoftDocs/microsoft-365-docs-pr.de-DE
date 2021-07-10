@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 841f22421ac81ba447dad70a68c4c7bc95605b16
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276905"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363895"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Neuigkeiten in Microsoft Defender für Endpunkt auf dem Mac
 
@@ -40,6 +40,7 @@ ms.locfileid: "53276905"
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
+- [Die Gerätesteuerung für macOS](mac-device-control-overview.md) ist jetzt allgemein verfügbar.
 - Es wurde ein Problem behoben, bei dem ein Schnellscan nicht über das Statusmenü unter macOS 11 (Big Sur) gestartet werden konnte.
 - Andere Fehlerbehebungen
 
@@ -125,7 +126,7 @@ ms.locfileid: "53276905"
 
 ## <a name="1010949"></a>101.09.49
 
-- Verbesserungen der Benutzeroberfläche zur Unterscheidung von Ausschlüssen, die vom IT-Administrator verwaltet werden, und Ausschlüssen, die vom lokalen Benutzer definiert wurden
+- Verbesserungen der Benutzeroberfläche zur Unterscheidung von Ausschlüssen, die vom IT-Administrator verwaltet werden, und Ausschlüssen, die vom lokalen Benutzer definiert sind
 - Verbesserte CPU-Auslastung bei Bedarfsscans
 - Leistungsverbesserungen & Fehlerbehebungen
 
@@ -231,7 +232,7 @@ ms.locfileid: "53276905"
 
 ## <a name="1007099"></a>100.70.99
 
-- Es wurde ein Problem behoben, das sich auf die Möglichkeit einiger Benutzer auswirkte, auf macOS-Unterklasse zu aktualisieren, wenn der Echtzeitschutz aktiviert ist. Dieses sporadische Problem wurde dadurch verursacht, dass Microsoft Defender für Endpunkt Dateien innerhalb des Upgradepakets von Workstation sperrt, während sie auf Bedrohungen geprüft werden, was zu Fehlern in der Upgradesequenz geführt hat.
+- Es wurde ein Problem behoben, das sich darauf auswirkte, dass einige Benutzer ein Upgrade auf macOS- Und-Unterklasse durchführen konnten, wenn der Echtzeitschutz aktiviert ist. Dieses sporadische Problem wurde dadurch verursacht, dass Microsoft Defender für Endpunkt Dateien innerhalb des Upgradepakets von Workstation sperrt, während sie auf Bedrohungen geprüft werden, was zu Fehlern in der Upgradesequenz geführt hat.
 
 ## <a name="1006899"></a>100.68.99
 
