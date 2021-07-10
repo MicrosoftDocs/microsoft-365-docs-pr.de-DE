@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Erstellen und Verwalten von Insider-Risikorichtlinien
           href: insider-risk-management-policies.md
-        - name: Untersuchen von Insider-Risikowarnungen
-          href: insider-risk-management-alerts.md
+        - name: Untersuchen von Insider-Risikoaktivitäten
+          href: insider-risk-management-activities.md
         - name: Maßnahmen bei Insider-Risikofällen ergreifen
           href: insider-risk-management-cases.md
         - name: Überprüfen von Aktivitäten mit dem Insider-Risiko-Überwachungsprotokoll
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Entfernen eines benutzerdefinierten Typs vertraulicher Informationen – PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Ändern eines benutzerdefinierten Typs vertraulicher Informationen – PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: Referenz zu benutzerdefinierten Filtern für vertrauliche Informationstyps
+          href: sit-custom-sit-filters.md
         - name: Schlüsselwörterbuch erstellen
           href: create-a-keyword-dictionary.md
         - name: Schlüsselwörterbuch ändern
@@ -417,11 +423,13 @@
               href: archive-reuterseikon-data.md
             - name: Reuters FX
               href: archive-reutersfx-data.md
+            - name: RingCentral (Vorschau)
+              href: archive-ringcentral-data.md
             - name: Salesforce Chatter
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype for Business (Vorschau)
+            - name: Skype for Business
               href: archive-skypeforbusiness-data.md
             - name: Slack eDiscovery
               href: archive-slack-data.md
@@ -455,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS und Voice Network Archivierung
               href: archive-o2-network-data.md
-            - name: Signal (Vorschau)
+            - name: Signalarchivierer
               href: archive-signal-archiver-data.md
-            - name: Telegram (Vorschau)
+            - name: Telegramarchivierer
               href: archive-telegram-archiver-data.md
             - name: TELUS-Netzwerk
               href: archive-telus-network-data.md
@@ -913,7 +921,7 @@
         - name: Tool für die Compliance-Konfigurationsanalyse
           href: compliance-manager-mcca.md
         - name: Häufig gestellte Fragen (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance-Manager (klassisch)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal

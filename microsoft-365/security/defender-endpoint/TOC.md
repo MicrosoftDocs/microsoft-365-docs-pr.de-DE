@@ -174,6 +174,7 @@
 #### [Allgemein]()
 ##### [Überprüfen des Speicherorts der Daten und Aktualisieren der Einstellungen für die Datenaufbewahrung](data-retention-settings.md)
 ##### [Warnungsbenachrichtigungen konfigurieren](configure-email-notifications.md)
+##### [Konfigurieren von E-Mail-Benachrichtigungen zu Sicherheitsrisiken](configure-vulnerability-email-notifications.md)
 ##### [Konfigurieren erweiterter Funktionen](advanced-features.md)
 
 #### [Berechtigungen]()
