@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256531"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362330"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -75,7 +75,7 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
     - **Teams-Chats**: Nachrichten aus privaten 1:1-Chats, Gruppenchats und Besprechungschats.
     - **Private Teams-Kanal-Nachrichten**: Nachrichten aus Chats und Besprechungen im privaten Kanal. Diese Option wird derzeit in der Vorschauversion eingeführt. Wenn sie nicht angezeigt wird, versuchen Sie es in ein paar Tagen noch einmal.
     
-   Standardmäßig sind [alle Teams und alle Benutzer ausgewählt](#a-policy-that-applies-to-entire-locations), aber Sie können dies verfeinern, indem Sie die Optionen [**Auswählen** und **Ausschließen** auswählen](#a-policy-with-specific-inclusions-or-exclusions). Beachten Sie vor dem Ändern der Standardeinstellungen die folgenden Auswirkungen auf eine Aufbewahrungsrichtlinie, die Nachrichten löscht, wenn diese für das Aus- oder Einschließen konfiguriert sind:
+   Standardmäßig sind [alle Teams und alle Benutzer](#a-policy-that-applies-to-entire-locations) ausgewählt. Sie können dies jedoch verfeinern, indem Sie die **Bearbeiten**-Optionen auswählen, um eine Aufbewahrungsrichtlinie für [bestimmte Ein- oder Ausschlüsse](#a-policy-with-specific-inclusions-or-exclusions) zu konfigurieren. Beachten Sie vor dem Ändern der Standardeinstellungen die folgenden Auswirkungen auf eine Aufbewahrungsrichtlinie, die Nachrichten löscht, wenn diese für das Aus- oder Einschließen konfiguriert sind:
     
     - Für Gruppenchatnachrichten und private Kanalnachrichten gilt: Da eine Kopie der Nachrichten im Postfach jedes Benutzers gespeichert wird, der am Chat beteiligt ist, werden Kopien von Nachrichten von Benutzern, auf die die Richtlinie nicht zutrifft, weiterhin in eDiscovery-Ergebnissen angezeigt.
     - Benutzern, auf die die Richtlinie nicht zutrifft, werden die gelöschten Nachrichten in deren Teams-Suchergebnissen angezeigt. Jedoch wird aufgrund der dauerhaften Löschung in der dem Benutzer zugewiesenen Richtlinie, der Inhalt der Nachricht nicht angezeigt.
@@ -94,9 +94,9 @@ Technische Details zur Funktionsweise der Aufbewahrung für Teams, einschließli
 
 - Sie können zwar die Option auswählen, den Aufbewahrungszeitraum zu starten, wenn Elemente zuletzt geändert wurden, aber es wird immer der Wert **Wenn Elemente erstellt wurden** verwendet. Für bearbeitete Nachrichten wird eine Kopie der ursprünglichen Nachricht mit ihrem ursprünglichen Zeitstempel gespeichert, um zu erkennen, wann diese Nachricht vor der Bearbeitung erstellt wurde. Die Nachricht hat nach der Bearbeitung einen neueren Zeitstempel.
 
-- Wenn Sie die Option **Teams auswählen** für den Speicherort **Microsoft Teams-Kanalnachrichten** auswählen, werden möglicherweise Microsoft 365-Gruppen angezeigt, die nicht auch Teams sind. Wählen Sie diese Gruppen nicht aus.
+- Wenn Sie die Option **Bearbeiten** für den Speicherort **Microsoft Teams-Kanalnachrichten** auswählen, werden möglicherweise Microsoft 365-Gruppen angezeigt, die sich nicht auch auf Teams befinden. Wählen Sie diese Gruppen nicht aus.
 
-- Wenn Sie den Speicherort **Benutzer für Teams-Chats auswählen** auswählen, werden möglicherweise Gäste und Nicht Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
+- Wenn Sie die Option **Bearbeiten** für den Teams-Chat-Speicherort auswählen, werden möglicherweise Gäste und Nicht-Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Weitere für die Unterstützung von Teams benötigte Aufbewahrungsrichtlinie
@@ -125,19 +125,24 @@ Es kann vorkommen, dass eine Aufbewahrungsrichtlinie, die auf Microsoft 365-Grup
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie**, um eine neue Aufbewahrungsrichtlinie zu erstellen.
 
-3. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an. 
+3. Schalten Sie auf der Seite **Speicherorte zum Anwenden der Richtlinie auswählen** einen oder beide Speicherorte für Yammer ein: **Yammer-Community-Nachricht** und **Yammer Benutzernachrichten**.
     
-    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
-
-4. Wählen Sie auf der Seite **Speicherorte auswählen** die Option **Bestimmte Standorte auswählen**. Aktivieren Sie dann einen oder beide Speicherorte für Yammer: **Yammer-Communitynachricht** und **Benutzernachrichten in Yammer**.
+    > [!IMPORTANT]
+    > Obwohl Sie eine Aufbewahrungsrichtlinie nur für Yammer-Benutzernachrichten erstellen können, kann eine Aufbewahrungsrichtlinie für diesen Speicherort Community-Nachrichten aus der Yammer-App für alle Community-Mitglieder löschen.
+    > 
+    > Stellen Sie sicher, dass Sie diese Auswirkung verstehen, wenn Sie diese Option auswählen und die Aufbewahrungsrichtlinie so konfiguriert wird, dass Benutzernachrichten gelöscht werden. Weitere Informationen finden Sie unter [Funktionsweise der Aufbewahrung mit Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     Standardmäßig sind alle Communitys und Benutzer ausgewählt, aber Sie können dies verfeinern, indem Sie Communitys und Benutzer angeben, die ein- oder -ausgeschlossen werden sollen.
     
     Für Benutzernachrichten in Yammer: 
     - Wenn Sie den Standard auf **Alle** belassen, werden Azure B2B-Gastbenutzer nicht berücksichtigt. 
-    - Durch Wählen von **Benutzer auswählen** können Sie eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, wenn Sie deren Konto kennen.
+    - Wenn Sie die Option **Bearbeiten** für die Spalte **Enthalten** auswählen, können Sie eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, wenn Sie deren Konto kennen.
 
-5. Schließen Sie den Assistenten ab, um Ihre Einstellungen zu speichern.
+4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an. 
+    
+    Sie können eine Aufbewahrungsrichtlinie erstellen, die Inhalte nur aufbewahrt, ohne sie zu löschen, die sie aufbewahrt und nach einem festgelegten Zeitraum löscht, oder Inhalte nur nach einem bestimmten Zeitraum löscht. Weitere Informationen finden Sie unter [Einstellungen für die Aufbewahrung und Löschung von Inhalten](#settings-for-retaining-and-deleting-content) auf dieser Seite.
+
+5. Schließen Sie den Assistenten ab, damit Ihre Einstellungen gespeichert werden.
 
 Weitere Informationen darüber, wie die Aufbewahrungsrichtlinien bei Yammer funktionieren, finden Sie unter [Informationen zur Aufbewahrung bei Yammer](retention-policies-yammer.md).
 
@@ -167,7 +172,7 @@ Verwenden Sie die folgenden Anweisungen für Aufbewahrungsrichtlinien, die für 
 
 2. Wählen Sie **Neue Aufbewahrungsrichtlinie** aus, um den Assistenten zum Erstellen einer Aufbewahrungsrichtlinie zu starten, und benennen Sie die neue Aufbewahrungsrichtlinie.
 
-3. Auf der Seite **Speicherorte auswählen** können Sie jeden Speicherort mit Ausnahme der Speicherorte für Teams ein- oder ausschalten. Sie können die Richtlinie für jeden Speicherort bei der Standardeinstellung belassen, um [die Richtlinie auf den gesamten Speicherort anzuwenden ](#a-policy-that-applies-to-entire-locations), oder [Ein- und Ausschlüsse angeben](#a-policy-with-specific-inclusions-or-exclusions).
+3. Auf der Seite **Speicherorte zum Anwenden der Richtlinie auswählen** können Sie jeden Speicherort mit Ausnahme der Speicherorte für Teams ein- oder ausschalten. Sie können die Richtlinie für jeden Speicherort bei der Standardeinstellung belassen, um [die Richtlinie auf den gesamten Speicherort anzuwenden ](#a-policy-that-applies-to-entire-locations), oder [Ein- und Ausschlüsse angeben](#a-policy-with-specific-inclusions-or-exclusions).
 
     Spezifische Informationen zu Speicherorten:
     - [Exchange-E-Mail und öffentliche Exchange-Ordner](#configuration-information-for-exchange-email-and-exchange-public-folders)

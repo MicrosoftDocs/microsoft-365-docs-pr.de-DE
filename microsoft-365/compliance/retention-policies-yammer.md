@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Yammer gelten.
-ms.openlocfilehash: d4988eee419a38497d4fa35cdb3e2f7fec103688
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 1398bf385631967d92de760924ef94e2b3c16441
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052927"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362294"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informationen zur Aufbewahrung für Yammer
 
@@ -41,15 +41,26 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
-Die folgenden Yammer-Elemente können mithilfe von Aufbewahrungsrichtlinien für Yammer beibehalten oder gelöscht werden: Community-Nachrichten und private Nachrichten.
+Die folgenden Yammer-Elemente können mithilfe von Aufbewahrungsrichtlinien für Yammer beibehalten oder gelöscht werden: Community-Nachrichten und Benutzernachrichten.
 
 Reaktionen von anderen Personen in der Form von Emoticons sind in diesen Nachrichten nicht enthalten.
 
 ## <a name="how-retention-works-with-yammer"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Yammer
 
-Sie können eine Aufbewahrungsrichtlinie zum Aufbewahren und Löschen von Communitynachrichten und privaten Nachrichten in Yammer verwenden. Private Nachrichten werden in einem verborgenen Ordner im Postfach jedes Benutzers gespeichert, der in die Nachricht eingebunden ist, und Communitynachrichten werden in einem ähnlichen verborgenen Ordner im Gruppenpostfach für die Community gespeichert.
+Verwenden Sie diesen Abschnitt, um zu verstehen, wie Compliance-Anforderungen durch Back-End-Speicher und -Prozesse erfüllt und durch eDiscovery-Tools anstelle von Nachrichten überprüft werden sollten, die aktuell in der Yammer-App angezeigt werden.
 
-Aufbewahrungsrichtlinien, die für Benutzer- oder Gruppenpostfächer konfiguriert sind, wirken sich nicht auf Yammer-Nachrichten aus. Obwohl Yammer-Nachrichten in Exchange gespeichert sind, sind diese Yammer-Daten nur in einer Aufbewahrungsrichtlinie enthalten, die für die Speicherorte von **Yammer-Communitynachrichten** und **Benutzernachrichten in Yammer** konfiguriert ist.
+Sie können eine Aufbewahrungsrichtlinie verwenden, um Daten aus Community-Nachrichten und Benutzernachrichten in Yammer aufzubewahren, und diese Nachrichten zu löschen. Hinter den Kulissen werden Exchange-Postfächer verwendet, um die aus diesen Nachrichten kopierten Daten zu speichern. Daten aus Yammer-Benutzernachrichten werden in einem ausgeblendeten Ordner im Postfach jedes Benutzers gespeichert, der in der Benutzernachricht eingeschlossen ist, und für Community-Nachrichten wird ein ähnlicher ausgeblendeter Ordner in einem Gruppenpostfach verwendet.
+
+Kopien von Community-Nachrichten können auch im ausgeblendeten Ordner von Benutzerpostfächern gespeichert werden, wenn sie Benutzer @erwähnen, oder den Benutzer über eine Antwort benachrichtigen. Obwohl diese Nachrichten als Community-Nachricht entstanden sind, wird eine Aufbewahrungsrichtlinie für Yammer-Benutzernachrichten oft auch Kopien von Community-Nachrichten enthalten.
+
+Diese ausgeblendeten Ordner sind nicht für den direkten Zugriff von Benutzern oder Administratoren gedacht, sondern zum Speichern von Daten, die Complianceadministratoren mit eDiscovery-Tools durchsuchen können.
+
+> [!IMPORTANT]
+> Da Kopien von Community-Nachrichten auch in Benutzerpostfächern gespeichert werden können, kann eine Aufbewahrungsrichtlinie mit einer Löschaktion für Yammer-Benutzernachrichten dazu führen, dass die ursprüngliche Community-Nachricht in der Yammer-App für Benutzer nicht mehr sichtbar ist.
+> 
+> Eine Kopie der ursprünglichen Nachricht ist jedoch weiterhin im ausgeblendeten Ordner des Community-Gruppenpostfachs verfügbar und ist mit eDiscovery-Suchen für Compliance-Zwecke abrufbar.
+
+Yammer-Nachrichten sind nicht von Aufbewahrungsrichtlinien betroffen, die für Exchange-Postfächer konfiguriert sind. Obwohl Yammer-Nachrichten in Exchange gespeichert sind, sind diese Yammer-Daten nur in einer Aufbewahrungsrichtlinie enthalten, die für die Speicherorte von **Yammer-Communitynachrichten** und **Benutzernachrichten in Yammer** konfiguriert ist.
 
 > [!NOTE]
 > Wenn eine aktive Aufbewahrungsrichtlinie, durch die Yammer-Daten aufbewahrt werden, Benutzer einbezieht, und Sie ein Postfach eines in diese Richtlinie einbezogenen Benutzers löschen, wird es in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, damit die Yammer-Daten aufbewahrt werden. Wenn diese Yammer-Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie das Benutzerkonto aus der Aufbewahrungsrichtlinie aus, bevor Sie das Postfach löschen.
@@ -91,7 +102,7 @@ Wenn die Aufbewahrungsrichtlinie dem reinen Aufbewahren oder dem reinen Löschen
 
 ## <a name="messages-and-external-users"></a>Nachrichten und externe Benutzer
 
-Standardmäßig gilt eine Aufbewahrungsrichtlinie für Benutzernachrichten in Yammer für alle Benutzer in Ihrer Organisation, jedoch nicht für externe Benutzer. Sie können eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, indem Sie die Option **Benutzer auswählen** verwenden und die fraglichen Konten angeben. 
+Standardmäßig gilt eine Aufbewahrungsrichtlinie für Benutzernachrichten in Yammer für alle Benutzer in Ihrer Organisation, jedoch nicht für externe Benutzer. Sie können eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, wenn Sie die Option **Bearbeiten** für eingeschlossene Benutzer verwenden und deren Konto angeben.
 
 Zurzeit werden Azure-B2B-Gastbenutzer nicht unterstützt.
 
@@ -103,9 +114,9 @@ Wenn der Benutzer Dateien in Yammer gespeichert hat, lesen Sie den [entsprechend
 
 ## <a name="limitations"></a>Einschränkungen
 
-Yammer-Aufbewahrungsrichtlinien befinden sich derzeit in der Vorschau, und wir arbeiten kontinuierlich an der Optimierung der Aufbewahrungsfunktionen. Es gibt folgende Einschränkungen, die Sie bei der Aufbewahrung von Yammer-Community-Nachrichten und privaten Nachrichten beachten sollten:
+Yammer-Aufbewahrungsrichtlinien befinden sich derzeit in der Vorschau, und wir arbeiten kontinuierlich an der Optimierung der Aufbewahrungsfunktionen. In der Zwischenzeit sollten Sie die folgende Einschränkung beachten, wenn Sie die Aufbewahrung von Yammer-Community-Nachrichten und Benutzernachrichten verwenden:
 
-- Wenn Sie **Benutzer auswählen** für den Speicherort **Benutzernachrichten in Yammer** auswählen, werden möglicherweise Gäste und Nicht-Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
+- Wenn Sie die Option **Bearbeiten** für den Speicherort **Yammer-Benutzernachrichten** auswählen, werden möglicherweise Gäste und Nicht-Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 

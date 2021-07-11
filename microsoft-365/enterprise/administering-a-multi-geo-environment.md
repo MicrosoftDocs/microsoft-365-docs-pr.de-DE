@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Administratoren erfahren, wie sie SharePoint und OneDrive Dienste in einer Multi-Geo-Umgebung verwalten.
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362318"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363943"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
@@ -72,15 +72,15 @@ Alle geografischen Standorte einer Multi-Geo-Umgebung teilen sich das Speicherko
 
 ## <a name="sharing"></a>Freigabe
 
-Administratoren können Freigaberichtlinien für die einzelnen Standorte einrichten und verwalten. Die OneDrive- und SharePoint-Websites an den einzelnen geografischen Standorten richten sich nur nach den jeweiligen Freigabeeinstellungen, die für den Standort festgelegt wurden. (Sie können z. B. die [externe Freigabe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) für Ihren zentralen Standort zulassen, jedoch nicht für den Satellitenstandort, und umgekehrt.) Beachten Sie, dass die Freigabeeinstellungen keine Konfiguration von Freigabeeinschränkungen zwischen den geografischen Standorten zulassen.
+Administratoren können Freigaberichtlinien für die einzelnen Standorte einrichten und verwalten. Die OneDrive und SharePoint Websites an jedem geografischen Standort berücksichtigen nur die entsprechenden geospezifischen Freigabeeinstellungen. (Sie können z. B. die [externe Freigabe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) für Ihren zentralen Standort zulassen, jedoch nicht für den Satellitenstandort, und umgekehrt.) Beachten Sie, dass die Freigabeeinstellungen keine Konfiguration von Freigabeeinschränkungen zwischen den geografischen Standorten zulassen.
 
 ## <a name="stream"></a>Stream
 
-In Stream hochgeladene Videos werden im OneDrive der Person gespeichert, die hochgeladen hat. Besprechungsaufzeichnungen werden im OneDrive jedes Teilnehmers gespeichert, der die Besprechung aufzeichnet.
+Videos, die in einem 1:1-Chat in Stream hochgeladen wurden, werden im OneDrive der Person gespeichert, die den Upload durchgeführt hat. Besprechungsaufzeichnungen werden im OneDrive jedes Teilnehmers gespeichert, der die Besprechung aufzeichnet.
 
 ## <a name="taxonomy"></a>Taxonomie
 
-Wir unterstützen eine einheitliche [Taxonomie](/sharepoint/managed-metadata) für vom Unternehmen verwaltete Metadaten über geografische Standorte hinweg, wobei der Master am zentralen Standort Ihres Unternehmens gehostet wird. Wir empfehlen, dass Sie die globale Taxonomie vom zentralen Standort aus verwalten und nur standortspezifische Ausdrücke zur Taxonomie der Satellitenstandorte hinzufügen. Ausdrücke der globalen Taxonomie werden mit den Satellitenstandorten synchronisiert.
+Wir unterstützen eine einheitliche [Taxonomie](/sharepoint/managed-metadata) für vom Unternehmen verwaltete Metadaten über geografische Standorte hinweg, wobei der Master am zentralen Standort für Ihr Unternehmen gehostet wird. Wir empfehlen, dass Sie die globale Taxonomie vom zentralen Standort aus verwalten und nur standortspezifische Ausdrücke zur Taxonomie der Satellitenstandorte hinzufügen. Ausdrücke der globalen Taxonomie werden mit den Satellitenstandorten synchronisiert.
 
 Weitere Informationen und Anleitungen für Entwickler finden Sie unter [Verwalten von Metadaten in einem Multi-Geo-Mandanten](/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
 

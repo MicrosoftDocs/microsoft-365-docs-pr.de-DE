@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c0343117251d169d0284c2fdb3fc3b8bca5ff0df
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244383"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362558"
 ---
 # <a name="learn-about-data-classification"></a>Informationen zur Datenklassifizierung
 
@@ -65,6 +65,9 @@ Eine Reihe verschiedener Abonnements unterstützt Endpunkt-DLP. Um Lizenzierungs
 - Compliance-Administrator
 - Sicherheitsadministrator
 - Compliancedatenadministrator
+
+> [!NOTE]
+> Es ist eine bewährte Methode, immer die Rolle mit den geringsten Berechtigungen zu verwenden, um Zugriff auf die Microsoft 365-Datenklassifizierung zu gewähren.
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>Typen vertraulicher Informationen, die in Ihren Inhalten am häufigsten verwendet werden
 

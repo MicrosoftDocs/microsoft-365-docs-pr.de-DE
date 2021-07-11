@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362659"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363767"
 ---
 # <a name="user-support"></a>Benutzerunterstützung
 
@@ -28,7 +28,7 @@ Ihre Microsoft Managed Desktop Benutzer können Support entweder von Ihrer Organ
 
 ## <a name="roles-and-responsibilities"></a>Rollen und Zuständigkeiten
 
-Um die Dienstqualität zu gewährleisten, ohne die Sicherheit zu gefährden, haben der Supportanbieter, IT-Administratoren und Microsoft Managed Desktop jeweils unterschiedliche Rollen und Zuständigkeiten.
+Um die Dienstqualität zu gewährleisten, ohne die Sicherheit zu beeinträchtigen, haben der Supportanbieter, IT-Administratoren und Microsoft Managed Desktop jeweils unterschiedliche Rollen und Zuständigkeiten.
 
 ### <a name="support-provider"></a>Supportanbieter
 
@@ -53,7 +53,7 @@ Ihr IT-Administrator ist für diese Elemente verantwortlich:
 - Verwalten erhöhter Zugriffsberechtigungen für genehmigte Supportmitarbeiter. Weitere Informationen finden Sie unter [Aktivieren von Benutzersupportfeatures](../get-started/enable-support.md)
 - Wenn Geräteprobleme auftreten, die mehrere Benutzer betreffen, eskalieren Sie diese mithilfe des Microsoft Managed Desktop Administratorsupportprozesses. Weitere Informationen finden Sie unter [Administratorunterstützung für Microsoft Managed Desktop.](../working-with-managed-desktop/admin-support.md)
 - Weiterleiten von hardwarebezogenen Problemen an den entsprechenden Anbieter oder Lieferanten
-- Verwalten und schützen Sie die Gerätesicherheitsrichtlinieneinstellungen auf Microsoft Managed Desktop Geräten, indem Sie verhindern, dass die von uns festgelegten Richtlinien geändert werden.
+- Verwalten und Schützen von Gerätesicherheitsrichtlinieneinstellungen auf Microsoft Managed Desktop Geräten, indem verhindert wird, dass die von uns festgelegten Richtlinien geändert werden.
 
 ### <a name="microsoft-managed-desktop"></a>Microsoft Managed Desktop
 
@@ -83,7 +83,7 @@ Wenn ein Benutzerproblem an Microsoft Managed Desktop eskaliert werden muss, ist
 
 ### <a name="elevation-portal"></a>Elevation-Portal 
 
-Da Microsoft Managed Desktop Geräte standardmäßig auf Standardbenutzern ausgeführt werden, erfordern einige Aufgaben rechteerweiterungen. (Weitere Informationen zur Benutzerkontensteuerung finden Sie unter ["Benutzerkontensteuerung")](/windows/security/identity-protection/user-account-control/user-account-control-overview) Damit Supportmitarbeiter Aufgaben bei der Problembehandlung für Benutzer [ausführen](../working-with-managed-desktop/end-user-support.md#elevation-requests) können, bieten wir Just-in-Time-Zugriff auf ein Administratorkonto. Auf dieses Kennwort greifen nur die von Ihnen festgelegten sicher zu und drehen sich alle paar Stunden.  
+Da Microsoft Managed Desktop Geräte standardmäßig auf Standardbenutzern ausgeführt werden, erfordern einige Aufgaben rechteerweiterungen. Weitere Informationen zur Benutzerkontensteuerung finden Sie unter [Benutzerkontensteuerung.](/windows/security/identity-protection/user-account-control/user-account-control-overview) Damit Supportmitarbeiter Aufgaben bei der Problembehandlung für Benutzer [ausführen](../working-with-managed-desktop/end-user-support.md#elevation-requests) können, bieten wir Just-in-Time-Zugriff auf ein Administratorkonto. Auf dieses Kennwort greifen nur die von Ihnen festgelegten sicher zu und drehen sich alle paar Stunden.  
 
 Schritte zum Einrichten von Benutzern für den Zugriff auf dieses Portal finden Sie unter [Aktivieren von Benutzersupportfeatures.](../get-started/enable-support.md)
 
