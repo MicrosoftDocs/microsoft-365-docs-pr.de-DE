@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen Connector zum Importieren und Archivieren von RingCentral-Daten aus Microsoft 365 einrichten. Mit diesem Connector können Sie Daten aus Datenquellen von Drittanbietern in Microsoft 365 archivieren. Nachdem Sie diese Daten archiviert haben, können Sie Compliance-Features wie gesetzliche Aufbewahrung, eDiscovery und Aufbewahrungsrichtlinien verwenden, um Daten von Drittanbietern zu verwalten.
-ms.openlocfilehash: b5e98df50b0610c9fb583a8521c7a6d6fdb48e44
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 4fc0b61d5bc47a573da3ef8dd12654316e77d073
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276857"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408936"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data-preview"></a>Einrichten eines Connectors zum Archivieren von RingCentral-Daten (Vorschau)
 
-Verwenden Sie einen Connectors in der Microsoft 365 Compliance Center, um Daten von der RingCentral-Plattform in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Stellt einen [RingCentral-Connector](https://www.veritas.com/insights/merge1/ringcentral) bereit, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert Inhalte wie Chats, Anlagen, Aufgaben, Notizen und Beiträge von RingCentral in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in die Benutzerpostfächer in Microsoft 365.
+Verwenden Sie einen Connectors in der Microsoft 365 Compliance Center, um Daten von der RingCentral-Plattform in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Stellt den RingCentral-Connector bereit, der so konfiguriert ist, dass Elemente aus der Datenquelle eines Drittanbieters erfasst und in Microsoft 365 importiert werden. Der Connector konvertiert Inhalte wie Chats, Anlagen, Aufgaben, Notizen und Beiträge von RingCentral in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in die Benutzerpostfächer in Microsoft 365.
 
 Nachdem RingCentral-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen anwenden. Die Verwendung eines RingCentral-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
 
@@ -45,7 +45,7 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Connectors zum
 
 - Erstellen Sie eine RingCentral-Anwendung, um Daten aus Ihrem RingCentral-Konto abzurufen. Schritt-für-Schritt-Anweisungen zum Erstellen der Anwendung finden Sie im [Benutzerhandbuch für Merge1-Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20RingCentral%20User%20Guide.pdf)von Drittanbietern.
 
-- Der Benutzer, der den RingCentral-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den RingCentral-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig wird diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-set-up-the-ringcentral-connector"></a>Schritt 1: Einrichten des RingCentral-Connectors
 

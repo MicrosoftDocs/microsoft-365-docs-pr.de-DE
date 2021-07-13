@@ -17,12 +17,12 @@ ms.collection:
 description: Erfahren Sie, wie die Übermittlungspools verwendet werden, um den Ruf von E-Mail-Servern in den Microsoft 365 Rechenzentren zu schützen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: c5881b20eaed8387988d01b69a4acd022c5924a2
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137718"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409140"
 ---
 # <a name="outbound-delivery-pools"></a>Pools für die Zustellung ausgehender Nachrichten
 
@@ -33,7 +33,7 @@ ms.locfileid: "53137718"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-E-Mail-Server in den Microsoft 365 Rechenzentren sind möglicherweise vorübergehend unerschnaufend für das Senden von Spam. Beispielsweise ein Schadsoftware- oder bösartiger Spamangriff in einer lokalen E-Mail-Organisation, die ausgehende E-Mails über Microsoft 365 sendet, oder kompromittierte Microsoft 365 Konten. Angreifer versuchen auch, die Erkennung zu vermeiden, indem sie Nachrichten über Microsoft 365 Weiterleitung weiterleiten.
+E-Mail-Server in den Microsoft 365 Rechenzentren sind möglicherweise vorübergehend unaufmerklich für das Senden von Spam. Beispielsweise ein Schadsoftware- oder bösartiger Spamangriff in einer lokalen E-Mail-Organisation, die ausgehende E-Mails über Microsoft 365 sendet, oder kompromittierte Microsoft 365 Konten. Angreifer versuchen auch, die Erkennung zu vermeiden, indem sie Nachrichten über Microsoft 365 Weiterleitung weiterleiten.
 
 Diese Szenarien können dazu führen, dass die IP-Adresse der betroffenen Microsoft 365 Rechenzentrumsservern auf Blocklisten von Drittanbietern angezeigt wird. Ziel-E-Mail-Organisationen, die diese Sperrlisten verwenden, weisen E-Mails aus diesen Nachrichtenquellen zurück.
 
@@ -42,7 +42,7 @@ Um dies zu verhindern, werden alle ausgehenden Nachrichten von Microsoft 365 Rec
 
 Der Übermittlungspool mit hohem Risiko ist ein separater IP-Adresspool für ausgehende E-Mails, der nur zum Senden von Nachrichten mit niedriger Qualität verwendet wird (z. B. Spam und [Rückscatter).](backscatter-messages-and-eop.md) Die Verwendung des Übermittlungspools mit hohem Risiko verhindert, dass der normale IP-Adresspool für ausgehende E-Mails Spam sendet. Der normale IP-Adresspool für ausgehende E-Mails behält die Zuverlässigkeit beim Senden von Nachrichten mit hoher Qualität bei, wodurch die Wahrscheinlichkeit reduziert wird, dass diese IP-Adresse in IP-Sperrlisten angezeigt wird.
 
-Die sehr reale Möglichkeit, dass IP-Adressen im Übermittlungspool mit hohem Risiko in IP-Sperrlisten platziert werden, bleibt bestehen, aber dies ist beabsichtigt. Die Zustellung an die beabsichtigten Empfänger ist nicht garantiert, da viele E-Mail-Organisationen keine Nachrichten aus dem Übermittlungspool mit hohem Risiko akzeptieren.
+Die sehr reale Möglichkeit, dass IP-Adressen im Übermittlungspool mit hohem Risiko in IP-Sperrlisten platziert werden, bleibt bestehen, aber dies ist beabsichtigt. Die Zustellung an die vorgesehenen Empfänger ist nicht garantiert, da viele E-Mail-Organisationen keine Nachrichten aus dem Übermittlungspool mit hohem Risiko akzeptieren.
 
 Weitere Informationen finden Sie unter [Steuern ausgehender Spamnachrichten.](outbound-spam-controls.md)
 
@@ -75,10 +75,13 @@ Die weitergeleitete/weitergeleitete Nachricht sollte eines der folgenden Kriteri
 - SPF wird übergeben, wenn die Nachricht an Microsoft 365 kommt.
 - DKIM in der Absenderdomäne wird übergeben, wenn die Nachricht an Microsoft 365 kommt.
  
-Sie können feststellen, dass eine Nachricht über den Relaypool gesendet wurde, indem Sie sich die IP des ausgehenden Servers ansehen (der Relaypool befindet sich im Bereich 40.95.0.0/16) oder indem Sie sich den Namen des ausgehenden Servers ansehen (der Name enthält "rly").
+Sie können feststellen, dass eine Nachricht über den Relaypool gesendet wurde, indem Sie die IP des ausgehenden Servers betrachten (der Relaypool befindet sich im Bereich 40.95.0.0/16) oder indem Sie sich den Namen des ausgehenden Servers ansehen (der Name enthält "rly").
 
 In Fällen, in denen wir den Absender authentifizieren können, verwenden wir Sender Rewriting Scheme (SRS), um dem Empfänger-E-Mail-System zu helfen, zu wissen, dass die weitergeleitete Nachricht von einer vertrauenswürdigen Quelle stammt. Sie können mehr darüber erfahren, wie dies funktioniert und was Sie tun können, um sicherzustellen, dass die sendende Domäne die Authentifizierung im [Sender Rewriting Scheme (SRS) in Office 365](/office365/troubleshoot/antispam/sender-rewriting-scheme)besteht.
 
 Damit DKIM funktioniert, stellen Sie sicher, dass Sie DKIM für das Senden einer Domäne aktivieren. Beispielsweise ist fabrikam.com Teil von contoso.com und in den akzeptierten Domänen der Organisation definiert. Wenn der Absender der Nachricht sender@fabrikam.com ist, muss DKIM für fabrikam.com aktiviert werden. Sie können lesen, wie Sie bei [Verwendung von DKIM aktivieren können, um ausgehende E-Mails zu überprüfen, die von Ihrer benutzerdefinierten Domäne gesendet wurden.](use-dkim-to-validate-outbound-email.md)
 
-Führen Sie die Schritte unter [Hinzufügen einer Domäne zu Microsoft 365 aus, um eine](../../admin/setup/add-domain.md)benutzerdefinierte Domäne hinzuzufügen.
+Führen Sie zum Hinzufügen einer benutzerdefinierten Domäne die Schritte unter [Hinzufügen einer Domäne zu Microsoft 365](../../admin/setup/add-domain.md)aus.
+
+Wenn der MX-Eintrag für Ihre Domäne auf einen Drittanbieterdienst oder einen lokalen E-Mail-Server verweist, sollten Sie [die erweiterte Filterung für Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)verwenden. Die erweiterte Filterung stellt sicher, dass die SPF-Überprüfung für eingehende E-Mails korrekt ist und verhindert das Senden von E-Mails über den Relaypool.
+

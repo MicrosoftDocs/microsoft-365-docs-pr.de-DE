@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die Anwendungsreihenfolge der Schutzmaßnahmen in Exchange Online Protection (EOP) informieren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
+description: Administratoren können sich über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EOP) informieren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029285"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409128"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Rangfolge des E-Mail-Schutzes
 
@@ -33,7 +33,7 @@ ms.locfileid: "53029285"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer werden eingehende E-Mails möglicherweise durch mehrere Schutzformen gekennzeichnet. Beispielsweise die integrierten Antiphishingrichtlinien in EOP, die für alle Microsoft 365 Kunden verfügbar sind, und die stabileren Antiphishingrichtlinien, die Microsoft Defender für Office 365 Kunden zur Verfügung stehen. Nachrichten durchlaufen auch mehrere Erkennungsscans auf Schadsoftware, Spam, Phishing usw. Bei all dieser Aktivität kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächern können eingehende E-Mails durch mehrere Schutzformen gekennzeichnet werden. Beispielsweise die integrierten Antiphishingrichtlinien in EOP, die für alle Microsoft 365 Kunden verfügbar sind, und die stabileren Antiphishingrichtlinien, die Microsoft Defender für Office 365 Kunden zur Verfügung stehen. Nachrichten durchlaufen auch mehrere Erkennungsscans auf Schadsoftware, Spam, Phishing usw. Bei all dieser Aktivität kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
 
 Im Allgemeinen wird eine Richtlinie, die auf eine Nachricht angewendet wird, im **X-Forefront-Antispam-Report-Header** in der **CAT -Eigenschaft (Category)** identifiziert. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
@@ -61,9 +61,10 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
 
 - **Die Priorität der Richtlinie:** Für jede Art von Richtlinie (Antispam, Antischadsoftware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für jeden gilt, Sie können jedoch benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie hat einen Prioritätswert, der die Reihenfolge bestimmt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
 
-  Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf sie angewendet. Alle verbleibenden Richtlinien dieses Typs werden für den Benutzer nicht ausgewertet (einschließlich der Standardrichtlinie).
+  > [!IMPORTANT]
+  > Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf sie angewendet. Alle verbleibenden Richtlinien dieses Typs werden für den Benutzer nicht ausgewertet (einschließlich der Standardrichtlinie).
 
-Betrachten Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für **dieselben Benutzer gelten,** und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing von Benutzern identifiziert wird:
+Betrachten Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für **dieselben Benutzer gelten,** und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing identifiziert wird:
 
 <br>
 
@@ -71,8 +72,8 @@ Betrachten Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft
 
 |Richtlinienname|Priorität|Benutzeridentitätswechsel|Antispoofing|
 |---|---|---|---|
-|Richtlinie A|1|Ein|Aus|
-|Richtlinie B|2|Aus|Ein|
+|Richtlinie A|1|Ein|Off|
+|Richtlinie B|2|Off|Ein|
 |
 
 1. Die Nachricht wird markiert und als Spoofing behandelt, da Spoofing eine höhere Priorität (4) hat als der Benutzeridentitätswechsel (5).
@@ -82,6 +83,6 @@ Betrachten Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft
 
 Da es möglich ist, dass dieselben Benutzer absichtlich oder unbeabsichtigt in mehrere benutzerdefinierte Richtlinien desselben Typs eingeschlossen werden, verwenden Sie die folgenden Entwurfsrichtlinien für benutzerdefinierte Richtlinien:
 
-- Weisen Sie Richtlinien, die für eine kleine Anzahl von Benutzern gelten, eine höhere Priorität zu, und weisen Sie Richtlinien, die für eine große Anzahl von Benutzern gelten, eine niedrigere Priorität zu. Denken Sie daran, dass die Standardrichtlinie immer zuletzt angewendet wird.
+- Zuweisen einer höheren Priorität zu Richtlinien, die für eine kleine Anzahl von Benutzern gelten, und einer niedrigeren Priorität für Richtlinien, die für eine große Anzahl von Benutzern gelten. Denken Sie daran, dass die Standardrichtlinie immer zuletzt angewendet wird.
 - Konfigurieren Sie Ihre Richtlinien mit höherer Priorität so, dass sie strengere oder speziellere Einstellungen als Richtlinien mit niedrigerer Priorität haben.
 - Erwägen Sie die Verwendung weniger benutzerdefinierter Richtlinien (verwenden Sie nur benutzerdefinierte Richtlinien für Benutzer, die strengere oder speziellere Einstellungen benötigen).

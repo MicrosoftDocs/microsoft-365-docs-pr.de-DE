@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843578"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394893"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Untersuchen von Geräten in der Liste "Microsoft Defender für Endpunktgeräte"
 
@@ -34,7 +34,7 @@ ms.locfileid: "52843578"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Untersuchen Sie die Details einer Warnung, die auf einem bestimmten Gerät ausgelöst wird, um andere Verhaltensweisen oder Ereignisse zu identifizieren, die mit der Warnung oder dem potenziellen Umfang der Verletzung zusammenhängen könnten.
 
@@ -59,6 +59,10 @@ Wenn Sie ein bestimmtes Gerät untersuchen, sehen Sie Folgendes:
 
 ![Abbildung der Geräteansicht](images/specific-device.png)
 
+> [!NOTE]
+> Aufgrund von Produkteinschränkungen berücksichtigt das Geräteprofil nicht alle Cyberbeweise bei der Bestimmung des Zeitrahmens "Zuletzt gesehen" (siehe auch auf der Geräteseite).
+> Beispielsweise kann der Wert "Zuletzt gesehen" auf der Geräteseite einen älteren Zeitrahmen anzeigen, obwohl aktuellere Warnungen oder Daten auf der Zeitachse des Computers verfügbar sind.
+
 ## <a name="device-details"></a>Gerätedetails
 
 Der Abschnitt "Gerätedetails" enthält Informationen wie Domäne, Betriebssystem und Integritätsstatus des Geräts. Wenn ein Untersuchungspaket auf dem Gerät verfügbar ist, wird ein Link angezeigt, über den Sie das Paket herunterladen können.
@@ -69,7 +73,7 @@ Antwortaktionen werden oben auf einer bestimmten Geräteseite ausgeführt und um
 
 - Verwalten von Kategorien
 - Gerät isolieren
-- Einschränken der App-Ausführung
+- App-Ausführung einschränken
 - Antivirusscan ausführen
 - Untersuchungspaket sammeln
 - Initiieren einer Liveantwortsitzung
@@ -85,7 +89,7 @@ Weitere Informationen finden Sie unter [Untersuchen von Benutzerentitäten.](inv
 
 ## <a name="tabs"></a>Registerkarten
 
-Die Registerkarten enthalten relevante Informationen zur Sicherheit und Bedrohungsverhütung im Zusammenhang mit dem Gerät. Auf jeder Registerkarte können Sie die angezeigten Spalten anpassen, indem Sie **Spalten** auf der Leiste oberhalb der Spaltenüberschriften anpassen auswählen.
+Die Registerkarten enthalten relevante Informationen zur Sicherheit und Bedrohungsverhütung im Zusammenhang mit dem Gerät. Auf jeder Registerkarte können Sie die angezeigten Spalten anpassen, indem Sie **Spalten** in der Leiste oberhalb der Spaltenüberschriften anpassen auswählen.
 
 ### <a name="overview"></a>Übersicht
 Auf der Registerkarte **"Übersicht"** werden die [Karten](#cards) für aktive Warnungen, angemeldete Benutzer und Sicherheitsbewertungen angezeigt.
@@ -184,6 +188,8 @@ Die **Azure Advanced Threat Protection-Karte** zeigt eine allgemeine Übersicht 
 Die Karte **"Angemeldete Benutzer"** zeigt, wie viele Benutzer sich in den letzten 30 Tagen angemeldet haben, zusammen mit den am häufigsten verwendeten Benutzern. Durch Auswählen des Links "Alle Benutzer anzeigen" wird der Detailbereich geöffnet, in dem Informationen wie Benutzertyp, Anmeldetyp und Wann der Benutzer zum ersten und letzten Mal angezeigt wurde. Weitere Informationen finden Sie unter [Untersuchen von Benutzerentitäten.](investigate-user.md)
 
 ![Abbildung des Bereichs "Benutzerdetails"](images/logged-on-users.png)
+> [!NOTE]
+> Der Wert "Häufigster" Benutzer wird nur auf der Grundlage von Nachweisen von Benutzern berechnet, die sich erfolgreich interaktiv angemeldet haben. Der Seitenbereich "Alle Benutzer" berechnet jedoch alle Arten von Benutzeranmeldungen, sodass erwartet wird, dass häufigere Benutzer im Seitenbereich angezeigt werden, da diese Benutzer möglicherweise nicht interaktiv sind.
 
 ### <a name="security-assessments"></a>Sicherheitsbewertungen
 
@@ -193,7 +199,7 @@ Die **Karte "Sicherheitsbewertungen"** zeigt die Gesamtbelichtungsstufe, Sicherh
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Anzeigen und Organisieren der Microsoft Defender für Endpunkt-Warnungswarteschlange](alerts-queue.md)
+- [Anzeigen und Organisieren der Warnungswarteschlange für Microsoft Defender für Endpunkt](alerts-queue.md)
 - [Verwalten von Microsoft Defender für Endpunkt-Warnungen](manage-alerts.md)
 - [Untersuchen von Microsoft Defender für Endpunkt-Warnungen](investigate-alerts.md)
 - [Untersuchen einer Datei, die einer Defender für Endpunkt-Warnung zugeordnet ist](investigate-files.md)

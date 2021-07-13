@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Ganz gleich, ob sie dem Compliance Center neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft zu überblicken. Finden Sie heraus, was wir diesen Monat vorhaben.
+description: Ganz gleich, ob sie dem Compliance Center neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft auf dem Laufenden zu halten. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288131"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394941"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
-Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft zu überblicken. Sehen Sie sich unten an, was in Microsoft 365 Compliance neu ist.
+Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine neue und aktualisierte Dokumentation bereitstellen– Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliance-Landschaft auf dem Laufenden zu halten. Sehen Sie sich unten an, was in Microsoft 365 Compliance neu ist.
 
 > [!NOTE]
 > Einige Compliance-Features werden für unsere Kunden mit unterschiedlicher Geschwindigkeit eingeführt. Wenn Sie noch kein Feature sehen, versuchen Sie, sich selbst zu [Gezieltes Release](/office365/admin/manage/release-options-in-office-365) hinzuzufügen.
@@ -41,6 +41,28 @@ Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-complian
 >
 > Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
 
+## <a name="june-2021"></a>Juni 2021
+
+### <a name="customer-key"></a>Kundenschlüssel
+
+- [Dienstverschlüsselung mit Customer Key](customer-key-overview.md) (DEPs auf Kundenschlüsselmandantenebene verschlüsseln jetzt die Konfiguration von Vertraulichkeitsbezeichnungen für Microsoft Information Protection.)
+
+### <a name="ediscovery"></a>eDiscovery
+
+- Abfragen und Filtern von [Inhalten in einem Prüfdateisatz](review-set-search.md) (neue Abfrage- und Filterfunktion in einem neuen UX-Format zum Filtern und Suchen nach Inhalten in einem Prüfdateisatz)
+- [Markieren von Dokumenten in einem Prüfdateisatz in Advanced eDiscovery](tagging-documents.md) (neue Tag-Funktionalität und UX, um das Markieren von Dokumenten in einem Prüfdateisatz schneller und einfacher zu machen; umfasst neue Funktionen zum Markieren von Dokumenten mithilfe einer Abfrage und die Verwendung von Filtern, um Elemente des Prüfdateisatzes schnell zu finden oder auszuschließen, basierend auf der Art und Weise, wie ein Element markiert ist)
+- [Einrichten von Compliancegrenzen für eDiscovery-Untersuchungen](set-up-compliance-boundaries.md) (Microsoft hat die Anforderung zum Kontaktieren des MS-Supports entfernt, um anzufordern, dass ein Complianceattribut mit OneDrive Konten synchronisiert wird; jetzt wird ein Filter mit Postfachsuchberechtigungen verwendet, um die Compliancegrenzen für OneDrive zu erzwingen.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+- Der Assistent für Vertraulichkeitsbezeichnungsrichtlinien unterstützt jetzt [Outlook-spezifischen Optionen für Standardbezeichnungen und obligatorische Bezeichnungen](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) als einfachere Konfiguration als die (weiterhin unterstützten) erweiterten PowerShell-Einstellungen.
+- Die Unterstützung [dynamischer Markierungen mit Variablen](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) wird jetzt für Word, Excel und PowerPoint im Web
+- Bei Richtlinien für die [automatische Bezeichnung](apply-sensitivity-label-automatically.md) für Exchange wird diese Verschlüsselung nicht angewendet, wenn die Bezeichnung für die Verschlüsselung konfiguriert ist. Darüber hinaus können Sie für Exchange Richtlinien für die automatische Bezeichnung jetzt Ausnahmen und die folgenden neuen Bedingungen konfigurieren: Betreff, Empfängeradresse oder Absenderadresse entspricht Mustern; Empfängeradresse enthält Wörter; Absenderdomäne ist, Empfänger ist Mitglied; sender is.
+- Wenn Sie Vertraulichkeitsbezeichnungen für Teams, Gruppen und Websites verwenden, können Sie Set-SPOTenant mit dem Parameter "BlockSendLabelMismatchEmail" verwenden, um die automatisch generierte E-Mail zu verhindern, wenn das Überwachungsereignis erkannt **wird, dass ein Vertraulichkeitskonflikt zwischen Dokumenten** protokolliert wird.  Weitere Informationen finden Sie unter Überwachen von [Vertraulichkeitsbezeichnungsaktivitäten.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )
+- Die [Einstellung für den Authentifizierungskontext](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) wird jetzt in der Vorschau für Vertraulichkeitsbezeichnungen vollständig eingeführt. Darüber hinaus wird diese Konfiguration jetzt von Microsoft Teams unterstützt.
+- Dateien, die mit einem Dienstprinzipalnamen (z. B. Microsoft Cloud App Security) bezeichnet und verschlüsselt und dann in SharePoint und OneDrive hochgeladen werden, können jetzt in Office für das Web geöffnet werden, wenn Sie [Vertraulichkeitsbezeichnungen für Office Dateien in SharePoint und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md)haben.
+- [Die gemeinsame Erstellung und automatische Speicherung](sensitivity-labels-coauthoring.md) ist nicht mehr auf Testmandanten beschränkt und wird jetzt in der Produktion unterstützt, wenn Sie Version 2105: 18. Juni für Windows und Version 16.50+ für macOS verwenden. Beachten Sie, dass dieses Feature von iOS und Android immer noch nicht unterstützt wird und weiterhin in der Vorschau angezeigt wird.
+
 ## <a name="may-2021"></a>Mai 2021
 
 ### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
@@ -49,7 +71,7 @@ Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-complian
 
 ### <a name="retention-and-records-management"></a>Aufbewahrung und Datensatzverwaltung
 
-- Wenn Sie eine Aufbewahrungsrichtlinie von einem SharePoint Standort oder OneDrive Konto freigeben, müssen Sie die 30-tägige Nachfrist nicht mehr warten, bevor Sie die Website oder das Konto löschen können. Eine beliebte Anforderung von Kunden, diese Änderung ist jetzt für alle Mandanten abgeschlossen.
+- Wenn Sie eine Aufbewahrungsrichtlinie von einer SharePoint Website oder einem OneDrive Konto freigeben, müssen Sie die 30-tägige Nachfrist nicht mehr warten, bevor Sie die Website oder das Konto löschen können. Eine beliebte Anforderung von Kunden, diese Änderung ist jetzt für alle Mandanten abgeschlossen.
 - In der Vorschau, **mehrstufige Löschungsprüfung:** Ein Administrator kann jetzt bis zu fünf aufeinander folgende Stufen der [Löschungsprüfung](disposition.md) für eine Aufbewahrungsbezeichnung hinzufügen, und Prüfer können andere Benutzer zu ihrer Löschungsprüfungsphase hinzufügen. Sie können auch die E-Mail-Benachrichtigungen und -Erinnerungen anpassen.
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
@@ -59,7 +81,7 @@ Ganz gleich, ob sie dem [Microsoft 365 Compliance Center](microsoft-365-complian
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
 - In der Vorschau ist jetzt eine neue Einstellung für **den Authentifizierungskontext** verfügbar, wenn Sie eine [Vertraulichkeitsbezeichnung für Gruppen und Websites](sensitivity-labels-teams-groups-sites.md)konfigurieren. Diese Option funktioniert in Verbindung mit Azure AD-Richtlinien für bedingten Zugriff, um strengere Bedingungen zu erzwingen, wenn Benutzer auf SharePoint Websites zugreifen, auf die die Bezeichnung angewendet wurde. Lesen Sie die [Abhängigkeiten und Einschränkungen,](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) bevor Sie diese Einstellung konfigurieren.
-- Richtlinien für automatische [Bezeichnungen,](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) die nur für Exchange konfiguriert sind, unterstützen jetzt Vertraulichkeitsbezeichnungen, die Verschlüsselung anwenden, indem Benutzer Berechtigungen für die Optionen "Nicht weiterleiten" oder **"Encrypt-Only" zuweisen** können.
+- Richtlinien für automatische [Bezeichnungen,](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) die nur für Exchange konfiguriert sind, unterstützen jetzt Vertraulichkeitsbezeichnungen, die Verschlüsselung anwenden, indem Benutzer Berechtigungen für die Optionen "Nicht weiterleiten" oder **"Encrypt-Only" zuweisen können.**
 - [Obligatorische Bezeichnungen](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) sind jetzt allgemein für alle Office-Apps auf allen Plattformen verfügbar.
 
 ## <a name="april-2021"></a>April 2021
@@ -98,7 +120,7 @@ Outlook Versionen und Updates:
 
 ## <a name="march-2021"></a>März 2021
 
-Hier sind einige änderungen an Microsoft 365 Compliancelösungen und Inhalten für den Monat März.
+Hier sind einige Änderungen an Microsoft 365 Compliancelösungen und Inhalten für den Monat März.
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
@@ -122,7 +144,7 @@ Hier sind einige änderungen an Microsoft 365 Compliancelösungen und Inhalten f
 ### <a name="encryption"></a>Verschlüsselung
 
 - **Kundenschlüssel für Microsoft 365**. [Übersicht über den Kundenschlüssel](/microsoft-365/compliance/customer-key-tenant-level) für Microsoft 365 auf Mandantenebene (öffentliche Vorschau).
-- **Verschlüsselung mit Doppelschlüssel**. Erfahren Sie mehr über [das Aktivieren der Unterstützung für bezeichnete und geschützte Dokumente](/microsoft-365/compliance/double-key-encryption) in SharePoint und OneDrive for Business.
+- **Verschlüsselung mit Doppelschlüssel**. Erfahren Sie mehr über [das Aktivieren der Unterstützung für mit Bezeichnungen versehene und geschützte Dokumente](/microsoft-365/compliance/double-key-encryption) in SharePoint und OneDrive for Business.
 
 ### <a name="insider-risk-management"></a>Insider-Risikomanagement
 
@@ -155,7 +177,7 @@ Die folgenden Themen wurden aktualisiert oder hinzugefügt, um diese neuen Featu
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-- **Verbesserungen am Dateiplan.** Eine Aktualisierung des [Dateiplans](file-plan-manager.md) entfernt oder verbessert die vorherigen Längeneinschränkungen für den Import.
+- **Verbesserungen des Dateiplans.** Eine Aktualisierung des [Dateiplans](file-plan-manager.md) entfernt oder verbessert die vorherigen Längeneinschränkungen für den Import.
 - **Löschen Sie Aufbewahrungsbezeichnungen für Datensätze.** Eine Vorschauversion unterstützt die Möglichkeit, [Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#deleting-retention-labels) zu löschen, die Elemente als Datensätze markieren.
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
@@ -174,7 +196,7 @@ Inhalte wurden in den folgenden Themen hinzugefügt oder aktualisiert:
 
 - **DoD-Unterstützung.** Unterstützung für Mandanten von US-Behörden mit DoD-Umgebungen.
 - **Nur verschlüsseln für Outlook**. Verschlüsselungsoptionen für Outlook umfassen jetzt Encrypt-Only, wenn Sie ["Benutzer Berechtigungen zuweisen lassen"](encryption-sensitivity-labels.md#let-users-assign-permissions)auswählen.
-- **Erzwingen integrierter Bezeichnungen in Office Apps.** Aktualisierte [Anleitung](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) zum Erzwingen integrierter Bezeichnungen in Office Apps, wenn Sie den Azure Information Protection-Client für einheitliche Bezeichnungen installiert haben.
+- **Erzwingen integrierter Bezeichnungen in Office-Apps.** Aktualisierte [Anleitung](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) zum Erzwingen integrierter Bezeichnungen in Office Apps, wenn Sie den Azure Information Protection-Client für einheitliche Bezeichnungen installiert haben.
 
 ## <a name="february-2021"></a>Februar 2021
 
@@ -269,49 +291,3 @@ Die folgenden Microsoft 365 Compliancelösungen unterstützen jetzt die Erkennun
 
 - Vertraulichkeitsbezeichnungen werden jetzt für Mandanten der US-Regierung (GCC und GCC-H) unterstützt.
 - Neue [automatische Bezeichnungsunterstützung](sensitivity-labels-office-apps.md) für macOS.
-
-## <a name="december-2020"></a>Dezember 2020
-
-### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Spotlight: Neue Inhalte für Insider-Risikolösungen
-
-Das team für Microsoft 365 Compliance-Inhalte arbeitet hart daran, "Inhaltslösungs"-Dokumente zu erstellen, um zu fördern, wie Compliance-Funktionen gemeinsam verwendet werden können, um Ihre Complianceziele zu erreichen.
-
-Zunächst sind Inhalte, die unsere Insider-Risikolösungen miteinander verbindet: Kommunikationscompliance, Insider-Risikomanagement, Informationsbarrieren und privilegiertes Zugriffsmanagement. Hier sehen Sie einen Blick darauf, was Sie finden:
-
-- [Neue Angebotsseite für Insider-Risikolösungen.](insider-risk-solution-overview.md) Enthält Details zu Risiken, die die Lösungen mindern können, Lizenzierungsanforderungen, Bereitstellungssequenz, Architekturillustrationen, Schulungsressourcen und vieles mehr.
-- Neue Übersichtsartikel für jede Insider-Risikolösung. Anleitungen und Links zu Artikeln, die Ihnen helfen, jede Lösung zu erfahren, zu planen, bereitzustellen und zu verwalten:
-  - [Kommunikationscompliance](communication-compliance-solution-overview.md)
-  - [Insider-Risikomanagement](insider-risk-management-solution-overview.md)
-  - [Informationsbarrieren](information-barriers-solution-overview.md)
-  - [Privileged Access Management](privileged-access-management-solution-overview.md)
-
-Weitere Dokumentationen zu Inhaltslösungen werden in Kürze verfügbar sein!
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-Verbesserter Workflow und verbesserte Funktionalität zum [Hinzufügen von Verwahrern](add-custodians-to-case.md) und [Nicht-Verwahrer-Datenquellen](non-custodial-data-sources.md) zu einem Advanced eDiscovery Fall.
-
-### <a name="data-connectors"></a>Datenconnectors
-
-[Vier neue Connectors wurden veröffentlicht:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow und Yieldbroker.
-
-### <a name="encryption"></a>Verschlüsselung
-
-Einführung in [den Kundenschlüssel für Microsoft 365 auf Mandantenebene.](customer-key-tenant-level.md) Mithilfe der von Ihnen bereitgestellten Schlüssel können Sie eine Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) erstellen und dem Mandanten zuweisen. Die Datenverschlüsselungsrichtlinie (DEP) verschlüsselt Daten für diese Workloads mandantenübergreifend:
-
-- Teams Chatnachrichten (1:1-Chats, Gruppenchats, Besprechungschats und Kanalunterhaltungen)
-- Teams Mediennachrichten (Bilder, Codeausschnitte, Videos, Wiki-Bilder)
-- Teams in Teams Speicher gespeicherte Anruf- und Besprechungsaufzeichnungen
-- Teams Chatbenachrichtigungen
-- Teams von Chatvorschlägen nach Cortana
-- Teams Statusmeldungen
-- Benutzer- und Signalinformationen für Exchange Online
-
-### <a name="records-management"></a>Datensatzverwaltung
-
-Die [Rollengruppe "Datensatzverwaltungsadministrator"](get-started-with-records-management.md#permissions-required-for-records-management) gewährt jetzt Berechtigungen für alle Datensatzverwaltungsfunktionen, einschließlich der Löschungsprüfung.
-
-### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
-
-- [Automatisches Bezeichnen von Daten in Azure Purview (Vorschau)](/azure/purview/create-sensitivity-label). Sie können jetzt Vertraulichkeitsbezeichnungen erstellen und automatisch auf Ressourcen in Azure Purview anwenden, z. B. Dateien in Azure Blob Storage und Datenbankspalten in SQL Server.
-- [Benutzer müssen eine Bezeichnung auf Elemente anwenden.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Diese neue Option wird auch als "obligatorische Bezeichnung" bezeichnet und erfordert, dass Benutzer in den spezifischen Szenarien eine Vertraulichkeitsbezeichnung auswählen und anwenden.

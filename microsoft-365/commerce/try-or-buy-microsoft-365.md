@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: GEA150
 description: Registrieren Sie sich für eine kostenlose 30-tägige Testversion für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business.
 ms.date: 08/07/2020
-ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950047"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394869"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 business-Abonnements
 
-Microsoft 365 for Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und 30 Tage lang testen.
+Microsoft 365 for Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und es 30 Tage lang testen.
 
 > [!NOTE]
 > Sie müssen eine Kreditkarte verwenden, wenn Sie sich für eine kostenlose Testversion registrieren. Am Ende des kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement umgewandelt. Ihre Kreditkarte wird erst nach Ablauf des Testzeitraums in Rechnung gestellt.
@@ -43,7 +44,7 @@ Microsoft 365 for Business ist ein Abonnementdienst, mit dem Sie Ihre Organisati
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Sie benötigen kein vorhandenes Microsoft-Konto, um sich für eine kostenlose Testversion anzumelden. Für alle anderen Verfahren in diesem Artikel müssen Sie ein globaler Administrator oder Abrechnungsadministrator für Ihre Organisation sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
@@ -68,7 +69,7 @@ Wenn Sie Ihr Abonnement kaufen möchten, bevor Ihre Testversion beendet ist, fü
 4. Wählen Sie entweder eine monatliche oder jährliche Verpflichtung für Ihr Abonnement aus, und wählen Sie dann **"Auschecken"** aus.
 5. Überprüfen Sie auf der nächsten Seite das Abonnement, und wählen Sie **"Auschecken"** aus.
 6. Überprüfen Sie auf der nächsten Seite die Adresse **"Verkauft an",** die in **Rechnung gestellten** Informationen und **die Elemente in dieser Bestellung.** Wenn Sie Änderungen vornehmen müssen, wählen Sie neben dem entsprechenden Abschnitt **"Ändern"** aus.
-7. Wenn Sie \' fertig sind, wählen Sie **Vereinbarung annehmen & Bestellung aufgeben.**
+7. Wenn Sie \' fertig sind, wählen Sie **Vereinbarung annehmen & Bestellung aufgeben** aus.
 
 ## <a name="extend-your-trial"></a>Testversion verlängern
 
@@ -83,7 +84,7 @@ Wenn Sie zum Kauf bereit sind, lesen [Sie "Kaufen" Ihrer Testversion.](#buy-a-su
 
 ## <a name="cancel-your-free-trial-subscription"></a>Kündigen Ihres kostenlosen Testabonnements
 
-Wenn Sie Ihr Testabonnement vor Ablauf des kostenlosen Testzeitraums kündigen möchten, wechseln Sie zum Microsoft 365 Admin Center, und [deaktivieren Sie die wiederkehrende Abrechnung.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) Die Testversion läuft automatisch ab, wenn Ihr Monat endet, und Ihre Kreditkarte \' wird nicht belastet.
+Wenn Sie Ihr Testabonnement kündigen möchten, bevor der kostenlose Testzeitraum endet, wechseln Sie zum Microsoft 365 Admin Center, und [deaktivieren Sie die wiederkehrende Abrechnung.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) Die Testversion läuft automatisch ab, wenn Ihr Monat endet, und Ihre Kreditkarte \' wird nicht belastet.
 
 ## <a name="try-a-different-subscription"></a>Testen eines anderen Abonnements
 
@@ -101,7 +102,7 @@ Wenn Sie ein Abonnement über die Microsoft 365 Admin Center hinzufügen, ist da
 
 ## <a name="buy-a-different-subscription"></a>Kaufen eines anderen Abonnements
 
-Wenn Sie bereits über ein Microsoft 365 business-Abonnement verfügen, können Sie die Microsoft 365 Admin Center durchlaufen, um ein anderes Abonnement für Ihre Organisation zu kaufen.
+Wenn Sie bereits über ein Microsoft 365 business-Abonnement verfügen, können Sie die Microsoft 365 Admin Center durchlaufen, um ein anderes Abonnement für Ihre Organisation zu erwerben.
 
 Wenn Sie ein anderes Abonnement über das Admin Center erwerben, ist das neue Abonnement derselben Organisation (Domänennamebereich) wie Ihr vorhandenes Abonnement zugeordnet. Dadurch wird es einfacher, Benutzer in Ihrer Organisation zwischen Abonnements zu verschieben oder ihnen eine Lizenz für das zusätzliche Abonnement zuzuweisen, das sie benötigen.
 

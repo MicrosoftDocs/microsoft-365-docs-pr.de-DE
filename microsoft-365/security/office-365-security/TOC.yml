@@ -34,6 +34,8 @@
           href: office-365-air.md
         - name: Funktionsweise der automatischen Untersuchung und Reaktion
           href: automated-investigation-response-office.md
+        - name: E-Mail-Analyse in Untersuchungen
+          href: email-analysis-investigations.md
         - name: Wartungsaktionen
           href: air-remediation-actions.md
         - name: Schutz vor Schadsoftware
