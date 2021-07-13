@@ -15,20 +15,20 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Informationen zu verwalteten Dienstanbietern (Managed Service Providers, MSPs) finden Sie unter "Registrieren für Microsoft 365 Lighthouse".
-ms.openlocfilehash: 08ef5dabaad8e35cfff611325641b99b5a86ad18
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+description: Für Verwaltete Dienstanbieter (Managed Service Providers, MSPs) erfahren Sie, wie Sie sich für Microsoft 365 Lighthouse registrieren.
+ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395183"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409008"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Registrieren für Microsoft 365 Lighthouse
 
 > [!NOTE]
 > Die in diesem Artikel beschriebenen Features befinden sich in der Vorschau, können geändert werden und sind nur für Partner verfügbar, die die [Anforderungen](m365-lighthouse-requirements.md)erfüllen. Wenn Ihre Organisation nicht über Microsoft 365 Lighthouse verfügt, befolgen Sie die Anweisungen in diesem Artikel, um sich anzumelden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Stellen Sie sicher, dass Sie und Ihre Kundenmandanten die unter [Microsoft 365 Lighthouse Anforderungen](m365-lighthouse-requirements.md)aufgeführten Anforderungen erfüllen.
 
@@ -51,7 +51,7 @@ ms.locfileid: "53395183"
     > [!NOTE]
     > Microsoft 365 Lighthouse erfordert eine Lizenz für den Mandanten. Es sind keine zusätzlichen Benutzerlizenzen erforderlich. 
 
-    Um zu überprüfen, ob Microsoft 365 Lighthouse erfolgreich zu Ihrem Mandanten hinzugefügt wurde, suchen Sie im Microsoft 365 Admin Center unter **"Abrechnung > Ihre Produkte"** nach Microsoft 365 Lighthouse.
+    Um zu überprüfen, ob Microsoft 365 Lighthouse erfolgreich zu Ihrem Mandanten hinzugefügt wurde, suchen Sie im Microsoft 365 Admin Center unter **Abrechnung > Ihre Produkte** nach Microsoft 365 Lighthouse.
 
 1. Wenn Sie nicht zum Microsoft 365 Lighthouse-Portal umgeleitet werden, wechseln Sie zu `https://lighthouse.microsoft.com/` .
 
@@ -62,7 +62,7 @@ ms.locfileid: "53395183"
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Konfigurieren Microsoft 365 Lighthouse Portalsicherheit]() 
+[Konfigurieren Microsoft 365 Lighthouse Portalsicherheit](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

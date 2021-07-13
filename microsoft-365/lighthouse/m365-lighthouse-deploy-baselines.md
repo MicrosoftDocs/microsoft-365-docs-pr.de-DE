@@ -16,19 +16,19 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Informationen zum Bereitstellen von Microsoft 365 Lighthouse Basisplänen für verwaltete Dienstanbieter (Managed Service Providers, MSPs), die Microsoft 365 Lighthouse verwenden.
-ms.openlocfilehash: 0bda7edec2a200e51e734db64e2b703a027e57bb
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f329993443b4bd3003a3e8460d77f9b73ac10fc6
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395194"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409104"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Bereitstellen von Microsoft 365 Lighthouse Basisplänen 
 
 > [!NOTE]
 > Die in diesem Artikel beschriebenen Features befinden sich in der Vorschau, können geändert werden und sind nur für Partner verfügbar, die die [Anforderungen](m365-lighthouse-requirements.md)erfüllen. Wenn Ihre Organisation nicht über Microsoft 365 Lighthouse verfügt, lesen Sie ["Registrieren für Microsoft 365 Lighthouse".](m365-lighthouse-sign-up.md)
 
-Microsoft 365 Lighthouse Basisplänen können Sie standardmäßige verwaltete Mandantenkonfigurationen bereitstellen, um Mandantenbenutzer, -geräte und -daten zu schützen. Es gibt sechs Standardbasislinienkonfigurationen, die standardmäßig mit Microsoft 365 Lighthouse bereitgestellt werden:
+mit Microsoft 365 Lighthouse Basisplänen können Sie standardmäßige verwaltete Mandantenkonfigurationen bereitstellen, um Mandantenbenutzer, Geräte und Daten zu schützen. Es gibt sechs Standardbasislinienkonfigurationen, die mit Microsoft 365 Lighthouse standardmäßig bereitgestellt werden:
 
 - MFA für Administratoren anfordern
 - MFA für Endbenutzer anfordern
@@ -37,9 +37,9 @@ Microsoft 365 Lighthouse Basisplänen können Sie standardmäßige verwaltete Ma
 - Konfigurieren der Defender-Antivirenrichtlinie für Windows Geräte
 - Konfigurieren der Compliancerichtlinie für Windows Geräte
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Stellen Sie sicher, dass Sie und Ihre Kundenmandanten die Anforderungen erfüllen, die in den [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)aufgeführt sind.
+Stellen Sie sicher, dass Sie und Ihre Kundenmandanten die Anforderungen erfüllen, die unter [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)aufgeführt sind.
 
 ## <a name="learn-more-about-the-default-baseline"></a>Weitere Informationen zur Standardbasislinie
 
@@ -61,5 +61,5 @@ Wählen Sie im linken Navigationsbereich **Baselines** aus, um die Baselines-Sei
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Übersicht über die Verwendung von Basisplänen zur Bereitstellung standardmäßiger Mandantenkonfigurationen](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) (Artikel)\
+[Übersicht über die Verwendung von Basisplänen zur Bereitstellung standardmäßiger Mandantenkonfigurationen](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (Artikel)\
 [faq zu Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (Artikel)
