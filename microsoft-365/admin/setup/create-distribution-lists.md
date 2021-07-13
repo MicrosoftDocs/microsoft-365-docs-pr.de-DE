@@ -22,17 +22,18 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Erstellen Sie Verteilergruppen oder Listen im Microsoft 365 Admin Center, damit Sie E-Mails an eine Gruppe senden können, ohne den Namen jedes Empfängers eintippen zu müssen.
-ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+- AdminTemplateSet
+description: Erstellen Sie Verteilergruppen oder Listen im Microsoft 365 Admin Center, damit Sie E-Mails an eine Gruppe senden können, ohne den Namen jedes Empfängers einzugeben.
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635666"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393571"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Erstellen von Verteilergruppen im Microsoft 365 Admin Center
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Erstellen von Verteilergruppen in der Microsoft 365 Admin Center
   
-Wird verwendet, wenn Sie E-Mails an eine Gruppe von Personen senden möchten, ohne den Namen jedes einzelnen Empfängers eingeben zu müssen, werden Verteilergruppen (Verteilerlisten) nach einem bestimmten Diskussionsthema (z. B. "Marketing") oder nach Benutzern organisiert, die gemeinsame Arbeit teilen, für die sie häufig kommunizieren müssen. Sie bieten ihnen auch die Möglichkeit, E-Mails automatisch an mehrere E-Mail-Adressen weiter zu senden.
+Wird verwendet, wenn Sie E-Mails an eine Gruppe von Personen senden möchten, ohne den Namen jedes einzelnen Empfängers eingeben zu müssen, werden Verteilergruppen (Verteilerlisten) nach einem bestimmten Diskussionsthema (z. B. "Marketing") oder nach Benutzern organisiert, die gemeinsame Arbeit teilen, für die sie häufig kommunizieren müssen. Sie bieten ihnen auch die Möglichkeit, E-Mails automatisch an mehrere E-Mail-Adressen weiterzuleiten.
 
 Verteilergruppen werden manchmal als Verteilerlisten bezeichnet.
   
@@ -60,19 +61,19 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
     Sie können die gesuchte App nicht finden? Wählen Sie im Launcher **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen. 
     
-2. Wählen **Sie Gruppen** \> **im** linken Navigationsbereich aus, und wählen Sie dann Gruppe hinzufügen **aus.** 
+2. Wählen Sie im linken Navigationsbereich **Gruppen** \> **aus,** und wählen Sie dann **eine Gruppe hinzufügen** aus. 
       
-3. Wählen Sie **im Feld Gruppentyp auswählen** die Option **Verteilung** aus, und wählen Sie dann **Weiter aus.**
+3. Wählen Sie im Feld **"Gruppentyp auswählen"** die Option **"Verteilung"** und dann **"Weiter"** aus.
   
-4. Geben Sie einen Namen, eine Beschreibung und einen E-Mail-Alias für Ihre neue Gruppe ein, und wählen Sie aus, ob Personen außerhalb Ihrer Organisation E-Mails an die Gruppe senden möchten. 
+4. Geben Sie einen Namen, eine Beschreibung und einen E-Mail-Alias für Ihre neue Gruppe ein, und wählen Sie aus, ob Personen außerhalb Ihrer Organisation E-Mails an die Gruppe senden sollen. 
     
-5. Klicken **Sie auf Hinzufügen,** um eine Gruppe zu erstellen, und überprüfen Sie dann Ihre Gruppe, und wählen Sie **Schließen aus.** 
+5. Klicken Sie auf **"Hinzufügen",** um eine Gruppe zu erstellen, überprüfen Sie ihre Gruppe, und wählen Sie **"Schließen"** aus. 
     
-6. Informationen zum Hinzufügen von Benutzern zu Ihrer Verteilerliste finden Sie unter Hinzufügen eines Benutzers oder [Kontakts zu einer Verteilergruppe](../email/add-user-or-contact-to-distribution-list.md).
+6. Informationen zum Hinzufügen von Benutzern zu Ihrer Verteilerliste finden Sie unter [Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe.](../email/add-user-or-contact-to-distribution-list.md)
     
-Informationen zur Verwendung von Gruppen in Outlook 2016 und Outlook im Web finden Sie unter Verwenden von Kontaktgruppen [(früher Verteilerlisten) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
+Sehen Sie sich die Verwendung von Gruppen in Outlook 2016 und Outlook im Web unter [Verwenden von Kontaktgruppen (früher Verteilerlisten) in Outlook an.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
-Hilfe bei [Problemen mit Verteilerlisten finden](/office365/troubleshoot/groups/distribution-list-issues) Sie unter Probleme mit Verteilergruppen. 
+Hilfe zu Problemen mit Verteilerlisten finden Sie unter ["Verteilergruppenprobleme".](/office365/troubleshoot/groups/distribution-list-issues) 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

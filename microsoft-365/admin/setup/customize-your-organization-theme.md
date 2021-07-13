@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Erfahren Sie, wie Sie das Standarddesign für den oberen Rand der Navigationsleiste in Microsoft 365 ändern und an Ihr Firmenlogo oder Ihre Farbe anpassen.
-ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227783"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393535"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
@@ -70,7 +71,7 @@ Das Standarddesign ist das erste angezeigte Design.
 
 Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
-1. Geben Sie auf der Seite **"Allgemein"** einen Namen für Ihr neues Design ein.
+1. Geben Sie auf der Seite **"Allgemein"** einen Namen für ihr neues Design ein.
 
 2. Unter **"Gruppen"** können Sie bis zu 5 Microsoft 365 Gruppen auswählen, die Ihr Gruppendesign anzeigen können, anstatt das Standarddesign zu verwenden. Sie können auch verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
 

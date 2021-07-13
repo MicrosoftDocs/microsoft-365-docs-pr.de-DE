@@ -19,24 +19,25 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Verwalten von E-Mail-Signaturen, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungsanweisungen für alle E-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen.
-ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Verwalten Sie E-Mail-Signaturen, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungserklärungen für alle E-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen.
+ms.openlocfilehash: ba96d0d5782fc675a044980db0a0ac1d4ce6caaf
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635654"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393559"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
  Sie können E-Mail-Signaturen verwalten, indem Sie den E-Mail-Nachrichten, die an Ihre Organisation oder von ihr gesendet werden, eine E-Mail-Signatur, einen rechtlichen Haftungsausschluss oder eine Offenlegungserklärung hinzufügen. Das können Sie so einrichten, dass diese Hinzufügung auf alle ein- und ausgehenden Nachrichten angewendet wird, wie unten beschrieben wird. Oder Sie können sie nur auf bestimmte Nachrichten anwenden, z. B. solche, die bestimmte Wörter oder Textmuster enthalten.
 
-## <a name="watch-create-a-company-wide-email-signature"></a>Watch: Erstellen einer unternehmensweiten E-Mail-Signatur
+## <a name="watch-create-a-company-wide-email-signature"></a>Überwachung: Erstellen einer unternehmensweiten E-Mail-Signatur
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -115,7 +116,7 @@ Verwenden Sie ein Drittanbieter-Tool, um diese und andere Funktionen zum Verwalt
   
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite Haftungsausschlüsse, Signaturen,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)Fußzeilen oder Kopfzeilen in Exchange Online .
+Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite Meldungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

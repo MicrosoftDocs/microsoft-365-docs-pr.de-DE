@@ -1,5 +1,5 @@
 ---
-title: Bewerten des Berichts Microsoft 365 aktive Benutzer
+title: Bewerten des Berichts Microsoft 365 "Aktive Benutzer"
 ms.author: pebaum
 author: pebaum
 manager: scotv
@@ -11,29 +11,31 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Erfahren Sie, wie Sie einen Bericht "Aktive Benutzer" über das Dashboard Microsoft 365 Berichte im Microsoft 365 Admin Center abrufen und herausfinden, wie viele Produktlizenzen verwendet werden.
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: Erfahren Sie, wie Sie einen Bericht "Aktive Benutzer" über das Dashboard Microsoft 365 Berichte im Microsoft 365 Admin Center abrufen und erfahren, wie viele Produktlizenzen verwendet werden.
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924371"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391363"
 ---
-# <a name="assess-the-microsoft-365-active-users-report"></a>Bewerten des Berichts Microsoft 365 aktive Benutzer
+# <a name="assess-the-microsoft-365-active-users-report"></a>Bewerten des Berichts Microsoft 365 "Aktive Benutzer"
 
 Das Dashboard Microsoft 365 **Berichte** zeigt Ihnen die Aktivitätsübersicht für alle Produkte in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an.
   
 Sie können beispielsweise den Bericht **Aktive Benutzer** verwenden, um herauszufinden, wie viele Produktlizenzen von einzelnen Personen in Ihrem Unternehmen verwendet werden, und einen Drilldown zu Informationen darüber ausführen, welche Produkte von den jeweiligen Benutzern verwendet werden. Dieser Bericht kann Administratoren beim Ermitteln von unzureichend genutzten Produkten oder nicht ausgelasteten Benutzern helfen, die möglicherweise zusätzliche Schulungen oder Informationen benötigen. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, globaler Leser oder Berichtsleser in Microsoft 365 oder Exchange, SharePoint, Teams Dienst, Teams Kommunikation oder Skype for Business Administrator sein, um Berichte anzeigen zu können.  
+> Sie müssen ein globaler Administrator, globaler Leser oder Berichtsleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-, Teams- oder Skype for Business administrator sein, um Berichte anzeigen zu können.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Informationen zum Abrufen des Berichts für aktive Benutzer
 

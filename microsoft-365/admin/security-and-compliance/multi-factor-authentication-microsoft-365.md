@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,18 +24,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) verwendet sowohl ein Kennwort, das stark sein sollte, als auch eine zusätzliche Überprüfungsmethode.
-ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924731"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393643"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
+# <a name="multifactor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
 
 Kennwörter sind die am häufigsten verwendete Methode zum Authentifizieren einer Anmeldung bei einem Computer oder Onlinedienst, sind aber auch am anfälligsten. Benutzer können einfache Kennwörter auswählen und dieselben Kennwörter für mehrere Anmeldungen bei verschiedenen Computern und Diensten verwenden.
 
-Um eine zusätzliche Sicherheitsstufe für Anmeldungen bereitzustellen, müssen Sie die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) verwenden, die sowohl ein Kennwort verwendet, das stark sein sollte, als auch eine zusätzliche Überprüfungsmethode basierend auf:
+Um eine zusätzliche Sicherheitsstufe für Anmeldungen bereitzustellen, müssen Sie die mehrstufige Authentifizierung (MFA) verwenden, die sowohl ein Kennwort verwendet, das stark sein sollte, als auch eine zusätzliche Überprüfungsmethode basierend auf:
 
 - Etwas, das Sie haben, das nicht einfach dupliziert werden kann, z. B. ein Smartphone.
 - Etwas, das Sie eindeutig und in besonderer Weise besitzen, z. B. Ihre Fingerabdrücke, Ihr Gesicht oder ein anderes biometrisches Attribut.
@@ -43,7 +44,7 @@ Die zusätzliche Überprüfungsmethode wird erst verwendet, nachdem das Kennwort
 
 ## <a name="mfa-support-in-microsoft-365"></a>MFA-Unterstützung in Microsoft 365
 
-Standardmäßig unterstützen sowohl Microsoft 365 als auch Office 365 MFA für Benutzerkonten mit:
+Standardmäßig unterstützen sowohl Microsoft 365 als auch Office 365 MFA für Benutzerkonten mithilfe von:
 
 - Eine an ein Telefon gesendete Textnachricht, die erfordert, dass der Benutzer einen Überprüfungscode eingibt.
 - Ein Telefonanruf.
@@ -59,9 +60,9 @@ Diese Methoden basieren auf Ihrem Microsoft 365 Plan.
 
 |Plan|Empfehlung|Typ des Kunden|
 |---|---|---|
-|Alle Microsoft 365-Pläne|Verwenden Sie Sicherheitsstandards, die MFA für alle Benutzerkonten erfordern. <p> Sie können auch MFA pro Benutzer für einzelne Benutzerkonten konfigurieren, dies wird jedoch nicht empfohlen.|Kleinunternehmen|
+|Alle pläne Microsoft 365|Verwenden Sie Sicherheitsstandards, die MFA für alle Benutzerkonten erfordern. <p> Sie können auch MFA pro Benutzer für einzelne Benutzerkonten konfigurieren, dies wird jedoch nicht empfohlen.|Kleinunternehmen|
 |Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1-Lizenzen|Verwenden Sie Richtlinien für bedingten Zugriff, um MFA für Benutzerkonten basierend auf der Gruppenmitgliedschaft, Apps oder anderen Kriterien anzufordern.|Kleinunternehmen zu Unternehmen|
-|Microsoft 365 E5 <p> Azure AD Premium P2-Lizenzen|Verwenden Sie Azure AD Identity Protection, um MFA basierend auf Anmelderisikokriterien anzufordern.|Unternehmen|
+|Microsoft 365 E5 <p> Azure AD Premium P2 Lizenzen|Verwenden Sie Azure AD Identity Protection, um MFA basierend auf Anmelderisikokriterien anzufordern.|Enterprise|
 ||||
 
 ### <a name="security-defaults"></a>Sicherheitsstandards
@@ -101,7 +102,7 @@ Sie können Richtlinien für bedingten Zugriff mit folgenden Aktionen verwenden:
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 und E5
-- Lizenzen für Azure AD Premium P1 und Azure AD Premium P2
+- lizenzen für Azure AD Premium P1 und Azure AD Premium P2
 
 Für kleine Unternehmen mit Microsoft 365 Business Premium können Sie richtlinien für bedingten Zugriff ganz einfach mit den folgenden Schritten verwenden:
 
@@ -110,7 +111,7 @@ Für kleine Unternehmen mit Microsoft 365 Business Premium können Sie richtlini
 3. Erstellen Sie eine gruppenbasierte Richtlinie für bedingten Zugriff mit den folgenden Einstellungen:
     - Aufgaben > Benutzer und Gruppen: Der Name Ihrer Gruppe aus Schritt 1 oben.
     - Aufgaben > Cloud-Apps oder -Aktionen: alle Cloud-Apps.
-    - Zugriffssteuerungen > Gewähren > Gewähren des Zugriffs > Mehrstufige Authentifizierung erforderlich.
+    - Zugriffssteuerungen > gewähren > Zugriff gewähren > mehrstufige Authentifizierung erforderlich.
 4. Aktivieren Sie die Richtlinie.
 5. Fügen Sie der in Schritt 1 oben erstellten Gruppe ein Benutzerkonto hinzu, und testen Sie.
 6. Um MFA für zusätzliche Benutzerkonten zu benötigen, fügen Sie sie der in Schritt 1 erstellten Gruppe hinzu.
@@ -132,7 +133,7 @@ Mit Azure AD Identity Protection können Sie eine zusätzliche Richtlinie für b
 Sie können Azure AD Identity Protection und risikobasierte Richtlinien für bedingten Zugriff verwenden mit:
 
 - Microsoft 365 E5
-- Azure AD Premium P2-Lizenzen
+- Azure AD Premium P2 Lizenzen
 
 Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -140,7 +141,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Identi
 
 Sie sollten entweder Sicherheitsstandards oder Richtlinien für bedingten Zugriff verwenden, um MFA für Ihre Benutzerkontoanmeldungen zu erfordern. Wenn jedoch eine davon nicht verwendet werden kann, empfiehlt Microsoft dringend MFA für Benutzerkonten mit Administratorrollen, insbesondere der globalen Administratorrolle, für Abonnements jeder Größe.
 
-Sie aktivieren MFA für einzelne Benutzerkonten im **aktiven Benutzerbereich** des Microsoft 365 Admin Centers.
+Sie aktivieren MFA für einzelne Benutzerkonten im **aktiven Benutzerbereich** des Microsoft 365 Admin Center.
 
 ![Abbildung der Option "Mehrstufige Authentifizierung" auf der Seite "Aktive Benutzer"](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -150,7 +151,7 @@ Nach der Aktivierung wird der Benutzer bei der nächsten Anmeldung aufgefordert,
 
 Diese Tabelle zeigt die Ergebnisse der Aktivierung von MFA mit Sicherheitsstandards, Richtlinien für bedingten Zugriff und Nutzerkonteneinstellungen.
 
-|*Aspekt*|Aktiviert|Deaktiviert|Sekundäre Authentifizierungsmethode|
+|*Element*|Aktiviert|Deaktiviert|Sekundäre Authentifizierungsmethode|
 |---|---|---|---|
 |**Sicherheitsstandards**|Richtlinien für bedingten Zugriff können nicht verwendet werden|Richtlinien für den bedingten Zugriff können verwendet werden|Microsoft Authenticator-App|
 |**Richtlinien für bedingten Zugriff**|Wenn eines aktiviert ist, können Sie die Sicherheitsstandards nicht aktivieren.|Wenn alle deaktiviert sind, können Sie die Sicherheitsstandards aktivieren|Nutzerdefiniert bei der MFA-Registrierung|

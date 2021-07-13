@@ -1,5 +1,5 @@
 ---
-title: Einrichten mobiler Geräte für Microsoft 365 Business-Benutzer
+title: Einrichten mobiler Geräte für Microsoft 365 für Geschäftsbenutzer
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -25,17 +25,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Installieren Sie Office auf einem iPhone oder Einem Android-Smartphone, und Ihre Arbeitsdateien in Office-Apps werden durch Microsoft 365 Business geschützt.
-ms.openlocfilehash: 7b411b6ae1223963b8583e1e3cd0ee00e13ff958
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Installieren Sie Office auf einem iPhone oder android-Telefon, und Ihre Arbeitsdateien in Office Apps werden durch Microsoft 365 für Unternehmen geschützt.
+ms.openlocfilehash: 477f0ee63b045ca8fd6d3cfc3023f4122661a3b6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244794"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393397"
 ---
-# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Einrichten mobiler Geräte für Microsoft 365 Business-Benutzer
+# <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Einrichten mobiler Geräte für Microsoft 365 für Geschäftsbenutzer
 
-Folgen Sie den Anweisungen auf den Registerkarten, um Office auf einem iPhone oder einem Android-Smartphone zu installieren. Nachdem Sie diese Schritte ausführen, werden Ihre in Office-Apps erstellten Arbeitsdateien durch Microsoft 365 Business geschützt.
+Folgen Sie den Anweisungen auf den Registerkarten, um Office auf einem iPhone oder einem Android-Smartphone zu installieren. Nachdem Sie diese Schritte ausgeführt haben, werden Ihre in Office Apps erstellten Arbeitsdateien durch Microsoft 365 für Unternehmen geschützt.
 
 Das Beispiel ist für Outlook bestimmt, gilt aber auch für alle anderen Office-Apps, die Sie installieren möchten.
   
@@ -43,7 +43,7 @@ Das Beispiel ist für Outlook bestimmt, gilt aber auch für alle anderen Office-
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-Sehen Sie sich ein kurzes Video zum Einrichten von Office-Apps auf iOS-Geräten mit Microsoft 365 Business an.<br><br>
+Sehen Sie sich ein kurzes Video zum Einrichten Office Apps auf iOS-Geräten mit Microsoft 365 for Business an.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -61,11 +61,11 @@ Tippen Sie nach Abschluss der Installation auf die Schaltfläche **Öffnen**, um
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Geben Sie Ihre geschäftliche  E-Mail-Adresse auf dem Bildschirm E-Mail-Konto hinzufügen ein, und geben Sie dann \> Ihre Microsoft 365 for Business-Anmeldeinformationen \> **anmelden ein.**
+Geben Sie Ihre geschäftliche E-Mail-Adresse auf dem Bildschirm Zum Hinzufügen eines **E-Mail-Kontos** \> ein, und geben Sie dann Ihre Microsoft 365 für Geschäftsanmeldeinformationen \> **ein.**
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-Wenn Ihre Organisation Dateien in Apps schützt, wird ein Dialogfeld angezeigt, in dem sie darauf hinweist, dass Ihre Organisation die Daten in der App schützt und Sie die App neu starten müssen, um sie weiterhin zu verwenden. Tippen Sie auf **OK**, und schließen Sie Outlook. 
+Wenn Ihre Organisation Dateien in Apps schützt, wird ein Dialogfeld angezeigt, das besagt, dass Ihre Organisation jetzt die Daten in der App schützt und Sie die App neu starten müssen, um sie weiterhin zu verwenden. Tippen Sie auf **OK**, und schließen Sie Outlook. 
   
 ![Screenshot, der zeigt, dass Ihre Organisation jetzt Ihre Outlook-App schützt](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
@@ -81,15 +81,15 @@ Sehen Sie sich ein Video zum Installieren von Outlook und Office auf Android-Ger
 
 Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../business-video/index.yml) an.
 
-Um mit dem Setup auf Ihrem Android-Smartphone zu beginnen, wechseln Sie zum Play Store.
+Um mit der Einrichtung auf Ihrem Android-Telefon zu beginnen, wechseln Sie zum Play-Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Geben Sie Microsoft Outlook in das Suchfeld Google Play ein, und tippen Sie auf **Installieren**. Tippen Sie nach der Installation von Outlook auf **Öffnen**.
+Geben Sie Microsoft Outlook in das Google Play-Suchfeld ein, und tippen Sie auf **"Installieren".** Nachdem Outlook installiert wurde, tippen Sie auf **"Öffnen".**
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Tippen Sie in der Outlook-App auf **Erste** Schritte, und fügen Sie dann Ihr Microsoft 365 Business-E-Mail-Konto Continue hinzu, und melden Sie sich mit Ihren \> Unternehmensanmeldeinformationen an.
+Tippen Sie in der Outlook-App auf **Erste Schritte,** fügen Sie dann Ihr Microsoft 365 for Business-E-Mail-Konto \> **"Weiter"** hinzu, und melden Sie sich mit den Anmeldeinformationen Ihrer Organisation an.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -97,7 +97,7 @@ Tippen Sie im Dialogfeld mit der Anweisung, dass Sie die Intune-Unternehmensport
   
 ![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-Installieren Sie im Play Store das Intune-Unternehmensportal.
+Installieren Sie in Play Store Intune-Unternehmensportal.
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
@@ -105,7 +105,7 @@ Installieren Sie im Play Store das Intune-Unternehmensportal.
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-content"></a>Verwandte Inhalte
 
 [Microsoft 365 für Unternehmen-Schulungsvideos](../business-video/index.yml)
 

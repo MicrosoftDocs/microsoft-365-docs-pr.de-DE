@@ -21,6 +21,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -29,26 +30,26 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Erfahren Sie, wie Sie OneDrive und eine Teamwebsite für Microsoft 365 Speicher und Microsoft 365 Dateifreigabe verwenden.
-ms.openlocfilehash: 5ab0a192cb5706b6aff6cdeb30fa566de74dd510
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 40c62842f59fe932fdf297629b456acd595a7b0d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53338661"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393499"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Einrichten der Dateispeicherung und -freigabe in Microsoft 365
 
-Eine der besten Möglichkeiten zum Einrichten der Dateispeicherung und -freigabe für Ihr Unternehmen ist die gemeinsame Verwendung von OneDrive und einer Teamwebsite. Dies ist für ein kleines Unternehmen mit wenigen Mitarbeitern ideal geeignet.
+Eine der besten Möglichkeiten zum Einrichten von Dateispeicherung und -freigabe für Ihr Unternehmen ist die gemeinsame Verwendung von OneDrive und einer Teamwebsite. Dies ist für ein kleines Unternehmen mit wenigen Mitarbeitern ideal geeignet.
 
 ## <a name="watch-where-to-store-files-in-office-365"></a>Überwachung: Speicherort von Dateien in Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../../business-video/index.yml), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../../business-video/index.yml) an.
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 Dokumentspeicherung und -verwaltung
 
-- OneDrive ist für die individuelle Verwendung mit gelegentlicher Freigabe von Dateien konzipiert.
+- OneDrive wurde für die individuelle Verwendung mit gelegentlicher Freigabe von Dateien entwickelt.
 
 - Eine Teamwebsite ist für die regelmäßige Freigabe und Zusammenarbeit an Dateien konzipiert. Eine Teamwebsite eignet sich ideal zum Speichern von Dateien mit gemeinsamem Besitz, bei denen mehrere Personen die Dateien besitzen und möglicherweise an ihnen zusammenarbeiten. Erstellen Sie ein Microsoft-Team, um eine Teamwebsite hinzuzufügen. [Weitere Informationen finden Sie unter Erstellen eines Teams in Teams.](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b)
 
@@ -61,13 +62,13 @@ Hier sind Empfehlungen dazu, was Sie an jedem Speicherort speichern können, wen
   
 |Speicherort|Was ist das?|Zu speichernde Elemente|
 |:-----|:-----|:-----|
-|**OneDrive** |Das Speichern von Inhalten in OneDrive entspricht dem Speichern von Dateien auf Ihrem Computer. Niemand sonst kann einfach darauf zugreifen.<br/> Weitere Informationen finden Sie unter ["Was ist OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Geschäftsdateien, die andere Teammitglieder für die Zusammenarbeit nicht benötigen oder auf die sie nicht regelmäßig zugreifen müssen.<br/> |
-|**SharePoint-Teamwebsites** <br/> |Zusammenarbeit. Wenn Sie eine Microsoft 365 Gruppe erstellen (z. B. im Microsoft 365 Admin Center, in Outlook oder durch Erstellen eines Teams in Microsoft Teams), wird eine SharePoint Teamwebsite für diese Gruppe erstellt. Ebenso wird beim Erstellen einer neuen SharePoint Teamwebsite über die SharePoint Startseite oder über das neue SharePoint Admin Center eine Microsoft 365 Gruppe erstellt. Weitere Informationen finden Sie unter [What is a SharePoint team site?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) and Create a team site in SharePoint [Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Dateien mit gemeinsamem Besitz. Wir empfehlen separate Teamwebsites für jede Arbeitseinheit in Ihrer Organisation. Um beispielsweise Personal- und Finanzdokumente für ein kleines Team privat zu halten, erstellen Sie eine separate Teamwebsite.  <br/> |
+|**OneDrive** |Das Speichern von Inhalten in OneDrive entspricht dem Speichern von Dateien auf Ihrem Computer. Niemand sonst kann einfach darauf zugreifen.<br/> Weitere Informationen finden Sie unter [Was ist OneDrive for Business?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Geschäftsdateien, die andere Teammitglieder für die Zusammenarbeit nicht benötigen oder auf die sie nicht regelmäßig zugreifen müssen.<br/> |
+|**SharePoint-Teamwebsites** <br/> |Zusammenarbeit. Wenn Sie eine Microsoft 365 Gruppe erstellen (z. B. im Microsoft 365 Admin Center, in Outlook oder durch Erstellen eines Teams in Microsoft Teams), wird eine SharePoint Teamwebsite für diese Gruppe erstellt. Ebenso wird beim Erstellen einer neuen SharePoint Teamwebsite über die SharePoint Startseite oder über das neue SharePoint Admin Center auch eine Microsoft 365 Gruppe erstellt. Weitere Informationen finden Sie unter [What is a SharePoint team site?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) and Create a team site in SharePoint [Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Dateien mit gemeinsamem Besitz. Wir empfehlen separate Teamwebsites für jede Arbeitseinheit in Ihrer Organisation. Um beispielsweise Personal- und Finanzdokumente für ein kleines Team privat zu halten, erstellen Sie eine separate Teamwebsite.  <br/> |
 
 > [!NOTE]
 > SharePoint verfügt auch über andere Arten von Websites, die Sie für Ihr Unternehmen verwenden können. Sie können [Kommunikationswebsites](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) in Ihrem Intranet verwenden, um Informationen für ein breites Publikum zu veröffentlichen. Und Sie können [Hubwebsites](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) verwenden, um Websites in Ihrem Intranet zu verbinden.
   
-## <a name="start-using-onedrive-and-your-team-site"></a>Beginnen Sie mit der Verwendung von OneDrive und Ihrer Teamwebsite
+## <a name="start-using-onedrive-and-your-team-site"></a>Beginnen Sie mit OneDrive und Ihrer Teamwebsite
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>Teammitglieder können ihre eigenen Dateien in OneDrive
 
@@ -101,7 +102,7 @@ So kann jede Person in Ihrem Team OneDrive einrichten und Dateien freigeben.
 
     ![E-Mail mit Link zum Freigeben OneDrive Ordners](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
-### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Hochladen von Dateien auf einer Teamwebsite für die Onlinezusammenarbeit
+### <a name="upload-files-to-a-team-site-for-online-collaboration"></a>Hochladen Von Dateien auf einer Teamwebsite für die Onlinezusammenarbeit
 
 Teamwebsites verfügen über einen Ort zum Speichern von Dateien, die als Dokumentbibliothek bezeichnet werden.  
   
@@ -142,7 +143,7 @@ Führen Sie zum Synchronisieren von Dateien zwischen Ihrer Teamwebsite und Ihrem
 
     ![OneDrive Setupbildschirm](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
-5. Wenn Sie Ihre OneDrive noch nicht synchronisiert haben, wird möglicherweise ein OneDrive **Ordnerbildschirm** angezeigt. Überprüfen Sie den Pfad unter **Ihrem OneDrive-Ordner.** Wählen Sie **"Speicherort ändern",** wenn Sie einen anderen Pfad verwenden möchten, und wählen Sie dann **"Weiter"** aus.
+5. Wenn Sie Ihre OneDrive noch nicht synchronisiert haben, wird möglicherweise ein OneDrive **Ordnerbildschirm** angezeigt. Überprüfen Sie den Pfad unter **Ihrem OneDrive Ordner hier.** Wählen Sie **"Speicherort ändern",** wenn Sie einen anderen Pfad verwenden möchten, und wählen Sie dann **"Weiter"** aus.
 
     ![Ändern Des lokalen Ordners auf diesem Bildschirm](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
@@ -168,7 +169,7 @@ Hier sind einige Tipps, um OneDrive oder Ihre SharePoint Teamwebsite optimal zu 
 
 Wenn Sie eine Datei in OneDrive sie nur für Sie zugänglich ist, es sei denn, Sie teilen sie für andere Personen. Wenn Sie Dateien freigeben, können Sie einen Link erstellen, der weitergeleitet werden kann, oder nur für bestimmte Personen freigeben. Sie können auch in OneDrive separate Ordner für unterschiedliche Zwecke erstellen, beispielsweise öffentliche und persönliche Ordner oder Ordner für einzelne Projekte. Jeder Ordner kann für eine andere Person oder Gruppe oder aber auch für niemanden freigegeben werden.
   
-Weitere Informationen zur Freigabe finden Sie auch unter [Freigeben von Dateien und Ordnern mit Microsoft 365](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65).
+Weitere Informationen zur Freigabe finden Sie auch unter [Freigeben von Dateien und Ordnern mit Microsoft 365.](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
   
 ### <a name="track-how-much-space-you-have-left"></a>Nachverfolgen des noch verfügbaren Speicherplatzes
 
@@ -180,7 +181,7 @@ Sie können zwar fast alle Dateitypen hochladen, einige Dateinamen und Zeichen i
   
 ### <a name="enable-or-disable-third-party-storage-services"></a>Aktivieren oder Deaktivieren von Speicherdiensten von Drittanbietern
 
-Sie können drittanbieterbasierten Speicher für Ihre Benutzer in Microsoft 365 aktivieren, damit sie Dokumente mithilfe von Diensten wie Dropbox zusätzlich zu OneDrive und Teamwebsites speichern und freigeben können. Hiermit ergibt sich eine großartige Möglichkeit, für die Benutzer Dienste bereitzustellen, die sie bereits nutzen oder für Geschäftsprojekte nutzen möchten. Wenn Sie nicht möchten, dass Personen in Ihrer Organisation Office verwenden, um Dateien in einem Drittanbieterdienst zu öffnen, führen Sie die folgenden Schritte aus, um sie zu deaktivieren.
+Sie können den Drittanbieterspeicher für Ihre Benutzer in Microsoft 365 aktivieren, damit sie Dokumente mithilfe von Diensten wie Dropbox zusätzlich zu OneDrive und Teamwebsites speichern und freigeben können. Hiermit ergibt sich eine großartige Möglichkeit, für die Benutzer Dienste bereitzustellen, die sie bereits nutzen oder für Geschäftsprojekte nutzen möchten. Wenn Sie nicht möchten, dass Personen in Ihrer Organisation Office verwenden, um Dateien in einem Drittanbieterdienst zu öffnen, führen Sie die folgenden Schritte aus, um sie zu deaktivieren.
   
 > [!IMPORTANT]
 > Der Drittanbieterspeicher ist standardmäßig aktiviert, sodass Sie diese Schritte sofort ausführen müssen, wenn Sie es Ihren Benutzern nicht zur Verfügung stellen möchten.

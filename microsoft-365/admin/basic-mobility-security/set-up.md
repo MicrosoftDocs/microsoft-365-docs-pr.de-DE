@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Richten Sie Basic Mobility and Security ein, um die mobilen Geräte Ihrer Benutzer zu sichern und zu verwalten, indem Sie Aktionen wie das Remotezurücksetzen eines Geräts ausführen.
-ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: d878569c691fc25c8c91c5a5a29215e6284a5d71
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177273"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393283"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Einrichten von grundlegender Mobilität und Sicherheit
 
 Die integrierte grundlegende Mobilität und Sicherheit für Microsoft 365 hilft Ihnen, die mobilen Geräte von Benutzern wie iPhones, iPads, Androids und Windows Telefone zu schützen und zu verwalten. Sie können Sicherheitsrichtlinien für Geräte erstellen und verwalten, ein Gerät aus der Ferne zurücksetzen und detaillierte Berichte zu Geräten anzeigen.
 
-Haben Sie Fragen? Häufig gestellte Fragen (FAQ) zu häufig gestellten Fragen finden Sie unter ["Grundlegende Mobilität und Sicherheit".](frequently-asked-questions.yml) Beachten Sie, dass Sie kein delegiertes Administratorkonto verwenden können, um grundlegende Mobilität und Sicherheit zu verwalten. Weitere Informationen finden Sie unter ["Partner: Delegierte Verwaltung anbieten".](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
+Haben Sie Fragen? Häufig gestellte Fragen (FAQ) zu allgemeinen Fragen finden Sie unter ["Grundlegende Mobilität und Sicherheit".](frequently-asked-questions.yml) Beachten Sie, dass Sie kein delegiertes Administratorkonto verwenden können, um grundlegende Mobilität und Sicherheit zu verwalten. Weitere Informationen finden Sie unter ["Partner: Delegierte Verwaltung anbieten".](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
-Die Geräteverwaltung ist Teil des Security & Compliance Centers, daher müssen Sie dorthin gehen, um das Grundlegende Setup für Mobilität und Sicherheit zu starten.
+Die Geräteverwaltung ist Teil des Security & Compliance Centers, sodass Sie dorthin gehen müssen, um das Setup für grundlegende Mobilität und Sicherheit zu starten.
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Aktivieren des Basic Mobility and Security-Diensts
 
@@ -47,7 +48,7 @@ Wenn der Dienst bereit ist, führen Sie die folgenden Schritte aus, um das Setup
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Schritt 1: (Erforderlich) Konfigurieren von Domänen für grundlegende Mobilität und Sicherheit
 
-Wenn Microsoft 365 keine benutzerdefinierte Domäne zugeordnet ist oder Wenn Sie Windows Geräte nicht verwalten, können Sie diesen Abschnitt überspringen. Andernfalls müssen Sie DNS-Einträge für die Domäne bei Ihrem DNS-Host hinzufügen. Wenn Sie die Datensätze bereits hinzugefügt haben, sind Sie alle im Rahmen der Einrichtung Ihrer Domäne mit Microsoft 365 festgelegt. Nachdem Sie die Datensätze hinzugefügt haben, werden Microsoft 365 Benutzer in Ihrer Organisation, die sich auf ihrem Windows Gerät mit einer E-Mail-Adresse anmelden, die Ihre benutzerdefinierte Domäne verwendet, umgeleitet, sich bei Basic Mobility and Security zu registrieren.
+Wenn Sie Microsoft 365 keine benutzerdefinierte Domäne zugeordnet haben oder wenn Sie Windows Geräte nicht verwalten, können Sie diesen Abschnitt überspringen. Andernfalls müssen Sie DNS-Einträge für die Domäne bei Ihrem DNS-Host hinzufügen. Wenn Sie die Datensätze bereits im Rahmen der Einrichtung Ihrer Domäne mit Microsoft 365 hinzugefügt haben, sind Sie alle festgelegt. Nachdem Sie die Datensätze hinzugefügt haben, werden Microsoft 365 Benutzer in Ihrer Organisation, die sich auf ihrem Windows Gerät mit einer E-Mail-Adresse anmelden, die Ihre benutzerdefinierte Domäne verwendet, umgeleitet, sich bei Basic Mobility and Security zu registrieren.
 
 Benötigen Sie Hilfe beim Einrichten der Datensätze? Suchen Sie Ihre Domänenregistrierungsstelle, und wählen Sie den Registrierungsstellennamen aus, um zur schrittweisen Hilfe zum Erstellen von DNS-Einträgen in der Liste unter Hinzufügen von [DNS-Einträgen zum Verbinden Ihrer Domäne zu](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)gelangen. Verwenden Sie diese Anweisungen, um CNAME-Einträge zu erstellen, die unter [Vereinfachen Windows Registrierung ohne Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)beschrieben sind.
 
@@ -112,7 +113,7 @@ Der nächste Schritt besteht darin, Gerätesicherheitsrichtlinien zu erstellen u
 
 > [!TIP]
 >
-> - Wenn Sie eine neue Richtlinie erstellen, sollten Sie die Richtlinie so festlegen, dass der Zugriff zugelassen und ein Richtlinienverstoß gemeldet wird, wenn ein Benutzergerät nicht mit der Richtlinie kompatibel ist. Auf diese Weise können Sie sehen, wie viele mobile Geräte von der Richtlinie betroffen sind, ohne den Zugriff auf Microsoft 365 zu blockieren.
+> - Wenn Sie eine neue Richtlinie erstellen, sollten Sie die Richtlinie so festlegen, dass der Zugriff zugelassen und ein Richtlinienverstoß gemeldet wird, wenn ein Benutzergerät nicht mit der Richtlinie kompatibel ist. Dadurch können Sie sehen, wie viele mobile Geräte von der Richtlinie betroffen sind, ohne den Zugriff auf Microsoft 365 zu blockieren.
 >
 > - Bevor Sie eine neue Richtlinie für alle Benutzer in Ihrer Organisation bereitstellen, empfehlen wir, sie auf den Geräten zu testen, die von einer kleinen Anzahl von Benutzern verwendet werden.
 >

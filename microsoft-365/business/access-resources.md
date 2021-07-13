@@ -16,23 +16,24 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Erfahren Sie, wie Sie zugriff auf lokale Ressourcen wie Branchen-Apps, Dateifreigaben und Drucker von einem Azure Active Directory verbundenen Windows 10 Gerät erhalten.
-ms.openlocfilehash: 72b3c5ae538cad24fc12e25717dedccb2fdc9017
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843320"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393457"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Zugreifen auf lokale Ressourcen von einem azure AD-verbundenen Gerät in Microsoft 365 Business Premium
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Zugreifen auf lokale Ressourcen von einem Azure AD-verbundenen Gerät in Microsoft 365 Business Premium
 
 Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
 
-Jedes Windows 10 Gerät, das Azure Active Directory eingebunden ist, hat Zugriff auf alle cloudbasierten Ressourcen, z. B. Ihre Microsoft 365-Apps, und kann durch Microsoft 365 Business Premium geschützt werden. Sie können auch den Zugriff auf lokale Ressourcen wie Branchen-Apps, Dateifreigaben und Drucker zulassen. Um den Zugriff zuzulassen, verwenden Sie [Azure AD Verbinden,](/azure/active-directory/connect/active-directory-aadconnect) um Ihr lokales Active Directory mit Azure Active Directory zu synchronisieren.
+Jedes Windows 10 Gerät, das Azure Active Directory beigetreten ist, hat Zugriff auf alle cloudbasierten Ressourcen, z. B. Ihre Microsoft 365-Apps, und kann durch Microsoft 365 Business Premium geschützt werden. Sie können auch den Zugriff auf lokale Ressourcen wie Branchen-Apps, Dateifreigaben und Drucker zulassen. Um den Zugriff zuzulassen, verwenden Sie [Azure AD Verbinden,](/azure/active-directory/connect/active-directory-aadconnect) um Ihr lokales Active Directory mit Azure Active Directory zu synchronisieren.
 
 Weitere Informationen finden Sie unter ["Einführung in die Geräteverwaltung" in Azure Active Directory.](/azure/active-directory/device-management-introduction)
 Die Schritte werden auch in den folgenden Abschnitten zusammengefasst.
@@ -41,7 +42,7 @@ Die Schritte werden auch in den folgenden Abschnitten zusammengefasst.
 
 Führen Sie die folgenden Schritte aus, um den Azure AD-Geräten Ihrer Organisation den Zugriff auf lokale Ressourcen zu ermöglichen.
 
-1. Um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory mit Azure Active Directory zu synchronisieren, führen Sie den Assistenten für die Verzeichnissynchronisierung und azure AD-Verbinden aus, wie unter Einrichten der [Verzeichnissynchronisierung für Office 365](../enterprise/set-up-directory-synchronization.md)beschrieben.
+1. Um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory in Azure Active Directory zu synchronisieren, führen Sie den Assistenten für die Verzeichnissynchronisierung und azure AD-Verbinden aus, wie unter Einrichten der [Verzeichnissynchronisierung für Office 365](../enterprise/set-up-directory-synchronization.md)beschrieben.
 
 2. Stellen Sie nach Abschluss der Verzeichnissynchronisierung sicher, dass die Windows 10 Geräte Ihrer Organisation in Azure AD eingebunden sind. Dieser Schritt wird auf jedem Windows 10 Gerät einzeln ausgeführt. Weitere Informationen finden Sie unter ["Einrichten Windows Geräte für Microsoft 365 Business Premium Benutzer".](set-up-windows-devices.md)
 
@@ -55,9 +56,9 @@ Wenn Ihre Organisation nicht bereit ist, in der oben beschriebenen Azure AD-verb
 
 ### <a name="considerations-when-you-join-windows-devices-to-azure-ad"></a>Überlegungen beim Verknüpfen Windows Geräten mit Azure AD
 
-Wenn das Windows Gerät, dem Sie Azure-AD beigetreten sind, zuvor einer Domäne oder einer Arbeitsgruppe angehörte, beachten Sie die folgenden Einschränkungen:
+Wenn das Windows Gerät, dem Sie Azure-AD beigetreten sind, zuvor in die Domäne oder in eine Arbeitsgruppe eingebunden war, beachten Sie die folgenden Einschränkungen:
 
-- Wenn ein Gerät mit Azure AD verknüpft wird, wird ein neuer Benutzer erstellt, ohne auf ein vorhandenes Profil zu verweisen. Profile müssen manuell migriert werden. Ein Benutzerprofil enthält Informationen wie Favoriten, lokale Dateien, Browsereinstellungen und Startmenüeinstellungen. Ein optimaler Ansatz besteht darin, ein Drittanbietertool zu finden, um vorhandene Dateien und Einstellungen dem neuen Profil zuzuordnen.
+- Wenn ein Gerät mit Azure AD verknüpft wird, wird ein neuer Benutzer erstellt, ohne auf ein vorhandenes Profil zu verweisen. Profile müssen manuell migriert werden. Ein Benutzerprofil enthält Informationen wie Favoriten, lokale Dateien, Browsereinstellungen und Startmenü Einstellungen. Ein optimaler Ansatz besteht darin, ein Drittanbietertool zu finden, um vorhandene Dateien und Einstellungen dem neuen Profil zuzuordnen.
 
 - Wenn das Gerät Gruppenrichtlinienobjekte (Group Policy Objects, GPO) verwendet, verfügen einige Gruppenrichtlinienobjekte möglicherweise nicht über einen vergleichbare [Konfigurationsdienstanbieter (Configuration Service Provider,](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) CSP) in Intune. Führen Sie das [MMAT-Tool](https://www.microsoft.com/download/details.aspx?id=45520) aus, um vergleichbare CSPs für vorhandene Gruppenrichtlinienobjekte zu finden.
 

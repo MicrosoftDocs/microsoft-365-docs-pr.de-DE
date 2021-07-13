@@ -9,18 +9,20 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Erfahren Sie mehr über die Microsoft 365 Abonnementnamen.
-ms.openlocfilehash: 930214e644cec060b6b6060af1e4da327d5bb940
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Erfahren Sie mehr über die neuen Microsoft 365 Abonnementnamen.
+ms.openlocfilehash: 64923611ec6571f9008b7f7fc5ec5e00e87bb400
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706358"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391315"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 ist jetzt Microsoft 365
 
@@ -36,7 +38,7 @@ Wir ändern einige unserer Abonnementnamen für Office 365 und Microsoft 365. Si
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Abonnements und Abrechnung](../commerce/index.yml) (Links)\
+[Abonnements und Abrechnung](../commerce/index.yml) (Linkseite)\
 [Anzeigen Ihrer Rechnung](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)\
-[Bezahlen für Ihr Abonnement](../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)\
-[Ändern Ihrer Abrechnungsadressen](../commerce/billing-and-payments/change-your-billing-addresses.md) (Artikel)
+[Bezahlen Ihres Abonnements](../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)\
+[Ändern Ihrer Rechnungsadressen](../commerce/billing-and-payments/change-your-billing-addresses.md) (Artikel)

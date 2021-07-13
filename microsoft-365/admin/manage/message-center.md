@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Erhalten Sie einen Überblick über Microsoft 365 Nachrichtencenter und seine Rolle beim Nachverfolgen neuer und geänderter Features und anderer wichtiger Ankündigungen.
-ms.openlocfilehash: 803e59c76a116e469a455346b43413b3e68ac8e6
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 302ae9aef9669d8eb567680f5d96acf5b0c32009
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286741"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392539"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
@@ -66,12 +67,12 @@ Informationen zum Abonnement von Nachrichtencenter-E-Mails finden Sie in diesem 
 |Frage|Antwort|
 |---|---|
 |Wer kann Beiträge im Nachrichtencenter anzeigen?|Die meisten Benutzer, denen eine Administratorrolle in Microsoft 365 zugewiesen wurde, können Nachrichtencenterbeiträge anzeigen. [Hier ist eine Liste](#admin-roles-that-dont-have-access-to-the-message-center) der Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben. Sie können die Rolle des Nachrichtencenter-Lesers auch Benutzern zuweisen, die Nachrichtencenterbeiträge lesen und freigeben können sollen, ohne über andere Administratorrechte zu verfügen.|
-|Ist dies die einzige Möglichkeit, änderungen über Microsoft 365 zu kommunizieren?|Nein, aber das Nachrichtencenter ist die primäre Möglichkeit, den Zeitpunkt einzelner Änderungen in Microsoft 365 zu kommunizieren. Weitere Informationen zu zusätzlichen Ressourcen finden Sie [unter Microsoft 365 Änderungen.](stay-on-top-of-updates.md)|
+|Ist dies die einzige Möglichkeit, wie Microsoft Änderungen über Microsoft 365 kommuniziert?|Nein, aber das Nachrichtencenter ist die primäre Möglichkeit, den Zeitpunkt einzelner Änderungen in Microsoft 365 zu kommunizieren. Weitere Informationen zu zusätzlichen Ressourcen finden Sie [unter Microsoft 365 Änderungen.](stay-on-top-of-updates.md)|
 |Wie kann ich Beiträge in meiner Sprache anzeigen?|Nachrichtencenterbeiträge werden nur in Englisch geschrieben, Sie können jedoch steuern, ob Beiträge standardmäßig in Englisch angezeigt werden oder automatisch in Ihre bevorzugte Sprache übersetzt werden. Sie können auch Auswählen, um Beiträge per Computer in eine beliebige Sprache zu übersetzen, die wir unterstützen. Weitere Informationen finden Sie unter ["Sprachübersetzung für Nachrichtencenterbeiträge".](language-translation-for-message-center-posts.md)|
-|Kann ich eine Vorschau der Änderungen oder Features anzeigen, bevor ein Rollout in meiner Organisation stattfindet?|Einige Änderungen und neue Features können in der Vorschau angezeigt werden, indem Sie sich für das Targeted Release-Programm anmelden. To opt in, in the admin center, go to **Einstellungen**  >  **Org settings** Organization  >  **profile**  >  **Release preferences**. (Im Admin Center müssen Sie möglicherweise unten im linken Navigationsbereich **alle** anzeigen auswählen, um **Einstellungen** anzuzeigen.) Sie können die zielorientierte Version für Ihre gesamte Organisation oder nur für ausgewählte Benutzer auswählen. Weitere Informationen zum Programm finden Sie [unter Standard- oder Targeted Release-Optionen in Microsoft 365.](release-options-in-office-365.md)|
+|Kann ich eine Vorschau der Änderungen oder Features anzeigen, bevor ein Rollout in meiner Organisation stattfindet?|Einige Änderungen und neue Features können in der Vorschau angezeigt werden, indem Sie sich für das Targeted Release-Programm anmelden. To opt in, in the admin center, go to **Einstellungen**  >  **Org settings** Organization  >  **profile**  >  **Release preferences**. (Im Admin Center müssen Sie möglicherweise unten im linken Navigationsbereich **"Alle anzeigen"** auswählen, um **Einstellungen** anzuzeigen.) Sie können die zielorientierte Version für Ihre gesamte Organisation oder nur für ausgewählte Benutzer auswählen. Weitere Informationen zum Programm finden Sie [unter Standard- oder Targeted Release-Optionen in Microsoft 365.](release-options-in-office-365.md)|
 |Kann ich das genaue Datum ermitteln, an dem eine Änderung für meine Organisation zur Verfügung steht?|Leider können wir Ihnen das genaue Datum, an dem eine Änderung an Ihrer Organisation vorgenommen wird, nicht mitteilen. In unserem Nachrichtencenterbeitrag geben wir so viele Informationen wie möglich zum Zeitpunkt der Veröffentlichung, basierend auf unserem Konfidenzniveau. Wir arbeiten an Verbesserungen, um diese Detailebene zu verbessern.|
-|Sind diese Nachrichten spezifisch für meine Organisation?|Wir tun unser Bestes, um sicherzustellen, dass nur Nachrichtencenterbeiträge angezeigt werden, die sich auf Ihre Organisation auswirken. Die Microsoft 365 Roadmap enthält alle Features, an denen wir derzeit arbeiten und die bereitgestellt werden, aber nicht alle diese Features gelten für jede Organisation.|
-|Kann ich stattdessen Nachrichtencenterbeiträge per E-Mail erhalten?|Ja! Sie können auswählen, dass ein wöchentlicher Digest per E-Mail an Sie und bis zu zwei weitere E-Mail-Adressen gesendet wird. Der wöchentliche E-Mail-Digest ist standardmäßig aktiviert. Wenn Sie ihre wöchentlichen Digests nicht erhalten, überprüfen Sie Ihren Spamordner. Weitere Informationen zum Einrichten des wöchentlichen Digests finden Sie im Abschnitt ["Einstellungen"](#preferences) in diesem Artikel.|
+|Sind diese Nachrichten spezifisch für meine Organisation?|Wir tun unser Bestes, um sicherzustellen, dass nur Nachrichtencenterbeiträge angezeigt werden, die sich auf Ihre Organisation auswirken. Die Microsoft 365 Roadmap enthält alle Features, an denen wir derzeit arbeiten, und das Rollout, aber nicht alle diese Features gelten für jede Organisation.|
+|Kann ich stattdessen Nachrichtencenterbeiträge per E-Mail erhalten?|Ja! Sie können auswählen, dass ihnen ein wöchentlicher Digest und bis zu zwei weitere E-Mail-Adressen per E-Mail gesendet werden sollen. Der wöchentliche E-Mail-Digest ist standardmäßig aktiviert. Wenn Sie ihre wöchentlichen Digests nicht erhalten, überprüfen Sie Ihren Spamordner. Weitere Informationen zum Einrichten des wöchentlichen Digests finden Sie im Abschnitt ["Einstellungen"](#preferences) in diesem Artikel.|
 |Wie kann ich das Abrufen des Nachrichtencenterdigests beenden?|Wechseln Sie im Admin Center zum Nachrichtencenter, und wählen Sie **"Einstellungen" aus.** Deaktivieren Sie auf der Registerkarte **"E-Mail"** die Option zum **Senden von E-Mail-Benachrichtigungen über das Nachrichtencenter.**|
 |Wie kann ich sicherstellen, dass Benachrichtigungen zum Datenschutz von den richtigen Kontakten in meiner Organisation empfangen werden?|Als globaler Administrator erhalten Sie Datenschutznachrichten für Ihre Organisation. Darüber hinaus können Sie die Rolle des Nachrichtencenter-Datenschutzlesers Personen zuweisen, die Datenschutznachrichten sehen sollten. Andere Administratorrollen mit Zugriff auf das Nachrichtencenter können keine Datenschutznachrichten anzeigen.   <br/><br/>Weitere Informationen finden Sie unter ["Einstellungen"](#preferences) in diesem Artikel.|
 |Warum kann ich keine Nachricht sehen, die zuvor dort war?|Um die Anzahl der Nachrichten im Nachrichtencenter zu verwalten, läuft jede Nachricht ab und wird nach einem bestimmten Zeitraum entfernt. Im Allgemeinen laufen Nachrichten 30 Tage nach Ablauf des im Nachrichtentext angegebenen Zeitraums ab.|
@@ -178,7 +179,7 @@ Wenn die Verwaltung in Ihrer Organisation verteilt ist, möchten oder müssen Si
 
 3. Digest-E-Mails sind standardmäßig aktiviert und werden an Ihre primäre E-Mail-Adresse gesendet. Um den wöchentlichen Digest zu beenden, deaktivieren Sie das Kontrollkästchen **"E-Mail-Benachrichtigungen aus Nachrichtencenter** senden" auf der **Registerkarte "E-Mail".**
 
-   Sie können auch bis zu zwei E-Mail-Adressen eingeben, die durch ein Semikolon getrennt sind.
+   Sie können auch bis zu zwei E-Mail-Adressen eingeben, getrennt durch ein Semikolon.
 
    Sie können auch die E-Mails auswählen, die Sie erhalten möchten, sowie einen wöchentlichen Digest der von Ihnen ausgewählten Dienste.
 
@@ -207,7 +208,7 @@ Hier finden Sie eine kurze Übersicht über die Informationen, die in den einzel
 
 |Spalte|Beschreibung|
 |---|---|
-|Häkchen|Durch Aktivieren des Häkchens in der Spaltenüberschriftszeile werden alle derzeit angezeigten Nachrichten ausgewählt. Wenn Sie das Häkchen neben einer oder mehreren Nachrichten aktivieren, können Sie maßnahmen für diese Nachrichten ergreifen.|
+|Häkchen|Wenn Sie das Häkchen in der Spaltenüberschriftszeile markieren, werden alle derzeit angezeigten Nachrichten ausgewählt. Wenn Sie das Häkchen neben einer oder mehreren Nachrichten aktivieren, können Sie maßnahmen für diese Nachrichten ergreifen.|
 |Nachrichtentitel|Nachrichtentitel sind kurze Beschreibungen bevorstehender Änderungen. Wenn der vollständige Titel nicht angezeigt wird, zeigen Sie mit dem Mauszeiger darauf, und der gesamte Titel wird in einem Popupfeld angezeigt.|
 |Dienst|Symbole geben die Anwendung an, für die die Nachricht gilt.|
 |Weitere Optionen|Mit weiteren Optionen können Sie eine Nachricht schließen, als gelesen oder ungelesen markieren oder sie für einen anderen Administrator freigeben. Um eine archivierte Nachricht wiederherzustellen, wählen Sie die Registerkarte **"Archiv"** aus, aktivieren Sie das Kontrollkästchen neben der Nachricht, und wählen Sie **"Wiederherstellen"** aus.|
@@ -220,7 +221,7 @@ Hier finden Sie eine kurze Übersicht über die Informationen, die in den einzel
 
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben
 
-- Complianceadministrator
+- Compliance-Administrator
 - Administrator für bedingten Zugriff
 - Genehmiger für Kunden-LockBox-Zugriff
 - Geräteadministratoren

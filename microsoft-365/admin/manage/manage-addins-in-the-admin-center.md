@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie mehr über die Verwendung zentralisierter Add-Ins zum Bereitstellen von Add-Ins für Benutzer und Gruppen in Ihrer Organisation.
-ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: aad68d37fb23c26ef1a1ca1ba7dfc5d4e2a40bfe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314387"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392863"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Verwalten von Add-Ins im Admin Center
 
@@ -73,7 +75,7 @@ Nach der Bereitstellung können Administratoren auch den Benutzerzugriff auf Add
 
 2. Wählen Sie das bereitgestellte Add-In aus.
 
-3. Klicken Sie auf **Bearbeiten** unter **Wer Zugriff hat.**
+3. Klicken Sie auf **"Bearbeiten"** unter **Wer Zugriff hat.**
 
 4. Speichern Sie die Änderungen.
 
@@ -110,7 +112,7 @@ Als Organisation möchten Sie möglicherweise verhindern, dass neue Office-Add-I
         
     Einem Benutzer, der versucht, auf den Store zuzugreifen, wird die folgende Meldung angezeigt: Leider wurde Microsoft 365 so konfiguriert, dass der **einzelne Erwerb von Office Store-Add-Ins verhindert wird.**
   
-Unterstützung für das Deaktivieren der Office Store ist in den folgenden Versionen verfügbar:
+Unterstützung für das Deaktivieren des Office Store ist in den folgenden Versionen verfügbar:
   
 - Windows: 16.0.9001 – Derzeit verfügbar.
     
@@ -132,7 +134,7 @@ Um zu verhindern, dass sich ein Benutzer mit einem Microsoft-Konto anmeldet, kö
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>Weitere Informationen zur Endbenutzererfahrung mit Add-Ins
 
-Nachdem Sie ein Add-In bereitgestellt haben, können Ihre Endbenutzer es in ihren Office Anwendungen verwenden (siehe ["Start using your Office Add-in").](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Das Add-In wird auf allen Plattformen angezeigt, die das Add-In unterstützt.
+Nachdem Sie ein Add-In bereitgestellt haben, können Ihre Endbenutzer mit der Verwendung in ihren Office-Anwendungen beginnen (siehe ["Start using your Office Add-in").](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Das Add-In wird auf allen Plattformen angezeigt, die das Add-In unterstützt.
   
 Wenn das Add-In Add-In-Befehle unterstützt, werden diese im Office-Menüband angezeigt. Im folgenden Beispiel wird der Befehl **Zitat suchen** für das Add-In **Zitate** angezeigt. 
 

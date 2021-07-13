@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,17 +24,17 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365 kaufen.
-ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 4d2a6546703c93f4b4d6a55e82c309120e384ead
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779686"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393127"
 ---
 # <a name="buy-a-domain-name"></a>Kaufen eines Domänennamens
 
 > [!NOTE]
-> Wenn Ihre Organisation Office 365 verwendet, die von 21Vianet in China betrieben wird, finden Sie informationen [zum Kauf einer Domäne für Office 365 betrieben von 21Vianet in China.](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)
+> Wenn Ihre Organisation Office 365 verwendet, die von 21Vianet in China betrieben werden, lesen Sie informationen [zum Kauf einer Domäne für Office 365 betrieben von 21Vianet in China.](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)
 
  *Um Domänen hinzuzufügen, zu ändern oder zu entfernen, **müssen** Sie ein **globaler Administrator** eines [Geschäfts- oder Unternehmensplans](https://products.office.com/business/office) sein. Diese Änderungen betreffen den gesamten Mandanten. *Benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
 
@@ -63,7 +64,7 @@ Sie können aus den folgenden Domänen der obersten Ebene für Ihre Domäne ausw
     
 - .tv
     
-- .co.uk
+- CO.UK
     
 - org.uk
     
@@ -75,7 +76,7 @@ Sie können aus den folgenden Domänen der obersten Ebene für Ihre Domäne ausw
 Wir bieten ein kostenloses Domain Privacy-Abonnement mit dem Kauf einer Domäne an. Dadurch bleiben Ihre Kontaktinformationen an die Registrierung Ihrer Domäne bei ICANN privat. [Weitere Informationen.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ## <a name="buy-a-domain-from-another-domain-registrar"></a>Erwerben eines Domänennamens von einer anderen Domänenregistrierungsstelle
-Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, empfehlen wir, unten eine zu verwenden, die die automatische Einrichtung unterstützt (Domänen-Verbinden). 
+Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, wird empfohlen, unten eine Domäne zu verwenden, die die automatische Einrichtung unterstützt (Domänen-Verbinden). 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [Wordpress](https://www.wordpress.com) 

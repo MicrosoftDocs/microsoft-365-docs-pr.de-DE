@@ -15,19 +15,20 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit können Ihnen helfen, mobile Geräte zu sichern und zu verwalten.
-ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5619ce6a8fa2c705acc6be08e3af8ad6f90a6d99
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228279"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393307"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktionen von grundlegender Mobilität und Sicherheit
 
-Basic Mobility and Security kann Ihnen helfen, mobile Geräte wie iPhones, iPads, Androids und Windows Telefone zu sichern und zu verwalten, die von lizenzierten Microsoft 365 Benutzern in Ihrer Organisation verwendet werden. Sie können Richtlinien für die Verwaltung mobiler Geräte mit Einstellungen erstellen, mit denen Sie den Zugriff auf die Microsoft 365 E-Mails und Dokumente Ihrer Organisation für unterstützte mobile Geräte und Apps steuern können. Wenn ein Gerät verloren geht oder gestohlen wird, können Sie den Geräteinhalt per Remotezugriff löschen, um vertrauliche Organisationsinformationen zu entfernen.
+Grundlegende Mobilität und Sicherheit können Ihnen helfen, mobile Geräte wie iPhones, iPads, Androids und Windows Telefone zu sichern und zu verwalten, die von lizenzierten Microsoft 365 Benutzern in Ihrer Organisation verwendet werden. Sie können Richtlinien für die Verwaltung mobiler Geräte mit Einstellungen erstellen, mit denen Sie den Zugriff auf die Microsoft 365 E-Mails und Dokumente Ihrer Organisation für unterstützte mobile Geräte und Apps steuern können. Wenn ein Gerät verloren geht oder gestohlen wird, können Sie den Geräteinhalt per Remotezugriff löschen, um vertrauliche Organisationsinformationen zu entfernen.
 
 ## <a name="supported-devices"></a>Unterstützte Geräte
 
@@ -47,18 +48,18 @@ Sie können Basic Mobility and Security verwenden, um die folgenden Geräte zu s
 
 <sup>1</sup> Die Zugriffssteuerung für Windows 8.1 RT-Geräte ist auf Exchange ActiveSync beschränkt.
 
-<sup>2</sup> Die Zugriffssteuerung für Windows 10 erfordert ein Abonnement, das Azure AD Premium enthält und das Gerät mit Azure Active Directory verbunden werden muss.
+<sup>2</sup> Die Zugriffssteuerung für Windows 10 erfordert ein Abonnement, das Azure AD Premium enthält, und das Gerät muss mit Azure Active Directory verbunden werden.
 
 <sup>3</sup> Nach Juni 2020 können Android-Versionen, die höher als 9 sind, keine Kennworteinstellungen mehr verwalten, außer auf Samsung Knox-Geräten.
 
 > [!NOTE]
 > Geräte, die bereits mit früheren Betriebssystemversionen registriert sind, funktionieren weiterhin, obwohl sich die Funktionen möglicherweise ohne vorherige Ankündigung ändern.
 
-Wenn Personen in Ihrer Organisation mobile Geräte verwenden, die von Basic Mobility and Security nicht unterstützt werden, sollten Sie Exchange ActiveSync App-Zugriff auf Microsoft 365 E-Mails für diese Geräte blockieren, um die Sicherheit Ihrer Unternehmensdaten zu erhöhen. Schritte zum Blockieren Exchange ActiveSync finden Sie unter [Verwalten von Gerätezugriffseinstellungen in Basic Mobility and Security](manage-device-access-settings.md).
+Wenn Personen in Ihrer Organisation mobile Geräte verwenden, die von Basic Mobility and Security nicht unterstützt werden, möchten Sie möglicherweise Exchange ActiveSync App-Zugriff auf Microsoft 365 E-Mails für diese Geräte blockieren, um die Daten Ihrer Organisation sicherer zu machen. Schritte zum Blockieren Exchange ActiveSync finden Sie unter [Verwalten von Gerätezugriffseinstellungen in Basic Mobility and Security.](manage-device-access-settings.md)
 
 ## <a name="access-control-for-microsoft-365-email-and-documents"></a>Zugriffssteuerung für Microsoft 365 E-Mails und Dokumente
 
-Die unterstützten Apps für die verschiedenen Arten von mobilen Geräten in der folgenden Tabelle fordern Die Benutzer auf, sich bei Basic Mobility and Security zu registrieren, wenn es eine neue Richtlinie zur Verwaltung mobiler Geräte gibt, die für das Gerät eines Benutzers gilt und der Benutzer das Gerät noch nicht registriert hat. Wenn das Gerät eines Benutzers einer Richtlinie nicht entspricht, wird ein Benutzer je nach Einrichtung der Richtlinie möglicherweise am Zugriff auf Microsoft 365 Ressourcen in diesen Apps gehindert, oder er hat Zugriff, aber Microsoft 365 meldet einen Richtlinienverstoß.
+Die unterstützten Apps für die verschiedenen Arten von mobilen Geräten in der folgenden Tabelle fordern Benutzer auf, sich bei Basic Mobility and Security zu registrieren, wenn es eine neue Richtlinie zur Verwaltung mobiler Geräte gibt, die für das Gerät eines Benutzers gilt und der Benutzer das Gerät noch nicht registriert hat. Wenn das Gerät eines Benutzers einer Richtlinie nicht entspricht, wird ein Benutzer je nach Einrichtung der Richtlinie möglicherweise am Zugriff auf Microsoft 365 Ressourcen in diesen Apps gehindert, oder er hat Zugriff, aber Microsoft 365 meldet einen Richtlinienverstoß.
 
 |**Product**|**iOS 10.0 oder höher**|**Android 5.0 oder höher**|
 |:-----|:-----|:-----|
@@ -69,18 +70,18 @@ Die unterstützten Apps für die verschiedenen Arten von mobilen Geräten in der
 >
 > - Die Unterstützung für iOS 10.0 und neuere Versionen umfasst iPhone und iPad Geräte.
 > - Die Verwaltung von BlackBerry OS-Geräten wird von Basic Security and Mobility nicht unterstützt. Verwenden Sie BlackBerry Business Cloud Services (BBS) von BlackBerry, um BlackBerry OS-Geräte zu verwalten. Blackberry-Geräte unter Android OS werden als Android-Standardgeräte unterstützt.
-> - Benutzer werden nicht aufgefordert, sich zu registrieren, und sie werden nicht blockiert oder für Richtlinienverstöße gemeldet, wenn sie den mobilen Browser verwenden, um auf Microsoft 365 SharePoint Websites, Dokumente in Office Online oder E-Mails in Outlook Web App zuzugreifen.
+> - Benutzer werden nicht aufgefordert, sich zu registrieren, und sie werden nicht blockiert oder für Richtlinienverletzungen gemeldet, wenn sie den mobilen Browser verwenden, um auf Microsoft 365 SharePoint Websites, Dokumente in Office Online oder E-Mails in Outlook Web App zuzugreifen.
 
-Das folgende Diagramm zeigt, was geschieht, wenn sich ein Benutzer mit einem neuen Gerät bei einer App anmeldet, die die Zugriffssteuerung mit Basic Mobility and Security unterstützt. Der Benutzer wird für den Zugriff auf Microsoft 365 Ressourcen in der App gesperrt, bis er sein Gerät registriert.
+Das folgende Diagramm zeigt, was geschieht, wenn sich ein Benutzer mit einem neuen Gerät bei einer App anmeldet, die die Zugriffssteuerung mit Basic Mobility and Security unterstützt. Der Benutzer wird am Zugriff auf Microsoft 365 Ressourcen in der App gehindert, bis er sein Gerät registriert.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Grundlegende Mobilitäts- und Sicherheitszugriffssteuerung":::
 
 > [!NOTE]
-> Richtlinien und Zugriffsregeln, die in Basic Mobility and Security for Microsoft 365 Business Standard erstellt wurden, setzen Exchange ActiveSync Postfachrichtlinien und Gerätezugriffsregeln außer Kraft, die im Exchange Admin Center erstellt wurden. Nachdem ein Gerät in Basic Mobility and Security for Microsoft 365 Business Standard registriert wurde, werden alle Exchange ActiveSync Postfachrichtlinie oder Gerätezugriffsregel für mobile Geräte, die auf das Gerät angewendet werden, ignoriert. Weitere Informationen zu Exchange ActiveSync finden Sie [unter Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Richtlinien und Zugriffsregeln, die in Basic Mobility and Security for Microsoft 365 Business Standard erstellt wurden, überschreiben Exchange ActiveSync Postfachrichtlinien und Gerätezugriffsregeln, die im Exchange Admin Center erstellt wurden. Nachdem ein Gerät in Basic Mobility and Security for Microsoft 365 Business Standard registriert wurde, werden alle Exchange ActiveSync Postfachrichtlinie oder Gerätezugriffsregel für mobile Geräte, die auf das Gerät angewendet werden, ignoriert. Weitere Informationen zu Exchange ActiveSync finden Sie [unter Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="policy-settings-for-mobile-devices"></a>Richtlinieneinstellungen für mobile Geräte
 
-Wenn Sie eine Richtlinie erstellen, um den Zugriff mit bestimmten aktivierten Einstellungen zu blockieren, wird Benutzern der Zugriff auf Microsoft 365 Ressourcen bei Verwendung einer unterstützten App blockiert, die in [der Zugriffssteuerung für Microsoft 365-E-Mails und -Dokumente](capabilities.md)aufgeführt ist.
+Wenn Sie eine Richtlinie erstellen, um den Zugriff mit bestimmten aktivierten Einstellungen zu blockieren, werden Benutzer am Zugriff auf Microsoft 365 Ressourcen gehindert, wenn sie eine unterstützte App verwenden, die in [der Zugriffssteuerung für Microsoft 365-E-Mails und -Dokumente](capabilities.md)aufgeführt ist.
 
 Die Einstellungen, die Benutzer am Zugriff auf Microsoft 365 Ressourcen gehindert werden können, finden Sie in den folgenden Abschnitten:
 
@@ -96,7 +97,7 @@ Die folgende Abbildung zeigt beispielsweise, was passiert, wenn ein Benutzer mit
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Grundlegende Meldung zur Mobilität und Sicherheitscompliance":::
 
-In den folgenden Abschnitten sind die Richtlinieneinstellungen aufgeführt, die Sie verwenden können, um mobile Geräte zu schützen und zu verwalten, die eine Verbindung zu Ihren Microsoft 365 Organisationsressourcen herstellen.
+In den folgenden Abschnitten sind die Richtlinieneinstellungen aufgeführt, die Sie verwenden können, um mobile Geräte zu schützen und zu verwalten, die eine Verbindung mit Ihren Microsoft 365 Organisationsressourcen herstellen.
 
 ## <a name="security-settings"></a>Sicherheitseinstellungen
 
@@ -127,7 +128,7 @@ In den folgenden Abschnitten sind die Richtlinieneinstellungen aufgeführt, die 
 
 ## <a name="managed-email-profile-option"></a>Verwaltetes E-Mail-Profil
 
-Mit der folgenden Option können Benutzer am Zugriff auf ihre Microsoft 365 E-Mails gehindert werden, wenn sie ein manuell erstelltes E-Mail-Profil verwenden. Benutzer auf iOS-Geräten müssen ihr manuell erstelltes E-Mail-Profil löschen, bevor sie auf ihre E-Mails zugreifen können. Nachdem sie das Profil gelöscht haben, wird automatisch ein neues Profil auf dem Gerät erstellt. Anweisungen dazu, wie Endbenutzer konform werden können, finden Sie unter [Ein vorhandenes E-Mail-Konto wurde gefunden.](/intune-user-help/existing-company-email-account-found)
+Die folgende Option kann Benutzer am Zugriff auf ihre Microsoft 365 E-Mails hindern, wenn sie ein manuell erstelltes E-Mail-Profil verwenden. Benutzer auf iOS-Geräten müssen ihr manuell erstelltes E-Mail-Profil löschen, bevor sie auf ihre E-Mails zugreifen können. Nachdem sie das Profil gelöscht haben, wird automatisch ein neues Profil auf dem Gerät erstellt. Anweisungen dazu, wie Endbenutzer konform werden können, finden Sie unter [Ein vorhandenes E-Mail-Konto wurde gefunden.](/intune-user-help/existing-company-email-account-found)
 
 |**Name der Einstellung**|**iOS 7.1 und höher**|**Android 5 und höher**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -141,8 +142,8 @@ Mit der folgenden Option können Benutzer am Zugriff auf ihre Microsoft 365 E-Ma
 |Cloud-Sicherung blockieren |Ja|Nein|Nein|
 |Dokumentsynchronisierung blockieren |Ja|Nein|Nein|
 |Fotosynchronisierung blockieren  |Ja|Nein|Nein|
-|Google-Sicherung zulassen  |Nicht zutreffend|Nein|Ja|
-|Automatische Synchronisierung des Google-Kontos zulassen  |Nicht zutreffend|Nein|Ja|
+|Google-Sicherung zulassen  |–|Nein|Ja|
+|Automatische Synchronisierung des Google-Kontos zulassen  |–|Nein|Ja|
 
 ## <a name="system-settings"></a>Systemeinstellungen
 
@@ -188,7 +189,7 @@ Sie können die folgenden zusätzlichen Richtlinieneinstellungen mithilfe von Se
 
 ## <a name="settings-supported-by-windows"></a>von Windows unterstützte Einstellungen
 
-Sie können Windows 10 Geräte verwalten, indem Sie sie als mobile Geräte registrieren. Nachdem eine entsprechende Richtlinie bereitgestellt wurde, müssen Sich Benutzer mit Windows 10 Geräten bei der ersten Verwendung der integrierten E-Mail-App für den Zugriff auf ihre Microsoft 365 E-Mails registrieren (erfordert ein Azure AD Premium-Abonnement).
+Sie können Windows 10 Geräte verwalten, indem Sie sie als mobile Geräte registrieren. Nachdem eine entsprechende Richtlinie bereitgestellt wurde, müssen Sich Benutzer mit Windows 10 Geräten bei der ersten Verwendung der integrierten E-Mail-App für den Zugriff auf ihre Microsoft 365 E-Mail registrieren (erfordert ein Azure AD Premium-Abonnement).
 
 Die folgenden Einstellungen werden für Windows 10 Geräte unterstützt, die als mobile Geräte registriert sind. Diese Einstellung verhindert nicht, dass Benutzer auf Microsoft 365 Ressourcen zugreifen.
 
@@ -207,7 +208,7 @@ Die folgenden Einstellungen werden für Windows 10 Geräte unterstützt, die als
 - Kennwortverlauf verfolgen und Wiederverwendung verhindern
 
 > [!NOTE]
-> Die folgenden Einstellungen für Kennwörter steuern nur lokale Windows Konten. Windows Konten, die über den Beitritt zu einer Domäne oder Azure Active Directory bereitgestellt werden, sind von diesen Einstellungen nicht betroffen.
+> Die folgenden Einstellungen, die Kennwörter schützen, steuern nur lokale Windows Konten. Windows Konten, die über den Beitritt zu einer Domäne oder Azure Active Directory bereitgestellt werden, sind von diesen Einstellungen nicht betroffen.
 
 ### <a name="system-settings"></a>Systemeinstellungen
 

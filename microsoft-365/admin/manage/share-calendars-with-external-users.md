@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: Aktivieren sie die Kalenderfreigabe im Microsoft 365 Admin Center, damit Benutzer ihre Kalender für alle Personen innerhalb oder außerhalb der Organisation freigeben können.
-ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Aktivieren Sie die Kalenderfreigabe im Microsoft 365 Admin Center, damit Benutzer ihre Kalender für alle Personen innerhalb oder außerhalb der Organisation freigeben können.
+ms.openlocfilehash: 21dbf12ec495f3a22a45d8a23af807ffd34fef72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635810"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392455"
 ---
 # <a name="share-calendars-with-external-users"></a>Freigeben von Kalendern für externe Benutzer
 
@@ -50,10 +51,10 @@ Sie können die Kalenderfreigabe für alle Benutzer in Ihrer Organisation im Mic
 
 ## <a name="invite-people-to-access-calendars"></a>Personen zum Zugreifen auf Kalender einladen
 
-Sobald die Freigabe aktiviert ist, können Kalenderbesitzer Einladungen an bestimmte Benutzer aussprechen. Anweisungen finden Sie unter [Freigeben ihres Kalenders in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
+Sobald die Freigabe aktiviert ist, können Kalenderbesitzer Einladungen an bestimmte Benutzer aussprechen. Anweisungen finden Sie unter [Freigeben Ihres Kalenders in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Aktivieren oder Deaktivieren der externen Freigabe für eine Website](/sharepoint/change-external-sharing-site) (Artikel)\
-[Übersicht über Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)\
+[Übersicht über die Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)\
 [Verwalten von E-Mails und Kalendern](../email/index.yml) (Linkseite)

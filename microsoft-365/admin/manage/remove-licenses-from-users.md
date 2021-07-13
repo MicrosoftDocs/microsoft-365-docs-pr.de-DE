@@ -18,15 +18,16 @@ ms.custom:
 - okr_smb
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: Die Methode zum Aufheben der Zuweisung von Produktlizenzen hängt davon ab, ob Sie die Zuweisung von Lizenzen von bestimmten Benutzern oder von einem bestimmten Produkt aufheben.
 ms.date: 06/07/2021
-ms.openlocfilehash: 6220ddc15e7b3381da1d78ad3ac4f3c2204bda78
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 8a67d7e690ff07631f696a97d6ed59925bc871df
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256831"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392491"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
@@ -35,7 +36,7 @@ Sie können die Zuweisung von Lizenzen von Benutzern entweder auf der Seite **"A
 > [!NOTE]
 > Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder aufheben, die von einem Benutzer in Ihrer Organisation erworben wurden. Sie können ein [Self-Service-Kaufabonnement übernehmen](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder die Zuweisung von Lizenzen kündigen.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen ein globaler, Lizenz- und Benutzeradministrator sein, um die Zuweisung von Lizenzen aufzuheben. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
 - Sie können [Lizenzen von Benutzerkonten mit Office 365 PowerShell entfernen](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
@@ -124,11 +125,11 @@ Wenn Sie die Seite **"Aktive Benutzer"** verwenden, um die Zuweisung von Lizenze
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Was geschieht mit den Daten eines Benutzers, wenn Sie seine Lizenz entfernen?
 
 - Wenn eine Lizenz von einem Benutzer entfernt wird, werden Exchange Onlinedaten, die diesem Konto zugeordnet sind, 30 Tage lang aufbewahrt. Nach Ablauf der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
-- In OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt wird. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung.](/onedrive/retention-and-deletion)
+- In OneDrive for Business gespeicherte Dateien werden nicht gelöscht, es sei denn, der Benutzer wird aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung.](/onedrive/retention-and-deletion)
 - Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie inhaltssuche oder Advanced eDiscovery durchsucht werden. Weitere Informationen finden Sie unter "Durchsuchen getrennter oder nicht lizenzierter Postfächer" in der [Inhaltssuche in Microsoft 365.](../../compliance/content-search.md)
-- Wenn Sie über ein Enterprise Abonnement verfügen, z. B. Office 365 Enterprise E3, können Sie Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe [inaktiver Postfächer](../../compliance/inactive-mailboxes-in-office-365.md)beibehalten. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Exchange Online.](../../compliance/create-and-manage-inactive-mailboxes.md)
+- Wenn Sie über ein Enterprise Abonnement verfügen, z. B. Office 365 Enterprise E3, können Sie mit Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe [inaktiver Postfächer](../../compliance/inactive-mailboxes-in-office-365.md)beibehalten. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Exchange Online.](../../compliance/create-and-manage-inactive-mailboxes.md)
 - Informationen dazu, wie Sie den Zugriff eines Benutzers auf Microsoft 365 Daten blockieren, nachdem die Lizenz entfernt wurde, und wie Sie danach Zugriff auf die Daten erhalten, finden Sie unter [Entfernen eines ehemaligen Mitarbeiters.](../add-users/remove-former-employee.md)
-- Wenn Sie die Lizenz eines Benutzers entfernen und er weiterhin Office Apps installiert hat, werden Office fehler [beim](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) Verwenden von Office Apps angezeigt.
+- Wenn Sie die Lizenz eines Benutzers entfernen und er weiterhin Office Apps installiert hat, werden in Office fehler [beim](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) Verwenden Office Apps angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,5 +1,5 @@
 ---
-title: Aktivieren der Verwaltung von in die Domäne eingebundenen Windows 10-Geräten durch Microsoft 365 for Business
+title: Aktivieren der Verwaltung von in die Domäne eingebundenen Windows 10 Geräten durch Microsoft 365 for Business
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -20,18 +20,19 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
-description: In nur wenigen Schritten erfahren Sie, wie Sie Microsoft 365 aktivieren, um lokale Active Directory-bezogene Windows 10 Geräte zu schützen.
-ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+description: In nur wenigen Schritten erfahren Sie, wie Sie Microsoft 365 aktivieren, um lokale Active-Directory-verbundene Windows 10-Geräte zu schützen.
+ms.openlocfilehash: 9cc7ca01cec667465e9114083fecdc56ef4e7ce7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287693"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393377"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Domänenverbundene Windows 10 Geräte können von Microsoft 365 Business Premium verwaltet werden
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren der Verwaltung von in die Domäne eingebundenen Windows 10 Geräten durch Microsoft 365 Business Premium
 
 Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können Sie Microsoft 365 Business Premium einrichten, um Ihre Windows 10 Geräte zu schützen und gleichzeitig den Zugriff auf lokale Ressourcen beizubehalten, die eine lokale Authentifizierung erfordern.
 Um diesen Schutz einzurichten, können Sie **in Azure AD eingebundene Hybridgeräte** implementieren. Diese Geräte sind sowohl mit Ihrem lokalen Active Directory als auch mit Ihrem Azure Active Directory verbunden.
@@ -42,10 +43,10 @@ In diesem Video werden die Schritte zum Einrichten dieses Szenarios für das gä
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Synchronisieren von Benutzern mit Azure AD mit Azure AD Verbinden.
-- Führen Sie die Synchronisierung der Azure AD-Verbinden Organisationseinheit (Organizational Unit, OU) durch.
+- Führen Sie die Synchronisierung der Azure AD-Verbinden Organisationseinheit (ORGANIZATIONAL Unit, OU) durch.
 - Stellen Sie sicher, dass alle domänenbenutzer, die Sie synchronisieren, über Lizenzen für Microsoft 365 Business Premium verfügen.
 
 Die Schritte finden Sie unter [Synchronisieren von Domänenbenutzern mit Microsoft.](manage-domain-users.md)
@@ -55,12 +56,12 @@ Die Schritte finden Sie unter [Synchronisieren von Domänenbenutzern mit Microso
 Wechseln Sie zu [Endpoint Manager,](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) und wählen Sie auf der seite Microsoft Intune die **Geräteregistrierung** aus, und stellen Sie dann auf der Seite **"Übersicht"** sicher, dass die **MDM-Autorität** **Intune** ist.
 
 - Wenn **die MDM-Autorität** **keine** ist, klicken Sie auf die **MDM-Autorität,** um sie auf **Intune** festzulegen.
-- Wenn die **MDM-Autorität** **Microsoft Office 365** ist, wechseln Sie **zu**  >  **Geräte registrieren,** und verwenden Sie das Dialogfeld **"MDM-Autorität** hinzufügen" auf der rechten Seite, um eine **Intune MDM-Autorität** hinzuzufügen (das Dialogfeld **"MDM-Autorität hinzufügen"** ist nur verfügbar, wenn die **MDM-Autorität** auf Microsoft Office 365 festgelegt ist).
+- Wenn **die MDM-Autorität** **Microsoft Office 365** ist, wechseln Sie **zu**  >  **Geräte registrieren,** und verwenden Sie das Dialogfeld **"MDM-Autorität hinzufügen"** auf der rechten Seite, um eine **Intune MDM-Autorität** hinzuzufügen (das Dialogfeld **"MDM-Autorität hinzufügen"** ist nur verfügbar, wenn die **MDM-Autorität** auf Microsoft Office 365 festgelegt ist).
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Überprüfen, ob Azure AD für die Teilnahme an Computern aktiviert ist
 
-- Wechseln Sie zum Admin Center, und wählen Sie in der <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> Admin **Center-Liste** **Azure Active Directory** (wählen Sie "Alle anzeigen" aus, wenn Azure Active Directory nicht sichtbar ist). 
-- Wechseln Sie im **Azure Active Directory Admin Center** zu **Azure Active Directory,** wählen Sie **"Geräte"** und dann **"Geräteeinstellungen" aus.**
+- Wechseln Sie zum Admin Center, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> und wählen Sie **Azure Active Directory** (wählen Sie "Alle anzeigen" aus, wenn Azure Active Directory nicht sichtbar ist) in der Admin **Center-Liste.** 
+- Wechseln **Sie** im Azure Active Directory Admin Center zu **Azure Active Directory,** wählen Sie **"Geräte"** und dann **"Geräteeinstellungen"** aus.
 - Überprüfen, ob **Benutzer Geräte mit Azure AD verknüpfen können** 
     1. To enable all users, set to **All**.
     2. Um bestimmte Benutzer zu aktivieren, legen **Sie "Ausgewählt"** fest, um eine bestimmte Gruppe von Benutzern zu aktivieren.
@@ -70,7 +71,7 @@ Wechseln Sie zu [Endpoint Manager,](https://endpoint.microsoft.com/#blade/Micros
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Überprüfen, ob Azure AD für MDM aktiviert ist
 
 - Wechseln Sie zum Admin Center, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> und wählen Sie **"Endpoint Managemen** t" aus (wählen Sie **"Alle anzeigen"** aus, wenn **Endpoint Manager** nicht sichtbar ist)
-- Wechseln Sie im **Microsoft Endpoint Manager Admin Center** zu **"Geräte**  >  **Windows** Windows Automatische Registrierung der  >    >  **Registrierung".**
+- Wechseln Sie im **Microsoft Endpoint Manager Admin Center** zu **"Geräte**  >  **Windows** automatische Registrierung Windows  >    >  **Registrierung".**
 - Überprüfen Sie, ob der MDM-Benutzerbereich aktiviert ist.
 
     1. Um alle Computer zu registrieren, legen Sie **"Alle"** fest, um automatisch alle Benutzercomputer zu registrieren, die mit Azure AD verbunden sind, und neue Computer, wenn die Benutzer ein Geschäftskonto zu Windows hinzufügen.
@@ -98,7 +99,7 @@ PS C:\> Connect-SecMgmtAccount
 PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
 ```
 
-Der erste Befehl stellt eine Verbindung mit der Microsoft-Cloud her, und wenn Sie dazu aufgefordert werden, geben Sie Ihre Microsoft 365 Business Premium globalen Administratoranmeldeinformationen an.
+Mit dem ersten Befehl wird eine Verbindung mit der Microsoft-Cloud hergestellt. Wenn Sie dazu aufgefordert werden, geben Sie Ihre Microsoft 365 Business Premium globalen Administratoranmeldeinformationen an.
 
 ## <a name="5-link-the-group-policy"></a>5. Verknüpfen der Gruppenrichtlinie
 
@@ -107,11 +108,11 @@ Der erste Befehl stellt eine Verbindung mit der Microsoft-Cloud her, und wenn Si
 
 ## <a name="get-the-latest-administrative-templates"></a>Abrufen der neuesten administrativen Vorlagen
 
-Wenn die Richtlinie **"Automatische MDM-Registrierung mit azure AD-Standardanmeldeinformationen aktivieren"** nicht angezeigt wird, liegt dies möglicherweise daran, dass sie nicht für Windows 10, Version 1803 oder höher, installiert ist. Führen Sie die folgenden Schritte aus, um das Problem zu beheben (Hinweis: die neueste MDM.admx ist abwärtskompatibel):
+Wenn die Richtlinie **"Automatische MDM-Registrierung mit azure AD-Standardanmeldeinformationen aktivieren"** nicht angezeigt wird, liegt dies möglicherweise daran, dass die ADMX für Windows 10, Version 1803 oder höher, nicht installiert ist. Führen Sie die folgenden Schritte aus, um das Problem zu beheben (Hinweis: die neueste MDM.admx ist abwärtskompatibel):
 
-1. Download: [Administrative Vorlagen (ADMX) für Windows 10 Update vom Oktober 2020 (20H2).](https://www.microsoft.com/download/102157)
+1. Download: [Administrative Vorlagen (ADMX) für Windows 10 Update vom Oktober 2020 (20H2)](https://www.microsoft.com/download/102157).
 2. Installieren Sie das Paket auf einem Domänencontroller.
-3. Navigieren Sie abhängig von der Version administrativer Vorlagen zum Ordner: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+3. Navigieren Sie je nach Version der administrativen Vorlagen zum Ordner: **C:\Programme (x86)\Microsoft-Gruppenrichtlinie\Windows 10 Update vom Oktober 2020 (20H2)**.
 4. Benennen Sie den Ordner **"Richtliniendefinitionen"** im obigen Pfad in **"PolicyDefinitions"** um.
 5. Kopieren Sie den **Ordner "PolicyDefinitions"** in die SYSVOL-Freigabe, die sich standardmäßig unter **"C:\Windows\SYSVOL\domain\Policies"** befindet.
    - Wenn Sie beabsichtigen, einen zentralen Richtlinienspeicher für Ihre gesamte Domäne zu verwenden, fügen Sie dort den Inhalt von PolicyDefinitions hinzu.

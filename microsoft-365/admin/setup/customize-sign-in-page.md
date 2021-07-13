@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen Ihres Unternehmensbrandings zur Anmeldeseite
+title: Hinzufügen ihres Unternehmensbrandings zur Anmeldeseite
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,26 +16,27 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Passen Sie Microsoft 365 Anmeldeseite mithilfe der Azure Active Directory. Sie können der Anmeldeseite eine Illustration, ein Logo und Text hinzufügen.
-ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Passen Sie die Microsoft 365 Anmeldeseite mithilfe der Azure Active Directory an. Sie können der Anmeldeseite eine Illustration, ein Logo und Text hinzufügen.
+ms.openlocfilehash: 1c805e8f37081b2d09e821b24ce2f83816b23e3d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635938"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393547"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a>Hinzufügen Ihres Unternehmensbrandings zur Anmeldeseite
+# <a name="add-your-company-branding-to-the-sign-in-page"></a>Hinzufügen ihres Unternehmensbrandings zur Anmeldeseite
 
- Sie können nun das Azure Active Directory (AD)-Abonnement verwenden, das in Ihrem Microsoft 365-Abonnement enthalten ist, um die Anmeldeseite anzupassen, die Ihren Benutzern angezeigt wird. 
+ Sie können jetzt das Azure Active Directory (AD)-Abonnement verwenden, das in Ihrem Microsoft 365-Abonnement enthalten ist, um die Anmeldeseite anzupassen, die Ihren Benutzern angezeigt wird. 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Hinzufügen von Unternehmensbranding zu Ihrer Anmeldeseite und zu Ihrer Zugriffsbereichsseite
 
-Wenn Sie über ein kostenpflichtiges Abonnement für Microsoft 365 Business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite oder andere Microsoft-Dienste verfügen, haben Sie ein kostenloses Abonnement für Azure Active Directory. Sie können Azure Active Directory zum Erstellen und Verwalten von Benutzer- und Gruppenkonten und zum Hinzufügen von Unternehmensbranding zu Ihren Seiten verwenden. Um dieses Abonnement zu aktivieren und auf das Microsoft Azure Zutritt zu erhalten, müssen Sie einen einzigen Registrierungsprozess abschließen. Anschließend können Sie auf Azure Active Directory von Ihrem Microsoft-Dienst zugreifen, der ihn verwendet. Anweisungen zum Registrieren Ihres Microsoft 365-Abonnements finden Sie unter Registrieren Ihres kostenlosen [Azure Active Directory-Abonnements](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)und unter Verwalten des Verzeichnisses für Ihr [Microsoft 365-Abonnement in Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) für allgemeine Verwaltungsanweisungen. 
+Wenn Sie über ein kostenpflichtiges Abonnement für Microsoft 365 business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite oder andere Microsoft-Dienste verfügen, haben Sie ein kostenloses Abonnement für Azure Active Directory. Sie können Azure Active Directory verwenden, um Benutzer- und Gruppenkonten zu erstellen und zu verwalten und Ihren Seiten Unternehmensbranding hinzuzufügen. Um dieses Abonnement zu aktivieren und auf das Microsoft Azure Verwaltungsportal zuzugreifen, müssen Sie einen einmaligen Registrierungsprozess abschließen. Anschließend können Sie von Ihrem Microsoft-Dienst, der ihn verwendet, auf Azure Active Directory zugreifen. Anweisungen zum Registrieren Ihres Microsoft 365-Abonnements finden Sie unter [Registrieren Ihres kostenlosen Azure Active Directory-Abonnements](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)und [unter Verwalten des Verzeichnisses für Ihr Microsoft 365-Abonnement in Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) für allgemeine Verwaltungsanweisungen. 
   
 Die folgende Abbildung zeigt, welche Teile der Anmeldeseite in Azure geändert werden können.
   
@@ -55,6 +56,6 @@ Wenn Sie Branding hinzufügen möchten, sollten Sie die Anpassungsoptionen in de
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Anpassen des Microsoft 365 Design für Ihre Organisation](customize-your-organization-theme.md) (Artikel)\
+[Anpassen des Microsoft 365 Designs für Ihre Organisation](customize-your-organization-theme.md) (Artikel)\
 [Unterschied zwischen dem Setup-Assistenten und der Setupseite](o365-setup-wizard-and-setup-page.md) (Artikel)\
 [Einrichten mobiler Geräte für Microsoft 365 für Geschäftsbenutzer](../../business/set-up-mobile-devices.md) (Video)

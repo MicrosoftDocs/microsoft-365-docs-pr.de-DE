@@ -16,18 +16,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: So schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und bösartigen Anlagen.
-ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924623"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393631"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 wichtigsten Möglichkeiten zum Sichern von Microsoft 365 für Business-Pläne
 
@@ -45,8 +46,8 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben auszuf�
 |6 |[Beenden der automatischen Weiterleitung für E-Mails](secure-your-business-data.md#forwarding)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Verwenden Office Nachrichtenverschlüsselung](secure-your-business-data.md#encryption)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Schützen Ihrer E-Mails vor Phishingangriffen](secure-your-business-data.md#phishing)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Schutz vor bösartigen Anlagen und Dateien mit sicheren Anlagen](secure-your-business-data.md#atp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Schutz vor Phishingangriffen mit sicheren Links](secure-your-business-data.md#phishingatp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Schutz vor bösartigen Anlagen und Dateien mit Tresor Anlagen](secure-your-business-data.md#atp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[Schutz vor Phishingangriffen mit Tresor Links](secure-your-business-data.md#phishingatp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und mit der sicheren Zusammenarbeit beginnen, wenn Sie die Anweisungen in dieser Bibliothek befolgen: [Microsoft 365 für kleinere Unternehmen und Kampagnen](../../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team „Defending Democracy“ entwickelt, um alle kleinen Unternehmenskunden vor Cyberbedrohungen zu schützen, die von raffinierten Hackern gestartet werden.
 
@@ -113,11 +114,11 @@ Zu den Verwaltungskonten, die Sie zum Verwalten Ihrer Microsoft 365 Umgebung ver
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: Erhöhen des Schutzes vor Schadsoftware in E-Mails
 <a name="malware"> </a>
 
-Ihre Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware. Sie können diesen Schutz jedoch erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. Um den Schutz vor Schadsoftware in E-Mails zu verbessern, zeigen Sie ein [kurzes Schulungsvideo](../../business-video/anti-malware.md)an, oder führen Sie die folgenden Schritte aus:
+Ihre Microsoft 365 Umgebung enthält Schutz vor Schadsoftware, Sie können diesen Schutz jedoch erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. Um den Schutz vor Schadsoftware in E-Mails zu verbessern, zeigen Sie ein [kurzes Schulungsvideo](../../business-video/anti-malware.md)an, oder führen Sie die folgenden Schritte aus:
 
 1. Rufen Sie ihre <https://protection.office.com> Administratorkontoanmeldeinformationen auf, und melden Sie sich an.
 
-2. Wählen Sie im Security & Compliance Center im linken Navigationsbereich unter **"Bedrohungsmanagement"** **die Option "Richtlinie** \> **antischadsoftware"** aus.
+2. Wählen Sie im Security & Compliance Center im linken Navigationsbereich unter **"Bedrohungsmanagement"** **die Richtlinie** \> **"Antischadsoftware"** aus.
 
 3. Doppelklicken Sie auf die Standardrichtlinie, um diese unternehmensweite Richtlinie zu bearbeiten.
 
@@ -152,9 +153,9 @@ Um eine E-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes Schulungsvide
 
 5. Wenden Sie die Einstellungen in der folgenden Tabelle für jede Regel an. Behalten Sie die restlichen Einstellungen standardmäßig bei, es sei denn, Sie möchten diese ändern.
 
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
     
-| Setting | Warnen von Benutzern vor dem Öffnen von Anlagen Office Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
+| Setting | Warnen von Benutzern vor dem Öffnen von Anlagen von Office Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/> |Anti-Ransomware-Regel: Blockieren von Dateitypen  <br/> |
 |Wenden Sie diese Regel an, wenn . . .  <br/> |Jede Anlage . . . Dateierweiterung stimmt überein. . .  <br/> |Jede Anlage . . . Dateierweiterung stimmt überein. . .  <br/> |
@@ -188,7 +189,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 5. Wenden Sie die Einstellungen in der folgenden Tabelle an. Behalten Sie die restlichen Einstellungen standardmäßig bei, es sei denn, Sie möchten diese ändern.
 
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
 
 |Setting|Ablehnen der automatischen Weiterleitung von E-Mails an externe Domänen|
 |---|---|
@@ -202,7 +203,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 ## <a name="7-use-office-message-encryption"></a>7: Verwenden Office Nachrichtenverschlüsselung
 <a name="encryption"> </a>
 
-Office Nachrichtenverschlüsselung ist in Microsoft 365 enthalten. Sie ist bereits eingerichtet. Mit Office Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte E-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die Office 365-Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
+Office Die Nachrichtenverschlüsselung ist in Microsoft 365 enthalten. Sie ist bereits eingerichtet. Mit Office Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte E-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die Office 365-Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten. Die E-Mail-Nachrichtenverschlüsselung sorgt dafür, dass nur vorgesehene Empfänger verschlüsselte Nachrichten ansehen können.
 
 Office Die Nachrichtenverschlüsselung bietet zwei Schutzoptionen beim Senden von E-Mails:
 
@@ -214,7 +215,7 @@ Möglicherweise hat Ihre Organisation zusätzliche Optionen konfiguriert, die ei
 
 ### <a name="to-send-protected-email"></a>So senden Sie geschützte E-Mails
 
-**Wählen** Sie in Outlook für PC optionen in der E-Mail aus, und wählen Sie dann **Berechtigungen** aus.
+Wählen Sie in Outlook für PC **optionen** in der E-Mail aus, und wählen Sie dann **Berechtigungen** aus.
 
 ![E-Mail-Nachrichtenverschlüsselung in Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
@@ -228,7 +229,7 @@ Wenn der Empfänger über Outlook 2013 oder Outlook 2016 und ein Microsoft-E-Mai
 
 Wenn der Empfänger einen anderen E-Mail-Client oder ein anderes E-Mail-Konto verwendet, z. B. Gmail oder Yahoo, wird ein Link angezeigt, über den er sich entweder anmelden kann, um die E-Mail-Nachricht zu lesen oder eine einmalige Kennung anzufordern, um die Nachricht in einem Webbrowser anzuzeigen. Wenn Benutzer die E-Mail nicht erhalten, müssen sie ihren Spam- oder Junk-Ordner überprüfen lassen.
 
-Weitere Informationen finden Sie unter [Senden, Anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PCs.](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)
+Weitere Informationen finden Sie unter [Senden, Anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC.](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)
 
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. Schützen Ihrer E-Mails vor Phishingangriffen
 <a name="phishing"> </a>
@@ -249,7 +250,7 @@ Um eine Antiphishingrichtlinie in Defender für Office 365 zu erstellen, zeigen 
 
 4. Wählen Sie auf der Seite "Antiphishing" die Option **+ Erstellen** aus. Ein Assistent startet, der Sie durch die Definition Ihrer Antiphishingrichtlinie führt.
 
-5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen zu den Optionen für Office 365 finden Sie unter "Informationen zur [Antiphishingrichtlinie in Microsoft Defender".](../../security/office-365-security/set-up-anti-phishing-policies.md)
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für Ihre Richtlinie wie im folgenden Diagramm empfohlen an. Weitere Informationen zu den Optionen für Office 365 finden [Sie unter "Informationen zur Antiphishingrichtlinie in Microsoft Defender".](../../security/office-365-security/set-up-anti-phishing-policies.md)
 
 6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen **Sie diese Richtlinie** erstellen oder **speichern** aus.
 
@@ -267,20 +268,20 @@ Um eine Antiphishingrichtlinie in Defender für Office 365 zu erstellen, zeigen 
 
 Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender für Office 365.](../../security/office-365-security/configure-atp-anti-phishing-policies.md)
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Schutz vor bösartigen Anlagen und Dateien mit sicheren Anlagen
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Schutz vor bösartigen Anlagen und Dateien mit Tresor Anlagen
 <a name="atp"> </a>
 
-Personen senden, empfangen und teilen regelmäßig Anlagen, z. B. Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach, anhand einer E-Mail-Nachricht zu erkennen, ob eine Anlage sicher oder bösartig ist. Microsoft Defender für Office 365 umfasst den Schutz sicherer Anlagen, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, eine neue Regel zu erstellen, um mit der Verwendung dieses Schutzes zu beginnen. Dieser Schutz gilt für Dateien in SharePoint, OneDrive und Microsoft Teams.
+Personen senden, empfangen und teilen regelmäßig Anlagen, z. B. Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach, anhand einer E-Mail-Nachricht zu erkennen, ob eine Anlage sicher oder bösartig ist. Microsoft Defender für Office 365 enthält Tresor Anlagenschutz, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, eine neue Regel zu erstellen, um mit der Verwendung dieses Schutzes zu beginnen. Dieser Schutz gilt für Dateien in SharePoint, OneDrive und Microsoft Teams.
 
-Um eine Richtlinie für sichere Anlagen zu erstellen, zeigen Sie ein [kurzes Schulungsvideo](../../business-video/safe-attachments.md)an, oder führen Sie die folgenden Schritte aus:
+Um eine Tresor Anlagerichtlinie zu erstellen, zeigen Sie ein [kurzes Schulungsvideo](../../business-video/safe-attachments.md)an, oder führen Sie die folgenden Schritte aus:
 
 1. Wechseln Sie zu <https://protection.office.com> Ihrem Administratorkonto, und melden Sie sich an.
 
 2. Wählen Sie im Security & Compliance Center im linken Navigationsbereich unter **"Bedrohungsmanagement"** die Option **"Richtlinie"** aus.
 
-3. Wählen Sie auf der Seite "Richtlinie" die Option **"Sichere Anlagen" aus.**
+3. Wählen Sie auf der Seite **"Richtlinie" Tresor Anlagen aus.**
 
-4. Wenden Sie diesen Schutz auf der Seite "Sichere Anlagen" allgemein an, indem Sie das Kontrollkästchen **ATP für SharePoint, OneDrive und Microsoft Teams** aktivieren.
+4. Wenden Sie auf der Seite Tresor Anlagen diesen Schutz allgemein an, indem Sie das Kontrollkästchen **ATP für SharePoint, OneDrive und Microsoft Teams** aktivieren.
 
 5. Wählen Sie **+** diese Option aus, um eine neue Richtlinie zu erstellen.
 
@@ -299,10 +300,10 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, zeigen Sie ein [kurzes Sch
 
 Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien in Defender für Office 365.](../../security/office-365-security/configure-atp-anti-phishing-policies.md)
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Schutz vor Phishingangriffen mit sicheren Links
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Schutz vor Phishingangriffen mit Tresor Links
 <a name="phishingatp"> </a>
 
-Hacker blenden manchmal schädliche Websites in Links in E-Mails oder anderen Dateien aus. Sichere Links, Teil von Microsoft Defender für Office 365, können Zum Schutz Ihrer Organisation beitragen, indem die Zeit-für-Klick-Überprüfung von Webadressen (URLs) in E-Mail-Nachrichten und Office Dokumenten bereitgestellt wird. Der Schutz wird durch Richtlinien für sichere Links definiert.
+Hacker blenden manchmal schädliche Websites in Links in E-Mails oder anderen Dateien aus. Tresor Links, die Teil von Microsoft Defender für Office 365 sind, können Zum Schutz Ihrer Organisation beitragen, indem sie die Zeit-für-Klick-Überprüfung von Webadressen (URLs) in E-Mail-Nachrichten und Office Dokumenten bereitstellen. Der Schutz wird durch Tresor Links-Richtlinien definiert.
 
 Es wird empfohlen, Folgendes zu tun:
 
@@ -310,41 +311,41 @@ Es wird empfohlen, Folgendes zu tun:
 
 - Fügen Sie allen Empfängern in Ihrer Domäne eine neue Richtlinie hinzu.
 
-Um zu sicheren Links zu gelangen, zeigen Sie ein [kurzes Schulungsvideo](../../business-video/safe-links.md)an, oder führen Sie die folgenden Schritte aus:
+Um zu Tresor Links zu gelangen, zeigen Sie ein [kurzes Schulungsvideo](../../business-video/safe-links.md)an, oder führen Sie die folgenden Schritte aus:
 
 1. Wechseln Sie zu <https://protection.office.com> Ihrem Administratorkonto, und melden Sie sich an.
 
 2. Wählen Sie im Security & Compliance Center im linken Navigationsbereich unter **"Bedrohungsmanagement"** die Option **"Richtlinie"** aus.
 
-3. Wählen Sie auf der Seite "Richtlinie" die Option **"Sichere Links" aus.**
+3. Wählen Sie auf der Seite **"Richtlinie" Tresor Links aus.**
 
 So ändern Sie die Standardrichtlinie:
 
-1. Doppelklicken Sie auf der Seite "Sichere Links" unter **"Richtlinien", die für die gesamte Organisation gelten,** auf die **Standardrichtlinie.**
+1. Doppelklicken Sie auf der Seite Tresor Links unter **"Richtlinien", die für die gesamte Organisation gelten,** auf die **Standardrichtlinie.**
 
 2. Geben Sie unter **Einstellungen, die für Inhalte über Office 365 hinweg gelten,** eine zu blockierende URL ein, z. _B. example.com,_ und wählen Sie **+** aus.
 
 3. Wählen Sie **unter Einstellungen, die für Inhalte mit Ausnahme von E-Mails gelten,** **Office 365 Anwendungen** aus, verfolgen **Sie nicht, wenn Benutzer auf sichere Links klicken,** und **lassen Sie Benutzer nicht durch sichere Links zur ursprünglichen URL klicken.**
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 
-1. Wählen Sie auf der Seite "Sichere Links" unter **"Richtlinien, die für bestimmte Empfänger gelten"** aus, **+** um eine neue Richtlinie zu erstellen.
+1. Wählen Sie auf der Seite Tresor Links unter **"Richtlinien, die für bestimmte Empfänger gelten"** aus, **+** um eine neue Richtlinie zu erstellen.
 
 2. Wenden Sie die in der folgenden Tabelle aufgeführten Einstellungen an.
 
-3. Wählen Sie **Speichern** aus.
+3. Klicken Sie auf **Speichern**.
 
 |Einstellung oder Option|Empfohlene Einstellung|
 |---|---|
-|Name|Richtlinie für sichere Links für alle Empfänger in der Domäne|
+|Name|Tresor-Verknüpfungsrichtlinie für alle Empfänger in der Domäne|
 |Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichten aus.|Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.|
 |Anwenden der Echtzeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen|Aktivieren Sie dieses Kontrollkästchen.|
 |Angewendet auf|Die Empfängerdomäne lautet . . . Wählen Sie Ihre Domäne aus.|
 |
 
-Weitere Informationen finden Sie unter ["Sichere Links" in Microsoft Defender für Office 365.](../../security/office-365-security/atp-safe-links.md)
+Weitere Informationen finden Sie unter [Tresor Links in Microsoft Defender für Office 365](../../security/office-365-security/atp-safe-links.md).
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

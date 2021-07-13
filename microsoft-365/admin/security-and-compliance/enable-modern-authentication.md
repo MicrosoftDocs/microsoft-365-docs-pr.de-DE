@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Erfahren Sie, wie Sie Registrierungsschlüssel festlegen, um die moderne Authentifizierung für Geräte zu aktivieren, auf denen Microsoft Office 2013 installiert ist.
-ms.openlocfilehash: 917ecd5c668ea43b0627ba2361f951ebc5e19725
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 8bfe515fefed9d58f140a67e53ce0d078457aa72
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635690"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393655"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten
 
@@ -40,12 +41,12 @@ ms.locfileid: "52635690"
   
 Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Laptops und Tablets) zu aktivieren, auf denen Microsoft Office 2013 installiert ist, müssen Sie die nachstehenden Registrierungsschlüssel festlegen. Die Schlüssel müssen auf jedem Gerät festgelegt werden, das Sie für moderne Authentifizierung aktivieren möchten:
   
-|**Registrierungsschlüssel**|**Typ**|**Wert** |
+|**Registrierungsschlüssel**|**Type**|**Wert** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013-Geräte-Apps so festlegen, dass die mehrstufige Authentifizierung [(MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365. 
+Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013-Geräte-Apps so festlegen, dass die [mehrstufige Authentifizierung (MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365 verwendet wird. 
   
 Wenn Sie aktuell bei einer der Client-Apps angemeldet sind, müssen Sie sich abmelden und wieder anmelden, damit die Änderung wirksam wird. Andernfalls werden die MRU- und Roamingeinstellungen erst wieder verfügbar, wenn die ADAL-Identität eingerichtet ist.
   
@@ -53,12 +54,12 @@ Wenn Sie aktuell bei einer der Client-Apps angemeldet sind, müssen Sie sich abm
 
 Wenn Sie moderne Authentifizierung auf einem Gerät deaktivieren möchten, legen Sie dort die folgenden Registrierungsschlüssel fest:
   
-|**Registrierungsschlüssel**|**Typ**|**Wert**|
+|**Registrierungsschlüssel**|**Type**|**Wert**|
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Melden Sie sich bei Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) mit einer zweiten Überprüfungsmethode an (Artikel)\
-[Outlook Eingabeaufforderungen zum](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) Kennwort und verwendet keine moderne Authentifizierung, um eine Verbindung mit Office 365 herzustellen (Artikel)
+[Melden Sie sich bei Office 2013 mit einer zweiten Überprüfungsmethode](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) an (Artikel)\
+[Outlook Eingabeaufforderungen für Kennwörter und verwendet keine moderne Authentifizierung, um eine Verbindung mit Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) herzustellen (Artikel)
 

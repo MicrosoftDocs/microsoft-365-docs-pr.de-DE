@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Mitglieder von Microsoft 365-Gruppen erhalten eine Gruppen-E-Mail und einen gemeinsamen Arbeitsbereich für Unterhaltungen, Dateien, Kalenderereignisse, Stream sowie Planner.
-ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903840"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377181"
 ---
 # <a name="compare-groups"></a>Vergleichen von Gruppen
 
@@ -61,6 +61,8 @@ Verteilergruppen können[auf Microsoft 365-Gruppen aktualisiert werden](../manag
 
 Verteilergruppen können in Microsoft Teams zu einem Team hinzugefügt werden.
 
+Microsoft 365 Gruppen dürfen keine Mitglieder von Verteilergruppen sein.
+
 ## <a name="security-groups"></a>Sicherheitsgruppen
 
 [Sicherheitsgruppen](../email/create-edit-or-delete-a-security-group.md) werden verwendet, um den Zugriff auf Microsoft 365-Ressourcen wie z. B. SharePoint zu gewähren. Sicherheitsgruppen können die Verwaltung vereinfachen, weil Sie nur die Gruppe verwalten müssen, anstatt Benutzer zu jeder Ressource einzeln hinzuzufügen.
@@ -70,6 +72,8 @@ Sicherheitsgruppen können Benutzer oder Geräte enthalten. Das Erstellen einer 
 Sicherheitsgruppen können [für die dynamische Mitgliedschaft in Azure Active Directory-konfiguriert](/azure/active-directory/users-groups-roles/groups-change-type) werden, sodass Gruppenmitglieder oder Geräte basierend auf Benutzerattributen wie Abteilung, Standort oder Position bzw. Geräteattributen wie Betriebssystemversion automatisch hinzugefügt oder entfernt werden können.
 
 Sicherheitsgruppen können zu einem Team hinzugefügt werden.
+
+Microsoft 365 Gruppen dürfen keine Mitglieder von Sicherheitsgruppen sein.
 
 ## <a name="mail-enabled-security-groups"></a>E-Mail-aktivierte Sicherheitsgruppen
 

@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden, und untersuchen Sie jedes Diagramm, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 89182ddc317bfefdf0e82632bbe8ec8f78f81ada
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52808999"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377217"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
-Sie können ganz einfach sehen, wie Personen in Ihrem Unternehmen die Microsoft 365-Dienste nutzen. So können Sie beispielsweise erkennen, wer einen Dienst häufig nutzt und die Kontingente ausschöpft, oder wer möglicherweise gar keine Microsoft 365-Lizenz benötigt.
+Sie können schnell und einfach sehen, wie Personen in Ihrem Unternehmen die Microsoft 365-Dienste nutzen. So können Sie beispielsweise erkennen, wer einen Dienst häufig nutzt und die Kontingente ausschöpft, oder wer möglicherweise gar keine Microsoft 365-Lizenz benötigt. Das unbefristete Lizenzmodell wird nicht in den Berichten enthalten sein. 
   
 Berichte sind für die letzten 7 Tage, 30 Tage, 90 Tage und 180 Tage verfügbar.  Es stehen nicht sofort Daten für alle Berichtszeiträume zur Verfügung. Die Berichte sind erst nach 48 Stunden verfügbar.
   

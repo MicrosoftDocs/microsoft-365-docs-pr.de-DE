@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: Wenn Sie für die Konfiguration der E-Mail-Einstellungen für alle Mitarbeiter eines Unternehmens verantwortlich sind, wird in diesem Artikel erklärt, wie Sie den Posteingang mit Relevanz für Benutzer konfigurieren.
-ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 74663342adc3dd29f35d462b2dee7bbbc771f8f0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623701"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393595"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Konfigurieren des Posteingangs mit Relevanz für jeden Benutzer in Ihrer Organisation
 

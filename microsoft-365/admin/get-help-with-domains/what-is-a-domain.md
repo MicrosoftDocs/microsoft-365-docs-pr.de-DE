@@ -18,17 +18,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: Erfahren Sie, was eine Domäne ist und wie Sie eine Domäne erwerben oder die Standarddomäne Ihres Unternehmens verwenden können, um mit OneDrive und Microsoft-Apps zu beginnen.
+description: Erfahren Sie, was eine Domäne ist und wie Sie eine Domäne kaufen oder die Standarddomäne Ihres Unternehmens verwenden können, um mit OneDrive und Microsoft-Apps zu beginnen.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b69881d72b91bd2cd36255d87444588166458c8c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 949bce3c287c9b7764562586e28bc031fd0d56b6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571877"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393115"
 ---
 # <a name="what-is-a-domain"></a>Was ist eine Domäne?
 
@@ -61,7 +62,7 @@ Rufen Sie den Microsoft-Support an – [Hilfe beim Einrichten einer Domäne erha
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Kaufen einer Domäne](buy-a-domain-name.md) (Artikel)
+[Erwerben einer Domäne](buy-a-domain-name.md) (Artikel)
 
 [Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md) (Artikel)
 

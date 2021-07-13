@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie ein Team als Gast in Microsoft Teams.
-ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Erfahren Sie, wie Sie einem Team als Gast in Microsoft Teams beitreten.
+ms.openlocfilehash: b551a681680f38f9f6c540cf5ea2b5f8a45fab5b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706238"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393487"
 ---
 # <a name="join-a-team-as-a-guest"></a>Treten Sie einem Team als Gast bei
 
@@ -35,21 +36,21 @@ ms.locfileid: "52706238"
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-Wenn Sie eine einladung Microsoft Teams, einem Team bei treten, gibt es einige Schritte, um die Einladung zu akzeptieren.
+Wenn Sie eine Microsoft Teams Einladung zum Beitreten zu einem Team erhalten, gibt es ein paar Schritte, um die Einladung anzunehmen.
 
-1. Öffnen Sie die E-Mail-Einladung, und wählen **Sie Öffnen Microsoft Teams**. Wenn die Einladung nicht angezeigt wird, überprüfen Sie Ihren Junk- oder Spamordner.
-  1. Wenn Ihre E-Mail-Adresse noch nicht zum Erstellen eines Microsoft-Kontos verwendet wurde, müssen Sie eins erstellen.
+1. Öffnen Sie die E-Mail-Einladung, und wählen Sie **"Öffnen" Microsoft Teams** aus. Wenn die Einladung nicht angezeigt wird, überprüfen Sie Ihren Junk- oder Spamordner.
+  1. Wenn Ihre E-Mail-Adresse zuvor nicht zum Erstellen eines Microsoft-Kontos verwendet wurde, müssen Sie ein Konto erstellen.
 
-     Wählen Sie **im Dialogfeld** Konto erstellen die Option **Weiter** aus, erstellen Sie ein Kennwort, und wählen Sie **Weiter aus.**
+     Wählen Sie im Dialogfeld  **Konto erstellen**  die Option  **"Weiter",** "Kennwort erstellen" und dann  **"Weiter"** aus.
   1. Um Ihre E-Mail-Adresse zu überprüfen, öffnen Sie die Überprüfungs-E-Mail, und kopieren Sie den Sicherheitscode.
-  1. Geben Sie Ihren  Sicherheitscode in das Dialogfeld E-Mail überprüfen  ein, wählen Sie **Weiter** aus, geben Sie das CAPTCHA in die Eingabe der angezeigten Zeichen ein, wählen Sie **Weiter** und dann **Akzeptieren aus.**
-1. Wenn Sie die App nicht herunterladen Microsoft Teams, wählen Sie **stattdessen Web-App verwenden aus.**
-1. In der Teams können Sie Beiträge anzeigen oder beantworten oder eigene Beiträge  erstellen und die Registerkarte Dateien auswählen, um Teamdokumente ein- oder zu bearbeiten.
+  1. Geben Sie Ihren Sicherheitscode in das Dialogfeld  **"E-Mail überprüfen"**  ein, wählen Sie  **"Weiter"** aus, geben Sie in der  **Zeile "Geben Sie die angezeigten Zeichen ein,**  wählen Sie  **"Weiter"** und dann  **"Annehmen"** aus.
+1. Wenn Sie die Microsoft Teams App nicht herunterladen möchten, wählen Sie **stattdessen "Web-App verwenden"** aus.
+1. In der Teams Web-App können Sie Beiträge anzeigen oder beantworten oder eigene Beiträge erstellen und die Registerkarte **"Dateien"** auswählen, um Teamdokumente anzuzeigen oder zu bearbeiten.
 
-    Wenn Sie bereits die Teams in Ihrer Organisation verwenden, ist der Beitritt zu einem Team als Gast wesentlich einfacher.
+    Wenn Sie die Teams-App in Ihrer Organisation bereits verwenden, ist es viel einfacher, einem Team als Gast beizutreten.
 
-1. Öffnen Sie Microsoft Teams App, und wählen Sie **Ja** aus, um zu dem Team zu wechseln, zu dem Sie eingeladen sind.  Jetzt können Sie an dem Projekt in einer Teams.
-1. Wenn Sie zum Team Ihres Unternehmens wechseln möchten, wählen Sie es in der  **Dropdownliste Organisation**  aus.
+1. Öffnen Sie einfach Microsoft Teams App, und wählen Sie **"Ja"** aus, um zu dem Team zu wechseln, zu dem Sie eingeladen sind.  Jetzt können Sie an dem Projekt in Teams zusammenarbeiten.
+1. Um zum Team Ihres Unternehmens zurückzukehren, wählen Sie es aus der Dropdownliste  **"Organisation"**  aus.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

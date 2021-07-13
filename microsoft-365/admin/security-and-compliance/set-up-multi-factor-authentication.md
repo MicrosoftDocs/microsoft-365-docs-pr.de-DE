@@ -1,5 +1,5 @@
 ---
-title: Einrichten der Multi-Faktor-Authentifizierung für Benutzer
+title: Einrichten der mehrstufigen Authentifizierung für Benutzer
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -21,18 +23,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: Hier erfahren Sie, wie Sie die Multi-Faktor-Authentifizierung für Ihre Organisation einrichten.
+description: Erfahren Sie, wie Sie die mehrstufige Authentifizierung für Ihre Organisation einrichten.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 480e09e42ea53cc78cd738a6e0650feae7a9f8c8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7ee6f3a7fc01fa998e3b984683ddad1402fe5587
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635950"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393619"
 ---
-# <a name="set-up-multi-factor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
+# <a name="set-up-multifactor-authentication"></a>Einrichten der mehrstufigen Authentifizierung
 
-Ihre Kenntnis der [Multi-Faktor-Authentifizierung (MFA) und deren Unterstützung in Microsoft 365](multi-factor-authentication-microsoft-365.md) vorausgesetzt, ist es an der Zeit, diese einzurichten und für Ihre Organisation bereitzustellen.
+Ihre Kenntnis der [mehrstufige Authentifizierung (MFA) und ihrer Unterstützung in Microsoft 365](multi-factor-authentication-microsoft-365.md) vorausgesetzt, ist es an der Zeit, diese einzurichten und für Ihre Organisation bereitzustellen.
 
 > [!IMPORTANT]
 > Wenn Sie Ihr Abonnement oder Ihre Testversion nach dem 21. Oktober 2019 erworben haben und beim Anmelden eine MFA-Aufforderung erhalten, wurden automatisch die [Sicherheitsstandards](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) für Ihr Abonnement aktiviert.
@@ -42,7 +44,7 @@ Ihre Kenntnis der [Multi-Faktor-Authentifizierung (MFA) und deren Unterstützung
 - Sie müssen globaler Administrator sein, um MFA zu verwalten. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../add-users/about-admin-roles.md).
 - Wenn Sie das veraltete MFA auf Benutzerbasis aktiviert haben, [deaktivieren Sie die Legacy-MFA auf Benutzerbasis](#turn-off-legacy-per-user-mfa).
 - Wenn Office 2013-Clients auf Windows-Geräten installiert sind, [aktivieren Sie die moderne Authentifizierung für Office 2013-Clients](./enable-modern-authentication.md).
-- Erweitert: Wenn Verzeichnisdienste von Drittanbietern mit Active Directory Federation Services (AD FS) genutzt werden, richten Sie den Azure MFA-Server ein. Weitere Informationen finden Sie unter [Erweiterte Szenarien mit Azure AD Multi-Factor Authentication und VPN-Lösungen von Drittanbietern](/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
+- Erweitert: Wenn Verzeichnisdienste von Drittanbietern mit Active Directory Federation Services (AD FS) genutzt werden, richten Sie den Azure MFA-Server ein. Weitere Informationen finden Sie unter [Erweiterte Szenarien mit Azure AD Multifactor Authentication und VPN-Lösungen von Drittanbietern](/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
 
 ## <a name="turn-security-defaults-on-or-off"></a>Aktivieren oder Deaktivieren von Sicherheitsstandards
 
@@ -81,7 +83,7 @@ Weitere Informationen zu Azure AD P1 und P2 finden Sie unter [Azure Active Direc
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>Aktivieren von moderner Authentifizierung für Ihre Organisation
 
-Bei den meisten Abonnements wird die moderne Authentifizierung automatisch aktiviert. Wenn Sie Ihr Abonnement jedoch vor August 2017 gekauft haben, müssen Sie wahrscheinlich die moderne Authentifizierung aktivieren, damit Funktionen wie die mehrstufige Authentifizierung in Windows-Clients wie Outlook funktionieren.
+Bei den meisten Abonnements ist die moderne Authentifizierung automatisch aktiviert. Wenn Sie Ihr Abonnement jedoch vor August 2017 gekauft haben, müssen Sie die moderne Authentifizierung wahrscheinlich aktivieren, damit Sie Funktionen wie die mehrstufige Authentifizierung in Windows-Clients wie Outlook verwenden können.
 
 
 1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich **Einstellungen** \> **Organisationseinstellungen** aus.
@@ -105,4 +107,4 @@ Wenn bisher die veraltete MFA auf Benutzerbasis aktiviert ist, müssen Sie diese
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Aktivieren der mehrstufigen Authentifizierung](../../business-video/turn-on-mfa.md) (Video)\
-[Aktivieren der mehrstufigen Authentifizierung für Ihr Telefon](../../business-video/set-up-mfa.md) (Video)
+[Aktivieren der mehrstufigen Authentifizierung für Ihr Smartphone](../../business-video/set-up-mfa.md) (Video)

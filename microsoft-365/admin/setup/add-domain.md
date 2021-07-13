@@ -20,18 +20,19 @@ ms.custom:
 - MSStore_Link
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Verwenden Sie den Setup-Assistenten, um Ihre Domäne Microsoft 365 im Microsoft 365 Admin Center hinzuzufügen, indem Sie ihrem DNS-Host einen DNS-Eintrag hinzufügen.
-ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Verwenden Sie den Setup-Assistenten, um Ihre Domäne Microsoft 365 im Microsoft 365 Admin Center hinzuzufügen, indem Sie einen DNS-Eintrag auf Ihrem DNS-Host hinzufügen.
+ms.openlocfilehash: caec9951fa80d19467623922dffa8551d0b4ad0d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227835"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393583"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Hinzufügen einer Domäne zu Microsoft 365
 

@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit sind Teil der Microsoft 365 Pläne.
-ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3404d2aeecd047fecec573bf1d60407ad3659efe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228267"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393295"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Wählen Zwischen Basic Mobility und Security oder Intune
 
@@ -33,9 +34,9 @@ ms.locfileid: "53228267"
 
 Sowohl Basic Mobility als auch Security und Intune sind in einer Vielzahl von Plänen enthalten, die in der folgenden Tabelle beschrieben werden.
 
-| Planen | Grundlegende Mobilität und Sicherheit | Microsoft Intune |
+| Plan | Grundlegende Mobilität und Sicherheit | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 Apps|Ja|Nein|
+|Microsoft 365 Apps|Ja|Nein|
 |Microsoft 365 Business Basic|Ja|Nein|
 |Microsoft 365 Business Standard|Ja|Nein|
 |Office 365 E1 |Ja|Nein|
@@ -46,11 +47,11 @@ Sowohl Basic Mobility als auch Security und Intune sind in einer Vielzahl von Pl
 |Microsoft 365 Enterprise E3 |Ja|Ja|
 |Microsoft 365 Enterprise E5 |Ja|Ja|
 |Microsoft 365 Education A1 |Ja|Ja|
-|Microsoft 365 Education A3 |Ja|Ja|
-|Microsoft 365 Education A5 |Ja|Ja|
+|Microsoft 365 Education A3 |Ja|Ja|
+|Microsoft 365 Education A5 |Ja|Ja|
 |Microsoft Intune |Nein|Ja|
 |Enterprise Mobility & Security E3 |Nein|Ja|
-|Enterprise Mobility + Security (EMS) E5 |Nein|Ja|
+|Enterprise Mobility + Security (EMS) E5 |Nein|Ja|
 
 > [!NOTE]
 > Sie können nicht mit der Verwendung von Basic Mobility and Security beginnen, wenn Sie bereits Microsoft Intune verwenden.
@@ -80,13 +81,13 @@ Microsoft Intune und integrierte Grundlegende Mobilität und Sicherheit bieten I
 |Zero Touch-Registrierungsprogramme (AutoPilot) |Registrieren Sie eine große Anzahl unternehmenseigener Geräte, während die Benutzereinrichtung vereinfacht wird. |Nein|Ja|
 |||
 
-Zusätzlich zu den in der vorherigen Tabelle aufgeführten Features umfassen basic Mobility and Security und Intune eine Reihe von Remoteaktionen, die Befehle über das Internet an Geräte senden. Sie können z. B. Office Daten vom Gerät eines Mitarbeiters entfernen, während Sie persönliche Daten beibehalten (zurückziehen), Office Apps vom Gerät eines Mitarbeiters entfernen (Zurücksetzen) oder ein Gerät auf die Werkseinstellungen zurücksetzen (vollständige Zurücksetzung).
+Zusätzlich zu den in der vorherigen Tabelle aufgeführten Features umfassen basic Mobility and Security und Intune eine Reihe von Remoteaktionen, die Befehle über das Internet an Geräte senden. Sie können z. B. Office Daten aus dem Gerät eines Mitarbeiters entfernen, während Sie personenbezogene Daten beibehalten (zurückziehen), Office Apps vom Gerät eines Mitarbeiters entfernen (Zurücksetzen) oder ein Gerät auf die Werkseinstellungen zurücksetzen (vollständige Zurücksetzung).
 
 Zu den grundlegenden Remoteaktionen für Mobilität und Sicherheit gehören "Ausmustern", "Zurücksetzen" und "Vollständiges Zurücksetzen". Weitere Informationen zu grundlegenden Mobilitäts- und Sicherheitsaktionen finden Sie unter ["Grundlegende Mobilität und Sicherheit".](capabilities.md)
 
 Mit Intune haben Sie die folgenden Aktionen:
 
--   Autopilot-Zurücksetzen (nur Windows
+-   Autopilot-Zurücksetzung (nur Windows
 -  [Bitlocker-Schlüsselrotation](/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   (nur Windows)
 -  [Verwenden des Zurücksetzens, Zurückziehens oder manuellen Aufhebens der Registrierung des Geräts](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
 -  [Deaktivieren der Aktivierungs-loc](/mem/intune/remote-actions/device-activation-lock-disable)   (nur iOS)
@@ -100,7 +101,7 @@ Mit Intune haben Sie die folgenden Aktionen:
 -  Neustart der [Kennung zurücksetzen](/mem/intune/remote-actions/device-passcode-reset) [](/mem/intune/remote-actions/device-restart)   (nur Windows)
 -  Aktualisieren Windows Defender Security Intelligence (nur Windows)
 -  Windows 10 Zurücksetzen der PIN (nur Windows)
--  [Senden von benutzerdefinierten Benachrichtigungen](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad Betriebssystem)
+-  [Senden von benutzerdefinierten Benachrichtigungen](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android, iOS, iPad BETRIEBSSYSTEM)
 -  [Synchronisieren des Geräts](/mem/intune/remote-actions/device-sync)
 
 Weitere Informationen zu Intune-Aktionen finden Sie [in Microsoft Intune Dokumentation.](/mem/intune/)

@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
-description: Nachrichtencenterbeiträge sind nur auf Englisch verfügbar, können jedoch automatisch in der Sprache angezeigt werden, die Sie für die Microsoft 365.
-ms.openlocfilehash: f500baccbf3c78b9d775629d38864444c78fb2e3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Nachrichtencenterbeiträge werden nur in Englisch angezeigt, können jedoch automatisch in der Sprache angezeigt werden, die Sie für Microsoft 365 angeben.
+ms.openlocfilehash: feec4a0a48960303ac0c2231b43e125caa901283
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636034"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393103"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Sprachübersetzung für Nachrichtencenterbeiträge
 
-Nachrichtencenterbeiträge sind nur aufgrund der Aktualität der von uns geposteten Informationen in Englisch verfasst, können jedoch automatisch in der Sprache angezeigt werden, die mit Ihren persönlichen Spracheinstellungen für Microsoft 365 festgelegt wurde. Wenn Sie für Ihre bevorzugte Sprache etwas anderes als Englisch festlegen, wird im Nachrichtencenter eine Option zum automatischen Übersetzen von Beiträgen angezeigt. Die Nachrichten werden vom Computer in Ihre bevorzugte Sprache übersetzt, d. h., ein Computer hat die Übersetzung gemacht. Diese Option steuert die Standardansicht, doch können Sie auch Beiträge über das Dropdownmenü in jede der Sprachen, die wir für Übersetzungen unterstützen, übersetzen und darin anzeigen lassen. Wenn Sie "Englisch" auswählen, setzen wir die Nachricht auf die ursprüngliche englische Version zurück.
+Nachrichtencenterbeiträge sind nur aufgrund der Aktualität der von uns geposteten Informationen in Englisch verfasst, können jedoch automatisch in der Sprache angezeigt werden, die mit Ihren persönlichen Spracheinstellungen für Microsoft 365 festgelegt wurde. Wenn Sie für Ihre bevorzugte Sprache etwas anderes als Englisch festlegen, wird im Nachrichtencenter eine Option zum automatischen Übersetzen von Beiträgen angezeigt. Die Nachrichten werden in Ihre bevorzugte Sprache übersetzt, d. h., ein Computer hat die Übersetzung ausgeführt. Diese Option steuert die Standardansicht, doch können Sie auch Beiträge über das Dropdownmenü in jede der Sprachen, die wir für Übersetzungen unterstützen, übersetzen und darin anzeigen lassen. Wenn Sie "Englisch" auswählen, setzen wir die Nachricht auf die ursprüngliche englische Version zurück.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
   
 > [!IMPORTANT]
 > Bevor Sie Ihre Spracheinstellungen für das Nachrichtencenter auswählen können, müssen Sie Ihre bevorzugte Sprache festlegen. Wenn für Ihre Sprache "Englisch" festgelegt wurde, werden keine Übersetzungsoptionen angezeigt. Sie können keine bevorzugte Sprache für andere angeben; jede Person muss diese Einstellung für sich selbst ändern. 
@@ -49,9 +50,9 @@ Wenn Sie für Nachrichtencenter-Beiträge festlegen möchten, dass sie automatis
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Übersicht über Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)\
+[Übersicht über die Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)\
 [Welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md) (Artikel)\
-[Bleiben Sie über Änderungen](../manage/stay-on-top-of-updates.md) (Artikel)
+[Bleiben Sie auf dem Laufenden über Änderungen](../manage/stay-on-top-of-updates.md) (Artikel)
 
 
 

@@ -21,22 +21,23 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10 auf ihre Werkseinstellungen zurücksetzen.
-ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, und Windows 10 Geräte auf ihre Werkseinstellungen zurücksetzen.
+ms.openlocfilehash: 2bb982d0530c47270b0edb230d08b80b5edc2706
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624283"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393417"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Verwalten geschützter Geräte mit Microsoft 365 Business Premium
 
-Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Arbeitskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
+Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbunden hat, indem er sich mit dem Geschäftskonto am Gerät oder an Office Apps auf dem Gerät anmeldet, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen. Verbundene Geräte werden auf der Seite **"Geräte"** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
 
 ## <a name="related-content"></a>Verwandte Inhalte
   

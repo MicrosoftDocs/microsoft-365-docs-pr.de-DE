@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Machen Sie Ihr Unternehmen sicherer gegen Kennwortangriffe, verbieten Sie gängige Kennwörter und aktivieren Sie die risikobasierte mehrstufige Authentifizierung.
-ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: bf722e665950be87ed652f4df7fa7e5b2298959c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096624"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391327"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
 
