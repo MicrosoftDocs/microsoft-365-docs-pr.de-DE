@@ -20,13 +20,14 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 ms.date: 05/04/2021
-ms.openlocfilehash: eb1e8ed9e932b09a82dc8529f933a1926868319d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 128107630580bb1594d61313c6469bb83a4adfc1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535698"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394605"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Bezahlen Ihres Abonnements
 

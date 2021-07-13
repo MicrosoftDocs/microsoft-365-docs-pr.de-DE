@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -26,25 +27,25 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Melden Sie sich mit Ihrem Microsoft 365 Administratorkonto an, um Kennwörter für Benutzer in Microsoft 365 Business-Abonnement zurückzusetzen.
-ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Melden Sie sich mit Ihrem Microsoft 365 Administratorkonto an, um Kennwörter für Benutzer in Microsoft 365 business-Abonnement zurückzusetzen.
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635570"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394279"
 ---
 # <a name="reset-passwords"></a>Kennwörter zurücksetzen
 
-In diesem Artikel wird erläutert, wie Sie Kennwörter für sich selbst und für Ihre Benutzer zurücksetzen, wenn Sie über Microsoft 365 Business-Abonnement verfügen.
+In diesem Artikel wird erläutert, wie Sie Kennwörter für sich selbst und für Ihre Benutzer zurücksetzen, wenn Sie über ein Microsoft 365 für Business-Abonnement verfügen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../../business-video/admin-center-overview.md)
 
-Sie müssen ein globaler [Administrator oder Kennwortadministrator sein,](about-admin-roles.md) um diese Schritte ausführen zu können.
+Sie müssen ein [globaler Administrator oder Kennwortadministrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können.
 
-## <a name="watch-reset-a-business-password-for-a-user"></a>Watch: Zurücksetzen eines Geschäftskennworts für einen Benutzer
+## <a name="watch-reset-a-business-password-for-a-user"></a>Überwachung: Zurücksetzen eines Geschäftskennworts für einen Benutzer
 
 Sehen Sie sich ein kurzes Video zum Zurücksetzen von Benutzerkennwörtern an.<br><br>
 
@@ -68,13 +69,13 @@ Es wird dringend empfohlen, dass Sie die Self-Service-Kennwortzurücksetzung ein
 
 ## <a name="reset-my-admin-password"></a>Zurücksetzen meines Administratorkennworts
 
-Verwenden Sie die folgenden Schritte, wenn Sie Ihr Kennwort vergessen haben, sich aber bei Microsoft 365 anmelden können, da Ihr Kennwort z. B. in Ihrem Browser gespeichert wird:
+Führen Sie die folgenden Schritte aus, wenn Sie Ihr Kennwort vergessen haben, sich aber bei Microsoft 365 anmelden können, da Ihr Kennwort beispielsweise in Ihrem Browser gespeichert wird:
 
-1. Wählen Sie Ihren Namen (Symbol) in der oberen rechten Ecke > **Persönliche Informationen zu Meinem Konto**  >  **aus.**
+1. Wählen Sie Ihren Namen (Symbol) in der oberen rechten Ecke > Persönliche Informationen **zu meinem Konto**  >  aus.
 
-2. Überprüfen **Sie unter** Kontaktdetails, ob Ihre alternative E-Mail korrekt ist und Dass Sie eine Mobiltelefonnummer angegeben haben.  Wenn nicht, ändern Sie die Informationen jetzt.
+2. Überprüfen Sie unter **"Kontaktdetails",** ob Ihre **alternative E-Mail** korrekt ist und Dass Sie eine Mobiltelefonnummer angegeben haben. Wenn nicht, ändern Sie die Informationen jetzt.
 
-3. Abmelden: Wählen Sie Ihren Namen in der oberen rechten Ecke \> **Abmelden aus.**
+3. Abmelden: Wählen Sie Ihren Namen in der oberen rechten Ecke \> **aus. Melden Sie sich ab.**
 
 4. Melden Sie sich jetzt erneut an: Geben Sie Ihren Benutzernamen ein, \> **Weiter** \>, und wählen Sie dann **Kennwort vergessen** aus.
 
@@ -88,10 +89,10 @@ Wenn Sie Ihr Kennwort vergessen haben und sich nicht anmelden können:
 
 - Oder [rufen Sie den Microsoft-Support an](../../business-video/get-help-support.md).
 
-## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Zurücksetzen aller Geschäftskennwörter für alle Benutzer in Ihrer Organisation gleichzeitig
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Zurücksetzen aller Geschäftspasswörter für alle Benutzer in Ihrer Organisation gleichzeitig
 <a name="bkmk_forgot"> </a>
 
-Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausführen. Wenn Sie über Hunderte oder Tausende von Benutzern verfügen, lesen Sie den nächsten Abschnitt zum Zurücksetzen von Kennwörtern in Massen (maximal 40 Benutzer gleichzeitig).
+Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausführen. Wenn Sie Hunderte oder Tausende von Benutzern haben, lesen Sie den nächsten Abschnitt zum Masseneinsetzen von Kennwörtern (maximal 40 Benutzer gleichzeitig).
   
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
@@ -103,27 +104,27 @@ Diese Schritte können Sie für ein Unternehmen mit Dutzenden von Benutzern ausf
 
 5. Geben Sie eine E-Mail-Adresse ein, unter der Sie die temporären Kennwörter empfangen können. Sie müssen Ihre Benutzer über die temporären Kennwörter in Kenntnis setzen.
   
-## <a name="reset-business-passwords-in-bulk"></a>Zurücksetzen von Geschäftskennwörtern in Massen
+## <a name="reset-business-passwords-in-bulk"></a>Zurücksetzen von Geschäftspasswörtern in massenweiser Löschvorgang
 <a name="bkmk_forgot"> </a>
 
 Verwenden Sie PowerShell! Lesen Sie diesen Beitrag von Eyal Doron: [Verwalten von Kennwörtern mit PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Übersichtsinformationen finden Sie unter [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+Übersichtsinformationen finden Sie unter [Verwalten von Microsoft 365 mit PowerShell.](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Erzwingen einer Kennwortänderung für alle Benutzer in Ihrem Unternehmen
 
 Lesen Sie diesen tollen Blogbeitrag von Vasil Michev, Microsoft MVP: [Erzwingen der Kennwortänderung für alle Benutzer in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Ich habe kein Microsoft 365 Business-Abonnement
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Ich habe kein Microsoft 365 business-Abonnement
 
 Lesen Sie den Artikel [Ich habe den Benutzernamen oder das Kennwort für das Konto vergessen, das ich mit Office verwende](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   
 ## <a name="related-content"></a>Verwandte Inhalte
   
-[Benutzer können ihre eigenen Kennwörter](../add-users/let-users-reset-passwords.md) zurücksetzen (Artikel)\
-[Zurücksetzen von Kennwörtern](../add-users/reset-passwords.md) (Artikel)\
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)\
+[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)\
 [Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](set-password-to-never-expire.md) (Artikel)\
 [Festlegen der Kennwortablaufrichtlinie für Ihre Organisation](../manage/set-password-expiration-policy.md) (Artikel)\
-[Microsoft 365 Für Unternehmen Schulungsvideos](../../business-video/index.yml) (Linkseite)
+[Microsoft 365 für Business-Schulungsvideos](../../business-video/index.yml) (Linkseite)

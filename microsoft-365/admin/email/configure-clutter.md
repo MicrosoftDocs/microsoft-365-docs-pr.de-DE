@@ -13,28 +13,30 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: 'Erfahren Sie, wie Sie das Clutter-Feature für alle oder bestimmte Benutzer in Ihrer Organisation mithilfe von powerShell Exchange aktivieren oder deaktivieren. '
-ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: 'Erfahren Sie, wie Sie das Clutter-Feature mit Exchange PowerShell für alle oder bestimmte Benutzer in Ihrer Organisation aktivieren oder deaktivieren. '
+ms.openlocfilehash: 91098047bdf2ab8190283990bdc6b0292e3e57ba
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706111"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393979"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Konfigurieren von 'Clutter' für Ihre Organisation
 
 > [!TIP]
-> [Posteingang mit Relevanz](../setup/configure-focused-inbox.md) ersetzt "Clutter". Weitere Informationen: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
+> [Posteingang mit Relevanz](../setup/configure-focused-inbox.md) ersetzt "Clutter". Weitere Informationen: [Aktualisieren des Posteingangs mit Relevanz und unserer Pläne für Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Als Administrator müssen Sie möglicherweise das Clutter-Feature in Microsoft 365. Um das Feature "Clutter" für Benutzer in Ihrer Organisation ein- oder auszuschalten, müssen Sie Exchange PowerShell verwenden. (Einzelpersonen können dies mithilfe der folgenden Anweisungen [aktivieren/deaktivieren: Deaktivieren/Aktivieren](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)von Clutter in Outlook .
+Als Administrator müssen Sie möglicherweise das Clutter-Feature in Microsoft 365 verwalten. Um das Feature "Clutter" für Benutzer in Ihrer Organisation ein- oder auszuschalten, müssen Sie Exchange PowerShell verwenden. (Einzelpersonen können sie mithilfe dieser Anweisungen aktivieren/deaktivieren: [Clutter in Outlook deaktivieren/einschalten.](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
   
-Informationen zur Verwendung von Exchange PowerShell finden Sie unter [Verwenden von PowerShell mit Exchange Online](/powershell/exchange/exchange-online-powershell) und [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Sie benötigen ein Konto, das mindestens die Rolle Exchange Dienstadministrators und die Möglichkeit hat, eine Verbindung mit Exchange Online PowerShell herzustellen. 
+Informationen zur Verwendung von Exchange PowerShell finden Sie unter [Verwenden von PowerShell mit Exchange Online](/powershell/exchange/exchange-online-powershell) und [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Sie benötigen ein Konto, das mindestens über die Rolle Exchange Dienstadministrator verfügt und die Möglichkeit hat, eine Verbindung mit Exchange Online mit PowerShell herzustellen. 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Aktivieren von "Clutter" mit Exchange PowerShell
 
@@ -58,9 +60,9 @@ Wenn Sie PowerShell zum Massenerstellen von Benutzern verwenden, müssen Sie [Se
 ## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>Wann wird der Schalter für zum Ein-/Ausschalten von "Clutter" für Benutzer in Outlook im Web angezeigt?
 <a name="bkmk_onoff"> </a>
 
-Als Administrator können Sie "Clutter" mithilfe Exchange PowerShell erneut aktivieren. Wenn Sie dies tun, wird der Posteingang mit Relevanz deaktiviert und "Clutter" wieder aktiviert. 
+Als Administrator können Sie Clutter mit Exchange PowerShell erneut aktivieren. Wenn Sie dies tun, wird der Posteingang mit Relevanz deaktiviert und "Clutter" wieder aktiviert. 
   
- **Wenn Sie eine Outlook im Web mit einem Microsoft 365 Business Premium verwenden:**
+ **Wenn Sie Outlook im Web mit einem Microsoft 365 Business Premium-Abonnement verwenden:**
   
 - Wenn für den Benutzer aktuell "Clutter" aktiviert ist: 
     
@@ -98,6 +100,6 @@ Als Administrator können Sie "Clutter" mithilfe Exchange PowerShell erneut akti
     
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwenden von Clutter zum Sortieren von](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) Nachrichten mit niedriger Priorität in Outlook (Artikel)\
-[Verwenden von Clutter zum Sortieren von Nachrichten](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) mit niedriger Priorität in OWA (Artikel)\
-[Deaktivieren von "Unübersichtlichkeit" in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c) (Artikel)
+[Verwenden von Clutter zum Sortieren von Nachrichten mit niedriger Priorität in Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) (Artikel)\
+[Verwenden von Clutter zum Sortieren von Nachrichten mit niedriger Priorität in OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) (Artikel)\
+[Clutter in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c) deaktivieren (Artikel)

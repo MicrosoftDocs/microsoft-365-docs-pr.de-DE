@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Melden Sie sich bei Ihrem Microsoft 365 Administratorkonto an, um mithilfe von Windows PowerShell festzulegen, dass einzelne Benutzerpasswörter nie ablaufen.
-ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 29d0ebcbb3f9fb197e574731e23aaa64c2fa7894
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326723"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394255"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft
 
@@ -41,7 +42,7 @@ Sie müssen ein [globaler Administrator oder Kennwortadministrator](about-admin-
 
 Ein globaler Administrator für einen Microsoft-Clouddienst kann die [Azure Active Directory PowerShell für Graph](/powershell/azure/active-directory/install-adv2) verwenden, um festzulegen, dass Kennwörter für bestimmte Benutzer nicht ablaufen. Sie können [auch AzureAD-Cmdlets](/powershell/module/Azuread) verwenden, um die Konfiguration "Nie abläuft" zu entfernen oder um zu sehen, welche Benutzerkennwörter so festgelegt sind, dass sie nie ablaufen.
 
-Dieser Leitfaden gilt für andere Anbieter, z. B. Intune und Microsoft 365, die auch für Identitäts- und Verzeichnisdienste auf Azure AD angewiesen sind. Der Kennwortablauf ist der einzige Teil der Richtlinie, der geändert werden kann.
+Dieser Leitfaden gilt für andere Anbieter, z. B. Intune und Microsoft 365, die auch auf Azure AD für Identitäts- und Verzeichnisdienste angewiesen sind. Der Kennwortablauf ist der einzige Teil der Richtlinie, der geändert werden kann.
 
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>So überprüfen Sie die Ablaufrichtlinie für ein Kennwort

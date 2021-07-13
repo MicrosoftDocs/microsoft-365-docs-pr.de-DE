@@ -18,30 +18,31 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
-description: Erfahren Sie, welche Abonnements Ihre Organisation besitzt, indem Sie zur Seite Ihre Produkte gehen.
+description: Erfahren Sie, wie Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zur Seite "Ihre Produkte" wechseln.
 ms.date: 01/21/2021
-ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: bb11ab4fc8933e2e199998992f0c12ea8de0d23a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706298"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394219"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
-Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zum Admin Center gehen.
+Wenn Sie ein Administrator sind, können Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zum Admin Center wechseln.
   
-**Sie sind kein Administrator?** Weitere [Informationen finden Microsoft 365 für Geschäftsprodukt oder -lizenz?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Sie sind kein Administrator?** Welche [Microsoft 365 für Geschäftsprodukt oder -lizenz habe ich?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Auf der **Registerkarte Produkte** werden alle Abonnements angezeigt. Jede Abonnementzeile enthält Informationen zu Lizenzen, Abonnementstatus und Abrechnung.
-3. Wenn Sie die spalten ändern möchten, die in der Liste angezeigt werden, wählen Sie **Spalten auswählen aus.** Ändern Sie die Auswahl der Spalten, und wählen Sie dann **Speichern aus.**
-4. Wählen Sie dieses Abonnement aus, um weitere Details für ein einzelnes Abonnement anzuzeigen.
+2. Auf der Registerkarte **"Produkte"** werden alle Abonnements angezeigt. Jede Abonnementzeile enthält Informationen zu Lizenzen, Abonnementstatus und Abrechnung.
+3. Wenn Sie die Spalten ändern möchten, die in der Liste angezeigt werden, wählen Sie **Spalten auswählen** aus. Ändern Sie die Spaltenauswahl, und wählen Sie dann **Speichern** aus.
+4. Um weitere Details für ein einzelnes Abonnement anzuzeigen, wählen Sie dieses Abonnement aus.
 
 ## <a name="related-content"></a>Verwandte Inhalte
   
-[Abonnements und Abrechnung](../../commerce/index.yml) (Links)\
+[Abonnements und Abrechnung](../../commerce/index.yml) (Linkseite)\
 [Anzeigen Ihrer Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)\
-[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)\
-[Ändern Ihrer Abrechnungsadressen](../../commerce/billing-and-payments/change-your-billing-addresses.md) (Artikel)
+[Bezahlen Ihres Abonnements](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)\
+[Ändern Ihrer Rechnungsadressen](../../commerce/billing-and-payments/change-your-billing-addresses.md) (Artikel)

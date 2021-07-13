@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Ändern Sie Ihre E-Mail-Adresse in eine benutzerfreundliche E-Mail-Adresse wie tom@fourthcoffee.com, indem Sie einen Domänennamen kaufen und Microsoft 365 hinzufügen.
-ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 599ca47a9df2dc7b022ff614e3f78b23defdd96e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341460"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394003"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 

@@ -15,32 +15,33 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Verwenden Sie Basic Mobility and Security, um Geräterichtlinien zu erstellen, die Ihre Unternehmensinformationen schützen.
-ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 5c8794b53dc11d1cee2fc13c8fbc4933e18dd9a3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228255"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394087"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security
 
-Sie können Basic Mobility and Security verwenden, um Geräterichtlinien zu erstellen, die Ihre Unternehmensinformationen auf Microsoft 365 vor unbefugtem Zugriff schützen. Sie können Richtlinien auf jedes mobile Gerät in Ihrer Organisation anwenden, auf dem der Benutzer des Geräts über eine zutreffende Microsoft 365 Lizenz verfügt und das Gerät bei Basic Mobility and Security registriert hat.
+Sie können Basic Mobility and Security verwenden, um Geräterichtlinien zu erstellen, die Ihre Unternehmensinformationen auf Microsoft 365 vor unbefugtem Zugriff schützen. Sie können Richtlinien auf jedes mobile Gerät in Ihrer Organisation anwenden, auf dem der Benutzer des Geräts über eine gültige Microsoft 365-Lizenz verfügt und das Gerät bei Basic Mobility and Security registriert hat.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 > [!IMPORTANT]
 > Bevor Sie eine Richtlinie für mobile Geräte erstellen können, müssen Sie grundlegende Mobilität und Sicherheit aktivieren und einrichten. Weitere Informationen finden Sie unter "Übersicht über grundlegende Mobilität und Sicherheit".
 
-- Erfahren Sie mehr über die Geräte, Apps für mobile Geräte und Sicherheitseinstellungen, die Von Basic Mobility und Security unterstützt werden. Siehe ["Funktionen der grundlegenden Mobilität und Sicherheit".](capabilities.md)
+- Erfahren Sie mehr über die Geräte, Apps für mobile Geräte und Sicherheitseinstellungen, die von Basic Mobility and Security unterstützt werden. Siehe ["Funktionen der grundlegenden Mobilität und Sicherheit".](capabilities.md)
 - Erstellen Sie Sicherheitsgruppen, die Microsoft 365 Benutzer enthalten, für die Sie Richtlinien bereitstellen möchten, und für Benutzer, die Sie möglicherweise ausschließen möchten, dass der Zugriff auf Microsoft 365 blockiert wird. Vor der Bereitstellung einer neuen Richtlinie für Ihre Organisation sollten Sie die Richtlinie testen, indem Sie diese für eine geringe Benutzeranzahl bereitstellen. Sie können eine Sicherheitsgruppe erstellen und verwenden, die nur sich selbst oder eine kleine Anzahl Microsoft 365 Benutzer enthält, die die Richtlinie für Sie testen können. Weitere Informationen zu Sicherheitsgruppen finden Sie unter [Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe.](../email/create-edit-or-delete-a-security-group.md)
-- Um grundlegende Mobilitäts- und Sicherheitsrichtlinien in Microsoft 365 zu erstellen und bereitzustellen, müssen Sie ein Microsoft 365 globaler Administrator sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+- Um grundlegende Mobilitäts- und Sicherheitsrichtlinien in Microsoft 365 zu erstellen und bereitzustellen, müssen Sie ein Microsoft 365 globaler Administrator sein. Weitere Informationen finden Sie unter ["Berechtigungen" im Security & Compliance Center.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - Informieren Sie Ihre Organisation vor der Bereitstellung von Richtlinien über die potenziellen Auswirkungen der Registrierung eines Geräts in Basic Mobility and Security. Je nachdem, wie Sie die Richtlinien einrichten, können nicht konforme Geräte am Zugriff auf Microsoft 365 und Daten gehindert werden, einschließlich installierter Anwendungen, Fotos und persönlicher Informationen auf einem registrierten Gerät, und Daten können gelöscht werden.
 
 > [!NOTE]
-> Richtlinien und Zugriffsregeln, die in Basic Mobility and Security für Microsoft 365 Business Standard erstellt wurden, setzen Exchange ActiveSync Postfachrichtlinien und Gerätezugriffsregeln außer Kraft, die im Exchange Admin Center erstellt wurden. Nachdem ein Gerät in Basic Mobility and Security for Microsoft 365 Business Standard registriert wurde, werden alle Exchange ActiveSync Postfachrichtlinie oder Gerätezugriffsregel für mobile Geräte, die auf das Gerät angewendet werden, ignoriert. Weitere Informationen zu Exchange ActiveSync finden Sie [unter Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Richtlinien und Zugriffsregeln, die in Basic Mobility and Security für Microsoft 365 Business Standard erstellt wurden, setzen Exchange ActiveSync Postfachrichtlinien und Gerätezugriffsregeln außer Kraft, die im Exchange Admin Center erstellt wurden. Nachdem ein Gerät in Basic Mobility and Security for Microsoft 365 Business Standard registriert wurde, wird jede Exchange ActiveSync Postfachrichtlinie oder Gerätezugriffsregel, die auf das Gerät angewendet wird, ignoriert. Weitere Informationen zu Exchange ActiveSync finden Sie [unter Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Schritt 1: Erstellen einer Geräterichtlinie und Bereitstellen in einer Testgruppe
 
@@ -56,11 +57,11 @@ Bevor Sie beginnen können, stellen Sie sicher, dass Sie Die grundlegende Mobili
 
 4. **Verwalten des E-Mail-Profils erforderlich:** Wenn diese Option aktiviert ist, gelten Geräte, die nicht über ein E-Mail-Profil verfügen, das von Basic Mobility and Security verwaltet wird, als nicht konform. Ein Gerät kann nicht über ein verwaltetes E-Mail-Profil verfügen, wenn es nicht korrekt ausgerichtet ist oder wenn der Benutzer das E-Mail-Konto auf dem Gerät manuell eingerichtet hat. Wenn Sie sie **nicht aktiviert** lassen (Standardeinstellung), wird diese Einstellung nicht auf Compliance oder Nichtkonformität ausgewertet. Anweisungen dazu, wie Benutzer konform werden können, wenn diese Option ausgewählt ist, finden Sie unter [Ein vorhandenes E-Mail-Konto wurde gefunden.](/intune-user-help/existing-company-email-account-found)
 
-5. Wählen Sie auf der Seite **Möchten Sie diese Richtlinie jetzt anwenden?** die Gruppen aus, auf die Sie diese Richtlinie anwenden möchten.
+5. Wählen Sie auf der Seite **"Möchten Sie diese Richtlinie jetzt anwenden?"** die Gruppen aus, auf die Sie diese Richtlinie anwenden möchten.
 
 6. Wählen Sie **diese Richtlinie erstellen** aus.
 
-Die Richtlinie wird auf das Gerät jedes Benutzers übertragen, für den die Richtlinie gilt, wenn er sich das nächste Mal bei Microsoft 365 mithilfe seines mobilen Geräts anmeldet. Wenn Benutzer zuvor nach der Bereitstellung der Richtlinie keine Richtlinie auf ihr mobiles Gerät angewendet haben, erhalten sie eine Benachrichtigung auf ihrem Gerät, die die Schritte zum Registrieren und Aktivieren von Basic Mobility and Security enthält. Weitere Informationen finden Sie unter [Registrieren Ihres mobilen Geräts mit basic Mobility and Security.](enroll-your-mobile-device.md) Bis sie die Registrierung bei basic Mobility and Security abgeschlossen haben, die vom Intune-Dienst gehostet wird, ist der Zugriff auf E-Mails, OneDrive und andere Dienste eingeschränkt. Nachdem sie die Registrierung mithilfe der Intune-Unternehmensportal-App abgeschlossen haben, können sie die Dienste verwenden, und die Richtlinie wird auf ihr Gerät angewendet.
+Die Richtlinie wird an das Gerät jedes Benutzers übertragen, für den die Richtlinie gilt, wenn er sich das nächste Mal bei Microsoft 365 mithilfe seines mobilen Geräts anmeldet. Wenn Benutzer zuvor nach der Bereitstellung der Richtlinie keine Richtlinie auf ihr mobiles Gerät angewendet haben, erhalten sie eine Benachrichtigung auf ihrem Gerät, die die Schritte zum Registrieren und Aktivieren von Basic Mobility and Security enthält. Weitere Informationen finden Sie unter [Registrieren Ihres mobilen Geräts mit basic Mobility and Security.](enroll-your-mobile-device.md) Bis sie die Registrierung bei basic Mobility and Security abgeschlossen haben, die vom Intune-Dienst gehostet wird, ist der Zugriff auf E-Mails, OneDrive und andere Dienste eingeschränkt. Nachdem sie die Registrierung mithilfe der Intune-Unternehmensportal-App abgeschlossen haben, können sie die Dienste verwenden, und die Richtlinie wird auf ihr Gerät angewendet.
 
 ## <a name="step-2-verify-that-your-policy-works"></a>Schritt 2: Überprüfen, ob Ihre Richtlinie funktioniert
 
@@ -119,7 +120,7 @@ Wenn Sie einige Personen aus den Überprüfungen für den bedingten Zugriff auf 
 
 Wenn Sie eine Richtlinie auf Benutzergeräte anwenden, sind die Auswirkungen auf jedes Gerät je nach Gerätetyp unterschiedlich. In der folgenden Tabelle finden Sie Beispiele für die Auswirkung von Richtlinien auf verschiedene Geräte.
 
-|**Sicherheitspolitik**|**Android 4 und höher**|**Samsung KNOX**|**iOS 6 und höher**|**Hinweise**|
+|**Sicherheitspolitik**|**Android 4 und höher**|**Samsung KNOX**|**iOS 6 und höher**|**Notizen**|
 |:-----|:-----|:-----|:-----|:-----|
 |Verschlüsselte Sicherung erforderlich|Nein|Ja|Ja|iOS-verschlüsselte Sicherung erforderlich.|
 |Cloudsicherung blockieren|Ja|Ja|Ja|Google-Sicherung auf Android blockieren (abgeblendet), Cloud-Sicherung auf iOS.|
@@ -135,7 +136,7 @@ Wenn Sie eine Richtlinie auf Benutzergeräte anwenden, sind die Auswirkungen auf
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>Was geschieht beim Löschen einer Richtlinie oder beim Entfernen eines Benutzers aus der Richtlinie?
 
-Wenn Sie eine Richtlinie löschen oder einen Benutzer aus einer Gruppe entfernen, in der die Richtlinie bereitgestellt wurde, werden die Richtlinieneinstellungen Microsoft 365 E-Mail-Profils und zwischengespeicherte E-Mails möglicherweise vom Gerät des Benutzers entfernt. In der folgenden Tabelle sehen Sie, was für die verschiedenen Gerätetypen entfernt wird.
+Wenn Sie eine Richtlinie löschen oder einen Benutzer aus einer Gruppe entfernen, in der die Richtlinie bereitgestellt wurde, werden die Richtlinieneinstellungen, Microsoft 365 E-Mail-Profil und zwischengespeicherte E-Mails möglicherweise vom Gerät des Benutzers entfernt. In der folgenden Tabelle sehen Sie, was für die verschiedenen Gerätetypen entfernt wird.
 
 |**Entfernte Elemente**|**iOS 6 und höher**|**Android 4 und höher (einschließlich Samsung KNOX**|
 |:-----|:-----|:-----|

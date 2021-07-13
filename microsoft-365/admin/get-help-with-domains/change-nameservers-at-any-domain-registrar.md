@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 'Erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit Ihre Dienste wie E-Mail und Skype for Business Online Ihren eigenen Domänennamen verwenden. '
-ms.openlocfilehash: 1a65ca52b85c2cf2e4fc30e2a71e5930ae7a9a4d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c2de2d8b75aaf50bd1d19d3fd3b507fd476d4847
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287125"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393931"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle.
 
@@ -183,7 +184,7 @@ Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Web
 3. Geben Sie im Feld **Hostname oder Alias** **www** ein.
 4. Geben Sie im Feld **"Punkte zu Adresse"** den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Ihre Website ein. Beispiel: **contoso.5om**.
 5. Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie eine neue Zeitspanne aus der **TTL-Dropdownliste** aus. Fahren Sie andernfalls mit Schritt 6 fort.
-6. Wählen Sie **Speichern** aus.
+6. Klicken Sie auf **Speichern**.
 
 Nachdem die Namenservereinträge so aktualisiert wurden, dass sie auf Microsoft verweisen, ist Ihre Domäneneinrichtung abgeschlossen. E-Mails werden an Microsoft weitergeleitet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin zu Ihrem aktuellen Websitehost geleitet."
 

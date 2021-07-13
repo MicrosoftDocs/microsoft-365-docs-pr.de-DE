@@ -17,15 +17,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Ihre Abrechnungsadressen oder die E-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungsbenachrichtigungen für Microsoft 365 verwendet wird.
+description: Erfahren Sie, wie Sie Ihre Rechnungsadressen oder die E-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungsbenachrichtigungen für Microsoft 365 für Unternehmen verwendet wird.
 ms.date: 04/07/2021
-ms.openlocfilehash: afc23134f85995a5e8d7db0fb956635ceb6ea629
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683607"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394641"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
@@ -45,23 +46,23 @@ Weitere Informationen zu Ihrer Rechnung finden Sie unter [Anzeigen Ihrer Rechnun
 
 ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie im Admin Center zur **Seite** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**Abrechnungskonten.**</a>
+1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**"Abrechnungskonten".**</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungskonten.**
+1. Wechseln <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Sie</a>im Admin Center zur Seite **"Abrechnungskonten".** > 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungskonten.**
+1. Wechseln <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Sie</a>im Admin Center zur Seite **"Abrechnungskonten".** > 
 
 ::: moniker-end
 
-2. Wählen **Sie Rechnungskontoinformationen bearbeiten aus.**
+2. Wählen Sie **"Abrechnungskontoinformationen bearbeiten" aus.**
 
 3. Aktualisieren Sie die Informationen Ihrer Organisation, und wählen Sie dann **Speichern** aus.
   
@@ -75,13 +76,13 @@ Weitere Informationen zu Ihrer Rechnung finden Sie unter [Anzeigen Ihrer Rechnun
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **zahlungsmethoden.**
+1. Wechseln <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Sie</a>im Admin Center zur Seite **"Zahlungsmethoden** für > **Abrechnung".**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **zahlungsmethoden.**
+1. Wechseln <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Sie</a>im Admin Center zur Seite **"Zahlungsmethoden** für > **Abrechnung".**
 
 ::: moniker-end
 
@@ -162,6 +163,6 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) (Artikel)\
-[Verstehen Ihrer Rechnung](understand-your-invoice2.md) oder Rechnung (Artikel)\
-[Bezahlen Für Ihr Abonnement](pay-for-your-subscription.md) (Artikel)\
+[Grundlegendes zu Ihrer Rechnung](understand-your-invoice2.md) (Artikel)\
+[Bezahlen Ihres Abonnements](pay-for-your-subscription.md) (Artikel)\
 [Abonnements und Abrechnung – Administratorhilfe](../index.yml) (Linkseite)

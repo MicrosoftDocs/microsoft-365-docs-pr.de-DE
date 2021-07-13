@@ -13,23 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und Ihre Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung verwenden können, um Office-Add-Ins bereitzustellen.
-ms.openlocfilehash: 5d6f225acb56d1ec092046297d708444bb8d93d2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cb1cc019cfd87ee05112ea0ac1f0f1675316c6d3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227956"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393703"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
-Die zentrale Bereitstellung ist die empfohlene und funktionsreichere Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie ein Administrator sind, verwenden Sie diese Anleitung, um festzustellen, ob Ihre Organisation und Ihre Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung verwenden können.
+Die zentrale Bereitstellung ist die empfohlene und funktionsreichere Methode für die meisten Kunden, um Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie ein Administrator sind, verwenden Sie diese Anleitung, um festzustellen, ob Ihre Organisation und Ihre Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung verwenden können.
 
 Die zentrale Bereitstellung bietet die folgenden Vorteile:
 
@@ -39,14 +41,14 @@ Die zentrale Bereitstellung bietet die folgenden Vorteile:
 
 - Add-Ins werden für Benutzer nicht mehr angezeigt, wenn der Administrator das Add-In deaktiviert oder löscht oder wenn der Benutzer aus Azure Active Directory oder aus einer Gruppe entfernt wird, der das Add-In zugewiesen ist.
 
-Die zentrale Bereitstellung unterstützt drei Desktopplattformen Windows, Mac- und Online-Office-Apps. Die zentrale Bereitstellung unterstützt auch iOS und Android (nur Outlook mobile Add-Ins).
+Die zentrale Bereitstellung unterstützt drei Desktopplattformen Windows- und Mac- und Online-Office-Apps. Die zentrale Bereitstellung unterstützt auch iOS und Android (nur Outlook mobile Add-Ins).
 
 Es kann bis zu 24 Stunden dauern, bis ein Add-In für alle Benutzer für den Client angezeigt wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Die zentrale Bereitstellung von Add-Ins erfordert, dass die Benutzer Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium verwenden (und mithilfe ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und aktive Exchange Online Postfächer verfügen. Ihr Abonnementverzeichnis muss sich entweder in Azure Active Directory befinden oder mit Azure Active Directory verbunden sein.
-Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [zentralisierte Kompatibilitätsprüfung](#centralized-deployment-compatibility-checker)für die Bereitstellung verwenden.
+Die zentrale Bereitstellung von Add-Ins erfordert, dass die Benutzer Microsoft 365 Enterprise SKUs verwenden: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online und aktive Exchange Online Postfächer verfügen. Ihr Abonnementverzeichnis muss sich entweder in Azure Active Directory befinden oder mit Azure Active Directory verbunden sein.
+Sie können die spezifischen Anforderungen für Office und Exchange unten anzeigen oder die [zentralisierte Bereitstellungskompatibilitätsprüfung](#centralized-deployment-compatibility-checker)verwenden.
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 
@@ -55,13 +57,13 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 - Add-In-Bereitstellung in einem Exchange lokalen Postfach
 - Add-In-Bereitstellung in SharePoint
 - Teams-Apps
-- Bereitstellung von COM-Add-Ins (Component Object Model) oder Visual Studio-Tools für Office-Add-Ins (VSTO).
-- Bereitstellungen von Microsoft 365, die keine Exchange Online wie z. B. SKUs enthalten: Microsoft 365 Apps für Unternehmen und Microsoft 365 Apps für Enterprise.
+- Bereitstellung von Com-Add-Ins (Component Object Model) oder Visual Studio-Tools für Office -Add-Ins (VSTO).
+- Bereitstellungen von Microsoft 365, die keine Exchange Online wie z. B. SKUs enthalten: Microsoft 365 Apps for Business und Microsoft 365 Apps für Enterprise.
 
 ### <a name="office-requirements"></a>Office Anforderungen
 
-- Für Word-, Excel- und PowerPoint-Add-Ins müssen Ihre Benutzer eine der folgenden Optionen verwenden:
-  - Auf einem Windows Gerät, Version 1704 oder höher, Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
+- Für Word-, Excel- und PowerPoint-Add-Ins müssen Ihre Benutzer eine der folgenden Add-Ins verwenden:
+  - Auf einem Windows Gerät, Version 1704 oder höher von Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
   - Auf einem Mac, Version 15.34 oder höher.
 
 - Für Outlook müssen Ihre Benutzer eine der folgenden Optionen verwenden:
@@ -84,7 +86,7 @@ Informieren Sie sich beim Exchange-Administrator Ihrer Organisation, um herauszu
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Kompatibilitätsprüfung für die zentrale Bereitstellung
 
-Mithilfe der Zentralen Bereitstellungskompatibilitätsprüfung können Sie überprüfen, ob die Benutzer in Ihrem Mandanten für die Verwendung der zentralen Bereitstellung für Word, Excel und PowerPoint eingerichtet sind. Die Kompatibilitätsprüfung ist für die Unterstützung von Outlook nicht erforderlich. Laden Sie die [Kompatibilitätsprüfung herunter.](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)
+Mithilfe der Kompatibilitätsprüfung für die zentrale Bereitstellung können Sie überprüfen, ob die Benutzer in Ihrem Mandanten für die Verwendung der zentralen Bereitstellung für Word, Excel und PowerPoint eingerichtet sind. Die Kompatibilitätsprüfung ist für die Unterstützung von Outlook nicht erforderlich. Laden Sie die [Kompatibilitätsprüfung herunter.](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)
 
 #### <a name="run-the-compatibility-checker"></a>Ausführen der Kompatibilitätsprüfung
 
@@ -125,7 +127,7 @@ Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CS
 
 ## <a name="user-and-group-assignments"></a>Benutzer- und Gruppenzuordnungen
 
-Das Feature "Zentrale Bereitstellung" unterstützt derzeit die Mehrzahl der von Azure Active Directory unterstützten Gruppen, einschließlich Microsoft 365 Gruppen, Verteilerlisten und Sicherheitsgruppen.
+Das Feature für die zentrale Bereitstellung unterstützt derzeit die Mehrzahl der von Azure Active Directory unterstützten Gruppen, einschließlich Microsoft 365 Gruppen, Verteilerlisten und Sicherheitsgruppen.
 
 > [!NOTE]
 > Nicht für E-Mail aktivierte Sicherheitsgruppen werden derzeit nicht unterstützt.
@@ -155,7 +157,7 @@ Wenn probleme beim Laden des Add-Ins auftreten, während Sie Office Apps für da
 
 |**Plattform**|**Debuginformationen**|
 |:-----|:-----|
-|Büro  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ([erfahren Sie, wie](/onedrive/find-your-office-365-tenant-id))  <br/>  Correlationid. Zeigen Sie die Quelle einer der Office-Seiten an, suchen Sie nach dem Korrelations-ID-Wert, und senden Sie ihn an die Unterstützung:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ([erfahren Sie, wie](/onedrive/find-your-office-365-tenant-id))  <br/>  Correlationid. Zeigen Sie die Quelle einer der Office-Seiten an, suchen Sie nach dem Korrelations-ID-Wert, und senden Sie ihn an die Unterstützung:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich Clients (Windows, Mac)  <br/> | Charles/Fiddler-Protokolle  <br/>  Erstellen von Nummern der Client-App (vorzugsweise als Screenshot aus **Datei/Konto)**  <br/> |
 
 ## <a name="related-content"></a>Verwandte Inhalte

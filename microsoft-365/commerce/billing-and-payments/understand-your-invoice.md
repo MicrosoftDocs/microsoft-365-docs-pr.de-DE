@@ -18,16 +18,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen können.
 keywords: Abrechnungskonten, Unternehmensinformationen, Rechnungen
 ms.date: 05/04/2021
-ms.openlocfilehash: 64ccf82549bb85ba803693eb3e7c15939940d45c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: b780b2f0379e9e1f1866c22139a7ac3504a23b53
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635846"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394509"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Erläuterungen zu Ihrer Rechnung
 
@@ -152,7 +153,7 @@ Wenn Sie Fragen haben oder Hilfe mit Ihrer Rechnung im Microsoft 365 Admin Cente
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verstehen Ihrer Rechnung oder Rechnung für Microsoft 365 Business](understand-your-invoice2.md) (Artikel)\
-[Nachverfolgen von Microsoft Customer Agreement Azure Credit Balance](/azure/billing/billing-mca-check-azure-credits-balance) (Artikel)\
-[Überprüfen Ihrer Microsoft Customer Agreement Rechnung](/azure/cost-management-billing/understand/review-customer-agreement-bill) (Artikel)\
-[Erste Schritte mit Ihrem Abrechnungskonto](/azure/billing/billing-mca-overview) für Microsoft Customer Agreement (Artikel)
+[Grundlegendes zu Ihrer Rechnung für Microsoft 365 business](understand-your-invoice2.md) (Artikel)\
+[Nachverfolgen des Azure-Guthabens des Microsoft-Kundenvertrags](/azure/billing/billing-mca-check-azure-credits-balance) (Artikel)\
+[Überprüfen Der Rechnung Ihrer Microsoft-Kundenvereinbarung](/azure/cost-management-billing/understand/review-customer-agreement-bill) (Artikel)\
+[Erste Schritte mit Ihrem Abrechnungskonto für Microsoft-Kundenvereinbarung](/azure/billing/billing-mca-overview) (Artikel)

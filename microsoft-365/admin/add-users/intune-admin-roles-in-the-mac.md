@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: 60a1f21e65df007e78077d8c3bb22161313c1073
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: bee35191e7e80313521891a1efc1780489902ae8
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759906"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394327"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Intune-Administratorrollen im Microsoft 365 Admin Center 
 
-Ihr Microsoft 365- oder Office 365-Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation mithilfe von Microsoft 365 Admin Center zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet. Über diese Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern.
+Ihr Microsoft 365- oder Office 365-Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation mithilfe des Microsoft 365 Admin Centers zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet und mit diesen Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern.
 
 Im Microsoft 365 Admin Center können Sie Microsoft Intune-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Intune Admin Center verfügbar sind. Sind Sie an detaillierten Rollenbeschreibungen für Microsoft Intune interessiert? Siehe [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
@@ -46,7 +47,7 @@ Im Microsoft 365 Admin Center können Sie zu **Rollen** wechseln und dann eine b
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Delegierte Administration für Microsoft-Partner
 
-Wenn Sie mit einem Microsoft-Partner arbeiten, können Sie den entsprechenden Personen Administratorrollen zuweisen. Diese können wiederum Benutzern in Ihrem (oder deren) Unternehmen Administratorrollen zuweisen. Dies kann beispielsweise sinnvoll sein, wenn diese Personen Ihre Online-Organisation für Sie einrichten und verwalten.
+Wenn Sie mit einem Microsoft-Partner arbeiten, können Sie den entsprechenden Personen Administratorrollen zuweisen. Diese können wiederum den Benutzern in Ihrem (oder deren) Unternehmen Administratorrollen zuweisen. Dies kann beispielsweise sinnvoll sein, wenn diese Personen Ihre Online-Organisation für Sie einrichten und verwalten.
   
 Ein Partner kann die folgenden Rollen zuweisen: 
   
@@ -56,10 +57,8 @@ Ein Partner kann die folgenden Rollen zuweisen:
 
 Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als delegierten Administrator zu Ihrem Konto hinzufügen. Dieser Vorgang wird von einem autorisierten Partner initiiert. Der Partner fragt Sie in einer E-Mail-Nachricht, ob Sie ihm die Berechtigung erteilen möchten, als delegierter Administrator zu fungieren. Weitere Informationen hierzu finden Sie unter [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md).
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
-
-[Zuweisen von Administratorrollen](assign-admin-roles.md)
-
-[Teams-Aktivitätsberichte im Microsoft 365 Admin Center](../activity-reports/activity-reports.md)
+[Über Microsoft 365-Administratorrollen](about-admin-roles.md) (Artikel)\
+[Zuweisen von Administratorrollen](assign-admin-roles.md) (Artikel)\
+[Aktivitätsberichte im Microsoft 365 Admin Center](../activity-reports/activity-reports.md) (Artikel)

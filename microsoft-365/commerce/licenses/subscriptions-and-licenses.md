@@ -18,19 +18,20 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
-description: Welche Anwendungen und Dienste Sie erhalten, hängt davon ab, welches Microsoft 365 Produkt Sie gekauft haben, z. B. Microsoft 365 Apps for Business.
+description: Welche Anwendungen und Dienste Sie erhalten, hängt davon ab, welches Microsoft 365 Produkt Sie erworben haben, z. B. Microsoft 365 Apps for Business.
 ms.date: 07/01/2020
-ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779879"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394425"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business
 
-Wenn Sie ein Abonnement für Microsoft 365 business erwerben, registrieren Sie sich für eine Reihe von Apps und Diensten, die Sie monatlich oder jährlich bezahlen. Welche Anwendungen und Dienste Sie als Teil Ihres Abonnements erhalten, hängt davon ab, welches Produkt Sie erworben haben, z. B. Microsoft 365 Apps for Business oder Microsoft 365 Business Standard. Auf der Seite Microsoft 365 für [kleine und mittelständische Unternehmen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) können Sie sehen, was die einzelnen Produkte enthalten.
+Wenn Sie ein Abonnement für Microsoft 365 business erwerben, registrieren Sie sich für eine Reihe von Apps und Diensten, die Sie monatlich oder jährlich bezahlen. Welche Anwendungen und Dienste Sie im Rahmen Ihres Abonnements erhalten, hängt davon ab, welches Produkt Sie erworben haben, z. B. Microsoft 365 Apps for Business oder Microsoft 365 Business Standard. Auf der Seite Microsoft 365 für [kleine und mittelständische Unternehmen](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) können Sie sehen, was die einzelnen Produkte enthalten.
 
 Wenn Sie ein Abonnement kaufen, geben Sie die Anzahl der Lizenzen an, die Sie benötigen, und zwar basierend auf der Anzahl der in Ihrer Organisation beschäftigten Mitarbeiter. Nachdem Sie ein Abonnement erworben haben, erstellen Sie Konten für Personen in Ihrer Organisation und weisen dann jeder Person eine Lizenz zu. Wenn sich die Anforderungen Ihrer Organisation ändern, können Sie zusätzliche Lizenzen für neue Benutzer erwerben, oder bestehende Lizenzen anderen Benutzern zuweisen, wenn jemand Ihre Organisation verlässt.
 
@@ -55,7 +56,7 @@ In der folgenden Tabelle wird aufgeführt, was automatisch passiert, wenn Sie ei
   
 |**Bei diesem Dienst zum Abonnement**|**Dies geschieht automatisch**|
 |:-----|:-----|
-|Exchange Online  <br/> |Es wird ein Postfach für diese Person erstellt. <br/> Informationen zum SLA für diese Aufgabe finden Sie unter ["Einrichten..." Nachrichten im Microsoft 365 Admin Center.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |Es wird ein Postfach für diese Person erstellt. <br/> Informationen zum SLA für diese Aufgabe finden Sie unter ["Einrichten..." Nachrichten im Microsoft 365 Admin Center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Dieser Person werden Bearbeitungsberechtigungen für die standardmäßige SharePoint Online-Teamwebsite zugewiesen.  <br/> |
 |Skype for Business Online  <br/> |Die Person hat Zugriff auf die mit der Lizenz verbundenen Features.  <br/> |
 |Microsoft 365 Apps for Enterprise  <br/> |Die Person kann Office Apps auf bis zu fünf Macs oder PCs, fünf Tablets und fünf Smartphones herunterladen.  <br/> |

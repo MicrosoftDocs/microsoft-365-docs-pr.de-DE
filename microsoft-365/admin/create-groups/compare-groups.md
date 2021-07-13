@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Mitglieder von Microsoft 365-Gruppen erhalten eine Gruppen-E-Mail und einen gemeinsamen Arbeitsbereich für Unterhaltungen, Dateien, Kalenderereignisse, Stream sowie Planner.
-ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 1c9cfb1a1dd65dd72f80b0b0e0f76ccd944b81e2
+ms.sourcegitcommit: 233989a02a3fc6db33c995ad06b1f820f08f8f0a
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377181"
+ms.locfileid: "53383438"
 ---
 # <a name="compare-groups"></a>Vergleichen von Gruppen
 
@@ -50,6 +50,8 @@ Microsoft 365-Gruppen können [für die dynamische Mitgliedschaft in Azure Activ
 Auf Microsoft 365-Gruppen kann über Mobile Apps wie Outlook für iOS und Outlook für Android zugegriffen werden.
 
 Gruppenmitglieder können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Gruppen-E-Mail-Adresse senden, sofern dieses Feature [vom Administrator aktiviert wurde](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
+
+Microsoft 365-Gruppen unterstützen keine Schachtelung mit anderen Microsoft 365-Gruppen oder mit Verteiler- oder Sicherheitsgruppen.
 
 ## <a name="distribution-groups"></a>Verteilergruppen
 
@@ -97,5 +99,8 @@ Es nicht möglich, ein freigegebenes Postfach zu einer Microsoft 365-Gruppe zu m
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (Artikel)\
-[Warum Sie Ihre Verteilerlisten zu Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (Artikel)
+[Informationen zu Microsoft 365-Gruppen](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Upgraden von Verteilerlisten auf Microsoft 365-Gruppen in Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

@@ -13,31 +13,33 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit dem Sammeln von Daten für Ihren Mandanten beginnen, indem Sie die Vorlagen-App Microsoft 365 Usage Analytics in Power BI verwenden.
-ms.openlocfilehash: 4a3110ead76621e93e646577189b7b03d65caf1d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c0e39a307ee75c661e0f91fcbbcfeae3d95c7257
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286069"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394749"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
-Microsoft 365 Nutzungsanalyse ist noch nicht für Microsoft 365 US Government Community verfügbar.
+Microsoft 365 Nutzungsanalyse ist für Microsoft 365 US Government Community noch nicht verfügbar.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 To get started with Microsoft 365 usage analytics you must first make the data available in the Microsoft 365 Admin Center, then initiate the template app in Power BI.
 
 ## <a name="get-power-bi"></a>So erhalten Sie Power BI
 
-Wenn Sie noch nicht über Power BI verfügen, können Sie [sich für Power BI Pro registrieren.](https://go.microsoft.com/fwlink/p/?linkid=845347) Wählen Sie **"Kostenlos testen"** aus, um sich für eine Testversion zu registrieren, oder **kaufen Sie jetzt,** um Power BI Pro zu erhalten.
+Wenn Sie noch nicht über Power BI verfügen, können Sie [sich für Power BI Pro registrieren.](https://go.microsoft.com/fwlink/p/?linkid=845347) Wählen Sie **"Kostenlos testen"** aus, um sich für eine Testversion zu registrieren, oder **"Jetzt kaufen",** um Power BI Pro zu erhalten.
 
 
 Sie können auch **Produkte** erweitern, um eine Power BI-Version zu erwerben.
@@ -57,13 +59,13 @@ Weitere Informationen finden Sie [unter "Administratorrollen".](../add-users/abo
 
 2. Wählen Sie auf der Registerkarte **"Dienste"** die Option  **"Berichte"** aus.
 
-3. Legen Sie im daraufhin geöffneten Berichtsbereich **"Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**" fest.
+3. Legen Sie im daraufhin geöffneten Berichtsbereich **"Berichtsdaten verfügbar machen" für Microsoft 365 Nutzungsanalyse für Power BI** **auf "Beim** \> **Speichern"** fest.
 
 Der Datensammlungsprozess wird in zwei bis 48 Stunden abgeschlossen, abhängig von der Größe Ihres Mandanten. Die Schaltfläche **"Zu Power BI** wechseln" wird aktiviert (nicht mehr grau), wenn die Datensammlung abgeschlossen ist.
 
 ## <a name="start-the-template-app"></a>Starten der Vorlagen-App
 
-Um die Vorlagen-App zu starten, müssen Sie entweder **ein globaler Administrator,** **Berichtsleser,** **Exchange-Administrator,** **Skype for Business-Administrator** oder **SharePoint-Administrator** sein.
+Um die Vorlagen-App zu starten, müssen Sie entweder **ein globaler Administrator,** **ein Berichtsleser,** **Exchange Administrator,** **Skype for Business Administrator** oder **SharePoint Administrator** sein.
 
 1. Kopieren Sie die Mandanten-ID, und wählen Sie **"Zu Power BI** wechseln" aus.
 
@@ -77,15 +79,15 @@ Um die Vorlagen-App zu starten, müssen Sie entweder **ein globaler Administrato
 
 5. Wählen Sie **"App erkunden"** aus, um die App mit Beispieldaten anzuzeigen. Wählen Sie **Verbinden** aus, um die App mit den Daten Ihrer Organisation zu verbinden.
 
-6. Wählen Sie im Verbinden **Verbinden** aus, um die **Nutzungsanalyse zu Microsoft 365,** geben Sie dann die Mandanten-ID (ohne Gedankenstriche) ein, die Sie in Schritt (1) kopiert haben, und wählen Sie **Weiter** aus.
+6. Wählen Sie im Verbinden **Verbinden** aus, um den Bildschirm für die **Nutzungsanalyse zu Microsoft 365,** geben Sie dann die Mandanten-ID (ohne Gedankenstriche) ein, die Sie in Schritt (1) kopiert haben, und wählen Sie **"Weiter"** aus.
 
 7. Wählen Sie auf dem nächsten Bildschirm **OAuth2** als **Authentifizierungsmethode** \> **aus.** Wenn Sie eine andere Authentifizierungsmethode auswählen, schlägt die Verbindung mit der Vorlagen-App fehl.
 
     ![Auswählen eines Microsoft-Kontos als Authentifizierungsmethode](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. Nachdem die Vorlagen-App instanziiert wurde, ist das Dashboard für die Microsoft 365 Nutzungsanalyse in Power BI im Web verfügbar. Das erste Laden des Dashboards dauert zwischen 2 und 30 Minuten.
+8. Nachdem die Vorlagen-App instanziiert wurde, ist das Dashboard für die Nutzungsanalyse Microsoft 365 in Power BI im Web verfügbar. Das erste Laden des Dashboards dauert zwischen 2 und 30 Minuten.
 
-Aggregate auf Mandantenebene sind nach der Anmeldung in allen Berichten verfügbar. **Details auf Benutzerebene werden erst am 5. des nächsten Kalendermonats verfügbar sein, nachdem Sie sich angemeldet haben.** Dies wirkt sich auf alle Berichte unter "Benutzeraktivität" aus (Tipps zum Anzeigen und Verwenden dieser Berichte finden Sie [unter Navigieren und Verwenden der Berichte in Microsoft 365 Nutzungsanalyse).](navigate-and-utilize-reports.md)
+Aggregate auf Mandantenebene sind nach der Anmeldung in allen Berichten verfügbar. **Details auf Benutzerebene werden erst am 5. des nächsten Kalendermonats verfügbar sein, nachdem Sie sich angemeldet haben.** Dies wirkt sich auf alle Berichte unter "Benutzeraktivität&quot; aus (Tipps zum Anzeigen und Verwenden dieser Berichte finden Sie [unter &quot;Navigieren und Verwenden der Berichte in Microsoft 365 Nutzungsanalyse").](navigate-and-utilize-reports.md)
 
 ## <a name="make-the-collected-data-anonymous"></a>Anonymisieren der gesammelten Daten
 

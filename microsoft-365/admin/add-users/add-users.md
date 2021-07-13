@@ -15,16 +15,17 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
-description: Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei Microsoft 365 für Unternehmen anmelden und darauf zugreifen zu können. Erfahren Sie, wie Sie Benutzer hinzufügen und Lizenzen zuweisen können.
+description: Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei Microsoft 365 für Unternehmen anmelden und darauf zugreifen zu können. Erfahren Sie, wie Sie Benutzer hinzufügen und Lizenzen zuweisen.
 ms.date: 07/01/2020
-ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535998"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394099"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Gleichzeitiges Hinzufügen von Benutzern und Zuweisen von Lizenzen
 

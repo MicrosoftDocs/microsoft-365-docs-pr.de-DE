@@ -24,17 +24,18 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 Business Premium, einen Abonnementdienst, der Office Apps und erweiterten Schutz vor Cyberbedrohungen umfasst.
-ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 96b915924013c29c8f30dd22c85ed389cb66a772
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287625"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394189"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Überblick über Microsoft 365 Business Premium
 

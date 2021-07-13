@@ -16,29 +16,30 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Informationen zum Erstellen und Löschen Microsoft 365 Gruppen, Zum Hinzufügen und Entfernen von Gruppenmitgliedern und zum Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Erfahren Sie, wie Sie Microsoft 365 Gruppen erstellen und löschen, Gruppenmitglieder hinzufügen und entfernen und die Funktionsweise der Gruppe anpassen.
+ms.openlocfilehash: 1afa8d38d05ca0383f56cdba795f26739457347c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635582"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393751"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Erstellen einer Gruppe im Microsoft 365 Admin Center
   
-Während Benutzer eine Microsoft 365 aus Outlook oder anderen Apps erstellen können, müssen Sie als Administrator möglicherweise Gruppen erstellen oder löschen, Mitglieder hinzufügen oder entfernen und ihre Funktionsweise anpassen. Diese Aufgaben führen Sie im Microsoft 365 Admin Center aus. 
+Während Benutzer eine Microsoft 365 Gruppe aus Outlook oder anderen Apps erstellen können, müssen Sie als Administrator möglicherweise Gruppen erstellen oder löschen, Mitglieder hinzufügen oder entfernen und ihre Funktionsweise anpassen. Diese Aufgaben führen Sie im Microsoft 365 Admin Center aus. 
 
 > [!TIP]
-> Microsoft 365 verbundenen Yammer müssen in Yammer erstellt werden, können aber wie andere Microsoft 365 im Microsoft 365 Admin Center verwaltet werden. Weitere Informationen finden Sie unter [Yammer und Microsoft 365 Gruppen](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
+> Microsoft 365 verbundene Yammer Gruppen müssen in Yammer erstellt werden, können aber wie andere Microsoft 365 Gruppen in der Microsoft 365 Admin Center verwaltet werden. Weitere Informationen finden Sie unter [Yammer und Microsoft 365-Gruppen.](/yammer/manage-yammer-groups/yammer-and-office-365-groups) 
 
 ## <a name="create-a-microsoft-365-group"></a>Erstellen einer Microsoft 365-Gruppe
 
-1. Erweitern Sie im Admin Center **gruppen**, und klicken Sie dann auf **Gruppen**.
+1. Erweitern Sie im Admin Center **Gruppen,** und klicken Sie dann auf **"Gruppen".**
 
 2. Wählen Sie **Gruppe hinzufügen** aus.
   
@@ -72,20 +73,20 @@ Benutzer können [sich selbst hinzufügen oder eine Genehmigung anfordern](https
     
 Die Gruppe wird in Outlook mit den ihr zugewiesenen Mitgliedern angezeigt.
 
-## <a name="who-can-delete-email-from-the-group-inbox"></a>Wer E-Mails aus dem Posteingang der Gruppe löschen können?
+## <a name="who-can-delete-email-from-the-group-inbox"></a>Wer können E-Mails aus dem Posteingang der Gruppe löschen?
 
 Der Besitzer der Gruppe kann beliebige E-Mails aus dem Posteingang der Gruppe löschen – unabhängig davon, ob er der ursprüngliche Autor war.
   
-Ein Mitglied kann eine E-Mail-Unterhaltung aus dem Posteingang der Gruppe löschen, wenn es sie initiiert hat, und nur Outlook im Web verwenden (klicken Sie mit der rechten Maustaste auf die E-Mail, und wählen Sie dann **Löschen** aus). Aus der Outlook-App heraus (Outlook 2016) ist dies nicht möglich.
+Ein Mitglied kann eine E-Mail-Unterhaltung aus dem Posteingang der Gruppe löschen, wenn es sie initiiert hat, und nur mit Outlook im Web (klicken Sie mit der rechten Maustaste auf die E-Mail, und wählen Sie **"Löschen"** aus). Aus der Outlook-App heraus (Outlook 2016) ist dies nicht möglich.
   
 Wenn eine E-Mail aus dem Gruppenpostfach gelöscht wird, wird Sie nicht aus den persönlichen Postfächern der Gruppenmitglieder gelöscht.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie eine neue Gruppe erstellt und Mitglieder hinzugefügt haben, können Sie Ihre Gruppe weiter konfigurieren, z. B. den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder ändern und festlegen, ob externe Absender E-Mails an die Gruppe senden können und ob Kopien der Gruppenunterhaltungen an die Mitglieder gesendet werden. Weitere Informationen finden Sie unter Manage [a Microsoft 365 group.](manage-groups.md)
+Nachdem Sie eine neue Gruppe erstellt und Mitglieder hinzugefügt haben, können Sie Ihre Gruppe weiter konfigurieren, z. B. den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder ändern und festlegen, ob externe Absender E-Mails an die Gruppe senden können und ob Kopien der Gruppenunterhaltungen an die Mitglieder gesendet werden. Weitere Informationen finden Sie unter [Verwalten einer Microsoft 365-Gruppe.](manage-groups.md)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Verwalten des Gastzugriffs auf Microsoft 365 Gruppen](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (Artikel)\
-[Wählen Sie die Domäne aus, die](../../solutions/choose-domain-to-create-groups.md) beim Erstellen Microsoft 365 (Artikel)\ verwendet werden soll.
+[Wählen Sie die Domäne aus, die beim Erstellen Microsoft 365 Gruppen](../../solutions/choose-domain-to-create-groups.md) (Artikel)\ verwendet werden soll.
 [Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen](../manage/upgrade-distribution-lists.md) (Artikel)

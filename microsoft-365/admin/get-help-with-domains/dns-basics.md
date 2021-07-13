@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Das Domain Name System (DNS) ordnet Computerhostnamen IP-Adressen zu. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen hilft Ihnen dabei, Domänen zu verwalten.
-ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 68b9b82d52e9bb2c4105237f0a29e8137623138e
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635426"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393907"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 

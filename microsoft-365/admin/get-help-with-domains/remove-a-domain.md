@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -22,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verschieben oder Ihr Abonnement kündigen.
-ms.openlocfilehash: ce75be758edf330226692395dbc6a2c332ed9069
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 227ca3e58a4c6278278048deeffcf68c1d659546
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286249"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393871"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen.
 
-Entfernen Sie Ihre Domäne, da Sie sie einem anderen Microsoft 365 Abonnementplan hinzufügen möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
+Entfernen Sie Ihre Domäne, weil Sie sie einem anderen Microsoft 365 Abonnementplan hinzufügen möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
 
 ### <a name="step-1-move-users-to-another-domain"></a>Schritt 1: Verschieben von Benutzern in eine andere Domäne
 
@@ -187,6 +189,6 @@ Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfe
 
 [Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)
 
-[Wechseln zu einem anderen Microsoft 365 für Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (Artikel)
+[Wechseln zu einem anderen Microsoft 365 für Geschäftspläne](../../commerce/subscriptions/switch-to-a-different-plan.md) (Artikel)
 
 [Kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md) (Artikel)

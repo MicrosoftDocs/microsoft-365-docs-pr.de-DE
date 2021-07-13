@@ -13,22 +13,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Erhalten Sie einen Überblick darüber, wie Ihre Organisation Microsoft 365 Dienste zur Kommunikation und Zusammenarbeit übernimmt.
-ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007165"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394677"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
 
-Verwenden Sie Microsoft 365 Nutzungsanalyse in Power BI, um Einblicke zu erhalten, wie Ihre Organisation die verschiedenen Dienste innerhalb Microsoft 365 übernimmt. Sie können Microsoft 365 Nutzungsdaten visualisieren und analysieren, benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben. Sie können auch Einblicke gewinnen, wie bestimmte Regionen oder Abteilungen Microsoft 365 verwenden.
+Verwenden Sie Microsoft 365 Nutzungsanalysen innerhalb Power BI, um Einblicke zu erhalten, wie Ihre Organisation die verschiedenen Dienste innerhalb Microsoft 365 übernimmt. Sie können Microsoft 365 Nutzungsdaten visualisieren und analysieren, benutzerdefinierte Berichte erstellen und die Einblicke in Ihrer Organisation freigeben. Sie können auch Einblicke gewinnen, wie bestimmte Regionen oder Abteilungen Microsoft 365 verwenden.
   
 Microsoft 365 Nutzungsanalyse bietet Ihnen Zugriff auf ein vordefiniertes Dashboard, das eine produktübergreifende Ansicht der letzten 12 Monate bereitstellt und eine Reihe vordefinierter Berichte enthält. Jeder Bericht liefert Ihnen spezifische Erkenntnisse zur Nutzung. Benutzerspezifische Informationen sind für den letzten vollständigen Kalendermonat verfügbar.
   
@@ -46,7 +48,7 @@ Die Kurzfassung bietet auf einen Blick eine übergeordnete Ansicht der Berichte 
 
 In dieser Kurzfassung können Sie schnell Nutzungsmuster in Office erkennen und verstehen, wie und wo Ihre Mitarbeiter zusammenarbeiten.
 
-![Abbildung der Nutzungszusammenfassung Microsoft 365.](../../media/office365usage-exec-summary.png)
+![Abbildung der Zusammenfassung der Microsoft 365 Nutzung.](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>Übersicht
 
@@ -66,7 +68,7 @@ Der Microsoft 365 Übersichtsbericht enthält die folgenden Berichte. Sie könne
 
 ## <a name="activation-and-licensing"></a>Aktivierung und Lizenzierung
 
-Die Aktivierungs- und Lizenzseite bietet Berichte über Microsoft 365 Aktivierung; das heißt, wie viele Benutzer Office Apps heruntergeladen und aktiviert haben und wie viele Lizenzen von Ihrer Organisation zugewiesen wurden. Der Monatswert im oberen Bereich bezieht sich auf den aktuellen Monat, und die Metriken spiegeln die vom Anfang des Monats bis zum aktuellen Datum aggregierten Werte wider.
+Die Aktivierungs- und Lizenzseite bietet Berichte über Microsoft 365 Aktivierung; Das heißt, wie viele Benutzer Office Apps heruntergeladen und aktiviert haben und wie viele Lizenzen von Ihrer Organisation zugewiesen wurden. Der Monatswert im oberen Bereich bezieht sich auf den aktuellen Monat, und die Metriken spiegeln die vom Anfang des Monats bis zum aktuellen Datum aggregierten Werte wider.
 
 - **Aktivierung** &ndash; Nachverfolgen von Serviceplanaktivierungen (z. B. Microsoft 365 Apps for Enterprise, Project und Visio) in Ihrer Organisation. Jede Person mit einer Office-Lizenz kann Produkte auf bis zu fünf Geräten installieren. Mit den Berichten in diesem Abschnitt können Sie auch die Geräte anzeigen, auf denen Personen Office-Apps installiert haben. Beachten Sie, dass ein Benutzer die App installieren und sich mit seinem-Konto anmelden muss, um einen Plan zu aktivieren.
 
@@ -129,7 +131,7 @@ Die Daten in der Vorlagen-App umfassen derzeit den gleichen Satz von Aktivitäts
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>Inwiefern unterscheiden sich die Daten in der Vorlagen-App von den Daten in den Verwendungsberichten?
 
-Die zugrunde liegenden Daten, die In der Vorlagen-App angezeigt werden, entsprechen den Daten, die in den Aktivitätsberichten im Microsoft 365 Admin Center angezeigt werden. Die wichtigsten Unterschiede bestehen darin, dass die Daten im Admin Center für die letzten 30.7.90/180 Tage verfügbar sind, während die Vorlagen-App Daten für bis zu 12 Monate monatlich anzeigt.
+Die zugrunde liegenden Daten, die In der Vorlagen-App angezeigt werden, entsprechen den Daten, die in den Aktivitätsberichten im Microsoft 365 Admin Center angezeigt werden. Die wichtigsten Unterschiede bestehen darin, dass die Daten im Admin Center für die letzten 30.7.90/180 Tage verfügbar sind, während die Vorlagen-App Daten monatlich für bis zu 12 Monate anzeigt.
 
 Darüber hinaus sind Details auf Benutzerebene in der Vorlagen-App nur für den letzten vollständigen Monat für Benutzer verfügbar, denen eine Produktlizenz zugewiesen und eine Aktivität ausgeführt wurde.
 
@@ -155,7 +157,7 @@ Die aktuelle Version der Vorlagen-App enthält Dateiaktivitäten von SharePoint 
 
 ### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Welche Gruppen sind im Nutzungsbericht Microsoft 365 Gruppen enthalten?
 
-Die aktuelle Version der Vorlagen-App umfasst die Verwendung von Outlook Gruppen, Yammer Gruppen und SharePoint Gruppen. Es sind keine Gruppen im Zusammenhang mit Microsoft Teams oder Planner enthalten.
+Die aktuelle Version der Vorlagen-App umfasst die Verwendung von Outlook-Gruppen, Yammer-Gruppen und SharePoint-Gruppen. Es sind keine Gruppen im Zusammenhang mit Microsoft Teams oder Planner enthalten.
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>Wann wird eine aktualisierte Version der Vorlagen-App verfügbar sein?
 
@@ -214,5 +216,5 @@ Ja. Informationen dazu finden Sie unter [Anonymisieren der gesammelten Daten](en
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Aktivieren von Analysen zur Nutzung von Microsoft 365](enable-usage-analytics.md) (Artikel)\
-[Navigieren und Verwenden der Berichte in Microsoft 365 Nutzungsanalyse](navigate-and-utilize-reports.md) (Artikel)\
+[Navigieren und Nutzen der Berichte in Microsoft 365 Nutzungsanalyse](navigate-and-utilize-reports.md) (Artikel)\
 [Überprüfen von Nutzungsberichten in Microsoft 365](../../business-video/act-on-report.md) (Video)

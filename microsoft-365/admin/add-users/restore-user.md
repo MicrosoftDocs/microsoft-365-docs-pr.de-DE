@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Innerhalb von 30 Tagen nach dem Löschen eines Benutzerkontos können Sie das Konto und alle Daten wiederherstellen, und der Benutzer kann sich mit demselben Konto anmelden.
-ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: e37f913bcc6a54bdcc1e0f52168fe1aab0c8afdd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779650"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394267"
 ---
 # <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
    
@@ -38,7 +39,7 @@ Nachfolgend ein paar Tipps:
   
 - Stellen Sie sicher, dass Dem Konto Lizenzen zugewiesen werden können.
     
-- Wenn Ihr Unternehmen Active Directory verwendet, finden Sie Informationen zum Wiederherstellen eines Benutzerkontos unter [Problembehandlung gelöschter Benutzerkonten in Office 365.](/office365/troubleshoot/active-directory/restore-deleted-user-accounts) 
+- Wenn Ihr Unternehmen Active Directory verwendet, finden Sie Informationen zum Wiederherstellen eines Benutzerkontos unter [Problembehandlung bei gelöschten Benutzerkonten in Office 365.](/office365/troubleshoot/active-directory/restore-deleted-user-accounts) 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Wiederherstellen eines oder mehrerer Benutzerkonten
 
@@ -67,7 +68,7 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
     > [!NOTE]
     > Wenn mindestens zwei Benutzer nicht wiederhergestellt werden können, wird in einer Fehlermeldung angezeigt, dass der Wiederherstellungsvorgang für einige Benutzer nicht erfolgreich ausgeführt wurde. Öffnen Sie das Protokoll, um anzuzeigen, welche Benutzer nicht wiederhergestellt wurden, und stellen Sie dann die entsprechenden Konten jeweils einzeln wieder her. 
   
-3. Folgen Sie den Aufforderungen, um das Kennwort festzulegen, und wählen Sie **"Wiederherstellen"** aus.
+3. Folgen Sie den Aufforderungen, um das Kennwort festzulegen, und wählen Sie **"Wiederherstellen" aus.**
     
 4. Sie werden in einer Meldung darüber informiert, dass beim Wiederherstellen des Kontos ein Problem aufgetreten ist. Führen Sie eine der folgenden Aktionen aus:
     
@@ -81,7 +82,7 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
 
 Ein Proxyadressenkonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, das eine Proxyadresse enthält, dieselbe Proxyadresse einem anderen Konto zuweisen und dann versuchen, das gelöschte Konto wiederherzustellen. Führen Sie die nachstehenden Schritte aus, um das Problem zu beheben.
   
-Sie müssen über [Administratorberechtigungen](about-admin-roles.md) in Microsoft 365 verfügen, um dies zu tun. 
+Dazu benötigen Sie [Administratorberechtigungen](about-admin-roles.md) in Microsoft 365. 
 
 1. Wechseln Sie im Admin Center zur Seite **"Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte Benutzer".</a>
 

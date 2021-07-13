@@ -1,5 +1,5 @@
 ---
-title: Durchführen einer internen Administratorübernahme
+title: Durchführen einer internen Übernahme durch den Administrator
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -13,62 +13,64 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Erfahren Sie, wie Sie Ihren E-Mail- und Domänenbesitz überprüfen, um einen nicht verwalteten Mandanten zu übernehmen, der durch eine Self-Service-Benutzerregistrierung in einem Microsoft 365.
-ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Erfahren Sie, wie Sie Ihren E-Mail- und Domänenbesitz überprüfen, um einen nicht verwalteten Mandanten zu übernehmen, der von einer Self-Service-Benutzeranmeldung in Microsoft 365 erstellt wurde.
+ms.openlocfilehash: f6378c708e0533c2da2d38bfe5eb8009515423c7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635986"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393847"
 ---
-# <a name="perform-an-internal-admin-takeover"></a>Durchführen einer internen Administratorübernahme
+# <a name="perform-an-internal-admin-takeover"></a>Durchführen einer internen Übernahme durch den Administrator
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
 
-Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehmen möchten, der durch eine Self-Service-Benutzer-Anmeldung erstellt wurde, können Sie dies mit einer internen Administratorübernahme tun.
+Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehmen möchten, der von einer Self-Service-Benutzeranmeldung erstellt wurde, können Sie dies mit einer internen Administratorübernahme tun.
 
 > [!NOTE]
-> Eine Self-Service-Anmeldung für jeden Clouddienst, der Azure AD verwendet, fügt den Benutzer einem nicht verwalteten Azure AD-Verzeichnis oder einem "Schatten" hinzu und erstellt einen nicht verwalteten Mandanten. Ein nicht verwalteter Mandant ist ein Verzeichnis ohne globalen Administrator. Informationen dazu, ob ein Mandant verwaltet oder nicht verwaltet wird, finden Sie unter [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
+> Eine Self-Service-Registrierung für jeden Clouddienst, der Azure AD verwendet, fügt den Benutzer einem nicht verwalteten oder "Schatten" Azure AD-Verzeichnis hinzu und erstellt einen nicht verwalteten Mandanten. Ein nicht verwalteter Mandant ist ein Verzeichnis ohne globalen Administrator. Informationen dazu, ob ein Mandant verwaltet oder nicht verwaltet wird, finden Sie unter [Ermitteln des Mandantentyps.](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
   
 ## <a name="step-1-verify-your-email-address"></a>Schritt 1: Überprüfen Ihrer E-Mail-Adresse
 
 > [!NOTE]
-> Wenn self-service in Ihrem Mandanten aktiviert ist, können Benutzer kostenlose Dienste, z. B. Power BI, selbst abonnieren. Bei diesen Schritten wird davon ausgegangen, dass ein Self-Service-Benutzerabonnement den nicht verwalteten Mandanten erstellt hat, den Sie als Administrator übernehmen möchten. Im ersten Schritt erstellen Sie einen Benutzerkontext im nicht verwalteten Mandanten, indem Sie Power BI verwenden, um den Administratorübernahmepfad zu veranschaulichen.
+> Wenn Self-Service in Ihrem Mandanten aktiviert ist, können Benutzer kostenlose Dienste wie Power BI selbst abonnieren. Bei diesen Schritten wird davon ausgegangen, dass ein Self-Service-Benutzerabonnement den nicht verwalteten Mandanten erstellt hat, den Sie als Administrator übernehmen möchten. Im ersten Schritt erstellen Sie einen Benutzerkontext im nicht verwalteten Mandanten mithilfe von Power BI, um den Übernahmepfad des Administrators zu veranschaulichen.
 
-1. Um sich für Power BI zu registrieren, wechseln Sie zur [Power BI-Website,](https://powerbi.com) und wählen Sie **kostenlose** Testversion starten (im Feld Freigeben mit  >   Power BI Pro aus). 
+1. To sign up for Power BI, go to the [Power BI site](https://powerbi.com) and select **Start Free** Start  >  **free trial** (in Share with Power BI Pro box). 
 
-2. Registrieren Sie sich mit einem Benutzerkonto, das den Domänennamen Ihrer Organisation verwendet (z. B. `powerbiadmin@contoso.com` ). Wenn Ihr Konto bereits verwendet wird, melden Sie sich mit Ihrem aktuellen Kennwort an.
+2. Registrieren Sie sich mit einem Benutzerkonto, das den Domänennamen Ihrer Organisation verwendet (z. `powerbiadmin@contoso.com` B. ). Wenn Ihr Konto bereits verwendet wird, melden Sie sich mit Ihrem aktuellen Kennwort an.
 
 3. Überprüfen Sie Ihre E-Mail auf den **Überprüfungscode,** und geben Sie den Code ein, um Ihre E-Mail-Adresse zu überprüfen.
     
 ## <a name="step-2-create-a-new-account"></a>Schritt 2: Erstellen eines neuen Kontos
 
-1. Wenn Sie den Überprüfungscode eingeben, werden Sie auf eine Seite gebracht, auf der Sie ein neues Konto erstellen können. 
+1. Wenn Sie den Überprüfungscode eingeben, werden Sie zu einer Seite gebracht, auf der Sie ein neues Konto erstellen können. 
     
-2. Füllen Sie die Felder Benutzername und Kennwort mit dem Konto aus, das Sie verwenden möchten, und wählen Sie **dann Start aus.** 
+2. Füllen Sie die Benutzernamen- und Kennwortfelder mit dem Konto aus, das Sie verwenden möchten, und wählen Sie dann **Start** aus. 
     
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>Schritt 3: Überprüfen des Domänenbesitzes und Administrator werden
 
-1. Der **Assistent Zum Administrator werden** wird geöffnet. Wenn der Assistent nicht gestartet wird, suchen Sie nach der **Kachel Administrator,** und wählen Sie sie aus. 
+1. Der Assistent **zum Administrator** wird geöffnet. Wenn der Assistent nicht gestartet wird, suchen Sie nach der **Administratorkachel,** und wählen Sie sie aus. 
 
-2. Wählen **Sie Ja aus, ich möchte der Administrator sein.**
+2. Wählen Sie **"Ja", ich möchte der Administrator sein.**
 
-3. Vergewissern Sie sich, dass Sie derEn Domänen besitzen, die Sie übernehmen möchten, indem Sie Ihrer Domänenregistrierungsstelle einen TXT-Eintrag hinzufügen. Der Assistent gibt Ihnen den hinzuzufügende TXT-Eintrag sowie einen Link zur Website Ihrer Registrierungsstelle sowie einen Link zu schrittweisen Anweisungen.
+3. Stellen Sie sicher, dass Sie die Domäne besitzen, die Sie übernehmen möchten, indem Sie Ihrer Domänenregistrierungsstelle einen TXT-Eintrag hinzufügen. Der Assistent gibt Ihnen den hinzuzufügenden TXT-Eintrag sowie einen Link zur Website Ihrer Registrierungsstelle sowie einen Link zu schrittweisen Anweisungen.
     
-4. Nachdem Sie den TXT-Eintrag zur Registrierungswebsite hinzugefügt haben, kehren Sie zum Assistenten zurück, und wählen Sie **Ok aus, ich habe den Eintrag hinzugefügt.**
+4. Nachdem Sie den TXT-Eintrag zu Ihrer Registrierungsstellenwebsite hinzugefügt haben, kehren Sie zum Assistenten zurück und wählen **Sie "Okay" aus, ich habe den Datensatz hinzugefügt.**
     
 > [!NOTE]
-> Die Übernahme des Schatten-Mandanten wirkt sich nicht auf vorhandene Informationen oder Dienste aus. Wenn sich jedoch Benutzer in der Domäne für Dienste angemeldet haben, für die eine Lizenz erforderlich ist, werden Sie aufgefordert, Lizenzen für sie zu erwerben, wenn Sie die Administratorrolle übernehmen. Sie können Lizenzen erwerben oder entfernen, sobald der Administratoreinrichtungsprozess abgeschlossen ist.
+> Die Übernahme des Schattenmandanten wirkt sich nicht auf vorhandene Informationen oder Dienste aus. Wenn sich benutzer in der Domäne jedoch für Dienste angemeldet haben, die eine Lizenz erfordern, werden Sie aufgefordert, lizenzen für sie zu erwerben, als Teil der Übernahme der Administratorrolle. Sie können Lizenzen kaufen oder entfernen, sobald der Administratoreinrichtungsprozess abgeschlossen ist.
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-YouTube: [3 Schritte zum Ausführen einer Übernahme](https://www.youtube.com/watch?v=xt5EsrQBZZk) von IT-Administratoren für Power BI und Microsoft 365 (Video)\
+YouTube: [3 Schritte zum Durchführen einer Übernahme durch IT-Administratoren für Power BI und Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (Video)\
 [Administratorübernahme in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (Artikel)\
-[Verwenden der Self-Service-Anmeldung in Ihrer Organisation](self-service-sign-up.md) (Artikel)\
-[Grundlegendes zur Power BI Dienstadministratorrolle](/power-bi/service-admin-role) (Artikel)
+[Verwenden der Self-Service-Registrierung in Ihrer Organisation](self-service-sign-up.md) (Artikel)\
+[Grundlegendes zur Rolle Power BI Dienstadministrator](/power-bi/service-admin-role) (Artikel)
