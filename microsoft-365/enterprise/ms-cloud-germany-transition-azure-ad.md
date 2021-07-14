@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Zusätzliche Azure Active Directory-Informationen zur Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
 ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/09/2021
 ms.locfileid: "53362726"
@@ -74,16 +74,16 @@ Eine Anwendung könnte eine der folgenden sein:
 
     - [Azure PowerShell](/powershell/azure/install-az-ps)
     - [Azure AD PowerShell (MSOnline)](/powershell/azure/active-directory/overview)
-    - [Azure AD PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
+    - [Azure AD PowerShell (AzureAD)](/powershell/azure/active-directory/install-adv2)
     - [Azure CLI](/cli/azure/install-azure-cli)
  
 **Was ist mit Anwendungen, die ich veröffentliche?**
 
 Wenn Sie eine Anwendung veröffentlichen, die für Benutzer verfügbar ist, die nicht zu Ihrem Mandanten gehören, müssen Sie möglicherweise Ihre Anwendungsregistrierung ändern, um die Kontinuität zu gewährleisten. Andere Mandanten, die Ihre Anwendung verwenden, werden möglicherweise zu einem anderen Zeitpunkt als Ihr Mandant umgestellt. Um sicherzustellen, dass sie nie den Zugriff auf Ihre Anwendung verlieren, müssen Sie zustimmen, dass Ihre App von Azure Deutschland nach Azure Public synchronisiert wird.
 
-**Wie sieht es mit dem Hinzufügen neuer mehrinstanzenfähiger Anwendungen während der Migration aus?**
+**Was ist mit dem Hinzufügen neuer mandantenfähiger Anwendungen während der Migration?**
 
-Wenn Sie eine neue Anwendung nutzen möchten, die von einer anderen Organisation veröffentlicht wird (mehrinstanzenfähige Anwendung), können Sie diese Anwendung während des Migrationsprozesses (Phasen 2 bis Phase 9) nicht hinzufügen.  Sie können diese Aufgabe ausführen, wenn Ihre Organisation Phase 9 abgeschlossen hat und vollständig auf die öffentliche Azure-Instanz umgestellt ist.
+Wenn Sie eine neue Anwendung nutzen möchten, die von einer anderen Organisation veröffentlicht wird (mandantenfähige Anwendung), können Sie diese Anwendung während des Migrationsprozesses (Phasen 2 bis 9) nicht hinzufügen.  Sie können diese Aufgabe ausführen, wenn Ihre Organisation Phase 9 abgeschlossen hat und vollständig auf die öffentliche Azure-Instanz umgestellt ist.
 
 ## <a name="additional-considerations"></a>Zusätzliche Überlegungen
 

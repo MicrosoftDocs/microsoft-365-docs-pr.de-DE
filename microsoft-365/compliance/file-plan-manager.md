@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906875"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419763"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Dateiplan zum Verwalten von Aufbewahrungsbezeichnungen verwenden
 
@@ -32,7 +32,7 @@ Sie können zwar Aufbewahrungsbezeichnungen von **Informationsgovernance** im Mi
 
 - Sie können die Aufbewahrungsbezeichnungen in einem Stapel erstellen, indem Sie die relevanten Informationen aus einer Kalkulationstabelle importieren.
 
-- Sie können die Informationen aus vorhandenen Aufbewahrungsbezeichnungen für die Analyse und Offline-Zusammenarbeit oder für die Stapelbearbeitung exportieren.
+- Sie können die Informationen aus vorhandenen Aufbewahrungsbezeichnungen für die Analyse und Offline-Zusammenarbeit exportieren.
 
 - Weitere Informationen zu den Aufbewahrungsbezeichnungen werden angezeigt, um die Einstellungen aller Aufbewahrungsbezeichnungen in einer Ansicht anzuzeigen.
 
@@ -99,7 +99,7 @@ Alle Spalten, mit Ausnahme der Bezeichnung **Namen**, können angezeigt oder aus
 
 Mit dem Dateiplan können Sie weitere Informationen als Teil der Aufbewahrungsbezeichnungen hinzuzufügen. Diese Dateiplandeskriptoren bieten weitere Optionen zur Verbesserung von Verwaltung und Organisation der zu beschriftenden Inhalte.
 
-Standardmäßig werden in den nächsten Spalten, beginnend mit **Referenz-ID**, die Dateiplandeskriptoren angezeigt, die Sie beim Erstellen einer Aufbewahrungsbezeichnung oder beim Bearbeiten einer vorhandene Bezeichnung angeben können. 
+Standardmäßig werden in den nächsten Spalten, beginnend mit **Referenz-ID**, diese optionalen Dateiplandeskriptoren angezeigt, die Sie beim Erstellen einer Aufbewahrungsbezeichnung oder beim Bearbeiten einer vorhandene Bezeichnung angeben können. 
 
 Zum Einstieg gibt es einige besondere Werte für die folgenden Dateiplandeskriptoren: 
 - Geschäftsfunktion/-abteilung
@@ -129,7 +129,7 @@ Eine CSV-Datei mit allen vorhandenen Aufbewahrungsbeschriftungen wird geöffnet.
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importieren von Aufbewahrungsbezeichnungen in Ihren Dateiplan
 
-Im Dateiplan können Sie neue Aufbewahrungsbezeichnungen im Stapel importieren und vorhandene Aufbewahrungsbezeichnungen im Stapel ändern.
+Im Dateiplan können Sie neue Aufbewahrungsbezeichnungen per Massenimport importieren, indem Sie eine CSV-Datei mit einem bestimmten Format verwenden. Nachdem die Bezeichnungen importiert wurden, können Sie Änderungen in der CSV-Datei vornehmen und die Datei erneut importieren, um die Massenbearbeitung vorhandener Aufbewahrungsbezeichnungen zu vereinfachen.
 
 So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbewahrungsbezeichnungen: 
 
@@ -139,7 +139,7 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
 
    ![Option zum Herunterladen einer leeren Vorlage für den Dateiplan](../media/file-plan-blank-template-option.png)
 
-2. Laden Sie eine leere Vorlage herunter, um neue Aufbewahrungsbezeichnungen zu importieren. Alternativ können Sie mit der CSV-Datei beginnen, die exportiert wird, wenn Sie die vorhandenen Aufbewahrungsbezeichnungen in Ihrer Organisation exportieren.
+2. Laden Sie, wie angewiesen, eine leere Vorlage herunter:
 
    ![Leere Vorlage eines Dateiplans wird in Excel geöffnet](../media/file-plan-blank-template.png)
 
@@ -150,41 +150,45 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
     - Alle anderen Werte: Unbegrenzte Länge
     <br/>
     
-   |Eigenschaft|Typ|Gültige Werte|
-   |:-----|:-----|:-----|
-   |LabelName|Zeichenfolge|Diese Eigenschaft gibt den Namen des Aufbewahrungsrichtlinientags an.|
-   |Kommentar|Zeichenfolge|Verwenden Sie diese Eigenschaft, um eine Beschreibung der Aufbewahrungsbezeichnung für Administratoren hinzuzufügen. Diese Beschreibung wird nur Administratoren angezeigt, die die Aufbewahrungsbeschreibung im Compliance Center verwalten.|
-   |Notes|Zeichenfolge|Verwenden Sie diese Eigenschaft, um eine Beschreibung der Aufbewahrungsbezeichnung für Benutzer hinzuzufügen. Diese Beschreibung wird angezeigt, wenn Benutzer den Mauszeiger über die Bezeichnung in Apps wie Outlook, SharePoint und OneDrive bewegen. Wenn Sie diese Eigenschaft leer lassen, wird eine Standardbeschreibung angezeigt, in der die Aufbewahrungseinstellungen der Bezeichnung erläutert werden. |
-   |IsRecordLabel|Zeichenfolge|Diese Eigenschaft gibt an, ob die Bezeichnung eine Datensatzbezeichnung ist. Gültige Werte sind: </br>**TRUE**: die Bezeichnung kennzeichnet das Element als Datensatz. Das Element kann daher nicht gelöscht werden. </br>**FALSE**: die Bezeichnung kennzeichnet den Inhalt nicht als Datensatz. Dies ist der Standardwert.|
-   |RetentionAction|Zeichenfolge|Diese Eigenschaft gibt an, welche Aktion auszuführen ist, nachdem der durch die RetentionDuration-Eigenschaft angegebene Wert abläuft. Gültige Werte sind: </br>**Delete**: Elemente, die älter als der von der RetentionDuration-Eigenschaft angegebene Wert sind, werden gelöscht.</br>**Keep**: Elemente werden für die durch die RetentionDuration-Eigenschaft festgelegte Dauer beibehalten. Nach Ablauf dieses Zeitraums wird nichts ausgeführt. </br>**KeepAndDelete**: Elemente werden für die durch die RetentionDuration-Eigenschaft festgelegte Dauer beibehalten. Nach Ablauf dieses Zeitraums werden sie gelöscht.   |
-   |RetentionDuration|Zeichenfolge|Die Eigenschaft gibt die Anzahl der Tage an, die der Inhalt aufbewahrt werden soll. Gültige Werte sind: </br>**Unlimited**: Elemente werden auf unbestimmte Zeit aufbewahrt. </br>**_n_*_: Eine positive ganze Zahl; Zum Beispiel _* 365**. 
-   |RetentionType|String|Diese Eigenschaft gibt an, ob die Aufbewahrungsdauer aus dem Datum der Inhaltserstellung, des Ereignisses, Bezeichnung oder der letzten Änderung berechnet wird. Gültige Werte sind: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|Wenn diese Eigenschaft ausgefüllt wird, wird eine Dispositionsüberprüfung ausgelöst, wenn die Aufbewahrungsdauer abgelaufen ist. Diese Eigenschaft gibt die E-Mail-Adresse einer Prüferin oder eines Prüfers für die Aufbewahrungsaktionen **KeepAndDelete** an. Sie können die E-Mail-Adressen einzelner Benutzer, Verteiler- oder Sicherheitsgruppen einschließen. Mehrere E-Mail-Adressen können durch Kommas getrennt angegeben werden.|
-   |ReferenceId|String|Diese Eigenschaft gibt den Wert an, der im Dateiplandeskriptor **Referenz-ID** angezeigt wird und den Sie als eindeutigen Wert für Ihre Organisation verwenden können.| 
-   |DepartmentName|Zeichenfolge|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Funktion/Abteilung** angezeigt wird.|
-   |Kategorie|Zeichenfolge|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Kategorie** angezeigt wird.|
-   |SubCategory|Zeichenfolge|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Unterkategorie** angezeigt wird.|
-   |AuthorityType|Zeichenfolge|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Autoritätstyp** angezeigt wird.|
-   |CitationName|String|Diese Eigenschaft gibt das Zitat an, das im Dateiplandeskriptor **Bereitstellung/Zitat** angezeigt wird. Beispielsweise „Sarbanes-Oxley Act von 2002“. |
-   |CitationUrl|Zeichenfolge|Diese Eigenschaft gibt die URL an, die in der Dateiplanbeschreibung **Bereitstellung/Zitat** angezeigt wird.|
-   |CitationJurisdiction|String|Diese Eigenschaft gibt die Zuständigkeiten oder die Agentur an, die im Dateiplandeskriptor **Bereitstellungs/Zitat** angezeigt wird. Beispielsweise „Securities and Exchange Commission, SEC (Börsenaufsichtsbehörde)“|
-   |Behördlich|Zeichenfolge|Leer lassen. Diese Eigenschaft wird derzeit nicht verwendet.|
-   |EventType|Zeichenfolge|Diese Eigenschaft gibt die Aufbewahrungsregel an, die der Bezeichnung zugeordnet ist. Sie können einen beliebigen Wert verwenden, der die Regel eindeutig identifiziert. Zum Beispiel:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>Mit dem Cmdlet [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) können Sie die verfügbaren Aufbewahrungsregeln anzeigen. Da die EventType-Werte individuell für eine Organisation sind, können Sie beim Export der Bezeichnungen aus einer Organisation nicht die Werte für die EventType-Eigenschaft aus dieser Organisation verwenden, um Bezeichnungen in eine andere Organisation zu importieren.|
+   |Eigenschaft|Typ|Erforderlich|Gültige Werte|
+   |:-----|:-----|:-----|:-----|
+   |LabelName|Zeichenfolge|Ja|Diese Eigenschaft gibt den Namen der Aufbewahrungsbezeichnung an und muss auf Ihrem Mandanten eindeutig sein.|
+   |Kommentar|Zeichenfolge|Nein|Verwenden Sie diese Eigenschaft, um eine Beschreibung der Aufbewahrungsbezeichnung für Administratoren hinzuzufügen. Diese Beschreibung wird nur Administratoren angezeigt, die die Aufbewahrungsbeschreibung im Compliance Center verwalten.|
+   |Notes|Zeichenfolge|Nein|Verwenden Sie diese Eigenschaft, um eine Beschreibung der Aufbewahrungsbezeichnung für Benutzer hinzuzufügen. Diese Beschreibung wird angezeigt, wenn Benutzer den Mauszeiger über die Bezeichnung in Apps wie Outlook, SharePoint und OneDrive bewegen. Wenn Sie diese Eigenschaft leer lassen, wird eine Standardbeschreibung angezeigt, in der die Aufbewahrungseinstellungen der Bezeichnung erläutert werden. |
+   |IsRecordLabel|Zeichenfolge|Nein, es sei denn, **Regulatory** ist **TRUE**|Diese Eigenschaft gibt an, ob die Bezeichnung eine Datensatzbezeichnung ist. Gültige Werte sind:</br>**TRUE**: die Bezeichnung kennzeichnet das Element als Datensatz. Das Element kann daher nicht gelöscht werden. </br>**FALSE**: die Bezeichnung kennzeichnet den Inhalt nicht als Datensatz. Dies ist der Standardwert. </br> </br> Gruppenabhängigkeiten: Wenn diese Eigenschaft angegeben wird, müssen auch „RetentionAction“, „RetentionDuration“ und „RetentionType“ angegeben werden.|
+   |RetentionAction|Zeichenfolge|Nein, es sei denn, **RetentionDuration**, **RetentionType** oder **ReviewerEmail** sind angegeben|Diese Eigenschaft gibt an, welche Aktion auszuführen ist, nachdem der durch die RetentionDuration-Eigenschaft angegebene Wert (falls angegeben) abläuft. Gültige Werte sind:</br>**Delete**: Elemente, die älter als der von der RetentionDuration-Eigenschaft angegebene Wert sind, werden gelöscht.</br>**Keep**: Elemente werden für die durch die RetentionDuration-Eigenschaft festgelegte Dauer beibehalten. Nach Ablauf dieses Zeitraums wird nichts ausgeführt. </br>**KeepAndDelete**: Elemente werden für die durch die RetentionDuration-Eigenschaft festgelegte Dauer beibehalten. Nach Ablauf dieses Zeitraums werden sie gelöscht. </br> </br> Gruppenabhängigkeiten: Wenn diese Eigenschaft angegeben wird, müssen auch „RetentionDuration“ und „RetentionType“ angegeben werden. |
+   |RetentionDuration|Zeichenfolge|Nein, es sei denn, **RetentionAction** oder **RetentionType** sind angegeben|Diese Eigenschaft gibt die Anzahl der Tage an, die der Inhalt aufbewahrt werden soll. Gültige Werte sind:</br>**Unlimited**: Elemente werden auf unbestimmte Zeit aufbewahrt. </br>**_n_*: Eine positive ganze Zahl in Tagen, z. B. **365**. Die maximal unterstützte Anzahl beträgt 24.855, also 68 Jahre. Wenn Sie mehr als diesen Höchstwert benötigen, verwenden Sie stattdessen „Unlimited“.</br> </br> Gruppenabhängigkeiten: Wenn diese Eigenschaft angegeben wird, müssen auch „RetentionAction“ und „RetentionType“ angegeben werden.
+   |RetentionType|Zeichenfolge|Nein, es sei denn, **RetentionAction** oder **RetentionDuration** sind angegeben|Diese Eigenschaft gibt an, ob die Aufbewahrungsdauer (falls angegeben) aus dem Datum der Inhaltserstellung, des Ereignisses, Bezeichnung oder der letzten Änderung berechnet wird. Gültige Werte sind:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> Gruppenabhängigkeiten: Wenn diese Eigenschaft angegeben wird, müssen auch „RetentionAction“ und „RetentionDuraction“ angegeben werden.|
+   |ReviewerEmail|SmtpAddress|Nein|Wird diese Eigenschaft angegeben, wird eine Dispositionsüberprüfung ausgelöst, sobald die Aufbewahrungsdauer abgelaufen ist. Diese Eigenschaft gibt die E-Mail-Adresse einer Prüferin oder eines Prüfers für die Aufbewahrungsaktionen **KeepAndDelete** an. </br> </br> Sie können die E-Mail-Adressen einzelner Benutzer, Verteiler- oder Sicherheitsgruppen auf Ihrem Mandanten einschließen. Mehrere E-Mail-Adressen können durch Semikolons (;) getrennt angegeben werden. </br> </br> Gruppenabhängigkeiten: Wenn diese Eigenschaft angegeben wird, müssen auch **RetentionAction** (mit dem Wert **KeepAndDelete**), **RetentionDuration** und **RetentionType** angegeben werden.|
+   |ReferenceId|Zeichenfolge|Nein|Diese Eigenschaft gibt den Wert an, der im Dateiplandeskriptor **Referenz-ID** angezeigt wird und den Sie als eindeutigen Wert für Ihre Organisation verwenden können.| 
+   |DepartmentName|Zeichenfolge|Nein|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Funktion/Abteilung** angezeigt wird.|
+   |Kategorie|Zeichenfolge|Nein|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Kategorie** angezeigt wird.|
+   |SubCategory|Zeichenfolge|Nein|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Unterkategorie** angezeigt wird.|
+   |AuthorityType|Zeichenfolge|Nein|Diese Eigenschaft gibt den Wert an, der in der Dateiplanbeschreibung **Autoritätstyp** angezeigt wird.|
+   |CitationName|Zeichenfolge|Nein|Diese Eigenschaft gibt das Zitat an, das im Dateiplandeskriptor **Bereitstellung/Zitat** angezeigt wird. Beispielsweise „Sarbanes-Oxley Act von 2002“. |
+   |CitationUrl|Zeichenfolge|Nein|Diese Eigenschaft gibt die URL an, die in der Dateiplanbeschreibung **Bereitstellung/Zitat** angezeigt wird.|
+   |CitationJurisdiction|Zeichenfolge|Nein|Diese Eigenschaft gibt die Zuständigkeit oder Behörde an, die in der Dateiplanbeschreibung **Bereitstellung/Zitat** angezeigt wird, z. B. „U.S Securities and Exchange Commission (SEC)“.|
+   |Behördlich|Zeichenfolge|Nein|Diese Eigenschaft gibt an, ob die Bezeichnung den Inhalt als regulatorischen Datensatz markiert, der [restriktiver](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) als ein einfacher Datensatz ist. Um diese Bezeichnungskonfiguration verwenden zu können, muss Ihr Mandant so konfiguriert sein, dass [die Option zum Markieren von Inhalt als regulatorischer Datensatz](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) angezeigt wird. Andernfalls schlägt die Importüberprüfung fehl. Gültige Werte sind: </br>**TRUE**: Die Bezeichnung kennzeichnet das Element als regulatorischen Datensatz. Sie müssen auch die Eigenschaft **IsRecordLabel** auf TRUE festlegen.</br>**FALSE**: die Bezeichnung kennzeichnet den Inhalt nicht als regulatorischen Datensatz. Dies ist der Standardwert.|
+   |EventType|Zeichenfolge|Nein, es sei denn, **RetentionType** ist auf **EventAgeInDays** festgelegt|Diese Eigenschaft gibt einen Ereignistyp an, der für [ereignisbasierte Aufbewahrung](event-driven-retention.md) verwendet wird. Geben Sie einen vorhandenen Ereignistyp an, der unter **Datensatzverwaltung** > **Ereignisse** > **Ereignistypen verwalten** angezeigt wird. Verwenden Sie alternativ das Cmdlet [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype), um die verfügbaren Ereignistypen anzuzeigen. Es gibt zwar einige integrierte Ereignistypen, z. B. **Employee-Aktivität** und **Produktlebensdauer**, Sie können aber auch eigene Ereignistypen erstellen. </br> </br> Wenn Sie Ihren eigenen Ereignistyp festlegen, muss er vor dem Import vorhanden sein, da der Name im Rahmen des Importvorgangs überprüft wird.|
    |||
 
    Nachfolgend finden Sie ein Beispiel für die Vorlage mit den Informationen zu Aufbewahrungsbezeichnungen.
 
    ![Dateiplanvorlage mit ausgefüllten Informationen](../media/file-plan-filled-out-template.png)
 
-4. Klicken Sie unter Schritt 3 auf der Seite **Ausfüllen und Importieren eines Dateiplans** auf **Nach Dateien suchen**, um die ausgefüllte Vorlage hochzuladen. 
+4. Klicken Sie unter Schritt 3 auf der Seite **Ausfüllen und Importieren eines Dateiplans** auf **Nach Dateien suchen**, um die ausgefüllte Vorlage hochzuladen, und wählen Sie dann **Weiter** aus.
 
-   Der Dateiplan überprüft die Einträge und zeigt die Import Statistiken an.
+   Der Dateiplan lädt die Datei hoch, überprüft die Einträge und zeigt die Importstatistiken an.
 
    ![Dateiplan-Importstatistiken](../media/file-plan-import-statistics.png)
 
-   Wenn ein Überprüfungsfehler vorliegt, überprüft der Dateiplan-Import weiterhin jeden Eintrag in der Importdatei und zeigt alle Fehler mit Verweis auf die Zeilen- und Zeilennummern in der Importdatei. Kopieren Sie die angezeigten Fehlerergebnisse, damit Sie diese beheben können, wenn Sie zu der Importdatei zurückkehren.
+5. Abhängig von den Überprüfungsergebnissen:
+    
+    - Wenn die Überprüfung fehlschlägt: Notieren Sie sich die Zeilennummer und den Spaltennamen, um sie in der Importdatei zu korrigieren. Wählen Sie **Schließen** und dann zum Bestätigen **Ja** aus. Korrigieren Sie die Fehler in der Datei, und speichern Sie sie. Wählen Sie die Option **Importieren** erneut aus, und kehren Sie zu Schritt 4 zurück.
+    
+    - Wenn die Überprüfung erfolgreich ist, können Sie **Go Live** auswählen, um die Aufbewahrungsbezeichnungen in Ihrem Mandanten verfügbar zu machen. Oder schließen Sie die Seite mithilfe des Schließen-Symbols, und wählen Sie **Ja** aus, um zu bestätigen, dass Sie den Assistenten schließen möchten, ohne die Aufbewahrungsbezeichnungen zurzeit in Ihrem Mandanten verfügbar zu machen.
 
-Nach Abschluss des Importvorgangs können Sie die Aufbewahrungsbezeichnungen einer neuen Richtlinie für die Aufbewahrungsbezeichnungen hinzufügen oder automatisch anwenden. Sie können diesen Schritt direkt über die Seite **Dateiplan** vornehmen, indem Sie die Dropdownliste von **+ Bezeichnung erstellen** und dann **Richtlinie zum Veröffentlichen von Bezeichnungen** oder **Richtlinie für Bezeichnung automatisch anwenden** auswählen.
+Nachdem die importierten Bezeichnungen zu Ihrem Mandanten hinzugefügt wurden, können Sie sie nun einer neuen Richtlinie für die Aufbewahrungsbezeichnungen hinzufügen oder automatisch anwenden. Sie können diesen Schritt direkt über die Seite **Dateiplan** vornehmen, indem Sie die Dropdownliste von **+ Bezeichnung erstellen** und dann **Richtlinie zum Veröffentlichen von Bezeichnungen** oder **Richtlinie für Bezeichnung automatisch anwenden** auswählen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 08774cdfd831556c194b5175879f211efa250632
 ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/09/2021
 ms.locfileid: "53362738"
@@ -200,7 +200,7 @@ Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit
 
 Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit Office 365 integriert sind, müssen Sie alle Abhängigkeiten auf Endpunkten, die von der Microsoft Cloud Deutschland-Instanz bereitgestellt werden, auflösen. Wenn z. B. Ihre Branchen-Apps mit `https://graph.microsoft.de/` in Verbindung stehen, müssen Sie den Endpunkt in `https://graph.microsoft.com/` ändern. Die Endpunkte des Microsoft Office 365-Globalen Diensts werden Ihrem Mandanten nach Phase 2 zur Verfügung stehen.
 
-Während der Migration, während sich Ihre Organisation zwischen Phase 2 und Phase 9 befindet, können Sie Ihrer Organisation keine mehrinstanzenfähigen Anwendungen von Drittanbietern hinzufügen. Nach Abschluss der Migrationsphase 9 können Sie das Hinzufügen oder Zustimmen zu MTA-Anwendungen für Ihre Organisation fortsetzen.
+Solange sich Ihre Organisation während der Migration zwischen Phase 2 und Phase 9 befindet, können Sie keine mandantenfähigen Anwendungen (Multi-Tenant Applications, MTA) von Drittanbietern zu Ihrer Organisation hinzufügen. Wenn die Phase 9 der Migration abgeschlossen ist, können Sie wieder MTA-Anwendungen für Ihre Organisation hinzufügen oder zulassen.
 
 
 | Schritte: | Beschreibung | Auswirkung |
