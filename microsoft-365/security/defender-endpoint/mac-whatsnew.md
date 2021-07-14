@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 841f22421ac81ba447dad70a68c4c7bc95605b16
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 6ef594d4ccb25f688be21b4e8fe6aac2f024eb1d
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363895"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419751"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Neuigkeiten in Microsoft Defender für Endpunkt auf dem Mac
 
@@ -37,6 +37,10 @@ ms.locfileid: "53363895"
 
 > [!IMPORTANT]
 > Unter macOS 11 (Big Sur) erfordert Microsoft Defender für Endpunkt zusätzliche Konfigurationsprofile. Wenn Sie bereits ein Kundenupdate von früheren Versionen von macOS durchführen, stellen Sie sicher, dass Sie die zusätzlichen Konfigurationsprofile bereitstellen, die auf [dieser Seite](mac-sysext-policies.md)aufgeführt sind.
+
+## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0)
+
+- Fehlerbehebungen
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
@@ -98,7 +102,7 @@ ms.locfileid: "53363895"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
-- Bedingungen entfernt, bei denen Microsoft Defender für Endpunkt einen MacOS 11(Big Sur)-Fehler auslöste, der sich in einer Kernel-Panze manifestiert
+- Bedingungen entfernt, bei denen Microsoft Defender für Endpunkt einen MacOS 11 (Big Sur)-Fehler auslöste, der sich in einer Kernel-Panze manifestiert.
 - Es wurde ein Speicherverlust in der Endpoint Security-Systemerweiterung behoben, wenn sie auf Mac 11 (Big Sur) ausgeführt wurde.
 - Fehlerbehebungen
 

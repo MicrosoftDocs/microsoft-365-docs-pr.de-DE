@@ -14,23 +14,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Verstehen, wie Sie Vorlagen zum Erstellen von Bewertungen im Microsoft Compliance Manager verwenden und verwalten. Erstellen und Ändern von Vorlagen mithilfe einer formatierten Excel Datei.
-ms.openlocfilehash: 2d20fa69345f2ff2624252972cb0e017e401f0dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4386f5be67d01d3d6961ccc4bd51ecf729bc8a38
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149130"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419583"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Arbeiten mit Bewertungsvorlagen im Compliance-Manager
 
-**In diesem Artikel:** Erfahren **Sie, wie Vorlagen funktionieren** und wie Sie sie auf der Seite "Bewertungsvorlagen" **verwalten.** Hier erhalten Sie Anweisungen zum **Erstellen** neuer Vorlagen, **Erweitern** und **Ändern vorhandener** Vorlagen, **zum Formatieren von Vorlagendaten mit Excel** und zum Exportieren von **Vorlagenberichten.**
+**In diesem Artikel:** Erfahren **Sie, wie Vorlagen funktionieren** und wie Sie sie auf der Seite "Bewertungsvorlagen" **verwalten.** Hier erhalten Sie Anweisungen zum **Erstellen** neuer Vorlagen, **Erweitern** und **Ändern vorhandener** Vorlagen, **Zum Formatieren von Vorlagendaten mit Excel** und Exportieren von **Vorlagenberichten.**
 
 > [!IMPORTANT]
 > Welche Bewertungsvorlagen für Ihre Organisation verfügbar sind, hängt von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="templates-overview"></a>Vorlagen (Übersicht)
 
-Eine Vorlage ist ein Rahmen von Steuerelementen zum Erstellen einer Bewertung im Compliance-Manager. Unser umfassender Vorlagensatz kann Ihrer Organisation helfen, nationale, regionale und branchenspezifische Anforderungen hinsichtlich der Erfassung und Verwendung von Daten zu erfüllen. Wir verweisen auf Vorlagen mit demselben Namen wie die zugrunde liegende Zertifizierung oder Verordnung, z. B. die EU-DSGVO-Vorlage und die ISO/IEC 27701:2019-Vorlage.
+Eine Vorlage ist ein Rahmen von Steuerelementen zum Erstellen einer Bewertung im Compliance-Manager. Unser umfassender Vorlagensatz kann Ihrer Organisation helfen, nationale, regionale und branchenspezifische Anforderungen hinsichtlich der Erfassung und Verwendung von Daten zu erfüllen. Wir verweisen auf Vorlagen mit demselben Namen wie die zugrunde liegende Zertifizierung oder Verordnung, z. B. die EU-DSGVO-Vorlage und die ISO/IEC 27701:2019-Vorlage. Da Der Compliance-Manager zum Bewerten verschiedener Produkttypen verwendet werden kann, gibt es für jede Vorlage zwei Versionen: eine, die für Microsoft 365 gilt, und eine universelle Version, die an Ihr ausgewähltes Produkt angepasst werden kann.
 
 ## <a name="template-availability-and-licensing"></a>Verfügbarkeit und Lizenzierung von Vorlagen
 
@@ -50,7 +50,7 @@ Vorlagen zeigen den Aktivierungsstatus entweder als aktiv oder inaktiv an:
 - Eine Vorlage wird als **aktiv** betrachtet, nachdem Sie eine Bewertung anhand dieser Vorlage erstellt haben.
 - Eine Vorlage wird als **inaktiv** betrachtet, wenn Ihre Organisation sie nicht für eine Bewertung verwendet.
 
-Wenn Sie eine Premiumvorlage erwerben und daraus eine Bewertung erstellen, ist diese Vorlage ein Jahr lang aktiv. Ihr Kauf wird automatisch verlängert, es sei denn, Sie kündigen.
+Wenn Sie Bewertungen mit einer gekauften Premiumvorlage verknüpfen, ist diese Vorlage ein Jahr lang aktiv. Ihr Kauf wird automatisch verlängert, es sei denn, Sie kündigen.
 
 Sie können Premiumvorlagen auch als Testversion testen. Testlizenzen eignen sich für bis zu 25 Vorlagen für 30 Tage. Sobald Ihre Testversion beginnt, sollten die Vorlagen innerhalb von 48 Stunden in Ihrem Mandanten verfügbar sein. Testversionen können über die Microsoft 365 Admin Center aktiviert werden.
 
@@ -58,9 +58,11 @@ Sie können Premiumvorlagen auch als Testversion testen. Testlizenzen eignen sic
 
 Die Seite "Bewertungsseite" und "Bewertungsvorlagen" weisen oben einen **aktivierten Vorlagenzähler** auf. Der Indikator zeigt die Anzahl der verwendeten Vorlagen von der Anzahl an, die Sie gemäß Ihrem Lizenzvertrag verwenden können. Die Verwendung von Vorlagen wird auf Zertifizierungsebene gezählt.
 
-Wenn ihr Zähler z. B. 2/5 anzeigt, bedeutet dies, dass Ihre Organisation 2 Vorlagen von 5 aktiviert hat, die zur Verwendung verfügbar sind.
+Wenn Ihr Zähler beispielsweise 2/5 anzeigt, bedeutet dies, dass Ihre Organisation 2 Vorlagen von 5 aktiviert hat, die zur Verwendung verfügbar sind.
 
 Wenn Ihr Zähler 5/2 anzeigt, bedeutet dies, dass Ihre Organisation ihre Grenzen überschreitet und 3 der verwendeten Premiumvorlagen erwerben muss.
+
+Microsoft 365 und universelle Versionen von Vorlagen verfügen über eine gemeinsame Lizenzierung, sodass Sie dieselbe zugrunde liegende Zertifizierung für mehrere Produkte verwenden können. Die Verwendung einer oder beider Versionen derselben Vorlage zählt nur als eine aktivierte Vorlage.
 
 Weitere Informationen finden Sie unter [Compliance-Manager-Lizenzierungsleitfaden.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
@@ -72,7 +74,7 @@ Wählen Sie eine Vorlage aus der Zeile aus, um die Detailseite aufzurufen. Diese
 
 ## <a name="format-template-data-with-excel"></a>Formatieren von Vorlagendaten mit Excel
 
-Das zum Erstellen oder Ändern von Vorlagen verwendete Excel-Arbeitsblatt ([Beispiel herunterladen)](https://go.microsoft.com/fwlink/?linkid=2124865)weist ein bestimmtes Format und Schema auf, das verwendet werden muss, um ordnungsgemäß in compliance-Manager importiert werden zu können. Sie enthält vier Registerkarten, von denen drei erforderlich sind:
+Die zum Erstellen oder Ändern von Vorlagen verwendete Excel-Kalkulationstabelle ([Beispiel herunterladen)](https://go.microsoft.com/fwlink/?linkid=2124865)weist ein bestimmtes Format und Schema auf, das verwendet werden muss, um sie korrekt in compliance-Manager zu importieren. Sie enthält vier Registerkarten, von denen drei erforderlich sind:
 
 1. [Vorlage](#template-tab) (erforderlich)
 2. [ControlFamily](#controlfamily-tab) (erforderlich)
@@ -119,11 +121,11 @@ Die Registerkarte **"Aktionen"** ist erforderlich.  Sie bezeichnet Verbesserungs
 - **implementationType:** Listen Sie in diesem erforderlichen Feld einen der drei folgenden Implementierungstypen auf:
     - **Betriebsbereit** – Von Personen und Prozessen implementierte Aktionen zum Schutz der Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen, Ressourcen, Daten und Mitarbeitern (Beispiel: Sicherheitsbewusstsein und -schulung)
     - **Technische** – Aktionen, die mithilfe von Technologien und Mechanismen abgeschlossen werden, die in den Hardware-, Software- oder Firmwarekomponenten des Informationssystems enthalten sind, um die Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen und Daten zu schützen (Beispiel: mehrstufige Authentifizierung)
-    - **Dokumentation** – Durch dokumentierte Richtlinien und Verfahren implementierte Aktionen zum Einrichten und Definieren der Kontrollen, die zum Schutz der Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen, Ressourcen, Daten und Mitarbeitern erforderlich sind (Beispiel: eine Informationssicherheitsrichtlinie)
+    - **Dokumentation** – Aktionen, die durch dokumentierte Richtlinien und Verfahren implementiert werden, um die zum Schutz der Vertraulichkeit, Integrität und Verfügbarkeit von Organisationssystemen, Ressourcen, Daten und Mitarbeitern erforderlichen Kontrollen einzurichten und zu definieren (Beispiel: eine Informationssicherheitsrichtlinie)
 
 - **actionScore:** Geben Sie in diesem erforderlichen Feld einen numerischen Scorewert für Ihre Aktion an. Der Wert muss eine ganze Zahl zwischen 1 und 99 sein. er darf nicht 0, null oder leer sein. Je höher die Zahl, desto größer ist ihr Wert für die Verbesserung Ihres Compliancestatus. Die folgende Abbildung zeigt, wie Compliance-Manager Steuerelemente bewertet:
 
-![Compliance-Manager steuert Punktwerte](../media/compliance-score-action-scoring.png "Compliance-Manager steuert Punktwerte")
+  ![Compliance-Manager steuert Punktwerte](../media/compliance-score-action-scoring.png "Compliance-Manager steuert Punktwerte")
 
 - **actionDescriptionTitle:** Dies ist der Titel der Beschreibung und erforderlich. Mit diesem Beschreibungstitel können Sie dieselbe Aktion in mehreren Vorlagen ausführen und in jeder Vorlage eine andere Beschreibung anzeigen.  Dieses Feld hilft Ihnen zu erläutern, auf welche Vorlage die Beschreibung verweist. In den meisten Fällen können Sie den Namen der Vorlage, die Sie erstellen, in dieses Feld einfügen.
 
@@ -142,7 +144,7 @@ Wenn Sie eine vorhandene Vorlage exportieren, verfügt die exportierte Kalkulati
 
 ## <a name="create-an-assessment-template"></a>Erstellen einer Bewertungsvorlage
 
-Um Eine eigene neue Vorlage für benutzerdefinierte Bewertungen zu erstellen, verwenden Sie Ihre speziell formatierte Excel-Tabelle, um die erforderlichen Steuerelementdaten zusammenzustellen. Nach Abschluss des Arbeitsblatts importieren Sie es in compliance-Manager.
+Um Eine eigene neue Vorlage für benutzerdefinierte Bewertungen zu erstellen, verwenden Sie Ihre speziell formatierte Excel-Kalkulationstabelle, um die erforderlichen Steuerelementdaten zusammenzustellen. Nach Abschluss des Arbeitsblatts importieren Sie es in compliance-Manager.
 
 #### <a name="required-roles"></a>Erforderliche Rollen
 
@@ -153,18 +155,22 @@ Nur Benutzer mit einer Rolle "Globaler Administrator" oder "Compliance-Manager-V
 1. Wechseln Sie zur Seite **"Bewertungsvorlagen"** im Compliance-Manager.
 2. Wählen Sie **"Neue Vorlage erstellen"** aus. Ein Vorlagenerstellungs-Assistent wird geöffnet.
 3. Wählen Sie den Typ der Vorlage aus, die Sie erstellen möchten. Wählen Sie in diesem Fall **"Benutzerdefinierte Vorlage erstellen"** und dann **"Weiter"** aus.
-4. Wählen Sie auf dem **Bildschirm Hochladen Datei** die Option **"Durchsuchen"** aus, um die formatierte Excel datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen.
+4. Wählen Sie auf dem **Hochladen Dateibildschirm** **"Durchsuchen"** aus, um die formatierte Excel Datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen.
 5. Wenn keine Probleme mit Ihrer Datei auftreten, wird der Name der hochgeladenen Datei angezeigt. Wählen Sie **Weiter** aus, um fortzufahren. (Wenn Sie die Datei ändern müssen, wählen Sie **Hochladen eine andere Datei** aus).
     - Wenn bei Ihrer Datei ein Fehler auftritt, wird oben in einer Fehlermeldung erläutert, was falsch ist. Sie müssen Ihre Datei korrigieren und erneut hochladen. Fehler führen dazu, dass Die Tabellenkalkulation nicht ordnungsgemäß formatiert ist oder wenn in bestimmten Feldern ungültige Informationen vorhanden sind.
 6. Der Bildschirm **"Überprüfen" und "Fertig stellen"** zeigt die Anzahl der Verbesserungsmaßnahmen und Steuerelemente sowie die Maximale Bewertung für die Vorlage an. Wenn Sie zur Genehmigung bereit sind, wählen Sie **Vorlage erstellen aus.** (Wenn Sie Änderungen vornehmen müssen, wählen Sie **"Zurück"** aus.)
 7. Der letzte Bildschirm bestätigt, dass eine neue Vorlage erstellt wurde. Wählen Sie **"Fertig"** aus, um den Assistenten zu beenden.
 8. Sie gelangen zur Detailseite Ihrer neuen Vorlage, auf der Sie [Ihre Bewertung erstellen](compliance-manager-assessments.md#create-assessments)können.
 
-## <a name="extend-an-assessment-template"></a>Erweitern einer Bewertungsvorlage
+## <a name="extend-microsoft-365-assessment-templates"></a>Erweitern Microsoft 365 Bewertungsvorlagen
 
 Compliance-Manager bietet die Möglichkeit, einer vorhandenen von Microsoft bereitgestellten Vorlage eigene Steuerelemente und Verbesserungsmaßnahmen hinzuzufügen. Dieser Vorgang wird als Erweiterung einer Microsoft-Vorlage bezeichnet. Wenn Sie eine Vorlage erweitern, kann sie weiterhin Updates erhalten, die von Microsoft veröffentlicht wurden. Dies kann passieren, wenn Änderungen an der zugehörigen Verordnung oder dem Produkt vorgenommen werden (siehe ["Akzeptieren von Updates für Bewertungen").](compliance-manager-assessments.md#accept-updates-to-assessments)
 
-Zur Vorbereitung müssen Sie ein speziell formatiertes Excel-Arbeitsblatt zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Die Excel Dateien folgen dem oben beschriebenen allgemeinen Format, es gibt jedoch spezielle Anforderungen für Erweiterungen. Sehen Sie sich die folgenden zusätzlichen Punkte an, um Fehler zu vermeiden:
+Beachten Sie, dass ihr Prozess unterschiedlich ist, wenn Sie Bewertungen für andere Produkte als Microsoft 365 einrichten. Weitere Informationen finden Sie unter [Erweitern von universellen Bewertungsvorlagen.](#extend-universal-assessment-templates)
+
+### <a name="prepare-template-data-and-create-extension"></a>Vorbereiten von Vorlagendaten und Erstellen von Erweiterungen
+
+Zur Vorbereitung müssen Sie eine speziell formatierte Excel Kalkulationstabelle zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Die Excel Dateien folgen dem oben beschriebenen allgemeinen Format, es gibt jedoch besondere Anforderungen für Erweiterungen. Sehen Sie sich die folgenden zusätzlichen Punkte an, um Fehler zu vermeiden:
 
 - Ihre Kalkulationstabelle sollte nur die Aktionen und Steuerelemente enthalten, die Sie der Bewertung hinzufügen möchten.
 - Die Kalkulationstabelle darf keines der Steuerelemente oder Aktionen enthalten, die bereits in der Bewertung vorhanden sind, die Sie ändern möchten.
@@ -178,13 +184,13 @@ Führen Sie nach dem Formatieren der Tabellenkalkulation die folgenden Schritte 
 
 3. Auf der rechten Seite des Bildschirms wird ein Vorlagenauswahl-Flyoutfenster mit einer Liste aller Vorlagen und deren Status "Aktiv" oder "Inaktiv" angezeigt. Der **aktivierte Vorlagenzähler** zeigt, wie viele Vorlagen derzeit von der Gesamtzahl der verfügbaren Vorlagen verwendet werden. Wenn Sie Ihren Grenzwert überschreiten, wird eine Meldungsleiste angezeigt.
 
-4. Auf der rechten Seite des Bildschirms wird ein Flyoutfenster für die Vorlagenauswahl angezeigt. Verwenden der **Suche** zum Anwenden von Filtern für die Suche nach der gewünschten Vorlage
+4. Auf der rechten Seite des Bildschirms wird ein Flyoutfenster für die Vorlagenauswahl angezeigt. Verwenden der **Suche** zum Anwenden von Filtern zum Suchen der gewünschten Vorlage
 
 5. Nachdem Sie die Vorlage gefunden haben, wählen Sie das Optionsfeld links neben dem Namen aus, und wählen Sie dann **Speichern** aus.
 
 6. Auf dem nächsten Bildschirm wird die ausgewählte Vorlage angezeigt. Wenn richtig, wählen Sie **Weiter**. (Wenn falsch, wählen **Sie eine andere Vorlage** aus, um sie erneut auszuwählen.)
 
-7. Wählen Sie auf dem **Bildschirm Hochladen Datei** die Option **"Durchsuchen"** aus, um die formatierte Excel datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen.
+7. Wählen Sie auf dem **Hochladen Dateibildschirm** **"Durchsuchen"** aus, um die formatierte Excel Datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen.
 
 8. Wenn keine Probleme mit Ihrer Datei auftreten, wird auf dem nächsten Bildschirm der Name der hochgeladenen Datei angezeigt. Wählen Sie **"Weiter"** aus, um fortzufahren (wenn Sie die Datei ändern müssen, wählen Sie **Hochladen eine andere Datei** aus).
 
@@ -196,15 +202,21 @@ Führen Sie nach dem Formatieren der Tabellenkalkulation die folgenden Schritte 
 
 11. Sie gelangen zur Detailseite Ihrer neuen Vorlage. Von hier aus können Sie Ihre Bewertung erstellen, indem Sie **"Bewertung erstellen"** auswählen. Anleitungen finden Sie unter [Erstellen und Verwalten von Bewertungen.](compliance-manager-assessments.md#create-assessments)
 
+## <a name="extend-universal-assessment-templates"></a>Erweitern universeller Bewertungsvorlagen
+
+Universelle Versionen von Vorlagen können auch erweitert werden, um Ihre produktspezifischen Bewertungen anzupassen. Wenn Sie eine Bewertung mithilfe einer universellen Vorlage erstellen, erhalten Sie eine spezielle Erweiterungsvorlage, und die Bewertung weist eine eindeutige Produkt- und Zertifizierungskombination auf. Dies kann an Ihre Anforderungen angepasst werden. Anleitungen zum Bearbeiten der Vorlage finden Sie in den nachstehenden Anweisungen zum Ändern einer Vorlage.
+
+Beim Bearbeiten einer universellen Vorlage kann der gesamte Inhalt in der Vorlage geändert werden. Dadurch wird jedoch die Vererbung mit der übergeordneten Vorlage unterbrochen. Dies bedeutet, dass es nicht mehr automatisch Updates von Microsoft empfängt, wenn die übergeordnete Vorlage aktualisiert wird.
+
 ## <a name="modify-a-template"></a>Ändern einer Vorlage
 
-Möglicherweise möchten Sie eine bereits erstellte Vorlage ändern, z. B. Steuerelemente hinzufügen oder Verbesserungsmaßnahmen hinzufügen oder entfernen. Der Vorgang ähnelt dem Erstellungsprozess der Vorlage, da Sie formatierte Excel Datei mit Ihren Vorlagendaten hochladen.
+Möglicherweise möchten Sie eine bereits erstellte Vorlage ändern, z. B. Steuerelemente hinzufügen oder Verbesserungsmaßnahmen hinzufügen oder entfernen. Der Vorgang ähnelt dem Erstellungsprozess der Vorlage, da Sie formatierte Excel-Datei mit Ihren Vorlagendaten hochladen.
 
 Es gibt jedoch Details, die Sie beachten sollten, wenn Sie Ihre Datei mit Änderungen an vorhandenen Vorlagendaten formatieren. **Es wird empfohlen, diese Anweisungen sorgfältig zu lesen, um sicherzustellen, dass Sie vorhandene Daten, die Sie aufbewahren möchten, nicht überschreiben.**
 
 ### <a name="format-your-excel-file-to-modify-an-existing-template"></a>Formatieren der Excel datei zum Ändern einer vorhandenen Vorlage
 
-Wählen Sie auf der Seite **"Bewertungsvorlagen"**   die Vorlage aus, die Sie ändern möchten, wodurch die Detailseite angezeigt wird. Wählen Sie dann **"Exportieren" aus, um Excel**. Eine Excel-Datei mit allen Vorlagendaten wird heruntergeladen. Speichern Sie die Datei auf Ihrem lokalen Computer.
+Wählen Sie auf der Seite **"Bewertungsvorlagen"**   die Vorlage aus, die Sie ändern möchten, wodurch die Detailseite angezeigt wird. Wählen Sie dann **Exportieren in Excel** aus. Eine Excel-Datei mit allen Vorlagendaten wird heruntergeladen. Speichern Sie die Datei auf Ihrem lokalen Computer.
 
 Um mit dieser Datei zu arbeiten, wechseln Sie zu einem Abschnitt unten, um schnell die benötigten Anweisungen zu finden:
 
@@ -227,13 +239,13 @@ Auf der Registerkarte **"Vorlagen"** können Sie alle Elemente in der **Titelspa
 
 #### <a name="edit-an-improvement-actions-information"></a>Bearbeiten der Informationen einer Verbesserungsmaßnahme
 
-Sie können die Informationen jeder Verbesserungsmaßnahme *mit Ausnahme des Titels* ändern. Sie können eine beliebige Zelle ab den Spalten B bearbeiten, und wenn Sie die Datei wieder in die Vorlage importieren, enthalten die Verbesserungsmaßnahmen in dieser Vorlage jetzt die aktualisierten Daten.
+Sie können die Informationen jeder Verbesserungsmaßnahme *mit Ausnahme des Titels* ändern. Sie können jede Zelle ab den Spalten B bearbeiten, und wenn Sie die Datei wieder in die Vorlage importieren, enthalten die Verbesserungsmaßnahmen in dieser Vorlage jetzt die aktualisierten Daten.
 
 Sie können **"actionTitle"** (Spalte A) nicht bearbeiten, da der Compliance-Manager dies als neue Verbesserungsmaßnahme betrachtet. Wenn Sie den Namen einer Verbesserungsmaßnahme ändern möchten, lesen Sie die Anweisungen unmittelbar unten.
 
 #### <a name="change-an-improvement-actions-name"></a>Ändern des Namens einer Verbesserungsmaßnahme
 
-Wenn Sie den Namen einer Verbesserungsmaßnahme ändern möchten, müssen Sie in der Tabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Gehen Sie folgendermaßen vor:
+Wenn Sie den Namen einer Verbesserungsmaßnahme ändern möchten, müssen Sie in der Tabelle explizit festlegen, dass Sie einen vorhandenen Namen durch einen neuen Namen ersetzen. Führen Sie die folgenden Schritte aus:
 
 1. Fügen Sie auf der Registerkarte **Aktionen** der Tabellenkalkulation nach Spalte A eine neue Spalte hinzu.
 2. In dieser neuen Spalte, die jetzt Spalte B ist, setzen Sie als Kopfzeile in Zeile 1: **oldActionTitle**.
@@ -248,7 +260,7 @@ Um eine Verbesserungsmaßnahme aus einer Vorlage zu entfernen, müssen Sie sie a
 
 1. Suchen Sie auf der Registerkarte **"ControlFamily"** nach dem Titel der Verbesserungsmaßnahme, die Sie entfernen möchten.
 2. Löschen Sie den Titel der Verbesserungsmaßnahme in den Zellen, in denen sie angezeigt wird. Wenn die Verbesserungsmaßnahme die einzige Aktion für diese Zeile ist, löschen Sie die gesamte Zeile (wodurch das Steuerelement entfernt wird).
-3. Löschen Sie auf der Registerkarte **"Aktionen"** die Zeile, die die Verbesserungsmaßnahme enthält, die Sie löschen.
+3. Löschen Sie auf der Registerkarte **"Aktionen"** die Zeile mit der Verbesserungsmaßnahme, die Sie löschen.
 4. Speichern Sie Ihre Kalkulationstabelle.
 
 Wenn Sie Ihre Kalkulationstabelle wieder in die Vorlage importieren, wird Ihre Verbesserungsmaßnahme aus der Vorlage entfernt.
@@ -282,12 +294,12 @@ Nachdem Ihre Excel Datei abgeschlossen und gespeichert wurde, führen Sie die fo
 Ihre Vorlage enthält jetzt die änderungen, die Sie vorgenommen haben. Alle Bewertungen, die diese geänderte Vorlage verwenden, zeigen jetzt ausstehende Updates an, und Sie müssen die Aktualisierungen der Bewertungen akzeptieren, um die änderungen in der Vorlage widerzuspiegeln. Erfahren Sie mehr über [Updates für Bewertungen.](compliance-manager-assessments.md#accept-updates-to-assessments)
 
 > [!NOTE]
-> Wenn Sie compliance-Manager in einer anderen Sprache als Englisch verwenden, werden Sie feststellen, dass Text in Englisch angezeigt wird, wenn Sie eine Vorlage in Excel exportieren. Die Titel von Aktionen (sowohl Ihre Verbesserungsmaßnahmen als auch Microsoft-Aktionen) müssen englisch sein, damit sie von den Steuerelementen erkannt werden. Wenn Sie Änderungen an einem Aktionstitel vornehmen, müssen Sie ihn unbedingt auf Englisch schreiben, damit die Datei korrekt importiert wird.
+> Wenn Sie compliance-Manager in einer anderen Sprache als Englisch verwenden, werden Sie feststellen, dass Text in Englisch angezeigt wird, wenn Sie eine Vorlage in Excel exportieren. Die Titel von Aktionen (sowohl Ihre Verbesserungsmaßnahmen als auch gegebenenfalls Microsoft-Aktionen) müssen englisch sein, damit sie von den Steuerelementen erkannt werden. Wenn Sie Änderungen an einem Aktionstitel vornehmen, müssen Sie ihn unbedingt auf Englisch schreiben, damit die Datei korrekt importiert wird.
 
 ## <a name="export-a-template"></a>Exportieren einer Vorlage
 
-Sie können eine Excel Datei exportieren, die alle Daten einer Vorlage enthält. Sie müssen eine Vorlage exportieren, um sie zu ändern, da dies die Excel Datei ist, die Sie im [Änderungsprozess](#modify-a-template)bearbeiten und hochladen.
+Sie können eine Excel Datei exportieren, die alle Daten einer Vorlage enthält. Sie müssen eine Vorlage exportieren, um sie zu ändern, da dies die Excel Datei ist, die Sie im [Änderungsprozess](#modify-a-template)bearbeiten und hochladen. Sie können eine Vorlage auch als Referenz exportieren, wenn Sie beim Erstellen einer neuen benutzerdefinierten Vorlage Daten daraus verwenden möchten.
 
-Um ihre Vorlage zu exportieren, wechseln Sie zur Seite mit den Vorlagendetails, und wählen Sie die Schaltfläche **"In Excel exportieren"** aus.
+Um ihre Vorlage zu exportieren, wechseln Sie zur Seite "Vorlagendetails", und wählen Sie die Schaltfläche **"In Excel exportieren"** aus.
 
 Beachten Sie, dass beim Exportieren einer Vorlage, die Sie aus einer Compliance-Manager-Vorlage erweitert haben, die exportierte Datei nur die Attribute enthält, die Sie der Vorlage hinzugefügt haben. Die exportierte Datei enthält nicht die ursprünglichen Vorlagendaten, die von Microsoft bereitgestellt werden. Informationen zum Abrufen eines solchen Berichts finden Sie in den Anweisungen zum [Exportieren eines Bewertungsberichts.](compliance-manager-assessments.md#export-an-assessment-report)

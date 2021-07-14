@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie die Compliance-Manager-Schnellstartanleitung, um Sie beim Verständnis, beim Einrichten und bei der Verwendung des Compliance-Managers zu unterstützen.
-ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 59d833c74c0d56d82d3f4ae4170e1bbd32638a49
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149046"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419595"
 ---
 # <a name="compliance-manager-quickstart"></a>Compliance-Manager-Schnellstart
 
@@ -33,7 +33,7 @@ Unabhängig davon, ob Sie zum ersten Mal zum Compliance-Manager kommen oder bere
 
 Compliance-Manager befindet sich im Microsoft 365 Compliance Center unter https://compliance.microsoft.com . Der globale Administrator Ihrer Organisation muss [Benutzerberechtigungen einrichten und Rollen zuweisen,](compliance-manager-setup.md#set-user-permissions-and-assign-roles) bevor Sie mit der Verwendung des Compliance-Managers beginnen.
 
-Wenn Sie den Compliance-Manager zum ersten Mal besuchen, wird eine Compliancebewertung für Ihre Organisation angezeigt. Compliance-Manager bewertet Ihre aktuelle Microsoft 365-Umgebung bereits anhand der Datenschutzgrundwerte. Die beste Möglichkeit, sich mit Compliance-Manager vertraut zu machen, besteht darin, zu verstehen, was Sie, die wichtigsten Elemente und wie Sie Ihr Dashboard anpassen.
+Wenn Sie den Compliance-Manager zum ersten Mal besuchen, wird eine Compliancebewertung für Ihre Organisation angezeigt. Der Compliance-Manager bewertet ihre aktuelle Microsoft 365-Umgebung bereits anhand der Datenschutzgrundwerte. Die beste Möglichkeit, sich mit Compliance-Manager vertraut zu machen, besteht darin, zu verstehen, was Sie, die wichtigsten Elemente und wie Sie Ihr Dashboard anpassen.
 
 Unsere [Compliance-Manager-Übersichtsseite](compliance-manager.md) ist der beste erste Stopp für eine umfassende Überprüfung, was Compliance-Manager ist und wie er funktioniert. Sie können auch direkt zu den wichtigsten Abschnitten unserer Dokumentation über die folgenden Links springen:
 
@@ -47,7 +47,7 @@ Unsere [Compliance-Manager-Übersichtsseite](compliance-manager.md) ist der best
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>Hochfahren: Konfigurieren des Compliance-Managers zum Verwalten Ihrer Complianceaktivitäten
 
-Sobald Sie mit den Grundlagen vertraut sind, ist es an der Zeit, die Dinge so einzurichten, dass sie den Anforderungen Ihrer Organisation entsprechen. Sie können mit Bewertungen arbeiten und Verbesserungsmaßnahmen ergreifen, um Steuerelemente zu implementieren und Ihre Compliancebewertung zu verbessern. Wenn Sie wissen, wie sie alle Aktivitäten in dieser Phase ausführen, kann dies Dazu beitragen, dass Ihre Organisation Vorschriften in Ihrer Branche und Region einhält und demonstriert. Besuchen Sie die links unten, um zu sehen:
+Sobald Sie mit den Grundlagen vertraut sind, ist es an der Zeit, die Dinge so einzurichten, dass sie den Anforderungen Ihrer Organisation entsprechen. Sie können mit Bewertungen arbeiten und Verbesserungsmaßnahmen ergreifen, um Steuerelemente zu implementieren und Ihre Compliancebewertung zu verbessern. Wenn Sie wissen, wie alle Aktivitäten in dieser Phase ausgeführt werden, kann dies Dazu beitragen, dass Ihre Organisation Vorschriften in Ihrer Branche und Region einhält und demonstriert. Besuchen Sie die links unten, um zu sehen:
 
 - [Wählen Sie eine vordefinierte Bewertung aus, um Ihre erste Bewertung zu erstellen und zu verwalten.](compliance-manager-assessments.md)
 - [Grundlegendes zur Verwendung von Vorlagen für die Erstellung von Bewertungen](compliance-manager-templates.md)
@@ -63,7 +63,7 @@ Wenn Sie mit der Verwaltung von Bewertungen im Compliance-Manager vertraut sind,
 
 Sie können auch automatisierte Tests aller oder einer Teilmenge von Verbesserungsmaßnahmen einrichten. Besuchen Sie die nachstehenden Links, um die erweiterten Funktionen im Compliance-Manager zu verstehen:
 
-- [Erweitern einer Compliance-Manager-Vorlage durch Hinzufügen eigener Steuerelemente und Verbesserungsmaßnahmen](compliance-manager-templates.md#extend-an-assessment-template)
+- [Erweitern einer Compliance-Manager-Vorlage durch Hinzufügen eigener Steuerelemente und Verbesserungsmaßnahmen](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
 - [Erstellen Einer eigenen benutzerdefinierten Vorlage](compliance-manager-templates.md#create-an-assessment-template)
 - [Ändern einer vorhandenen Vorlage zum Hinzufügen oder Entfernen von Steuerelementen und Aktionen](compliance-manager-templates.md#modify-a-template)
 - [Einrichten des automatisierten Testens von Verbesserungsmaßnahmen](compliance-manager-setup.md#set-up-automated-testing)

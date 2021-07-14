@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Bewertungen im Microsoft Compliance Manager, um ihnen zu helfen, die Anforderungen von Vorschriften und Zertifizierungen zu erfüllen, die für Ihre Organisation wichtig sind.
-ms.openlocfilehash: 4530f8544834c672b3ae1ebb70625ffe8f2ae4ae
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7014e294454095456acdac8e2c60895c400ced3f
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148938"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419607"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Erstellen und Verwalten von Bewertungen im Compliance-Manager
 
@@ -27,7 +27,7 @@ ms.locfileid: "53148938"
 
 ## <a name="introduction-to-assessments"></a>Einführung in Bewertungen
 
-Compliance-Manager hilft Ihnen bei der Erstellung von Bewertungen, die Ihre Compliance mit branchen- und regionalen Vorschriften bewerten, die für Ihre Organisation gelten. Bewertungen basieren auf dem Framework von Bewertungsvorlagen, die die erforderlichen Kontrollen, Verbesserungsmaßnahmen und Microsoft-Maßnahmen zum Abschließen der Bewertung enthalten. Das Einrichten der relevantesten Bewertungen für Ihre Organisation kann Ihnen bei der Implementierung von Richtlinien und betrieblichen Verfahren helfen, um Ihr Compliancerisiko zu begrenzen.
+Compliance-Manager hilft Ihnen bei der Erstellung von Bewertungen, die Ihre Compliance mit branchen- und regionalen Vorschriften bewerten, die für Ihre Organisation gelten. Bewertungen basieren auf dem Rahmen von Bewertungsvorlagen, die die erforderlichen Kontrollen, Verbesserungsmaßnahmen und gegebenenfalls Microsoft-Maßnahmen zum Abschließen der Bewertung enthalten. Das Einrichten der relevantesten Bewertungen für Ihre Organisation kann Ihnen bei der Implementierung von Richtlinien und betrieblichen Verfahren helfen, um Ihr Compliancerisiko zu begrenzen.
 
 Alle Ihre Bewertungen sind auf der Registerkarte "Bewertungen" des Compliance-Managers aufgeführt. Erfahren Sie mehr [darüber, wie Sie Ihre Ansicht Ihrer Bewertungen filtern und Statuszustände interpretieren.](compliance-manager-setup.md#assessments-page)
 
@@ -36,7 +36,7 @@ Alle Ihre Bewertungen sind auf der Registerkarte "Bewertungen" des Compliance-Ma
 
 ## <a name="data-protection-baseline-default-assessment"></a>Standardbewertung der Datenschutzgrundwerte
 
-Für die ersten Schritte bietet Microsoft eine **Standardbewertung** im Compliance-Manager für die **Microsoft 365 Datenschutzgrundwerte** an. Diese Baselinebewertung enthält eine Reihe von Kontrollen für wichtige Vorschriften und Standards für Datenschutz und allgemeine Datengovernance. Diese Baseline basiert hauptsächlich auf NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization) sowie aus FedRAMP (Federal Risk and Authorization Management Program) und der DSGVO (General Data Protection Regulation of the European Union).
+Für die ersten Schritte bietet Microsoft eine **Standardbewertung** im Compliance-Manager für die **Microsoft 365 Datenschutzgrundwerte** an. Diese Baselinebewertung enthält eine Reihe von Kontrollen für wichtige Vorschriften und Standards für Datenschutz und allgemeine Datengovernance. Dieser Basisplan basiert hauptsächlich auf NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization) sowie aus FedRAMP (Federal Risk and Authorization Management Program) und der DSGVO (General Data Protection Regulation of the European Union).
 
 Diese Bewertung wird verwendet, um Ihre anfängliche Compliancebewertung zu berechnen, wenn Sie zum ersten Mal zum Compliance-Manager kommen, bevor Sie andere Bewertungen konfigurieren. Compliance-Manager sammelt erste Signale von Ihren Microsoft 365 Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Verhältnis zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen, welche Verbesserungsmaßnahmen sie ergreifen müssen.
 
@@ -54,7 +54,7 @@ Nachfolgend finden Sie Beispiele für zwei Gruppen und deren zugrunde liegende B
   - ISO 27001:2013
   - ISO 27018:2014
 
-Wenn zwei verschiedene Bewertungen in derselben Gruppe Verbesserungsmaßnahmen teilen, die Sie verwalten, werden alle Aktualisierungen, die Sie an den Implementierungsdetails oder dem Status einer Aktion vornehmen, automatisch in der gesamten Gruppe synchronisiert. Mit dieser Synchronisierung können Sie eine Verbesserungsmaßnahme implementieren und mehrere Anforderungen gleichzeitig erfüllen.
+Unterschiedliche Bewertungen innerhalb einer Gruppe oder Einer Gruppe können Verbesserungsmaßnahmen gemeinsam nutzen. Verbesserungsmaßnahmen können Änderungen sein, die Sie in technischen Lösungen vornehmen, die Ihrem Mandanten zugeordnet sind, z. B. das Aktivieren der zweistufigen Authentifizierung oder nicht technische Aktionen, die Sie außerhalb des Systems ausführen, z. B. das Auslösen einer neuen Arbeitsplatzrichtlinie. Alle Aktualisierungen von Details oder Status, die Sie an einer technischen Verbesserung vornehmen, werden von Bewertungen in allen Gruppen übernommen. Updates für nicht technische Verbesserungsmaßnahmen werden von Bewertungen innerhalb der Gruppe, in der Sie sie anwenden, erkannt. Auf diese Weise können Sie eine Verbesserungsmaßnahme implementieren und mehrere Anforderungen gleichzeitig erfüllen.
 
 ### <a name="create-a-group"></a>Erstellen einer Gruppe
 
@@ -68,12 +68,13 @@ Sie können eine Gruppe erstellen, während Sie eine neue Bewertung erstellen. G
 - Nachdem Sie einer Gruppe eine Bewertung hinzugefügt haben, kann die Gruppierung nicht mehr geändert werden.
 - Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen aus Bewertungen in dieser Gruppe in die neue Bewertung kopiert.
 - Verwandte Bewertungssteuerelemente in verschiedenen Bewertungen innerhalb derselben Gruppe werden automatisch aktualisiert, wenn sie abgeschlossen sind.
-- Wenn eine Änderung an einer Verbesserung vorgenommen wird, die in mehreren Gruppen angezeigt wird, wird diese Änderung in allen Fällen dieser Verbesserungsmaßnahme widergespiegelt.
 - Gruppen können Bewertungen für die gleiche Zertifizierung oder Vorschrift enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produkt-Zertifizierungspaar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und NIST CSF enthalten. Eine Gruppe kann nur dann mehrere Bewertungen für dasselbe Produkt enthalten, wenn die entsprechende Zertifizierung oder Verordnung für jedes Produkt unterschiedlich ist.
 - Durch das Löschen einer Bewertung wird die Beziehung zwischen dieser Bewertung und der Gruppe unterbrochen.
 - Gruppen können nicht manuell gelöscht werden.
 
 ## <a name="create-assessments"></a>Erstellen von Bewertungen
+
+Zum Erstellen einer Bewertung verwenden Sie einen Assistenten, um die Vorlage auszuwählen, die sie verwenden soll, und legen die Eigenschaften der Bewertung fest. Vorlagen enthalten die Steuerelemente und Aktionsempfehlungen für die Bewertung, basierend auf Zertifizierungen für unterschiedliche Datenschutzbestimmungen und -standards. Die verfügbaren Vorlagen Ihrer Organisation können eine oder mehrere Vorlagen enthalten, die als Teil Ihres Lizenzvertrags enthalten waren, sowie alle zusätzlichen Premiumvorlagen, die Sie erworben haben. Jede Vorlage , ob enthalten oder Premium, ist in zwei Versionen vorhanden: einer für die Verwendung mit Microsoft 365 und einer universellen Version, die auf andere Produkte zugeschnitten werden kann, die Sie verwenden. Weitere Informationen zu Vorlagen finden Sie unter [Arbeiten mit Bewertungsvorlagen.](compliance-manager-templates.md)
 
 > [!NOTE]
 > Nur Benutzer mit einer Rolle als globaler Administrator, Compliance-Manager-Administration oder Compliance-Manager-Prüfer können Bewertungen erstellen und ändern. Erfahren Sie mehr über [Rollen und Berechtigungen.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
@@ -88,7 +89,9 @@ Führen Sie die folgenden Schritte aus, um mit dem Erstellen von Bewertungen zu 
 
 3. **Wählen Sie eine Vorlage** aus: Wenn Sie in Schritt 2 noch keine Vorlage ausgewählt haben, wählen Sie eine Vorlage aus, die als Grundlage für Ihre Bewertung dient. Sie sehen die Liste der Vorlagen, die in eingeschlossene und Premiumkategorien unterteilt sind (weitere Informationen finden Sie unter [Vorlagentypen).](compliance-manager-templates.md#template-availability-and-licensing) Wählen Sie das Optionsfeld neben der ausgewählten Vorlage aus, und klicken Sie dann auf **"Weiter".**
 
-4. **Name und Gruppe:** Legen Sie diese Eigenschaften fest, um Ihre Bewertung zu identifizieren und einer Gruppe zuzuweisen.
+4. **Produkt, Name und Gruppe:** Legen Sie diese Eigenschaften fest, um Ihre Bewertung zu identifizieren, auszuwählen, welches Produkt sie auswerten wird, und weisen Sie sie einer Gruppe zu.
+
+    - **Produkt:** Wenn Sie eine universelle Vorlage verwenden, wählen Sie aus, ob Sie diese Bewertung für ein neues Produkt oder ein vorhandenes benutzerdefiniertes Produkt erstellen, das Sie bereits im Compliance-Manager definiert haben. Wenn Sie ein neues Produkt auswählen, geben Sie dessen Namen ein. Beachten Sie, dass Sie Microsoft 365 nicht als Produkt auswählen können, wenn Sie eine universelle Vorlage verwenden. Wenn Sie eine Microsoft 365 Vorlage verwenden, wird dieses Feld ausgefüllt, damit Sie Microsoft 365 angeben können und kann nicht geändert werden.
     - **Name:** Geben Sie im Feld **"Bewertungsname"** einen Namen für Ihre Bewertung ein. Bewertungsnamen müssen innerhalb von Gruppen eindeutig sein. Wenn der Name Ihrer Bewertung mit dem Namen einer anderen Bewertung in einer bestimmten Gruppe übereinstimmt, erhalten Sie eine Fehlermeldung, in der Sie aufgefordert werden, einen anderen Namen zu erstellen.
     - **Gruppe:** Weisen Sie Ihre Bewertung einer Gruppe zu. Sie können eine der folgenden Aktionen ausführen:
         - Wählen Sie **"Vorhandene Gruppe verwenden"** aus, um sie einer gruppe zuzuweisen, die Sie bereits erstellt haben. Oder
@@ -114,13 +117,13 @@ Jede Bewertung verfügt über eine Detailseite, die einen Überblick über ihren
 
 Die Registerkarte "Übersicht" enthält ein Diagramm, das Ihren Prozentsatz für den Abschluss der Bewertung anzeigt. Dieses Diagramm enthält eine Aufschlüsselung von Punkten aus Aktionen, die Sie besitzen, und Punkt aus Aktionen, die Microsoft gehört, damit Sie sehen können, wie viele weitere Punkte Sie benötigen, um die Bewertung abzuschließen.
 
-Die wichtigsten Verbesserungsmaßnahmen für Steuerelemente in der Bewertung werden in der Reihenfolge der größten potenziellen Auswirkungen aufgelistet, um Punkte zu erzielen. Das zugeordnete Diagramm zeigt den aggregierten Teststatus Ihrer Verbesserungsmaßnahmen an, damit Sie schnell ermitteln können, was getestet wurde und was noch zu tun ist.
+Die wichtigsten Verbesserungsmaßnahmen für Steuerelemente in der Bewertung werden in der Reihenfolge der größten potenziellen Auswirkungen aufgelistet, um Punkte zu erzielen. Das zugeordnete Diagramm beschreibt den aggregierten Teststatus Ihrer Verbesserungsmaßnahmen, damit Sie schnell ermitteln können, was getestet wurde und was noch zu tun ist.
 
 Um auf einzelne Verbesserungsmaßnahmen zuzugreifen, besuchen Sie die Registerkarte **"Steuerelemente"** oder die Registerkarte **"Verbesserungsmaßnahmen".**
 
 ### <a name="controls-tab"></a>Registerkarte "Steuerelemente"
 
-Auf der Registerkarte "Steuerelemente" werden detaillierte Informationen für jedes Steuerelement angezeigt, das der Bewertung zugeordnet ist. Ein Übersichtsdiagramm zum **Steuerelementstatus** zeigt den Status von Steuerelementen nach Familie, sodass Sie auf einen Blick sehen können, welche Gruppierungen von Steuerelementen Aufmerksamkeit benötigen.
+Auf der Registerkarte "Steuerelemente" werden detaillierte Informationen für jedes Steuerelement angezeigt, das der Bewertung zugeordnet ist. Ein Übersichtsdiagramm für den **Steuerelementstatus** zeigt den Status von Steuerelementen nach Familie, sodass Sie auf einen Blick sehen können, welche Gruppierungen von Steuerelementen Aufmerksamkeit benötigen.
 
 Unterhalb des Diagramms enthält eine Tabelle detaillierte Informationen zu den einzelnen Steuerelementen innerhalb der Bewertung. Steuerelemente werden nach Steuerelementfamilie gruppiert. Erweitern Sie jeden Nachnamen, um die einzelnen darin enthaltenen Steuerelemente einzugeben. Die für jedes Steuerelement aufgeführten Informationen umfassen:
 
@@ -130,15 +133,15 @@ Unterhalb des Diagramms enthält eine Tabelle detaillierte Informationen zu den 
     -  **Fehlgeschlagen** – mindestens eine Verbesserungsmaßnahme weist den Teststatus "fehlgeschlagen" auf.
     - **Keine** – alle Verbesserungsmaßnahmen wurden nicht getestet
     - **Außerhalb des Gültigkeitsbereichs** – alle Verbesserungsmaßnahmen sind für diese Bewertung nicht in Reichweite
-    - **In Bearbeitung** – Verbesserungsmaßnahmen haben einen anderen Status als die oben aufgeführten, die "in Bearbeitung", "teilweise Gutschrift" oder "nicht erkannt" umfassen könnten.
+    - **In Bearbeitung** – Verbesserungsmaßnahmen haben einen anderen Status als die oben aufgeführten, die "in Bearbeitung", "Teilgutschrift" oder "nicht erkannt" umfassen könnten.
 - **Steuerelement-ID:** Die Identifikationsnummer des Steuerelements, die durch die entsprechende Verordnung, den Standard oder die Richtlinie zugewiesen wird
 - **Erreichte Punkte:** die Anzahl der Punkte, die durch das Abschließen von Aktionen erzielt werden, von der Gesamtzahl der erreichbaren Punkte. 
 - **Ihre Aktionen:** die Anzahl der abgeschlossenen Aktionen aus der Gesamtzahl der auszuführenden Aktionen.
-- **Microsoft-Aktionen:** Die Anzahl der von Microsoft abgeschlossenen Aktionen 
+- **Microsoft-Aktionen:** Die Anzahl der von Microsoft abgeschlossenen Aktionen
 
 Um die Details eines Steuerelements anzuzeigen, wählen Sie es aus der Zeile in der Tabelle aus. Die Seite mit den Steuerelementdetails zeigt ein Diagramm, das den Teststatus der Aktionen innerhalb dieses Steuerelements angibt. Eine Tabelle unterhalb des Diagramms zeigt die wichtigsten Verbesserungsmaßnahmen für dieses Steuerelement.
 
-Wählen Sie eine Verbesserungsmaßnahme aus der Liste aus, um einen Drilldown zur Detailseite der Verbesserungsmaßnahme auszuführen. Auf den Detailseiten werden Teststatus, Implementierungshinweise und der Start in der empfohlenen Lösung angezeigt.
+Wählen Sie eine Verbesserungsmaßnahme aus der Liste aus, um einen Drilldown zur Detailseite der Verbesserungsmaßnahme auszuführen. Auf der Detailseite werden Teststatus- und Implementierungshinweise angezeigt und mit der empfohlenen Lösung gestartet.
 
 ### <a name="your-improvement-actions-tab"></a>Registerkarte "Verbesserungsmaßnahmen"
 
@@ -148,7 +151,7 @@ Wählen Sie eine Verbesserungsmaßnahme aus, um die Detailseite anzuzeigen, und 
 
 ### <a name="microsoft-actions-tab"></a>Registerkarte "Microsoft-Aktionen"
 
-Die Registerkarte "Microsoft-Aktionen" listet alle Aktionen in der Bewertung auf, die von Microsoft verwaltet werden. Die Liste enthält wichtige Aktionsdetails, einschließlich: Teststatus, Punkte, die zu Ihrer allgemeinen Compliancebewertung beitragen, zugehörige Vorschriften und Standards, zutreffende Lösung, Aktionstyp und Steuerelementfamilie. Wählen Sie eine Verbesserungsmaßnahme aus, um die Detailseite anzuzeigen.
+Die Registerkarte "Microsoft-Aktionen" wird für Bewertungen angezeigt, die auf den Microsoft 365 Versionen der Vorlagen basieren. Sie listet alle Aktionen in der Bewertung auf, die von Microsoft verwaltet werden. Die Liste enthält wichtige Aktionsdetails, einschließlich: Teststatus, Punkte, die zu Ihrer allgemeinen Compliancebewertung beitragen, zugehörige Vorschriften und Standards, zutreffende Lösung, Aktionstyp und Steuerelementfamilie. Wählen Sie eine Verbesserungsmaßnahme aus, um die Detailseite anzuzeigen.
 
 Erfahren Sie mehr [darüber, wie Steuerelemente und Verbesserungsmaßnahmen nachverfolgt und bewertet werden.](compliance-score-calculation.md)
 

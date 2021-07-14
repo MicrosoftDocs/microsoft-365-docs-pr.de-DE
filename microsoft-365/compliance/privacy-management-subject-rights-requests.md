@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Lösung zur Anforderung von Betreffrechten in Microsoft Privacy Management hilft Ihnen bei der Suche nach personenbezogenen Daten und der Zusammenarbeit bei der Überprüfung von Inhalten und dem Erstellen von Berichten.
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378531"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419775"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Verwalten von Anträgen auf Rechte von Antragstellern in der Datenschutzverwaltung (Vorschau)
 
@@ -47,7 +47,7 @@ Informationen zum Öffnen einer neuen Anforderung finden Sie unter [Erstellen ei
 
 ## <a name="create-a-request"></a>Erstellen einer Anforderung
 
-Administratoren der Rechteverwaltung können den Assistenten für die Datenschutzverwaltung verwenden, um Anforderungen zu erstellen. Dieser Assistent führt Sie durch den Prozess der Suche nach personenbezogenen Daten über eine betroffene Person und deren Erfüllung.
+Administratoren der Rechteverwaltung können den Assistenten für die Datenschutzverwaltung verwenden, um Anforderungen zu erstellen. Der Assistent führt Sie durch den Prozess der Suche nach personenbezogenen Daten über eine betroffene Person und deren Erfüllung.
 
 Die vier Hauptschritte umfassen Folgendes.
 
@@ -121,15 +121,15 @@ Wenn Sie die erforderlichen Aktionen ausgeführt haben, um ihre Anforderung zu D
 
 ### <a name="view-and-edit-search-queries"></a>Anzeigen und Bearbeiten von Suchabfragen
 
-Wenn Sie detaillierte Informationen zur Datensuche hinter einer Anforderung für Betreffrechte anzeigen möchten, wählen Sie die Option **"Suchabfragedetails anzeigen"** aus der Datenvorkalkulationskarte aus. Dadurch wird ein Bereich geöffnet, in dem die Abfrage zusammengefasst und weitere Details zu den Gefundenen angezeigt werden.
+Wenn Sie detaillierte Informationen zur Datensuche hinter einer Anforderung für Betreffrechte anzeigen möchten, wählen Sie die Option **"Suchabfragedetails anzeigen"** auf der Datenvorkalkulationskarte aus. Dadurch wird ein Bereich geöffnet, in dem die Abfrage zusammengefasst und weitere Details dazu angezeigt werden, was gefunden wurde.
 
-Hier haben Sie die Möglichkeit, **eine Vorschau** der Suchergebnisse anzuzeigen, um zu sehen, welcher Inhaltstyp für diese Abfrage zurückgegeben wird. Wenn Sie feststellen, dass Sie die Eigenschaften dieser Suche ändern möchten und die Phase "Daten abrufen" noch nicht begonnen haben, können Sie die **Suchabfrageoption** bearbeiten verwenden. Dieser Assistent bietet die Möglichkeit, Eigenschaften für die Identifizierung betroffener Personen, Ihre Suchfilter und -bedingungen sowie die Speicherorte, an denen nach Daten gesucht werden soll (einschließlich Exchange, SharePoint, OneDrive und/oder Teams) zu ändern oder hinzuzufügen. Verwenden Sie diese Optionen, um den gewünschten Grad an Spezifität zu erreichen. Sie können die endgültige Version der neuen Abfrage überprüfen, bevor Sie auf **"Speichern"** drücken.
+Hier haben Sie die Möglichkeit, **eine Vorschau** der Suchergebnisse anzuzeigen, um zu sehen, welcher Inhaltstyp für diese Abfrage zurückgegeben wird. Wenn Sie feststellen, dass Sie die Eigenschaften dieser Suche ändern möchten und die Phase "Daten abrufen" noch nicht begonnen haben, können Sie die **Suchabfrageoption** bearbeiten verwenden. Dieser Assistent bietet die Möglichkeit, Eigenschaften für die Identifizierung betroffener Personen, Ihre Suchfilter und -bedingungen sowie die Speicherorte für die Suche nach Daten (einschließlich Exchange, SharePoint, OneDrive und/oder Teams) zu ändern oder hinzuzufügen. Verwenden Sie diese Optionen, um den gewünschten Grad an Spezifität zu erreichen. Sie können die endgültige Version der neuen Abfrage überprüfen, bevor Sie auf **"Speichern"** drücken.
 
 Wenn Sie die Bearbeitung der Suchabfrage abgeschlossen haben, wird eine neue Suche ausgeführt, um Ihre vorherigen Suchergebnisse zu ersetzen. Dadurch wird Der Status im Abschnitt "Fortschritt" auf den ersten Schritt, die Schätzung der **Daten,** zurückgesetzt. Die neue Suche kann bis zu 60 Minuten dauern. Sobald dies abgeschlossen ist, werden auf der Detailseite der Anforderung aktualisierte Ergebnisse angezeigt.
 
 ### <a name="data-retention"></a>Datenaufbewahrung
 
-Berichte, die über dieses Tool generiert werden, und die zugehörigen Daten, z. B. in Azure gespeicherte Kommentierte Dateien, werden für einen bestimmten Zeitraum gespeichert. Diese Dauer wird über **Einstellungen** im Abschnitt **"Datenaufbewahrungszeiträume"** global definiert, sodass Sie zwischen 30 und 90 Tagen wählen können. Weitere Informationen finden Sie unter ["Erste Schritte mit der Datenschutzverwaltung".](privacy-management-setup.md)
+Berichte, die über dieses Tool generiert werden, und die zugehörigen Daten, z. B. in Azure gespeicherte Kommentierte Dateien, werden für einen bestimmten Zeitraum gespeichert. Diese Dauer wird auf globaler Ebene über **Einstellungen** im Abschnitt **"Datenaufbewahrungszeiträume"** definiert, sodass Sie zwischen 30 und 90 Tagen wählen können. Weitere Informationen finden Sie unter ["Erste Schritte mit der Datenschutzverwaltung".](privacy-management-setup.md)
 
 ## <a name="collaborate-on-requests-with-teams"></a>Zusammenarbeit an Anforderungen mit Teams
 
@@ -139,13 +139,13 @@ Um die Liste der aktiven Mitarbeiter zu überprüfen, die Ihre Teamwebsite anzei
 
 Um das Standardverhalten des Generierens von Teams Websites beim Erstellen einer Anforderung für Betreffrechte zu ändern, wählen Sie den **Einstellungen** Zahnrad in der oberen rechten Ecke der Seite zur Anforderung von Antragstellerrechten aus, und wählen Sie **Teams Zusammenarbeit** aus, um die Einstellung zu ändern.
 
-Sie können auch die Option **"Freigeben"** in der oberen rechten Ecke innerhalb einer Anforderung für Betreffrechte verwenden, um Personen über Teams oder E-Mail einzugeben oder den Link zur Seite in der Datenschutzverwaltung zu kopieren. Die Freigabe über Teams ermöglicht es Ihnen, eine vorhandene Teams-Website auszuwählen, die für Ihr Konto verfügbar ist, und einen bestimmten Kanal auf dieser Website auszuwählen, in dem der Link zu diesem Fall zusammen mit einer von Ihnen bereitgestellten Nachricht bereitgestellt wird.
+Sie können auch die Option **"Freigeben"** in der oberen rechten Ecke innerhalb einer Anforderung für Betreffrechte verwenden, um Personen über Teams oder E-Mail einzugeben oder den Link zu der Seite in der Datenschutzverwaltung zu kopieren. Die Freigabe über Teams ermöglicht es Ihnen, eine vorhandene Teams-Website auszuwählen, die für Ihr Konto verfügbar ist, und einen bestimmten Kanal auf dieser Website auszuwählen, in dem der Link zu diesem Fall zusammen mit einer von Ihnen bereitgestellten Nachricht bereitgestellt wird.
 
 ## <a name="automate-subject-rights-request-tasks"></a>Automatisieren von Aufgaben zur Anforderung von Antragstellerrechten
 
 Microsoft Power Automate ist ein Workflowdienst, der Aktionen über Anwendungen und Dienste hinweg automatisiert. Wenn Sie Power Automate Flüsse für die Datenschutzverwaltung aktivieren, können Sie wichtige Aufgaben für Fälle und Benutzer automatisieren. Weitere Informationen zu Power Automate finden Sie auf der [Dokumentationswebsite.](/power-automate/getting-started)
 
-Kunden mit Microsoft 365 Abonnements mit Datenschutzverwaltung benötigen keine weiteren Power Automate Lizenzen, um die empfohlene Datenschutzverwaltung Power Automate Vorlagen zu verwenden. Diese Vorlagen können angepasst werden, um Ihre Organisation zu unterstützen und die wichtigsten Datenschutzverwaltungsszenarien abzudecken. Wenn Sie premium Power Automate Features in diesen Vorlagen verwenden, eine benutzerdefinierte Vorlage mit dem Microsoft 365 Compliance Connector erstellen oder Power Automate Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise weitere Power Automate Lizenzen.
+Kunden mit Microsoft 365 Abonnements, die datenschutzverwaltung enthalten, benötigen keine weiteren Power Automate Lizenzen, um die empfohlene Datenschutzverwaltung Power Automate Vorlagen zu verwenden. Diese Vorlagen können angepasst werden, um Ihre Organisation zu unterstützen und die wichtigsten Datenschutzverwaltungsszenarien abzudecken. Wenn Sie premium Power Automate Features in diesen Vorlagen verwenden, eine benutzerdefinierte Vorlage mit dem Microsoft 365 Compliance Connector erstellen oder Power Automate Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise mehr Power Automate Lizenzen.
 
 Die folgenden Power Automate Vorlagen sind in der Datenschutzverwaltung enthalten:
 
@@ -156,23 +156,23 @@ Die folgenden Power Automate Vorlagen sind in der Datenschutzverwaltung enthalte
 
 Öffnen Sie zunächst die Antragstellerberechtigungsanforderung, mit der Sie arbeiten möchten, wählen Sie **"Automatisieren"** aus, und wählen Sie dann **Power Automate Flüsse** verwalten aus. Dadurch wird der Flyoutbereich Flows geöffnet. Verwenden Sie die Option "Neu", und wählen Sie die Vorlage aus den verfügbaren Optionen aus, die Sie verwenden möchten. Befolgen Sie von hier aus die Anweisungen, um das Setup abzuschließen.
 
-Nachdem Sie eine Instanz der Vorlage gespeichert haben, müssen Sie sie auf der Detailseite der Anforderung für Betreffrechte ausführen, damit die Flussinstanz den richtigen Kontext und die richtige ID hat. Öffnen Sie die Anforderung, kehren Sie zum Menü **"Automatisieren"** zurück, wählen Sie die Vorlage aus, und wählen Sie **"Flow ausführen"** aus. Sie können Ihre früheren Aktivitäten sehen, indem Sie **"Aktivität zum Ausführen** des Flusses anzeigen" auswählen.
+Nachdem Sie eine Instanz der Vorlage gespeichert haben, müssen Sie sie auf der Detailseite der Anforderung für Betreffrechte ausführen, damit die Flussinstanz den richtigen Kontext und die richtige ID hat. Öffnen Sie die Anforderung, kehren Sie zum Menü **"Automatisieren"** zurück, wählen Sie die Vorlage aus, und wählen Sie **"Flow ausführen"** aus. Sie können Ihre früheren Aktivitäten anzeigen, indem Sie **"Aktivität zum Ausführen** des Flusses anzeigen" auswählen.
 
 ### <a name="share-a-power-automate-flow"></a>Freigeben eines Power Automate Flusses
 
-Durch die Freigabe eines Power Automate Flusses können Sie einen anderen Besitzer hinzufügen und es diesen ermöglichen, den Fluss zu bearbeiten, zu aktualisieren und zu löschen. Alle Besitzer können auch auf den Ausführungsverlauf zugreifen und andere Besitzer hinzufügen oder entfernen. Um einen Fluss freizugeben, öffnen Sie die Anforderung zu Den Betreffrechten, mit der Sie arbeiten möchten, wählen Sie **"Automatisieren"** aus, und wählen Sie dann **Power Automate Flüsse** verwalten aus. In diesem Bereich können Sie einen vorhandenen Fluss auswählen und dann die Option "Freigeben" verwenden, um einen Benutzer oder eine Gruppe hinzuzufügen.
+Durch die Freigabe eines Power Automate Flusses können Sie einen anderen Besitzer hinzufügen und diesen das Bearbeiten, Aktualisieren und Löschen des Flusses ermöglichen. Alle Besitzer können auch auf den Ausführungsverlauf zugreifen und andere Besitzer hinzufügen oder entfernen. Um einen Fluss freizugeben, öffnen Sie die Anforderung zu Den Betreffrechten, mit der Sie arbeiten möchten, wählen Sie **"Automatisieren"** aus, und wählen Sie dann **Power Automate Flüsse** verwalten aus. In diesem Bereich können Sie einen vorhandenen Fluss auswählen und dann die Option "Freigeben" verwenden, um einen Benutzer oder eine Gruppe hinzuzufügen.
 
 In diesem Bereich haben Sie auch die Möglichkeit, die eingebetteten Verbindungen mit Diensten zu verwalten, die im Power Automate-Fluss verwendet werden. Wenn Sie diese Einstellungen ändern, kann sich dies auf Die Ausführung des Flusses auswirken.
 
 ### <a name="edit-or-delete-power-automate-flow"></a>Bearbeiten oder Löschen Power Automate Flusses
 
-Um Details eines Power Automate Flusses anzupassen, öffnen Sie die Anforderung für Betreffrechte, wählen Sie **"Automatisieren"** aus, und wählen **Sie "Verwalten Power Automate Flüsse" aus.** In diesem Bereich können Sie einen vorhandenen Fluss auswählen, um Details anzuzeigen. Verwenden Sie "Bearbeiten" in einem beliebigen Abschnitt, um die Eigenschaften zu ändern und dann zu speichern.
+Um Details eines Power Automate Flusses anzupassen, öffnen Sie die Anforderung für Betreffrechte, wählen Sie **Automatisieren** und dann **Power Automate Flüsse** verwalten aus. In diesem Bereich können Sie einen vorhandenen Fluss auswählen, um Details anzuzeigen. Verwenden Sie "Bearbeiten" in einem beliebigen Abschnitt, um die Eigenschaften zu ändern und dann zu speichern.
 
 Um den Fluss vollständig zu entfernen, verwenden Sie die Option **"Löschen".** Er entfernt den Fluss für alle Besitzer und deinstalliert ihn für alle Benutzer. Frühere Flussinstanzen werden weiterhin ausgeführt, um Datenverluste zu vermeiden. Sie können Ihre Auswahl bestätigen, bevor der Löschvorgang abgeschlossen ist.
 
 ## <a name="data-matching"></a>Datenabgleich
 
-Mit dem Datenabgleich können Organisationen die Datenschutzverwaltungslösung aktivieren, um betroffene Personen basierend auf genau angegebenen Datenwerten zu identifizieren. Dies kann dazu beitragen, die Genauigkeit der Suche nach Inhalten betroffener Personen sowohl für Ihr internes Personal als auch für externe Benutzer, mit denen Sie interagieren, zu erhöhen. Außerdem vereinfacht es die Notwendigkeit, Felder während der Erstellung von Anträgen auf Antrag einer Betroffenen manuell zur Verfügung zu stellen, und bietet Kontext innerhalb von Anträgen von Betreffrechten und für die Kachel "Übersicht", die Ihre Elemente mit den meisten Inhalten betroffener Personen anzeigt. Weitere Informationen zu dieser Ansicht finden Sie unter [Suchen und Visualisieren Ihrer Daten.](privacy-management-data-profile.md#items-with-the-most-data-subject-content)
+Mit dem Datenabgleich können Organisationen die Datenschutzverwaltungslösung aktivieren, um betroffene Personen basierend auf genau angegebenen Datenwerten zu identifizieren. Dies kann dazu beitragen, die Genauigkeit der Suche nach Inhalten betroffener Personen sowohl für Ihr internes Personal als auch für externe Benutzer, mit denen Sie interagieren, zu erhöhen. Außerdem vereinfacht es die Notwendigkeit, Felder während der Erstellung von Anträgen auf Antrag einer Betroffenen manuell zur Verfügung zu stellen, und stellt Kontext innerhalb von Anträgen von Betreffrechten sowie für die Kachel "Übersicht" bereit, die Ihre Elemente mit den meisten Inhalten betroffener Personen anzeigt. Weitere Informationen zu dieser Ansicht finden Sie unter [Suchen und Visualisieren Ihrer Daten.](privacy-management-data-profile.md#items-with-the-most-data-subject-content)
 
 Um die Datenabgleichsfunktion zu verwenden, müssen Sie Mitglied der Rollengruppe "Datenschutzverwaltung" sein. Wählen Sie das Zahnradsymbol für Einstellungen in der oberen rechten Ecke der Hauptseite für Anträge betroffener Personen aus, und wählen Sie **"Datenübereinstimmung"** aus. Von hier aus müssen Sie das Schema für personenbezogene Daten definieren und einen Upload personenbezogener Daten bereitstellen, wie unten dargestellt. Beachten Sie, dass Sie Elemente hinzufügen und Elemente löschen können, die Sie über die Benutzeroberfläche hinzufügen. Sie können jedoch derzeit kein Element über die Benutzeroberfläche ändern.
 
@@ -188,12 +188,12 @@ Das Schema für personenbezogene Daten beschreibt die Attribute für Ihre betrof
 
 Die Schemadatei für personenbezogene Daten ist eine XML-Datei, die definiert, welche Spaltennamen erwartet werden.
 
-- Benennen Sie diese Schemadatei *pdm.xml*.
+- Benennen Sie diese Schemadatei *pdm.xml.*
 - Definieren Sie jeden Spaltennamen mithilfe des Feldnamentags, wie im folgenden Beispiel dargestellt.
 - Verwenden Sie durchsuchbar = "true" für Felder, die durchsuchbar sein sollen, bis zu maximal fünf Felder. Mindestens einer ihrer Feldnamen muss durchsuchbar sein. Beispielsyntax: `\<Field name="" searchable=""/>` .
 - Das Schema für personenbezogene Daten verfügt über einen DataStore-Tag-Abschnitt. Den Feldnamen müssen vier Pflichtfelder zugeordnet werden: primaryKeyField, upnField, firstNameField, lastNameField.
 
-Als Beispiel definiert die folgende XML-Datei ein Beispielschema mit fünf durchsuchbaren Feldern: PatientID, MRN, SSN, Telefon und DOB. The primaryKeyField is mapped to PatientID, upnField is mapped to MRN, firstNameField is mapped to FirstName, and lastNameField is mapped to LastName.
+Die folgende XML-Datei definiert beispielsweise ein Beispielschema mit fünf durchsuchbaren Feldern: PatientID, MRN, SSN, Telefon und DOB. The primaryKeyField is mapped to PatientID, upnField is mapped to MRN, firstNameField is mapped to FirstName, and lastNameField is mapped to LastName.
 
 Sie können das Beispiel kopieren, ändern und verwenden.
 
@@ -231,7 +231,7 @@ Wenn Sie das Regelpaket einrichten, müssen Sie die oben erstellte Schemadatei f
 In unserem xml-Beispiel für das Regelpaket unten verweisen wir auf die pdm.xml Beispieldatei aus dem vorherigen Schritt, die das XML-Schema für personenbezogene Daten erstellt:
 
 - **Datastore**: Der DataStore-Name verweist auf die Schemadatei, die wir zuvor erstellt haben: dataStore = "PatientRecords".
-- **idMatch**: Der idMatch-Wert verweist auf ein durchsuchbares Feld, das in der zuvor erstellten pdm.xml Datei aufgeführt ist: idMatch matches = "SSN".
+- **idMatch**: Der idMatch-Wert verweist auf ein durchsuchbares Feld, das in der zuvor erstellten datei pdm.xml aufgeführt ist: idMatch matches = "SSN".
   - **Klassifizierung:** Der Klassifizierungswert verweist auf einen vorhandenen oder benutzerdefinierten vertraulichen Informationstyp: Klassifizierung = "U.S. Sozialversicherungsnummer (SSN)". (In diesem Fall wird der vorhandene vertrauliche Informationstyp "US-Sozialversicherungsnummer" verwendet.)
 
 Erstellen Sie ein Regelpaket im XML-Format (mit Unicode-Codierung), wie im folgenden Beispielcode. Sie können dieses Beispiel kopieren, ändern und verwenden.
