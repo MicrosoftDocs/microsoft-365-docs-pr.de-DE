@@ -555,6 +555,44 @@
           href: record-versioning.md
         - name: Ressourcen für behördliche Vorschriften
           href: retention-regulatory-requirements.md
+- name: Verwalten der App-Steuerung
+  items:
+    - name: Schützen und Steuern Ihrer Apps
+      href: app-governance-manage-app-protection-governance.md
+    - name: Erste Schritte mit App-Steuerung
+      href: app-governance-get-started.md
+    - name: Feedback zur App-Steuerung übermitteln
+      href: app-governance-feedback.md
+    - name: App-Transparenz und -Einblicke
+      items:
+        - name: Mehr über Transparenz und Einblicke erfahren
+          href: app-governance-visibility-insights-overview.md
+        - name: Erste Schritte
+          href: app-governance-visibility-insights-get-started.md
+        - name: Apps anzeigen
+          href: app-governance-visibility-insights-view-apps.md
+        - name: Bestimmen des Konformitätsstatus
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: Implementieren von App-Richtlinien
+      items:
+        - name: Erfahren Sie mehr über App-Richtlinien.
+          href: app-governance-app-policies-overview.md
+        - name: Erste Schritte
+          href: app-governance-app-policies-get-started.md
+        - name: Erstellen von App-Richtlinien
+          href: app-governance-app-policies-create.md
+        - name: Verwalten von App-Richtlinien
+          href: app-governance-app-policies-manage.md
+    - name: Erkennen und Beheben von App-Bedrohungen
+      items:
+        - name: Informationen zu Erkennung und Behebung
+          href: app-governance-detect-remediate-overview.md
+        - name: Erste Schritte
+          href: app-governance-detect-remediate-get-started.md
+        - name: Untersuchen von Anomalieerkennungswarnungen
+          href: app-governance-anomaly-detection-alerts.md
+        - name: Beheben von App-Bedrohungen
+          href: app-governance-detect-remediate-detect-threats.md
 - name: Verwalten von eDiscovery
   items:
     - name: Microsoft 365 eDiscovery-Lösungen
@@ -932,6 +970,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Sicherheit und Compliance für Energiedienstleistungen
           href: ../solutions/energy-secure-collaboration.md
+- name: Verwalten von Datenschutzrisiken
+  items:
+    - name: Weitere Informationen zur Datenschutzverwaltung
+      href: privacy-management.md
+    - name: Erste Schritte mit der Datenschutzverwaltung
+      href: privacy-management-setup.md
+    - name: Suchen und Visualisieren personenbezogener Daten in der Datenschutzverwaltung
+      href: privacy-management-data-profile.md
+    - name: Erstellen und Verwalten von Richtlinien in der Datenschutzverwaltung
+      href: privacy-management-policies.md
+    - name: Verwalten von Rechteanfragen von betroffenen Personen in der Datenschutzverwaltung
+      href: privacy-management-subject-rights-requests.md
 - name: Hybridcompliancefunktionen
   items:
     - name: Exchange Online-E-Mailverschlüsselung mit AD RMS

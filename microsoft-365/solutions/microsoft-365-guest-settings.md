@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Gastfreigabeeinstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation auswirken können.
-ms.openlocfilehash: 57db724fe8938d0e258dd1df58fe5016d5e8d2c7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 41ead8bf4532503cb47623f65a82ca36a616091e
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229227"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409164"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 

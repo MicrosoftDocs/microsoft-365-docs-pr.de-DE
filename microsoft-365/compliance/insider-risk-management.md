@@ -1,6 +1,6 @@
 ---
 title: Informationen zum Insider-Risikomanagement
-description: Erfahren Sie, wie Sie mit dem Insider-Risikomanagement in Microsoft 365 Risiken in Ihrer Organisation minimieren können.
+description: Erfahren Sie, wie Sie mithilfe des Insider-Risikomanagements in Microsoft 365 Risiken in Ihrer Organisation minimieren können.
 keywords: Microsoft 365, Insider-Risiko, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -15,21 +15,27 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: e033142567c0eb33987cae6d840abf5f6422365e
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326747"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430600"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informationen zum Insider-Risikomanagement in Microsoft 365
 
-Das Insider-Risikomanagement ist eine Compliance-Lösung in Microsoft 365, die interne Risiken minimiert, indem Sie böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation erkennen, untersuchen und darauf reagieren können. MitHilfe von Insider-Risikorichtlinien können Sie die Arten von Risiken definieren, die in Ihrer Organisation identifiziert und erkannt werden sollen, einschließlich des Handelns in Fällen und des Eskalierens von Fällen an Microsoft Advanced eDiscovery bei Bedarf. Risikoanalysten in Ihrer Organisation können schnell geeignete Maßnahmen ergreifen, um sicherzustellen, dass die Benutzer den Compliance-Standards Ihrer Organisation entsprechen.
+Das Insider-Risikomanagement ist eine Compliancelösung in Microsoft 365, die interne Risiken minimiert, indem Es Ihnen ermöglicht, böswillige und unbeabsichtigte Aktivitäten in Ihrer Organisation zu erkennen, zu untersuchen und darauf zu reagieren. Richtlinien für Insider-Risiken ermöglichen es Ihnen, die Arten von Risiken zu definieren, die in Ihrer Organisation identifiziert und erkannt werden sollen, einschließlich des Handelns in Fällen und des Eskalierens von Fällen an Microsoft Advanced eDiscovery bei Bedarf. Risikoanalysten in Ihrer Organisation können schnell geeignete Maßnahmen ergreifen, um sicherzustellen, dass die Benutzer den Compliance-Standards Ihrer Organisation entsprechen.
 
-Sehen Sie sich das folgende Video an, um zu erfahren, wie Das Insider-Risikomanagement Ihrer Organisation dabei helfen kann, Risiken zu verhindern, zu erkennen und einzudämmen und gleichzeitig Die Werte, Kultur und Benutzererfahrung Ihrer Organisation zu priorisieren:
+Sehen Sie sich die folgenden Videos an, um zu erfahren, wie Das Insider-Risikomanagement Ihrer Organisation dabei helfen kann, Risiken zu verhindern, zu erkennen und einzudämmen, während Sie Werte, Kultur und Benutzerfreundlichkeit Ihrer Organisation priorisieren:
 <br>
 <br>
+
+**Insider-Risikomanagementlösung & Entwicklung:**
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4j9CN]
+<br>
+
+**Insider-Risikomanagement-Workflow:**
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="modern-risk-pain-points"></a>Moderne Risiko-Schwachstellen
 
@@ -61,7 +67,7 @@ Weitere Informationen zu Insider-Risikoanalysen finden Sie in den Einstellungen 
 
 ## <a name="workflow"></a>Workflow
 
-Der Workflow des Insider-Risikomanagements hilft Ihnen, interne Risiken in Ihrer Organisation zu identifizieren, zu untersuchen und maßnahmen zu ergreifen. Mit fokussierten Richtlinienvorlagen, umfassender Aktivitätssignalisierung über den Microsoft 365 Dienst und Tools für die Warnungs- und Fallverwaltung können Sie umsetzbare Einblicke verwenden, um riskantes Verhalten schnell zu identifizieren und darauf zu reagieren.
+Der Workflow des Insider-Risikomanagements hilft Ihnen, interne Risiken in Ihrer Organisation zu identifizieren, zu untersuchen und maßnahmen zu ergreifen. Mit fokussierten Richtlinienvorlagen, umfassender Aktivitätssignalisierung über den Microsoft 365-Dienst und Tools für die Warnungs- und Fallverwaltung können Sie umsetzbare Einblicke verwenden, um riskantes Verhalten schnell zu identifizieren und darauf zu reagieren.
 
 Das Identifizieren und Lösen von internen Risikoaktivitäten und Compliance-Problemen mit dem Insider-Risikomanagement in Microsoft 365 verwendet den folgenden Workflow:
 
@@ -84,7 +90,7 @@ Sie können aus den folgenden Richtlinienvorlagen auswählen, um schnell mit dem
 
 ![Insider-Risikomanagement-Richtlinien-Dashboard](../media/insider-risk-policy-dashboard.png)
 
-### <a name="alerts"></a>Benachrichtigungen
+### <a name="alerts"></a>Warnungen
 
 Warnungen werden automatisch von Risikoindikatoren generiert, die richtlinienbedingungen entsprechen, und werden im [Warnungsdashboard](insider-risk-management-activities.md#alert-dashboard)angezeigt. Dieses Dashboard ermöglicht eine schnelle Übersicht über alle Warnungen, die überprüft werden müssen, offene Warnungen im Laufe der Zeit und Warnungsstatistiken für Ihre Organisation. Alle Richtlinienwarnungen werden mit den folgenden Informationen angezeigt, damit Sie den Status vorhandener Warnungen und neuer Warnungen, die eine Aktion erfordern, schnell identifizieren können:
 
@@ -126,8 +132,8 @@ Nachdem Fälle untersucht wurden, können Prüfer schnell handeln, um den Fall z
 
 In schwerwiegenderen Situationen müssen Sie möglicherweise die Fallinformationen zum Insider-Risikomanagement mit anderen Prüfern oder Diensten in Ihrer Organisation teilen. Das Insider-Risikomanagement ist eng in andere Microsoft 365 Compliance-Lösungen integriert, um Sie bei der End-to-End-Risikobehebung zu unterstützen.
 
-- **Advanced eDiscovery:** Durch das Eskalieren eines Untersuchungsfalls können Sie Daten und die Verwaltung des Falls an Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- Office 365 Integration von **Verwaltungs-APIs (Vorschau):** Das Insider-Risikomanagement unterstützt den Export von Warnungsinformationen in SIEM-Dienste (Security Information and Event Management) über die Office 365 Management-APIs. Wenn Sie Zugriff auf Benachrichtigungsinformationen auf der Plattform haben, die am besten zu den Risikoprozessen Ihrer Organisation passen, können Sie flexibler auf Risikoaktivitäten reagieren. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter Exportieren von [Warnungen.](insider-risk-management-settings.md#export-alerts-preview)
+- **Advanced eDiscovery:** Wenn Sie einen Fall für die Untersuchung eskalieren, können Sie Daten und die Verwaltung des Falls an Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Office 365 Integration von Verwaltungs-APIs (Vorschau):** Das Insider-Risikomanagement unterstützt den Export von Warnungsinformationen in SIEM-Dienste (Security Information and Event Management) über die Office 365 Management-APIs. Wenn Sie Zugriff auf Benachrichtigungsinformationen auf der Plattform haben, die am besten zu den Risikoprozessen Ihrer Organisation passen, können Sie flexibler auf Risikoaktivitäten reagieren. Weitere Informationen zum Exportieren von Warnungsinformationen mit Office 365-Verwaltungs-APIs finden Sie unter Exportieren von [Warnungen.](insider-risk-management-settings.md#export-alerts-preview)
 
 > [!NOTE]
 > Vielen Dank für Ihr Feedback und Ihren Support während der Vorschau des ServiceNow-Connectors. Wir haben beschlossen, die Vorschau des ServiceNow-Connectors zu beenden und den Support im Insider-Risikomanagement am 30. November 2020 einzustellen. Wir evaluieren aktiv alternative Methoden, um Kunden die ServiceNow-Integration in das Insider-Risikomanagement zu ermöglichen.
@@ -166,7 +172,7 @@ Benutzer in Ihrer Organisation haben je nach Position, Zugriffsebene auf vertrau
 
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Aktionen und Verhaltensweisen von verärgerten Benutzern (Vorschau)
 
-Personalsituation kann sich auf verschiedene Arten auf das Benutzerverhalten auswirken, die sich auf Insider-Risiken beziehen. Bei diesen Stressoren kann es sich um eine leistungsschwache Überprüfung, eine Herabstufung der Position oder die Platzierung des Benutzers in einen Leistungsüberprüfungsplan handelt. Obwohl die meisten Benutzer nicht böswillig auf diese Ereignisse reagieren, kann der Stress dieser Aktionen dazu führen, dass einige Benutzer Aktionen ausführen, die sie unter normalen Umständen normalerweise nicht in Betracht ziehen. Um diese Arten riskanter Aktivitäten zu identifizieren, verwenden die folgenden Richtlinienvorlagen für das Insider-Risikomanagement den Microsoft 365 HR-Connector und beginnen mit der Bewertung von Risikoindikatoren im Zusammenhang mit Verhaltensweisen, die in der Nähe von Stressorereignissen auftreten können:
+Personalsituation kann sich auf verschiedene Weise auf das Benutzerverhalten im Zusammenhang mit Insider-Risiken auswirken. Bei diesen Stressoren kann es sich um eine leistungsschwache Überprüfung, eine Herabstufung der Position oder die Platzierung des Benutzers in einen Leistungsüberprüfungsplan handelt. Obwohl die meisten Benutzer nicht böswillig auf diese Ereignisse reagieren, kann der Stress dieser Aktionen dazu führen, dass einige Benutzer Aktionen ausführen, die sie unter normalen Umständen normalerweise nicht in Betracht ziehen. Um diese Arten riskanter Aktivitäten zu identifizieren, verwenden die folgenden Richtlinienvorlagen für das Insider-Risikomanagement den Microsoft 365 HR-Connector und beginnen mit der Bewertung von Risikoindikatoren im Zusammenhang mit Verhaltensweisen, die in der Nähe von Stressorereignissen auftreten können:
 
 - [Datenlecks durch verärgerte Benutzer (Vorschau)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Verstöße gegen Sicherheitsrichtlinien durch verärgerte Benutzer (Vorschau)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

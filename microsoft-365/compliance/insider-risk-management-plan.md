@@ -12,16 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 19149c7f53cee537450ac12ce5a346a12d43bd91
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326783"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430513"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planen des Insider-Risikomanagements
 
 Bevor Sie mit dem [Insider-Risikomanagement](insider-risk-management.md) in Ihrer Organisation beginnen, gibt es wichtige Planungsaktivitäten und Überlegungen, die von Ihren It-Technologie- und Compliance-Management-Teams überprüft werden sollten. Wenn Sie die Bereitstellung in den folgenden Bereichen sorgfältig verstehen und planen, können Sie sicherstellen, dass Ihre Implementierung und Verwendung von Insider-Risikomanagementfeatures reibungslos verläuft und den bewährten Methoden für die Lösung entspricht.
+
+Sehen Sie sich das folgende Video an, um zu erfahren, wie der Workflow des Insider-Risikomanagements Ihrer Organisation dabei helfen kann, Risiken zu verhindern, zu erkennen und einzudämmen, während Sie Werte, Kultur und Benutzerfreundlichkeit Ihrer Organisation priorisieren:
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Zusammenarbeit mit Projektbeteiligten in Ihrer Organisation
 
@@ -44,7 +50,7 @@ Wenn Sie Anforderungen haben, dass bestimmte Projektbeteiligten an Falluntersuch
 
 Wählen Sie dedizierte Projektbeteiligten aus, um warnungen und Fälle in regelmäßigen Abständen im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zu überwachen und zu überprüfen. Stellen Sie sicher, dass Sie wissen, wie Sie den verschiedenen Rollengruppen, die im Insider-Risikomanagement verfügbar sind, unterschiedliche Projektbeteiligten zuweisen.
 
-Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Um die Registerkarte **"Berechtigungen"** im Office 365 Security & Compliance Center anzuzeigen und Rollengruppen zu verwalten, müssen Sie der Rollengruppe *"Organisationsverwaltung"* oder der *Rollenverwaltungsrolle* zugewiesen werden. Wählen Sie bei der Konfiguration des Insider-Risikomanagements aus den folgenden Rollengruppenoptionen:
+Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen, um Benutzern bestimmte Rollengruppen zuzuweisen, um unterschiedliche Gruppen von Funktionen zum Verwalten von Insiderrisiken zu verwalten. Um die Registerkarte **"Berechtigungen"** im Office 365 Security & Compliance Center anzuzeigen und Rollengruppen zu verwalten, müssen Sie der Rollengruppe *"Organisationsverwaltung"* oder der *Rollenverwaltungsrolle* zugewiesen werden. Wählen Sie bei der Konfiguration des Insider-Risikomanagements aus den folgenden Rollengruppenoptionen aus:
 
 | **Rollengruppe** | **Rollenberechtigungen** |
 | :------------- | :------------------- |
@@ -58,7 +64,7 @@ Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen,
 
 Je nachdem, wie Sie Insider-Risikomanagementrichtlinien implementieren möchten, müssen Sie über die richtigen Microsoft 365 Lizenzierungsabonnements verfügen und einige Lösungsvoraussetzungen verstehen und planen.
 
-**Lizenzierung:** Das Insider-Risikomanagement ist im Rahmen einer breiten Auswahl von Microsoft 365-Lizenzierungsabonnements verfügbar. Ausführliche Informationen finden Sie im Artikel ["Erste Schritte mit dem Insider-Risikomanagement".](insider-risk-management-configure.md#subscriptions-and-licensing)
+**Lizenzierung:** Das Insider-Risikomanagement ist im Rahmen einer breiten Auswahl von Microsoft 365 Lizenzierungsabonnements verfügbar. Ausführliche Informationen finden Sie im Artikel ["Erste Schritte mit dem Insider-Risikomanagement".](insider-risk-management-configure.md#subscriptions-and-licensing)
 
 Wenn Sie über keinen vorhandenen Microsoft 365 Enterprise E5-Plan verfügen und das Insider-Risikomanagement ausprobieren möchten, können Sie Ihrem vorhandenen Abonnement [Microsoft 365 hinzufügen](/office365/admin/try-or-buy-microsoft-365) oder sich für eine Testversion von Microsoft 365 Enterprise E5 [registrieren.](https://www.microsoft.com/microsoft-365/enterprise)
 
@@ -67,7 +73,7 @@ Wenn Sie über keinen vorhandenen Microsoft 365 Enterprise E5-Plan verfügen und
 - Wenn Sie die Vorlage **"Datendiebstahl durch verlassende Benutzer"** verwenden, müssen Sie einen Microsoft 365 HR-Connector konfigurieren, um in regelmäßigen Abständen Termin- und Termininformationen für Benutzer in Ihrer Organisation zu importieren. Eine schrittweise Anleitung zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation finden Sie in dem Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md).
 - Wenn Sie Vorlagen für **Datenlecks** verwenden, müssen Sie mindestens eine DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) konfigurieren, um vertrauliche Informationen in Ihrer Organisation zu definieren und Insider-Risikowarnungen für DLP-Richtlinienwarnungen mit hohem Schweregrad zu erhalten. Eine schrittweise Anleitung zum Konfigurieren von DLP-Richtlinien für Ihre Organisation finden Sie in dem Artikel [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md).
 - Wenn Sie Vorlagen für **Sicherheitsrichtlinienverletzungen** verwenden, müssen Sie Microsoft Defender für Endpunkt für die Integration des Insider-Risikomanagements im Defender Security Center aktivieren, um Warnungen zu Sicherheitsverstößen zu importieren. Eine schrittweise Anleitung zum Aktivieren der Defender für Endpunkt-Integration in das Insider-Risikomanagement finden Sie im Artikel ["Konfigurieren erweiterter Features in Microsoft Defender".](/windows/security/threat-protection/microsoft-defender-atp/advanced-features)
-- Bei Verwendung **von unaufgeregten Benutzervorlagen** müssen Sie einen Microsoft 365 HR-Connector konfigurieren, um regelmäßig Leistungs- oder Herabstufungsstatusinformationen für Benutzer in Ihrer Organisation zu importieren. Eine schrittweise Anleitung zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation finden Sie in dem Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md).
+- Wenn Sie **unaufgeregte Benutzervorlagen** verwenden, müssen Sie einen Microsoft 365 HR-Connector konfigurieren, um regelmäßig Leistungs- oder Herabstufungsstatusinformationen für Benutzer in Ihrer Organisation zu importieren. Eine schrittweise Anleitung zum Konfigurieren des Microsoft 365 HR-Connectors für Ihre Organisation finden Sie in dem Artikel [Importieren von Daten mit dem HR-Connector](import-hr-data.md).
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testen mit einer kleinen Gruppe von Benutzern in einer Produktionsumgebung
 

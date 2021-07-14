@@ -15,19 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Wenn ein Verwahrer zu einem Advanced eDiscovery hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, um sie vollständig durchsuchbar zu machen.
-ms.openlocfilehash: 904c8fe626ce8ece8f4b48bd5504e4011e9f4fb2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Wenn ein Verwahrer zu einem Advanced eDiscovery Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert eingestuft wurden, erneut verarbeitet, um sie vollständig durchsuchbar zu machen.
+ms.openlocfilehash: f510b7e9c0fa2c5c181709c96907610066a4b1cf
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911209"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430507"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Erweiterte Indizierung der Daten von Verwaltungsberechtigten
 
-Wenn ein Verwahrer zu einem Advanced eDiscovery hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden, erneut verarbeitet, um sie vollständig durchsuchbar zu machen.  Dieser Prozess wird als *Erweiterte Indizierung bezeichnet.* Inhalte können aus einer Reihe von Gründen teilweise indiziert werden, z. B. aus dem Vorhandensein von Bildern, nicht unterstützten Dateitypen oder beim Indizierung von Dateigrößenbeschränkungen.
+Wenn ein Verwahrer zu einem Advanced eDiscovery Fall hinzugefügt wird, werden alle Inhalte, die als teilweise indiziert betrachtet wurden oder mit denen Indizierungsfehler aufgetreten sind, neu indiziert, um sie vollständig durchsuchbar zu machen.  Dieser Neuindizierungsprozess wird als *erweiterte Indizierung* bezeichnet. Es gibt eine Reihe von Gründen, warum Inhalte teilweise indiziert werden oder Indizierungsfehler aufweisen. Dazu gehören Bilddateien oder das Vorhandensein von Bildern in einer Datei, nicht unterstützte Dateitypen oder Indizierungsgrenzwerte für die Dateigröße. Bei SharePoint Dateien wird die erweiterte Indizierung nur für Elemente ausgeführt, die als teilweise indiziert gekennzeichnet sind oder die Indizierungsfehler aufweisen. In Exchange werden E-Mail-Nachrichten mit Bildanlagen nicht als teilweise indiziert oder mit Indizierungsfehlern gekennzeichnet. Dies bedeutet, dass diese Dateien nicht durch den erweiterten Indizierungsprozess neu indiziert werden.
 
-Weitere Informationen zur Verarbeitung von Support und teilweise indizierten Elementen finden Sie unter:
+Weitere Informationen zur Verarbeitungsunterstützung und teilweise indizierten Elementen finden Sie unter:
 
 - [Unterstützte Dateitypen in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
@@ -39,17 +39,17 @@ Weitere Informationen zur Verarbeitung von Support und teilweise indizierten Ele
 
 ## <a name="viewing-advanced-indexing-results"></a>Anzeigen erweiterter Indizierungsergebnisse
 
-Nachdem der Erweiterte Indizierungsprozess abgeschlossen ist, können Sie sich ein Verständnis der Effektivität der Neuverarbeitung machen.  In der Ansicht Erweiterte Indizierungsergebnisse auf der Registerkarte **Verarbeitung** für einen Fall listet das Diagramm die Anzahl der Elemente auf, die dem *Hybridindex hinzugefügt wurden.*  Der Hybridindex speichert Advanced eDiscovery den wiederverarbeiteten Inhalt.
+Nachdem der Prozess der erweiterten Indizierung abgeschlossen ist, können Sie die Effektivität der Erneutverarbeitung verstehen.  In der Ansicht "Erweiterte Indizierungsergebnisse" auf der Registerkarte **"Verarbeitung"** für einen Fall listet das Diagramm die Anzahl der Elemente auf, die dem *Hybridindex* hinzugefügt wurden.  Im Hybridindex speichert Advanced eDiscovery den erneut verarbeiteten Inhalt.
 
-Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erfordern, und ein weiteres Diagramm mit Fehlern nach Dateityp. Weitere Informationen finden Sie unter:
+Diese Ansicht enthält auch die Anzahl der Elemente, die eine Korrektur erfordern, und ein weiteres Diagramm von Fehlern nach Dateityp. Weitere Informationen finden Sie unter:
 
 - [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Korrektur von Fehlern einzelner Elemente](single-item-error-remediation.md)
 
-## <a name="updating-the-advanced-index-for-custodians"></a>Aktualisieren des erweiterten Indexes für Verwahrer
+## <a name="updating-the-advanced-index-for-custodians"></a>Aktualisieren des erweiterten Index für Verwahrer
 
-Wenn einem Fall ein Verwahrer hinzugefügt Advanced eDiscovery, werden alle teilweise indizierten Elemente erneut verarbeitet. Im Weiteren können jedoch dem Postfach oder dem Konto eines Benutzers teilweise indizierte Elemente OneDrive werden.  Bei Bedarf können Sie den Index für bestimmte Verwahrer aktualisieren. Weitere Informationen finden Sie [unter Manage custodians in an Advanced eDiscovery Case](manage-new-custodians.md#re-index-custodian-data). Sie können den Index auch für alle Custodians in einem Fall aktualisieren, indem Sie auf der Registerkarte Verarbeitung auf den **Index** Aktualisieren **klicken.**
+Wenn ein Verwahrer zu einem Advanced eDiscovery Fall hinzugefügt wird, werden alle teilweise indizierten Elemente erneut verarbeitet. Wenn die Zeit vergeht, können jedoch mehr teilweise indizierte Elemente dem Postfach oder OneDrive Konto eines Benutzers hinzugefügt werden.  Bei Bedarf können Sie den Index für einen bestimmten Verwahrer aktualisieren. Weitere Informationen finden Sie unter [Verwalten von Verwahrern in einem Advanced eDiscovery Fall.](manage-new-custodians.md#re-index-custodian-data) Sie können den Index für alle Verwahrer in einem Fall auch aktualisieren, indem Sie auf der Registerkarte **"Verarbeitung"** auf den **Index aktualisieren** klicken.
 
 > [!NOTE]
-> Das Aktualisieren von Indizes für Custodian ist ein langer Prozess. Es wird empfohlen, Indizes in einem Fall nicht mehr als einmal täglich zu aktualisieren.
+> Das Aktualisieren von Verwahrungsindizes ist ein langer Prozess. Es wird empfohlen, indizes nicht mehr als einmal pro Tag in einem Fall zu aktualisieren.

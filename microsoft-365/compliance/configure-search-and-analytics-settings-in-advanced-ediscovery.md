@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Konfigurieren Advanced eDiscovery einstellungen, die für alle Überprüfungssatz in einem Fall gelten. Dies umfasst Einstellungen für die Analyse und optische Zeichenerkennung.
-ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+description: Konfigurieren Sie Advanced eDiscovery Einstellungen, die für alle Prüfdateigruppen in einem Fall gelten. Dies umfasst Einstellungen für Analysen und optische Zeichenerkennung.
+ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751302"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430552"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Konfigurieren von Such- und Analyseeinstellungen in Advanced eDiscovery
 
-Sie können Einstellungen für jeden Advanced eDiscovery konfigurieren, um die folgenden Funktionen zu steuern.
+Sie können Einstellungen für jeden Advanced eDiscovery Fall konfigurieren, um die folgenden Funktionen zu steuern.
 
 - Erkennung von Quasiduplikaten und E-Mail-Threading
 
@@ -44,53 +44,53 @@ So konfigurieren Sie die Such-und Analyseeinstellungen für einen Fall:
 
 2. Klicken Sie unter der Registerkarte **Einstellungen** unter **Suche und Analysen** auf **Auswählen**.
 
-   Die Seite "Falleinstellungen" wird angezeigt. Diese Einstellungen werden in einem Fall auf alle Überprüfungssätze angewendet.
+   Die Seite "Falleinstellungen" wird angezeigt. Diese Einstellungen werden in einem Fall auf alle Prüfdateisätze angewendet.
 
    ![Konfigurieren von Analyse- und Sucheinstellungen für einen Advanced eDiscovery Fall](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Erkennung von Quasiduplikaten und E-Mail-Threading
 
-In diesem Abschnitt können Sie Parameter für die Duplikaterkennung, die Beinaheerkennung von Duplikaten und das E-Mail-Threading festlegen. Weitere Informationen finden Sie unter [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and Email [threading](email-threading-in-advanced-ediscovery.md).
+In diesem Abschnitt können Sie Parameter für die Duplikaterkennung, die Erkennung von Quasiduplikaten und E-Mail-Threading festlegen. Weitere Informationen finden Sie unter ["Erkennung von Quasiduplikaten"](near-duplicate-detection-in-advanced-ediscovery.md) und ["E-Mail-Threading".](email-threading-in-advanced-ediscovery.md)
 
-- **In der Nähe von Duplikaten/E-Mail-Threading:** Wenn dies aktiviert ist, werden die Duplikaterkennung, die Erkennung von Duplikaten und das E-Mail-Threading als Teil des Workflows einbezogen, wenn Sie Analysen für die Daten in einem Überprüfungssatz ausführen.
+- **Fast Duplikate/E-Mail-Threading:** Wenn diese Option aktiviert ist, sind die Duplikaterkennung, die Erkennung von Quasiduplikaten und E-Mail-Threading Teil des Workflows, wenn Sie Analysen zu den Daten in einem Prüfdateisatz ausführen.
 
-- **Schwellenwert für dokument- und E-Mail-Ähnlichkeit:** Wenn die Ähnlichkeitsstufe für zwei Dokumente über dem Schwellenwert liegt, werden beide Dokumente in demselben fast doppelten Satz gesetzt.
+- **Schwellenwert für Dokument- und E-Mail-Ähnlichkeit:** Wenn die Ähnlichkeitsstufe für zwei Dokumente über dem Schwellenwert liegt, werden beide Dokumente in den gleichen nahezu doppelten Satz gesetzt.
 
-- **Minimale/maximale Anzahl von Wörtern:** Diese Einstellungen geben an, dass beinahe duplikate und E-Mail-Threading-Analyse nur für Dokumente ausgeführt werden, die mindestens die minimale Anzahl von Wörtern und höchstens die maximale Anzahl von Wörtern haben.
+- **Minimale/maximale Anzahl von Wörtern:** Diese Einstellungen geben an, dass nahezu duplizierte Und E-Mail-Threading-Analysen nur für Dokumente ausgeführt werden, die mindestens die mindeste Anzahl von Wörtern und höchstens die maximale Anzahl von Wörtern enthalten.
 
 ## <a name="themes"></a>Designs
 
 In diesem Abschnitt können Sie Parameter für Designs festlegen. Weitere Informationen finden Sie unter [Designs](themes-in-advanced-ediscovery.md).
 
-- **Designs:** Wenn dies aktiviert ist, wird das Clustering von Designs als Teil des Workflows ausgeführt, wenn Sie Analysen für die Daten in einem Überprüfungssatz ausführen.
+- **Designs:** Wenn das Design aktiviert ist, wird das Clustering von Designs als Teil des Workflows ausgeführt, wenn Sie Analysen für die Daten in einem Prüfdateisatz ausführen.
 
-- **Maximale Anzahl von Designs:** Gibt die maximale Anzahl von Designs an, die generiert werden können, wenn Sie Analysen für die Daten in einem Überprüfungssatz ausführen.
+- **Maximale Anzahl von Designs:** Gibt die maximale Anzahl von Designs an, die generiert werden können, wenn Sie Analysen zu den Daten in einem Prüfdateisatz ausführen.
 
-- **Fügen Sie Zahlen in Designs ein:** Wenn dies aktiviert ist, werden Zahlen (die ein Design identifizieren) beim Generieren von Designs eingeschlossen. 
+- **Zahlen in Designs einschließen:** Wenn sie aktiviert ist, werden Zahlen (die ein Design identifizieren) beim Generieren von Designs einbezogen. 
 
-- **Passen Sie die maximale Anzahl von Designs dynamisch an:** In bestimmten Situationen sind möglicherweise nicht genügend Dokumente in einem Überprüfungssatz enthalten, um die gewünschte Anzahl von Designs zu erzeugen. Wenn diese Einstellung aktiviert ist, passt Advanced eDiscovery die maximale Anzahl von Designs dynamisch an, anstatt zu versuchen, die maximale Anzahl von Designs zu erzwingen.
+- **Passen Sie die maximale Anzahl von Designs dynamisch an:** In bestimmten Situationen sind möglicherweise nicht genügend Dokumente in einem Prüfdateisatz vorhanden, um die gewünschte Anzahl von Designs zu erzeugen. Wenn diese Einstellung aktiviert ist, passt Advanced eDiscovery die maximale Anzahl von Designs dynamisch an, anstatt zu versuchen, die maximale Anzahl von Designs zu erzwingen.
 
 ## <a name="review-set-query"></a>Prüfdateisatz-Abfrage
 
-Wenn Sie das Kontrollkästchen Gespeicherte **Suche** nach Analyse automatisch erstellen aktivieren, Advanced eDiscovery überprüfungssatzabfrage namens **For Review automatisch generiert.** 
+Wenn Sie das Kontrollkästchen "For **Review gespeicherte Suche nach Analyse automatisch erstellen"** aktivieren, Advanced eDiscovery die Abfrage des Prüfdateisatzes mit dem Namen **"For Review"** automatisch generiert. 
 
-![Die automatisch generierte For Review-Abfrage](../media/AeDForReviewQuery.png)
+![Die automatisch generierte Abfrage "For Review"](../media/AeDForReviewQuery.png)
 
-Diese Abfrage filtert im Wesentlichen doppelte Elemente aus dem Überprüfungssatz heraus. Auf diese Weise können Sie die eindeutigen Elemente im Überprüfungssatz überprüfen. Diese Abfrage wird nur erstellt, wenn Sie einen Prüfdateisatz innerhalb des Falls einer Analyse unterziehen. Weitere Informationen zu Überprüfungssatzabfragen finden Sie unter [Query the data in a review set](review-set-search.md).
+Diese Abfrage filtert im Wesentlichen doppelte Elemente aus dem Prüfdateisatz heraus. Auf diese Weise können Sie die eindeutigen Elemente im Prüfdateisatz überprüfen. Diese Abfrage wird nur erstellt, wenn Sie einen Prüfdateisatz innerhalb des Falls einer Analyse unterziehen. Weitere Informationen zu Überprüfungssatzabfragen finden Sie unter [Abfragen der Daten in einem Prüfdateisatz.](review-set-search.md)
 
 ## <a name="ignore-text"></a>Ignorieren von Text
 
-Es gibt Situationen, in denen bestimmten Text die Qualität der Analyse verringert, z. B. langwierige Haftungsausschlüsse, die E-Mail-Nachrichten unabhängig vom Inhalt der E-Mail hinzugefügt werden. Wenn Sie wollen, dass bestimmte Textzeichenfolgen ignoriert werden soll, können Sie diese aus der Analyse ausschließen, indem Sie die Textzeichenfolgen und die Analysefunktionen (Erkennung von Quasiduplikaten, E-Mail-Threading, Designs und Relevanz) angeben, für die der Text ausgeschlossen werden soll. Die Verwendung regulärer Ausdrücke (RegEx) als ignorierter Text wird ebenfalls unterstützt. 
+Es gibt Situationen, in denen bestimmte Texte die Qualität der Analysen beeinträchtigen, z. B. lange Haftungsausschlüsse, die E-Mail-Nachrichten hinzugefügt werden, unabhängig vom Inhalt der E-Mail. Wenn Sie wollen, dass bestimmte Textzeichenfolgen ignoriert werden soll, können Sie diese aus der Analyse ausschließen, indem Sie die Textzeichenfolgen und die Analysefunktionen (Erkennung von Quasiduplikaten, E-Mail-Threading, Designs und Relevanz) angeben, für die der Text ausgeschlossen werden soll. Die Verwendung regulärer Ausdrücke (RegEx) als ignorierter Text wird ebenfalls unterstützt. 
 
 ## <a name="optical-character-recognition-ocr"></a>Optical Character Recognition (OCR; optische Zeichenerkennung)
 
 Wenn diese Einstellung aktiviert ist, wird die OCR-Verarbeitung für Bilddateien ausgeführt. Die OCR-Verarbeitung wird in den folgenden Situationen ausgeführt:
 
-- Wenn verwahrer und nicht [verwahrte Datenquellen](non-custodial-data-sources.md) zu einem Fall hinzugefügt werden. Die OCR-Verarbeitung wird während des erweiterten Indizierungsprozesses ausgeführt. Dies bedeutet, dass Text in Bilddateien, die den Suchkriterien entsprechen, in einer Auflistungssuche zurückgegeben wird.
+- Wenn Verwahrer und [nicht verwahrte Datenquellen](non-custodial-data-sources.md) zu einem Fall hinzugefügt werden. Die OCR-Verarbeitung wird während des [erweiterten Indizierungsprozesses](indexing-custodian-data.md) ausgeführt. OCR wird nur für Elemente ausgeführt, die während der erweiterten Indizierung verarbeitet werden. Wenn beispielsweise eine große PDF-Datei, die teilweise indiziert ist oder andere Indizierungsfehler aufweist, während der erweiterten Indizierung verarbeitet wird, wird auch OCR auf die Datei angewendet. Anders ausgedrückt erfolgt die OCR-Verarbeitung nur für Dateien, die während des erweiterten Indizierungsprozesses neu indiziert werden. Dies bedeutet, dass beim Hinzufügen von Verwahrern zu einem Fall einige E-Mail-Anlagen nicht für OCR verarbeitet werden, da diese Dateien während der erweiterten Indizierung nicht verarbeitet werden. Wenn OCR auf Bilddateien angewendet wird, kann der Text in diesen Bilddateien während einer Sammlung durchsucht werden.
 
-- Wenn Inhalte aus anderen Datenquellen (die keinem Verwahrer zugeordnet sind und dem Fall in einer nicht verwahrten Datenquelle hinzugefügt werden) einem Überprüfungssatz hinzugefügt werden.
+- Wenn Inhalte aus anderen Datenquellen (die keinem Verwahrer zugeordnet sind und dem Fall in einer Nicht-Verwahrer-Datenquelle hinzugefügt werden) einem Prüfdateisatz hinzugefügt werden.
 
-Nachdem Einem Überprüfungssatz Daten hinzugefügt wurden, kann der Bildtext überprüft, durchsucht, markiert und analysiert werden. Sie können den extrahierten Text in der Textanzeige der ausgewählten Bilddatei im Überprüfungssatz anzeigen. Weitere Informationen finden Sie unter:
+Nachdem Daten zu einem Prüfdateisatz hinzugefügt wurden, kann Bildtext überprüft, durchsucht, markiert und analysiert werden. Sie können den extrahierten Text in der Textanzeige der ausgewählten Bilddatei im Prüfdateisatz anzeigen. Weitere Informationen finden Sie unter:
 
 - [Erweiterte Indizierung der Daten von Verwaltungsberechtigten](indexing-custodian-data.md)
 
