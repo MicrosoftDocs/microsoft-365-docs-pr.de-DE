@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Für Verwaltete Dienstanbieter (Managed Service Providers, MSPs) erfahren Sie, wie Sie sich für Microsoft 365 Lighthouse registrieren.
-ms.openlocfilehash: 01e17b9c1f3f4e8a877f0b8489288e57ae9fa392
-ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
+ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/13/2021
-ms.locfileid: "53409008"
+ms.locfileid: "53415635"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Registrieren für Microsoft 365 Lighthouse
 
@@ -51,9 +51,9 @@ ms.locfileid: "53409008"
     > [!NOTE]
     > Microsoft 365 Lighthouse erfordert eine Lizenz für den Mandanten. Es sind keine zusätzlichen Benutzerlizenzen erforderlich. 
 
-    Um zu überprüfen, ob Microsoft 365 Lighthouse erfolgreich zu Ihrem Mandanten hinzugefügt wurde, suchen Sie im Microsoft 365 Admin Center unter **Abrechnung > Ihre Produkte** nach Microsoft 365 Lighthouse.
+    Um zu überprüfen, ob Microsoft 365 Lighthouse erfolgreich zu Ihrem Mandanten hinzugefügt wurde, suchen Sie im Microsoft 365 Admin Center unter **"Abrechnung > Ihre Produkte"** nach Microsoft 365 Lighthouse.
 
-1. Wenn Sie nicht zum Microsoft 365 Lighthouse-Portal umgeleitet werden, wechseln Sie zu `https://lighthouse.microsoft.com/` .
+1. Wenn Sie nicht zum Microsoft 365 Lighthouse-Portal umgeleitet werden, wechseln Sie zu <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> .
 
 1. Wählen Sie **"Zustimmen" aus, &** Die Änderung des Partnervertrags abschließen.
 

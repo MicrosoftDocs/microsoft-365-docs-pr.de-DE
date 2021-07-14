@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 Administratoren erfahren, wie sie sich von einem Ransomware-Angriff wiederherstellen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 608fac50fc65f20a612b80ed151252eb2a0c2e01
+ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341436"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53415551"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Wiederherstellen von einem Ransomware-Angriff in Microsoft 365
 
@@ -63,7 +63,7 @@ Informationen zum Deaktivieren anderer Arten des Zugriffs auf ein Postfach finde
 
 - [Aktivieren oder Deaktivieren des POP3- oder IMAP4-Zugriffs für einen Benutzer](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Das Anhalten OneDrive-Synchronisation schützt Ihre Clouddaten davor, von potenziell infizierten Geräten aktualisiert zu werden. Weitere Informationen finden Sie unter "Anhalten und Fortsetzen der [Synchronisierung in OneDrive."](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+Das Anhalten OneDrive-Synchronisation schützt Ihre Clouddaten davor, von potenziell infizierten Geräten aktualisiert zu werden. Weitere Informationen finden Sie unter "Anhalten und Fortsetzen der [Synchronisierung" in OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Schritt 3: Entfernen der Schadsoftware von den betroffenen Geräten
 
@@ -75,7 +75,7 @@ Sie können [Windows Defender](https://www.microsoft.com/windows/comprehensive-s
 
 Eine Alternative, die Ihnen auch hilft, Ransomware oder Schadsoftware zu entfernen, ist das [Tool zum Entfernen bösartiger Software (Malicious Software Removal Tool, MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Wenn diese Optionen nicht funktionieren, können Sie [versuchen, Windows Defender Offline zu](https://support.microsoft.com/help/17466) Windows Defender oder [Probleme beim Erkennen und Entfernen von Schadsoftware zu beheben.](https://support.microsoft.com/help/4466982)
+Wenn diese Optionen nicht funktionieren, können Sie [versuchen, Windows Defender Offline zu](https://support.microsoft.com/help/17466) verwenden oder [Probleme beim Erkennen und Entfernen von Schadsoftware zu beheben.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Schritt 4: Wiederherstellen von Dateien auf einem bereinigten Computer oder Gerät
 
@@ -89,7 +89,7 @@ Nachdem Sie den vorherigen Schritt abgeschlossen haben, um die Ransomware-Nutzla
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Schritt 5: Wiederherstellen Ihrer Dateien in Ihrem OneDrive for Business
 
-Mit der Dateiwiederherstellung in OneDrive for Business können Sie die gesamte OneDrive innerhalb der letzten 30 Tage auf einen früheren Zeitpunkt wiederherstellen. Weitere Informationen finden Sie unter [Wiederherstellen Ihres OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
+Mit der Dateiwiederherstellung in OneDrive for Business können Sie ihre gesamte OneDrive innerhalb der letzten 30 Tage auf einen früheren Zeitpunkt wiederherstellen. Weitere Informationen finden Sie unter [Wiederherstellen Ihres OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Schritt 6: Wiederherstellen gelöschter E-Mails
 
@@ -143,16 +143,19 @@ Sie können Phishingnachrichten, die Ransomware enthalten, mithilfe einer von me
 
 ## <a name="additional-ransomware-resources"></a>Zusätzliche Ransomware-Ressourcen
 
-[Übersicht über die von Menschen betriebene Ransomware](/security/compass/human-operated-ransomware)
+Wichtige Brancheninformationen:
 
-[Schneller Schutz vor Ransomware und Erpressung](/security/compass/protect-against-ransomware)
+- [Übersicht über die von Menschen betriebene Ransomware](/security/compass/human-operated-ransomware)
 
-[Die neueste Microsoft Security Intelligence-Berichts-PDF)](https://www.microsoft.com/securityinsights/) (Suche nach "Ransomware")
+- [Schneller Schutz vor Ransomware und Erpressung](/security/compass/protect-against-ransomware)
 
-**Ransomware: Ein verbreiteter und fortlaufender Bedrohungsbericht** im **Knoten "Bedrohungsanalyse"** des Microsoft 365 Defender-Portals
+- [Der neueste Microsoft Security Intelligence Bericht](https://www.microsoft.com/securityinsights/) (siehe Seiten 22-24)
+
+- **Ransomware: Ein weit verbreiteter und fortlaufender Bedrohungsbericht** im **Knoten "Bedrohungsanalyse"** des Microsoft 365 Defender-Portals (siehe diese [Lizenzierungsanforderungen)](/microsoft-365/security/defender/prerequisites#licensing-requirements)
 
 Microsoft 365 Schutz:
 
+- [Schutz vor Schadsoftware und Ransomware](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Ransomware-Erkennung und Wiederherstellung Ihrer Dateien in OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 - [Aktivieren oder Deaktivieren von Makros in Office Dateien](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 - [Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 Sicherheit](recommended-settings-for-eop-and-office365.md)
