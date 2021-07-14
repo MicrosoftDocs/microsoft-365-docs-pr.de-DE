@@ -16,13 +16,13 @@ metadata:
   - AdminSurgePortfolio
   - M365-Lighthouse
   search.appverid: MET150
-  description: Für verwaltete Dienstanbieter (Managed Service Providers, MSPs), die Microsoft 365 Lighthouse verwenden, erhalten Sie Antworten auf häufig gestellte Fragen (FAQs) zu Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 05ed433a5f7afb6418cab77c99a401351f3a5565
-  ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+  description: Antworten auf häufig gestellte Fragen (FAQs) zu Microsoft 365 Lighthouse für Verwaltete Dienstanbieter (Managed Service Providers, MSPs), die Microsoft 365 Lighthouse verwenden.
+  ms.openlocfilehash: 5f15453f21ef48fcc1f8266d9474fc0cbc4190c2
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "53395123"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415533"
 title: häufig gestellte Fragen (FAQs) Microsoft 365 Lighthouse
 summary: >
   > [!NOTE]
@@ -39,28 +39,34 @@ sections:
   questions:
   - question: Was ist Microsoft 365 Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse ist ein Verwaltungsportal, das Managed Service Providers (MSPs) beim Sichern und Verwalten von Geräten, Daten und Benutzern im großen Maßstab für kleine und mittlere Unternehmen (SMB) unterstützt, die Microsoft 365 Business Premium verwenden.  Microsoft 365 Lighthouse vereinfacht das Onboarding von Mandanten, indem Sicherheitskonfigurationsgrundwerte empfohlen werden, die auf SMBs zugeschnitten sind, und mehrinstanzenfähige Ansichten in allen Kundenumgebungen bereitgestellt werden. Weitere Informationen finden Sie unter [Übersicht über Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+      Microsoft 365 Lighthouse ist ein Verwaltungsportal, das Managed Service Providers (MSPs) dabei unterstützt, Geräte, Daten und Benutzer für SMB-Kunden (Small- und Medium-Size Business), die Microsoft 365 Business Premium verwenden, zu sichern und zu verwalten.  Microsoft 365 Lighthouse vereinfacht das Onboarding von Mandanten, indem Sicherheitskonfigurationsgrundwerte empfohlen werden, die auf SMBs zugeschnitten sind, und die Bereitstellung von Ansichten mit mehreren Mandanten in allen Kundenumgebungen. Weitere Informationen finden Sie unter [Übersicht über Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
   - question: Was ist der Unterschied zwischen Microsoft 365 Lighthouse und Azure Intune?
     answer: >
       Microsoft 365 Lighthouse konzentriert sich auf Microsoft 365 Dienste und nicht auf Azure-Dienste. Azure Intune ist zwar in das Azure-Portal integriert und ermöglicht IT-Partnern die Verwaltung mehrerer Mandanten für Azure, Microsoft 365 Lighthouse ist jedoch ein eigenständiges Portal, das MSPs bei der Verwaltung mehrerer Microsoft 365 Business Premium Kundenmandanten unterstützt. Weitere Informationen zu Microsoft 365 Lighthouse finden Sie unter [Übersicht über Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Weitere Informationen zu Azure Intune finden Sie unter ["Was ist Azure Azure?"](/azure/lighthouse/overview)
   - question: Wie viel kostet Microsoft 365 Lighthouse?
     answer: >
-      Mit der Verwendung der Vorschauversion von Microsoft 365 Lighthouse zum Verwalten von Microsoft 365 Business Premium Diensten und verbundenen Geräten sind keine zusätzlichen Kosten verbunden. Microsoft 365 Lighthouse befindet sich derzeit in der Vorschau und steht msps zur Verfügung, die kleine und mittelständische Unternehmen warten und eine Cloud Solution Provider (CSP)-Beziehung mit ihren Kunden haben. Beachten Sie, dass indirekte Anbieter derzeit nicht von Microsoft 365 Lighthouse unterstützt werden. Weitere Informationen finden Sie unter [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      Mit der Verwendung der Vorschauversion von Microsoft 365 Lighthouse zum Verwalten von Microsoft 365 Business Premium Diensten und verbundenen Geräten sind keine zusätzlichen Kosten verbunden. Microsoft 365 Lighthouse befindet sich derzeit in der Vorschau und steht msps zur Verfügung, die kleine bis mittelständische Unternehmen warten und eine Cloud Solution Provider (CSP)-Beziehung mit ihren Kunden haben. Beachten Sie, dass indirekte Anbieter derzeit nicht von Microsoft 365 Lighthouse unterstützt werden. Weitere Informationen finden Sie unter [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: Welche Anforderungen gelten für die Verwendung von Microsoft 365 Lighthouse?
     answer: >
       Eine Liste der aktuellen Anforderungen finden Sie unter [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: In welchen Ländern und Regionen sind Microsoft 365 Lighthouse verfügbar?
+    answer: >
+      Microsoft 365 Lighthouse ist in allen Ländern verfügbar, in denen Microsoft 365 verfügbar ist, mit Ausnahme von China und der Aufsichtsbehörde. Features in Microsoft 365 Lighthouse wie Geräteverwaltung und Bedrohungsmanagement basieren jedoch auf Microsoft Intune, und die Benutzerverwaltung basiert auf Azure Active Directory (Azure AD), und Intune und Azure AD sind in bestimmten Ländern und Regionen möglicherweise nicht verfügbar. Eine vollständige Liste der verfügbarkeit von Microsoft 365, Azure AD und Intune finden Sie unter ["Internationale Verfügbarkeit".](https://www.microsoft.com/microsoft-365/business/international-availability)
+
+
+      Microsoft 365 Lighthouse ist in nationalen Clouds nicht verfügbar.
   - question: Wie kann ich mich für Microsoft 365 Lighthouse registrieren?
     answer: >
       Um sich für Microsoft 365 Lighthouse zu registrieren, müssen Sie beim CSP-Programm registriert sein. Indirekte Anbieter können derzeit nicht unterstützt werden. Anweisungen zur Registrierung finden Sie unter [Registrieren für Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Weitere Informationen zum CSP-Programm finden Sie in der [Cloud Solution Provider Programmübersicht.](/partner-center/csp-overview)
   - question: Ich habe die Registrierung abgeschlossen. Warum werden keine Kundendaten angezeigt?
     answer: >
-      Es kann bis zu 48 Stunden dauern, bis Kundendaten innerhalb Microsoft 365 Lighthouse geladen werden. Wenn das Onboarding mehr als 48 Stunden dauert, wenden Sie sich an unser Supportteam, um Hilfe zu bitten. Sie müssen sie darüber informieren, wenn Sie das Onboarding abgeschlossen haben, und alle relevanten Screenshots und Protokolle bereitstellen. Weitere Informationen finden Sie unter [Hilfe und Support für Microsoft 365 Lighthouse.](m365-lighthouse-get-help-and-support.md)
+      Es kann bis zu 48 Stunden dauern, bis Kundendaten innerhalb Microsoft 365 Lighthouse geladen wurden. Wenn das Onboarding mehr als 48 Stunden dauert, wenden Sie sich an unser Supportteam, um Hilfe zu bitten. Sie müssen sie darüber informieren, wenn Sie das Onboarding abgeschlossen haben, und alle relevanten Screenshots und Protokolle bereitstellen. Weitere Informationen finden Sie unter [Hilfe und Support für Microsoft 365 Lighthouse.](m365-lighthouse-get-help-and-support.md)
   - question: Warum sehe ich Daten für einige Kundenmandanten, aber nicht für andere?
     answer: >
-      Damit Kundendaten in Microsoft 365 Lighthouse angezeigt werden, müssen Partner delegierte Administratorrechte (Delegated Admin Privileges, DAP) mit Kunden über Partner Center einrichten. Weitere Informationen finden Sie unter [Anfordern einer Vertriebspartnerschaft mit einem Kunden im Partner Center.](/partner-center/request-a-relationship-with-a-customer) Mandanten müssen außerdem mindestens ein Microsoft 365 Business Premium-Abonnement und weniger als 500 lizenzierte Benutzer in ihrem Mandanten haben. Weitere Informationen finden Sie unter [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      Damit Kundenmandantendaten in Microsoft 365 Lighthouse angezeigt werden, müssen Partner delegierte Administratorrechte (Delegated Admin Privileges, DAP) mit Kunden über Partner Center einrichten. Weitere Informationen finden Sie unter [Anfordern einer Vertriebspartnerschaft mit einem Kunden im Partner Center.](/partner-center/request-a-relationship-with-a-customer) Mandanten müssen außerdem mindestens ein Microsoft 365 Business Premium Abonnement und weniger als 500 lizenzierte Benutzer in ihrem Mandanten haben. Weitere Informationen finden Sie unter [Anforderungen für Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: Was geschieht, wenn ich bestimmte Mandanten nicht in Microsoft 365 Lighthouse sehen möchte?
     answer: >
-      Wenn Sie bestimmte Mandanten und deren Daten in Microsoft 365 Lighthouse nicht sehen möchten, können Sie diese Mandanten deaktivieren. Führen Sie die folgenden Schritte aus, um einen Mandanten zu inaktivieren:
+      Wenn Sie bestimmte Mandanten und deren Daten in Microsoft 365 Lighthouse nicht sehen möchten, können Sie diese Mandanten inaktivieren. Führen Sie die folgenden Schritte aus, um einen Mandanten zu inaktivieren:
 
 
       1. Wählen Sie im linken Navigationsbereich **Mandanten** aus, um die **Seite "Mandanten"** zu öffnen.
