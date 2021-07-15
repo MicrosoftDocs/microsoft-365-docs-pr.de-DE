@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen von App-Richtlinien.
-ms.openlocfilehash: 17417d7fac80f2763edbbaa8dbb2c8be16e47371
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420220"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438060"
 ---
 # <a name="create-app-policies"></a>Erstellen von App-Richtlinien
 
@@ -32,7 +32,7 @@ Neben einer Reihe integrierter Funktionen zur Erkennung von anomalem App-Verhalt
 
 Sie können App-Richtlinien aus bereitgestellten Vorlagen erstellen, die angepasst werden können, oder Sie können eine eigene benutzerdefinierte App-Richtlinie erstellen.
 
-Um eine neue App-Richtlinie zu erstellen, wechseln Sie zur Seite **Microsoft 365 Compliance Center > App-Schutz und Governance > Übersicht > Richtlinien**:
+Um eine neue App-Richtlinie zu erstellen, wechseln Sie zur Seite **Microsoft 365 Compliance Center > App-Governance > Übersichtsseite > Richtlinien**:
 
 - Um eine neue App-Richtlinie mit Vorlagen für die App-Nutzung zu erstellen, wählen Sie **Richtlinie erstellen** unter **App-Nutzungsrichtlinie erstellen** aus.
 - Um eine neue App-Richtlinie mit Vorlagen für die App-Berechtigungen zu erstellen, wählen Sie **Richtlinie erstellen** unter **Berechtigungsrichtlinie erstellen** aus.
@@ -50,7 +50,7 @@ App-Governance stellt diese Vorlagen bereit, um Warnungen für die App-Nutzung z
 
 | Vorlagenname | Beschreibung |
 |:-------|:-----|
-| Neue App mit einer großen Anzahl von Datenzugriffen | Hebt alle kürzlich registrierten Apps mit einer großen Anzahl von Datenzugriffen hervor, um sicherzustellen, dass es sich dabei um erwartete Datenmuster handelt. <br><br> Standardmäßig kennzeichnet diese Richtlinie alle Apps, die in den letzten 7 Tagen registriert wurden und über mehr als 1 GB Datenzugriff in diesem Zeitraum verfügten. Diese Richtlinie kann mit weiteren Bedingungen und Aktionen angepasst werden. |
+| Neue App mit einer großen Anzahl von Datenzugriffen | Hebt alle kürzlich registrierten Apps mit einer großen Anzahl von Datenzugriffen hervor, um sicherzustellen, dass es sich dabei um erwartete Datenmuster handelt. <br><br> Standardmäßig kennzeichnet diese Richtlinie alle Apps, die in den letzten 7 Tagen registriert wurden und in diesem Zeitraum auf über mehr als 1 GB Daten zugreifen konnten. Diese Richtlinie kann mit weiteren Bedingungen und Aktionen angepasst werden. |
 |||
 
 ### <a name="app-permissions"></a>App-Berechtigungen

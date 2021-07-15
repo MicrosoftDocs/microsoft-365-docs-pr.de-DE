@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195021"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438072"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Manuelles Bereitstellen von Microsoft Defender für Endpunkt unter Linux
 
@@ -65,7 +65,7 @@ Die Wahl des Kanals bestimmt den Typ und die Häufigkeit von Updates, die auf Ih
 Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geben, empfiehlt es sich, einige Geräte in Ihrem Unternehmen so zu konfigurieren, dass sie entweder *insiderschnell* oder langsam verwendet *werden.*
 
 > [!WARNING]
-> Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort aus zu installieren.
+> Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort zu installieren.
 
 ### <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL und Varianten (CentOS und Oracle Linux)
 
@@ -274,7 +274,7 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
 
     ![Screenshot des Microsoft Defender Security Center](images/atp-portal-onboarding-linux.png)
 
-4. Überprüfen Sie an einer Eingabeaufforderung, ob Die Datei vorhanden ist.
+4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen.
     Extrahieren Sie den Inhalt des Archivs:
 
     ```bash
@@ -305,7 +305,12 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
     mdatp health --field org_id
     ```
 
-2. Führen Sie MicrosoftDefenderATPOnboardingLinuxServer.py aus, und beachten Sie, dass Sie zum Ausführen dieses Befehls auf dem Gerät installiert sein `python` müssen:
+2. Führen Sie MicrosoftDefenderATPOnboardingLinuxServer.py aus. 
+   
+    >[!NOTE]
+    >Zum Ausführen dieses Befehls müssen Sie `python` auf dem Gerät installiert sein. Wenn Sie RHEL 8.x oder Ubuntu 20.04 oder höher ausführen, müssen Sie Python 3 anstelle von Python verwenden.
+
+
 
     ```bash
     python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -350,7 +355,7 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
         mdatp threat list
         ```
 
-## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Linux-EDR (EDR)-Funktionen mit simulierten Angriffen
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Linux EDR (EDR)-Funktionen mit simulierten Angriffen
 
 Um die Funktionen von EDR für Linux zu testen, führen Sie die folgenden Schritte aus, um eine Erkennung auf Ihrem Linux-Server zu simulieren und den Fall zu untersuchen. 
 
