@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Bestimmen Sie Ihre App-Compliance-Ausrichtung.
-ms.openlocfilehash: 3d7cac319c31bac40a3aad2f6b9a4c16303f6a20
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420124"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438024"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Bestimmen Ihrer App-Compliance-Ausrichtung
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Mit der Microsoft-App-Governance können Sie die Compliance-Ausrichtung der Drittanbieter-Apps und deren Zugriff auf Daten in Ihrem Microsoft 365 Mandanten schnell über die Übersichtsseite der App-Governance im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/appgovernance) beurteilen.
+Mit der Microsoft-App-Governance können Sie die Compliance-Ausrichtung der Drittanbieter-Apps und deren Zugriff auf Daten in Ihrem Microsoft 365 Mandanten schnell über die Übersichtsseite der App-Governance im [Microsoft 365 Compliance Center](https://aka.ms/appgovernance) beurteilen.
 
 ![Die Übersichtsseite der App-Governance im Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
@@ -54,7 +54,7 @@ Von dieser Seite aus können Sie Folgendes sehen:
 
 - Für Daten- und Ressourcenzugriff:
 
-  - Die API-Datenzugriffe der Anwendung in den letzten 90 Tagen
-  - Die Nutzung der wichtigsten Ressourcen in den letzten 90 Tagen
+  - Gesamtanzahl der Daten, auf die Apps im Mandanten über die Graph-API im aktuellen und in den letzten drei Kalendermonaten zugegriffen haben. (Umfasst derzeit nur E-Mail- und Dateiupload- und Downloadnutzung)
+  - Datennutzung im aktuellen und in den letzten drei Kalendermonaten, aufgeschlüsselt nach Ressourcentyp. (Umfasst derzeit nur E-Mail- und Dateiupload- und Downloadnutzung)
 
-  Anhand dieser Informationen können Sie ermitteln, ob es anomale Spitzen beim Zugriff auf die Daten in Ihrem Microsoft 365-Mandanten gibt.
+  Anhand dieser Informationen können Sie ermitteln, ob es beim Zugriff auf die Daten in Ihrem Microsoft 365-Mandanten einen ungewöhnlichen Anstieg gibt.

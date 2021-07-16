@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie mehr zur Erkennung und Behebung von App-Bedrohungen.
-ms.openlocfilehash: 26cd8501fdd8bd828357f8adb7d4e90f96e70114
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420172"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438048"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>Informationen zu Erkennung und Behebung von App-Bedrohungen
 
@@ -40,29 +40,29 @@ Sehen Sie sich an, welche [Administratorrollen](app-governance-get-started.md#ad
 
 ## <a name="app-governance-integration-with-azure-active-directory-and-microsoft-cloud-app-security"></a>App-Governance-Integration mit Azure Active Directory und Microsoft Cloud App Security
 
-App-Governance, Azure Active Directory (Azure AD) und Microsoft Cloud App Security sammeln verschiedene Datasets und stellen diese bereit:
+App-Governance, Azure Active Directory (Azure AD) und Microsoft Cloud App Security sammeln und stellen verschiedene Datasets bereit:
 
-- Azure AD stellt grundlegende App-Metadaten und detaillierte Informationen zu Anmeldungen bei Apps bereit.
 - App-Governance bietet detaillierte Informationen zur Aktivität einer App auf API-Ebene.
+- Azure AD stellt grundlegende App-Metadaten und ausführliche Informationen zu Anmeldungen bei Apps bereit.
 - Microsoft Cloud App Security stellt Informationen zum App-Risiko bereit.
 
-Indem Sie Informationen über App-Governance, Azure AD und Microsoft Cloud App Security teilen, können Sie aggregierte Informationen in einem Portal anzeigen und mühelos eine Verknüpfung mit einem anderen Portal herstellen, um weitere Informationen zu erhalten. Hier sind einige Beispiele:
+Indem Sie Informationen über App-Governance, Azure AD und Microsoft Cloud App Security freigeben, können Sie aggregierte Informationen in einem Portal anzeigen und mühelos eine Verknüpfung mit einem anderen Portal herstellen, um weitere Informationen zu erhalten. Hier sind einige Beispiele:
 
 - Informationen zu App-Anmeldungen in App-Governance:
 
-  Im App-Governance-Portal können Sie die aggregierte Anmeldeaktivität für jede App anzeigen, und einen Link zurück zum Azure Active Directory Admin Center erstellen, um Details zu Anmeldeereignissen zu erhalten.
+  Im App-Governance-Portal können Sie die aggregierte Anmeldeaktivität für jede App anzeigen und einen Link zurück zum Azure Active Directory Admin Center erstellen, um Details zu Anmeldeereignissen zu erhalten.
 
 - App-API-Nutzungsinformationen im Azure Active Directory Admin Center:
 
   Im Azure Active Directory Admin Center können Sie die aggregierten App-Nutzungsinformationen sehen, und einen Link zum App-Governance-Portal für die Details der App-Nutzung erstellen.
 
-- API-Nutzungsinformationen im Microsoft Cloud App Security-Portal: 
+- Informationen zur API-Verwendung im Microsoft Cloud App Security-Portal: 
 
-  Im Microsoft Cloud App Security-Portal können Sie die API-Nutzungsebene und aggregierte Datenübertragungen anzeigen, sowie über einen Link zum App-Governance-Portal mit weiteren Details zugreifen.
+  Im Microsoft Cloud App Security-Portal können Sie die API-Nutzungsebene und aggregierte Datenübertragungen anzeigen sowie über einen Link zum App-Governance-Portal mit weiteren Details zugreifen.
 
-Nachfolgend finden Sie eine Zusammenfassung der Integration.
+Hier ist eine Zusammenfassung der Integration.
 
-![Die Integration von App-Governance mit Azure AD und Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+![Integration von App-Governance mit Azure AD und Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
 
 Zusätzlich sendet App-Governance seine Warnungen als Signale an Microsoft Cloud App Security und Microsoft 365 Defender für eine detailliertere Analyse von App-basierten Sicherheitsvorfällen.
 

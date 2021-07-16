@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Beginnen Sie mit Sichtbarkeit und Insights.
-ms.openlocfilehash: 12c1a01667b1bda545b619e931d99132e6611e35
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420133"
+ms.locfileid: "53430480"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Erste Schritte mit Sichtbarkeit und Insights
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](https://aka.ms/ComplianceSD).*
 
-Der Ort für die ersten Schritte ist das App-Governance-Dashboard auf [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Beachten Sie, dass Ihr Anmeldekonto über eine [dieser App-Governance-Administratorrollen](app-governance-get-started.md#administrator-roles) verfügen muss, um App-Governance-Daten anzuzeigen.
+Der Ort für die ersten Schritte ist das App-Governance-Dashboard auf [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Beachten Sie, dass Ihr Anmeldekonto über eine [dieser App-Governance-Administratorrollen](app-governance-get-started.md#administrator-roles) verfügen muss, um App-Governance-Daten anzuzeigen.
 
 ![Die Übersichtsseite der App-Governance im Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

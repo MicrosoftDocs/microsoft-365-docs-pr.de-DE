@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Beginnen Sie mit der App-Bedrohungserkennung und -Behebung.
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420178"
+ms.locfileid: "53430720"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Erste Schritte mit der App-Bedrohungserkennung und -Behebung
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420178"
 
 Die Microsoft App-Governance sammelt Bedrohungsbenachrichtigungen, die durch systemeigene App-Governance-Erkennungsmethoden basierend auf Aktivitäten bösartiger Apps erzeugt werden, und richtlinienbasierte Benachrichtigungen, die durch von Ihnen erstellte aktive App-Richtlinien erzeugt werden.
 
-Der erste Ort, um App-Benachrichtigungen anzuzeigen, ist das App-Governance-Dashboard auf [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance).
+Der erste Ort, um App-Benachrichtigungen anzuzeigen, ist das App-Governance-Dashboard auf [https://aka.ms/appgovernance](https://aka.ms/appgovernance).
 
 ![Die Übersichtsseite der App-Governance im Microsoft 365 Compliance Center mir dem hervorgehobenen Abschnitt „Erkennungs- und Richtlinienbenachrichtigungen“](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 
