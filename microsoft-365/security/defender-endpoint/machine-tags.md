@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von Gerätekategorien
-description: Verwenden von Gerätetags zum Gruppieren von Geräten zum Erfassen des Kontexts und Aktivieren der erstellung dynamischer Listen im Rahmen eines Vorfalls
-keywords: Tags, Gerätetags, Gerätegruppen, Gruppen, Korrektur, Ebene, Regeln,Ad-Gruppe, Rolle, Zuweisen, Rang
+description: Verwenden von Gerätetags zum Gruppieren von Geräten zum Erfassen von Kontext und Aktivieren der dynamischen Listenerstellung als Teil eines Vorfalls
+keywords: Tags, Gerätetags, Gerätegruppen, Gruppen, Korrektur, Ebene, Regeln, AAD-Gruppe, Rolle, zuweisen, Rangfolge
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,88 +16,88 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ffe7d13ca0943e8927d0d9ce663527fedf880e48
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 83dd2483b93b2f4fe520973ce05346f59baf2f28
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187589"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453585"
 ---
-# <a name="create-and-manage-device-tags"></a><span data-ttu-id="6e02a-104">Erstellen und Verwalten von Gerätekategorien</span><span class="sxs-lookup"><span data-stu-id="6e02a-104">Create and manage device tags</span></span>
+# <a name="create-and-manage-device-tags"></a><span data-ttu-id="07ee8-104">Erstellen und Verwalten von Gerätekategorien</span><span class="sxs-lookup"><span data-stu-id="07ee8-104">Create and manage device tags</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="6e02a-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="6e02a-105">**Applies to:**</span></span>
-- [<span data-ttu-id="6e02a-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="6e02a-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="6e02a-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6e02a-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="07ee8-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="07ee8-105">**Applies to:**</span></span>
+- [<span data-ttu-id="07ee8-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="07ee8-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="07ee8-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="07ee8-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="6e02a-108">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="6e02a-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="6e02a-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="6e02a-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="07ee8-108">Möchten Sie Microsoft Defender für Endpunkt erleben?</span><span class="sxs-lookup"><span data-stu-id="07ee8-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="07ee8-109">Registrieren Sie sich für eine kostenlose Testversion</span><span class="sxs-lookup"><span data-stu-id="07ee8-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="6e02a-110">Fügen Sie Tags auf Geräten hinzu, um eine logische Gruppenmitgliedschaft zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-110">Add tags on devices to create a logical group affiliation.</span></span> <span data-ttu-id="6e02a-111">Gerätetags unterstützen die ordnungsgemäße Zuordnung des Netzwerks, sodass Sie verschiedene Tags anfügen können, um Kontext zu erfassen und dynamische Listenerstellung als Teil eines Vorfalls zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-111">Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.</span></span> <span data-ttu-id="6e02a-112">Tags können als Filter **in** der Gerätelistenansicht oder zum Gruppieren von Geräten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="6e02a-112">Tags can be used as a filter in **Devices list** view, or to group devices.</span></span> <span data-ttu-id="6e02a-113">Weitere Informationen zur Gerätegruppe finden Sie unter [Create and manage device groups](machine-groups.md).</span><span class="sxs-lookup"><span data-stu-id="6e02a-113">For more information on device grouping, see [Create and manage device groups](machine-groups.md).</span></span>
+<span data-ttu-id="07ee8-110">Fügen Sie Kategorien auf Geräten hinzu, um eine logische Gruppenzugehörigkeit zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-110">Add tags on devices to create a logical group affiliation.</span></span> <span data-ttu-id="07ee8-111">Gerätekategorien unterstützen die ordnungsgemäße Zuordnung des Netzwerks, sodass Sie verschiedene Kategorien anfügen können, um den Kontext zu erfassen und die dynamische Listenerstellung als Teil eines Vorfalls zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-111">Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident.</span></span> <span data-ttu-id="07ee8-112">Tags können als Filter in der **Gerätelistenansicht** oder zum Gruppieren von Geräten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="07ee8-112">Tags can be used as a filter in **Devices list** view, or to group devices.</span></span> <span data-ttu-id="07ee8-113">Weitere Informationen zur Gerätegruppierung finden Sie unter [Erstellen und Verwalten von Gerätegruppen.](machine-groups.md)</span><span class="sxs-lookup"><span data-stu-id="07ee8-113">For more information on device grouping, see [Create and manage device groups](machine-groups.md).</span></span>
 
-<span data-ttu-id="6e02a-114">Sie können Tags auf Geräten mithilfe der folgenden Methoden hinzufügen:</span><span class="sxs-lookup"><span data-stu-id="6e02a-114">You can add tags on devices using the following ways:</span></span>
+<span data-ttu-id="07ee8-114">Sie können Tags auf Geräten auf folgende Weise hinzufügen:</span><span class="sxs-lookup"><span data-stu-id="07ee8-114">You can add tags on devices using the following ways:</span></span>
 
-- <span data-ttu-id="6e02a-115">Verwenden des Portals</span><span class="sxs-lookup"><span data-stu-id="6e02a-115">Using the portal</span></span>
-- <span data-ttu-id="6e02a-116">Festlegen eines Registrierungsschlüsselwerts</span><span class="sxs-lookup"><span data-stu-id="6e02a-116">Setting a registry key value</span></span>
+- <span data-ttu-id="07ee8-115">Das Portal verwenden</span><span class="sxs-lookup"><span data-stu-id="07ee8-115">Using the portal</span></span>
+- <span data-ttu-id="07ee8-116">Einen Registrierungsschlüsselwert festlegen</span><span class="sxs-lookup"><span data-stu-id="07ee8-116">Setting a registry key value</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="6e02a-117">Zwischen dem Hinzufügen eines Tags zu einem Gerät und seiner Verfügbarkeit in der Geräteliste und Geräteseite kann eine gewisse Latenz auftreten.</span><span class="sxs-lookup"><span data-stu-id="6e02a-117">There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.</span></span>  
+> <span data-ttu-id="07ee8-117">Zwischen dem Hinzufügen eines Tags zu einem Gerät und dessen Verfügbarkeit in der Geräteliste und auf der Geräteseite kann eine gewisse Latenz auftreten.</span><span class="sxs-lookup"><span data-stu-id="07ee8-117">There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.</span></span>  
 
-<span data-ttu-id="6e02a-118">Informationen zum Hinzufügen von Gerätetags mithilfe der API finden Sie unter [Add or remove device tags API](add-or-remove-machine-tags.md).</span><span class="sxs-lookup"><span data-stu-id="6e02a-118">To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).</span></span>
+<span data-ttu-id="07ee8-118">Informationen zum Hinzufügen von Gerätekategorien mithilfe der API finden Sie unter [Hinzufügen oder Entfernen von Gerätekategorien-API](add-or-remove-machine-tags.md).</span><span class="sxs-lookup"><span data-stu-id="07ee8-118">To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).</span></span>
 
-## <a name="add-and-manage-device-tags-using-the-portal"></a><span data-ttu-id="6e02a-119">Hinzufügen und Verwalten von Gerätetags mithilfe des Portals</span><span class="sxs-lookup"><span data-stu-id="6e02a-119">Add and manage device tags using the portal</span></span>
+## <a name="add-and-manage-device-tags-using-the-portal"></a><span data-ttu-id="07ee8-119">Hinzufügen und Verwalten von Gerätekategorien über das Portal</span><span class="sxs-lookup"><span data-stu-id="07ee8-119">Add and manage device tags using the portal</span></span>
 
-1. <span data-ttu-id="6e02a-120">Wählen Sie das Gerät aus, auf dem Sie Tags verwalten möchten.</span><span class="sxs-lookup"><span data-stu-id="6e02a-120">Select the device that you want to manage tags on.</span></span> <span data-ttu-id="6e02a-121">Sie können ein Gerät aus einer der folgenden Ansichten auswählen oder suchen:</span><span class="sxs-lookup"><span data-stu-id="6e02a-121">You can select or search for a device from any of the following views:</span></span>
+1. <span data-ttu-id="07ee8-120">Wählen Sie das Gerät aus, auf dem Sie Kategorien verwalten möchten.</span><span class="sxs-lookup"><span data-stu-id="07ee8-120">Select the device that you want to manage tags on.</span></span> <span data-ttu-id="07ee8-121">Sie können ein Gerät aus einer der folgenden Ansichten auswählen oder danach suchen:</span><span class="sxs-lookup"><span data-stu-id="07ee8-121">You can select or search for a device from any of the following views:</span></span>
 
-   - <span data-ttu-id="6e02a-122">**Dashboard für Sicherheitsvorgänge:** Wählen Sie den Gerätenamen im Abschnitt Top devices with active alerts aus.</span><span class="sxs-lookup"><span data-stu-id="6e02a-122">**Security operations dashboard** - Select the device name from the Top devices with active alerts section.</span></span>
-   - <span data-ttu-id="6e02a-123">**Warnungswarteschlange** : Wählen Sie den Gerätenamen neben dem Gerätesymbol aus der Benachrichtigungswarteschlange aus.</span><span class="sxs-lookup"><span data-stu-id="6e02a-123">**Alerts queue** - Select the device name beside the device icon from the alerts queue.</span></span>
-   - <span data-ttu-id="6e02a-124">**Geräteliste** – Wählen Sie den Gerätenamen aus der Liste der Geräte aus.</span><span class="sxs-lookup"><span data-stu-id="6e02a-124">**Devices list** - Select the device name from the list of devices.</span></span>
-   - <span data-ttu-id="6e02a-125">**Suchfeld** : Wählen Sie im Dropdownmenü Gerät aus, und geben Sie den Gerätenamen ein.</span><span class="sxs-lookup"><span data-stu-id="6e02a-125">**Search box** - Select Device from the drop-down menu and enter the device name.</span></span>
+   - <span data-ttu-id="07ee8-122">**Dashboard für Sicherheitsvorgänge** – Wählen Sie den Gerätenamen im Abschnitt "Top devices with active alerts" aus.</span><span class="sxs-lookup"><span data-stu-id="07ee8-122">**Security operations dashboard** - Select the device name from the Top devices with active alerts section.</span></span>
+   - <span data-ttu-id="07ee8-123">**Benachrichtigungswarteschlange** – Wählen Sie den Gerätenamen neben dem Gerätesymbol aus der Benachrichtigungswarteschlange aus.</span><span class="sxs-lookup"><span data-stu-id="07ee8-123">**Alerts queue** - Select the device name beside the device icon from the alerts queue.</span></span>
+   - <span data-ttu-id="07ee8-124">**Geräteliste** – Wählen Sie den Gerätenamen aus der Geräteliste aus.</span><span class="sxs-lookup"><span data-stu-id="07ee8-124">**Devices list** - Select the device name from the list of devices.</span></span>
+   - <span data-ttu-id="07ee8-125">**Suchfeld** – Wählen Sie im Dropdownmenü "Gerät" aus und geben Sie den Gerätenamen ein.</span><span class="sxs-lookup"><span data-stu-id="07ee8-125">**Search box** - Select Device from the drop-down menu and enter the device name.</span></span>
 
-     <span data-ttu-id="6e02a-126">Sie können auch über die Datei- und IP-Ansichten zur Warnungsseite gelangen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-126">You can also get to the alert page through the file and IP views.</span></span>
+     <span data-ttu-id="07ee8-126">Sie können die Benachrichtigungsseite auch über die Datei- und IP-Ansichten öffnen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-126">You can also get to the alert page through the file and IP views.</span></span>
 
-2. <span data-ttu-id="6e02a-127">Wählen **Sie In der** Zeile Reaktionsaktionen die Option Tags verwalten aus.</span><span class="sxs-lookup"><span data-stu-id="6e02a-127">Select **Manage Tags** from the row of Response actions.</span></span>
+2. <span data-ttu-id="07ee8-127">Wählen Sie **Kategorien verwalten** aus der Zeile "Antwortaktionen" aus.</span><span class="sxs-lookup"><span data-stu-id="07ee8-127">Select **Manage Tags** from the row of Response actions.</span></span>
 
-    ![Abbildung der Schaltfläche "Tags verwalten"](images/manage-tags.png)
+    :::image type="content" alt-text="Abbildung der Schaltfläche &quot;Tags verwalten&quot;." source="images/manage-tags-option.png":::
 
-3. <span data-ttu-id="6e02a-129">Geben Sie ein, um Tags zu suchen oder zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-129">Type to find or create tags</span></span>
+3. <span data-ttu-id="07ee8-129">Typ zum Suchen oder Erstellen von Tags</span><span class="sxs-lookup"><span data-stu-id="07ee8-129">Type to find or create tags</span></span>
 
-    ![Abbildung des Hinzufügens von Tags auf einem Gerät1](images/new-tags.png)
+    :::image type="content" alt-text="Abbildung des Hinzufügens von Tags auf einem Gerät1." source="images/create-new-tag.png":::
 
-<span data-ttu-id="6e02a-131">Tags werden der Geräteansicht hinzugefügt und werden  auch in der Gerätelistenansicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="6e02a-131">Tags are added to the device view and will also be reflected on the **Devices list** view.</span></span> <span data-ttu-id="6e02a-132">Anschließend können Sie den **Filter Tags verwenden,** um die relevante Liste der Geräte zu sehen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-132">You can then use the **Tags** filter to see the relevant list of devices.</span></span>
-
->[!NOTE]
-> <span data-ttu-id="6e02a-133">Die Filterung funktioniert möglicherweise nicht für Tagnamen, die Klammer enthalten.</span><span class="sxs-lookup"><span data-stu-id="6e02a-133">Filtering might not work on tag names that contain parenthesis.</span></span><br>
-> <span data-ttu-id="6e02a-134">Wenn Sie ein neues Tag erstellen, wird eine Liste vorhandener Tags angezeigt.</span><span class="sxs-lookup"><span data-stu-id="6e02a-134">When you create a new tag, a list of existing tags are displayed.</span></span> <span data-ttu-id="6e02a-135">In der Liste werden nur Tags angezeigt, die über das Portal erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="6e02a-135">The list only shows tags created through the portal.</span></span> <span data-ttu-id="6e02a-136">Vorhandene Tags, die auf Clientgeräten erstellt wurden, werden nicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="6e02a-136">Existing tags created from client devices will not be displayed.</span></span>
-
-<span data-ttu-id="6e02a-137">Sie können auch Tags aus dieser Ansicht löschen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-137">You can also delete tags from this view.</span></span>
-
-![Abbildung des Hinzufügens von Tags auf einem Gerät2](images/more-manage-tags.png)
-
-## <a name="add-device-tags-by-setting-a-registry-key-value"></a><span data-ttu-id="6e02a-139">Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts</span><span class="sxs-lookup"><span data-stu-id="6e02a-139">Add device tags by setting a registry key value</span></span>
+<span data-ttu-id="07ee8-131">Tags werden der Geräteansicht hinzugefügt und werden auch in der **Gerätelistenansicht** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="07ee8-131">Tags are added to the device view and will also be reflected on the **Devices list** view.</span></span> <span data-ttu-id="07ee8-132">Anschließend können Sie den **Tags-Filter** verwenden, um die relevante Liste der Geräte anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-132">You can then use the **Tags** filter to see the relevant list of devices.</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="6e02a-140">Gilt nur auf den folgenden Geräten:</span><span class="sxs-lookup"><span data-stu-id="6e02a-140">Applicable only on the following devices:</span></span>
->- <span data-ttu-id="6e02a-141">Windows 10, Version 1709 oder höher</span><span class="sxs-lookup"><span data-stu-id="6e02a-141">Windows 10, version 1709 or later</span></span>
->- <span data-ttu-id="6e02a-142">Windows Server, Version 1803 oder höher</span><span class="sxs-lookup"><span data-stu-id="6e02a-142">Windows Server, version 1803 or later</span></span>
->- <span data-ttu-id="6e02a-143">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="6e02a-143">Windows Server 2016</span></span>
->- <span data-ttu-id="6e02a-144">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="6e02a-144">Windows Server 2012 R2</span></span>
->- <span data-ttu-id="6e02a-145">Windows Server 2008 R2 SP1</span><span class="sxs-lookup"><span data-stu-id="6e02a-145">Windows Server 2008 R2 SP1</span></span>
->- <span data-ttu-id="6e02a-146">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="6e02a-146">Windows 8.1</span></span>
->- <span data-ttu-id="6e02a-147">Windows 7 SP1</span><span class="sxs-lookup"><span data-stu-id="6e02a-147">Windows 7 SP1</span></span>
+> <span data-ttu-id="07ee8-133">Das Filtern funktioniert möglicherweise nicht für Tagnamen, die Klammern enthalten.</span><span class="sxs-lookup"><span data-stu-id="07ee8-133">Filtering might not work on tag names that contain parenthesis.</span></span><br>
+> <span data-ttu-id="07ee8-134">Wenn Sie ein neues Tag erstellen, wird eine Liste vorhandener Tags angezeigt.</span><span class="sxs-lookup"><span data-stu-id="07ee8-134">When you create a new tag, a list of existing tags are displayed.</span></span> <span data-ttu-id="07ee8-135">In der Liste werden nur Tags angezeigt, die über das Portal erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="07ee8-135">The list only shows tags created through the portal.</span></span> <span data-ttu-id="07ee8-136">Vorhandene Tags, die von Clientgeräten erstellt wurden, werden nicht angezeigt.</span><span class="sxs-lookup"><span data-stu-id="07ee8-136">Existing tags created from client devices will not be displayed.</span></span>
+
+<span data-ttu-id="07ee8-137">Sie können tags auch aus dieser Ansicht löschen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-137">You can also delete tags from this view.</span></span>
+
+:::image type="content" alt-text="Abbildung des Hinzufügens von Tags auf einem Gerät2." source="images/new-tag-label-display.png":::
+
+## <a name="add-device-tags-by-setting-a-registry-key-value"></a><span data-ttu-id="07ee8-139">Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts</span><span class="sxs-lookup"><span data-stu-id="07ee8-139">Add device tags by setting a registry key value</span></span>
+
+>[!NOTE]
+> <span data-ttu-id="07ee8-140">Gilt nur für die folgenden Geräte:</span><span class="sxs-lookup"><span data-stu-id="07ee8-140">Applicable only on the following devices:</span></span>
+>- <span data-ttu-id="07ee8-141">Windows 10, Version 1709 oder höher</span><span class="sxs-lookup"><span data-stu-id="07ee8-141">Windows 10, version 1709 or later</span></span>
+>- <span data-ttu-id="07ee8-142">Windows Server, Version 1803 oder höher</span><span class="sxs-lookup"><span data-stu-id="07ee8-142">Windows Server, version 1803 or later</span></span>
+>- <span data-ttu-id="07ee8-143">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="07ee8-143">Windows Server 2016</span></span>
+>- <span data-ttu-id="07ee8-144">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="07ee8-144">Windows Server 2012 R2</span></span>
+>- <span data-ttu-id="07ee8-145">Windows Server 2008 R2 SP1</span><span class="sxs-lookup"><span data-stu-id="07ee8-145">Windows Server 2008 R2 SP1</span></span>
+>- <span data-ttu-id="07ee8-146">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="07ee8-146">Windows 8.1</span></span>
+>- <span data-ttu-id="07ee8-147">Windows 7 SP1</span><span class="sxs-lookup"><span data-stu-id="07ee8-147">Windows 7 SP1</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="6e02a-148">Die maximale Anzahl von Zeichen, die in einem Tag festgelegt werden können, ist 200.</span><span class="sxs-lookup"><span data-stu-id="6e02a-148">The maximum number of characters that can be set in a tag is 200.</span></span>
+> <span data-ttu-id="07ee8-148">Die maximale Anzahl von Zeichen, die in einem Tag festgelegt werden können, beträgt 200.</span><span class="sxs-lookup"><span data-stu-id="07ee8-148">The maximum number of characters that can be set in a tag is 200.</span></span>
 
-<span data-ttu-id="6e02a-149">Geräte mit ähnlichen Tags können nützlich sein, wenn Sie kontextbezogene Aktionen auf eine bestimmte Liste von Geräten anwenden müssen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-149">Devices with similar tags can be handy when you need to apply contextual action on a specific list of devices.</span></span>
+<span data-ttu-id="07ee8-149">Geräte mit ähnlichen Tags können nützlich sein, wenn Sie kontextbezogene Aktionen auf eine bestimmte Liste von Geräten anwenden müssen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-149">Devices with similar tags can be handy when you need to apply contextual action on a specific list of devices.</span></span>
 
-<span data-ttu-id="6e02a-150">Verwenden Sie den folgenden Registrierungsschlüsseleintrag, um ein Tag auf einem Gerät hinzuzufügen:</span><span class="sxs-lookup"><span data-stu-id="6e02a-150">Use the following registry key entry to add a tag on a device:</span></span>
+<span data-ttu-id="07ee8-150">Verwenden Sie den folgenden Registrierungsschlüsseleintrag, um ein Tag auf einem Gerät hinzuzufügen:</span><span class="sxs-lookup"><span data-stu-id="07ee8-150">Use the following registry key entry to add a tag on a device:</span></span>
 
-- <span data-ttu-id="6e02a-151">Registrierungsschlüssel: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`</span><span class="sxs-lookup"><span data-stu-id="6e02a-151">Registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`</span></span>
-- <span data-ttu-id="6e02a-152">Registrierungsschlüsselwert (REG_SZ): `Group`</span><span class="sxs-lookup"><span data-stu-id="6e02a-152">Registry key value (REG_SZ): `Group`</span></span>
-- <span data-ttu-id="6e02a-153">Registrierungsschlüsseldaten: `Name of the tag you want to set`</span><span class="sxs-lookup"><span data-stu-id="6e02a-153">Registry key data: `Name of the tag you want to set`</span></span>
+- <span data-ttu-id="07ee8-151">Registrierungsschlüssel: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`</span><span class="sxs-lookup"><span data-stu-id="07ee8-151">Registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`</span></span>
+- <span data-ttu-id="07ee8-152">Registrierungsschlüsselwert (REG_SZ): `Group`</span><span class="sxs-lookup"><span data-stu-id="07ee8-152">Registry key value (REG_SZ): `Group`</span></span>
+- <span data-ttu-id="07ee8-153">Registrierungsschlüsseldaten: `Name of the tag you want to set`</span><span class="sxs-lookup"><span data-stu-id="07ee8-153">Registry key data: `Name of the tag you want to set`</span></span>
 
 >[!NOTE]
-><span data-ttu-id="6e02a-154">Das Gerätetag ist Teil des Geräteinformationsberichts, der einmal am Tag generiert wird.</span><span class="sxs-lookup"><span data-stu-id="6e02a-154">The device tag is part of the device information report that's generated once a day.</span></span> <span data-ttu-id="6e02a-155">Alternativ können Sie den Endpunkt neu starten, der einen neuen Geräteinformationsbericht übertragen würde.</span><span class="sxs-lookup"><span data-stu-id="6e02a-155">As an alternative, you may choose to restart the endpoint that would transfer a new device information report.</span></span>
+><span data-ttu-id="07ee8-154">Das Gerätetag ist Teil des Geräteinformationsberichts, der einmal täglich generiert wird.</span><span class="sxs-lookup"><span data-stu-id="07ee8-154">The device tag is part of the device information report that's generated once a day.</span></span> <span data-ttu-id="07ee8-155">Alternativ können Sie den Endpunkt neu starten, der einen neuen Geräteinformationsbericht übertragen würde.</span><span class="sxs-lookup"><span data-stu-id="07ee8-155">As an alternative, you may choose to restart the endpoint that would transfer a new device information report.</span></span>
 > 
-> <span data-ttu-id="6e02a-156">Wenn Sie ein Tag entfernen müssen, das mit dem obigen Registrierungsschlüssel hinzugefügt wurde, löschen Sie den Inhalt der Registrierungsschlüsseldaten, anstatt den Schlüssel "Gruppe" zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="6e02a-156">If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.</span></span>
+> <span data-ttu-id="07ee8-156">Wenn Sie ein Tag entfernen müssen, das mit dem oben genannten Registrierungsschlüssel hinzugefügt wurde, löschen Sie den Inhalt der Registrierungsschlüsseldaten, anstatt den Schlüssel "Gruppe" zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="07ee8-156">If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.</span></span>
