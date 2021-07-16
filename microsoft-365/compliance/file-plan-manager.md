@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419763"
+ms.locfileid: "53430638"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Dateiplan zum Verwalten von Aufbewahrungsbezeichnungen verwenden
 
@@ -39,8 +39,6 @@ Sie können zwar Aufbewahrungsbezeichnungen von **Informationsgovernance** im Mi
 - Dateiplandeskriptoren unterstützen zusätzliche und optionale Informationen für jede Bezeichnung.
 
 Der Dateiplan kann für alle Aufbewahrungsbezeichnungen verwendet werden, auch wenn sie Inhalt nicht als Datensatz markieren.
-
-![Seite "Dateiplan"](../media/compliance-file-plan.png)
 
 Informationen zu den Aufbewahrungsbezeichnungen und deren Verwendung finden Sie unter [Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md).
 
@@ -111,9 +109,9 @@ Beispiel für Dateiplandeskriptoren beim Erstellen oder Bearbeiten einer Aufbewa
 
 ![Dateiplandeskriptoren beim Erstellen oder Bearbeiten einer Aufbewahrungsbezeichnung](../media/file-plan-descriptors.png)
 
-Beispielansicht der Spalten mit Dateiplandeskriptoren:
+Wenn Sie für jeden dieser optionalen Deskriptoren **Auswählen** auswählen, können Sie einen der vordefinierten Werte auswählen, oder Ihre eigenen erstellen und dann auswählen. Zum Beispiel: 
 
-![Spalten mit Dateiplandeskriptoren](../media/file-plan-descriptors-on-labels-tab.png)
+![Erstellen eines neuen Dateiplandeskriptors für die Bestimmung/das Zitat](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exportieren aller Aufbewahrungsbezeichnungen zum Analysieren oder Aktivieren von Offline-Überprüfungen
 
@@ -129,9 +127,7 @@ Eine CSV-Datei mit allen vorhandenen Aufbewahrungsbeschriftungen wird geöffnet.
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Importieren von Aufbewahrungsbezeichnungen in Ihren Dateiplan
 
-Im Dateiplan können Sie neue Aufbewahrungsbezeichnungen per Massenimport importieren, indem Sie eine CSV-Datei mit einem bestimmten Format verwenden. Nachdem die Bezeichnungen importiert wurden, können Sie Änderungen in der CSV-Datei vornehmen und die Datei erneut importieren, um die Massenbearbeitung vorhandener Aufbewahrungsbezeichnungen zu vereinfachen.
-
-So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbewahrungsbezeichnungen: 
+Im Dateiplan können Sie neue Aufbewahrungsbezeichnungen per Massenimport importieren, indem Sie eine CSV-Datei mit einem bestimmten Format verwenden: 
 
 1. Klicken Sie auf der Seite **Dateiplan** auf **Importieren**, um die Seite **Ihren Dateiplan ausfüllen und importieren** zu verwenden:
 
@@ -188,7 +184,7 @@ So importieren Sie neue Aufbewahrungsbezeichnungen und ändern vorhandene Aufbew
     
     - Wenn die Überprüfung erfolgreich ist, können Sie **Go Live** auswählen, um die Aufbewahrungsbezeichnungen in Ihrem Mandanten verfügbar zu machen. Oder schließen Sie die Seite mithilfe des Schließen-Symbols, und wählen Sie **Ja** aus, um zu bestätigen, dass Sie den Assistenten schließen möchten, ohne die Aufbewahrungsbezeichnungen zurzeit in Ihrem Mandanten verfügbar zu machen.
 
-Nachdem die importierten Bezeichnungen zu Ihrem Mandanten hinzugefügt wurden, können Sie sie nun einer neuen Richtlinie für die Aufbewahrungsbezeichnungen hinzufügen oder automatisch anwenden. Sie können diesen Schritt direkt über die Seite **Dateiplan** vornehmen, indem Sie die Dropdownliste von **+ Bezeichnung erstellen** und dann **Richtlinie zum Veröffentlichen von Bezeichnungen** oder **Richtlinie für Bezeichnung automatisch anwenden** auswählen.
+Nachdem die importierten Bezeichnungen zu Ihrem Mandanten hinzugefügt wurden, können Sie sie nun Benutzern zur Verfügung stellen, indem Sie sie veröffentlichen, oder Sie können sie automatisch anwenden. Sie können beides von der Registerkarte **Bezeichnungsrichtlinien** aus machen, und dann **Bezeichnungen veröffentlichen** oder **Eine Bezeichnung automatisch anwenden**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

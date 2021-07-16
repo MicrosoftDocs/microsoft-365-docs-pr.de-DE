@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: ''
-ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+description: Dieser Artikel bietet eine Übersicht über typen vertraulicher Informationen und wie sie vertrauliche Informationen wie Sozialversicherungs-, Kreditkarten- oder Bankkontonummern erkennen, um vertrauliche Elemente zu identifizieren.
+ms.openlocfilehash: dee4ec59ce5fe6140c4aef33d147e89e11facd59
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300381"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453621"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
@@ -35,12 +35,13 @@ Typen vertraulicher Informationen sind musterbasierte Klassifizierer. Sie erkenn
 
 ## <a name="sensitive-information-types-are-used-in"></a>Typen vertraulicher Informationen werden in
 
-- [Richtlinien zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md) 
+- [Richtlinien zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Aufbewahrungsbezeichnungen](retention.md)
 - [Insider-Risikomanagement](insider-risk-management.md)
 - [Kommunikationscompliance](communication-compliance.md)
 - [Richtlinien für die automatische Kennzeichnung](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Datenschutzverwaltung (Vorschau)](privacy-management.md)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Grundlegende Teile eines vertraulichen Informationstyps
 
@@ -86,7 +87,7 @@ Nein
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art vertraulicher Informationen erkannt wird, wenn innerhalb einer Näherung von 300 Zeichen:
-- Der reguläre Ausdruck Regex_argentina_national_id nach Inhalten sucht, die dem Muster entsprechen.
+- Der reguläre Ausdruck Regex_argentina_national_id sucht Inhalte, die dem Muster entsprechen.
 - Es wird ein Schlüsselwort aus Keyword_argentina_national_id gefunden.
 
 ```xml
@@ -99,7 +100,7 @@ Eine DLP-Richtlinie hat mittleres Vertrauen, dass diese Art vertraulicher Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -120,10 +121,10 @@ In einer Entitätsdefinition des Vertraulichen Informationstyps gibt die **Konfi
 Eine hohe Konfidenzstufe gibt die wenigsten falsch positiven Ergebnisse zurück, kann aber zu mehr falsch negativen Ergebnissen führen. Niedrige oder mittlere Konfidenzniveaus geben mehr falsch positive Ergebnisse zurück, aber nur wenige bis null falsch negative Werte.
 
 - **niedrige Konfidenz:** Der Wert von 65, übereinstimmende Elemente enthalten die wenigsten falsch negativen, aber die falsch positiven Ergebnisse. Niedrige Konfidenz gibt alle Übereinstimmungen mit niedriger, mittlerer und hoher Konfidenz zurück.
-- **mittlere Konfidenz:** Der Wert von 75, übereinstimmende Elemente enthalten eine durchschnittliche Menge falsch positiver und falsch negativer Ergebnisse. Mittlere Konfidenz gibt alle mittleren und hohen Konfidenzüberstimmungen zurück.  
+- **Mittlere Konfidenz:** Der Wert von 75, übereinstimmende Elemente enthalten eine durchschnittliche Menge falsch positiver und falsch negativer Ergebnisse. Mittlere Konfidenz gibt alle mittleren und hohen Konfidenzüberstimmungen zurück.  
 - **Hohe Konfidenz:** Der Wert von 85, übereinstimmende Elemente enthalten die wenigsten falsch positiven, aber die falsch negativen Werte. Hohe Konfidenz gibt nur Übereinstimmungen mit hoher Konfidenz zurück.  
 
-Sie sollten Muster mit hoher Konfidenzstufe mit niedrigen Zählungen verwenden, z. B. fünf bis zehn, und Muster mit niedriger Konfidenz mit höheren Zählungen, z. B. 20 oder mehr.
+Sie sollten Muster mit hoher Konfidenzstufe mit niedriger Anzahl verwenden, z. B. fünf bis zehn, und Muster mit niedriger Konfidenz mit höheren Zählungen, z. B. 20 oder mehr.
 
 > [!NOTE]
 > Wenn Sie vorhandene Richtlinien oder benutzerdefinierte Typen vertraulicher Informationen (SITs) mithilfe von nummernbasierten Konfidenzniveaus definiert haben (auch als Genauigkeit bekannt), werden sie automatisch den drei diskreten Konfidenzniveaus zugeordnet. Geringes Vertrauen, mittleres Vertrauen und hohe Vertrauenswürdigkeit in der Benutzeroberfläche des Security @ Compliance Centers.
@@ -158,7 +159,7 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 > 
 > Verwenden Sie z. B. zwei Varianten des Schlüsselworts, um ein Schlüsselwort wie „机密的document“ zu erkennen; eine mit einem Leerzeichen zwischen dem japanischen und dem englischen Text und eine andere ohne Leerzeichen zwischen dem japanischen und dem englischen Text. Daher sollten die Schlüsselwörter, die in SIT hinzugefügt werden sollen, „机密的 document“ und „机密的document“ lauten. Ebenso sollten zwei Varianten verwendet werden, um den Ausdruck „東京オリンピック2020“ zu erkennen; „東京オリンピック 2020“ und „東京オリンピック2020“.
 > 
-> Achten Sie beim Erstellen eines regulären Ausdrucks mit einem Doppeltbyte-Bindestrich oder einem Doppeltbyte-Punkt darauf, beide Zeichen mit Escapezeichen zu versehen, so wie man einen Bindestrich oder einen Punkt in einem regulären Ausdruck mit Escapezeichen versehen würde. Hier sehen Sie ein Beispiel für einen regulären Ausdruck als Referenz:
+> Achten Sie beim Erstellen eines regulären Ausdrucks mit einem Doppeltbyte-Bindestrich oder einem Doppeltbyte-Punkt darauf, beide Zeichen mit Escapezeichen zu versehen, so wie man einen Bindestrich oder einen Punkt in einem regulären Ausdruck mit Escapezeichen versehen würde. Hier ist ein Referenzbeispiel eines regulären Ausdrucks:
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Es wird empfohlen, die Zeichenfolgenüberstimmung anstelle der Wortüberstimmung in einer Schlüsselwortliste zu verwenden.

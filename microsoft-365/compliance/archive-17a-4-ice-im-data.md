@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Erfahren Sie, wie Sie einen 17a-4 ICE Verbinden Chat DataParser-Connector einrichten und verwenden, um ICE Verbinden Chatdaten in Microsoft 365 zu importieren und zu archivieren.
-ms.openlocfilehash: 2c9eb6524e4f5e131603b5998d215e0b2d8111d3
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+description: Erfahren Sie, wie Sie einen 17a-4 ICE Verbinden Chat DataParser-Connector einrichten und verwenden, um ICE-Verbinden Chatdaten in Microsoft 365 zu importieren und zu archivieren.
+ms.openlocfilehash: 0aac5c701f122eaf99497635281ebc07d835fc2e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097137"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454481"
 ---
-# <a name="set-up-a-connector-to-archive-ice-connect-chat-data-preview"></a>Einrichten eines Connectors zum Archivieren von ICE-Verbinden Chatdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Einrichten eines Connectors zum Archivieren von ICE-Verbinden Chatdaten
 
-Verwenden Sie ice [DataParser](https://www.17a-4.com/ice-dataparser/) von 17a-4 LLC, um Daten aus ICE Verbinden Chat in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Der DataParser enthält einen ICE-Chat-Connector, der so konfiguriert ist, dass Elemente aus einer Datenquelle eines Drittanbieters erfasst und diese Elemente in Microsoft 365 importiert werden. Der ICE DataParser-Connector konvertiert ICE-Verbinden Chatdaten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie ice [DataParser](https://www.17a-4.com/ice-dataparser/) von 17a-4 LLC, um Daten aus ICE Verbinden Chat in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Der DataParser enthält einen ICE-Chat-Connector, der so konfiguriert ist, dass Elemente aus einer Datenquelle eines Drittanbieters erfasst und in Microsoft 365 importiert werden. Der ICE DataParser-Connector konvertiert ICE Verbinden Chatdaten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
 Nachdem ICE Verbinden Chatdaten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines ICE DataParser-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
 
@@ -35,9 +35,9 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Datenkonnektor
 
 2. In regelmäßigen Abständen werden ICE-Verbinden Chatelemente von DataParser gesammelt. Der DataParser konvertiert auch den Inhalt einer Nachricht in ein E-Mail-Nachrichtenformat.
 
-3. Der ICE DataParser-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt eine Verbindung mit DataParser her und überträgt die Nachrichten an einen sicheren Azure Storage Ort in der Microsoft-Cloud.
+3. Der ICE DataParser-Connector, den Sie im Microsoft 365 Compliance Center erstellen, stellt eine Verbindung mit DataParser her und überträgt die Nachrichten an einen sicheren Azure Storage Standort in der Microsoft-Cloud.
 
-4. Ein Unterordner im Posteingangsordner mit dem Namen **ICE DataParser** wird in den Benutzerpostfächern erstellt, und die ICE-Verbinden Chatelemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der *E-Mail-Eigenschaft,* in welches Postfach Elemente importiert werden sollen. Jedes ICE-Verbinden Chatelement enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers aufgefüllt wird.
+4. Ein Unterordner im Posteingangsordner mit dem Namen **ICE DataParser** wird in den Benutzerpostfächern erstellt, und die ICE-Verbinden Chatelemente werden in diesen Ordner importiert. Der Connector bestimmt mithilfe des Werts der *E-Mail-Eigenschaft,* in welches Postfach Elemente importiert werden sollen. Jedes ICE Verbinden Chat-Element enthält diese Eigenschaft, die mit der E-Mail-Adresse jedes Teilnehmers aufgefüllt wird.
 
 ## <a name="before-you-set-up-a-connector"></a>Vor dem Einrichten eines Connectors
 

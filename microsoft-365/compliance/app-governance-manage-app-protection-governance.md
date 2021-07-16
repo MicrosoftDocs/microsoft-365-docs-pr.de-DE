@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implementieren von Microsoft App-Governance-Funktionen zum Steuern Ihrer Apps.
-ms.openlocfilehash: bc8c739132de52abb69c15479cd851462e9f6ce7
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 63bd6684bc041c3c82ba6b8ddcc28c2600182b26
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420161"
+ms.locfileid: "53430696"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>App-Governance-Add-On für Microsoft Cloud App Security (Vorschau)
 
@@ -53,7 +53,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## <a name="a-first-glimpse-at-app-governance"></a>Ein erster Einblick in die App-Governance
 
-Um das App-Governance-Dashboard anzuzeigen, wechseln Sie zu [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Beachten Sie, dass Ihr Anmeldekonto über eine der [Administratorrollen](app-governance-get-started.md#administrator-roles) verfügen muss, um App-Governance-Daten anzuzeigen.
+Um das App-Governance-Dashboard anzuzeigen, wechseln Sie zu [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Beachten Sie, dass Ihr Anmeldekonto über eine der [Administratorrollen](app-governance-get-started.md#administrator-roles) verfügen muss, um App-Governance-Daten anzuzeigen.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>App-Governance-Integration mit Azure AD und Microsoft Cloud App Security
 
@@ -63,7 +63,7 @@ App-Governance, Azure AD und Microsoft Cloud App Security sammeln verschiedene D
 - Azure AD stellt grundlegende App-Metadaten und ausführliche Informationen zu Anmeldungen bei Apps bereit.
 - Microsoft Cloud App Security stellt Informationen zum App-Risiko bereit.
 
-Indem Sie Informationen über App-Governance, Azure AD und Microsoft Cloud App Security teilen, können Sie aggregierte Informationen in einem Portal anzeigen und mühelos eine Verknüpfung mit einem anderen Portal herstellen, um weitere Informationen zu erhalten. Hier sind einige Beispiele:
+Indem Sie Informationen über App-Governance, Azure AD und Microsoft Cloud App Security freigeben, können Sie aggregierte Informationen in einem Portal anzeigen und mühelos eine Verknüpfung mit einem anderen Portal herstellen, um weitere Informationen zu erhalten. Hier sind einige Beispiele:
 
 - Informationen zu App-Anmeldungen in App-Governance:
 

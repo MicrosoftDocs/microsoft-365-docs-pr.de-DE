@@ -16,27 +16,27 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Privacy Management bietet Lösungen für die Auswertung personenbezogener Daten, die Ihre Organisation in Microsoft 365 speichert, und hilft Ihnen bei der Identifizierung und Behebung von Datenschutzrisiken.
-ms.openlocfilehash: 4f98a5c867b232e3eca298a163fe4b6b4855f7a9
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: df3fa07271321d6bc1fedb4e0d06b40b3483b238
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378491"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53455385"
 ---
 # <a name="microsoft-privacy-management-preview"></a>Microsoft-Datenschutzverwaltung (Vorschau)
 
 ## <a name="what-is-privacy-management"></a>Was ist Datenschutzverwaltung?
 
-Wenn die Clouddaten Ihres Unternehmens größer und komplexer werden, müssen Sie die in Ihrer Umgebung gespeicherten personenbezogenen Daten verstehen und schützen. Das Datenschutzmanagement in Microsoft 365 ermöglicht Es Ihren Mitarbeitern, intelligente Entscheidungen zur Datenverarbeitung zu treffen und kritische Datenschutzrisiken zu bewältigen, indem effiziente Möglichkeiten zum Suchen und Verwalten personenbezogener Daten, zum Automatisieren von Datenschutzvorgängen und zum Erfüllen von Anträgen von Antragstellerrechten bereitgestellt werden. Mit diesen Lösungen können Sie einen ausfallsicheren Arbeitsplatz für den Datenschutz erstellen und Probleme im großen Maßstab behandeln.
+Wenn die Clouddaten Ihres Unternehmens größer und komplexer werden, müssen Sie die in Ihrer Umgebung gespeicherten personenbezogenen Daten verstehen und schützen. Das Datenschutzmanagement in Microsoft 365 ermöglicht Es Ihren Mitarbeitern, intelligente Entscheidungen zur Datenverarbeitung zu treffen und kritische Datenschutzrisiken zu beheben, indem sie effiziente Möglichkeiten zum Suchen und Verwalten von personenbezogenen Daten, zum Automatisieren von Datenschutzvorgängen und zum Erfüllen von Anträgen von Antragstellerrechten bietet. Mit diesen Lösungen können Sie einen ausfallsicheren Arbeitsplatz für den Datenschutz erstellen und Probleme im großen Maßstab behandeln.
 
 > [!NOTE]
 > Diese Dienste befinden sich derzeit in der Vorschau und unterliegen den Geschäftsbedingungen in den Nutzungsbedingungen für [Onlinedienste.](https://www.microsoft.com/en-us/licensing/product-licensing/products)
 
 ## <a name="privacy-management-solutions"></a>Datenschutzverwaltungslösungen
 
-In der heutigen Datenlandschaft müssen Organisationen in die Verwaltung und den Schutz der von ihnen gespeicherten personenbezogenen Daten investieren. Datenschutzbestimmungen auf der ganzen Welt verfügen über festgelegte Standards zur Einhaltung und die Rechte von Einzelpersonen, ihre eigenen persönlichen Informationen zu kontrollieren, und bewährte Methoden für Unternehmen entwickeln sich ständig weiter, um Informationen über ihre Mitarbeiter und Kunden sicher zu halten.
+In der heutigen Datenlandschaft müssen Organisationen in die Verwaltung und den Schutz der von ihnen gespeicherten personenbezogenen Daten investieren. Datenschutzbestimmungen auf der ganzen Welt verfügen über festgelegte Standards zur Einhaltung und die Rechte von Einzelpersonen, ihre eigenen persönlichen Informationen zu kontrollieren, und bewährte Methoden für Unternehmen werden ständig weiterentwickelt, um Informationen über ihre Mitarbeiter und Kunden sicher zu halten.
 
-Microsoft 365 Datenschutzverwaltung bietet Lösungen, mit denen Sie:
+Microsoft 365 Datenschutzverwaltung bietet Lösungen, die Ihnen Folgendes ermöglichen:
 
 - **Suchen und Visualisieren personenbezogener Daten:** Der Schutz von Daten beginnt damit, dass Sie ein umfassendes Verständnis dafür haben, was Ihre Organisation speichert, wo sie sich in den von Ihnen genutzten Diensten befindet und unter welchen Bedingungen sie langfristig verwaltet wird.
 - **Verwalten von Datenschutzrisiken:** Verwenden Sie das Datenschutzmanagement, um Ihre Daten für wichtige Risikoszenarien auszuwerten, und verwenden Sie integrierte Tools, um Warnungen festzulegen und Probleme wie unbeabsichtigte Überteilung, Offenlegung oder unnötige Speicherung persönlicher Informationen zu beheben.
@@ -60,17 +60,17 @@ Komplexe Datenumgebungen können potenziell riskante Szenarien für personenbezo
 - **Datenübertragungen:** Die Übertragung personenbezogener Daten zwischen Abteilungen in Ihrer Organisation oder über Landes- oder Regionalgrenzen hinweg kann das Risiko erhöhen, dass Daten ausgesetzt sind oder die Einhaltung von Datenschutzbestimmungen und -gesetzen nicht mehr eingehalten wird.
 - **Datenminimierung:** Unternehmen können überzähligen Informationen sammeln oder länger als nötig aufbewahren, was zur Speicherung nicht verwendeter personenbezogener Daten führt. Diese Daten sollten minimiert werden, um Datenschutzrisiken zu verhindern.
 
-Die Datenschutzverwaltung bietet integrierte Vorlagen zum Einrichten von Datenverarbeitungsrichtlinien in diesen Bereichen. Diese Richtlinien können Ihre Microsoft 365 Daten fortlaufend auswerten, Sie auf potenzielle Probleme hinweisen und Sie bei der Behebung dieser Probleme unterstützen. Daher können Ihre Mitarbeiter die bewährten Datenschutzmethoden besser befolgen und sich über empfohlene Maßnahmen im Klaren bleiben. Die Vorlagen können entweder wie bereitgestellt verwendet oder an die spezifischen Anforderungen Ihres Unternehmens angepasst werden.
+Die Datenschutzverwaltung bietet integrierte Vorlagen zum Einrichten von Datenverarbeitungsrichtlinien in diesen Bereichen. Diese Richtlinien können Ihre Microsoft 365 Daten kontinuierlich auswerten, Sie auf potenzielle Probleme aufmerksam machen und Sie bei der Behebung dieser Probleme unterstützen. Daher können Ihre Mitarbeiter die bewährten Datenschutzmethoden besser befolgen und sich über empfohlene Maßnahmen im Klaren bleiben. Die Vorlagen können entweder wie bereitgestellt verwendet oder an die spezifischen Anforderungen Ihres Unternehmens angepasst werden.
 
 Weitere Informationen finden Sie unter [Erstellen und Verwalten von Richtlinien.](privacy-management-policies.md)
 
 ### <a name="manage-subject-rights-requests"></a>Verwalten von Anträgen auf Antragstellerrechte
 
-In Übereinstimmung mit bestimmten Datenschutzbestimmungen, z. B. der Datenschutz-Grundverordnung (DSGVO) in der EU, können Einzelpersonen Anträge zur Überprüfung oder Verwaltung der personenbezogenen Daten über sich selbst stellen, die Unternehmen gesammelt haben. Für Unternehmen, die große Mengen an Informationen speichern, kann das Auffinden der relevanten Daten wie eine beeindruckende Aufgabe erscheinen.
+In Übereinstimmung mit bestimmten Datenschutzbestimmungen, z. B. der Datenschutz-Grundverordnung (DSGVO) in der EU, können Einzelpersonen Anträge zur Überprüfung oder Verwaltung der personenbezogenen Daten über sich selbst stellen, die Unternehmen gesammelt haben. Für Unternehmen, die große Mengen von Informationen speichern, mag es wie eine große Aufgabe erscheinen, die relevanten Daten zu finden.
 
 Die Datenschutzverwaltung in Microsoft 365 kann Ihnen bei der Bearbeitung dieser Anfragen über die Lösung für anträge betroffener Personen helfen. Es bietet Automatisierungs- und Workflowfunktionen, mit denen Sie nach Betreffdaten suchen können, die Sie in Microsoft 365 gespeichert haben, die Ergebnisse überprüfen, die entsprechenden Dateien auswählen und Berichte erstellen können. Auf diesem Weg können Sie sicher mit anderen Experten in Ihrer Organisation zusammenarbeiten, um die Anforderung fertig zu stellen.
 
-Beachten Sie, dass diese Lösung für Anträge betroffener Personen funktionen bietet, die über die ursprüngliche Lösung für Anträge betroffener Personen (Data Subject Requests, DSR) im Compliance Center hinausgehen, und es keine Verbindung oder Freigabe von Workflows zwischen den beiden gibt. Die Ältere DSR-Seite wird zu einem späteren Zeitpunkt eingestellt.
+Beachten Sie, dass diese Lösung für Anträge betroffener Personen funktionen bietet, die über die ursprüngliche Lösung für Anträge betroffener Personen (Data Subject Requests, DSR) im Compliance Center hinausgehen, und es keine Verbindung oder Freigabe von Workflows zwischen den beiden gibt.
 
 Weitere Informationen finden Sie unter [Verwalten von Antragstellerrechten.](privacy-management-subject-rights-requests.md)
 
@@ -80,11 +80,11 @@ Um personenbezogene Informationen in Ihrer Microsoft 365 Umgebung anzuzeigen und
 
 ### <a name="what-privacy-management-evaluates"></a>Bewertung des Datenschutzmanagements
 
-- Vertrauliche Informationen, die wir als personenbezogene Daten bezeichnen und die von der Microsoft-Datenklassifizierung unterstützt werden, z. B. Name, Adresse oder Sozialversicherungsnummer
+- Vertrauliche Informationen, die wir als personenbezogene Daten bezeichnen und die daten sind, die von der Microsoft-Datenklassifizierung unterstützt werden, z. B. Name, Adresse oder Sozialversicherungsnummer
 - Personenbezogene Daten von Personen, die mit Ihrer Organisation verbunden sind, z. B. Kunden und Mitarbeiter
 - Datenverarbeitungsaktivitäten von Mitarbeitern, die mit personenbezogenen Daten arbeiten, z. B. Dateibesitzer und Mitarbeiter des Geschäftsbetriebs
 
-Weitere Informationen dazu, wie Microsoft 365 vertrauliche Informationen definiert, finden Sie unter [Informationen zu typen vertraulicher Informationen.](sensitive-information-type-learn-about.md)
+Weitere Informationen dazu, wie Microsoft 365 vertrauliche Informationen definiert, finden Sie unter [Informationen zu Typen vertraulicher Informationen.](sensitive-information-type-learn-about.md)
 
 ### <a name="where-privacy-management-identifies-personal-data"></a>Wo die Datenschutzverwaltung personenbezogene Daten identifiziert
 
@@ -97,7 +97,7 @@ Die Datenschutzverwaltungslösung für Microsoft 365 wertet Daten und Dateien au
 
 Da sich die Datenverwaltung auf Daten konzentriert, die für Ihre Organisation spezifisch sind, sind alle persönlichen Konten, die Ihre Mitarbeiter oder Kunden möglicherweise für diese Dienste haben, nicht im Umfang.
 
-### <a name="additional-resources"></a>Weitere Ressourcen
+### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Weitere Informationen dazu, wie Microsoft mit dem Datenschutz umgeht und Ihre Daten schützt, finden Sie in den folgenden Ressourcen:
 

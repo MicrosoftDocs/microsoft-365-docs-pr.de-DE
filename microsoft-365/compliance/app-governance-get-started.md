@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Erste Schritte mit App-Governance-Funktionen zum Steuern Ihrer Apps.
-ms.openlocfilehash: 0fc00819947d3d472de9199b0381c6f33de0acd6
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420166"
+ms.locfileid: "53430708"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Erste Schritte mit App-Governance (Vorschau)
 
-So beginnen Sie mit der Verwendung des App-Governance-Features für Microsoft Cloud App Security
+So beginnen Sie mit der Verwendung des App-Governance-Add-Ons für Microsoft Cloud App Security:
 
-1. Vergewissern Sie sich, dass Ihr Konto über die erforderliche Lizenzierungsstufe verfügt. App-Governance ist ein Add-On-Feature für Microsoft Cloud App Security (MCAS). Daher muss MCAS in Ihrem Konto entweder als eigenständiges Produkt oder als Teil einer der unten aufgeführten Lizenzpakete vorhanden sein.
+1. Bestätigen Sie, dass Ihr Konto über die erforderliche Lizenzierungsstufe verfügt. App-Governance ist ein Add-On-Feature für Microsoft Cloud App Security (MCAS). Daher muss MCAS in Ihrem Konto entweder als eigenständiges Produkt oder als Teil einer der unten aufgeführten Lizenzpakete vorhanden sein.
 1. Sie müssen über eine der unten aufgeführten Administratorrollen verfügen, um auf die App-Governance-Seiten im Portal zugreifen zu können.
 
 ## <a name="licensing-for-app-governance"></a>Lizenzierung für App-Governance

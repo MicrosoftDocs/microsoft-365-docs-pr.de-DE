@@ -1,6 +1,6 @@
 ---
 title: Integrieren von Nicht-Windows-Geräten in den Microsoft Defender für Endpunktdienst
-description: Konfigurieren Sie nicht Windows Geräte, sodass sie Sensordaten an den Microsoft Defender für Endpunktdienst senden können.
+description: Konfigurieren Sie nicht Windows Geräte, sodass sie Sensordaten an den Microsoft Defender für Endpunkt-Dienst senden können.
 keywords: Onboarding von Nicht-Windows-Geräten, Macos, Linux, Geräteverwaltung, Konfigurieren von Microsoft Defender für Endpunktgeräte
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339670"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454709"
 ---
 # <a name="onboard-non-windows-devices"></a>Onboarding von Nicht-Windows-Geräten
 
@@ -38,7 +38,7 @@ ms.locfileid: "53339670"
 
 >Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender für Endpunkt bietet eine zentrale Sicherheitsumgebung für Windows und Plattformen, die nicht Windows sind. Sie können Warnungen von verschiedenen unterstützten Betriebssystemen in Microsoft 365 Defender sehen und das Netzwerk Ihrer Organisation besser schützen. 
+Defender für Endpunkt bietet eine zentrale Sicherheitsumgebung für Windows und Plattformen, die keine Windows sind. Sie können Warnungen von verschiedenen unterstützten Betriebssystemen in Microsoft 365 Defender sehen und das Netzwerk Ihrer Organisation besser schützen. 
 
 Sie müssen die genauen Linux-Distributionen und macOS-Versionen kennen, die mit Defender für Endpunkt kompatibel sind, damit die Integration funktioniert. Weitere Informationen finden Sie unter:
 - [Systemanforderungen für Microsoft Defender für Endpunkt unter Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
@@ -50,7 +50,7 @@ Sie müssen die folgenden Schritte ausführen, um Nicht-Windows-Geräte zu integ
 
    - Für macOS-Geräte können Sie sich für das Onboarding über Microsoft Defender für Endpunkt oder eine Drittanbieterlösung entscheiden. Weitere Informationen finden Sie unter [Microsoft Defender für Endpunkt auf dem Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - Wählen Sie für andere Nicht-Windows-Geräte die Option **"Onboarding nicht Windows Geräte durch Drittanbieterintegration"** aus.   
+   - Wählen Sie für andere Nicht-Windows-Geräte die Option **"Onboarding non-Windows devices through third-party integration"** aus.   
     1. Wählen Sie im Navigationsbereich **Interoperabilitätspartner**  >  aus. Stellen Sie sicher, dass die Drittanbieterlösung aufgeführt ist.
     2. Wählen Sie auf der Registerkarte **"Partneranwendungen"** den Partner aus, der Ihre nicht Windows Geräte unterstützt.
     3. Wählen Sie **"Partner öffnen" aus,** um die Seite des Partners zu öffnen. Folgen Sie den Anweisungen auf der Seite.

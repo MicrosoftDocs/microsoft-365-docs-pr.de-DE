@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Erfahren Sie, wie Sie einen 17a-4 Fuze DataParser-Connector einrichten und verwenden, um Fuze-Daten in Microsoft 365 zu importieren und zu archivieren.
-ms.openlocfilehash: eb7e66bf3a8d00431ad7e393471110b36efa8e65
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9f3c7590a033c2c19d9b588167d67c24f917ec5f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096430"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454505"
 ---
-# <a name="set-up-a-connector-to-archive-fuze-data-preview"></a>Einrichten eines Connectors zum Archivieren von Fuze-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-fuze-data"></a>Einrichten eines Connectors zum Archivieren von Fuze-Daten
 
-Verwenden Sie [fuze DataParser](https://www.17a-4.com/fuze-dataparser/) von 17a-4 LLC, um Daten aus Fuze in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. The DataParser includes a Fuze connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der Fuze DataParser-Connector konvertiert Fuze-Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie [den Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) von 17a-4 LLC, um Daten aus Fuze in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. The DataParser includes a Fuze connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der Fuze DataParser-Connector konvertiert Fuze-Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
-Nachdem Fuze-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines Fuze-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation die Gesetzlichen und behördlichen Richtlinien einhalten kann.
+Nachdem Fuze-Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines Fuze-Connectors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und behördlichen Richtlinien zu halten.
 
 ## <a name="overview-of-archiving-fuze-data"></a>Übersicht über die Archivierung von Fuze-Daten
 

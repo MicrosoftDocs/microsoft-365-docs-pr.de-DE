@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438072"
+ms.locfileid: "53454805"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Manuelles Bereitstellen von Microsoft Defender für Endpunkt unter Linux
 
@@ -266,15 +266,15 @@ Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geb
 
 ## <a name="download-the-onboarding-package"></a>Herunterladen des Onboardingpakets
 
-Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
+Laden Sie das Onboardingpaket aus Microsoft 365 Defender Portal herunter:
 
-1. Gehen Sie im Microsoft Defender Security Center zu **Einstellungen > Geräteverwaltung > Onboarding**.
-2. Wählen Sie im ersten Dropdownmenü **Linux Server** als Betriebssystem aus. Wählen Sie im zweiten Dropdownmenü **"Lokales Skript" (für bis zu 10 Geräte)** als Bereitstellungsmethode aus.
+1. Wechseln Sie im Microsoft 365 Defender Portal zu **Einstellungen > Endpunkte > Geräteverwaltung > Onboarding.**
+2. Wählen Sie im ersten Dropdownmenü **Linux Server** als Betriebssystem aus. Wählen Sie im zweiten Dropdownmenü **"Lokales Skript"** als Bereitstellungsmethode aus.
 3. Wählen Sie **"Onboardingpaket herunterladen"** aus. Speichern Sie die Datei als WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Screenshot des Microsoft Defender Security Center](images/atp-portal-onboarding-linux.png)
+    ![Screenshot des Microsoft 365 Defender Portals](images/atp-portal-onboarding-linux.png)
 
-4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen.
+4. Überprüfen Sie an einer Eingabeaufforderung, ob Die Datei vorhanden ist.
     Extrahieren Sie den Inhalt des Archivs:
 
     ```bash
@@ -355,15 +355,15 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
         mdatp threat list
         ```
 
-## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Linux EDR (EDR)-Funktionen mit simulierten Angriffen
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Erfahrung der Funktionen von Linux EDR (EDR) mit simulierten Angriffen
 
 Um die Funktionen von EDR für Linux zu testen, führen Sie die folgenden Schritte aus, um eine Erkennung auf Ihrem Linux-Server zu simulieren und den Fall zu untersuchen. 
 
-1.  Stellen Sie sicher, dass der integrierte Linux-Server in Microsoft Defender Security Center angezeigt wird. Wenn es sich um das erste Onboarding des Computers handelt, kann es bis zu 20 Minuten dauern, bis er angezeigt wird. 
+1.  Stellen Sie sicher, dass der integrierte Linux-Server in Microsoft 365 Defender angezeigt wird. Wenn es sich um das erste Onboarding des Computers handelt, kann es bis zu 20 Minuten dauern, bis er angezeigt wird. 
 
 2.  Laden Sie die [Skriptdatei](https://aka.ms/LinuxDIY) herunter, extrahieren Sie sie auf einen integrierten Linux-Server, und führen Sie den folgenden Befehl aus: `./mde_linux_edr_diy.sh`
 
-3.  Nach ein paar Minuten sollte eine Erkennung in Microsoft Defender Security Center ausgelöst werden.
+3.  Nach ein paar Minuten sollte eine Erkennung in Microsoft 365 Defender ausgelöst werden.
 
 4.  Sehen Sie sich die Warnungsdetails, die Computerzeitachse und die typischen Untersuchungsschritte an.
 
@@ -372,7 +372,7 @@ Um die Funktionen von EDR für Linux zu testen, führen Sie die folgenden Schrit
 
 ## <a name="installer-script"></a>Installer-Skript
 
-Alternativ können Sie ein automatisiertes [Installer-Bash-Skript](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) verwenden, das in unserem [öffentlichen GitHub Repository](https://github.com/microsoft/mdatp-xplat/)bereitgestellt wird.
+Alternativ können Sie ein automatisiertes [Installer-Bash-Skript](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) verwenden, das in unserem [öffentlichen GitHub-Repository](https://github.com/microsoft/mdatp-xplat/)bereitgestellt wird.
 Das Skript identifiziert die Verteilung und Version und richtet das Gerät so ein, dass das neueste Paket abgerufen und installiert wird.
 Sie können das Onboarding auch mit einem bereitgestellten Skript ausführen.
 

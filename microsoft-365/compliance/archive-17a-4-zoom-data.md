@@ -11,15 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Erfahren Sie, wie Sie einen 17a-4 Zoom DataParser-Connector einrichten und verwenden, um Zoomdaten in Microsoft 365 zu importieren und zu archivieren.
-ms.openlocfilehash: dffececb0719999abf19ea58eab1a52afdb3daea
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+description: Erfahren Sie, wie Sie einen 17a-4 Zoom DataParser-Connector zum Importieren und Archivieren von Zoomdaten in Microsoft 365 einrichten und verwenden.
+ms.openlocfilehash: 1c70099efa17b5ff6c1c4dfcd71c6bf6790535c8
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097066"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453945"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-data-preview"></a>Einrichten eines Connectors zum Archivieren von Zoomdaten (Vorschau)
+# <a name="set-up-a-connector-to-archive-zoom-data"></a>Einrichten eines Connectors zum Archivieren von Zoomdaten
 
 Verwenden Sie [den Zoom DataParser](https://www.17a-4.com/dataparser/) von 17a-4 LLC, um Daten von der Zoom-Plattform in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Der DataParser enthält einen Zoom-Connector, der so konfiguriert ist, dass Elemente aus einer Datenquelle eines Drittanbieters erfasst und in Microsoft 365 importiert werden. Der Zoom DataParser-Connector konvertiert Zoomdaten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
@@ -71,7 +71,7 @@ Der Zoom DataParser-Connector weist Benutzern automatisch ihre Microsoft 365 E-M
 
 Nachdem Sie einen Zoom DataParser-Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
-1. Navigieren Sie im linken Navigationsbereich zu <https://compliance.microsoft.com> "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
+1. Wechseln Sie in <https://compliance.microsoft.com> der linken Navigationsleiste zu "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
 
 2. Klicken Sie auf die Registerkarte **Connectors,** und wählen Sie dann den Zoom DataParser-Connector aus, den Sie erstellt haben, um die Flyoutseite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
 

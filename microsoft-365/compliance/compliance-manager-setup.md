@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Legen Sie Benutzerberechtigungen und Rollen von Microsoft Compliance Manager fest, und konfigurieren Sie automatisierte Tests von Aktionen. Verwalten des Benutzerverlaufs und Filtern der Dashboardansicht.
-ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 4791948f6fe3ca6df620a0e93851dbf4e11edd98
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148902"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454017"
 ---
 # <a name="get-started-with-compliance-manager"></a>Erste Schritte mit Compliance-Manager
 
@@ -30,11 +30,11 @@ ms.locfileid: "53148902"
 
 ## <a name="who-can-access-compliance-manager"></a>Wer können auf den Compliance-Manager zugreifen
 
-Compliance-Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Kunden von US-Government Community Cloud (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar. Die Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+Compliance-Manager ist für Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie für Us-Government Community Cloud (GCC) moderate, GCC High- und Department of Defense (DoD)-Kunden verfügbar. Die Bewertungsverfügbarkeit und Verwaltungsfunktionen hängen von Ihrem Lizenzvertrag ab.  [Anzeigen von Dienstbeschreibungsdetails.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Der Microsoft 365 globale Administrator für Ihre Organisation ist wahrscheinlich der erste Benutzer, der auf compliance-Manager zugreift. Es wird empfohlen, dass sich der globale Administrator anmeldet und benutzerberechtigungen wie unten beschrieben beim ersten Besuch des Compliance-Managers festgelegt.
+Der Microsoft 365 globale Administrator für Ihre Organisation wird wahrscheinlich der erste Benutzer sein, der auf compliance-Manager zugreift. Es wird empfohlen, dass sich der globale Administrator anmeldet und die Benutzerberechtigungen wie unten beschrieben beim ersten Besuch des Compliance-Managers festlegen.
 
 ## <a name="sign-in"></a>Anmelden
 
@@ -49,38 +49,36 @@ Compliance-Manager verwendet ein rollenbasiertes Zugriffssteuerungsmodell (RBAC)
 
 ### <a name="where-to-set-permissions"></a>Festlegen von Berechtigungen
 
-Die Person, die die globale Administratorrolle für Ihre Organisation hat, kann Benutzerberechtigungen für Compliance-Manager festlegen. Berechtigungen können im Office 365 Security & Compliance Center sowie in Azure Active Directory (Azure AD) festgelegt werden.
+Die Person, die die globale Administratorrolle für Ihre Organisation hat, kann Benutzerberechtigungen für Compliance-Manager festlegen. Berechtigungen können sowohl im Microsoft 365 Compliance Center als auch in Azure Active Directory (Azure AD) festgelegt werden.
 
 > [!NOTE]
-> Kunden in us Government Community (GCC) High- und Department of Defense (DoD)-Umgebungen können nur Benutzerberechtigungen und Rollen für Compliance-Manager in Azure AD festlegen. Azure AD-Anweisungen und Rollentypdefinitionen finden Sie unten.
+> Kunden in den Umgebungen "High" und "Department of Defense" (DoD) von US Government Community (GCC) können nur Benutzerberechtigungen und -rollen für Compliance-Manager in Azure AD festlegen. Azure AD-Anweisungen und Rollentypdefinitionen finden Sie unten.
 
-Führen Sie die folgenden Schritte aus, um Berechtigungen festzulegen und Rollen im Office 365 Security & Compliance Center zuzuweisen:
+Führen Sie die folgenden Schritte aus, um Berechtigungen festzulegen und Rollen im Microsoft 365 Compliance Center zuzuweisen:
 
-1. Wechseln Sie zum [Office 365 Security & Compliance Center,](https://protection.office.com/) und wählen Sie **im** linken Navigationsbereich Berechtigungen aus.
+1. Wechseln Sie zum [Microsoft 365 Compliance Center,](https://compliance.microsoft.com/compliancemanager) und wählen Sie im linken Navigationsbereich **"Berechtigungen"** aus.
 
-2. Suchen Sie die Rollengruppe, der Sie einen oder mehrere Benutzer hinzufügen möchten, und aktivieren Sie das Kontrollkästchen links neben dem Gruppennamen. (Siehe [liste der Rollen und zugehörigen Funktionen unten](#role-types). Die Rollengruppennamen imitieren den Rollennamen.)
+2. Wählen Sie im Compliance **Center-Dropdown** die Option **"Rollen"** aus. 
 
-3. Wählen Sie im Flyoutbereich für diese Gruppe unter der Kopfzeile **"Mitglieder"** die Option **"Bearbeiten"** aus.
+3. Suchen Sie die Rollengruppe, der Sie einen oder mehrere Benutzer hinzufügen möchten, und aktivieren Sie das Kontrollkästchen links neben dem Gruppennamen. (Siehe [liste der Rollen und zugehörigen Funktionen unten](#role-types). Die Rollengruppennamen imitieren den Rollennamen.)
 
-4. Wählen Sie **"Mitglieder auswählen" aus.** Ein weiteres Flyoutfenster wird angezeigt.
+4. Wählen Sie im Flyoutbereich für diese Gruppe unter der Kopfzeile **"Mitglieder"** die Option **"Bearbeiten"** aus.
 
-5. Wählen Sie **+Hinzufügen aus,** um einen oder mehrere Benutzer auszuwählen, die der Gruppe hinzugefügt werden sollen.
+5. Wählen Sie **"Mitglieder auswählen" aus.** Ein weiteres Flyoutfenster wird angezeigt.
 
-6. Aktivieren Sie das Kontrollkästchen neben den Namen, die Sie hinzufügen möchten, und klicken Sie dann unten auf die Schaltfläche **"Hinzufügen".**
+6. Wählen Sie **+Hinzufügen aus,** um einen oder mehrere Benutzer auszuwählen, die der Gruppe hinzugefügt werden sollen.
 
-7. Wenn Sie mit dem Zuweisen von Benutzern fertig sind, wählen Sie **"Fertig"** und dann **"Speichern"** und dann **"Schließen"** aus.
+7. Aktivieren Sie das Kontrollkästchen neben den Namen, die Sie hinzufügen möchten, und klicken Sie dann unten auf die Schaltfläche **"Hinzufügen".**
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>Weitere Informationen zum Office 365 Security & Compliance Center
+8. Wenn Sie mit dem Zuweisen von Benutzern fertig sind, wählen Sie **"Fertig"** und dann **"Speichern"** und dann **"Schließen"** aus.
 
-Weitere Informationen zu Berechtigungen finden Sie [im Office 365 Security & Compliance Center.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-
-Wenn Sie keinen Zugriff auf das Office 365 Security and Compliance Center haben oder auf die klassische Version von Compliance Manager im Microsoft Service Trust Portal zugreifen müssen, bieten die Administratoreinstellungen im Service Trust Portal eine weitere Möglichkeit zum Zuweisen von Rollen ([Anweisungen anzeigen).](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) Beachten Sie, dass solche Rollen in ihrer Funktionalität eingeschränkt sind.
+Wenn Sie im Microsoft Service Trust Portal auf die klassische Version des Compliance-Managers zugreifen müssen, bieten die Administratoreinstellungen im Service Trust Portal eine weitere Möglichkeit zum Zuweisen von Rollen[(Anweisungen anzeigen).](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) Beachten Sie, dass solche Rollen in ihrer Funktionalität eingeschränkt sind.
 
 ##### <a name="more-about-azure-ad"></a>Weitere Informationen zu Azure AD
 
 Informationen zum Zuweisen von Rollen und Festlegen von Berechtigungen in Azure AD finden Sie unter [Zuweisen von Administrator- und Nicht-Administratorrollen zu Benutzern mit Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
 
-Benutzer mit Azure AD-Identitäten, die nicht über Office 365 oder Microsoft 365-Abonnements verfügen, können im Microsoft 365 Compliance Center nicht auf den Compliance-Manager zugreifen. Wenden Sie sich an [cmresearch@microsoft.com,](mailto:cmresearch@microsoft.com)um Unterstützung beim Zugriff auf Compliance-Manager zu erhalten.
+Benutzer mit Azure AD-Identitäten, die nicht über Office 365 oder Microsoft 365 Abonnements verfügen, können im Microsoft 365 Compliance Center nicht auf den Compliance-Manager zugreifen. Wenden Sie sich an [cmresearch@microsoft.com,](mailto:cmresearch@microsoft.com)um Unterstützung beim Zugriff auf Compliance-Manager zu erhalten.
 
 ### <a name="role-types"></a>Rollentypen
 
@@ -89,8 +87,8 @@ In der folgenden Tabelle sind die Funktionen aufgeführt, die von den einzelnen 
 
 | Der Benutzer kann: | Rolle "Compliance-Manager" | Azure AD-Rolle | 
 | :------------- | :-------------: | :------------: |
-| **Lesen, aber nicht Bearbeiten von Daten**| Compliance-Manager-Leser  | Azure AD Global Reader, Security Reader | 
-| **Bearbeiten von Daten**| Compliance-Manager-Beitrag | Complianceadministrator | 
+| **Daten lesen, aber nicht bearbeiten**| Compliance-Manager-Leser  | Azure AD Global Reader, Security Reader | 
+| **Daten bearbeiten**| Compliance-Manager-Beitrag | Complianceadministrator | 
 | **Bearbeiten von Testergebnissen**| Compliance-Manager-Sachverständiger | Complianceadministrator | 
 | **Verwalten von Bewertungen sowie Vorlagen- und Mandantendaten**| Compliance-Manager-Verwaltung | Complianceadministrator, Compliance-Datenadministrator, Sicherheitsadministrator  | 
 | **Zuweisen von Benutzern**| Globaler Administrator | Globaler Administrator | 
@@ -134,7 +132,7 @@ Mit den Einstellungen für den Benutzerverlauf können Sie auch alle Verbesserun
 
 **So finden Sie die Einstellungen für den Benutzerverlauf:**
 
-1. Wählen Sie Einstellungen auf der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
+1. Wählen Sie Einstellungen in der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
 
 2. Wählen Sie auf der Einstellungsseite **Compliance-Manager** aus.
 
@@ -152,7 +150,7 @@ Der Bericht gibt den Status der Verbesserungsmaßnahme ab dem Erstellungsdatum w
 
 **Führen Sie die folgenden Schritte aus, um einen Bericht nach Benutzer zu exportieren:**
 
-1. Wählen Sie **Einstellungen** in der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
+1. Wählen Sie **Einstellungen** auf der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
 
 2. Wählen Sie auf der Einstellungsseite **Compliance-Manager** aus.
 
@@ -170,7 +168,7 @@ Sie können Verbesserungsmaßnahmen von einem Benutzer zu einem anderen zuweisen
 
 **Führen Sie die folgenden Schritte aus, um Verbesserungsmaßnahmen einem anderen Benutzer neu zuzuweisen:**
 
-1. Wählen Sie **Einstellungen** in der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
+1. Wählen Sie **Einstellungen** auf der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
 
 2. Wählen Sie auf der Einstellungsseite **Compliance-Manager** aus.
 
@@ -187,7 +185,7 @@ Sie können Verbesserungsmaßnahmen von einem Benutzer zu einem anderen zuweisen
 8. Wenn die Neuzuweisung abgeschlossen ist, wird im Flyoutbereich eine Bestätigungsmeldung angezeigt, die bestätigt, dass alle Verbesserungsmaßnahmen des vorherigen Benutzers dem neuen Benutzer neu zugewiesen wurden. Wenn Sie einen Fehler bei der Neuzuweisung erhalten, schließen Sie das Fenster, und versuchen Sie es erneut. Wählen Sie zum Schließen des Flyoutbereichs **"Fertig"** aus.
 
 Der neue Zugewiesene erhält eine E-Mail, dass er einer Verbesserungsmaßnahme zugewiesen wurde. Die E-Mail enthält einen direkten Link zur Detailseite der Verbesserungsmaßnahme.
- 
+
  > [!NOTE]
 > Wenn Sie eine Aktion mit einer ausstehenden Aktualisierung neu zuweisen, wird der direkte Link zu der Aktion in der Neuzuweisungs-E-Mail unterbrochen, wenn das Update nach der erneuten Zuweisung akzeptiert wird. Sie können dies beheben, indem Sie die Aktion dem Benutzer erneut zuweisen, nachdem das Update akzeptiert wurde. Erfahren Sie mehr über [Updates für Verbesserungsmaßnahmen.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
@@ -197,7 +195,7 @@ Wenn Sie den Verlauf eines Benutzers löschen, werden sie als Besitzer von Verbe
 
 Führen Sie die folgenden Schritte aus, um den Verlauf eines Benutzers zu löschen:
 
-1. Wählen Sie **Einstellungen** in der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
+1. Wählen Sie **Einstellungen** auf der linken Navigationsleiste von einer beliebigen Stelle im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)aus.
 
 2. Wählen Sie auf der Einstellungsseite **Compliance-Manager** aus.
 
@@ -215,9 +213,9 @@ Führen Sie die folgenden Schritte aus, um den Verlauf eines Benutzers zu lösch
 
 Das Compliance-Manager-Dashboard bietet Ihnen einen Überblick über Ihren aktuellen Compliancestatus.
 
-![Compliance-Manager – Dashboard](../media/compliance-manager-dashboard.png "Compliance-Manager-Dashboard")
+:::image type="content" alt-text="Compliance-Manager – Dashboard." source="../media/compliance-manager-dashboard.png" lightbox="../media/compliance-manager-dashboard.png":::
 
-### <a name="overall-compliance-score"></a>Gesamtbewertung der Compliance
+### <a name="overall-compliance-score"></a>Compliancebewertung gesamt
 
 Ihre Compliancebewertung wird an oberster Stelle hervorgehoben. Es zeigt einen Prozentsatz basierend auf Punkten, die zur Durchführung von Verbesserungsmaßnahmen, die wichtige Datenschutzstandards und -vorschriften erfüllen, erreichbar sind. Punkte aus [Microsoft-Aktionen,](compliance-manager-assessments.md#microsoft-actions-tab)die von Microsoft verwaltet werden, zählen auch für Ihre Compliancebewertung.
 
@@ -225,13 +223,13 @@ Wenn Sie zum ersten Mal zum Compliance-Manager kommen, basiert Ihr anfängliches
 
 **Weitere Informationen:** [Erfahren Sie, wie Ihre Compliancebewertung berechnet wird.](compliance-score-calculation.md)
 
-### <a name="key-improvement-actions"></a>Wichtige Verbesserungsmaßnahmen
+### <a name="key-improvement-actions"></a>Hauptverbesserungsaktionen
 
 In diesem Abschnitt werden die wichtigsten Verbesserungsmaßnahmen aufgeführt, die Sie derzeit ergreifen können, um die größten positiven Auswirkungen auf Ihre Compliancebewertung insgesamt zu erzielen. Wählen Sie **"Alle Verbesserungsmaßnahmen anzeigen"** aus, um zur Seite "Verbesserungsmaßnahmen" zu gelangen.
 
 ### <a name="solutions-that-affect-your-score"></a>Lösungen, die sich auf Ihre Bewertung auswirken
 
-In diesem Abschnitt werden Lösungen mit Verbesserungsmaßnahmen, die sich positiv auf Ihre Bewertung auswirken können, sowie die Anzahl ausstehender Verbesserungsmaßnahmen in diesen Lösungen beschrieben. Wählen Sie **"Alle Lösungen anzeigen"** aus, um ihre Lösungsseite zu besuchen.
+In diesem Abschnitt werden Lösungen mit Verbesserungsmaßnahmen, die sich positiv auf Ihre Bewertung auswirken können, und die Anzahl ausstehender Verbesserungsmaßnahmen in diesen Lösungen beschrieben. Wählen Sie **"Alle Lösungen anzeigen"** aus, um ihre Lösungsseite zu besuchen.
 
 ### <a name="compliance-score-breakdown"></a>Aufschlüsselung der Compliancebewertung
 
@@ -303,14 +301,14 @@ Suchen Sie die Lösungsseite, indem Sie die Registerkarte **"Lösungen"** im Com
 So filtern Sie die Ansicht von Lösungen:
 
 1. Wählen  Sie in der oberen linken Ecke der Bewertungsliste Filtern aus.
-2. Platzieren Sie im Flyoutbereich **"Filter"** eine Überprüfung neben den gewünschten Kriterien (Standards und Vorschriften, Lösung, Aktionstyp, Compliance-Manager-Gruppe, Kategorie).
+2. Platzieren Sie im Flyoutbereich **"Filter"** neben den gewünschten Kriterien eine Überprüfung (Standards und Vorschriften, Lösung, Aktionstyp, Compliance-Manager-Gruppe, Kategorie).
 3. Wählen Sie die Schaltfläche **"Übernehmen"** aus. Der Filterbereich wird geschlossen, und Die gefilterte Ansicht wird angezeigt.
 
 Sie können Ihre Ansicht auch so ändern, dass Bewertungen nach Gruppe, Produkt oder Verordnung angezeigt werden, indem Sie den Typ der Gruppierung im Dropdownmenü **"Gruppe"** über Ihrer Bewertungsliste auswählen.
 
 ### <a name="taking-action-from-the-solution-page"></a>Ergreifen von Maßnahmen auf der Lösungsseite
 
-Auf der Seite "Lösungen" werden die Lösungen Ihrer Organisation angezeigt, die mit Verbesserungsmaßnahmen verbunden sind. In der Tabelle sind der Beitrag jeder Lösung zu Ihrer Gesamtbewertung, die erzielten und möglichen Punkte innerhalb dieser Lösung sowie die verbleibende Anzahl von Verbesserungsmaßnahmen aufgeführt, die in dieser Lösung gruppiert sind und ihre Bewertung erhöhen können.
+Auf der Lösungsseite werden die Lösungen Ihrer Organisation angezeigt, die mit Verbesserungsmaßnahmen verbunden sind. In der Tabelle sind der Beitrag jeder Lösung zu Ihrer Gesamtbewertung, die erzielten und möglichen Punkte innerhalb dieser Lösung sowie die verbleibende Anzahl von Verbesserungsmaßnahmen aufgeführt, die in dieser Lösung gruppiert sind und ihre Bewertung erhöhen können.
 
 Auf diesem Bildschirm gibt es zwei Möglichkeiten, maßnahmen zu ergreifen:
 
@@ -353,9 +351,9 @@ Sie können Ihre Ansicht auch so ändern, dass Bewertungen nach Gruppe, Produkt 
 
 Standardmäßig wird die Bewertung der [Datenschutzgrundwerte](compliance-manager-assessments.md#data-protection-baseline-default-assessment) auf der Bewertungsseite angezeigt. Compliance-Manager bietet auch mehrere vordefinierte [Vorlagen](compliance-manager-templates-list.md) für die Erstellung von Bewertungen.
 
-## <a name="assessment-templates-page"></a>Seite "Bewertungsvorlagen"
+## <a name="assessment-templates-page"></a>Seite „Bewertungsvorlagen“
 
-Eine Vorlage ist ein Framework zum Erstellen einer Bewertung im Compliance-Manager. Auf der Seite "Bewertungsvorlagen" wird eine Liste mit Vorlagen und wichtigen Details angezeigt. Die Liste enthält Vorlagen, die vom Compliance-Manager bereitgestellt werden, sowie alle Vorlagen, die Ihre Organisation geändert oder erstellt hat. Sie können Filter anwenden, um eine Vorlage basierend auf Zertifizierung, Produktbereich, Land, Branche und der Person zu suchen, die sie erstellt hat.
+Eine Vorlage ist ein Framework zum Erstellen einer Bewertung im Compliance-Manager. Auf der Seite „Bewertungsvorlagen“ wird eine Liste mit Vorlagen und wichtigen Details angezeigt. Die Liste enthält Vorlagen, die vom Compliance-Manager bereitgestellt werden, sowie alle Vorlagen, die Ihre Organisation geändert oder erstellt hat. Sie können Filter anwenden, um eine Vorlage basierend auf Zertifizierung, Produktbereich, Land, Branche und der Person zu finden, die sie erstellt hat.
 
 Der **aktivierte Vorlagenzähler** am oberen Rand der Seite zeigt die Anzahl der aktiven Bewertungsvorlagen an, die derzeit verwendet werden, von der Gesamtzahl der Vorlagen, die für Ihre Organisation zur Verfügung stehen. Weitere Informationen finden Sie unter [Verfügbarkeit und Lizenzierung](compliance-manager-templates.md#template-availability-and-licensing) von Vorlagen.
 

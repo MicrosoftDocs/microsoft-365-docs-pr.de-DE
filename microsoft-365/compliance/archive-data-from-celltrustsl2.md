@@ -1,5 +1,5 @@
 ---
-title: Archivieren von Daten von der CellTrust SL2-Plattform in Microsoft 365
+title: Archivieren von Daten von der CellTrust SL2-Plattform zum Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Erfahren Sie, wie Sie einen CellTrust SL2-Datenkonnektor einrichten und verwenden, um Mobile Communications-Daten zu importieren und zu archivieren.
-ms.openlocfilehash: 0929a92978f9b48d40153b3cc7328e5e05b54fd0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097071"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453972"
 ---
-# <a name="archive-data-from-celltrust-sl2-to-microsoft-365-preview"></a>Archivieren von Daten aus CellTrust SL2 in Microsoft 365 (Vorschau)
+# <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archivieren von Daten aus CellTrust SL2 in Microsoft 365
 
-CellTrust SL2 erfasst Daten der mobilen Kommunikation und lässt sich in die führenden Archivierungstechnologien integrieren, um die Anforderungen für die elektronische Ermittlung für Vorschriften wie FINRA, HIPAA, FOIA und TCPA zu erfüllen. Der SL2-Datenkonnektor importiert mobile Kommunikationselemente in Microsoft 365. In diesem Artikel wird der Prozess für die Integration von SL2 in Microsoft 365 mithilfe des CellTrust SL2-Datenkonnektors für die Archivierung beschrieben. Wenn Sie diesen Prozess abschließen, wird davon ausgegangen, dass Sie den CellTrust SL2-Dienst abonniert haben und mit der SL2-Architektur vertraut sind. Informationen zu SL2 finden Sie unter <www.celltrust.com>.
+CellTrust SL2 erfasst Daten der mobilen Kommunikation und lässt sich in die führenden Archivierungstechnologien integrieren, um die Anforderungen für die elektronische Ermittlung für Vorschriften wie FINRA, HIPAA, FOIA und TCPA zu erfüllen. Der SL2-Datenkonnektor importiert mobile Kommunikationselemente in Microsoft 365. In diesem Artikel wird der Prozess der Integration von SL2 in Microsoft 365 mithilfe des CellTrust SL2-Datenkonnektors für die Archivierung beschrieben. Wenn Sie diesen Prozess abschließen, wird davon ausgegangen, dass Sie den CellTrust SL2-Dienst abonniert haben und mit der SL2-Architektur vertraut sind. Informationen zu SL2 finden Sie unter <www.celltrust.com>.
 
-Nachdem Daten in Microsoft 365 in Benutzerpostfächer importiert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Microsoft 365 Aufbewahrungsrichtlinien und Kommunikationscompliance anwenden. Die Verwendung des CellTrust SL2-Datenkonnektors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und behördlichen Richtlinien zu halten.
+Nachdem Daten in Microsoft 365 in Benutzerpostfächer importiert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Microsoft 365 Aufbewahrungsrichtlinien und Kommunikationscompliance anwenden. Die Verwendung des CellTrust SL2-Datenkonnektors zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
 
 ## <a name="overview-of-archiving-with-the-celltrust-sl2-data-connector"></a>Übersicht über die Archivierung mit dem CellTrust SL2-Datenkonnektor
 
@@ -33,11 +33,11 @@ Die SL2-Plattform von CellTrust erfasst Kommunikationsdaten aus mehreren Quellen
 
 1. SL2-Benutzer senden und empfangen Daten an und von SL2-Diensten in der Microsoft Azure Cloud.
 
-2. Ihre Organisation verfügt über eine SL2-Domäne in der SL2 Cloud Service-Umgebung von CellTrust. Ihre Domäne kann eine oder mehrere Organisationseinheiten (OUs) aufweisen. Der SL2 Cloud Service überträgt Ihre Daten in einen äußerst sicheren Bereich auf der Microsoft Azure Plattform, sodass Ihre Daten niemals die Microsoft Azure Umgebung verlassen. Je nach Ihrem SL2-Plan (Enterprise, SMB oder Government) wird Ihre Domäne entweder auf Microsoft Azure Global oder Microsoft Azure Government gehostet.
+2. Ihre Organisation verfügt über eine SL2-Domäne in der SL2 Cloud Service-Umgebung von CellTrust. Ihre Domäne kann eine oder mehrere Organisationseinheiten (OUs) aufweisen. Der SL2 Cloud Service überträgt Ihre Daten in einen äußerst sicheren Bereich auf der Microsoft Azure Plattform, sodass Ihre Daten niemals die Microsoft Azure Umgebung verlassen. Abhängig von Ihrem SL2-Plan (Enterprise, SMB oder Government) wird Ihre Domäne entweder auf Microsoft Azure Global oder Microsoft Azure Government gehostet.
 
 3. Nachdem Sie den CellTrust SL2-Datenkonnektor, Ihre Domäne und OUs (unabhängig von Ihrem SL2-Plan) erstellt haben, beginnen Sie mit dem Senden von Daten an Microsoft 365. Der Datenfeed ist so strukturiert, dass berichte basierend auf Datenquellen, OUs oder der Domäne allein unterstützt werden. Daher benötigt Ihre Organisation nur einen Connector, um alle Ihre Datenquellen in Microsoft 365 zu feeden.
 
-4. Der Connector erstellt unter jedem zugeordneten Benutzer einen Ordner mit einer entsprechenden Office 365 Lizenz mit dem Titel **CellTrust SL2.** Diese Zuordnung verbindet einen CellTrust SL2-Benutzer mithilfe einer E-Mail-Adresse mit einem Office 365 Postfach. Wenn eine Benutzer-ID in CellTrust SL2 in Office 365 keine Übereinstimmung aufweist, werden die Daten des Benutzers nicht archiviert.
+4. Der Connector erstellt unter jedem zugeordneten Benutzer einen Ordner mit einer entsprechenden Office 365 Lizenz mit dem Titel **CellTrust SL2.** Diese Zuordnung verbindet einen CellTrust SL2-Benutzer mithilfe einer E-Mail-Adresse mit einem Office 365 Postfach. Wenn eine Benutzer-ID in CellTrust SL2 keine Übereinstimmung in Office 365 hat, werden die Daten des Benutzers nicht archiviert.
 
 ## <a name="before-you-set-up-a-connector"></a>Vor dem Einrichten eines Connectors
 
@@ -45,7 +45,7 @@ Die SL2-Plattform von CellTrust erfasst Kommunikationsdaten aus mehreren Quellen
 
 - Rufen Sie die Anmeldeinformationen ab, um auf das Administratorkonto für Ihre SL2-Domäne zuzugreifen.
 
-- Der Benutzer, der den CellTrust SL2-Datenkonnektor in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig wird diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den CellTrust SL2-Datenkonnektor in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>Schritt 1: Erstellen eines CellTrust SL2-Connectors
 
@@ -105,8 +105,8 @@ Auf der [CellTrust-Kundensupportseite](https://www.celltrust.com/contact-us/#sup
 
 - Um die oben beschriebenen Schritte erfolgreich ausführen zu können, muss Ihnen eine Microsoft 365 E5-Lizenz zugewiesen sein und über die entsprechenden Microsoft Office Administratorrechte verfügen.
 
-- Um den neuen Connector zu testen, senden Sie eine Textnachricht über Ihre mobile SL2-App oder über Ihr SL2-Portal. Wechseln Sie zu Ihrem Microsoft 365 Postfach, und öffnen Sie den Ordner **CellTrust SL2** in Ihrem Posteingang. Es kann einige Minuten dauern, bis die Textnachrichten in Ihrem Postfach angezeigt werden.
+- Um den neuen Connector zu testen, senden Sie eine Textnachricht über Ihre mobile SL2-App oder über Ihr SL2-Portal. Wechseln Sie zu Ihrem Microsoft 365 Postfach, und öffnen Sie den Ordner **"CellTrust SL2"** in Ihrem Posteingang. Es kann einige Minuten dauern, bis die Textnachrichten in Ihrem Postfach angezeigt werden.
 
 - Viele Gesetze und Vorschriften erfordern, dass die elektronische Kommunikation so aufbewahrt wird, dass sie auf Anforderung als Nachweis erstellt werden kann. Electronic Discovery (eDiscovery) wird verwendet, um die Produktion elektronischer Kommunikation einzuhalten. Enterprise EIA-Lösungen (Information Archiving, Informationsarchivierung) sind für die Durchführung von eDiscovery konzipiert und bieten Features wie die Verwaltung von Aufbewahrungsrichtlinien, die Datenklassifizierung und die Inhaltsüberwachung. Microsoft 365 bietet eine langfristige Aufbewahrungslösung für die Einhaltung der Vorschriften und Standards, die sich auf Ihre Organisation auswirken.
 
-- Der In diesem Dokument verwendete Begriff *"Archivierung"* bezieht sich auf die Archivierung im Kontext der Verwendung innerhalb einer Enterprise Lösung für die Informationsarchivierung (Information Archiving, EIA). EIA-Lösungen verfügen über eDiscovery-Features, die Dokumente für juristische Verfahren, Rechtsstreitigkeiten, Audits und Untersuchungen erstellen. Die Archivierung im Kontext der Sicherung und Wiederherstellung, die für die Notfallwiederherstellung und Geschäftskontinuität verwendet wird, ist nicht die beabsichtigte Verwendung des Begriffs in diesem Dokument.
+- Der In diesem Dokument verwendete Begriff *"Archivierung"* bezieht sich auf die Archivierung im Kontext der Verwendung innerhalb einer Enterprise Lösung für die Informationsarchivierung (Information Archiving, EIA). EIA-Lösungen verfügen über eDiscovery-Features, die Dokumente für juristische Verfahren, Rechtsstreitigkeiten, Audits und Untersuchungen erstellen. Die Archivierung im Kontext der Sicherung und Wiederherstellung, die für die Notfallwiederherstellung und geschäftskontinuität verwendet wird, ist nicht die beabsichtigte Verwendung des Begriffs in diesem Dokument.

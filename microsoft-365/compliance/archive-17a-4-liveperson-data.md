@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Erfahren Sie, wie Sie einen 17a-4 LivePerson Conversational Cloud DataParser-Connector einrichten und verwenden, um LivePerson Conversational Cloud-Daten in Microsoft 365 zu importieren und zu archivieren.
-ms.openlocfilehash: 3a4156d817e1b7471f769a2365c5af9d58ade991
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 70b8e8bd1c8c411894a90e0f919581b3faf58cae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097125"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454457"
 ---
-# <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data-preview"></a>Einrichten eines Connectors zum Archivieren von LivePerson Conversational Cloud-Daten (Vorschau)
+# <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>Einrichten eines Connectors zum Archivieren von LivePerson Conversational Cloud-Daten
 
-Verwenden Sie die [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) von 17a-4 LLC, um Daten aus der LivePerson Conversational Cloud in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. The DataParser includes a LivePerson Conversational Cloud connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. Der LivePerson Conversational Cloud DataParser-Connector konvertiert Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
+Verwenden Sie die [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) von 17a-4 LLC, um Daten aus der LivePerson Conversational Cloud in Benutzerpostfächer in Ihrer Microsoft 365 Organisation zu importieren und zu archivieren. Der DataParser enthält einen LivePerson Conversational Cloud-Connector, der so konfiguriert ist, dass Elemente aus einer Datenquelle eines Drittanbieters erfasst und diese Elemente in Microsoft 365 importiert werden. Der LivePerson Conversational Cloud DataParser-Connector konvertiert Daten in ein E-Mail-Nachrichtenformat und importiert diese Elemente dann in Benutzerpostfächer in Microsoft 365.
 
 Nachdem Daten in Benutzerpostfächern gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie Beweissicherung für juristische Zwecke, eDiscovery, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen sowie Kommunikationscompliance anwenden. Die Verwendung eines LivePerson Conversational Cloud Connector zum Importieren und Archivieren von Daten in Microsoft 365 kann Ihrer Organisation helfen, die Einhaltung von Behörden- und Behördlichen Richtlinien zu halten.
 
@@ -43,11 +43,11 @@ In der folgenden Übersicht wird der Prozess der Verwendung eines Datenkonnektor
 
 - Erstellen Sie ein DataParser-Konto für Microsoft Connectors. Wenden Sie sich hierzu an [17a-4 LLC.](https://www.17a-4.com/contact/) Sie müssen sich bei diesem Konto anmelden, wenn Sie den Connector in Schritt 1 erstellen.
 
-- Der Benutzer, der den LivePerson Conversational Cloud DataParser-Connector in Schritt 1 erstellt (und in Schritt 3 abgeschlossen hat), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig wird diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den LivePerson Conversational Cloud DataParser-Connector in Schritt 1 erstellt (und in Schritt 3 abschließt), muss der Rolle "Postfachimportexport" in Exchange Online zugewiesen werden. Diese Rolle ist erforderlich, um Connectors auf der Seite **"Datenconnectors"** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle "Postfachimportexport" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Postfachimportexport" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten ["Erstellen von Rollengruppen"](/Exchange/permissions-exo/role-groups#create-role-groups) oder "Ändern von [Rollengruppen"](/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-set-up-a-liveperson-conversational-cloud-dataparser-connector"></a>Schritt 1: Einrichten eines LivePerson Conversational Cloud DataParser-Connectors
 
-Der erste Schritt besteht darin, auf die Seite "Datenkonnektoren" im Microsoft 365 Compliance Center zuzugreifen und einen 17a-4-Connector für LivePerson Conversational Cloud-Daten zu erstellen.
+Der erste Schritt besteht darin, auf die Seite "Datenconnectors" im Microsoft 365 Compliance Center zuzugreifen und einen 17a-4-Connector für LivePerson Conversational Cloud-Daten zu erstellen.
 
 1. Wechseln Sie zu <https://compliance.microsoft.com> und klicken Sie dann auf **Datenconnectors**  >  **LivePerson Conversational Cloud DataParser**.
 
@@ -57,7 +57,7 @@ Der erste Schritt besteht darin, auf die Seite "Datenkonnektoren" im Microsoft 3
 
 4. Geben Sie einen eindeutigen Namen ein, der den Connector identifiziert, und klicken Sie dann auf **"Weiter".**
 
-5. Melden Sie sich bei Ihrem 17a-4-Konto an, und führen Sie die Schritte im Verbindungs-Assistenten für LivePerson Conversational Cloud DataParser aus.
+5. Melden Sie sich bei Ihrem 17a-4-Konto an, und führen Sie die Schritte im Assistenten zum Verbinden von LivePerson Conversational Cloud DataParser aus.
 
 ## <a name="step-2-configure-the-liveperson-conversational-cloud-dataparser-connector"></a>Schritt 2: Konfigurieren des LivePerson Conversational Cloud DataParser-Connectors
 
@@ -71,7 +71,7 @@ Der LivePerson Conversational Cloud DataParser-Connector ordnen Benutzer automat
 
 Nachdem Sie einen LivePerson Conversational Cloud DataParser-Connector erstellt haben, können Sie den Connectorstatus im Microsoft 365 Compliance Center anzeigen.
 
-1. Navigieren Sie im linken Navigationsbereich zu <https://compliance.microsoft.com> "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
+1. Wechseln Sie in <https://compliance.microsoft.com> der linken Navigationsleiste zu "Datenconnectors", und klicken Sie auf **"Datenconnectors".**
 
 2. Klicken Sie auf die Registerkarte **Connectors,** und wählen Sie dann den LivePerson Conversational Cloud DataParser-Connector aus, den Sie erstellt haben, um die Flyoutseite anzuzeigen, die die Eigenschaften und Informationen zum Connector enthält.
 
