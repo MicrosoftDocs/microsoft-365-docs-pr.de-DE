@@ -1,5 +1,5 @@
 ---
-title: Anzeigen einer Vorschau und Testen von Windows 11 mit Microsoft Managed Desktop
+title: Vorschau und Test Windows 11 mit Microsoft Managed Desktop
 description: So erhalten Sie Windows 11 in Ihrer Umgebung
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53458485"
+ms.locfileid: "53461387"
 ---
-# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Anzeigen einer Vorschau und Testen von Windows 11 mit Microsoft Managed Desktop
+# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Vorschau und Test Windows 11 mit Microsoft Managed Desktop
 
  Registrieren und Teilnehmen am Windows 11-Kompatibilitätstestprogramm in Ihrer Microsoft Managed Desktop Umgebung. Weitere Informationen zu Windows 11 und Microsoft Managed Desktop im Allgemeinen finden Sie unter [Windows 11 und Microsoft Managed Desktop.](../intro/win11-overview.md) 
 
@@ -42,7 +42,7 @@ So registrieren Sie Ihre Geräte in der Vorabversion der Testgruppe:
 
 1. Öffnen Sie eine neue Serviceanfrage mit dem Microsoft Managed Desktop Service Engineering-Team.
 2. Verwenden Sie diese Werte für die Felder:
-    - Titel: Windows 11 Compatibility Enrollment
+    - Titel: Windows 11-Kompatibilitätsregistrierung
     - Anforderungstyp: Änderungsanforderung
     - Kategorie: Geräte
     - Unterkategorie: Bereitstellungsgruppenzuweisung
@@ -61,7 +61,7 @@ Unternehmenskritische Anwendungen sind die besten Kandidaten für eine weitere �
 
 ## <a name="report-issues"></a>Probleme melden
 
-Wenn Windows 11 Kompatibilitätsprobleme mit Ihren Branchen- oder Microsoft 365-Apps auftreten, melden Sie sie uns zur Untersuchung und Behebung. Führen Sie die folgenden Schritte aus, um ein Problem zu melden:
+Wenn Windows 11 Kompatibilitätsprobleme mit Ihren Branchen- oder Microsoft 365-Apps auftreten, melden Sie diese uns zur Untersuchung und Behebung. Führen Sie die folgenden Schritte aus, um ein Problem zu melden:
 
 1. Öffnen Sie eine neue Serviceanfrage mit dem Microsoft Managed Desktop Service Engineering-Team.
 2. Verwenden Sie diese Werte für die Felder:
