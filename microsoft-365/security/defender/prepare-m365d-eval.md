@@ -1,7 +1,7 @@
 ---
-title: Vorbereiten ihrer Microsoft 365 Defender-Testumgebung
-description: Vorbereiten der Anmeldung von Projektbeteiligten, Zeitplänen, Umgebungsaspekten und der Einführungsreihenfolge beim Einrichten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
-keywords: Microsoft 365 Vorbereitung der Defender-Testversion, Microsoft 365 Vorbereitung des Defender-Pilotprojekts, Vorbereitung für die Ausführung eines Microsoft 365 Defender-Pilotprojekts, Ausführen eines Pilotprojekts Microsoft 365 Defender-Projekts, Bereitstellen, Vorbereiten, Projektbeteiligten, Zeitachse, Umgebung, Endpunkt, Server, Verwaltung, Einführung
+title: Vorbereiten der Microsoft 365 Defender Testumgebung
+description: Vorbereiten der Anmeldung von Projektbeteiligten, Zeitplänen, Umgebungsaspekten und der Einführungsreihenfolge beim Einrichten Ihrer Microsoft 365 Defender Testumgebung oder Pilotumgebung
+keywords: Microsoft 365 Defender test prep, Microsoft 365 Defender pilot prep, prep for running a Microsoft 365 Defender pilot project, run a pilot Microsoft 365 Defender project, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: 7ebb7074b0e06eda96d21142044bd8b9997e094b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841654"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458444"
 ---
-# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Vorbereiten ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
+# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Vorbereiten ihrer Microsoft 365 Defender Testumgebung oder Pilotumgebung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "52841654"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Das Erstellen einer Microsoft 365 Defender-Testumgebung oder -Pilotumgebung und deren Bereitstellung erfolgt in drei Phasen:
+Das Erstellen einer Microsoft 365 Defender Testumgebung oder Pilotumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
 
 |![Phase 1: Vorbereiten](../../media/phase-diagrams/prepare.png)<br/>Phase 1: Vorbereiten |[![Phase 2: Einrichten](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Phase 2: Einrichten](setup-m365deval.md) |[![Phase 3: Onboarding](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Phase 3: Onboarding](config-m365d-eval.md) | [![Zurück zum Pilotprojekt](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Zurück zum Pilot-Playbook](m365d-pilot.md) |
 |--|--|--|--|
@@ -43,10 +43,10 @@ Das Erstellen einer Microsoft 365 Defender-Testumgebung oder -Pilotumgebung und 
 Sie befinden sich derzeit in der Vorbereitungsphase.
 
 
-Die Vorbereitung ist der Schlüssel für eine erfolgreiche Bereitstellung. Dieser Abschnitt führt Sie durch das, was Sie bei der Vorbereitung auf die Erstellung einer Testumgebung oder Pilotumgebung für Ihre Microsoft 365 Defender-Bereitstellung berücksichtigen müssen.
+Die Vorbereitung ist der Schlüssel für eine erfolgreiche Bereitstellung. Dieser Abschnitt führt Sie durch das, was Sie bei der Vorbereitung auf die Erstellung einer Testumgebung oder Pilotumgebung für Ihre Microsoft 365 Defender Bereitstellung berücksichtigen müssen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen sowie andere Konfigurationseinstellungen für die Bereitstellung und Verwendung von Microsoft 365 Defender. Lesen Sie die Mindestanforderungen für [Microsoft 365 Defender](/microsoft-365/security/defender/prerequisites), Microsoft Defender [für Endpunkt](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), Microsoft Defender für [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), Microsoft Defender [for Identity](/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites).
+Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen sowie andere Konfigurationseinstellungen für die Bereitstellung und Verwendung von Microsoft 365 Defender. Sehen Sie sich die Mindestanforderungen für [Microsoft 365 Defender](/microsoft-365/security/defender/prerequisites), [Microsoft Defender für Endpunkt](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), Microsoft Defender für [Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), Microsoft Defender [for Identity](/azure-advanced-threat-protection/atp-prerequisites) [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites)an.
 
 ## <a name="stakeholders-and-sign-off"></a>Projektbeteiligten und Abmeldung
 Identifizieren Sie alle Projektbeteiligten, die am Projekt beteiligt sind und die sich möglicherweise abmelden, überprüfen oder auf dem Laufenden bleiben müssen, sei es für die Evaluierung oder die Ausführung eines Pilotprojekts.
@@ -70,8 +70,8 @@ Fügen Sie in der tabelle unten aufgeführte Projektbeteiligten nach Bedarf für
 | Geben Sie Namen und E-Mail ein. | **Workplace Architect** *Ein Vertreter des IT-Teams, der definiert, wie diese Änderung an die zentrale Arbeitsplatzarchitektur in der Organisation angepasst wird.*                             | R      |
 | Geben Sie Namen und E-Mail ein. | **Sicherheitsanalyst** *Ein Vertreter des CDOC-Teams, der Feedback zu den Erkennungsfunktionen, der Benutzererfahrung und der allgemeinen Nützlichkeit dieser Änderung aus Sicht des Sicherheitsbetriebs geben kann.* | I      |
 
-## <a name="prepare-your-azure-active-directory"></a>Vorbereiten der Azure Active Directory
-Überspringen Sie diesen Schritt, wenn Sie die Synchronisierung zwischen Active Directory und Azure Active Directory lokal bereits aktiviert haben. Überprüfen Sie die vorhandene Dokumentation zu bewährten Methoden aus Azure Active Directory. Die folgenden Schritte sind optimiert, um ein Pilotprojekt Microsoft 365 Defender-Projekts auszuwerten oder auszuführen.
+## <a name="prepare-your-azure-active-directory"></a>Vorbereiten ihrer Azure Active Directory
+Überspringen Sie diesen Schritt, wenn Sie die Synchronisierung zwischen Active Directory und Azure Active Directory lokal bereits aktiviert haben. Überprüfen Sie die vorhandene Dokumentation zu bewährten Methoden aus Azure Active Directory. Die folgenden Schritte sind für die Auswertung oder Ausführung eines Pilotprojekts Microsoft 365 Defender Projekts optimiert.
 
 1. Wechseln Sie zum [Azure Active Directory-Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) > **Azure AD-Verbinden.** 
 ![Abbildung Azure Active Directory Portalseite](../../media/mtp-eval-1.png) <br> 
@@ -101,15 +101,15 @@ Sie können nun [Benutzer und Gruppen zu Active Directory hinzufügen](/azure-ad
 
 
 ## <a name="configuration-order"></a>Konfigurationsreihenfolge
-In der folgenden Tabelle ist die Reihenfolge aufgeführt, die Microsoft für die Konfiguration der Microsoft 365 Defender-Komponenten für die Bereitstellung Ihrer Testumgebung oder Pilotumgebung empfiehlt.
+In der folgenden Tabelle ist die Reihenfolge aufgeführt, die Microsoft für die Konfiguration der Microsoft 365 Defender-Komponenten für die Testumgebungs- oder Pilotumgebungsbereitstellung empfiehlt.
 
 | Komponente                               | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rang der Konfigurationsreihenfolge |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 |Microsoft Defender für Office 365|Microsoft Defender für Office 365 schützt Ihre Organisation vor bösartigen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. <br> [Weitere Informationen.](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
 |Microsoft Defender for Identity|Microsoft Defender for Identity verwendet Active Directory-Signale, um erweiterte Bedrohungen, kompromittierte Identitäten und böswillige Insideraktionen gegen Ihre Organisation zu identifizieren, zu erkennen und zu untersuchen. <br> [Weitere Informationen](/azure-advanced-threat-protection/).| 2 |
-|Microsoft Cloud App Security| Microsoft Cloud App Security ist ein Cloud Access Security Broker (CASB), der in mehreren Clouds ausgeführt wird. Es bietet umfassende Sichtbarkeit, Kontrolle über datenbasierte Reisen und komplexe Analysen, um Cyberbedrohungen in allen Ihren Clouddiensten zu erkennen und zu bekämpfen. <br> [Weitere Informationen](/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+|Microsoft Cloud App Security| Microsoft Cloud App Security (MCAS) ist ein Cloud Access Security Broker (CASB), der für verschiedene Clouds eingesetzt werden kann. Er bietet umfassende Transparenz und Kontrolle bei der Datenübertragung, und modernste Analysen tragen dazu bei, Cyberbedrohungen in all Ihren Clouddiensten zu erkennen und abzuwehren. <br> [Weitere Informationen](/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender für Endpunkt | Die Microsoft Defender für Endpunkt-Funktionen für die Endpunkterkennung und Beantwortung bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit umgesetzt werden können. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Verletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Nächster Schritt
-|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-m365deval.md) | Einrichten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
+|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-m365deval.md) | Einrichten ihrer Microsoft 365 Defender Testumgebung oder Pilotumgebung
 |:-------|:-----|

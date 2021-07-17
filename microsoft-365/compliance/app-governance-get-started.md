@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erste Schritte mit App-Governance-Funktionen zum Steuern Ihrer Apps.
-ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430708"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438036"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Erste Schritte mit App-Governance (Vorschau)
 
@@ -30,7 +30,7 @@ So beginnen Sie mit der Verwendung des App-Governance-Add-Ons für Microsoft Clo
 
 ## <a name="licensing-for-app-governance"></a>Lizenzierung für App-Governance
 
-Bevor Sie mit App-Governance beginnen, sollten Sie Ihr [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und etwaige Add-Ons überprüfen. Für den Zugriff auf und die Nutzung von App-Governance muss Ihre Organisation über eines der folgenden Abonnements oder Add-Ons verfügen:
+Bevor Sie mit App-Governance beginnen, sollten Sie Ihr [Microsoft 365 Admin Center-Abonnement](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) und etwaige Add-Ons überprüfen. Für den Zugriff auf und die Nutzung von App-Governance muss Ihre Organisation über eines der folgenden Abonnements oder Add-Ons verfügen:
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -69,6 +69,9 @@ Eine der folgenden Administratorrollen ist erforderlich, um App-Governance-Seite
 - Sicherheitsadministrator
 - Sicherheitsoperator
 - Sicherheitsleseberechtigter (schreibgeschützt)
+
+> [!NOTE]
+> Nur ein globaler Administrator kann die kostenlose Testversion von App Governance aktivieren.
 
 Im Folgenden sind die Funktionen für die einzelnen Rollen aufgeführt.
 

@@ -1,7 +1,7 @@
 ---
 title: Ausführen des Pilotprojekts Microsoft 365 Defender Projekts
 description: Führen Sie Ihr Pilotprojekt Microsoft 365 Defender Projekt in der Produktion aus, um die Vorteile und die Einführung von Microsoft 365 Defender effektiv zu ermitteln.
-keywords: Microsoft 365 Defender Pilotprojekt, Pilotphase Microsoft 365 Defender Projekt ausführen, Microsoft 365 Defender in der Produktion auswerten, Microsoft 365 Defender Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+keywords: Microsoft 365 Defender Pilotprojekt, Pilotphase Microsoft 365 Defender Projekts ausführen, Microsoft 365 Defender in der Produktion auswerten, Microsoft 365 Defender Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Geräte, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: fd84ef93d679be6e1e42f823dcac1f2d5181f1e9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289955"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458420"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Ausführen des Pilotprojekts Microsoft 365 Defender Projekts 
 
@@ -49,20 +49,20 @@ Die Durchführung eines Pilotprojekts hilft Ihnen, den Vorteil der Einführung v
 
 Dieses Handbuch enthält eine Übersicht über Microsoft 365 Defender und schrittweise Anleitungen zum Einrichten Ihres Pilotprojekts. 
 
-Microsoft 365 Defender ist eine einheitliche Verteidigungssuite vor und nach einem Angriff, die Schutz, Erkennung, Verhinderung, Untersuchung und Reaktion auf Endpunkte, Identitäten, E-Mails und Anwendungen nativ koordiniert, um integrierten Schutz vor komplexen Angriffen bereitzustellen. Dazu werden die folgenden Funktionen in einer einzigen Sicherheitslösung kombiniert und koordiniert:
+Microsoft 365 Defender ist eine einheitliche Verteidigungssuite vor und nach einem Angriff, die Schutz, Erkennung, Verhinderung, Untersuchung und Reaktion über Endpunkte, Identitäten, E-Mails und Anwendungen hinweg nativ koordiniert, um integrierten Schutz vor komplexen Angriffen bereitzustellen. Dazu werden die folgenden Funktionen in einer einzigen Sicherheitslösung kombiniert und koordiniert:
 
 - Microsoft Defender für Endpunkt (Endpunkte)
 - Microsoft Defender für Office 365 (E-Mail)
 - Microsoft Defender for Identity (Identität)
 - Microsoft Cloud App Security (Apps)
 
-![Image of_Microsoft 365 Defender-Lösung für Benutzer, Microsoft Defender for Identity, für Endpunkte Microsoft Defender für Endpunkt, für Cloud-Apps, Microsoft Cloud App Security und für Daten, Microsoft Defender für Office 365](../../media/mtp/m365pillars.png)
+![Abbildung of_Microsoft 365 Defender-Lösung für Benutzer, Microsoft Defender for Identity, für Endpunkte Microsoft Defender für Endpunkte, für Cloud-Apps, Microsoft Cloud App Security und für Daten, Microsoft Defender für Office 365](../../media/mtp/m365pillars.png)
 
-Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten die Bedrohungssignale, die Microsoft Defender für Endpunkt, Microsoft Defender für Office 365, Microsoft Defender for Identity und Microsoft Cloud App Security empfangen, zusammenfügen und den gesamten Umfang und die Auswirkungen der Bedrohung ermitteln, wie sie in die Umgebung gelangt sind, was sie betrifft und wie sie sich derzeit auf die Organisation auswirkt. Microsoft 365 Defender führt automatische Maßnahmen aus, um den Angriff zu verhindern oder zu beenden und die betroffenen Postfächer, Endpunkte und Benutzeridentitäten selbst zu verwunden. Weitere Informationen finden Sie in der [Microsoft 365 Defender Übersicht.](microsoft-365-defender.md)
+Mit der integrierten Microsoft 365 Defender Lösung können Sicherheitsexperten die Bedrohungssignale, die Microsoft Defender für Endpunkt, Microsoft Defender für Office 365, Microsoft Defender for Identity und Microsoft Cloud App Security empfangen, zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung ermitteln, wie sie in die Umgebung gelangt sind, was sie betrifft und wie sie sich derzeit auf die Organisation auswirkt. Microsoft 365 Defender führt automatische Maßnahmen aus, um den Angriff zu verhindern oder zu beenden und die betroffenen Postfächer, Endpunkte und Benutzeridentitäten selbst zu verwunden. Weitere Informationen finden Sie in der [übersicht über Microsoft 365 Defender.](microsoft-365-defender.md)
 
 Die folgende Beispielzeitachse hängt davon ab, ob Sie die richtigen Ressourcen in Ihrer Umgebung haben. Einige Erkennungen und Workflows benötigen möglicherweise mehr Lernzeit als die anderen.
 
-![Beispielzeitachse beim Ausführen eines Microsoft 365 Defender Pilotprojekts](../../media/phase-diagrams/pilot-phases.png)
+![Beispielzeitachse beim Ausführen eines Microsoft 365 Defender-Pilotprojekts](../../media/phase-diagrams/pilot-phases.png)
 
 > [!IMPORTANT]
 > Um optimale Ergebnisse zu erzielen, befolgen Sie die Pilotanweisungen so genau wie möglich.

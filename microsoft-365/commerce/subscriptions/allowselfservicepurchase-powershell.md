@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie das PowerShell-Cmdlet "AllowSelfServicePurchase" verwenden, um den Self-Service-Kauf zu aktivieren oder zu deaktivieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
-ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.date: 07/16/2021
+ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227475"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461363"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MSShell-PowerShell-Modul
 
@@ -49,7 +49,7 @@ Zum Verwenden des **MSShell-PowerShell-Moduls** benötigen Sie Folgendes:
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Installieren des MSShell-PowerShell-Moduls
 
-Sie installieren das **MSShell-PowerShell-Modul** einmal auf Ihrem Windows 10 Gerät und importieren es dann in jede PowerShell-Sitzung, die Sie starten. Laden Sie das **MSShell-PowerShell-Modul** aus dem [PowerShell-Katalog herunter.](https://aka.ms/allowselfservicepurchase-powershell-gallery)
+Installieren Sie das **MSShell-PowerShell-Modul** einmal auf Ihrem Windows 10 Gerät, und importieren Sie es dann in jede PowerShell-Sitzung, die Sie starten. Laden Sie das **MSShell-PowerShell-Modul** aus dem [PowerShell-Katalog herunter.](https://aka.ms/allowselfservicepurchase-powershell-gallery)
 
 Führen Sie den folgenden Befehl aus, um das **MSShell PowerShell-Modul** mit **PowerShellGet** zu installieren:
 
@@ -104,7 +104,9 @@ In der folgenden Tabelle sind die verfügbaren Produkte und ihre **ProductId auf
 | Project Plan 3 | CFQ7TTC0KXNC |
 | Visio Plan 1 | CFQ7TTC0KXN9 |
 | Visio Plan 2 | CFQ7TTC0KXN8 |
-
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Windows 365 Business | CFQ7TTC0J203 |
+| Windows 365 Business mit Windows Hybridvorteil | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Anzeigen oder Festlegen des Status für AllowSelfServicePurchase
 
 Nachdem Sie die Liste der für den Self-Service-Kauf verfügbaren Produkte angezeigt haben, können Sie die Einstellung für ein bestimmtes Produkt anzeigen oder ändern.
@@ -129,7 +131,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Beispielskript zum Deaktivieren von AllowSelfServicePurchase
 
-Im folgenden Beispiel werden Sie durch das Importieren des **MSBuild-Moduls,** das Anmelden mit Ihrem Konto, das Abrufen der **ProductId** für Power Automate und das Deaktivieren von **AllowSelfServicePurchase** für dieses Produkt führt.
+Das folgende Beispiel führt Sie durch das Importieren des **MSBuild-Moduls,** das Anmelden mit Ihrem Konto, das Abrufen der **ProductId** für Power Automate und das Deaktivieren von **AllowSelfServicePurchase** für dieses Produkt.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -167,4 +169,4 @@ Uninstall-Module -Name MSCommerce
 
 [Verwalten von Self-Service-Käufen (Administrator)](manage-self-service-purchases-admins.md) (Artikel)
 
-Häufig gestellte Fragen zum [Self-Service-Kauf](self-service-purchase-faq.yml) (Artikel)
+[Faq zum Self-Service-Kauf](self-service-purchase-faq.yml) (Artikel)

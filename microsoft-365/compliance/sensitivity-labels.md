@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 130b264735d00083116a5cf18cc0c4bf6b1a764c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: e1de507dd5ec9508df0318c8ba2ef30af795e25b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453633"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430792"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -183,9 +183,6 @@ Wenn Sie eine Kennzeichnungsrichtlinie konfigurieren, können Sie:
 - **Entscheiden, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Die Bezeichnungen können für jeden spezifischen Benutzer oder jede E-Mail-fähige Sicherheits-, Verteiler- oder Microsoft 365-Gruppe (die eine [dynamische Mitgliedschaft](/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD haben kann) veröffentlicht werden.
 
 - **Geben Sie eine Standardbezeichnung an** für neue Dokumente, unbeschriftete E-Mails und neue Container (wenn Sie [Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites aktiviert haben](sensitivity-labels-teams-groups-sites.md)). Sie können für alle drei Arten von Elementen dieselbe Bezeichnung oder unterschiedliche Bezeichnungen angeben. Wenn Sie eine Standardbezeichnung für Dokumente angeben, wendet der vereinheitlichte Azure Information Protection-Client diese Bezeichnung auch auf vorhandene Dokumente ohne Bezeichnung an. Ein Benutzer kann die Standardbezeichnung immer ändern, wenn sie für sein Dokument oder seine E-Mail nicht die richtige Bezeichnung ist.
-    
-    > [!IMPORTANT]
-    > Wenn Sie [Unterbezeichnungen](#sublabels-grouping-labels)haben, achten Sie darauf, die übergeordnete Bezeichnung nicht als Standardbezeichnung zu konfigurieren.
     
     Sie haben die Möglichkeit, eine als Basisniveau Standardbezeichnung von Schutzeinstellungen festzulegen, die auf alle Ihre Inhalte angewendet werden sollen. Ohne Benutzerschulungen und andere Steuerelemente kann diese Einstellung aber auch zu ungenauen Bezeichnungen führen. Normalerweise empfiehlt es sich nicht, eine Bezeichnung auszuwählen, die Verschlüsselung als Standardbezeichnung für Dokumente anwendet. So müssen z.B. viele Organisationen Dokumente an externe Benutzer freigeben, die möglicherweise nicht über Apps verfügen, welche die Verschlüsselung unterstützen, oder die möglicherweise kein Konto verwenden, das autorisiert werden kann. Weitere Informationen zu diesem Szenario finden Sie unter [gemeinsame Nutzung verschlüsselter Dokumente mit externen Benutzern](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 

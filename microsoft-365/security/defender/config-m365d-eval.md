@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren Microsoft 365 Defender Säulen für die Testumgebung oder Pilotumgebung
 description: Konfigurieren Sie Microsoft 365 Defender Säulen, z. B. Microsoft Defender für Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security und Microsoft Defender für Endpunkt, für Ihre Testumgebung oder Pilotumgebung.
-keywords: Konfigurieren Microsoft 365 Defender Testversion, Microsoft 365 Defender Konfiguration der Testversion, Konfigurieren Microsoft 365 Defender Pilotprojekts, Konfigurieren Microsoft 365 Defender Säulen, Microsoft 365 Defender Säulen
+keywords: Konfigurieren Microsoft 365 Defender Testversion, Microsoft 365 Defender Testkonfiguration, Konfigurieren Microsoft 365 Defender Pilotprojekts, Konfigurieren Microsoft 365 Defender Säulen, Microsoft 365 Defender Säulen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: article
 ms.technology: m365d
 ms.openlocfilehash: e50210f02d14be33c357517515d456318aac4bb6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229779"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458445"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurieren Microsoft 365 Defender Säulen für Ihre Testumgebung oder Pilotumgebung
 
@@ -37,7 +37,7 @@ ms.locfileid: "53229779"
 - Microsoft 365 Defender
 
 
-Das Erstellen einer Microsoft 365 Defender Testumgebung oder Pilotumgebung und deren Bereitstellung erfolgt in drei Phasen:
+Das Erstellen einer Microsoft 365 Defender Testumgebung oder Einer Pilotumgebung und deren Bereitstellung ist ein dreistufiger Prozess:
 
 |[![Phase 1: Vorbereiten](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Phase 1: Vorbereiten](prepare-m365d-eval.md) |[![Phase 2: Einrichten](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Phase 2: Einrichten](setup-m365deval.md) |![Phase 3: Onboarding](../../media/phase-diagrams/onboard.png)<br/>Phase 3: Onboarding | [![Zurück zum Pilotprojekt](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Zurück zum Pilot-Playbook](m365d-pilot.md) |
 |--|--|--|--|
@@ -48,9 +48,9 @@ Sie befinden sich derzeit in der Konfigurationsphase.
 Die Vorbereitung ist der Schlüssel für eine erfolgreiche Bereitstellung. In diesem Artikel werden Sie zu den Punkten geführt, die Sie bei der Vorbereitung der Bereitstellung von Microsoft Defender für Endpunkt berücksichtigen müssen.
 
 ## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender Säulen
-Microsoft 365 Defender besteht aus vier Säulen. Obwohl eine Säule bereits einen Wert für die Sicherheit Ihrer Netzwerkorganisation bieten kann, bietet die Aktivierung der vier Microsoft 365 Defender Säulen Ihrer Organisation den größten Nutzen.
+Microsoft 365 Defender besteht aus vier Säulen. Obwohl eine Säule bereits einen Wert für die Sicherheit Ihrer Netzwerkorganisation bieten kann, bietet die Aktivierung der vier säulen Microsoft 365 Defender Ihrer Organisation den größten Nutzen.
 
-![Image of_Microsoft 365 Defender-Lösung für Benutzer, Microsoft Defender for Identity, für Endpunkte Microsoft Defender für Endpunkt, für Cloud-Apps, Microsoft Cloud App Security und für Daten, Microsoft Defender für Office 365](../../media/mtp/m365pillars.png)
+![Abbildung of_Microsoft 365 Defender-Lösung für Benutzer, Microsoft Defender for Identity, für Endpunkte Microsoft Defender für Endpunkt, für Cloud-Apps, Microsoft Cloud App Security und für Daten, Microsoft Defender für Office 365](../../media/mtp/m365pillars.png)
 
 In diesem Abschnitt erfahren Sie, wie Sie Folgendes konfigurieren:
 
@@ -64,7 +64,7 @@ In diesem Abschnitt erfahren Sie, wie Sie Folgendes konfigurieren:
 > [!NOTE]
 > Überspringen Sie diesen Schritt, wenn Sie Defender bereits für Office 365 aktiviert haben.
 
-Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA),* das einige dieser Einstellungen bestimmt. Wenn sie als Administrator in Ihrem Mandanten ausgeführt wird, hilft get-ORCAReport beim Generieren einer Bewertung der Antispam-, Antiphishing- und anderen Nachrichtenschutzeinstellungen. Sie können dieses Modul von https://www.powershellgallery.com/packages/ORCA/ herunterladen.
+Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA),* das einige dieser Einstellungen bestimmt. Wenn sie als Administrator in Ihrem Mandanten ausgeführt wird, hilft get-ORCAReport dabei, eine Bewertung der Antispam-, Antiphishing- und anderen Nachrichtenschutzeinstellungen zu erstellen. Sie können dieses Modul von https://www.powershellgallery.com/packages/ORCA/ herunterladen.
 
 1. Navigieren Sie zu [Office 365 Security & Compliance Center](https://protection.office.com/homepage)Threat  >  **Management**  >  **Policy.**
 
@@ -85,9 +85,9 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
    ![Abbildung of_Office Seite "365 Security & Compliance Center antiphishing policy", auf der Sie Ihre Einstellungen überprüfen und auf die Schaltfläche zum Erstellen dieser Richtlinie klicken können](../../media/mtp-eval-35.png)
 
-5. Wählen Sie **Tresor Anlagen** aus, und aktivieren Sie **atp für SharePoint, OneDrive und Microsoft Teams** Option.
+5. Wählen Sie **Tresor Anlagen** aus, und aktivieren Sie **atP für SharePoint, OneDrive und Microsoft Teams** Option.
 
-   ![Abbildung of_Office Seite 365 Security & Compliance Center, auf der Sie ATP für SharePoint, OneDrive und Microsoft Teams aktivieren können](../../media/mtp-eval-36.png)
+   ![Abbildung of_Office Seite "365 Security & Compliance Center", auf der Sie ATP für SharePoint, OneDrive und Microsoft Teams aktivieren können](../../media/mtp-eval-36.png)
 
 6. Klicken Sie auf das Symbol +, um eine neue Richtlinie für sichere Anlagen zu erstellen und sie als Empfängerdomäne auf Ihre Domänen anzuwenden. Klicken Sie auf **Speichern**.
 
@@ -97,21 +97,21 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 8. Stellen Sie sicher, dass die Option **"Nicht nachverfolgen", wenn Benutzer auf** die Option "Sichere Links" klicken, nicht ausgewählt ist, während die restlichen Optionen ausgewählt sind. Weitere Informationen finden Sie [unter Tresor Links-Einstellungen.](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) Klicken Sie auf **Speichern**.
 
-   ![Abbildung of_Office Seite 365 Security & Compliance Center, die zeigt, dass die Option "Nicht nachverfolgen" angezeigt wird, wenn Benutzer auf "Sicher" klicken, nicht ausgewählt ist](../../media/mtp-eval-38.png)
+   ![Abbildung of_Office Seite "365 Security & Compliance Center", die zeigt, dass die Option "Nicht nachverfolgen" angezeigt wird, wenn Benutzer auf "Sicher" klicken, nicht ausgewählt ist](../../media/mtp-eval-38.png)
 
 9. Wählen Sie als Nächstes die **Antischadsoftwarerichtlinie** aus, wählen Sie die Standardeinstellung aus, und wählen Sie das Stiftsymbol aus.
 
 10. Klicken Sie auf **Einstellungen,** und wählen Sie **"Ja" aus, und verwenden Sie den Standardbenachrichtigungstext,** um die **Schadsoftwareerkennungsantwort** zu aktivieren. Aktivieren Sie den **Filter für allgemeine Anlagentypen.** Klicken Sie auf **Speichern**.
 
-    ![Abbildung of_Office Seite 365 Security & Compliance Center, die zeigt, dass die Schadsoftwareerkennungsantwort mit Standardbenachrichtigung aktiviert ist und der allgemeine Filter für Anlagentypen aktiviert ist](../../media/mtp-eval-39.png)
+    ![Abbildung of_Office Seite "365 Security & Compliance Center", die zeigt, dass die Antwort auf die Schadsoftwareerkennung mit Standardbenachrichtigung aktiviert ist und der Filter für allgemeine Anlagentypen aktiviert ist](../../media/mtp-eval-39.png)
 
 11. Navigieren Sie zu Office 365 Überwachungsprotokollsuche [im Security & Compliance](https://protection.office.com/homepage)  >    >   Center, und aktivieren Sie die Überwachung.
 
-    ![Abbildung of_Office Seite 365 Security & Compliance Center, auf der Sie die Überwachungsprotokollsuche aktivieren können](../../media/mtp-eval-40.png)
+    ![Abbildung of_Office Seite "365 Security & Compliance Center", auf der Sie die Überwachungsprotokollsuche aktivieren können](../../media/mtp-eval-40.png)
 
 12. Integrieren Sie Microsoft Defender für Office 365 in Microsoft Defender für Endpunkt. Navigieren Sie zu [Office 365 Security & Compliance Center](https://protection.office.com/homepage)Threat  >  **Management**  >  **Explorer,** und wählen Sie **Microsoft Defender für Endpunkt Einstellungen** in der oberen rechten Ecke des Bildschirms aus. Aktivieren Sie im Dialogfeld "Defender für Endpunkt-Verbindung" **Verbinden zu Microsoft Defender für Endpunkt.**
 
-    ![Abbildung of_Office Seite 365 Security & Compliance Center, auf der Sie die Microsoft Defender für Endpunkt-Verbindung aktivieren können](../../media/mtp-eval-41.png)
+    ![Abbildung of_Office Seite "365 Security & Compliance Center", auf der Sie die Microsoft Defender für Endpunkt-Verbindung aktivieren können](../../media/mtp-eval-41.png)
 
 ## <a name="configure-microsoft-defender-for-identity"></a>Konfigurieren von Microsoft Defender for Identity
 
@@ -128,19 +128,19 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 3. Wählen **Sie Einen Benutzernamen und ein Kennwort angeben, um eine Verbindung mit Ihrer Active Directory-Gesamtstruktur herzustellen.**
 
-   ![Willkommensseite für Image of_Microsoft Defender for Identity](../../media/mtp-eval-44.png)
+   ![Willkommensseite von "Image of_Microsoft Defender for Identity"](../../media/mtp-eval-44.png)
 
 4. Geben Sie Ihre lokalen Active Directory-Anmeldeinformationen ein. Dies kann ein beliebiges Benutzerkonto sein, das Lesezugriff auf Active Directory hat.
 
-   ![Abbildung of_Microsoft Seite der Defender for Identity Directory-Dienste, auf der Sie Ihre Anmeldeinformationen ablegen sollten](../../media/mtp-eval-45.png)
+   ![Seite "Image of_Microsoft Defender for Identity Directory services", auf der Sie Ihre Anmeldeinformationen ablegen sollten](../../media/mtp-eval-45.png)
 
 5. Wählen Sie als Nächstes **"Sensorsetup herunterladen"** aus, und übertragen Sie die Datei an Ihren Domänencontroller.
 
-   ![Abbildung of_Microsoft Defender for Identity-Seite, auf der Sie "Sensorsetup herunterladen" auswählen können](../../media/mtp-eval-46.png)
+   ![Abbildung of_Microsoft Defender for Identity-Seite, auf der Sie "Sensor-Setup herunterladen" auswählen können](../../media/mtp-eval-46.png)
 
 6. Führen Sie das Microsoft Defender for Identity Sensor-Setup aus, und beginnen Sie mit dem Folgen des Assistenten.
 
-   ![Abbildung of_Microsoft Defender for Identity-Seite, auf der Sie neben dem Microsoft Defender for Identity-Sensor-Assistenten klicken sollten](../../media/mtp-eval-47.png)
+   ![Abbildung of_Microsoft Defender for Identity-Seite, auf der Sie neben klicken sollten, um dem Microsoft Defender for Identity-Sensor-Assistenten zu folgen](../../media/mtp-eval-47.png)
 
 7. Klicken Sie im Sensorbereitstellungstyp auf **"Weiter".**
 
@@ -152,7 +152,7 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 9. Kopieren Sie die Zugriffstaste in den Assistenten, und klicken Sie auf **"Installieren".**
 
-   ![Abbildung of_Microsoft Defender for Identity-Sensor-Assistentenseite, auf der Sie die Zugriffstaste bereitstellen und dann auf die Schaltfläche "Installieren" klicken sollten](../../media/mtp-eval-50.png)
+   ![Abbildung of_Microsoft Assistentenseite des Defender for Identity-Sensors, auf der Sie die Zugriffstaste bereitstellen und dann auf die Schaltfläche "Installieren" klicken sollten](../../media/mtp-eval-50.png)
 
 10. Herzlichen Glückwunsch, Sie haben Microsoft Defender for Identity auf Ihrem Domänencontroller erfolgreich konfiguriert.
 
@@ -173,14 +173,14 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 2. Wählen Sie an der Informationsaufforderung zum Integrieren von Microsoft Defender for Identity die Option **"Microsoft Defender for Identity-Datenintegration aktivieren"** aus.
 
-   ![Abbildung of_the Eingabeaufforderung zur Integration von Microsoft Defender for Identity, wobei Sie den Link "Microsoft Defender for Identity"-Datenintegration aktivieren sollten](../../media/mtp-eval-54.png)
+   ![Abbildung of_the Eingabeaufforderung zur Integration von Microsoft Defender for Identity, in der Sie den Link "Microsoft Defender for Identity-Datenintegration aktivieren" auswählen sollten](../../media/mtp-eval-54.png)
 
    > [!NOTE]
    > Wenn diese Aufforderung nicht angezeigt wird, bedeutet dies möglicherweise, dass Die Microsoft Defender for Identity-Datenintegration bereits aktiviert wurde. Wenn Sie sich jedoch nicht sicher sind, wenden Sie sich an Ihren IT-Administrator, um dies zu bestätigen.
 
-3. Wechseln Sie zu **Einstellungen,** aktivieren Sie die Microsoft Defender for Identity-Integrations-Umschaltfläche, und klicken Sie dann auf **"Speichern".** 
+3. Wechseln Sie zu **Einstellungen,** aktivieren Sie die **Microsoft Defender for Identity-Integrationsschaltfläche,** und klicken Sie dann auf **"Speichern".**
 
-   ![Abbildung of_the Einstellungsseite, auf der Sie die Microsoft Defender for Identity-Integrationsschaltfläche aktivieren sollten, und klicken Sie dann auf "Speichern".](../../media/mtp-eval-55.png)
+   ![Abbildung of_the Einstellungsseite, auf der Sie die Microsoft Defender for Identity-Integrations-Umschaltfläche aktivieren sollten, und klicken Sie dann auf "Speichern".](../../media/mtp-eval-55.png)
 
    > [!NOTE]
    > Bei neuen Microsoft Defender for Identity-Instanzen wird diese Integrationsschaltfläche automatisch aktiviert. Vergewissern Sie sich, dass Ihre Microsoft Defender for Identity-Integration aktiviert wurde, bevor Sie mit dem nächsten Schritt fortfahren.
@@ -191,7 +191,7 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 5. Wählen Sie unter "Cloud Discovery"-Einstellungen **"Benutzererweiterung"** aus, und aktivieren Sie dann die Integration mit Azure Active Directory.
 
-   ![Abbildung des Abschnitts "Benutzererweiterung", in dem das Kontrollkästchen "Benutzeranreicherung" mit Azure Active Directory Benutzernamen aktiviert ist](../../media/mtp-eval-57.png)
+   ![Abbildung des Abschnitts "Benutzeranreicherung", in dem das Kontrollkästchen "Benutzeranreicherung" mit Azure Active Directory Benutzerbezeichner aktiviert ist](../../media/mtp-eval-57.png)
 
 ## <a name="configure-microsoft-defender-for-endpoint"></a>Konfigurieren von Microsoft Defender für Endpunkt
 
@@ -223,11 +223,11 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 6. Klicken Sie auf **"Paket herunterladen",** und kopieren Sie das Onboarding-Skript auf Ihre Endpunkte.
 
-   ![Abbildung of_page Aufforderung, auf die Schaltfläche "Paket herunterladen" zu klicken, um das Integrationsskript auf Ihren Endpunkt oder Ihre Endpunkte zu kopieren](../../media/mtp-eval-62.png)
+   ![Abbildung of_page Aufforderung, auf die Schaltfläche "Paket herunterladen" zu klicken, um das Integrationsskript auf Ihren Endpunkt oder Endpunkt zu kopieren](../../media/mtp-eval-62.png)
 
 7. Führen Sie auf Ihrem Endpunkt das Onboardingskript als Administrator aus, und wählen Sie "Y" aus.
 
-   ![Abbildung of_the Befehlszeile, in der Sie das Onboarding-Skript ausführen und Y auswählen, um fortzufahren](../../media/mtp-eval-63.png)
+   ![Abbildung of_the Befehlszeile, in der Sie das Onboardingskript ausführen, und wählen Sie "Y" aus, um fortzufahren](../../media/mtp-eval-63.png)
 
 8. Herzlichen Glückwunsch, Sie haben Ihren ersten Endpunkt integriert.
 
@@ -245,7 +245,7 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
     ![Abbildung of_the Bestätigungsaufforderung des Assistenten, in der Sie auf "Verwenden von Microsoft Defender für Endpunkt starten" klicken sollten](../../media/mtp-eval-67.png)
 
-12. Besuchen Sie die [Microsoft Defender Security Center](https://securitycenter.windows.com/). Wechseln Sie zu **Einstellungen,** und wählen Sie dann **"Erweiterte Features" aus.**
+12. Besuchen Sie die [Microsoft Defender Security Center](https://securitycenter.windows.com/). Wechseln Sie zu **Einstellungen,** und wählen Sie dann **erweiterte Features aus.**
 
     ![Image of_Microsoft Defender Security Center Einstellungen Menü, in dem Sie erweiterte Features auswählen sollten](../../media/mtp-eval-68.png)
 
@@ -272,9 +272,9 @@ Es gibt ein PowerShell-Modul namens *Office 365 Advanced Threat Protection Recom
 
 Wechseln Sie zu [Microsoft 365 Security Center.](https://security.microsoft.com/homepage) Navigieren Sie zu **Einstellungen,** und wählen Sie dann **Microsoft 365 Defender** aus.
 
-![Screenshot of_Microsoft 365 Defender-Option auf der Seite Microsoft 365 Security Center Einstellungen](../../media/mtp-eval-72b.png)
+![Screenshot der Option of_Microsoft 365 Defender auf der Seite Microsoft 365 Security Center Einstellungen](../../media/mtp-eval-72b.png)
 
-Eine umfassendere Anleitung finden Sie unter [Aktivieren von Microsoft 365 Defender.](m365d-enable.md)
+Eine umfassendere Anleitung finden Sie unter [Aktivieren Microsoft 365 Defender.](m365d-enable.md)
 
 Herzlichen Glückwunsch! Sie haben gerade Ihre Microsoft 365 Defender Testumgebung oder Pilotumgebung erstellt! Jetzt können Sie sich mit der Microsoft 365 Defender Benutzeroberfläche vertraut machen! Erfahren Sie, was Sie aus dem folgenden Microsoft 365 Defender interaktiven Leitfaden lernen und wissen, wie Sie jedes Dashboard für Ihre täglichen Sicherheitsaufgaben verwenden.
 

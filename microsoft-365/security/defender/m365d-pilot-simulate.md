@@ -1,7 +1,7 @@
 ---
 title: Ausführen ihrer Microsoft 365 Defender-Angriffssimulationen
 description: Führen Sie Angriffssimulationen für Ihr Microsoft 365 Defender-Pilotprojekt aus, um zu sehen, wie es sich entwickelt und schnell behoben wird.
-keywords: Microsoft 365 Defender Pilotangriffssimulation, ausführen Microsoft 365 Defender Pilotangriffssimulation, Angriff in Microsoft 365 Defender simulieren, Microsoft 365 Defender Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+keywords: Microsoft 365 Defender Pilotangriffssimulation, Microsoft 365 Defender Pilotangriffssimulation ausführen, Angriff in Microsoft 365 Defender simulieren, Microsoft 365 Defender Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Geräte, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,11 +22,11 @@ ms.collection:
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 18dc8158ef3c806e5dac5a01778adebc6eecc1ce
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.sourcegitcommit: 9856f86532bdcf0befbcdbdb7c6dc6bf89fe63b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230019"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53458429"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ausführen ihrer Microsoft 365 Defender-Angriffssimulationen
 
@@ -41,7 +41,7 @@ Sie befinden sich derzeit in der Angriffssimulationsphase.
 
 Nach der Vorbereitung Ihrer Pilotumgebung ist es an der Zeit, die Microsoft 365 Defender Vorfallverwaltung und automatisierte Untersuchungs- und Behebungsfunktionen zu testen. Wir helfen Ihnen bei der Simulation eines komplexen Angriffs, der erweiterte Techniken nutzt, um sich vor der Erkennung auszublenden. Der Angriff zählt geöffnete Server Message Block (SMB)-Sitzungen auf Domänencontrollern auf und ruft die letzten IP-Adressen der Geräte der Benutzer ab. Diese Kategorie von Angriffen umfasst in der Regel keine Dateien, die auf dem Gerät des Opfers abgelegt wurden– sie erfolgen ausschließlich im Arbeitsspeicher. Sie "leben vom Land", indem sie vorhandene System- und Verwaltungstools verwenden und ihren Code in Systemprozesse einfügen, um ihre Ausführung auszublenden. Ein solches Verhalten ermöglicht es ihnen, die Erkennung zu umgehen und auf dem Gerät zu speichern.
 
-In dieser Simulation beginnt unser Beispielszenario mit einem PowerShell-Skript. Ein Benutzer wird möglicherweise dazu betrogen, ein Skript auszuführen. Oder das Skript kann von einer Remoteverbindung mit einem anderen Computer von einem zuvor infizierten Gerät ausgeführt werden – der Angreifer versucht, sich seitlich im Netzwerk zu bewegen. Die Erkennung dieser Skripts kann schwierig sein, da Administratoren Skripts häufig auch remote ausführen, um verschiedene Administrative Aktivitäten auszuführen.
+In dieser Simulation beginnt unser Beispielszenario mit einem PowerShell-Skript. Ein Benutzer wird möglicherweise dazu betrogen, ein Skript auszuführen. Oder das Skript kann von einer Remoteverbindung mit einem anderen Computer von einem zuvor infizierten Gerät aus ausgeführt werden – der Angreifer versucht, sich seitlich im Netzwerk zu bewegen. Die Erkennung dieser Skripts kann schwierig sein, da Administratoren Skripts häufig auch remote ausführen, um verschiedene Administrative Aktivitäten auszuführen.
 
 ![Dateiloser PowerShell-Angriff mit Prozessinjektion und SMB-Reconnaisance-Angriffsdiagramm](../../media/mtp/mtpdiydiagram.png)
 
@@ -60,7 +60,7 @@ Da Sie Ihre Pilotumgebung bereits während der Vorbereitungsphase konfiguriert h
 
    - Das Gerät wird mit Windows Server 2008 R2 oder einer neueren Version ausgeführt.
    - Der Testdomänencontroller für [Microsoft Defender for Identity](/azure/security-center/security-center-wdatp) und aktivieren die [Remoteverwaltung.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
-   - Stellen Sie sicher, dass Die Integration von [Microsoft Defender for Identity und Microsoft Cloud App Security](/cloud-app-security/mdi-integration) aktiviert wurde.
+   - Stellen Sie sicher, dass [Microsoft Defender for Identity und Microsoft Cloud App Security Integration](/cloud-app-security/mdi-integration) aktiviert wurden.
    - Ein Testbenutzer wird in Ihrer Domäne erstellt – es sind keine Administratorberechtigungen erforderlich.
 
 3. Überprüfen sie die Konfiguration des Testgeräts:
@@ -99,7 +99,7 @@ So führen Sie die Simulation des Angriffsszenarios aus:
 4. Fügen Sie an der Eingabeaufforderung das kopierte Skript ein, und führen Sie es aus.
 
 > [!NOTE]
-> Wenn Sie PowerShell mithilfe des Remotedesktopprotokolls (RDP) ausführen, verwenden Sie den Befehl "Text der Zwischenablage eingeben" im RDP-Client, da die **STRG-V-Hotkey-** oder Right-Click-Paste-Methode möglicherweise nicht funktioniert. Aktuelle Versionen von PowerShell akzeptieren diese Methode manchmal auch nicht. Möglicherweise müssen Sie sie zuerst in Editor im Arbeitsspeicher kopieren, sie auf dem virtuellen Computer kopieren und dann in PowerShell einfügen.
+> Wenn Sie PowerShell mithilfe des Remotedesktopprotokolls (RDP) ausführen, verwenden Sie den Befehl "Text der Zwischenablage eingeben" im RDP-Client, da die **STRG-V-Hotkey-** oder Right-Click-Paste-Methode möglicherweise nicht funktioniert. Aktuelle Versionen von PowerShell akzeptieren diese Methode manchmal auch nicht. Möglicherweise müssen Sie sie zuerst in Editor im Arbeitsspeicher kopieren, auf dem virtuellen Computer kopieren und dann in PowerShell einfügen.
 
 Einige Sekunden später wird <i>notepad.exe</i> geöffnet. Ein simulierter Angriffscode wird in notepad.exe eingefügt. Lassen Sie die automatisch generierte Editor Instanz geöffnet, um das vollständige Szenario zu erleben.
 
@@ -116,13 +116,13 @@ Um das Feature "Automatisierter Vorfall und Reaktion" in Aktion zu sehen, lassen
 ## <a name="investigate-an-incident"></a>Untersuchung eines Vorfalls
 
 > [!NOTE]
-> Bevor wir Sie durch diese Simulation führen, sehen Sie sich das folgende Video an, um zu sehen, wie die Vorfallverwaltung Ihnen dabei hilft, die zugehörigen Warnungen im Rahmen des Untersuchungsprozesses zusammenzuarbeiten, wo Sie sie im Portal finden können und wie sie Ihnen bei Ihren Sicherheitsvorgängen helfen können:
+> Bevor wir Sie durch diese Simulation führen, sehen Sie sich das folgende Video an, um zu sehen, wie die Vorfallverwaltung Ihnen hilft, die zugehörigen Warnungen im Rahmen des Untersuchungsprozesses zusammenzuarbeiten, wo Sie sie im Portal finden können und wie sie Ihnen bei Ihren Sicherheitsvorgängen helfen können:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 Wenn Sie zur SOC-Analystenansicht wechseln, können Sie jetzt mit der Untersuchung des Angriffs im Microsoft 365 Security Center-Portal beginnen.
 
-1. Öffnen Sie die Vorfallwarteschlange des [Microsoft 365 Security Center-Portals](https://security.microsoft.com/incidents) von einem beliebigen Gerät aus.
+1. Öffnen Sie die Vorfallwarteschleife des [Microsoft 365 Security Center-Portals](https://security.microsoft.com/incidents) von jedem Gerät aus.
 
 2. Navigieren Sie im Menü zu **"Vorfälle".**
 
@@ -179,7 +179,7 @@ Damit die SOC-Analysten diese erweiterten Angriffe abfangen können, bieten tief
 
 #### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>Warnung: Unerwartetes Verhalten, das von einem Prozess ohne Befehlszeilenargumente beobachtet wird (Quelle: Microsoft Defender für Endpunkt EDR)
 
-Microsoft Defender für Endpunkt-Erkennungen zielen häufig auf das am häufigsten verwendete Attribut einer Angriffstechnik ab. Mit dieser Methode wird Dies sichergestellt und die Leiste für Angreifer erhöht, um zu neueren Taktiken zu wechseln.
+Microsoft Defender für Endpunkt-Erkennungen zielen häufig auf das am häufigsten verwendete Attribut einer Angriffstechnik ab. Diese Methode stellt Dies sicher und erhöht die Messlatte für Angreifer, um zu neueren Taktiken zu wechseln.
 
 Wir verwenden umfangreiche Lernalgorithmen, um das normale Verhalten gängiger Prozesse innerhalb einer Organisation und weltweit zu ermitteln und zu beobachten, wann diese Prozesse anomales Verhalten aufweisen. Diese anomaalen Verhaltensweisen weisen häufig darauf hin, dass fremder Code eingeführt wurde und in einem ansonsten vertrauenswürdigen Prozess ausgeführt wird.
 
@@ -217,7 +217,7 @@ Wählen Sie die Registerkarte **"Zeitachse"** aus, um die Gerätezeitachse zu ö
 
 Das Erweitern einiger der interessanteren Verhaltensweisen liefert nützliche Details, z. B. Prozessstrukturen.
 
-Scrollen Sie beispielsweise nach unten, bis Sie das Warnungsereignis **"Verdächtige Prozessinjektion" gefunden haben.** Wählen Sie die **powershell.exe aus, die in notepad.exe Prozessereignis** darunter eingefügt wurde, um die vollständige Prozessstruktur für dieses Verhalten unter dem Diagramm **"Ereignisentitäten"** im Seitenbereich anzuzeigen. Verwenden Sie bei Bedarf die Suchleiste zum Filtern.
+Scrollen Sie beispielsweise nach unten, bis Sie das Warnungsereignis **"Verdächtige Prozessinjektion" gefunden haben.** Wählen Sie diepowershell.exe aus, die **in notepad.exe Prozessereignis** darunter eingefügt wurde, um die vollständige Prozessstruktur für dieses Verhalten unter dem Diagramm **"Ereignisentitäten"** im Seitenbereich anzuzeigen. Verwenden Sie bei Bedarf die Suchleiste zum Filtern.
 
 ![Screenshot der Prozessstruktur für ausgewähltes PowerShell-Dateierstellungsverhalten](../../media/mtp/fig12.png)
 
@@ -227,7 +227,7 @@ Wählen Sie auf der Vorfallseite die Registerkarte **"Benutzer"** aus, um die Li
 
 Wählen Sie den Benutzernamen aus, um die Profilseite des Benutzers zu öffnen, auf der weitere Untersuchungen durchgeführt werden können. [Weitere Informationen zur Untersuchung riskanter Benutzer.](/cloud-app-security/tutorial-ueba#identify)
 
-![Screenshot der Cloud App Security Benutzerseite](../../media/mtp/fig13.png)
+![Screenshot Cloud App Security Benutzerseite](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>Automatische Untersuchung und Reaktion
 
@@ -252,7 +252,7 @@ Wählen Sie die Warnung aus, die eine Untersuchung ausgelöst hat, um die Seite 
 
 ![Screenshot der Seite "Untersuchungsdetails"](../../media/mtp/fig15.png)
 
-Während der automatisierten Untersuchung hat Microsoft Defender für Endpunkt den notepad.exe Prozess identifiziert, der als eines der Artefakte eingefügt wurde, die eine Korrektur erfordern. Defender für Endpunkt stoppt automatisch die verdächtige Prozessinjektion als Teil der automatisierten Korrektur.
+Während der automatisierten Untersuchung hat Microsoft Defender für Endpunkt den notepad.exe Prozess identifiziert, der als eines der Artefakte eingefügt wurde, die eine Korrektur erfordern. Defender für Endpunkt stoppt automatisch die verdächtige Prozesseinschleusung als Teil der automatisierten Korrektur.
 
 Sie können <i> sehen,notepad.exe</i> aus der Liste der ausgeführten Prozesse auf dem Testgerät ausgeblendet werden.
 
@@ -326,7 +326,7 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
    1. Sehen Sie sich die Ergebnisse an, und überprüfen Sie, ob Sie die geöffnete E-Mail identifizieren können. Es kann bis zu 2 Stunden dauern, bis die Nachricht in der erweiterten Suche angezeigt wird. Wenn die E-Mail-Umgebung groß ist und viele Ergebnisse vorliegen, können Sie die **Option "Filter anzeigen"** verwenden, um die Nachricht zu finden.
 
-      Im Beispiel wurde die E-Mail von einem Yahoo-Konto gesendet. Klicken Sie auf das **+** Symbol neben **yahoo.com** im Abschnitt "SenderFromDomain", und klicken Sie dann auf **"Übernehmen",** um der Abfrage die ausgewählte Domäne hinzuzufügen. Verwenden Sie das Domänen- oder E-Mail-Konto, das zum Senden der Testnachricht in Schritt 1 von "Simulation ausführen" verwendet wurde, um Ihre Ergebnisse zu filtern. Führen Sie die Abfrage erneut aus, um ein kleineres Resultset abzurufen, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
+      Im Beispiel wurde die E-Mail von einem Yahoo-Konto gesendet. Klicken Sie im **+** Abschnitt "SenderFromDomain" auf das Symbol neben **yahoo.com,** und klicken Sie dann auf **"Übernehmen",** um der Abfrage die ausgewählte Domäne hinzuzufügen. Verwenden Sie das Domänen- oder E-Mail-Konto, das zum Senden der Testnachricht in Schritt 1 von "Simulation ausführen" verwendet wurde, um Ihre Ergebnisse zu filtern. Führen Sie die Abfrage erneut aus, um ein kleineres Resultset abzurufen, um zu überprüfen, ob die Nachricht aus der Simulation angezeigt wird.
 
       ![Screenshot der Filter. Verwenden Sie Filter, um die Suche einzugrenzen und schneller zu suchen.](../../media/mtp/fig20.png)
 
@@ -339,7 +339,7 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
 
       ![Screenshot des Seitenbereichs "Datensatz überprüfen", der geöffnet wird, wenn ein Erweitertes Suchergebnis ausgewählt wird](../../media/mtp/fig21.png)
 
-4. Nachdem Sie sich vergewissert haben, dass die E-Mail angezeigt wird, fügen Sie einen Filter für die Anlagen hinzu. Konzentrieren Sie sich auf alle E-Mails mit Anlagen in der Umgebung. Konzentrieren Sie sich für dieses Szenario auf eingehende E-Mails, nicht auf E-Mails, die aus Ihrer Umgebung gesendet werden. Entfernen Sie alle Filter, die Sie hinzugefügt haben, um Ihre Nachricht zu finden, und fügen Sie "| **wobei AttachmentCount > 0** und **EmailDirection**  ==  **"Eingehend"**
+4. Nachdem Sie sich vergewissert haben, dass die E-Mail angezeigt wird, fügen Sie einen Filter für die Anlagen hinzu. Konzentrieren Sie sich auf alle E-Mails mit Anlagen in der Umgebung. Konzentrieren Sie sich für dieses Szenario auf eingehende E-Mails, nicht auf E-Mails, die aus Ihrer Umgebung gesendet werden. Entfernen Sie alle Filter, die Sie hinzugefügt haben, um Ihre Nachricht zu suchen und "| wobei **AttachmentCount > 0** und **EmailDirection**  ==  **"Eingehend"**
 
    In der folgenden Abfrage wird das Ergebnis mit einer kürzeren Liste angezeigt als die ursprüngliche Abfrage für alle E-Mail-Ereignisse:
 
@@ -359,7 +359,7 @@ Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich
    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
    ```
 
-6. Verwenden Sie als Nächstes den **SHA256-Wert** aus der **Tabelle EmailAttachmentInfo ,** um **DeviceFileEvents** (Dateiaktionen, die auf dem Endpunkt ausgeführt wurden) für diesen Hash zu suchen. Das allgemeine Feld hier ist der SHA256-Hash für die Anlage.
+6. Verwenden Sie als Nächstes den **SHA256-Wert** aus der **EmailAttachmentInfo-Tabelle,** um **DeviceFileEvents** (Dateiaktionen, die auf dem Endpunkt aufgetreten sind) für diesen Hash zu suchen. Das allgemeine Feld hier ist der SHA256-Hash für die Anlage.
 
    Die resultierende Tabelle enthält nun Details vom Endpunkt (Microsoft Defender für Endpunkt), z. B. den Gerätenamen, welche Aktion ausgeführt wurde (in diesem Fall gefiltert, um nur FileCreated-Ereignisse einzuschließen), und wo die Datei gespeichert wurde. Der dem Prozess zugeordnete Kontoname wird ebenfalls eingeschlossen.
 
@@ -439,7 +439,7 @@ Um mehr über die erweiterte Suche zu erfahren, werden Die folgenden Webcasts f�
 
 |Titel|Beschreibung|HERUNTERLADEN VON MP4|Auf YouTube ansehen|ZU verwendende CSL-Datei|
 |---|---|---|---|---|
-|Folge 1: KQL-Grundlagen|Wir behandeln die Grundlagen erweiterter Suchfunktionen in Microsoft 365 Defender. Erfahren Sie mehr über die verfügbaren erweiterten Suchdaten und die grundlegende KQL-Syntax und -Operatoren.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Folge 1: CSL-Datei auf Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|Folge 1: KQL-Grundlagen|Wir befassen uns mit den Grundlagen erweiterter Suchfunktionen in Microsoft 365 Defender. Erfahren Sie mehr über die verfügbaren erweiterten Suchdaten und die grundlegende KQL-Syntax und -Operatoren.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Folge 1: CSL-Datei auf Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Folge 2: Joins|Wir werden weiterhin informationen zu Daten in der erweiterten Suche und zum Verknüpfen von Tabellen erhalten. Erfahren Sie mehr über innere, äußere, eindeutige und semi-Verknüpfungen und die Nuancen des standardmäßigen Kusto innerunique-Joins.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Folge 2: CSL-Datei auf Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Folge 3: Zusammenfassen, Pivotieren und Visualisieren von Daten|Da wir nun Daten filtern, bearbeiten und verknüpfen können, ist es an der Zeit, mit der Zusammenfassung, Quantifizierung, Pivotierung und Visualisierung zu beginnen. In dieser Folge behandeln wir den Zusammenfassungsoperator und einige der Berechnungen, die Sie ausführen können, während Sie in zusätzliche Tabellen im Schema für die erweiterte Suche wechseln. Wir wandeln unsere Datasets in Diagramme um, die zur Verbesserung der Analyse beitragen können.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Folge 3: CSL-Datei auf Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
 |Folge 4: Lassen Sie uns suchen! Anwenden von KQL auf die Vorfallverfolgung|Zeit zum Nachverfolgen einiger Angreiferaktivitäten! In dieser Folge verwenden wir unser verbessertes Verständnis von KQL und die erweiterte Suche in Microsoft 365 Defender, um einen Angriff nachzuverfolgen. Erfahren Sie mehr über die Tipps und Tricks, die in diesem Feld zum Nachverfolgen von Angreiferaktivitäten verwendet werden, einschließlich der ABCs der Cybersicherheit und deren Anwendung auf die Reaktion auf Vorfälle.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Folge 4: CSL-Datei auf Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
@@ -447,5 +447,5 @@ Um mehr über die erweiterte Suche zu erfahren, werden Die folgenden Webcasts f�
 
 ## <a name="next-step"></a>Nächster Schritt
 
-|![Abschluss- und Zusammenfassungsphase](../../media/mtp/close.png) <br>[Abschluss- und Zusammenfassungsphase](m365d-pilot-close.md)|Analysieren Sie Ihr Microsoft 365 Defender Pilotergebnis, stellen Sie sie Ihren Projektbeteiligten vor, und führen Sie den nächsten Schritt aus.
+|![Abschluss- und Zusammenfassungsphase](../../media/mtp/close.png) <br>[Abschluss- und Zusammenfassungsphase](m365d-pilot-close.md)|Analysieren Sie Ihre Microsoft 365 Defender Pilotergebnisse, stellen Sie sie Ihren Projektbeteiligten vor, und führen Sie den nächsten Schritt aus.
 |:-----|:-----|

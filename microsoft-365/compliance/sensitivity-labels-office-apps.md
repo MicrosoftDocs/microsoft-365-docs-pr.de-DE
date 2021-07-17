@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 2484aed7dd5f70a92b1199f472c983848326db7c
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228591"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430756"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -361,6 +361,8 @@ Beispiele:
 > Der [Azure Information Protection-Client für einheitliche Bezeichnungen](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) unterstützt diese Konfiguration, die auch obligatorisches Bezeichnen genannt wird. Für die in Office-Apps integrierten Bezeichnungen finden Sie in den Tabellen im Abschnitt [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite Informationen zu den Mindestversionen.
 >
 > Wenn Sie obligatorische Bezeichnungen für Dokumente, aber nicht für E-Mails verwenden möchten, lesen Sie die Anweisungen im nächsten Abschnitt, in dem erklärt wird, wie Sie Outlook-spezifische Optionen konfigurieren.
+> 
+> Um die obligatorische Bezeichnung für Power BI zu verwenden, lesen Sie [Obligatorische Bezeichnungsrichtlinie für Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
 
 Wenn die Richtlinieneinstellung **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden** ausgewählt ist, müssen Benutzer, denen die Richtlinie zugewiesen ist, in den folgenden Szenarien eine Vertraulichkeitsbezeichnungen auswählen und anwenden:
 
