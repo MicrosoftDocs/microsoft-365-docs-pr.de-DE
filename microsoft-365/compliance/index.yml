@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: 79c9bf21fe480faffac90b6b5f5f134e72eff119
-  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+  ms.openlocfilehash: 5fbddbbf65d987817e793233fe3384c0f47fd04f
+  ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/19/2021
-  ms.locfileid: "50916840"
+  ms.lasthandoff: 07/13/2021
+  ms.locfileid: "53415530"
 landingContent:
 - title: Informationsschutz und Datenverwaltung
   linkLists:
@@ -76,6 +76,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Schützen von Daten mit Zero Trust
+      url: /security/zero-trust/data
     - text: Bereitstellen des Informationsschutzes für Datenschutzbestimmungen
       url: ../solutions/information-protection-deploy.md
     - text: Illustrationen zu Informationsschutz und Compliance
